@@ -218,7 +218,30 @@ with sync_playwright() as pw:
         page.click(f'.p-tab:text-is("{tab}")')
         shot(page, f"17-parent-{tab.lower()}")
 
+    # Code parent oublié : question pour adulte, puis nouveau code
+    page.click("text=Retour au jeu")
+    page.wait_for_timeout(300)
+    lock = page.locator(".lockbtn")
+    box = lock.bounding_box()
+    page.mouse.move(box["x"] + 20, box["y"] + 20)
+    page.mouse.down(); page.wait_for_timeout(1500); page.mouse.up()
+    page.click("text=Code oublié ?")
+    q = page.locator("text=/Combien font/").inner_text()
+    import re as _re
+    a, b = map(int, _re.findall(r"\d+", q))
+    page.fill(".adult-answer", "1")
+    page.click("text=Valider")
+    shot(page, "18-code-oublie")
+    page.fill(".adult-answer", str(a * b))
+    page.click("text=Valider")
+    for d in "4321" + "4321":
+        page.click(f'.pin button:text-is("{d}")')
+        page.wait_for_timeout(60)
+    page.wait_for_timeout(300)
+    assert page.locator("text=Espace parent").count() > 0, "le nouveau code n'ouvre pas l'espace parent"
+
     data = page.evaluate("() => JSON.parse(localStorage.getItem('archipel.v1'))")
+    assert data["pin"] == "4321", data["pin"]
     p = data["profiles"][0]
     print("profil :", p["name"], "| gommettes :", len(p["stickers"]), "| séances :", len(p["sessions"]), "| entrées journal :", len(p["log"]))
     print("drapeaux vus :", sorted(p["flags"].keys()))

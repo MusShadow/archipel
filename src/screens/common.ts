@@ -62,13 +62,48 @@ export function pinPad(opts: { title: string; subtitle?: string; check: (pin: st
 }
 
 // Barrière parent : demande le code avant d'ouvrir quelque chose de réservé aux adultes.
+// Code oublié : une multiplication à deux chiffres (hors de portée d'un enfant de 4 à 6 ans), puis un nouveau code.
 export function parentGate(host: HTMLElement, onOK: () => void, title = "Espace parent") {
   if (!app.data.pin) { onOK(); return; }
-  let s: { close: () => void } | null = null;
   const pad = pinPad({
     title, subtitle: "Entrez votre code à 4 chiffres.",
-    check: (pin) => { if (pin === app.data.pin) { s?.close(); onOK(); return true; } pad.setSubtitle("Ce n'est pas le bon code. Réessayez."); return false; },
-    onCancel: () => s?.close(),
+    check: (pin) => { if (pin === app.data.pin) { s.close(); onOK(); return true; } pad.setSubtitle("Ce n'est pas le bon code. Réessayez."); return false; },
+    onCancel: () => s.close(),
   });
-  s = sheet(host, pad.el);
+  const s = sheet(host, pad.el, h("button", { type: "button", class: "linkbtn", onclick: () => recover() }, "Code oublié ?"));
+  const panel = () => s.el.firstElementChild as HTMLElement;
+
+  function recover() {
+    const a = 12 + Math.floor(Math.random() * 7), b = 6 + Math.floor(Math.random() * 4);
+    const input = h("input", { type: "text", inputmode: "numeric", autocomplete: "off", "aria-label": "Réponse", class: "adult-answer" }) as HTMLInputElement;
+    const msg = h("p", { class: "muted", style: "margin:0;min-height:1.2em;color:#B42318" });
+    const check = () => {
+      if (Number(input.value.trim()) === a * b) { newPin(); return; }
+      msg.textContent = "Ce n'est pas la bonne réponse.";
+      wobble(box);
+    };
+    input.addEventListener("keydown", (e) => { if (e.key === "Enter") check(); });
+    const box = h("div", { class: "pin-wrap parent" },
+      h("h1", { style: "font-size:22px;margin:0;font-family:Inter,system-ui,sans-serif" }, "Question pour un adulte"),
+      h("p", { style: "margin:0;font-size:18px" }, `Combien font ${a} × ${b} ?`),
+      input, msg,
+      h("div", { class: "p-row" },
+        h("button", { type: "button", class: "pbtn", onclick: check }, "Valider"),
+        h("button", { type: "button", class: "pbtn ghost", onclick: () => s.close() }, "Annuler")));
+    panel().replaceChildren(box);
+    input.focus();
+  }
+  function newPin() {
+    let first = "";
+    const p2 = pinPad({
+      title: "Nouveau code parent", subtitle: "Choisissez 4 chiffres.",
+      check: (pin) => {
+        if (!first) { first = pin; p2.setSubtitle("Saisissez-le une seconde fois."); p2.reset(); return true; }
+        if (pin === first) { app.data.pin = pin; app.save(); s.close(); onOK(); return true; }
+        first = ""; p2.setSubtitle("Les deux codes ne correspondent pas. Recommencez."); return false;
+      },
+      onCancel: () => s.close(),
+    });
+    panel().replaceChildren(p2.el);
+  }
 }

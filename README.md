@@ -44,7 +44,19 @@ Aucune dépendance d'exécution. Les illustrations sont des formes vectorielles 
 
 Ajouter une activité : créer un module qui implémente `ActivityModule` (générer, afficher, indices, gommette, astuce parent), déclarer ses compétences dans `core.ts`, puis l'associer à son île dans `src/activities/index.ts`.
 
+## Publication
+
+Chaque envoi sur `main` lance `.github/workflows/pages.yml` : tests, construction, puis publication sur GitHub Pages
+(`https://musshadow.github.io/archipel/`). À faire une fois dans le dépôt : Settings › Pages › Source : GitHub Actions.
+GitHub Pages est gratuit pour un dépôt public ; pour un dépôt privé, il faut un forfait payant. Le site publié est toujours
+public, mais il ne contient que le code : les données de l'enfant restent sur l'iPad.
+
+L'appli est installable (manifeste, icône) et fonctionne hors ligne grâce à un service worker (`src/sw.js`),
+vérifié par `python3 tests/e2e/offline.py`.
+
 ## Sur l'iPad
+
+Le mode d'emploi complet (installation sur l'écran d'accueil, Accès guidé, sauvegarde) est dans le document « Archipel sur l'iPad — mode d'emploi ».
 
 - La voix de Plume utilise la synthèse vocale de l'appareil. Pour une voix plus naturelle : Réglages › Accessibilité › Contenu énoncé › Voix › Français, puis télécharger une voix « améliorée ». Elle se choisit ensuite dans l'espace parent.
 - Le mode « Accès guidé » de l'iPad (Réglages › Accessibilité) permet de verrouiller l'appareil sur l'application pendant la séance.

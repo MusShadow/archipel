@@ -103,4 +103,6 @@ textarea.data{width:100%;min-height:140px;font:12px ui-monospace,Menlo,monospace
 .setup ul{margin:0;padding-left:20px;line-height:1.6;font-size:15px}
 .pin-wrap{display:flex;flex-direction:column;gap:14px;align-items:center}
 .pin-wrap.shake{animation:wobble .45s ease}
+.linkbtn{border:none;background:none;color:var(--turq-d);font-size:14px;font-weight:600;text-decoration:underline;cursor:pointer;padding:8px;font-family:Inter,system-ui,sans-serif}
+.adult-answer{font-size:22px;padding:10px 12px;width:150px;text-align:center;border-radius:10px;border:1px solid #D8CDB8;-webkit-user-select:text;user-select:text}
 `;

@@ -23,6 +23,11 @@ document.addEventListener("visibilitychange", () => (document.hidden ? app.pause
 document.addEventListener("dblclick", (e) => e.preventDefault(), { passive: false });
 document.addEventListener("contextmenu", (e) => { if (!(e.target as HTMLElement).closest(".parent")) e.preventDefault(); });
 
+// Appli ouverte depuis son adresse (et non intégrée dans une autre page) : copie gardée pour le hors-ligne.
+if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost") && window.top === window) {
+  window.addEventListener("load", () => { navigator.serviceWorker.register("sw.js").catch(() => { /* hors-ligne indisponible */ }); });
+}
+
 registerChildScreens();
 registerParentScreens();
 if (app.data.profiles.length) nav.start(); else nav.setup();
