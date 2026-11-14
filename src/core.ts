@@ -3,7 +3,7 @@
 
 export type DomainId = "lecture" | "nombres" | "voyages" | "enigmes" | "decouvertes" | "atelier" | "coeur";
 export type Form = "manipulation" | "image" | "symbole" | "recit" | "corrige";
-export type ActivityId = "drapeau" | "marche" | "syllabes";
+export type ActivityId = "drapeau" | "marche" | "syllabes" | "chants" | "lis" | "nenuphars" | "partage";
 export type Mastery = "nouveau" | "decouverte" | "en-cours" | "acquise" | "consolidee";
 
 export interface DomainDef { id: DomainId; label: string; color: string; island: string }
@@ -23,12 +23,26 @@ export const SKILLS: SkillDef[] = [
   { id: "LECT.SYL.FABRIQUE", domain: "lecture", label: "Fabriquer une syllabe : consonne et voyelle", palier: 2, dRef: 0.5, activity: "syllabes" },
   { id: "LECT.MOT.FABRIQUE", domain: "lecture", label: "Écrire un mot entendu avec des syllabes", palier: 2, dRef: 1, activity: "syllabes" },
   { id: "LECT.MOT.LIRE", domain: "lecture", label: "Lire un mot court en entier", palier: 3, dRef: 1.5, activity: "syllabes" },
+  { id: "LECT.PHONO.SYLLABES", domain: "lecture", label: "Frapper les syllabes d'un mot", palier: 1, dRef: -0.6, activity: "chants" },
+  { id: "LECT.PHONO.RIME", domain: "lecture", label: "Entendre deux mots qui riment", palier: 1, dRef: 0, activity: "chants" },
+  { id: "LECT.PHONO.ATTAQUE", domain: "lecture", label: "Entendre la même syllabe au début", palier: 2, dRef: 0.4, activity: "chants" },
+  { id: "LECT.PHONO.PHONEME", domain: "lecture", label: "Entendre le premier son d'un mot", palier: 2, dRef: 0.9, activity: "chants" },
+  { id: "LECT.GROUPE.LIRE", domain: "lecture", label: "Lire deux mots reliés par « et »", palier: 3, dRef: 1.6, activity: "lis" },
+  { id: "LECT.PHRASE.LIRE", domain: "lecture", label: "Lire une petite phrase et la comprendre", palier: 3, dRef: 2, activity: "lis" },
   { id: "NUM.VOIR.4", domain: "nombres", label: "Voir 1 à 4 objets sans compter", palier: 1, dRef: -1, activity: "marche" },
   { id: "NUM.COMPTE.10", domain: "nombres", label: "Constituer une collection jusqu'à 10", palier: 1, dRef: -0.3, activity: "marche" },
   { id: "NUM.COMPTE.20", domain: "nombres", label: "Constituer une collection jusqu'à 20", palier: 2, dRef: 0.3, activity: "marche" },
   { id: "NUM.COMPLEMENT.10", domain: "nombres", label: "Compléter à 10", palier: 2, dRef: 0.8, activity: "marche" },
   { id: "NUM.DIZAINES.LIRE", domain: "nombres", label: "Dizaines et unités : combien en tout ?", palier: 3, dRef: 1.3, activity: "marche" },
   { id: "NUM.DIZAINES.FAIRE", domain: "nombres", label: "Dizaines et unités : préparer un nombre", palier: 3, dRef: 1.7, activity: "marche" },
+  { id: "NUM.LIGNE.REPERE", domain: "nombres", label: "Trouver un nombre sur la ligne", palier: 1, dRef: -0.4, activity: "nenuphars" },
+  { id: "NUM.LIGNE.ORDRE", domain: "nombres", label: "Trouver le nombre qui manque", palier: 1, dRef: 0.1, activity: "nenuphars" },
+  { id: "NUM.LIGNE.PLUS", domain: "nombres", label: "Avancer de quelques bonds (+)", palier: 2, dRef: 0.6, activity: "nenuphars" },
+  { id: "NUM.LIGNE.MOINS", domain: "nombres", label: "Reculer de quelques bonds (−)", palier: 2, dRef: 0.9, activity: "nenuphars" },
+  { id: "NUM.LIGNE.BONDS", domain: "nombres", label: "Avancer par bonds de 2", palier: 3, dRef: 1.4, activity: "nenuphars" },
+  { id: "NUM.PARTAGE.EGAL", domain: "nombres", label: "Partager en parts égales", palier: 1, dRef: -0.2, activity: "partage" },
+  { id: "NUM.PARTAGE.RESTE", domain: "nombres", label: "Partager quand il en reste", palier: 2, dRef: 0.7, activity: "partage" },
+  { id: "NUM.PARTAGE.COMBIEN", domain: "nombres", label: "Dire combien chacun aura", palier: 3, dRef: 1.3, activity: "partage" },
   { id: "VOY.DRAPEAU.ECOUTE", domain: "voyages", label: "Reconnaître un drapeau dont on entend le nom", palier: 1, dRef: -0.5, activity: "drapeau" },
   { id: "VOY.CARTE.CONTINENT", domain: "voyages", label: "Placer un pays sur son continent", palier: 2, dRef: 0.6, activity: "drapeau" },
   { id: "VOY.DRAPEAU.LIRE", domain: "voyages", label: "Lire le nom d'un pays et trouver son drapeau", palier: 2, dRef: 0.8, activity: "drapeau" },

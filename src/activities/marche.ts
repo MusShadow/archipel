@@ -67,6 +67,7 @@ export const marche: ActivityModule<MarketItem> = {
   id: "marche", title: "Le marché de Basile", domain: "nombres", island: "nombres", host: "basile",
   maxLevel: 6, items: 6,
   skills: ["NUM.VOIR.4", "NUM.COMPTE.10", "NUM.COMPTE.20", "NUM.COMPLEMENT.10", "NUM.DIZAINES.LIRE", "NUM.DIZAINES.FAIRE"],
+  card: `<span style="display:block;width:1em;height:1em">${APPLE}</span>`, pitch: "Le marché de Basile, pour compter les pommes.",
   startLevel: () => 1,
 
   generate(level, ctx) {

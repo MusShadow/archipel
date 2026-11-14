@@ -17,6 +17,7 @@ export interface Profile {
   sessions: SessionRecord[];
   goals: string[];
   restUntil?: number;
+  departDone?: boolean;
 }
 export interface Settings { sessionMinutes: number; accompanied: boolean; voiceURI: string | null; rate: number; sessionsPerWeek: number }
 export interface AppData { version: 1; pin: string | null; settings: Settings; profiles: Profile[]; activeId: string | null }
@@ -41,6 +42,7 @@ export function normalize(d: any): AppData {
     flags: p.flags ?? {}, log: Array.isArray(p.log) ? p.log : [], stickers: Array.isArray(p.stickers) ? p.stickers : [],
     sessions: Array.isArray(p.sessions) ? p.sessions : [], goals: Array.isArray(p.goals) ? p.goals : [],
     restUntil: typeof p.restUntil === "number" ? p.restUntil : undefined,
+    departDone: p.departDone === true || (Array.isArray(p.log) && p.log.length > 30),
   })) : [];
   return { version: 1, pin: typeof d.pin === "string" ? d.pin : null, settings: { ...base.settings, ...(d.settings ?? {}) }, profiles, activeId: d.activeId ?? null };
 }
@@ -105,6 +107,68 @@ class Speech {
 export const speech = new Speech();
 export const frenchVoiceLabel = (v: SpeechSynthesisVoice) => `${v.name.replace(/\s*\(.*\)\s*/g, " ").trim()} · ${v.lang}`;
 
+// ---------- Voix du parent (studio voix) ----------
+// Courts enregistrements gardés à part (clé distincte), hors de la sauvegarde texte.
+export const VOICE_SLOTS: { id: string; label: string; idea: string }[] = [
+  { id: "bonjour", label: "Au début d'une séance", idea: "Bonjour mon explorateur, bon voyage sur l'archipel !" },
+  { id: "bravo", label: "Après une bonne réponse", idea: "Bravo, tu as bien cherché !" },
+  { id: "effort", label: "Après une réponse trouvée avec de l'aide", idea: "Tu n'as rien lâché, c'est comme ça qu'on apprend !" },
+  { id: "aurevoir", label: "À la fin de la séance", idea: "Bravo pour ce voyage, à demain !" },
+];
+const VOICE_KEY = "archipel.voix";
+class Voice {
+  private clips: Record<string, string> = {};
+  private audio: HTMLAudioElement | null = null;
+  constructor() {
+    try { this.clips = JSON.parse(localStorage.getItem(VOICE_KEY) ?? "{}") ?? {}; } catch { this.clips = {}; }
+  }
+  has(slot: string) { return typeof this.clips[slot] === "string"; }
+  set(slot: string, dataUrl: string) {
+    this.clips[slot] = dataUrl;
+    try { localStorage.setItem(VOICE_KEY, JSON.stringify(this.clips)); return true; } catch { delete this.clips[slot]; return false; }
+  }
+  remove(slot: string) {
+    delete this.clips[slot];
+    try { localStorage.setItem(VOICE_KEY, JSON.stringify(this.clips)); } catch { /* rien */ }
+  }
+  play(slot: string): Promise<void> {
+    const src = this.clips[slot];
+    if (!src || typeof Audio === "undefined") return Promise.resolve();
+    speech.stop();
+    this.audio?.pause();
+    const a = new Audio(src);
+    this.audio = a;
+    return new Promise((resolve) => {
+      let done = false;
+      const finish = () => { if (!done) { done = true; resolve(); } };
+      a.onended = finish; a.onerror = finish;
+      setTimeout(finish, 8000);
+      a.play().catch(finish);
+    });
+  }
+  // Enregistrement : micro de l'appareil, arrêt automatique après quelques secondes.
+  get canRecord() { return typeof navigator !== "undefined" && !!navigator.mediaDevices?.getUserMedia && typeof (window as any).MediaRecorder !== "undefined"; }
+  async record(maxMs = 6000, onStart?: (stop: () => void) => void): Promise<string> {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    const MR = (window as any).MediaRecorder;
+    const type = ["audio/mp4", "audio/webm;codecs=opus", "audio/webm"].find((t) => MR.isTypeSupported?.(t));
+    const rec = new MR(stream, type ? { mimeType: type } : undefined);
+    const chunks: Blob[] = [];
+    rec.ondataavailable = (e: BlobEvent) => { if (e.data.size) chunks.push(e.data); };
+    const stopped = new Promise<void>((r) => { rec.onstop = () => r(); });
+    const stop = () => { if (rec.state !== "inactive") rec.stop(); };
+    rec.start();
+    onStart?.(stop);
+    const timer = setTimeout(stop, maxMs);
+    await stopped;
+    clearTimeout(timer);
+    stream.getTracks().forEach((t: MediaStreamTrack) => t.stop());
+    const blob = new Blob(chunks, { type: rec.mimeType || type || "audio/webm" });
+    return await new Promise<string>((resolve, reject) => { const fr = new FileReader(); fr.onload = () => resolve(String(fr.result)); fr.onerror = () => reject(fr.error); fr.readAsDataURL(blob); });
+  }
+}
+export const voice = new Voice();
+
 // ---------- Sons (synthétisés, aucun fichier) ----------
 class Sfx {
   private ctx: AudioContext | null = null;
@@ -138,5 +202,7 @@ class Sfx {
   sticker() { [1046.5, 1318.5, 1568, 2093].forEach((f, i) => this.tone(f, i * 0.06, 0.25, "sine", 0.05)); }
   sunset() { [659.25, 587.33, 523.25, 392].forEach((f, i) => this.tone(f, i * 0.22, 0.5, "triangle", 0.08)); }
   breathIn() { this.tone(330, 0, 1.2, "sine", 0.03); }
+  drum() { this.tone(150, 0, 0.16, "triangle", 0.16); this.tone(95, 0.01, 0.22, "sine", 0.12); }
+  hop() { this.tone(520, 0, 0.09, "sine", 0.07); this.tone(780, 0.07, 0.1, "sine", 0.06); }
 }
 export const sfx = new Sfx();

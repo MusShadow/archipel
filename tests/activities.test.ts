@@ -1,7 +1,9 @@
 import { describe, expect, test } from "bun:test";
 import { ACTIVITIES } from "../src/activities";
 import { createProfile } from "../src/app";
-import { knownSet } from "../src/content";
+import { decodable, knownSet } from "../src/content";
+import { isAvailable } from "../src/host";
+import { SOUND_BY_WORD } from "../src/lexique";
 import { SKILL_BY_ID, makeRng } from "../src/core";
 import { FLAG_BY_CODE } from "../src/flags";
 import type { Ctx } from "../src/host";
@@ -37,6 +39,31 @@ describe("générateurs d'exercices", () => {
             if (mod.id === "syllabes" && it.kind === "mot") for (const s of it.word.syl) expect(it.tiles).toContain(s);
             if (mod.id === "syllabes" && it.kind === "fabrique") { expect(it.tiles).toContain(it.target[0]); expect(it.vowels).toContain(it.target.slice(1)); }
             if (mod.id === "drapeau") expect(FLAG_BY_CODE[it.target]).toBeDefined();
+            if (mod.id === "chants") {
+              if (it.kind === "frappe") { expect(it.target).toBe(it.word.n); expect(it.word.say.length).toBe(it.word.n); }
+              else {
+                const right = SOUND_BY_WORD[it.target];
+                const key = it.kind === "rime" ? "rime" : it.kind === "debut" ? "debut" : "son";
+                expect(right[key]).toBe(it.word[key]);
+                for (const c of it.choices) if (c !== it.target) expect(SOUND_BY_WORD[c][key]).not.toBe(it.word[key]);
+                if (it.kind === "son") expect(right.debut).not.toBe(it.word.debut);
+              }
+            }
+            if (mod.id === "lis") {
+              expect(Object.keys(it.scenes).length).toBe(3);
+              if (isAvailable(mod, p)) for (const x of it.words) if (typeof x !== "string") expect(decodable(x.gp, ctx.known)).toBe(true);
+            }
+            if (mod.id === "nenuphars") {
+              expect(it.target).toBeGreaterThanOrEqual(0); expect(it.target).toBeLessThanOrEqual(10);
+              if (it.kind === "plus") expect(it.target).toBe(it.start + it.steps);
+              if (it.kind === "moins") expect(it.target).toBe(it.start - it.steps);
+              if (it.kind === "bonds") expect(it.target).toBe(it.start + 2 * it.steps);
+            }
+            if (mod.id === "partage") {
+              expect(it.target * it.friends.length + it.rest).toBe(it.total);
+              expect(it.rest).toBeLessThan(it.friends.length);
+              if (it.kind === "reste") expect(it.rest).toBeGreaterThan(0);
+            }
           }
         }
       }

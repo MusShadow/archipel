@@ -1,15 +1,16 @@
 // Écrans de l'enfant : accueil, carte de l'archipel, gommettes, coin calme, carnet, coucher du soleil.
-import { ACTIVITIES, ACTIVITY_BY_ISLAND, ISLAND_SPOKEN, stickerArt } from "../activities";
+import { ACTIVITIES, ACTIVITIES_BY_ISLAND, ACTIVITY_BY_ID, ISLAND_SPOKEN, stickerArt } from "../activities";
 import { app } from "../app";
 import { FACES, ISLANDS, ISLAND_SHAPES, LANDMARKS, MAP_WAVES, MEDALS, PLUME_B } from "../art_static";
 import { DEFIS, knownSet } from "../content";
 import { makeRng, suggestMissions } from "../core";
 import { FLAG_BY_CODE, cap, flagSVG } from "../flags";
-import { activityScreen, type ActivityModule, type RoundSummary, type StickerSpec } from "../host";
+import { activityScreen, isAvailable, type ActivityModule, type RoundSummary, type StickerSpec } from "../host";
 import { nav } from "../nav";
-import { sfx, speech, type Profile } from "../services";
-import { avatarSVG, esc, fly, h, icon, plumeSVG, roundBtn, sleep } from "../ui";
+import { sfx, speech, voice, type Profile } from "../services";
+import { avatarSVG, esc, fly, h, icon, medallion, plumeSVG, roundBtn, sleep } from "../ui";
 import { longPress, parentGate, sheet } from "./common";
+import { grandDepart } from "./depart";
 
 const pick = <T,>(a: readonly T[]) => a[Math.floor(Math.random() * a.length)];
 const initial = (name: string) => (name.trim()[0] ?? "?").toUpperCase();
@@ -68,7 +69,8 @@ export function startScreen() {
     d.activeId = p.id;
     app.save();
     app.startSession();
-    mapScreen();
+    if (!p.departDone) grandDepart(p, () => mapScreen(), (back) => calmScreen(back));
+    else mapScreen();
   }
   app.show(screen);
 }
@@ -117,12 +119,16 @@ function islandSVG(isl: (typeof ISLANDS)[number], o: { mission: boolean; sleepin
   return `<g class="isl${o.sleeping ? " sleep" : ""}" data-isl="${id}" tabindex="0" role="button" aria-label="${esc(aria)}">${g}</g>`;
 }
 
+// Missions du jour : deux activités choisies par le planificateur (révisions dues, compétences « à la frontière »,
+// équilibre entre domaines, objectifs du parent), sur deux îles différentes si possible.
 function missionsFor(p: Profile): string[] {
   const plan = suggestMissions({
-    activities: ACTIVITIES.map((a) => ({ id: a.id, domain: a.domain, skills: a.skills })),
+    activities: ACTIVITIES.filter((a) => isAvailable(a, p)).map((a) => ({ id: a.id, domain: a.domain, skills: a.skills })),
     skills: p.skills, minutesByDomain: app.minutesThisWeek(p), goals: p.goals, now: Date.now(),
-  }, Math.random, 2);
-  return plan.map((id) => ACTIVITIES.find((a) => a.id === id)!.island);
+  }, Math.random, ACTIVITIES.length);
+  const out: string[] = [];
+  for (const id of plan) if (out.length < 2 && !out.some((o) => ACTIVITY_BY_ID[o].island === ACTIVITY_BY_ID[id].island)) out.push(id);
+  return out;
 }
 
 let lastLine = "";
@@ -135,8 +141,9 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
   const s = app.session!;
   if (app.timeUp() && !after?.sticker) { sessionEnd(); return; }
 
-  const active = new Set([...Object.keys(ACTIVITY_BY_ISLAND), "coeur"]);
-  const missions = missionsFor(p);
+  const active = new Set([...Object.keys(ACTIVITIES_BY_ISLAND), "coeur"]);
+  const missionActs = missionsFor(p);
+  const missions = missionActs.map((id) => ACTIVITY_BY_ID[id].island);
   const visited = s.activities.map((id) => ACTIVITIES.find((a) => a.id === id)?.island ?? "");
   const plume = `<g class="plume-map" data-plume="1" role="button" tabindex="0" aria-label="Réécouter Plume" style="cursor:pointer">`
     + `<rect x="262" y="94" width="72" height="50" rx="16" fill="#fff" stroke="#D8CDB8" stroke-width="1.5"/><polygon points="330,124 348,136 333,114" fill="#fff"/>`
@@ -208,10 +215,38 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
   function tapIsland(id: string, g: Element) {
     g.classList.remove("tapped"); void (g as SVGGraphicsElement).getBBox?.(); g.classList.add("tapped");
     if (id === "coeur") { sfx.tap(); go(() => calmScreen(() => mapScreen())); return; }
-    const mod = ACTIVITY_BY_ISLAND[id];
-    if (!mod) { sfx.soft(); say(`${cap(ISLAND_SPOKEN[id])} dort encore. Elle se réveillera bientôt !`); return; }
+    const acts = ACTIVITIES_BY_ISLAND[id];
+    if (!acts) { sfx.soft(); say(`${cap(ISLAND_SPOKEN[id])} dort encore. Elle se réveillera bientôt !`); return; }
     sfx.tap();
-    go(() => launch(mod));
+    if (acts.length === 1) { go(() => launch(acts[0])); return; }
+    islandSheet(id, acts);
+  }
+
+  // Une île, plusieurs activités : l'enfant choisit ; celle que Plume conseille est entourée.
+  function islandSheet(id: string, acts: ActivityModule<any>[]) {
+    const isl = ISLANDS.find((x) => x.id === id)!;
+    const advised = acts.find((a) => missionActs.includes(a.id)) ?? acts.find((a) => isAvailable(a, p!));
+    const cards = acts.map((a) => {
+      const ok = isAvailable(a, p!);
+      const b = h("button", { type: "button", class: `actcard${ok ? "" : " locked"}${a === advised ? " advised" : ""}`, "data-act": a.id, "aria-label": ok ? a.title : `${a.title}, pas encore ouverte` },
+        h("span", { class: "actart", html: a.card }),
+        h("span", { class: "acttitle" }, a.title),
+        a === advised ? h("span", { class: "advice" }, "Plume conseille") : null,
+        ok ? null : h("span", { class: "lockic", html: icon("lock", "#5B6475", 2.2) }));
+      b.addEventListener("click", () => {
+        if (!ok) { sfx.soft(); say(a.lockedReason ?? "Cette activité s'ouvrira bientôt."); return; }
+        sfx.tap(); sh.close(); go(() => launch(a));
+      });
+      return b;
+    });
+    const sh = sheet(screen,
+      h("div", { class: "row", style: "gap:12px" },
+        h("span", { style: "width:max(56px,calc(var(--u) * 72));height:max(56px,calc(var(--u) * 72));display:block", html: medallion(isl.host) }),
+        h("p", { class: "title", style: "font-size:max(24px,calc(var(--u) * 36));margin:0" }, isl.label)),
+      h("div", { class: "actcards" }, ...cards),
+      h("button", { type: "button", class: "bigbtn alt", onclick: () => { sh.close(); say("Choisis une île !"); } }, "Retour à la carte"));
+    const pitches = acts.filter((a) => isAvailable(a, p!)).map((a) => a.pitch).join(" ");
+    say(`${cap(ISLAND_SPOKEN[id])} ! ${pitches}${advised ? ` Je te conseille : ${advised.title.toLowerCase()}.` : ""}`);
   }
 
   app.show(screen, () => { window.clearInterval(timer); window.removeEventListener("resize", onResize); });
@@ -229,6 +264,8 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
     if (!s.greeted) {
       s.greeted = true;
       line = `Bonjour ${p!.name} ! Aujourd'hui, je te propose ${names.join(" ou ")}. Où veux-tu aller ?`;
+      // Le mot enregistré par le parent passe d'abord, s'il existe.
+      if (voice.has("bonjour")) { lastLine = line; voice.play("bonjour").then(() => { if (!leaving) speech.say(line); }); return; }
     } else if (app.sessionFraction() > 0.75 && !s.warned) {
       s.warned = true;
       line = "Le soleil commence à descendre : encore une petite mission, et on rentre !";
@@ -374,5 +411,6 @@ export function sessionEnd(opts: { early?: boolean } = {}) {
       h("button", { type: "button", class: "bigbtn", onclick: () => { sfx.tap(); nav.start(); } }, "Au revoir Plume !")));
   app.show(screen);
   sfx.sunset();
-  speech.say(`${opts.early ? "Merci pour ce voyage" : "Le soleil se couche. Bravo pour ce beau voyage"}, ${p.name} ! Ton défi pour la maison : ${defi}`);
+  const words = `${opts.early ? "Merci pour ce voyage" : "Le soleil se couche. Bravo pour ce beau voyage"}, ${p.name} ! Ton défi pour la maison : ${defi}`;
+  speech.say(words).then(() => (voice.has("aurevoir") ? voice.play("aurevoir") : undefined));
 }

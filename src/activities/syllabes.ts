@@ -103,6 +103,7 @@ export const syllabes: ActivityModule<SylItem> = {
   id: "syllabes", title: "L'atelier des syllabes", domain: "lecture", island: "mots", host: "mona",
   maxLevel: 5, items: 6,
   skills: ["LECT.SYL.ECOUTE", "LECT.SYL.FABRIQUE", "LECT.MOT.FABRIQUE", "LECT.MOT.LIRE"],
+  card: `<span class="reading" style="font-size:.62em;font-weight:700;color:#FF7F50">ma</span>`, pitch: "L'atelier des syllabes, pour fabriquer des syllabes et des mots.",
   startLevel: () => 1,
 
   generate(level, ctx) {

@@ -93,6 +93,26 @@ export const DEFIS: Record<string, string[]> = {
     "Cherche dans la maison un objet dont le nom commence par « ma ».",
     "Trouve un mot qui rime avec « moto ».",
   ],
+  chants: [
+    "Frappe dans tes mains les syllabes des prénoms de la famille.",
+    "Pendant le bain, trouve un mot qui rime avec « chapeau ».",
+    "Cherche dans la maison un objet qui commence comme « ballon ».",
+  ],
+  lis: [
+    "Au supermarché, lis un mot sur une boîte avec un adulte.",
+    "Cherche le petit mot « la » dans ton livre préféré.",
+    "Dicte une phrase sur ton animal préféré, puis relis-la avec un adulte.",
+  ],
+  nenuphars: [
+    "Saute sur les dalles du trottoir en comptant jusqu'à 10.",
+    "Dessine une marelle à la craie, de 0 à 10, et saute dessus.",
+    "Fais le compte à rebours de 10 à 0 avant de partir : décollage !",
+  ],
+  partage: [
+    "Au goûter, partage les biscuits de la famille : chacun la même part.",
+    "Distribue les cartes d'un jeu, une par une, à chaque joueur.",
+    "Partage 7 raisins entre 2 doudous : combien en reste-t-il ?",
+  ],
   drapeau: [
     "Cherche un drapeau dans un livre ou sur un emballage.",
     "Plie une feuille en trois et colorie un drapeau à trois bandes.",

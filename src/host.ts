@@ -2,7 +2,7 @@
 import { app } from "./app";
 import { PRAISE, PRAISE_AFTER_EFFORT, RETRY, knownSet } from "./content";
 import { applyEvidence, makeRng, newSkill, stepStaircase, type ActivityId, type DomainId, type Form, type Rng } from "./core";
-import { sfx, speech, type Profile } from "./services";
+import { sfx, speech, voice, type Profile } from "./services";
 import { burst, dots, h, icon, plumeSVG, roundBtn, sleep, wobble } from "./ui";
 
 export interface Item { skill: string; difficulty: number; form: Form; guess: number; prompt: string; level: number }
@@ -23,12 +23,28 @@ export interface ActivityModule<I extends Item = Item> {
   tip(item: I): string;
   // Phrase dite après une bonne réponse : elle redit ce qui a été trouvé (« Oui, c'est le drapeau du Japon ! »).
   success?(item: I): string;
+  // Carte de l'activité sur son île : petite illustration et phrase de présentation dite par Plume.
+  card: string;
+  pitch: string;
+  // Activité accessible à cet enfant ? (par exemple : lire des phrases demande de connaître assez de sons)
+  available?(p: Profile): boolean;
+  lockedReason?: string;
+}
+export const isAvailable = (mod: ActivityModule<any>, p: Profile) => !mod.available || mod.available(p);
+
+// Options du grand départ : peu d'exercices, et un escalier qui bouge à chaque réponse pour situer vite l'enfant.
+export interface RoundOptions { items?: number; fast?: boolean }
+function fastStep(s: { level: number; up: number; down: number }, independentSuccess: boolean, firstAttemptWrong: boolean, maxLevel: number) {
+  if (independentSuccess) return { level: Math.min(maxLevel, s.level + 1), up: 0, down: 0 };
+  if (firstAttemptWrong) return { level: Math.max(1, s.level - 1), up: 0, down: 0 };
+  return { ...s, up: 0 };
 }
 
 const pick = <T,>(a: T[]) => a[Math.floor(Math.random() * a.length)];
 
 export type ExitReason = "done" | "early" | "calm";
-export function activityScreen(mod: ActivityModule<any>, onExit: (summary: RoundSummary | null, reason: ExitReason) => void): { el: HTMLElement; cleanup: () => void } {
+export function activityScreen(mod: ActivityModule<any>, onExit: (summary: RoundSummary | null, reason: ExitReason) => void, opts: RoundOptions = {}): { el: HTMLElement; cleanup: () => void } {
+  const total = opts.items ?? mod.items;
   const p = app.profile!;
   const rng = makeRng((Date.now() ^ Math.floor(Math.random() * 1e9)) >>> 0);
   const ctx: Ctx = { profile: p, rng, known: knownSet(p.knownK), now: Date.now() };
@@ -60,15 +76,15 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     const now = Date.now();
     p.skills[current.skill] = applyEvidence(p.skills[current.skill] ?? newSkill(), ev, now);
     p.log.push({ t: now, activity: mod.id, level: current.level, skill: current.skill, correct, hints, form: current.form, ms: now - itemStart });
-    stair = stepStaircase(stair, correct && hints === 0, !correct, mod.maxLevel);
+    stair = (opts.fast ? fastStep : stepStaircase)(stair, correct && hints === 0, !correct, mod.maxLevel);
     p.stairs[mod.id] = stair;
     app.save();
   }
 
   async function next() {
     if (!alive) return;
-    if (index >= mod.items || app.timeUp()) return finish();
-    dotsHost.replaceChildren(dots(mod.items, index));
+    if (index >= total || (!opts.fast && app.timeUp())) return finish();
+    dotsHost.replaceChildren(dots(total, index));
     const item = mod.generate(stair.level, ctx);
     current = item;
     // Crochet pour les tests de bout en bout (inexistant en usage normal).
@@ -111,8 +127,11 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
       const line = mod.success?.(current);
       const pool = firstTry ? PRAISE : PRAISE_AFTER_EFFORT;
       const praise = pick(line ? pool.filter((x) => !/^(Oui|Exactement)/.test(x)) : pool);
-      const text = !line ? praise : firstTry && Math.random() < 0.6 ? line : `${line} ${praise}`;
-      speech.say(text).then(() => sleep(250)).then(() => { index++; next(); });
+      // La voix enregistrée par le parent remplace parfois l'encouragement de Plume.
+      const clip = firstTry ? "bravo" : "effort";
+      const parent = voice.has(clip) && Math.random() < 0.5;
+      const text = parent ? (line ?? "") : !line ? praise : firstTry && Math.random() < 0.6 ? line : `${line} ${praise}`;
+      speech.say(text).then(() => (parent ? voice.play(clip) : undefined)).then(() => sleep(250)).then(() => { index++; next(); });
     } else {
       attempts++; summary.errors++; errorsInRow++;
       sfx.soft();

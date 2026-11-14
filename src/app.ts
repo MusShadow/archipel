@@ -88,7 +88,7 @@ export interface Intake { name: string; ageMonths: number; color: string; readin
 export function createProfile(i: Intake): Profile {
   const p: Profile = {
     id: Math.random().toString(36).slice(2, 10), name: i.name.trim() || "Enfant", ageMonths: i.ageMonths, color: i.color, createdAt: Date.now(),
-    knownK: i.readingK, skills: {}, stairs: {}, flags: {}, log: [], stickers: [], sessions: [], goals: [],
+    knownK: i.readingK, skills: {}, stairs: {}, flags: {}, log: [], stickers: [], sessions: [], goals: [], departDone: false,
   };
   applyPriors(p, i);
   return p;
@@ -112,7 +112,25 @@ export function applyPriors(p: Profile, i: Intake) {
   set("VOY.CARTE.CONTINENT", [-0.5, 0, 0.6][i.flags]);
   set("VOY.DRAPEAU.LIRE", readLevel >= 2 ? 0 : -1.5);
   set("VOY.DRAPEAU.JUMEAUX", [-1.5, -0.5, 0.5][i.flags]);
+  set("LECT.PHONO.SYLLABES", [-0.6, 0.4, 1.2, 1.8][readLevel]);
+  set("LECT.PHONO.RIME", [-0.8, 0, 0.8, 1.4][readLevel]);
+  set("LECT.PHONO.ATTAQUE", [-1, -0.2, 0.6, 1.2][readLevel]);
+  set("LECT.PHONO.PHONEME", [-1.5, -0.6, 0.4, 1][readLevel]);
+  set("LECT.GROUPE.LIRE", [-3.5, -3, -1, 0.4][readLevel]);
+  set("LECT.PHRASE.LIRE", [-4, -3.5, -1.5, 0][readLevel]);
+  set("NUM.LIGNE.REPERE", c >= 10 ? 0.6 : -0.6);
+  set("NUM.LIGNE.ORDRE", c >= 20 ? 0.6 : c >= 10 ? 0 : -1);
+  set("NUM.LIGNE.PLUS", c >= 20 ? 0.2 : -1);
+  set("NUM.LIGNE.MOINS", c >= 30 ? 0.2 : -1.2);
+  set("NUM.LIGNE.BONDS", c >= 60 ? 0.6 : -1.5);
+  set("NUM.PARTAGE.EGAL", c >= 10 ? 0.2 : -0.6);
+  set("NUM.PARTAGE.RESTE", c >= 20 ? -0.2 : -1.2);
+  set("NUM.PARTAGE.COMBIEN", c >= 30 ? 0 : -1.5);
   p.stairs.syllabes = { level: [1, 1, 2, 4][readLevel], up: 0, down: 0 };
+  p.stairs.chants = { level: [1, 2, 3, 3][readLevel], up: 0, down: 0 };
+  p.stairs.lis = { level: readLevel >= 3 ? 2 : 1, up: 0, down: 0 };
+  p.stairs.nenuphars = { level: c >= 30 ? 3 : c >= 10 ? 2 : 1, up: 0, down: 0 };
+  p.stairs.partage = { level: c >= 20 ? 2 : 1, up: 0, down: 0 };
   p.stairs.marche = { level: c >= 60 ? 4 : c >= 30 ? 4 : c >= 20 ? 3 : c >= 10 ? 2 : 1, up: 0, down: 0 };
   p.stairs.drapeau = { level: [1, 2, 3][i.flags], up: 0, down: 0 };
   for (const s of Object.values(p.skills)) { s.n = 0; }

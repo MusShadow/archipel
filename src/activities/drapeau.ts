@@ -81,6 +81,7 @@ export const drapeau: ActivityModule<FlagItem> = {
   id: "drapeau", title: "Le drapeau mystère", domain: "voyages", island: "port", host: "plume",
   maxLevel: 5, items: 6,
   skills: ["VOY.DRAPEAU.ECOUTE", "VOY.CARTE.CONTINENT", "VOY.DRAPEAU.LIRE", "VOY.DRAPEAU.JUMEAUX"],
+  card: `<span style="display:block;width:1.3em;height:.87em">${flagSVG("FR", false)}</span>`, pitch: "Le drapeau mystère, pour découvrir les pays du monde.",
   startLevel: () => 1,
 
   generate(stairLevel, ctx) {

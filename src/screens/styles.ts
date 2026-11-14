@@ -16,6 +16,59 @@ export const SCREENS_CSS = `
 .lockbtn{position:absolute;right:max(12px,calc(var(--u) * 24));bottom:max(12px,calc(var(--u) * 24));display:flex;align-items:center;gap:8px;border:none;background:none;cursor:pointer;padding:6px;color:#5B6475;font-size:13px;touch-action:none}
 .lockbtn .ring{width:52px;height:52px;border-radius:50%;background:conic-gradient(var(--turq-d) calc(var(--p,0) * 1turn),#fff 0);display:flex;align-items:center;justify-content:center;border:2px solid var(--line)}
 .lockbtn .ring>span{width:42px;height:42px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
+/* Images (emoji du système) et cartes à choisir */
+.emo{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;line-height:1;display:inline-block}
+.pic{width:max(84px,calc(var(--u) * 130));height:max(84px,calc(var(--u) * 130));border-radius:24px;background:#fff;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:max(52px,calc(var(--u) * 84))}
+.pic.big{width:max(110px,calc(var(--u) * 180));height:max(110px,calc(var(--u) * 180));font-size:max(70px,calc(var(--u) * 120))}
+.pickcard{width:max(110px,calc(var(--u) * 200));height:max(100px,calc(var(--u) * 176));font-size:max(56px,calc(var(--u) * 96))}
+.pair{display:flex;gap:.08em;font-size:.82em}
+.stack{display:flex;flex-direction:column;align-items:center;line-height:.9;font-size:.86em}
+.numcard{width:max(76px,calc(var(--u) * 130));height:max(76px,calc(var(--u) * 130))}
+.numcard .title{font-size:max(36px,calc(var(--u) * 64))}
+.readline{flex-wrap:wrap;justify-content:center;gap:.28em;font-size:max(38px,calc(var(--u) * 76))}
+.mute{color:#B4BBC8}
+.w{white-space:nowrap}
+.sight{border-bottom:max(2px,calc(var(--u) * 4)) dotted var(--turq);padding:0 .04em}
+/* Tambour des chants de Mona */
+.drum{width:max(120px,calc(var(--u) * 200));height:max(110px,calc(var(--u) * 184));border:none;background:none;padding:0;cursor:pointer}
+.drum.hit{animation:drumhit .18s ease}
+@keyframes drumhit{50%{transform:scale(.92)}}
+.beats{display:flex;gap:max(10px,calc(var(--u) * 16));min-height:max(30px,calc(var(--u) * 44));align-items:center}
+.beat{width:max(26px,calc(var(--u) * 40));height:max(26px,calc(var(--u) * 40));border-radius:50%;border:3px solid var(--coral)}
+.beat.on{background:var(--coral)}
+.beat.off{border-color:var(--line);border-style:dashed}
+.beat.ghost{border-style:dashed;background:#FFE0D3}
+/* Nénuphars */
+.pond{position:relative;display:flex;gap:max(2px,calc(var(--u) * 6));padding:max(46px,calc(var(--u) * 80)) max(8px,calc(var(--u) * 18)) max(10px,calc(var(--u) * 18));background:#BFE8EE;border-radius:28px;max-width:100%}
+.pad{position:relative;width:min(7.6vw,calc(var(--u) * 92));aspect-ratio:5/3;border:none;background:none;padding:0;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.pad:disabled{cursor:default}
+.padnum{position:relative;font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:800;font-size:max(18px,calc(var(--u) * 32));color:#1E4D2B}
+.pad.glow{border-radius:50%}
+.frog{position:absolute;left:0;top:0;width:min(7vw,calc(var(--u) * 84));height:min(6vw,calc(var(--u) * 72));transition:none;pointer-events:none;z-index:2}
+.frog.ready{transition:transform .22s cubic-bezier(.3,.7,.3,1)}
+.frog.hop>svg{animation:hop .26s ease}
+@keyframes hop{40%{transform:translateY(-22%) scale(1.05)}}
+/* Partage du goûter */
+.cookies{flex-wrap:wrap;gap:6px;min-height:max(70px,calc(var(--u) * 110));max-width:min(92vw,calc(var(--u) * 820))}
+.cookie{display:block;width:max(40px,calc(var(--u) * 64));height:max(40px,calc(var(--u) * 64))}
+.cookie.small{width:max(28px,calc(var(--u) * 44));height:max(28px,calc(var(--u) * 44));cursor:pointer}
+.plates{gap:max(10px,calc(var(--u) * 22));align-items:stretch}
+.plate{display:flex;flex-direction:column;align-items:center;gap:8px;border:none;background:none;cursor:pointer;padding:0}
+.friend{display:block;width:max(56px,calc(var(--u) * 84));height:max(56px,calc(var(--u) * 84))}
+.dish{display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:2px;width:max(120px,calc(var(--u) * 210));min-height:max(70px,calc(var(--u) * 110));padding:8px;background:#fff;border:max(3px,calc(var(--u) * 5)) solid #E4D9C5;border-radius:50%}
+.basket .dish{border-radius:18px;border-style:dashed;background:#FFF0C9}
+/* Choix d'activité sur une île */
+.actcards{display:flex;gap:max(10px,calc(var(--u) * 18));flex-wrap:wrap;justify-content:center}
+.actcard{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px;width:max(130px,calc(var(--u) * 190));padding:max(12px,calc(var(--u) * 18)) 10px;border-radius:22px;border:3px solid var(--line);background:#fff;cursor:pointer}
+.actcard.advised{border-color:var(--turq-d);box-shadow:0 0 0 5px rgba(31,169,181,.25)}
+.actcard.locked{opacity:.55}
+.actart{font-size:max(48px,calc(var(--u) * 72));line-height:1;display:flex;align-items:center;justify-content:center;height:1.1em}
+.acttitle{font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:700;font-size:max(16px,calc(var(--u) * 21));line-height:1.15;text-align:center}
+.advice{position:absolute;top:-12px;background:var(--turq-d);color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px;white-space:nowrap}
+.lockic{position:absolute;top:8px;right:8px;width:26px;height:26px;display:flex}
+.goalbtn{border:none;background:none;font-size:20px;line-height:1;color:#C9A227;cursor:pointer;padding:2px 4px}
+.goalbtn.on{color:#E0A400}
+.depart h1{margin:0}
 /* Carte */
 .mapwrap{position:absolute;inset:0;background:#BFE8EE;overflow:hidden}
 .mapwrap>svg{position:absolute;inset:0;width:100%;height:100%;display:block}

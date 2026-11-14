@@ -6,16 +6,17 @@ Un archipel d'îles à explorer avec Plume, un colibri voyageur : nombres, lectu
 Principes : pas de publicité, pas d'achat, pas de compte, pas d'inconnus, pas d'accès libre à Internet.
 Les progrès restent sur l'appareil. Les séances sont courtes (12 minutes par défaut) et se terminent par un défi à faire hors écran.
 
-## Livraison 1 (version jouable)
+## Livraison 1
 
-- **Carte de l'archipel** : missions proposées par le planificateur (révisions dues, compétences « à la frontière », équilibre entre domaines), soleil qui mesure le temps de séance, îles encore endormies.
-- **Le marché de Basile** (Nombres) : voir sans compter, constituer une collection, compléter à 10, dizaines et unités.
-- **L'atelier des syllabes** (Mots) : entendre une syllabe, la fabriquer, écrire un mot avec des syllabes, lire un mot et trouver son image. Seuls les sons déjà connus sont utilisés.
-- **Le drapeau mystère** (Port des Voyages) : reconnaître un drapeau entendu, lire le nom d'un pays, distinguer des drapeaux presque jumeaux, placer un pays sur une carte du monde simplifiée. 50 drapeaux.
-- **Moteur adaptatif** : modèle de type Elo par compétence (avec prise en compte du hasard et des indices), escalier de difficulté (2 réussites seules : plus dur ; 2 erreurs : plus facile), révisions espacées (1, 3, 7, 14, 30 jours), états de maîtrise (découverte, en cours, acquise, consolidée).
-- **Plume** donne des indices en 4 étapes, du rappel de la consigne jusqu'à la réponse qui brille. Après 4 erreurs d'affilée, une pause au **coin calme** est proposée (respiration avec Pico).
-- **Gommettes** jamais promises à l'avance, toujours accompagnées de leur raison ; **carnet d'explorateur** et passeport des drapeaux.
-- **Espace parent** (appui long sur le cadenas puis code) : suivi par compétence, temps par domaine, pistes pour la semaine, profils, réglages (durée, voix, débit, sons connus, mode accompagné), sauvegarde et restauration.
+- **Le grand départ** : la première aventure de l'enfant, trois mini-parcours dont la difficulté bouge à chaque réponse, pour régler les niveaux de départ en jouant.
+- **Carte de l'archipel** : missions proposées par le planificateur (révisions dues, compétences « à la frontière », équilibre entre domaines, objectifs du parent), soleil qui mesure le temps de séance, choix de l'activité sur chaque île.
+- **Île des Nombres** : le marché de Basile (quantités, compléments à 10, dizaines), les nénuphars (ligne numérique, bonds en avant et en arrière, de 2 en 2), le partage du goûter (parts égales, reste, combien chacun).
+- **Île des Mots** : les chants de Mona (syllabes frappées, rimes, début et premier son des mots), l'atelier des syllabes (entendre, fabriquer, écrire), lis et trouve (mots, groupes de mots et petites phrases déchiffrables, lettres muettes en gris, mots-outils soulignés).
+- **Port des Voyages** : le drapeau mystère, 50 drapeaux et une carte du monde simplifiée.
+- **Moteur adaptatif** : modèle de type Elo par compétence (hasard et indices pris en compte), escalier de difficulté, révisions espacées (1, 3, 7, 14, 30 jours), états de maîtrise (découverte, en cours, acquise, consolidée).
+- **Plume** donne des indices en 4 étapes ; après 4 erreurs d'affilée, une pause au **coin calme** est proposée (respiration avec Pico).
+- **Gommettes** jamais promises à l'avance, toujours expliquées ; **carnet d'explorateur** et passeport des drapeaux ; un défi hors écran à chaque fin de séance.
+- **Espace parent** (appui long sur le cadenas puis code, ou « Code oublié ? ») : suivi par compétence, objectifs (trois au plus), profils, réglages (durée, voix, débit, sons connus, mode accompagné), **studio voix** (vos encouragements enregistrés), sauvegarde et restauration.
 
 ## Développement
 

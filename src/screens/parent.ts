@@ -5,7 +5,7 @@ import { DEFIS, GRAPHEME_ORDER, READING_LEVELS } from "../content";
 import { DAY, DOMAINS, MASTERY_LABEL, SKILLS, masteryOf, type DomainId, type Mastery } from "../core";
 import { FLAG_BY_CODE, FLAGS } from "../flags";
 import { nav } from "../nav";
-import { defaultData, frenchVoiceLabel, normalize, saveData, speech, storageFailed, type Profile } from "../services";
+import { VOICE_SLOTS, defaultData, frenchVoiceLabel, normalize, saveData, speech, storageFailed, voice, type Profile } from "../services";
 import { avatarSVG, h, plumeSVG } from "../ui";
 import { pinPad, sheet } from "./common";
 
@@ -118,14 +118,15 @@ function setupFlow() {
 }
 
 // ---------- Espace parent ----------
-type Tab = "suivi" | "profils" | "reglages" | "donnees";
+type Tab = "suivi" | "profils" | "reglages" | "voix" | "donnees";
 const TABS: { id: Tab; label: string }[] = [
-  { id: "suivi", label: "Suivi" }, { id: "profils", label: "Profils" }, { id: "reglages", label: "Réglages" }, { id: "donnees", label: "Données" },
+  { id: "suivi", label: "Suivi" }, { id: "profils", label: "Profils" }, { id: "reglages", label: "Réglages" }, { id: "voix", label: "Studio voix" }, { id: "donnees", label: "Données" },
 ];
 
 function parentSpace(tab?: string) {
   let current: Tab = (TABS.find((t) => t.id === tab)?.id) ?? "suivi";
   let pid = app.profile?.id ?? null;
+  const goalMsg = h("span", { style: "display:block;color:#B42318;margin-top:4px" });
   const body = h("div", { class: "p-wrap" });
   const tabsEl = h("div", { class: "p-tabs", role: "tablist" });
   const kidsEl = h("div", { class: "p-row" });
@@ -150,6 +151,7 @@ function parentSpace(tab?: string) {
     if (current === "suivi") body.append(...(p ? suivi(p) : [h("p", {}, "Aucun profil.")]));
     if (current === "profils") body.append(...profils());
     if (current === "reglages") body.append(...reglages(p));
+    if (current === "voix") body.append(...studio());
     if (current === "donnees") body.append(...donnees());
     body.scrollTop = 0;
   }
@@ -187,7 +189,15 @@ function parentSpace(tab?: string) {
       const rows = SKILLS.filter((s) => s.domain === d && s.activity).map((s) => {
         const m = masteryOf(s, p.skills[s.id]);
         const n = p.skills[s.id]?.n ?? 0;
-        return h("div", { class: "skillrow" }, h("span", {}, s.label), h("span", { class: "p-row", style: "gap:8px;flex-wrap:nowrap" }, n ? h("span", { class: "muted" }, `${n} essai${n > 1 ? "s" : ""}`) : null, h("span", { class: "chip", style: MASTERY_STYLE[m] }, MASTERY_LABEL[m])));
+        const goal = p.goals.includes(s.id);
+        const star = h("button", { type: "button", class: `goalbtn${goal ? " on" : ""}`, "aria-pressed": String(goal), "aria-label": goal ? `Retirer l'objectif : ${s.label}` : `Choisir comme objectif : ${s.label}`, title: "Objectif de la semaine" }, goal ? "★" : "☆");
+        star.addEventListener("click", () => {
+          if (goal) p.goals = p.goals.filter((g) => g !== s.id);
+          else if (p.goals.length >= 3) { goalMsg.textContent = "Trois objectifs au plus : retirez-en un d'abord."; return; }
+          else p.goals.push(s.id);
+          app.save(); render();
+        });
+        return h("div", { class: "skillrow" }, h("span", { class: "p-row", style: "gap:6px;flex-wrap:nowrap" }, star, h("span", {}, s.label)), h("span", { class: "p-row", style: "gap:8px;flex-wrap:nowrap" }, n ? h("span", { class: "muted" }, `${n} essai${n > 1 ? "s" : ""}`) : null, h("span", { class: "chip", style: MASTERY_STYLE[m] }, MASTERY_LABEL[m])));
       });
       const levels = acts.map((a) => `${a.title} : niveau ${p.stairs[a.id]?.level ?? 1} sur ${a.maxLevel}`).join(" · ");
       return h("div", { class: "p-card" }, h("h2", { style: `color:${def.color}` }, def.label), ...rows, h("p", { class: "muted", style: "margin-top:8px" }, levels));
@@ -217,8 +227,12 @@ function parentSpace(tab?: string) {
         return h("div", { class: "p-item" }, h("div", { class: "grow" }, h("b", {}, fmtDate(s.start)), h("div", { class: "muted" }, names || "—")), h("span", { class: "muted" }, `${Math.max(1, round(mins))} min`));
       })) : h("p", { class: "muted" }, "Aucune séance pour l'instant."));
 
+    const goalNames = p.goals.map((g) => SKILLS.find((s) => s.id === g)?.label).filter(Boolean);
     return [
       h("p", { class: "muted" }, `${p.name}, ${ageLabel(p.ageMonths)}. Les compétences passent par : découverte, en cours, acquise, puis consolidée (réussie seul, sous deux formes, et encore quelques jours plus tard).`),
+      h("div", { class: "note", style: "background:#F2F7FF;border-color:#C9DAF5" },
+        h("b", {}, "Objectifs : "), goalNames.length ? `${goalNames.join(" · ")}. ` : "aucun pour l'instant. ",
+        "Touchez l'étoile d'une compétence (trois au plus) : Plume proposera plus souvent les activités qui la travaillent.", goalMsg),
       h("div", { class: "p-grid" }, week1, ideasCard),
       h("div", { class: "p-grid" }, ...skillCards, flagsCard),
       hist,
@@ -232,6 +246,7 @@ function parentSpace(tab?: string) {
       h("span", { style: "width:44px;height:44px;flex:0 0 auto", html: avatarSVG(initial(p.name), p.color) }),
       h("div", { class: "grow" }, h("b", {}, p.name), h("div", { class: "muted" }, `${ageLabel(p.ageMonths)} · ${p.stickers.length} gommette${p.stickers.length > 1 ? "s" : ""} · profil créé le ${new Date(p.createdAt).toLocaleDateString("fr-FR")}`)),
       h("button", { type: "button", class: "pbtn ghost", onclick: () => editProfile(p) }, "Modifier"),
+      h("button", { type: "button", class: "pbtn ghost", title: "La prochaine séance commencera par le grand départ", onclick: (e: Event) => { p.departDone = false; app.save(); (e.currentTarget as HTMLElement).textContent = "Prévu à la prochaine séance"; } }, p.departDone === false ? "Grand départ prévu" : "Refaire le grand départ"),
       h("button", { type: "button", class: "pbtn danger", onclick: () => deleteProfile(p) }, "Supprimer"))));
     const addCard = h("div", { class: "p-card" });
     const showAdd = () => addCard.replaceChildren(h("h2", {}, "Ajouter un enfant"), intakeForm({
@@ -315,6 +330,43 @@ function parentSpace(tab?: string) {
     cards.push(pinCard);
     return [h("div", { class: "p-grid" }, ...cards)];
   }
+  // ----- Studio voix -----
+  function studio(): HTMLElement[] {
+    const intro = h("div", { class: "p-card" }, h("h2", {}, "Votre voix dans Archipel"),
+      h("p", { class: "muted" }, "Enregistrez quelques phrases courtes : Archipel les fait entendre de temps en temps, à la place de Plume. Encouragez l'effort plutôt que le talent (« tu as bien cherché » plutôt que « tu es fort »). Les enregistrements restent sur cet appareil et ne sont pas dans la sauvegarde texte."));
+    if (!voice.canRecord) {
+      return [intro, h("div", { class: "note" }, "Le micro n'est pas disponible ici. Ouvrez Archipel par son icône sur l'iPad (pas depuis la page Claude), puis revenez dans ce studio.")];
+    }
+    const rows = VOICE_SLOTS.map((slot) => {
+      const status = h("span", { class: "muted" }, voice.has(slot.id) ? "Enregistré" : "Pas encore enregistré");
+      const rec = h("button", { type: "button", class: "pbtn" }, voice.has(slot.id) ? "Réenregistrer" : "Enregistrer");
+      const play = h("button", { type: "button", class: "pbtn ghost", disabled: !voice.has(slot.id) }, "Écouter");
+      const del = h("button", { type: "button", class: "pbtn danger", disabled: !voice.has(slot.id), "aria-label": `Supprimer : ${slot.label}` }, "Supprimer");
+      let stopNow: (() => void) | null = null;
+      rec.addEventListener("click", async () => {
+        if (stopNow) { stopNow(); return; }
+        try {
+          rec.textContent = "Arrêter";
+          status.textContent = "Parlez maintenant… (6 secondes au plus)";
+          const data = await voice.record(6000, (stop) => { stopNow = stop; });
+          stopNow = null;
+          status.textContent = voice.set(slot.id, data) ? "Enregistré" : "Mémoire pleine : enregistrement non gardé";
+          render();
+        } catch {
+          stopNow = null;
+          rec.textContent = "Enregistrer";
+          status.textContent = "Micro refusé ou indisponible. Autorisez le micro pour cette page dans Safari, puis réessayez.";
+        }
+      });
+      play.addEventListener("click", () => voice.play(slot.id));
+      del.addEventListener("click", () => { voice.remove(slot.id); render(); });
+      return h("div", { class: "p-item" },
+        h("div", { class: "grow" }, h("b", {}, slot.label), h("div", { class: "muted" }, `Idée : « ${slot.idea} »`), status),
+        rec, play, del);
+    });
+    return [intro, h("div", { class: "p-card" }, h("div", { class: "p-list" }, ...rows))];
+  }
+
   function changePin() {
     let first = "";
     let s: { close: () => void } | null = null;

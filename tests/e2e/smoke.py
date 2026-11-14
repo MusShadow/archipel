@@ -1,10 +1,10 @@
-"""Test de bout en bout : premier lancement, carte, trois activités, gommette, carnet, coin calme,
-fin de séance et espace parent, avec captures d'écran sur iPad paysage, iPad portrait et téléphone.
+"""Test de bout en bout : premier lancement, grand départ, carte, les sept activités, gommettes, carnet,
+coin calme, autres formats d'écran, fin de séance, espace parent (objectifs, studio voix, code oublié).
 
 Usage : python3 tests/e2e/smoke.py [dist/index.html] [dossier_captures]
 La synthèse vocale est simulée (réponses instantanées) et l'horloge peut être avancée.
 """
-import os, sys, json, time
+import os, re, sys, json
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
@@ -35,20 +35,23 @@ def shot(page, name):
     page.wait_for_timeout(350)
     page.screenshot(path=str(OUT / f"{name}.png"))
 
-def item(page):
+def state(page):
     return page.evaluate("() => JSON.parse(JSON.stringify({ item: window.__archipelTest.item, mod: window.__archipelTest.mod }))")
 
+def click_text(page, text):
+    page.get_by_text(text, exact=False).first.click()
+
 def solve(page):
-    """Répond correctement à l'exercice courant (ou explore la carte du monde)."""
-    st = item(page)
+    """Répond correctement à l'exercice courant."""
+    st = state(page)
     it, mod = st["item"], st["mod"]
     k = it.get("kind")
     if mod == "drapeau":
         if k == "carte":
             for cont in ["europe", "afrique", "asie", "amnord", "amsud", "oceanie"]:
                 page.click(f'[data-cont="{cont}"]', force=True)
-                page.wait_for_timeout(120)
-                if page.evaluate("() => window.__archipelTest.item !== null && !!document.querySelector('.pin[style=\"\"]')"):
+                page.wait_for_timeout(150)
+                if page.evaluate("() => !!document.querySelector('.pin[style=\"\"]')"):
                     break
         else:
             page.click(f'.stage [data-code="{it["target"]}"]')
@@ -74,23 +77,52 @@ def solve(page):
                 page.evaluate("(t) => [...document.querySelectorAll('.stage .tile')].find(e => e.dataset.t === t && !e.classList.contains('used')).click()", s)
         else:
             page.click(f'.stage .card[data-t="{it["target"]}"]')
+    elif mod == "chants":
+        if k == "frappe":
+            for _ in range(it["target"]):
+                page.click(".drum")
+            page.click("[aria-label=\"C'est prêt\"]")
+        else:
+            page.click(f'.stage [data-t="{it["target"]}"]')
+    elif mod == "lis":
+        page.click(f'.stage [data-t="{it["target"]}"]')
+    elif mod == "nenuphars":
+        if k == "manque":
+            page.click(f'.stage [data-c="{it["target"]}"]')
+        else:
+            page.click(f'.pad[data-n="{it["target"]}"]')
+            page.wait_for_timeout(300 * max(1, it.get("steps", 1)) + 200)
+    elif mod == "partage":
+        if k == "combien":
+            page.click(f'.stage [data-c="{it["target"]}"]')
+        else:
+            for i in range(len(it["friends"])):
+                for _ in range(it["target"]):
+                    page.click(f'.plate[data-i="{i}"]')
+            for _ in range(it.get("rest", 0)):
+                page.click(".plate.basket")
+            page.click("[aria-label=\"C'est prêt\"]")
 
 def wrong(page):
     """Donne volontairement une mauvaise réponse (pour tester indices et relances)."""
-    st = item(page)
+    st = state(page)
     it, mod = st["item"], st["mod"]
-    if it.get("choices"):
-        bad = [c for c in it["choices"] if c != (it.get("n") if mod == "marche" else it.get("target"))]
-        sel = f'[data-n="{bad[0]}"]' if mod == "marche" else (f'[data-code="{bad[0]}"]' if mod == "drapeau" else f'[data-t="{bad[0]}"]')
-        page.click(f".stage {sel}")
-        return True
-    return False
+    if not it.get("choices"):
+        return False
+    answer = it.get("n") if mod == "marche" else it.get("target")
+    bad = [c for c in it["choices"] if c != answer][0]
+    attr = {"marche": "data-n", "drapeau": "data-code", "nenuphars": "data-c", "partage": "data-c"}.get(mod, "data-t")
+    page.click(f'.stage [{attr}="{bad}"]')
+    return True
 
-def play_round(page, prefix, mistakes=0):
+def on_map(page):
+    return page.locator(".mapwrap").count() > 0 and page.locator(".overlay .actcards").count() == 0
+
+def play_round(page, prefix, mistakes=0, max_steps=40):
     seen = 0
-    for step in range(40):
+    for _ in range(max_steps):
         page.wait_for_timeout(150)
-        if page.locator(".sticker-big").count() or page.locator(".mapwrap").count():
+        if page.locator(".sticker-big").count() or on_map(page) or page.locator("text=On y va").count() or page.locator("text=Vers l'archipel").count():
             break
         if page.locator('[aria-label="Continuer"]').count():
             if seen == 0:
@@ -109,22 +141,37 @@ def play_round(page, prefix, mistakes=0):
         try:
             solve(page)
         except Exception as e:  # l'exercice a pu changer entre-temps
-            print("solve:", e)
+            print("solve:", str(e).splitlines()[0])
         seen += 1
         page.wait_for_timeout(500)
     return seen
 
+def store_sticker(page):
+    if page.locator(".sticker-big").count():
+        page.click(".sticker-big")
+        page.wait_for_timeout(900)
+
+def open_activity(page, island, act=None, shot_name=None):
+    page.click(f'[data-isl="{island}"]', force=True)
+    page.wait_for_timeout(300)
+    if act:
+        if shot_name:
+            shot(page, shot_name)
+        page.click(f'.actcard[data-act="{act}"]')
+        page.wait_for_timeout(300)
+
 with sync_playwright() as pw:
-    browser = pw.chromium.launch(executable_path=CHROME, headless=True, args=["--autoplay-policy=no-user-gesture-required"])
-    ctx = browser.new_context(viewport={"width": 1180, "height": 820}, device_scale_factor=1, has_touch=False)
+    browser = pw.chromium.launch(executable_path=CHROME, headless=True, args=[
+        "--autoplay-policy=no-user-gesture-required", "--use-fake-ui-for-media-stream", "--use-fake-device-for-media-stream"])
+    ctx = browser.new_context(viewport={"width": 1180, "height": 820}, device_scale_factor=1)
     ctx.add_init_script(INIT)
     page = ctx.new_page()
     page.on("pageerror", lambda e: errors.append(f"pageerror: {e}"))
-    page.on("console", lambda m: errors.append(f"console.{m.type}: {m.text}") if m.type == "error" and "fonts.g" not in m.text and "ERR_" not in m.text else None)
+    page.on("console", lambda m: errors.append(f"console.{m.type}: {m.text}") if m.type == "error" and "fonts.g" not in m.text and "ERR_" not in m.text and "manifest" not in m.text and "icon-" not in m.text else None)
     page.goto(PAGE.as_uri())
     page.wait_for_timeout(400)
 
-    # Premier lancement
+    # Premier lancement (parent)
     shot(page, "01-bienvenue")
     page.click("text=Commencer")
     for d in "1234" + "1234":
@@ -139,56 +186,67 @@ with sync_playwright() as pw:
     page.click("text=C'est parti pour Lou")
     shot(page, "03-accueil")
 
-    # Carte
+    # Grand départ (première séance de l'enfant)
     page.click(".kid")
+    page.wait_for_timeout(400)
+    shot(page, "04-grand-depart")
+    page.click("text=C'est parti")
+    for n in range(3):
+        page.wait_for_timeout(300)
+        if n == 0:
+            shot(page, "04b-grand-depart-etape")
+        page.click("text=On y va")
+        play_round(page, f"04c-depart-{n}")
+    page.wait_for_timeout(300)
+    shot(page, "04d-passeport")
+    page.click("text=Vers l'archipel")
     page.wait_for_timeout(500)
-    shot(page, "04-carte")
-    page.click('[data-isl="enigmes"]', force=True)  # île endormie
-    page.wait_for_timeout(200)
+    shot(page, "05-carte")
 
-    # Le drapeau mystère
-    page.click('[data-isl="port"]', force=True)
-    n = play_round(page, "05-drapeau")
-    print("drapeau, exercices joués :", n)
-    if page.locator(".sticker-big").count():
-        shot(page, "06-gommette")
-        page.click(".sticker-big")
-        page.wait_for_timeout(900)
+    # Île des Nombres : les trois activités
+    open_activity(page, "nombres", "nenuphars", "06-ile-nombres")
+    print("nénuphars :", play_round(page, "07-nenuphars", mistakes=1))
+    store_sticker(page)
+    open_activity(page, "nombres", "partage")
+    print("partage :", play_round(page, "08-partage"))
+    store_sticker(page)
+    open_activity(page, "nombres", "marche")
+    print("marché :", play_round(page, "09-marche", mistakes=2))
+    store_sticker(page)
 
-    # Le marché de Basile, avec des erreurs volontaires
-    page.click('[data-isl="nombres"]', force=True)
-    n = play_round(page, "07-marche", mistakes=2)
-    print("marché, exercices joués :", n)
-    if page.locator(".sticker-big").count():
-        page.click(".sticker-big"); page.wait_for_timeout(900)
+    # Île des Mots : les trois activités
+    open_activity(page, "mots", "chants", "10-ile-mots")
+    print("chants :", play_round(page, "11-chants", mistakes=1))
+    store_sticker(page)
+    open_activity(page, "mots", "lis")
+    print("lis et trouve :", play_round(page, "12-lis"))
+    store_sticker(page)
+    open_activity(page, "mots", "syllabes")
+    print("syllabes :", play_round(page, "13-syllabes", mistakes=1))
+    store_sticker(page)
 
-    # L'atelier des syllabes
-    page.click('[data-isl="mots"]', force=True)
-    n = play_round(page, "08-syllabes", mistakes=1)
-    print("syllabes, exercices joués :", n)
-    if page.locator(".sticker-big").count():
-        page.click(".sticker-big"); page.wait_for_timeout(900)
-    shot(page, "09-carte-apres")
+    # Port des Voyages
+    open_activity(page, "port")
+    print("drapeau :", play_round(page, "14-drapeau"))
+    store_sticker(page)
+    shot(page, "15-carte-apres")
 
     # Carnet et coin calme
     page.click('[aria-label="Ouvrir mon carnet d\'explorateur"]')
-    shot(page, "10-carnet")
+    shot(page, "16-carnet")
     page.click('[aria-label="Retour à la carte"]')
     page.click('[aria-label="Aller au coin calme"]')
     page.wait_for_timeout(2500)
-    shot(page, "11-coin-calme")
+    shot(page, "17-coin-calme")
     page.click('[aria-label="Retour à la carte"]')
 
     # Autres formats d'écran
     for (w, h, name) in [(820, 1180, "ipad-portrait"), (915, 412, "telephone")]:
         page.set_viewport_size({"width": w, "height": h})
-        shot(page, f"12-carte-{name}")
-        page.click('[data-isl="port"]', force=True)
+        shot(page, f"18-carte-{name}")
+        open_activity(page, "nombres", "nenuphars")
         page.wait_for_timeout(500)
-        if page.locator('[aria-label="Continuer"]').count():
-            page.click('[aria-label="Continuer"]')
-            page.wait_for_timeout(300)
-        shot(page, f"13-drapeau-{name}")
+        shot(page, f"19-nenuphars-{name}")
         page.click('[aria-label="Retour à la carte"]')
         page.click("text=Oui")
         page.wait_for_timeout(400)
@@ -197,41 +255,42 @@ with sync_playwright() as pw:
     # Fin de séance : on avance l'horloge de 30 minutes
     page.evaluate("() => { window.__archipelTest.skew = 30 * 60 * 1000; }")
     page.wait_for_timeout(3600)
-    shot(page, "14-fin-de-seance")
+    shot(page, "20-fin-de-seance")
     page.click("text=Au revoir Plume")
     page.wait_for_timeout(300)
-    shot(page, "15-accueil-repos")
 
     # Espace parent : appui long sur le cadenas, puis code
-    lock = page.locator(".lockbtn")
-    box = lock.bounding_box()
-    page.mouse.move(box["x"] + 20, box["y"] + 20)
-    page.mouse.down(); page.wait_for_timeout(1500); page.mouse.up()
-    for d in "1234":
-        page.click(f'.pin button:text-is("{d}")')
-    page.wait_for_timeout(400)
-    shot(page, "16-parent-suivi")
-    page.set_viewport_size({"width": 1180, "height": 1600})
-    shot(page, "16b-parent-suivi-long")
+    def open_parent(pin="1234"):
+        box = page.locator(".lockbtn").bounding_box()
+        page.mouse.move(box["x"] + 20, box["y"] + 20)
+        page.mouse.down(); page.wait_for_timeout(1500); page.mouse.up()
+        for d in pin:
+            page.click(f'.pin button:text-is("{d}")')
+        page.wait_for_timeout(400)
+    open_parent()
+    page.locator(".goalbtn").first.click()
+    page.wait_for_timeout(200)
+    shot(page, "21-parent-suivi")
+    page.set_viewport_size({"width": 1180, "height": 2400})
+    shot(page, "21b-parent-suivi-long")
     page.set_viewport_size({"width": 1180, "height": 820})
+    page.click('.p-tab:text-is("Studio voix")')
+    rec = page.locator(".p-item button.pbtn:not(.ghost):not(.danger)").first
+    rec.click(); page.wait_for_timeout(1200); rec.click(); page.wait_for_timeout(800)
+    shot(page, "22-studio-voix")
     for tab in ["Profils", "Réglages", "Données"]:
         page.click(f'.p-tab:text-is("{tab}")')
-        shot(page, f"17-parent-{tab.lower()}")
+        shot(page, f"23-parent-{tab.lower()}")
 
     # Code parent oublié : question pour adulte, puis nouveau code
     page.click("text=Retour au jeu")
     page.wait_for_timeout(300)
-    lock = page.locator(".lockbtn")
-    box = lock.bounding_box()
+    box = page.locator(".lockbtn").bounding_box()
     page.mouse.move(box["x"] + 20, box["y"] + 20)
     page.mouse.down(); page.wait_for_timeout(1500); page.mouse.up()
     page.click("text=Code oublié ?")
     q = page.locator("text=/Combien font/").inner_text()
-    import re as _re
-    a, b = map(int, _re.findall(r"\d+", q))
-    page.fill(".adult-answer", "1")
-    page.click("text=Valider")
-    shot(page, "18-code-oublie")
+    a, b = map(int, re.findall(r"\d+", q))
     page.fill(".adult-answer", str(a * b))
     page.click("text=Valider")
     for d in "4321" + "4321":
@@ -241,12 +300,12 @@ with sync_playwright() as pw:
     assert page.locator("text=Espace parent").count() > 0, "le nouveau code n'ouvre pas l'espace parent"
 
     data = page.evaluate("() => JSON.parse(localStorage.getItem('archipel.v1'))")
+    voix = page.evaluate("() => Object.keys(JSON.parse(localStorage.getItem('archipel.voix') || '{}'))")
     assert data["pin"] == "4321", data["pin"]
     p = data["profiles"][0]
-    print("profil :", p["name"], "| gommettes :", len(p["stickers"]), "| séances :", len(p["sessions"]), "| entrées journal :", len(p["log"]))
-    print("drapeaux vus :", sorted(p["flags"].keys()))
+    assert p["departDone"] is True, "grand départ non enregistré"
+    print("profil :", p["name"], "| gommettes :", len(p["stickers"]), "| séances :", len(p["sessions"]), "| entrées journal :", len(p["log"]), "| objectifs :", p["goals"], "| voix :", voix)
     print("escaliers :", json.dumps(p["stairs"]))
-    print("phrases dites (extrait) :", page.evaluate("() => (window.__spoken || []).slice(0, 14)"))
     browser.close()
 
 print("\n".join(errors) if errors else "Aucune erreur JavaScript.")
