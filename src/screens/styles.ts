@@ -230,7 +230,7 @@ button.tok{cursor:pointer;border-color:var(--line)}
 /* Dessin pas à pas, miroir */
 .drawstage{gap:max(6px,calc(var(--u) * 10));padding-top:0;padding-bottom:0}
 .drawwrap{display:flex;gap:var(--gap);align-items:center;justify-content:center;width:100%;flex:1;min-height:0}
-.board{position:relative;width:min(calc(100vh - var(--btn) * 2 - 120px),62vw);aspect-ratio:1;background:#fff;border-radius:24px;border:3px solid var(--line);overflow:hidden;touch-action:none;flex:0 0 auto;-webkit-user-select:none;user-select:none}
+.board{position:relative;width:min(calc(100vh - var(--btn) * 2 - 120px),62vw);aspect-ratio:1;background:#fff;border-radius:24px;border:3px solid var(--line);overflow:hidden;touch-action:none;flex:0 0 auto;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 .board .cv,.board .ov{position:absolute;inset:0;width:100%;height:100%;display:block}
 .board .cv{touch-action:none}
 .board .ov{pointer-events:none}
