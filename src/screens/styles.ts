@@ -40,7 +40,7 @@ export const SCREENS_CSS = `
 .beat.ghost{border-style:dashed;background:#FFE0D3}
 /* Nénuphars */
 .pond{position:relative;display:flex;gap:max(2px,calc(var(--u) * 6));padding:max(46px,calc(var(--u) * 80)) max(8px,calc(var(--u) * 18)) max(10px,calc(var(--u) * 18));background:#BFE8EE;border-radius:28px;max-width:100%}
-.pad{position:relative;width:min(7.6vw,calc(var(--u) * 92));aspect-ratio:5/3;border:none;background:none;padding:0;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.pad{position:relative;width:min(6.9vw,calc(var(--u) * 92));aspect-ratio:5/3;border:none;background:none;padding:0;cursor:pointer;display:flex;align-items:center;justify-content:center}
 .pad:disabled{cursor:default}
 .padnum{position:relative;font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:800;font-size:max(18px,calc(var(--u) * 32));color:#1E4D2B}
 .pad.glow{border-radius:50%}
