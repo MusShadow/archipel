@@ -118,4 +118,44 @@ export const DEFIS: Record<string, string[]> = {
     "Plie une feuille en trois et colorie un drapeau à trois bandes.",
     "Montre sur un globe ou une carte le pays de ton drapeau préféré.",
   ],
+  atelierdrapeaux: [
+    "Dessine le drapeau de ta famille sur une grande feuille.",
+    "Avec des feutres, colorie le drapeau de la France sans regarder le modèle.",
+    "Fabrique un petit drapeau avec une paille et du papier.",
+  ],
+  formes: [
+    "Cherche trois objets ronds dans la cuisine.",
+    "Trouve dans la maison un objet qui a la forme d'un cube.",
+    "Trempe un gobelet dans la peinture et regarde la trace qu'il laisse.",
+  ],
+  bip: [
+    "Joue au robot : un adulte te dit « 2 pas en avant, 1 pas à droite », et tu avances.",
+    "Dessine un chemin avec des flèches pour aller de ton lit à la porte.",
+    "Cache un jouet, et guide un adulte jusqu'à lui avec des flèches.",
+  ],
+  motifs: [
+    "Fais un collier de perles qui se répète : rouge, bleu, rouge, bleu…",
+    "Range les couverts en suite : fourchette, cuillère, fourchette, cuillère…",
+    "Invente une suite de gestes : tape, saute, tape, saute… et fais-la deviner.",
+  ],
+  flotte: [
+    "Dans le bain, devine avant : une cuillère, une pomme, un bouchon… flotte ou coule ?",
+    "Fais une boule de pâte à modeler, puis aplatis-la en barque : flotte-t-elle ?",
+    "Pose une orange dans l'eau, puis épluche-la et réessaie !",
+  ],
+  theatre: [
+    "Joue à « devine mon émotion » : fais une grimace, l'adulte devine.",
+    "Raconte un moment où tu as été très content aujourd'hui.",
+    "Cache un jouet sous une tasse quand ton doudou « ne regarde pas » : où va-t-il chercher ?",
+  ],
+  dessin: [
+    "Redessine sur une feuille le dessin que tu as fait avec Kiki.",
+    "Dessine ta maison, étape par étape : les murs, le toit, la porte, les fenêtres.",
+    "Dessine un animal en commençant par de grands ronds.",
+  ],
+  histoires: [
+    "Raconte l'histoire que tu as lue à quelqu'un de la famille.",
+    "Invente une autre fin pour ton histoire.",
+    "Dessine le héros de ton histoire.",
+  ],
 };

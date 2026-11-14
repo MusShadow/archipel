@@ -3,7 +3,8 @@
 
 export type DomainId = "lecture" | "nombres" | "voyages" | "enigmes" | "decouvertes" | "atelier" | "coeur";
 export type Form = "manipulation" | "image" | "symbole" | "recit" | "corrige";
-export type ActivityId = "drapeau" | "marche" | "syllabes" | "chants" | "lis" | "nenuphars" | "partage";
+export type ActivityId = "drapeau" | "marche" | "syllabes" | "chants" | "lis" | "nenuphars" | "partage"
+  | "formes" | "bip" | "motifs" | "theatre" | "flotte" | "atelierdrapeaux" | "dessin" | "histoires";
 export type Mastery = "nouveau" | "decouverte" | "en-cours" | "acquise" | "consolidee";
 
 export interface DomainDef { id: DomainId; label: string; color: string; island: string }
@@ -47,11 +48,27 @@ export const SKILLS: SkillDef[] = [
   { id: "VOY.CARTE.CONTINENT", domain: "voyages", label: "Placer un pays sur son continent", palier: 2, dRef: 0.6, activity: "drapeau" },
   { id: "VOY.DRAPEAU.LIRE", domain: "voyages", label: "Lire le nom d'un pays et trouver son drapeau", palier: 2, dRef: 0.8, activity: "drapeau" },
   { id: "VOY.DRAPEAU.JUMEAUX", domain: "voyages", label: "Distinguer des drapeaux presque jumeaux", palier: 3, dRef: 1.2, activity: "drapeau" },
-  { id: "ENIG.PROGRAMMES", domain: "enigmes", label: "Programmer Bip avec des flèches", palier: 2, dRef: 0.5 },
-  { id: "ENIG.MOTIFS", domain: "enigmes", label: "Continuer et corriger des motifs", palier: 1, dRef: 0 },
-  { id: "DECOUV.FLOTTE", domain: "decouvertes", label: "Prédire, tester : flotte ou coule ?", palier: 1, dRef: 0 },
-  { id: "COEUR.EMOTIONS", domain: "coeur", label: "Reconnaître et nommer les émotions", palier: 1, dRef: 0 },
-  { id: "ATELIER.MIROIR", domain: "atelier", label: "Dessiner avec le pinceau miroir", palier: 1, dRef: 0 },
+  { id: "VOY.DRAPEAU.CONSTRUIRE", domain: "voyages", label: "Reproduire un drapeau : bandes, sens, couleurs", palier: 2, dRef: 0.6, activity: "atelierdrapeaux" },
+  { id: "VOY.DRAPEAU.MIROIR", domain: "voyages", label: "Repérer un drapeau à l'envers", palier: 3, dRef: 1.2, activity: "atelierdrapeaux" },
+  { id: "GEO.FORMES2D.NOM", domain: "enigmes", label: "Reconnaître les formes planes", palier: 1, dRef: -0.4, activity: "formes" },
+  { id: "GEO.FORMES2D.COTES", domain: "enigmes", label: "Compter les côtés d'une forme", palier: 2, dRef: 0.5, activity: "formes" },
+  { id: "GEO.FORMES3D.NOM", domain: "enigmes", label: "Reconnaître les solides", palier: 2, dRef: 0.4, activity: "formes" },
+  { id: "GEO.FORMES3D.OBJETS", domain: "enigmes", label: "Retrouver un solide dans les objets", palier: 2, dRef: 0.7, activity: "formes" },
+  { id: "GEO.FORMES3D.TRACES", domain: "enigmes", label: "Associer un solide à la trace qu'il laisse", palier: 3, dRef: 1.2, activity: "formes" },
+  { id: "ENIG.PROGRAMMES", domain: "enigmes", label: "Programmer Bip avec des flèches", palier: 2, dRef: 0.5, activity: "bip" },
+  { id: "ENIG.DEBUG", domain: "enigmes", label: "Trouver l'erreur dans un programme", palier: 3, dRef: 1.3, activity: "bip" },
+  { id: "ENIG.MOTIFS", domain: "enigmes", label: "Continuer et corriger des suites", palier: 1, dRef: 0, activity: "motifs" },
+  { id: "ENIG.MATRICES", domain: "enigmes", label: "Compléter un tableau à double entrée", palier: 3, dRef: 1.3, activity: "motifs" },
+  { id: "DECOUV.FLOTTE", domain: "decouvertes", label: "Prédire, tester : flotte ou coule ?", palier: 1, dRef: 0.2, activity: "flotte" },
+  { id: "COEUR.EMOTIONS", domain: "coeur", label: "Reconnaître et nommer les émotions", palier: 1, dRef: -0.6, activity: "theatre" },
+  { id: "COEUR.CAUSES", domain: "coeur", label: "Comprendre pourquoi on ressent une émotion", palier: 1, dRef: 0, activity: "theatre" },
+  { id: "COEUR.AIDER", domain: "coeur", label: "Choisir une façon d'aider", palier: 1, dRef: -0.2, activity: "theatre" },
+  { id: "COEUR.DESIRS", domain: "coeur", label: "Comprendre que chacun a ses goûts", palier: 2, dRef: 0.5, activity: "theatre" },
+  { id: "COEUR.CROYANCE", domain: "coeur", label: "Comprendre que quelqu'un peut se tromper (fausse croyance)", palier: 3, dRef: 1.1, activity: "theatre" },
+  { id: "COEUR.CACHEE", domain: "coeur", label: "Deviner une émotion cachée", palier: 3, dRef: 1.6, activity: "theatre" },
+  { id: "ART.TRACE", domain: "atelier", label: "Suivre un tracé au doigt", palier: 1, dRef: -0.2, activity: "dessin" },
+  { id: "ART.ETAPES", domain: "atelier", label: "Dessiner un modèle étape par étape", palier: 2, dRef: 0.6, activity: "dessin" },
+  { id: "LECT.TEXTE.COMPRENDRE", domain: "lecture", label: "Lire une petite histoire et la comprendre", palier: 3, dRef: 1.8, activity: "histoires" },
 ];
 export const SKILL_BY_ID: Record<string, SkillDef> = Object.fromEntries(SKILLS.map((s) => [s.id, s]));
 

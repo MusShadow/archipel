@@ -1,4 +1,4 @@
-"""Test de bout en bout : premier lancement, grand départ, carte, les sept activités, gommettes, carnet,
+"""Test de bout en bout (livraison 1) : premier lancement, grand départ, carte, les sept activités, gommettes, carnet,
 coin calme, autres formats d'écran, fin de séance, espace parent (objectifs, studio voix, code oublié).
 
 Usage : python3 tests/e2e/smoke.py [dist/index.html] [dossier_captures]
@@ -226,7 +226,7 @@ with sync_playwright() as pw:
     store_sticker(page)
 
     # Port des Voyages
-    open_activity(page, "port")
+    open_activity(page, "port", "drapeau")
     print("drapeau :", play_round(page, "14-drapeau"))
     store_sticker(page)
     shot(page, "15-carte-apres")

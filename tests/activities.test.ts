@@ -12,6 +12,20 @@ const profiles = [0, 5, 11, 15, 26].map((k, i) => createProfile({ name: `E${i}`,
 // Un profil qui a déjà vu des drapeaux.
 for (const c of ["FR", "JP", "IT", "CA", "US", "ML", "PA"]) profiles[3].flags[c] = { seen: 3, ok: 2, last: 1 };
 
+// Fait jouer un programme de Bip : case d'arrivée, ou null s'il se cogne.
+function simulate(prog: string[], it: any): number | null {
+  let c: number | null = it.start;
+  const V: Record<string, [number, number]> = { haut: [0, -1], bas: [0, 1], gauche: [-1, 0], droite: [1, 0] };
+  for (const d of prog) {
+    const x = c! % it.cols + V[d][0], y = Math.floor(c! / it.cols) + V[d][1];
+    if (x < 0 || y < 0 || x >= it.cols || y >= it.rows) return null;
+    c = y * it.cols + x;
+    if (it.rocks.includes(c)) return null;
+  }
+  return c;
+}
+const shortestOk = (it: any) => simulate(it.solution, it) === it.goal && !it.rocks.includes(it.start) && !it.rocks.includes(it.goal);
+
 describe("générateurs d'exercices", () => {
   for (const mod of ACTIVITIES) {
     test(`${mod.title} : exercices valides à tous les niveaux`, () => {
@@ -59,6 +73,35 @@ describe("générateurs d'exercices", () => {
               if (it.kind === "moins") expect(it.target).toBe(it.start - it.steps);
               if (it.kind === "bonds") expect(it.target).toBe(it.start + 2 * it.steps);
             }
+            if (mod.id === "bip") {
+              expect(shortestOk(it)).toBe(true);
+              if (it.kind === "debug") {
+                expect(it.fixes[it.target]).toBe(it.solution[Number(it.target)]);
+                expect(simulate(it.program, it)).not.toBe(it.goal);
+                for (const [k, d] of Object.entries(it.fixes)) { const pr = it.program.slice(); pr[Number(k)] = d; expect(simulate(pr, it)).toBe(it.goal); }
+              }
+            }
+            if (mod.id === "motifs") {
+              if (it.kind === "erreur") { expect(it.seq[Number(it.target)]).toBeTruthy(); }
+              else { expect(it.seq.filter((x: unknown) => x === null).length).toBe(1); expect(it.toks[it.target]).toBeDefined(); }
+              if (it.kind === "matrice") {
+                // Une seule forme par ligne, une seule couleur par colonne.
+                const n = it.cols, hole = it.seq.indexOf(null), t = it.toks[it.target];
+                for (let i = 0; i < n * n; i++) {
+                  const x = i === hole ? t : it.seq[i];
+                  expect(x.s).toBe((it.seq[Math.floor(i / n) * n + ((i % n) + 1) % n] ?? t).s);
+                  expect(x.c).toBe((it.seq[((Math.floor(i / n) + 1) % n) * n + (i % n)] ?? t).c);
+                }
+              }
+            }
+            if (mod.id === "atelierdrapeaux") {
+              expect(FLAG_BY_CODE[it.code]).toBeDefined();
+              if (it.kind !== "intrus") { expect(it.target).toBe(it.bands.join("-")); for (const b of it.bands) expect(it.palette).toContain(b); }
+              else { const keys = Object.values(it.variants).map((v: any) => v.dir + v.bands.join()); expect(new Set(keys).size).toBe(keys.length); }
+            }
+            if (mod.id === "flotte" && it.kind === "predire") expect(it.target).toBe(it.objs[0].flotte ? "flotte" : "coule");
+            if (mod.id === "flotte" && it.kind === "comparer") expect(it.objs.filter((o: any) => o.flotte).length).toBe(1);
+            if (mod.id === "theatre" || mod.id === "formes") for (const c of it.choices) expect(it.opts[c]).toBeDefined();
             if (mod.id === "partage") {
               expect(it.target * it.friends.length + it.rest).toBe(it.total);
               expect(it.rest).toBeLessThan(it.friends.length);

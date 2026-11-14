@@ -88,7 +88,7 @@ export interface Intake { name: string; ageMonths: number; color: string; readin
 export function createProfile(i: Intake): Profile {
   const p: Profile = {
     id: Math.random().toString(36).slice(2, 10), name: i.name.trim() || "Enfant", ageMonths: i.ageMonths, color: i.color, createdAt: Date.now(),
-    knownK: i.readingK, skills: {}, stairs: {}, flags: {}, log: [], stickers: [], sessions: [], goals: [], departDone: false,
+    knownK: i.readingK, skills: {}, stairs: {}, flags: {}, log: [], stickers: [], sessions: [], goals: [], departDone: false, stories: [],
   };
   applyPriors(p, i);
   return p;

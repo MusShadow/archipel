@@ -1,9 +1,11 @@
 // Écrans de l'enfant : accueil, carte de l'archipel, gommettes, coin calme, carnet, coucher du soleil.
-import { ACTIVITIES, ACTIVITIES_BY_ISLAND, ACTIVITY_BY_ID, ISLAND_SPOKEN, stickerArt } from "../activities";
+import { ACTIVITIES, ISLAND_SPOKEN, META_BY_ID, stickerArt } from "../activities";
 import { app } from "../app";
 import { FACES, ISLANDS, ISLAND_SHAPES, LANDMARKS, MAP_WAVES, MEDALS, PLUME_B } from "../art_static";
 import { DEFIS, knownSet } from "../content";
-import { makeRng, suggestMissions } from "../core";
+import { makeRng, suggestMissions, type ActivityId, type DomainId } from "../core";
+import { DRAWING_BY_ID, drawingSVG } from "../drawings";
+import { emoji } from "../lexique";
 import { FLAG_BY_CODE, cap, flagSVG } from "../flags";
 import { activityScreen, isAvailable, type ActivityModule, type RoundSummary, type StickerSpec } from "../host";
 import { nav } from "../nav";
@@ -11,6 +13,9 @@ import { sfx, speech, voice, type Profile } from "../services";
 import { avatarSVG, esc, fly, h, icon, medallion, plumeSVG, roundBtn, sleep } from "../ui";
 import { longPress, parentGate, sheet } from "./common";
 import { grandDepart } from "./depart";
+import { drawPicker, gallery, mirrorScreen, showDrawing } from "./draw";
+import { storyShelf } from "./histoires";
+import { myFlagSVG, myFlagScreen } from "./myflag";
 
 const pick = <T,>(a: readonly T[]) => a[Math.floor(Math.random() * a.length)];
 const initial = (name: string) => (name.trim()[0] ?? "?").toUpperCase();
@@ -119,15 +124,39 @@ function islandSVG(isl: (typeof ISLANDS)[number], o: { mission: boolean; sleepin
   return `<g class="isl${o.sleeping ? " sleep" : ""}" data-isl="${id}" tabindex="0" role="button" aria-label="${esc(aria)}">${g}</g>`;
 }
 
+// Ce qu'on trouve sur chaque île : les activités d'exercices, et quelques écrans à part (dessin, miroir,
+// histoires, drapeau de son île, coin calme).
+interface Entry {
+  id: string; island: string; title: string; card: string; pitch: string;
+  mod?: ActivityModule<any>; open?: (back: (sticker?: StickerSpec) => void) => void;
+  available?: (p: Profile) => boolean; lockedReason?: string;
+  plan?: { id: ActivityId; domain: DomainId; skills: string[] };
+}
+const MIRROR_CARD = `<svg viewBox="0 0 60 44" aria-hidden="true" style="display:block;width:1.3em;height:.95em"><path d="M30 4 V40" stroke="#5B6475" stroke-width="2" stroke-dasharray="3 4" stroke-linecap="round"/><path d="M28 22 C20 6 6 8 6 18 C6 28 18 30 28 26" fill="#8C6BE0" stroke="#273043" stroke-width="2"/><path d="M32 22 C40 6 54 8 54 18 C54 28 42 30 32 26" fill="#8C6BE0" stroke="#273043" stroke-width="2"/></svg>`;
+function entries(p: Profile): Entry[] {
+  const mods: Entry[] = ACTIVITIES.map((a) => ({ id: a.id, island: a.island, title: a.title, card: a.card, pitch: a.pitch, mod: a, available: a.available ? (q: Profile) => a.available!(q) : undefined, lockedReason: a.lockedReason, plan: { id: a.id, domain: a.domain, skills: a.skills } }));
+  const flag = p.myFlag ?? { layout: "v3", colors: ["bleu", "jaune", "vert"], symbol: "etoile", symbolColor: "blanc" };
+  return [...mods,
+    { id: "dessin", island: "atelier", title: "Dessine pas à pas", card: `<span style="display:block;width:1.1em;height:1.1em">${drawingSVG(DRAWING_BY_ID.chat, { stroke: 3 })}</span>`, pitch: "Dessine pas à pas, pour apprendre à faire de vrais dessins avec Kiki.", open: (back) => drawPicker(back), plan: { id: "dessin", domain: "atelier", skills: META_BY_ID.dessin.skills } },
+    { id: "miroir", island: "atelier", title: "Le miroir de Kiki", card: MIRROR_CARD, pitch: "Le miroir de Kiki, pour dessiner des deux côtés à la fois.", open: (back) => mirrorScreen(() => back()) },
+    { id: "histoires", island: "mots", title: "Mes histoires", card: emoji("📖"), pitch: "Mes histoires, pour lire les histoires écrites rien que pour toi.", available: (q) => q.stories.length > 0, lockedReason: "Demande à un adulte de t'écrire une histoire, dans l'espace parent.", open: (back) => storyShelf(back), plan: { id: "histoires", domain: "lecture", skills: META_BY_ID.histoires.skills } },
+    { id: "monDrapeau", island: "port", title: "Le drapeau de mon île", card: `<span style="display:block;width:1.3em;height:.9em">${myFlagSVG(flag)}</span>`, pitch: "Le drapeau de ton île, pour inventer ton propre drapeau.", open: (back) => myFlagScreen(() => back()) },
+    { id: "calme", island: "coeur", title: "Le coin calme", card: `<span style="display:block;width:1em;height:1em">${PICO}</span>`, pitch: "Le coin calme, pour respirer avec Pico.", open: (back) => calmScreen(() => back()) },
+  ];
+}
+const islandOf = (id: string) => META_BY_ID[id]?.island ?? "";
+const ok = (e: Entry, p: Profile) => !e.available || e.available(p);
+
 // Missions du jour : deux activités choisies par le planificateur (révisions dues, compétences « à la frontière »,
 // équilibre entre domaines, objectifs du parent), sur deux îles différentes si possible.
 function missionsFor(p: Profile): string[] {
+  const list = entries(p).filter((e) => e.plan && ok(e, p));
   const plan = suggestMissions({
-    activities: ACTIVITIES.filter((a) => isAvailable(a, p)).map((a) => ({ id: a.id, domain: a.domain, skills: a.skills })),
+    activities: list.map((e) => e.plan!),
     skills: p.skills, minutesByDomain: app.minutesThisWeek(p), goals: p.goals, now: Date.now(),
-  }, Math.random, ACTIVITIES.length);
+  }, Math.random, list.length);
   const out: string[] = [];
-  for (const id of plan) if (out.length < 2 && !out.some((o) => ACTIVITY_BY_ID[o].island === ACTIVITY_BY_ID[id].island)) out.push(id);
+  for (const id of plan) if (out.length < 2 && !out.some((o) => islandOf(o) === islandOf(id))) out.push(id);
   return out;
 }
 
@@ -141,10 +170,11 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
   const s = app.session!;
   if (app.timeUp() && !after?.sticker) { sessionEnd(); return; }
 
-  const active = new Set([...Object.keys(ACTIVITIES_BY_ISLAND), "coeur"]);
+  const all = entries(p);
+  const active = new Set(all.map((e) => e.island));
   const missionActs = missionsFor(p);
-  const missions = missionActs.map((id) => ACTIVITY_BY_ID[id].island);
-  const visited = s.activities.map((id) => ACTIVITIES.find((a) => a.id === id)?.island ?? "");
+  const missions = missionActs.map(islandOf);
+  const visited = s.activities.map(islandOf);
   const plume = `<g class="plume-map" data-plume="1" role="button" tabindex="0" aria-label="Réécouter Plume" style="cursor:pointer">`
     + `<rect x="262" y="94" width="72" height="50" rx="16" fill="#fff" stroke="#D8CDB8" stroke-width="1.5"/><polygon points="330,124 348,136 333,114" fill="#fff"/>`
     + `<g transform="translate(281 102) scale(1.4)" fill="none" stroke="#273043" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5 H7.5 L12 5.5 V18.5 L7.5 14.5 H4 Z"/><path d="M15.5 9 C17 10.5 17 13.5 15.5 15 M18 6.5 C21 9.5 21 14.5 18 17.5"/></g>`
@@ -214,28 +244,27 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
 
   function tapIsland(id: string, g: Element) {
     g.classList.remove("tapped"); void (g as SVGGraphicsElement).getBBox?.(); g.classList.add("tapped");
-    if (id === "coeur") { sfx.tap(); go(() => calmScreen(() => mapScreen())); return; }
-    const acts = ACTIVITIES_BY_ISLAND[id];
-    if (!acts) { sfx.soft(); say(`${cap(ISLAND_SPOKEN[id])} dort encore. Elle se réveillera bientôt !`); return; }
+    const acts = all.filter((e) => e.island === id);
+    if (!acts.length) { sfx.soft(); say(`${cap(ISLAND_SPOKEN[id])} dort encore. Elle se réveillera bientôt !`); return; }
     sfx.tap();
-    if (acts.length === 1) { go(() => launch(acts[0])); return; }
+    if (acts.length === 1 && ok(acts[0], p!)) { go(() => open(acts[0])); return; }
     islandSheet(id, acts);
   }
 
   // Une île, plusieurs activités : l'enfant choisit ; celle que Plume conseille est entourée.
-  function islandSheet(id: string, acts: ActivityModule<any>[]) {
+  function islandSheet(id: string, acts: Entry[]) {
     const isl = ISLANDS.find((x) => x.id === id)!;
-    const advised = acts.find((a) => missionActs.includes(a.id)) ?? acts.find((a) => isAvailable(a, p!));
+    const advised = acts.find((a) => missionActs.includes(a.id)) ?? acts.find((a) => a.plan && ok(a, p!)) ?? acts.find((a) => ok(a, p!));
     const cards = acts.map((a) => {
-      const ok = isAvailable(a, p!);
-      const b = h("button", { type: "button", class: `actcard${ok ? "" : " locked"}${a === advised ? " advised" : ""}`, "data-act": a.id, "aria-label": ok ? a.title : `${a.title}, pas encore ouverte` },
+      const can = ok(a, p!);
+      const b = h("button", { type: "button", class: `actcard${can ? "" : " locked"}${a === advised ? " advised" : ""}`, "data-act": a.id, "aria-label": can ? a.title : `${a.title}, pas encore ouverte` },
         h("span", { class: "actart", html: a.card }),
         h("span", { class: "acttitle" }, a.title),
         a === advised ? h("span", { class: "advice" }, "Plume conseille") : null,
-        ok ? null : h("span", { class: "lockic", html: icon("lock", "#5B6475", 2.2) }));
+        can ? null : h("span", { class: "lockic", html: icon("lock", "#5B6475", 2.2) }));
       b.addEventListener("click", () => {
-        if (!ok) { sfx.soft(); say(a.lockedReason ?? "Cette activité s'ouvrira bientôt."); return; }
-        sfx.tap(); sh.close(); go(() => launch(a));
+        if (!can) { sfx.soft(); say(a.lockedReason ?? "Cette activité s'ouvrira bientôt."); return; }
+        sfx.tap(); sh.close(); go(() => open(a));
       });
       return b;
     });
@@ -245,7 +274,7 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
         h("p", { class: "title", style: "font-size:max(24px,calc(var(--u) * 36));margin:0" }, isl.label)),
       h("div", { class: "actcards" }, ...cards),
       h("button", { type: "button", class: "bigbtn alt", onclick: () => { sh.close(); say("Choisis une île !"); } }, "Retour à la carte"));
-    const pitches = acts.filter((a) => isAvailable(a, p!)).map((a) => a.pitch).join(" ");
+    const pitches = acts.filter((a) => ok(a, p!)).map((a) => a.pitch).join(" ");
     say(`${cap(ISLAND_SPOKEN[id])} ! ${pitches}${advised ? ` Je te conseille : ${advised.title.toLowerCase()}.` : ""}`);
   }
 
@@ -276,6 +305,10 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
   }
 }
 
+function open(e: Entry) {
+  if (e.mod) { launch(e.mod); return; }
+  e.open?.((sticker) => mapScreen({ sticker }));
+}
 function launch(mod: ActivityModule<any>) {
   const p = app.profile!;
   const { el, cleanup } = activityScreen(mod, (summary, reason) => {
@@ -375,14 +408,26 @@ export function carnetScreen(back: () => void) {
     b.addEventListener("click", () => { sfx.tap(); speech.say(cap(fl.the)); });
     fg.appendChild(b);
   }
+  const art = gallery.list(p.id).slice().reverse();
+  const dg = h("div", { class: "dgrid" });
+  for (const g of art) {
+    const b = h("button", { type: "button", "aria-label": DRAWING_BY_ID[g.id]?.nom ?? "Dessin au miroir" }, h("img", { src: g.img, alt: "" }));
+    b.addEventListener("click", () => { sfx.tap(); showDrawing(screen, g); });
+    dg.appendChild(b);
+  }
+  const myFlag = p.myFlag ? h("button", { type: "button", class: "myflagmini", "aria-label": "Le drapeau de mon île", html: myFlagSVG(p.myFlag) }) : null;
+  myFlag?.addEventListener("click", () => { sfx.tap(); speech.say(`Le drapeau de l'île de ${p.name} !`); });
   const screen = h("div", { class: "screen carnet" },
     h("div", { class: "top" },
       roundBtn({ icon: "back", label: "Retour à la carte", onclick: () => back() }),
       h("div", { class: "title", style: "font-size:max(22px,calc(var(--u) * 38))" }, "Mon carnet d'explorateur"),
       h("div", { style: "width:var(--btn)" })),
     h("div", { class: "scroll" },
+      myFlag ? h("div", { class: "row", style: "justify-content:flex-start;gap:16px" }, myFlag, h("h2", { style: "margin:0" }, "Le drapeau de mon île")) : null,
       h("h2", {}, `Mes gommettes${p.stickers.length ? ` (${p.stickers.length})` : ""}`),
       p.stickers.length ? sg : h("p", { class: "empty" }, "Ton carnet attend ses premières gommettes !"),
+      h("h2", {}, `Mes dessins${art.length ? ` (${art.length})` : ""}`),
+      art.length ? dg : h("p", { class: "empty" }, "Va sur l'île de l'Atelier pour dessiner avec Kiki."),
       h("h2", {}, `Mon passeport : ${seen.length} drapeau${seen.length > 1 ? "x" : ""}`),
       seen.length ? fg : h("p", { class: "empty" }, "Va au Port des Voyages pour découvrir tes premiers drapeaux.")));
   app.show(screen);

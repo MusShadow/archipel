@@ -1,6 +1,6 @@
-// Service worker d'Archipel (version df99283506) : garde l'appli disponible sans Internet.
+// Service worker d'Archipel (version e794627f7e) : garde l'appli disponible sans Internet.
 // Le code de l'appli passe d'abord par le réseau (pour recevoir les mises à jour), sinon par la copie gardée.
-const CACHE = "archipel-df99283506";
+const CACHE = "archipel-e794627f7e";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", (event) => {

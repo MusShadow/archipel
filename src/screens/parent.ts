@@ -1,5 +1,5 @@
 // Espace parent (protégé par code) et premier lancement.
-import { ACTIVITIES } from "../activities";
+import { META, META_BY_ID } from "../activities";
 import { app, createProfile, type Intake } from "../app";
 import { DEFIS, GRAPHEME_ORDER, READING_LEVELS } from "../content";
 import { DAY, DOMAINS, MASTERY_LABEL, SKILLS, masteryOf, type DomainId, type Mastery } from "../core";
@@ -8,6 +8,8 @@ import { nav } from "../nav";
 import { VOICE_SLOTS, defaultData, frenchVoiceLabel, normalize, saveData, speech, storageFailed, voice, type Profile } from "../services";
 import { avatarSVG, h, plumeSVG } from "../ui";
 import { pinPad, sheet } from "./common";
+import { gallery } from "./draw";
+import { storiesTab } from "./histoires";
 
 export function registerParentScreens() {
   nav.parent = parentSpace;
@@ -118,9 +120,9 @@ function setupFlow() {
 }
 
 // ---------- Espace parent ----------
-type Tab = "suivi" | "profils" | "reglages" | "voix" | "donnees";
+type Tab = "suivi" | "histoires" | "profils" | "reglages" | "voix" | "donnees";
 const TABS: { id: Tab; label: string }[] = [
-  { id: "suivi", label: "Suivi" }, { id: "profils", label: "Profils" }, { id: "reglages", label: "Réglages" }, { id: "voix", label: "Studio voix" }, { id: "donnees", label: "Données" },
+  { id: "suivi", label: "Suivi" }, { id: "histoires", label: "Histoires" }, { id: "profils", label: "Profils" }, { id: "reglages", label: "Réglages" }, { id: "voix", label: "Studio voix" }, { id: "donnees", label: "Données" },
 ];
 
 function parentSpace(tab?: string) {
@@ -149,6 +151,7 @@ function parentSpace(tab?: string) {
     const p = prof();
     body.replaceChildren();
     if (current === "suivi") body.append(...(p ? suivi(p) : [h("p", {}, "Aucun profil.")]));
+    if (current === "histoires") body.append(...(p ? storiesTab(p, render) : [h("p", {}, "Aucun profil.")]));
     if (current === "profils") body.append(...profils());
     if (current === "reglages") body.append(...reglages(p));
     if (current === "voix") body.append(...studio());
@@ -173,7 +176,7 @@ function parentSpace(tab?: string) {
       kpi(String(sessions.length), `séance${sessions.length > 1 ? "s" : ""} sur 7 jours`),
       kpi(String(logs.length), "exercices faits"),
       kpi(logs.length ? `${round((100 * alone) / logs.length)} %` : "–", "réussis seul, du premier coup"));
-    const usedDomains: DomainId[] = ["lecture", "nombres", "voyages"];
+    const usedDomains: DomainId[] = DOMAINS.filter((d) => META.some((m) => m.domain === d.id)).map((d) => d.id);
     const maxMin = Math.max(5, ...usedDomains.map((d) => week[d] ?? 0));
     const bars = h("div", { class: "bars" }, ...usedDomains.map((d) => {
       const def = DOMAINS.find((x) => x.id === d)!;
@@ -185,7 +188,7 @@ function parentSpace(tab?: string) {
 
     const skillCards = usedDomains.map((d) => {
       const def = DOMAINS.find((x) => x.id === d)!;
-      const acts = ACTIVITIES.filter((a) => a.domain === d);
+      const acts = META.filter((a) => a.domain === d && a.maxLevel > 1);
       const rows = SKILLS.filter((s) => s.domain === d && s.activity).map((s) => {
         const m = masteryOf(s, p.skills[s.id]);
         const n = p.skills[s.id]?.n ?? 0;
@@ -211,7 +214,7 @@ function parentSpace(tab?: string) {
       toReview.length ? h("p", { class: "muted", style: "margin-top:6px" }, `À revoir : ${toReview.map(([c]) => FLAG_BY_CODE[c].name).join(", ")}.`) : null);
 
     const ideas: string[] = [];
-    for (const a of ACTIVITIES) {
+    for (const a of META) {
       const states = a.skills.map((id) => masteryOf(SKILLS.find((s) => s.id === id)!, p.skills[id]));
       if (states.includes("en-cours")) ideas.push(`${a.title} : en bonne voie. À la maison : ${(DEFIS[a.id] ?? [])[0]?.toLowerCase() ?? ""}`);
     }
@@ -223,7 +226,7 @@ function parentSpace(tab?: string) {
     const hist = h("div", { class: "p-card" }, h("h2", {}, "Dernières séances"),
       last.length ? h("div", { class: "p-list" }, ...last.map((s) => {
         const mins = Object.values(s.minutes).reduce<number>((a, b) => a + (b ?? 0), 0);
-        const names = s.activities.map((id) => ACTIVITIES.find((a) => a.id === id)?.title ?? id).join(", ");
+        const names = s.activities.map((id) => META_BY_ID[id]?.title ?? id).join(", ");
         return h("div", { class: "p-item" }, h("div", { class: "grow" }, h("b", {}, fmtDate(s.start)), h("div", { class: "muted" }, names || "—")), h("span", { class: "muted" }, `${Math.max(1, round(mins))} min`));
       })) : h("p", { class: "muted" }, "Aucune séance pour l'instant."));
 
@@ -424,9 +427,17 @@ function parentSpace(tab?: string) {
             h("button", { type: "button", class: "pbtn ghost", onclick: () => s.close() }, "Annuler"))));
       } }, "Tout effacer"));
     const privacy = h("div", { class: "note" },
-      "Où sont les données ? Uniquement sur cet appareil, dans le stockage du navigateur. Aucun compte, aucun envoi, aucune mesure d'audience. ",
+      "Où sont les données ? Uniquement sur cet appareil, dans le stockage du navigateur. Aucun compte, aucune mesure d'audience. ",
+      "Seule exception : quand vous demandez une histoire, la demande (thème, héros, sons connus, sans le prénom) part chez Anthropic avec votre clé. ",
+      "La sauvegarde contient les progrès et les histoires, mais pas les dessins (gardés sur l'appareil) ni la clé API. ",
       "Dans la version d'essai ouverte depuis Claude, ce stockage peut être vidé par le navigateur : copiez une sauvegarde de temps en temps.");
+    const drawCards = app.data.profiles.map((p) => {
+      const n = gallery.list(p.id).length;
+      return h("div", { class: "p-item" }, h("div", { class: "grow" }, h("b", {}, `Dessins de ${p.name}`), h("div", { class: "muted" }, `${n} dessin${n > 1 ? "s" : ""} gardé${n > 1 ? "s" : ""} (les 12 derniers)`)),
+        n ? h("button", { type: "button", class: "pbtn danger", onclick: () => { if (confirm(`Effacer les dessins de ${p.name} ?`)) { gallery.clear(p.id); render(); } } }, "Effacer") : null);
+    });
+    const drawCard = h("div", { class: "p-card" }, h("h2", {}, "Galerie de dessins"), h("div", { class: "p-list" }, ...drawCards));
     const warn = storageFailed() ? h("div", { class: "note", style: "background:#FDECEA;border-color:#F4B4AE" }, "Attention : l'enregistrement échoue sur cet appareil (navigation privée ou stockage plein). Les progrès seront perdus à la fermeture.") : null;
-    return [privacy, ...(warn ? [warn] : []), h("div", { class: "p-grid" }, exportCard, importCard), resetCard];
+    return [privacy, ...(warn ? [warn] : []), h("div", { class: "p-grid" }, exportCard, importCard), drawCard, resetCard];
   }
 }

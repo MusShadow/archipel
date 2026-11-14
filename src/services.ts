@@ -18,7 +18,14 @@ export interface Profile {
   goals: string[];
   restUntil?: number;
   departDone?: boolean;
+  stories: Story[];
+  myFlag?: MyFlag;
 }
+export interface Story {
+  id: string; t: number; titre: string; phrases: string[]; question: { texte: string; choix: string[]; bonne: number }; k: number;
+  emoji?: string; images?: string[]; theme?: string; heros?: string; lu?: number;
+}
+export interface MyFlag { layout: string; colors: string[]; symbol: string; symbolColor: string }
 export interface Settings { sessionMinutes: number; accompanied: boolean; voiceURI: string | null; rate: number; sessionsPerWeek: number }
 export interface AppData { version: 1; pin: string | null; settings: Settings; profiles: Profile[]; activeId: string | null }
 
@@ -43,6 +50,8 @@ export function normalize(d: any): AppData {
     sessions: Array.isArray(p.sessions) ? p.sessions : [], goals: Array.isArray(p.goals) ? p.goals : [],
     restUntil: typeof p.restUntil === "number" ? p.restUntil : undefined,
     departDone: p.departDone === true || (Array.isArray(p.log) && p.log.length > 30),
+    stories: Array.isArray(p.stories) ? p.stories : [],
+    myFlag: p.myFlag && typeof p.myFlag === "object" ? p.myFlag : undefined,
   })) : [];
   return { version: 1, pin: typeof d.pin === "string" ? d.pin : null, settings: { ...base.settings, ...(d.settings ?? {}) }, profiles, activeId: d.activeId ?? null };
 }
