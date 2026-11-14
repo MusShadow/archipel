@@ -101,7 +101,7 @@ export const CSS = `
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;height:100%;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,sans-serif;overscroll-behavior:none;touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 button{font:inherit;color:inherit}
-#app{position:fixed;inset:0;overflow:hidden}
+#app{position:fixed;top:env(safe-area-inset-top,0px);right:env(safe-area-inset-right,0px);bottom:env(safe-area-inset-bottom,0px);left:env(safe-area-inset-left,0px);overflow:hidden}
 .screen{position:absolute;inset:0;display:flex;flex-direction:column;background:var(--cream)}
 .title{font-family:'Baloo 2',ui-rounded,'Avenir Next',system-ui,sans-serif;font-weight:800;line-height:1.05}
 .reading{font-family:Andika,'Avenir Next',ui-rounded,system-ui,sans-serif}
