@@ -164,9 +164,20 @@ NOT_SYL = {"ça", "c'est", "oui", "non", "et", "ou", "bien", "bravo", "super"}
 def _slow(m):
     if any(w.lower() in NOT_SYL for w in m.group(2).split(", ")): return m.group(0)
     return m.group(1) + m.group(2).replace(", ", "… ")
+# Devant deux-points, la voix prononce une consonne finale muette (« qui choisis : » devenait « choisisses ») :
+# ces deux-points deviennent une virgule. Sauf « c'est : é » (pause voulue avant une voyelle seule) et les syllabes
+# recollées (« mot… tôt : moto ! »), qui ont besoin de leurs deux-points.
+COLON = re.compile(r"([\w'’]+)\s*:(?=\s)")
+def _colon(s):
+    def rep(m):
+        w = m.group(1).lower()
+        if w in ("c'est", "c’est") or "…" in s[:m.start()] or len(w) < 3 or not re.search(r"([stdxz]|er)$", w): return m.group(0)
+        return m.group(1) + ","
+    return COLON.sub(rep, s)
+
 def fix_text(s):
     for rx, rep in FIXES: s = rx.sub(rep, s)
-    return SYL_LIST.sub(_slow, s)
+    return _colon(SYL_LIST.sub(_slow, s))
 
 def prepare(clip, chosen):
     """Texte dit par la voix, écritures à essayer et empreinte du clip dans le cache."""

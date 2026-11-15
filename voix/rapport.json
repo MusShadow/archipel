@@ -1,18 +1,24 @@
 {
- "clips": 4664,
- "octets": 30054648,
- "minutes": 116.0,
+ "clips": 4983,
+ "octets": 33083595,
+ "minutes": 127.9,
  "a_revoir": [
   {
    "key": "dos|.",
    "say": "dos.",
-   "heard": "Jeudi, d'eau.",
+   "heard": "Je dis Do.",
    "per": 0.286
+  },
+  {
+   "key": "papi|.",
+   "say": "papi.",
+   "heard": "Jeudi, papy.",
+   "per": 0.25
   },
   {
    "key": "regarde un phare et une poignée|.",
    "say": "Regarde : un phare et une poignée.",
-   "heard": "Regarde. Un ph et une poignée.",
+   "heard": "Regarde un ph et une poignée.",
    "per": 0.158
   },
   {
@@ -24,7 +30,7 @@
   {
    "key": "a mie ami|.",
    "say": "a… mie : ami !",
-   "heard": "Ah, Mia Mi.",
+   "heard": "Ah, Miami.",
    "per": 0.167
   },
   {
@@ -52,18 +58,6 @@
    "per": 0.571
   },
   {
-   "key": "ça c'est i|.",
-   "say": "Ça, c'est : i.",
-   "heard": "Ça c'est.",
-   "per": 0.2
-  },
-  {
-   "key": "ça c'est lit|.",
-   "say": "Ça, c'est li.",
-   "heard": "Ça c'est dit.",
-   "per": 0.167
-  },
-  {
    "key": "ça c'est pot|.",
    "say": "Ça, c'est pot.",
    "heard": "Ça c'est pas.",
@@ -78,7 +72,7 @@
   {
    "key": "ça c'est ta|.",
    "say": "Ça, c'est ta.",
-   "heard": "Ça c'est un",
+   "heard": "Ça c'est un.",
    "per": 0.167
   },
   {
@@ -86,12 +80,6 @@
    "say": "Ça, c'est tôt.",
    "heard": "Ça c'est tout.",
    "per": 0.167
-  },
-  {
-   "key": "ça c'est u|.",
-   "say": "Ça, c'est : u.",
-   "heard": "Ça c'est.",
-   "per": 0.2
   },
   {
    "key": "ça commence par dos|.",
@@ -102,13 +90,13 @@
   {
    "key": "dos mie nos domino|.",
    "say": "dos… mie… nos : domino !",
-   "heard": "Do Mi No Domino?",
+   "heard": "Do, mi, no domino.",
    "per": 0.154
   },
   {
    "key": "dos|,",
-   "say": "dos :",
-   "heard": "Jeudi, Do.",
+   "say": "dos,",
+   "heard": "Je dis Do.",
    "per": 0.286
   },
   {
@@ -132,7 +120,7 @@
   {
    "key": "écoute dos mie nos|.",
    "say": "Écoute : dos… mie… nos.",
-   "heard": "Écoute, Do Mi No.",
+   "heard": "Ecoute do mi no.",
    "per": 0.182
   },
   {
@@ -168,8 +156,8 @@
   {
    "key": "mie dit midi|.",
    "say": "mie… dit : midi !",
-   "heard": "Me, D me di.",
-   "per": 0.375
+   "heard": "Me di me di",
+   "per": 0.25
   },
   {
    "key": "mot na co monaco|.",
@@ -204,8 +192,14 @@
   {
    "key": "oui lot|.",
    "say": "Oui, lot !",
-   "heard": "Je dis Willow.",
-   "per": 0.375
+   "heard": "Je dis, oui Low.",
+   "per": 0.25
+  },
+  {
+   "key": "papi|",
+   "say": "papi",
+   "heard": "Je dis, papy.",
+   "per": 0.25
   },
   {
    "key": "ti pie tipi|.",
@@ -230,12 +224,6 @@
    "say": "Tu as fabriqué dos.",
    "heard": "Tu as fabriqué d'eau.",
    "per": 0.154
-  },
-  {
-   "key": "ça fait 19|.",
-   "say": "ça fait dix-neuf.",
-   "heard": "Ça fait Dx9.",
-   "per": 0.3
   },
   {
    "key": "oui 5 pommes|.",

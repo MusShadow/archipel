@@ -419,7 +419,43 @@
   [
    "^(Ça se lit|Ça commence par) (?![:])",
    "\\1 : "
+  ],
+  [
+   "\\bchaud\\b",
+   "chô"
+  ],
+  [
+   "\\bfroid\\b",
+   "froi"
+  ],
+  [
+   "\\bforment\\b",
+   "forme"
+  ],
+  [
+   "\\bserrent\\b",
+   "serre"
+  ],
+  [
+   "\\bgèlent\\b",
+   "gèle"
+  ],
+  [
+   "\\battrapent\\b",
+   "attrape"
+  ],
+  [
+   "\\ballument\\b",
+   "allume"
+  ],
+  [
+   "\\bressemblent\\b",
+   "ressemble"
+  ],
+  [
+   "\\btombent\\b",
+   "tombe"
   ]
  ],
- "_corrections": "Corrections appliquées à tous les textes dits par la voix, qui lit les lettres et prononce parfois une consonne muette : « l'île des Mots » se disait « des Mosse » et « L'île » en début de phrase « L'aile » (écrit « ile » pour la voix), et de même « nez », « jus », « lus », « lit », « gars », « souris », « reconnus », « dessus », « courts », « œufs », « fût », « loup » (« loupe »), « rat » (« rate »), « chat est » (« château »), « riz » ; « qui rime » s'entendait « qui règle » ; « huit » en fin de phrase perdait son t ; une voyelle seule après « c'est » ou « Touche » se fondait dans le mot d'avant ; une pause est ajoutée après « Ça se lit » et « Ça commence par »."
+ "_corrections": "Corrections appliquées à tous les textes dits par la voix, qui lit les lettres et prononce parfois une consonne muette : « l'île des Mots » se disait « des Mosse » et « L'île » en début de phrase « L'aile » (écrit « ile » pour la voix), et de même « nez », « jus », « lus », « lit », « gars », « souris », « reconnus », « dessus », « courts », « œufs », « fût », « loup » (« loupe »), « rat » (« rate »), « chat est » (« château »), « riz » ; « qui rime » s'entendait « qui règle » ; « huit » en fin de phrase perdait son t ; une voyelle seule après « c'est » ou « Touche » se fondait dans le mot d'avant ; une pause est ajoutée après « Ça se lit » et « Ça commence par ». Novembre 2026 (goutte) : « chaud » et « froid » se disaient avec un [d] (« chaude », « froide ») ; des verbes en -ent se disaient en « -ant » (« elles formant », « se serrant », « gélant », « tombant », « s'allumant », « se ressemblant ») : on écrit le singulier, qui se prononce pareil ; enfin, devant deux-points, une consonne finale muette était prononcée (« choisisses », « danses », « passe », « entière ») : ces deux-points-là deviennent une virgule (règle codée dans generer.py, qui épargne « c'est : é » et les syllabes recollées « mot… tôt : moto ! »)."
 }

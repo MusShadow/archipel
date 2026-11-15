@@ -100,6 +100,8 @@ for (const mod of ACTIVITIES.filter((m) => !ONLY || ONLY.includes(m.id))) {
           try { where = `${mod.id}:indice`; add(mod.hint(item, s, view as any)); } catch { /* rien */ }
         }
         try { where = `${mod.id}:reussite`; add(mod.success?.(item)); } catch { /* rien */ }
+        // Explications d'erreur préparées avec l'exercice (une par mauvaise réponse possible).
+        if (item.retry && typeof item.retry === "object") for (const t of Object.values(item.retry)) if (typeof t === "string") add(t, `${mod.id}:erreur`);
         // Gommette : la raison change selon le déroulé (tout trouvé du premier coup, avec de l'aide, drapeau découvert…).
         for (const sum of [
           { items: 6, firstTry: 6, helped: 0, errors: 0, last: item, learned: [] },
@@ -119,6 +121,11 @@ for (const mod of ACTIVITIES.filter((m) => !ONLY || ONLY.includes(m.id))) {
 }
 
 // ---------- Phrases à trous dont toutes les valeurs ne sortent pas forcément au hasard ----------
+// Le voyage de la goutte : la liste complète de ses phrases.
+{
+  const { voiceLines } = await import("../../src/activities/goutte");
+  if (!ONLY || ONLY.includes("goutte")) for (const x of voiceLines()) add(x.text, x.fam);
+}
 where = "syllabes:erreur";
 const SYLS = [...new Set(Object.values(SAY_SYL))];
 for (const a of SYLS) { add(`Tu as fabriqué ${a}. On cherche ${a}.`); add(`Ça, c'est ${a}. Écoute : ${a}.`); }

@@ -211,8 +211,8 @@ with sync_playwright() as pw:
     print("théâtre :", play_round(page, "36-theatre", mistakes=1))
     store_sticker(page)
 
-    # Île des Découvertes (une seule activité : lancement direct)
-    open_island(page, "decouvertes")
+    # Île des Découvertes : flotte ou coule (le voyage de la goutte est testé dans livraison3.py)
+    open_island(page, "decouvertes", "flotte")
     print("flotte :", play_round(page, "37-flotte", mistakes=1))
     store_sticker(page)
 

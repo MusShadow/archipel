@@ -438,9 +438,9 @@
 "spelling": null
 },
 "le corps un ovale tout fin|.": {
-"h": "061c8b9587442a36",
-"say": "Le corps : un ovale tout fin.",
-"per": 0.067,
+"h": "f98ea06f26f89584",
+"say": "Le corps, un ovale tout fin.",
+"per": 0.0,
 "spelling": null
 },
 "le feuillage comme un gros nuage tout bosselé|.": {
@@ -726,8 +726,8 @@
 "spelling": null
 },
 "regarde le corps un ovale tout fin|.": {
-"h": "878f7ed11494b26f",
-"say": "Regarde : le corps : un ovale tout fin.",
+"h": "3d36d7e626dfc882",
+"say": "Regarde : le corps, un ovale tout fin.",
 "per": 0.0,
 "spelling": null
 },
@@ -1536,9 +1536,9 @@
 "spelling": null
 },
 "basile était dehors il n'a pas vu ce qui s'est passé|.": {
-"h": "e05672346b4dd851",
-"say": "Basile était dehors : il n'a pas vu ce qui s'est passé.",
-"per": 0.065,
+"h": "79a67031e6e2b9a0",
+"say": "Basile était dehors, il n'a pas vu ce qui s'est passé.",
+"per": 0.0,
 "spelling": null
 },
 "basile joue au ballon|.": {
@@ -1554,21 +1554,21 @@
 "spelling": null
 },
 "basile n'a pas regardé dedans il croit qu'il y a des biscuits comme sur le dessin de la boîte|.": {
-"h": "330f9e140d552f4b",
-"say": "Basile n'a pas regardé dedans : il croit qu'il y a des biscuits, comme sur le dessin de la boîte.",
+"h": "e679cb163d278b09",
+"say": "Basile n'a pas regardé dedans, il croit qu'il y a des biscuits, comme sur le dessin de la boîte.",
 "per": 0.0,
 "spelling": null
 },
 "basile n'a pas regardé dedans il croit qu'il y a des crayons comme sur le dessin de la boîte|.": {
-"h": "f38f89f7dfaed5b9",
-"say": "Basile n'a pas regardé dedans : il croit qu'il y a des crayons, comme sur le dessin de la boîte.",
+"h": "9756a4b9b5598904",
+"say": "Basile n'a pas regardé dedans, il croit qu'il y a des crayons, comme sur le dessin de la boîte.",
 "per": 0.0,
 "spelling": null
 },
 "basile n'a pas regardé dedans il croit qu'il y a des œufs comme sur le dessin de la boîte|.": {
-"h": "6bf7ea1b9eda799d",
-"say": "Basile n'a pas regardé dedans : il croit qu'il y a des eux, comme sur le dessin de la boîte.",
-"per": 0.071,
+"h": "36d084448dfa9fb8",
+"say": "Basile n'a pas regardé dedans, il croit qu'il y a des eux, comme sur le dessin de la boîte.",
+"per": 0.0,
 "spelling": null
 },
 "basile n'a pas vu dedans|.": {
@@ -1716,44 +1716,44 @@
 "spelling": null
 },
 "ce n'est pas toi qui choisis c'est basile|.": {
-"h": "636809b00549439e",
-"say": "Ce n'est pas toi qui choisis : c'est Basile.",
+"h": "1023c04d5b9500f7",
+"say": "Ce n'est pas toi qui choisis, c'est Basile.",
 "per": 0.0,
 "spelling": null
 },
 "ce n'est pas toi qui choisis c'est kiki|.": {
-"h": "c34f81596901bede",
-"say": "Ce n'est pas toi qui choisis : c'est Kiki.",
+"h": "c3bd1cbb5203d819",
+"say": "Ce n'est pas toi qui choisis, c'est Kiki.",
 "per": 0.0,
 "spelling": null
 },
 "ce n'est pas toi qui choisis c'est mona|.": {
-"h": "ab07c5ba8eb43276",
-"say": "Ce n'est pas toi qui choisis : c'est Mona.",
-"per": 0.045,
+"h": "c2e6a231d059e2da",
+"say": "Ce n'est pas toi qui choisis, c'est Mona.",
+"per": 0.0,
 "spelling": null
 },
 "ce n'est pas toi qui choisis c'est octave|.": {
-"h": "f498d3911ac5849b",
-"say": "Ce n'est pas toi qui choisis : c'est Octave.",
+"h": "2ddb1c691dcea4ab",
+"say": "Ce n'est pas toi qui choisis, c'est Octave.",
 "per": 0.0,
 "spelling": null
 },
 "ce n'est pas toi qui choisis c'est pico|.": {
-"h": "44a470437dbd66a0",
-"say": "Ce n'est pas toi qui choisis : c'est Pico.",
+"h": "629f4e7c0a2a4ee9",
+"say": "Ce n'est pas toi qui choisis, c'est Pico.",
 "per": 0.0,
 "spelling": null
 },
 "ce n'est pas toi qui choisis c'est plume|.": {
-"h": "0b315664d8e93849",
-"say": "Ce n'est pas toi qui choisis : c'est Plume.",
-"per": 0.045,
+"h": "81833b097d1d75f2",
+"say": "Ce n'est pas toi qui choisis, c'est Plume.",
+"per": 0.0,
 "spelling": null
 },
 "ce n'est pas toi qui choisis c'est rico|.": {
-"h": "7c85688b2da28167",
-"say": "Ce n'est pas toi qui choisis : c'est Rico.",
+"h": "d7c3e2e1a3334c60",
+"say": "Ce n'est pas toi qui choisis, c'est Rico.",
 "per": 0.0,
 "spelling": null
 },
@@ -1938,8 +1938,8 @@
 "spelling": null
 },
 "elle peut prendre un jouet lequel va-t-elle prendre|?": {
-"h": "aa8e5cad5436c0c6",
-"say": "Elle peut prendre un jouet : lequel va-t-elle prendre ?",
+"h": "e67424f4cb9a0194",
+"say": "Elle peut prendre un jouet, lequel va-t-elle prendre ?",
 "per": 0.0,
 "spelling": null
 },
@@ -2088,8 +2088,8 @@
 "spelling": null
 },
 "il ne s'y attendait pas c'est une surprise|.": {
-"h": "e50a42bf6873de78",
-"say": "Il ne s'y attendait pas : c'est une surprise.",
+"h": "cace2d9c96eacfad",
+"say": "Il ne s'y attendait pas, c'est une surprise.",
 "per": 0.0,
 "spelling": null
 },
@@ -2136,8 +2136,8 @@
 "spelling": null
 },
 "kiki était dehors elle n'a pas vu ce qui s'est passé|.": {
-"h": "e986fdca9c78fc4b",
-"say": "Kiki était dehors : elle n'a pas vu ce qui s'est passé.",
+"h": "932c0946b3fd6ae2",
+"say": "Kiki était dehors, elle n'a pas vu ce qui s'est passé.",
 "per": 0.0,
 "spelling": null
 },
@@ -2502,8 +2502,8 @@
 "spelling": null
 },
 "mona était dehors elle n'a pas vu ce qui s'est passé|.": {
-"h": "9892e1b22e5f6371",
-"say": "Mona était dehors : elle n'a pas vu ce qui s'est passé.",
+"h": "0a8486e22eadcc07",
+"say": "Mona était dehors, elle n'a pas vu ce qui s'est passé.",
 "per": 0.0,
 "spelling": null
 },
@@ -2640,8 +2640,8 @@
 "spelling": null
 },
 "octave était dehors il n'a pas vu ce qui s'est passé|.": {
-"h": "b6e66c5b9da83b5b",
-"say": "Octave était dehors : il n'a pas vu ce qui s'est passé.",
+"h": "92bfedcbdb2e797a",
+"say": "Octave était dehors, il n'a pas vu ce qui s'est passé.",
 "per": 0.0,
 "spelling": null
 },
@@ -2652,20 +2652,20 @@
 "spelling": null
 },
 "octave n'a pas regardé dedans il croit qu'il y a des biscuits comme sur le dessin de la boîte|.": {
-"h": "bda2720031abb5dd",
-"say": "Octave n'a pas regardé dedans : il croit qu'il y a des biscuits, comme sur le dessin de la boîte.",
-"per": 0.017,
+"h": "a07e9040ce9879e5",
+"say": "Octave n'a pas regardé dedans, il croit qu'il y a des biscuits, comme sur le dessin de la boîte.",
+"per": 0.0,
 "spelling": null
 },
 "octave n'a pas regardé dedans il croit qu'il y a des crayons comme sur le dessin de la boîte|.": {
-"h": "10f02bcf7abc5695",
-"say": "Octave n'a pas regardé dedans : il croit qu'il y a des crayons, comme sur le dessin de la boîte.",
+"h": "537534a8efaccfdd",
+"say": "Octave n'a pas regardé dedans, il croit qu'il y a des crayons, comme sur le dessin de la boîte.",
 "per": 0.0,
 "spelling": null
 },
 "octave n'a pas regardé dedans il croit qu'il y a des œufs comme sur le dessin de la boîte|.": {
-"h": "2a859563de22faba",
-"say": "Octave n'a pas regardé dedans : il croit qu'il y a des eux, comme sur le dessin de la boîte.",
+"h": "e142421c79d5f049",
+"say": "Octave n'a pas regardé dedans, il croit qu'il y a des eux, comme sur le dessin de la boîte.",
 "per": 0.0,
 "spelling": null
 },
@@ -3414,20 +3414,20 @@
 "spelling": null
 },
 "pico n'a pas regardé dedans il croit qu'il y a des biscuits comme sur le dessin de la boîte|.": {
-"h": "1fbe83e4670c2db6",
-"say": "Pico n'a pas regardé dedans : il croit qu'il y a des biscuits, comme sur le dessin de la boîte.",
+"h": "4b4e2b9a11a82d1a",
+"say": "Pico n'a pas regardé dedans, il croit qu'il y a des biscuits, comme sur le dessin de la boîte.",
 "per": 0.0,
 "spelling": null
 },
 "pico n'a pas regardé dedans il croit qu'il y a des crayons comme sur le dessin de la boîte|.": {
-"h": "f945b97390178803",
-"say": "Pico n'a pas regardé dedans : il croit qu'il y a des crayons, comme sur le dessin de la boîte.",
+"h": "fa391d5c96b004c8",
+"say": "Pico n'a pas regardé dedans, il croit qu'il y a des crayons, comme sur le dessin de la boîte.",
 "per": 0.0,
 "spelling": null
 },
 "pico n'a pas regardé dedans il croit qu'il y a des œufs comme sur le dessin de la boîte|.": {
-"h": "631ee8c94dd39f93",
-"say": "Pico n'a pas regardé dedans : il croit qu'il y a des eux, comme sur le dessin de la boîte.",
+"h": "85a81bbe9b71c1df",
+"say": "Pico n'a pas regardé dedans, il croit qu'il y a des eux, comme sur le dessin de la boîte.",
 "per": 0.0,
 "spelling": null
 },
@@ -3575,12 +3575,6 @@
 "per": 0.0,
 "spelling": null
 },
-"regarde ce qui reste|.": {
-"h": "9db2cd79e7508d3c",
-"say": "Regarde ce qui reste.",
-"per": 0.0,
-"spelling": null
-},
 "rico a construit une tour|.": {
 "h": "8400746bce648b81",
 "say": "Rico a construit une tour.",
@@ -3600,27 +3594,27 @@
 "spelling": null
 },
 "rico était dehors il n'a pas vu ce qui s'est passé|.": {
-"h": "1b4d2f621256ae80",
-"say": "Rico était dehors : il n'a pas vu ce qui s'est passé.",
+"h": "30c7c7ca6fea2063",
+"say": "Rico était dehors, il n'a pas vu ce qui s'est passé.",
 "per": 0.0,
 "spelling": null
 },
 "rico n'a pas regardé dedans il croit qu'il y a des biscuits comme sur le dessin de la boîte|.": {
-"h": "45cd8ea23804f751",
-"say": "Rico n'a pas regardé dedans : il croit qu'il y a des biscuits, comme sur le dessin de la boîte.",
+"h": "d4507ab23276f29b",
+"say": "Rico n'a pas regardé dedans, il croit qu'il y a des biscuits, comme sur le dessin de la boîte.",
 "per": 0.0,
 "spelling": null
 },
 "rico n'a pas regardé dedans il croit qu'il y a des crayons comme sur le dessin de la boîte|.": {
-"h": "ddff5e10362f37db",
-"say": "Rico n'a pas regardé dedans : il croit qu'il y a des crayons, comme sur le dessin de la boîte.",
+"h": "40a425780fb8c679",
+"say": "Rico n'a pas regardé dedans, il croit qu'il y a des crayons, comme sur le dessin de la boîte.",
 "per": 0.0,
 "spelling": null
 },
 "rico n'a pas regardé dedans il croit qu'il y a des œufs comme sur le dessin de la boîte|.": {
-"h": "74bf2dad3dcd14a3",
-"say": "Rico n'a pas regardé dedans : il croit qu'il y a des eux, comme sur le dessin de la boîte.",
-"per": 0.036,
+"h": "0da5c59cae5c1912",
+"say": "Rico n'a pas regardé dedans, il croit qu'il y a des eux, comme sur le dessin de la boîte.",
+"per": 0.0,
 "spelling": null
 },
 "rico n'a pas vu dedans|.": {
@@ -4554,9 +4548,9 @@
 "spelling": null
 },
 "a|.": {
-"h": "2d3109977403cf5d",
-"say": "a.",
-"per": 0.0,
+"h": "bc1a0e0664ffc6ae",
+"say": "a",
+"per": 0.2,
 "spelling": "a"
 },
 "afrique|.": {
@@ -4626,8 +4620,8 @@
 "spelling": null
 },
 "banane|.": {
-"h": "ce983f477fca20b3",
-"say": "Banane.",
+"h": "6841136ff73d2175",
+"say": "banane",
 "per": 0.0,
 "spelling": null
 },
@@ -4656,14 +4650,14 @@
 "spelling": null
 },
 "bé|.": {
-"h": "7fd2bd41b1172ffc",
-"say": "bé.",
+"h": "2af4364955035713",
+"say": "bé",
 "per": 0.0,
 "spelling": "bé"
 },
 "beau|.": {
-"h": "996f7c5d6eedfb27",
-"say": "beau.",
+"h": "58a6d279b229f47e",
+"say": "beau",
 "per": 0.0,
 "spelling": null
 },
@@ -4680,8 +4674,8 @@
 "spelling": null
 },
 "beurre|.": {
-"h": "f1b25a23a5b36ae8",
-"say": "beurre.",
+"h": "603269e328b418ce",
+"say": "beurre",
 "per": 0.0,
 "spelling": null
 },
@@ -4704,8 +4698,8 @@
 "spelling": null
 },
 "bon|.": {
-"h": "8243b064235feeae",
-"say": "bon.",
+"h": "3aed3e8f50609a75",
+"say": "bon",
 "per": 0.0,
 "spelling": null
 },
@@ -4823,6 +4817,12 @@
 "per": 0.0,
 "spelling": null
 },
+"c'est parce que tu sais d'où vient l'eau du robinet|,": {
+"h": "85f4f078f4fd5e8a",
+"say": "c'est parce que tu sais d'où vient l'eau du robinet,",
+"per": 0.0,
+"spelling": null
+},
 "c'est pour avoir compté avec soin|.": {
 "h": "94ad76f060d0bde7",
 "say": "c'est pour avoir compté avec soin.",
@@ -4928,6 +4928,12 @@
 "c'est pour le drapeau de la guinée|,": {
 "h": "49935fa59ab9a5be",
 "say": "c'est pour le drapeau de la Guinée,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la hongrie|,": {
+"h": "955c45d6d9f1b515",
+"say": "c'est pour le drapeau de la Hongrie,",
 "per": 0.0,
 "spelling": null
 },
@@ -5123,6 +5129,12 @@
 "per": 0.0,
 "spelling": null
 },
+"c'est pour le grand voyage de ploc|,": {
+"h": "645963c8ea9d57e4",
+"say": "c'est pour le grand voyage de Ploc,",
+"per": 0.045,
+"spelling": null
+},
 "c'est pour les bugs que tu as trouvés|,": {
 "h": "c7c446e0c304820e",
 "say": "c'est pour les bugs que tu as trouvés,",
@@ -5201,6 +5213,12 @@
 "per": 0.0,
 "spelling": null
 },
+"c'est pour tous les bons gestes qui protègent l'eau|.": {
+"h": "c50ec8cf7a934675",
+"say": "c'est pour tous les bons gestes qui protègent l'eau.",
+"per": 0.0,
+"spelling": null
+},
 "c'est pour tous les drapeaux que tu as reconnus|.": {
 "h": "b889ea2d0f41b17b",
 "say": "c'est pour tous les drapeaux que tu as reconnu.",
@@ -5238,27 +5256,27 @@
 "spelling": null
 },
 "ça commence par ca|.": {
-"h": "9cd695ae50f9364d",
-"say": "Ça commence par : Ca.",
-"per": 0.083,
+"h": "51f5ddcbd9eed2f7",
+"say": "Ça commence par : ca.",
+"per": 0.0,
 "spelling": null
 },
 "ça commence par mo|.": {
-"h": "5f85082a6aeb5489",
-"say": "Ça commence par : Mo.",
+"h": "7a661dfaeb710648",
+"say": "Ça commence par : mo.",
 "per": 0.0,
 "spelling": null
 },
 "ça commence par pa|.": {
-"h": "088743776c5c1767",
-"say": "Ça commence par : Pa.",
+"h": "406fa6d41b52f124",
+"say": "Ça commence par : pa.",
 "per": 0.0,
 "spelling": null
 },
 "ça commence par to|.": {
-"h": "0ea94193afb87d38",
-"say": "Ça commence par : To.",
-"per": 0.0,
+"h": "b786a52646fd8ffc",
+"say": "Ça commence par : tôt.",
+"per": 0.083,
 "spelling": null
 },
 "ça va mieux|?": {
@@ -5274,8 +5292,8 @@
 "spelling": "ca"
 },
 "cabane|.": {
-"h": "aea5af1a14683f8c",
-"say": "Cabane.",
+"h": "b67ceec0255bdbe0",
+"say": "cabane.",
 "per": 0.0,
 "spelling": null
 },
@@ -5358,8 +5376,8 @@
 "spelling": null
 },
 "chat|.": {
-"h": "289ca28b9eb1c673",
-"say": "Cha.",
+"h": "758b23ea17c7c058",
+"say": "cha.",
 "per": 0.0,
 "spelling": null
 },
@@ -5370,8 +5388,8 @@
 "spelling": null
 },
 "chaud|.": {
-"h": "32aae94e8c8d316d",
-"say": "chaud",
+"h": "91778b083f445bad",
+"say": "chô",
 "per": 0.0,
 "spelling": null
 },
@@ -5388,8 +5406,8 @@
 "spelling": null
 },
 "chien|.": {
-"h": "e4951afb65e8c3e5",
-"say": "chien.",
+"h": "ea9f57732528c743",
+"say": "chien",
 "per": 0.0,
 "spelling": null
 },
@@ -5418,8 +5436,8 @@
 "spelling": null
 },
 "chon|.": {
-"h": "b41e8ce55cb96740",
-"say": "chon.",
+"h": "70341e0c5c345110",
+"say": "chon",
 "per": 0.0,
 "spelling": "chon"
 },
@@ -5430,8 +5448,8 @@
 "spelling": null
 },
 "clé|.": {
-"h": "2e355bf855a011c0",
-"say": "clé.",
+"h": "4a7b75fecb4c23c1",
+"say": "clé",
 "per": 0.0,
 "spelling": null
 },
@@ -5448,8 +5466,8 @@
 "spelling": null
 },
 "cœur|.": {
-"h": "c5143ba5dba4bb23",
-"say": "cœur.",
+"h": "87d6f55f1e8a0c62",
+"say": "cœur",
 "per": 0.0,
 "spelling": null
 },
@@ -5525,6 +5543,18 @@
 "per": 0.0,
 "spelling": null
 },
+"de la mer jusqu'au nuage|.": {
+"h": "25c7f984815a717b",
+"say": "de la mer jusqu'au nuage.",
+"per": 0.0,
+"spelling": null
+},
+"de la mer jusqu'au robinet|.": {
+"h": "53655291d98fbb67",
+"say": "de la mer jusqu'au robinet.",
+"per": 0.0,
+"spelling": null
+},
 "de|.": {
 "h": "6a26d303fcd3adb0",
 "say": "de",
@@ -5586,8 +5616,8 @@
 "spelling": "do"
 },
 "domino|.": {
-"h": "3391073936919b41",
-"say": "domino",
+"h": "8ee2f9312abefd15",
+"say": "domino.",
 "per": 0.0,
 "spelling": null
 },
@@ -5604,8 +5634,8 @@
 "spelling": "du"
 },
 "eau|.": {
-"h": "b2862317b0d414f3",
-"say": "eau.",
+"h": "020499b3a0dbf672",
+"say": "eau",
 "per": 0.0,
 "spelling": null
 },
@@ -5654,6 +5684,12 @@
 "et on rentre|.": {
 "h": "0253606240947288",
 "say": "et on rentre !",
+"per": 0.0,
+"spelling": null
+},
+"et où elle repart|.": {
+"h": "3927d8552690250e",
+"say": "et où elle repart.",
 "per": 0.0,
 "spelling": null
 },
@@ -5754,14 +5790,14 @@
 "spelling": null
 },
 "fourmi|.": {
-"h": "4998495930f8d06b",
-"say": "fourmi",
+"h": "16b41f8f5d9da9e5",
+"say": "fourmi.",
 "per": 0.0,
 "spelling": null
 },
 "fraise|.": {
-"h": "5473dcb034fc1ed1",
-"say": "fraise",
+"h": "f29090ac8266451b",
+"say": "fraise.",
 "per": 0.0,
 "spelling": null
 },
@@ -5778,14 +5814,14 @@
 "spelling": "fu"
 },
 "fumé|.": {
-"h": "93d86d104266f64a",
-"say": "fumé",
+"h": "940abab557a9312d",
+"say": "fumé.",
 "per": 0.0,
 "spelling": null
 },
 "fusée|.": {
-"h": "9d508921aff91b7a",
-"say": "fusée",
+"h": "d529b1736ed027c7",
+"say": "fusée.",
 "per": 0.0,
 "spelling": null
 },
@@ -5808,14 +5844,14 @@
 "spelling": null
 },
 "gâteau|.": {
-"h": "ddd72f690db87311",
-"say": "gâteau",
+"h": "70564c1066d2e5c1",
+"say": "gâteau.",
 "per": 0.0,
 "spelling": null
 },
 "girafe|.": {
-"h": "aaa448520b3e7e59",
-"say": "girafe",
+"h": "651cfe3bbd4f7464",
+"say": "girafe.",
 "per": 0.0,
 "spelling": null
 },
@@ -5844,8 +5880,8 @@
 "spelling": null
 },
 "guitare|.": {
-"h": "7b31c5112d4a04a6",
-"say": "guitare",
+"h": "1044ef6b5888bc5c",
+"say": "guitare.",
 "per": 0.0,
 "spelling": null
 },
@@ -6012,26 +6048,26 @@
 "spelling": "jû"
 },
 "judo|.": {
-"h": "0370820bf3a82e86",
-"say": "Judo.",
+"h": "f91238527ed4475b",
+"say": "judo.",
 "per": 0.0,
 "spelling": null
 },
 "kangourou|.": {
-"h": "b6ed51650ac4be87",
-"say": "kangourou",
+"h": "2ce9e537f3527f0f",
+"say": "kangourou.",
 "per": 0.0,
 "spelling": null
 },
 "kiwi|.": {
-"h": "08bd392a50928372",
-"say": "kiwi",
+"h": "c4c3ab94eff7e0ee",
+"say": "kiwi.",
 "per": 0.0,
 "spelling": null
 },
 "l'allemagne|.": {
-"h": "c77d8fb16a81e6e7",
-"say": "L'Allemagne",
+"h": "d56121b93186b398",
+"say": "l'Allemagne",
 "per": 0.0,
 "spelling": null
 },
@@ -6060,8 +6096,8 @@
 "spelling": null
 },
 "l'autriche|.": {
-"h": "e9768edf51153f2d",
-"say": "L'Autriche",
+"h": "c295276602660308",
+"say": "l'Autriche",
 "per": 0.0,
 "spelling": null
 },
@@ -6138,32 +6174,32 @@
 "spelling": null
 },
 "l'inde|.": {
-"h": "f8c73fd87603ece8",
-"say": "L'Inde",
+"h": "2d048f04ec07d871",
+"say": "l'Inde",
 "per": 0.0,
 "spelling": null
 },
 "l'indonésie|.": {
-"h": "32132d1e6f556ad4",
-"say": "L'Indonésie",
+"h": "a8c45e0c0a17bcf5",
+"say": "l'Indonésie",
 "per": 0.0,
 "spelling": null
 },
 "l'irlande|.": {
-"h": "ca10d425a406584c",
-"say": "L'Irlande",
+"h": "87c155d9074f018d",
+"say": "l'Irlande",
 "per": 0.0,
 "spelling": null
 },
 "l'italie|.": {
-"h": "3487975cbc33c7f6",
-"say": "L'Italie",
+"h": "c0c61e83b25f1915",
+"say": "l'Italie",
 "per": 0.0,
 "spelling": null
 },
 "l'ukraine|.": {
-"h": "0d789fa24de21360",
-"say": "L'Ukraine",
+"h": "58b6c508d84a8132",
+"say": "l'Ukraine",
 "per": 0.0,
 "spelling": null
 },
@@ -6174,14 +6210,14 @@
 "spelling": null
 },
 "la belgique|.": {
-"h": "5e60f74d4ba83acb",
-"say": "La Belgique",
+"h": "24ca95ff61f0e8ae",
+"say": "la Belgique",
 "per": 0.0,
 "spelling": null
 },
 "la bulgarie|.": {
-"h": "8e2c15f6b960bf3b",
-"say": "La Bulgarie",
+"h": "ece204538521142e",
+"say": "la Bulgarie",
 "per": 0.0,
 "spelling": null
 },
@@ -6192,20 +6228,20 @@
 "spelling": null
 },
 "la chine|.": {
-"h": "243066cf350a3137",
-"say": "La Chine",
+"h": "2feb26d41c0989e1",
+"say": "la Chine",
 "per": 0.0,
 "spelling": null
 },
 "la colombie|.": {
-"h": "af19880323ef4d99",
-"say": "La Colombie",
+"h": "7cd2cc9fe6cf9c9e",
+"say": "la Colombie",
 "per": 0.0,
 "spelling": null
 },
 "la côte d'ivoire|.": {
-"h": "167eb6b1f14c4cf8",
-"say": "La Côte d'Ivoire",
+"h": "5649cfc8351bdc16",
+"say": "la Côte d'Ivoire",
 "per": 0.0,
 "spelling": null
 },
@@ -6216,38 +6252,38 @@
 "spelling": null
 },
 "la finlande|.": {
-"h": "c94b5a032426919a",
-"say": "La Finlande",
+"h": "e681751cc47206dd",
+"say": "la Finlande",
 "per": 0.0,
 "spelling": null
 },
 "la france|.": {
-"h": "71b4451bbb85f96f",
-"say": "La France",
+"h": "1b963d781f935a69",
+"say": "la France",
 "per": 0.0,
 "spelling": null
 },
 "la grèce|.": {
-"h": "54b97994ba686dd0",
-"say": "La Grèce",
+"h": "dd39a27c9eb970e5",
+"say": "la Grèce",
 "per": 0.0,
 "spelling": null
 },
 "la guinée|.": {
-"h": "666e2591e27cabff",
-"say": "La Guinée",
+"h": "473734e4214036c3",
+"say": "la Guinée",
 "per": 0.0,
 "spelling": null
 },
 "la hongrie|.": {
-"h": "9155a5665bb26cab",
-"say": "La Hongrie",
+"h": "4cae077b9ee61657",
+"say": "la Hongrie",
 "per": 0.0,
 "spelling": null
 },
 "la lituanie|.": {
-"h": "001ae2beba23b02e",
-"say": "La Lituanie",
+"h": "fb01e2e9aba965f6",
+"say": "la Lituanie",
 "per": 0.0,
 "spelling": null
 },
@@ -6264,8 +6300,8 @@
 "spelling": null
 },
 "la norvège|.": {
-"h": "989b40431d6e4dbe",
-"say": "La Norvège",
+"h": "8450affff5dd7083",
+"say": "la Norvège",
 "per": 0.0,
 "spelling": null
 },
@@ -6282,8 +6318,8 @@
 "spelling": null
 },
 "la pologne|.": {
-"h": "faafd10318112f0f",
-"say": "La Pologne",
+"h": "2348728d40442f9e",
+"say": "la Pologne",
 "per": 0.0,
 "spelling": null
 },
@@ -6294,14 +6330,14 @@
 "spelling": null
 },
 "la roumanie|.": {
-"h": "d51caac0e3a2b3e3",
-"say": "La Roumanie",
+"h": "67f6246d1be11def",
+"say": "la Roumanie",
 "per": 0.0,
 "spelling": null
 },
 "la russie|.": {
-"h": "577a3c6b46369fcf",
-"say": "La Russie",
+"h": "f7278fa8b5bf2a42",
+"say": "la Russie",
 "per": 0.0,
 "spelling": null
 },
@@ -6312,27 +6348,27 @@
 "spelling": null
 },
 "la somalie|.": {
-"h": "5c30781f757dc7e0",
-"say": "La Somalie",
+"h": "d2c6de284337d24c",
+"say": "la Somalie",
 "per": 0.0,
 "spelling": null
 },
 "la suède|.": {
-"h": "daf2ca8d9f105b3c",
-"say": "La Suède",
+"h": "f74912ca0bd12bc7",
+"say": "la Suède",
 "per": 0.0,
 "spelling": null
 },
 "la suisse|.": {
-"h": "b7caf72aff56c724",
-"say": "La Suisse",
+"h": "276efff349d40840",
+"say": "la Suisse",
 "per": 0.0,
 "spelling": null
 },
 "la tchéquie|.": {
-"h": "bf45d924cb7fc20c",
-"say": "La Tchéquie",
-"per": 0.0,
+"h": "c64275a81f1ebe18",
+"say": "la Tchéquie",
+"per": 0.091,
 "spelling": null
 },
 "la tomate|.": {
@@ -6366,8 +6402,8 @@
 "spelling": null
 },
 "lama|.": {
-"h": "14c62aadea9540d1",
-"say": "Lama.",
+"h": "881cf14e8a3e7a11",
+"say": "lama.",
 "per": 0.125,
 "spelling": null
 },
@@ -6378,26 +6414,26 @@
 "spelling": null
 },
 "lapin|.": {
-"h": "0749ad77f967a428",
-"say": "lapin",
+"h": "dc6f218227a4d644",
+"say": "lapin.",
 "per": 0.0,
 "spelling": null
 },
 "le bangladesh|.": {
-"h": "e2e381b084dc18d6",
-"say": "Le Bangladesh",
+"h": "dde3c51c18b141b1",
+"say": "le Bangladesh",
 "per": 0.0,
 "spelling": null
 },
 "le cameroun|.": {
-"h": "1e9578a0fb0a2a5c",
-"say": "Le Cameroun",
+"h": "72adf0fe23449400",
+"say": "le Cameroun",
 "per": 0.167,
 "spelling": null
 },
 "le canada|.": {
-"h": "b4ef769386629c6a",
-"say": "Le Canada",
+"h": "be5cc5bb3bc27022",
+"say": "le Canada",
 "per": 0.0,
 "spelling": null
 },
@@ -6420,8 +6456,8 @@
 "spelling": null
 },
 "le chili|.": {
-"h": "79391429e9f3ec00",
-"say": "Le Chili",
+"h": "37a1f42578ea84c3",
+"say": "le Chili",
 "per": 0.0,
 "spelling": null
 },
@@ -6438,8 +6474,8 @@
 "spelling": null
 },
 "le danemark|.": {
-"h": "aa0cbffd044efff6",
-"say": "Le Danemark",
+"h": "d250b2efb4e2214f",
+"say": "le Danemark",
 "per": 0.0,
 "spelling": null
 },
@@ -6480,14 +6516,14 @@
 "spelling": null
 },
 "le gabon|.": {
-"h": "ac54a0a092ee53c7",
-"say": "Le Gabon",
+"h": "6e4205e2dd0a2388",
+"say": "le Gabon",
 "per": 0.0,
 "spelling": null
 },
 "le japon|.": {
-"h": "28e3f7b9ba17e44b",
-"say": "Le Japon",
+"h": "e2cc0e8b633867da",
+"say": "le Japon",
 "per": 0.0,
 "spelling": null
 },
@@ -6504,8 +6540,8 @@
 "spelling": null
 },
 "le laos|.": {
-"h": "6356b321a2e55840",
-"say": "Le Laos",
+"h": "d04c50800f5c3949",
+"say": "le Laos",
 "per": 0.0,
 "spelling": null
 },
@@ -6528,14 +6564,14 @@
 "spelling": null
 },
 "le luxembourg|.": {
-"h": "d06035245cbc20c6",
-"say": "Le Luxembourg",
+"h": "fc3369a6a6d7da53",
+"say": "le Luxembourg",
 "per": 0.0,
 "spelling": null
 },
 "le mali|.": {
-"h": "a7dff5e6128b581b",
-"say": "Le Mali",
+"h": "28d867f007422d96",
+"say": "le Mali",
 "per": 0.0,
 "spelling": null
 },
@@ -6552,8 +6588,8 @@
 "spelling": null
 },
 "le maroc|.": {
-"h": "6f06a3b4181eca59",
-"say": "Le Maroc",
+"h": "418d3fbbfadcecae",
+"say": "le Maroc",
 "per": 0.0,
 "spelling": null
 },
@@ -6588,14 +6624,14 @@
 "spelling": null
 },
 "le nigeria|.": {
-"h": "50cc8618dcc9c4cc",
-"say": "Le Nigeria",
+"h": "afb4d2a44ea82156",
+"say": "le Nigeria",
 "per": 0.0,
 "spelling": null
 },
 "le panama|.": {
-"h": "f6c1016a29cd5f0b",
-"say": "Le Panama",
+"h": "fd41a54ac74dd2b5",
+"say": "le Panama",
 "per": 0.0,
 "spelling": null
 },
@@ -6612,8 +6648,8 @@
 "spelling": null
 },
 "le pérou|.": {
-"h": "092a86c03bb44f4b",
-"say": "Le Pérou",
+"h": "62c3949a6301432d",
+"say": "le Pérou",
 "per": 0.0,
 "spelling": null
 },
@@ -6654,14 +6690,14 @@
 "spelling": null
 },
 "le royaume-uni|.": {
-"h": "9e628bcf07ecd2bd",
-"say": "Le Royaume-Uni",
+"h": "06d51eebf4aedf13",
+"say": "le Royaume-Uni",
 "per": 0.0,
 "spelling": null
 },
 "le sénégal|.": {
-"h": "77dcfcc4035abf3d",
-"say": "Le Sénégal",
+"h": "76af36805e424ecf",
+"say": "le Sénégal",
 "per": 0.0,
 "spelling": null
 },
@@ -6690,8 +6726,8 @@
 "spelling": null
 },
 "le tchad|.": {
-"h": "c5f85ec2371f9d72",
-"say": "Le Tchad",
+"h": "b96d21bdb555cb4c",
+"say": "le Tchad",
 "per": 0.0,
 "spelling": null
 },
@@ -6708,9 +6744,9 @@
 "spelling": null
 },
 "le togo|.": {
-"h": "64fce2b932f4940f",
-"say": "Le Togo",
-"per": 0.0,
+"h": "e16fc8b088327d85",
+"say": "le Togo",
+"per": 0.1,
 "spelling": null
 },
 "le vélo|.": {
@@ -6720,8 +6756,20 @@
 "spelling": null
 },
 "le viêt nam|.": {
-"h": "9854f7972dd9b6e5",
-"say": "Le Viêt Nam",
+"h": "a816ad0ff678519c",
+"say": "le Viêt Nam",
+"per": 0.0,
+"spelling": null
+},
+"le voyage de la goutte|,": {
+"h": "bf74374cec61f5c5",
+"say": "Le voyage de la goutte,",
+"per": 0.0,
+"spelling": null
+},
+"le voyage de la goutte|.": {
+"h": "7486014abe888309",
+"say": "le voyage de la goutte.",
 "per": 0.0,
 "spelling": null
 },
@@ -6744,8 +6792,8 @@
 "spelling": null
 },
 "les états-unis|.": {
-"h": "2f42d5d55e919385",
-"say": "Les États-Unis",
+"h": "5519d2b9f9b3c475",
+"say": "les États-Unis",
 "per": 0.0,
 "spelling": null
 },
@@ -6786,14 +6834,14 @@
 "spelling": null
 },
 "les palaos|.": {
-"h": "00c23cd6ed5dbd49",
-"say": "Les Palaos",
-"per": 0.083,
+"h": "8fb7e10779a9b0ac",
+"say": "les Palaos",
+"per": 0.0,
 "spelling": null
 },
 "les pays-bas|.": {
-"h": "d3a63e26c98a145c",
-"say": "Les Pays-Bas",
+"h": "080bd0d8218b5f06",
+"say": "les Pays-Bas",
 "per": 0.0,
 "spelling": null
 },
@@ -6816,8 +6864,8 @@
 "spelling": "li"
 },
 "lion|.": {
-"h": "034c9167d4fb941e",
-"say": "Lion.",
+"h": "1b7639d2c99ddac4",
+"say": "lion.",
 "per": 0.0,
 "spelling": null
 },
@@ -6858,8 +6906,8 @@
 "spelling": null
 },
 "loup|.": {
-"h": "d73ccdc8cce3c508",
-"say": "Lou.",
+"h": "d138a649a53fcf85",
+"say": "lou.",
 "per": 0.0,
 "spelling": null
 },
@@ -6870,8 +6918,8 @@
 "spelling": "lu"
 },
 "lune|.": {
-"h": "4fff136a956d4840",
-"say": "Lune.",
+"h": "36e0cd8104bc8dfd",
+"say": "lune.",
 "per": 0.0,
 "spelling": null
 },
@@ -6900,14 +6948,14 @@
 "spelling": null
 },
 "maison|.": {
-"h": "5d53f2a27010aaa4",
-"say": "maison",
+"h": "4892933b0ff14d10",
+"say": "maison.",
 "per": 0.0,
 "spelling": null
 },
 "mali|.": {
-"h": "aec2c7434fd1811f",
-"say": "Mali",
+"h": "df6cc173e62b1b66",
+"say": "Mali.",
 "per": 0.0,
 "spelling": null
 },
@@ -6924,8 +6972,8 @@
 "spelling": null
 },
 "marteau|.": {
-"h": "e7aeb9cabca1f0aa",
-"say": "marteau",
+"h": "e5945241ac01b682",
+"say": "marteau.",
 "per": 0.0,
 "spelling": null
 },
@@ -6972,8 +7020,8 @@
 "spelling": null
 },
 "midi|.": {
-"h": "f50fdf8f8c81e297",
-"say": "midi",
+"h": "dc099e0db92c396f",
+"say": "midi.",
 "per": 0.0,
 "spelling": null
 },
@@ -7002,8 +7050,8 @@
 "spelling": null
 },
 "monaco|.": {
-"h": "dc5d4d4d08648fcf",
-"say": "Monaco",
+"h": "67777137ef87ca99",
+"say": "Monaco.",
 "per": 0.0,
 "spelling": null
 },
@@ -7014,8 +7062,8 @@
 "spelling": null
 },
 "moto|.": {
-"h": "159e2dfca7d2b326",
-"say": "Moto.",
+"h": "2cae586d5798e0d2",
+"say": "moto.",
 "per": 0.0,
 "spelling": null
 },
@@ -7026,8 +7074,8 @@
 "spelling": null
 },
 "mouton|.": {
-"h": "3eb0403b8a07492b",
-"say": "Mouton.",
+"h": "395a2c22fbdae5d2",
+"say": "mouton.",
 "per": 0.0,
 "spelling": null
 },
@@ -7038,8 +7086,8 @@
 "spelling": "mu"
 },
 "mur|.": {
-"h": "4fcaebaa7bcb3e6e",
-"say": "Mur.",
+"h": "2ff40dc714560eef",
+"say": "mur.",
 "per": 0.0,
 "spelling": null
 },
@@ -7116,8 +7164,8 @@
 "spelling": "nu"
 },
 "numéro|.": {
-"h": "6e33005b720c7f77",
-"say": "numéro",
+"h": "c1f4cf6ba6672cc7",
+"say": "numéro.",
 "per": 0.0,
 "spelling": null
 },
@@ -7134,8 +7182,8 @@
 "spelling": null
 },
 "olive|.": {
-"h": "d488bd5e62fcd2c9",
-"say": "Olive.",
+"h": "4d244588aa270986",
+"say": "olive.",
 "per": 0.0,
 "spelling": null
 },
@@ -7188,8 +7236,8 @@
 "spelling": null
 },
 "ordinateur|.": {
-"h": "bfeb3dddb5da9a9c",
-"say": "ordinateur",
+"h": "2f669586e7f4c31b",
+"say": "ordinateur.",
 "per": 0.0,
 "spelling": null
 },
@@ -7302,32 +7350,32 @@
 "spelling": null
 },
 "panama|.": {
-"h": "efc8fdd7866c3100",
-"say": "Panama",
+"h": "17f66e513cb6f63c",
+"say": "Panama.",
 "per": 0.0,
 "spelling": null
 },
 "panda|.": {
-"h": "f73ba920e6b0209d",
-"say": "panda",
+"h": "3c722c56bf435b91",
+"say": "panda.",
 "per": 0.0,
 "spelling": null
 },
 "papi|.": {
-"h": "fbd8e44d6b5a65f1",
-"say": "Papi.",
-"per": 0.0,
+"h": "89ad526df2f09313",
+"say": "papi.",
+"per": 0.25,
 "spelling": null
 },
 "papillon|.": {
-"h": "2130be5a37349098",
-"say": "papillon",
+"h": "6ff9c6147e3b631c",
+"say": "papillon.",
 "per": 0.0,
 "spelling": null
 },
 "parapluie|.": {
-"h": "4f107685f6825bb8",
-"say": "parapluie",
+"h": "8a96496c66133d55",
+"say": "parapluie.",
 "per": 0.0,
 "spelling": null
 },
@@ -7368,8 +7416,8 @@
 "spelling": "pi"
 },
 "piano|.": {
-"h": "6f607a173091cd42",
-"say": "Piano.",
+"h": "c4a2fb0e166476ac",
+"say": "piano.",
 "per": 0.0,
 "spelling": null
 },
@@ -7410,9 +7458,15 @@
 "spelling": null
 },
 "plume|.": {
-"h": "08eeb50698f12a1e",
-"say": "Plume.",
+"h": "dc2824c09aa6d7b8",
+"say": "plume.",
 "per": 0.0,
+"spelling": null
+},
+"plus tu montes l'entonnoir plus l'eau gicle loin|.": {
+"h": "23b047ca233fae06",
+"say": "Plus tu montes l'entonnoir, plus l'eau gicle loin !",
+"per": 0.036,
 "spelling": null
 },
 "pois|.": {
@@ -7422,8 +7476,8 @@
 "spelling": null
 },
 "poisson|.": {
-"h": "67883c4e625ca36d",
-"say": "poisson",
+"h": "9549d3952a60f286",
+"say": "poisson.",
 "per": 0.0,
 "spelling": null
 },
@@ -7434,8 +7488,8 @@
 "spelling": null
 },
 "pomme|.": {
-"h": "2f7f6e832f343a3d",
-"say": "pomme",
+"h": "86bc85fa22df8728",
+"say": "pomme.",
 "per": 0.0,
 "spelling": null
 },
@@ -7452,8 +7506,8 @@
 "spelling": null
 },
 "poule|.": {
-"h": "25bf34dc8e8054e7",
-"say": "poule",
+"h": "d4243bd7bdf3e054",
+"say": "poule.",
 "per": 0.0,
 "spelling": null
 },
@@ -7559,6 +7613,12 @@
 "per": 0.0,
 "spelling": null
 },
+"pour suivre ploc|,": {
+"h": "7c9f48e80a0c57d8",
+"say": "pour suivre Ploc,",
+"per": 0.0,
+"spelling": null
+},
 "pour trouver ce qui vient après|.": {
 "h": "02770ed7d7681579",
 "say": "pour trouver ce qui vient après.",
@@ -7566,8 +7626,8 @@
 "spelling": null
 },
 "poussin|.": {
-"h": "e9da8a0165523761",
-"say": "poussin",
+"h": "7aceb5c75bfe1083",
+"say": "poussin.",
 "per": 0.0,
 "spelling": null
 },
@@ -7620,8 +7680,8 @@
 "spelling": "ra"
 },
 "radio|.": {
-"h": "bbb729026310549e",
-"say": "Radio.",
+"h": "ef786ce8a23901b9",
+"say": "radio.",
 "per": 0.0,
 "spelling": null
 },
@@ -7638,8 +7698,8 @@
 "spelling": null
 },
 "raisin|.": {
-"h": "70ab74a07f7291df",
-"say": "raisin",
+"h": "5079ba1fabfa9040",
+"say": "raisin.",
 "per": 0.0,
 "spelling": null
 },
@@ -7674,8 +7734,8 @@
 "spelling": "ro"
 },
 "robot|.": {
-"h": "0a52377e87446180",
-"say": "Robot.",
+"h": "9cbd2b01635e7cbe",
+"say": "robot.",
 "per": 0.0,
 "spelling": null
 },
@@ -7734,26 +7794,26 @@
 "spelling": null
 },
 "salade|.": {
-"h": "bc75df47c5f364ef",
-"say": "Salade.",
+"h": "e4269a2b0eacd22e",
+"say": "salade.",
 "per": 0.0,
 "spelling": null
 },
 "salami|.": {
-"h": "7bc4d6d54f1a4382",
-"say": "salami",
+"h": "9666e130f81ce55a",
+"say": "salami.",
 "per": 0.0,
 "spelling": null
 },
 "salé|.": {
-"h": "e16b464345543ecc",
-"say": "salé",
+"h": "f98bd235fbc4dfeb",
+"say": "salé.",
 "per": 0.0,
 "spelling": null
 },
 "sapin|.": {
-"h": "da97972c86b6974f",
-"say": "sapin",
+"h": "c8e46d7f0580f0c3",
+"say": "sapin.",
 "per": 0.0,
 "spelling": null
 },
@@ -7770,8 +7830,8 @@
 "spelling": null
 },
 "serpent|.": {
-"h": "6604be7eecd414bb",
-"say": "serpent",
+"h": "5b79dfa7190b1900",
+"say": "serpent.",
 "per": 0.0,
 "spelling": null
 },
@@ -7794,8 +7854,8 @@
 "spelling": "so"
 },
 "sofa|.": {
-"h": "67168594669c96a8",
-"say": "Sofa.",
+"h": "c4895510c7ee74ac",
+"say": "sofa.",
 "per": 0.0,
 "spelling": null
 },
@@ -7806,8 +7866,8 @@
 "spelling": null
 },
 "soleil|.": {
-"h": "e1e734b90b03cd46",
-"say": "soleil",
+"h": "3a683f3222c362d9",
+"say": "soleil.",
 "per": 0.0,
 "spelling": null
 },
@@ -7836,8 +7896,8 @@
 "spelling": null
 },
 "souris|.": {
-"h": "d924348b7b1eaede",
-"say": "souri",
+"h": "9e8d9b7c7afad569",
+"say": "souri.",
 "per": 0.0,
 "spelling": null
 },
@@ -7902,8 +7962,8 @@
 "spelling": "te"
 },
 "télévision|.": {
-"h": "1cc6247adee11fb3",
-"say": "télévision",
+"h": "d0f3d541649a6285",
+"say": "télévision.",
 "per": 0.0,
 "spelling": null
 },
@@ -7926,8 +7986,8 @@
 "spelling": "ti"
 },
 "tipi|.": {
-"h": "5fee5d10d9c8b773",
-"say": "tipi",
+"h": "66db83e3b9e7cd32",
+"say": "tipi.",
 "per": 0.125,
 "spelling": null
 },
@@ -7938,14 +7998,20 @@
 "spelling": "tôt"
 },
 "togo|.": {
-"h": "c5fad8cfb2b2af60",
-"say": "Togo",
+"h": "abadc98eea06eea6",
+"say": "Togo.",
 "per": 0.125,
 "spelling": null
 },
 "tomate|.": {
-"h": "c9a7d4d28139c6f3",
-"say": "Tomate.",
+"h": "e5bab696237df7c5",
+"say": "tomate.",
+"per": 0.0,
+"spelling": null
+},
+"ton défi pour la maison après la douche regarde la buée sur le miroir c'est la vapeur qui redevient de l'eau|.": {
+"h": "432b1408f822a57d",
+"say": "Ton défi pour la maison : Après la douche, regarde la buée sur le miroir : c'est la vapeur qui redevient de l'eau.",
 "per": 0.0,
 "spelling": null
 },
@@ -7967,6 +8033,12 @@
 "per": 0.016,
 "spelling": null
 },
+"ton défi pour la maison avec un adulte fabrique un mini château d'eau un entonnoir un tuyau de l'eau|.": {
+"h": "b8be3a82c07c54a1",
+"say": "Ton défi pour la maison : Avec un adulte, fabrique un mini château d'eau : un entonnoir, un tuyau, de l'eau.",
+"per": 0.0,
+"spelling": null
+},
 "ton défi pour la maison cache un jouet et guide un adulte jusqu'à lui avec des flèches|.": {
 "h": "c648a695b0f299c9",
 "say": "Ton défi pour la maison : Cache un jouet, et guide un adulte jusqu'à lui avec des flèches.",
@@ -7974,9 +8046,9 @@
 "spelling": null
 },
 "ton défi pour la maison cache un jouet sous une tasse quand ton doudou ne regarde pas où va-t-il chercher|?": {
-"h": "16b47ed0fb0d2fe0",
-"say": "Ton défi pour la maison : Cache un jouet sous une tasse quand ton doudou ne regarde pas : où va-t-il chercher ?",
-"per": 0.05,
+"h": "cc0d2bca2fdb0c76",
+"say": "Ton défi pour la maison : Cache un jouet sous une tasse quand ton doudou ne regarde pas, où va-t-il chercher ?",
+"per": 0.067,
 "spelling": null
 },
 "ton défi pour la maison cherche dans la maison un objet dont le nom commence par ma|.": {
@@ -8016,8 +8088,8 @@
 "spelling": null
 },
 "ton défi pour la maison dans le bain devine avant une cuillère une pomme un bouchon flotte ou coule|?": {
-"h": "4215822f25db32ce",
-"say": "Ton défi pour la maison : Dans le bain, devine avant : une cuillère, une pomme, un bouchon… flotte ou coule ?",
+"h": "70fbed73fbe4dcaf",
+"say": "Ton défi pour la maison : Dans le bain, devine avant, une cuillère, une pomme, un bouchon… flotte ou coule ?",
 "per": 0.0,
 "spelling": null
 },
@@ -8069,6 +8141,12 @@
 "per": 0.0,
 "spelling": null
 },
+"ton défi pour la maison en promenade cherche le château d'eau le plus proche de chez toi|.": {
+"h": "220d6298e2d8ea5a",
+"say": "Ton défi pour la maison : En promenade, cherche le château d'eau le plus proche de chez toi.",
+"per": 0.078,
+"spelling": null
+},
 "ton défi pour la maison fabrique un petit drapeau avec une paille et du papier|.": {
 "h": "cf1def8658d96bec",
 "say": "Ton défi pour la maison : Fabrique un petit drapeau avec une paille et du papier.",
@@ -8106,8 +8184,8 @@
 "spelling": null
 },
 "ton défi pour la maison invente une suite de gestes tape saute tape saute et fais-la deviner|.": {
-"h": "613fc96586b0cae9",
-"say": "Ton défi pour la maison : Invente une suite de gestes : tape, saute, tape, saute… et fais-la deviner.",
+"h": "141dd498c5021969",
+"say": "Ton défi pour la maison : Invente une suite de gestes, tape, saute, tape, saute… et fais-la deviner.",
 "per": 0.0,
 "spelling": null
 },
@@ -8118,8 +8196,8 @@
 "spelling": null
 },
 "ton défi pour la maison joue au robot un adulte te dit 2 pas en avant 1 pas à droite et tu avances|.": {
-"h": "9cac73256dcb0c04",
-"say": "Ton défi pour la maison : Joue au robot : un adulte te dit deux pas en avant, un pas à droite, et tu avances.",
+"h": "35ba05843ad365f0",
+"say": "Ton défi pour la maison : Joue au robot, un adulte te dit deux pas en avant, un pas à droite, et tu avances.",
 "per": 0.0,
 "spelling": null
 },
@@ -8136,9 +8214,9 @@
 "spelling": null
 },
 "ton défi pour la maison partage 7 raisins entre 2 doudous combien en reste-t-il|?": {
-"h": "f47de6a51d9a0de6",
-"say": "Ton défi pour la maison : Partage sept raisins entre deux doudous : combien en reste-t-il ?",
-"per": 0.039,
+"h": "dabfcf731c6a39a1",
+"say": "Ton défi pour la maison : Partage sept raisins entre deux doudous, combien en reste-t-il ?",
+"per": 0.0,
 "spelling": null
 },
 "ton défi pour la maison pendant le bain trouve un mot qui rime avec chapeau|.": {
@@ -8232,8 +8310,8 @@
 "spelling": null
 },
 "tortue|.": {
-"h": "737db5d3fa4a8161",
-"say": "tortue",
+"h": "3045d0dd8086ffb8",
+"say": "tortue.",
 "per": 0.0,
 "spelling": null
 },
@@ -8262,8 +8340,8 @@
 "spelling": null
 },
 "tracteur|.": {
-"h": "8e566471fb706bf1",
-"say": "tracteur",
+"h": "b8076de18cb289e1",
+"say": "tracteur.",
 "per": 0.0,
 "spelling": null
 },
@@ -8340,14 +8418,14 @@
 "spelling": "tu"
 },
 "tuba|.": {
-"h": "c009db5ff71ec7f7",
-"say": "tuba",
+"h": "8d4984a2992437f2",
+"say": "tuba.",
 "per": 0.0,
 "spelling": null
 },
 "tulipe|.": {
-"h": "8f85d9177634dca7",
-"say": "Tulipe.",
+"h": "f87742041034827a",
+"say": "tulipe.",
 "per": 0.0,
 "spelling": null
 },
@@ -8370,8 +8448,8 @@
 "spelling": "va"
 },
 "vache|.": {
-"h": "ecaacac63f439fce",
-"say": "Vache.",
+"h": "a5c5b854fd93564c",
+"say": "vache.",
 "per": 0.0,
 "spelling": null
 },
@@ -8394,8 +8472,8 @@
 "spelling": null
 },
 "vélo|.": {
-"h": "e8f2fcc6aa3bae7f",
-"say": "Vélo.",
+"h": "2b4f72d769e2da6c",
+"say": "vélo.",
 "per": 0.0,
 "spelling": null
 },
@@ -8424,8 +8502,8 @@
 "spelling": null
 },
 "voiture|.": {
-"h": "d4b5fe36ab8fd5f2",
-"say": "voiture",
+"h": "f3d79d7747c00821",
+"say": "voiture.",
 "per": 0.0,
 "spelling": null
 },
@@ -8465,9 +8543,285 @@
 "per": 0.0,
 "spelling": "zion"
 },
+"à l'usine on fait des bulles on enlève les saletés et on chasse les microbes l'eau devient bonne à boire|.": {
+"h": "58bf49f342f54083",
+"say": "À l'usine, on fait des bulles, on enlève les saletés et on chasse les microbes, l'eau devient bonne à boire.",
+"per": 0.0,
+"spelling": null
+},
+"à l'usine on fait des bulles on enlève les saletés et on chasse les microbes l'eau devient claire et bonne à boire|.": {
+"h": "1fa1b6b24f3bcb0f",
+"say": "À l'usine, on fait des bulles, on enlève les saletés et on chasse les microbes, l'eau devient claire et bonne à boire.",
+"per": 0.048,
+"spelling": null
+},
+"à l'usine on nettoie l'eau elle devient claire|.": {
+"h": "093fc2388e9dec25",
+"say": "À l'usine, on nettoie l'eau : elle devient claire.",
+"per": 0.0,
+"spelling": null
+},
+"à la maison on l'ouvre et l'eau coule|.": {
+"h": "36750fe292e50eb4",
+"say": "À la maison, on l'ouvre, et l'eau coule !",
+"per": 0.0,
+"spelling": null
+},
+"après il y a l'usine d'eau potable|.": {
+"h": "c760b626fd6efd68",
+"say": "Après, il y a l'usine d'eau potable.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la mer|.": {
+"h": "962387288ebfbe24",
+"say": "Après, il y a la mer.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la nappe l'eau cachée sous la terre|.": {
+"h": "881922b0e4f5ec2c",
+"say": "Après, il y a la nappe, l'eau cachée sous la terre.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la neige|.": {
+"h": "3724733f3094935e",
+"say": "Après, il y a la neige.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la pluie|.": {
+"h": "bf5dbac2b5e7da32",
+"say": "Après, il y a la pluie.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la pompe|.": {
+"h": "fa3f4554b1849bae",
+"say": "Après, il y a la pompe.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la rivière|.": {
+"h": "4a83ac44f082a6e2",
+"say": "Après, il y a la rivière.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la station d'épuration|.": {
+"h": "4a0a8de967fdd153",
+"say": "Après, il y a la station d'épuration.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la vapeur qui monte|.": {
+"h": "abd2f68b41437b98",
+"say": "Après, il y a la vapeur qui monte.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a le bain|.": {
+"h": "1779dd744b36f4d9",
+"say": "Après, il y a le bain.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a le château d'eau|.": {
+"h": "1b9ded72944b0c48",
+"say": "Après, il y a le château d'eau.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a le nuage|.": {
+"h": "e1d0f7efb70e64a5",
+"say": "Après, il y a le nuage.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a le réservoir sur la colline|.": {
+"h": "2e153be16db2134b",
+"say": "Après, il y a le réservoir sur la colline.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a le robinet|.": {
+"h": "694f71b87c1d08e5",
+"say": "Après, il y a le robinet.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a les égouts|.": {
+"h": "87314f8e146a13a7",
+"say": "Après, il y a les égouts.",
+"per": 0.0,
+"spelling": null
+},
+"après la douche la vapeur touche le miroir froid|.": {
+"h": "54de4f0168d98b5a",
+"say": "Après la douche, la vapeur touche le miroir froi.",
+"per": 0.0,
+"spelling": null
+},
+"après le bain l'eau sale part dans les égouts|.": {
+"h": "0a68f0d52d139b01",
+"say": "Après le bain, l'eau sale part dans les égouts.",
+"per": 0.0,
+"spelling": null
+},
+"as-tu déjà goûté l'eau de la mer|?": {
+"h": "6e5f7c558a8f61fb",
+"say": "As-tu déjà goûté l'eau de la mer ?",
+"per": 0.0,
+"spelling": null
+},
+"attention ça brûle on regarde de loin|.": {
+"h": "621945ed4157d545",
+"say": "Attention, ça brûle : on regarde de loin !",
+"per": 0.0,
+"spelling": null
+},
+"attention ça glisse|.": {
+"h": "6537e463a981d49e",
+"say": "Attention, ça glisse !",
+"per": 0.0,
+"spelling": null
+},
 "attention ce n'est pas forcément le plus petit qui flotte|.": {
 "h": "d8dcb77d246089ef",
 "say": "Attention, ce n'est pas forcément le plus petit qui flotte !",
+"per": 0.0,
+"spelling": null
+},
+"attention|.": {
+"h": "fde2c0f3feb0617c",
+"say": "Attention !",
+"per": 0.0,
+"spelling": null
+},
+"au soleil la neige fond et l'eau coule vers le bas|.": {
+"h": "720f4b4c96958ebd",
+"say": "Au soleil, la neige fond, et l'eau coule vers le bas.",
+"per": 0.0,
+"spelling": null
+},
+"au soleil la neige ne reste pas longtemps|.": {
+"h": "553a7aef280b9a2a",
+"say": "Au soleil, la neige ne reste pas longtemps…",
+"per": 0.0,
+"spelling": null
+},
+"au-dessus de la casserole quelque chose monte vers le plafond|.": {
+"h": "7362c654884cc61d",
+"say": "Au-dessu de la casserole, quelque chose monte vers le plafond…",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a l'usine d'eau potable|.": {
+"h": "ea62537345b16586",
+"say": "Avant, il y a l'usine d'eau potable.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a la mer|.": {
+"h": "6c75a23ff41bc599",
+"say": "Avant, il y a la mer.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a la nappe l'eau cachée sous la terre|.": {
+"h": "462b62d99d2aacfc",
+"say": "Avant, il y a la nappe, l'eau cachée sous la terre.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a la neige|.": {
+"h": "061d808121cb1485",
+"say": "Avant, il y a la neige.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a la pluie|.": {
+"h": "fcd0cb6087a4a3f6",
+"say": "Avant, il y a la pluie.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a la pompe|.": {
+"h": "bfb61d390a61acd9",
+"say": "Avant, il y a la pompe.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a la rivière|.": {
+"h": "3e5872f4d9bdd159",
+"say": "Avant, il y a la rivière.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a la station d'épuration|.": {
+"h": "39588ffc9ba71de4",
+"say": "Avant, il y a la station d'épuration.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a la vapeur qui monte|.": {
+"h": "6441d1d7d35b0524",
+"say": "Avant, il y a la vapeur qui monte.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a le bain|.": {
+"h": "785cb895834bf2e5",
+"say": "Avant, il y a le bain.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a le château d'eau|.": {
+"h": "315d1155eb4a1138",
+"say": "Avant, il y a le château d'eau.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a le nuage|.": {
+"h": "07adf8c90d96b7cf",
+"say": "Avant, il y a le nuage.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a le réservoir sur la colline|.": {
+"h": "6e3a72a3f234ff82",
+"say": "Avant, il y a le réservoir sur la colline.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a le robinet|.": {
+"h": "a521b6b39c279b12",
+"say": "Avant, il y a le robinet.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a les égouts|.": {
+"h": "e2c3dd31dd4b28aa",
+"say": "Avant, il y a les égouts.",
+"per": 0.0,
+"spelling": null
+},
+"avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet|?": {
+"h": "b0cf0e0710f5f969",
+"say": "Avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet ?",
+"per": 0.0,
+"spelling": null
+},
+"bien vu on ne la boit pas|.": {
+"h": "00b485228aca9dd1",
+"say": "Bien vu, on ne la boit pas !",
+"per": 0.0,
+"spelling": null
+},
+"bienvenue dans le labo d'octave|.": {
+"h": "6911eb46944c030b",
+"say": "Bienvenue dans le labo d'Octave !",
 "per": 0.0,
 "spelling": null
 },
@@ -8477,9 +8831,153 @@
 "per": 0.0,
 "spelling": null
 },
+"c'est la pluie|.": {
+"h": "7e9c78e592eb33ab",
+"say": "C'est la pluie !",
+"per": 0.0,
+"spelling": null
+},
+"c'est le château d'eau|.": {
+"h": "0c5e29679f0d0007",
+"say": "C'est le château d'eau.",
+"per": 0.0,
+"spelling": null
+},
+"c'était déjà de la vapeur|.": {
+"h": "cca10c762e68c390",
+"say": "C'était déjà de la vapeur.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est l'usine d'eau potable|.": {
+"h": "9e19573fded49835",
+"say": "Ça, c'est l'usine d'eau potable.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la mer|.": {
+"h": "047434c9be34d8b2",
+"say": "Ça, c'est la mer.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la nappe l'eau cachée sous la terre|.": {
+"h": "6f147ea4a920615b",
+"say": "Ça, c'est la nappe, l'eau cachée sous la terre.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la neige|.": {
+"h": "84db29c78d3c1965",
+"say": "Ça, c'est la neige.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la pluie|.": {
+"h": "dcdc8b258168f440",
+"say": "Ça, c'est la pluie.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la pompe|.": {
+"h": "d815e48c5d277989",
+"say": "Ça, c'est la pompe.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la rivière|.": {
+"h": "187173ac99d17e47",
+"say": "Ça, c'est la rivière.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la station d'épuration|.": {
+"h": "70ea15f3d254caf5",
+"say": "Ça, c'est la station d'épuration.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la vapeur qui monte|.": {
+"h": "36031b8828b96e35",
+"say": "Ça, c'est la vapeur qui monte.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le bain|.": {
+"h": "c6765dc6115491fc",
+"say": "Ça, c'est le bain.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le bassin à bulles|.": {
+"h": "7b7a907d0404ff84",
+"say": "Ça, c'est le bassin à bulles.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le bassin calme|.": {
+"h": "5cb6002a5c55f6c6",
+"say": "Ça, c'est le bassin calme.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le château d'eau|.": {
+"h": "7417e33348fb5d9c",
+"say": "Ça, c'est le château d'eau.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le nuage|.": {
+"h": "090fe1868e3640da",
+"say": "Ça, c'est le nuage.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le réservoir sur la colline|.": {
+"h": "275f8eba7fd42311",
+"say": "Ça, c'est le réservoir sur la colline.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le robinet|.": {
+"h": "359008efa8b1bf84",
+"say": "Ça, c'est le robinet.",
+"per": 0.0,
+"spelling": null
+},
+"ça ce sont les égouts|.": {
+"h": "fd43ba8d5e83e750",
+"say": "Ça, ce sont les égouts.",
+"per": 0.0,
+"spelling": null
+},
+"ça ce sont les grilles|.": {
+"h": "10d91000e862ab46",
+"say": "Ça, ce sont les grilles.",
+"per": 0.0,
+"spelling": null
+},
+"ce n'est pas ce qui vient juste après|.": {
+"h": "8a4dc7bcbbd89683",
+"say": "Ce n'est pas ce qui vient juste après.",
+"per": 0.0,
+"spelling": null
+},
 "ce n'est pas la taille qui compte|.": {
 "h": "6727203be3fde6d1",
 "say": "Ce n'est pas la taille qui compte !",
+"per": 0.0,
+"spelling": null
+},
+"ce qui est vivant a besoin d'eau les plantes les animaux et toi|.": {
+"h": "0a46820a871fb9cf",
+"say": "Ce qui est vivant a besoin d'eau : les plantes, les animaux, et toi !",
+"per": 0.0,
+"spelling": null
+},
+"ce sont des êtres vivants tout petits si petits qu'on ne les voit pas|.": {
+"h": "8a4ca4e5c794079d",
+"say": "Ce sont des êtres vivants tout petits, si petits qu'on ne les voit pas.",
 "per": 0.0,
 "spelling": null
 },
@@ -8489,15 +8987,285 @@
 "per": 0.0,
 "spelling": null
 },
+"celle-ci c'est parce que tu sais d'où vient l'eau du robinet et où elle repart|.": {
+"h": "16ddc9848d0f892b",
+"say": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
+"per": 0.073,
+"spelling": null
+},
+"celle-ci c'est pour le grand voyage de ploc de la mer jusqu'au nuage|.": {
+"h": "391a6a3a13c6e65b",
+"say": "Celle-ci, c'est pour le grand voyage de Ploc, de la mer jusqu'au nuage.",
+"per": 0.023,
+"spelling": null
+},
+"celle-ci c'est pour tous les bons gestes qui protègent l'eau|.": {
+"h": "62eef30749b67507",
+"say": "Celle-ci, c'est pour tous les bons gestes qui protègent l'eau.",
+"per": 0.0,
+"spelling": null
+},
 "celle-ci c'est pour toutes tes expériences dans le bassin d'octave|.": {
 "h": "a52927c2f53dab93",
 "say": "Celle-ci, c'est pour toutes tes expériences dans le bassin d'Octave.",
 "per": 0.051,
 "spelling": null
 },
+"celle-là est déjà propre elle sort de l'usine|.": {
+"h": "a3ca9432fe5aa2f1",
+"say": "Celle-là est déjà propre : elle sort de l'usine !",
+"per": 0.0,
+"spelling": null
+},
+"celle-là est encore sale elle n'est pas passée par l'usine|.": {
+"h": "7eb74a4959da58d8",
+"say": "Celle-là est encore sale : elle n'est pas passée par l'usine.",
+"per": 0.0,
+"spelling": null
+},
+"celui-là est tout petit l'eau pousse moins fort|.": {
+"h": "d1e057da85c20332",
+"say": "Celui-là est tout petit, l'eau pousse moins fort.",
+"per": 0.0,
+"spelling": null
+},
+"cette nuit il a gelé très fort|.": {
+"h": "07fa167befc0e17e",
+"say": "Cette nuit, il a gelé très fort.",
+"per": 0.0,
+"spelling": null
+},
+"cherche de tout petits êtres vivants|.": {
+"h": "8cec1ebaa18b8726",
+"say": "Cherche de tout petits êtres vivants.",
+"per": 0.0,
+"spelling": null
+},
+"cherche le plus haut|.": {
+"h": "160f9b414df36a98",
+"say": "Cherche le plus haut !",
+"per": 0.0,
+"spelling": null
+},
 "comme plume|.": {
 "h": "689d40f7ff821873",
 "say": "Comme Plume !",
+"per": 0.0,
+"spelling": null
+},
+"d'abord la glace fond et devient de l'eau|.": {
+"h": "a4a9fe350c724641",
+"say": "D'abord, la glace fond, et devient de l'eau.",
+"per": 0.0,
+"spelling": null
+},
+"d'où vient l'eau du robinet|?": {
+"h": "769bc2f66faef418",
+"say": "D'où vient l'eau du robinet ?",
+"per": 0.0,
+"spelling": null
+},
+"dans la poubelle|.": {
+"h": "6a8d58fe9efaec35",
+"say": "Dans la poubelle !",
+"per": 0.0,
+"spelling": null
+},
+"dans la station d'épuration qu'est-ce qui attrape les gros déchets comme un filet|?": {
+"h": "55c6df0d90a62df7",
+"say": "Dans la station d'épuration, qu'est-ce qui attrape les gros déchets, comme un filet ?",
+"per": 0.0,
+"spelling": null
+},
+"dans le bassin à bulles de minuscules bactéries mangent la saleté|.": {
+"h": "610123d0c224a62f",
+"say": "Dans le bassin à bulles, de minuscules bactéries mangent la saleté.",
+"per": 0.0,
+"spelling": null
+},
+"dans le bassin à bulles qui mange la saleté|?": {
+"h": "d2b8f95df087cf42",
+"say": "Dans le bassin à bulles, qui mange la saleté ?",
+"per": 0.0,
+"spelling": null
+},
+"dans le bassin calme la boue tombe tout au fond|.": {
+"h": "7a09b2ab05a5756a",
+"say": "Dans le bassin calme, la boue tombe tout au fond.",
+"per": 0.0,
+"spelling": null
+},
+"dans le congélateur tout devient dur et froid|.": {
+"h": "5e42062e04e52750",
+"say": "Dans le congélateur, tout devient dur et froi.",
+"per": 0.0,
+"spelling": null
+},
+"dans le froid l'eau gèle elle devient de la glace toute dure|.": {
+"h": "e2f35e143093b412",
+"say": "Dans le froi, l'eau gèle : elle devient de la glace, toute dure.",
+"per": 0.029,
+"spelling": null
+},
+"dans le froid tout là-haut les gouttes se serrent les unes contre les autres|.": {
+"h": "b121acf87db91ca6",
+"say": "Dans le froi, tout là-haut, les gouttes se serre les unes contre les autres.",
+"per": 0.0,
+"spelling": null
+},
+"dans le réservoir sur la colline|.": {
+"h": "d079cc3bc70ae213",
+"say": "Dans le réservoir sur la colline.",
+"per": 0.0,
+"spelling": null
+},
+"dans les toilettes les lingettes bouchent les tuyaux et les grilles de la station|.": {
+"h": "7a1497cc5e8be203",
+"say": "Dans les toilettes, les lingettes bouchent les tuyaux et les grilles de la station.",
+"per": 0.0,
+"spelling": null
+},
+"dans les toilettes seulement ce qui se défait dans l'eau|.": {
+"h": "6cc5212bcd83f879",
+"say": "Dans les toilettes, seulement ce qui se défait dans l'eau.",
+"per": 0.0,
+"spelling": null
+},
+"dans les toilettes seulement le pipi le caca et le papier toilette il se défait dans l'eau|.": {
+"h": "b1193a8c1c81ded1",
+"say": "Dans les toilettes, seulement le pipi, le caca et le papier toilette : il se défait dans l'eau.",
+"per": 0.0,
+"spelling": null
+},
+"dans quel bassin la boue tombe-t-elle tout au fond|?": {
+"h": "dded1cdffe1e5cd1",
+"say": "Dans quel bassin la boue tombe-t-elle tout au fond ?",
+"per": 0.0,
+"spelling": null
+},
+"dans quel bassin les bactéries mangent-elles la saleté|?": {
+"h": "67061540bf2a6ec9",
+"say": "Dans quel bassin les bactéries mangent-elles la saleté ?",
+"per": 0.0,
+"spelling": null
+},
+"de la mer au nuage du nuage au robinet et du robinet à la mer|.": {
+"h": "9edfb278c85e8548",
+"say": "De la mer au nuage, du nuage au robinet, et du robinet à la mer.",
+"per": 0.0,
+"spelling": null
+},
+"de là-haut l'eau descendra toute seule jusqu'aux maisons|.": {
+"h": "d3799e13b8efa00e",
+"say": "De là-haut, l'eau descendra toute seule jusqu'aux maisons.",
+"per": 0.0,
+"spelling": null
+},
+"de minuscules bactéries mangent la saleté|.": {
+"h": "7915352b9e12423f",
+"say": "De minuscules bactéries mangent la saleté.",
+"per": 0.0,
+"spelling": null
+},
+"des barreaux comme une passoire géante|.": {
+"h": "eaeef1b4a0543035",
+"say": "Des barreaux, comme une passoire géante.",
+"per": 0.0,
+"spelling": null
+},
+"elle a un drôle de goût|.": {
+"h": "59a9a56950e9a8b3",
+"say": "Elle a un drôle de goût…",
+"per": 0.0,
+"spelling": null
+},
+"elle arrive au robinet de la maison|.": {
+"h": "fa4643b97eef9ea8",
+"say": "Elle arrive au robinet de la maison.",
+"per": 0.0,
+"spelling": null
+},
+"elle devient toute dure|.": {
+"h": "50bb2fd40b41eeed",
+"say": "Elle devient toute dure !",
+"per": 0.0,
+"spelling": null
+},
+"elle est assez propre pour la rivière et ses poissons mais pas pour boire|.": {
+"h": "e6d4f77c7097a217",
+"say": "Elle est assez propre pour la rivière et ses poissons, mais pas pour boire.",
+"per": 0.0,
+"spelling": null
+},
+"elle est encore trouble l'usine va la nettoyer|.": {
+"h": "e900eb75ee035e7f",
+"say": "Elle est encore trouble : l'usine va la nettoyer.",
+"per": 0.0,
+"spelling": null
+},
+"elle est passée par l'usine|.": {
+"h": "23ea8330ea896bb0",
+"say": "Elle est passée par l'usine.",
+"per": 0.0,
+"spelling": null
+},
+"elle est sale et pleine de microbes|.": {
+"h": "8d3e6c2816bd70dd",
+"say": "Elle est sale, et pleine de microbes.",
+"per": 0.0,
+"spelling": null
+},
+"elle ne monte jamais toute seule|.": {
+"h": "fb9e5228b8d00831",
+"say": "Elle ne monte jamais toute seule.",
+"per": 0.0,
+"spelling": null
+},
+"elle part dans les égouts jusqu'à la station d'épuration|.": {
+"h": "7bf8efe422e25940",
+"say": "Elle part dans les égouts, jusqu'à la station d'épuration.",
+"per": 0.0,
+"spelling": null
+},
+"elle peut avoir des microbes elle doit d'abord passer par l'usine|.": {
+"h": "9be47fc5a593892c",
+"say": "Elle peut avoir des microbes, elle doit d'abord passer par l'usine.",
+"per": 0.0,
+"spelling": null
+},
+"elle retourne à la rivière sans gêner les poissons|.": {
+"h": "fd314a8b425242a3",
+"say": "Elle retourne à la rivière, sans gêner les poissons.",
+"per": 0.0,
+"spelling": null
+},
+"elle retourne dans la nature là où vivent les poissons|.": {
+"h": "4a3245a990896958",
+"say": "Elle retourne dans la nature, là où vivent les poissons.",
+"per": 0.0,
+"spelling": null
+},
+"elle s'est envolée|.": {
+"h": "457f9f50701d7d6c",
+"say": "Elle s'est envolée !",
+"per": 0.0,
+"spelling": null
+},
+"elle sort de l'usine elle est propre et contrôlée très souvent|.": {
+"h": "ef22c664861d49d1",
+"say": "Elle sort de l'usine : elle est propre, et contrôlée très souvent.",
+"per": 0.0,
+"spelling": null
+},
+"elle va à la poubelle|.": {
+"h": "d294312cedd365b9",
+"say": "Elle va à la poubelle.",
+"per": 0.0,
+"spelling": null
+},
+"elle va à la station d'épuration où on la nettoie|.": {
+"h": "6d4e549f9f90c8fa",
+"say": "Elle va à la station d'épuration, où on la nettoie.",
 "per": 0.0,
 "spelling": null
 },
@@ -8513,9 +9281,33 @@
 "per": 0.0,
 "spelling": null
 },
+"en haut|.": {
+"h": "5d73b8d04a30374c",
+"say": "En haut !",
+"per": 0.0,
+"spelling": null
+},
+"en touchant le miroir froid elle change|.": {
+"h": "69271a9e0fd1380f",
+"say": "En touchant le miroir froi, elle change !",
+"per": 0.0,
+"spelling": null
+},
 "est-ce qu'il y a de l'air dedans|?": {
 "h": "d8e77a6f5b63d7d2",
 "say": "Est-ce qu'il y a de l'air dedans ?",
+"per": 0.0,
+"spelling": null
+},
+"est-ce qu'on peut la boire tout de suite|?": {
+"h": "911d5d3e0eda7b11",
+"say": "Est-ce qu'on peut la boire tout de suite ?",
+"per": 0.0,
+"spelling": null
+},
+"est-ce qu'on peut la boire|?": {
+"h": "d9b9bd83f9b2f14f",
+"say": "Est-ce qu'on peut la boire ?",
 "per": 0.0,
 "spelling": null
 },
@@ -8525,9 +9317,123 @@
 "per": 0.0,
 "spelling": null
 },
+"est-ce que l'eau de la rivière est déjà passée par l'usine|?": {
+"h": "b15edf2bec67423c",
+"say": "Est-ce que l'eau de la rivière est déjà passée par l'usine ?",
+"per": 0.0,
+"spelling": null
+},
 "flotte ou coule pour deviner ce qui flotte dans le bassin d'octave|.": {
 "h": "7fd80263afb155ac",
 "say": "Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave.",
+"per": 0.0,
+"spelling": null
+},
+"ici ça chauffe|.": {
+"h": "eb5d5d040da4f005",
+"say": "Ici, ça chauffe !",
+"per": 0.0,
+"spelling": null
+},
+"ici il fait très froid|.": {
+"h": "2173582d8d159352",
+"say": "Ici, il fait très froi !",
+"per": 0.0,
+"spelling": null
+},
+"il arrive dans la nappe l'eau cachée sous la terre|.": {
+"h": "4c476edda4826d3b",
+"say": "Il arrive dans la nappe, l'eau cachée sous la terre.",
+"per": 0.0,
+"spelling": null
+},
+"il coule jusqu'à la rivière|.": {
+"h": "69850ece8f12af2c",
+"say": "Il coule jusqu'à la rivière.",
+"per": 0.0,
+"spelling": null
+},
+"il devient très lourd|.": {
+"h": "206538220c94cfa1",
+"say": "Il devient très lourd.",
+"per": 0.0,
+"spelling": null
+},
+"il fait chaud la glace fond et redevient de l'eau|.": {
+"h": "b82a4742777474da",
+"say": "Il fait chô : la glace fond, et redevient de l'eau.",
+"per": 0.0,
+"spelling": null
+},
+"il fait si froid que l'eau ne reste pas comme ça|.": {
+"h": "96ea24f704c40045",
+"say": "Il fait si froi que l'eau ne reste pas comme ça…",
+"per": 0.0,
+"spelling": null
+},
+"il fait si froid que les gouttes gèlent c'est la neige|.": {
+"h": "a61b12d16eb17362",
+"say": "Il fait si froi que les gouttes gèle : c'est la neige !",
+"per": 0.074,
+"spelling": null
+},
+"il fait un très grand voyage de la mer au ciel du ciel à la terre et il revient toujours|.": {
+"h": "291aada816cd082c",
+"say": "Il fait un très grand voyage : de la mer au ciel, du ciel à la terre… et il revient toujours.",
+"per": 0.018,
+"spelling": null
+},
+"il faut beaucoup d'eau pour remplir toute une baignoire|.": {
+"h": "2db0e0ce42902395",
+"say": "Il faut beaucoup d'eau pour remplir toute une baignoire.",
+"per": 0.032,
+"spelling": null
+},
+"il faut un endroit où l'on nettoie l'eau sale|.": {
+"h": "cb7f77e7f36bfdd7",
+"say": "Il faut un endroit où l'on nettoie l'eau sale.",
+"per": 0.04,
+"spelling": null
+},
+"il faut un endroit où l'on nettoie l'eau|.": {
+"h": "55d0f14c99139a4a",
+"say": "Il faut un endroit où l'on nettoie l'eau.",
+"per": 0.0,
+"spelling": null
+},
+"il faut une machine qui aspire l'eau comme avec une paille|.": {
+"h": "515aeaed8a9d1a98",
+"say": "Il faut une machine qui aspire l'eau, comme avec une paille.",
+"per": 0.0,
+"spelling": null
+},
+"il glisse il glisse|.": {
+"h": "bef4dddfd136de36",
+"say": "Il glisse, il glisse…",
+"per": 0.0,
+"spelling": null
+},
+"il manque des étapes à toi de les retrouver|.": {
+"h": "b5c96cfa1133bfad",
+"say": "Il manque des étapes, à toi de les retrouver !",
+"per": 0.0,
+"spelling": null
+},
+"il manque une étape dans le voyage de ploc|.": {
+"h": "4571abb766b95732",
+"say": "Il manque une étape dans le voyage de Ploc.",
+"per": 0.0,
+"spelling": null
+},
+"il s'enfonce dans la terre tout au fond|.": {
+"h": "ebdcd184710a344d",
+"say": "Il s'enfonce dans la terre, tout au fond…",
+"per": 0.0,
+"spelling": null
+},
+"il va à la poubelle|.": {
+"h": "6a36a2999619b588",
+"say": "Il va à la poubelle.",
 "per": 0.0,
 "spelling": null
 },
@@ -8540,6 +9446,108 @@
 "l'ancre est-ce qu'elle flotte ou est-ce qu'elle coule|?": {
 "h": "c2b204f514356fac",
 "say": "L'ancre : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
+"per": 0.0,
+"spelling": null
+},
+"l'arbre a besoin d'eau pour vivre comme toi|.": {
+"h": "23f97a8f7bb7ac0b",
+"say": "L'arbre a besoin d'eau pour vivre, comme toi.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau bout et s'envole en vapeur|.": {
+"h": "6cf354b26718c94e",
+"say": "L'eau bout, et s'envole en vapeur.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau de mer est bien trop salée|.": {
+"h": "3a718277100634af",
+"say": "L'eau de mer est bien trop salée.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau descend de la colline dans les tuyaux sous la rue|.": {
+"h": "1af5e87f8e28ae66",
+"say": "L'eau descend de la colline, dans les tuyaux sous la rue.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau descend du château d'eau dans les tuyaux sous la rue|.": {
+"h": "63d86a64aa55ecb8",
+"say": "L'eau descend du château d'eau, dans les tuyaux sous la rue.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau descend toujours|.": {
+"h": "1869c890b6655b49",
+"say": "L'eau descend toujours.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau descend toute seule et elle pousse fort jusqu'au robinet|.": {
+"h": "507d483e132ab375",
+"say": "L'eau descend toute seule, et elle pousse fort jusqu'au robinet.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau du linge s'envole en vapeur le linge sèche|.": {
+"h": "471ed15ec66ee0da",
+"say": "L'eau du linge s'envole en vapeur : le linge sèche.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau est propre|.": {
+"h": "ab487c4657f175c2",
+"say": "L'eau est propre.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau ne monte pas toute seule elle descend toujours|.": {
+"h": "f28370f6f6249c19",
+"say": "L'eau ne monte pas toute seule : elle descend toujours.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau peut être dure comme un glaçon couler comme de l'eau ou s'envoler en vapeur|.": {
+"h": "c141af95b38ffc46",
+"say": "L'eau peut être dure comme un glaçon, couler comme de l'eau, ou s'envoler en vapeur.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau qui glisse sur la terre finit dans un cours d'eau|.": {
+"h": "a500a38734fdf4a2",
+"say": "L'eau qui glisse sur la terre finit dans un cours d'eau.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau s'envole en vapeur si légère qu'on ne la voit pas la flaque sèche|.": {
+"h": "393f4d440f2186f0",
+"say": "L'eau s'envole en vapeur, si légère qu'on ne la voit pas, la flaque sèche !",
+"per": 0.0,
+"spelling": null
+},
+"l'eau sale coule dans les égouts|.": {
+"h": "82066522cf3b0a32",
+"say": "L'eau sale coule dans les égouts.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau sale elle part ailleurs|.": {
+"h": "24149263009b7f21",
+"say": "L'eau sale, elle, part ailleurs !",
+"per": 0.0,
+"spelling": null
+},
+"l'eau sale part sous la rue dans de grands tuyaux|.": {
+"h": "a03bd6966c9773d2",
+"say": "L'eau sale part sous la rue, dans de grands tuyaux.",
+"per": 0.038,
+"spelling": null
+},
+"l'enfant a besoin d'eau pour vivre comme toi|.": {
+"h": "c34928cb69261f6e",
+"say": "L'enfant a besoin d'eau pour vivre, comme toi.",
 "per": 0.0,
 "spelling": null
 },
@@ -8561,6 +9569,12 @@
 "per": 0.0,
 "spelling": null
 },
+"l'oiseau a besoin d'eau pour vivre comme toi|.": {
+"h": "e7f59ae0b9eae26b",
+"say": "L'oiseau a besoin d'eau pour vivre, comme toi.",
+"per": 0.0,
+"spelling": null
+},
 "l'orange est-ce qu'elle flotte ou est-ce qu'elle coule|?": {
 "h": "5879112932f46ca9",
 "say": "L'orange : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
@@ -8573,6 +9587,12 @@
 "per": 0.0,
 "spelling": null
 },
+"l'usine fabrique l'eau propre pour boire|.": {
+"h": "68c37770c883575e",
+"say": "L'usine fabrique l'eau propre, pour boire.",
+"per": 0.0,
+"spelling": null
+},
 "la balle de tennis est pleine d'air elle flotte|.": {
 "h": "2eee95cc59c1b85e",
 "say": "La balle de tennis est pleine d'air : elle flotte.",
@@ -8580,8 +9600,8 @@
 "spelling": null
 },
 "la balle de tennis est-ce qu'elle flotte ou est-ce qu'elle coule|?": {
-"h": "d12425ca4a102256",
-"say": "La balle de tennis : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
+"h": "32824b2ef6ffb8bc",
+"say": "La balle de tennis, est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
 "per": 0.0,
 "spelling": null
 },
@@ -8594,6 +9614,12 @@
 "la brique est-ce qu'elle flotte ou est-ce qu'elle coule|?": {
 "h": "d83bc78e70dae963",
 "say": "La brique : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
+"per": 0.0,
+"spelling": null
+},
+"la chaise n'est pas vivante elle n'a pas besoin de boire|.": {
+"h": "89bafa67fac59bf8",
+"say": "La chaise n'est pas vivante : elle n'a pas besoin de boire.",
 "per": 0.0,
 "spelling": null
 },
@@ -8612,6 +9638,12 @@
 "la clé est-ce qu'elle flotte ou est-ce qu'elle coule|?": {
 "h": "df1b22e75a77cff5",
 "say": "La clé : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
+"per": 0.0,
+"spelling": null
+},
+"la clé n'est pas vivante elle n'a pas besoin de boire|.": {
+"h": "704c37a9762450ef",
+"say": "La clé n'est pas vivante : elle n'a pas besoin de boire.",
 "per": 0.0,
 "spelling": null
 },
@@ -8639,9 +9671,39 @@
 "per": 0.0,
 "spelling": null
 },
+"la flaque est par terre au milieu du chemin|.": {
+"h": "3076e4f59b2d20da",
+"say": "La flaque est par terre, au milieu du chemin…",
+"per": 0.0,
+"spelling": null
+},
+"la fleur a besoin d'eau pour vivre comme toi|.": {
+"h": "09aa6eaca4a20a1b",
+"say": "La fleur a besoin d'eau pour vivre, comme toi.",
+"per": 0.0,
+"spelling": null
+},
 "la grosse pomme flotte et le petit raisin coule ce n'est pas la taille qui compte|.": {
 "h": "0261b8a4de4276dd",
 "say": "La grosse pomme flotte et le petit raisin coule : ce n'est pas la taille qui compte.",
+"per": 0.0,
+"spelling": null
+},
+"la lingette ne se défait pas elle bouche les tuyaux|.": {
+"h": "b224d08f93ac9087",
+"say": "La lingette ne se défait pas, elle bouche les tuyaux.",
+"per": 0.0,
+"spelling": null
+},
+"la neige fond au soleil elle devient de l'eau|.": {
+"h": "95ae85c8c5639437",
+"say": "La neige fond au soleil : elle devient de l'eau.",
+"per": 0.0,
+"spelling": null
+},
+"la neige fond et l'eau coule jusqu'à la rivière|.": {
+"h": "4e21eb970f82a063",
+"say": "La neige fond, et l'eau coule jusqu'à la rivière.",
 "per": 0.0,
 "spelling": null
 },
@@ -8693,6 +9755,42 @@
 "per": 0.0,
 "spelling": null
 },
+"la pompe a aspiré l'eau mais elle n'est pas encore bonne à boire|.": {
+"h": "b782cc6ce17edf74",
+"say": "La pompe a aspiré l'eau, mais elle n'est pas encore bonne à boire.",
+"per": 0.0,
+"spelling": null
+},
+"la rivière se jette dans la mer|.": {
+"h": "7c60246b2a6992e3",
+"say": "La rivière se jette dans la mer.",
+"per": 0.0,
+"spelling": null
+},
+"la station d'épuration a nettoyé l'eau sale|.": {
+"h": "983676f3aa8d7e76",
+"say": "La station d'épuration a nettoyé l'eau sale.",
+"per": 0.067,
+"spelling": null
+},
+"la vache a besoin d'eau pour vivre comme toi|.": {
+"h": "2b412fbed311e6d6",
+"say": "La vache a besoin d'eau pour vivre, comme toi.",
+"per": 0.0,
+"spelling": null
+},
+"la vaisselle est finie|.": {
+"h": "f457051950a2dba9",
+"say": "La vaisselle est finie.",
+"per": 0.0,
+"spelling": null
+},
+"la vapeur redevient de petites gouttes d'eau sur le miroir c'est la buée|.": {
+"h": "e64c637119070085",
+"say": "La vapeur redevient de petites gouttes d'eau sur le miroir : c'est la buée !",
+"per": 0.0,
+"spelling": null
+},
 "la vis est en métal elle coule|.": {
 "h": "ca5d924b1c303109",
 "say": "La vis est en métal : elle coule.",
@@ -8700,8 +9798,38 @@
 "spelling": null
 },
 "la vis est-ce qu'elle flotte ou est-ce qu'elle coule|?": {
-"h": "f136a17fc5e8e6fa",
-"say": "La vis : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
+"h": "9caabfbd43aaad6f",
+"say": "La vis, est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
+"per": 0.0,
+"spelling": null
+},
+"la voiture n'est pas vivante elle n'a pas besoin de boire|.": {
+"h": "13333c4bd5335a7e",
+"say": "La voiture n'est pas vivante : elle n'a pas besoin de boire.",
+"per": 0.0,
+"spelling": null
+},
+"là-bas on la nettoie avant de la rendre à la rivière|.": {
+"h": "38d64ecd032c3b4d",
+"say": "Là-bas, on la nettoie, avant de la rendre à la rivière.",
+"per": 0.0,
+"spelling": null
+},
+"là-haut il fait froid|.": {
+"h": "2ff22a71be3594f4",
+"say": "Là-haut, il fait froi.",
+"per": 0.0,
+"spelling": null
+},
+"laquelle|?": {
+"h": "31bd988026b2f1c2",
+"say": "Laquelle ?",
+"per": 0.0,
+"spelling": null
+},
+"le bain est fini|.": {
+"h": "d6a90472872a2401",
+"say": "Le bain est fini.",
 "per": 0.0,
 "spelling": null
 },
@@ -8714,6 +9842,12 @@
 "le ballon est-ce qu'il flotte ou est-ce qu'il coule|?": {
 "h": "2cd3f846cfd90bb4",
 "say": "Le ballon : est-ce qu'il flotte, ou est-ce qu'il coule ?",
+"per": 0.0,
+"spelling": null
+},
+"le ballon n'est pas vivant il n'a pas besoin de boire|.": {
+"h": "f675a848ed125226",
+"say": "Le ballon n'est pas vivant, il n'a pas besoin de boire.",
 "per": 0.0,
 "spelling": null
 },
@@ -8747,6 +9881,12 @@
 "per": 0.0,
 "spelling": null
 },
+"le caillou n'est pas vivant il n'a pas besoin de boire|.": {
+"h": "20dcadf63f764707",
+"say": "Le caillou n'est pas vivant, il n'a pas besoin de boire.",
+"per": 0.0,
+"spelling": null
+},
 "le canard en plastique est-ce qu'il flotte ou est-ce qu'il coule|?": {
 "h": "52b27001a5123bbc",
 "say": "Le canard en plastique : est-ce qu'il flotte, ou est-ce qu'il coule ?",
@@ -8756,6 +9896,30 @@
 "le canard est creux rempli d'air il flotte|.": {
 "h": "829375e04e4e2bcd",
 "say": "Le canard est creux, rempli d'air : il flotte.",
+"per": 0.0,
+"spelling": null
+},
+"le chat a besoin d'eau pour vivre comme toi|.": {
+"h": "89cea6cb2144f6a4",
+"say": "Le cha a besoin d'eau pour vivre, comme toi.",
+"per": 0.0,
+"spelling": null
+},
+"le château d'eau garde l'eau propre pour boire|.": {
+"h": "b397809b5720cece",
+"say": "Le château d'eau garde l'eau propre, pour boire.",
+"per": 0.0,
+"spelling": null
+},
+"le coton-tige bouche les tuyaux|.": {
+"h": "8d2c0d1c9eea5a0f",
+"say": "Le coton-tige bouche les tuyaux.",
+"per": 0.0,
+"spelling": null
+},
+"le crayon n'est pas vivant il n'a pas besoin de boire|.": {
+"h": "178842d0f21cfba5",
+"say": "Le crayon n'est pas vivant, il n'a pas besoin de boire.",
 "per": 0.0,
 "spelling": null
 },
@@ -8771,63 +9935,201 @@
 "per": 0.0,
 "spelling": null
 },
+"le grand tour de ploc|.": {
+"h": "588d9fddec85fe44",
+"say": "Le grand tour de Ploc !",
+"per": 0.0,
+"spelling": null
+},
+"le linge devient sec l'eau s'est envolée dans l'air|.": {
+"h": "3e35b5de75b7905c",
+"say": "Le linge devient sec : l'eau s'est envolée dans l'air.",
+"per": 0.0,
+"spelling": null
+},
+"le linge mouillé sèche au soleil|.": {
+"h": "cb91fb0c0c6d84ac",
+"say": "Le linge mouillé sèche au soleil.",
+"per": 0.0,
+"spelling": null
+},
+"le miroir est froid mais pas assez pour faire de la glace|.": {
+"h": "705845e9f2fae867",
+"say": "Le miroir est froi, mais pas assez pour faire de la glace.",
+"per": 0.0,
+"spelling": null
+},
 "le morceau de bois est-ce qu'il flotte ou est-ce qu'il coule|?": {
-"h": "eb80090d8982482f",
-"say": "Le morceau de bois : est-ce qu'il flotte, ou est-ce qu'il coule ?",
+"h": "a8cebb097ef0b8fa",
+"say": "Le morceau de bois, est-ce qu'il flotte, ou est-ce qu'il coule ?",
+"per": 0.0,
+"spelling": null
+},
+"le nuage est plein de gouttes|.": {
+"h": "f595e005e81e3a11",
+"say": "Le nuage est plein de gouttes.",
+"per": 0.0,
+"spelling": null
+},
+"le nuage est trop lourd les gouttes tombent|.": {
+"h": "9e68ececdfb7a0af",
+"say": "Le nuage est trop lourd, les gouttes tombe.",
+"per": 0.0,
+"spelling": null
+},
+"le nuage passe au-dessus de la montagne où il fait très très froid|.": {
+"h": "0dfc4ca369968c8e",
+"say": "Le nuage passe au-dessu de la montagne, où il fait très, très froi.",
+"per": 0.0,
+"spelling": null
+},
+"le poisson a besoin d'eau pour vivre comme toi|.": {
+"h": "b4493681213a9cfa",
+"say": "Le poisson a besoin d'eau pour vivre, comme toi.",
+"per": 0.0,
+"spelling": null
+},
+"le printemps arrive|.": {
+"h": "2f34f0d07a06c463",
+"say": "Le printemps arrive.",
+"per": 0.0,
+"spelling": null
+},
+"le soir la flaque a disparu|.": {
+"h": "54227a7400110e28",
+"say": "Le soir, la flaque a disparu.",
+"per": 0.0,
+"spelling": null
+},
+"le soleil brille sur le bonhomme de neige|.": {
+"h": "021c7a80c03d5647",
+"say": "Le soleil brille sur le bonhomme de neige.",
+"per": 0.0,
+"spelling": null
+},
+"le soleil chauffe la flaque toute la journée|.": {
+"h": "3a8181187d769efa",
+"say": "Le soleil chauffe la flaque toute la journée.",
+"per": 0.0,
+"spelling": null
+},
+"le soleil chauffe la mer ploc s'envole dans le ciel en vapeur|.": {
+"h": "5c473ef82ed87211",
+"say": "Le soleil chauffe la mer, Ploc s'envole dans le ciel, en vapeur.",
+"per": 0.0,
+"spelling": null
+},
+"le soleil chauffe la neige|.": {
+"h": "415483a724c4afa8",
+"say": "Le soleil chauffe la neige.",
+"per": 0.0,
+"spelling": null
+},
+"le soleil chauffe très fort|.": {
+"h": "844a36c138775ea4",
+"say": "Le soleil chauffe très fort.",
+"per": 0.0,
+"spelling": null
+},
+"le voyage de la goutte pour suivre ploc de la mer jusqu'au robinet|.": {
+"h": "95a6fc45e940af4b",
+"say": "Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet.",
 "per": 0.0,
 "spelling": null
 },
 "lequel va flotter la grosse bûche ou le petit caillou|?": {
-"h": "ed8109a67b61f2d0",
-"say": "Lequel va flotter : la grosse bûche, ou le petit caillou ?",
+"h": "30e129a2e8d718f6",
+"say": "Lequel va flotter, la grosse bûche, ou le petit caillou ?",
 "per": 0.0,
 "spelling": null
 },
 "lequel va flotter la grosse pomme ou le petit grain de raisin|?": {
-"h": "006d07ff49329fd6",
-"say": "Lequel va flotter : la grosse pomme, ou le petit grain de raisin ?",
+"h": "2a4753c8068df1b6",
+"say": "Lequel va flotter, la grosse pomme, ou le petit grain de raisin ?",
 "per": 0.0,
 "spelling": null
 },
 "lequel va flotter la pâte à modeler en boule ou la pâte à modeler en forme de bateau|?": {
-"h": "97bf571a0af7873f",
-"say": "Lequel va flotter : la pâte à modeler en boule, ou la pâte à modeler en forme de bateau ?",
-"per": 0.02,
+"h": "301cbbe4bdd3d1dc",
+"say": "Lequel va flotter, la pâte à modeler en boule, ou la pâte à modeler en forme de bateau ?",
+"per": 0.0,
 "spelling": null
 },
 "lequel va flotter la pâte à modeler en forme de bateau ou la pâte à modeler en boule|?": {
-"h": "d9d6664c1415ffbe",
-"say": "Lequel va flotter : la pâte à modeler en forme de bateau, ou la pâte à modeler en boule ?",
+"h": "2e047479af73a98e",
+"say": "Lequel va flotter, la pâte à modeler en forme de bateau, ou la pâte à modeler en boule ?",
 "per": 0.0,
 "spelling": null
 },
 "lequel va flotter la petite clé en métal ou le grand bateau en métal|?": {
-"h": "0a639349f6a61f85",
-"say": "Lequel va flotter : la petite clé en métal, ou le grand bateau en métal ?",
-"per": 0.045,
+"h": "ff4882d47b46cd56",
+"say": "Lequel va flotter, la petite clé en métal, ou le grand bateau en métal ?",
+"per": 0.0,
 "spelling": null
 },
 "lequel va flotter le grand bateau en métal ou la petite clé en métal|?": {
-"h": "cab0a66b05a310bc",
-"say": "Lequel va flotter : le grand bateau en métal, ou la petite clé en métal ?",
-"per": 0.045,
+"h": "11bdb13cd0c2f8c6",
+"say": "Lequel va flotter, le grand bateau en métal, ou la petite clé en métal ?",
+"per": 0.0,
 "spelling": null
 },
 "lequel va flotter le petit caillou ou la grosse bûche|?": {
-"h": "bb5dcaeb602407a8",
-"say": "Lequel va flotter : le petit caillou, ou la grosse bûche ?",
+"h": "a2a1c47387bc7d81",
+"say": "Lequel va flotter, le petit caillou, ou la grosse bûche ?",
 "per": 0.0,
 "spelling": null
 },
 "lequel va flotter le petit grain de raisin ou la grosse pomme|?": {
-"h": "22c10a6d8f604e33",
-"say": "Lequel va flotter : le petit grain de raisin, ou la grosse pomme ?",
-"per": 0.054,
+"h": "97bd66d02aab8548",
+"say": "Lequel va flotter, le petit grain de raisin, ou la grosse pomme ?",
+"per": 0.0,
+"spelling": null
+},
+"les bactéries ont besoin d'air cherche les bulles|.": {
+"h": "951f4d5015b7011a",
+"say": "Les bactéries ont besoin d'air : cherche les bulles.",
+"per": 0.0,
+"spelling": null
+},
+"les bulles leur donnent de l'air|.": {
+"h": "f33b225ebfaa72aa",
+"say": "Les bulles leur donnent de l'air.",
+"per": 0.0,
+"spelling": null
+},
+"les canards vivent sur l'étang pas dans la station|.": {
+"h": "ffd919e1334d02b3",
+"say": "Les canards vivent sur l'étang, pas dans la station !",
+"per": 0.0,
 "spelling": null
 },
 "les deux sont en métal|.": {
 "h": "70a6ec03409d7dd4",
 "say": "Les deux sont en métal !",
+"per": 0.0,
+"spelling": null
+},
+"les grilles attrapent les gros déchets|.": {
+"h": "dda5933c110f45a4",
+"say": "Les grilles attrape les gros déchets.",
+"per": 0.048,
+"spelling": null
+},
+"les lingettes ne se défont pas dans l'eau elles bouchent les tuyaux|.": {
+"h": "2087d1567de1ab3a",
+"say": "Les lingettes ne se défont pas dans l'eau : elles bouchent les tuyaux.",
+"per": 0.0,
+"spelling": null
+},
+"les poissons vivent dans la rivière pas dans la station|.": {
+"h": "b286f528013d4553",
+"say": "Les poissons vivent dans la rivière, pas dans la station !",
+"per": 0.0,
+"spelling": null
+},
+"maintenant elle monte tout en haut d'une grande tour|.": {
+"h": "9f4bc1da122e295c",
+"say": "Maintenant, elle monte tout en haut d'une grande tour.",
 "per": 0.0,
 "spelling": null
 },
@@ -8840,6 +10142,474 @@
 "même tout petit le grain de raisin coule|.": {
 "h": "65b8ca56779cb97d",
 "say": "Même tout petit, le grain de raisin coule.",
+"per": 0.0,
+"spelling": null
+},
+"mets le réservoir plus haut que la maison|.": {
+"h": "4d1ae806ef6e346e",
+"say": "Mets le réservoir plus haut que la maison !",
+"per": 0.0,
+"spelling": null
+},
+"non la glace c'est quand il fait très froid|.": {
+"h": "7aa564bc3a5ccf6f",
+"say": "Non, la glace, c'est quand il fait très froi.",
+"per": 0.0,
+"spelling": null
+},
+"non la vapeur c'est quand ça chauffe|.": {
+"h": "811bae56f9c0daaa",
+"say": "Non, la vapeur, c'est quand ça chauffe.",
+"per": 0.0,
+"spelling": null
+},
+"non une lingette ne se recycle pas elle va dans la poubelle|.": {
+"h": "54fab770d46dd30f",
+"say": "Non, une lingette ne se recycle pas, elle va dans la poubelle.",
+"per": 0.0,
+"spelling": null
+},
+"non|.": {
+"h": "6d6300bc492e8415",
+"say": "Non !",
+"per": 0.0,
+"spelling": null
+},
+"octave met de l'eau dans le congélateur où il fait très froid|.": {
+"h": "f755d52b532ba8db",
+"say": "Octave met de l'eau dans le congélateur, où il fait très froi.",
+"per": 0.0,
+"spelling": null
+},
+"octave pose un glaçon au soleil|.": {
+"h": "956f63656a1ff564",
+"say": "Octave pose un glaçon au soleil.",
+"per": 0.0,
+"spelling": null
+},
+"octave répond dans les égouts jusqu'à la station d'épuration|.": {
+"h": "343f414ef3238682",
+"say": "Octave répond, Dans les égouts, jusqu'à la station d'épuration.",
+"per": 0.0,
+"spelling": null
+},
+"octave répond suis-moi une pompe une usine un château d'eau et voilà la maison|.": {
+"h": "87edfc405c0bdb1d",
+"say": "Octave répond, Suis-moi : une pompe, une usine, un château d'eau… et voilà la maison !",
+"per": 0.0,
+"spelling": null
+},
+"oh toute cette eau qui coule pour rien|.": {
+"h": "cc0713ff3b22c481",
+"say": "Oh, toute cette eau qui coule pour rien !",
+"per": 0.0,
+"spelling": null
+},
+"on enlève le bouchon glouglou|.": {
+"h": "f93c55d32b1667a3",
+"say": "On enlève le bouchon : glouglou !",
+"per": 0.056,
+"spelling": null
+},
+"on ferme le robinet pendant le brossage|.": {
+"h": "1b5502b64e40addf",
+"say": "On ferme le robinet pendant le brossage.",
+"per": 0.0,
+"spelling": null
+},
+"on la pompe tout en haut de la colline|.": {
+"h": "bf6d8921f9b2c935",
+"say": "On la pompe tout en haut de la colline.",
+"per": 0.0,
+"spelling": null
+},
+"on le ferme pendant qu'on se brosse les dents l'eau ne coule pas pour rien|.": {
+"h": "d192405234ea724a",
+"say": "On le ferme pendant qu'on se brosse les dents, l'eau ne coule pas pour rien.",
+"per": 0.0,
+"spelling": null
+},
+"on ouvre le robinet pour remplir le bain|.": {
+"h": "174cda028d0be2e1",
+"say": "On ouvre le robinet pour remplir le bain.",
+"per": 0.0,
+"spelling": null
+},
+"on peut la boire|.": {
+"h": "f9a8edba73952813",
+"say": "On peut la boire !",
+"per": 0.0,
+"spelling": null
+},
+"on tire la chasse d'eau|.": {
+"h": "354c013685ae671f",
+"say": "On tire la chasse d'eau.",
+"per": 0.0,
+"spelling": null
+},
+"où arrive-t-elle|?": {
+"h": "72824291810f437e",
+"say": "Où arrive-t-elle ?",
+"per": 0.0,
+"spelling": null
+},
+"où arrive-t-il|?": {
+"h": "e43b014019a9a76f",
+"say": "Où arrive-t-il ?",
+"per": 0.0,
+"spelling": null
+},
+"où est partie l'eau|?": {
+"h": "8f6fcbbe707b0972",
+"say": "Où est partie l'eau ?",
+"per": 0.0,
+"spelling": null
+},
+"où faut-il la jeter|?": {
+"h": "035027fbddbf818f",
+"say": "Où faut-il la jeter ?",
+"per": 0.0,
+"spelling": null
+},
+"où faut-il mettre le réservoir pour que l'eau arrive toute seule au robinet|?": {
+"h": "0c17bbeffe8d728a",
+"say": "Où faut-il mettre le réservoir, pour que l'eau arrive toute seule au robinet ?",
+"per": 0.0,
+"spelling": null
+},
+"où va l'eau de la station d'épuration|?": {
+"h": "ecf545155f09a024",
+"say": "Où va l'eau de la station d'épuration ?",
+"per": 0.042,
+"spelling": null
+},
+"où va l'eau sale de l'évier|?": {
+"h": "5dbdc00161de82bd",
+"say": "Où va l'eau sale de l'évier ?",
+"per": 0.0,
+"spelling": null
+},
+"où va l'eau sale|?": {
+"h": "45de1eb0e4484c10",
+"say": "Où va l'eau sale ?",
+"per": 0.0,
+"spelling": null
+},
+"où va ploc|?": {
+"h": "4f3f90ce7fc7da19",
+"say": "Où va Ploc ?",
+"per": 0.0,
+"spelling": null
+},
+"où va-t-elle ensuite|?": {
+"h": "98c94dcde6d5213f",
+"say": "Où va-t-elle ensuite ?",
+"per": 0.0,
+"spelling": null
+},
+"où va-t-elle|?": {
+"h": "0bc57825c1f0d9c5",
+"say": "Où va-t-elle ?",
+"per": 0.0,
+"spelling": null
+},
+"où va-t-il|?": {
+"h": "1624c5b0c11811a1",
+"say": "Où va-t-il ?",
+"per": 0.0,
+"spelling": null
+},
+"oui on peut la boire|.": {
+"h": "f491441dd6dbbbf2",
+"say": "Oui, on peut la boire !",
+"per": 0.0,
+"spelling": null
+},
+"pas à l'usine mais à la rivière|.": {
+"h": "ab9f872c3b47abe2",
+"say": "Pas à l'usine, mais à la rivière.",
+"per": 0.0,
+"spelling": null
+},
+"pas l'eau sale|.": {
+"h": "091007583ef61736",
+"say": "Pas l'eau sale !",
+"per": 0.0,
+"spelling": null
+},
+"pas si vite|.": {
+"h": "be21f8c1d2d7e8d5",
+"say": "Pas si vite !",
+"per": 0.0,
+"spelling": null
+},
+"pendant qu'on se brosse les dents on n'a pas besoin d'eau|.": {
+"h": "54177f9516268ffc",
+"say": "Pendant qu'on se brosse les dents, on n'a pas besoin d'eau.",
+"per": 0.0,
+"spelling": null
+},
+"pense à une glace au chocolat en plein soleil|.": {
+"h": "671d662d4a6abab9",
+"say": "Pense à une glace au chocolat en plein soleil…",
+"per": 0.077,
+"spelling": null
+},
+"ploc a besoin de toi pour garder l'eau propre et ne pas la gaspiller|.": {
+"h": "3839f16c0c4ad676",
+"say": "Ploc a besoin de toi pour garder l'eau propre, et ne pas la gaspiller.",
+"per": 0.0,
+"spelling": null
+},
+"ploc a utilisé une lingette|.": {
+"h": "7f318a4c68d31fd0",
+"say": "Ploc a utilisé une lingette.",
+"per": 0.0,
+"spelling": null
+},
+"ploc demande et l'eau sale où va-t-elle|?": {
+"h": "6e7598ce856158d6",
+"say": "Ploc demande : Et l'eau sale, où va-t-elle ?",
+"per": 0.0,
+"spelling": null
+},
+"ploc demande octave comment l'eau arrive-t-elle dans le robinet|?": {
+"h": "9181943015d4c7f5",
+"say": "Ploc demande : Octave, comment l'eau arrive-t-elle dans le robinet ?",
+"per": 0.027,
+"spelling": null
+},
+"ploc est dans la nappe sous la terre|.": {
+"h": "8830d85fce6a262d",
+"say": "Ploc est dans la nappe, sous la terre.",
+"per": 0.0,
+"spelling": null
+},
+"ploc est revenu chez octave|.": {
+"h": "b3dca307592ab8a7",
+"say": "Ploc est revenu chez Octave !",
+"per": 0.0,
+"spelling": null
+},
+"ploc monte monte dans le ciel|.": {
+"h": "18b1c178b97d9816",
+"say": "Ploc monte, monte dans le ciel.",
+"per": 0.0,
+"spelling": null
+},
+"ploc nage dans la mer|.": {
+"h": "e7dfcf85bf246e30",
+"say": "Ploc nage dans la mer.",
+"per": 0.0,
+"spelling": null
+},
+"ploc retrouve d'autres gouttes ensemble elles forment un nuage|.": {
+"h": "a62999cf7669f2a6",
+"say": "Ploc retrouve d'autres gouttes, ensemble, elles forme un nuage.",
+"per": 0.0,
+"spelling": null
+},
+"ploc suit la rivière qui coule qui coule|.": {
+"h": "b53701d5172d495a",
+"say": "Ploc suit la rivière, qui coule, qui coule…",
+"per": 0.0,
+"spelling": null
+},
+"ploc tombe dans le champ|.": {
+"h": "8f0005575d622c5c",
+"say": "Ploc tombe dans le champ.",
+"per": 0.0,
+"spelling": null
+},
+"ploc tombe sur la colline|.": {
+"h": "069e581c62df20d1",
+"say": "Ploc tombe sur la colline.",
+"per": 0.0,
+"spelling": null
+},
+"plus l'eau tombe de haut plus elle pousse fort|.": {
+"h": "a9d2dcedb3e0af48",
+"say": "Plus l'eau tombe de haut, plus elle pousse fort.",
+"per": 0.0,
+"spelling": null
+},
+"plus le château d'eau est haut plus l'eau pousse fort dans les tuyaux|.": {
+"h": "f618ac40eea46f87",
+"say": "Plus le château d'eau est haut, plus l'eau pousse fort dans les tuyaux !",
+"per": 0.0,
+"spelling": null
+},
+"pour la maison on va chercher de l'eau dans la rivière|.": {
+"h": "4b33e1fbead1fbdf",
+"say": "Pour la maison, on va chercher de l'eau dans la rivière.",
+"per": 0.0,
+"spelling": null
+},
+"pour se laver qu'est-ce qui utilise le moins d'eau|?": {
+"h": "835ff36fb1be07e6",
+"say": "Pour se laver, qu'est-ce qui utilise le moins d'eau ?",
+"per": 0.0,
+"spelling": null
+},
+"qu'est-ce qu'on peut jeter dans les toilettes|?": {
+"h": "82d3d20352ea1d99",
+"say": "Qu'est-ce qu'on peut jeter dans les toilettes ?",
+"per": 0.0,
+"spelling": null
+},
+"qu'est-ce qui l'aspire|?": {
+"h": "339663845f93dcf7",
+"say": "Qu'est-ce qui l'aspire ?",
+"per": 0.0,
+"spelling": null
+},
+"qu'est-ce qui va le chercher pour la maison|?": {
+"h": "b78ee4ba2b02f26b",
+"say": "Qu'est-ce qui va le chercher pour la maison ?",
+"per": 0.0,
+"spelling": null
+},
+"quand il fait très froid les gouttes gèlent avant de tomber|.": {
+"h": "2e46afab63030642",
+"say": "Quand il fait très froi, les gouttes gèle avant de tomber.",
+"per": 0.0,
+"spelling": null
+},
+"quand il gèle l'eau de la flaque devient de la glace|.": {
+"h": "e6aacbcd20972083",
+"say": "Quand il gèle, l'eau de la flaque devient de la glace.",
+"per": 0.0,
+"spelling": null
+},
+"quand il gèle l'eau devient dure|.": {
+"h": "a25ce20bc99d2857",
+"say": "Quand il gèle, l'eau devient dure.",
+"per": 0.0,
+"spelling": null
+},
+"quand l'eau ne bouge plus la saleté descend tout doucement|.": {
+"h": "186c6d437b01d66b",
+"say": "Quand l'eau ne bouge plus, la saleté descend tout doucement.",
+"per": 0.0,
+"spelling": null
+},
+"quand le nuage est trop lourd les gouttes tombent|.": {
+"h": "4378151c404ef183",
+"say": "Quand le nuage est trop lourd, les gouttes tombe.",
+"per": 0.043,
+"spelling": null
+},
+"quand le soleil chauffe l'eau elle devient si légère qu'elle s'envole|.": {
+"h": "cf0a10d39a9e03b6",
+"say": "Quand le soleil chauffe l'eau, elle devient si légère qu'elle s'envole.",
+"per": 0.0,
+"spelling": null
+},
+"que devient l'eau de la glace de l'eau ou de la vapeur|?": {
+"h": "47895ff6ddacbc0a",
+"say": "Que devient l'eau : de la glace, de l'eau, ou de la vapeur ?",
+"per": 0.0,
+"spelling": null
+},
+"que devient l'eau du linge de la glace de l'eau ou de la vapeur|?": {
+"h": "6c0d165853dbd0b8",
+"say": "Que devient l'eau du linge : de la glace, de l'eau, ou de la vapeur ?",
+"per": 0.0,
+"spelling": null
+},
+"que devient la flaque d'eau de la glace de l'eau ou de la vapeur|?": {
+"h": "ff3eb7d2c8a15a6e",
+"say": "Que devient la flaque d'eau : de la glace, de l'eau, ou de la vapeur ?",
+"per": 0.0,
+"spelling": null
+},
+"que devient la neige de la glace de l'eau ou de la vapeur|?": {
+"h": "e4c2a306b2edb3c4",
+"say": "Que devient la neige : de la glace, de l'eau, ou de la vapeur ?",
+"per": 0.0,
+"spelling": null
+},
+"que devient-elle de la glace de l'eau ou de la vapeur|?": {
+"h": "5380061593dd9981",
+"say": "Que devient-elle : de la glace, de l'eau, ou de la vapeur ?",
+"per": 0.0,
+"spelling": null
+},
+"que devient-il de la glace de l'eau ou de la vapeur|?": {
+"h": "0027bda6dbbedcf1",
+"say": "Que devient-il : de la glace, de l'eau, ou de la vapeur ?",
+"per": 0.0,
+"spelling": null
+},
+"que fais-tu du robinet|?": {
+"h": "87959f5683c8febb",
+"say": "Que fais-tu du robinet ?",
+"per": 0.0,
+"spelling": null
+},
+"que se passe-t-il|?": {
+"h": "2d2f0364ccf8a97d",
+"say": "Que se passe-t-il ?",
+"per": 0.0,
+"spelling": null
+},
+"que tombe-t-il|?": {
+"h": "6a0c1ed8114ed0e5",
+"say": "Que tombe-t-il ?",
+"per": 0.0,
+"spelling": null
+},
+"qui a besoin d'eau pour vivre|?": {
+"h": "cc123a69f1fcc1eb",
+"say": "Qui a besoin d'eau pour vivre ?",
+"per": 0.0,
+"spelling": null
+},
+"regarde bien à la fin il n'y a plus d'eau du tout|.": {
+"h": "4276fc231f7c9fcc",
+"say": "Regarde bien : à la fin, il n'y a plus d'eau du tout.",
+"per": 0.0,
+"spelling": null
+},
+"regarde bien et écoute encore|.": {
+"h": "bcd7cf4e7a80cda0",
+"say": "Regarde bien, et écoute encore.",
+"per": 0.0,
+"spelling": null
+},
+"regarde ce qui reste|.": {
+"h": "9db2cd79e7508d3c",
+"say": "Regarde ce qui reste.",
+"per": 0.0,
+"spelling": null
+},
+"regarde ce qui vient avant et ce qui vient après|.": {
+"h": "3bd09195ced1559e",
+"say": "Regarde ce qui vient avant, et ce qui vient après.",
+"per": 0.0,
+"spelling": null
+},
+"regarde le miroir après la douche il est couvert de petites gouttes|.": {
+"h": "e32b0b141072bc4d",
+"say": "Regarde le miroir après la douche : il est couvert de petites gouttes.",
+"per": 0.0,
+"spelling": null
+},
+"si on peut la boire|.": {
+"h": "f0b81373809a861c",
+"say": "Si, on peut la boire !",
+"per": 0.0,
+"spelling": null
+},
+"sous la terre il y a de l'eau cachée|.": {
+"h": "8411fd759f593e8e",
+"say": "Sous la terre, il y a de l'eau cachée.",
+"per": 0.0,
+"spelling": null
+},
+"suivons-le|.": {
+"h": "13500776c7f2b8e5",
+"say": "Suivons-le !",
 "per": 0.0,
 "spelling": null
 },
@@ -8861,21 +10631,153 @@
 "per": 0.0,
 "spelling": null
 },
+"surtout pas|.": {
+"h": "67ef0d608fba856e",
+"say": "Surtout pas !",
+"per": 0.0,
+"spelling": null
+},
 "touche ce qui s'est vraiment passé|.": {
 "h": "ca1fcb53df59e532",
 "say": "Touche ce qui s'est vraiment passé.",
 "per": 0.0,
 "spelling": null
 },
+"touche l'eau qui arrive avant d'être nettoyée|.": {
+"h": "d51661f26404d7d7",
+"say": "Touche l'eau qui arrive, avant d'être nettoyée.",
+"per": 0.0,
+"spelling": null
+},
+"touche le verre d'eau qui en sort|.": {
+"h": "6a80717ea24b9e9c",
+"say": "Touche le verre d'eau qui en sort.",
+"per": 0.0,
+"spelling": null
+},
+"tout dépend du chaud et du froid|.": {
+"h": "7cb48976c0d720ff",
+"say": "Tout dépend du chô et du froi.",
+"per": 0.0,
+"spelling": null
+},
+"toutes les rivières finissent par arriver au même endroit tout en bas|.": {
+"h": "4c7edd27f409cdd6",
+"say": "Toutes les rivières finissent par arriver au même endroit, tout en bas.",
+"per": 0.0,
+"spelling": null
+},
+"tu te brosses les dents|.": {
+"h": "793872d968691efb",
+"say": "Tu te brosses les dents.",
+"per": 0.0,
+"spelling": null
+},
+"un adulte fait chauffer de l'eau dans une casserole très fort|.": {
+"h": "58445079477a7538",
+"say": "Un adulte fait chauffer de l'eau dans une casserole, très fort.",
+"per": 0.0,
+"spelling": null
+},
 "un bateau est fait pour flotter il pousse l'eau sous lui|.": {
-"h": "8711aaf141aab80a",
-"say": "Un bateau est fait pour flotter : il pousse l'eau sous lui.",
-"per": 0.071,
+"h": "6e5e0236c5644eff",
+"say": "Un bateau est fait pour flotter, il pousse l'eau sous lui.",
+"per": 0.0,
+"spelling": null
+},
+"un grand bain il faut le remplir tout entier ça fait beaucoup d'eau|.": {
+"h": "cdb5931c26756ac8",
+"say": "Un grand bain, il faut le remplir tout entier, ça fait beaucoup d'eau !",
+"per": 0.0,
+"spelling": null
+},
+"un grand réservoir tout en haut de la colline|.": {
+"h": "6f0d32dc55e6b3e0",
+"say": "Un grand réservoir, tout en haut de la colline.",
+"per": 0.0,
 "spelling": null
 },
 "un œuf frais coule au fond de l'eau|.": {
 "h": "f287c54c6dbddb5d",
 "say": "Un œuf frais coule au fond de l'eau.",
+"per": 0.0,
+"spelling": null
+},
+"une douche rapide utilise bien moins d'eau qu'un grand bain|.": {
+"h": "43dd07cbb9482caf",
+"say": "Une douche rapide utilise bien moins d'eau qu'un grand bain.",
+"per": 0.0,
+"spelling": null
+},
+"une grande tour avec un gros réservoir tout en haut|.": {
+"h": "daeae5bf72c12b25",
+"say": "Une grande tour, avec un gros réservoir tout en haut.",
+"per": 0.0,
+"spelling": null
+},
+"une lingette ne se défait pas dans l'eau et elle ne se recycle pas|.": {
+"h": "8114236e0af27de7",
+"say": "Une lingette ne se défait pas dans l'eau, et elle ne se recycle pas.",
+"per": 0.0,
+"spelling": null
+},
+"une pompe aspire l'eau de la nappe et l'envoie à l'usine|.": {
+"h": "466e7cc9b6923c20",
+"say": "Une pompe aspire l'eau de la nappe, et l'envoie à l'usine.",
+"per": 0.0,
+"spelling": null
+},
+"une pompe aspire l'eau de la rivière et l'envoie à l'usine|.": {
+"h": "da873ac21d490106",
+"say": "Une pompe aspire l'eau de la rivière, et l'envoie à l'usine.",
+"per": 0.0,
+"spelling": null
+},
+"voici l'eau d'une flaque|.": {
+"h": "e7a9cdd848c8d1ff",
+"say": "Voici l'eau d'une flaque.",
+"per": 0.0,
+"spelling": null
+},
+"voici l'eau de la mer|.": {
+"h": "1a2eac4405cc4c07",
+"say": "Voici l'eau de la mer.",
+"per": 0.0,
+"spelling": null
+},
+"voici l'eau de la rivière|.": {
+"h": "11c1a661c3552f0e",
+"say": "Voici l'eau de la rivière.",
+"per": 0.0,
+"spelling": null
+},
+"voici l'eau du robinet à la maison|.": {
+"h": "3383056c88a16aeb",
+"say": "Voici l'eau du robinet, à la maison.",
+"per": 0.0,
+"spelling": null
+},
+"voici l'eau qui sort de la station d'épuration|.": {
+"h": "223681276cc26de8",
+"say": "Voici l'eau qui sort de la station d'épuration.",
+"per": 0.0,
+"spelling": null
+},
+"voici l'usine d'eau potable|.": {
+"h": "eb064e22b0b621aa",
+"say": "Voici l'usine d'eau potable.",
+"per": 0.0,
+"spelling": null
+},
+"voici les bons gestes|.": {
+"h": "d4ff89187c824f1b",
+"say": "Voici les bons gestes !",
+"per": 0.0,
+"spelling": null
+},
+"voici ploc une petite goutte d'eau|.": {
+"h": "a690eb32f06970d2",
+"say": "Voici Ploc, une petite goutte d'eau.",
 "per": 0.0,
 "spelling": null
 },
@@ -9348,8 +11250,8 @@
 "spelling": null
 },
 "celle-ci c'est pour tes programmes bip est arrivé au bout|.": {
-"h": "eaaca013156aa7b5",
-"say": "Celle-ci, c'est pour tes programmes : Bip est arrivé au bout !",
+"h": "2188263ed629756e",
+"say": "Celle-ci, c'est pour tes programmes, Bip est arrivé au bout !",
 "per": 0.031,
 "spelling": null
 },
@@ -9996,8 +11898,8 @@
 "spelling": null
 },
 "le rectangle c'est 4 côtés 2 longs et 2 courts|.": {
-"h": "9ed48b0f937f7643",
-"say": "Le rectangle, c'est quatre côtés : deux longs et deux cour.",
+"h": "9edacd50b8307dba",
+"say": "Le rectangle, c'est quatre côtés, deux longs et deux cour.",
 "per": 0.033,
 "spelling": null
 },
@@ -10050,8 +11952,8 @@
 "spelling": null
 },
 "les cases qui s'allument sont sur la même ligne|": {
-"h": "2f051df9aa26b1ac",
-"say": "Les cases qui s'allument sont sur la même ligne",
+"h": "8b8fbdb5de26ecc5",
+"say": "Les cases qui s'allume sont sur la même ligne",
 "per": 0.0,
 "spelling": null
 },
@@ -10386,8 +12288,8 @@
 "spelling": null
 },
 "oui le rectangle 4 côtés 2 longs et 2 courts|.": {
-"h": "6dadd23cf7a0e0bf",
-"say": "Oui, le rectangle : quatre côtés : deux longs et deux cour !",
+"h": "a5bc602455be0edc",
+"say": "Oui, le rectangle : quatre côtés, deux longs et deux cour !",
 "per": 0.0,
 "spelling": null
 },
@@ -10458,8 +12360,8 @@
 "spelling": null
 },
 "pose ton doigt sur un coin puis suis chaque côté en comptant un deux trois|.": {
-"h": "8bee358cd5f810e5",
-"say": "Pose ton doigt sur un coin, puis suis chaque côté en comptant : un, deux, trois…",
+"h": "27c8ae357aa0e805",
+"say": "Pose ton doigt sur un coin, puis suis chaque côté en comptant, un, deux, trois…",
 "per": 0.0,
 "spelling": null
 },
@@ -10649,6 +12551,12 @@
 "per": 0.0,
 "spelling": null
 },
+"puis 4 flèches vers le haut|.": {
+"h": "cebfc4305aa85f68",
+"say": "puis quatre flèches vers le haut.",
+"per": 0.0,
+"spelling": null
+},
 "puis on le pose sur la feuille|.": {
 "h": "167bd91a7fa0227d",
 "say": "puis on le pose sur la feuille.",
@@ -10746,9 +12654,9 @@
 "spelling": null
 },
 "regarde les côtés s'allument un par un|.": {
-"h": "54ef106c273e4054",
-"say": "Regarde, les côtés s'allument un par un.",
-"per": 0.043,
+"h": "e63a44552168739e",
+"say": "Regarde, les côtés s'allume un par un.",
+"per": 0.0,
 "spelling": null
 },
 "regarde où et change la flèche|.": {
@@ -10920,8 +12828,8 @@
 "spelling": null
 },
 "ballon|,": {
-"h": "fbef09bb052188d4",
-"say": "ballon,",
+"h": "696b24e1af2c4e0b",
+"say": "ballon…",
 "per": 0.0,
 "spelling": null
 },
@@ -10932,14 +12840,14 @@
 "spelling": null
 },
 "banane|,": {
-"h": "68acc53b14b67973",
-"say": "banane,",
+"h": "6c5edba0048f772a",
+"say": "banane…",
 "per": 0.0,
 "spelling": null
 },
 "bas|,": {
-"h": "d49529b1aed8c682",
-"say": "bas,",
+"h": "f85b99f67ca2237e",
+"say": "bas…",
 "per": 0.0,
 "spelling": null
 },
@@ -10950,14 +12858,14 @@
 "spelling": null
 },
 "bateau|,": {
-"h": "2c72b2017c956835",
-"say": "bateau,",
+"h": "766b0cd307dbef8e",
+"say": "bateau…",
 "per": 0.0,
 "spelling": null
 },
 "bé|,": {
-"h": "48128c8c60b8952c",
-"say": "bé,",
+"h": "4cf12bc17676ce33",
+"say": "bé…",
 "per": 0.0,
 "spelling": "bé"
 },
@@ -10974,8 +12882,8 @@
 "spelling": null
 },
 "bébé|,": {
-"h": "ad6aad7426b7cb3e",
-"say": "bébé,",
+"h": "8d31c783b7f6500b",
+"say": "bébé…",
 "per": 0.0,
 "spelling": null
 },
@@ -10986,14 +12894,14 @@
 "spelling": null
 },
 "beurre|,": {
-"h": "9dd30b965d93ddad",
-"say": "beurre,",
+"h": "9033935787740492",
+"say": "beurre…",
 "per": 0.0,
 "spelling": null
 },
 "bon|,": {
-"h": "1deed040629ff6ba",
-"say": "bon,",
+"h": "f5549400d78b9abd",
+"say": "bon…",
 "per": 0.0,
 "spelling": null
 },
@@ -11004,8 +12912,8 @@
 "spelling": null
 },
 "bonbon|,": {
-"h": "c015f19e1f8d98ff",
-"say": "bonbon,",
+"h": "2ccabd7cf64e057e",
+"say": "bonbon…",
 "per": 0.0,
 "spelling": null
 },
@@ -11258,7 +13166,7 @@
 "ça c'est i|.": {
 "h": "e0fb6058ea7bff77",
 "say": "Ça, c'est : i.",
-"per": 0.2,
+"per": 0.0,
 "spelling": null
 },
 "ça c'est la|.": {
@@ -11276,7 +13184,7 @@
 "ça c'est lit|.": {
 "h": "a3b76f54e9964805",
 "say": "Ça, c'est li.",
-"per": 0.167,
+"per": 0.0,
 "spelling": null
 },
 "ça c'est lot|.": {
@@ -11474,7 +13382,7 @@
 "ça c'est u|.": {
 "h": "7f239d5ad72d4abb",
 "say": "Ça, c'est : u.",
-"per": 0.2,
+"per": 0.0,
 "spelling": null
 },
 "ça c'est un domino|.": {
@@ -11826,8 +13734,8 @@
 "spelling": null
 },
 "ca|,": {
-"h": "81b754dee064cb9b",
-"say": "ca,",
+"h": "a8a74858199fdd0d",
+"say": "ca…",
 "per": 0.0,
 "spelling": "ca"
 },
@@ -11838,8 +13746,8 @@
 "spelling": null
 },
 "cadeau|,": {
-"h": "194387cb6a3e7208",
-"say": "cadeau,",
+"h": "c1b75ce10390b585",
+"say": "cadeau…",
 "per": 0.0,
 "spelling": null
 },
@@ -11850,8 +13758,8 @@
 "spelling": null
 },
 "café|,": {
-"h": "5483920f0ee62ef5",
-"say": "café,",
+"h": "c8e71b847197ca5a",
+"say": "café…",
 "per": 0.0,
 "spelling": null
 },
@@ -11862,8 +13770,8 @@
 "spelling": null
 },
 "camion|,": {
-"h": "da2a4867a05e3358",
-"say": "camion,",
+"h": "4126171b8ca4dcea",
+"say": "camion…",
 "per": 0.0,
 "spelling": null
 },
@@ -11880,8 +13788,8 @@
 "spelling": null
 },
 "canard|,": {
-"h": "ebd4588053402238",
-"say": "canard,",
+"h": "945a866130504aa4",
+"say": "canard…",
 "per": 0.0,
 "spelling": null
 },
@@ -12408,8 +14316,8 @@
 "spelling": null
 },
 "chaud|,": {
-"h": "87c137f070746f86",
-"say": "chaud,",
+"h": "8a5b5c5bcd8b749c",
+"say": "chô…",
 "per": 0.0,
 "spelling": null
 },
@@ -12486,8 +14394,8 @@
 "spelling": null
 },
 "co|,": {
-"h": "eb34a43ed0ffb514",
-"say": "co,",
+"h": "42c70831025b8d0b",
+"say": "co…",
 "per": 0.0,
 "spelling": "co"
 },
@@ -12522,8 +14430,8 @@
 "spelling": null
 },
 "croc|,": {
-"h": "64a435412cf5b6f3",
-"say": "croc,",
+"h": "233fc0074cb00175",
+"say": "croc…",
 "per": 0.143,
 "spelling": null
 },
@@ -12558,9 +14466,9 @@
 "spelling": null
 },
 "da|,": {
-"h": "9fdfc6ef837404e9",
-"say": "da :",
-"per": 0.0,
+"h": "ae03038ef929962e",
+"say": "da,",
+"per": 0.167,
 "spelling": "da"
 },
 "dauphin|": {
@@ -12618,8 +14526,8 @@
 "spelling": null
 },
 "dos|,": {
-"h": "23ec85c3396bf9c9",
-"say": "dos :",
+"h": "310b1b11226bdf65",
+"say": "dos,",
 "per": 0.286,
 "spelling": null
 },
@@ -14718,8 +16626,8 @@
 "spelling": null
 },
 "fée|,": {
-"h": "64390c76f06b1fac",
-"say": "fée :",
+"h": "3c7dc2f43b350fc7",
+"say": "fée,",
 "per": 0.0,
 "spelling": null
 },
@@ -14760,8 +16668,8 @@
 "spelling": null
 },
 "four|,": {
-"h": "dae0c9292e7e254d",
-"say": "four,",
+"h": "cbe22affa59b5d3e",
+"say": "four…",
 "per": 0.0,
 "spelling": null
 },
@@ -14790,8 +16698,8 @@
 "spelling": null
 },
 "fu|,": {
-"h": "c3d5a5883cfcd6ee",
-"say": "fu,",
+"h": "6c65384638f844d0",
+"say": "fu…",
 "per": 0.0,
 "spelling": "fu"
 },
@@ -14826,8 +16734,8 @@
 "spelling": "fu"
 },
 "gars|,": {
-"h": "62e3c410c0adc0a3",
-"say": "ga,",
+"h": "c19f15fa26a3d524",
+"say": "ga…",
 "per": 0.0,
 "spelling": null
 },
@@ -14862,8 +16770,8 @@
 "spelling": "go"
 },
 "goût|,": {
-"h": "201f64babd3394ca",
-"say": "goût,",
+"h": "4a08aec2d12e3431",
+"say": "goût…",
 "per": 0.0,
 "spelling": null
 },
@@ -14976,20 +16884,20 @@
 "spelling": null
 },
 "la banane|": {
-"h": "eb67bab84916fd46",
-"say": "La banane",
+"h": "0a999f043eaf8df3",
+"say": "la banane",
 "per": 0.0,
 "spelling": null
 },
 "la cabane|": {
-"h": "64079ee62dcce99f",
-"say": "La cabane",
+"h": "8ae85d001d3f7044",
+"say": "la cabane",
 "per": 0.0,
 "spelling": null
 },
 "la fée|": {
-"h": "2040b7615587ab77",
-"say": "La fée",
+"h": "13b6810b95147656",
+"say": "la fée",
 "per": 0.0,
 "spelling": null
 },
@@ -15000,8 +16908,8 @@
 "spelling": null
 },
 "la lune|": {
-"h": "84fa3d00fd960d91",
-"say": "La lune",
+"h": "b8fbcd63d47802bb",
+"say": "la lune",
 "per": 0.0,
 "spelling": null
 },
@@ -15012,32 +16920,32 @@
 "spelling": null
 },
 "la moto|": {
-"h": "e0fa4f6349371620",
-"say": "La moto",
+"h": "b82e05676240b77e",
+"say": "la moto",
 "per": 0.0,
 "spelling": null
 },
 "la olive|": {
-"h": "1c9c553cffb2f9be",
-"say": "La olive",
+"h": "5e87e0539dacd707",
+"say": "la olive",
 "per": 0.0,
 "spelling": null
 },
 "la plume|": {
-"h": "9766524b96a961c2",
-"say": "La plume",
+"h": "bc88bb8b55846ee0",
+"say": "la plume",
 "per": 0.0,
 "spelling": null
 },
 "la radio|": {
-"h": "cda1efba9f07bbb8",
-"say": "La radio",
+"h": "19c686c847c24e6c",
+"say": "la radio",
 "per": 0.0,
 "spelling": null
 },
 "la salade|": {
-"h": "8ff233e5faa90b75",
-"say": "La salade",
+"h": "30cf4fa53058133a",
+"say": "la salade",
 "per": 0.0,
 "spelling": null
 },
@@ -15048,20 +16956,20 @@
 "spelling": null
 },
 "la tomate|": {
-"h": "5f127abfd2756c5f",
-"say": "La tomate",
+"h": "4fe4645bdb4a0364",
+"say": "la tomate",
 "per": 0.0,
 "spelling": null
 },
 "la tulipe|": {
-"h": "53bd9aa5a749ac5a",
-"say": "La tulipe",
+"h": "d087b9f549454797",
+"say": "la tulipe",
 "per": 0.0,
 "spelling": null
 },
 "la vache|": {
-"h": "e8ff0c2c378bf320",
-"say": "La vache",
+"h": "67613cad4ce7b304",
+"say": "la vache",
 "per": 0.0,
 "spelling": null
 },
@@ -15072,8 +16980,8 @@
 "spelling": "la"
 },
 "lait|,": {
-"h": "88045522726ba887",
-"say": "lait,",
+"h": "67e6695f42887e74",
+"say": "lait…",
 "per": 0.0,
 "spelling": null
 },
@@ -15108,14 +17016,14 @@
 "spelling": null
 },
 "le chat|": {
-"h": "1067d644ce6bb6fd",
-"say": "Le cha",
+"h": "2a79f1e94e72dd4f",
+"say": "le cha",
 "per": 0.0,
 "spelling": null
 },
 "le dé|": {
-"h": "295c2be3594dd45c",
-"say": "Le dé",
+"h": "ef5b9015cedbb58a",
+"say": "le dé",
 "per": 0.0,
 "spelling": null
 },
@@ -15126,56 +17034,56 @@
 "spelling": null
 },
 "le judo|": {
-"h": "04df5f40c2f28ebc",
-"say": "Le judo",
+"h": "6f61a3f1f470e49c",
+"say": "le judo",
 "per": 0.0,
 "spelling": null
 },
 "le lama|": {
-"h": "ae06a0f030ee45e8",
-"say": "Le lama",
+"h": "6f6fb97c94b3ccfe",
+"say": "le lama",
 "per": 0.0,
 "spelling": null
 },
 "le lion|": {
-"h": "08658f5910b19556",
-"say": "Le lion",
+"h": "8299779c99354584",
+"say": "le lion",
 "per": 0.0,
 "spelling": null
 },
 "le lit|": {
-"h": "a00970e07a452830",
-"say": "Le li",
+"h": "77a7311eaf0fc1c2",
+"say": "le li",
 "per": 0.0,
 "spelling": null
 },
 "le loup|": {
-"h": "2468307aaf737405",
-"say": "Le lou",
+"h": "13bd697f39b59465",
+"say": "le lou",
 "per": 0.0,
 "spelling": null
 },
 "le mouton|": {
-"h": "735402a35dcceefa",
-"say": "Le mouton",
+"h": "47584433ece6c20b",
+"say": "le mouton",
 "per": 0.0,
 "spelling": null
 },
 "le mur|": {
-"h": "fd176427f63996f6",
-"say": "Le mur",
+"h": "537a1db3679748cc",
+"say": "le mur",
 "per": 0.0,
 "spelling": null
 },
 "le nid|": {
-"h": "e32e1194a9921dce",
-"say": "Le nid",
+"h": "ab5a28968c8ec39b",
+"say": "le nid",
 "per": 0.0,
 "spelling": null
 },
 "le piano|": {
-"h": "fea3c163bf422062",
-"say": "Le piano",
+"h": "c9a2632bb1f7bd4c",
+"say": "le piano",
 "per": 0.0,
 "spelling": null
 },
@@ -15186,32 +17094,32 @@
 "spelling": null
 },
 "le rat|": {
-"h": "85173e7c5fe5f142",
-"say": "Le ra",
+"h": "91e228544bd2b1ce",
+"say": "le ra",
 "per": 0.125,
 "spelling": null
 },
 "le riz|": {
-"h": "4dd078a55468db53",
-"say": "Le ri",
+"h": "df09423628667bce",
+"say": "le ri",
 "per": 0.0,
 "spelling": null
 },
 "le robot|": {
-"h": "7e8e4f24b6bad7d2",
-"say": "Le robot",
+"h": "8f5cea3f2eb2f2e7",
+"say": "le robot",
 "per": 0.0,
 "spelling": null
 },
 "le sofa|": {
-"h": "4e5d4e1e4ff49f84",
-"say": "Le sofa",
+"h": "fb7e5005429e82c2",
+"say": "le sofa",
 "per": 0.0,
 "spelling": null
 },
 "le vélo|": {
-"h": "ddc9d04a63a6a25b",
-"say": "Le vélo",
+"h": "3d32dabd965d3a9a",
+"say": "le vélo",
 "per": 0.0,
 "spelling": null
 },
@@ -15324,9 +17232,9 @@
 "spelling": null
 },
 "lot|,": {
-"h": "cde2b10f84732c8a",
-"say": "lot :",
-"per": 0.167,
+"h": "3894b64afab4b867",
+"say": "lot,",
+"per": 0.0,
 "spelling": null
 },
 "loup|": {
@@ -15354,8 +17262,8 @@
 "spelling": null
 },
 "ma|,": {
-"h": "0fe0cd126d826a7c",
-"say": "ma :",
+"h": "9768413ae535ac1d",
+"say": "ma,",
 "per": 0.0,
 "spelling": "ma"
 },
@@ -15372,8 +17280,8 @@
 "spelling": null
 },
 "mais|,": {
-"h": "a715f2845dfbd75a",
-"say": "mais,",
+"h": "6f9cbda879b0cb11",
+"say": "mais…",
 "per": 0.0,
 "spelling": null
 },
@@ -15396,8 +17304,8 @@
 "spelling": null
 },
 "mare|,": {
-"h": "474b58a9c4239a23",
-"say": "mare,",
+"h": "e9bd2fea6457c813",
+"say": "mare…",
 "per": 0.0,
 "spelling": null
 },
@@ -15428,12 +17336,12 @@
 "mie dit midi|.": {
 "h": "5608d3c94fb38351",
 "say": "mie… dit : midi !",
-"per": 0.375,
+"per": 0.25,
 "spelling": null
 },
 "mie|,": {
-"h": "6e7f04eceddca779",
-"say": "mie :",
+"h": "6f86262f817f15b6",
+"say": "mie,",
 "per": 0.0,
 "spelling": null
 },
@@ -15486,8 +17394,8 @@
 "spelling": null
 },
 "mou|,": {
-"h": "5908990fcf15129d",
-"say": "mou,",
+"h": "d57e3beb2c25e376",
+"say": "mou…",
 "per": 0.0,
 "spelling": null
 },
@@ -15546,8 +17454,8 @@
 "spelling": "nid"
 },
 "nos|,": {
-"h": "bdd9547edbc3074f",
-"say": "nos,",
+"h": "244dd7ab804a17b2",
+"say": "nos…",
 "per": 0.0,
 "spelling": null
 },
@@ -15870,8 +17778,8 @@
 "spelling": null
 },
 "or|,": {
-"h": "39654b02f179a00b",
-"say": "or,",
+"h": "03bdd84cf54c02e3",
+"say": "or…",
 "per": 0.0,
 "spelling": null
 },
@@ -16436,7 +18344,7 @@
 "oui lot|.": {
 "h": "3616556f614d4fb0",
 "say": "Oui, lot !",
-"per": 0.375,
+"per": 0.25,
 "spelling": null
 },
 "oui lu|.": {
@@ -17016,8 +18924,8 @@
 "spelling": null
 },
 "pan|,": {
-"h": "7b848202584f9626",
-"say": "pan,",
+"h": "c80be111ba2a27b8",
+"say": "pan…",
 "per": 0.0,
 "spelling": null
 },
@@ -17046,9 +18954,9 @@
 "spelling": null
 },
 "papi|": {
-"h": "dabb6ad9576c076b",
-"say": "Papi",
-"per": 0.0,
+"h": "67653e4ee3cb8017",
+"say": "papi",
+"per": 0.25,
 "spelling": null
 },
 "papillon|": {
@@ -17130,9 +19038,9 @@
 "spelling": null
 },
 "pie|,": {
-"h": "3c71282b7777fac5",
-"say": "pie,",
-"per": 0.167,
+"h": "048d85dbbb8b02aa",
+"say": "pie…",
+"per": 0.0,
 "spelling": null
 },
 "pied|": {
@@ -17160,8 +19068,8 @@
 "spelling": null
 },
 "pois|,": {
-"h": "6a889a4447e94223",
-"say": "pois,",
+"h": "318b868a8b5448d4",
+"say": "pois…",
 "per": 0.143,
 "spelling": null
 },
@@ -17196,8 +19104,8 @@
 "spelling": null
 },
 "pou|,": {
-"h": "63c5dcecbd4e5c57",
-"say": "pou,",
+"h": "510919ba947ed618",
+"say": "pou…",
 "per": 0.0,
 "spelling": null
 },
@@ -18126,14 +20034,14 @@
 "spelling": null
 },
 "quand|,": {
-"h": "8e51c505f523d4ca",
-"say": "quand,",
+"h": "a0260e991b495f37",
+"say": "quand…",
 "per": 0.0,
 "spelling": null
 },
 "qui|,": {
-"h": "4222176718735597",
-"say": "qui,",
+"h": "26e9ff77a9e10ce0",
+"say": "qui…",
 "per": 0.0,
 "spelling": null
 },
@@ -18156,8 +20064,8 @@
 "spelling": null
 },
 "raie|,": {
-"h": "82f65dea30c72a62",
-"say": "raie,",
+"h": "db4e4980ca730e41",
+"say": "raie…",
 "per": 0.0,
 "spelling": null
 },
@@ -18372,8 +20280,8 @@
 "spelling": null
 },
 "rot|,": {
-"h": "450200a6394dc350",
-"say": "rot,",
+"h": "0a02865f5070e7b4",
+"say": "rot…",
 "per": 0.0,
 "spelling": null
 },
@@ -18480,14 +20388,14 @@
 "spelling": null
 },
 "serre|,": {
-"h": "39f920a2193d8d4b",
-"say": "serre,",
+"h": "c73370e30012f33d",
+"say": "serre…",
 "per": 0.0,
 "spelling": null
 },
 "si|,": {
-"h": "a0713de899187d15",
-"say": "si,",
+"h": "a4e47eaf76ca3ffc",
+"say": "si…",
 "per": 0.0,
 "spelling": "si"
 },
@@ -18498,9 +20406,9 @@
 "spelling": null
 },
 "sol|,": {
-"h": "21783716819aa4e2",
-"say": "sol,",
-"per": 0.0,
+"h": "7234a57ddfa9d352",
+"say": "sol…",
+"per": 0.143,
 "spelling": null
 },
 "soleil|": {
@@ -18540,8 +20448,8 @@
 "spelling": null
 },
 "sous|,": {
-"h": "021371823379eab5",
-"say": "sous,",
+"h": "26f446ab32115134",
+"say": "sous…",
 "per": 0.0,
 "spelling": null
 },
@@ -18618,8 +20526,8 @@
 "spelling": "teur"
 },
 "thé|,": {
-"h": "77dbefc7f60bff15",
-"say": "thé,",
+"h": "ef69ca7987a60145",
+"say": "thé…",
 "per": 0.0,
 "spelling": null
 },
@@ -18666,8 +20574,8 @@
 "spelling": null
 },
 "tort|,": {
-"h": "21f0f3f45be7477f",
-"say": "tort,",
+"h": "d272e7c075716ac2",
+"say": "tort…",
 "per": 0.0,
 "spelling": null
 },
@@ -18690,8 +20598,8 @@
 "spelling": null
 },
 "tôt|,": {
-"h": "af49823fc4654977",
-"say": "tôt :",
+"h": "636c45907c666429",
+"say": "tôt,",
 "per": 0.0,
 "spelling": null
 },
@@ -19326,8 +21234,8 @@
 "spelling": null
 },
 "trac|,": {
-"h": "552d8afdfb54f87e",
-"say": "trac,",
+"h": "67523cfa6a8cc3b0",
+"say": "trac…",
 "per": 0.0,
 "spelling": null
 },
@@ -19716,8 +21624,8 @@
 "spelling": null
 },
 "tu|,": {
-"h": "dd7ed63e0e19979e",
-"say": "tu :",
+"h": "496968167aa0bb76",
+"say": "tu,",
 "per": 0.0,
 "spelling": "tu"
 },
@@ -19800,8 +21708,8 @@
 "spelling": null
 },
 "vie|,": {
-"h": "67fffd96071bb172",
-"say": "vie,",
+"h": "3d3e7537570aef78",
+"say": "vie…",
 "per": 0.0,
 "spelling": null
 },
@@ -19818,8 +21726,8 @@
 "spelling": null
 },
 "voix|,": {
-"h": "e336784ef172f913",
-"say": "voix,",
+"h": "cf0f80f7c26fb939",
+"say": "voix…",
 "per": 0.0,
 "spelling": null
 },
@@ -20738,7 +22646,7 @@
 "ça fait 19|.": {
 "h": "7b8fd8188a437263",
 "say": "ça fait dix-neuf.",
-"per": 0.3,
+"per": 0.1,
 "spelling": null
 },
 "ça fait 2|.": {
@@ -21066,8 +22974,8 @@
 "spelling": null
 },
 "chacun a 1 biscuit c'est juste|.": {
-"h": "111dff384715c03e",
-"say": "Chacun a un biscuit : c'est juste.",
+"h": "48bb384d999ef42d",
+"say": "Chacun a un biscuit, c'est juste.",
 "per": 0.0,
 "spelling": null
 },
@@ -21084,8 +22992,8 @@
 "spelling": null
 },
 "chacun a 2 biscuits c'est juste|.": {
-"h": "c9a6486272e8e9bf",
-"say": "Chacun a deux biscuits : c'est juste.",
+"h": "be8568143b82d6bf",
+"say": "Chacun a deux biscuits, c'est juste.",
 "per": 0.0,
 "spelling": null
 },
@@ -21102,8 +23010,8 @@
 "spelling": null
 },
 "chacun a 3 biscuits c'est juste|.": {
-"h": "cf7805f40562cffa",
-"say": "Chacun a trois biscuits : c'est juste.",
+"h": "b895c8ef8bf16e6c",
+"say": "Chacun a trois biscuits, c'est juste.",
 "per": 0.0,
 "spelling": null
 },
@@ -21114,14 +23022,14 @@
 "spelling": null
 },
 "chacun a 4 biscuits c'est juste|.": {
-"h": "e3f8514281212f1d",
-"say": "Chacun a quatre biscuits : c'est juste.",
+"h": "f316c04994915934",
+"say": "Chacun a quatre biscuits, c'est juste.",
 "per": 0.0,
 "spelling": null
 },
 "chacun a 5 biscuits c'est juste|.": {
-"h": "7d5d2c90d330eac4",
-"say": "Chacun a cinq biscuits : c'est juste.",
+"h": "9170e8753eb4f357",
+"say": "Chacun a cinq biscuits, c'est juste.",
 "per": 0.0,
 "spelling": null
 },
@@ -21228,20 +23136,20 @@
 "spelling": null
 },
 "cherche le 10 compte depuis le 0 en montrant chaque nénuphar|.": {
-"h": "9d077395cd718163",
-"say": "Cherche le dix : compte depuis le zéro, en montrant chaque nénuphar.",
+"h": "a0abb610cb21431b",
+"say": "Cherche le dix, compte depuis le zéro, en montrant chaque nénuphar.",
 "per": 0.0,
 "spelling": null
 },
 "cherche le 2 compte depuis le 0 en montrant chaque nénuphar|.": {
-"h": "afa5528ed4733c7d",
-"say": "Cherche le deux : compte depuis le zéro, en montrant chaque nénuphar.",
+"h": "94209fa95be621aa",
+"say": "Cherche le deux, compte depuis le zéro, en montrant chaque nénuphar.",
 "per": 0.0,
 "spelling": null
 },
 "cherche le 3 compte depuis le 0 en montrant chaque nénuphar|.": {
-"h": "90061df213dcbc54",
-"say": "Cherche le trois : compte depuis le zéro, en montrant chaque nénuphar.",
+"h": "f35e4233c4ff1271",
+"say": "Cherche le trois, compte depuis le zéro, en montrant chaque nénuphar.",
 "per": 0.0,
 "spelling": null
 },
@@ -21258,14 +23166,14 @@
 "spelling": null
 },
 "cherche le 6 compte depuis le 0 en montrant chaque nénuphar|.": {
-"h": "e5754dffb5473a87",
-"say": "Cherche le six : compte depuis le zéro, en montrant chaque nénuphar.",
+"h": "5429f587041a326f",
+"say": "Cherche le six, compte depuis le zéro, en montrant chaque nénuphar.",
 "per": 0.0,
 "spelling": null
 },
 "cherche le 7 compte depuis le 0 en montrant chaque nénuphar|.": {
-"h": "932cb708fa4be81b",
-"say": "Cherche le sept : compte depuis le zéro, en montrant chaque nénuphar.",
+"h": "706ae43a74ab3792",
+"say": "Cherche le sept, compte depuis le zéro, en montrant chaque nénuphar.",
 "per": 0.0,
 "spelling": null
 },
@@ -21318,26 +23226,26 @@
 "spelling": null
 },
 "compte les bonds avec ton doigt un deux trois quatre|.": {
-"h": "4cd320d5a3323533",
-"say": "Compte les bonds avec ton doigt : un… deux… trois… quatre.",
+"h": "9e7668717ec34a01",
+"say": "Compte les bonds avec ton doigt, un… deux… trois… quatre.",
 "per": 0.0,
 "spelling": null
 },
 "compte les bonds avec ton doigt un deux trois|.": {
-"h": "445550813b2425be",
-"say": "Compte les bonds avec ton doigt : un… deux… trois.",
+"h": "e61a41c61617b9a1",
+"say": "Compte les bonds avec ton doigt, un… deux… trois.",
 "per": 0.0,
 "spelling": null
 },
 "compte les bonds avec ton doigt un deux|.": {
-"h": "673e196eb6034fbc",
-"say": "Compte les bonds avec ton doigt : un… deux.",
+"h": "2ff90029c5313ced",
+"say": "Compte les bonds avec ton doigt, un… deux.",
 "per": 0.0,
 "spelling": null
 },
 "compte les bonds avec ton doigt un|.": {
-"h": "688f37ce04b649d3",
-"say": "Compte les bonds avec ton doigt : un.",
+"h": "8081a3a3e5002ae0",
+"say": "Compte les bonds avec ton doigt, un.",
 "per": 0.0,
 "spelling": null
 },
@@ -21366,14 +23274,14 @@
 "spelling": null
 },
 "de 2 en 2 0 2 4|.": {
-"h": "0fc1f378f030fb7e",
-"say": "De deux en deux : zéro, deux, quatre…",
+"h": "8054be69c661e450",
+"say": "De deux en deux, zéro, deux, quatre…",
 "per": 0.0,
 "spelling": null
 },
 "de 2 en 2 1 3 5|.": {
-"h": "9ee3f9a9713c684f",
-"say": "De deux en deux : un, trois, cinq…",
+"h": "c574f81f37bd6c78",
+"say": "De deux en deux, un, trois, cinq…",
 "per": 0.0,
 "spelling": null
 },
@@ -21776,6 +23684,12 @@
 "il reste 11 biscuits à partager|.": {
 "h": "a616f6b4babed8d0",
 "say": "Il reste onze biscuits à partager.",
+"per": 0.0,
+"spelling": null
+},
+"il reste 12 biscuits à partager|.": {
+"h": "955d77622d5c84d8",
+"say": "Il reste douze biscuits à partager.",
 "per": 0.0,
 "spelling": null
 },
@@ -22446,56 +24360,56 @@
 "spelling": null
 },
 "lis les nombres juste avant et juste après 0|?": {
-"h": "e91228d3052321a6",
-"say": "Lis les nombres juste avant et juste après : zéro… ?…",
-"per": 0.0,
+"h": "1fd76bb5637833c9",
+"say": "Lis les nombres juste avant et juste après, zéro… ?…",
+"per": 0.036,
 "spelling": null
 },
 "lis les nombres juste avant et juste après 1|?": {
-"h": "70ccf8028fab340a",
-"say": "Lis les nombres juste avant et juste après : un… ?…",
+"h": "002998caac11d784",
+"say": "Lis les nombres juste avant et juste après, un… ?…",
 "per": 0.0,
 "spelling": null
 },
 "lis les nombres juste avant et juste après 2|?": {
-"h": "895905e3f3332eab",
-"say": "Lis les nombres juste avant et juste après : deux… ?…",
+"h": "5ae067b5b74ccb0e",
+"say": "Lis les nombres juste avant et juste après, deux… ?…",
 "per": 0.0,
 "spelling": null
 },
 "lis les nombres juste avant et juste après 3|?": {
-"h": "8f8ead7eda2d1b71",
-"say": "Lis les nombres juste avant et juste après : trois… ?…",
+"h": "37c7350475d71bf7",
+"say": "Lis les nombres juste avant et juste après, trois… ?…",
 "per": 0.0,
 "spelling": null
 },
 "lis les nombres juste avant et juste après 4|?": {
-"h": "1690064a854bb886",
-"say": "Lis les nombres juste avant et juste après : quatre… ?…",
+"h": "9ee6dc8ba78c5399",
+"say": "Lis les nombres juste avant et juste après, quatre… ?…",
 "per": 0.0,
 "spelling": null
 },
 "lis les nombres juste avant et juste après 5|?": {
-"h": "8ab7333e9c1b9809",
-"say": "Lis les nombres juste avant et juste après : cinq… ?…",
+"h": "b24c7e956681fb4a",
+"say": "Lis les nombres juste avant et juste après, cinq… ?…",
 "per": 0.0,
 "spelling": null
 },
 "lis les nombres juste avant et juste après 6|?": {
-"h": "ced040fd1f7b4a62",
-"say": "Lis les nombres juste avant et juste après : six… ?…",
-"per": 0.037,
+"h": "132228f3485e7e15",
+"say": "Lis les nombres juste avant et juste après, six… ?…",
+"per": 0.0,
 "spelling": null
 },
 "lis les nombres juste avant et juste après 7|?": {
-"h": "d8decc844310c926",
-"say": "Lis les nombres juste avant et juste après : sept… ?…",
+"h": "6d923030a7463012",
+"say": "Lis les nombres juste avant et juste après, sept… ?…",
 "per": 0.0,
 "spelling": null
 },
 "lis les nombres juste avant et juste après 8|?": {
-"h": "87f60f02d3c87bf5",
-"say": "Lis les nombres juste avant et juste après : huite… ?…",
+"h": "c9070d96463a3d12",
+"say": "Lis les nombres juste avant et juste après, huite… ?…",
 "per": 0.0,
 "spelling": null
 },
@@ -24036,9 +25950,9 @@
 "spelling": null
 },
 "attention deux drapeaux se ressemblent|.": {
-"h": "673f6467d20676a8",
-"say": "Attention, deux drapeaux se ressemblent !",
-"per": 0.048,
+"h": "7462538423d4070a",
+"say": "Attention, deux drapeaux se ressemble !",
+"per": 0.0,
 "spelling": null
 },
 "au milieu|,": {
@@ -24132,14 +26046,14 @@
 "spelling": null
 },
 "blanc|,": {
-"h": "52a30a399b125027",
-"say": "blanc,",
+"h": "ce67231f24617654",
+"say": "blanc;",
 "per": 0.0,
 "spelling": null
 },
 "blanc|.": {
-"h": "b5c6d26dc60f7249",
-"say": "blanc.",
+"h": "3a02c400e032eb53",
+"say": "blanc",
 "per": 0.0,
 "spelling": null
 },
@@ -24162,14 +26076,14 @@
 "spelling": null
 },
 "bleu|,": {
-"h": "f716ce02eab39565",
-"say": "bleu,",
+"h": "a553f05f53814a2e",
+"say": "bleu;",
 "per": 0.0,
 "spelling": null
 },
 "bleu|.": {
-"h": "e6f82b03940f1e0e",
-"say": "bleu.",
+"h": "e3a362fc0eee0075",
+"say": "bleu",
 "per": 0.0,
 "spelling": null
 },
@@ -25176,8 +27090,8 @@
 "spelling": null
 },
 "jaune|,": {
-"h": "5fcb0422cf540048",
-"say": "jaune,",
+"h": "49421e488d1a885a",
+"say": "jaune;",
 "per": 0.0,
 "spelling": null
 },
@@ -26178,8 +28092,8 @@
 "spelling": null
 },
 "noir|,": {
-"h": "5d1bc6e7ccf3ab58",
-"say": "noir,",
+"h": "8ec94692cb385ce6",
+"say": "noir;",
 "per": 0.0,
 "spelling": null
 },
@@ -26196,8 +28110,8 @@
 "spelling": null
 },
 "orange|,": {
-"h": "40f7720d1833fa85",
-"say": "orange,",
+"h": "77afb4fa7e0701f4",
+"say": "orange;",
 "per": 0.0,
 "spelling": null
 },
@@ -27000,8 +28914,8 @@
 "spelling": null
 },
 "quatre carrés deux étoiles du rouge et du bleu|.": {
-"h": "e1090ceb62f2d054",
-"say": "Quatre carrés : deux étoiles, du rouge et du bleu.",
+"h": "90da00bf625ac6ca",
+"say": "Quatre carrés, deux étoiles, du rouge et du bleu.",
 "per": 0.0,
 "spelling": null
 },
@@ -27174,8 +29088,8 @@
 "spelling": null
 },
 "rouge|,": {
-"h": "6bcaf1b085a077f6",
-"say": "rouge,",
+"h": "f0e522ae077ce55c",
+"say": "rouge;",
 "per": 0.0,
 "spelling": null
 },
@@ -27402,104 +29316,104 @@
 "spelling": null
 },
 "trois bandes horizontales blanc bleu et rouge|.": {
-"h": "d203667f17b319fe",
-"say": "Trois bandes horizontales : blanc, bleu et rouge.",
-"per": 0.077,
+"h": "273d225f40c246e8",
+"say": "Trois bandes horizontales, blanc, bleu et rouge.",
+"per": 0.038,
 "spelling": null
 },
 "trois bandes horizontales blanc vert et rouge|.": {
-"h": "c7d7c956c767ea78",
-"say": "Trois bandes horizontales : blanc, vert et rouge.",
+"h": "0e969acc455f9177",
+"say": "Trois bandes horizontales, blanc, vert et rouge.",
 "per": 0.038,
 "spelling": null
 },
 "trois bandes horizontales jaune vert et rouge|.": {
-"h": "49d8dbdb213f6dbf",
-"say": "Trois bandes horizontales : jaune, vert et rouge.",
+"h": "fc63b0183daa6a95",
+"say": "Trois bandes horizontales, jaune, vert et rouge.",
 "per": 0.0,
 "spelling": null
 },
 "trois bandes horizontales noir rouge et jaune|.": {
-"h": "769786c11d5b909f",
-"say": "Trois bandes horizontales : noir, rouge et jaune.",
+"h": "3ed8cd5737d128a5",
+"say": "Trois bandes horizontales, noir, rouge et jaune.",
 "per": 0.0,
 "spelling": null
 },
 "trois bandes horizontales rouge blanc et bleu clair|.": {
-"h": "90dcc08244027bbb",
-"say": "Trois bandes horizontales : rouge, blanc et bleu clair.",
-"per": 0.0,
+"h": "4e16bcf4da40e348",
+"say": "Trois bandes horizontales, rouge, blanc et bleu clair.",
+"per": 0.033,
 "spelling": null
 },
 "trois bandes horizontales rouge blanc et bleu|.": {
-"h": "fb4ceb5068d80758",
-"say": "Trois bandes horizontales : rouge, blanc et bleu.",
+"h": "8e7dbfd0b7306377",
+"say": "Trois bandes horizontales, rouge, blanc et bleu.",
 "per": 0.038,
 "spelling": null
 },
 "trois bandes horizontales rouge blanc et vert|.": {
-"h": "3a49d4b31f1e69ab",
-"say": "Trois bandes horizontales : rouge, blanc et vert.",
+"h": "4984c25fed8b257d",
+"say": "Trois bandes horizontales, rouge, blanc et vert.",
 "per": 0.038,
 "spelling": null
 },
 "trois bandes horizontales vert jaune et bleu|.": {
-"h": "aaaf24eeaa887410",
-"say": "Trois bandes horizontales : vert, jaune et bleu.",
+"h": "cc43221d9360de55",
+"say": "Trois bandes horizontales, vert, jaune et bleu.",
 "per": 0.0,
 "spelling": null
 },
 "trois bandes verticales bleu blanc et rouge|.": {
-"h": "8af9eea62062fe3b",
-"say": "Trois bandes verticales : bleu, blanc et rouge.",
-"per": 0.0,
+"h": "1b54cc3c4a26d382",
+"say": "Trois bandes verticales, bleu, blanc et rouge.",
+"per": 0.04,
 "spelling": null
 },
 "trois bandes verticales bleu foncé jaune et rouge|.": {
-"h": "3930040ef63c2313",
-"say": "Trois bandes verticales : bleu foncé, jaune et rouge.",
+"h": "e706c2e92d09f023",
+"say": "Trois bandes verticales, bleu foncé, jaune et rouge.",
 "per": 0.0,
 "spelling": null
 },
 "trois bandes verticales bleu jaune et rouge|.": {
-"h": "facee69a38db362c",
-"say": "Trois bandes verticales : bleu, jaune et rouge.",
+"h": "253b57720381149e",
+"say": "Trois bandes verticales, bleu, jaune et rouge.",
 "per": 0.0,
 "spelling": null
 },
 "trois bandes verticales noir jaune et rouge|.": {
-"h": "926473364a3e70b2",
-"say": "Trois bandes verticales : noir, jaune et rouge.",
+"h": "70bd9ac36f6d650a",
+"say": "Trois bandes verticales, noir, jaune et rouge.",
 "per": 0.0,
 "spelling": null
 },
 "trois bandes verticales orange blanc et vert|.": {
-"h": "742966e7e7168089",
-"say": "Trois bandes verticales : orange, blanc et vert.",
-"per": 0.074,
+"h": "977a4dfb3a05c9a1",
+"say": "Trois bandes verticales, orange, blanc et vert.",
+"per": 0.0,
 "spelling": null
 },
 "trois bandes verticales rouge jaune et vert|.": {
-"h": "4973f2f3ccdc9434",
-"say": "Trois bandes verticales : rouge, jaune et vert.",
+"h": "601ed065ec91ab1a",
+"say": "Trois bandes verticales, rouge, jaune et vert.",
 "per": 0.0,
 "spelling": null
 },
 "trois bandes verticales vert blanc et orange|.": {
-"h": "eb5bf9d9a61296b1",
-"say": "Trois bandes verticales : vert, blanc et orange.",
-"per": 0.0,
+"h": "6cddef62f7b51125",
+"say": "Trois bandes verticales, vert, blanc et orange.",
+"per": 0.038,
 "spelling": null
 },
 "trois bandes verticales vert blanc et rouge|.": {
-"h": "dab809de8ae44b43",
-"say": "Trois bandes verticales : vert, blanc et rouge.",
-"per": 0.0,
+"h": "8e0ba53bee7226db",
+"say": "Trois bandes verticales, vert, blanc et rouge.",
+"per": 0.04,
 "spelling": null
 },
 "trois bandes verticales vert jaune et rouge|.": {
-"h": "6a2e93f81148d3ae",
-"say": "Trois bandes verticales : vert, jaune et rouge.",
+"h": "2309a88cbb553b8a",
+"say": "Trois bandes verticales, vert, jaune et rouge.",
 "per": 0.0,
 "spelling": null
 },
@@ -27666,8 +29580,8 @@
 "spelling": null
 },
 "vert|,": {
-"h": "4049d087b83c14df",
-"say": "vert,",
+"h": "b45dd6a5d321bffb",
+"say": "vert;",
 "per": 0.0,
 "spelling": null
 },

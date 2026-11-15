@@ -9,6 +9,8 @@ import { chants, emojiStickerSVG } from "./chants";
 import { drapeau, flagStickerSVG } from "./drapeau";
 import { flotte } from "./flotte";
 import { formes } from "./formes";
+import { goutte } from "./goutte";
+import { goutteStickerSVG } from "./goutte_art";
 import { lis } from "./lis";
 import { appleStickerSVG, marche } from "./marche";
 import { motifs } from "./motifs";
@@ -17,7 +19,7 @@ import { cookieStickerSVG, partage } from "./partage";
 import { syllabes, syllableStickerSVG } from "./syllabes";
 import { theatre } from "./theatre";
 
-export const ACTIVITIES: ActivityModule<any>[] = [marche, nenuphars, partage, syllabes, chants, lis, drapeau, atelierdrapeaux, formes, bip, motifs, flotte, theatre];
+export const ACTIVITIES: ActivityModule<any>[] = [marche, nenuphars, partage, syllabes, chants, lis, drapeau, atelierdrapeaux, formes, bip, motifs, flotte, goutte, theatre];
 export const ACTIVITY_BY_ID: Record<string, ActivityModule<any>> = Object.fromEntries(ACTIVITIES.map((a) => [a.id, a]));
 export const ACTIVITIES_BY_ISLAND: Record<string, ActivityModule<any>[]> = {};
 for (const a of ACTIVITIES) (ACTIVITIES_BY_ISLAND[a.island] ??= []).push(a);
@@ -48,6 +50,7 @@ export function stickerArt(kind: string, ref?: string): string {
   if (kind === "bip") return bipStickerSVG();
   if (kind === "theatre") return emojiStickerSVG(ref ?? "🎭", "#FBD9E7");
   if (kind === "flotte") return emojiStickerSVG(ref ?? "🦆", "#D5F0E1");
+  if (kind === "goutte") return goutteStickerSVG(ref);
   if (kind === "dessin") return drawingStickerSVG(ref);
   return appleStickerSVG();
 }

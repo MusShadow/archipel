@@ -29,7 +29,7 @@ Plume parle avec une voix naturelle enregistrée à l'avance (voix de synthèse 
 - **Histoires sur mesure** : dans l'espace parent (onglet Histoires), Claude écrit une petite histoire avec la clé API du parent (thème, héros, longueur, sons connus de l'enfant ; jamais son prénom). Les mots probablement trop difficiles sont surlignés ; le parent valide, réécrit ou jette. L'enfant lit sur l'île des Mots : mots touchables, phrase lue à voix haute, question de compréhension.
 - **Carnet** : drapeau de mon île, gommettes, galerie des dessins (12 derniers, sur l'appareil), passeport.
 
-## Livraison 3 : la voix naturelle de Plume
+## Livraison 2 bis : la voix naturelle de Plume
 
 - **Voix naturelle** : tout ce que dit Plume a été enregistré à l'avance avec une voix française neuronale libre,
   *Supertonic 3* (voix « F1 », débit posé), choisie à l'écoute parmi trois. Environ 4 700 clips (près de 2 heures de parole) : phrases entières,
@@ -47,6 +47,26 @@ Plume parle avec une voix naturelle enregistrée à l'avance (voix de synthèse 
 - **Lecture** : un seul point d'entrée, `speech.say(texte, débit?)`, dont la promesse est tenue à la fin de la phrase ;
   clips décodés et joués par l'`AudioContext` déverrouillé au premier contact de l'enfant.
 
+## Livraison 3 : l'île des Découvertes (en cours)
+
+- **Le voyage de la goutte** (Octave) : Ploc, une goutte d'eau, fait le grand tour, raconté comme un dialogue
+  (« Ploc demande… Octave répond… »), en six niveaux qui s'ouvrent au fil des réussites :
+  1. *la ronde de la nature* : qui a besoin d'eau pour vivre, puis « et ensuite ? » (mer, vapeur, nuage, pluie ou neige,
+     rivière ou nappe sous la terre) ;
+  2. *le labo d'Octave* : glace, eau, vapeur, selon qu'on chauffe ou qu'on refroidit (glaçon au soleil, congélateur,
+     flaque qui sèche, linge, casserole, buée du miroir) ;
+  3. *de la source au robinet* : pompe, usine d'eau potable (des bulles, les saletés enlevées, les microbes chassés),
+     château d'eau ou réservoir sur la colline (l'eau descend toute seule, plus il est haut, plus elle pousse fort),
+     quelle eau peut-on boire ;
+  4. *du robinet à la station d'épuration* : égouts, grilles, bassin à bulles où des bactéries mangent la saleté,
+     bassin calme où la boue tombe au fond, retour à la rivière (assez propre pour les poissons, pas pour boire) ;
+  5. *le grand tour* : quatre étapes qui se suivent, l'une cachée ; aucune mauvaise réponse ne peut aller à sa place ;
+  6. *les bons gestes* : lingettes à la poubelle (ni aux toilettes, ni au bac jaune), robinet fermé pendant le brossage,
+     douche rapide plutôt que grand bain.
+  Chaque mauvaise réponse a son explication ; le « ? » se remplit avec la bonne réponse. Six compétences suivies dans
+  l'espace parent, astuces parent et trois défis hors écran (mini château d'eau, buée, château d'eau du quartier).
+- À venir : le volcan d'Octave, le grand tri, le voyage des déchets jusqu'à la déchetterie.
+
 ## Développement
 
 Prérequis : [Bun](https://bun.sh) et TypeScript.
@@ -59,6 +79,7 @@ python3 tests/e2e/smoke.py        # parcours complet de la livraison 1 dans Chro
 python3 tests/e2e/livraison2.py   # îles de la livraison 2, dessin au doigt simulé, histoire simulée (captures dans tests/e2e/shots2)
 python3 tests/e2e/offline.py      # démarrage sans Internet
 python3 tests/e2e/voix.py         # voix naturelle : clips, prénom retiré, repli, réglage parent, débit, hors ligne
+python3 tests/e2e/livraison3.py   # le voyage de la goutte, ses six niveaux (captures dans tests/e2e/shots3)
 ```
 
 ### Refaire le pack de voix (après avoir ajouté ou changé des phrases)
@@ -68,7 +89,12 @@ bun scripts/voix/inventaire.ts    # tout ce que dit Plume → voix/inventaire.js
 bun scripts/voix/clips.ts         # clips à enregistrer, par paquet → voix/clips.json
 python3 scripts/voix/generer.py   # synthèse, contrôle, paquets → public/voix/ (puis bun run build)
 bun scripts/voix/couverture.ts /tmp/inv.json   # part des phrases dites en entier, sur un inventaire tiré avec SEED=42
+python3 scripts/voix/finales.py   # consonnes finales muettes prononcées par erreur (souffle aigu en fin de clip)
 ```
+
+L'inventaire tire les exercices au hasard : `clips.ts` garde donc les clips de la liste précédente qui ne sont pas
+ressortis cette fois (`KEEP=0` pour repartir de zéro). Une activité peut aussi donner la liste complète de ses phrases
+(`voiceLines()` dans `src/activities/goutte.ts`), reprise telle quelle par l'inventaire.
 
 `generer.py` reprend tels quels les clips du pack publié (voir `voix/pack.json`) et ne fabrique que les nouveaux.
 Prérequis et modèles : en tête du script (sherpa-onnx 1.13, ffmpeg, modèles téléchargés depuis les versions publiées

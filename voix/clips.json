@@ -6013,16 +6013,6 @@
   ]
  },
  {
-  "key": "regarde ce qui reste|.",
-  "text": "Regarde ce qui reste.",
-  "say": "Regarde ce qui reste.",
-  "pack": "coeur",
-  "words": 4,
-  "fams": [
-   "theatre:indice"
-  ]
- },
- {
   "key": "rico a construit une tour|.",
   "text": "Rico a construit une tour.",
   "say": "Rico a construit une tour.",
@@ -7674,8 +7664,8 @@
  },
  {
   "key": "a|.",
-  "text": "a.",
-  "say": "a.",
+  "text": "a",
+  "say": "a",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -7799,8 +7789,8 @@
  },
  {
   "key": "banane|.",
-  "text": "Banane.",
-  "say": "Banane.",
+  "text": "banane",
+  "say": "banane",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -7854,8 +7844,8 @@
  },
  {
   "key": "bé|.",
-  "text": "bé.",
-  "say": "bé.",
+  "text": "bé",
+  "say": "bé",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -7866,8 +7856,8 @@
  },
  {
   "key": "beau|.",
-  "text": "beau.",
-  "say": "beau.",
+  "text": "beau",
+  "say": "beau",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -7900,8 +7890,8 @@
  },
  {
   "key": "beurre|.",
-  "text": "beurre.",
-  "say": "beurre.",
+  "text": "beurre",
+  "say": "beurre",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -7943,8 +7933,8 @@
  },
  {
   "key": "bon|.",
-  "text": "bon.",
-  "say": "bon.",
+  "text": "bon",
+  "say": "bon",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -8055,6 +8045,7 @@
   "words": 4,
   "fams": [
    "flotte:indice",
+   "goutte:indice",
    "histoires"
   ]
  },
@@ -8147,6 +8138,16 @@
   "say": "c'est parce que tu as reconnu les vrais drapeaux,",
   "pack": "commun",
   "words": 9,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "c'est parce que tu sais d'où vient l'eau du robinet|,",
+  "text": "c'est parce que tu sais d'où vient l'eau du robinet,",
+  "say": "c'est parce que tu sais d'où vient l'eau du robinet,",
+  "pack": "commun",
+  "words": 10,
   "fams": [
    "carte:gommette"
   ]
@@ -8341,6 +8342,17 @@
   "key": "c'est pour le drapeau de la guinée|,",
   "text": "c'est pour le drapeau de la Guinée,",
   "say": "c'est pour le drapeau de la Guinée,",
+  "pack": "commun",
+  "words": 7,
+  "fams": [
+   "carte:gommette",
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la hongrie|,",
+  "text": "c'est pour le drapeau de la Hongrie,",
+  "say": "c'est pour le drapeau de la Hongrie,",
   "pack": "commun",
   "words": 7,
   "fams": [
@@ -8701,6 +8713,16 @@
   ]
  },
  {
+  "key": "c'est pour le grand voyage de ploc|,",
+  "text": "c'est pour le grand voyage de Ploc,",
+  "say": "c'est pour le grand voyage de Ploc,",
+  "pack": "commun",
+  "words": 7,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
   "key": "c'est pour les bugs que tu as trouvés|,",
   "text": "c'est pour les bugs que tu as trouvés,",
   "say": "c'est pour les bugs que tu as trouvés,",
@@ -8831,6 +8853,16 @@
   ]
  },
  {
+  "key": "c'est pour tous les bons gestes qui protègent l'eau|.",
+  "text": "c'est pour tous les bons gestes qui protègent l'eau.",
+  "say": "c'est pour tous les bons gestes qui protègent l'eau.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
   "key": "c'est pour tous les drapeaux que tu as reconnus|.",
   "text": "c'est pour tous les drapeaux que tu as reconnus.",
   "say": "c'est pour tous les drapeaux que tu as reconnus.",
@@ -8893,8 +8925,8 @@
  },
  {
   "key": "ça commence par ca|.",
-  "text": "Ça commence par « Ca ».",
-  "say": "Ça commence par Ca.",
+  "text": "Ça commence par « ca ».",
+  "say": "Ça commence par ca.",
   "pack": "commun",
   "words": 4,
   "fams": [
@@ -8904,8 +8936,8 @@
  },
  {
   "key": "ça commence par mo|.",
-  "text": "Ça commence par « Mo ».",
-  "say": "Ça commence par Mo.",
+  "text": "Ça commence par « mo ».",
+  "say": "Ça commence par mo.",
   "pack": "commun",
   "words": 4,
   "fams": [
@@ -8915,8 +8947,8 @@
  },
  {
   "key": "ça commence par pa|.",
-  "text": "Ça commence par « Pa ».",
-  "say": "Ça commence par Pa.",
+  "text": "Ça commence par « pa ».",
+  "say": "Ça commence par pa.",
   "pack": "commun",
   "words": 4,
   "fams": [
@@ -8926,8 +8958,8 @@
  },
  {
   "key": "ça commence par to|.",
-  "text": "Ça commence par « To ».",
-  "say": "Ça commence par To.",
+  "text": "Ça commence par « to ».",
+  "say": "Ça commence par to.",
   "pack": "commun",
   "words": 4,
   "fams": [
@@ -8957,8 +8989,8 @@
  },
  {
   "key": "cabane|.",
-  "text": "Cabane.",
-  "say": "Cabane.",
+  "text": "cabane.",
+  "say": "cabane.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9044,8 +9076,8 @@
   "words": 4,
   "fams": [
    "formes:indice",
-   "syllabes:indice",
-   "theatre:indice"
+   "goutte:indice",
+   "syllabes:indice"
   ]
  },
  {
@@ -9114,8 +9146,8 @@
  },
  {
   "key": "chat|.",
-  "text": "Chat.",
-  "say": "Chat.",
+  "text": "chat.",
+  "say": "chat.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9173,8 +9205,8 @@
  },
  {
   "key": "chien|.",
-  "text": "chien.",
-  "say": "chien.",
+  "text": "chien",
+  "say": "chien",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9228,8 +9260,8 @@
  },
  {
   "key": "chon|.",
-  "text": "chon.",
-  "say": "chon.",
+  "text": "chon",
+  "say": "chon",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9252,8 +9284,8 @@
  },
  {
   "key": "clé|.",
-  "text": "clé.",
-  "say": "clé.",
+  "text": "clé",
+  "say": "clé",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9288,8 +9320,8 @@
  },
  {
   "key": "cœur|.",
-  "text": "cœur.",
-  "say": "cœur.",
+  "text": "cœur",
+  "say": "cœur",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9429,6 +9461,26 @@
   ]
  },
  {
+  "key": "de la mer jusqu'au nuage|.",
+  "text": "de la mer jusqu'au nuage.",
+  "say": "de la mer jusqu'au nuage.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "de la mer jusqu'au robinet|.",
+  "text": "de la mer jusqu'au robinet.",
+  "say": "de la mer jusqu'au robinet.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
   "key": "de|.",
   "text": "de",
   "say": "de",
@@ -9498,7 +9550,6 @@
   "pack": "commun",
   "words": 1,
   "fams": [
-   "chants:erreur",
    "chants:indice",
    "mots"
   ]
@@ -9538,8 +9589,8 @@
  },
  {
   "key": "domino|.",
-  "text": "domino",
-  "say": "domino",
+  "text": "domino.",
+  "say": "domino.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9574,8 +9625,8 @@
  },
  {
   "key": "eau|.",
-  "text": "eau.",
-  "say": "eau.",
+  "text": "eau",
+  "say": "eau",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9662,6 +9713,16 @@
   "words": 3,
   "fams": [
    "carte"
+  ]
+ },
+ {
+  "key": "et où elle repart|.",
+  "text": "et où elle repart.",
+  "say": "et où elle repart.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "carte:gommette"
   ]
  },
  {
@@ -9842,8 +9903,8 @@
  },
  {
   "key": "fourmi|.",
-  "text": "fourmi",
-  "say": "fourmi",
+  "text": "fourmi.",
+  "say": "fourmi.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9854,8 +9915,8 @@
  },
  {
   "key": "fraise|.",
-  "text": "fraise",
-  "say": "fraise",
+  "text": "fraise.",
+  "say": "fraise.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9885,8 +9946,8 @@
  },
  {
   "key": "fumé|.",
-  "text": "fumé",
-  "say": "fumé",
+  "text": "fumé.",
+  "say": "fumé.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9896,8 +9957,8 @@
  },
  {
   "key": "fusée|.",
-  "text": "fusée",
-  "say": "fusée",
+  "text": "fusée.",
+  "say": "fusée.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9939,8 +10000,8 @@
  },
  {
   "key": "gâteau|.",
-  "text": "gâteau",
-  "say": "gâteau",
+  "text": "gâteau.",
+  "say": "gâteau.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -9951,8 +10012,8 @@
  },
  {
   "key": "girafe|.",
-  "text": "girafe",
-  "say": "girafe",
+  "text": "girafe.",
+  "say": "girafe.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10002,8 +10063,8 @@
  },
  {
   "key": "guitare|.",
-  "text": "guitare",
-  "say": "guitare",
+  "text": "guitare.",
+  "say": "guitare.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10283,8 +10344,8 @@
  },
  {
   "key": "judo|.",
-  "text": "Judo.",
-  "say": "Judo.",
+  "text": "judo.",
+  "say": "judo.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10296,8 +10357,8 @@
  },
  {
   "key": "kangourou|.",
-  "text": "kangourou",
-  "say": "kangourou",
+  "text": "kangourou.",
+  "say": "kangourou.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10308,8 +10369,8 @@
  },
  {
   "key": "kiwi|.",
-  "text": "kiwi",
-  "say": "kiwi",
+  "text": "kiwi.",
+  "say": "kiwi.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10320,8 +10381,8 @@
  },
  {
   "key": "l'allemagne|.",
-  "text": "L'Allemagne",
-  "say": "L'Allemagne",
+  "text": "l'Allemagne",
+  "say": "l'Allemagne",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10371,8 +10432,8 @@
  },
  {
   "key": "l'autriche|.",
-  "text": "L'Autriche",
-  "say": "L'Autriche",
+  "text": "l'Autriche",
+  "say": "l'Autriche",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10502,8 +10563,8 @@
  },
  {
   "key": "l'inde|.",
-  "text": "L'Inde",
-  "say": "L'Inde",
+  "text": "l'Inde",
+  "say": "l'Inde",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10513,8 +10574,8 @@
  },
  {
   "key": "l'indonésie|.",
-  "text": "L'Indonésie",
-  "say": "L'Indonésie",
+  "text": "l'Indonésie",
+  "say": "l'Indonésie",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10524,8 +10585,8 @@
  },
  {
   "key": "l'irlande|.",
-  "text": "L'Irlande",
-  "say": "L'Irlande",
+  "text": "l'Irlande",
+  "say": "l'Irlande",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10535,8 +10596,8 @@
  },
  {
   "key": "l'italie|.",
-  "text": "L'Italie",
-  "say": "L'Italie",
+  "text": "l'Italie",
+  "say": "l'Italie",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10546,8 +10607,8 @@
  },
  {
   "key": "l'ukraine|.",
-  "text": "L'Ukraine",
-  "say": "L'Ukraine",
+  "text": "l'Ukraine",
+  "say": "l'Ukraine",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10567,8 +10628,8 @@
  },
  {
   "key": "la belgique|.",
-  "text": "La Belgique",
-  "say": "La Belgique",
+  "text": "la Belgique",
+  "say": "la Belgique",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10578,8 +10639,8 @@
  },
  {
   "key": "la bulgarie|.",
-  "text": "La Bulgarie",
-  "say": "La Bulgarie",
+  "text": "la Bulgarie",
+  "say": "la Bulgarie",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10599,8 +10660,8 @@
  },
  {
   "key": "la chine|.",
-  "text": "La Chine",
-  "say": "La Chine",
+  "text": "la Chine",
+  "say": "la Chine",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10610,8 +10671,8 @@
  },
  {
   "key": "la colombie|.",
-  "text": "La Colombie",
-  "say": "La Colombie",
+  "text": "la Colombie",
+  "say": "la Colombie",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10621,8 +10682,8 @@
  },
  {
   "key": "la côte d'ivoire|.",
-  "text": "La Côte d'Ivoire",
-  "say": "La Côte d'Ivoire",
+  "text": "la Côte d'Ivoire",
+  "say": "la Côte d'Ivoire",
   "pack": "commun",
   "words": 3,
   "fams": [
@@ -10642,8 +10703,8 @@
  },
  {
   "key": "la finlande|.",
-  "text": "La Finlande",
-  "say": "La Finlande",
+  "text": "la Finlande",
+  "say": "la Finlande",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10653,8 +10714,8 @@
  },
  {
   "key": "la france|.",
-  "text": "La France",
-  "say": "La France",
+  "text": "la France",
+  "say": "la France",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10664,8 +10725,8 @@
  },
  {
   "key": "la grèce|.",
-  "text": "La Grèce",
-  "say": "La Grèce",
+  "text": "la Grèce",
+  "say": "la Grèce",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10675,8 +10736,8 @@
  },
  {
   "key": "la guinée|.",
-  "text": "La Guinée",
-  "say": "La Guinée",
+  "text": "la Guinée",
+  "say": "la Guinée",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10686,8 +10747,8 @@
  },
  {
   "key": "la hongrie|.",
-  "text": "La Hongrie",
-  "say": "La Hongrie",
+  "text": "la Hongrie",
+  "say": "la Hongrie",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10697,8 +10758,8 @@
  },
  {
   "key": "la lituanie|.",
-  "text": "La Lituanie",
-  "say": "La Lituanie",
+  "text": "la Lituanie",
+  "say": "la Lituanie",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10728,8 +10789,8 @@
  },
  {
   "key": "la norvège|.",
-  "text": "La Norvège",
-  "say": "La Norvège",
+  "text": "la Norvège",
+  "say": "la Norvège",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10759,8 +10820,8 @@
  },
  {
   "key": "la pologne|.",
-  "text": "La Pologne",
-  "say": "La Pologne",
+  "text": "la Pologne",
+  "say": "la Pologne",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10780,8 +10841,8 @@
  },
  {
   "key": "la roumanie|.",
-  "text": "La Roumanie",
-  "say": "La Roumanie",
+  "text": "la Roumanie",
+  "say": "la Roumanie",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10791,8 +10852,8 @@
  },
  {
   "key": "la russie|.",
-  "text": "La Russie",
-  "say": "La Russie",
+  "text": "la Russie",
+  "say": "la Russie",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10812,8 +10873,8 @@
  },
  {
   "key": "la somalie|.",
-  "text": "La Somalie",
-  "say": "La Somalie",
+  "text": "la Somalie",
+  "say": "la Somalie",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10823,8 +10884,8 @@
  },
  {
   "key": "la suède|.",
-  "text": "La Suède",
-  "say": "La Suède",
+  "text": "la Suède",
+  "say": "la Suède",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10834,8 +10895,8 @@
  },
  {
   "key": "la suisse|.",
-  "text": "La Suisse",
-  "say": "La Suisse",
+  "text": "la Suisse",
+  "say": "la Suisse",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10845,8 +10906,8 @@
  },
  {
   "key": "la tchéquie|.",
-  "text": "La Tchéquie",
-  "say": "La Tchéquie",
+  "text": "la Tchéquie",
+  "say": "la Tchéquie",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10910,8 +10971,8 @@
  },
  {
   "key": "lama|.",
-  "text": "Lama.",
-  "say": "Lama.",
+  "text": "lama.",
+  "say": "lama.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10935,8 +10996,8 @@
  },
  {
   "key": "lapin|.",
-  "text": "lapin",
-  "say": "lapin",
+  "text": "lapin.",
+  "say": "lapin.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10947,8 +11008,8 @@
  },
  {
   "key": "le bangladesh|.",
-  "text": "Le Bangladesh",
-  "say": "Le Bangladesh",
+  "text": "le Bangladesh",
+  "say": "le Bangladesh",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10958,8 +11019,8 @@
  },
  {
   "key": "le cameroun|.",
-  "text": "Le Cameroun",
-  "say": "Le Cameroun",
+  "text": "le Cameroun",
+  "say": "le Cameroun",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -10969,8 +11030,8 @@
  },
  {
   "key": "le canada|.",
-  "text": "Le Canada",
-  "say": "Le Canada",
+  "text": "le Canada",
+  "say": "le Canada",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11010,8 +11071,8 @@
  },
  {
   "key": "le chili|.",
-  "text": "Le Chili",
-  "say": "Le Chili",
+  "text": "le Chili",
+  "say": "le Chili",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11041,8 +11102,8 @@
  },
  {
   "key": "le danemark|.",
-  "text": "Le Danemark",
-  "say": "Le Danemark",
+  "text": "le Danemark",
+  "say": "le Danemark",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11112,8 +11173,8 @@
  },
  {
   "key": "le gabon|.",
-  "text": "Le Gabon",
-  "say": "Le Gabon",
+  "text": "le Gabon",
+  "say": "le Gabon",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11123,8 +11184,8 @@
  },
  {
   "key": "le japon|.",
-  "text": "Le Japon",
-  "say": "Le Japon",
+  "text": "le Japon",
+  "say": "le Japon",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11154,8 +11215,8 @@
  },
  {
   "key": "le laos|.",
-  "text": "Le Laos",
-  "say": "Le Laos",
+  "text": "le Laos",
+  "say": "le Laos",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11195,8 +11256,8 @@
  },
  {
   "key": "le luxembourg|.",
-  "text": "Le Luxembourg",
-  "say": "Le Luxembourg",
+  "text": "le Luxembourg",
+  "say": "le Luxembourg",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11206,8 +11267,8 @@
  },
  {
   "key": "le mali|.",
-  "text": "Le Mali",
-  "say": "Le Mali",
+  "text": "le Mali",
+  "say": "le Mali",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11237,8 +11298,8 @@
  },
  {
   "key": "le maroc|.",
-  "text": "Le Maroc",
-  "say": "Le Maroc",
+  "text": "le Maroc",
+  "say": "le Maroc",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11298,8 +11359,8 @@
  },
  {
   "key": "le nigeria|.",
-  "text": "Le Nigeria",
-  "say": "Le Nigeria",
+  "text": "le Nigeria",
+  "say": "le Nigeria",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11309,8 +11370,8 @@
  },
  {
   "key": "le panama|.",
-  "text": "Le Panama",
-  "say": "Le Panama",
+  "text": "le Panama",
+  "say": "le Panama",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11340,8 +11401,8 @@
  },
  {
   "key": "le pérou|.",
-  "text": "Le Pérou",
-  "say": "Le Pérou",
+  "text": "le Pérou",
+  "say": "le Pérou",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11411,8 +11472,8 @@
  },
  {
   "key": "le royaume-uni|.",
-  "text": "Le Royaume-Uni",
-  "say": "Le Royaume-Uni",
+  "text": "le Royaume-Uni",
+  "say": "le Royaume-Uni",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11422,8 +11483,8 @@
  },
  {
   "key": "le sénégal|.",
-  "text": "Le Sénégal",
-  "say": "Le Sénégal",
+  "text": "le Sénégal",
+  "say": "le Sénégal",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11473,8 +11534,8 @@
  },
  {
   "key": "le tchad|.",
-  "text": "Le Tchad",
-  "say": "Le Tchad",
+  "text": "le Tchad",
+  "say": "le Tchad",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11504,8 +11565,8 @@
  },
  {
   "key": "le togo|.",
-  "text": "Le Togo",
-  "say": "Le Togo",
+  "text": "le Togo",
+  "say": "le Togo",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11525,13 +11586,33 @@
  },
  {
   "key": "le viêt nam|.",
-  "text": "Le Viêt Nam",
-  "say": "Le Viêt Nam",
+  "text": "le Viêt Nam",
+  "say": "le Viêt Nam",
   "pack": "commun",
   "words": 3,
   "fams": [
    "carnet",
    "mots"
+  ]
+ },
+ {
+  "key": "le voyage de la goutte|,",
+  "text": "Le voyage de la goutte,",
+  "say": "Le voyage de la goutte,",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
+  "key": "le voyage de la goutte|.",
+  "text": "le voyage de la goutte.",
+  "say": "le voyage de la goutte.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "carte"
   ]
  },
  {
@@ -11567,8 +11648,8 @@
  },
  {
   "key": "les états-unis|.",
-  "text": "Les États-Unis",
-  "say": "Les États-Unis",
+  "text": "les États-Unis",
+  "say": "les États-Unis",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11638,8 +11719,8 @@
  },
  {
   "key": "les palaos|.",
-  "text": "Les Palaos",
-  "say": "Les Palaos",
+  "text": "les Palaos",
+  "say": "les Palaos",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11649,8 +11730,8 @@
  },
  {
   "key": "les pays-bas|.",
-  "text": "Les Pays-Bas",
-  "say": "Les Pays-Bas",
+  "text": "les Pays-Bas",
+  "say": "les Pays-Bas",
   "pack": "commun",
   "words": 2,
   "fams": [
@@ -11693,8 +11774,8 @@
  },
  {
   "key": "lion|.",
-  "text": "Lion.",
-  "say": "Lion.",
+  "text": "lion.",
+  "say": "lion.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -11776,8 +11857,8 @@
  },
  {
   "key": "loup|.",
-  "text": "Loup.",
-  "say": "Loup.",
+  "text": "loup.",
+  "say": "loup.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -11802,8 +11883,8 @@
  },
  {
   "key": "lune|.",
-  "text": "Lune.",
-  "say": "Lune.",
+  "text": "lune.",
+  "say": "lune.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -11860,8 +11941,8 @@
  },
  {
   "key": "maison|.",
-  "text": "maison",
-  "say": "maison",
+  "text": "maison.",
+  "say": "maison.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -11872,8 +11953,8 @@
  },
  {
   "key": "mali|.",
-  "text": "Mali",
-  "say": "Mali",
+  "text": "Mali.",
+  "say": "Mali.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -11903,8 +11984,8 @@
  },
  {
   "key": "marteau|.",
-  "text": "marteau",
-  "say": "marteau",
+  "text": "marteau.",
+  "say": "marteau.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -11986,8 +12067,8 @@
  },
  {
   "key": "midi|.",
-  "text": "midi",
-  "say": "midi",
+  "text": "midi.",
+  "say": "midi.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12043,8 +12124,8 @@
  },
  {
   "key": "monaco|.",
-  "text": "Monaco",
-  "say": "Monaco",
+  "text": "Monaco.",
+  "say": "Monaco.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12065,8 +12146,8 @@
  },
  {
   "key": "moto|.",
-  "text": "Moto.",
-  "say": "Moto.",
+  "text": "moto.",
+  "say": "moto.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12090,8 +12171,8 @@
  },
  {
   "key": "mouton|.",
-  "text": "Mouton.",
-  "say": "Mouton.",
+  "text": "mouton.",
+  "say": "mouton.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12115,8 +12196,8 @@
  },
  {
   "key": "mur|.",
-  "text": "Mur.",
-  "say": "Mur.",
+  "text": "mur.",
+  "say": "mur.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12242,7 +12323,6 @@
   "pack": "commun",
   "words": 1,
   "fams": [
-   "chants:erreur",
    "chants:indice",
    "mots",
    "syllabes:indice"
@@ -12261,8 +12341,8 @@
  },
  {
   "key": "numéro|.",
-  "text": "numéro",
-  "say": "numéro",
+  "text": "numéro.",
+  "say": "numéro.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12293,8 +12373,8 @@
  },
  {
   "key": "olive|.",
-  "text": "Olive.",
-  "say": "Olive.",
+  "text": "olive.",
+  "say": "olive.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12385,8 +12465,8 @@
  },
  {
   "key": "ordinateur|.",
-  "text": "ordinateur",
-  "say": "ordinateur",
+  "text": "ordinateur.",
+  "say": "ordinateur.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12539,6 +12619,7 @@
    "drapeau:reussite",
    "flotte:reussite",
    "formes:reussite",
+   "goutte:reussite",
    "hote",
    "lis:reussite",
    "marche:reussite",
@@ -12596,8 +12677,8 @@
  },
  {
   "key": "panama|.",
-  "text": "Panama",
-  "say": "Panama",
+  "text": "Panama.",
+  "say": "Panama.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12607,8 +12688,8 @@
  },
  {
   "key": "panda|.",
-  "text": "panda",
-  "say": "panda",
+  "text": "panda.",
+  "say": "panda.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12619,8 +12700,8 @@
  },
  {
   "key": "papi|.",
-  "text": "Papi.",
-  "say": "Papi.",
+  "text": "papi.",
+  "say": "papi.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12632,8 +12713,8 @@
  },
  {
   "key": "papillon|.",
-  "text": "papillon",
-  "say": "papillon",
+  "text": "papillon.",
+  "say": "papillon.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12644,8 +12725,8 @@
  },
  {
   "key": "parapluie|.",
-  "text": "parapluie",
-  "say": "parapluie",
+  "text": "parapluie.",
+  "say": "parapluie.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12718,8 +12799,8 @@
  },
  {
   "key": "piano|.",
-  "text": "Piano.",
-  "say": "Piano.",
+  "text": "piano.",
+  "say": "piano.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12801,14 +12882,24 @@
  },
  {
   "key": "plume|.",
-  "text": "Plume.",
-  "say": "Plume.",
+  "text": "plume.",
+  "say": "plume.",
   "pack": "commun",
   "words": 1,
   "fams": [
    "lis:indice",
    "lis:reussite",
    "mots"
+  ]
+ },
+ {
+  "key": "plus tu montes l'entonnoir plus l'eau gicle loin|.",
+  "text": "Plus tu montes l'entonnoir, plus l'eau gicle loin !",
+  "say": "Plus tu montes l'entonnoir, plus l'eau gicle loin !",
+  "pack": "commun",
+  "words": 8,
+  "fams": [
+   "fin"
   ]
  },
  {
@@ -12823,8 +12914,8 @@
  },
  {
   "key": "poisson|.",
-  "text": "poisson",
-  "say": "poisson",
+  "text": "poisson.",
+  "say": "poisson.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12845,8 +12936,8 @@
  },
  {
   "key": "pomme|.",
-  "text": "pomme",
-  "say": "pomme",
+  "text": "pomme.",
+  "say": "pomme.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12879,8 +12970,8 @@
  },
  {
   "key": "poule|.",
-  "text": "poule",
-  "say": "poule",
+  "text": "poule.",
+  "say": "poule.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13059,6 +13150,16 @@
   ]
  },
  {
+  "key": "pour suivre ploc|,",
+  "text": "pour suivre Ploc,",
+  "say": "pour suivre Ploc,",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
   "key": "pour trouver ce qui vient après|.",
   "text": "pour trouver ce qui vient après.",
   "say": "pour trouver ce qui vient après.",
@@ -13070,8 +13171,8 @@
  },
  {
   "key": "poussin|.",
-  "text": "poussin",
-  "say": "poussin",
+  "text": "poussin.",
+  "say": "poussin.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13167,8 +13268,8 @@
  },
  {
   "key": "radio|.",
-  "text": "Radio.",
-  "say": "Radio.",
+  "text": "radio.",
+  "say": "radio.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13202,8 +13303,8 @@
  },
  {
   "key": "raisin|.",
-  "text": "raisin",
-  "say": "raisin",
+  "text": "raisin.",
+  "say": "raisin.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13277,8 +13378,8 @@
  },
  {
   "key": "robot|.",
-  "text": "Robot.",
-  "say": "Robot.",
+  "text": "robot.",
+  "say": "robot.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13391,8 +13492,8 @@
  },
  {
   "key": "salade|.",
-  "text": "Salade.",
-  "say": "Salade.",
+  "text": "salade.",
+  "say": "salade.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13403,8 +13504,8 @@
  },
  {
   "key": "salami|.",
-  "text": "salami",
-  "say": "salami",
+  "text": "salami.",
+  "say": "salami.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13414,8 +13515,8 @@
  },
  {
   "key": "salé|.",
-  "text": "salé",
-  "say": "salé",
+  "text": "salé.",
+  "say": "salé.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13425,8 +13526,8 @@
  },
  {
   "key": "sapin|.",
-  "text": "sapin",
-  "say": "sapin",
+  "text": "sapin.",
+  "say": "sapin.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13461,8 +13562,8 @@
  },
  {
   "key": "serpent|.",
-  "text": "serpent",
-  "say": "serpent",
+  "text": "serpent.",
+  "say": "serpent.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13504,8 +13605,8 @@
  },
  {
   "key": "sofa|.",
-  "text": "Sofa.",
-  "say": "Sofa.",
+  "text": "sofa.",
+  "say": "sofa.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13527,8 +13628,8 @@
  },
  {
   "key": "soleil|.",
-  "text": "soleil",
-  "say": "soleil",
+  "text": "soleil.",
+  "say": "soleil.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13583,8 +13684,8 @@
  },
  {
   "key": "souris|.",
-  "text": "souris",
-  "say": "souris",
+  "text": "souris.",
+  "say": "souris.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13697,8 +13798,8 @@
  },
  {
   "key": "télévision|.",
-  "text": "télévision",
-  "say": "télévision",
+  "text": "télévision.",
+  "say": "télévision.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13743,8 +13844,8 @@
  },
  {
   "key": "tipi|.",
-  "text": "tipi",
-  "say": "tipi",
+  "text": "tipi.",
+  "say": "tipi.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13765,8 +13866,8 @@
  },
  {
   "key": "togo|.",
-  "text": "Togo",
-  "say": "Togo",
+  "text": "Togo.",
+  "say": "Togo.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13776,8 +13877,8 @@
  },
  {
   "key": "tomate|.",
-  "text": "Tomate.",
-  "say": "Tomate.",
+  "text": "tomate.",
+  "say": "tomate.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13785,6 +13886,16 @@
    "lis:indice",
    "lis:reussite",
    "mots"
+  ]
+ },
+ {
+  "key": "ton défi pour la maison après la douche regarde la buée sur le miroir c'est la vapeur qui redevient de l'eau|.",
+  "text": "Ton défi pour la maison : Après la douche, regarde la buée sur le miroir : c'est la vapeur qui redevient de l'eau.",
+  "say": "Ton défi pour la maison : Après la douche, regarde la buée sur le miroir : c'est la vapeur qui redevient de l'eau.",
+  "pack": "commun",
+  "words": 21,
+  "fams": [
+   "fin"
   ]
  },
  {
@@ -13813,6 +13924,16 @@
   "say": "Ton défi pour la maison : Avec des feutres, colorie le drapeau de la France sans regarder le modèle.",
   "pack": "commun",
   "words": 18,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
+  "key": "ton défi pour la maison avec un adulte fabrique un mini château d'eau un entonnoir un tuyau de l'eau|.",
+  "text": "Ton défi pour la maison : Avec un adulte, fabrique un mini château d'eau : un entonnoir, un tuyau, de l'eau.",
+  "say": "Ton défi pour la maison : Avec un adulte, fabrique un mini château d'eau : un entonnoir, un tuyau, de l'eau.",
+  "pack": "commun",
+  "words": 19,
   "fams": [
    "fin"
   ]
@@ -13983,6 +14104,16 @@
   "say": "Ton défi pour la maison : Distribue les cartes d'un jeu, une par une, à chaque joueur.",
   "pack": "commun",
   "words": 16,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
+  "key": "ton défi pour la maison en promenade cherche le château d'eau le plus proche de chez toi|.",
+  "text": "Ton défi pour la maison : En promenade, cherche le château d'eau le plus proche de chez toi.",
+  "say": "Ton défi pour la maison : En promenade, cherche le château d'eau le plus proche de chez toi.",
+  "pack": "commun",
+  "words": 17,
   "fams": [
    "fin"
   ]
@@ -14261,8 +14392,8 @@
  },
  {
   "key": "tortue|.",
-  "text": "tortue",
-  "say": "tortue",
+  "text": "tortue.",
+  "say": "tortue.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -14317,8 +14448,8 @@
  },
  {
   "key": "tracteur|.",
-  "text": "tracteur",
-  "say": "tracteur",
+  "text": "tracteur.",
+  "say": "tracteur.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -14457,8 +14588,8 @@
  },
  {
   "key": "tuba|.",
-  "text": "tuba",
-  "say": "tuba",
+  "text": "tuba.",
+  "say": "tuba.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -14468,8 +14599,8 @@
  },
  {
   "key": "tulipe|.",
-  "text": "Tulipe.",
-  "say": "Tulipe.",
+  "text": "tulipe.",
+  "say": "tulipe.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -14513,8 +14644,8 @@
  },
  {
   "key": "vache|.",
-  "text": "Vache.",
-  "say": "Vache.",
+  "text": "vache.",
+  "say": "vache.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -14558,8 +14689,8 @@
  },
  {
   "key": "vélo|.",
-  "text": "Vélo.",
-  "say": "Vélo.",
+  "text": "vélo.",
+  "say": "vélo.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -14614,8 +14745,8 @@
  },
  {
   "key": "voiture|.",
-  "text": "voiture",
-  "say": "voiture",
+  "text": "voiture.",
+  "say": "voiture.",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -14652,6 +14783,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "chants:erreur",
    "chants:indice",
    "mots"
   ]
@@ -14693,6 +14825,251 @@
   ]
  },
  {
+  "key": "à l'usine on fait des bulles on enlève les saletés et on chasse les microbes l'eau devient bonne à boire|.",
+  "text": "À l'usine, on fait des bulles, on enlève les saletés et on chasse les microbes : l'eau devient bonne à boire.",
+  "say": "À l'usine, on fait des bulles, on enlève les saletés et on chasse les microbes : l'eau devient bonne à boire.",
+  "pack": "decouvertes",
+  "words": 20,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "à l'usine on fait des bulles on enlève les saletés et on chasse les microbes l'eau devient claire et bonne à boire|.",
+  "text": "À l'usine, on fait des bulles, on enlève les saletés et on chasse les microbes : l'eau devient claire et bonne à boire.",
+  "say": "À l'usine, on fait des bulles, on enlève les saletés et on chasse les microbes : l'eau devient claire et bonne à boire.",
+  "pack": "decouvertes",
+  "words": 22,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "à l'usine on nettoie l'eau elle devient claire|.",
+  "text": "À l'usine, on nettoie l'eau : elle devient claire.",
+  "say": "À l'usine, on nettoie l'eau : elle devient claire.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "à la maison on l'ouvre et l'eau coule|.",
+  "text": "À la maison, on l'ouvre, et l'eau coule !",
+  "say": "À la maison, on l'ouvre, et l'eau coule !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a l'usine d'eau potable|.",
+  "text": "Après, il y a l'usine d'eau potable.",
+  "say": "Après, il y a l'usine d'eau potable.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a la mer|.",
+  "text": "Après, il y a la mer.",
+  "say": "Après, il y a la mer.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a la nappe l'eau cachée sous la terre|.",
+  "text": "Après, il y a la nappe, l'eau cachée sous la terre.",
+  "say": "Après, il y a la nappe, l'eau cachée sous la terre.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a la neige|.",
+  "text": "Après, il y a la neige.",
+  "say": "Après, il y a la neige.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a la pluie|.",
+  "text": "Après, il y a la pluie.",
+  "say": "Après, il y a la pluie.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a la pompe|.",
+  "text": "Après, il y a la pompe.",
+  "say": "Après, il y a la pompe.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a la rivière|.",
+  "text": "Après, il y a la rivière.",
+  "say": "Après, il y a la rivière.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a la station d'épuration|.",
+  "text": "Après, il y a la station d'épuration.",
+  "say": "Après, il y a la station d'épuration.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a la vapeur qui monte|.",
+  "text": "Après, il y a la vapeur qui monte.",
+  "say": "Après, il y a la vapeur qui monte.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a le bain|.",
+  "text": "Après, il y a le bain.",
+  "say": "Après, il y a le bain.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a le château d'eau|.",
+  "text": "Après, il y a le château d'eau.",
+  "say": "Après, il y a le château d'eau.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a le nuage|.",
+  "text": "Après, il y a le nuage.",
+  "say": "Après, il y a le nuage.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a le réservoir sur la colline|.",
+  "text": "Après, il y a le réservoir sur la colline.",
+  "say": "Après, il y a le réservoir sur la colline.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a le robinet|.",
+  "text": "Après, il y a le robinet.",
+  "say": "Après, il y a le robinet.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a les égouts|.",
+  "text": "Après, il y a les égouts.",
+  "say": "Après, il y a les égouts.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "après la douche la vapeur touche le miroir froid|.",
+  "text": "Après la douche, la vapeur touche le miroir froid.",
+  "say": "Après la douche, la vapeur touche le miroir froid.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "après le bain l'eau sale part dans les égouts|.",
+  "text": "Après le bain, l'eau sale part dans les égouts.",
+  "say": "Après le bain, l'eau sale part dans les égouts.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "as-tu déjà goûté l'eau de la mer|?",
+  "text": "As-tu déjà goûté l'eau de la mer ?",
+  "say": "As-tu déjà goûté l'eau de la mer ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "attention ça brûle on regarde de loin|.",
+  "text": "Attention, ça brûle : on regarde de loin !",
+  "say": "Attention, ça brûle : on regarde de loin !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "attention ça glisse|.",
+  "text": "Attention, ça glisse !",
+  "say": "Attention, ça glisse !",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
   "key": "attention ce n'est pas forcément le plus petit qui flotte|.",
   "text": "Attention, ce n'est pas forcément le plus petit qui flotte !",
   "say": "Attention, ce n'est pas forcément le plus petit qui flotte !",
@@ -14700,6 +15077,226 @@
   "words": 10,
   "fams": [
    "flotte:indice"
+  ]
+ },
+ {
+  "key": "attention|.",
+  "text": "Attention !",
+  "say": "Attention !",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "au soleil la neige fond et l'eau coule vers le bas|.",
+  "text": "Au soleil, la neige fond, et l'eau coule vers le bas.",
+  "say": "Au soleil, la neige fond, et l'eau coule vers le bas.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "au soleil la neige ne reste pas longtemps|.",
+  "text": "Au soleil, la neige ne reste pas longtemps…",
+  "say": "Au soleil, la neige ne reste pas longtemps…",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "au-dessus de la casserole quelque chose monte vers le plafond|.",
+  "text": "Au-dessus de la casserole, quelque chose monte vers le plafond…",
+  "say": "Au-dessus de la casserole, quelque chose monte vers le plafond…",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a l'usine d'eau potable|.",
+  "text": "Avant, il y a l'usine d'eau potable.",
+  "say": "Avant, il y a l'usine d'eau potable.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a la mer|.",
+  "text": "Avant, il y a la mer.",
+  "say": "Avant, il y a la mer.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a la nappe l'eau cachée sous la terre|.",
+  "text": "Avant, il y a la nappe, l'eau cachée sous la terre.",
+  "say": "Avant, il y a la nappe, l'eau cachée sous la terre.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a la neige|.",
+  "text": "Avant, il y a la neige.",
+  "say": "Avant, il y a la neige.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a la pluie|.",
+  "text": "Avant, il y a la pluie.",
+  "say": "Avant, il y a la pluie.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a la pompe|.",
+  "text": "Avant, il y a la pompe.",
+  "say": "Avant, il y a la pompe.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a la rivière|.",
+  "text": "Avant, il y a la rivière.",
+  "say": "Avant, il y a la rivière.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a la station d'épuration|.",
+  "text": "Avant, il y a la station d'épuration.",
+  "say": "Avant, il y a la station d'épuration.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a la vapeur qui monte|.",
+  "text": "Avant, il y a la vapeur qui monte.",
+  "say": "Avant, il y a la vapeur qui monte.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a le bain|.",
+  "text": "Avant, il y a le bain.",
+  "say": "Avant, il y a le bain.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a le château d'eau|.",
+  "text": "Avant, il y a le château d'eau.",
+  "say": "Avant, il y a le château d'eau.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a le nuage|.",
+  "text": "Avant, il y a le nuage.",
+  "say": "Avant, il y a le nuage.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a le réservoir sur la colline|.",
+  "text": "Avant, il y a le réservoir sur la colline.",
+  "say": "Avant, il y a le réservoir sur la colline.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a le robinet|.",
+  "text": "Avant, il y a le robinet.",
+  "say": "Avant, il y a le robinet.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a les égouts|.",
+  "text": "Avant, il y a les égouts.",
+  "say": "Avant, il y a les égouts.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet|?",
+  "text": "Avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet ?",
+  "say": "Avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet ?",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "bien vu on ne la boit pas|.",
+  "text": "Bien vu, on ne la boit pas !",
+  "say": "Bien vu, on ne la boit pas !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "bienvenue dans le labo d'octave|.",
+  "text": "Bienvenue dans le labo d'Octave !",
+  "say": "Bienvenue dans le labo d'Octave !",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:intro"
   ]
  },
  {
@@ -14715,6 +15312,228 @@
   ]
  },
  {
+  "key": "c'est la pluie|.",
+  "text": "C'est la pluie !",
+  "say": "C'est la pluie !",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "c'est le château d'eau|.",
+  "text": "C'est le château d'eau.",
+  "say": "C'est le château d'eau.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "c'était déjà de la vapeur|.",
+  "text": "C'était déjà de la vapeur.",
+  "say": "C'était déjà de la vapeur.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est l'usine d'eau potable|.",
+  "text": "Ça, c'est l'usine d'eau potable.",
+  "say": "Ça, c'est l'usine d'eau potable.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la mer|.",
+  "text": "Ça, c'est la mer.",
+  "say": "Ça, c'est la mer.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la nappe l'eau cachée sous la terre|.",
+  "text": "Ça, c'est la nappe, l'eau cachée sous la terre.",
+  "say": "Ça, c'est la nappe, l'eau cachée sous la terre.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la neige|.",
+  "text": "Ça, c'est la neige.",
+  "say": "Ça, c'est la neige.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la pluie|.",
+  "text": "Ça, c'est la pluie.",
+  "say": "Ça, c'est la pluie.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la pompe|.",
+  "text": "Ça, c'est la pompe.",
+  "say": "Ça, c'est la pompe.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la rivière|.",
+  "text": "Ça, c'est la rivière.",
+  "say": "Ça, c'est la rivière.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la station d'épuration|.",
+  "text": "Ça, c'est la station d'épuration.",
+  "say": "Ça, c'est la station d'épuration.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la vapeur qui monte|.",
+  "text": "Ça, c'est la vapeur qui monte.",
+  "say": "Ça, c'est la vapeur qui monte.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le bain|.",
+  "text": "Ça, c'est le bain.",
+  "say": "Ça, c'est le bain.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le bassin à bulles|.",
+  "text": "Ça, c'est le bassin à bulles.",
+  "say": "Ça, c'est le bassin à bulles.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le bassin calme|.",
+  "text": "Ça, c'est le bassin calme.",
+  "say": "Ça, c'est le bassin calme.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le château d'eau|.",
+  "text": "Ça, c'est le château d'eau.",
+  "say": "Ça, c'est le château d'eau.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le nuage|.",
+  "text": "Ça, c'est le nuage.",
+  "say": "Ça, c'est le nuage.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le réservoir sur la colline|.",
+  "text": "Ça, c'est le réservoir sur la colline.",
+  "say": "Ça, c'est le réservoir sur la colline.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le robinet|.",
+  "text": "Ça, c'est le robinet.",
+  "say": "Ça, c'est le robinet.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça ce sont les égouts|.",
+  "text": "Ça, ce sont les égouts.",
+  "say": "Ça, ce sont les égouts.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça ce sont les grilles|.",
+  "text": "Ça, ce sont les grilles.",
+  "say": "Ça, ce sont les grilles.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ce n'est pas ce qui vient juste après|.",
+  "text": "Ce n'est pas ce qui vient juste après.",
+  "say": "Ce n'est pas ce qui vient juste après.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
   "key": "ce n'est pas la taille qui compte|.",
   "text": "Ce n'est pas la taille qui compte !",
   "say": "Ce n'est pas la taille qui compte !",
@@ -14724,6 +15543,26 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "ce qui est vivant a besoin d'eau les plantes les animaux et toi|.",
+  "text": "Ce qui est vivant a besoin d'eau : les plantes, les animaux, et toi !",
+  "say": "Ce qui est vivant a besoin d'eau : les plantes, les animaux, et toi !",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "ce sont des êtres vivants tout petits si petits qu'on ne les voit pas|.",
+  "text": "Ce sont des êtres vivants tout petits, si petits qu'on ne les voit pas.",
+  "say": "Ce sont des êtres vivants tout petits, si petits qu'on ne les voit pas.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "goutte:indice"
   ]
  },
  {
@@ -14737,6 +15576,36 @@
   ]
  },
  {
+  "key": "celle-ci c'est parce que tu sais d'où vient l'eau du robinet et où elle repart|.",
+  "text": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
+  "say": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "goutte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le grand voyage de ploc de la mer jusqu'au nuage|.",
+  "text": "Celle-ci, c'est pour le grand voyage de Ploc, de la mer jusqu'au nuage.",
+  "say": "Celle-ci, c'est pour le grand voyage de Ploc, de la mer jusqu'au nuage.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "goutte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour tous les bons gestes qui protègent l'eau|.",
+  "text": "Celle-ci, c'est pour tous les bons gestes qui protègent l'eau.",
+  "say": "Celle-ci, c'est pour tous les bons gestes qui protègent l'eau.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:gommette"
+  ]
+ },
+ {
   "key": "celle-ci c'est pour toutes tes expériences dans le bassin d'octave|.",
   "text": "Celle-ci, c'est pour toutes tes expériences dans le bassin d'Octave.",
   "say": "Celle-ci, c'est pour toutes tes expériences dans le bassin d'Octave.",
@@ -14744,6 +15613,66 @@
   "words": 10,
   "fams": [
    "flotte:gommette"
+  ]
+ },
+ {
+  "key": "celle-là est déjà propre elle sort de l'usine|.",
+  "text": "Celle-là est déjà propre : elle sort de l'usine !",
+  "say": "Celle-là est déjà propre : elle sort de l'usine !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "celle-là est encore sale elle n'est pas passée par l'usine|.",
+  "text": "Celle-là est encore sale : elle n'est pas passée par l'usine.",
+  "say": "Celle-là est encore sale : elle n'est pas passée par l'usine.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "celui-là est tout petit l'eau pousse moins fort|.",
+  "text": "Celui-là est tout petit : l'eau pousse moins fort.",
+  "say": "Celui-là est tout petit : l'eau pousse moins fort.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "cette nuit il a gelé très fort|.",
+  "text": "Cette nuit, il a gelé très fort.",
+  "say": "Cette nuit, il a gelé très fort.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "cherche de tout petits êtres vivants|.",
+  "text": "Cherche de tout petits êtres vivants.",
+  "say": "Cherche de tout petits êtres vivants.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "cherche le plus haut|.",
+  "text": "Cherche le plus haut !",
+  "say": "Cherche le plus haut !",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:erreur"
   ]
  },
  {
@@ -14756,6 +15685,391 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "d'abord la glace fond et devient de l'eau|.",
+  "text": "D'abord, la glace fond, et devient de l'eau.",
+  "say": "D'abord, la glace fond, et devient de l'eau.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "d'où vient l'eau du robinet|?",
+  "text": "D'où vient l'eau du robinet ?",
+  "say": "D'où vient l'eau du robinet ?",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "dans la poubelle|.",
+  "text": "Dans la poubelle !",
+  "say": "Dans la poubelle !",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "dans la station d'épuration qu'est-ce qui attrape les gros déchets comme un filet|?",
+  "text": "Dans la station d'épuration, qu'est-ce qui attrape les gros déchets, comme un filet ?",
+  "say": "Dans la station d'épuration, qu'est-ce qui attrape les gros déchets, comme un filet ?",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "dans le bassin à bulles de minuscules bactéries mangent la saleté|.",
+  "text": "Dans le bassin à bulles, de minuscules bactéries mangent la saleté.",
+  "say": "Dans le bassin à bulles, de minuscules bactéries mangent la saleté.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:erreur",
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "dans le bassin à bulles qui mange la saleté|?",
+  "text": "Dans le bassin à bulles, qui mange la saleté ?",
+  "say": "Dans le bassin à bulles, qui mange la saleté ?",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "dans le bassin calme la boue tombe tout au fond|.",
+  "text": "Dans le bassin calme, la boue tombe tout au fond.",
+  "say": "Dans le bassin calme, la boue tombe tout au fond.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:erreur",
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "dans le congélateur tout devient dur et froid|.",
+  "text": "Dans le congélateur, tout devient dur et froid.",
+  "say": "Dans le congélateur, tout devient dur et froid.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "dans le froid l'eau gèle elle devient de la glace toute dure|.",
+  "text": "Dans le froid, l'eau gèle : elle devient de la glace, toute dure.",
+  "say": "Dans le froid, l'eau gèle : elle devient de la glace, toute dure.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "dans le froid tout là-haut les gouttes se serrent les unes contre les autres|.",
+  "text": "Dans le froid, tout là-haut, les gouttes se serrent les unes contre les autres.",
+  "say": "Dans le froid, tout là-haut, les gouttes se serrent les unes contre les autres.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "dans le réservoir sur la colline|.",
+  "text": "Dans le réservoir sur la colline.",
+  "say": "Dans le réservoir sur la colline.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "dans les toilettes les lingettes bouchent les tuyaux et les grilles de la station|.",
+  "text": "Dans les toilettes, les lingettes bouchent les tuyaux et les grilles de la station.",
+  "say": "Dans les toilettes, les lingettes bouchent les tuyaux et les grilles de la station.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "dans les toilettes seulement ce qui se défait dans l'eau|.",
+  "text": "Dans les toilettes, seulement ce qui se défait dans l'eau.",
+  "say": "Dans les toilettes, seulement ce qui se défait dans l'eau.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "dans les toilettes seulement le pipi le caca et le papier toilette il se défait dans l'eau|.",
+  "text": "Dans les toilettes, seulement le pipi, le caca et le papier toilette : il se défait dans l'eau.",
+  "say": "Dans les toilettes, seulement le pipi, le caca et le papier toilette : il se défait dans l'eau.",
+  "pack": "decouvertes",
+  "words": 17,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "dans quel bassin la boue tombe-t-elle tout au fond|?",
+  "text": "Dans quel bassin la boue tombe-t-elle tout au fond ?",
+  "say": "Dans quel bassin la boue tombe-t-elle tout au fond ?",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "dans quel bassin les bactéries mangent-elles la saleté|?",
+  "text": "Dans quel bassin les bactéries mangent-elles la saleté ?",
+  "say": "Dans quel bassin les bactéries mangent-elles la saleté ?",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "de la mer au nuage du nuage au robinet et du robinet à la mer|.",
+  "text": "De la mer au nuage, du nuage au robinet, et du robinet à la mer.",
+  "say": "De la mer au nuage, du nuage au robinet, et du robinet à la mer.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "de là-haut l'eau descendra toute seule jusqu'aux maisons|.",
+  "text": "De là-haut, l'eau descendra toute seule jusqu'aux maisons.",
+  "say": "De là-haut, l'eau descendra toute seule jusqu'aux maisons.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "de minuscules bactéries mangent la saleté|.",
+  "text": "De minuscules bactéries mangent la saleté.",
+  "say": "De minuscules bactéries mangent la saleté.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "des barreaux comme une passoire géante|.",
+  "text": "Des barreaux, comme une passoire géante.",
+  "say": "Des barreaux, comme une passoire géante.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "elle a un drôle de goût|.",
+  "text": "Elle a un drôle de goût…",
+  "say": "Elle a un drôle de goût…",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "elle arrive au robinet de la maison|.",
+  "text": "Elle arrive au robinet de la maison.",
+  "say": "Elle arrive au robinet de la maison.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "elle devient toute dure|.",
+  "text": "Elle devient toute dure !",
+  "say": "Elle devient toute dure !",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "elle est assez propre pour la rivière et ses poissons mais pas pour boire|.",
+  "text": "Elle est assez propre pour la rivière et ses poissons, mais pas pour boire.",
+  "say": "Elle est assez propre pour la rivière et ses poissons, mais pas pour boire.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "goutte:erreur",
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "elle est encore trouble l'usine va la nettoyer|.",
+  "text": "Elle est encore trouble : l'usine va la nettoyer.",
+  "say": "Elle est encore trouble : l'usine va la nettoyer.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "elle est passée par l'usine|.",
+  "text": "Elle est passée par l'usine.",
+  "say": "Elle est passée par l'usine.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "elle est sale et pleine de microbes|.",
+  "text": "Elle est sale, et pleine de microbes.",
+  "say": "Elle est sale, et pleine de microbes.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:erreur",
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "elle ne monte jamais toute seule|.",
+  "text": "Elle ne monte jamais toute seule.",
+  "say": "Elle ne monte jamais toute seule.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "elle part dans les égouts jusqu'à la station d'épuration|.",
+  "text": "Elle part dans les égouts, jusqu'à la station d'épuration.",
+  "say": "Elle part dans les égouts, jusqu'à la station d'épuration.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "elle peut avoir des microbes elle doit d'abord passer par l'usine|.",
+  "text": "Elle peut avoir des microbes : elle doit d'abord passer par l'usine.",
+  "say": "Elle peut avoir des microbes : elle doit d'abord passer par l'usine.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:erreur",
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "elle retourne à la rivière sans gêner les poissons|.",
+  "text": "Elle retourne à la rivière, sans gêner les poissons.",
+  "say": "Elle retourne à la rivière, sans gêner les poissons.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "elle retourne dans la nature là où vivent les poissons|.",
+  "text": "Elle retourne dans la nature, là où vivent les poissons.",
+  "say": "Elle retourne dans la nature, là où vivent les poissons.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "elle s'est envolée|.",
+  "text": "Elle s'est envolée !",
+  "say": "Elle s'est envolée !",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:erreur",
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "elle sort de l'usine elle est propre et contrôlée très souvent|.",
+  "text": "Elle sort de l'usine : elle est propre, et contrôlée très souvent.",
+  "say": "Elle sort de l'usine : elle est propre, et contrôlée très souvent.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:erreur",
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "elle va à la poubelle|.",
+  "text": "Elle va à la poubelle.",
+  "say": "Elle va à la poubelle.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "elle va à la station d'épuration où on la nettoie|.",
+  "text": "Elle va à la station d'épuration, où on la nettoie.",
+  "say": "Elle va à la station d'épuration, où on la nettoie.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
   ]
  },
  {
@@ -14783,6 +16097,27 @@
   ]
  },
  {
+  "key": "en haut|.",
+  "text": "En haut !",
+  "say": "En haut !",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "en touchant le miroir froid elle change|.",
+  "text": "En touchant le miroir froid, elle change !",
+  "say": "En touchant le miroir froid, elle change !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
   "key": "est-ce qu'il y a de l'air dedans|?",
   "text": "Est-ce qu'il y a de l'air dedans ?",
   "say": "Est-ce qu'il y a de l'air dedans ?",
@@ -14790,6 +16125,26 @@
   "words": 7,
   "fams": [
    "flotte:indice"
+  ]
+ },
+ {
+  "key": "est-ce qu'on peut la boire tout de suite|?",
+  "text": "Est-ce qu'on peut la boire tout de suite ?",
+  "say": "Est-ce qu'on peut la boire tout de suite ?",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "est-ce qu'on peut la boire|?",
+  "text": "Est-ce qu'on peut la boire ?",
+  "say": "Est-ce qu'on peut la boire ?",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
   ]
  },
  {
@@ -14803,6 +16158,16 @@
   ]
  },
  {
+  "key": "est-ce que l'eau de la rivière est déjà passée par l'usine|?",
+  "text": "Est-ce que l'eau de la rivière est déjà passée par l'usine ?",
+  "say": "Est-ce que l'eau de la rivière est déjà passée par l'usine ?",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
   "key": "flotte ou coule pour deviner ce qui flotte dans le bassin d'octave|.",
   "text": "Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave.",
   "say": "Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave.",
@@ -14810,6 +16175,190 @@
   "words": 12,
   "fams": [
    "flotte:pitch"
+  ]
+ },
+ {
+  "key": "ici ça chauffe|.",
+  "text": "Ici, ça chauffe !",
+  "say": "Ici, ça chauffe !",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ici il fait très froid|.",
+  "text": "Ici, il fait très froid !",
+  "say": "Ici, il fait très froid !",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "il arrive dans la nappe l'eau cachée sous la terre|.",
+  "text": "Il arrive dans la nappe, l'eau cachée sous la terre.",
+  "say": "Il arrive dans la nappe, l'eau cachée sous la terre.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "il coule jusqu'à la rivière|.",
+  "text": "Il coule jusqu'à la rivière.",
+  "say": "Il coule jusqu'à la rivière.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "il devient très lourd|.",
+  "text": "Il devient très lourd.",
+  "say": "Il devient très lourd.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "il fait chaud la glace fond et redevient de l'eau|.",
+  "text": "Il fait chaud : la glace fond, et redevient de l'eau.",
+  "say": "Il fait chaud : la glace fond, et redevient de l'eau.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "il fait si froid que l'eau ne reste pas comme ça|.",
+  "text": "Il fait si froid que l'eau ne reste pas comme ça…",
+  "say": "Il fait si froid que l'eau ne reste pas comme ça…",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "il fait si froid que les gouttes gèlent c'est la neige|.",
+  "text": "Il fait si froid que les gouttes gèlent : c'est la neige !",
+  "say": "Il fait si froid que les gouttes gèlent : c'est la neige !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "il fait un très grand voyage de la mer au ciel du ciel à la terre et il revient toujours|.",
+  "text": "Il fait un très grand voyage : de la mer au ciel, du ciel à la terre… et il revient toujours.",
+  "say": "Il fait un très grand voyage : de la mer au ciel, du ciel à la terre… et il revient toujours.",
+  "pack": "decouvertes",
+  "words": 20,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "il faut beaucoup d'eau pour remplir toute une baignoire|.",
+  "text": "Il faut beaucoup d'eau pour remplir toute une baignoire.",
+  "say": "Il faut beaucoup d'eau pour remplir toute une baignoire.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "il faut un endroit où l'on nettoie l'eau sale|.",
+  "text": "Il faut un endroit où l'on nettoie l'eau sale.",
+  "say": "Il faut un endroit où l'on nettoie l'eau sale.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "il faut un endroit où l'on nettoie l'eau|.",
+  "text": "Il faut un endroit où l'on nettoie l'eau.",
+  "say": "Il faut un endroit où l'on nettoie l'eau.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "il faut une machine qui aspire l'eau comme avec une paille|.",
+  "text": "Il faut une machine qui aspire l'eau, comme avec une paille.",
+  "say": "Il faut une machine qui aspire l'eau, comme avec une paille.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "il glisse il glisse|.",
+  "text": "Il glisse, il glisse…",
+  "say": "Il glisse, il glisse…",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "il manque des étapes à toi de les retrouver|.",
+  "text": "Il manque des étapes : à toi de les retrouver !",
+  "say": "Il manque des étapes : à toi de les retrouver !",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "il manque une étape dans le voyage de ploc|.",
+  "text": "Il manque une étape dans le voyage de Ploc.",
+  "say": "Il manque une étape dans le voyage de Ploc.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "il s'enfonce dans la terre tout au fond|.",
+  "text": "Il s'enfonce dans la terre, tout au fond…",
+  "say": "Il s'enfonce dans la terre, tout au fond…",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "il va à la poubelle|.",
+  "text": "Il va à la poubelle.",
+  "say": "Il va à la poubelle.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
   ]
  },
  {
@@ -14832,6 +16381,184 @@
   "words": 8,
   "fams": [
    "flotte:consigne"
+  ]
+ },
+ {
+  "key": "l'arbre a besoin d'eau pour vivre comme toi|.",
+  "text": "L'arbre a besoin d'eau pour vivre, comme toi.",
+  "say": "L'arbre a besoin d'eau pour vivre, comme toi.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "l'eau bout et s'envole en vapeur|.",
+  "text": "L'eau bout, et s'envole en vapeur.",
+  "say": "L'eau bout, et s'envole en vapeur.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "l'eau de mer est bien trop salée|.",
+  "text": "L'eau de mer est bien trop salée.",
+  "say": "L'eau de mer est bien trop salée.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:erreur",
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "l'eau descend de la colline dans les tuyaux sous la rue|.",
+  "text": "L'eau descend de la colline, dans les tuyaux sous la rue.",
+  "say": "L'eau descend de la colline, dans les tuyaux sous la rue.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "l'eau descend du château d'eau dans les tuyaux sous la rue|.",
+  "text": "L'eau descend du château d'eau, dans les tuyaux sous la rue.",
+  "say": "L'eau descend du château d'eau, dans les tuyaux sous la rue.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "l'eau descend toujours|.",
+  "text": "L'eau descend toujours.",
+  "say": "L'eau descend toujours.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "l'eau descend toute seule et elle pousse fort jusqu'au robinet|.",
+  "text": "L'eau descend toute seule, et elle pousse fort jusqu'au robinet.",
+  "say": "L'eau descend toute seule, et elle pousse fort jusqu'au robinet.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "l'eau du linge s'envole en vapeur le linge sèche|.",
+  "text": "L'eau du linge s'envole en vapeur : le linge sèche.",
+  "say": "L'eau du linge s'envole en vapeur : le linge sèche.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "l'eau est propre|.",
+  "text": "L'eau est propre.",
+  "say": "L'eau est propre.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "l'eau ne monte pas toute seule elle descend toujours|.",
+  "text": "L'eau ne monte pas toute seule : elle descend toujours.",
+  "say": "L'eau ne monte pas toute seule : elle descend toujours.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "l'eau peut être dure comme un glaçon couler comme de l'eau ou s'envoler en vapeur|.",
+  "text": "L'eau peut être dure comme un glaçon, couler comme de l'eau, ou s'envoler en vapeur.",
+  "say": "L'eau peut être dure comme un glaçon, couler comme de l'eau, ou s'envoler en vapeur.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "l'eau qui glisse sur la terre finit dans un cours d'eau|.",
+  "text": "L'eau qui glisse sur la terre finit dans un cours d'eau.",
+  "say": "L'eau qui glisse sur la terre finit dans un cours d'eau.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "l'eau s'envole en vapeur si légère qu'on ne la voit pas la flaque sèche|.",
+  "text": "L'eau s'envole en vapeur, si légère qu'on ne la voit pas : la flaque sèche !",
+  "say": "L'eau s'envole en vapeur, si légère qu'on ne la voit pas : la flaque sèche !",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "l'eau sale coule dans les égouts|.",
+  "text": "L'eau sale coule dans les égouts.",
+  "say": "L'eau sale coule dans les égouts.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "l'eau sale elle part ailleurs|.",
+  "text": "L'eau sale, elle, part ailleurs !",
+  "say": "L'eau sale, elle, part ailleurs !",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "l'eau sale part sous la rue dans de grands tuyaux|.",
+  "text": "L'eau sale part sous la rue, dans de grands tuyaux.",
+  "say": "L'eau sale part sous la rue, dans de grands tuyaux.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "l'enfant a besoin d'eau pour vivre comme toi|.",
+  "text": "L'enfant a besoin d'eau pour vivre, comme toi.",
+  "say": "L'enfant a besoin d'eau pour vivre, comme toi.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
   ]
  },
  {
@@ -14867,6 +16594,17 @@
   ]
  },
  {
+  "key": "l'oiseau a besoin d'eau pour vivre comme toi|.",
+  "text": "L'oiseau a besoin d'eau pour vivre, comme toi.",
+  "say": "L'oiseau a besoin d'eau pour vivre, comme toi.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
   "key": "l'orange est-ce qu'elle flotte ou est-ce qu'elle coule|?",
   "text": "L'orange : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
   "say": "L'orange : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
@@ -14886,6 +16624,16 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "l'usine fabrique l'eau propre pour boire|.",
+  "text": "L'usine fabrique l'eau propre, pour boire.",
+  "say": "L'usine fabrique l'eau propre, pour boire.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:erreur"
   ]
  },
  {
@@ -14933,6 +16681,16 @@
   ]
  },
  {
+  "key": "la chaise n'est pas vivante elle n'a pas besoin de boire|.",
+  "text": "La chaise n'est pas vivante : elle n'a pas besoin de boire.",
+  "say": "La chaise n'est pas vivante : elle n'a pas besoin de boire.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
   "key": "la clé coule|.",
   "text": "La clé coule.",
   "say": "La clé coule.",
@@ -14964,6 +16722,16 @@
   "words": 9,
   "fams": [
    "flotte:consigne"
+  ]
+ },
+ {
+  "key": "la clé n'est pas vivante elle n'a pas besoin de boire|.",
+  "text": "La clé n'est pas vivante : elle n'a pas besoin de boire.",
+  "say": "La clé n'est pas vivante : elle n'a pas besoin de boire.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:erreur"
   ]
  },
  {
@@ -15011,6 +16779,27 @@
   ]
  },
  {
+  "key": "la flaque est par terre au milieu du chemin|.",
+  "text": "La flaque est par terre, au milieu du chemin…",
+  "say": "La flaque est par terre, au milieu du chemin…",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "la fleur a besoin d'eau pour vivre comme toi|.",
+  "text": "La fleur a besoin d'eau pour vivre, comme toi.",
+  "say": "La fleur a besoin d'eau pour vivre, comme toi.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
   "key": "la grosse pomme flotte et le petit raisin coule ce n'est pas la taille qui compte|.",
   "text": "La grosse pomme flotte et le petit raisin coule : ce n'est pas la taille qui compte.",
   "say": "La grosse pomme flotte et le petit raisin coule : ce n'est pas la taille qui compte.",
@@ -15020,6 +16809,38 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "la lingette ne se défait pas elle bouche les tuyaux|.",
+  "text": "La lingette ne se défait pas : elle bouche les tuyaux.",
+  "say": "La lingette ne se défait pas : elle bouche les tuyaux.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "la neige fond au soleil elle devient de l'eau|.",
+  "text": "La neige fond au soleil : elle devient de l'eau.",
+  "say": "La neige fond au soleil : elle devient de l'eau.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "la neige fond et l'eau coule jusqu'à la rivière|.",
+  "text": "La neige fond, et l'eau coule jusqu'à la rivière.",
+  "say": "La neige fond, et l'eau coule jusqu'à la rivière.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
   ]
  },
  {
@@ -15111,6 +16932,69 @@
   ]
  },
  {
+  "key": "la pompe a aspiré l'eau mais elle n'est pas encore bonne à boire|.",
+  "text": "La pompe a aspiré l'eau, mais elle n'est pas encore bonne à boire.",
+  "say": "La pompe a aspiré l'eau, mais elle n'est pas encore bonne à boire.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "la rivière se jette dans la mer|.",
+  "text": "La rivière se jette dans la mer.",
+  "say": "La rivière se jette dans la mer.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "la station d'épuration a nettoyé l'eau sale|.",
+  "text": "La station d'épuration a nettoyé l'eau sale.",
+  "say": "La station d'épuration a nettoyé l'eau sale.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "la vache a besoin d'eau pour vivre comme toi|.",
+  "text": "La vache a besoin d'eau pour vivre, comme toi.",
+  "say": "La vache a besoin d'eau pour vivre, comme toi.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "la vaisselle est finie|.",
+  "text": "La vaisselle est finie.",
+  "say": "La vaisselle est finie.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "la vapeur redevient de petites gouttes d'eau sur le miroir c'est la buée|.",
+  "text": "La vapeur redevient de petites gouttes d'eau sur le miroir : c'est la buée !",
+  "say": "La vapeur redevient de petites gouttes d'eau sur le miroir : c'est la buée !",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
   "key": "la vis est en métal elle coule|.",
   "text": "La vis est en métal : elle coule.",
   "say": "La vis est en métal : elle coule.",
@@ -15133,6 +17017,56 @@
   ]
  },
  {
+  "key": "la voiture n'est pas vivante elle n'a pas besoin de boire|.",
+  "text": "La voiture n'est pas vivante : elle n'a pas besoin de boire.",
+  "say": "La voiture n'est pas vivante : elle n'a pas besoin de boire.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "là-bas on la nettoie avant de la rendre à la rivière|.",
+  "text": "Là-bas, on la nettoie, avant de la rendre à la rivière.",
+  "say": "Là-bas, on la nettoie, avant de la rendre à la rivière.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "là-haut il fait froid|.",
+  "text": "Là-haut, il fait froid.",
+  "say": "Là-haut, il fait froid.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "laquelle|?",
+  "text": "Laquelle ?",
+  "say": "Laquelle ?",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le bain est fini|.",
+  "text": "Le bain est fini.",
+  "say": "Le bain est fini.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
   "key": "le ballon est rempli d'air il flotte|.",
   "text": "Le ballon est rempli d'air : il flotte.",
   "say": "Le ballon est rempli d'air : il flotte.",
@@ -15152,6 +17086,16 @@
   "words": 9,
   "fams": [
    "flotte:consigne"
+  ]
+ },
+ {
+  "key": "le ballon n'est pas vivant il n'a pas besoin de boire|.",
+  "text": "Le ballon n'est pas vivant : il n'a pas besoin de boire.",
+  "say": "Le ballon n'est pas vivant : il n'a pas besoin de boire.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:erreur"
   ]
  },
  {
@@ -15211,6 +17155,16 @@
   ]
  },
  {
+  "key": "le caillou n'est pas vivant il n'a pas besoin de boire|.",
+  "text": "Le caillou n'est pas vivant : il n'a pas besoin de boire.",
+  "say": "Le caillou n'est pas vivant : il n'a pas besoin de boire.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
   "key": "le canard en plastique est-ce qu'il flotte ou est-ce qu'il coule|?",
   "text": "Le canard en plastique : est-ce qu'il flotte, ou est-ce qu'il coule ?",
   "say": "Le canard en plastique : est-ce qu'il flotte, ou est-ce qu'il coule ?",
@@ -15230,6 +17184,47 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "le chat a besoin d'eau pour vivre comme toi|.",
+  "text": "Le chat a besoin d'eau pour vivre, comme toi.",
+  "say": "Le chat a besoin d'eau pour vivre, comme toi.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "le château d'eau garde l'eau propre pour boire|.",
+  "text": "Le château d'eau garde l'eau propre, pour boire.",
+  "say": "Le château d'eau garde l'eau propre, pour boire.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "le coton-tige bouche les tuyaux|.",
+  "text": "Le coton-tige bouche les tuyaux.",
+  "say": "Le coton-tige bouche les tuyaux.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "le crayon n'est pas vivant il n'a pas besoin de boire|.",
+  "text": "Le crayon n'est pas vivant : il n'a pas besoin de boire.",
+  "say": "Le crayon n'est pas vivant : il n'a pas besoin de boire.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:erreur"
   ]
  },
  {
@@ -15253,6 +17248,46 @@
   ]
  },
  {
+  "key": "le grand tour de ploc|.",
+  "text": "Le grand tour de Ploc !",
+  "say": "Le grand tour de Ploc !",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "le linge devient sec l'eau s'est envolée dans l'air|.",
+  "text": "Le linge devient sec : l'eau s'est envolée dans l'air.",
+  "say": "Le linge devient sec : l'eau s'est envolée dans l'air.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "le linge mouillé sèche au soleil|.",
+  "text": "Le linge mouillé sèche au soleil.",
+  "say": "Le linge mouillé sèche au soleil.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le miroir est froid mais pas assez pour faire de la glace|.",
+  "text": "Le miroir est froid, mais pas assez pour faire de la glace.",
+  "say": "Le miroir est froid, mais pas assez pour faire de la glace.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
   "key": "le morceau de bois est-ce qu'il flotte ou est-ce qu'il coule|?",
   "text": "Le morceau de bois : est-ce qu'il flotte, ou est-ce qu'il coule ?",
   "say": "Le morceau de bois : est-ce qu'il flotte, ou est-ce qu'il coule ?",
@@ -15260,6 +17295,129 @@
   "words": 11,
   "fams": [
    "flotte:consigne"
+  ]
+ },
+ {
+  "key": "le nuage est plein de gouttes|.",
+  "text": "Le nuage est plein de gouttes.",
+  "say": "Le nuage est plein de gouttes.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le nuage est trop lourd les gouttes tombent|.",
+  "text": "Le nuage est trop lourd : les gouttes tombent.",
+  "say": "Le nuage est trop lourd : les gouttes tombent.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "le nuage passe au-dessus de la montagne où il fait très très froid|.",
+  "text": "Le nuage passe au-dessus de la montagne, où il fait très, très froid.",
+  "say": "Le nuage passe au-dessus de la montagne, où il fait très, très froid.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le poisson a besoin d'eau pour vivre comme toi|.",
+  "text": "Le poisson a besoin d'eau pour vivre, comme toi.",
+  "say": "Le poisson a besoin d'eau pour vivre, comme toi.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "le printemps arrive|.",
+  "text": "Le printemps arrive.",
+  "say": "Le printemps arrive.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le soir la flaque a disparu|.",
+  "text": "Le soir, la flaque a disparu.",
+  "say": "Le soir, la flaque a disparu.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "le soleil brille sur le bonhomme de neige|.",
+  "text": "Le soleil brille sur le bonhomme de neige.",
+  "say": "Le soleil brille sur le bonhomme de neige.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le soleil chauffe la flaque toute la journée|.",
+  "text": "Le soleil chauffe la flaque toute la journée.",
+  "say": "Le soleil chauffe la flaque toute la journée.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le soleil chauffe la mer ploc s'envole dans le ciel en vapeur|.",
+  "text": "Le soleil chauffe la mer : Ploc s'envole dans le ciel, en vapeur.",
+  "say": "Le soleil chauffe la mer : Ploc s'envole dans le ciel, en vapeur.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "le soleil chauffe la neige|.",
+  "text": "Le soleil chauffe la neige.",
+  "say": "Le soleil chauffe la neige.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le soleil chauffe très fort|.",
+  "text": "Le soleil chauffe très fort.",
+  "say": "Le soleil chauffe très fort.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le voyage de la goutte pour suivre ploc de la mer jusqu'au robinet|.",
+  "text": "Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet.",
+  "say": "Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "goutte:pitch"
   ]
  },
  {
@@ -15343,6 +17501,37 @@
   ]
  },
  {
+  "key": "les bactéries ont besoin d'air cherche les bulles|.",
+  "text": "Les bactéries ont besoin d'air : cherche les bulles.",
+  "say": "Les bactéries ont besoin d'air : cherche les bulles.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "les bulles leur donnent de l'air|.",
+  "text": "Les bulles leur donnent de l'air.",
+  "say": "Les bulles leur donnent de l'air.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "les canards vivent sur l'étang pas dans la station|.",
+  "text": "Les canards vivent sur l'étang, pas dans la station !",
+  "say": "Les canards vivent sur l'étang, pas dans la station !",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
   "key": "les deux sont en métal|.",
   "text": "Les deux sont en métal !",
   "say": "Les deux sont en métal !",
@@ -15352,6 +17541,48 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "les grilles attrapent les gros déchets|.",
+  "text": "Les grilles attrapent les gros déchets.",
+  "say": "Les grilles attrapent les gros déchets.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:erreur",
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "les lingettes ne se défont pas dans l'eau elles bouchent les tuyaux|.",
+  "text": "Les lingettes ne se défont pas dans l'eau : elles bouchent les tuyaux.",
+  "say": "Les lingettes ne se défont pas dans l'eau : elles bouchent les tuyaux.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "les poissons vivent dans la rivière pas dans la station|.",
+  "text": "Les poissons vivent dans la rivière, pas dans la station !",
+  "say": "Les poissons vivent dans la rivière, pas dans la station !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "maintenant elle monte tout en haut d'une grande tour|.",
+  "text": "Maintenant, elle monte tout en haut d'une grande tour.",
+  "say": "Maintenant, elle monte tout en haut d'une grande tour.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:consigne"
   ]
  },
  {
@@ -15376,6 +17607,793 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "mets le réservoir plus haut que la maison|.",
+  "text": "Mets le réservoir plus haut que la maison !",
+  "say": "Mets le réservoir plus haut que la maison !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "non la glace c'est quand il fait très froid|.",
+  "text": "Non, la glace, c'est quand il fait très froid.",
+  "say": "Non, la glace, c'est quand il fait très froid.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "non la vapeur c'est quand ça chauffe|.",
+  "text": "Non, la vapeur, c'est quand ça chauffe.",
+  "say": "Non, la vapeur, c'est quand ça chauffe.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "non une lingette ne se recycle pas elle va dans la poubelle|.",
+  "text": "Non, une lingette ne se recycle pas : elle va dans la poubelle.",
+  "say": "Non, une lingette ne se recycle pas : elle va dans la poubelle.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "non|.",
+  "text": "Non !",
+  "say": "Non !",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "octave met de l'eau dans le congélateur où il fait très froid|.",
+  "text": "Octave met de l'eau dans le congélateur, où il fait très froid.",
+  "say": "Octave met de l'eau dans le congélateur, où il fait très froid.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "octave pose un glaçon au soleil|.",
+  "text": "Octave pose un glaçon au soleil.",
+  "say": "Octave pose un glaçon au soleil.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "octave répond dans les égouts jusqu'à la station d'épuration|.",
+  "text": "» Octave répond : « Dans les égouts, jusqu'à la station d'épuration.",
+  "say": "Octave répond : Dans les égouts, jusqu'à la station d'épuration.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "octave répond suis-moi une pompe une usine un château d'eau et voilà la maison|.",
+  "text": "» Octave répond : « Suis-moi : une pompe, une usine, un château d'eau… et voilà la maison !",
+  "say": "Octave répond : Suis-moi : une pompe, une usine, un château d'eau… et voilà la maison !",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "oh toute cette eau qui coule pour rien|.",
+  "text": "Oh, toute cette eau qui coule pour rien !",
+  "say": "Oh, toute cette eau qui coule pour rien !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "on enlève le bouchon glouglou|.",
+  "text": "On enlève le bouchon : glouglou !",
+  "say": "On enlève le bouchon : glouglou !",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "on ferme le robinet pendant le brossage|.",
+  "text": "On ferme le robinet pendant le brossage.",
+  "say": "On ferme le robinet pendant le brossage.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "on la pompe tout en haut de la colline|.",
+  "text": "On la pompe tout en haut de la colline.",
+  "say": "On la pompe tout en haut de la colline.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "on le ferme pendant qu'on se brosse les dents l'eau ne coule pas pour rien|.",
+  "text": "On le ferme pendant qu'on se brosse les dents : l'eau ne coule pas pour rien.",
+  "say": "On le ferme pendant qu'on se brosse les dents : l'eau ne coule pas pour rien.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "on ouvre le robinet pour remplir le bain|.",
+  "text": "On ouvre le robinet pour remplir le bain.",
+  "say": "On ouvre le robinet pour remplir le bain.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "on peut la boire|.",
+  "text": "On peut la boire !",
+  "say": "On peut la boire !",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "on tire la chasse d'eau|.",
+  "text": "On tire la chasse d'eau.",
+  "say": "On tire la chasse d'eau.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où arrive-t-elle|?",
+  "text": "Où arrive-t-elle ?",
+  "say": "Où arrive-t-elle ?",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où arrive-t-il|?",
+  "text": "Où arrive-t-il ?",
+  "say": "Où arrive-t-il ?",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où est partie l'eau|?",
+  "text": "Où est partie l'eau ?",
+  "say": "Où est partie l'eau ?",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "où faut-il la jeter|?",
+  "text": "Où faut-il la jeter ?",
+  "say": "Où faut-il la jeter ?",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où faut-il mettre le réservoir pour que l'eau arrive toute seule au robinet|?",
+  "text": "Où faut-il mettre le réservoir, pour que l'eau arrive toute seule au robinet ?",
+  "say": "Où faut-il mettre le réservoir, pour que l'eau arrive toute seule au robinet ?",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où va l'eau de la station d'épuration|?",
+  "text": "Où va l'eau de la station d'épuration ?",
+  "say": "Où va l'eau de la station d'épuration ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "où va l'eau sale de l'évier|?",
+  "text": "Où va l'eau sale de l'évier ?",
+  "say": "Où va l'eau sale de l'évier ?",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où va l'eau sale|?",
+  "text": "Où va l'eau sale ?",
+  "say": "Où va l'eau sale ?",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où va ploc|?",
+  "text": "Où va Ploc ?",
+  "say": "Où va Ploc ?",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où va-t-elle ensuite|?",
+  "text": "Où va-t-elle ensuite ?",
+  "say": "Où va-t-elle ensuite ?",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où va-t-elle|?",
+  "text": "Où va-t-elle ?",
+  "say": "Où va-t-elle ?",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où va-t-il|?",
+  "text": "Où va-t-il ?",
+  "say": "Où va-t-il ?",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "oui on peut la boire|.",
+  "text": "Oui, on peut la boire !",
+  "say": "Oui, on peut la boire !",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "pas à l'usine mais à la rivière|.",
+  "text": "Pas à l'usine, mais à la rivière.",
+  "say": "Pas à l'usine, mais à la rivière.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "pas l'eau sale|.",
+  "text": "Pas l'eau sale !",
+  "say": "Pas l'eau sale !",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "pas si vite|.",
+  "text": "Pas si vite !",
+  "say": "Pas si vite !",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "pendant qu'on se brosse les dents on n'a pas besoin d'eau|.",
+  "text": "Pendant qu'on se brosse les dents, on n'a pas besoin d'eau.",
+  "say": "Pendant qu'on se brosse les dents, on n'a pas besoin d'eau.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "pense à une glace au chocolat en plein soleil|.",
+  "text": "Pense à une glace au chocolat en plein soleil…",
+  "say": "Pense à une glace au chocolat en plein soleil…",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "ploc a besoin de toi pour garder l'eau propre et ne pas la gaspiller|.",
+  "text": "Ploc a besoin de toi pour garder l'eau propre, et ne pas la gaspiller.",
+  "say": "Ploc a besoin de toi pour garder l'eau propre, et ne pas la gaspiller.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "ploc a utilisé une lingette|.",
+  "text": "Ploc a utilisé une lingette.",
+  "say": "Ploc a utilisé une lingette.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "ploc demande et l'eau sale où va-t-elle|?",
+  "text": "Ploc demande : « Et l'eau sale, où va-t-elle ?",
+  "say": "Ploc demande : Et l'eau sale, où va-t-elle ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "ploc demande octave comment l'eau arrive-t-elle dans le robinet|?",
+  "text": "Ploc demande : « Octave, comment l'eau arrive-t-elle dans le robinet ?",
+  "say": "Ploc demande : Octave, comment l'eau arrive-t-elle dans le robinet ?",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "ploc est dans la nappe sous la terre|.",
+  "text": "Ploc est dans la nappe, sous la terre.",
+  "say": "Ploc est dans la nappe, sous la terre.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "ploc est revenu chez octave|.",
+  "text": "Ploc est revenu chez Octave !",
+  "say": "Ploc est revenu chez Octave !",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "ploc monte monte dans le ciel|.",
+  "text": "Ploc monte, monte dans le ciel.",
+  "say": "Ploc monte, monte dans le ciel.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "ploc nage dans la mer|.",
+  "text": "Ploc nage dans la mer.",
+  "say": "Ploc nage dans la mer.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "ploc retrouve d'autres gouttes ensemble elles forment un nuage|.",
+  "text": "Ploc retrouve d'autres gouttes : ensemble, elles forment un nuage.",
+  "say": "Ploc retrouve d'autres gouttes : ensemble, elles forment un nuage.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "ploc suit la rivière qui coule qui coule|.",
+  "text": "Ploc suit la rivière, qui coule, qui coule…",
+  "say": "Ploc suit la rivière, qui coule, qui coule…",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "ploc tombe dans le champ|.",
+  "text": "Ploc tombe dans le champ.",
+  "say": "Ploc tombe dans le champ.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "ploc tombe sur la colline|.",
+  "text": "Ploc tombe sur la colline.",
+  "say": "Ploc tombe sur la colline.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "plus l'eau tombe de haut plus elle pousse fort|.",
+  "text": "Plus l'eau tombe de haut, plus elle pousse fort.",
+  "say": "Plus l'eau tombe de haut, plus elle pousse fort.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "plus le château d'eau est haut plus l'eau pousse fort dans les tuyaux|.",
+  "text": "Plus le château d'eau est haut, plus l'eau pousse fort dans les tuyaux !",
+  "say": "Plus le château d'eau est haut, plus l'eau pousse fort dans les tuyaux !",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "pour la maison on va chercher de l'eau dans la rivière|.",
+  "text": "Pour la maison, on va chercher de l'eau dans la rivière.",
+  "say": "Pour la maison, on va chercher de l'eau dans la rivière.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "pour se laver qu'est-ce qui utilise le moins d'eau|?",
+  "text": "Pour se laver, qu'est-ce qui utilise le moins d'eau ?",
+  "say": "Pour se laver, qu'est-ce qui utilise le moins d'eau ?",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "qu'est-ce qu'on peut jeter dans les toilettes|?",
+  "text": "Qu'est-ce qu'on peut jeter dans les toilettes ?",
+  "say": "Qu'est-ce qu'on peut jeter dans les toilettes ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "qu'est-ce qui l'aspire|?",
+  "text": "Qu'est-ce qui l'aspire ?",
+  "say": "Qu'est-ce qui l'aspire ?",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "qu'est-ce qui va le chercher pour la maison|?",
+  "text": "Qu'est-ce qui va le chercher pour la maison ?",
+  "say": "Qu'est-ce qui va le chercher pour la maison ?",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "quand il fait très froid les gouttes gèlent avant de tomber|.",
+  "text": "Quand il fait très froid, les gouttes gèlent avant de tomber.",
+  "say": "Quand il fait très froid, les gouttes gèlent avant de tomber.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "quand il gèle l'eau de la flaque devient de la glace|.",
+  "text": "Quand il gèle, l'eau de la flaque devient de la glace.",
+  "say": "Quand il gèle, l'eau de la flaque devient de la glace.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "quand il gèle l'eau devient dure|.",
+  "text": "Quand il gèle, l'eau devient dure.",
+  "say": "Quand il gèle, l'eau devient dure.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "quand l'eau ne bouge plus la saleté descend tout doucement|.",
+  "text": "Quand l'eau ne bouge plus, la saleté descend tout doucement.",
+  "say": "Quand l'eau ne bouge plus, la saleté descend tout doucement.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "quand le nuage est trop lourd les gouttes tombent|.",
+  "text": "Quand le nuage est trop lourd, les gouttes tombent.",
+  "say": "Quand le nuage est trop lourd, les gouttes tombent.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "quand le soleil chauffe l'eau elle devient si légère qu'elle s'envole|.",
+  "text": "Quand le soleil chauffe l'eau, elle devient si légère qu'elle s'envole.",
+  "say": "Quand le soleil chauffe l'eau, elle devient si légère qu'elle s'envole.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "que devient l'eau de la glace de l'eau ou de la vapeur|?",
+  "text": "Que devient l'eau : de la glace, de l'eau, ou de la vapeur ?",
+  "say": "Que devient l'eau : de la glace, de l'eau, ou de la vapeur ?",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "que devient l'eau du linge de la glace de l'eau ou de la vapeur|?",
+  "text": "Que devient l'eau du linge : de la glace, de l'eau, ou de la vapeur ?",
+  "say": "Que devient l'eau du linge : de la glace, de l'eau, ou de la vapeur ?",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "que devient la flaque d'eau de la glace de l'eau ou de la vapeur|?",
+  "text": "Que devient la flaque d'eau : de la glace, de l'eau, ou de la vapeur ?",
+  "say": "Que devient la flaque d'eau : de la glace, de l'eau, ou de la vapeur ?",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "que devient la neige de la glace de l'eau ou de la vapeur|?",
+  "text": "Que devient la neige : de la glace, de l'eau, ou de la vapeur ?",
+  "say": "Que devient la neige : de la glace, de l'eau, ou de la vapeur ?",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "que devient-elle de la glace de l'eau ou de la vapeur|?",
+  "text": "Que devient-elle : de la glace, de l'eau, ou de la vapeur ?",
+  "say": "Que devient-elle : de la glace, de l'eau, ou de la vapeur ?",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "que devient-il de la glace de l'eau ou de la vapeur|?",
+  "text": "Que devient-il : de la glace, de l'eau, ou de la vapeur ?",
+  "say": "Que devient-il : de la glace, de l'eau, ou de la vapeur ?",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "que fais-tu du robinet|?",
+  "text": "Que fais-tu du robinet ?",
+  "say": "Que fais-tu du robinet ?",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "que se passe-t-il|?",
+  "text": "Que se passe-t-il ?",
+  "say": "Que se passe-t-il ?",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "que tombe-t-il|?",
+  "text": "Que tombe-t-il ?",
+  "say": "Que tombe-t-il ?",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "qui a besoin d'eau pour vivre|?",
+  "text": "Qui a besoin d'eau pour vivre ?",
+  "say": "Qui a besoin d'eau pour vivre ?",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "regarde bien à la fin il n'y a plus d'eau du tout|.",
+  "text": "Regarde bien : à la fin, il n'y a plus d'eau du tout.",
+  "say": "Regarde bien : à la fin, il n'y a plus d'eau du tout.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "regarde bien et écoute encore|.",
+  "text": "Regarde bien, et écoute encore.",
+  "say": "Regarde bien, et écoute encore.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "regarde ce qui reste|.",
+  "text": "Regarde ce qui reste.",
+  "say": "Regarde ce qui reste.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "regarde ce qui vient avant et ce qui vient après|.",
+  "text": "Regarde ce qui vient avant, et ce qui vient après.",
+  "say": "Regarde ce qui vient avant, et ce qui vient après.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "regarde le miroir après la douche il est couvert de petites gouttes|.",
+  "text": "Regarde le miroir après la douche : il est couvert de petites gouttes.",
+  "say": "Regarde le miroir après la douche : il est couvert de petites gouttes.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "si on peut la boire|.",
+  "text": "Si, on peut la boire !",
+  "say": "Si, on peut la boire !",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "sous la terre il y a de l'eau cachée|.",
+  "text": "Sous la terre, il y a de l'eau cachée.",
+  "say": "Sous la terre, il y a de l'eau cachée.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "suivons-le|.",
+  "text": "Suivons-le !",
+  "say": "Suivons-le !",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "goutte:intro"
   ]
  },
  {
@@ -15413,6 +18431,16 @@
   ]
  },
  {
+  "key": "surtout pas|.",
+  "text": "Surtout pas !",
+  "say": "Surtout pas !",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
   "key": "touche ce qui s'est vraiment passé|.",
   "text": "Touche ce qui s'est vraiment passé.",
   "say": "Touche ce qui s'est vraiment passé.",
@@ -15420,6 +18448,66 @@
   "words": 6,
   "fams": [
    "flotte:erreur"
+  ]
+ },
+ {
+  "key": "touche l'eau qui arrive avant d'être nettoyée|.",
+  "text": "Touche l'eau qui arrive, avant d'être nettoyée.",
+  "say": "Touche l'eau qui arrive, avant d'être nettoyée.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "touche le verre d'eau qui en sort|.",
+  "text": "Touche le verre d'eau qui en sort.",
+  "say": "Touche le verre d'eau qui en sort.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "tout dépend du chaud et du froid|.",
+  "text": "Tout dépend du chaud et du froid.",
+  "say": "Tout dépend du chaud et du froid.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "toutes les rivières finissent par arriver au même endroit tout en bas|.",
+  "text": "Toutes les rivières finissent par arriver au même endroit, tout en bas.",
+  "say": "Toutes les rivières finissent par arriver au même endroit, tout en bas.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "tu te brosses les dents|.",
+  "text": "Tu te brosses les dents.",
+  "say": "Tu te brosses les dents.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "un adulte fait chauffer de l'eau dans une casserole très fort|.",
+  "text": "Un adulte fait chauffer de l'eau dans une casserole, très fort.",
+  "say": "Un adulte fait chauffer de l'eau dans une casserole, très fort.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:consigne"
   ]
  },
  {
@@ -15435,6 +18523,26 @@
   ]
  },
  {
+  "key": "un grand bain il faut le remplir tout entier ça fait beaucoup d'eau|.",
+  "text": "Un grand bain, il faut le remplir tout entier : ça fait beaucoup d'eau !",
+  "say": "Un grand bain, il faut le remplir tout entier : ça fait beaucoup d'eau !",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "goutte:erreur"
+  ]
+ },
+ {
+  "key": "un grand réservoir tout en haut de la colline|.",
+  "text": "Un grand réservoir, tout en haut de la colline.",
+  "say": "Un grand réservoir, tout en haut de la colline.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
   "key": "un œuf frais coule au fond de l'eau|.",
   "text": "Un œuf frais coule au fond de l'eau.",
   "say": "Un œuf frais coule au fond de l'eau.",
@@ -15444,6 +18552,139 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "une douche rapide utilise bien moins d'eau qu'un grand bain|.",
+  "text": "Une douche rapide utilise bien moins d'eau qu'un grand bain.",
+  "say": "Une douche rapide utilise bien moins d'eau qu'un grand bain.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "une grande tour avec un gros réservoir tout en haut|.",
+  "text": "Une grande tour, avec un gros réservoir tout en haut.",
+  "say": "Une grande tour, avec un gros réservoir tout en haut.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "une lingette ne se défait pas dans l'eau et elle ne se recycle pas|.",
+  "text": "Une lingette ne se défait pas dans l'eau, et elle ne se recycle pas.",
+  "say": "Une lingette ne se défait pas dans l'eau, et elle ne se recycle pas.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "goutte:indice"
+  ]
+ },
+ {
+  "key": "une pompe aspire l'eau de la nappe et l'envoie à l'usine|.",
+  "text": "Une pompe aspire l'eau de la nappe, et l'envoie à l'usine.",
+  "say": "Une pompe aspire l'eau de la nappe, et l'envoie à l'usine.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "une pompe aspire l'eau de la rivière et l'envoie à l'usine|.",
+  "text": "Une pompe aspire l'eau de la rivière, et l'envoie à l'usine.",
+  "say": "Une pompe aspire l'eau de la rivière, et l'envoie à l'usine.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite"
+  ]
+ },
+ {
+  "key": "voici l'eau d'une flaque|.",
+  "text": "Voici l'eau d'une flaque.",
+  "say": "Voici l'eau d'une flaque.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "voici l'eau de la mer|.",
+  "text": "Voici l'eau de la mer.",
+  "say": "Voici l'eau de la mer.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "voici l'eau de la rivière|.",
+  "text": "Voici l'eau de la rivière.",
+  "say": "Voici l'eau de la rivière.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "voici l'eau du robinet à la maison|.",
+  "text": "Voici l'eau du robinet, à la maison.",
+  "say": "Voici l'eau du robinet, à la maison.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "voici l'eau qui sort de la station d'épuration|.",
+  "text": "Voici l'eau qui sort de la station d'épuration.",
+  "say": "Voici l'eau qui sort de la station d'épuration.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "voici l'usine d'eau potable|.",
+  "text": "Voici l'usine d'eau potable.",
+  "say": "Voici l'usine d'eau potable.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:consigne"
+  ]
+ },
+ {
+  "key": "voici les bons gestes|.",
+  "text": "Voici les bons gestes !",
+  "say": "Voici les bons gestes !",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "goutte:intro"
+  ]
+ },
+ {
+  "key": "voici ploc une petite goutte d'eau|.",
+  "text": "Voici Ploc, une petite goutte d'eau.",
+  "say": "Voici Ploc, une petite goutte d'eau.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "goutte:intro"
   ]
  },
  {
@@ -18397,6 +21638,16 @@
   ]
  },
  {
+  "key": "puis 4 flèches vers le haut|.",
+  "text": "puis 4 flèches vers le haut.",
+  "say": "puis quatre flèches vers le haut.",
+  "pack": "enigmes",
+  "words": 6,
+  "fams": [
+   "bip:indice"
+  ]
+ },
+ {
   "key": "puis on le pose sur la feuille|.",
   "text": "puis on le pose sur la feuille.",
   "say": "puis on le pose sur la feuille.",
@@ -18823,7 +22074,6 @@
   "pack": "mots",
   "words": 1,
   "fams": [
-   "chants:erreur",
    "chants:indice",
    "chants:reussite",
    "syllabes:indice"
@@ -18852,8 +22102,8 @@
  },
  {
   "key": "ballon|,",
-  "text": "ballon,",
-  "say": "ballon,",
+  "text": "ballon…",
+  "say": "ballon…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -18876,8 +22126,8 @@
  },
  {
   "key": "banane|,",
-  "text": "banane,",
-  "say": "banane,",
+  "text": "banane…",
+  "say": "banane…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -18889,8 +22139,8 @@
  },
  {
   "key": "bas|,",
-  "text": "bas,",
-  "say": "bas,",
+  "text": "bas…",
+  "say": "bas…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -18912,8 +22162,8 @@
  },
  {
   "key": "bateau|,",
-  "text": "bateau,",
-  "say": "bateau,",
+  "text": "bateau…",
+  "say": "bateau…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -18925,8 +22175,8 @@
  },
  {
   "key": "bé|,",
-  "text": "bé,",
-  "say": "bé,",
+  "text": "bé…",
+  "say": "bé…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -18958,8 +22208,8 @@
  },
  {
   "key": "bébé|,",
-  "text": "bébé,",
-  "say": "bébé,",
+  "text": "bébé…",
+  "say": "bébé…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -18982,8 +22232,8 @@
  },
  {
   "key": "beurre|,",
-  "text": "beurre,",
-  "say": "beurre,",
+  "text": "beurre…",
+  "say": "beurre…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -18995,8 +22245,8 @@
  },
  {
   "key": "bon|,",
-  "text": "bon,",
-  "say": "bon,",
+  "text": "bon…",
+  "say": "bon…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -19018,8 +22268,8 @@
  },
  {
   "key": "bonbon|,",
-  "text": "bonbon,",
-  "say": "bonbon,",
+  "text": "bonbon…",
+  "say": "bonbon…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -20111,7 +23361,7 @@
  },
  {
   "key": "ça commence par la|.",
-  "text": "Ça commence par la.",
+  "text": "Ça commence par « la ».",
   "say": "Ça commence par la.",
   "pack": "mots",
   "words": 4,
@@ -20262,7 +23512,7 @@
  },
  {
   "key": "ça commence par rat|.",
-  "text": "Ça commence par rat.",
+  "text": "Ça commence par « rat ».",
   "say": "Ça commence par rat.",
   "pack": "mots",
   "words": 4,
@@ -20353,7 +23603,7 @@
  },
  {
   "key": "ça commence par vé|.",
-  "text": "Ça commence par vé.",
+  "text": "Ça commence par « vé ».",
   "say": "Ça commence par vé.",
   "pack": "mots",
   "words": 4,
@@ -20395,8 +23645,8 @@
  },
  {
   "key": "ca|,",
-  "text": "ca,",
-  "say": "ca,",
+  "text": "ca…",
+  "say": "ca…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -20419,8 +23669,8 @@
  },
  {
   "key": "cadeau|,",
-  "text": "cadeau,",
-  "say": "cadeau,",
+  "text": "cadeau…",
+  "say": "cadeau…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -20443,8 +23693,8 @@
  },
  {
   "key": "café|,",
-  "text": "café,",
-  "say": "café,",
+  "text": "café…",
+  "say": "café…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -20467,8 +23717,8 @@
  },
  {
   "key": "camion|,",
-  "text": "camion,",
-  "say": "camion,",
+  "text": "camion…",
+  "say": "camion…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -20501,8 +23751,8 @@
  },
  {
   "key": "canard|,",
-  "text": "canard,",
-  "say": "canard,",
+  "text": "canard…",
+  "say": "canard…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -21396,8 +24646,8 @@
  },
  {
   "key": "chaud|,",
-  "text": "chaud,",
-  "say": "chaud,",
+  "text": "chaud…",
+  "say": "chaud…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -21544,8 +24794,8 @@
  },
  {
   "key": "co|,",
-  "text": "co,",
-  "say": "co,",
+  "text": "co…",
+  "say": "co…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -21614,12 +24864,11 @@
  },
  {
   "key": "croc|,",
-  "text": "croc,",
-  "say": "croc,",
+  "text": "croc…",
+  "say": "croc…",
   "pack": "mots",
   "words": 1,
   "fams": [
-   "chants:erreur",
    "chants:indice",
    "chants:reussite"
   ]
@@ -21680,8 +24929,8 @@
  },
  {
   "key": "da|,",
-  "text": "da :",
-  "say": "da :",
+  "text": "da,",
+  "say": "da,",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -21792,8 +25041,8 @@
  },
  {
   "key": "dos|,",
-  "text": "dos :",
-  "say": "dos :",
+  "text": "dos,",
+  "say": "dos,",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -25357,8 +28606,8 @@
  },
  {
   "key": "fée|,",
-  "text": "fée :",
-  "say": "fée :",
+  "text": "fée,",
+  "say": "fée,",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -25436,8 +28685,8 @@
  },
  {
   "key": "four|,",
-  "text": "four,",
-  "say": "four,",
+  "text": "four…",
+  "say": "four…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -25496,8 +28745,8 @@
  },
  {
   "key": "fu|,",
-  "text": "fu,",
-  "say": "fu,",
+  "text": "fu…",
+  "say": "fu…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -25562,8 +28811,8 @@
  },
  {
   "key": "gars|,",
-  "text": "gars,",
-  "say": "gars,",
+  "text": "gars…",
+  "say": "gars…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -25631,8 +28880,8 @@
  },
  {
   "key": "goût|,",
-  "text": "goût,",
-  "say": "goût,",
+  "text": "goût…",
+  "say": "goût…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -25835,8 +29084,8 @@
  },
  {
   "key": "la banane|",
-  "text": "La banane",
-  "say": "La banane",
+  "text": "la banane",
+  "say": "la banane",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -25846,8 +29095,8 @@
  },
  {
   "key": "la cabane|",
-  "text": "La cabane",
-  "say": "La cabane",
+  "text": "la cabane",
+  "say": "la cabane",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -25857,8 +29106,8 @@
  },
  {
   "key": "la fée|",
-  "text": "La fée",
-  "say": "La fée",
+  "text": "la fée",
+  "say": "la fée",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -25878,8 +29127,8 @@
  },
  {
   "key": "la lune|",
-  "text": "La lune",
-  "say": "La lune",
+  "text": "la lune",
+  "say": "la lune",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -25899,8 +29148,8 @@
  },
  {
   "key": "la moto|",
-  "text": "La moto",
-  "say": "La moto",
+  "text": "la moto",
+  "say": "la moto",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -25910,8 +29159,8 @@
  },
  {
   "key": "la olive|",
-  "text": "La olive",
-  "say": "La olive",
+  "text": "la olive",
+  "say": "la olive",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -25921,8 +29170,8 @@
  },
  {
   "key": "la plume|",
-  "text": "La plume",
-  "say": "La plume",
+  "text": "la plume",
+  "say": "la plume",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -25932,8 +29181,8 @@
  },
  {
   "key": "la radio|",
-  "text": "La radio",
-  "say": "La radio",
+  "text": "la radio",
+  "say": "la radio",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -25943,8 +29192,8 @@
  },
  {
   "key": "la salade|",
-  "text": "La salade",
-  "say": "La salade",
+  "text": "la salade",
+  "say": "la salade",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -25964,8 +29213,8 @@
  },
  {
   "key": "la tomate|",
-  "text": "La tomate",
-  "say": "La tomate",
+  "text": "la tomate",
+  "say": "la tomate",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -25975,8 +29224,8 @@
  },
  {
   "key": "la tulipe|",
-  "text": "La tulipe",
-  "say": "La tulipe",
+  "text": "la tulipe",
+  "say": "la tulipe",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -25986,8 +29235,8 @@
  },
  {
   "key": "la vache|",
-  "text": "La vache",
-  "say": "La vache",
+  "text": "la vache",
+  "say": "la vache",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26011,8 +29260,8 @@
  },
  {
   "key": "lait|,",
-  "text": "lait,",
-  "say": "lait,",
+  "text": "lait…",
+  "say": "lait…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -26081,8 +29330,8 @@
  },
  {
   "key": "le chat|",
-  "text": "Le chat",
-  "say": "Le chat",
+  "text": "le chat",
+  "say": "le chat",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26092,8 +29341,8 @@
  },
  {
   "key": "le dé|",
-  "text": "Le dé",
-  "say": "Le dé",
+  "text": "le dé",
+  "say": "le dé",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26113,8 +29362,8 @@
  },
  {
   "key": "le judo|",
-  "text": "Le judo",
-  "say": "Le judo",
+  "text": "le judo",
+  "say": "le judo",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26124,8 +29373,8 @@
  },
  {
   "key": "le lama|",
-  "text": "Le lama",
-  "say": "Le lama",
+  "text": "le lama",
+  "say": "le lama",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26135,8 +29384,8 @@
  },
  {
   "key": "le lion|",
-  "text": "Le lion",
-  "say": "Le lion",
+  "text": "le lion",
+  "say": "le lion",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26146,8 +29395,8 @@
  },
  {
   "key": "le lit|",
-  "text": "Le lit",
-  "say": "Le lit",
+  "text": "le lit",
+  "say": "le lit",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26157,8 +29406,8 @@
  },
  {
   "key": "le loup|",
-  "text": "Le loup",
-  "say": "Le loup",
+  "text": "le loup",
+  "say": "le loup",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26168,8 +29417,8 @@
  },
  {
   "key": "le mouton|",
-  "text": "Le mouton",
-  "say": "Le mouton",
+  "text": "le mouton",
+  "say": "le mouton",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26179,8 +29428,8 @@
  },
  {
   "key": "le mur|",
-  "text": "Le mur",
-  "say": "Le mur",
+  "text": "le mur",
+  "say": "le mur",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26190,8 +29439,8 @@
  },
  {
   "key": "le nid|",
-  "text": "Le nid",
-  "say": "Le nid",
+  "text": "le nid",
+  "say": "le nid",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26201,8 +29450,8 @@
  },
  {
   "key": "le piano|",
-  "text": "Le piano",
-  "say": "Le piano",
+  "text": "le piano",
+  "say": "le piano",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26222,8 +29471,8 @@
  },
  {
   "key": "le rat|",
-  "text": "Le rat",
-  "say": "Le rat",
+  "text": "le rat",
+  "say": "le rat",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26233,8 +29482,8 @@
  },
  {
   "key": "le riz|",
-  "text": "Le riz",
-  "say": "Le riz",
+  "text": "le riz",
+  "say": "le riz",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26244,8 +29493,8 @@
  },
  {
   "key": "le robot|",
-  "text": "Le robot",
-  "say": "Le robot",
+  "text": "le robot",
+  "say": "le robot",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26255,8 +29504,8 @@
  },
  {
   "key": "le sofa|",
-  "text": "Le sofa",
-  "say": "Le sofa",
+  "text": "le sofa",
+  "say": "le sofa",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26266,8 +29515,8 @@
  },
  {
   "key": "le vélo|",
-  "text": "Le vélo",
-  "say": "Le vélo",
+  "text": "le vélo",
+  "say": "le vélo",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -26462,8 +29711,8 @@
  },
  {
   "key": "lot|,",
-  "text": "lot :",
-  "say": "lot :",
+  "text": "lot,",
+  "say": "lot,",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -26517,8 +29766,8 @@
  },
  {
   "key": "ma|,",
-  "text": "ma :",
-  "say": "ma :",
+  "text": "ma,",
+  "say": "ma,",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -26552,8 +29801,8 @@
  },
  {
   "key": "mais|,",
-  "text": "mais,",
-  "say": "mais,",
+  "text": "mais…",
+  "say": "mais…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -26598,8 +29847,8 @@
  },
  {
   "key": "mare|,",
-  "text": "mare,",
-  "say": "mare,",
+  "text": "mare…",
+  "say": "mare…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -26664,8 +29913,8 @@
  },
  {
   "key": "mie|,",
-  "text": "mie :",
-  "say": "mie :",
+  "text": "mie,",
+  "say": "mie,",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -26762,8 +30011,8 @@
  },
  {
   "key": "mou|,",
-  "text": "mou,",
-  "say": "mou,",
+  "text": "mou…",
+  "say": "mou…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -26875,8 +30124,8 @@
  },
  {
   "key": "nos|,",
-  "text": "nos,",
-  "say": "nos,",
+  "text": "nos…",
+  "say": "nos…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -27418,8 +30667,8 @@
  },
  {
   "key": "or|,",
-  "text": "or,",
-  "say": "or,",
+  "text": "or…",
+  "say": "or…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -29409,8 +32658,8 @@
  },
  {
   "key": "pan|,",
-  "text": "pan,",
-  "say": "pan,",
+  "text": "pan…",
+  "say": "pan…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -29465,8 +32714,8 @@
  },
  {
   "key": "papi|",
-  "text": "Papi",
-  "say": "Papi",
+  "text": "papi",
+  "say": "papi",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -29621,8 +32870,8 @@
  },
  {
   "key": "pie|,",
-  "text": "pie,",
-  "say": "pie,",
+  "text": "pie…",
+  "say": "pie…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -29678,8 +32927,8 @@
  },
  {
   "key": "pois|,",
-  "text": "pois,",
-  "say": "pois,",
+  "text": "pois…",
+  "say": "pois…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -29749,8 +32998,8 @@
  },
  {
   "key": "pou|,",
-  "text": "pou,",
-  "say": "pou,",
+  "text": "pou…",
+  "say": "pou…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -31458,8 +34707,8 @@
  },
  {
   "key": "quand|,",
-  "text": "quand,",
-  "say": "quand,",
+  "text": "quand…",
+  "say": "quand…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -31470,8 +34719,8 @@
  },
  {
   "key": "qui|,",
-  "text": "qui,",
-  "say": "qui,",
+  "text": "qui…",
+  "say": "qui…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -31516,8 +34765,8 @@
  },
  {
   "key": "raie|,",
-  "text": "raie,",
-  "say": "raie,",
+  "text": "raie…",
+  "say": "raie…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -31892,8 +35141,8 @@
  },
  {
   "key": "rot|,",
-  "text": "rot,",
-  "say": "rot,",
+  "text": "rot…",
+  "say": "rot…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -32095,8 +35344,8 @@
  },
  {
   "key": "serre|,",
-  "text": "serre,",
-  "say": "serre,",
+  "text": "serre…",
+  "say": "serre…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -32107,8 +35356,8 @@
  },
  {
   "key": "si|,",
-  "text": "si,",
-  "say": "si,",
+  "text": "si…",
+  "say": "si…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -32130,8 +35379,8 @@
  },
  {
   "key": "sol|,",
-  "text": "sol,",
-  "say": "sol,",
+  "text": "sol…",
+  "say": "sol…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -32210,8 +35459,8 @@
  },
  {
   "key": "sous|,",
-  "text": "sous,",
-  "say": "sous,",
+  "text": "sous…",
+  "say": "sous…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -32346,8 +35595,8 @@
  },
  {
   "key": "thé|,",
-  "text": "thé,",
-  "say": "thé,",
+  "text": "thé…",
+  "say": "thé…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -32433,8 +35682,8 @@
  },
  {
   "key": "tort|,",
-  "text": "tort,",
-  "say": "tort,",
+  "text": "tort…",
+  "say": "tort…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -32479,8 +35728,8 @@
  },
  {
   "key": "tôt|,",
-  "text": "tôt :",
-  "say": "tôt :",
+  "text": "tôt,",
+  "say": "tôt,",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -33540,8 +36789,8 @@
  },
  {
   "key": "trac|,",
-  "text": "trac,",
-  "say": "trac,",
+  "text": "trac…",
+  "say": "trac…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -34200,8 +37449,8 @@
  },
  {
   "key": "tu|,",
-  "text": "tu :",
-  "say": "tu :",
+  "text": "tu,",
+  "say": "tu,",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -34352,8 +37601,8 @@
  },
  {
   "key": "vie|,",
-  "text": "vie,",
-  "say": "vie,",
+  "text": "vie…",
+  "say": "vie…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -34389,8 +37638,8 @@
  },
  {
   "key": "voix|,",
-  "text": "voix,",
-  "say": "voix,",
+  "text": "voix…",
+  "say": "voix…",
   "pack": "mots",
   "words": 1,
   "fams": [
@@ -37673,6 +40922,16 @@
   "key": "il reste 11 biscuits à partager|.",
   "text": "Il reste 11 biscuits à partager.",
   "say": "Il reste onze biscuits à partager.",
+  "pack": "nombres",
+  "words": 6,
+  "fams": [
+   "partage:rendu"
+  ]
+ },
+ {
+  "key": "il reste 12 biscuits à partager|.",
+  "text": "Il reste 12 biscuits à partager.",
+  "say": "Il reste douze biscuits à partager.",
   "pack": "nombres",
   "words": 6,
   "fams": [
@@ -41618,8 +44877,8 @@
  },
  {
   "key": "blanc|,",
-  "text": "blanc,",
-  "say": "blanc,",
+  "text": "blanc;",
+  "say": "blanc;",
   "pack": "port",
   "words": 1,
   "fams": [
@@ -41629,8 +44888,8 @@
  },
  {
   "key": "blanc|.",
-  "text": "blanc.",
-  "say": "blanc.",
+  "text": "blanc",
+  "say": "blanc",
   "pack": "port",
   "words": 1,
   "fams": [
@@ -41670,8 +44929,8 @@
  },
  {
   "key": "bleu|,",
-  "text": "bleu,",
-  "say": "bleu,",
+  "text": "bleu;",
+  "say": "bleu;",
   "pack": "port",
   "words": 1,
   "fams": [
@@ -41681,8 +44940,8 @@
  },
  {
   "key": "bleu|.",
-  "text": "bleu.",
-  "say": "bleu.",
+  "text": "bleu",
+  "say": "bleu",
   "pack": "port",
   "words": 1,
   "fams": [
@@ -43364,8 +46623,8 @@
  },
  {
   "key": "jaune|,",
-  "text": "jaune,",
-  "say": "jaune,",
+  "text": "jaune;",
+  "say": "jaune;",
   "pack": "port",
   "words": 1,
   "fams": [
@@ -45085,8 +48344,8 @@
  },
  {
   "key": "noir|,",
-  "text": "noir,",
-  "say": "noir,",
+  "text": "noir;",
+  "say": "noir;",
   "pack": "port",
   "words": 1,
   "fams": [
@@ -45116,8 +48375,8 @@
  },
  {
   "key": "orange|,",
-  "text": "orange,",
-  "say": "orange,",
+  "text": "orange;",
+  "say": "orange;",
   "pack": "port",
   "words": 1,
   "fams": [
@@ -46748,8 +50007,8 @@
  },
  {
   "key": "rouge|,",
-  "text": "rouge,",
-  "say": "rouge,",
+  "text": "rouge;",
+  "say": "rouge;",
   "pack": "port",
   "words": 1,
   "fams": [
@@ -47570,8 +50829,8 @@
  },
  {
   "key": "vert|,",
-  "text": "vert,",
-  "say": "vert,",
+  "text": "vert;",
+  "say": "vert;",
   "pack": "port",
   "words": 1,
   "fams": [

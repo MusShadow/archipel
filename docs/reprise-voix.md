@@ -5,9 +5,10 @@ Le README décrit l'appli, les îles, l'organisation du code et les tests ; ici,
 
 ## Où en est Archipel (novembre 2026)
 
-- Livraisons 1, 2 et 3 terminées et en ligne : https://musshadow.github.io/archipel/
+- Livraisons 1, 2 et 2 bis terminées et en ligne : https://musshadow.github.io/archipel/
   (GitHub Pages, publié automatiquement à chaque envoi sur `main` par `.github/workflows/pages.yml`).
-- Livraison 3 : Plume parle avec une voix naturelle pré-enregistrée, gardée pour le hors-ligne.
+- Livraison 2 bis : Plume parle avec une voix naturelle pré-enregistrée, gardée pour le hors-ligne.
+- Livraison 3 (en cours) : île des Découvertes — le voyage de la goutte, puis le volcan, le grand tri et le voyage des déchets.
 - Tests : `bun test`, `tsc --noEmit -p .`, et quatre parcours Playwright avec `/usr/bin/google-chrome` :
   `tests/e2e/smoke.py`, `tests/e2e/livraison2.py`, `tests/e2e/offline.py`, `tests/e2e/voix.py`.
 - Pour qui : un enfant de 4 ans et demi, sur iPad, accompagné d'un adulte. Tout est en français ; le parent est
@@ -54,7 +55,18 @@ Le README décrit l'appli, les îles, l'organisation du code et les tests ; ici,
    `VOIX_PART` pour assembler.
 5. Vérifier la couverture sur un inventaire tiré avec une autre graine (100 % en novembre 2026) :
    `SEED=42 ITEMS=40 OUT=/tmp/inv.json bun scripts/voix/inventaire.ts && bun scripts/voix/couverture.ts /tmp/inv.json`.
-6. `bun run build`, les tests, puis committer `dist/`, `public/voix/` et `voix/` avec le code.
+6. Contrôler les clips nouveaux : `python3 scripts/voix/finales.py fichier_de_clés.txt` (souffle d'un [s] muet
+   prononcé en fin de clip, et mots que la reconnaissance a entendus avec un son en trop : « chaude » pour « chaud »,
+   « formant » pour « forment »). Un soupçon se confirme en refaisant la phrase deux fois : une faute de la voix se
+   répète, une erreur de la reconnaissance non. La correction va dans `voix/prononciation.json`.
+7. `bun run build`, les tests, puis committer `dist/`, `public/voix/` et `voix/` avec le code.
+
+`clips.ts` garde les clips de la liste précédente que l'inventaire (tiré au hasard) n'a pas ressortis, sauf pour les
+activités qui donnent la liste complète de leurs phrases (`voiceLines()`, aujourd'hui le voyage de la goutte).
+
+Pièges connus de la voix (novembre 2026) : devant deux-points, une consonne finale muette est prononcée (« qui choisis :
+» devenait « choisisses ») : ces deux-points deviennent une virgule pour la voix ; « chaud » et « froid » se disaient
+avec un [d] ; certains verbes en -ent se disaient en « -ant » (« elles formant ») : on écrit le singulier.
 
 Les écritures des syllabes dites seules sont dans `voix/prononciation.json` (la première est préférée ; les
 suivantes ne servent que si la reconnaissance vocale l'entend mal). Les pseudo-mots changés sont repris dans les

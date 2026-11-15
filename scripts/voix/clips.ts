@@ -87,13 +87,23 @@ export function spoken(text: string): string {
     .replace(/\s+([.,])/g, "$1").replace(/\s{2,}/g, " ").trim();
 }
 
-const out = [...clips.values()].map((c) => ({
+// L'inventaire tire les exercices au hasard : une phrase rare peut ne pas sortir cette fois-ci. Les clips de la liste
+// précédente sont donc gardés (KEEP=0 pour repartir de zéro, avec un inventaire très complet).
+const OUT = process.env.OUT ?? join(root, "voix/clips.json");
+const previous: { key: string; text: string; say: string; pack: string; words: number; fams: string[] }[] = (() => {
+  try { return process.env.KEEP === "0" ? [] : JSON.parse(readFileSync(OUT, "utf8")); } catch { return []; }
+})();
+// Sauf pour les activités qui donnent la liste complète de leurs phrases (voiceLines) : un clip absent y est périmé.
+const COMPLETE = ["goutte:"];
+const kept = previous.filter((c) => !clips.has(c.key) && !c.fams.every((f) => COMPLETE.some((x) => f.startsWith(x))));
+const out = [...kept.map((c) => ({ ...c })), ...[...clips.values()].map((c) => ({
   key: c.key, text: c.text, say: spoken(c.text),
   pack: c.packs.size === 1 ? [...c.packs][0] : "commun",
   words: c.key.split("|")[0].split(" ").length,
   fams: [...c.fams].sort(),
-})).sort((a, b) => a.pack.localeCompare(b.pack) || a.key.localeCompare(b.key, "fr"));
-writeFileSync(process.env.OUT ?? join(root, "voix/clips.json"), JSON.stringify(out, null, 1));
+}))].sort((a, b) => a.pack.localeCompare(b.pack) || a.key.localeCompare(b.key, "fr"));
+writeFileSync(OUT, JSON.stringify(out, null, 1));
+if (kept.length) console.log(`${kept.length} clips gardés de la liste précédente (phrases rares pas tirées cette fois)`);
 const byPack: Record<string, { n: number; min: number }> = {};
 for (const c of out) { const b = (byPack[c.pack] ??= { n: 0, min: 0 }); b.n++; b.min += (c.say.length + 6) / 13 / 60; }
 console.log(`${out.length} clips`, Object.entries(byPack).map(([k, v]) => `${k}: ${v.n} (${v.min.toFixed(0)} min)`).join(", "));

@@ -214,6 +214,26 @@ button.tok{cursor:pointer;border-color:var(--line)}
 .fobj.floats{top:24%;animation:bob 1.8s ease-in-out 1.2s infinite}
 .fobj.sinks{top:66%;transition:top 1.45s cubic-bezier(.5,0,.8,.6)}
 @keyframes bob{50%{margin-top:6px}}
+/* Voyage de la goutte */
+.wart{display:flex;align-items:center;justify-content:center;width:max(64px,calc(var(--u) * 108));height:max(64px,calc(var(--u) * 108));font-size:max(50px,calc(var(--u) * 86));line-height:1;flex:0 0 auto}
+.wart svg{display:block;width:100%;height:100%}
+.wart.big{width:max(84px,calc(var(--u) * 150));height:max(84px,calc(var(--u) * 150));font-size:max(66px,calc(var(--u) * 120))}
+.wart.scene{width:max(110px,calc(var(--u) * 190));height:max(96px,calc(var(--u) * 160))}
+.wart.wq{font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:800;color:var(--violet);border:max(3px,calc(var(--u) * 4)) dashed #CDBFF2;border-radius:22px;font-size:max(46px,calc(var(--u) * 80));background:#F8F5FF}
+.wpanel{gap:max(10px,calc(var(--u) * 22));padding:max(10px,calc(var(--u) * 16)) max(14px,calc(var(--u) * 30))}
+.warrow{font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:800;font-size:max(26px,calc(var(--u) * 48));color:var(--grey);line-height:1}
+.wstrip{display:flex;align-items:center;justify-content:center;gap:max(4px,calc(var(--u) * 10));flex-wrap:wrap;max-width:96vw}
+.wstep{display:flex;flex-direction:column;align-items:center;gap:4px;padding:max(6px,calc(var(--u) * 10));border:max(2px,calc(var(--u) * 3)) solid var(--line);border-radius:18px;background:#fff}
+.wstep.plain{border:none;padding:0;background:none}
+.wstep .wart{width:max(56px,calc(var(--u) * 100));height:max(56px,calc(var(--u) * 100));font-size:max(44px,calc(var(--u) * 80))}
+.wstep.plain .wart.big{width:max(84px,calc(var(--u) * 150));height:max(84px,calc(var(--u) * 150));font-size:max(66px,calc(var(--u) * 120))}
+.wstep.miss{border-style:dashed;border-color:#CDBFF2;background:#F8F5FF}
+.wstep.miss .wart.wq{border:none;background:none}
+.wlab{font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:700;font-size:max(13px,calc(var(--u) * 19));color:var(--grey);text-align:center;max-width:8.5em;line-height:1.1}
+.wcard .wart{width:max(60px,calc(var(--u) * 104));height:max(60px,calc(var(--u) * 104))}
+.wcard.wide{width:max(150px,calc(var(--u) * 260))}
+.wcard.wide .wart.scene{width:max(110px,calc(var(--u) * 190));height:max(96px,calc(var(--u) * 160))}
+.wwho{display:block;width:max(64px,calc(var(--u) * 104));height:max(64px,calc(var(--u) * 104))}
 /* Atelier des drapeaux */
 .flagrow{gap:max(14px,calc(var(--u) * 30))}
 .flagmodel{width:max(140px,calc(var(--u) * 230));aspect-ratio:94/64;border-radius:8px;transition:opacity .3s}

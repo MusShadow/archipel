@@ -4,7 +4,7 @@
 export type DomainId = "lecture" | "nombres" | "voyages" | "enigmes" | "decouvertes" | "atelier" | "coeur";
 export type Form = "manipulation" | "image" | "symbole" | "recit" | "corrige";
 export type ActivityId = "drapeau" | "marche" | "syllabes" | "chants" | "lis" | "nenuphars" | "partage"
-  | "formes" | "bip" | "motifs" | "theatre" | "flotte" | "atelierdrapeaux" | "dessin" | "histoires";
+  | "formes" | "bip" | "motifs" | "theatre" | "flotte" | "goutte" | "atelierdrapeaux" | "dessin" | "histoires";
 export type Mastery = "nouveau" | "decouverte" | "en-cours" | "acquise" | "consolidee";
 
 export interface DomainDef { id: DomainId; label: string; color: string; island: string }
@@ -60,6 +60,12 @@ export const SKILLS: SkillDef[] = [
   { id: "ENIG.MOTIFS", domain: "enigmes", label: "Continuer et corriger des suites", palier: 1, dRef: 0, activity: "motifs" },
   { id: "ENIG.MATRICES", domain: "enigmes", label: "Compléter un tableau à double entrée", palier: 3, dRef: 1.3, activity: "motifs" },
   { id: "DECOUV.FLOTTE", domain: "decouvertes", label: "Prédire, tester : flotte ou coule ?", palier: 1, dRef: 0.2, activity: "flotte" },
+  { id: "DECOUV.EAU.CYCLE", domain: "decouvertes", label: "Le voyage de l'eau dans la nature : mer, vapeur, nuage, pluie, rivière", palier: 1, dRef: -0.3, activity: "goutte" },
+  { id: "DECOUV.EAU.ETATS", domain: "decouvertes", label: "Glace, eau, vapeur : ce que font le chaud et le froid", palier: 2, dRef: 0.3, activity: "goutte" },
+  { id: "DECOUV.EAU.ROBINET", domain: "decouvertes", label: "D'où vient l'eau du robinet : pompe, usine, château d'eau", palier: 2, dRef: 0.6, activity: "goutte" },
+  { id: "DECOUV.EAU.EPURATION", domain: "decouvertes", label: "Où va l'eau sale : égouts, station d'épuration", palier: 2, dRef: 0.9, activity: "goutte" },
+  { id: "DECOUV.EAU.TOUR", domain: "decouvertes", label: "Tout le voyage de l'eau, de la mer au robinet et retour", palier: 3, dRef: 1.3, activity: "goutte" },
+  { id: "DECOUV.EAU.GESTES", domain: "decouvertes", label: "Les bons gestes pour l'eau : lingettes, robinet, douche", palier: 2, dRef: 0.4, activity: "goutte" },
   { id: "COEUR.EMOTIONS", domain: "coeur", label: "Reconnaître et nommer les émotions", palier: 1, dRef: -0.6, activity: "theatre" },
   { id: "COEUR.CAUSES", domain: "coeur", label: "Comprendre pourquoi on ressent une émotion", palier: 1, dRef: 0, activity: "theatre" },
   { id: "COEUR.AIDER", domain: "coeur", label: "Choisir une façon d'aider", palier: 1, dRef: -0.2, activity: "theatre" },

@@ -143,6 +143,11 @@ export const DEFIS: Record<string, string[]> = {
     "Fais une boule de pâte à modeler, puis aplatis-la en barque : flotte-t-elle ?",
     "Pose une orange dans l'eau, puis épluche-la et réessaie !",
   ],
+  goutte: [
+    "Avec un adulte, fabrique un mini château d'eau : un entonnoir, un tuyau, de l'eau. Plus tu montes l'entonnoir, plus l'eau gicle loin !",
+    "Après la douche, regarde la buée sur le miroir : c'est la vapeur qui redevient de l'eau.",
+    "En promenade, cherche le château d'eau le plus proche de chez toi.",
+  ],
   theatre: [
     "Joue à « devine mon émotion » : fais une grimace, l'adulte devine.",
     "Raconte un moment où tu as été très content aujourd'hui.",
