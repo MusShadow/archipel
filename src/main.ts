@@ -4,7 +4,7 @@ import { nav } from "./nav";
 import { registerChildScreens } from "./screens/child";
 import { registerParentScreens } from "./screens/parent";
 import { SCREENS_CSS } from "./screens/styles";
-import { sfx, speech } from "./services";
+import { natural, sfx, speech } from "./services";
 import { CSS } from "./ui";
 
 const style = document.createElement("style");
@@ -14,6 +14,12 @@ document.head.appendChild(style);
 app.root = document.getElementById("app")!;
 speech.rate = app.data.settings.rate;
 speech.init(app.data.settings.voiceURI);
+// Voix naturelle de Plume : pack de phrases enregistrées (la voix de l'appareil reste en secours).
+speech.mode = app.data.settings.voix;
+speech.childName = () => app.profile?.name ?? null;
+if (speech.mode === "naturelle") void natural.init();
+// Pour les tests de bout en bout et le diagnostic : état de la voix, phrases dites par la voix de l'appareil.
+(globalThis as any).__archipelVoix = { natural, speech };
 
 // Le son ne peut démarrer qu'après un premier contact de l'enfant (règle des navigateurs).
 window.addEventListener("pointerdown", () => sfx.unlock(), { passive: true });

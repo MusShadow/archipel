@@ -1,6 +1,7 @@
 node_modules/
 tests/e2e/shots/
 tests/e2e/shots2/
+tests/e2e/shots3/
 __pycache__/
 *.pyc
 .DS_Store

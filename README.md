@@ -5,6 +5,7 @@ Un archipel de sept îles à explorer avec Plume, un colibri voyageur : nombres,
 
 Principes : pas de publicité, pas d'achat, pas de compte, pas d'inconnus, pas d'accès libre à Internet.
 Les progrès restent sur l'appareil. Les séances sont courtes (12 minutes par défaut) et se terminent par un défi à faire hors écran.
+Plume parle avec une voix naturelle enregistrée à l'avance (voix de synthèse libre), même sans Internet.
 
 ## Livraison 1
 
@@ -28,6 +29,24 @@ Les progrès restent sur l'appareil. Les séances sont courtes (12 minutes par d
 - **Histoires sur mesure** : dans l'espace parent (onglet Histoires), Claude écrit une petite histoire avec la clé API du parent (thème, héros, longueur, sons connus de l'enfant ; jamais son prénom). Les mots probablement trop difficiles sont surlignés ; le parent valide, réécrit ou jette. L'enfant lit sur l'île des Mots : mots touchables, phrase lue à voix haute, question de compréhension.
 - **Carnet** : drapeau de mon île, gommettes, galerie des dessins (12 derniers, sur l'appareil), passeport.
 
+## Livraison 3 : la voix naturelle de Plume
+
+- **Voix naturelle** : tout ce que dit Plume a été enregistré à l'avance avec une voix française neuronale libre,
+  *Supertonic 3* (voix « F1 », débit posé), choisie à l'écoute parmi trois. Environ 4 700 clips (près de 2 heures de parole) : phrases entières,
+  et pour les phrases à trous très variées (listes de mots, programmes de Bip, suites de motifs), des morceaux coupés
+  à la ponctuation et aux fins de liste, que la lecture recolle avec les pauses de la ponctuation. Jamais de lecture
+  mot à mot sans ponctuation : ce que la voix naturelle ne peut pas dire en entier (histoires sur mesure, phrase
+  nouvelle) est lu par la voix de l'appareil, en entier.
+- **Le prénom de l'enfant n'est jamais enregistré** (le pack est public) : la voix naturelle dit la phrase sans lui
+  (« Bonjour ! » au lieu de « Bonjour Léa ! », « ton île » au lieu de « l'île de Léa »). Le prénom reste affiché.
+- **Hors ligne** : le pack (MP3 mono 32 kb/s, environ 30 Mo, un paquet commun et un par île) est servi par GitHub Pages et
+  gardé par le service worker, à part du code : une mise à jour de l'appli ne le retélécharge pas.
+- **Espace parent** (Réglages) : « Voix de Plume : Naturelle / De l'iPad », état du pack (prêt, en téléchargement,
+  indisponible), voix de l'iPad en secours, débit lent ou rapide appliqué sans changer la hauteur de la voix.
+  Les encouragements enregistrés dans le studio voix passent toujours avant Plume.
+- **Lecture** : un seul point d'entrée, `speech.say(texte, débit?)`, dont la promesse est tenue à la fin de la phrase ;
+  clips décodés et joués par l'`AudioContext` déverrouillé au premier contact de l'enfant.
+
 ## Développement
 
 Prérequis : [Bun](https://bun.sh) et TypeScript.
@@ -38,7 +57,24 @@ bun test            # tests du moteur, des contenus et des générateurs d'exerc
 tsc --noEmit -p .   # vérification des types
 python3 tests/e2e/smoke.py        # parcours complet de la livraison 1 dans Chrome (Playwright), captures dans tests/e2e/shots
 python3 tests/e2e/livraison2.py   # îles de la livraison 2, dessin au doigt simulé, histoire simulée (captures dans tests/e2e/shots2)
+python3 tests/e2e/offline.py      # démarrage sans Internet
+python3 tests/e2e/voix.py         # voix naturelle : clips, prénom retiré, repli, réglage parent, débit, hors ligne
 ```
+
+### Refaire le pack de voix (après avoir ajouté ou changé des phrases)
+
+```sh
+bun scripts/voix/inventaire.ts    # tout ce que dit Plume → voix/inventaire.json (activités jouées dans un DOM simulé)
+bun scripts/voix/clips.ts         # clips à enregistrer, par paquet → voix/clips.json
+python3 scripts/voix/generer.py   # synthèse, contrôle, paquets → public/voix/ (puis bun run build)
+bun scripts/voix/couverture.ts /tmp/inv.json   # part des phrases dites en entier, sur un inventaire tiré avec SEED=42
+```
+
+`generer.py` reprend tels quels les clips du pack publié (voir `voix/pack.json`) et ne fabrique que les nouveaux.
+Prérequis et modèles : en tête du script (sherpa-onnx 1.13, ffmpeg, modèles téléchargés depuis les versions publiées
+de sherpa-onnx sur GitHub). Chaque clip est contrôlé par une reconnaissance vocale qui compare les sons attendus et
+entendus ; un clip raté est refait, et ceux qui restent douteux sont listés dans `voix/rapport.json`.
+Les écritures des syllabes dites seules (« pu », « sue »…) sont dans `voix/prononciation.json`.
 
 Aucune dépendance d'exécution. Les illustrations sont des formes vectorielles générées par `scripts/gen_art_ts.py` (voir `scripts/archi_lib.py`) dans `src/art_static.ts`.
 
@@ -55,7 +91,10 @@ Aucune dépendance d'exécution. Les illustrations sont des formes vectorielles 
 | `src/shapes.ts` | Formes planes et solides (SVG) |
 | `src/drawings.ts` | Les dessins pas à pas (étapes, traits) et la correction d'un trait (couverture, précision) |
 | `src/stories.ts` | Histoires sur mesure : demande à Claude, lecture de la réponse, repérage des mots difficiles |
-| `src/services.ts` | Stockage local, synthèse vocale, sons synthétisés |
+| `src/services.ts` | Stockage local, voix (pack de voix naturelle, synthèse de l'appareil en secours), sons synthétisés |
+| `src/voix.ts` | Voix naturelle, partie texte (sans DOM, testée) : mots et clés, prénom retiré, plan de lecture en clips, débit |
+| `scripts/voix/` | Inventaire des phrases, liste des clips, génération et contrôle du pack de voix |
+| `public/voix/` | Le pack de voix publié : index et paquets audio (noms à empreinte) |
 
 Ajouter une activité : créer un module qui implémente `ActivityModule` (générer, afficher, indices, gommette, astuce parent), déclarer ses compétences dans `core.ts`, puis l'associer à son île dans `src/activities/index.ts`.
 
@@ -73,5 +112,18 @@ vérifié par `python3 tests/e2e/offline.py`.
 
 Le mode d'emploi complet (installation sur l'écran d'accueil, Accès guidé, sauvegarde) est dans le document « Archipel sur l'iPad — mode d'emploi ».
 
-- La voix de Plume utilise la synthèse vocale de l'appareil. Pour une voix plus naturelle : Réglages › Accessibilité › Contenu énoncé › Voix › Français, puis télécharger une voix « améliorée ». Elle se choisit ensuite dans l'espace parent.
+- Plume parle avec la voix naturelle dès que le pack est téléchargé (la première fois, quelques minutes en Wi-Fi,
+  appli ouverte) ; avant, et pour les histoires sur mesure, c'est la voix française de base de l'iPad (Safari ne donne
+  pas accès aux voix téléchargées ni à celles de Siri). Le réglage « Voix de Plume » de l'espace parent permet de
+  revenir à la voix de l'iPad.
 - Le mode « Accès guidé » de l'iPad (Réglages › Accessibilité) permet de verrouiller l'appareil sur l'application pendant la séance.
+
+## Licences et crédits
+
+- **Voix de Plume** : clips générés avec *Supertonic 3* © Supertone Inc. (style F1). Le modèle est sous licence
+  [OpenRAIL-M](https://huggingface.co/Supertone/supertonic-3/blob/main/LICENSE), qui interdit certains usages
+  (Attachment A) et demande d'indiquer qu'un contenu est généré par une machine : l'espace parent précise que c'est
+  une voix de synthèse. Le modèle lui-même n'est pas distribué avec l'appli, seulement les clips.
+- Génération : [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) (Apache-2.0). Contrôle des clips, outils non
+  distribués : *Parakeet TDT 0.6B v3* (NVIDIA, CC-BY-4.0) et eSpeak NG (GPL-3.0).
+- Voix écartées après essai : Kokoro v1.0 (« ff_siwis ») et Piper (« siwis », « upmc »), moins nettes en français.

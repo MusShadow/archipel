@@ -1,0 +1,301 @@
+{
+ "clips": 4664,
+ "octets": 30080568,
+ "minutes": 116.1,
+ "a_revoir": [
+  {
+   "key": "dos|.",
+   "say": "dos.",
+   "heard": "Jeudi, d'eau.",
+   "per": 0.286
+  },
+  {
+   "key": "papi|.",
+   "say": "Papi.",
+   "heard": "Jeudi, papy.",
+   "per": 0.25
+  },
+  {
+   "key": "regarde un phare et une poignée|.",
+   "say": "Regarde : un phare et une poignée.",
+   "heard": "Regarde un ph et une poignée.",
+   "per": 0.158
+  },
+  {
+   "key": "un phare et une poignée|.",
+   "say": "Un phare et une poignée.",
+   "heard": "Un ph et une poignée.",
+   "per": 0.231
+  },
+  {
+   "key": "a mie ami|.",
+   "say": "a… mie : ami !",
+   "heard": "Ah, Mia Mi.",
+   "per": 0.167
+  },
+  {
+   "key": "c'est dos|.",
+   "say": "c'est dos.",
+   "heard": "Jeudi, c'est d'eau.",
+   "per": 0.222
+  },
+  {
+   "key": "ça c'est a|.",
+   "say": "Ça, c'est : a.",
+   "heard": "Sassy.",
+   "per": 0.5
+  },
+  {
+   "key": "ça c'est da|.",
+   "say": "Ça, c'est da.",
+   "heard": "Ça c'est d'un.",
+   "per": 0.167
+  },
+  {
+   "key": "ça c'est dos|.",
+   "say": "Ça, c'est dos.",
+   "heard": "Ça c'est d'eau.",
+   "per": 0.286
+  },
+  {
+   "key": "ça c'est é|.",
+   "say": "Ça, c'est : é.",
+   "heard": "Ça c'est et",
+   "per": 0.571
+  },
+  {
+   "key": "ça c'est i|.",
+   "say": "Ça, c'est : i.",
+   "heard": "Ça c'est.",
+   "per": 0.2
+  },
+  {
+   "key": "ça c'est mes|.",
+   "say": "Ça, c'est mes.",
+   "heard": "Ça c'est née.",
+   "per": 0.167
+  },
+  {
+   "key": "ça c'est pot|.",
+   "say": "Ça, c'est pot.",
+   "heard": "Ça c'est pas.",
+   "per": 0.167
+  },
+  {
+   "key": "ça c'est rat|.",
+   "say": "Ça, c'est ra.",
+   "heard": "Ça sera.",
+   "per": 0.167
+  },
+  {
+   "key": "ça c'est ta|.",
+   "say": "Ça, c'est ta.",
+   "heard": "Ça c'est un...",
+   "per": 0.167
+  },
+  {
+   "key": "ça c'est tôt|.",
+   "say": "Ça, c'est tôt.",
+   "heard": "Ça c'est tout.",
+   "per": 0.167
+  },
+  {
+   "key": "ça c'est u|.",
+   "say": "Ça, c'est : u.",
+   "heard": "Ça c'est.",
+   "per": 0.2
+  },
+  {
+   "key": "ça commence par dos|.",
+   "say": "Ça commence par : dos.",
+   "heard": "Ça commence par Do.",
+   "per": 0.154
+  },
+  {
+   "key": "ça commence par fée|.",
+   "say": "Ça commence par : fée.",
+   "heard": "Ça commence par F.",
+   "per": 0.167
+  },
+  {
+   "key": "dos mie nos domino|.",
+   "say": "dos… mie… nos : domino !",
+   "heard": "Do Mi Nos Dominos",
+   "per": 0.154
+  },
+  {
+   "key": "dos|,",
+   "say": "dos :",
+   "heard": "Jeudi, Do.",
+   "per": 0.286
+  },
+  {
+   "key": "écoute bien a|.",
+   "say": "Écoute bien : a.",
+   "heard": "Écoute bien.",
+   "per": 0.222
+  },
+  {
+   "key": "écoute bien dos|.",
+   "say": "Écoute bien : dos.",
+   "heard": "Écoute bien d'eau.",
+   "per": 0.2
+  },
+  {
+   "key": "écoute bien é|.",
+   "say": "Écoute bien : é.",
+   "heard": "Écoute bien et",
+   "per": 0.471
+  },
+  {
+   "key": "écoute bien ju dos|.",
+   "say": "Écoute bien : jus… dos.",
+   "heard": "Écoute bien, Jus d'eau.",
+   "per": 0.167
+  },
+  {
+   "key": "écoute dos mie nos|.",
+   "say": "Écoute : dos… mie… nos.",
+   "heard": "Écoute do, mi, no.",
+   "per": 0.182
+  },
+  {
+   "key": "écoute é|.",
+   "say": "Écoute : é.",
+   "heard": "Je dis, écoutez.",
+   "per": 0.471
+  },
+  {
+   "key": "écoute ju dos|.",
+   "say": "Écoute : jus… dos.",
+   "heard": "Écoute jus. Do.",
+   "per": 0.222
+  },
+  {
+   "key": "écoute mot tôt|.",
+   "say": "Écoute : mot… tôt.",
+   "heard": "Écoute, mot tour.",
+   "per": 0.25
+  },
+  {
+   "key": "écoute pie a nos|.",
+   "say": "Écoute : pie… a… nos.",
+   "heard": "Écoute puis uh no.",
+   "per": 0.333
+  },
+  {
+   "key": "est sur papi|.",
+   "say": "est sur papi.",
+   "heard": "Et sur papy.",
+   "per": 0.25
+  },
+  {
+   "key": "et la fée|.",
+   "say": "et la fée.",
+   "heard": "El a fe.",
+   "per": 0.2
+  },
+  {
+   "key": "et papi|.",
+   "say": "et papi.",
+   "heard": "Jeudi, et papy.",
+   "per": 0.222
+  },
+  {
+   "key": "mie dit midi|.",
+   "say": "mie… dit : midi !",
+   "heard": "Me, D me di.",
+   "per": 0.375
+  },
+  {
+   "key": "mot na co monaco|.",
+   "say": "mot… na… co : Monaco !",
+   "heard": "Mo Na Komunaku.",
+   "per": 0.167
+  },
+  {
+   "key": "on cherche dos|.",
+   "say": "On cherche dos.",
+   "heard": "On cherche d'eau.",
+   "per": 0.25
+  },
+  {
+   "key": "ou beurre|?",
+   "say": "ou beurre ?",
+   "heard": "Jeudi, Uber.",
+   "per": 0.375
+  },
+  {
+   "key": "oui dos|.",
+   "say": "Oui, dos !",
+   "heard": "Je dis, oui d'où.",
+   "per": 0.222
+  },
+  {
+   "key": "oui é|.",
+   "say": "Oui, é !",
+   "heard": "Je dis oui et.",
+   "per": 0.533
+  },
+  {
+   "key": "oui lot|.",
+   "say": "Oui, lot !",
+   "heard": "Je dis Willow.",
+   "per": 0.375
+  },
+  {
+   "key": "ti pie tipi|.",
+   "say": "ti… pie : tipi !",
+   "heard": "T PTP",
+   "per": 0.5
+  },
+  {
+   "key": "tôt go togo|.",
+   "say": "tôt… go : Togo !",
+   "heard": "To go to go.",
+   "per": 0.25
+  },
+  {
+   "key": "touche é|.",
+   "say": "Touche : é.",
+   "heard": "Jeudi, touche et.",
+   "per": 0.5
+  },
+  {
+   "key": "tu as fabriqué dos|.",
+   "say": "Tu as fabriqué dos.",
+   "heard": "Tu as fabriqué d'eau.",
+   "per": 0.154
+  },
+  {
+   "key": "ça fait 19|.",
+   "say": "ça fait dix-neuf.",
+   "heard": "Ça fait Dx9.",
+   "per": 0.3
+  },
+  {
+   "key": "oui 17 pommes|.",
+   "say": "Oui, dix-sept pommes !",
+   "heard": "Oui, Dick C Pommes.",
+   "per": 0.2
+  },
+  {
+   "key": "oui 5 pommes|.",
+   "say": "Oui, cinq pommes !",
+   "heard": "Oui, symphomme.",
+   "per": 0.25
+  },
+  {
+   "key": "ça se lit chili|.",
+   "say": "Ça se lit : Chili.",
+   "heard": "Sasli Shidi.",
+   "per": 0.2
+  },
+  {
+   "key": "ça se lit togo|.",
+   "say": "Ça se lit : Togo.",
+   "heard": "Sasley to go.",
+   "per": 0.3
+  }
+ ]
+}

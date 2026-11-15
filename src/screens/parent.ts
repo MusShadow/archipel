@@ -5,7 +5,7 @@ import { DEFIS, GRAPHEME_ORDER, READING_LEVELS } from "../content";
 import { DAY, DOMAINS, MASTERY_LABEL, SKILLS, masteryOf, type DomainId, type Mastery } from "../core";
 import { FLAG_BY_CODE, FLAGS } from "../flags";
 import { nav } from "../nav";
-import { VOICE_SLOTS, defaultData, frenchVoiceLabel, normalize, saveData, speech, storageFailed, voice, type Profile } from "../services";
+import { VOICE_SLOTS, defaultData, frenchVoiceLabel, natural, normalize, saveData, speech, storageFailed, voice, type Profile, type VoixMode } from "../services";
 import { avatarSVG, h, plumeSVG } from "../ui";
 import { pinPad, sheet } from "./common";
 import { gallery } from "./draw";
@@ -308,8 +308,29 @@ function parentSpace(tab?: string) {
       h("option", { value: "" }, "Automatique (meilleure voix française)"),
       ...voices.map((v) => h("option", { value: v.voiceURI, selected: v.voiceURI === st.voiceURI }, frenchVoiceLabel(v)))) as HTMLSelectElement;
     sel.addEventListener("change", () => { st.voiceURI = sel.value || null; speech.init(st.voiceURI); save(); });
+    // Voix naturelle (pack enregistré) ou synthèse de l'iPad ; l'état du pack est affiché en clair.
+    const status = h("p", { class: "muted", style: "margin-top:8px", "data-voix-etat": "" });
+    const mo = (n: number) => `${Math.max(1, Math.round(n / 1e6))} Mo`;
+    const showStatus = () => {
+      const ix = natural.index;
+      if (st.voix === "appareil") status.textContent = "Plume parle avec la synthèse vocale de l'appareil.";
+      else if (natural.state === "prête" && ix) status.textContent = natural.complete
+        ? `Voix naturelle prête : ${Object.keys(ix.clips).length} phrases et mots enregistrés (${mo(ix.octets)}), gardés sur l'appareil pour jouer sans Internet. C'est une voix de synthèse (Supertonic 3), générée par ordinateur à l'avance. Les histoires sur mesure et les rares phrases non enregistrées sont lues par la voix de l'appareil.`
+        : `Voix naturelle prête, le reste se télécharge (${mo(natural.loadedBytes)} sur ${mo(ix.octets)}). Gardez l'appli ouverte en Wi-Fi quelques minutes la première fois.`;
+      else if (natural.state === "chargement") status.textContent = "Chargement de la voix naturelle…";
+      else status.textContent = "Voix naturelle indisponible ici (pas encore téléchargée, ou appli ouverte hors de son adresse) : Plume utilise la voix de l'appareil.";
+    };
+    natural.onchange = () => { if (status.isConnected) showStatus(); };
+    showStatus();
+    const modeField = field("Voix", opts<VoixMode>([{ label: "Naturelle", value: "naturelle" }, { label: "De l'iPad", value: "appareil" }], st.voix, (v) => {
+      st.voix = v; speech.mode = v; save();
+      if (v === "naturelle") void natural.init();
+      showStatus();
+    }));
     const voice = h("div", { class: "p-card" }, h("h2", {}, "Voix de Plume"),
-      voices.length ? field("Voix", sel) : h("p", { class: "muted" }, "Aucune voix française trouvée sur cet appareil pour l'instant. Sur iPad : Réglages › Accessibilité › Contenu énoncé › Voix › Français, puis téléchargez une voix « améliorée »."),
+      modeField, status,
+      h("div", { style: "height:12px" }),
+      voices.length ? field("Voix de l'iPad (en secours)", sel) : h("p", { class: "muted" }, "Aucune voix française de l'appareil pour l'instant : seules les phrases enregistrées (voix naturelle) peuvent être dites."),
       h("div", { style: "height:12px" }),
       field("Débit", opts([{ label: "Lent", value: 0.8 }, { label: "Normal", value: 0.9 }, { label: "Rapide", value: 1 }], st.rate, (v) => { st.rate = v; speech.rate = v; save(); })),
       h("div", { class: "p-row", style: "margin-top:12px" }, h("button", { type: "button", class: "pbtn ghost", onclick: () => speech.say("Bonjour ! Je suis Plume. On part en voyage ?") }, "Écouter Plume")));

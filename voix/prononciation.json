@@ -1,0 +1,374 @@
+{
+ "_": "Syllabes et morceaux de mots dits seuls : écritures à essayer, dans l'ordre de préférence. La première est gardée si le contrôle l'entend à peu près juste ; sinon on essaie les suivantes. « sons » : sons attendus quand eSpeak se trompe.",
+ "essais": {
+  "pu": [
+   "pu",
+   "pue"
+  ],
+  "lu": [
+   "lu",
+   "lue"
+  ],
+  "mu": [
+   "mu",
+   "mue"
+  ],
+  "su": [
+   "sue",
+   "su"
+  ],
+  "nu": [
+   "nu",
+   "nue"
+  ],
+  "fût": [
+   "fut",
+   "fus",
+   "fût"
+  ],
+  "fu": [
+   "fut",
+   "fus"
+  ],
+  "du": [
+   "du"
+  ],
+  "tu": [
+   "tu"
+  ],
+  "vu": [
+   "vu"
+  ],
+  "ju": [
+   "jus",
+   "ju"
+  ],
+  "cu": [
+   "cu"
+  ],
+  "plu": [
+   "plu",
+   "plue"
+  ],
+  "pé": [
+   "pé"
+  ],
+  "vé": [
+   "vé"
+  ],
+  "bé": [
+   "bé"
+  ],
+  "ré": [
+   "ré"
+  ],
+  "dé": [
+   "dé"
+  ],
+  "né": [
+   "né"
+  ],
+  "mé": [
+   "mes",
+   "mé"
+  ],
+  "lé": [
+   "les",
+   "lé"
+  ],
+  "sé": [
+   "ces",
+   "sé"
+  ],
+  "té": [
+   "thé",
+   "té"
+  ],
+  "fé": [
+   "fée",
+   "fé"
+  ],
+  "ti": [
+   "ti",
+   "tie"
+  ],
+  "fi": [
+   "fi",
+   "fis"
+  ],
+  "na": [
+   "na"
+  ],
+  "da": [
+   "da"
+  ],
+  "fa": [
+   "fa",
+   "fas"
+  ],
+  "ta": [
+   "ta"
+  ],
+  "a": [
+   "a",
+   "ah"
+  ],
+  "i": [
+   "i"
+  ],
+  "o": [
+   "o",
+   "oh"
+  ],
+  "u": [
+   "u"
+  ],
+  "é": [
+   "é",
+   "hé"
+  ],
+  "zin": [
+   "zin"
+  ],
+  "lèye": [
+   "lèye",
+   "leil"
+  ],
+  "zée": [
+   "zée"
+  ],
+  "ture": [
+   "ture"
+  ],
+  "teur": [
+   "teur"
+  ],
+  "mion": [
+   "mion"
+  ],
+  "chon": [
+   "chon"
+  ],
+  "yon": [
+   "yon"
+  ],
+  "dil": [
+   "dil",
+   "dile"
+  ],
+  "zion": [
+   "zion"
+  ],
+  "rafe": [
+   "rafe"
+  ],
+  "ji": [
+   "ji",
+   "gi"
+  ],
+  "gui": [
+   "gui"
+  ],
+  "nane": [
+   "nane"
+  ],
+  "mate": [
+   "mate"
+  ],
+  "co": [
+   "co"
+  ],
+  "ca": [
+   "ca"
+  ],
+  "to": [
+   "tôt"
+  ],
+  "go": [
+   "go"
+  ],
+  "ba": [
+   "ba"
+  ],
+  "do": [
+   "do"
+  ],
+  "no": [
+   "no"
+  ],
+  "ma": [
+   "ma"
+  ],
+  "la": [
+   "la"
+  ],
+  "sa": [
+   "sa"
+  ],
+  "pa": [
+   "pa"
+  ],
+  "va": [
+   "va"
+  ],
+  "ra": [
+   "ra"
+  ],
+  "mi": [
+   "mi"
+  ],
+  "li": [
+   "li"
+  ],
+  "ri": [
+   "ri"
+  ],
+  "si": [
+   "si"
+  ],
+  "pi": [
+   "pi"
+  ],
+  "vi": [
+   "vi"
+  ],
+  "ni": [
+   "ni"
+  ],
+  "di": [
+   "di"
+  ],
+  "mo": [
+   "mo"
+  ],
+  "lo": [
+   "lo"
+  ],
+  "ro": [
+   "ro"
+  ],
+  "so": [
+   "so"
+  ],
+  "po": [
+   "po"
+  ],
+  "fo": [
+   "fo"
+  ],
+  "vo": [
+   "vo"
+  ],
+  "le": [
+   "le"
+  ],
+  "pe": [
+   "pe"
+  ],
+  "te": [
+   "te"
+  ],
+  "ne": [
+   "ne"
+  ],
+  "de": [
+   "de"
+  ],
+  "me": [
+   "me"
+  ],
+  "ve": [
+   "ve"
+  ],
+  "che": [
+   "che"
+  ],
+  "bot": [
+   "beau",
+   "bo"
+  ],
+  "lit": [
+   "lit",
+   "lie"
+  ],
+  "riz": [
+   "riz",
+   "ri"
+  ],
+  "nid": [
+   "nid",
+   "ni"
+  ],
+  "on": [
+   "on"
+  ],
+  "rat": [
+   "rat"
+  ]
+ },
+ "sons": {
+  "lèye": "lɛj",
+  "leil": "lɛj",
+  "laye": "lɛj",
+  "to": "to",
+  "é": "e",
+  "hé": "e",
+  "co": "ko",
+  "ca": "ka",
+  "go": "ɡo",
+  "bot": "bo",
+  "plu": "ply",
+  "pe": "pø",
+  "te": "tø",
+  "ne": "nø",
+  "de": "dø",
+  "me": "mø",
+  "ve": "vø",
+  "che": "ʃø",
+  "le": "lø",
+  "tôt": "to",
+  "beau": "bo",
+  "fut": "fy",
+  "fus": "fy",
+  "fût": "fy",
+  "fu": "fy",
+  "jus": "ʒy",
+  "ju": "ʒy",
+  "sue": "sy"
+ },
+ "corrections": [
+  [
+   "\\bloup\\b",
+   "lou"
+  ],
+  [
+   "\\brat\\b",
+   "ra"
+  ],
+  [
+   "\\bchat\\b",
+   "cha"
+  ],
+  [
+   "\\briz\\b",
+   "ri"
+  ],
+  [
+   "\\brime\\b",
+   "rimme"
+  ],
+  [
+   "\\bhuit(?=\\s*(?:[.,!?;:…]|$)|\\s+[aeiouyéèêàâîôûœh])",
+   "huite"
+  ],
+  [
+   "^(Ça, c'est|Touche) ([aiouéy])([.!])$",
+   "\\1 : \\2\\3"
+  ],
+  [
+   "^(Ça se lit|Ça commence par) (?![:])",
+   "\\1 : "
+  ]
+ ],
+ "_corrections": "Corrections appliquées à tous les textes dits par la voix (la voix lit les lettres) : « loup », « rat », « chat » et « riz » se disaient avec leur consonne muette (« loupe », « rate », « château »), « qui rime » s'entendait « qui règle », « huit » en fin de phrase perdait son t, une voyelle seule après « c'est » ou « Touche » se fondait dans le mot d'avant ; une pause est ajoutée avant le mot ou la syllabe après « Ça se lit » et « Ça commence par »."
+}
