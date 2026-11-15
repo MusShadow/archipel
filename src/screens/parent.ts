@@ -5,7 +5,7 @@ import { DEFIS, GRAPHEME_ORDER, READING_LEVELS } from "../content";
 import { DAY, DOMAINS, MASTERY_LABEL, SKILLS, masteryOf, type DomainId, type Mastery } from "../core";
 import { FLAG_BY_CODE, FLAGS } from "../flags";
 import { nav } from "../nav";
-import { VOICE_SLOTS, defaultData, frenchVoiceLabel, natural, normalize, saveData, speech, storageFailed, voice, type Profile, type VoixMode } from "../services";
+import { defaultData, frenchVoiceLabel, natural, normalize, saveData, sfx, speech, storageFailed, voice, VOICE_SLOTS, type Profile, type VoixMode } from "../services";
 import { avatarSVG, h, plumeSVG } from "../ui";
 import { pinPad, sheet } from "./common";
 import { gallery } from "./draw";
@@ -327,13 +327,26 @@ function parentSpace(tab?: string) {
       if (v === "naturelle") void natural.init();
       showStatus();
     }));
+    // « Écouter Plume » dit aussi comment la phrase est sortie : utile si la voix naturelle reste muette sur un appareil.
+    const diag = h("p", { class: "muted", style: "margin-top:8px", "data-voix-diag": "" });
+    const listen = async () => {
+      sfx.unlock(true);
+      diag.textContent = "";
+      await speech.say("Bonjour ! Je suis Plume. On part en voyage ?");
+      const why = natural.lastError || (natural.state === "prête" ? "" : natural.state === "chargement" ? "pas encore téléchargée" : "indisponible");
+      diag.textContent = speech.lastPath === "naturelle" ? "Phrase lue par la voix naturelle. Rien entendu ? Montez le volume de l'appareil."
+        : speech.lastPath === "lecteur" ? `Phrase lue par la voix naturelle, avec le lecteur audio de secours${why ? ` (moteur audio : ${why})` : ""}.`
+        : speech.lastPath === "appareil" ? (st.voix === "appareil" ? "Phrase lue par la voix de l'appareil." : `Phrase lue par la voix de l'appareil : la voix naturelle n'a pas pu jouer${why ? ` (${why})` : ""}.`)
+        : "";
+    };
     const voice = h("div", { class: "p-card" }, h("h2", {}, "Voix de Plume"),
       modeField, status,
       h("div", { style: "height:12px" }),
       voices.length ? field("Voix de l'iPad (en secours)", sel) : h("p", { class: "muted" }, "Aucune voix française de l'appareil pour l'instant : seules les phrases enregistrées (voix naturelle) peuvent être dites."),
       h("div", { style: "height:12px" }),
       field("Débit", opts([{ label: "Lent", value: 0.8 }, { label: "Normal", value: 0.9 }, { label: "Rapide", value: 1 }], st.rate, (v) => { st.rate = v; speech.rate = v; save(); })),
-      h("div", { class: "p-row", style: "margin-top:12px" }, h("button", { type: "button", class: "pbtn ghost", onclick: () => speech.say("Bonjour ! Je suis Plume. On part en voyage ?") }, "Écouter Plume")));
+      h("div", { class: "p-row", style: "margin-top:12px" }, h("button", { type: "button", class: "pbtn ghost", onclick: listen }, "Écouter Plume")),
+      diag);
 
     const cards = [session, voice];
     if (p) {

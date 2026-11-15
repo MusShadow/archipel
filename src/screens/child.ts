@@ -53,7 +53,7 @@ export function startScreen() {
   longPress(lock, 1200, () => parentGate(screen, () => nav.parent()));
 
   function choose(p: Profile, resting: boolean) {
-    sfx.unlock(); sfx.tap();
+    sfx.unlock(true); sfx.tap();
     if (!resting) { begin(p); return; }
     const until = new Date(p.restUntil!).toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
     speech.say(`Plume se repose, ${p.name}. On repart en voyage plus tard !`);

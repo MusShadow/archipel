@@ -29,7 +29,8 @@ INIT = """
   Object.defineProperty(window, 'speechSynthesis', { value: fake, configurable: true });
   window.SpeechSynthesisUtterance = function (t) { this.text = t; };
   const start = AudioBufferSourceNode.prototype.start;
-  AudioBufferSourceNode.prototype.start = function (...a) { window.__clips.push(this.buffer ? this.buffer.duration : 0); return start.apply(this, a); };
+  // Les clips seulement (pas l'échantillon de silence joué à chaque contact pour déverrouiller le son sur iPad).
+  AudioBufferSourceNode.prototype.start = function (...a) { if (this.buffer && this.buffer.duration > 0.01) window.__clips.push(this.buffer.duration); return start.apply(this, a); };
 })();
 """
 

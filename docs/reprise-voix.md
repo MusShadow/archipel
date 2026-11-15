@@ -64,6 +64,13 @@ Le README décrit l'appli, les îles, l'organisation du code et les tests ; ici,
 `clips.ts` garde les clips de la liste précédente que l'inventaire (tiré au hasard) n'a pas ressortis, sauf pour les
 activités qui donnent la liste complète de leurs phrases (`voiceLines()`, aujourd'hui le voyage de la goutte).
 
+Sur iPad (novembre 2026), la voix naturelle se taisait alors que celle de l'iPad marchait : Safari coupe le son des
+pages (Web Audio) en mode silencieux et peut laisser le contexte audio « interrompu ». Corrigé dans `services.ts` :
+session `navigator.audioSession.type = "playback"`, déverrouillage à chaque fin d'appui ou clic (`main.ts`), contexte
+recréé s'il reste bloqué, et lecteur audio HTML de secours (clips en `blob:`) avant la voix de l'appareil.
+Test : `tests/e2e/ipad.py` (iPad simulé dans Chrome, moteur audio cassé exprès). Diagnostic sur l'appareil : espace
+parent › Réglages › « Écouter Plume ».
+
 Pièges connus de la voix (novembre 2026) : devant deux-points, une consonne finale muette est prononcée (« qui choisis :
 » devenait « choisisses ») : ces deux-points deviennent une virgule pour la voix ; « chaud » et « froid » se disaient
 avec un [d] ; certains verbes en -ent se disaient en « -ant » (« elles formant ») : on écrit le singulier.

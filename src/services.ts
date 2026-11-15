@@ -80,6 +80,8 @@ class Speech {
   // Phrases dites par la voix de l'appareil faute de clip (pour vérifier la couverture du pack).
   readonly misses: string[] = [];
   private token = 0;
+  // Comment la dernière phrase a été dite (diagnostic de l'espace parent).
+  lastPath: "" | "naturelle" | "lecteur" | "appareil" = "";
   get available() { return typeof window !== "undefined" && "speechSynthesis" in window; }
   frenchVoices(): SpeechSynthesisVoice[] {
     if (!this.available) return [];
@@ -110,11 +112,19 @@ class Speech {
     this.halt();
     if (this.mode === "naturelle" && natural.state === "prête") {
       const segs = natural.plan(text, this.childName());
-      const ctx = sfx.context;
-      if (segs && segs.length && ctx && ctx.state !== "closed") {
+      if (segs && segs.length) {
         const factor = Math.min(1.3, Math.max(0.75, NORMAL_RATE / (rate ?? this.rate)));
-        return natural.play(ctx, segs, factor, () => my === this.token)
-          .then((ok) => (ok || my !== this.token ? undefined : this.device(text, rate, my)));
+        const alive = () => my === this.token;
+        const ctx = sfx.context;
+        // Moteur audio d'abord ; sur iPad, s'il ne répond pas, le lecteur audio ; en dernier, la voix de l'appareil.
+        const audio = ctx && ctx.state !== "closed" ? natural.play(ctx, segs, factor, alive) : Promise.resolve(false);
+        return audio
+          .then((ok) => {
+            if (ok) { this.lastPath = "naturelle"; return true; }
+            if (!alive()) return true;
+            return natural.playElement(segs, factor, alive).then((ok2) => { if (ok2) this.lastPath = "lecteur"; return ok2; });
+          })
+          .then((ok) => (ok || !alive() ? undefined : this.device(text, rate, my)));
       }
       if (!segs) this.miss(text);
     }
@@ -125,6 +135,7 @@ class Speech {
   }
   private device(text: string, rate: number | undefined, my: number): Promise<void> {
     if (!this.available) return Promise.resolve();
+    this.lastPath = "appareil";
     return new Promise((resolve) => {
       const u = new SpeechSynthesisUtterance(text);
       u.lang = this.voice?.lang ?? "fr-FR";
@@ -151,6 +162,25 @@ class Speech {
 declare const __VOIX__: string | undefined;
 export type VoixState = "absente" | "chargement" | "prête" | "erreur";
 const withTimeout = <T,>(p: Promise<T>, ms: number, fallback: T) => Promise.race([p, new Promise<T>((r) => setTimeout(() => r(fallback), ms))]);
+// Chaque clip commence par une étiquette ID3 (ajoutée par l'encodeur) : retirée avant le décodage, que certains
+// décodeurs supportent mal ; le MP3 commence juste après.
+export function stripID3(b: ArrayBuffer): ArrayBuffer {
+  const u = new Uint8Array(b);
+  if (u.length > 10 && u[0] === 0x49 && u[1] === 0x44 && u[2] === 0x33) {
+    const skip = 10 + (((u[6] & 0x7f) << 21) | ((u[7] & 0x7f) << 14) | ((u[8] & 0x7f) << 7) | (u[9] & 0x7f)) + (u[5] & 0x10 ? 10 : 0);
+    if (skip < u.length) return b.slice(skip);
+  }
+  return b;
+}
+// iPad et iPhone (l'iPad se présente comme un Mac à écran tactile).
+const appleTouch = () => typeof navigator !== "undefined" && (/iPad|iPhone|iPod/.test(navigator.userAgent) || (/Macintosh/.test(navigator.userAgent) && (navigator.maxTouchPoints ?? 0) > 1));
+// Silence de 0,1 s : joué par le lecteur audio pendant un contact, il le déverrouille (iPad).
+const SILENCE = "data:audio/mpeg;base64,//NExAAAAANIAAAAAExBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEFNRTMu//NExFMAAANIAAAAADEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEFNRTMu//NExKYAAANIAAAAADEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEFNRTMu//NExKwAAANIAAAAADEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEFNRTMu//NExKwAAANIAAAAADEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//NExKwAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//NExKwAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
+// Safari (iPad, iPhone) range le son des pages parmi les sons d'ambiance : il est coupé en mode silencieux, alors que
+// la voix de l'appareil continue. Une lecture déclarée « playback » (API Audio Session, Safari 16.4 et plus) l'en sort.
+export function audioPlayback() {
+  try { const s = (navigator as any).audioSession; if (s && s.type !== "playback") s.type = "playback"; } catch { /* navigateur sans cette API */ }
+}
 function decodeClip(ctx: AudioContext, data: ArrayBuffer): Promise<AudioBuffer> {
   return new Promise((resolve, reject) => {
     // Ancienne forme à rappels (Safari) et forme à promesse : la première réponse compte.
@@ -169,6 +199,14 @@ class NaturalVoice {
   private cache = new Map<string, AudioBuffer>();
   private sources: AudioBufferSourceNode[] = [];
   private ending: (() => void) | null = null;
+  // Dernière raison d'échec (diagnostic de l'espace parent).
+  lastError = "";
+  // Lecteur audio de secours (iPad) : la même phrase, clip par clip, quand le moteur Web Audio ne répond pas.
+  private el: HTMLAudioElement | null = null;
+  private elReady = false;
+  private elPending = false;
+  private elClip = false;
+  private urls = new Map<string, string>();
   get url() { return typeof __VOIX__ === "string" ? __VOIX__ : ""; }
   get complete() { return !!this.index && this.packs.every(Boolean); }
   async init(url = this.url) {
@@ -237,7 +275,7 @@ class NaturalVoice {
     const [pi, off, len] = this.index!.clips[key];
     const pack = this.packs[pi] ?? await withTimeout(this.pack(pi), 4000, null);
     if (!pack) return null;
-    let buf = await decodeClip(ctx, pack.slice(off, off + len));
+    let buf = await decodeClip(ctx, stripID3(pack.slice(off, off + len)));
     if (factor !== 1) {
       const y = stretch(buf.getChannelData(0), buf.sampleRate, factor);
       const out = ctx.createBuffer(1, Math.max(1, y.length), buf.sampleRate);
@@ -248,21 +286,79 @@ class NaturalVoice {
     if (this.cache.size > 120) this.cache.delete(this.cache.keys().next().value!);
     return buf;
   }
+  // Déverrouille le lecteur de secours : un silence joué pendant un contact de l'enfant (iPad seulement).
+  unlockElement() {
+    if (this.elReady || this.elPending || typeof Audio === "undefined" || !appleTouch()) return;
+    try {
+      const a = this.el ?? (this.el = new Audio());
+      this.elPending = true;
+      a.src = SILENCE;
+      const p = a.play();
+      // Lecture acceptée pendant le contact : le lecteur est déverrouillé, même si elle est coupée aussitôt (AbortError).
+      const done = (ok: boolean) => { this.elPending = false; if (ok) this.elReady = true; };
+      if (p && typeof p.then === "function") p.then(() => done(true), (e: unknown) => done((e as { name?: string })?.name === "AbortError"));
+      else done(true);
+    } catch { this.elPending = false; }
+  }
+  private async clipURL(key: string): Promise<string | null> {
+    const hit = this.urls.get(key);
+    if (hit) return hit;
+    const [pi, off, len] = this.index!.clips[key];
+    const pack = this.packs[pi] ?? await withTimeout(this.pack(pi), 4000, null);
+    if (!pack) return null;
+    const url = URL.createObjectURL(new Blob([pack.slice(off, off + len)], { type: "audio/mpeg" }));
+    this.urls.set(key, url);
+    if (this.urls.size > 200) { const [k, u] = this.urls.entries().next().value!; URL.revokeObjectURL(u); this.urls.delete(k); }
+    return url;
+  }
+  async playElement(segs: Seg[], factor: number, alive: () => boolean): Promise<boolean> {
+    const a = this.el;
+    if (!a || !this.elReady || !this.index) return false;
+    this.stop();
+    for (let i = 0; i < segs.length; i++) {
+      if (!alive()) return true;
+      const url = await this.clipURL(segs[i].key);
+      if (!url) { this.lastError = "paquet de voix absent"; return false; }
+      if (!alive()) return true;
+      const ok = await new Promise<boolean>((resolve) => {
+        let done = false;
+        const fin = (v: boolean) => {
+          if (done) return;
+          done = true; this.elClip = false; a.onended = null; a.onerror = null; clearTimeout(timer);
+          if (this.ending === stopper) this.ending = null;
+          resolve(v);
+        };
+        const stopper = () => { try { a.pause(); } catch { /* rien */ } this.elClip = false; fin(true); };
+        const timer = setTimeout(() => fin(true), 15000);
+        a.onended = () => fin(true);
+        a.onerror = () => fin(false);
+        this.ending = stopper;
+        this.elClip = true;
+        a.src = url;
+        try { (a as any).preservesPitch = true; (a as any).webkitPreservesPitch = true; } catch { /* rien */ }
+        a.defaultPlaybackRate = a.playbackRate = 1 / factor;
+        a.play().then(undefined, () => fin(false));
+      });
+      if (!ok) { this.lastError = "lecteur audio refusé"; return i > 0; }
+      if (i < segs.length - 1 && segs[i].gapMs) await new Promise((r) => setTimeout(r, segs[i].gapMs * factor));
+    }
+    return true;
+  }
   // Joue les clips à la suite (avec les pauses de la ponctuation). false : impossible, la voix de l'appareil prend le relais.
   async play(ctx: AudioContext, segs: Seg[], factor: number, alive: () => boolean): Promise<boolean> {
     const bufs: AudioBuffer[] = [];
     try {
       for (const s of segs) {
         const b = await this.buffer(ctx, s.key, Math.abs(factor - 1) < 0.02 ? 1 : factor);
-        if (!b) return false;
+        if (!b) { this.lastError = "paquet de voix absent"; return false; }
         bufs.push(b);
       }
-    } catch { return false; }
+    } catch { this.lastError = "décodage impossible"; return false; }
     if (!alive()) return true;
     // Juste après le premier contact, le contexte audio peut être encore en train de démarrer.
     if (ctx.state !== "running") await withTimeout(ctx.resume().then(() => true, () => false), 500, false);
     if (!alive()) return true;
-    if (ctx.state !== "running") return false;
+    if (ctx.state !== "running") { this.lastError = (ctx.state as string) === "interrupted" ? "moteur audio interrompu" : "moteur audio en pause"; return false; }
     this.stop();
     return new Promise<boolean>((resolve) => {
       let t = ctx.currentTime + 0.03;
@@ -283,6 +379,7 @@ class NaturalVoice {
     });
   }
   stop() {
+    if (this.el && this.elClip && !this.el.paused) { try { this.el.pause(); } catch { /* rien */ } }
     for (const s of this.sources) { try { s.onended = null; s.stop(); } catch { /* déjà fini */ } }
     this.sources = [];
     const e = this.ending; this.ending = null; e?.();
@@ -348,6 +445,7 @@ class Voice {
     await stopped;
     clearTimeout(timer);
     stream.getTracks().forEach((t: MediaStreamTrack) => t.stop());
+    audioPlayback();
     const blob = new Blob(chunks, { type: rec.mimeType || type || "audio/webm" });
     return await new Promise<string>((resolve, reject) => { const fr = new FileReader(); fr.onload = () => resolve(String(fr.result)); fr.onerror = () => reject(fr.error); fr.readAsDataURL(blob); });
   }
@@ -358,15 +456,43 @@ export const voice = new Voice();
 class Sfx {
   private ctx: AudioContext | null = null;
   muted = false;
-  // Contexte audio partagé avec la voix naturelle (déverrouillé au premier contact de l'enfant).
+  private stale = false;
+  // Contexte audio partagé avec la voix naturelle. Safari ne le laisse démarrer que pendant une fin d'appui ou un
+  // clic (gesture = true), et peut l'interrompre (autre appli, veille, voix de l'appareil) : il est relancé à chaque
+  // contact, et recréé au contact suivant s'il reste bloqué.
   get context() { return this.ctx; }
-  unlock() {
+  unlock(gesture = false) {
     try {
+      audioPlayback();
       const AC = (window as any).AudioContext || (window as any).webkitAudioContext;
       if (!AC) return;
-      if (!this.ctx) this.ctx = new AC();
-      if (this.ctx && this.ctx.state === "suspended") this.ctx.resume();
+      if (this.ctx && this.stale && gesture) { try { void this.ctx.close(); } catch { /* déjà fermé */ } this.ctx = null; this.stale = false; }
+      if (!this.ctx) {
+        if (!gesture) return;
+        this.ctx = new AC() as AudioContext;
+        this.ctx.onstatechange = () => this.revive();
+      }
+      const ctx = this.ctx;
+      const st = ctx.state as string;
+      if (st === "suspended" || st === "interrupted") {
+        ctx.resume().catch(() => { /* au prochain contact */ });
+        if (gesture) setTimeout(() => { if (this.ctx === ctx && (ctx.state as string) !== "running") this.stale = true; }, 600);
+      }
+      if (gesture) {
+        // Un échantillon de silence joué pendant le contact : déverrouille le son sur les anciens iPad.
+        const src = ctx.createBufferSource();
+        src.buffer = ctx.createBuffer(1, 1, ctx.sampleRate);
+        src.connect(ctx.destination);
+        src.start(0);
+        natural.unlockElement();
+      }
     } catch { this.ctx = null; }
+  }
+  // Contexte interrompu ou mis en pause par le système : on tente de le relancer (permis s'il a déjà joué).
+  private revive() {
+    const ctx = this.ctx;
+    const st = ctx ? (ctx.state as string) : "";
+    if (ctx && (st === "interrupted" || st === "suspended") && !document.hidden) ctx.resume().catch(() => { /* au prochain contact */ });
   }
   private tone(freq: number, start: number, dur: number, type: OscillatorType = "sine", gain = 0.12) {
     const ctx = this.ctx;

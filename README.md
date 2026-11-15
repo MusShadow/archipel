@@ -80,6 +80,7 @@ python3 tests/e2e/livraison2.py   # îles de la livraison 2, dessin au doigt sim
 python3 tests/e2e/offline.py      # démarrage sans Internet
 python3 tests/e2e/voix.py         # voix naturelle : clips, prénom retiré, repli, réglage parent, débit, hors ligne
 python3 tests/e2e/livraison3.py   # le voyage de la goutte, ses six niveaux (captures dans tests/e2e/shots3)
+python3 tests/e2e/ipad.py         # voix naturelle sur iPad simulé : session « playback », lecteur de secours, diagnostic
 ```
 
 ### Refaire le pack de voix (après avoir ajouté ou changé des phrases)
@@ -142,6 +143,12 @@ Le mode d'emploi complet (installation sur l'écran d'accueil, Accès guidé, sa
   appli ouverte) ; avant, et pour les histoires sur mesure, c'est la voix française de base de l'iPad (Safari ne donne
   pas accès aux voix téléchargées ni à celles de Siri). Le réglage « Voix de Plume » de l'espace parent permet de
   revenir à la voix de l'iPad.
+- Sur iPad, Safari range le son des pages parmi les sons d'ambiance : sans précaution, la voix naturelle (Web Audio)
+  se tait en mode silencieux, alors que la voix de l'iPad continue, et le contexte audio peut rester « interrompu ».
+  L'appli déclare donc une lecture « playback » (`navigator.audioSession`), relance le son à chaque contact (fin
+  d'appui ou clic, seuls gestes acceptés par Safari) et, si le moteur audio ne répond pas, lit les mêmes clips avec le
+  lecteur audio HTML avant de passer à la voix de l'iPad. Le bouton « Écouter Plume » (espace parent › Réglages) dit
+  par où la phrase est passée.
 - Le mode « Accès guidé » de l'iPad (Réglages › Accessibilité) permet de verrouiller l'appareil sur l'application pendant la séance.
 
 ## Licences et crédits
