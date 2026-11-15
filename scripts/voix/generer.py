@@ -7,7 +7,7 @@
 # Les syllabes et morceaux de mots isolés sont dits dans une phrase porteuse (« Je dis … ») pour ce contrôle, et
 # plusieurs écritures sont essayées quand la voix hésite (« pu », « pue », « pus » : on garde celle qui sonne juste).
 #
-# Sortie : public/voix/index-<empreinte>.json et un paquet audio par île (MP3 mono 24 kHz, 32 kb/s).
+# Sortie : public/voix/index-<empreinte>.json et un paquet audio par île (MP3 mono 24 kHz, 32 kb/s, clips bout à bout).
 # Les clips déjà faits sont gardés dans un cache (VOIX_CACHE) : relancer ne refait que les nouveaux.
 #
 # Prérequis : pip install "sherpa-onnx==1.13.8" numpy soundfile espeakng-loader phonemizer-fork ; ffmpeg ;
@@ -329,7 +329,8 @@ def build(clips, metas):
             index["clips"][c["key"]] = [pi, len(blob), len(data), m["ms"]]
             blob += data; total_ms += m["ms"]
             if m["per"] > (0.2 if c["words"] <= 2 else 0.15): flagged.append({"key": c["key"], "say": m["say"], "heard": m["heard"], "per": m["per"]})
-        name = f"{p}-{hashlib.sha1(bytes(blob)).hexdigest()[:10]}.bin"
+        # Un paquet est une suite de MP3 complets, mis bout à bout : c'est encore un flux MP3 valable.
+        name = f"{p}-{hashlib.sha1(bytes(blob)).hexdigest()[:10]}.mp3"
         open(os.path.join(out, name), "wb").write(bytes(blob))
         index["paquets"].append({"nom": name, "octets": len(blob)})
         total_bytes += len(blob)

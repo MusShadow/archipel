@@ -7,7 +7,7 @@ const root = join(import.meta.dir, "..");
 // Pack de voix naturelle (public/voix, fabriqué par scripts/voix/generer.py) : l'appli connaît son index,
 // le service worker garde tous ses fichiers pour le hors-ligne.
 const voixDir = join(root, "public/voix");
-const voixFiles = existsSync(voixDir) ? readdirSync(voixDir).filter((f) => /\.(json|bin)$/.test(f)).sort() : [];
+const voixFiles = existsSync(voixDir) ? readdirSync(voixDir).filter((f) => /\.(json|mp3)$/.test(f)).sort() : [];
 const voixIndex = voixFiles.find((f) => /^index-[0-9a-f]+\.json$/.test(f));
 const result = await Bun.build({
   entrypoints: [join(root, "src/main.ts")], format: "iife", target: "browser", minify: true,
