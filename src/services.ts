@@ -517,5 +517,52 @@ class Sfx {
   breathIn() { this.tone(330, 0, 1.2, "sine", 0.03); }
   drum() { this.tone(150, 0, 0.16, "triangle", 0.16); this.tone(95, 0.01, 0.22, "sine", 0.12); }
   hop() { this.tone(520, 0, 0.09, "sine", 0.07); this.tone(780, 0.07, 0.1, "sine", 0.06); }
+
+  // ---------- Bruits des fêtes de réussite (synthétisés : aucun fichier) ----------
+  private noiseBuf: AudioBuffer | null = null;
+  private sweep(f0: number, f1: number, start: number, dur: number, type: OscillatorType = "sine", gain = 0.05) {
+    const ctx = this.ctx;
+    if (!ctx || this.muted) return;
+    const t0 = ctx.currentTime + start;
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.type = type;
+    o.frequency.setValueAtTime(f0, t0);
+    o.frequency.exponentialRampToValueAtTime(f1, t0 + dur);
+    g.gain.setValueAtTime(0.0001, t0);
+    g.gain.exponentialRampToValueAtTime(gain, t0 + Math.min(0.05, dur / 3));
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    o.connect(g).connect(ctx.destination);
+    o.start(t0); o.stop(t0 + dur + 0.05);
+  }
+  private noise(start: number, dur: number, gain: number, type: BiquadFilterType, f0: number, f1 = f0) {
+    const ctx = this.ctx;
+    if (!ctx || this.muted) return;
+    if (!this.noiseBuf || this.noiseBuf.sampleRate !== ctx.sampleRate) {
+      const b = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
+      const d = b.getChannelData(0);
+      for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+      this.noiseBuf = b;
+    }
+    const t0 = ctx.currentTime + start;
+    const src = ctx.createBufferSource(), f = ctx.createBiquadFilter(), g = ctx.createGain();
+    src.buffer = this.noiseBuf; src.loop = true;
+    f.type = type;
+    f.frequency.setValueAtTime(f0, t0);
+    if (f1 !== f0) f.frequency.exponentialRampToValueAtTime(f1, t0 + dur);
+    g.gain.setValueAtTime(0.0001, t0);
+    g.gain.exponentialRampToValueAtTime(gain, t0 + Math.min(0.02, dur / 4));
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    src.connect(f).connect(g).connect(ctx.destination);
+    src.start(t0); src.stop(t0 + dur + 0.05);
+  }
+  pop() { this.noise(0, 0.08, 0.3, "bandpass", 1800); this.tone(220, 0, 0.06, "square", 0.03); }
+  whistle() { this.sweep(700, 1600, 0, 0.55, "sine", 0.025); }
+  bang() { this.noise(0, 0.4, 0.22, "lowpass", 1400, 300); for (let i = 0; i < 6; i++) this.noise(0.12 + i * 0.07 + Math.random() * 0.04, 0.03, 0.06, "highpass", 4000); }
+  honk() { [0, 0.22].forEach((t) => { this.tone(392, t, 0.16, "square", 0.025); this.tone(494, t, 0.16, "square", 0.02); }); }
+  vroom() { this.sweep(70, 160, 0, 0.7, "sawtooth", 0.025); }
+  pinpon() { for (let i = 0; i < 4; i++) this.tone(i % 2 ? 488 : 435, i * 0.38, 0.36, "triangle", 0.055); }
+  rumble(dur = 0.7) { this.noise(0, dur, 0.25, "lowpass", 180, 120); }
+  whoosh() { this.noise(0, 0.9, 0.12, "bandpass", 300, 2400); }
+  fanfare() { [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => this.tone(f, i * 0.12, i === 3 ? 0.7 : 0.2, "triangle", 0.09)); }
 }
 export const sfx = new Sfx();

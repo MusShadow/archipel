@@ -51,11 +51,22 @@ export const SCREENS_CSS = `
 /* Partage du goûter */
 .cookies{flex-wrap:wrap;gap:6px;min-height:max(70px,calc(var(--u) * 110));max-width:min(92vw,calc(var(--u) * 820))}
 .cookie{display:block;width:max(40px,calc(var(--u) * 64));height:max(40px,calc(var(--u) * 64))}
-.cookie.small{width:max(28px,calc(var(--u) * 44));height:max(28px,calc(var(--u) * 44));cursor:pointer}
-.plates{gap:max(10px,calc(var(--u) * 22));align-items:stretch}
+.cookie.small{width:max(30px,calc(var(--u) * 48));height:max(30px,calc(var(--u) * 48));cursor:grab}
+.cookies.box .cookie,.dish .cookie{touch-action:none;cursor:grab;-webkit-tap-highlight-color:transparent}
+.cookie.wiggle{animation:wiggle .4s ease-in-out}
+@keyframes wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-12deg) scale(1.08)}75%{transform:rotate(12deg) scale(1.08)}}
+.cookie.lifted{opacity:.25}
+.cookie.ghost{position:fixed;z-index:60;pointer-events:none;filter:drop-shadow(0 8px 10px rgba(39,48,67,.3))}
+.cookies.box{border-style:dashed;background:#FFF7E8}
+.cookies.over{border-color:var(--turq);background:#E1F4F5}
+.plate.over .dish{border-color:var(--turq);background:#E1F4F5;transform:scale(1.05)}
+.plates{gap:max(10px,calc(var(--u) * 22));align-items:stretch;--dishw:calc(var(--u) * 240);--dishh:calc(var(--u) * 150)}
+.plates.z2{--dishw:calc(var(--u) * 320);--dishh:calc(var(--u) * 170)}
+.plates.z3{--dishw:calc(var(--u) * 270);--dishh:calc(var(--u) * 160)}
+.plates.z4{--dishw:calc(var(--u) * 225);--dishh:calc(var(--u) * 150)}
 .plate{display:flex;flex-direction:column;align-items:center;gap:8px;border:none;background:none;cursor:pointer;padding:0}
 .friend{display:block;width:max(56px,calc(var(--u) * 84));height:max(56px,calc(var(--u) * 84))}
-.dish{display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:2px;width:max(120px,calc(var(--u) * 210));min-height:max(70px,calc(var(--u) * 110));padding:8px;background:#fff;border:max(3px,calc(var(--u) * 5)) solid #E4D9C5;border-radius:50%}
+.dish{display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:max(2px,calc(var(--u) * 5));width:max(130px,var(--dishw,calc(var(--u) * 240)));min-height:max(80px,var(--dishh,calc(var(--u) * 150)));padding:max(10px,calc(var(--u) * 18)) max(12px,calc(var(--u) * 24));transition:transform .15s,border-color .15s,background .15s;background:#fff;border:max(3px,calc(var(--u) * 5)) solid #E4D9C5;border-radius:50%}
 .basket .dish{border-radius:18px;border-style:dashed;background:#FFF0C9}
 /* Choix d'activité sur une île */
 .actcards{display:flex;gap:max(10px,calc(var(--u) * 18));flex-wrap:wrap;justify-content:center}

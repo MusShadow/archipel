@@ -7801,6 +7801,16 @@
   ]
  },
  {
+  "key": "bane|.",
+  "text": "bane",
+  "say": "bane",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "mots"
+  ]
+ },
+ {
   "key": "bangladesh|.",
   "text": "Bangladesh",
   "say": "Bangladesh",
@@ -7896,7 +7906,6 @@
   "words": 1,
   "fams": [
    "chants:consigne",
-   "chants:erreur",
    "chants:indice",
    "mots"
   ]
@@ -8994,6 +9003,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "chants:indice",
    "lis:indice",
    "lis:reussite",
    "mots"
@@ -9550,6 +9560,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "chants:erreur",
    "chants:indice",
    "mots"
   ]
@@ -10952,7 +10963,6 @@
   "pack": "commun",
   "words": 1,
   "fams": [
-   "chants:erreur",
    "chants:indice",
    "lis:indice",
    "mots",
@@ -12323,6 +12333,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "chants:erreur",
    "chants:indice",
    "mots",
    "syllabes:indice"
@@ -22074,6 +22085,7 @@
   "pack": "mots",
   "words": 1,
   "fams": [
+   "chants:erreur",
    "chants:indice",
    "chants:reussite",
    "syllabes:indice"
@@ -23657,6 +23669,30 @@
   ]
  },
  {
+  "key": "cabane|",
+  "text": "cabane",
+  "say": "cabane",
+  "pack": "mots",
+  "words": 1,
+  "fams": [
+   "chants:consigne",
+   "chants:indice"
+  ]
+ },
+ {
+  "key": "cabane|,",
+  "text": "cabane…",
+  "say": "cabane…",
+  "pack": "mots",
+  "words": 1,
+  "fams": [
+   "chants:consigne",
+   "chants:erreur",
+   "chants:indice",
+   "chants:reussite"
+  ]
+ },
+ {
   "key": "cadeau|",
   "text": "cadeau",
   "say": "cadeau",
@@ -23816,6 +23852,16 @@
   "key": "ce n'est pas bonbon|.",
   "text": "Ce n'est pas bonbon.",
   "say": "Ce n'est pas bonbon.",
+  "pack": "mots",
+  "words": 4,
+  "fams": [
+   "chants:indice"
+  ]
+ },
+ {
+  "key": "ce n'est pas cabane|.",
+  "text": "Ce n'est pas cabane.",
+  "say": "Ce n'est pas cabane.",
   "pack": "mots",
   "words": 4,
   "fams": [
@@ -24651,7 +24697,6 @@
   "pack": "mots",
   "words": 1,
   "fams": [
-   "chants:erreur",
    "chants:indice",
    "chants:reussite"
   ]
@@ -24869,6 +24914,7 @@
   "pack": "mots",
   "words": 1,
   "fams": [
+   "chants:erreur",
    "chants:indice",
    "chants:reussite"
   ]
@@ -27099,6 +27145,16 @@
   "key": "et bonbon|.",
   "text": "et bonbon.",
   "say": "et bonbon.",
+  "pack": "mots",
+  "words": 2,
+  "fams": [
+   "chants:erreur"
+  ]
+ },
+ {
+  "key": "et cabane|.",
+  "text": "et cabane.",
+  "say": "et cabane.",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -30768,6 +30824,17 @@
   ]
  },
  {
+  "key": "ou cabane|?",
+  "text": "ou cabane ?",
+  "say": "ou cabane ?",
+  "pack": "mots",
+  "words": 2,
+  "fams": [
+   "chants:consigne",
+   "chants:indice"
+  ]
+ },
+ {
   "key": "ou cadeau|?",
   "text": "ou cadeau ?",
   "say": "ou cadeau ?",
@@ -33111,6 +33178,17 @@
   ]
  },
  {
+  "key": "qu'est-ce qui commence comme cabane|,",
+  "text": "Qu'est-ce qui commence comme cabane :",
+  "say": "Qu'est-ce qui commence comme cabane :",
+  "pack": "mots",
+  "words": 5,
+  "fams": [
+   "chants:consigne",
+   "chants:indice"
+  ]
+ },
+ {
   "key": "qu'est-ce qui commence comme cadeau|,",
   "text": "Qu'est-ce qui commence comme cadeau :",
   "say": "Qu'est-ce qui commence comme cadeau :",
@@ -33378,6 +33456,17 @@
   "key": "qu'est-ce qui commence par le même son que bonbon|,",
   "text": "Qu'est-ce qui commence par le même son que bonbon :",
   "say": "Qu'est-ce qui commence par le même son que bonbon :",
+  "pack": "mots",
+  "words": 9,
+  "fams": [
+   "chants:consigne",
+   "chants:indice"
+  ]
+ },
+ {
+  "key": "qu'est-ce qui commence par le même son que cabane|,",
+  "text": "Qu'est-ce qui commence par le même son que cabane :",
+  "say": "Qu'est-ce qui commence par le même son que cabane :",
   "pack": "mots",
   "words": 9,
   "fams": [
@@ -34126,6 +34215,17 @@
   "key": "qu'est-ce qui rime avec bonbon|,",
   "text": "Qu'est-ce qui rime avec bonbon :",
   "say": "Qu'est-ce qui rime avec bonbon :",
+  "pack": "mots",
+  "words": 5,
+  "fams": [
+   "chants:consigne",
+   "chants:indice"
+  ]
+ },
+ {
+  "key": "qu'est-ce qui rime avec cabane|,",
+  "text": "Qu'est-ce qui rime avec cabane :",
+  "say": "Qu'est-ce qui rime avec cabane :",
   "pack": "mots",
   "words": 5,
   "fams": [
@@ -40899,6 +40999,126 @@
   ]
  },
  {
+  "key": "glisse-les dans le panier de basile|.",
+  "text": "glisse-les dans le panier de Basile.",
+  "say": "glisse-les dans le panier de Basile.",
+  "pack": "nombres",
+  "words": 6,
+  "fams": [
+   "partage:consigne"
+  ]
+ },
+ {
+  "key": "glisse-les dans les assiettes d'octave|",
+  "text": "Glisse-les dans les assiettes d'Octave",
+  "say": "Glisse-les dans les assiettes d'Octave",
+  "pack": "nombres",
+  "words": 5,
+  "fams": [
+   "partage:consigne"
+  ]
+ },
+ {
+  "key": "glisse-les dans les assiettes d'octave|,",
+  "text": "Glisse-les dans les assiettes d'Octave,",
+  "say": "Glisse-les dans les assiettes d'Octave,",
+  "pack": "nombres",
+  "words": 5,
+  "fams": [
+   "partage:consigne"
+  ]
+ },
+ {
+  "key": "glisse-les dans les assiettes de kiki|",
+  "text": "Glisse-les dans les assiettes de Kiki",
+  "say": "Glisse-les dans les assiettes de Kiki",
+  "pack": "nombres",
+  "words": 6,
+  "fams": [
+   "partage:consigne"
+  ]
+ },
+ {
+  "key": "glisse-les dans les assiettes de kiki|,",
+  "text": "Glisse-les dans les assiettes de Kiki,",
+  "say": "Glisse-les dans les assiettes de Kiki,",
+  "pack": "nombres",
+  "words": 6,
+  "fams": [
+   "partage:consigne"
+  ]
+ },
+ {
+  "key": "glisse-les dans les assiettes de mona|",
+  "text": "Glisse-les dans les assiettes de Mona",
+  "say": "Glisse-les dans les assiettes de Mona",
+  "pack": "nombres",
+  "words": 6,
+  "fams": [
+   "partage:consigne"
+  ]
+ },
+ {
+  "key": "glisse-les dans les assiettes de mona|,",
+  "text": "Glisse-les dans les assiettes de Mona,",
+  "say": "Glisse-les dans les assiettes de Mona,",
+  "pack": "nombres",
+  "words": 6,
+  "fams": [
+   "partage:consigne"
+  ]
+ },
+ {
+  "key": "glisse-les dans les assiettes de pico|",
+  "text": "Glisse-les dans les assiettes de Pico",
+  "say": "Glisse-les dans les assiettes de Pico",
+  "pack": "nombres",
+  "words": 6,
+  "fams": [
+   "partage:consigne"
+  ]
+ },
+ {
+  "key": "glisse-les dans les assiettes de pico|,",
+  "text": "Glisse-les dans les assiettes de Pico,",
+  "say": "Glisse-les dans les assiettes de Pico,",
+  "pack": "nombres",
+  "words": 6,
+  "fams": [
+   "partage:consigne"
+  ]
+ },
+ {
+  "key": "glisse-les dans les assiettes de rico|",
+  "text": "Glisse-les dans les assiettes de Rico",
+  "say": "Glisse-les dans les assiettes de Rico",
+  "pack": "nombres",
+  "words": 6,
+  "fams": [
+   "partage:consigne"
+  ]
+ },
+ {
+  "key": "glisse-les dans les assiettes de rico|,",
+  "text": "Glisse-les dans les assiettes de Rico,",
+  "say": "Glisse-les dans les assiettes de Rico,",
+  "pack": "nombres",
+  "words": 6,
+  "fams": [
+   "partage:consigne"
+  ]
+ },
+ {
+  "key": "il n'y a plus de biscuits dans la boîte|.",
+  "text": "Il n'y a plus de biscuits dans la boîte.",
+  "say": "Il n'y a plus de biscuits dans la boîte.",
+  "pack": "nombres",
+  "words": 9,
+  "fams": [
+   "partage:rendu"
+  ]
+ },
+ {
   "key": "il reste 1 biscuit à partager|.",
   "text": "Il reste 1 biscuit à partager.",
   "say": "Il reste un biscuit à partager.",
@@ -41554,6 +41774,26 @@
   "say": "Je donne un biscuit à chacun.",
   "pack": "nombres",
   "words": 6,
+  "fams": [
+   "partage:indice"
+  ]
+ },
+ {
+  "key": "je glisse un biscuit vers l'assiette qui en a le moins|.",
+  "text": "Je glisse un biscuit vers l'assiette qui en a le moins.",
+  "say": "Je glisse un biscuit vers l'assiette qui en a le moins.",
+  "pack": "nombres",
+  "words": 11,
+  "fams": [
+   "partage:indice"
+  ]
+ },
+ {
+  "key": "je redonne un biscuit du panier à chacun|.",
+  "text": "Je redonne un biscuit du panier à chacun.",
+  "say": "Je redonne un biscuit du panier à chacun.",
+  "pack": "nombres",
+  "words": 8,
   "fams": [
    "partage:indice"
   ]
@@ -42333,16 +42573,6 @@
   "words": 4,
   "fams": [
    "marche:indice"
-  ]
- },
- {
-  "key": "mets-les dans le panier de basile|.",
-  "text": "mets-les dans le panier de Basile.",
-  "say": "mets-les dans le panier de Basile.",
-  "pack": "nombres",
-  "words": 6,
-  "fams": [
-   "partage:consigne"
   ]
  },
  {
@@ -43476,106 +43706,6 @@
   ]
  },
  {
-  "key": "partage-les entre kiki|",
-  "text": "Partage-les entre Kiki",
-  "say": "Partage-les entre Kiki",
-  "pack": "nombres",
-  "words": 3,
-  "fams": [
-   "partage:consigne"
-  ]
- },
- {
-  "key": "partage-les entre kiki|,",
-  "text": "Partage-les entre Kiki,",
-  "say": "Partage-les entre Kiki,",
-  "pack": "nombres",
-  "words": 3,
-  "fams": [
-   "partage:consigne"
-  ]
- },
- {
-  "key": "partage-les entre mona|",
-  "text": "Partage-les entre Mona",
-  "say": "Partage-les entre Mona",
-  "pack": "nombres",
-  "words": 3,
-  "fams": [
-   "partage:consigne"
-  ]
- },
- {
-  "key": "partage-les entre mona|,",
-  "text": "Partage-les entre Mona,",
-  "say": "Partage-les entre Mona,",
-  "pack": "nombres",
-  "words": 3,
-  "fams": [
-   "partage:consigne"
-  ]
- },
- {
-  "key": "partage-les entre octave|",
-  "text": "Partage-les entre Octave",
-  "say": "Partage-les entre Octave",
-  "pack": "nombres",
-  "words": 3,
-  "fams": [
-   "partage:consigne"
-  ]
- },
- {
-  "key": "partage-les entre octave|,",
-  "text": "Partage-les entre Octave,",
-  "say": "Partage-les entre Octave,",
-  "pack": "nombres",
-  "words": 3,
-  "fams": [
-   "partage:consigne"
-  ]
- },
- {
-  "key": "partage-les entre pico|",
-  "text": "Partage-les entre Pico",
-  "say": "Partage-les entre Pico",
-  "pack": "nombres",
-  "words": 3,
-  "fams": [
-   "partage:consigne"
-  ]
- },
- {
-  "key": "partage-les entre pico|,",
-  "text": "Partage-les entre Pico,",
-  "say": "Partage-les entre Pico,",
-  "pack": "nombres",
-  "words": 3,
-  "fams": [
-   "partage:consigne"
-  ]
- },
- {
-  "key": "partage-les entre rico|",
-  "text": "Partage-les entre Rico",
-  "say": "Partage-les entre Rico",
-  "pack": "nombres",
-  "words": 3,
-  "fams": [
-   "partage:consigne"
-  ]
- },
- {
-  "key": "partage-les entre rico|,",
-  "text": "Partage-les entre Rico,",
-  "say": "Partage-les entre Rico,",
-  "pack": "nombres",
-  "words": 3,
-  "fams": [
-   "partage:consigne"
-  ]
- },
- {
   "key": "pico|",
   "text": "Pico",
   "say": "Pico",
@@ -44636,6 +44766,16 @@
   ]
  },
  {
+  "key": "tout le monde en a autant touche la coche|.",
+  "text": "Tout le monde en a autant : touche la coche !",
+  "say": "Tout le monde en a autant : touche la coche !",
+  "pack": "nombres",
+  "words": 9,
+  "fams": [
+   "partage:indice"
+  ]
+ },
+ {
   "key": "trente|,",
   "text": "trente…",
   "say": "trente…",
@@ -44643,6 +44783,16 @@
   "words": 1,
   "fams": [
    "marche:indice"
+  ]
+ },
+ {
+  "key": "tu peux glisser un biscuit d'une assiette à l'autre|.",
+  "text": "Tu peux glisser un biscuit d'une assiette à l'autre.",
+  "say": "Tu peux glisser un biscuit d'une assiette à l'autre.",
+  "pack": "nombres",
+  "words": 9,
+  "fams": [
+   "partage:rendu"
   ]
  },
  {

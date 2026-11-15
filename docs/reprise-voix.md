@@ -9,8 +9,8 @@ Le README décrit l'appli, les îles, l'organisation du code et les tests ; ici,
   (GitHub Pages, publié automatiquement à chaque envoi sur `main` par `.github/workflows/pages.yml`).
 - Livraison 2 bis : Plume parle avec une voix naturelle pré-enregistrée, gardée pour le hors-ligne.
 - Livraison 3 (en cours) : île des Découvertes — le voyage de la goutte, puis le volcan, le grand tri et le voyage des déchets.
-- Tests : `bun test`, `tsc --noEmit -p .`, et quatre parcours Playwright avec `/usr/bin/google-chrome` :
-  `tests/e2e/smoke.py`, `tests/e2e/livraison2.py`, `tests/e2e/offline.py`, `tests/e2e/voix.py`.
+- Tests : `bun test`, `tsc --noEmit -p .`, et des parcours Playwright avec `/usr/bin/google-chrome` :
+  `tests/e2e/smoke.py`, `livraison2.py`, `livraison3.py`, `offline.py`, `voix.py`, `ipad.py`, `retours.py`.
 - Pour qui : un enfant de 4 ans et demi, sur iPad, accompagné d'un adulte. Tout est en français ; le parent est
   tutoyé dans la conversation, vouvoyé dans l'appli.
 
@@ -70,6 +70,11 @@ session `navigator.audioSession.type = "playback"`, déverrouillage à chaque fi
 recréé s'il reste bloqué, et lecteur audio HTML de secours (clips en `blob:`) avant la voix de l'appareil.
 Test : `tests/e2e/ipad.py` (iPad simulé dans Chrome, moteur audio cassé exprès). Diagnostic sur l'appareil : espace
 parent › Réglages › « Écouter Plume ».
+
+Retours de test (novembre 2026) : le partage du goûter dit de nouvelles phrases selon l'état du plateau (boîte vide,
+assiettes inégales, panier trop plein) ; elles sont ajoutées à la main dans la partie « Phrases à trous » de
+l'inventaire, car le hasard ne les fait pas toujours sortir. Les fêtes de réussite n'ajoutent aucune phrase : leur
+message (avec le prénom) est seulement affiché.
 
 Pièges connus de la voix (novembre 2026) : devant deux-points, une consonne finale muette est prononcée (« qui choisis :
 » devenait « choisisses ») : ces deux-points deviennent une virgule pour la voix ; « chaud » et « froid » se disaient

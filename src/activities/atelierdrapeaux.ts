@@ -46,7 +46,7 @@ export function stripedSVG(dir: "v" | "h", bands: (Col | null)[], opts: { stroke
   const n = bands.length, W = 90, H = 60;
   const rects = bands.map((b, i) => {
     const x = dir === "v" ? (i * W) / n : 0, y = dir === "h" ? (i * H) / n : 0, w = dir === "v" ? W / n + 0.3 : W, hh = dir === "h" ? H / n + 0.3 : H;
-    return `<rect x="${x.toFixed(2)}" y="${y.toFixed(2)}" width="${w.toFixed(2)}" height="${hh.toFixed(2)}" fill="${b ? COL[b] : "url(#hatch)"}"/>`;
+    return `<rect data-b="${i}" x="${x.toFixed(2)}" y="${y.toFixed(2)}" width="${w.toFixed(2)}" height="${hh.toFixed(2)}" fill="${b ? COL[b] : "url(#hatch)"}"/>`;
   }).join("");
   // Pour colorier : des pointillés séparent les bandes, pour qu'on les voie même vides.
   const lines = opts.grid ? Array.from({ length: n - 1 }, (_, k) => {
@@ -135,9 +135,10 @@ export const atelierdrapeaux: ActivityModule<AtelierItem> = {
     const draw = () => {
       frame.innerHTML = stripedSVG(item.dir, fill, { grid: true });
       const svg = frame.querySelector("svg")!;
-      svg.querySelectorAll("rect").forEach((rect, i) => {
-        if (i >= item.bands.length) return;
-        rect.setAttribute("data-b", String(i));
+      // Les bandes portent leur numéro (data-b) : le motif hachuré des bandes vides est aussi un rectangle, et compter
+      // les rectangles décalait tout d'un cran (toucher une bande coloriait sa voisine).
+      svg.querySelectorAll<SVGRectElement>("rect[data-b]").forEach((rect) => {
+        const i = Number(rect.getAttribute("data-b"));
         rect.setAttribute("role", "button");
         rect.setAttribute("aria-label", `${cap(where(item.dir, item.bands.length, i))}${fill[i] ? `, ${fill[i]}` : ", pas encore coloriée"}`);
       });

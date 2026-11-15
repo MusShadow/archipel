@@ -5,6 +5,7 @@ import { applyEvidence, newSkill, stepStaircase } from "../core";
 import { DRAWINGS, DRAWING_BY_ID, drawingStickerSVG, drawingSVG, primD, primPolylines, primSVG, scoreStep, type Drawing, type Prim, type Pt } from "../drawings";
 import type { StickerSpec } from "../host";
 import { sfx, speech } from "../services";
+import { celebrate } from "../fete";
 import { burst, dots, h, icon, medallion, plumeSVG, roundBtn, sleep, wobble } from "../ui";
 import { sheet } from "./common";
 
@@ -399,7 +400,7 @@ function drawLesson(d: Drawing, back: (sticker?: StickerSpec) => void) {
   async function finish() {
     board.enabled = false;
     record();
-    sfx.success(); burst(screen);
+    sfx.success(); celebrate(screen, { name: p.name });
     dotsHost.replaceChildren(dots(d.steps.length, d.steps.length));
     const mini = h("div", { class: "drawmini", "aria-label": "Le modèle", html: drawingSVG(d) });
     const palette = h("div", { class: "palette" });

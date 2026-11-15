@@ -7,7 +7,8 @@ import type { StickerSpec } from "../host";
 import { emoji } from "../lexique";
 import { sfx, speech, type Profile, type Story } from "../services";
 import { HEROES, LENGTHS, STORY_ERRORS, THEMES, apiKey, difficultWords, requestStory } from "../stories";
-import { burst, esc, glow, h, medallion, roundBtn, sleep, wobble } from "../ui";
+import { celebrate } from "../fete";
+import { esc, glow, h, medallion, roundBtn, sleep, wobble } from "../ui";
 
 const NAMES = HEROES.map((x) => x.nom);
 
@@ -175,8 +176,9 @@ function storyReader(s: Story, back: (sticker?: StickerSpec) => void) {
         }
         tries++;
         if (ok) {
-          b.classList.add("right"); sfx.success(); burst(screen);
-          speech.say("Oui, bravo ! Tu as bien compris l'histoire.").then(() => sleep(300)).then(() => leave(true));
+          b.classList.add("right"); sfx.success();
+          const party = celebrate(screen, { name: p.name, firstTry: tries === 1 });
+          Promise.all([speech.say("Oui, bravo ! Tu as bien compris l'histoire."), party.done]).then(() => { party.end(); return sleep(300); }).then(() => leave(true));
         } else {
           sfx.soft(); wobble(b);
           if (tries >= 2) { const r = cards[s.question.bonne]; if (r) glow(r); speech.say("C'est celle qui brille. Tu veux relire l'histoire une autre fois ?"); }

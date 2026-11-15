@@ -6,9 +6,10 @@ import { registerParentScreens } from "./screens/parent";
 import { SCREENS_CSS } from "./screens/styles";
 import { audioPlayback, natural, sfx, speech } from "./services";
 import { CSS } from "./ui";
+import { FETE_CSS } from "./fete";
 
 const style = document.createElement("style");
-style.textContent = CSS + SCREENS_CSS;
+style.textContent = CSS + SCREENS_CSS + FETE_CSS;
 document.head.appendChild(style);
 
 app.root = document.getElementById("app")!;

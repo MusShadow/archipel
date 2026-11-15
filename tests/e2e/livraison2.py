@@ -74,10 +74,20 @@ def solve(page):
             page.click(f'.bipslot[data-t="{it["target"]}"]')
         page.wait_for_timeout(420 * len(it["solution"]) + 500)
     elif mod == "atelierdrapeaux" and k != "intrus":
+        # On touche chaque bande à sa place à l'écran (et non par son numéro) : c'est ce que fait le doigt.
+        n = len(it["bands"])
         for i, b in enumerate(it["bands"]):
             page.click(f'.swatch[data-c="{b}"]')
-            page.dispatch_event(f'.flagpaint rect[data-b="{i}"]', "click")
+            box = page.locator(".flagpaint svg").bounding_box()
+            if it["dir"] == "v":
+                x, y = (2 + (i + 0.5) * 90 / n) / 94, (2 + 30) / 64
+            else:
+                x, y = (2 + 45) / 94, (2 + (i + 0.5) * 60 / n) / 64
+            page.mouse.click(box["x"] + x * box["width"], box["y"] + y * box["height"])
             page.wait_for_timeout(60)
+        colored = page.evaluate("() => [...document.querySelectorAll('.flagpaint rect[data-b]')].length")
+        if page.locator(".flagpaint").count() and colored != n:
+            errors.append(f"atelier des drapeaux : {colored} bandes touchables pour {n}")
     elif mod == "flotte":
         page.click(f'.stage [data-t="{it["target"]}"]')
         page.wait_for_timeout(1700)

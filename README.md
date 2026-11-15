@@ -67,6 +67,26 @@ Plume parle avec une voix naturelle enregistrée à l'avance (voix de synthèse 
   l'espace parent, astuces parent et trois défis hors écran (mini château d'eau, buée, château d'eau du quartier).
 - À venir : le volcan d'Octave, le grand tri, le voyage des déchets jusqu'à la déchetterie.
 
+## Retours de test sur iPad (novembre 2026)
+
+- **Fêtes de réussite** (`src/fete.ts`) : après chaque bonne réponse, un grand message coloré avec le prénom de l'enfant
+  (« Bravo, Lou ! », « Tu as réussi, Lou ! » après un effort) et une scène qui change à chaque fois : feu d'artifice,
+  ballons à éclater du doigt (« Pop ! »), voiture qui tire une banderole et klaxonne, fusée qui décolle dans les étoiles,
+  camion de pompiers (pin-pon, jet d'eau), volcan rigolo qui crache des confettis. La dernière réussite d'une activité a
+  droit à la grande fête (« Mission accomplie ! »). Le prénom est seulement affiché : la voix naturelle ne le dit pas
+  (pour l'entendre, enregistrez « Bravo [prénom] ! » dans le studio voix). Dessins et sons synthétisés dans le code :
+  rien à télécharger, hors ligne. Réglage « réduire les animations » de l'iPad : le message seul. La scène suivante attend
+  la fin de la fête (2 à 3 s ; les ballons, jusqu'à ce qu'ils soient éclatés ou envolés, 4,5 s au plus).
+- **Le partage du goûter** : on glisse les biscuits au doigt de la boîte vers une assiette, d'une assiette à l'autre ou
+  dans le panier de Basile (toucher une assiette y pose toujours un biscuit, toucher un biscuit d'une assiette le remet
+  dans la boîte). Assiettes beaucoup plus grandes, qui grandissent quand elles se remplissent. Indice 3 selon le plateau :
+  Plume distribue un tour, égalise deux assiettes, redonne le panier ou montre la coche.
+- **L'atelier des drapeaux** : toucher une bande coloriait sa voisine (le motif hachuré des bandes vides comptait
+  comme une bande) ; chaque bande porte maintenant son numéro. Le test touche l'écran à l'endroit de la bande.
+- **Les chants de Mona** : « banane » rimait avec « serpent » (rime notée « an » au lieu de « ane ») ; corrigé, avec
+  « cabane » pour rimer. Toutes les rimes, débuts et premiers sons sont vérifiés par eSpeak
+  (`python3 scripts/verif_sons.py` → `tests/fixtures/sons.json`, contrôlé par `tests/sons.test.ts`).
+
 ## Développement
 
 Prérequis : [Bun](https://bun.sh) et TypeScript.
@@ -81,6 +101,7 @@ python3 tests/e2e/offline.py      # démarrage sans Internet
 python3 tests/e2e/voix.py         # voix naturelle : clips, prénom retiré, repli, réglage parent, débit, hors ligne
 python3 tests/e2e/livraison3.py   # le voyage de la goutte, ses six niveaux (captures dans tests/e2e/shots3)
 python3 tests/e2e/ipad.py         # voix naturelle sur iPad simulé : session « playback », lecteur de secours, diagnostic
+python3 tests/e2e/retours.py      # biscuits glissés (souris et doigt), fêtes de réussite et captures de chaque scène (shots4)
 ```
 
 ### Refaire le pack de voix (après avoir ajouté ou changé des phrases)
@@ -113,6 +134,7 @@ Aucune dépendance d'exécution. Les illustrations sont des formes vectorielles 
 | `src/content.ts` | Progression des sons, mots déchiffrables, phrases de Plume, défis hors écran |
 | `src/flags.ts` | Drapeaux (dessins SVG), continents, projection de la carte |
 | `src/host.ts` | Hôte commun des activités : consignes, indices, preuves, escalier, fin d'activité |
+| `src/fete.ts` | Fêtes de réussite : message avec le prénom, scènes (feu d'artifice, ballons, voiture, fusée, pompiers, volcan), grande fête finale |
 | `src/activities/` | Une activité par fichier, toutes sur le même contrat `ActivityModule` |
 | `src/screens/` | Écrans de l'enfant (accueil, carte, coin calme, carnet, fin de séance, dessin, miroir, drapeau de mon île, histoires) et espace parent |
 | `src/shapes.ts` | Formes planes et solides (SVG) |

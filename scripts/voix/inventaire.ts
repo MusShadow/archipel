@@ -126,6 +126,13 @@ for (const mod of ACTIVITIES.filter((m) => !ONLY || ONLY.includes(m.id))) {
   const { voiceLines } = await import("../../src/activities/goutte");
   if (!ONLY || ONLY.includes("goutte")) for (const x of voiceLines()) add(x.text, x.fam);
 }
+// Le partage du goûter : ce que dit Plume selon l'état du plateau (boîte vide, assiettes inégales, panier trop plein).
+where = "partage:indice";
+for (const x of ["Je glisse un biscuit vers l'assiette qui en a le moins.", "Je redonne un biscuit du panier à chacun.",
+  "Tout le monde en a autant : touche la coche !", "Je donne un biscuit à chacun. Continue comme ça !"]) add(x);
+where = "partage:rendu";
+add("Il n'y a plus de biscuits dans la boîte. Tu peux glisser un biscuit d'une assiette à l'autre.");
+for (let n = 1; n <= 10; n++) add(`Il reste ${n} biscuit${n > 1 ? "s" : ""} à partager.`);
 where = "syllabes:erreur";
 const SYLS = [...new Set(Object.values(SAY_SYL))];
 for (const a of SYLS) { add(`Tu as fabriqué ${a}. On cherche ${a}.`); add(`Ça, c'est ${a}. Écoute : ${a}.`); }

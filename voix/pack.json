@@ -4625,6 +4625,12 @@
 "per": 0.0,
 "spelling": null
 },
+"bane|.": {
+"h": "2ba79080a6ad26ba",
+"say": "bane",
+"per": 0.143,
+"spelling": null
+},
 "bangladesh|.": {
 "h": "c30b6f0c80e0a6dd",
 "say": "Bangladesh",
@@ -13739,6 +13745,18 @@
 "per": 0.0,
 "spelling": "ca"
 },
+"cabane|": {
+"h": "3c66c34d79139361",
+"say": "cabane",
+"per": 0.0,
+"spelling": null
+},
+"cabane|,": {
+"h": "e341ef606d5323f6",
+"say": "cabane…",
+"per": 0.0,
+"spelling": null
+},
 "cadeau|": {
 "h": "19fbdf1c44c29433",
 "say": "cadeau",
@@ -13826,6 +13844,12 @@
 "ce n'est pas bonbon|.": {
 "h": "695eae506932d8a9",
 "say": "Ce n'est pas bonbon.",
+"per": 0.0,
+"spelling": null
+},
+"ce n'est pas cabane|.": {
+"h": "f882812e08e88e5d",
+"say": "Ce n'est pas cabane.",
 "per": 0.0,
 "spelling": null
 },
@@ -15740,6 +15764,12 @@
 "et bonbon|.": {
 "h": "94a0ede25f4239b0",
 "say": "et bonbon.",
+"per": 0.0,
+"spelling": null
+},
+"et cabane|.": {
+"h": "ab3533efdfaa116c",
+"say": "et cabane.",
 "per": 0.0,
 "spelling": null
 },
@@ -17831,6 +17861,12 @@
 "per": 0.0,
 "spelling": null
 },
+"ou cabane|?": {
+"h": "5a28ef727b5a78dc",
+"say": "ou cabane ?",
+"per": 0.0,
+"spelling": null
+},
 "ou cadeau|?": {
 "h": "3fa3f8ded6ec1166",
 "say": "ou cadeau ?",
@@ -19163,6 +19199,12 @@
 "per": 0.0,
 "spelling": null
 },
+"qu'est-ce qui commence comme cabane|,": {
+"h": "f1a6e2f62f0ffc2f",
+"say": "Qu'est-ce qui commence comme cabane :",
+"per": 0.0,
+"spelling": null
+},
 "qu'est-ce qui commence comme cadeau|,": {
 "h": "28bd86c73417a4ea",
 "say": "Qu'est-ce qui commence comme cadeau :",
@@ -19310,6 +19352,12 @@
 "qu'est-ce qui commence par le même son que bonbon|,": {
 "h": "2ca35d97ddada33c",
 "say": "Qu'est-ce qui commence par le même son que bonbon :",
+"per": 0.0,
+"spelling": null
+},
+"qu'est-ce qui commence par le même son que cabane|,": {
+"h": "420463f77d860de9",
+"say": "Qu'est-ce qui commence par le même son que cabane :",
 "per": 0.0,
 "spelling": null
 },
@@ -19718,6 +19766,12 @@
 "qu'est-ce qui rime avec bonbon|,": {
 "h": "7a9f3b572ea4d100",
 "say": "Qu'est-ce qui rimme avec bonbon :",
+"per": 0.0,
+"spelling": null
+},
+"qu'est-ce qui rime avec cabane|,": {
+"h": "d445ed9e9cb5ae89",
+"say": "Qu'est-ce qui rimme avec cabane :",
 "per": 0.0,
 "spelling": null
 },
@@ -23669,6 +23723,78 @@
 "per": 0.0,
 "spelling": null
 },
+"glisse-les dans le panier de basile|.": {
+"h": "cbc4a71b6ca3da8e",
+"say": "glisse-les dans le panier de Basile.",
+"per": 0.0,
+"spelling": null
+},
+"glisse-les dans les assiettes d'octave|": {
+"h": "571baf92e383e2b6",
+"say": "Glisse-les dans les assiettes d'Octave",
+"per": 0.045,
+"spelling": null
+},
+"glisse-les dans les assiettes d'octave|,": {
+"h": "71f1c602c1cbf994",
+"say": "Glisse-les dans les assiettes d'Octave,",
+"per": 0.045,
+"spelling": null
+},
+"glisse-les dans les assiettes de kiki|": {
+"h": "4246b114dbc3c55f",
+"say": "Glisse-les dans les assiettes de Kiki",
+"per": 0.045,
+"spelling": null
+},
+"glisse-les dans les assiettes de kiki|,": {
+"h": "8f9bf2c6efb708be",
+"say": "Glisse-les dans les assiettes de Kiki,",
+"per": 0.045,
+"spelling": null
+},
+"glisse-les dans les assiettes de mona|": {
+"h": "c7dc6735b4f7c2e5",
+"say": "Glisse-les dans les assiettes de Mona",
+"per": 0.045,
+"spelling": null
+},
+"glisse-les dans les assiettes de mona|,": {
+"h": "9239dedc4e7e1b3c",
+"say": "Glisse-les dans les assiettes de Mona,",
+"per": 0.045,
+"spelling": null
+},
+"glisse-les dans les assiettes de pico|": {
+"h": "6e09be6fa7e940fb",
+"say": "Glisse-les dans les assiettes de Pico",
+"per": 0.045,
+"spelling": null
+},
+"glisse-les dans les assiettes de pico|,": {
+"h": "4c7267336350b30c",
+"say": "Glisse-les dans les assiettes de Pico,",
+"per": 0.045,
+"spelling": null
+},
+"glisse-les dans les assiettes de rico|": {
+"h": "b29d571b6dd68870",
+"say": "Glisse-les dans les assiettes de Rico",
+"per": 0.045,
+"spelling": null
+},
+"glisse-les dans les assiettes de rico|,": {
+"h": "8a0d3171e53dc4f6",
+"say": "Glisse-les dans les assiettes de Rico,",
+"per": 0.045,
+"spelling": null
+},
+"il n'y a plus de biscuits dans la boîte|.": {
+"h": "1f170505d91ee5a5",
+"say": "Il n'y a plus de biscuits dans la boîte.",
+"per": 0.0,
+"spelling": null
+},
 "il reste 1 biscuit à partager|.": {
 "h": "4d92265bb7b582ed",
 "say": "Il reste un biscuit à partager.",
@@ -24062,6 +24188,18 @@
 "je donne un biscuit à chacun|.": {
 "h": "dfbe842d22b1cd57",
 "say": "Je donne un biscuit à chacun.",
+"per": 0.0,
+"spelling": null
+},
+"je glisse un biscuit vers l'assiette qui en a le moins|.": {
+"h": "117052fe63eefebf",
+"say": "Je glisse un biscuit vers l'assiette qui en a le moins.",
+"per": 0.0,
+"spelling": null
+},
+"je redonne un biscuit du panier à chacun|.": {
+"h": "3f66f499fdfa9596",
+"say": "Je redonne un biscuit du panier à chacun.",
 "per": 0.0,
 "spelling": null
 },
@@ -24518,12 +24656,6 @@
 "mets d'abord 6 sacs|,": {
 "h": "2776fa142e7bdb67",
 "say": "Mets d'abord six sacs,",
-"per": 0.0,
-"spelling": null
-},
-"mets-les dans le panier de basile|.": {
-"h": "7714ccdf6b70b40b",
-"say": "mets-les dans le panier de Basile.",
 "per": 0.0,
 "spelling": null
 },
@@ -25205,66 +25337,6 @@
 "per": 0.0,
 "spelling": null
 },
-"partage-les entre kiki|": {
-"h": "8f9fe4ada7c513c5",
-"say": "Partage-les entre Kiki",
-"per": 0.0,
-"spelling": null
-},
-"partage-les entre kiki|,": {
-"h": "51c9953fa97909e7",
-"say": "Partage-les entre Kiki,",
-"per": 0.0,
-"spelling": null
-},
-"partage-les entre mona|": {
-"h": "7b277ace7ab9809c",
-"say": "Partage-les entre Mona",
-"per": 0.062,
-"spelling": null
-},
-"partage-les entre mona|,": {
-"h": "c6fd2d81cd58f0c5",
-"say": "Partage-les entre Mona,",
-"per": 0.062,
-"spelling": null
-},
-"partage-les entre octave|": {
-"h": "ca3fdb20fa88a78c",
-"say": "Partage-les entre Octave",
-"per": 0.0,
-"spelling": null
-},
-"partage-les entre octave|,": {
-"h": "7813ecbb3e44b132",
-"say": "Partage-les entre Octave,",
-"per": 0.0,
-"spelling": null
-},
-"partage-les entre pico|": {
-"h": "b35093b24e5303d0",
-"say": "Partage-les entre Pico",
-"per": 0.062,
-"spelling": null
-},
-"partage-les entre pico|,": {
-"h": "1e04481c8710fb0b",
-"say": "Partage-les entre Pico,",
-"per": 0.062,
-"spelling": null
-},
-"partage-les entre rico|": {
-"h": "acc41e17c34b21f1",
-"say": "Partage-les entre Rico",
-"per": 0.0,
-"spelling": null
-},
-"partage-les entre rico|,": {
-"h": "0f790719b908e919",
-"say": "Partage-les entre Rico,",
-"per": 0.0,
-"spelling": null
-},
 "pico|": {
 "h": "6bb01cfdb55aa15b",
 "say": "Pico",
@@ -25901,10 +25973,22 @@
 "per": 0.0,
 "spelling": null
 },
+"tout le monde en a autant touche la coche|.": {
+"h": "3df65b51a2badd51",
+"say": "Tout le monde en a autant, touche la coche !",
+"per": 0.0,
+"spelling": null
+},
 "trente|,": {
 "h": "c098cd1a8a2e0e70",
 "say": "trente…",
 "per": 0.0,
+"spelling": null
+},
+"tu peux glisser un biscuit d'une assiette à l'autre|.": {
+"h": "c1899398527244ff",
+"say": "Tu peux glisser un biscuit d'une assiette à l'autre.",
+"per": 0.069,
 "spelling": null
 },
 "un nombre se cache sous le point d'interrogation|.": {

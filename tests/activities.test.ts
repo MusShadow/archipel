@@ -38,6 +38,8 @@ describe("générateurs d'exercices", () => {
             expect(SKILL_BY_ID[it.skill]).toBeDefined();
             expect(mod.skills).toContain(it.skill);
             expect(it.prompt.length).toBeGreaterThan(5);
+            // Élision devant un prénom qui commence par une voyelle : « d'Octave », jamais « de Octave ».
+            expect(it.prompt).not.toMatch(/\b(de|que|le|la) (?=[AEIOUYÉ])/);
             expect(it.guess).toBeGreaterThanOrEqual(0);
             expect(it.guess).toBeLessThan(1);
             expect(Number.isFinite(it.difficulty)).toBe(true);

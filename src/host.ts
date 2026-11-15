@@ -3,7 +3,8 @@ import { app } from "./app";
 import { PRAISE, PRAISE_AFTER_EFFORT, RETRY, knownSet } from "./content";
 import { applyEvidence, makeRng, newSkill, stepStaircase, type ActivityId, type DomainId, type Form, type Rng } from "./core";
 import { sfx, speech, voice, type Profile } from "./services";
-import { burst, dots, h, icon, plumeSVG, roundBtn, sleep, wobble } from "./ui";
+import { celebrate } from "./fete";
+import { dots, h, icon, plumeSVG, roundBtn, sleep, wobble } from "./ui";
 
 export interface Item { skill: string; difficulty: number; form: Form; guess: number; prompt: string; level: number }
 export interface Ctx { profile: Profile; rng: Rng; known: Set<string>; now: number }
@@ -116,9 +117,10 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     if (correct) {
       locked = true;
       sfx.success();
-      burst(screen);
       if (el) el.classList.add("right");
       const firstTry = attempts === 0 && hints === 0;
+      // Petite fête (une scène différente à chaque fois) ; la grande pour la dernière réussite de l'activité.
+      const party = celebrate(screen, { name: p.name, firstTry, final: !opts.fast && index + 1 >= total, quick: opts.fast });
       summary.items++; summary.last = current;
       if (firstTry) summary.firstTry++; else summary.helped++;
       errorsInRow = 0;
@@ -131,7 +133,8 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
       const clip = firstTry ? "bravo" : "effort";
       const parent = voice.has(clip) && Math.random() < 0.5;
       const text = parent ? (line ?? "") : !line ? praise : firstTry && Math.random() < 0.6 ? line : `${line} ${praise}`;
-      speech.say(text).then(() => (parent ? voice.play(clip) : undefined)).then(() => sleep(250)).then(() => { index++; next(); });
+      const spoken = speech.say(text).then(() => (parent ? voice.play(clip) : undefined));
+      Promise.all([spoken, party.done]).then(() => { party.end(); return sleep(250); }).then(() => { index++; next(); });
     } else {
       attempts++; summary.errors++; errorsInRow++;
       sfx.soft();
