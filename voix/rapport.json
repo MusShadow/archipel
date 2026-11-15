@@ -1,7 +1,7 @@
 {
  "clips": 4664,
- "octets": 30080568,
- "minutes": 116.1,
+ "octets": 30054648,
+ "minutes": 116.0,
  "a_revoir": [
   {
    "key": "dos|.",
@@ -10,15 +10,9 @@
    "per": 0.286
   },
   {
-   "key": "papi|.",
-   "say": "Papi.",
-   "heard": "Jeudi, papy.",
-   "per": 0.25
-  },
-  {
    "key": "regarde un phare et une poignée|.",
    "say": "Regarde : un phare et une poignée.",
-   "heard": "Regarde un ph et une poignée.",
+   "heard": "Regarde. Un ph et une poignée.",
    "per": 0.158
   },
   {
@@ -38,12 +32,6 @@
    "say": "c'est dos.",
    "heard": "Jeudi, c'est d'eau.",
    "per": 0.222
-  },
-  {
-   "key": "ça c'est a|.",
-   "say": "Ça, c'est : a.",
-   "heard": "Sassy.",
-   "per": 0.5
   },
   {
    "key": "ça c'est da|.",
@@ -70,9 +58,9 @@
    "per": 0.2
   },
   {
-   "key": "ça c'est mes|.",
-   "say": "Ça, c'est mes.",
-   "heard": "Ça c'est née.",
+   "key": "ça c'est lit|.",
+   "say": "Ça, c'est li.",
+   "heard": "Ça c'est dit.",
    "per": 0.167
   },
   {
@@ -90,7 +78,7 @@
   {
    "key": "ça c'est ta|.",
    "say": "Ça, c'est ta.",
-   "heard": "Ça c'est un...",
+   "heard": "Ça c'est un",
    "per": 0.167
   },
   {
@@ -112,15 +100,9 @@
    "per": 0.154
   },
   {
-   "key": "ça commence par fée|.",
-   "say": "Ça commence par : fée.",
-   "heard": "Ça commence par F.",
-   "per": 0.167
-  },
-  {
    "key": "dos mie nos domino|.",
    "say": "dos… mie… nos : domino !",
-   "heard": "Do Mi Nos Dominos",
+   "heard": "Do Mi No Domino?",
    "per": 0.154
   },
   {
@@ -144,19 +126,13 @@
   {
    "key": "écoute bien é|.",
    "say": "Écoute bien : é.",
-   "heard": "Écoute bien et",
+   "heard": "Écoute bien et.",
    "per": 0.471
-  },
-  {
-   "key": "écoute bien ju dos|.",
-   "say": "Écoute bien : jus… dos.",
-   "heard": "Écoute bien, Jus d'eau.",
-   "per": 0.167
   },
   {
    "key": "écoute dos mie nos|.",
    "say": "Écoute : dos… mie… nos.",
-   "heard": "Écoute do, mi, no.",
+   "heard": "Écoute, Do Mi No.",
    "per": 0.182
   },
   {
@@ -167,21 +143,9 @@
   },
   {
    "key": "écoute ju dos|.",
-   "say": "Écoute : jus… dos.",
-   "heard": "Écoute jus. Do.",
+   "say": "Écoute : jû… dos.",
+   "heard": "Écoute jus, d'eau.",
    "per": 0.222
-  },
-  {
-   "key": "écoute mot tôt|.",
-   "say": "Écoute : mot… tôt.",
-   "heard": "Écoute, mot tour.",
-   "per": 0.25
-  },
-  {
-   "key": "écoute pie a nos|.",
-   "say": "Écoute : pie… a… nos.",
-   "heard": "Écoute puis uh no.",
-   "per": 0.333
   },
   {
    "key": "est sur papi|.",
@@ -274,12 +238,6 @@
    "per": 0.3
   },
   {
-   "key": "oui 17 pommes|.",
-   "say": "Oui, dix-sept pommes !",
-   "heard": "Oui, Dick C Pommes.",
-   "per": 0.2
-  },
-  {
    "key": "oui 5 pommes|.",
    "say": "Oui, cinq pommes !",
    "heard": "Oui, symphomme.",
@@ -287,15 +245,15 @@
   },
   {
    "key": "ça se lit chili|.",
-   "say": "Ça se lit : Chili.",
-   "heard": "Sasli Shidi.",
-   "per": 0.2
+   "say": "Ça se li Chili.",
+   "heard": "Sassly shit.",
+   "per": 0.4
   },
   {
    "key": "ça se lit togo|.",
-   "say": "Ça se lit : Togo.",
-   "heard": "Sasley to go.",
-   "per": 0.3
+   "say": "Ça se li Togo.",
+   "heard": "Sasley Togo.",
+   "per": 0.2
   }
  ]
 }

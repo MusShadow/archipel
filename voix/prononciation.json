@@ -22,13 +22,11 @@
    "nue"
   ],
   "fût": [
-   "fut",
-   "fus",
-   "fût"
+   "fu",
+   "fut"
   ],
   "fu": [
-   "fut",
-   "fus"
+   "fu"
   ],
   "du": [
    "du"
@@ -40,7 +38,7 @@
    "vu"
   ],
   "ju": [
-   "jus",
+   "jû",
    "ju"
   ],
   "cu": [
@@ -334,7 +332,8 @@
   "fu": "fy",
   "jus": "ʒy",
   "ju": "ʒy",
-  "sue": "sy"
+  "sue": "sy",
+  "jû": "ʒy"
  },
  "corrections": [
   [
@@ -358,6 +357,58 @@
    "rimme"
   ],
   [
+   "\\bîle\\b",
+   "ile"
+  ],
+  [
+   "\\bdes Mots\\b",
+   "des mots"
+  ],
+  [
+   "\\bnez\\b",
+   "né"
+  ],
+  [
+   "\\bjus\\b",
+   "jû"
+  ],
+  [
+   "\\blus\\b",
+   "lu"
+  ],
+  [
+   "\\blit\\b",
+   "li"
+  ],
+  [
+   "\\bgars\\b",
+   "ga"
+  ],
+  [
+   "\\bsouris\\b",
+   "souri"
+  ],
+  [
+   "\\breconnus\\b",
+   "reconnu"
+  ],
+  [
+   "\\bdessus\\b",
+   "dessu"
+  ],
+  [
+   "\\bcourts\\b",
+   "cour"
+  ],
+  [
+   "\\bœufs\\b",
+   "eux"
+  ],
+  [
+   "\\bf[uû]t\\b",
+   "fu"
+  ],
+  [
    "\\bhuit(?=\\s*(?:[.,!?;:…]|$)|\\s+[aeiouyéèêàâîôûœh])",
    "huite"
   ],
@@ -370,5 +421,5 @@
    "\\1 : "
   ]
  ],
- "_corrections": "Corrections appliquées à tous les textes dits par la voix (la voix lit les lettres) : « loup », « rat », « chat » et « riz » se disaient avec leur consonne muette (« loupe », « rate », « château »), « qui rime » s'entendait « qui règle », « huit » en fin de phrase perdait son t, une voyelle seule après « c'est » ou « Touche » se fondait dans le mot d'avant ; une pause est ajoutée avant le mot ou la syllabe après « Ça se lit » et « Ça commence par »."
+ "_corrections": "Corrections appliquées à tous les textes dits par la voix, qui lit les lettres et prononce parfois une consonne muette : « l'île des Mots » se disait « des Mosse » et « L'île » en début de phrase « L'aile » (écrit « ile » pour la voix), et de même « nez », « jus », « lus », « lit », « gars », « souris », « reconnus », « dessus », « courts », « œufs », « fût », « loup » (« loupe »), « rat » (« rate »), « chat est » (« château »), « riz » ; « qui rime » s'entendait « qui règle » ; « huit » en fin de phrase perdait son t ; une voyelle seule après « c'est » ou « Touche » se fondait dans le mot d'avant ; une pause est ajoutée après « Ça se lit » et « Ça commence par »."
 }
