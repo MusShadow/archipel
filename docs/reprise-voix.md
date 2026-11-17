@@ -76,6 +76,11 @@ assiettes inégales, panier trop plein) ; elles sont ajoutées à la main dans l
 l'inventaire, car le hasard ne les fait pas toujours sortir. Les fêtes de réussite n'ajoutent aucune phrase : leur
 message (avec le prénom) est seulement affiché.
 
+« six », « dix » et « soixante » se disaient avec [ks], comme en anglais : l'oreille de la reconnaissance vocale ne le
+voit pas (elle écrit « six » dans les deux cas), mais le spectrogramme si (un silence de [k] avant le [s] final). Les
+écritures pour la voix sont dans `voix/prononciation.json` (« sisse », « si pommes », « siz ans », « disse », « diz-huit »,
+« soissante »). Pour vérifier un son de ce genre : dessiner le spectrogramme du clip (scipy + matplotlib).
+
 Pièges connus de la voix (novembre 2026) : devant deux-points, une consonne finale muette est prononcée (« qui choisis :
 » devenait « choisisses ») : ces deux-points deviennent une virgule pour la voix ; « chaud » et « froid » se disaient
 avec un [d] ; certains verbes en -ent se disaient en « -ant » (« elles formant ») : on écrit le singulier.

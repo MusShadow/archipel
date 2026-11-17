@@ -3942,8 +3942,8 @@
 "spelling": null
 },
 "10|.": {
-"h": "691c568a77afaf78",
-"say": "dix",
+"h": "98df8967d1b8c729",
+"say": "disse",
 "per": 0.0,
 "spelling": null
 },
@@ -3990,21 +3990,21 @@
 "spelling": null
 },
 "17|.": {
-"h": "4fc3167c46c161ec",
-"say": "dix-sept",
-"per": 0.111,
+"h": "189b576942a27d64",
+"say": "disse-sept",
+"per": 0.0,
 "spelling": null
 },
 "18|.": {
-"h": "c602add162c90a70",
-"say": "dix-huite",
-"per": 0.1,
+"h": "a43651eefc153135",
+"say": "diz-huite",
+"per": 0.0,
 "spelling": null
 },
 "19|.": {
-"h": "f346ec2d54d7fbe0",
-"say": "dix-neuf",
-"per": 0.1,
+"h": "19d38a3f4e3f110c",
+"say": "diz-neuf",
+"per": 0.0,
 "spelling": null
 },
 "2|.": {
@@ -4050,8 +4050,8 @@
 "spelling": null
 },
 "26|.": {
-"h": "b4a1561bd067f3fe",
-"say": "vingt-six",
+"h": "bceaa04d13747d6f",
+"say": "vingt-sisse",
 "per": 0.0,
 "spelling": null
 },
@@ -4116,8 +4116,8 @@
 "spelling": null
 },
 "36|.": {
-"h": "9428babe7d280bfc",
-"say": "trente-six",
+"h": "3eb1540d919dc074",
+"say": "trente-sisse",
 "per": 0.0,
 "spelling": null
 },
@@ -4182,8 +4182,8 @@
 "spelling": null
 },
 "46|.": {
-"h": "e235f5e3c177283b",
-"say": "quarante-six",
+"h": "909f2ea0d0117bab",
+"say": "quarante-sisse",
 "per": 0.0,
 "spelling": null
 },
@@ -4248,8 +4248,8 @@
 "spelling": null
 },
 "56|.": {
-"h": "0e16fdba89303aae",
-"say": "cinquante-six",
+"h": "7ec550781dc68946",
+"say": "cinquante-sisse",
 "per": 0.0,
 "spelling": null
 },
@@ -4272,68 +4272,68 @@
 "spelling": null
 },
 "6|.": {
-"h": "1fdcb3222209ee25",
-"say": "six",
+"h": "f31a540ba366f98a",
+"say": "sisse",
 "per": 0.0,
 "spelling": null
 },
 "60|.": {
-"h": "14586510cc5c5412",
-"say": "soixante",
-"per": 0.1,
+"h": "49a3c0da95dfd213",
+"say": "soissante",
+"per": 0.0,
 "spelling": null
 },
 "61|.": {
-"h": "6df87c8608daa45a",
-"say": "soixante et un",
+"h": "277fa36de506669c",
+"say": "soissante et un",
 "per": 0.0,
 "spelling": null
 },
 "62|.": {
-"h": "a0533493f7856397",
-"say": "soixante-deux",
+"h": "4980a4ae726eb303",
+"say": "soissante-deux",
 "per": 0.0,
 "spelling": null
 },
 "63|.": {
-"h": "a8bd97fa3c63a882",
-"say": "soixante-trois",
+"h": "9377d2f578dcca1a",
+"say": "soissante-trois",
 "per": 0.0,
 "spelling": null
 },
 "64|.": {
-"h": "dad2f762bfa3427f",
-"say": "soixante-quatre",
+"h": "df20d4eb4fb36fba",
+"say": "soissante-quatre",
 "per": 0.0,
 "spelling": null
 },
 "65|.": {
-"h": "688b27b4960fb4b6",
-"say": "soixante-cinq",
+"h": "b05ffdcc4cdfb17f",
+"say": "soissante-cinq",
 "per": 0.0,
 "spelling": null
 },
 "66|.": {
-"h": "632d3f55c4790a07",
-"say": "soixante-six",
+"h": "f4d75477aa8018e0",
+"say": "soissante-sisse",
 "per": 0.0,
 "spelling": null
 },
 "67|.": {
-"h": "98dc26175c9fdc03",
-"say": "soixante-sept",
+"h": "38e9ec9188783942",
+"say": "soissante-sept",
 "per": 0.0,
 "spelling": null
 },
 "68|.": {
-"h": "17b4c2f4ba7ebb38",
-"say": "soixante-huite",
-"per": 0.077,
+"h": "1c3634c3d32350b2",
+"say": "soissante-huite",
+"per": 0.0,
 "spelling": null
 },
 "69|.": {
-"h": "14fd7d5855d584b5",
-"say": "soixante-neuf",
+"h": "2e0da2d21007d933",
+"say": "soissante-neuf",
 "per": 0.0,
 "spelling": null
 },
@@ -4344,63 +4344,63 @@
 "spelling": null
 },
 "70|.": {
-"h": "87c553994d09dbae",
-"say": "soixante-dix",
-"per": 0.154,
+"h": "ce68d2f51835605e",
+"say": "soissante-disse",
+"per": 0.0,
 "spelling": null
 },
 "71|.": {
-"h": "90aa04d2f514288c",
-"say": "soixante et onze",
+"h": "568dd1148dc01bcf",
+"say": "soissante et onze",
 "per": 0.0,
 "spelling": null
 },
 "72|.": {
-"h": "e69e08fc7743d033",
-"say": "soixante-douze",
+"h": "e98758657d93b052",
+"say": "soissante-douze",
 "per": 0.0,
 "spelling": null
 },
 "73|.": {
-"h": "1760c33d65c0ee6a",
-"say": "soixante-treize",
+"h": "7b8581e2ab9571a1",
+"say": "soissante-treize",
 "per": 0.0,
 "spelling": null
 },
 "74|.": {
-"h": "82daf1488d93d43b",
-"say": "soixante-quatorze",
+"h": "73e5b3c70d2b5163",
+"say": "soissante-quatorze",
 "per": 0.0,
 "spelling": null
 },
 "75|.": {
-"h": "b97b1d376a214674",
-"say": "soixante-quinze",
+"h": "75d39442d907ec6d",
+"say": "soissante-quinze",
 "per": 0.0,
 "spelling": null
 },
 "76|.": {
-"h": "f48ab8f12bbdfa91",
-"say": "soixante-seize",
+"h": "6543e900ed542bb1",
+"say": "soissante-seize",
 "per": 0.0,
 "spelling": null
 },
 "77|.": {
-"h": "590c2991600dc339",
-"say": "soixante-dix-sept",
+"h": "9724513358bf63e2",
+"say": "soissante-disse-sept",
 "per": 0.0,
 "spelling": null
 },
 "78|.": {
-"h": "1e85d46d9c523d6f",
-"say": "soixante-dix-huite",
-"per": 0.062,
+"h": "a961bd085703e123",
+"say": "soissante-diz-huite",
+"per": 0.0,
 "spelling": null
 },
 "79|.": {
-"h": "0f123a595053d506",
-"say": "soixante-dix-neuf",
-"per": 0.062,
+"h": "a26f53ee7de784b9",
+"say": "soissante-diz-neuf",
+"per": 0.0,
 "spelling": null
 },
 "8|.": {
@@ -4446,8 +4446,8 @@
 "spelling": null
 },
 "86|.": {
-"h": "3e0aec1b03346b51",
-"say": "quatre-vingt-six",
+"h": "ae9fdc11be3d38a7",
+"say": "quatre-vingt-sisse",
 "per": 0.143,
 "spelling": null
 },
@@ -4476,8 +4476,8 @@
 "spelling": null
 },
 "90|.": {
-"h": "e82eb4706c30d2f2",
-"say": "quatre-vingt-dix",
+"h": "1360b7406f006e36",
+"say": "quatre-vingt-disse",
 "per": 0.077,
 "spelling": null
 },
@@ -4518,21 +4518,21 @@
 "spelling": null
 },
 "97|.": {
-"h": "61be3c1694f81eab",
-"say": "quatre-vingt-dix-sept",
+"h": "a51b3fbc6bf86b58",
+"say": "quatre-vingt-disse-sept",
 "per": 0.067,
 "spelling": null
 },
 "98|.": {
-"h": "6adeec48513ad0c9",
-"say": "quatre-vingt-dix-huite",
-"per": 0.125,
+"h": "ff2d37f6eba886bb",
+"say": "quatre-vingt-diz-huite",
+"per": 0.062,
 "spelling": null
 },
 "99|.": {
-"h": "45747d453a821d50",
-"say": "quatre-vingt-dix-neuf",
-"per": 0.125,
+"h": "167047a3cb0d4e40",
+"say": "quatre-vingt-diz-neuf",
+"per": 0.062,
 "spelling": null
 },
 "a|.": {
@@ -8370,9 +8370,9 @@
 "spelling": null
 },
 "ton défi pour la maison dessine une marelle à la craie de 0 à 10 et saute dessus|.": {
-"h": "4596630fc8df99e5",
-"say": "Ton défi pour la maison : Dessine une marelle à la craie, de zéro à dix, et saute dessu.",
-"per": 0.059,
+"h": "6e7d5ee92136cce5",
+"say": "Ton défi pour la maison : Dessine une marelle à la craie, de zéro à disse, et saute dessu.",
+"per": 0.0,
 "spelling": null
 },
 "ton défi pour la maison dicte une phrase sur ton animal préféré puis relis-la avec un adulte|.": {
@@ -8400,9 +8400,9 @@
 "spelling": null
 },
 "ton défi pour la maison fais le compte à rebours de 10 à 0 avant de partir décollage|.": {
-"h": "f96feb7fad1c7086",
-"say": "Ton défi pour la maison : Fais le compte à rebours de dix à zéro avant de partir : décollage !",
-"per": 0.0,
+"h": "dc2e8f03a3cc26c0",
+"say": "Ton défi pour la maison : Fais le compte à rebours de disse à zéro avant de partir : décollage !",
+"per": 0.071,
 "spelling": null
 },
 "ton défi pour la maison fais un collier de perles qui se répète rouge bleu rouge bleu|.": {
@@ -8448,8 +8448,8 @@
 "spelling": null
 },
 "ton défi pour la maison mets 10 cuillères sur la table puis enlèves-en 3|.": {
-"h": "f7960294e88b82f0",
-"say": "Ton défi pour la maison : Mets dix cuillères sur la table, puis enlèves-en trois.",
+"h": "fc28c5a9bc83853f",
+"say": "Ton défi pour la maison : Mets di cuillères sur la table, puis enlèves-en trois.",
 "per": 0.021,
 "spelling": null
 },
@@ -8502,9 +8502,9 @@
 "spelling": null
 },
 "ton défi pour la maison range tes petites voitures par paquets de 10|.": {
-"h": "27f6e9d8fcd44875",
-"say": "Ton défi pour la maison : Range tes petites voitures par paquets de dix.",
-"per": 0.0,
+"h": "2a27c6e23a7283b3",
+"say": "Ton défi pour la maison : Range tes petites voitures par paquets de disse.",
+"per": 0.047,
 "spelling": null
 },
 "ton défi pour la maison redessine sur une feuille le dessin que tu as fait avec kiki|.": {
@@ -8514,8 +8514,8 @@
 "spelling": null
 },
 "ton défi pour la maison saute sur les dalles du trottoir en comptant jusqu'à 10|.": {
-"h": "76842d1aace27833",
-"say": "Ton défi pour la maison : Saute sur les dalles du trottoir en comptant jusqu'à dix.",
+"h": "956e45b231e537f4",
+"say": "Ton défi pour la maison : Saute sur les dalles du trottoir en comptant jusqu'à disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -13524,8 +13524,8 @@
 "spelling": null
 },
 "l'hexagone c'est 6 côtés comme une case de ruche|.": {
-"h": "0c09a22498406a8e",
-"say": "L'hexagone, c'est six côtés, comme une case de ruche.",
+"h": "608047bf358dfcec",
+"say": "L'hexagone, c'est si côtés, comme une case de ruche.",
 "per": 0.0,
 "spelling": null
 },
@@ -13752,8 +13752,8 @@
 "spelling": null
 },
 "le cube c'est 6 faces carrées comme un dé|.": {
-"h": "e8a38565da1cba72",
-"say": "Le cube, c'est six faces carrées, comme un dé.",
+"h": "02e4076fa5db26d3",
+"say": "Le cube, c'est si faces carrées, comme un dé.",
 "per": 0.0,
 "spelling": null
 },
@@ -14088,8 +14088,8 @@
 "spelling": null
 },
 "oui 6 côtés|.": {
-"h": "aeb0b59a617dc6ae",
-"say": "Oui, six côtés !",
+"h": "742cc3c30331e4de",
+"say": "Oui, si côtés !",
 "per": 0.0,
 "spelling": null
 },
@@ -14172,8 +14172,8 @@
 "spelling": null
 },
 "oui l'hexagone 6 côtés comme une case de ruche|.": {
-"h": "101132967bada3cf",
-"say": "Oui, l'hexagone : six côtés, comme une case de ruche !",
+"h": "53e63e6740456018",
+"say": "Oui, l'hexagone : si côtés, comme une case de ruche !",
 "per": 0.0,
 "spelling": null
 },
@@ -16254,8 +16254,8 @@
 "spelling": null
 },
 "cherche la deuxième|.": {
-"h": "51bd61c76f418eb5",
-"say": "Cherche la deuxième.",
+"h": "163e2b00833fe3a8",
+"say": "Cherche la deuzième.",
 "per": 0.0,
 "spelling": null
 },
@@ -23568,8 +23568,8 @@
 "spelling": null
 },
 "tu as tapé 6 fois|.": {
-"h": "7976dd7db42efa95",
-"say": "Tu as tapé six fois.",
+"h": "232a1cdb78fa4cab",
+"say": "Tu as tapé si fois.",
 "per": 0.0,
 "spelling": null
 },
@@ -23760,14 +23760,14 @@
 "spelling": null
 },
 "10|,": {
-"h": "2a6c6cec8ec0a0e0",
-"say": "dix,",
+"h": "ca9524e68708346c",
+"say": "disse,",
 "per": 0.0,
 "spelling": null
 },
 "10|?": {
-"h": "2fecb9b15fe8d4f4",
-"say": "dix ?",
+"h": "a6fc75ace6e3f7b4",
+"say": "disse ?",
 "per": 0.0,
 "spelling": null
 },
@@ -23826,8 +23826,8 @@
 "spelling": null
 },
 "26|,": {
-"h": "42d1d51048c4e35e",
-"say": "vingt-six,",
+"h": "32fdd25103fc10bc",
+"say": "vingt-sisse,",
 "per": 0.0,
 "spelling": null
 },
@@ -23850,8 +23850,8 @@
 "spelling": null
 },
 "3 et 7 ça fait 10|.": {
-"h": "7673ce0e98cd30e2",
-"say": "trois et sept, ça fait dix.",
+"h": "533a6aa0010f88f0",
+"say": "trois et sept, ça fait disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -23910,8 +23910,8 @@
 "spelling": null
 },
 "36|,": {
-"h": "8739dccea6cbdd45",
-"say": "trente-six,",
+"h": "ae823a6d14c1256f",
+"say": "trente-sisse,",
 "per": 0.0,
 "spelling": null
 },
@@ -23934,8 +23934,8 @@
 "spelling": null
 },
 "4 et 6 ça fait 10|.": {
-"h": "b54f9a0dc62b0046",
-"say": "quatre et six, ça fait dix.",
+"h": "2bb569fb5c824aa5",
+"say": "quatre et sisse, ça fait disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -23994,8 +23994,8 @@
 "spelling": null
 },
 "46|,": {
-"h": "477c1fd1349dc618",
-"say": "quarante-six,",
+"h": "8e089fd49b220346",
+"say": "quarante-sisse,",
 "per": 0.0,
 "spelling": null
 },
@@ -24018,8 +24018,8 @@
 "spelling": null
 },
 "5 et 5 ça fait 10|.": {
-"h": "662f5c1f2e8abcc9",
-"say": "cinq et cinq, ça fait dix.",
+"h": "f267f5048b8de795",
+"say": "cinq et cinq, ça fait disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -24078,8 +24078,8 @@
 "spelling": null
 },
 "56|,": {
-"h": "bc618f84abfab177",
-"say": "cinquante-six,",
+"h": "9de042a75eaf4a21",
+"say": "cinquante-sisse,",
 "per": 0.0,
 "spelling": null
 },
@@ -24102,92 +24102,92 @@
 "spelling": null
 },
 "6 et 4 ça fait 10|.": {
-"h": "0007b53c85928799",
-"say": "six et quatre, ça fait dix.",
+"h": "c3fc41affa345fb1",
+"say": "sisse et quatre, ça fait disse.",
 "per": 0.0,
 "spelling": null
 },
 "6 sacs|": {
-"h": "1c080e3f968cb560",
-"say": "six sacs",
+"h": "e05037f9afe3181b",
+"say": "si sacs",
 "per": 0.0,
 "spelling": null
 },
 "6|": {
-"h": "1fdcb3222209ee25",
-"say": "six",
+"h": "f31a540ba366f98a",
+"say": "sisse",
 "per": 0.0,
 "spelling": null
 },
 "6|,": {
-"h": "6f16d3b7b6c9db7f",
-"say": "six :",
+"h": "b21eff7826a401b0",
+"say": "sisse :",
 "per": 0.0,
 "spelling": null
 },
 "6|?": {
-"h": "4a7f191cd7f9d6c6",
-"say": "six ?",
+"h": "11f71f7901c039c0",
+"say": "sisse ?",
 "per": 0.0,
 "spelling": null
 },
 "61|,": {
-"h": "f0b92cb06450de98",
-"say": "soixante et un,",
+"h": "3ea5d86a06f558c5",
+"say": "soissante et un,",
 "per": 0.0,
 "spelling": null
 },
 "62|,": {
-"h": "3f021e539c96adf4",
-"say": "soixante-deux,",
+"h": "b0f9db7bbc82e481",
+"say": "soissante-deux,",
 "per": 0.0,
 "spelling": null
 },
 "63|,": {
-"h": "8476e0f7d1e02911",
-"say": "soixante-trois,",
+"h": "bd21529b951fc37d",
+"say": "soissante-trois,",
 "per": 0.0,
 "spelling": null
 },
 "64|,": {
-"h": "acc6f32a12db4efb",
-"say": "soixante-quatre,",
+"h": "d558fdc24d2c9c82",
+"say": "soissante-quatre,",
 "per": 0.0,
 "spelling": null
 },
 "65|,": {
-"h": "70dc946064a4237e",
-"say": "soixante-cinq,",
+"h": "b3984c3960ee3a77",
+"say": "soissante-cinq,",
 "per": 0.0,
 "spelling": null
 },
 "66|,": {
-"h": "e0e8ed8e5aca6e03",
-"say": "soixante-six,",
-"per": 0.077,
+"h": "5a3976ec44df0158",
+"say": "soissante-sisse,",
+"per": 0.0,
 "spelling": null
 },
 "67|,": {
-"h": "84c71a3c30cafbd9",
-"say": "soixante-sept,",
+"h": "68f1f9fbb651776a",
+"say": "soissante-sept,",
 "per": 0.0,
 "spelling": null
 },
 "68|,": {
-"h": "b7ed1e1f01767ea2",
-"say": "soixante-huite,",
+"h": "385b90c400184017",
+"say": "soissante-huite,",
 "per": 0.0,
 "spelling": null
 },
 "69|,": {
-"h": "ff25b3bafbf9bf30",
-"say": "soixante-neuf,",
+"h": "e4d5f52b246ac2f3",
+"say": "soissante-neuf,",
 "per": 0.0,
 "spelling": null
 },
 "7 et 3 ça fait 10|.": {
-"h": "f89183e15b6b6e53",
-"say": "sept et trois, ça fait dix.",
+"h": "9841b5d01be21232",
+"say": "sept et trois, ça fait disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -24210,8 +24210,8 @@
 "spelling": null
 },
 "8 et 2 ça fait 10|.": {
-"h": "862a9bc76f4462f2",
-"say": "huite et deux, ça fait dix.",
+"h": "672bf220354dca8d",
+"say": "huite et deux, ça fait disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -24252,8 +24252,8 @@
 "spelling": null
 },
 "arrête-toi quand tu arrives à 10|.": {
-"h": "573d45fc628b8ff3",
-"say": "Arrête-toi quand tu arrives à dix.",
+"h": "6fbe04073dadf7a8",
+"say": "Arrête-toi quand tu arrives à disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -24306,8 +24306,8 @@
 "spelling": null
 },
 "arrête-toi quand tu arrives à 6|.": {
-"h": "9012a12c1a769ecd",
-"say": "Arrête-toi quand tu arrives à six.",
+"h": "6b8fb1eba6eeea94",
+"say": "Arrête-toi quand tu arrives à sisse.",
 "per": 0.0,
 "spelling": null
 },
@@ -24330,8 +24330,8 @@
 "spelling": null
 },
 "basile a 10 biscuits pour le goûter|.": {
-"h": "6aaf52fc9bbcf84a",
-"say": "Basile a dix biscuits pour le goûter.",
+"h": "2634882a5fee9ebb",
+"say": "Basile a di biscuits pour le goûter.",
 "per": 0.0,
 "spelling": null
 },
@@ -24354,8 +24354,8 @@
 "spelling": null
 },
 "basile a 6 biscuits pour le goûter|.": {
-"h": "c38c288df265915e",
-"say": "Basile a six biscuits pour le goûter.",
+"h": "f2549970fd964aec",
+"say": "Basile a si biscuits pour le goûter.",
 "per": 0.0,
 "spelling": null
 },
@@ -24366,8 +24366,8 @@
 "spelling": null
 },
 "basile voudrait 10 pommes|.": {
-"h": "03bf195a7fd5d595",
-"say": "Basile voudrait dix pommes.",
+"h": "02ffb11103ee8b23",
+"say": "Basile voudrait di pommes.",
 "per": 0.0,
 "spelling": null
 },
@@ -24420,8 +24420,8 @@
 "spelling": null
 },
 "basile voudrait 6 pommes|.": {
-"h": "25d5ead9b99167f3",
-"say": "Basile voudrait six pommes.",
+"h": "d4e8ac5c9fc2d3b7",
+"say": "Basile voudrait si pommes.",
 "per": 0.0,
 "spelling": null
 },
@@ -24450,8 +24450,8 @@
 "spelling": null
 },
 "c'est 2 sacs de dix|": {
-"h": "9aad4061a27792ea",
-"say": "c'est deux sacs de dix",
+"h": "e20fbb7fcee5f357",
+"say": "c'est deux sacs de disse",
 "per": 0.0,
 "spelling": null
 },
@@ -24462,8 +24462,8 @@
 "spelling": null
 },
 "c'est 3 sacs de dix|": {
-"h": "2991a28ae791abfe",
-"say": "c'est trois sacs de dix",
+"h": "219a250f76aaf562",
+"say": "c'est trois sacs de disse",
 "per": 0.0,
 "spelling": null
 },
@@ -24474,8 +24474,8 @@
 "spelling": null
 },
 "c'est 4 sacs de dix|": {
-"h": "ec72fa7563b0562c",
-"say": "c'est quatre sacs de dix",
+"h": "9419dbf160f4236b",
+"say": "c'est quatre sacs de disse",
 "per": 0.0,
 "spelling": null
 },
@@ -24486,8 +24486,8 @@
 "spelling": null
 },
 "c'est 5 sacs de dix|": {
-"h": "ace0acc456ff64ba",
-"say": "c'est cinq sacs de dix",
+"h": "9f23156b13aceb4c",
+"say": "c'est cinq sacs de disse",
 "per": 0.0,
 "spelling": null
 },
@@ -24498,14 +24498,14 @@
 "spelling": null
 },
 "c'est 6 sacs de dix|": {
-"h": "4056d15925b55e73",
-"say": "c'est six sacs de dix",
+"h": "82ff5e58b43e30a3",
+"say": "c'est si sacs de disse",
 "per": 0.0,
 "spelling": null
 },
 "c'est 6|.": {
-"h": "8f6b3d8a8d9d1efe",
-"say": "c'est six !",
+"h": "27c84913273daf79",
+"say": "c'est sisse !",
 "per": 0.0,
 "spelling": null
 },
@@ -24552,8 +24552,8 @@
 "spelling": null
 },
 "ça fait 10|.": {
-"h": "a1d69af0040975e7",
-"say": "ça fait dix.",
+"h": "54aa9df88564ffa1",
+"say": "ça fait disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -24594,21 +24594,21 @@
 "spelling": null
 },
 "ça fait 17|.": {
-"h": "78130e148fa9da59",
-"say": "ça fait dix-sept.",
+"h": "17a00f0c489d1bf5",
+"say": "ça fait disse-sept.",
 "per": 0.0,
 "spelling": null
 },
 "ça fait 18|.": {
-"h": "e130201bf8f9ff56",
-"say": "ça fait dix-huite.",
-"per": 0.1,
+"h": "ee465ff514fe78e0",
+"say": "ça fait diz-huite.",
+"per": 0.0,
 "spelling": null
 },
 "ça fait 19|.": {
-"h": "7b8fd8188a437263",
-"say": "ça fait dix-neuf.",
-"per": 0.1,
+"h": "b1cffe2b5f13c7ae",
+"say": "ça fait diz-neuf.",
+"per": 0.0,
 "spelling": null
 },
 "ça fait 2|.": {
@@ -24654,8 +24654,8 @@
 "spelling": null
 },
 "ça fait 26|.": {
-"h": "e761384e91a4fbf7",
-"say": "ça fait vingt-six.",
+"h": "ee7f46e6b3383574",
+"say": "ça fait vingt-sisse.",
 "per": 0.0,
 "spelling": null
 },
@@ -24720,8 +24720,8 @@
 "spelling": null
 },
 "ça fait 36|.": {
-"h": "6062b7e24998a3c7",
-"say": "ça fait trente-six.",
+"h": "cd6f9673bb689577",
+"say": "ça fait trente-sisse.",
 "per": 0.0,
 "spelling": null
 },
@@ -24786,8 +24786,8 @@
 "spelling": null
 },
 "ça fait 46|.": {
-"h": "2f53ee0905925f59",
-"say": "ça fait quarante-six.",
+"h": "7f00c81b12112d19",
+"say": "ça fait quarante-sisse.",
 "per": 0.0,
 "spelling": null
 },
@@ -24852,8 +24852,8 @@
 "spelling": null
 },
 "ça fait 56|.": {
-"h": "4eb1403a9dccda6e",
-"say": "ça fait cinquante-six.",
+"h": "c8e34209293f6983",
+"say": "ça fait cinquante-sisse.",
 "per": 0.0,
 "spelling": null
 },
@@ -24876,8 +24876,8 @@
 "spelling": null
 },
 "ça fait 6|.": {
-"h": "34de335c37602646",
-"say": "ça fait six.",
+"h": "b67be2554e35a5e8",
+"say": "ça fait sisse.",
 "per": 0.0,
 "spelling": null
 },
@@ -25050,8 +25050,8 @@
 "spelling": null
 },
 "chaque sac contient 10 pommes|.": {
-"h": "6cb983ec1716cb59",
-"say": "Chaque sac contient dix pommes.",
+"h": "d8b1f00bc9b3c76a",
+"say": "Chaque sac contient di pommes.",
 "per": 0.0,
 "spelling": null
 },
@@ -25062,8 +25062,8 @@
 "spelling": null
 },
 "cherche le 10 compte depuis le 0 en montrant chaque nénuphar|.": {
-"h": "a0abb610cb21431b",
-"say": "Cherche le dix, compte depuis le zéro, en montrant chaque nénuphar.",
+"h": "7afe2337e4b53ceb",
+"say": "Cherche le disse : compte depuis le zéro, en montrant chaque nénuphar.",
 "per": 0.0,
 "spelling": null
 },
@@ -25092,8 +25092,8 @@
 "spelling": null
 },
 "cherche le 6 compte depuis le 0 en montrant chaque nénuphar|.": {
-"h": "5429f587041a326f",
-"say": "Cherche le six, compte depuis le zéro, en montrant chaque nénuphar.",
+"h": "96b1ca8045a86acf",
+"say": "Cherche le sisse : compte depuis le zéro, en montrant chaque nénuphar.",
 "per": 0.0,
 "spelling": null
 },
@@ -25134,8 +25134,8 @@
 "spelling": null
 },
 "combien en faut-il encore pour en avoir 10|?": {
-"h": "16d0448851285b87",
-"say": "Combien en faut-il encore pour en avoir dix ?",
+"h": "11c27a3cede14fa9",
+"say": "Combien en faut-il encore pour en avoir disse ?",
 "per": 0.0,
 "spelling": null
 },
@@ -25188,8 +25188,8 @@
 "spelling": null
 },
 "compte les sacs de dix|,": {
-"h": "1a108d34adcce4aa",
-"say": "Compte les sacs de dix :",
+"h": "fdb07c96de12bcd3",
+"say": "Compte les sacs de disse :",
 "per": 0.0,
 "spelling": null
 },
@@ -25212,14 +25212,14 @@
 "spelling": null
 },
 "dix|,": {
-"h": "2a6c6cec8ec0a0e0",
-"say": "dix,",
+"h": "ca9524e68708346c",
+"say": "disse,",
 "per": 0.0,
 "spelling": null
 },
 "donc 10|.": {
-"h": "f20246809bfb08e0",
-"say": "donc dix.",
+"h": "227686f7298c9595",
+"say": "donc disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -25392,20 +25392,20 @@
 "spelling": null
 },
 "et 6 pommes|,": {
-"h": "8d74955a80def2e4",
-"say": "et six pommes,",
+"h": "ba8f98e07e0c1abe",
+"say": "et si pommes,",
 "per": 0.0,
 "spelling": null
 },
 "et 6 pommes|.": {
-"h": "f319efd46a62ac36",
-"say": "et six pommes.",
+"h": "c604d2001e8dd618",
+"say": "et si pommes.",
 "per": 0.0,
 "spelling": null
 },
 "et 6|,": {
-"h": "45c728201fe3efdd",
-"say": "et six,",
+"h": "4688ab7d4d8cc169",
+"say": "et sisse,",
 "per": 0.125,
 "spelling": null
 },
@@ -25542,8 +25542,8 @@
 "spelling": null
 },
 "fais sauter la grenouille sur le 10|.": {
-"h": "faacc42b323f022d",
-"say": "Fais sauter la grenouille sur le dix.",
+"h": "cf8a75065558fbe3",
+"say": "Fais sauter la grenouille sur le disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -25572,8 +25572,8 @@
 "spelling": null
 },
 "fais sauter la grenouille sur le 6|.": {
-"h": "b4f9f9cc3edae69e",
-"say": "Fais sauter la grenouille sur le six.",
+"h": "ffb937429a96f934",
+"say": "Fais sauter la grenouille sur le sisse.",
 "per": 0.0,
 "spelling": null
 },
@@ -25674,9 +25674,9 @@
 "spelling": null
 },
 "il reste 10 biscuits à partager|.": {
-"h": "80eb0e7cd40b1596",
-"say": "Il reste dix biscuits à partager.",
-"per": 0.0,
+"h": "681bb6589728e9ba",
+"say": "Il reste di biscuits à partager.",
+"per": 0.043,
 "spelling": null
 },
 "il reste 11 biscuits à partager|.": {
@@ -25716,8 +25716,8 @@
 "spelling": null
 },
 "il reste 6 biscuits à partager|.": {
-"h": "0e4d4af647cdb671",
-"say": "Il reste six biscuits à partager.",
+"h": "4c5c1c5897101dfe",
+"say": "Il reste si biscuits à partager.",
 "per": 0.0,
 "spelling": null
 },
@@ -25746,38 +25746,38 @@
 "spelling": null
 },
 "il y a 10 biscuits pour 2 amis|.": {
-"h": "182d29a733b26afa",
-"say": "Il y a dix biscuits pour deux amis.",
+"h": "851bbbb07a10c1fb",
+"say": "Il y a di biscuits pour deux amis.",
 "per": 0.0,
 "spelling": null
 },
 "il y a 10 biscuits pour kiki|": {
-"h": "b732a7bd3d9baae7",
-"say": "Il y a dix biscuits pour Kiki",
+"h": "838ed4c0be07294b",
+"say": "Il y a di biscuits pour Kiki",
 "per": 0.0,
 "spelling": null
 },
 "il y a 10 biscuits pour mona|": {
-"h": "032b49be9acb03f6",
-"say": "Il y a dix biscuits pour Mona",
+"h": "ab9789b531b65ee0",
+"say": "Il y a di biscuits pour Mona",
 "per": 0.0,
 "spelling": null
 },
 "il y a 10 biscuits pour octave|": {
-"h": "bf13cae43c7bac61",
-"say": "Il y a dix biscuits pour Octave",
+"h": "5a9b10befaf22421",
+"say": "Il y a di biscuits pour Octave",
 "per": 0.0,
 "spelling": null
 },
 "il y a 10 biscuits pour pico|": {
-"h": "779f5cfe8a3bae99",
-"say": "Il y a dix biscuits pour Pico",
-"per": 0.0,
+"h": "b6b1ab8c4930908e",
+"say": "Il y a di biscuits pour Pico",
+"per": 0.053,
 "spelling": null
 },
 "il y a 10 biscuits pour rico|": {
-"h": "50121dcb616b0fb7",
-"say": "Il y a dix biscuits pour Rico",
+"h": "bead2140f44e374c",
+"say": "Il y a di biscuits pour Rico",
 "per": 0.0,
 "spelling": null
 },
@@ -25878,80 +25878,80 @@
 "spelling": null
 },
 "il y a 6 biscuits pour 2 amis|.": {
-"h": "ac349d6a87b2342d",
-"say": "Il y a six biscuits pour deux amis.",
+"h": "49c78573e90017cc",
+"say": "Il y a si biscuits pour deux amis.",
 "per": 0.0,
 "spelling": null
 },
 "il y a 6 biscuits pour 3 amis|.": {
-"h": "e2ed984dc630218e",
-"say": "Il y a six biscuits pour trois amis.",
+"h": "78ba86adf80f6500",
+"say": "Il y a si biscuits pour trois amis.",
 "per": 0.0,
 "spelling": null
 },
 "il y a 6 biscuits pour kiki|": {
-"h": "949f1ead14ffac53",
-"say": "Il y a six biscuits pour Kiki",
+"h": "c7c7a71a2ee649bd",
+"say": "Il y a si biscuits pour Kiki",
 "per": 0.0,
 "spelling": null
 },
 "il y a 6 biscuits pour kiki|,": {
-"h": "372da661797ebda9",
-"say": "Il y a six biscuits pour Kiki,",
+"h": "0a981f301a43aaa2",
+"say": "Il y a si biscuits pour Kiki,",
 "per": 0.0,
 "spelling": null
 },
 "il y a 6 biscuits pour mona|": {
-"h": "a7b3678935ebd754",
-"say": "Il y a six biscuits pour Mona",
+"h": "600b1e11d91b027f",
+"say": "Il y a si biscuits pour Mona",
 "per": 0.0,
 "spelling": null
 },
 "il y a 6 biscuits pour mona|,": {
-"h": "5573490c5c8c543a",
-"say": "Il y a six biscuits pour Mona,",
+"h": "5c54f4efa3edcc40",
+"say": "Il y a si biscuits pour Mona,",
 "per": 0.0,
 "spelling": null
 },
 "il y a 6 biscuits pour octave|": {
-"h": "fdb307f268ce3421",
-"say": "Il y a six biscuits pour Octave",
+"h": "919c7b973a1cb2d4",
+"say": "Il y a si biscuits pour Octave",
 "per": 0.0,
 "spelling": null
 },
 "il y a 6 biscuits pour octave|,": {
-"h": "20326f55824e90d4",
-"say": "Il y a six biscuits pour Octave,",
+"h": "5a4ee67b57cc1605",
+"say": "Il y a si biscuits pour Octave,",
 "per": 0.0,
 "spelling": null
 },
 "il y a 6 biscuits pour pico|": {
-"h": "22d9fde9c97f0a97",
-"say": "Il y a six biscuits pour Pico",
-"per": 0.0,
+"h": "0f091c38beb5d2b4",
+"say": "Il y a si biscuits pour Pico",
+"per": 0.053,
 "spelling": null
 },
 "il y a 6 biscuits pour pico|,": {
-"h": "ccf4f80d4720d42f",
-"say": "Il y a six biscuits pour Pico,",
+"h": "f7c05f14941fb6f8",
+"say": "Il y a si biscuits pour Pico,",
 "per": 0.0,
 "spelling": null
 },
 "il y a 6 biscuits pour rico|": {
-"h": "ec2d6af4bb75331c",
-"say": "Il y a six biscuits pour Rico",
+"h": "e1a65a775abca0d5",
+"say": "Il y a si biscuits pour Rico",
 "per": 0.0,
 "spelling": null
 },
 "il y a 6 biscuits pour rico|,": {
-"h": "f81019cdd6da2cc1",
-"say": "Il y a six biscuits pour Rico,",
+"h": "c9a52e54d0abdb4f",
+"say": "Il y a si biscuits pour Rico,",
 "per": 0.0,
 "spelling": null
 },
 "il y a 6 pommes dans le panier|.": {
-"h": "a9196365d6d867e5",
-"say": "Il y a six pommes dans le panier.",
+"h": "24e1518b4e1ed10e",
+"say": "Il y a si pommes dans le panier.",
 "per": 0.0,
 "spelling": null
 },
@@ -26088,8 +26088,8 @@
 "spelling": null
 },
 "la grenouille arrive sur le 10|.": {
-"h": "015732360cbb7bd2",
-"say": "La grenouille arrive sur le dix.",
+"h": "9c3190dc2ac344fc",
+"say": "La grenouille arrive sur le disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -26118,8 +26118,8 @@
 "spelling": null
 },
 "la grenouille arrive sur le 6|.": {
-"h": "df2a545be6633e18",
-"say": "La grenouille arrive sur le six.",
+"h": "0b72fb69173a3cc2",
+"say": "La grenouille arrive sur le sisse.",
 "per": 0.0,
 "spelling": null
 },
@@ -26154,8 +26154,8 @@
 "spelling": null
 },
 "la grenouille est sur le 10|.": {
-"h": "86df32339021ca45",
-"say": "La grenouille est sur le dix.",
+"h": "048cfe464899e52e",
+"say": "La grenouille est sur le disse.",
 "per": 0.0,
 "spelling": null
 },
@@ -26184,8 +26184,8 @@
 "spelling": null
 },
 "la grenouille est sur le 6|.": {
-"h": "b7576da8d13cc90d",
-"say": "La grenouille est sur le six.",
+"h": "99075f39b9dfc8cf",
+"say": "La grenouille est sur le sisse.",
 "per": 0.0,
 "spelling": null
 },
@@ -26232,14 +26232,14 @@
 "spelling": null
 },
 "le 10 c'est juste après le 9|.": {
-"h": "3b0bb3b14bc90c57",
-"say": "Le dix, c'est juste après le neuf.",
+"h": "ac45721689767568",
+"say": "Le disse, c'est juste après le neuf.",
 "per": 0.0,
 "spelling": null
 },
 "le 10|.": {
-"h": "6f8b595af7958695",
-"say": "le dix !",
+"h": "7eda93e8432cdd7d",
+"say": "le disse !",
 "per": 0.0,
 "spelling": null
 },
@@ -26292,20 +26292,20 @@
 "spelling": null
 },
 "le 6 c'est juste après le 5|.": {
-"h": "76d6c4f241d7a6c5",
-"say": "Le six, c'est juste après le cinq.",
-"per": 0.053,
+"h": "a24794ac8f817134",
+"say": "Le sisse, c'est juste après le cinq.",
+"per": 0.0,
 "spelling": null
 },
 "le 6|.": {
-"h": "daf1918a5d33ab9e",
-"say": "le six !",
+"h": "42facb6712e84db2",
+"say": "le sisse !",
 "per": 0.0,
 "spelling": null
 },
 "le 7 c'est juste après le 6|.": {
-"h": "e8ee12bb13012e3b",
-"say": "Le sept, c'est juste après le six.",
+"h": "ea7abead3ea25da0",
+"say": "Le sept, c'est juste après le sisse.",
 "per": 0.0,
 "spelling": null
 },
@@ -26406,8 +26406,8 @@
 "spelling": null
 },
 "lis les nombres juste avant et juste après 6|?": {
-"h": "132228f3485e7e15",
-"say": "Lis les nombres juste avant et juste après, six… ?…",
+"h": "3aa6f26a8d17a645",
+"say": "Lis les nombres juste avant et juste après, sisse… ?…",
 "per": 0.0,
 "spelling": null
 },
@@ -26424,8 +26424,8 @@
 "spelling": null
 },
 "mets 10 pommes dans le panier puis touche la coche|.": {
-"h": "039a55bd57223d16",
-"say": "Mets dix pommes dans le panier, puis touche la coche.",
+"h": "4a973367c85d94f0",
+"say": "Mets di pommes dans le panier, puis touche la coche.",
 "per": 0.0,
 "spelling": null
 },
@@ -26478,8 +26478,8 @@
 "spelling": null
 },
 "mets 6 pommes dans le panier puis touche la coche|.": {
-"h": "8469f035890c1edc",
-"say": "Mets six pommes dans le panier, puis touche la coche.",
+"h": "1a0832cf4e4b35b6",
+"say": "Mets si pommes dans le panier, puis touche la coche.",
 "per": 0.0,
 "spelling": null
 },
@@ -26526,8 +26526,8 @@
 "spelling": null
 },
 "mets d'abord 6 sacs|,": {
-"h": "2776fa142e7bdb67",
-"say": "Mets d'abord six sacs,",
+"h": "2aa246297c5d75bf",
+"say": "Mets d'abord si sacs,",
 "per": 0.0,
 "spelling": null
 },
@@ -26568,8 +26568,8 @@
 "spelling": null
 },
 "oui 10 pommes|.": {
-"h": "a0196ce32c5eb275",
-"say": "Oui, dix pommes !",
+"h": "4150c0892675b2c8",
+"say": "Oui, di pommes !",
 "per": 0.0,
 "spelling": null
 },
@@ -26610,20 +26610,20 @@
 "spelling": null
 },
 "oui 17 pommes|.": {
-"h": "12f3beba058901c3",
-"say": "Oui, dix-sept pommes !",
+"h": "118392b63fea8cde",
+"say": "Oui, disse-sept pommes !",
 "per": 0.0,
 "spelling": null
 },
 "oui 18 pommes|.": {
-"h": "15d31206bbb768e7",
-"say": "Oui, dix-huit pommes !",
-"per": 0.1,
+"h": "d8e45b9499c768f8",
+"say": "Oui, diz-huit pommes !",
+"per": 0.0,
 "spelling": null
 },
 "oui 19 pommes|.": {
-"h": "5b628c5d00f135ea",
-"say": "Oui, dix-neuf pommes !",
+"h": "56dfbed4e4748c42",
+"say": "Oui, diz-neuf pommes !",
 "per": 0.0,
 "spelling": null
 },
@@ -26676,8 +26676,8 @@
 "spelling": null
 },
 "oui 26 pommes|.": {
-"h": "eb370e7f6e501bb7",
-"say": "Oui, vingt-six pommes !",
+"h": "614568264ac84d80",
+"say": "Oui, vingt-si pommes !",
 "per": 0.0,
 "spelling": null
 },
@@ -26748,8 +26748,8 @@
 "spelling": null
 },
 "oui 36 pommes|.": {
-"h": "c4102708a78e3297",
-"say": "Oui, trente-six pommes !",
+"h": "2f9b44b28b86ec1e",
+"say": "Oui, trente-si pommes !",
 "per": 0.0,
 "spelling": null
 },
@@ -26820,8 +26820,8 @@
 "spelling": null
 },
 "oui 46 pommes|.": {
-"h": "e39a44cb8123c0e5",
-"say": "Oui, quarante-six pommes !",
+"h": "37a0fe4f02b94894",
+"say": "Oui, quarante-si pommes !",
 "per": 0.0,
 "spelling": null
 },
@@ -26892,8 +26892,8 @@
 "spelling": null
 },
 "oui 56 pommes|.": {
-"h": "58985889498617bf",
-"say": "Oui, cinquante-six pommes !",
+"h": "c33205b4b86d5bc7",
+"say": "Oui, cinquante-si pommes !",
 "per": 0.0,
 "spelling": null
 },
@@ -26916,62 +26916,62 @@
 "spelling": null
 },
 "oui 6 pommes|.": {
-"h": "8b11690b733e8eee",
-"say": "Oui, six pommes !",
+"h": "d2dc8099e869dcf1",
+"say": "Oui, si pommes !",
 "per": 0.0,
 "spelling": null
 },
 "oui 61 pommes|.": {
-"h": "d2d2c047400bcdce",
-"say": "Oui, soixante et une pommes !",
+"h": "e6275f295d2a8a07",
+"say": "Oui, soissante et une pommes !",
 "per": 0.0,
 "spelling": null
 },
 "oui 62 pommes|.": {
-"h": "d19de1f28b82b38a",
-"say": "Oui, soixante-deux pommes !",
+"h": "a7e9158eb47542a9",
+"say": "Oui, soissante-deux pommes !",
 "per": 0.0,
 "spelling": null
 },
 "oui 63 pommes|.": {
-"h": "48df624fccb891a1",
-"say": "Oui, soixante-trois pommes !",
-"per": 0.067,
+"h": "7e114f241dcf4858",
+"say": "Oui, soissante-trois pommes !",
+"per": 0.0,
 "spelling": null
 },
 "oui 64 pommes|.": {
-"h": "8820533b6c894d10",
-"say": "Oui, soixante-quatre pommes !",
+"h": "7872d4fe750c63f8",
+"say": "Oui, soissante-quatre pommes !",
 "per": 0.0,
 "spelling": null
 },
 "oui 65 pommes|.": {
-"h": "81cf84847b4d56d1",
-"say": "Oui, soixante-cinq pommes !",
+"h": "b3d322901d4d31ff",
+"say": "Oui, soissante-cinq pommes !",
 "per": 0.0,
 "spelling": null
 },
 "oui 66 pommes|.": {
-"h": "d0a084aa1105d3a2",
-"say": "Oui, soixante-six pommes !",
+"h": "2ef48750999cb80e",
+"say": "Oui, soissante-si pommes !",
 "per": 0.0,
 "spelling": null
 },
 "oui 67 pommes|.": {
-"h": "c2bef6436ebf0aa6",
-"say": "Oui, soixante-sept pommes !",
+"h": "a49c1e2d2fddb90c",
+"say": "Oui, soissante-sept pommes !",
 "per": 0.0,
 "spelling": null
 },
 "oui 68 pommes|.": {
-"h": "0173edb85d5a26b2",
-"say": "Oui, soixante-huit pommes !",
+"h": "68ce8203edd51136",
+"say": "Oui, soissante-huit pommes !",
 "per": 0.0,
 "spelling": null
 },
 "oui 69 pommes|.": {
-"h": "2bc7b88f11335a94",
-"say": "Oui, soixante-neuf pommes !",
+"h": "447233288d291b8e",
+"say": "Oui, soissante-neuf pommes !",
 "per": 0.0,
 "spelling": null
 },
@@ -27252,8 +27252,8 @@
 "spelling": null
 },
 "prépare 26 pommes pour basile|.": {
-"h": "881ddfdfa7f5476f",
-"say": "Prépare vingt-six pommes pour Basile.",
+"h": "b869498f00122423",
+"say": "Prépare vingt-si pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
@@ -27306,8 +27306,8 @@
 "spelling": null
 },
 "prépare 36 pommes pour basile|.": {
-"h": "67c10b125758a3b1",
-"say": "Prépare trente-six pommes pour Basile.",
+"h": "cd65d8a27974db52",
+"say": "Prépare trente-si pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
@@ -27360,8 +27360,8 @@
 "spelling": null
 },
 "prépare 46 pommes pour basile|.": {
-"h": "76e9238e7cb87529",
-"say": "Prépare quarante-six pommes pour Basile.",
+"h": "aee8575172b21b5d",
+"say": "Prépare quarante-si pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
@@ -27414,8 +27414,8 @@
 "spelling": null
 },
 "prépare 56 pommes pour basile|.": {
-"h": "4be0dd33dded1a35",
-"say": "Prépare cinquante-six pommes pour Basile.",
+"h": "5a44885469571497",
+"say": "Prépare cinquante-si pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
@@ -27438,56 +27438,56 @@
 "spelling": null
 },
 "prépare 61 pommes pour basile|.": {
-"h": "238e0d7bdaa488fb",
-"say": "Prépare soixante et une pommes pour Basile.",
+"h": "dc307be1b3cd545f",
+"say": "Prépare soissante et une pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
 "prépare 62 pommes pour basile|.": {
-"h": "5401dd4cad12a0ce",
-"say": "Prépare soixante-deux pommes pour Basile.",
+"h": "2a5b1535fe3794c8",
+"say": "Prépare soissante-deux pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
 "prépare 63 pommes pour basile|.": {
-"h": "ee07de891243fb0d",
-"say": "Prépare soixante-trois pommes pour Basile.",
+"h": "b1621558cc00e0da",
+"say": "Prépare soissante-trois pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
 "prépare 64 pommes pour basile|.": {
-"h": "807b35389afd14a3",
-"say": "Prépare soixante-quatre pommes pour Basile.",
+"h": "ecfb953dc92f55a0",
+"say": "Prépare soissante-quatre pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
 "prépare 65 pommes pour basile|.": {
-"h": "68bd175462e9893d",
-"say": "Prépare soixante-cinq pommes pour Basile.",
+"h": "66e4adbac95bfdf3",
+"say": "Prépare soissante-cinq pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
 "prépare 66 pommes pour basile|.": {
-"h": "b07bb321edb99fb1",
-"say": "Prépare soixante-six pommes pour Basile.",
+"h": "657f65db532d1503",
+"say": "Prépare soissante-si pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
 "prépare 67 pommes pour basile|.": {
-"h": "6910aa3934ee7af3",
-"say": "Prépare soixante-sept pommes pour Basile.",
+"h": "59617455589d1cee",
+"say": "Prépare soissante-sept pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
 "prépare 68 pommes pour basile|.": {
-"h": "e9bef30e9d6f9538",
-"say": "Prépare soixante-huit pommes pour Basile.",
+"h": "3bda5a086cc55661",
+"say": "Prépare soissante-huit pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
 "prépare 69 pommes pour basile|.": {
-"h": "c649af2d6ee6f8ce",
-"say": "Prépare soixante-neuf pommes pour Basile.",
+"h": "286e014eaaf41731",
+"say": "Prépare soissante-neuf pommes pour Basile.",
 "per": 0.0,
 "spelling": null
 },
@@ -27546,8 +27546,8 @@
 "spelling": null
 },
 "puis 6 pommes|.": {
-"h": "de6b8f761f4508af",
-"say": "Puis six pommes.",
+"h": "d951c821d8c11237",
+"say": "Puis si pommes.",
 "per": 0.0,
 "spelling": null
 },
@@ -27612,8 +27612,8 @@
 "spelling": null
 },
 "qu'est-ce qui vient après 6|?": {
-"h": "956ba26cd84dac95",
-"say": "Qu'est-ce qui vient après six ?",
+"h": "e0c5956d011648c0",
+"say": "Qu'est-ce qui vient après sisse ?",
 "per": 0.0,
 "spelling": null
 },
@@ -27636,8 +27636,8 @@
 "spelling": null
 },
 "quand il y a 10 pommes|,": {
-"h": "25278b62dbcac68e",
-"say": "Quand il y a dix pommes,",
+"h": "cf063d6b924c9171",
+"say": "Quand il y a di pommes,",
 "per": 0.0,
 "spelling": null
 },
@@ -27690,8 +27690,8 @@
 "spelling": null
 },
 "quand il y a 6 pommes|,": {
-"h": "f36cc4eff440093c",
-"say": "Quand il y a six pommes,",
+"h": "45a51ae86bc355b6",
+"say": "Quand il y a si pommes,",
 "per": 0.0,
 "spelling": null
 },
@@ -27750,14 +27750,14 @@
 "spelling": null
 },
 "si chacun en a 3 est-ce que ça fait bien 6|?": {
-"h": "d5c24d8488a681ec",
-"say": "Si chacun en a trois, est-ce que ça fait bien six ?",
-"per": 0.034,
+"h": "eded6edc8d3879dd",
+"say": "Si chacun en a trois, est-ce que ça fait bien sisse ?",
+"per": 0.0,
 "spelling": null
 },
 "si chacun en a 4 est-ce que ça fait bien 6|?": {
-"h": "a4ac0f08b95a768f",
-"say": "Si chacun en a quatre, est-ce que ça fait bien six ?",
+"h": "3c1ba97c1dd59926",
+"say": "Si chacun en a quatre, est-ce que ça fait bien sisse ?",
 "per": 0.0,
 "spelling": null
 },
@@ -27774,9 +27774,9 @@
 "spelling": null
 },
 "si chacun en a 6 est-ce que ça fait bien 10|?": {
-"h": "64c2bd4d17ef9786",
-"say": "Si chacun en a six, est-ce que ça fait bien dix ?",
-"per": 0.037,
+"h": "633998b7b775ed7a",
+"say": "Si chacun en a sisse, est-ce que ça fait bien disse ?",
+"per": 0.0,
 "spelling": null
 },
 "si on partage bien|,": {
@@ -27810,8 +27810,8 @@
 "spelling": null
 },
 "touche 6|.": {
-"h": "dcb5bce2aa644da5",
-"say": "Touche six.",
+"h": "6a26cd9fdee311d6",
+"say": "Touche sisse.",
 "per": 0.0,
 "spelling": null
 },
@@ -27870,8 +27870,8 @@
 "spelling": null
 },
 "un sac c'est 10 pommes|.": {
-"h": "3e14a6481719340d",
-"say": "Un sac, c'est dix pommes.",
+"h": "254a313aad497d2c",
+"say": "Un sac, c'est di pommes.",
 "per": 0.0,
 "spelling": null
 },
