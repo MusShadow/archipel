@@ -91,6 +91,12 @@ def play_round(page, prefix, mistake_at=1, tap_at=2, max_steps=60):
         chaps[it["chap"]] = chaps.get(it["chap"], 0) + 1
         if n == 0:
             shot(page, f"{prefix}-manche", 150)
+            # Après la consigne, Plume nomme les poubelles (leur étiquette écrite).
+            page.wait_for_timeout(250)
+            labels = page.evaluate("() => [...document.querySelectorAll('.tbin .tlab')].map(e => e.textContent + '.')")
+            said = spoken(page)
+            if not all(l in said for l in labels):
+                errors.append(f"{prefix} : poubelles non nommées après la consigne : {labels} ; entendu : {said[-6:]}")
             shown = page.evaluate("() => [...document.querySelectorAll('.tbin')].map(b => b.dataset.bin)")
             if shown != it["bins"]:
                 errors.append(f"{prefix} : poubelles affichées {shown} au lieu de {it['bins']}")

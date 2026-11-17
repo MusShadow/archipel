@@ -39,7 +39,7 @@ function cotes(level: number, r: Rng): FormItem {
   const n = SIDES[shape]!;
   const choices = r.shuffle([n, n + 1, n - 1 >= 3 ? n - 1 : n + 2].map(String));
   const opts = Object.fromEntries(choices.map((c) => [c, { id: c, html: `<span class="title" style="font-size:1.1em">${c}</span>` }]));
-  return { kind: "cotes", target: String(n), choices, opts, shape, sides: n, skill: "GEO.FORMES2D.COTES", difficulty: 0.3 + 0.1 * (n - 3), form: "image", guess: 1 / 3, level, prompt: "Combien de côtés a cette forme ? Compte-les avec ton doigt." };
+  return { kind: "cotes", target: String(n), choices, opts, shape, sides: n, skill: "GEO.FORMES2D.COTES", difficulty: 0.3 + 0.1 * (n - 3), form: "image", guess: 1 / 3, level, prompt: `Combien de côtés a ${SHAPE_NAME[shape]} ? Compte-les avec ton doigt.` };
 }
 function nom3d(level: number, r: Rng): FormItem {
   const pool: Solid[] = level <= 3 ? ["boule", "cube", "cylindre", "cone"] : SOLIDS;
@@ -75,6 +75,7 @@ export const formes: ActivityModule<FormItem> = {
   card: `<span style="display:flex;gap:.04em;width:1.6em;height:.8em"><span style="flex:1">${shapeSVG("triangle", "#8C6BE0")}</span><span style="flex:1">${solidSVG("cube", "#3D8BEA")}</span></span>`,
   pitch: "Les formes de Rico, pour reconnaître les formes plates et les solides.",
   startLevel: () => 1,
+  identity: (it) => `${it.kind}:${it.shape ?? it.solid ?? it.target}`,
 
   generate(level, ctx) {
     const r = ctx.rng;
@@ -129,7 +130,7 @@ export const formes: ActivityModule<FormItem> = {
 
   success(item) {
     if (item.kind === "nom2d") return `Oui, ${SHAPE_NAME[item.target as Shape2D]} : ${SHAPE_HINT[item.target as Shape2D]} !`;
-    if (item.kind === "cotes") return `Oui, ${item.sides} côtés !`;
+    if (item.kind === "cotes") return `Oui ! ${cap(SHAPE_NAME[item.shape!])} a ${item.sides} côtés.`;
     if (item.kind === "nom3d") return `Oui, ${SOLID_NAME[item.target as Solid]} !`;
     if (item.kind === "objet") return `Oui ! ${cap(item.target)} a la forme ${item.solid === "boule" ? "d'une boule" : item.solid === "pyramide" ? "d'une pyramide" : `d'un ${art(SOLID_NAME[item.solid!])}`}.`;
     return `Oui ! ${cap(SOLID_NAME[item.solid!])} laisse la trace d'${SHAPE_NAME[item.target as Shape2D].replace(/^(le |la |l')/, (m) => (m === "la " ? "une " : "un "))}.`;

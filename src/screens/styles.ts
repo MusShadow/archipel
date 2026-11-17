@@ -311,6 +311,11 @@ button.tok{cursor:pointer;border-color:var(--line)}
 .wcard.dwide{width:max(170px,calc(var(--u) * 280))}
 .wcard.dwide .wart{width:max(90px,calc(var(--u) * 150));height:max(90px,calc(var(--u) * 150))}
 .wcard.dwide .wart svg{height:100%}
+/* Réponses proposées dites par Plume */
+.hasay{position:relative}
+.sayit{position:absolute;top:max(4px,calc(var(--u) * 8));right:max(4px,calc(var(--u) * 8));width:max(34px,calc(var(--u) * 46));height:max(34px,calc(var(--u) * 46));border-radius:50%;background:#fff;border:2px solid #A9DFE3;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2}
+.sayit svg{width:68%!important;height:68%!important}
+.saying{box-shadow:0 0 0 max(4px,calc(var(--u) * 7)) rgba(255,193,69,.9);transition:box-shadow .15s}
 /* Atelier des drapeaux */
 .flagrow{gap:max(14px,calc(var(--u) * 30))}
 .flagmodel{width:max(140px,calc(var(--u) * 230));aspect-ratio:94/64;border-radius:8px;transition:opacity .3s}

@@ -9,7 +9,7 @@
 // Les poubelles suivent les réglages du grand tri (couleurs de votre commune). Chaque phrase dite est écrite ici ;
 // voiceLines() les donne toutes, pour la voix naturelle.
 import type { Rng } from "../core";
-import type { ActivityModule, Ctx, Item, View } from "../host";
+import { optionText, type ActivityModule, type Ctx, type Item, type View } from "../host";
 import { emoji } from "../lexique";
 import { sfx, type TriSettings } from "../services";
 import { glow, h, medallion, sleep } from "../ui";
@@ -257,13 +257,13 @@ export function camionItem(r: Rng, s: TriSettings): DechetsItem {
 }
 export function quiItem(r: Rng): DechetsItem {
   const choices = r.shuffle(["eboueur", ...r.shuffle(["pompier", "boulanger", "facteur"]).slice(0, 2)]);
-  return base({ kind: "qui", key: `qui:${choices.join(",")}`, chap: CAMION, d: -0.4, target: "eboueur", choices,
+  return base({ kind: "qui", key: "qui", chap: CAMION, d: -0.4, target: "eboueur", choices,
     opts: Object.fromEntries(choices.map((c) => [c, { art: c, label: PEOPLE[c].label }])), scene: ["camion"], labels: [""],
     prompt: QUI.prompt, clue: QUI.clue, why: QUI.why, win: QUI.why, retry: Object.fromEntries(choices.filter((c) => c !== "eboueur").map((c) => [c, PEOPLE[c].retry])) });
 }
 export function rueItem(r: Rng): DechetsItem {
   const choices = r.shuffle(Object.keys(RUE_Q.opts));
-  return base({ kind: "rue", key: `rue:${choices.join(",")}`, chap: CAMION, d: -0.3, target: "coucou", choices, opts: RUE_Q.opts, scene: ["camion"], labels: [""],
+  return base({ kind: "rue", key: "rue", chap: CAMION, d: -0.3, target: "coucou", choices, opts: RUE_Q.opts, scene: ["camion"], labels: [""],
     prompt: RUE_Q.prompt, clue: RUE_Q.clue, why: RUE_Q.why, win: RUE_Q.why, retry: RUE_Q.retry });
 }
 export function routeItem(r: Rng, s: TriSettings, binId?: string): DechetsItem {
@@ -281,12 +281,12 @@ export function tapisItem(r: Rng): DechetsItem {
   for (const c of r.shuffle(Object.keys(CRATES))) things.push(r.pick(pool.filter((id) => MATIERE[id].crate === c)));
   things.push(r.pick(pool.filter((id) => !things.includes(id))));
   const order = r.shuffle(things);
-  return base({ kind: "tapis", key: `tapis:${order.join(",")}`, chap: CENTRE, d: 0.3, things: order, answers: Object.fromEntries(order.map((id) => [id, MATIERE[id].crate])),
+  return base({ kind: "tapis", key: `tapis:${[...order].sort().join(",")}`, chap: CENTRE, d: 0.3, things: order, answers: Object.fromEntries(order.map((id) => [id, MATIERE[id].crate])),
     prompt: TAPIS.prompt, win: TAPIS.win, guess: Math.pow(1 / 3, order.length) } as any);
 }
 export function aimantItem(r: Rng): DechetsItem {
   const choices = r.shuffle(["conserve", ...r.shuffle(Object.keys(AIMANT.retry)).slice(0, 2)]);
-  return base({ kind: "aimant", key: `aimant:${choices.join(",")}`, chap: CENTRE, d: 0.4, target: "conserve", choices,
+  return base({ kind: "aimant", key: "aimant", chap: CENTRE, d: 0.4, target: "conserve", choices,
     opts: Object.fromEntries(choices.map((c) => [c, { art: c, label: bare(THING[c].nom) }])), scene: ["aimant"], labels: [""],
     prompt: AIMANT.prompt, clue: AIMANT.clue, why: AIMANT.why, win: AIMANT.why, retry: Object.fromEntries(choices.filter((c) => c !== "conserve").map((c) => [c, AIMANT.retry[c]])) });
 }
@@ -630,6 +630,11 @@ export function voiceLines(): { fam: string; text: string }[] {
   for (const d of Object.values(DROP_OFF)) add("erreur", d.cest);
   for (const q of MOINS_Q) choiceLines(q, { [q.bad]: q.retry });
   add("indice", PICK_HINT3); add("erreur", "Regarde bien, et écoute encore.");
+  // Les réponses proposées, lues par Plume après la consigne (et au haut-parleur de chaque carte).
+  const options = [...Object.values(PEOPLE).map((x) => x.label), ...Object.values(RUE_Q.opts).map((x) => x.label), ...Object.values(PLACES).map((x) => x.label),
+    ...Object.values(CRATES).map((x) => x.label), ...SOURCES.map((x) => x.label), ...PRODUCTS.map((x) => x.label), ...Object.values(DROP_OFF).map((x) => x.label),
+    ...MOINS_Q.flatMap((q) => q.labels), ...Object.keys(AIMANT.retry).concat("conserve").map((id) => bare(THING[id].nom))];
+  for (const o of options) add("option", optionText(o));
   for (const papiers of ["jaune", "bleu"] as const) for (const cuisine of ["marron", "compost"] as const) for (const couleurs of ["nationales", "paris"] as const) {
     const s: TriSettings = { papiers, cuisine, couleurs };
     for (const b of truckBins(s)) {
@@ -637,7 +642,7 @@ export function voiceLines(): { fam: string; text: string }[] {
       const t = routeTxt(b, s);
       choiceLines(t, {});
     }
-    for (const b of binsFor(s)) add("erreur", b.purpose);
+    for (const b of binsFor(s)) { add("erreur", b.purpose); add("option", optionText(b.label)); }
     for (const v of voyages(s)) {
       add("consigne", v.prompt); add("indice", ORDRE.clueBin(v.thing));
       const right = v.steps[1].slice(BAC.length);

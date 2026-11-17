@@ -77,6 +77,7 @@ export const lis: ActivityModule<LisItem> = {
   available: (p) => READ_WORDS.filter((w) => decodable(w.gp, knownSet(p.knownK))).length >= 4,
   lockedReason: "Lis et trouve s'ouvrira quand tu connaîtras quelques sons de plus.",
   startLevel: () => 1,
+  identity: (it) => it.plain,
 
   generate(level, ctx) {
     const kind: Kind = level <= 2 ? "mot" : level === 3 ? (ctx.rng.next() < 0.7 ? "groupe" : "mot") : (ctx.rng.next() < 0.7 ? "phrase" : "groupe");

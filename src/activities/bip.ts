@@ -85,6 +85,7 @@ export const bip: ActivityModule<BipItem> = {
   skills: ["ENIG.PROGRAMMES", "ENIG.DEBUG"],
   card: `<span style="display:block;width:1em;height:1em">${BIP}</span>`, pitch: "Le chemin de Bip, pour programmer un petit robot avec des flèches.",
   startLevel: () => 1,
+  identity: (it) => `${it.kind}:${it.cols}x${it.rows}:${it.start}>${it.goal}:${[...it.rocks].sort((a, b) => a - b).join(",")}`,
 
   generate(level, ctx) {
     const r = ctx.rng;

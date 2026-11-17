@@ -18,6 +18,7 @@ export const nenuphars: ActivityModule<PadItem> = {
   skills: ["NUM.LIGNE.REPERE", "NUM.LIGNE.ORDRE", "NUM.LIGNE.PLUS", "NUM.LIGNE.MOINS", "NUM.LIGNE.BONDS"],
   card: `<span style="display:block;width:1.15em;height:1em">${FROG}</span>`, pitch: "Les nénuphars, pour faire sauter la grenouille sur les nombres.",
   startLevel: () => 1,
+  identity: (it) => `${it.kind}:${it.start}:${it.steps}:${it.stride}:${it.target}`,
 
   generate(level, ctx) {
     const r = ctx.rng;

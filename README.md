@@ -129,6 +129,20 @@ Plume parle avec une voix naturelle enregistrée à l'avance (voix de synthèse 
   « cabane » pour rimer. Toutes les rimes, débuts et premiers sons sont vérifiés par eSpeak
   (`python3 scripts/verif_sons.py` → `tests/fixtures/sons.json`, contrôlé par `tests/sons.test.ts`).
 
+## Retours de test, avant la v2 (novembre 2026)
+
+- **Pas deux fois le même exercice dans une séance** : l'hôte garde les exercices faits pendant la séance, activité par
+  activité (`identity()` : le mot ou la syllabe pour l'atelier des syllabes, quel que soit l'exercice ; la question
+  pour les autres). Il tire jusqu'à 80 exercices pour en trouver un nouveau ; sinon, il en cherche un nouveau aux niveaux
+  en dessous (une révision) ; en dernier recours seulement, il reprend celui vu il y a le plus longtemps.
+- **Les réponses proposées sont dites** : après la consigne, Plume lit l'étiquette écrite sous chaque image (voyage de
+  la goutte, volcan, voyage des déchets, flotte ou coule, théâtre de Pico, poubelles du grand tri, caisses du centre de
+  tri), pendant qu'elle brille. Chaque carte a un petit haut-parleur pour la réentendre, sans répondre ; dans les chants
+  de Mona, il redit le mot de l'image. Rien n'est relu quand la consigne nomme déjà les réponses, ni quand lire est
+  l'exercice (syllabes, lis et trouve, nom du pays) ou que nommer donnerait la réponse (drapeaux, visages, nombres).
+  Un geste de l'enfant arrête la lecture ; l'oreille redit la consigne et les réponses.
+- **Les formes** : « Combien de côtés a le triangle ? » au lieu de « cette forme », puis « Oui ! Le triangle a 3 côtés. »
+
 ## Développement
 
 Prérequis : [Bun](https://bun.sh) et TypeScript.
@@ -147,6 +161,7 @@ python3 tests/e2e/ipad.py         # voix naturelle sur iPad simulé : session «
 python3 tests/e2e/retours.py      # biscuits glissés (souris et doigt), fêtes de réussite et captures de chaque scène (shots4)
 python3 tests/e2e/tri.py          # le grand tri, ses six niveaux, glisser ou toucher, réglages des poubelles (shots6)
 python3 tests/e2e/dechets.py      # le voyage des déchets : camion, centre de tri, nouvelle vie, déchetterie (shots7)
+python3 tests/e2e/seance.py       # une séance sans répétition (syllabes, goutte, flotte), réponses lues, question des côtés
 ```
 
 ### Refaire le pack de voix (après avoir ajouté ou changé des phrases)

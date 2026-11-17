@@ -5,6 +5,8 @@ import { loadData, saveData, speech, type AppData, type Profile, type SessionRec
 export interface Session {
   start: number; pausedMs: number; pauseStart: number | null;
   minutes: Partial<Record<DomainId, number>>; activities: ActivityId[]; stickers: Sticker[]; greeted: boolean; warned: boolean; ended: boolean;
+  // Exercices déjà faits pendant la séance, par activité (pour ne pas reposer deux fois la même question).
+  seen: Record<string, Record<string, number>>;
 }
 
 class App {
@@ -30,7 +32,7 @@ class App {
   private pauses = new Set<string>();
   startSession() {
     this.pauses.clear();
-    this.session = { start: Date.now(), pausedMs: 0, pauseStart: null, minutes: {}, activities: [], stickers: [], greeted: false, warned: false, ended: false };
+    this.session = { start: Date.now(), pausedMs: 0, pauseStart: null, minutes: {}, activities: [], stickers: [], greeted: false, warned: false, ended: false, seen: {} };
   }
   pause(reason = "pause") {
     const s = this.session;

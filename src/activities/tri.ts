@@ -4,7 +4,7 @@
 // 1. Le bac jaune et le reste. 2. Le verre. 3. Les restes de cuisine. 4. Les papiers. 5. Les pièges. 6. Le grand tri.
 // Chaque phrase dite est écrite ici ; voiceLines() les donne toutes, pour la voix naturelle.
 import { app } from "../app";
-import type { ActivityModule, Ctx, Item, View } from "../host";
+import { optionText, type ActivityModule, type Ctx, type Item, type View } from "../host";
 import { defaultTri, type TriSettings } from "../services";
 import { h, medallion } from "../ui";
 import { sortBoard, type SortBoard } from "./glisser";
@@ -151,6 +151,7 @@ export const tri: ActivityModule<TriItem> = {
   card: `<span style="display:block;width:1.05em;height:1.05em">${binSVG({ body: "#FFD23F", lid: "#E8B400", symbol: "recyclage" })}</span>`,
   pitch: "Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
   startLevel: () => 1,
+  identity: (it) => [...it.things].sort().join(","),
 
   generate(level, ctx) {
     const r = ctx.rng;
@@ -225,7 +226,7 @@ export function voiceLines(): { fam: string; text: string }[] {
     const s: TriSettings = { papiers, cuisine, couleurs };
     const bins = binsFor(s);
     for (const chap of [EMBALLAGES, VERRE, CUISINE, PAPIERS, PIEGES, EXPERT]) add("intro", introText(chap, s));
-    for (const b of bins) add("rendu", b.purpose);
+    for (const b of bins) { add("rendu", b.purpose); add("option", optionText(b.label)); }
     for (const t of THINGS) {
       add("indice", goesTo(t, binOf(bins, t.cat)));
       for (const b of bins) if (!b.cats.includes(t.cat)) add("erreur", `${b.purpose} ${t.matiere}`);

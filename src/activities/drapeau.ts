@@ -83,6 +83,7 @@ export const drapeau: ActivityModule<FlagItem> = {
   skills: ["VOY.DRAPEAU.ECOUTE", "VOY.CARTE.CONTINENT", "VOY.DRAPEAU.LIRE", "VOY.DRAPEAU.JUMEAUX"],
   card: `<span style="display:block;width:1.3em;height:.87em">${flagSVG("FR", false)}</span>`, pitch: "Le drapeau mystère, pour découvrir les pays du monde.",
   startLevel: () => 1,
+  identity: (it) => `${it.kind}:${it.target}`,
 
   generate(stairLevel, ctx) {
     // Le niveau suit l'escalier, mais reste plafonné par le nombre de drapeaux déjà rencontrés :

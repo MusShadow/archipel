@@ -1,7 +1,7 @@
 {
- "clips": 5754,
- "octets": 42477330,
- "minutes": 165.6,
+ "clips": 5972,
+ "octets": 43336260,
+ "minutes": 168.7,
  "a_revoir": [
   {
    "key": "dos|.",
@@ -34,10 +34,28 @@
    "per": 0.25
   },
   {
+   "key": "centre de tri|.",
+   "say": "Centre de tri.",
+   "heard": "Centre tri",
+   "per": 0.222
+  },
+  {
    "key": "le pot de yaourt|.",
    "say": "Le pot de yaourt.",
    "heard": "Le podiour.",
    "per": 0.273
+  },
+  {
+   "key": "ours en peluche|.",
+   "say": "Ours en peluche.",
+   "heard": "Pour en peluche.",
+   "per": 0.222
+  },
+  {
+   "key": "pot de yaourt|.",
+   "say": "Pot de yaourt.",
+   "heard": "Podiur",
+   "per": 0.444
   },
   {
    "key": "a mie ami|.",

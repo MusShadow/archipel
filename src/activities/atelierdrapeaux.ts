@@ -87,6 +87,7 @@ export const atelierdrapeaux: ActivityModule<AtelierItem> = {
   card: `<span style="display:block;width:1.3em;height:.9em">${stripedSVG("v", ["bleu", null, "rouge"])}</span>`,
   pitch: "L'atelier des drapeaux, pour colorier les drapeaux du monde.",
   startLevel: () => 1,
+  identity: (it) => `${it.kind}:${it.code}`,
 
   generate(level, ctx) {
     const r = ctx.rng;

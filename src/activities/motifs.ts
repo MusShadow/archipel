@@ -46,6 +46,7 @@ export const motifs: ActivityModule<MotifItem> = {
   card: `<span style="display:flex;width:1.5em;height:.6em"><span style="flex:1">${shapeSVG("cercle", COLORS.rouge)}</span><span style="flex:1">${shapeSVG("carre", COLORS.bleu)}</span><span style="flex:1">${shapeSVG("cercle", COLORS.rouge)}</span></span>`,
   pitch: "Les motifs de Rico, pour trouver ce qui vient après.",
   startLevel: () => 1,
+  identity: (it) => `${it.kind}:${JSON.stringify(it.seq)}`,
 
   generate(level, ctx) {
     const r = ctx.rng;

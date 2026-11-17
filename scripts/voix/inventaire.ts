@@ -30,6 +30,7 @@ const { DRAWINGS } = await import("../../src/drawings");
 const { LAYOUTS, SYMBOLS } = await import("../../src/screens/myflag");
 const { SOUND_WORDS, READ_WORDS } = await import("../../src/lexique");
 const { SENTINEL_NAME } = await import("../../src/voix");
+const { spokenOptions } = await import("../../src/host");
 
 // ---------- Collecte ----------
 type Entry = { text: string; src: Set<string> };
@@ -93,6 +94,8 @@ for (const mod of ACTIVITIES.filter((m) => !ONLY || ONLY.includes(m.id))) {
           answer: (_c: boolean, _el: any, retry?: string) => { if (retry) add(retry, `${mod.id}:erreur`); },
         };
         try { where = `${mod.id}:rendu`; mod.render(item, view as any); } catch (e) { /* DOM simulé incomplet */ }
+        // Réponses proposées que Plume lit après la consigne (ou au haut-parleur de chaque carte).
+        try { for (const o of spokenOptions(stage)) add(o.text, "options"); } catch { /* rien */ }
         await pause(2);
         if (n % 2 === 0) await fuzz(stage, 3);
         for (let s = 1; s <= 4; s++) {

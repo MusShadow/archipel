@@ -2071,9 +2071,21 @@
   ]
  },
  {
+  "text": "Avec un drone.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Avec un maillot de bain, elle aurait bien trop chaud ! Cherche un habit brillant.",
   "src": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "text": "Avec un thermomètre.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -2083,15 +2095,79 @@
   ]
  },
  {
+  "text": "Avec une échelle.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Avec une loupe.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "ba",
   "src": [
    "mots"
   ]
  },
  {
+  "text": "Bac blanc.",
+  "src": [
+   "dechets:option",
+   "tri:option"
+  ]
+ },
+ {
+  "text": "Bac bleu.",
+  "src": [
+   "dechets:option",
+   "tri:option"
+  ]
+ },
+ {
+  "text": "Bac gris.",
+  "src": [
+   "dechets:option",
+   "options",
+   "tri:option"
+  ]
+ },
+ {
+  "text": "Bac jaune.",
+  "src": [
+   "dechets:option",
+   "options",
+   "tri:option"
+  ]
+ },
+ {
+  "text": "Bac marron.",
+  "src": [
+   "dechets:option",
+   "options",
+   "tri:option"
+  ]
+ },
+ {
+  "text": "Bac vert.",
+  "src": [
+   "dechets:option",
+   "options",
+   "tri:option"
+  ]
+ },
+ {
   "text": "ballon",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Ballon.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -2140,6 +2216,12 @@
   "text": "banane",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Banane.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -4057,6 +4139,12 @@
   ]
  },
  {
+  "text": "Bateau.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "bateau… et banane. Écoute bien : la fin n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -4165,6 +4253,12 @@
   ]
  },
  {
+  "text": "Bébé.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "bébé… et banane. Écoute bien : la fin n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -4258,6 +4352,12 @@
   "text": "beurre",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Beurre.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -4411,6 +4511,27 @@
   ]
  },
  {
+  "text": "Boîte à goûter.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Boîte de céréales.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Boîte de conserve.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "bon",
   "src": [
    "mots"
@@ -4426,6 +4547,12 @@
   "text": "bonbon",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Bonbon.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -4813,9 +4940,58 @@
   ]
  },
  {
+  "text": "Borne à vêtements.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "bot",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Boulanger.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Bouteille en plastique.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Bouteilles d'eau.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Bouteilles en plastique.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Bouteilles en verre.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Bouteilles neuves.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -4996,6 +5172,13 @@
   "text": "Bravo, tu as trouvé le bug ! Bip arrive sur l'étoile.",
   "src": [
    "bip:reussite"
+  ]
+ },
+ {
+  "text": "Briques de lait.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -13476,6 +13659,12 @@
   ]
  },
  {
+  "text": "Cabane.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "cabane… et banane. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -13554,6 +13743,12 @@
   ]
  },
  {
+  "text": "Cadeau.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "cadeau… et café. Écoute bien : la fin n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -13626,6 +13821,12 @@
   ]
  },
  {
+  "text": "Café.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "café… et bateau. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -13680,6 +13881,13 @@
   ]
  },
  {
+  "text": "Cahier neuf.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "Cameroun",
   "src": [
    "mots"
@@ -13689,6 +13897,12 @@
   "text": "camion",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Camion.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -13794,6 +14008,12 @@
   ]
  },
  {
+  "text": "Canard.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "canard… et beurre. Écoute bien : la fin n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -13884,6 +14104,13 @@
   ]
  },
  {
+  "text": "Canettes.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "carré bleu ? Regarde bien ce qui se répète.",
   "src": [
    "motifs:erreur"
@@ -13905,6 +14132,20 @@
   "text": "carré vert ? Regarde bien ce qui se répète.",
   "src": [
    "motifs:erreur"
+  ]
+ },
+ {
+  "text": "Carton neuf.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Cartons.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -21820,6 +22061,13 @@
   ]
  },
  {
+  "text": "Centre de tri.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "Certains déchets ne vont dans aucune poubelle de la maison : les piles, les médicaments, les vieux habits, les gros objets.",
   "src": [
    "dechets:intro"
@@ -22120,6 +22368,12 @@
   ]
  },
  {
+  "text": "Chapeau.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "chapeau… et bateau. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -22253,6 +22507,12 @@
   ]
  },
  {
+  "text": "Chat.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "chat. Compte avec tes doigts.",
   "src": [
    "chants:indice"
@@ -22358,6 +22618,12 @@
   "text": "château",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Château.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -22619,6 +22885,12 @@
   ]
  },
  {
+  "text": "Chien.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "chien. Compte avec tes doigts.",
   "src": [
    "chants:indice"
@@ -22700,6 +22972,12 @@
   "text": "chocolat",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Chocolat.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -22823,6 +23101,12 @@
   ]
  },
  {
+  "text": "Citron.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "citron… et bateau. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -22886,6 +23170,12 @@
   "text": "clé",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Clé.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -23021,6 +23311,12 @@
   ]
  },
  {
+  "text": "Cochon.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "cochon… et ballon. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -23096,6 +23392,12 @@
   "text": "cœur vert ? Regarde bien ce qui se répète.",
   "src": [
    "motifs:erreur"
+  ]
+ },
+ {
+  "text": "Cœur.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -23462,7 +23764,42 @@
   ]
  },
  {
-  "text": "Combien de côtés a cette forme ? Compte-les avec ton doigt.",
+  "text": "Combien de côtés a l'hexagone ? Compte-les avec ton doigt.",
+  "src": [
+   "formes:consigne",
+   "formes:indice"
+  ]
+ },
+ {
+  "text": "Combien de côtés a le carré ? Compte-les avec ton doigt.",
+  "src": [
+   "formes:consigne",
+   "formes:indice"
+  ]
+ },
+ {
+  "text": "Combien de côtés a le losange ? Compte-les avec ton doigt.",
+  "src": [
+   "formes:consigne",
+   "formes:indice"
+  ]
+ },
+ {
+  "text": "Combien de côtés a le pentagone ? Compte-les avec ton doigt.",
+  "src": [
+   "formes:consigne",
+   "formes:indice"
+  ]
+ },
+ {
+  "text": "Combien de côtés a le rectangle ? Compte-les avec ton doigt.",
+  "src": [
+   "formes:consigne",
+   "formes:indice"
+  ]
+ },
+ {
+  "text": "Combien de côtés a le triangle ? Compte-les avec ton doigt.",
   "src": [
    "formes:consigne",
    "formes:indice"
@@ -23586,6 +23923,20 @@
   ]
  },
  {
+  "text": "Compost.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Composteur.",
+  "src": [
+   "dechets:option",
+   "tri:option"
+  ]
+ },
+ {
   "text": "Compte à voix haute en ajoutant les pommes une par une.",
   "src": [
    "marche:indice"
@@ -23646,6 +23997,20 @@
   ]
  },
  {
+  "text": "Coucou !",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Courir derrière.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "croc",
   "src": [
    "mots"
@@ -23661,6 +24026,12 @@
   "text": "crocodile",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Crocodile.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -23898,9 +24269,21 @@
   ]
  },
  {
+  "text": "Dans un trou, en bas.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "dauphin",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Dauphin.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -23982,9 +24365,52 @@
   ]
  },
  {
+  "text": "De l'eau.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "De la fumée.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "De la glace.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "De la neige.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "De la pierre.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "De la vapeur.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "dé, ça commence comme domino.",
   "src": [
    "syllabes:indice"
+  ]
+ },
+ {
+  "text": "Déchetterie.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -24001,9 +24427,45 @@
   ]
  },
  {
+  "text": "Des bactéries.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Des barreaux, comme une passoire géante.",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "Des biscuits.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Des bonbons.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Des canards.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Des chaussettes.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Des crayons.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -24019,9 +24481,21 @@
   ]
  },
  {
+  "text": "Des lunettes de soleil.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Des milliers d'années sans lave… c'est un très, très long sommeil !",
   "src": [
    "volcan:indice"
+  ]
+ },
+ {
+  "text": "Des œufs.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -24029,6 +24503,18 @@
   "src": [
    "volcan:consigne",
    "volcan:indice"
+  ]
+ },
+ {
+  "text": "Des pièces de puzzle.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Des poissons.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -24107,6 +24593,12 @@
   "text": "dinosaure",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Dinosaure.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -29660,6 +30152,18 @@
   ]
  },
  {
+  "text": "Donner un coup de pied dans les cubes.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Doré.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "dos",
   "src": [
    "mots"
@@ -29684,6 +30188,12 @@
   ]
  },
  {
+  "text": "Du chocolat chaud.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "du, ça commence comme domino.",
   "src": [
    "syllabes:indice"
@@ -29693,6 +30203,20 @@
   "text": "eau",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Eau du robinet.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Éboueur.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -39503,9 +40027,27 @@
   ]
  },
  {
+  "text": "Elle conduit le bus.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Elle coule.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Elle est bien trop grande pour la poubelle.",
   "src": [
    "dechets:indice"
+  ]
+ },
+ {
+  "text": "Elle est dure.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -39515,9 +40057,27 @@
   ]
  },
  {
+  "text": "Elle flotte.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Elle retourne dans la nature, là où vivent les poissons.",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "Elle s'envole.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Elle soigne les animaux.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -39527,9 +40087,21 @@
   ]
  },
  {
+  "text": "Elle surveille les volcans.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Elles sont bien trop grandes pour la poubelle.",
   "src": [
    "dechets:indice"
+  ]
+ },
+ {
+  "text": "En haut de la colline.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -39590,6 +40162,18 @@
   "text": "En haut, vert ; au milieu, jaune ; en bas, bleu.",
   "src": [
    "atelierdrapeaux:indice"
+  ]
+ },
+ {
+  "text": "En la goûtant.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "En la touchant.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -39896,6 +40480,19 @@
   "text": "Encore un peu plus loin, jusqu'au camion !",
   "src": [
    "dechets:indice"
+  ]
+ },
+ {
+  "text": "Endormi.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Épluchures.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -40403,9 +41000,22 @@
   ]
  },
  {
+  "text": "Facteur.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "Faire « bouh » pour lui faire peur ? Ça ne l'aiderait pas. Cherche ce qui lui ferait du bien.",
   "src": [
    "theatre:erreur"
+  ]
+ },
+ {
+  "text": "Faire « bouh » pour lui faire peur.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -40415,9 +41025,21 @@
   ]
  },
  {
+  "text": "Faire comme si on ne la voyait pas.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Faire semblant de ne rien voir ? Ça ne l'aiderait pas. Cherche ce qui lui ferait du bien.",
   "src": [
    "theatre:erreur"
+  ]
+ },
+ {
+  "text": "Faire semblant de ne rien voir.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -40527,9 +41149,21 @@
   ]
  },
  {
+  "text": "Fermer la porte et partir.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "feu",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Feu.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -40653,6 +41287,12 @@
   ]
  },
  {
+  "text": "Fleur.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "fleur. Compte avec tes doigts.",
   "src": [
    "chants:indice"
@@ -40761,6 +41401,12 @@
   ]
  },
  {
+  "text": "Fourmi.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "fourmi… et cochon. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -40827,6 +41473,12 @@
   ]
  },
  {
+  "text": "Fraise.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "fraise… et ballon. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -40887,6 +41539,12 @@
   ]
  },
  {
+  "text": "Froide.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "fu",
   "src": [
    "mots"
@@ -40914,6 +41572,12 @@
   "text": "fusée",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Fusée.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -41037,6 +41701,12 @@
   ]
  },
  {
+  "text": "Gâteau.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "gâteau… et cadeau. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -41121,6 +41791,12 @@
   ]
  },
  {
+  "text": "Girafe.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "girafe… et cadeau. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -41181,6 +41857,13 @@
   ]
  },
  {
+  "text": "Gourde.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "goût",
   "src": [
    "mots"
@@ -41190,6 +41873,13 @@
   "text": "Grèce",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Grimper dessus.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -41208,6 +41898,12 @@
   "text": "guitare",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Guitare.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -41301,6 +41997,12 @@
   ]
  },
  {
+  "text": "Il coule.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Il fait si froid que l'eau ne reste pas comme ça… Elle devient toute dure !",
   "src": [
    "goutte:erreur"
@@ -41358,6 +42060,12 @@
   "text": "Il faut une machine qui aspire l'eau, comme avec une paille.",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "Il flotte.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -42799,9 +43507,27 @@
   ]
  },
  {
+  "text": "Ils s'éloignent avec les adultes.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Ils se cachent sous le lit.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Ils sont encore beaux : ce serait dommage de les jeter.",
   "src": [
    "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Ils vont voir la lave.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -42874,6 +43600,18 @@
   "text": "Je glisse un biscuit vers l'assiette qui en a le moins.",
   "src": [
    "partage:indice"
+  ]
+ },
+ {
+  "text": "Je le ferme.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Je le laisse couler.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -43643,6 +44381,20 @@
   ]
  },
  {
+  "text": "Journal.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Journaux.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "ju",
   "src": [
    "mots"
@@ -43664,6 +44416,12 @@
   "text": "kangourou",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Kangourou.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -44108,6 +44866,12 @@
   ]
  },
  {
+  "text": "Kiwi.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "kiwi… et banane. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -44168,6 +44932,12 @@
   ]
  },
  {
+  "text": "L'aider à le chercher.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "L'aimant attrape ce qui est en fer.",
   "src": [
    "dechets:indice"
@@ -44202,6 +44972,12 @@
   "text": "L'ancre est lourde : elle coule au fond, c'est fait pour ça !",
   "src": [
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "L'arbre.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -44284,6 +45060,12 @@
   ]
  },
  {
+  "text": "L'eau claire.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "L'eau descend de la colline, dans les tuyaux sous la rue. Où arrive-t-elle ?",
   "src": [
    "goutte:consigne",
@@ -44307,6 +45089,12 @@
   "text": "L'eau du bain est juste tiède. La lave, elle, fait fondre la roche !",
   "src": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "text": "L'eau du bain.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -44355,6 +45143,18 @@
   ]
  },
  {
+  "text": "L'eau trouble.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "L'enfant.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "L'enveloppe est en papier : elle se recycle !",
   "src": [
    "tri:indice"
@@ -44390,6 +45190,12 @@
   "text": "L'éponge a plein de petits trous remplis d'air : elle flotte.",
   "src": [
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "L'éruption.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -44874,6 +45680,12 @@
   ]
  },
  {
+  "text": "L'inviter à jouer.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "l'Irlande",
   "src": [
    "mots"
@@ -44902,6 +45714,12 @@
   "src": [
    "flotte:consigne",
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "L'oiseau.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -44966,6 +45784,12 @@
   ]
  },
  {
+  "text": "L'usine.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "la",
   "src": [
    "mots"
@@ -44988,6 +45812,12 @@
   "text": "la banane",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "La banane.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -45234,6 +46064,12 @@
   ]
  },
  {
+  "text": "La boîte.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "La borne à vêtements, c'est pour les habits et les chaussures.",
   "src": [
    "dechets:erreur"
@@ -45426,6 +46262,12 @@
   ]
  },
  {
+  "text": "La chaise.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "la Chine",
   "src": [
    "mots"
@@ -45457,6 +46299,12 @@
   ]
  },
  {
+  "text": "La clé.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "la Colombie",
   "src": [
    "mots"
@@ -45466,6 +46314,12 @@
   "text": "La Colombie",
   "src": [
    "carnet"
+  ]
+ },
+ {
+  "text": "La combinaison argentée.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -45571,6 +46425,12 @@
   "text": "La flaque est par terre, au milieu du chemin…",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "La fleur.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -46184,9 +47044,21 @@
   ]
  },
  {
+  "text": "La grosse bûche.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "La grosse pomme flotte et le petit raisin coule : ce n'est pas la taille qui compte.",
   "src": [
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "La grosse pomme.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -46225,6 +47097,12 @@
   "src": [
    "volcan:consigne",
    "volcan:indice"
+  ]
+ },
+ {
+  "text": "La lave coule.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -46267,6 +47145,18 @@
   ]
  },
  {
+  "text": "La lave.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "La lingette.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "la Lituanie",
   "src": [
    "mots"
@@ -46297,15 +47187,33 @@
   ]
  },
  {
+  "text": "La mer.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "la moto",
   "src": [
    "mots"
   ]
  },
  {
+  "text": "La nappe.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "La neige, c'est quand il fait froid ! Ici, le volcan chauffe l'eau.",
   "src": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "text": "La neige.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -46337,6 +47245,18 @@
   "text": "la olive",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "La pâte à modeler en boule.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "La pâte à modeler en forme de bateau.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -46377,6 +47297,12 @@
   ]
  },
  {
+  "text": "La petite clé en métal.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "La pharmacie reprend les vieux médicaments.",
   "src": [
    "dechets:erreur"
@@ -46393,6 +47319,24 @@
   "text": "La pièce est en métal : elle coule.",
   "src": [
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "La pierre.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "La pizza.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "La pluie.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -46434,10 +47378,28 @@
   ]
  },
  {
+  "text": "La pomme.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "La pompe a aspiré l'eau, mais elle n'est pas encore bonne à boire. Où va-t-elle ?",
   "src": [
    "goutte:consigne",
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "La pompe.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "La poubelle.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -46462,6 +47424,18 @@
   "text": "La radio fait de la musique ! Cherche l'appareil qui dessine des zigzags.",
   "src": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "text": "La radio.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "La rivière.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -46511,6 +47485,12 @@
   "src": [
    "goutte:consigne",
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "La station d'épuration.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -46652,6 +47632,12 @@
   ]
  },
  {
+  "text": "La télévision.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "La tige, tout droit vers le bas.",
   "src": [
    "dessin"
@@ -46676,10 +47662,22 @@
   ]
  },
  {
+  "text": "La vache.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "La vaisselle est finie. Où va l'eau sale de l'évier ?",
   "src": [
    "goutte:consigne",
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "La vapeur.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -46734,6 +47732,12 @@
   ]
  },
  {
+  "text": "La voiture.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "La volcanologue s'approche de la lave. Quel habit la protège de la chaleur ?",
   "src": [
    "volcan:consigne",
@@ -46774,6 +47778,12 @@
   "text": "lama commence par la.",
   "src": [
    "syllabes:indice"
+  ]
+ },
+ {
+  "text": "Lama.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -46846,6 +47856,12 @@
   "text": "lapin",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Lapin.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -47574,6 +48590,12 @@
   ]
  },
  {
+  "text": "Le bac jaune.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Le bac marron, c'est pour les restes de cuisine.",
   "src": [
    "dechets:erreur",
@@ -47992,6 +49014,12 @@
   ]
  },
  {
+  "text": "Le bain.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Le ballon : est-ce qu'il flotte, ou est-ce qu'il coule ?",
   "src": [
    "flotte:consigne",
@@ -48011,6 +49039,12 @@
   ]
  },
  {
+  "text": "Le ballon.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "le Bangladesh",
   "src": [
    "mots"
@@ -48020,6 +49054,18 @@
   "text": "Le Bangladesh",
   "src": [
    "carnet"
+  ]
+ },
+ {
+  "text": "Le bassin à bulles.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Le bassin calme.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -48095,6 +49141,12 @@
   "text": "Le caillou n'est pas vivant : il n'a pas besoin de boire.",
   "src": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "text": "Le caillou.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -48288,9 +49340,21 @@
   ]
  },
  {
+  "text": "Le chat.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Le château d'eau garde l'eau propre, pour boire. Pas l'eau sale !",
   "src": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "text": "Le château d'eau.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -48309,6 +49373,12 @@
   "text": "Le Chili",
   "src": [
    "carnet"
+  ]
+ },
+ {
+  "text": "Le chocolat.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -48499,6 +49569,12 @@
   ]
  },
  {
+  "text": "Le coton-tige.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
   "src": [
    "tri:indice"
@@ -48535,6 +49611,12 @@
   "text": "Le crayon n'est pas vivant : il n'a pas besoin de boire.",
   "src": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "text": "Le crayon.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -49287,6 +50369,12 @@
   ]
  },
  {
+  "text": "Le four.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "le Gabon",
   "src": [
    "mots"
@@ -49296,6 +50384,12 @@
   "text": "Le Gabon",
   "src": [
    "carnet"
+  ]
+ },
+ {
+  "text": "Le gâteau.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -49310,6 +50404,18 @@
   "src": [
    "flotte:consigne",
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "Le grand bateau en métal.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Le grand château d'eau.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -49347,6 +50453,13 @@
   "text": "Le Japon",
   "src": [
    "carnet"
+  ]
+ },
+ {
+  "text": "Le jeter.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -49501,6 +50614,12 @@
   ]
  },
  {
+  "text": "Le magma chauffe.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Le magma est arrivé tout en haut : il va sortir !",
   "src": [
    "volcan:indice"
@@ -49521,9 +50640,21 @@
   ]
  },
  {
+  "text": "Le magma monte.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Le magma vient de tout au fond, là où il fait si chaud que la roche fond.",
   "src": [
    "volcan:indice"
+  ]
+ },
+ {
+  "text": "Le maillot de bain.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -49621,6 +50752,12 @@
   ]
  },
  {
+  "text": "Le nectar des fleurs.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Le nez, et la bouche en forme de vague.",
   "src": [
    "dessin"
@@ -49645,10 +50782,22 @@
   ]
  },
  {
+  "text": "Le nounours.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Le nuage de cendres est très lourd. Que se passe-t-il ?",
   "src": [
    "volcan:consigne",
    "volcan:indice"
+  ]
+ },
+ {
+  "text": "Le nuage de cendres.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -49666,6 +50815,12 @@
   ]
  },
  {
+  "text": "Le nuage.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "le Panama",
   "src": [
    "mots"
@@ -49678,6 +50833,12 @@
   ]
  },
  {
+  "text": "Le panier.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Le papier redevient du papier.",
   "src": [
    "dechets:indice"
@@ -49687,6 +50848,12 @@
   "text": "Le papier toilette, on le fabrique avec des briques de lait.",
   "src": [
    "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Le papier toilette.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -49720,6 +50887,30 @@
   ]
  },
  {
+  "text": "Le petit caillou.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Le petit château d'eau.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Le petit grain de raisin.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Le petit train.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "le piano",
   "src": [
    "mots"
@@ -49735,6 +50926,12 @@
   "text": "Le plus souvent, ces déchets vont à l'usine qui les brûle : sa chaleur chauffe des maisons.",
   "src": [
    "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Le poisson.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -51882,9 +53079,28 @@
   ]
  },
  {
+  "text": "Le réparer.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Le réservoir.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "le riz",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Le robinet.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -51933,6 +53149,18 @@
   "text": "Le Sénégal",
   "src": [
    "carnet"
+  ]
+ },
+ {
+  "text": "Le short.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Le sismomètre.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -52316,6 +53544,12 @@
   ]
  },
  {
+  "text": "Le soleil.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Le sourire, c'est pour les autres. Mais à l'intérieur, qu'est-ce qu'on ressent ?",
   "src": [
    "theatre:indice"
@@ -52337,6 +53571,12 @@
   "text": "Le théâtre de Pico, pour comprendre ce que ressentent les autres.",
   "src": [
    "theatre:pitch"
+  ]
+ },
+ {
+  "text": "Le tiroir.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -52500,6 +53740,12 @@
   ]
  },
  {
+  "text": "Le volcan gronde.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Le volcan se réveille. Que font les gens qui habitent tout près ?",
   "src": [
    "volcan:consigne",
@@ -52523,6 +53769,13 @@
   "text": "Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
   "src": [
    "dechets:pitch"
+  ]
+ },
+ {
+  "text": "Légumes.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -52652,6 +53905,12 @@
   ]
  },
  {
+  "text": "Les branches à ronger.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Les branches ne sont pas des emballages : pas dans le bac jaune.",
   "src": [
    "dechets:erreur"
@@ -52726,9 +53985,21 @@
   ]
  },
  {
+  "text": "Les cendres tombent.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Les chants de Mona, pour jouer avec les sons des mots.",
   "src": [
    "chants:pitch"
+  ]
+ },
+ {
+  "text": "Les coquillages.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -52760,6 +54031,19 @@
   "text": "Les deux sont en métal ! Mais le bateau est creux, rempli d'air : il flotte. La clé coule.",
   "src": [
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "Les donner.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Les égouts.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -52827,9 +54111,22 @@
   ]
  },
  {
+  "text": "Les grilles.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Les grosses branches vont à la déchetterie : elles y deviennent du compost.",
   "src": [
    "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Les jeter.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -52908,6 +54205,12 @@
   "text": "Les papiers vont d'abord là où on trie.",
   "src": [
    "dechets:indice"
+  ]
+ },
+ {
+  "text": "Les papillons.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -53026,6 +54329,12 @@
   ]
  },
  {
+  "text": "Les plantes.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Les poissons vivent dans la rivière, pas dans la station ! Cherche de tout petits êtres vivants.",
   "src": [
    "goutte:erreur"
@@ -53053,6 +54362,18 @@
   "text": "Les restes de cuisine, comme les épluchures, vont dans le composteur. Ils deviennent du compost, une terre très bonne pour les plantes !",
   "src": [
    "tri:intro"
+  ]
+ },
+ {
+  "text": "Les toilettes.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Les vers de terre.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -53251,6 +54572,12 @@
   ]
  },
  {
+  "text": "Lit.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "lit. Compte avec tes doigts.",
   "src": [
    "chants:indice"
@@ -53344,6 +54671,12 @@
   "text": "loup",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Loup.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -53449,6 +54782,24 @@
   ]
  },
  {
+  "text": "Lui dire qu'elle ne peut pas jouer.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Lui faire un câlin et appeler un adulte.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Lui prêter une lampe de poche.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "lune",
   "src": [
    "mots"
@@ -53473,9 +54824,22 @@
   ]
  },
  {
+  "text": "Magasin.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "main",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Main.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -53587,6 +54951,12 @@
   ]
  },
  {
+  "text": "Maison.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "maison… et cabane. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -53653,6 +55023,12 @@
   ]
  },
  {
+  "text": "Manger sa glace devant lui.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "mare",
   "src": [
    "mots"
@@ -53674,6 +55050,12 @@
   "text": "marteau",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Marteau.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -54124,6 +55506,13 @@
   "text": "mes, ça commence comme moto.",
   "src": [
    "syllabes:indice"
+  ]
+ },
+ {
+  "text": "Métal.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -55267,6 +56656,12 @@
   ]
  },
  {
+  "text": "Moto.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "moto… et banane. Écoute bien : la fin n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -55354,6 +56749,12 @@
   "text": "mouton",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Mouton.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -55471,6 +56872,12 @@
   ]
  },
  {
+  "text": "Nez.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "nez. Compte avec tes doigts.",
   "src": [
    "chants:indice"
@@ -55546,6 +56953,12 @@
   "text": "noir",
   "src": [
    "atelierdrapeaux:rendu"
+  ]
+ },
+ {
+  "text": "Noir.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -56193,6 +57606,18 @@
   ]
  },
  {
+  "text": "On ne la boit pas.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "On peut la boire.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "On prépare le voyage avec les drapeaux du monde.",
   "src": [
    "depart"
@@ -56286,6 +57711,12 @@
   "text": "ordinateur",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Ordinateur.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -59157,6 +60588,12 @@
   ]
  },
  {
+  "text": "Oui ! L'hexagone a 6 côtés.",
+  "src": [
+   "formes:reussite"
+  ]
+ },
+ {
   "text": "Oui ! L'Inde est en Asie.",
   "src": [
    "drapeau:reussite"
@@ -60693,6 +62130,12 @@
   ]
  },
  {
+  "text": "Oui ! Le carré a 4 côtés.",
+  "src": [
+   "formes:reussite"
+  ]
+ },
+ {
   "text": "Oui ! Le carton a la forme d'un pavé.",
   "src": [
    "formes:reussite"
@@ -61209,6 +62652,12 @@
   ]
  },
  {
+  "text": "Oui ! Le losange a 4 côtés.",
+  "src": [
+   "formes:reussite"
+  ]
+ },
+ {
   "text": "Oui ! Le loup est sur le judo.",
   "src": [
    "lis:reussite"
@@ -61605,6 +63054,12 @@
   ]
  },
  {
+  "text": "Oui ! Le pentagone a 5 côtés.",
+  "src": [
+   "formes:reussite"
+  ]
+ },
+ {
   "text": "Oui ! Le Pérou est en Amérique du Sud.",
   "src": [
    "drapeau:reussite"
@@ -61836,6 +63291,12 @@
   "text": "Oui ! Le rat et papi.",
   "src": [
    "lis:reussite"
+  ]
+ },
+ {
+  "text": "Oui ! Le rectangle a 4 côtés.",
+  "src": [
+   "formes:reussite"
   ]
  },
  {
@@ -62184,6 +63645,12 @@
   "text": "Oui ! Le Togo est en Afrique.",
   "src": [
    "drapeau:reussite"
+  ]
+ },
+ {
+  "text": "Oui ! Le triangle a 3 côtés.",
+  "src": [
+   "formes:reussite"
   ]
  },
  {
@@ -64677,12 +66144,6 @@
   ]
  },
  {
-  "text": "Oui, 3 côtés !",
-  "src": [
-   "formes:reussite"
-  ]
- },
- {
   "text": "Oui, 3 pommes !",
   "src": [
    "marche:reussite"
@@ -64752,12 +66213,6 @@
   "text": "Oui, 4 chacun !",
   "src": [
    "partage:reussite"
-  ]
- },
- {
-  "text": "Oui, 4 côtés !",
-  "src": [
-   "formes:reussite"
   ]
  },
  {
@@ -64833,12 +66288,6 @@
   ]
  },
  {
-  "text": "Oui, 5 côtés !",
-  "src": [
-   "formes:reussite"
-  ]
- },
- {
   "text": "Oui, 5 pommes !",
   "src": [
    "marche:reussite"
@@ -64902,12 +66351,6 @@
   "text": "Oui, 59 pommes !",
   "src": [
    "marche:reussite"
-  ]
- },
- {
-  "text": "Oui, 6 côtés !",
-  "src": [
-   "formes:reussite"
   ]
  },
  {
@@ -66578,6 +68021,13 @@
   ]
  },
  {
+  "text": "Ours en peluche.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "pa",
   "src": [
    "mots"
@@ -66587,6 +68037,12 @@
   "text": "pain",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Pain.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -66692,6 +68148,12 @@
   ]
  },
  {
+  "text": "Panda.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "panda… et ballon. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -66770,9 +68232,29 @@
   ]
  },
  {
+  "text": "Papier et carton.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Papier toilette.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "papillon",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Papillon.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -66835,6 +68317,12 @@
   "text": "parapluie",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Parapluie.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -68133,6 +69621,12 @@
   ]
  },
  {
+  "text": "Partager son goûter avec lui.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Partager, ça console.",
   "src": [
    "theatre:indice"
@@ -68142,6 +69636,12 @@
   "text": "Partir jouer sans lui ? Ça ne l'aiderait pas. Cherche ce qui lui ferait du bien.",
   "src": [
    "theatre:erreur"
+  ]
+ },
+ {
+  "text": "Partir jouer sans lui.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -68566,6 +70066,20 @@
   ]
  },
  {
+  "text": "Petits paquets.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Pharmacie.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "pi",
   "src": [
    "mots"
@@ -68581,6 +70095,12 @@
   "text": "piano commence par pie.",
   "src": [
    "syllabes:indice"
+  ]
+ },
+ {
+  "text": "Piano.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -68735,6 +70255,12 @@
   ]
  },
  {
+  "text": "Pied.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "pied. Compte avec tes doigts.",
   "src": [
    "chants:indice"
@@ -68792,6 +70318,13 @@
   "text": "pin",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Plastique.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -68923,6 +70456,12 @@
   ]
  },
  {
+  "text": "Poisson.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "poisson… et chapeau. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -68986,6 +70525,12 @@
   "text": "pomme",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Pomme.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -69067,6 +70612,13 @@
   ]
  },
  {
+  "text": "Pompier.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "Pose la poubelle à l'arrière du camion : l'éboueur va la vider.",
   "src": [
    "dechets:indice",
@@ -69083,6 +70635,13 @@
   "text": "pot",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Pot de yaourt.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -69107,6 +70666,12 @@
   "text": "poule",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Poule.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -69244,6 +70809,12 @@
   "text": "poussin",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Poussin.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -69623,6 +71194,12 @@
   ]
  },
  {
+  "text": "Proposer de la reconstruire ensemble.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "pu",
   "src": [
    "mots"
@@ -69632,6 +71209,13 @@
   "text": "pu, ça commence comme piano.",
   "src": [
    "syllabes:indice"
+  ]
+ },
+ {
+  "text": "Pull.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -78660,6 +80244,12 @@
   ]
  },
  {
+  "text": "Radio.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "radio… et ballon. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -78756,6 +80346,12 @@
   ]
  },
  {
+  "text": "Raisin.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "raisin… et bébé. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -78819,6 +80415,12 @@
   "text": "rat, ça commence comme radio.",
   "src": [
    "syllabes:indice"
+  ]
+ },
+ {
+  "text": "Rat.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -79744,6 +81346,12 @@
   ]
  },
  {
+  "text": "Réveillé.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Rico a construit une tour. Quelqu'un la fait tomber exprès. Comment se sent Rico ?",
   "src": [
    "theatre:consigne",
@@ -80116,6 +81724,18 @@
   ]
  },
  {
+  "text": "Rire très fort.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Rire.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "riz",
   "src": [
    "mots"
@@ -80137,6 +81757,12 @@
   "text": "robot",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Robot.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -80308,6 +81934,26 @@
   ]
  },
  {
+  "text": "Sac en plastique.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Sac en tissu.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Sac.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "sac. Compte avec tes doigts.",
   "src": [
    "chants:indice"
@@ -80410,6 +82056,12 @@
   ]
  },
  {
+  "text": "Sapin.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "sapin… et cabane. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -80458,6 +82110,12 @@
   ]
  },
  {
+  "text": "Se moquer de lui.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "seau",
   "src": [
    "mots"
@@ -80467,6 +82125,12 @@
   "text": "seau, ça commence comme sofa.",
   "src": [
    "syllabes:indice"
+  ]
+ },
+ {
+  "text": "Seau.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -80569,6 +82233,12 @@
   "text": "serpent",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Serpent.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -80740,6 +82410,12 @@
   ]
  },
  {
+  "text": "Soleil.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "soleil… et banane. Écoute bien : la fin n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -80845,6 +82521,12 @@
   "text": "souris",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Souris.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -81306,6 +82988,12 @@
   ]
  },
  {
+  "text": "Télévision.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "télévision… et banane. Écoute bien : la fin n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -81447,6 +83135,12 @@
   "text": "tomate",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Tomate.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -81639,6 +83333,12 @@
   "text": "tortue",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Tortue.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -82180,6 +83880,12 @@
   ]
  },
  {
+  "text": "Tracteur.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "tracteur… et ballon. Écoute bien : la fin n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -82276,6 +83982,12 @@
   ]
  },
  {
+  "text": "Train.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "train. Compte avec tes doigts.",
   "src": [
    "chants:indice"
@@ -82333,6 +84045,12 @@
   "text": "Très bien !",
   "src": [
    "dessin"
+  ]
+ },
+ {
+  "text": "Très chaude.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -84490,6 +86208,12 @@
   ]
  },
  {
+  "text": "Tu as fabriqué rue. On cherche les.",
+  "src": [
+   "syllabes:erreur"
+  ]
+ },
+ {
   "text": "Tu as fabriqué rue. On cherche lot.",
   "src": [
    "syllabes:erreur"
@@ -85962,15 +87686,33 @@
   ]
  },
  {
+  "text": "Un casque.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "un cœur",
   "src": [
    "mon-drapeau"
   ]
  },
  {
+  "text": "Un geyser d'eau chaude.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Un grand bain, il faut le remplir tout entier : ça fait beaucoup d'eau !",
   "src": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "text": "Un grand bain.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -86004,9 +87746,21 @@
   ]
  },
  {
+  "text": "Un masque à gaz.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Un masque de carnaval, c'est pour faire la fête : il ne nettoie pas l'air !",
   "src": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "text": "Un masque de carnaval.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -86222,6 +87976,12 @@
   ]
  },
  {
+  "text": "Une casquette.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Une cheminée sur le toit.",
   "src": [
    "dessin"
@@ -86234,9 +87994,21 @@
   ]
  },
  {
+  "text": "Une couronne.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "une croix",
   "src": [
    "mon-drapeau"
+  ]
+ },
+ {
+  "text": "Une douche rapide.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -86336,6 +88108,12 @@
   ]
  },
  {
+  "text": "Une nouvelle terre.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "Une oreille pointue.",
   "src": [
    "dessin"
@@ -86378,6 +88156,20 @@
   ]
  },
  {
+  "text": "Usine du verre.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
+  "text": "Usine qui chauffe.",
+  "src": [
+   "dechets:option",
+   "options"
+  ]
+ },
+ {
   "text": "va",
   "src": [
    "mots"
@@ -86393,6 +88185,12 @@
   "text": "vache",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Vache.",
+  "src": [
+   "options"
   ]
  },
  {
@@ -86495,6 +88293,13 @@
   "text": "vélo commence par vé.",
   "src": [
    "syllabes:indice"
+  ]
+ },
+ {
+  "text": "Vélo.",
+  "src": [
+   "dechets:option",
+   "options"
   ]
  },
  {
@@ -87210,6 +89015,12 @@
   ]
  },
  {
+  "text": "Voiture.",
+  "src": [
+   "options"
+  ]
+ },
+ {
   "text": "voiture… et ballon. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
@@ -87309,6 +89120,18 @@
   "text": "voix… ture. Compte avec tes doigts.",
   "src": [
    "chants:indice"
+  ]
+ },
+ {
+  "text": "Volcan gris.",
+  "src": [
+   "options"
+  ]
+ },
+ {
+  "text": "Volcan rouge.",
+  "src": [
+   "options"
   ]
  },
  {

@@ -69,6 +69,7 @@ export const marche: ActivityModule<MarketItem> = {
   skills: ["NUM.VOIR.4", "NUM.COMPTE.10", "NUM.COMPTE.20", "NUM.COMPLEMENT.10", "NUM.DIZAINES.LIRE", "NUM.DIZAINES.FAIRE"],
   card: `<span style="display:block;width:1em;height:1em">${APPLE}</span>`, pitch: "Le marché de Basile, pour compter les pommes.",
   startLevel: () => 1,
+  identity: (it) => `${it.kind}:${it.n}:${it.have ?? ""}`,
 
   generate(level, ctx) {
     const r = ctx.rng;

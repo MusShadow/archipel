@@ -105,6 +105,8 @@ export const syllabes: ActivityModule<SylItem> = {
   skills: ["LECT.SYL.ECOUTE", "LECT.SYL.FABRIQUE", "LECT.MOT.FABRIQUE", "LECT.MOT.LIRE"],
   card: `<span class="reading" style="font-size:.62em;font-weight:700;color:#FF7F50">ma</span>`, pitch: "L'atelier des syllabes, pour fabriquer des syllabes et des mots.",
   startLevel: () => 1,
+  // Le même mot (« lama ») ou la même syllabe ne revient pas dans la séance, quel que soit l'exercice.
+  identity: (it) => it.target,
 
   generate(level, ctx) {
     const r = ctx.rng;

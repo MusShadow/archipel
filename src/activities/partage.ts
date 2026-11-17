@@ -19,6 +19,7 @@ export const partage: ActivityModule<ShareItem> = {
   skills: ["NUM.PARTAGE.EGAL", "NUM.PARTAGE.RESTE", "NUM.PARTAGE.COMBIEN"],
   card: `<span style="display:block;width:1em;height:1em">${COOKIE}</span>`, pitch: "Le partage du goûter, pour partager les biscuits entre les amis.",
   startLevel: () => 1,
+  identity: (it) => `${it.kind}:${it.total}:${it.friends.length}`,
 
   generate(level, ctx) {
     const r = ctx.rng;

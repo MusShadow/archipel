@@ -5,7 +5,9 @@ import { ACTIVITIES, ISLAND_SPOKEN } from "../src/activities";
 import { createProfile } from "../src/app";
 import { DEFIS, PRAISE, PRAISE_AFTER_EFFORT, RETRY, knownSet } from "../src/content";
 import { makeRng } from "../src/core";
-import type { Ctx } from "../src/host";
+import { CRATES } from "../src/activities/dechets";
+import { binsFor } from "../src/activities/tri";
+import { optionText, type Ctx } from "../src/host";
 import { elideName, finalize, keyOf, plan, planText, stretch, textKey, tokenize, type VoixIndex } from "../src/voix";
 
 // Petit index fictif : chaque clé connue renvoie un clip.
@@ -125,5 +127,23 @@ describe.skipIf(!indexFile)("pack de voix : couverture", () => {
     }
     if (misses.length) console.log(`${misses.length} / ${total} phrases sans voix naturelle, par exemple :\n${[...new Set(misses)].slice(0, 12).join("\n")}`);
     expect(misses.length / total).toBeLessThan(0.01);
+  });
+
+  test("réponses proposées que Plume lit (étiquettes des cartes, poubelles, caisses, mots des chants)", () => {
+    const texts = new Set<string>();
+    const p = createProfile({ name: "Léa", ageMonths: 54, color: "#FFC145", readingK: 15, countTo: 30, flags: 2 });
+    const ctx: Ctx = { profile: p, rng: makeRng(5), known: knownSet(15), now: Date.now() };
+    // Cartes avec une étiquette écrite (le volcan coupé en deux se touche sur le dessin : pas de carte, rien à lire).
+    const labelled = (id: string, kind: string) => (id !== "theatre" || ["aider", "desir", "croyance", "contenu"].includes(kind)) && !(id === "volcan" && kind === "partie");
+    for (const mod of ACTIVITIES) for (let level = 1; level <= mod.maxLevel; level++) for (let n = 0; n < 80; n++) {
+      const it: any = mod.generate(level, ctx);
+      if (it.opts && labelled(mod.id, it.kind)) for (const o of Object.values(it.opts) as any[]) if (typeof o?.label === "string" && !o.flag) texts.add(optionText(o.label));
+      if (mod.id === "chants") for (const c of it.choices ?? []) texts.add(optionText(String(c)));
+    }
+    for (const papiers of ["jaune", "bleu"] as const) for (const cuisine of ["marron", "compost"] as const) for (const couleurs of ["nationales", "paris"] as const)
+      for (const b of binsFor({ papiers, cuisine, couleurs })) texts.add(optionText(b.label));
+    for (const c of Object.values(CRATES)) texts.add(optionText(c.label));
+    const misses = [...texts].filter((t) => !covered(t));
+    expect(misses).toEqual([]);
   });
 });

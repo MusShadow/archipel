@@ -27,6 +27,9 @@ export interface ActivityModule<I extends Item = Item> {
   // Carte de l'activité sur son île : petite illustration et phrase de présentation dite par Plume.
   card: string;
   pitch: string;
+  // Ce qui fait qu'un exercice est « le même » (le mot « lama », la question du camion…) : un exercice déjà fait ne
+  // revient pas dans la séance. Par défaut, sa clé, sinon sa consigne.
+  identity?(item: I): string;
   // Activité accessible à cet enfant ? (par exemple : lire des phrases demande de connaître assez de sons)
   available?(p: Profile): boolean;
   lockedReason?: string;
@@ -43,6 +46,45 @@ function fastStep(s: { level: number; up: number; down: number }, independentSuc
 
 const pick = <T,>(a: T[]) => a[Math.floor(Math.random() * a.length)];
 
+// Un exercice ne revient pas dans la même séance. On en tire plusieurs, et on garde le premier jamais vu. Si tout a déjà
+// été vu à ce niveau (peu de mots connus, par exemple), on cherche un exercice nouveau aux niveaux en dessous (une
+// révision) ; sinon, on reprend celui qui a été vu il y a le plus longtemps.
+let seenStamp = 0;
+export const identityOf = (mod: ActivityModule<any>, it: Item) => mod.identity?.(it) ?? (it as { key?: string }).key ?? it.prompt;
+export function freshItem<I extends Item>(mod: ActivityModule<I>, level: number, ctx: Ctx, seen: Record<string, number>, tries = 80): I {
+  let best: I | null = null, bestAt = Infinity;
+  const keep = (it: I) => { seen[identityOf(mod, it)] = ++seenStamp; return it; };
+  for (let lv = level; lv >= 1; lv--) {
+    for (let t = 0; t < (lv === level ? tries : 40); t++) {
+      const it = mod.generate(lv, ctx);
+      const at = seen[identityOf(mod, it)];
+      if (at === undefined) return keep(it);
+      if (lv === level && at < bestAt) { best = it; bestAt = at; }
+    }
+  }
+  return keep(best!);
+}
+
+// Réponses proposées que l'enfant ne sait pas lire : l'étiquette écrite sous l'image d'une carte (ou d'une poubelle), ou
+// un mot donné par l'activité (data-say). Plume les dit après la consigne, chacune brille quand elle est dite ; le petit
+// haut-parleur d'une carte la fait réentendre. Rien à redire quand la consigne les nomme déjà.
+export const optionText = (t: string) => {
+  const s = t.replace(/\s+/g, " ").trim();
+  const c = s.charAt(0).toUpperCase() + s.slice(1);
+  return /[.!?…]$/.test(c) ? c : `${c}.`;
+};
+const norm = (t: string) => t.toLowerCase().replace(/[.!?…,;:'’]/g, " ").replace(/\s+/g, " ").trim();
+export interface SpokenOption { el: HTMLElement; text: string; card: boolean }
+export function spokenOptions(stage: HTMLElement): SpokenOption[] {
+  const out: SpokenOption[] = [];
+  for (const el of Array.from(stage.querySelectorAll<HTMLElement>("[data-t], [data-bin]"))) {
+    const said = el.dataset.say ?? el.querySelector(".lab, .tlab")?.textContent ?? "";
+    if (said.trim().length > 1) out.push({ el, text: optionText(said), card: el.hasAttribute("data-t") });
+  }
+  return out;
+}
+export const optionsInPrompt = (opts: SpokenOption[], prompt: string) => opts.length > 0 && opts.every((o) => ` ${norm(prompt)} `.includes(` ${norm(o.text)} `));
+
 export type ExitReason = "done" | "early" | "calm";
 export function activityScreen(mod: ActivityModule<any>, onExit: (summary: RoundSummary | null, reason: ExitReason) => void, opts: RoundOptions = {}): { el: HTMLElement; cleanup: () => void } {
   const total = opts.items ?? mod.items;
@@ -51,6 +93,8 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
   const ctx: Ctx = { profile: p, rng, known: knownSet(p.knownK), now: Date.now() };
   let stair = p.stairs[mod.id] ?? { level: mod.startLevel(p), up: 0, down: 0 };
   const summary: RoundSummary = { items: 0, firstTry: 0, helped: 0, errors: 0, last: null, learned: [] };
+  // Les exercices déjà faits dans la séance, pour cette activité (sans séance : pour cet écran).
+  const seen: Record<string, number> = app.session ? (app.session.seen[mod.id] ??= {}) : {};
   const t0 = Date.now();
   let index = 0, attempts = 0, hints = 0, errorsInRow = 0, recorded = false, locked = false, itemStart = 0;
   let current: Item | null = null;
@@ -65,7 +109,7 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     h("div", { class: "top" },
       roundBtn({ icon: "home", label: "Retour à la carte", onclick: () => askExit() }),
       dotsHost,
-      roundBtn({ icon: "ear", label: "Réécouter la consigne", onclick: () => current && speech.say(current.prompt) })),
+      roundBtn({ icon: "ear", label: "Réécouter la consigne", onclick: () => current && sayPrompt() })),
     stage,
     h("div", { class: "bottom" }, tip, plumeBtn));
 
@@ -86,7 +130,7 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     if (!alive) return;
     if (index >= total || (!opts.fast && app.timeUp())) return finish();
     dotsHost.replaceChildren(dots(total, index));
-    const item = mod.generate(stair.level, ctx);
+    const item = freshItem(mod, stair.level, ctx, seen);
     current = item;
     // Crochet pour les tests de bout en bout (inexistant en usage normal).
     (globalThis as any).__archipelTest?.onItem?.(item, mod.id);
@@ -107,11 +151,53 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     }
     itemStart = Date.now();
     mod.render(item, view);
-    speech.say(item.prompt);
+    options = spokenOptions(stage);
+    for (const o of options) if (o.card) addSpeaker(o);
+    sayPrompt();
   }
+
+  // Les réponses proposées, dites l'une après l'autre (on s'arrête dès que l'enfant touche l'écran ou répond).
+  let options: SpokenOption[] = [];
+  let reading = 0, readingOptions = false;
+  const stopReading = () => { reading++; readingOptions = false; stage.querySelectorAll(".saying").forEach((e) => e.classList.remove("saying")); };
+  function sayPrompt() {
+    if (!current) return;
+    stopReading();
+    const run = reading;
+    const list = optionsInPrompt(options, current.prompt) ? [] : options;
+    speech.say(current.prompt).then(async () => {
+      if (run !== reading) return;
+      readingOptions = true;
+      for (const o of list) {
+        if (run !== reading || !alive || locked || !o.el.isConnected) break;
+        o.el.classList.add("saying");
+        await speech.say(o.text);
+        o.el.classList.remove("saying");
+      }
+      if (run === reading) readingOptions = false;
+    });
+  }
+  function addSpeaker(o: SpokenOption) {
+    const b = h("span", { class: "sayit", role: "button", "aria-label": `Écouter : ${o.text}`, html: icon("sound", "#12737B", 2.4) });
+    const hear = (e: Event) => {
+      e.stopPropagation(); e.preventDefault();
+      if (locked) return;
+      stopReading(); sfx.tap();
+      o.el.classList.add("saying");
+      const run = reading;
+      speech.say(o.text).then(() => { if (run === reading) o.el.classList.remove("saying"); });
+    };
+    b.addEventListener("pointerdown", (e) => e.stopPropagation());
+    b.addEventListener("click", hear);
+    o.el.classList.add("hasay");
+    o.el.appendChild(b);
+  }
+  // Un geste de l'enfant pendant la lecture des réponses l'arrête (sauf le haut-parleur, qui relance la sienne).
+  stage.addEventListener("pointerdown", () => { if (readingOptions) { stopReading(); speech.stop(); } });
 
   function answer(correct: boolean, el: Element | null, retry?: string) {
     if (locked || !current) return;
+    stopReading();
     speech.stop();
     if (!recorded) { record(correct); recorded = true; }
     if (correct) {
@@ -148,6 +234,7 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
 
   function giveHint(target?: number) {
     if (!current || locked) return;
+    stopReading();
     hints = Math.min(4, target ?? hints + 1);
     const text = mod.hint(current, hints, view);
     if (text) speech.say(text);

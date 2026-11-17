@@ -50,6 +50,7 @@ export const flotte: ActivityModule<FlotteItem> = {
   skills: ["DECOUV.FLOTTE"],
   card: `<span class="emo">🦆</span>`, pitch: "Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave.",
   startLevel: () => 1,
+  identity: (it) => `${it.kind}:${it.objs.map((o) => o.e).sort().join("+")}`,
 
   generate(level, ctx) {
     const r: Rng = ctx.rng;

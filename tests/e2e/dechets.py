@@ -5,7 +5,7 @@ portrait.
 
 Usage : python3 tests/e2e/dechets.py [dist/index.html] [dossier_captures]
 """
-import os, sys, json, time
+import os, re, sys, json, time
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
@@ -38,7 +38,7 @@ INIT = """
 })();
 """
 
-errors, kinds, shots, gestures = [], {}, set(), set()
+errors, kinds, shots, gestures, options_read = [], {}, set(), set(), set()
 NAT = {"papiers": "jaune", "cuisine": "marron", "couleurs": "nationales"}
 PLUME = '[aria-label="Demander un indice à Plume"]'
 
@@ -118,10 +118,36 @@ def play_tapis(page, prefix, it, n, mistake):
             errors.append(f"{prefix} : {t} n'est pas parti dans la caisse {it['answers'][t]}")
     page.wait_for_timeout(900)
 
+def opt_text(label):
+    s = " ".join(label.split())
+    s = s[:1].upper() + s[1:]
+    return s if re.search(r"[.!?…]$", s) else s + "."
+
+def norm(t):
+    return " ".join(re.sub(r"[.!?…,;:'’]", " ", t.lower()).split())
+
 def play_choice(page, prefix, it, n, mistake):
     k = it["kind"]
     if k not in shots:
         shots.add(k); shot(page, f"{prefix}-ex{n}-{k}", 150)
+        # Plume lit les réponses proposées après la consigne (sauf si la consigne les nomme déjà).
+        page.wait_for_timeout(300)
+        texts = [opt_text(it["opts"][c]["label"]) for c in it["choices"]]
+        said = spoken(page)
+        if not all(f" {norm(t)} " in f" {norm(it['prompt'])} " for t in texts):
+            missing = [t for t in texts if t not in said[-len(texts) - 3:]]
+            if missing:
+                errors.append(f"{prefix} : réponses proposées non lues ({k}) : {missing}")
+            else:
+                options_read.add(k)
+        # Le haut-parleur d'une carte la redit, sans répondre.
+        if "haut-parleur" not in shots:
+            shots.add("haut-parleur")
+            s0, n0 = len(spoken(page)), item(page)["_n"]
+            page.locator(f'.choices [data-t="{it["choices"][0]}"] .sayit').click()
+            page.wait_for_timeout(250)
+            if spoken(page)[s0:] != [texts[0]] or item(page)["_n"] != n0 or page.locator(".choices .right").count():
+                errors.append(f"{prefix} : le haut-parleur n'a pas seulement redit « {texts[0]} » : {spoken(page)[s0:]}")
     if mistake:
         bad = [c for c in it["choices"] if c != it["target"]][0]
         s0 = len(spoken(page))
@@ -194,7 +220,9 @@ with sync_playwright() as pw:
         ctx.close()
     browser.close()
 
-print("types d'exercices vus :", kinds, "; gestes :", sorted(gestures))
+print("types d'exercices vus :", kinds, "; gestes :", sorted(gestures), "; réponses lues :", sorted(options_read))
+if len(options_read) < 3:
+    errors.append(f"réponses proposées lues dans trop peu d'exercices : {sorted(options_read)}")
 if len(kinds) < 10:
     errors.append(f"trop peu de types d'exercices vus : {sorted(kinds)}")
 if gestures != {"glisser", "toucher"}:

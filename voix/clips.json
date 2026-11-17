@@ -7745,6 +7745,46 @@
   ]
  },
  {
+  "key": "avec un drone|.",
+  "text": "Avec un drone.",
+  "say": "Avec un drone.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "avec un thermomètre|.",
+  "text": "Avec un thermomètre.",
+  "say": "Avec un thermomètre.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "avec une échelle|.",
+  "text": "Avec une échelle.",
+  "say": "Avec une échelle.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "avec une loupe|.",
+  "text": "Avec une loupe.",
+  "say": "Avec une loupe.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "ba|.",
   "text": "ba",
   "say": "ba",
@@ -7764,7 +7804,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -7777,7 +7818,8 @@
    "chants:indice",
    "lis:indice",
    "lis:reussite",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -7829,7 +7871,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -7865,7 +7908,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -7887,7 +7931,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -7941,7 +7986,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -8429,7 +8475,8 @@
    "chants:indice",
    "lis:indice",
    "lis:reussite",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -8441,7 +8488,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -8453,7 +8501,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -8475,7 +8524,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -8498,7 +8548,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9514,7 +9565,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9529,7 +9581,8 @@
    "chants:indice",
    "lis:indice",
    "lis:reussite",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9541,7 +9594,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9587,7 +9641,8 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9619,7 +9674,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9653,7 +9709,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9666,7 +9723,8 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9689,7 +9747,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9702,7 +9761,8 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9775,7 +9835,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9823,6 +9884,16 @@
   ]
  },
  {
+  "key": "dans un trou en bas|.",
+  "text": "Dans un trou, en bas.",
+  "say": "Dans un trou, en bas.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "dauphin|.",
   "text": "dauphin",
   "say": "dauphin",
@@ -9831,7 +9902,38 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
+  ]
+ },
+ {
+  "key": "de l'eau|.",
+  "text": "De l'eau.",
+  "say": "De l'eau.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "de la fumée|.",
+  "text": "De la fumée.",
+  "say": "De la fumée.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "de la glace|.",
+  "text": "De la glace.",
+  "say": "De la glace.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -9852,6 +9954,36 @@
   "words": 5,
   "fams": [
    "carte"
+  ]
+ },
+ {
+  "key": "de la neige|.",
+  "text": "De la neige.",
+  "say": "De la neige.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "de la pierre|.",
+  "text": "De la pierre.",
+  "say": "De la pierre.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "de la vapeur|.",
+  "text": "De la vapeur.",
+  "say": "De la vapeur.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -9885,6 +10017,106 @@
   "words": 8,
   "fams": [
    "carte"
+  ]
+ },
+ {
+  "key": "des bactéries|.",
+  "text": "Des bactéries.",
+  "say": "Des bactéries.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "des biscuits|.",
+  "text": "Des biscuits.",
+  "say": "Des biscuits.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "des bonbons|.",
+  "text": "Des bonbons.",
+  "say": "Des bonbons.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "des canards|.",
+  "text": "Des canards.",
+  "say": "Des canards.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "des chaussettes|.",
+  "text": "Des chaussettes.",
+  "say": "Des chaussettes.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "des crayons|.",
+  "text": "Des crayons.",
+  "say": "Des crayons.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "des lunettes de soleil|.",
+  "text": "Des lunettes de soleil.",
+  "say": "Des lunettes de soleil.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "des œufs|.",
+  "text": "Des œufs.",
+  "say": "Des œufs.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "des pièces de puzzle|.",
+  "text": "Des pièces de puzzle.",
+  "say": "Des pièces de puzzle.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "des poissons|.",
+  "text": "Des poissons.",
+  "say": "Des poissons.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -9938,7 +10170,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -9975,6 +10208,26 @@
   ]
  },
  {
+  "key": "donner un coup de pied dans les cubes|.",
+  "text": "Donner un coup de pied dans les cubes.",
+  "say": "Donner un coup de pied dans les cubes.",
+  "pack": "commun",
+  "words": 8,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "doré|.",
+  "text": "Doré.",
+  "say": "Doré.",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "dos|.",
   "text": "dos.",
   "say": "dos.",
@@ -9985,6 +10238,16 @@
    "chants:indice",
    "mots",
    "syllabes:indice"
+  ]
+ },
+ {
+  "key": "du chocolat chaud|.",
+  "text": "Du chocolat chaud.",
+  "say": "Du chocolat chaud.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -10011,6 +10274,56 @@
   ]
  },
  {
+  "key": "elle conduit le bus|.",
+  "text": "Elle conduit le bus.",
+  "say": "Elle conduit le bus.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "elle coule|.",
+  "text": "Elle coule.",
+  "say": "Elle coule.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "elle est dure|.",
+  "text": "Elle est dure.",
+  "say": "Elle est dure.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "elle flotte|.",
+  "text": "Elle flotte.",
+  "say": "Elle flotte.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "elle s'envole|.",
+  "text": "Elle s'envole.",
+  "say": "Elle s'envole.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "elle se réveillera bientôt|.",
   "text": "Elle se réveillera bientôt !",
   "say": "Elle se réveillera bientôt !",
@@ -10018,6 +10331,56 @@
   "words": 4,
   "fams": [
    "carte"
+  ]
+ },
+ {
+  "key": "elle soigne les animaux|.",
+  "text": "Elle soigne les animaux.",
+  "say": "Elle soigne les animaux.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "elle surveille les volcans|.",
+  "text": "Elle surveille les volcans.",
+  "say": "Elle surveille les volcans.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "en haut de la colline|.",
+  "text": "En haut de la colline.",
+  "say": "En haut de la colline.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "en la goûtant|.",
+  "text": "En la goûtant.",
+  "say": "En la goûtant.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "en la touchant|.",
+  "text": "En la touchant.",
+  "say": "En la touchant.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -10038,6 +10401,16 @@
   "words": 4,
   "fams": [
    "carte"
+  ]
+ },
+ {
+  "key": "endormi|.",
+  "text": "Endormi.",
+  "say": "Endormi.",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -10202,6 +10575,36 @@
   ]
  },
  {
+  "key": "faire bouh pour lui faire peur|.",
+  "text": "Faire « bouh » pour lui faire peur.",
+  "say": "Faire bouh pour lui faire peur.",
+  "pack": "commun",
+  "words": 6,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "faire comme si on ne la voyait pas|.",
+  "text": "Faire comme si on ne la voyait pas.",
+  "say": "Faire comme si on ne la voyait pas.",
+  "pack": "commun",
+  "words": 8,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "faire semblant de ne rien voir|.",
+  "text": "Faire semblant de ne rien voir.",
+  "say": "Faire semblant de ne rien voir.",
+  "pack": "commun",
+  "words": 6,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "faux|.",
   "text": "faux.",
   "say": "faux.",
@@ -10228,6 +10631,16 @@
   ]
  },
  {
+  "key": "fermer la porte et partir|.",
+  "text": "Fermer la porte et partir.",
+  "say": "Fermer la porte et partir.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "feu|.",
   "text": "feu.",
   "say": "feu.",
@@ -10237,7 +10650,8 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -10283,7 +10697,8 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -10315,7 +10730,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -10326,7 +10742,8 @@
   "words": 1,
   "fams": [
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -10337,6 +10754,16 @@
   "words": 1,
   "fams": [
    "mots"
+  ]
+ },
+ {
+  "key": "froide|.",
+  "text": "Froide.",
+  "say": "Froide.",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -10369,7 +10796,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -10412,7 +10840,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -10423,7 +10852,8 @@
   "words": 1,
   "fams": [
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -10474,7 +10904,8 @@
   "words": 1,
   "fams": [
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -10495,6 +10926,56 @@
   "words": 1,
   "fams": [
    "mots"
+  ]
+ },
+ {
+  "key": "il coule|.",
+  "text": "Il coule.",
+  "say": "Il coule.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "il flotte|.",
+  "text": "Il flotte.",
+  "say": "Il flotte.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "ils s'éloignent avec les adultes|.",
+  "text": "Ils s'éloignent avec les adultes.",
+  "say": "Ils s'éloignent avec les adultes.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "ils se cachent sous le lit|.",
+  "text": "Ils se cachent sous le lit.",
+  "say": "Ils se cachent sous le lit.",
+  "pack": "commun",
+  "words": 6,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "ils vont voir la lave|.",
+  "text": "Ils vont voir la lave.",
+  "say": "Ils vont voir la lave.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -10565,6 +11046,26 @@
   "words": 1,
   "fams": [
    "mots"
+  ]
+ },
+ {
+  "key": "je le ferme|.",
+  "text": "Je le ferme.",
+  "say": "Je le ferme.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "je le laisse couler|.",
+  "text": "Je le laisse couler.",
+  "say": "Je le laisse couler.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -10769,7 +11270,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -10781,7 +11283,18 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
+  ]
+ },
+ {
+  "key": "l'aider à le chercher|.",
+  "text": "L'aider à le chercher.",
+  "say": "L'aider à le chercher.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -10793,6 +11306,16 @@
   "fams": [
    "carnet",
    "mots"
+  ]
+ },
+ {
+  "key": "l'arbre|.",
+  "text": "L'arbre.",
+  "say": "L'arbre.",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -10844,6 +11367,56 @@
   "fams": [
    "carnet",
    "mots"
+  ]
+ },
+ {
+  "key": "l'eau claire|.",
+  "text": "L'eau claire.",
+  "say": "L'eau claire.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "l'eau du bain|.",
+  "text": "L'eau du bain.",
+  "say": "L'eau du bain.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "l'eau trouble|.",
+  "text": "L'eau trouble.",
+  "say": "L'eau trouble.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "l'enfant|.",
+  "text": "L'enfant.",
+  "say": "L'enfant.",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "l'éruption|.",
+  "text": "L'éruption.",
+  "say": "L'éruption.",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -10989,6 +11562,16 @@
   ]
  },
  {
+  "key": "l'inviter à jouer|.",
+  "text": "L'inviter à jouer.",
+  "say": "L'inviter à jouer.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "l'irlande|.",
   "text": "l'Irlande",
   "say": "l'Irlande",
@@ -11011,6 +11594,16 @@
   ]
  },
  {
+  "key": "l'oiseau|.",
+  "text": "L'oiseau.",
+  "say": "L'oiseau.",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "l'ukraine|.",
   "text": "l'Ukraine",
   "say": "l'Ukraine",
@@ -11022,13 +11615,24 @@
   ]
  },
  {
+  "key": "l'usine|.",
+  "text": "L'usine.",
+  "say": "L'usine.",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "la banane|.",
   "text": "la banane",
   "say": "la banane",
   "pack": "commun",
   "words": 2,
   "fams": [
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -11040,6 +11644,16 @@
   "fams": [
    "carnet",
    "mots"
+  ]
+ },
+ {
+  "key": "la boîte|.",
+  "text": "La boîte.",
+  "say": "La boîte.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11064,6 +11678,16 @@
   ]
  },
  {
+  "key": "la chaise|.",
+  "text": "La chaise.",
+  "say": "La chaise.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "la chine|.",
   "text": "la Chine",
   "say": "la Chine",
@@ -11075,6 +11699,16 @@
   ]
  },
  {
+  "key": "la clé|.",
+  "text": "La clé.",
+  "say": "La clé.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "la colombie|.",
   "text": "la Colombie",
   "say": "la Colombie",
@@ -11083,6 +11717,16 @@
   "fams": [
    "carnet",
    "mots"
+  ]
+ },
+ {
+  "key": "la combinaison argentée|.",
+  "text": "La combinaison argentée.",
+  "say": "La combinaison argentée.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11118,6 +11762,16 @@
   ]
  },
  {
+  "key": "la fleur|.",
+  "text": "La fleur.",
+  "say": "La fleur.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "la france|.",
   "text": "la France",
   "say": "la France",
@@ -11137,6 +11791,26 @@
   "fams": [
    "carnet",
    "mots"
+  ]
+ },
+ {
+  "key": "la grosse bûche|.",
+  "text": "La grosse bûche.",
+  "say": "La grosse bûche.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "la grosse pomme|.",
+  "text": "La grosse pomme.",
+  "say": "La grosse pomme.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11162,6 +11836,38 @@
   ]
  },
  {
+  "key": "la lave coule|.",
+  "text": "La lave coule.",
+  "say": "La lave coule.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "la lave|.",
+  "text": "La lave !",
+  "say": "La lave !",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options",
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "la lingette|.",
+  "text": "La lingette.",
+  "say": "La lingette.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "la lituanie|.",
   "text": "la Lituanie",
   "say": "la Lituanie",
@@ -11183,6 +11889,16 @@
   ]
  },
  {
+  "key": "la mer|.",
+  "text": "La mer.",
+  "say": "La mer.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "la moto|.",
   "text": "la moto",
   "say": "la moto",
@@ -11190,6 +11906,26 @@
   "words": 2,
   "fams": [
    "mots"
+  ]
+ },
+ {
+  "key": "la nappe|.",
+  "text": "La nappe.",
+  "say": "La nappe.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "la neige|.",
+  "text": "La neige.",
+  "say": "La neige.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11214,6 +11950,66 @@
   ]
  },
  {
+  "key": "la pâte à modeler en boule|.",
+  "text": "La pâte à modeler en boule.",
+  "say": "La pâte à modeler en boule.",
+  "pack": "commun",
+  "words": 6,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "la pâte à modeler en forme de bateau|.",
+  "text": "La pâte à modeler en forme de bateau.",
+  "say": "La pâte à modeler en forme de bateau.",
+  "pack": "commun",
+  "words": 8,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "la petite clé en métal|.",
+  "text": "La petite clé en métal.",
+  "say": "La petite clé en métal.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "la pierre|.",
+  "text": "La pierre.",
+  "say": "La pierre.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "la pizza|.",
+  "text": "La pizza.",
+  "say": "La pizza.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "la pluie|.",
+  "text": "La pluie.",
+  "say": "La pluie.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "la plume|.",
   "text": "la plume",
   "say": "la plume",
@@ -11235,13 +12031,54 @@
   ]
  },
  {
+  "key": "la pomme|.",
+  "text": "La pomme.",
+  "say": "La pomme.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "la pompe|.",
+  "text": "La pompe.",
+  "say": "La pompe.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "la poubelle|.",
+  "text": "La poubelle.",
+  "say": "La poubelle.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "la radio|.",
   "text": "la radio",
   "say": "la radio",
   "pack": "commun",
   "words": 2,
   "fams": [
-   "mots"
+   "mots",
+   "options"
+  ]
+ },
+ {
+  "key": "la rivière|.",
+  "text": "La rivière.",
+  "say": "La rivière.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11288,6 +12125,16 @@
   ]
  },
  {
+  "key": "la station d'épuration|.",
+  "text": "La station d'épuration.",
+  "say": "La station d'épuration.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "la suède|.",
   "text": "la Suède",
   "say": "la Suède",
@@ -11321,6 +12168,16 @@
   ]
  },
  {
+  "key": "la télévision|.",
+  "text": "La télévision.",
+  "say": "La télévision.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "la tomate|.",
   "text": "la tomate",
   "say": "la tomate",
@@ -11347,7 +12204,28 @@
   "pack": "commun",
   "words": 2,
   "fams": [
-   "mots"
+   "mots",
+   "options"
+  ]
+ },
+ {
+  "key": "la vapeur|.",
+  "text": "La vapeur.",
+  "say": "La vapeur.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "la voiture|.",
+  "text": "La voiture.",
+  "say": "La voiture.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11385,6 +12263,7 @@
    "lis:indice",
    "lis:reussite",
    "mots",
+   "options",
    "syllabes:consigne"
   ]
  },
@@ -11407,7 +12286,38 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
+  ]
+ },
+ {
+  "key": "le bac jaune|.",
+  "text": "Le bac jaune.",
+  "say": "Le bac jaune.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le bain|.",
+  "text": "Le bain.",
+  "say": "Le bain.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le ballon|.",
+  "text": "Le ballon.",
+  "say": "Le ballon.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11419,6 +12329,36 @@
   "fams": [
    "carnet",
    "mots"
+  ]
+ },
+ {
+  "key": "le bassin à bulles|.",
+  "text": "Le bassin à bulles.",
+  "say": "Le bassin à bulles.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le bassin calme|.",
+  "text": "Le bassin calme.",
+  "say": "Le bassin calme.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le caillou|.",
+  "text": "Le caillou.",
+  "say": "Le caillou.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11450,7 +12390,18 @@
   "pack": "commun",
   "words": 2,
   "fams": [
-   "mots"
+   "mots",
+   "options"
+  ]
+ },
+ {
+  "key": "le château d'eau|.",
+  "text": "Le château d'eau.",
+  "say": "Le château d'eau.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11485,6 +12436,16 @@
   ]
  },
  {
+  "key": "le chocolat|.",
+  "text": "Le chocolat.",
+  "say": "Le chocolat.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "le coin calme|,",
   "text": "Le coin calme,",
   "say": "Le coin calme,",
@@ -11502,6 +12463,26 @@
   "words": 3,
   "fams": [
    "carte"
+  ]
+ },
+ {
+  "key": "le coton-tige|.",
+  "text": "Le coton-tige.",
+  "say": "Le coton-tige.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le crayon|.",
+  "text": "Le crayon.",
+  "say": "Le crayon.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11576,6 +12557,16 @@
   ]
  },
  {
+  "key": "le four|.",
+  "text": "Le four.",
+  "say": "Le four.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "le gabon|.",
   "text": "le Gabon",
   "say": "le Gabon",
@@ -11584,6 +12575,36 @@
   "fams": [
    "carnet",
    "mots"
+  ]
+ },
+ {
+  "key": "le gâteau|.",
+  "text": "Le gâteau.",
+  "say": "Le gâteau.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le grand bateau en métal|.",
+  "text": "Le grand bateau en métal.",
+  "say": "Le grand bateau en métal.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le grand château d'eau|.",
+  "text": "Le grand château d'eau.",
+  "say": "Le grand château d'eau.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11690,6 +12711,36 @@
   ]
  },
  {
+  "key": "le magma chauffe|.",
+  "text": "Le magma chauffe.",
+  "say": "Le magma chauffe.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le magma monte|.",
+  "text": "Le magma monte.",
+  "say": "Le magma monte.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le maillot de bain|.",
+  "text": "Le maillot de bain.",
+  "say": "Le maillot de bain.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "le mali|.",
   "text": "le Mali",
   "say": "le Mali",
@@ -11772,6 +12823,16 @@
   ]
  },
  {
+  "key": "le nectar des fleurs|.",
+  "text": "Le nectar des fleurs.",
+  "say": "Le nectar des fleurs.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "le nid|.",
   "text": "le nid",
   "say": "le nid",
@@ -11793,6 +12854,36 @@
   ]
  },
  {
+  "key": "le nounours|.",
+  "text": "Le nounours.",
+  "say": "Le nounours.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le nuage de cendres|.",
+  "text": "Le nuage de cendres.",
+  "say": "Le nuage de cendres.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le nuage|.",
+  "text": "Le nuage.",
+  "say": "Le nuage.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "le panama|.",
   "text": "le Panama",
   "say": "le Panama",
@@ -11801,6 +12892,26 @@
   "fams": [
    "carnet",
    "mots"
+  ]
+ },
+ {
+  "key": "le panier|.",
+  "text": "Le panier.",
+  "say": "Le panier.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le papier toilette|.",
+  "text": "Le papier toilette.",
+  "say": "Le papier toilette.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11835,6 +12946,46 @@
   ]
  },
  {
+  "key": "le petit caillou|.",
+  "text": "Le petit caillou.",
+  "say": "Le petit caillou.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le petit château d'eau|.",
+  "text": "Le petit château d'eau.",
+  "say": "Le petit château d'eau.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le petit grain de raisin|.",
+  "text": "Le petit grain de raisin.",
+  "say": "Le petit grain de raisin.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le petit train|.",
+  "text": "Le petit train.",
+  "say": "Le petit train.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "le piano|.",
   "text": "le piano",
   "say": "le piano",
@@ -11842,6 +12993,16 @@
   "words": 2,
   "fams": [
    "mots"
+  ]
+ },
+ {
+  "key": "le poisson|.",
+  "text": "Le poisson.",
+  "say": "Le poisson.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11875,6 +13036,16 @@
   ]
  },
  {
+  "key": "le réservoir|.",
+  "text": "Le réservoir.",
+  "say": "Le réservoir.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "le riz|.",
   "text": "le riz",
   "say": "le riz",
@@ -11882,6 +13053,16 @@
   "words": 2,
   "fams": [
    "mots"
+  ]
+ },
+ {
+  "key": "le robinet|.",
+  "text": "Le robinet.",
+  "say": "Le robinet.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11914,6 +13095,26 @@
   "fams": [
    "carnet",
    "mots"
+  ]
+ },
+ {
+  "key": "le short|.",
+  "text": "Le short.",
+  "say": "Le short.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "le sismomètre|.",
+  "text": "Le sismomètre.",
+  "say": "Le sismomètre.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -11957,6 +13158,16 @@
   ]
  },
  {
+  "key": "le soleil|.",
+  "text": "Le soleil.",
+  "say": "Le soleil.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "le tchad|.",
   "text": "le Tchad",
   "say": "le Tchad",
@@ -11985,6 +13196,16 @@
   "words": 4,
   "fams": [
    "carte"
+  ]
+ },
+ {
+  "key": "le tiroir|.",
+  "text": "Le tiroir.",
+  "say": "Le tiroir.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -12040,6 +13261,16 @@
   ]
  },
  {
+  "key": "le volcan gronde|.",
+  "text": "Le volcan gronde.",
+  "say": "Le volcan gronde.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "le voyage de la goutte|,",
   "text": "Le voyage de la goutte,",
   "say": "Le voyage de la goutte,",
@@ -12092,6 +13323,26 @@
   ]
  },
  {
+  "key": "les branches à ronger|.",
+  "text": "Les branches à ronger.",
+  "say": "Les branches à ronger.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "les cendres tombent|.",
+  "text": "Les cendres tombent.",
+  "say": "Les cendres tombent.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "les chants de mona|,",
   "text": "Les chants de Mona,",
   "say": "Les chants de Mona,",
@@ -12109,6 +13360,26 @@
   "words": 4,
   "fams": [
    "carte"
+  ]
+ },
+ {
+  "key": "les coquillages|.",
+  "text": "Les coquillages.",
+  "say": "Les coquillages.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "les égouts|.",
+  "text": "Les égouts.",
+  "say": "Les égouts.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -12140,6 +13411,16 @@
   "words": 4,
   "fams": [
    "carte"
+  ]
+ },
+ {
+  "key": "les grilles|.",
+  "text": "Les grilles.",
+  "say": "Les grilles.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -12194,6 +13475,16 @@
   ]
  },
  {
+  "key": "les papillons|.",
+  "text": "Les papillons.",
+  "say": "Les papillons.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "les pays-bas|.",
   "text": "les Pays-Bas",
   "say": "les Pays-Bas",
@@ -12202,6 +13493,36 @@
   "fams": [
    "carnet",
    "mots"
+  ]
+ },
+ {
+  "key": "les plantes|.",
+  "text": "Les plantes.",
+  "say": "Les plantes.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "les toilettes|.",
+  "text": "Les toilettes.",
+  "say": "Les toilettes.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "les vers de terre|.",
+  "text": "Les vers de terre.",
+  "say": "Les vers de terre.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -12272,6 +13593,7 @@
    "lis:indice",
    "lis:reussite",
    "mots",
+   "options",
    "syllabes:indice"
   ]
  },
@@ -12332,7 +13654,8 @@
    "chants:indice",
    "lis:indice",
    "lis:reussite",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -12344,6 +13667,36 @@
   "fams": [
    "mots",
    "syllabes:indice"
+  ]
+ },
+ {
+  "key": "lui dire qu'elle ne peut pas jouer|.",
+  "text": "Lui dire qu'elle ne peut pas jouer.",
+  "say": "Lui dire qu'elle ne peut pas jouer.",
+  "pack": "commun",
+  "words": 7,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "lui faire un câlin et appeler un adulte|.",
+  "text": "Lui faire un câlin et appeler un adulte.",
+  "say": "Lui faire un câlin et appeler un adulte.",
+  "pack": "commun",
+  "words": 8,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "lui prêter une lampe de poche|.",
+  "text": "Lui prêter une lampe de poche.",
+  "say": "Lui prêter une lampe de poche.",
+  "pack": "commun",
+  "words": 6,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -12391,7 +13744,8 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -12413,7 +13767,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -12425,6 +13780,16 @@
   "fams": [
    "mots",
    "syllabes:consigne"
+  ]
+ },
+ {
+  "key": "manger sa glace devant lui|.",
+  "text": "Manger sa glace devant lui.",
+  "say": "Manger sa glace devant lui.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -12456,7 +13821,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -12634,6 +14000,7 @@
    "lis:indice",
    "lis:reussite",
    "mots",
+   "options",
    "syllabes:consigne"
   ]
  },
@@ -12658,7 +14025,8 @@
    "chants:indice",
    "lis:indice",
    "lis:reussite",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -12748,7 +14116,8 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -12792,6 +14161,7 @@
   "words": 1,
   "fams": [
    "atelierdrapeaux:rendu",
+   "options",
    "volcan:indice",
    "volcan:reussite"
   ]
@@ -12895,6 +14265,16 @@
   ]
  },
  {
+  "key": "on ne la boit pas|.",
+  "text": "On ne la boit pas.",
+  "say": "On ne la boit pas.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "on part en voyage|?",
   "text": "On part en voyage ?",
   "say": "On part en voyage ?",
@@ -12902,6 +14282,18 @@
   "words": 4,
   "fams": [
    "parent"
+  ]
+ },
+ {
+  "key": "on peut la boire|.",
+  "text": "On peut la boire !",
+  "say": "On peut la boire !",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "goutte:indice",
+   "goutte:reussite",
+   "options"
   ]
  },
  {
@@ -12963,7 +14355,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -13142,7 +14535,8 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -13187,7 +14581,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -13212,7 +14607,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -13224,7 +14620,28 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
+  ]
+ },
+ {
+  "key": "partager son goûter avec lui|.",
+  "text": "Partager son goûter avec lui.",
+  "say": "Partager son goûter avec lui.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "partir jouer sans lui|.",
+  "text": "Partir jouer sans lui.",
+  "say": "Partir jouer sans lui.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -13301,6 +14718,7 @@
    "lis:indice",
    "lis:reussite",
    "mots",
+   "options",
    "syllabes:consigne"
   ]
  },
@@ -13325,7 +14743,8 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -13413,7 +14832,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -13434,7 +14854,8 @@
   "words": 1,
   "fams": [
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -13468,7 +14889,8 @@
   "words": 1,
   "fams": [
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -13700,7 +15122,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -13711,6 +15134,16 @@
   "words": 1,
   "fams": [
    "hote"
+  ]
+ },
+ {
+  "key": "proposer de la reconstruire ensemble|.",
+  "text": "Proposer de la reconstruire ensemble.",
+  "say": "Proposer de la reconstruire ensemble.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -13811,6 +15244,7 @@
    "lis:indice",
    "lis:reussite",
    "mots",
+   "options",
    "syllabes:consigne"
   ]
  },
@@ -13843,7 +15277,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -13859,6 +15294,7 @@
    "lis:indice",
    "lis:reussite",
    "mots",
+   "options",
    "syllabes:indice"
   ]
  },
@@ -13882,6 +15318,36 @@
   "fams": [
    "atelierdrapeaux:indice",
    "formes:indice"
+  ]
+ },
+ {
+  "key": "réveillé|.",
+  "text": "Réveillé.",
+  "say": "Réveillé.",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "rire très fort|.",
+  "text": "Rire très fort.",
+  "say": "Rire très fort.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "rire|.",
+  "text": "Rire.",
+  "say": "Rire.",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -13920,7 +15386,8 @@
    "chants:indice",
    "lis:indice",
    "lis:reussite",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -14008,7 +15475,8 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -14066,7 +15534,18 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
+  ]
+ },
+ {
+  "key": "se moquer de lui|.",
+  "text": "Se moquer de lui.",
+  "say": "Se moquer de lui.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -14080,6 +15559,7 @@
    "chants:erreur",
    "chants:indice",
    "mots",
+   "options",
    "syllabes:indice"
   ]
  },
@@ -14102,7 +15582,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -14168,7 +15649,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -14224,7 +15706,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -14338,7 +15821,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -14418,7 +15902,8 @@
    "chants:indice",
    "lis:indice",
    "lis:reussite",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -15032,7 +16517,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -15088,7 +16574,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -15101,7 +16588,18 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
+  ]
+ },
+ {
+  "key": "très chaude|.",
+  "text": "Très chaude.",
+  "say": "Très chaude.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -15265,6 +16763,96 @@
   ]
  },
  {
+  "key": "un casque|.",
+  "text": "Un casque.",
+  "say": "Un casque.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "un geyser d'eau chaude|.",
+  "text": "Un geyser d'eau chaude.",
+  "say": "Un geyser d'eau chaude.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "un grand bain|.",
+  "text": "Un grand bain.",
+  "say": "Un grand bain.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "un masque à gaz|.",
+  "text": "Un masque à gaz.",
+  "say": "Un masque à gaz.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "un masque de carnaval|.",
+  "text": "Un masque de carnaval.",
+  "say": "Un masque de carnaval.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "une casquette|.",
+  "text": "Une casquette.",
+  "say": "Une casquette.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "une couronne|.",
+  "text": "Une couronne.",
+  "say": "Une couronne.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "une douche rapide|.",
+  "text": "Une douche rapide.",
+  "say": "Une douche rapide.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "une nouvelle terre|.",
+  "text": "Une nouvelle terre.",
+  "say": "Une nouvelle terre.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "options"
+  ]
+ },
+ {
   "key": "va|.",
   "text": "va.",
   "say": "va.",
@@ -15285,7 +16873,8 @@
    "chants:indice",
    "lis:indice",
    "lis:reussite",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -15329,6 +16918,7 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
+   "dechets:option",
    "lis:indice",
    "lis:reussite",
    "mots",
@@ -15385,7 +16975,8 @@
   "fams": [
    "chants:consigne",
    "chants:indice",
-   "mots"
+   "mots",
+   "options"
   ]
  },
  {
@@ -15396,6 +16987,26 @@
   "words": 1,
   "fams": [
    "mots"
+  ]
+ },
+ {
+  "key": "volcan gris|.",
+  "text": "Volcan gris.",
+  "say": "Volcan gris.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
+  ]
+ },
+ {
+  "key": "volcan rouge|.",
+  "text": "Volcan rouge.",
+  "say": "Volcan rouge.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "options"
   ]
  },
  {
@@ -16248,6 +17859,66 @@
   ]
  },
  {
+  "key": "bac blanc|.",
+  "text": "Bac blanc.",
+  "say": "Bac blanc.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "bac bleu|.",
+  "text": "Bac bleu.",
+  "say": "Bac bleu.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "bac gris|.",
+  "text": "Bac gris.",
+  "say": "Bac gris.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "bac jaune|.",
+  "text": "Bac jaune.",
+  "say": "Bac jaune.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "bac marron|.",
+  "text": "Bac marron.",
+  "say": "Bac marron.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "bac vert|.",
+  "text": "Bac vert.",
+  "say": "Bac vert.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "basile a fait la cuisine|.",
   "text": "Basile a fait la cuisine.",
   "say": "Basile a fait la cuisine.",
@@ -16329,6 +18000,56 @@
   ]
  },
  {
+  "key": "boîte à goûter|.",
+  "text": "Boîte à goûter.",
+  "say": "Boîte à goûter.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "boîte de céréales|.",
+  "text": "Boîte de céréales.",
+  "say": "Boîte de céréales.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "boîte de conserve|.",
+  "text": "Boîte de conserve.",
+  "say": "Boîte de conserve.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "borne à vêtements|.",
+  "text": "Borne à vêtements.",
+  "say": "Borne à vêtements.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "boulanger|.",
+  "text": "Boulanger.",
+  "say": "Boulanger.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "boum|.",
   "text": "Boum !",
   "say": "Boum !",
@@ -16337,6 +18058,66 @@
   "fams": [
    "volcan:indice",
    "volcan:reussite"
+  ]
+ },
+ {
+  "key": "bouteille en plastique|.",
+  "text": "Bouteille en plastique.",
+  "say": "Bouteille en plastique.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "bouteilles d'eau|.",
+  "text": "Bouteilles d'eau.",
+  "say": "Bouteilles d'eau.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "bouteilles en plastique|.",
+  "text": "Bouteilles en plastique.",
+  "say": "Bouteilles en plastique.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "bouteilles en verre|.",
+  "text": "Bouteilles en verre.",
+  "say": "Bouteilles en verre.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "bouteilles neuves|.",
+  "text": "Bouteilles neuves.",
+  "say": "Bouteilles neuves.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "briques de lait|.",
+  "text": "Briques de lait.",
+  "say": "Briques de lait.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
   ]
  },
  {
@@ -17007,6 +18788,46 @@
   ]
  },
  {
+  "key": "cahier neuf|.",
+  "text": "Cahier neuf.",
+  "say": "Cahier neuf.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "canettes|.",
+  "text": "Canettes.",
+  "say": "Canettes.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "carton neuf|.",
+  "text": "Carton neuf.",
+  "say": "Carton neuf.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "cartons|.",
+  "text": "Cartons.",
+  "say": "Cartons.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "ce cahier neuf est fait avec des déchets recyclés|.",
   "text": "Ce cahier neuf est fait avec des déchets recyclés.",
   "say": "Ce cahier neuf est fait avec des déchets recyclés.",
@@ -17198,6 +19019,16 @@
   "words": 8,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "centre de tri|.",
+  "text": "Centre de tri.",
+  "say": "Centre de tri.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
   ]
  },
  {
@@ -17626,6 +19457,46 @@
   ]
  },
  {
+  "key": "compost|.",
+  "text": "Compost.",
+  "say": "Compost.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "composteur|.",
+  "text": "Composteur.",
+  "say": "Composteur.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "coucou|.",
+  "text": "Coucou !",
+  "say": "Coucou !",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "courir derrière|.",
+  "text": "Courir derrière.",
+  "say": "Courir derrière.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "d'abord la glace fond et devient de l'eau|.",
   "text": "D'abord, la glace fond, et devient de l'eau.",
   "say": "D'abord, la glace fond, et devient de l'eau.",
@@ -17938,6 +19809,16 @@
   ]
  },
  {
+  "key": "déchetterie|.",
+  "text": "Déchetterie.",
+  "say": "Déchetterie.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "dehors le magma s'appelle la lave elle coule sur le volcan comme une rivière de feu|.",
   "text": "Dehors, le magma s'appelle la lave : elle coule sur le volcan, comme une rivière de feu.",
   "say": "Dehors, le magma s'appelle la lave : elle coule sur le volcan, comme une rivière de feu.",
@@ -18038,6 +19919,26 @@
   "words": 14,
   "fams": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "key": "eau du robinet|.",
+  "text": "Eau du robinet.",
+  "say": "Eau du robinet.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "éboueur|.",
+  "text": "Éboueur.",
+  "say": "Éboueur.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
   ]
  },
  {
@@ -18406,6 +20307,16 @@
   ]
  },
  {
+  "key": "épluchures|.",
+  "text": "Épluchures.",
+  "say": "Épluchures.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "essaie encore ses petits trous pleins d'air la rendent très légère|.",
   "text": "Essaie encore : ses petits trous pleins d'air la rendent très légère…",
   "say": "Essaie encore : ses petits trous pleins d'air la rendent très légère…",
@@ -18516,6 +20427,16 @@
   ]
  },
  {
+  "key": "facteur|.",
+  "text": "Facteur.",
+  "say": "Facteur.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "fais-le monter glisse ton doigt de la poche de magma jusqu'au cratère|.",
   "text": "Fais-le monter : glisse ton doigt de la poche de magma jusqu'au cratère.",
   "say": "Fais-le monter : glisse ton doigt de la poche de magma jusqu'au cratère.",
@@ -18613,6 +20534,26 @@
   "words": 6,
   "fams": [
    "dechets:consigne"
+  ]
+ },
+ {
+  "key": "gourde|.",
+  "text": "Gourde.",
+  "say": "Gourde.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "grimper dessus|.",
+  "text": "Grimper dessus.",
+  "say": "Grimper dessus.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
   ]
  },
  {
@@ -19310,6 +21251,26 @@
   "words": 7,
   "fams": [
    "tri:indice"
+  ]
+ },
+ {
+  "key": "journal|.",
+  "text": "Journal.",
+  "say": "Journal.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "journaux|.",
+  "text": "Journaux.",
+  "say": "Journaux.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
   ]
  },
  {
@@ -20604,17 +22565,6 @@
   "say": "La lave sort par le cratère, le grand trou tout en haut du volcan.",
   "pack": "decouvertes",
   "words": 14,
-  "fams": [
-   "volcan:indice",
-   "volcan:reussite"
-  ]
- },
- {
-  "key": "la lave|.",
-  "text": "La lave !",
-  "say": "La lave !",
-  "pack": "decouvertes",
-  "words": 2,
   "fams": [
    "volcan:indice",
    "volcan:reussite"
@@ -21929,6 +23879,16 @@
   ]
  },
  {
+  "key": "le jeter|.",
+  "text": "Le jeter.",
+  "say": "Le jeter.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "le jouet cassé n'est pas un emballage il ne va pas dans le bac jaune|.",
   "text": "Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
   "say": "Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
@@ -22529,6 +24489,16 @@
   ]
  },
  {
+  "key": "le réparer|.",
+  "text": "Le réparer.",
+  "say": "Le réparer.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "le sable des volcans c'est de la lave refroidie émiettée en tout petits grains|.",
   "text": "Le sable des volcans, c'est de la lave refroidie, émiettée en tout petits grains.",
   "say": "Le sable des volcans, c'est de la lave refroidie, émiettée en tout petits grains.",
@@ -22888,6 +24858,16 @@
   ]
  },
  {
+  "key": "légumes|.",
+  "text": "Légumes.",
+  "say": "Légumes.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "lequel va flotter la grosse bûche ou le petit caillou|?",
   "text": "Lequel va flotter : la grosse bûche, ou le petit caillou ?",
   "say": "Lequel va flotter : la grosse bûche, ou le petit caillou ?",
@@ -23234,6 +25214,16 @@
   ]
  },
  {
+  "key": "les donner|.",
+  "text": "Les donner.",
+  "say": "Les donner.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "les épluchures deviennent du compost qui aide les légumes à pousser|.",
   "text": "Les épluchures deviennent du compost, qui aide les légumes à pousser !",
   "say": "Les épluchures deviennent du compost, qui aide les légumes à pousser !",
@@ -23328,6 +25318,16 @@
   "fams": [
    "dechets:indice",
    "dechets:reussite"
+  ]
+ },
+ {
+  "key": "les jeter|.",
+  "text": "Les jeter.",
+  "say": "Les jeter.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
   ]
  },
  {
@@ -23558,6 +25558,16 @@
   ]
  },
  {
+  "key": "magasin|.",
+  "text": "Magasin.",
+  "say": "Magasin.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "maintenant elle monte tout en haut d'une grande tour|.",
   "text": "Maintenant, elle monte tout en haut d'une grande tour.",
   "say": "Maintenant, elle monte tout en haut d'une grande tour.",
@@ -23609,6 +25619,16 @@
   "words": 1,
   "fams": [
    "dechets:reussite"
+  ]
+ },
+ {
+  "key": "métal|.",
+  "text": "Métal.",
+  "say": "Métal.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
   ]
  },
  {
@@ -23898,17 +25918,6 @@
   ]
  },
  {
-  "key": "on peut la boire|.",
-  "text": "On peut la boire !",
-  "say": "On peut la boire !",
-  "pack": "decouvertes",
-  "words": 4,
-  "fams": [
-   "goutte:indice",
-   "goutte:reussite"
-  ]
- },
- {
   "key": "on rapporte les vieux médicaments à la pharmacie|.",
   "text": "On rapporte les vieux médicaments à la pharmacie.",
   "say": "On rapporte les vieux médicaments à la pharmacie.",
@@ -24192,6 +26201,36 @@
   ]
  },
  {
+  "key": "ours en peluche|.",
+  "text": "Ours en peluche.",
+  "say": "Ours en peluche.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "papier et carton|.",
+  "text": "Papier et carton.",
+  "say": "Papier et carton.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "papier toilette|.",
+  "text": "Papier toilette.",
+  "say": "Papier toilette.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "par où la lave sort-elle du volcan|?",
   "text": "Par où la lave sort-elle du volcan ?",
   "say": "Par où la lave sort-elle du volcan ?",
@@ -24344,6 +26383,36 @@
   ]
  },
  {
+  "key": "petits paquets|.",
+  "text": "Petits paquets.",
+  "say": "Petits paquets.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "pharmacie|.",
+  "text": "Pharmacie.",
+  "say": "Pharmacie.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "plastique|.",
+  "text": "Plastique.",
+  "say": "Plastique.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "ploc a besoin de toi pour garder l'eau propre et ne pas la gaspiller|.",
   "text": "Ploc a besoin de toi pour garder l'eau propre, et ne pas la gaspiller.",
   "say": "Ploc a besoin de toi pour garder l'eau propre, et ne pas la gaspiller.",
@@ -24487,6 +26556,16 @@
   ]
  },
  {
+  "key": "pompier|.",
+  "text": "Pompier.",
+  "say": "Pompier.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
   "key": "pose la poubelle à l'arrière du camion l'éboueur va la vider|.",
   "text": "Pose la poubelle à l'arrière du camion : l'éboueur va la vider.",
   "say": "Pose la poubelle à l'arrière du camion : l'éboueur va la vider.",
@@ -24494,6 +26573,16 @@
   "words": 11,
   "fams": [
    "dechets:indice"
+  ]
+ },
+ {
+  "key": "pot de yaourt|.",
+  "text": "Pot de yaourt.",
+  "say": "Pot de yaourt.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
   ]
  },
  {
@@ -24604,6 +26693,16 @@
   "words": 9,
   "fams": [
    "volcan:consigne"
+  ]
+ },
+ {
+  "key": "pull|.",
+  "text": "Pull.",
+  "say": "Pull.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:option"
   ]
  },
  {
@@ -25218,6 +27317,26 @@
   "words": 15,
   "fams": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "key": "sac en plastique|.",
+  "text": "Sac en plastique.",
+  "say": "Sac en plastique.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "sac en tissu|.",
+  "text": "Sac en tissu.",
+  "say": "Sac en tissu.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
   ]
  },
  {
@@ -25906,6 +28025,26 @@
   "fams": [
    "goutte:indice",
    "goutte:reussite"
+  ]
+ },
+ {
+  "key": "usine du verre|.",
+  "text": "Usine du verre.",
+  "say": "Usine du verre.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
+  ]
+ },
+ {
+  "key": "usine qui chauffe|.",
+  "text": "Usine qui chauffe.",
+  "say": "Usine qui chauffe.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:option"
   ]
  },
  {
@@ -26999,6 +29138,66 @@
   ]
  },
  {
+  "key": "combien de côtés a l'hexagone|?",
+  "text": "Combien de côtés a l'hexagone ?",
+  "say": "Combien de côtés a l'hexagone ?",
+  "pack": "enigmes",
+  "words": 5,
+  "fams": [
+   "formes:consigne"
+  ]
+ },
+ {
+  "key": "combien de côtés a le carré|?",
+  "text": "Combien de côtés a le carré ?",
+  "say": "Combien de côtés a le carré ?",
+  "pack": "enigmes",
+  "words": 6,
+  "fams": [
+   "formes:consigne"
+  ]
+ },
+ {
+  "key": "combien de côtés a le losange|?",
+  "text": "Combien de côtés a le losange ?",
+  "say": "Combien de côtés a le losange ?",
+  "pack": "enigmes",
+  "words": 6,
+  "fams": [
+   "formes:consigne"
+  ]
+ },
+ {
+  "key": "combien de côtés a le pentagone|?",
+  "text": "Combien de côtés a le pentagone ?",
+  "say": "Combien de côtés a le pentagone ?",
+  "pack": "enigmes",
+  "words": 6,
+  "fams": [
+   "formes:consigne"
+  ]
+ },
+ {
+  "key": "combien de côtés a le rectangle|?",
+  "text": "Combien de côtés a le rectangle ?",
+  "say": "Combien de côtés a le rectangle ?",
+  "pack": "enigmes",
+  "words": 6,
+  "fams": [
+   "formes:consigne"
+  ]
+ },
+ {
+  "key": "combien de côtés a le triangle|?",
+  "text": "Combien de côtés a le triangle ?",
+  "say": "Combien de côtés a le triangle ?",
+  "pack": "enigmes",
+  "words": 6,
+  "fams": [
+   "formes:consigne"
+  ]
+ },
+ {
   "key": "commence par 1 flèche vers la droite|.",
   "text": "Commence par 1 flèche vers la droite.",
   "say": "Commence par une flèche vers la droite.",
@@ -27389,6 +29588,16 @@
   ]
  },
  {
+  "key": "l'hexagone a 6 côtés|.",
+  "text": "L'hexagone a 6 côtés.",
+  "say": "L'hexagone a six côtés.",
+  "pack": "enigmes",
+  "words": 4,
+  "fams": [
+   "formes:reussite"
+  ]
+ },
+ {
   "key": "l'hexagone c'est 6 côtés comme une case de ruche|.",
   "text": "L'hexagone, c'est 6 côtés, comme une case de ruche.",
   "say": "L'hexagone, c'est six côtés, comme une case de ruche.",
@@ -27649,6 +29858,16 @@
   ]
  },
  {
+  "key": "le carré a 4 côtés|.",
+  "text": "Le carré a 4 côtés.",
+  "say": "Le carré a quatre côtés.",
+  "pack": "enigmes",
+  "words": 5,
+  "fams": [
+   "formes:reussite"
+  ]
+ },
+ {
   "key": "le carré c'est 4 côtés tous pareils et 4 coins|.",
   "text": "Le carré, c'est 4 côtés tous pareils et 4 coins.",
   "say": "Le carré, c'est quatre côtés tous pareils et quatre coins.",
@@ -27869,6 +30088,16 @@
   ]
  },
  {
+  "key": "le losange a 4 côtés|.",
+  "text": "Le losange a 4 côtés.",
+  "say": "Le losange a quatre côtés.",
+  "pack": "enigmes",
+  "words": 5,
+  "fams": [
+   "formes:reussite"
+  ]
+ },
+ {
   "key": "le losange c'est 4 côtés pareils posé sur une pointe comme un cerf-volant|.",
   "text": "Le losange, c'est 4 côtés pareils, posé sur une pointe, comme un cerf-volant.",
   "say": "Le losange, c'est quatre côtés pareils, posé sur une pointe, comme un cerf-volant.",
@@ -27894,6 +30123,16 @@
   "say": "Le pavé laisse la trace d'un rectangle.",
   "pack": "enigmes",
   "words": 7,
+  "fams": [
+   "formes:reussite"
+  ]
+ },
+ {
+  "key": "le pentagone a 5 côtés|.",
+  "text": "Le pentagone a 5 côtés.",
+  "say": "Le pentagone a cinq côtés.",
+  "pack": "enigmes",
+  "words": 5,
   "fams": [
    "formes:reussite"
   ]
@@ -27946,6 +30185,16 @@
   "words": 2,
   "fams": [
    "bip:indice"
+  ]
+ },
+ {
+  "key": "le rectangle a 4 côtés|.",
+  "text": "Le rectangle a 4 côtés.",
+  "say": "Le rectangle a quatre côtés.",
+  "pack": "enigmes",
+  "words": 5,
+  "fams": [
+   "formes:reussite"
   ]
  },
  {
@@ -28016,6 +30265,16 @@
   "words": 2,
   "fams": [
    "formes:consigne"
+  ]
+ },
+ {
+  "key": "le triangle a 3 côtés|.",
+  "text": "Le triangle a 3 côtés.",
+  "say": "Le triangle a trois côtés.",
+  "pack": "enigmes",
+  "words": 5,
+  "fams": [
+   "formes:reussite"
   ]
  },
  {

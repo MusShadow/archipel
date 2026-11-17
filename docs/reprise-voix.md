@@ -88,6 +88,9 @@ Le grand tri et le voyage des déchets (novembre 2026) : leurs phrases changent 
 (papiers au bac bleu, composteur, couleurs de Paris) ; `voiceLines()` les donne pour les huit réglages possibles.
 « se recyclent » était entendu « se recyclant » : les phrases nouvelles évitent les verbes en -ent après « ils » ou
 « elles » (« On recycle aussi les papiers », « leur métier, c'est de ramasser nos poubelles »).
+Les réponses proposées que Plume lit (étiquettes sous les images, poubelles, caisses, mots des chants) sont ajoutées par
+l'inventaire sous la famille « options », gardée d'une fois sur l'autre ; le grand tri et le voyage des déchets les
+donnent aussi dans `voiceLines()`, pour tous les réglages des poubelles.
 
 Les écritures des syllabes dites seules sont dans `voix/prononciation.json` (la première est préférée ; les
 suivantes ne servent que si la reconnaissance vocale l'entend mal). Les pseudo-mots changés sont repris dans les

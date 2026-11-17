@@ -64,6 +64,7 @@ export const chants: ActivityModule<ChantItem> = {
   skills: ["LECT.PHONO.SYLLABES", "LECT.PHONO.RIME", "LECT.PHONO.ATTAQUE", "LECT.PHONO.PHONEME"],
   card: emoji("🎵"), pitch: "Les chants de Mona, pour jouer avec les sons des mots.",
   startLevel: () => 1,
+  identity: (it) => it.word.w,
 
   generate(level, ctx) {
     const r = ctx.rng;
@@ -82,7 +83,7 @@ export const chants: ActivityModule<ChantItem> = {
     const row = h("div", { class: "choices" });
     for (const c of item.choices) {
       const w = BY[c];
-      const b = h("button", { type: "button", class: "card pickcard", "data-t": c, "aria-label": c, html: emoji(w.e) });
+      const b = h("button", { type: "button", class: "card pickcard", "data-t": c, "data-say": c, "aria-label": c, html: emoji(w.e) });
       b.addEventListener("click", () => view.answer(c === item.target, b, c === item.target ? undefined : `${c}… et ${item.word.w}. Écoute bien : ${item.kind === "rime" ? "la fin" : "le début"} n'est pas pareil.`));
       row.appendChild(b);
     }
