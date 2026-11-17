@@ -153,6 +153,16 @@ export const DEFIS: Record<string, string[]> = {
     "Dessine un volcan coupé en deux : la poche de magma, la cheminée, le cratère, et la lave qui coule.",
     "Cherche une pierre ponce à la maison et pose-la dans l'eau : flotte-t-elle ?",
   ],
+  tri: [
+    "Ce soir, aide à trier les déchets du dîner : les emballages au bac jaune, le verre à part !",
+    "Cherche dans la cuisine trois emballages qui vont dans le bac jaune.",
+    "Dessine les poubelles de chez toi, avec leurs couleurs.",
+  ],
+  dechets: [
+    "Quand le camion poubelle passe, reste sur le trottoir et fais un grand coucou aux éboueurs !",
+    "Avec un aimant de frigo, essaie : colle-t-il à une boîte de conserve ? Et à une canette ?",
+    "Pour la prochaine promenade, prépare ta gourde !",
+  ],
   theatre: [
     "Joue à « devine mon émotion » : fais une grimace, l'adulte devine.",
     "Raconte un moment où tu as été très content aujourd'hui.",

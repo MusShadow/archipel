@@ -1,7 +1,7 @@
 {
- "clips": 5356,
- "octets": 37947036,
- "minutes": 147.5,
+ "clips": 5754,
+ "octets": 42477330,
+ "minutes": 165.6,
  "a_revoir": [
   {
    "key": "dos|.",
@@ -32,6 +32,12 @@
    "say": "Beurk, surtout pas !",
    "heard": "Burke surtout pas.",
    "per": 0.25
+  },
+  {
+   "key": "le pot de yaourt|.",
+   "say": "Le pot de yaourt.",
+   "heard": "Le podiour.",
+   "per": 0.273
   },
   {
    "key": "a mie ami|.",

@@ -131,6 +131,16 @@ for (const mod of ACTIVITIES.filter((m) => !ONLY || ONLY.includes(m.id))) {
   const { voiceLines } = await import("../../src/activities/volcan");
   if (!ONLY || ONLY.includes("volcan")) for (const x of voiceLines()) add(x.text, x.fam);
 }
+// Le grand tri : la liste complète de ses phrases (pour tous les réglages de couleurs des poubelles).
+{
+  const { voiceLines } = await import("../../src/activities/tri");
+  if (!ONLY || ONLY.includes("tri")) for (const x of voiceLines()) add(x.text, x.fam);
+}
+// Le voyage des déchets : la liste complète de ses phrases (pour tous les réglages de couleurs des poubelles).
+{
+  const { voiceLines } = await import("../../src/activities/dechets");
+  if (!ONLY || ONLY.includes("dechets")) for (const x of voiceLines()) add(x.text, x.fam);
+}
 // Le partage du goûter : ce que dit Plume selon l'état du plateau (boîte vide, assiettes inégales, panier trop plein).
 where = "partage:indice";
 for (const x of ["Je glisse un biscuit vers l'assiette qui en a le moins.", "Je redonne un biscuit du panier à chacun.",

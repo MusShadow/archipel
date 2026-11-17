@@ -6,6 +6,8 @@ import { medallion } from "../ui";
 import { atelierdrapeaux } from "./atelierdrapeaux";
 import { bip, bipStickerSVG } from "./bip";
 import { chants, emojiStickerSVG } from "./chants";
+import { dechets } from "./dechets";
+import { dechetsStickerSVG } from "./dechets_art";
 import { drapeau, flagStickerSVG } from "./drapeau";
 import { flotte } from "./flotte";
 import { formes } from "./formes";
@@ -18,10 +20,12 @@ import { frogStickerSVG, nenuphars } from "./nenuphars";
 import { cookieStickerSVG, partage } from "./partage";
 import { syllabes, syllableStickerSVG } from "./syllabes";
 import { theatre } from "./theatre";
+import { tri } from "./tri";
+import { triStickerSVG } from "./tri_art";
 import { volcan } from "./volcan";
 import { volcanStickerSVG } from "./volcan_art";
 
-export const ACTIVITIES: ActivityModule<any>[] = [marche, nenuphars, partage, syllabes, chants, lis, drapeau, atelierdrapeaux, formes, bip, motifs, flotte, goutte, volcan, theatre];
+export const ACTIVITIES: ActivityModule<any>[] = [marche, nenuphars, partage, syllabes, chants, lis, drapeau, atelierdrapeaux, formes, bip, motifs, flotte, goutte, volcan, tri, dechets, theatre];
 export const ACTIVITY_BY_ID: Record<string, ActivityModule<any>> = Object.fromEntries(ACTIVITIES.map((a) => [a.id, a]));
 export const ACTIVITIES_BY_ISLAND: Record<string, ActivityModule<any>[]> = {};
 for (const a of ACTIVITIES) (ACTIVITIES_BY_ISLAND[a.island] ??= []).push(a);
@@ -54,6 +58,8 @@ export function stickerArt(kind: string, ref?: string): string {
   if (kind === "flotte") return emojiStickerSVG(ref ?? "🦆", "#D5F0E1");
   if (kind === "goutte") return goutteStickerSVG(ref);
   if (kind === "volcan") return volcanStickerSVG(ref);
+  if (kind === "tri") return triStickerSVG(ref);
+  if (kind === "dechets") return dechetsStickerSVG(ref);
   if (kind === "dessin") return drawingStickerSVG(ref);
   return appleStickerSVG();
 }

@@ -5,7 +5,7 @@ import { DEFIS, GRAPHEME_ORDER, READING_LEVELS } from "../content";
 import { DAY, DOMAINS, MASTERY_LABEL, SKILLS, masteryOf, type DomainId, type Mastery } from "../core";
 import { FLAG_BY_CODE, FLAGS } from "../flags";
 import { nav } from "../nav";
-import { defaultData, frenchVoiceLabel, natural, normalize, saveData, sfx, speech, storageFailed, voice, VOICE_SLOTS, type Profile, type VoixMode } from "../services";
+import { defaultData, frenchVoiceLabel, natural, normalize, saveData, sfx, speech, storageFailed, voice, VOICE_SLOTS, type Profile, type TriSettings, type VoixMode } from "../services";
 import { avatarSVG, h, plumeSVG } from "../ui";
 import { pinPad, sheet } from "./common";
 import { gallery } from "./draw";
@@ -348,7 +348,15 @@ function parentSpace(tab?: string) {
       h("div", { class: "p-row", style: "margin-top:12px" }, h("button", { type: "button", class: "pbtn ghost", onclick: listen }, "Écouter Plume")),
       diag);
 
-    const cards = [session, voice];
+    const tri = st.tri;
+    const triCard = h("div", { class: "p-card" }, h("h2", {}, "Tri des déchets"),
+      h("p", { class: "muted", style: "margin-bottom:10px" }, "Le grand tri suit les couleurs nationales : emballages et papiers au bac jaune, verre au bac vert, restes de cuisine au bac marron, le reste au bac gris. Si votre commune fait autrement, adaptez ici (l'application gratuite Guide du tri de Citeo donne les consignes de chez vous)."),
+      field("Les papiers", opts<TriSettings["papiers"]>([{ label: "Au bac jaune", value: "jaune" }, { label: "Dans un bac bleu", value: "bleu" }], tri.papiers, (v) => { tri.papiers = v; save(); })),
+      h("div", { style: "height:12px" }),
+      field("Les restes de cuisine", opts<TriSettings["cuisine"]>([{ label: "Au bac marron", value: "marron" }, { label: "Au composteur", value: "compost" }], tri.cuisine, (v) => { tri.cuisine = v; save(); })),
+      h("div", { style: "height:12px" }),
+      field("Le verre et le reste", opts<TriSettings["couleurs"]>([{ label: "Verre au bac vert, reste au bac gris", value: "nationales" }, { label: "Verre au bac blanc, reste au bac vert (comme à Paris)", value: "paris" }], tri.couleurs, (v) => { tri.couleurs = v; save(); })));
+    const cards = [session, voice, triCard];
     if (p) {
       const chips = h("div", { class: "gchips" });
       const known = h("p", { class: "muted", style: "margin-top:8px" });

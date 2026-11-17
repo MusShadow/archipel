@@ -97,7 +97,7 @@ const previous: { key: string; text: string; say: string; pack: string; words: n
   try { return process.env.KEEP === "0" ? [] : JSON.parse(readFileSync(OUT, "utf8")); } catch { return []; }
 })();
 // Sauf pour les activités qui donnent la liste complète de leurs phrases (voiceLines) : un clip absent y est périmé.
-const COMPLETE = ["goutte:", "volcan:"];
+const COMPLETE = ["goutte:", "volcan:", "tri:", "dechets:"];
 const kept = previous.filter((c) => !clips.has(c.key) && !FAUTIVES.has(c.key) && !c.fams.every((f) => COMPLETE.some((x) => f.startsWith(x))));
 const out = [...kept.map((c) => ({ ...c })), ...[...clips.values()].map((c) => ({
   key: c.key, text: c.text, say: spoken(c.text),

@@ -5039,6 +5039,12 @@
 "per": 0.0,
 "spelling": null
 },
+"celle-ci c'est la médaille du grand tri tu as déjoué tous les pièges|.": {
+"h": "b0cd60464f0fff9b",
+"say": "Celle-ci, c'est la médaille du grand tri : tu as déjoué tous les pièges !",
+"per": 0.0,
+"spelling": null
+},
 "celle-ci c'est parce que tu as bien écouté le début des mots|.": {
 "h": "99cd95257fa3443f",
 "say": "Celle-ci, c'est parce que tu as bien écouté le début des mots.",
@@ -5087,9 +5093,21 @@
 "per": 0.0,
 "spelling": null
 },
+"celle-ci c'est parce que tu sais ce que deviennent nos déchets|.": {
+"h": "f3a208e6aa7ffafc",
+"say": "Celle-ci, c'est parce que tu sais ce que deviennent nos déchets.",
+"per": 0.0,
+"spelling": null
+},
 "celle-ci c'est parce que tu sais ce qui se passe dans un volcan de la poche de magma jusqu'au cratère|.": {
 "h": "b5d911b56d517cac",
 "say": "Celle-ci, c'est parce que tu sais ce qui se passe dans un volcan, de la poche de magma jusqu'au cratère.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est parce que tu sais choisir la bonne poubelle|.": {
+"h": "638aa2b85b43990a",
+"say": "Celle-ci, c'est parce que tu sais choisir la bonne poubelle.",
 "per": 0.0,
 "spelling": null
 },
@@ -5097,6 +5115,12 @@
 "h": "16ddc9848d0f892b",
 "say": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
 "per": 0.073,
+"spelling": null
+},
+"celle-ci c'est parce que tu sais faire moins de déchets|.": {
+"h": "dd628c221012648e",
+"say": "Celle-ci, c'est parce que tu sais faire moins de déchets !",
+"per": 0.0,
 "spelling": null
 },
 "celle-ci c'est pour avoir compté avec soin|.": {
@@ -5489,6 +5513,12 @@
 "per": 0.0,
 "spelling": null
 },
+"celle-ci c'est pour ton voyage avec le camion poubelle|.": {
+"h": "161ff8eba6ba91a9",
+"say": "Celle-ci, c'est pour ton voyage avec le camion poubelle.",
+"per": 0.0,
+"spelling": null
+},
 "celle-ci c'est pour tous les bons gestes qui protègent l'eau|.": {
 "h": "62eef30749b67507",
 "say": "Celle-ci, c'est pour tous les bons gestes qui protègent l'eau.",
@@ -5858,6 +5888,18 @@
 "essaie encore|.": {
 "h": "6e22b2c47e512d26",
 "say": "Essaie encore.",
+"per": 0.0,
+"spelling": null
+},
+"et à une canette|?": {
+"h": "9a1aa27deac079a3",
+"say": "Et à une canette ?",
+"per": 0.0,
+"spelling": null
+},
+"et découvrir ce que deviennent nos déchets|.": {
+"h": "d73dd07ae49704bd",
+"say": "et découvrir ce que deviennent nos déchets.",
 "per": 0.0,
 "spelling": null
 },
@@ -6725,6 +6767,18 @@
 "per": 0.0,
 "spelling": null
 },
+"le grand tri|,": {
+"h": "f75867b2b8c5f3e1",
+"say": "Le grand tri,",
+"per": 0.0,
+"spelling": null
+},
+"le grand tri|.": {
+"h": "085b8ac910aaee95",
+"say": "le grand tri.",
+"per": 0.0,
+"spelling": null
+},
 "le japon|.": {
 "h": "e2cc0e8b633867da",
 "say": "le Japon",
@@ -6989,6 +7043,18 @@
 "per": 0.0,
 "spelling": null
 },
+"le voyage des déchets|,": {
+"h": "810cf1f3b424db12",
+"say": "Le voyage des déchets,",
+"per": 0.0,
+"spelling": null
+},
+"le voyage des déchets|.": {
+"h": "59a34a6705ae875c",
+"say": "le voyage des déchets.",
+"per": 0.0,
+"spelling": null
+},
 "lequel|?": {
 "h": "14401cedd277271b",
 "say": "Lequel ?",
@@ -7208,6 +7274,12 @@
 "même à l'envers|.": {
 "h": "3ff8a4d54caeb46d",
 "say": "même à l'envers.",
+"per": 0.0,
+"spelling": null
+},
+"merci les éboueurs|.": {
+"h": "49b1ecd0030cedd5",
+"say": "Merci, les éboueurs !",
 "per": 0.0,
 "spelling": null
 },
@@ -7733,6 +7805,12 @@
 "per": 0.0,
 "spelling": null
 },
+"pour aider basile à mettre chaque déchet dans la bonne poubelle|.": {
+"h": "011ec02fa0df38a6",
+"say": "pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+"per": 0.0,
+"spelling": null
+},
 "pour apprendre à faire de vrais dessins avec kiki|.": {
 "h": "cce2613c314feeb5",
 "say": "pour apprendre à faire de vrais dessins avec Kiki.",
@@ -7841,6 +7919,12 @@
 "per": 0.0,
 "spelling": null
 },
+"pour suivre le camion poubelle|": {
+"h": "9a256258ff6a86f4",
+"say": "pour suivre le camion poubelle",
+"per": 0.0,
+"spelling": null
+},
 "pour suivre ploc|,": {
 "h": "7c9f48e80a0c57d8",
 "say": "pour suivre Ploc,",
@@ -7874,6 +7958,12 @@
 "puis touche la coche|.": {
 "h": "009329e70cd827d3",
 "say": "puis touche la coche.",
+"per": 0.0,
+"spelling": null
+},
+"qu'est-ce qui manque|?": {
+"h": "ac79f4c5efa72b1f",
+"say": "Qu'est-ce qui manque ?",
 "per": 0.0,
 "spelling": null
 },
@@ -8273,6 +8363,12 @@
 "per": 0.03,
 "spelling": null
 },
+"ton défi pour la maison avec un aimant de frigo essaie colle-t-il à une boîte de conserve|?": {
+"h": "6d7802a584216e69",
+"say": "Ton défi pour la maison : Avec un aimant de frigo, essaie : colle-t-il à une boîte de conserve ?",
+"per": 0.0,
+"spelling": null
+},
 "ton défi pour la maison cache un jouet et guide un adulte jusqu'à lui avec des flèches|.": {
 "h": "c648a695b0f299c9",
 "say": "Ton défi pour la maison : Cache un jouet, et guide un adulte jusqu'à lui avec des flèches.",
@@ -8283,6 +8379,18 @@
 "h": "cc0d2bca2fdb0c76",
 "say": "Ton défi pour la maison : Cache un jouet sous une tasse quand ton doudou ne regarde pas, où va-t-il chercher ?",
 "per": 0.067,
+"spelling": null
+},
+"ton défi pour la maison ce soir aide à trier les déchets du dîner les emballages au bac jaune le verre à part|.": {
+"h": "3d0c9ad08b94879e",
+"say": "Ton défi pour la maison : Ce soir, aide à trier les déchets du dîner, les emballages au bac jaune, le verre à part !",
+"per": 0.0,
+"spelling": null
+},
+"ton défi pour la maison cherche dans la cuisine trois emballages qui vont dans le bac jaune|.": {
+"h": "b97f05384e7d4239",
+"say": "Ton défi pour la maison : Cherche dans la cuisine trois emballages qui vont dans le bac jaune.",
+"per": 0.037,
 "spelling": null
 },
 "ton défi pour la maison cherche dans la maison un objet dont le nom commence par ma|.": {
@@ -8342,6 +8450,12 @@
 "ton défi pour la maison dessine le héros de ton histoire|.": {
 "h": "f7dba09d7fe3a223",
 "say": "Ton défi pour la maison : Dessine le héros de ton histoire.",
+"per": 0.0,
+"spelling": null
+},
+"ton défi pour la maison dessine les poubelles de chez toi avec leurs couleurs|.": {
+"h": "595c060a79339f02",
+"say": "Ton défi pour la maison : Dessine les poubelles de chez toi, avec leurs couleurs.",
 "per": 0.0,
 "spelling": null
 },
@@ -8481,6 +8595,24 @@
 "h": "9dd91f8422edcdf5",
 "say": "Ton défi pour la maison : Pose une orange dans l'eau, puis épluche-la et réessaie !",
 "per": 0.022,
+"spelling": null
+},
+"ton défi pour la maison pour la prochaine promenade prépare ta gourde|.": {
+"h": "254ee37a4dce8c10",
+"say": "Ton défi pour la maison : Pour la prochaine promenade, prépare ta gourde !",
+"per": 0.0,
+"spelling": null
+},
+"ton défi pour la maison quand le camion poubelle passe fais un grand coucou aux éboueurs|.": {
+"h": "26b0eda37f48f3c0",
+"say": "Ton défi pour la maison : Quand le camion poubelle passe, fais un grand coucou aux éboueurs !",
+"per": 0.0,
+"spelling": null
+},
+"ton défi pour la maison quand le camion poubelle passe reste sur le trottoir et fais un grand coucou aux éboueurs|.": {
+"h": "b554b5410d5d8386",
+"say": "Ton défi pour la maison : Quand le camion poubelle passe, reste sur le trottoir et fais un grand coucou aux éboueurs !",
+"per": 0.0,
 "spelling": null
 },
 "ton défi pour la maison raconte l'histoire que tu as lue à quelqu'un de la famille|.": {
@@ -8825,6 +8957,24 @@
 "per": 0.0,
 "spelling": null
 },
+"aide basile à faire le grand tri|.": {
+"h": "3069890ddde47e88",
+"say": "Aide Basile à faire le grand tri.",
+"per": 0.0,
+"spelling": null
+},
+"aide basile à faire moins de déchets|.": {
+"h": "894d0259bca67fb5",
+"say": "Aide Basile à faire moins de déchets.",
+"per": 0.0,
+"spelling": null
+},
+"aide-le à trier ses déchets glisse chacun dans la bonne poubelle|.": {
+"h": "8c037a6690eb3b8e",
+"say": "Aide-le à trier ses déchets, glisse chacun dans la bonne poubelle !",
+"per": 0.057,
+"spelling": null
+},
 "après il y a l'éruption|.": {
 "h": "ca23e3568cdd59e3",
 "say": "Après, il y a l'éruption.",
@@ -8981,6 +9131,12 @@
 "per": 0.0,
 "spelling": null
 },
+"attention aux pièges|.": {
+"h": "4fb1cb21e5fcee1f",
+"say": "Attention aux pièges !",
+"per": 0.0,
+"spelling": null
+},
 "attention ça brûle on regarde de loin|.": {
 "h": "621945ed4157d545",
 "say": "Attention, ça brûle : on regarde de loin !",
@@ -9002,6 +9158,24 @@
 "attention|.": {
 "h": "fde2c0f3feb0617c",
 "say": "Attention !",
+"per": 0.0,
+"spelling": null
+},
+"au centre de tri des machines et des agents de tri font le tri sur un grand tapis le plastique le métal le papier et le carton|.": {
+"h": "fa43cc7e4545c141",
+"say": "Au centre de tri, des machines et des agents de tri font le tri, sur un grand tapis, le plastique, le métal, le papier et le carton.",
+"per": 0.0,
+"spelling": null
+},
+"au centre de tri le tapis roulant apporte les emballages|.": {
+"h": "458b3c4e6f1f61e7",
+"say": "Au centre de tri, le tapis roulant apporte les emballages.",
+"per": 0.0,
+"spelling": null
+},
+"au centre de tri un gros aimant attrape certains déchets|.": {
+"h": "223677dec48d8ae1",
+"say": "Au centre de tri, un gros aimant attrape certains déchets.",
 "per": 0.0,
 "spelling": null
 },
@@ -9155,15 +9329,45 @@
 "per": 0.0,
 "spelling": null
 },
+"avec des bouteilles en plastique recyclées on fabrique des pulls tout doux|.": {
+"h": "9485401fbab3f115",
+"say": "Avec des bouteilles en plastique recyclées, on fabrique des pulls tout doux !",
+"per": 0.0,
+"spelling": null
+},
+"avec des bouteilles en plastique recyclées on remplit des ours en peluche|.": {
+"h": "72bc0667cd4c666b",
+"say": "Avec des bouteilles en plastique recyclées, on remplit des ours en peluche !",
+"per": 0.0,
+"spelling": null
+},
+"avec des canettes recyclées on peut fabriquer un vélo|.": {
+"h": "226cba86e7d35515",
+"say": "Avec des canettes recyclées, on peut fabriquer un vélo !",
+"per": 0.0,
+"spelling": null
+},
 "avec la pluie et le soleil la vie revient|.": {
 "h": "ef75f2043d94b3a2",
 "say": "Avec la pluie et le soleil, la vie revient.",
 "per": 0.0,
 "spelling": null
 },
+"avec le métal des canettes on peut faire un cadre très solide|.": {
+"h": "e6b6a80dda744c12",
+"say": "Avec le métal des canettes, on peut faire un cadre très solide.",
+"per": 0.0,
+"spelling": null
+},
 "avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet|?": {
 "h": "b0cf0e0710f5f969",
 "say": "Avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet ?",
+"per": 0.0,
+"spelling": null
+},
+"avec quoi fait-on le compost|?": {
+"h": "84b356486708e0b9",
+"say": "Avec quoi fait-on le compost ?",
 "per": 0.0,
 "spelling": null
 },
@@ -9182,6 +9386,30 @@
 "avec une échelle il faudrait s'approcher bien trop dangereux|.": {
 "h": "e30fe9e370c488fa",
 "say": "Avec une échelle, il faudrait s'approcher, bien trop dangereux !",
+"per": 0.0,
+"spelling": null
+},
+"basile a fait la cuisine|.": {
+"h": "3e2cc2d4a47b9b9f",
+"say": "Basile a fait la cuisine.",
+"per": 0.0,
+"spelling": null
+},
+"basile revient du marché avec plein d'emballages vides|.": {
+"h": "7056c24718750727",
+"say": "Basile revient du marché avec plein d'emballages vides.",
+"per": 0.0,
+"spelling": null
+},
+"basile revient du marché|.": {
+"h": "85af398c3dc33b74",
+"say": "Basile revient du marché.",
+"per": 0.0,
+"spelling": null
+},
+"basile va au marché|.": {
+"h": "155e476ec7b3a302",
+"say": "Basile va au marché.",
 "per": 0.0,
 "spelling": null
 },
@@ -9611,6 +9839,24 @@
 "per": 0.0,
 "spelling": null
 },
+"ce cahier neuf est fait avec des déchets recyclés|.": {
+"h": "dd17f0f676e0d3fd",
+"say": "Ce cahier neuf est fait avec des déchets recyclés.",
+"per": 0.0,
+"spelling": null
+},
+"ce carton neuf est fait avec des déchets recyclés|.": {
+"h": "35910e5f33d00915",
+"say": "Ce carton neuf est fait avec des déchets recyclés.",
+"per": 0.0,
+"spelling": null
+},
+"ce jouet est cassé|.": {
+"h": "f6b6098c0c6d92a9",
+"say": "Ce jouet est cassé.",
+"per": 0.0,
+"spelling": null
+},
 "ce n'est pas ce qui vient juste après|.": {
 "h": "8a4dc7bcbbd89683",
 "say": "Ce n'est pas ce qui vient juste après.",
@@ -9621,6 +9867,18 @@
 "h": "6727203be3fde6d1",
 "say": "Ce n'est pas la taille qui compte !",
 "per": 0.0,
+"spelling": null
+},
+"ce papier toilette est fait avec des déchets recyclés|.": {
+"h": "557a474ed7ccdca0",
+"say": "Ce papier toilette est fait avec des déchets recyclés.",
+"per": 0.0,
+"spelling": null
+},
+"ce pull tout doux est fait avec des déchets recyclés|.": {
+"h": "010d9b3d2829cf7b",
+"say": "Ce pull tout doux est fait avec des déchets recyclés.",
+"per": 0.033,
 "spelling": null
 },
 "ce qui est plus léger monte comme une bulle dans l'eau|.": {
@@ -9641,9 +9899,33 @@
 "per": 0.0,
 "spelling": null
 },
+"ce qui ne se recycle pas va dans le bac gris|.": {
+"h": "f2f2e02dd72c178d",
+"say": "Ce qui ne se recycle pas va dans le bac gris.",
+"per": 0.071,
+"spelling": null
+},
+"ce qui ne se recycle pas va dans le bac vert|.": {
+"h": "0a86bd0e05414819",
+"say": "Ce qui ne se recycle pas va dans le bac vert.",
+"per": 0.0,
+"spelling": null
+},
 "ce sont des êtres vivants tout petits si petits qu'on ne les voit pas|.": {
 "h": "8a4ca4e5c794079d",
 "say": "Ce sont des êtres vivants tout petits, si petits qu'on ne les voit pas.",
+"per": 0.0,
+"spelling": null
+},
+"ce sont les éboueurs leur métier c'est de ramasser nos poubelles|.": {
+"h": "045201c3604f51c0",
+"say": "Ce sont les éboueurs, leur métier, c'est de ramasser nos poubelles.",
+"per": 0.0,
+"spelling": null
+},
+"ce vélo est fait avec des déchets recyclés|.": {
+"h": "4a77fb8ee9b57ae0",
+"say": "Ce vélo est fait avec des déchets recyclés.",
 "per": 0.0,
 "spelling": null
 },
@@ -9671,9 +9953,93 @@
 "per": 0.0,
 "spelling": null
 },
+"certains déchets ne vont dans aucune poubelle de la maison les piles les médicaments les vieux habits les gros objets|.": {
+"h": "dfa557e23d7de4b6",
+"say": "Certains déchets ne vont dans aucune poubelle de la maison : les piles, les médicaments, les vieux habits, les gros objets.",
+"per": 0.0,
+"spelling": null
+},
+"ces bouteilles neuves sont faites avec des déchets recyclés|.": {
+"h": "4beccc858c3fa417",
+"say": "Ces bouteilles neuves sont faites avec des déchets recyclés.",
+"per": 0.0,
+"spelling": null
+},
+"ces déchets on les brûle et ça fait de la chaleur|.": {
+"h": "760d33af04d261ec",
+"say": "Ces déchets, on les brûle, et ça fait de la chaleur.",
+"per": 0.0,
+"spelling": null
+},
+"ces habits sont trop petits mais encore beaux|.": {
+"h": "822817ae9f2990e6",
+"say": "Ces habits sont trop petits, mais encore beaux.",
+"per": 0.0,
+"spelling": null
+},
+"ces légumes ont poussé grâce au compost|.": {
+"h": "85a2f089d02fed21",
+"say": "Ces légumes ont poussé grâce au compost.",
+"per": 0.0,
+"spelling": null
+},
+"ces vêtements sont trop petits|.": {
+"h": "ac29529404bdef8f",
+"say": "Ces vêtements sont trop petits.",
+"per": 0.0,
+"spelling": null
+},
+"cet ours en peluche est rempli avec des déchets recyclés|.": {
+"h": "72e10d669f8056e1",
+"say": "Cet ours en peluche est rempli avec des déchets recyclés.",
+"per": 0.057,
+"spelling": null
+},
+"cette caisse c'est pour le métal|.": {
+"h": "16a75ea35ccfc9a9",
+"say": "Cette caisse, c'est pour le métal.",
+"per": 0.0,
+"spelling": null
+},
+"cette caisse c'est pour le papier et le carton|.": {
+"h": "7e29b860fbc40499",
+"say": "Cette caisse, c'est pour le papier et le carton.",
+"per": 0.0,
+"spelling": null
+},
+"cette caisse c'est pour le plastique|.": {
+"h": "10f3b0ef07decc6d",
+"say": "Cette caisse, c'est pour le plastique.",
+"per": 0.0,
+"spelling": null
+},
 "cette nuit il a gelé très fort|.": {
 "h": "07fa167befc0e17e",
 "say": "Cette nuit, il a gelé très fort.",
+"per": 0.0,
+"spelling": null
+},
+"chaque camion va à un endroit différent le centre de tri l'usine du verre le compost ou l'usine qui chauffe les maisons|.": {
+"h": "d8a587e5307114ea",
+"say": "Chaque camion va à un endroit différent, le centre de tri, l'usine du verre, le compost, ou l'usine qui chauffe les maisons.",
+"per": 0.0,
+"spelling": null
+},
+"chaque semaine le camion passe vider nos poubelles|.": {
+"h": "b57d7ea069c1abc2",
+"say": "Chaque semaine, le camion passe vider nos poubelles.",
+"per": 0.0,
+"spelling": null
+},
+"cherche ce qui se lave et sert encore|.": {
+"h": "50c6786b13f657ef",
+"say": "Cherche ce qui se lave et sert encore.",
+"per": 0.0,
+"spelling": null
+},
+"cherche ce qui se remplit encore et encore|.": {
+"h": "5b524cd4ca7dfba0",
+"say": "Cherche ce qui se remplit encore et encore.",
 "per": 0.0,
 "spelling": null
 },
@@ -9704,6 +10070,24 @@
 "cherche l'appareil qui dessine des zigzags|.": {
 "h": "b6a5dbe3523559a5",
 "say": "Cherche l'appareil qui dessine des zigzags.",
+"per": 0.0,
+"spelling": null
+},
+"cherche l'eau qui arrive sans emballage|.": {
+"h": "ace22031009539c2",
+"say": "Cherche l'eau qui arrive sans emballage.",
+"per": 0.0,
+"spelling": null
+},
+"cherche la grande boîte avec un habit dessiné dessus|.": {
+"h": "8b2dcaf2d33341f9",
+"say": "Cherche la grande boîte avec un habit dessiné dessu.",
+"per": 0.03,
+"spelling": null
+},
+"cherche la personne avec un gilet orange qui brille dans la nuit|.": {
+"h": "d84a7f8e88e89521",
+"say": "Cherche la personne avec un gilet orange, qui brille dans la nuit.",
 "per": 0.0,
 "spelling": null
 },
@@ -9764,6 +10148,12 @@
 "cherche le plus haut|.": {
 "h": "160f9b414df36a98",
 "say": "Cherche le plus haut !",
+"per": 0.0,
+"spelling": null
+},
+"cherche le sac qui sert encore et encore|.": {
+"h": "3f862416941ebba2",
+"say": "Cherche le sac qui sert encore et encore.",
 "per": 0.0,
 "spelling": null
 },
@@ -9869,6 +10259,18 @@
 "per": 0.0,
 "spelling": null
 },
+"dans le composteur les épluchures deviennent du compost|.": {
+"h": "04ae6f5d918e294d",
+"say": "Dans le composteur, les épluchures deviennent du compost.",
+"per": 0.0,
+"spelling": null
+},
+"dans le composteur que deviennent les épluchures|?": {
+"h": "915224612f77c574",
+"say": "Dans le composteur, que deviennent les épluchures ?",
+"per": 0.0,
+"spelling": null
+},
 "dans le congélateur tout devient dur et froid|.": {
 "h": "5e42062e04e52750",
 "say": "Dans le congélateur, tout devient dur et froi.",
@@ -9923,6 +10325,36 @@
 "per": 0.0,
 "spelling": null
 },
+"dans quelle poubelle va la bouteille en plastique|?": {
+"h": "6fce9df9c8e0e429",
+"say": "Dans quelle poubelle va la bouteille en plastique ?",
+"per": 0.0,
+"spelling": null
+},
+"dans quelle poubelle va la bouteille en verre|?": {
+"h": "4e619a6f9594ca77",
+"say": "Dans quelle poubelle va la bouteille en verre ?",
+"per": 0.0,
+"spelling": null
+},
+"dans quelle poubelle va le journal|?": {
+"h": "d0cadacd7e9ff8aa",
+"say": "Dans quelle poubelle va le journal ?",
+"per": 0.0,
+"spelling": null
+},
+"dans quelle poubelle va le mouchoir sale|?": {
+"h": "f8207cffd64e7f3f",
+"say": "Dans quelle poubelle va le mouchoir sale ?",
+"per": 0.0,
+"spelling": null
+},
+"dans quelle poubelle vont les épluchures|?": {
+"h": "f13749e5d3b2859c",
+"say": "Dans quelle poubelle vont les épluchures ?",
+"per": 0.0,
+"spelling": null
+},
 "dans son nom on entend le mot volcan|.": {
 "h": "c855ddbbf46f9327",
 "say": "Dans son nom, on entend le mot volcan !",
@@ -9971,6 +10403,12 @@
 "per": 0.0,
 "spelling": null
 },
+"derrière un camion c'est dangereux le chauffeur ne te voit pas|.": {
+"h": "6d7f9b3c35a7ea6e",
+"say": "Derrière un camion, c'est dangereux, le chauffeur ne te voit pas.",
+"per": 0.0,
+"spelling": null
+},
 "des arbres ont poussé et parfois un lac remplit son cratère|.": {
 "h": "0f4012a7478dd580",
 "say": "Des arbres ont poussé, et parfois un lac remplit son cratère.",
@@ -9980,6 +10418,12 @@
 "des barreaux comme une passoire géante|.": {
 "h": "eaeef1b4a0543035",
 "say": "Des barreaux, comme une passoire géante.",
+"per": 0.0,
+"spelling": null
+},
+"des habits donnés ça peut encore servir|.": {
+"h": "80b1d8a09fc7f104",
+"say": "Des habits donnés, ça peut encore servir.",
 "per": 0.0,
 "spelling": null
 },
@@ -10046,6 +10490,12 @@
 "elle est bien plus chaude que le four de la cuisine|.": {
 "h": "46d87b19404a8f3f",
 "say": "Elle est bien plus chaude que le four de la cuisine.",
+"per": 0.0,
+"spelling": null
+},
+"elle est bien trop grande pour la poubelle|.": {
+"h": "345182f9693b91e0",
+"say": "Elle est bien trop grande pour la poubelle.",
 "per": 0.0,
 "spelling": null
 },
@@ -10145,6 +10595,12 @@
 "per": 0.0,
 "spelling": null
 },
+"elles sont bien trop grandes pour la poubelle|.": {
+"h": "51a0ba609344bf52",
+"say": "Elles sont bien trop grandes pour la poubelle.",
+"per": 0.0,
+"spelling": null
+},
 "en boule elle coule|.": {
 "h": "0a3c85b9d63a957f",
 "say": "En boule, elle coule.",
@@ -10184,6 +10640,12 @@
 "en touchant le miroir froid elle change|.": {
 "h": "69271a9e0fd1380f",
 "say": "En touchant le miroir froi, elle change !",
+"per": 0.0,
+"spelling": null
+},
+"encore un peu plus loin jusqu'au camion|.": {
+"h": "f1305cace226c8e6",
+"say": "Encore un peu plus loin, jusqu'au camion !",
 "per": 0.0,
 "spelling": null
 },
@@ -10262,6 +10724,54 @@
 "flotte ou coule pour deviner ce qui flotte dans le bassin d'octave|.": {
 "h": "7fd80263afb155ac",
 "say": "Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave.",
+"per": 0.0,
+"spelling": null
+},
+"glisse chacun dans la bonne caisse|.": {
+"h": "37691a00f5bc57bb",
+"say": "Glisse chacun dans la bonne caisse !",
+"per": 0.0,
+"spelling": null
+},
+"glisse chaque déchet dans la bonne poubelle|.": {
+"h": "85bcc268ee992767",
+"say": "Glisse chaque déchet dans la bonne poubelle.",
+"per": 0.0,
+"spelling": null
+},
+"glisse le bac blanc jusqu'au camion|.": {
+"h": "367a9aca6caddcc1",
+"say": "Glisse le bac blanc jusqu'au camion.",
+"per": 0.0,
+"spelling": null
+},
+"glisse le bac bleu jusqu'au camion|.": {
+"h": "46e8b96cc7364493",
+"say": "Glisse le bac bleu jusqu'au camion.",
+"per": 0.0,
+"spelling": null
+},
+"glisse le bac gris jusqu'au camion|.": {
+"h": "80ab608a7cf076a1",
+"say": "Glisse le bac gris jusqu'au camion.",
+"per": 0.0,
+"spelling": null
+},
+"glisse le bac jaune jusqu'au camion|.": {
+"h": "30ea2d3cf4924a52",
+"say": "Glisse le bac jaune jusqu'au camion.",
+"per": 0.0,
+"spelling": null
+},
+"glisse le bac marron jusqu'au camion|.": {
+"h": "c3ab4bfb35419062",
+"say": "Glisse le bac marron jusqu'au camion.",
+"per": 0.0,
+"spelling": null
+},
+"glisse le bac vert jusqu'au camion|.": {
+"h": "13651a532438e055",
+"say": "Glisse le bac vert jusqu'au camion.",
 "per": 0.0,
 "spelling": null
 },
@@ -10373,6 +10883,12 @@
 "per": 0.032,
 "spelling": null
 },
+"il faut d'abord séparer les emballages sur un grand tapis|.": {
+"h": "9bec0cfdc498f258",
+"say": "Il faut d'abord séparer les emballages, sur un grand tapis.",
+"per": 0.0,
+"spelling": null
+},
 "il faut quelque chose de très solide sur la tête|.": {
 "h": "ae1bed14f8211c82",
 "say": "Il faut quelque chose de très solide sur la tête.",
@@ -10451,6 +10967,12 @@
 "per": 0.0,
 "spelling": null
 },
+"il y a aussi du verre|.": {
+"h": "b364c18f655df949",
+"say": "Il y a aussi du verre !",
+"per": 0.0,
+"spelling": null
+},
 "il y a des volcans partout dans le monde au japon en italie en france|.": {
 "h": "738c090b183bbe7d",
 "say": "Il y a des volcans partout dans le monde : au Japon, en Italie, en France…",
@@ -10463,9 +10985,21 @@
 "per": 0.049,
 "spelling": null
 },
+"ils deviennent du compost une terre très bonne pour les plantes|.": {
+"h": "fe4d69236861522a",
+"say": "Ils deviennent du compost, une terre très bonne pour les plantes !",
+"per": 0.056,
+"spelling": null
+},
 "ils sont en france touche le drapeau de la france|.": {
 "h": "04da8a405347616a",
 "say": "Ils sont en France : touche le drapeau de la France.",
+"per": 0.0,
+"spelling": null
+},
+"ils sont encore beaux ce serait dommage de les jeter|.": {
+"h": "a7cc88484483e749",
+"say": "Ils sont encore beaux, ce serait dommage de les jeter.",
 "per": 0.0,
 "spelling": null
 },
@@ -10475,9 +11009,195 @@
 "per": 0.0,
 "spelling": null
 },
+"ils vont dans le bac bleu|.": {
+"h": "17b05c3b90619bff",
+"say": "Ils vont dans le bac bleu.",
+"per": 0.0,
+"spelling": null
+},
+"ils vont dans le bac jaune|.": {
+"h": "0629367d76a9f915",
+"say": "Ils vont dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"je t'aide hop dans le camion|.": {
+"h": "4df8d2978928930c",
+"say": "Je t'aide : hop, dans le camion !",
+"per": 0.0,
+"spelling": null
+},
 "je t'aide un peu|.": {
 "h": "51e38ce1f371c273",
 "say": "Je t'aide un peu…",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va l'assiette cassée|.": {
+"h": "f16bc37aa47e130c",
+"say": "Je te montre où va l'assiette cassée.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va l'enveloppe|.": {
+"h": "d7375823bb698e6d",
+"say": "Je te montre où va l'enveloppe.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va la boîte à pizza|.": {
+"h": "2cf287f41448f90f",
+"say": "Je te montre où va la boîte à pizza.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va la boîte de céréales|.": {
+"h": "c10a7b5f0fc81025",
+"say": "Je te montre où va la boîte de céréales.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va la boîte de conserve|.": {
+"h": "33ad884db7e660c4",
+"say": "Je te montre où va la boîte de conserve.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va la bouteille en plastique|.": {
+"h": "14c698249701463a",
+"say": "Je te montre où va la bouteille en plastique.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va la bouteille en verre|.": {
+"h": "2e58497978d17f86",
+"say": "Je te montre où va la bouteille en verre.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va la brique de lait|.": {
+"h": "72532f61e6da67b2",
+"say": "Je te montre où va la brique de lait.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va la canette|.": {
+"h": "869aaaa7d3545fd4",
+"say": "Je te montre où va la canette.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va la couche sale|.": {
+"h": "4020635cde17bc6c",
+"say": "Je te montre où va la couche sale.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va la peau de banane|.": {
+"h": "4611a4a3bf415e1e",
+"say": "Je te montre où va la peau de banane.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va la vieille brosse à dents|.": {
+"h": "534c5b1593ee8111",
+"say": "Je te montre où va la vieille brosse à dents.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va le bocal de cornichons|.": {
+"h": "7faab1a1b36c6ec6",
+"say": "Je te montre où va le bocal de cornichons.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va le couvercle du bocal|.": {
+"h": "ca542aba9f8a18ac",
+"say": "Je te montre où va le couvercle du bocal.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va le film en plastique|.": {
+"h": "a24cac34fdca92b2",
+"say": "Je te montre où va le film en plastique.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va le jouet cassé|.": {
+"h": "6797d36149f73083",
+"say": "Je te montre où va le jouet cassé.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va le journal|.": {
+"h": "d8d812297f2c9aef",
+"say": "Je te montre où va le journal.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va le mouchoir sale|.": {
+"h": "1f323904f12f7b5b",
+"say": "Je te montre où va le mouchoir sale.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va le pot de confiture|.": {
+"h": "55c76124cb51cf8f",
+"say": "Je te montre où va le pot de confiture.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va le pot de yaourt|.": {
+"h": "bc9db4b9436beafc",
+"say": "Je te montre où va le pot de yaourt.",
+"per": 0.136,
+"spelling": null
+},
+"je te montre où va le prospectus|.": {
+"h": "e9b4ce1bea3f9d18",
+"say": "Je te montre où va le prospectus.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va le trognon de pomme|.": {
+"h": "4a344485397fa927",
+"say": "Je te montre où va le trognon de pomme.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va le verre cassé|.": {
+"h": "d05942838b9a0d1f",
+"say": "Je te montre où va le verre cassé.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où va le vieux cahier|.": {
+"h": "9f66ceaf10550089",
+"say": "Je te montre où va le vieux cahier.",
+"per": 0.0,
+"spelling": null
+},
+"je te montre où vont les coquilles d'œuf|.": {
+"h": "9b537c4d857e8a7a",
+"say": "Je te montre où vont les coquilles d'œuf.",
+"per": 0.048,
+"spelling": null
+},
+"je te montre où vont les épluchures|.": {
+"h": "b599a52579fffdea",
+"say": "Je te montre où vont les épluchures.",
+"per": 0.0,
+"spelling": null
+},
+"l'aimant attrape ce qui est en fer|.": {
+"h": "00c8f4679646b123",
+"say": "L'aimant attrape ce qui est en fer.",
+"per": 0.0,
+"spelling": null
+},
+"l'aimant attrape la boîte de conserve elle est en fer|.": {
+"h": "9efdbbe611eaa7bd",
+"say": "L'aimant attrape la boîte de conserve : elle est en fer !",
 "per": 0.0,
 "spelling": null
 },
@@ -10496,6 +11216,30 @@
 "l'arbre a besoin d'eau pour vivre comme toi|.": {
 "h": "23f97a8f7bb7ac0b",
 "say": "L'arbre a besoin d'eau pour vivre, comme toi.",
+"per": 0.0,
+"spelling": null
+},
+"l'assiette cassée c'est de la vaisselle elle ne se recycle pas|.": {
+"h": "dcfacde7a489951d",
+"say": "L'assiette cassée, c'est de la vaisselle : elle ne se recycle pas.",
+"per": 0.0,
+"spelling": null
+},
+"l'assiette cassée va dans le bac gris|.": {
+"h": "a97cea49534edd8f",
+"say": "L'assiette cassée va dans le bac gris.",
+"per": 0.0,
+"spelling": null
+},
+"l'assiette cassée va dans le bac vert|.": {
+"h": "20b2b7ca48255384",
+"say": "L'assiette cassée va dans le bac vert.",
+"per": 0.0,
+"spelling": null
+},
+"l'assiette cassée|.": {
+"h": "92a38717c8f34bf8",
+"say": "L'assiette cassée.",
 "per": 0.0,
 "spelling": null
 },
@@ -10553,6 +11297,12 @@
 "per": 0.0,
 "spelling": null
 },
+"l'eau du robinet arrive sans emballage|.": {
+"h": "d1e9b0a78f2252ed",
+"say": "L'eau du robinet arrive sans emballage !",
+"per": 0.0,
+"spelling": null
+},
 "l'eau est propre|.": {
 "h": "ab487c4657f175c2",
 "say": "L'eau est propre.",
@@ -10607,6 +11357,30 @@
 "per": 0.0,
 "spelling": null
 },
+"l'enveloppe est en papier elle se recycle|.": {
+"h": "8f2fb5095ed471f6",
+"say": "L'enveloppe est en papier, elle se recycle !",
+"per": 0.0,
+"spelling": null
+},
+"l'enveloppe va dans le bac bleu|.": {
+"h": "1802b2cd8ebaf16a",
+"say": "L'enveloppe va dans le bac bleu.",
+"per": 0.0,
+"spelling": null
+},
+"l'enveloppe va dans le bac jaune|.": {
+"h": "82b4aa4e7dc62c10",
+"say": "L'enveloppe va dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"l'enveloppe|.": {
+"h": "9c38c183c86f0f92",
+"say": "L'enveloppe.",
+"per": 0.0,
+"spelling": null
+},
 "l'éponge a plein de petits trous remplis d'air elle flotte|.": {
 "h": "3edfcf3d3a803039",
 "say": "L'éponge a plein de petits trous remplis d'air : elle flotte.",
@@ -10649,15 +11423,33 @@
 "per": 0.0,
 "spelling": null
 },
+"l'ours en peluche on le remplit avec des bouteilles en plastique|.": {
+"h": "489518a9fcf7f9ec",
+"say": "L'ours en peluche, on le remplit avec des bouteilles en plastique.",
+"per": 0.026,
+"spelling": null
+},
 "l'une de ces choses est si chaude qu'elle fait fondre la roche|.": {
 "h": "471187dcb49dc3b2",
 "say": "L'une de ces choses est si chaude qu'elle fait fondre la roche !",
 "per": 0.0,
 "spelling": null
 },
+"l'usine du verre c'est pour le verre|.": {
+"h": "946100204546d891",
+"say": "L'usine du verre, c'est pour le verre.",
+"per": 0.0,
+"spelling": null
+},
 "l'usine fabrique l'eau propre pour boire|.": {
 "h": "68c37770c883575e",
 "say": "L'usine fabrique l'eau propre, pour boire.",
+"per": 0.0,
+"spelling": null
+},
+"l'usine qui chauffe brûle les déchets qu'on ne recycle pas|.": {
+"h": "708b0d3fd0f16c4c",
+"say": "L'usine qui chauffe brûle les déchets qu'on ne recycle pas.",
 "per": 0.0,
 "spelling": null
 },
@@ -10673,6 +11465,198 @@
 "per": 0.0,
 "spelling": null
 },
+"la boîte à goûter se lave et sert encore pas d'emballage à jeter|.": {
+"h": "8ad0bcdb81badb68",
+"say": "La boîte à goûter se lave et sert encore : pas d'emballage à jeter !",
+"per": 0.0,
+"spelling": null
+},
+"la boîte à pizza est en carton|.": {
+"h": "c1e4902ce0375ad8",
+"say": "La boîte à pizza est en carton.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte à pizza est un emballage en carton elle se recycle même un peu grasse|.": {
+"h": "8a6f3ee5570c4c43",
+"say": "La boîte à pizza est un emballage en carton : elle se recycle, même un peu grasse !",
+"per": 0.021,
+"spelling": null
+},
+"la boîte à pizza va dans la caisse du papier et du carton|.": {
+"h": "d5a93e62c0878e47",
+"say": "La boîte à pizza va dans la caisse du papier et du carton.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte à pizza va dans le bac jaune|.": {
+"h": "adaa83154eb1de48",
+"say": "La boîte à pizza va dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte à pizza|.": {
+"h": "a993ceb3aa1dcde3",
+"say": "La boîte à pizza.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte de céréales est en carton l'aimant ne l'attrape pas|.": {
+"h": "bc7a4163ac57c8ee",
+"say": "La boîte de céréales est en carton : l'aimant ne l'attrape pas.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte de céréales est en carton|.": {
+"h": "e6158b782610077b",
+"say": "La boîte de céréales est en carton.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte de céréales est un emballage en carton elle se recycle|.": {
+"h": "a95ce2f2e67a22be",
+"say": "La boîte de céréales est un emballage en carton : elle se recycle !",
+"per": 0.0,
+"spelling": null
+},
+"la boîte de céréales va dans la caisse du papier et du carton|.": {
+"h": "d22eb554e7762be4",
+"say": "La boîte de céréales va dans la caisse du papier et du carton.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte de céréales va dans le bac jaune|.": {
+"h": "74bf5871b3cc1b8b",
+"say": "La boîte de céréales va dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte de céréales|.": {
+"h": "fb44e306ad0b47c1",
+"say": "La boîte de céréales.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte de conserve est en métal|.": {
+"h": "5b9f59950388ce3c",
+"say": "La boîte de conserve est en métal.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte de conserve est un emballage en métal elle se recycle|.": {
+"h": "626cca655d4e0540",
+"say": "La boîte de conserve est un emballage en métal : elle se recycle !",
+"per": 0.0,
+"spelling": null
+},
+"la boîte de conserve va dans la caisse du métal|.": {
+"h": "9afda89f1ad82959",
+"say": "La boîte de conserve va dans la caisse du métal.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte de conserve va dans le bac jaune|.": {
+"h": "0b408ecf637ddc6b",
+"say": "La boîte de conserve va dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"la boîte de conserve|.": {
+"h": "13e090f44d8bca2b",
+"say": "La boîte de conserve.",
+"per": 0.0,
+"spelling": null
+},
+"la borne à vêtements c'est pour les habits et les chaussures|.": {
+"h": "0d4eef8db88206c7",
+"say": "La borne à vêtements, c'est pour les habits et les chaussures.",
+"per": 0.0,
+"spelling": null
+},
+"la bouteille en plastique est un emballage elle se recycle|.": {
+"h": "55df7ac1a93f3d5c",
+"say": "La bouteille en plastique est un emballage : elle se recycle !",
+"per": 0.0,
+"spelling": null
+},
+"la bouteille en plastique finit à la poubelle quand elle est vide|.": {
+"h": "d385463232b4b213",
+"say": "La bouteille en plastique finit à la poubelle quand elle est vide.",
+"per": 0.0,
+"spelling": null
+},
+"la bouteille en plastique va dans la caisse du plastique|.": {
+"h": "73f073303cd890e8",
+"say": "La bouteille en plastique va dans la caisse du plastique.",
+"per": 0.0,
+"spelling": null
+},
+"la bouteille en plastique va dans le bac jaune|.": {
+"h": "35b8f996e7256fe7",
+"say": "La bouteille en plastique va dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"la bouteille en plastique|.": {
+"h": "f59bb746fcf2fea6",
+"say": "La bouteille en plastique.",
+"per": 0.0,
+"spelling": null
+},
+"la bouteille en verre va dans le bac blanc|.": {
+"h": "17d56a3b54a1161c",
+"say": "La bouteille en verre va dans le bac blanc.",
+"per": 0.0,
+"spelling": null
+},
+"la bouteille en verre va dans le bac vert|.": {
+"h": "79f599b8bd5a058d",
+"say": "La bouteille en verre va dans le bac vert.",
+"per": 0.0,
+"spelling": null
+},
+"la bouteille en verre|.": {
+"h": "0539624598a6ba9f",
+"say": "La bouteille en verre.",
+"per": 0.0,
+"spelling": null
+},
+"la bouteille est en plastique l'aimant ne l'attrape pas|.": {
+"h": "8ed56dbcec974418",
+"say": "La bouteille est en plastique : l'aimant ne l'attrape pas.",
+"per": 0.0,
+"spelling": null
+},
+"la bouteille est en plastique|.": {
+"h": "04b1f073091f62a7",
+"say": "La bouteille est en plastique.",
+"per": 0.0,
+"spelling": null
+},
+"la bouteille est en verre elle se recycle sans fin|.": {
+"h": "f30791797b4b9424",
+"say": "La bouteille est en verre : elle se recycle sans fin !",
+"per": 0.0,
+"spelling": null
+},
+"la brique de lait est un emballage elle se recycle|.": {
+"h": "0c9fb16f929c1a78",
+"say": "La brique de lait est un emballage : elle se recycle !",
+"per": 0.0,
+"spelling": null
+},
+"la brique de lait va dans le bac jaune|.": {
+"h": "6e5627a0c074c33f",
+"say": "La brique de lait va dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"la brique de lait|.": {
+"h": "1ad72c81225dd700",
+"say": "La brique de lait.",
+"per": 0.0,
+"spelling": null
+},
 "la brique est lourde pour sa taille elle coule|.": {
 "h": "722a9e092b04b852",
 "say": "La brique est lourde pour sa taille : elle coule.",
@@ -10682,6 +11666,48 @@
 "la brique est-ce qu'elle flotte ou est-ce qu'elle coule|?": {
 "h": "d83bc78e70dae963",
 "say": "La brique : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
+"per": 0.0,
+"spelling": null
+},
+"la canette est en métal|.": {
+"h": "95e175501ec16a0e",
+"say": "La canette est en métal.",
+"per": 0.0,
+"spelling": null
+},
+"la canette est un emballage en métal elle se recycle|.": {
+"h": "ac6d48267e9d4805",
+"say": "La canette est un emballage en métal : elle se recycle !",
+"per": 0.0,
+"spelling": null
+},
+"la canette va dans la caisse du métal|.": {
+"h": "c746f3a0911685dc",
+"say": "La canette va dans la caisse du métal.",
+"per": 0.0,
+"spelling": null
+},
+"la canette va dans le bac jaune|.": {
+"h": "6bae0f8554eb8c04",
+"say": "La canette va dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"la canette|.": {
+"h": "70ab476da01676a9",
+"say": "La canette.",
+"per": 0.0,
+"spelling": null
+},
+"la chaise cassée va à la déchetterie avec les gros objets|.": {
+"h": "f8b359bbfe0d8d73",
+"say": "La chaise cassée va à la déchetterie, avec les gros objets.",
+"per": 0.0,
+"spelling": null
+},
+"la chaise est bien trop grande pour la poubelle|.": {
+"h": "c538b2543fe9399b",
+"say": "La chaise est bien trop grande pour la poubelle.",
 "per": 0.0,
 "spelling": null
 },
@@ -10721,6 +11747,30 @@
 "per": 0.0,
 "spelling": null
 },
+"la couche sale ne se recycle pas|.": {
+"h": "38c4c40926dd9431",
+"say": "La couche sale ne se recycle pas.",
+"per": 0.0,
+"spelling": null
+},
+"la couche sale va dans le bac gris|.": {
+"h": "49ca388e43f7c0cb",
+"say": "La couche sale va dans le bac gris.",
+"per": 0.0,
+"spelling": null
+},
+"la couche sale va dans le bac vert|.": {
+"h": "5e985ae7adc0b242",
+"say": "La couche sale va dans le bac vert.",
+"per": 0.0,
+"spelling": null
+},
+"la couche sale|.": {
+"h": "5e387b936d3aafdf",
+"say": "La couche sale.",
+"per": 0.0,
+"spelling": null
+},
 "la cuillère en métal est-ce qu'elle flotte ou est-ce qu'elle coule|?": {
 "h": "9b08008037f3107b",
 "say": "La cuillère en métal : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
@@ -10730,6 +11780,12 @@
 "la cuillère est en métal elle coule|.": {
 "h": "8df86df68361be4c",
 "say": "La cuillère est en métal : elle coule.",
+"per": 0.0,
+"spelling": null
+},
+"la déchetterie c'est pour les gros objets|.": {
+"h": "87053fc9e870dc43",
+"say": "La déchetterie, c'est pour les gros objets.",
 "per": 0.0,
 "spelling": null
 },
@@ -10760,6 +11816,12 @@
 "la fumée s'envole mais la lave est lourde en refroidissant elle devient dure|.": {
 "h": "84f0da00ed619877",
 "say": "La fumée s'envole, mais la lave est lourde : en refroidissant, elle devient dure.",
+"per": 0.0,
+"spelling": null
+},
+"la gourde se remplit encore et encore pas de déchet|.": {
+"h": "2a8fc73cdc795432",
+"say": "La gourde se remplit encore et encore : pas de déchet !",
 "per": 0.0,
 "spelling": null
 },
@@ -10919,6 +11981,48 @@
 "per": 0.0,
 "spelling": null
 },
+"la peau de banane est un reste de cuisine|.": {
+"h": "abb7bbded0021371",
+"say": "La peau de banane est un reste de cuisine.",
+"per": 0.0,
+"spelling": null
+},
+"la peau de banane va dans le bac marron|.": {
+"h": "c5a70d34367004ed",
+"say": "La peau de banane va dans le bac marron.",
+"per": 0.0,
+"spelling": null
+},
+"la peau de banane va dans le composteur|.": {
+"h": "97a886c3c8291d3a",
+"say": "La peau de banane va dans le composteur.",
+"per": 0.0,
+"spelling": null
+},
+"la peau de banane|.": {
+"h": "7c7a367e627e2b07",
+"say": "La peau de banane.",
+"per": 0.0,
+"spelling": null
+},
+"la peinture est dangereuse pour la nature elle ne va pas dans la poubelle|.": {
+"h": "6b491f8ba0e5dbf3",
+"say": "La peinture est dangereuse pour la nature : elle ne va pas dans la poubelle.",
+"per": 0.0,
+"spelling": null
+},
+"la peinture va à la déchetterie elle est dangereuse pour la nature|.": {
+"h": "96b3eb0aa473d2f1",
+"say": "La peinture va à la déchetterie : elle est dangereuse pour la nature.",
+"per": 0.0,
+"spelling": null
+},
+"la pharmacie reprend les vieux médicaments|.": {
+"h": "a401173f17597e6d",
+"say": "La pharmacie reprend les vieux médicaments.",
+"per": 0.0,
+"spelling": null
+},
 "la pièce est en métal elle coule|.": {
 "h": "c71c8ca4098323bb",
 "say": "La pièce est en métal : elle coule.",
@@ -11015,6 +12119,36 @@
 "per": 0.0,
 "spelling": null
 },
+"la vieille brosse à dents n'est pas un emballage elle ne se recycle pas|.": {
+"h": "56366008486b481e",
+"say": "La vieille brosse à dents n'est pas un emballage : elle ne se recycle pas.",
+"per": 0.0,
+"spelling": null
+},
+"la vieille brosse à dents va dans le bac gris|.": {
+"h": "b62a41e993759626",
+"say": "La vieille brosse à dents va dans le bac gris.",
+"per": 0.0,
+"spelling": null
+},
+"la vieille brosse à dents va dans le bac vert|.": {
+"h": "bde1a4a54d6dc933",
+"say": "La vieille brosse à dents va dans le bac vert.",
+"per": 0.0,
+"spelling": null
+},
+"la vieille brosse à dents|.": {
+"h": "c3276322aad08483",
+"say": "La vieille brosse à dents.",
+"per": 0.0,
+"spelling": null
+},
+"la vieille chaise est cassée|.": {
+"h": "d32cbe9aaaf63333",
+"say": "La vieille chaise est cassée.",
+"per": 0.0,
+"spelling": null
+},
 "la vis est en métal elle coule|.": {
 "h": "ca5d924b1c303109",
 "say": "La vis est en métal : elle coule.",
@@ -11063,6 +12197,54 @@
 "per": 0.0,
 "spelling": null
 },
+"le bac blanc c'est pour le verre les bouteilles les pots et les bocaux|.": {
+"h": "41fffb83de079228",
+"say": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux.",
+"per": 0.027,
+"spelling": null
+},
+"le bac bleu c'est pour les papiers|.": {
+"h": "438f1d53d53d172a",
+"say": "Le bac bleu, c'est pour les papiers.",
+"per": 0.0,
+"spelling": null
+},
+"le bac gris c'est pour ce qui ne se recycle pas|.": {
+"h": "a82ecba1cd461d48",
+"say": "Le bac gris, c'est pour ce qui ne se recycle pas.",
+"per": 0.0,
+"spelling": null
+},
+"le bac jaune c'est pour les emballages en plastique en métal en carton|.": {
+"h": "9e400e60c02e2ee6",
+"say": "Le bac jaune, c'est pour les emballages, en plastique, en métal, en carton.",
+"per": 0.0,
+"spelling": null
+},
+"le bac jaune c'est pour les emballages et les papiers|.": {
+"h": "641303bd6bb90cf5",
+"say": "Le bac jaune, c'est pour les emballages et les papiers.",
+"per": 0.0,
+"spelling": null
+},
+"le bac marron c'est pour les restes de cuisine|.": {
+"h": "df8848cbd142030b",
+"say": "Le bac marron, c'est pour les restes de cuisine.",
+"per": 0.0,
+"spelling": null
+},
+"le bac vert c'est pour ce qui ne se recycle pas|.": {
+"h": "3f8f2986ab95e62c",
+"say": "Le bac vert, c'est pour ce qui ne se recycle pas.",
+"per": 0.069,
+"spelling": null
+},
+"le bac vert c'est pour le verre les bouteilles les pots et les bocaux|.": {
+"h": "31a789694b73f5ec",
+"say": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux.",
+"per": 0.0,
+"spelling": null
+},
 "le bain est fini|.": {
 "h": "d6a90472872a2401",
 "say": "Le bain est fini.",
@@ -11093,6 +12275,30 @@
 "per": 0.0,
 "spelling": null
 },
+"le bocal de cornichons est en verre|.": {
+"h": "0f3685fc6e618c56",
+"say": "Le bocal de cornichons est en verre.",
+"per": 0.043,
+"spelling": null
+},
+"le bocal de cornichons va dans le bac blanc|.": {
+"h": "67e9f1c3805e88ac",
+"say": "Le bocal de cornichons va dans le bac blanc.",
+"per": 0.0,
+"spelling": null
+},
+"le bocal de cornichons va dans le bac vert|.": {
+"h": "4ca51df1732b8d14",
+"say": "Le bocal de cornichons va dans le bac vert.",
+"per": 0.0,
+"spelling": null
+},
+"le bocal de cornichons|.": {
+"h": "5b2ba102b7559d3e",
+"say": "Le bocal de cornichons.",
+"per": 0.0,
+"spelling": null
+},
 "le bois est léger pour sa taille il flotte|.": {
 "h": "13b5b3cd9929e134",
 "say": "Le bois est léger pour sa taille : il flotte.",
@@ -11103,6 +12309,18 @@
 "h": "b275bfc2e4aed7f8",
 "say": "Le bois flotte, même très gros.",
 "per": 0.056,
+"spelling": null
+},
+"le boulanger lui fait le pain|.": {
+"h": "ca18e54add0a75f8",
+"say": "Le boulanger, lui, fait le pain.",
+"per": 0.0,
+"spelling": null
+},
+"le cahier on le fabrique avec de vieux papiers|.": {
+"h": "b2e86fd59f5d3b9a",
+"say": "Le cahier, on le fabrique avec de vieux papiers.",
+"per": 0.0,
 "spelling": null
 },
 "le caillou est lourd pour sa taille il coule|.": {
@@ -11123,6 +12341,120 @@
 "per": 0.0,
 "spelling": null
 },
+"le camion du bac blanc est plein de bouteilles et de bocaux|.": {
+"h": "c424588d15ac2f87",
+"say": "Le camion du bac blanc est plein de bouteilles et de bocaux.",
+"per": 0.0,
+"spelling": null
+},
+"le camion du bac bleu est plein de papiers|.": {
+"h": "65031e9b9b3f0297",
+"say": "Le camion du bac bleu est plein de papiers.",
+"per": 0.0,
+"spelling": null
+},
+"le camion du bac bleu va au centre de tri les papiers deviendront du papier neuf|.": {
+"h": "b281b20dc78374c2",
+"say": "Le camion du bac bleu va au centre de tri : les papiers deviendront du papier neuf.",
+"per": 0.0,
+"spelling": null
+},
+"le camion du bac gris est plein de déchets qu'on ne recycle pas|.": {
+"h": "cc08f5157325d4b8",
+"say": "Le camion du bac gris est plein de déchets qu'on ne recycle pas.",
+"per": 0.0,
+"spelling": null
+},
+"le camion du bac jaune est plein d'emballages et de papiers|.": {
+"h": "465b23bbbd803656",
+"say": "Le camion du bac jaune est plein d'emballages et de papiers.",
+"per": 0.0,
+"spelling": null
+},
+"le camion du bac jaune est plein d'emballages|.": {
+"h": "7ba8a4ca039b2388",
+"say": "Le camion du bac jaune est plein d'emballages.",
+"per": 0.0,
+"spelling": null
+},
+"le camion du bac jaune va au centre de tri là-bas on sépare les emballages pour les recycler|.": {
+"h": "14a34049c4f23d74",
+"say": "Le camion du bac jaune va au centre de tri : là-bas, on sépare les emballages pour les recycler.",
+"per": 0.0,
+"spelling": null
+},
+"le camion du bac marron est plein de restes de cuisine|.": {
+"h": "931a56baf9500d66",
+"say": "Le camion du bac marron est plein de restes de cuisine.",
+"per": 0.0,
+"spelling": null
+},
+"le camion du bac vert est plein de bouteilles et de bocaux|.": {
+"h": "2adcaf1dc4e170a6",
+"say": "Le camion du bac vert est plein de bouteilles et de bocaux.",
+"per": 0.0,
+"spelling": null
+},
+"le camion du bac vert est plein de déchets qu'on ne recycle pas|.": {
+"h": "d7d4ce1cd6eb6f2e",
+"say": "Le camion du bac vert est plein de déchets qu'on ne recycle pas.",
+"per": 0.0,
+"spelling": null
+},
+"le camion est grand et lourd on reste loin de lui|.": {
+"h": "0d136a3d4c5efda2",
+"say": "Le camion est grand et lourd, on reste loin de lui.",
+"per": 0.0,
+"spelling": null
+},
+"le camion poubelle arrive|.": {
+"h": "5cfbd8bcd461fba9",
+"say": "Le camion poubelle arrive !",
+"per": 0.0,
+"spelling": null
+},
+"le camion poubelle passe dans la rue|.": {
+"h": "1d66026ad958892b",
+"say": "Le camion poubelle passe dans la rue.",
+"per": 0.0,
+"spelling": null
+},
+"le camion vide le bac blanc|.": {
+"h": "63c1faba737eab9c",
+"say": "Le camion vide le bac blanc.",
+"per": 0.056,
+"spelling": null
+},
+"le camion vide le bac bleu|.": {
+"h": "9254ad12dbdd540f",
+"say": "Le camion vide le bac bleu.",
+"per": 0.0,
+"spelling": null
+},
+"le camion vide le bac gris|.": {
+"h": "671c4350e234838a",
+"say": "Le camion vide le bac gris.",
+"per": 0.056,
+"spelling": null
+},
+"le camion vide le bac jaune|.": {
+"h": "38afde7bd21f7e24",
+"say": "Le camion vide le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"le camion vide le bac marron|.": {
+"h": "78b1f739b319bdde",
+"say": "Le camion vide le bac marron.",
+"per": 0.0,
+"spelling": null
+},
+"le camion vide le bac vert|.": {
+"h": "22a82936cba1c59c",
+"say": "Le camion vide le bac vert.",
+"per": 0.0,
+"spelling": null
+},
 "le canard en plastique est-ce qu'il flotte ou est-ce qu'il coule|?": {
 "h": "52b27001a5123bbc",
 "say": "Le canard en plastique : est-ce qu'il flotte, ou est-ce qu'il coule ?",
@@ -11132,6 +12464,24 @@
 "le canard est creux rempli d'air il flotte|.": {
 "h": "829375e04e4e2bcd",
 "say": "Le canard est creux, rempli d'air : il flotte.",
+"per": 0.0,
+"spelling": null
+},
+"le carton neuf on le fabrique avec de vieux cartons|.": {
+"h": "4e6d12fbd5517d49",
+"say": "Le carton neuf, on le fabrique avec de vieux cartons.",
+"per": 0.0,
+"spelling": null
+},
+"le carton redevient du carton|.": {
+"h": "51ccc21eb1fb3c30",
+"say": "Le carton redevient du carton.",
+"per": 0.0,
+"spelling": null
+},
+"le centre de tri c'est pour les emballages et les papiers|.": {
+"h": "c7bc11e8ea9dcf04",
+"say": "Le centre de tri, c'est pour les emballages et les papiers.",
 "per": 0.0,
 "spelling": null
 },
@@ -11147,9 +12497,57 @@
 "per": 0.0,
 "spelling": null
 },
+"le compost aide les plantes à pousser|.": {
+"h": "e2471533a8e150ff",
+"say": "Le compost aide les plantes à pousser.",
+"per": 0.0,
+"spelling": null
+},
+"le compost c'est pour les restes de cuisine|.": {
+"h": "127a28c52802776c",
+"say": "Le compost, c'est pour les restes de cuisine.",
+"per": 0.0,
+"spelling": null
+},
+"le composteur c'est pour les restes de cuisine|.": {
+"h": "8b479fe895511264",
+"say": "Le composteur, c'est pour les restes de cuisine.",
+"per": 0.0,
+"spelling": null
+},
 "le coton-tige bouche les tuyaux|.": {
 "h": "8d2c0d1c9eea5a0f",
 "say": "Le coton-tige bouche les tuyaux.",
+"per": 0.0,
+"spelling": null
+},
+"le couvercle du bocal est en métal c'est un emballage il ne va pas avec le verre|.": {
+"h": "8f585e2805a098a7",
+"say": "Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
+"per": 0.0,
+"spelling": null
+},
+"le couvercle du bocal va dans la caisse du métal|.": {
+"h": "7548a4575f1e2283",
+"say": "Le couvercle du bocal va dans la caisse du métal.",
+"per": 0.0,
+"spelling": null
+},
+"le couvercle du bocal va dans le bac jaune|.": {
+"h": "ae42e59e778535ea",
+"say": "Le couvercle du bocal va dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"le couvercle du bocal|.": {
+"h": "d533afa49bfcb2b9",
+"say": "Le couvercle du bocal.",
+"per": 0.0,
+"spelling": null
+},
+"le couvercle est en métal|.": {
+"h": "fed943b738701939",
+"say": "Le couvercle est en métal.",
 "per": 0.0,
 "spelling": null
 },
@@ -11219,6 +12617,42 @@
 "per": 0.0,
 "spelling": null
 },
+"le facteur lui apporte le courrier|.": {
+"h": "32cc2cca2639b331",
+"say": "Le facteur, lui, apporte le courrier.",
+"per": 0.0,
+"spelling": null
+},
+"le film en plastique est un emballage il se recycle|.": {
+"h": "04bc9f3c578cf724",
+"say": "Le film en plastique est un emballage : il se recycle !",
+"per": 0.0,
+"spelling": null
+},
+"le film en plastique va dans la caisse du plastique|.": {
+"h": "f385569928a8fa6c",
+"say": "Le film en plastique va dans la caisse du plastique.",
+"per": 0.0,
+"spelling": null
+},
+"le film en plastique va dans le bac jaune|.": {
+"h": "5f49fe7f0752cdd6",
+"say": "Le film en plastique va dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"le film en plastique|.": {
+"h": "6cc843c53c471e34",
+"say": "Le film en plastique.",
+"per": 0.0,
+"spelling": null
+},
+"le film est en plastique|.": {
+"h": "4772457051dbdde3",
+"say": "Le film est en plastique.",
+"per": 0.0,
+"spelling": null
+},
 "le four est très chaud mais la lave l'est bien plus elle fait fondre la roche|.": {
 "h": "c95bd95eb4d6dab0",
 "say": "Le four est très chô, mais la lave l'est bien plus, elle fait fondre la roche !",
@@ -11243,6 +12677,90 @@
 "per": 0.0,
 "spelling": null
 },
+"le grand tri de basile|.": {
+"h": "e5c7e14917ee9e82",
+"say": "Le grand tri de Basile !",
+"per": 0.0,
+"spelling": null
+},
+"le grand tri est fini tout est à sa place|.": {
+"h": "6d7e52c19c033a58",
+"say": "Le grand tri est fini : tout est à sa place !",
+"per": 0.0,
+"spelling": null
+},
+"le grand tri pour aider basile à mettre chaque déchet dans la bonne poubelle|.": {
+"h": "66144f2f565088f1",
+"say": "Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+"per": 0.0,
+"spelling": null
+},
+"le jouet cassé n'est pas un emballage il ne va pas dans le bac jaune|.": {
+"h": "eb223210fb82aa9d",
+"say": "Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"le jouet cassé va dans le bac gris|.": {
+"h": "e31c46da0f23de16",
+"say": "Le jouet cassé va dans le bac gris.",
+"per": 0.048,
+"spelling": null
+},
+"le jouet cassé va dans le bac vert|.": {
+"h": "29f68061766175b8",
+"say": "Le jouet cassé va dans le bac vert.",
+"per": 0.0,
+"spelling": null
+},
+"le jouet cassé|.": {
+"h": "ca6a8387d287b87c",
+"say": "Le jouet cassé.",
+"per": 0.0,
+"spelling": null
+},
+"le journal est en papier il se recycle|.": {
+"h": "57a4ecdb7040a51c",
+"say": "Le journal est en papier, il se recycle !",
+"per": 0.0,
+"spelling": null
+},
+"le journal est en papier l'aimant ne l'attrape pas|.": {
+"h": "b21771ebf54ac560",
+"say": "Le journal est en papier, l'aimant ne l'attrape pas.",
+"per": 0.0,
+"spelling": null
+},
+"le journal est en papier|.": {
+"h": "416d7307428b2a0d",
+"say": "Le journal est en papier.",
+"per": 0.0,
+"spelling": null
+},
+"le journal va dans la caisse du papier et du carton|.": {
+"h": "0e66fd86c2e1b565",
+"say": "Le journal va dans la caisse du papier et du carton.",
+"per": 0.0,
+"spelling": null
+},
+"le journal va dans le bac bleu|.": {
+"h": "d85f83b018f4a560",
+"say": "Le journal va dans le bac bleu.",
+"per": 0.0,
+"spelling": null
+},
+"le journal va dans le bac jaune|.": {
+"h": "42644e885a7bcb11",
+"say": "Le journal va dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"le journal|.": {
+"h": "7b4ce6520213cf3d",
+"say": "Le journal.",
+"per": 0.0,
+"spelling": null
+},
 "le linge devient sec l'eau s'est envolée dans l'air|.": {
 "h": "3e35b5de75b7905c",
 "say": "Le linge devient sec : l'eau s'est envolée dans l'air.",
@@ -11252,6 +12770,12 @@
 "le linge mouillé sèche au soleil|.": {
 "h": "cb91fb0c0c6d84ac",
 "say": "Le linge mouillé sèche au soleil.",
+"per": 0.0,
+"spelling": null
+},
+"le magasin reprend les piles usées|.": {
+"h": "2e945ecc25380aa7",
+"say": "Le magasin reprend les piles usées.",
 "per": 0.0,
 "spelling": null
 },
@@ -11309,6 +12833,12 @@
 "per": 0.0,
 "spelling": null
 },
+"le meilleur déchet c'est celui qu'on ne fait pas|.": {
+"h": "b3381ad450734875",
+"say": "Le meilleur déchet, c'est celui qu'on ne fait pas !",
+"per": 0.0,
+"spelling": null
+},
 "le miroir est froid mais pas assez pour faire de la glace|.": {
 "h": "705845e9f2fae867",
 "say": "Le miroir est froi, mais pas assez pour faire de la glace.",
@@ -11318,6 +12848,30 @@
 "le morceau de bois est-ce qu'il flotte ou est-ce qu'il coule|?": {
 "h": "a8cebb097ef0b8fa",
 "say": "Le morceau de bois, est-ce qu'il flotte, ou est-ce qu'il coule ?",
+"per": 0.0,
+"spelling": null
+},
+"le mouchoir sale ne se recycle pas|.": {
+"h": "a3530d972024d9da",
+"say": "Le mouchoir sale ne se recycle pas.",
+"per": 0.0,
+"spelling": null
+},
+"le mouchoir sale va dans le bac gris|.": {
+"h": "4c13934c96e62fc0",
+"say": "Le mouchoir sale va dans le bac gris.",
+"per": 0.0,
+"spelling": null
+},
+"le mouchoir sale va dans le bac vert|.": {
+"h": "a22260e0d6e85bb9",
+"say": "Le mouchoir sale va dans le bac vert.",
+"per": 0.0,
+"spelling": null
+},
+"le mouchoir sale|.": {
+"h": "d971f22ef3e967ef",
+"say": "Le mouchoir sale.",
 "per": 0.0,
 "spelling": null
 },
@@ -11345,15 +12899,147 @@
 "per": 0.0,
 "spelling": null
 },
+"le papier redevient du papier|.": {
+"h": "ec39b5ecf96227bf",
+"say": "Le papier redevient du papier.",
+"per": 0.0,
+"spelling": null
+},
+"le papier toilette on le fabrique avec des briques de lait|.": {
+"h": "417dd9ce8e3ef27a",
+"say": "Le papier toilette, on le fabrique avec des briques de lait.",
+"per": 0.0,
+"spelling": null
+},
+"le plastique peut devenir un tissu très doux|.": {
+"h": "84e6200445ff5072",
+"say": "Le plastique peut devenir un tissu très doux.",
+"per": 0.0,
+"spelling": null
+},
+"le plus souvent ces déchets vont à l'usine qui les brûle sa chaleur chauffe des maisons|.": {
+"h": "c36fb3efb27d59b1",
+"say": "Le plus souvent, ces déchets vont à l'usine qui les brûle : sa chaleur chauffe des maisons.",
+"per": 0.0,
+"spelling": null
+},
 "le poisson a besoin d'eau pour vivre comme toi|.": {
 "h": "b4493681213a9cfa",
 "say": "Le poisson a besoin d'eau pour vivre, comme toi.",
 "per": 0.0,
 "spelling": null
 },
+"le pompier lui éteint le feu et sauve les gens|.": {
+"h": "5de73610975567eb",
+"say": "Le pompier, lui, éteint le feu et sauve les gens.",
+"per": 0.0,
+"spelling": null
+},
+"le pot de confiture est en verre|.": {
+"h": "4e8d5bea262b2983",
+"say": "Le pot de confiture est en verre.",
+"per": 0.0,
+"spelling": null
+},
+"le pot de confiture va dans le bac blanc|.": {
+"h": "87c8d31c1598d4a7",
+"say": "Le pot de confiture va dans le bac blanc.",
+"per": 0.0,
+"spelling": null
+},
+"le pot de confiture va dans le bac vert|.": {
+"h": "db555fad1ea6ca4b",
+"say": "Le pot de confiture va dans le bac vert.",
+"per": 0.0,
+"spelling": null
+},
+"le pot de confiture|.": {
+"h": "a0020110c82a77c5",
+"say": "Le pot de confiture.",
+"per": 0.0,
+"spelling": null
+},
+"le pot de yaourt est en plastique l'aimant ne l'attrape pas|.": {
+"h": "75a7eaa384eca790",
+"say": "Le pot de yaourt est en plastique : l'aimant ne l'attrape pas.",
+"per": 0.057,
+"spelling": null
+},
+"le pot de yaourt est en plastique|.": {
+"h": "fed914d4cf45ce29",
+"say": "Le pot de yaourt est en plastique.",
+"per": 0.143,
+"spelling": null
+},
+"le pot de yaourt est un emballage en plastique il se recycle|.": {
+"h": "199594a8e0fca4df",
+"say": "Le pot de yaourt est un emballage en plastique : il se recycle !",
+"per": 0.051,
+"spelling": null
+},
+"le pot de yaourt va dans la caisse du plastique|.": {
+"h": "5b329bd1c7552de8",
+"say": "Le pot de yaourt va dans la caisse du plastique.",
+"per": 0.069,
+"spelling": null
+},
+"le pot de yaourt va dans le bac jaune|.": {
+"h": "c670634da9e47bf9",
+"say": "Le pot de yaourt va dans le bac jaune.",
+"per": 0.13,
+"spelling": null
+},
+"le pot de yaourt|.": {
+"h": "7a325d66e1243cb6",
+"say": "Le pot de yaourt.",
+"per": 0.273,
+"spelling": null
+},
 "le printemps arrive|.": {
 "h": "2f34f0d07a06c463",
 "say": "Le printemps arrive.",
+"per": 0.0,
+"spelling": null
+},
+"le prospectus est en papier il se recycle|.": {
+"h": "ef8cf53d335d1cd5",
+"say": "Le prospectus est en papier, il se recycle !",
+"per": 0.0,
+"spelling": null
+},
+"le prospectus est en papier|.": {
+"h": "438af4af6359aba7",
+"say": "Le prospectus est en papier.",
+"per": 0.0,
+"spelling": null
+},
+"le prospectus va dans la caisse du papier et du carton|.": {
+"h": "565b207b7936310d",
+"say": "Le prospectus va dans la caisse du papier et du carton.",
+"per": 0.0,
+"spelling": null
+},
+"le prospectus va dans le bac bleu|.": {
+"h": "8e1ba6f43b873530",
+"say": "Le prospectus va dans le bac bleu.",
+"per": 0.042,
+"spelling": null
+},
+"le prospectus va dans le bac jaune|.": {
+"h": "c7de1f4cedcc944c",
+"say": "Le prospectus va dans le bac jaune.",
+"per": 0.042,
+"spelling": null
+},
+"le prospectus|.": {
+"h": "2cf87fcc20d97adf",
+"say": "Le prospectus.",
+"per": 0.0,
+"spelling": null
+},
+"le pull on le fabrique avec des bouteilles en plastique|.": {
+"h": "86830dc418b2ad57",
+"say": "Le pull, on le fabrique avec des bouteilles en plastique.",
 "per": 0.0,
 "spelling": null
 },
@@ -11366,6 +13052,18 @@
 "le sable doré vient d'autres plages|.": {
 "h": "285b30b139f9984e",
 "say": "Le sable doré vient d'autres plages.",
+"per": 0.0,
+"spelling": null
+},
+"le sac en plastique finit vite à la poubelle|.": {
+"h": "949dccb013ef3f5f",
+"say": "Le sac en plastique finit vite à la poubelle.",
+"per": 0.0,
+"spelling": null
+},
+"le sac en tissu sert encore et encore|.": {
+"h": "9b85cdc89ec73921",
+"say": "Le sac en tissu sert encore et encore !",
 "per": 0.0,
 "spelling": null
 },
@@ -11411,6 +13109,108 @@
 "per": 0.0,
 "spelling": null
 },
+"le trognon de pomme est un reste de cuisine|.": {
+"h": "8a09db920199c294",
+"say": "Le trognon de pomme est un reste de cuisine.",
+"per": 0.071,
+"spelling": null
+},
+"le trognon de pomme va dans le bac marron|.": {
+"h": "2da821722286ac87",
+"say": "Le trognon de pomme va dans le bac marron.",
+"per": 0.038,
+"spelling": null
+},
+"le trognon de pomme va dans le composteur|.": {
+"h": "a809a1bd51d2f9b7",
+"say": "Le trognon de pomme va dans le composteur.",
+"per": 0.037,
+"spelling": null
+},
+"le trognon de pomme|.": {
+"h": "ecb96e34c235a75c",
+"say": "Le trognon de pomme.",
+"per": 0.0,
+"spelling": null
+},
+"le vélo on le fabrique avec des canettes|.": {
+"h": "35402abc3cd9fb11",
+"say": "Le vélo, on le fabrique avec des canettes.",
+"per": 0.0,
+"spelling": null
+},
+"le verre cassé va dans le bac gris|.": {
+"h": "86ff86825fc61d15",
+"say": "Le verre cassé va dans le bac gris.",
+"per": 0.048,
+"spelling": null
+},
+"le verre cassé va dans le bac vert|.": {
+"h": "78f33e719914471b",
+"say": "Le verre cassé va dans le bac vert.",
+"per": 0.0,
+"spelling": null
+},
+"le verre cassé|.": {
+"h": "a39ebd23f6739933",
+"say": "Le verre cassé.",
+"per": 0.0,
+"spelling": null
+},
+"le verre fondu redevient du verre|.": {
+"h": "6e200d64b3fa01ec",
+"say": "Le verre fondu redevient du verre.",
+"per": 0.0,
+"spelling": null
+},
+"le verre lui devient de nouvelles bouteilles|.": {
+"h": "6fda7796f2fc6268",
+"say": "Le verre, lui, devient de nouvelles bouteilles.",
+"per": 0.0,
+"spelling": null
+},
+"le verre recyclé devient de nouvelles bouteilles encore et encore|.": {
+"h": "d40fc41daba056f9",
+"say": "Le verre recyclé devient de nouvelles bouteilles, encore et encore !",
+"per": 0.0,
+"spelling": null
+},
+"le verre se recycle sans fin on en refait des bouteilles|.": {
+"h": "3e84c84106e79e5a",
+"say": "Le verre se recycle sans fin : on en refait des bouteilles !",
+"per": 0.0,
+"spelling": null
+},
+"le verre va à l'usine du verre on le fait fondre pour fabriquer de nouvelles bouteilles|.": {
+"h": "ceafaebb7405b919",
+"say": "Le verre va à l'usine du verre : on le fait fondre pour fabriquer de nouvelles bouteilles.",
+"per": 0.041,
+"spelling": null
+},
+"le vieux cahier est en papier il se recycle|.": {
+"h": "75bb6c410796d7b4",
+"say": "Le vieux cahier est en papier, il se recycle !",
+"per": 0.0,
+"spelling": null
+},
+"le vieux cahier va dans le bac bleu|.": {
+"h": "fe6a80530c656645",
+"say": "Le vieux cahier va dans le bac bleu.",
+"per": 0.0,
+"spelling": null
+},
+"le vieux cahier va dans le bac jaune|.": {
+"h": "1af085293588132c",
+"say": "Le vieux cahier va dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"le vieux cahier|.": {
+"h": "c832e8b4a1de95d1",
+"say": "Le vieux cahier.",
+"per": 0.0,
+"spelling": null
+},
 "le volcan d'octave pour devenir volcanologue et découvrir ce qui se cache dans un volcan|.": {
 "h": "ad4a673ca1c37a0f",
 "say": "Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan.",
@@ -11444,6 +13244,12 @@
 "le voyage de la goutte pour suivre ploc de la mer jusqu'au robinet|.": {
 "h": "95a6fc45e940af4b",
 "say": "Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet.",
+"per": 0.0,
+"spelling": null
+},
+"le voyage des déchets pour suivre le camion poubelle et découvrir ce que deviennent nos déchets|.": {
+"h": "5009c9e96c33196c",
+"say": "Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
 "per": 0.0,
 "spelling": null
 },
@@ -11507,6 +13313,84 @@
 "per": 0.0,
 "spelling": null
 },
+"les boîtes en carton ont une nouvelle vie|.": {
+"h": "ea8af5a1642d50c0",
+"say": "Les boîtes en carton ont une nouvelle vie !",
+"per": 0.0,
+"spelling": null
+},
+"les bouteilles d'eau font beaucoup d'emballages|.": {
+"h": "d202217026b482d6",
+"say": "Les bouteilles d'eau font beaucoup d'emballages.",
+"per": 0.0,
+"spelling": null
+},
+"les bouteilles en plastique elles deviennent des pulls ou des peluches|.": {
+"h": "5f308b08ba9532b6",
+"say": "Les bouteilles en plastique, elles, deviennent des pulls ou des peluches.",
+"per": 0.0,
+"spelling": null
+},
+"les bouteilles en plastique ont une nouvelle vie|.": {
+"h": "720d9e8978316bb2",
+"say": "Les bouteilles en plastique ont une nouvelle vie !",
+"per": 0.0,
+"spelling": null
+},
+"les bouteilles en verre ont une nouvelle vie|.": {
+"h": "dbb812c2ce2a6548",
+"say": "Les bouteilles en verre ont une nouvelle vie !",
+"per": 0.0,
+"spelling": null
+},
+"les bouteilles les pots et les bocaux en verre vont dans le bac blanc|.": {
+"h": "4930f26bfb4fa79b",
+"say": "Les bouteilles, les pots et les bocaux en verre vont dans le bac blanc.",
+"per": 0.0,
+"spelling": null
+},
+"les bouteilles les pots et les bocaux en verre vont dans le bac vert|.": {
+"h": "2c259e01c93a4d96",
+"say": "Les bouteilles, les pots et les bocaux en verre vont dans le bac vert.",
+"per": 0.028,
+"spelling": null
+},
+"les bouteilles neuves on les fabrique avec du verre|.": {
+"h": "eaa2cf2543d9e4a7",
+"say": "Les bouteilles neuves, on les fabrique avec du verre.",
+"per": 0.0,
+"spelling": null
+},
+"les branches ne sont pas des emballages pas dans le bac jaune|.": {
+"h": "472becd835068fb2",
+"say": "Les branches ne sont pas des emballages, pas dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"les briques de lait elles deviennent du papier toilette|.": {
+"h": "7fd4f942ea6b6c4a",
+"say": "Les briques de lait, elles, deviennent du papier toilette.",
+"per": 0.0,
+"spelling": null
+},
+"les briques de lait ont une nouvelle vie|.": {
+"h": "46a80440a13b68c9",
+"say": "Les briques de lait ont une nouvelle vie !",
+"per": 0.0,
+"spelling": null
+},
+"les briques de lait recyclées deviennent du papier toilette|.": {
+"h": "35965ab694eecf79",
+"say": "Les briques de lait recyclées deviennent du papier toilette !",
+"per": 0.0,
+"spelling": null
+},
+"les briques sont surtout en carton elles redeviennent du papier|.": {
+"h": "b346d72c7fc2e5a2",
+"say": "Les briques sont surtout en carton : elles redeviennent du papier.",
+"per": 0.0,
+"spelling": null
+},
 "les bulles leur donnent de l'air|.": {
 "h": "f33b225ebfaa72aa",
 "say": "Les bulles leur donnent de l'air.",
@@ -11519,9 +13403,51 @@
 "per": 0.0,
 "spelling": null
 },
+"les canettes elles deviennent des vélos|.": {
+"h": "a1850bce091364c5",
+"say": "Les canettes, elles, deviennent des vélos.",
+"per": 0.0,
+"spelling": null
+},
+"les canettes ont une nouvelle vie|.": {
+"h": "0c6791ee98587cfb",
+"say": "Les canettes ont une nouvelle vie !",
+"per": 0.0,
+"spelling": null
+},
+"les cartons eux deviennent des cartons neufs|.": {
+"h": "8e3f46140934097b",
+"say": "Les cartons, eux, deviennent des cartons neufs.",
+"per": 0.0,
+"spelling": null
+},
 "les cendres retombent partout comme une neige grise|.": {
 "h": "2699e6b701250018",
 "say": "Les cendres retombent partout, comme une neige grise.",
+"per": 0.0,
+"spelling": null
+},
+"les coquilles d'œuf sont des restes de cuisine|.": {
+"h": "d0da50049d9040d5",
+"say": "Les coquilles d'œuf sont des restes de cuisine.",
+"per": 0.038,
+"spelling": null
+},
+"les coquilles d'œuf vont dans le bac marron|.": {
+"h": "cf9633db68e3bec0",
+"say": "Les coquilles d'œuf vont dans le bac marron.",
+"per": 0.043,
+"spelling": null
+},
+"les coquilles d'œuf vont dans le composteur|.": {
+"h": "67e053320256abc8",
+"say": "Les coquilles d'œuf vont dans le composteur.",
+"per": 0.0,
+"spelling": null
+},
+"les coquilles d'œuf|.": {
+"h": "c46a5e36bca9ee6c",
+"say": "Les coquilles d'œuf.",
 "per": 0.0,
 "spelling": null
 },
@@ -11531,10 +13457,64 @@
 "per": 0.0,
 "spelling": null
 },
+"les épluchures deviennent du compost qui aide les légumes à pousser|.": {
+"h": "5b01f5df0aac43c4",
+"say": "Les épluchures deviennent du compost, qui aide les légumes à pousser !",
+"per": 0.0,
+"spelling": null
+},
+"les épluchures deviennent du compost|.": {
+"h": "3afccb584dcaedf6",
+"say": "Les épluchures deviennent du compost.",
+"per": 0.0,
+"spelling": null
+},
+"les épluchures elles deviennent du compost|.": {
+"h": "6790c9a2aa5f8f12",
+"say": "Les épluchures, elles, deviennent du compost.",
+"per": 0.0,
+"spelling": null
+},
+"les épluchures sont des restes de cuisine elles deviendront du compost|.": {
+"h": "0e5bf4267f65a64a",
+"say": "Les épluchures sont des restes de cuisine : elles deviendront du compost !",
+"per": 0.0,
+"spelling": null
+},
+"les épluchures vont dans le bac marron|.": {
+"h": "5f5127821c2d46e1",
+"say": "Les épluchures vont dans le bac marron.",
+"per": 0.0,
+"spelling": null
+},
+"les épluchures vont dans le composteur|.": {
+"h": "55706636afde557b",
+"say": "Les épluchures vont dans le composteur.",
+"per": 0.0,
+"spelling": null
+},
+"les épluchures|.": {
+"h": "365a565921de0aa7",
+"say": "Les épluchures.",
+"per": 0.0,
+"spelling": null
+},
 "les grilles attrapent les gros déchets|.": {
 "h": "dda5933c110f45a4",
 "say": "Les grilles attrape les gros déchets.",
 "per": 0.048,
+"spelling": null
+},
+"les grosses branches vont à la déchetterie elles y deviennent du compost|.": {
+"h": "f026dc20287128b8",
+"say": "Les grosses branches vont à la déchetterie : elles y deviennent du compost.",
+"per": 0.0,
+"spelling": null
+},
+"les journaux eux deviennent du papier neuf|.": {
+"h": "7bc3aedd47e14e18",
+"say": "Les journaux, eux, deviennent du papier neuf.",
+"per": 0.0,
 "spelling": null
 },
 "les lingettes ne se défont pas dans l'eau elles bouchent les tuyaux|.": {
@@ -11549,10 +13529,88 @@
 "per": 0.0,
 "spelling": null
 },
+"les papiers vont au centre de tri ils deviendront du papier neuf|.": {
+"h": "38aa6c871d1d8e95",
+"say": "Les papiers vont au centre de tri : ils deviendront du papier neuf.",
+"per": 0.0,
+"spelling": null
+},
+"les papiers vont d'abord là où on trie|.": {
+"h": "da34426df99c7e8d",
+"say": "Les papiers vont d'abord là où on trie.",
+"per": 0.0,
+"spelling": null
+},
+"les piles usées ne vont dans aucune poubelle de la maison|.": {
+"h": "2b957ffb7f97f71d",
+"say": "Les piles usées ne vont dans aucune poubelle de la maison.",
+"per": 0.0,
+"spelling": null
+},
+"les piles usées vont dans la boîte à piles du magasin dans la nature elles sont dangereuses|.": {
+"h": "660354d3bc8d1b3b",
+"say": "Les piles usées vont dans la boîte à piles du magasin : dans la nature, elles sont dangereuses.",
+"per": 0.0,
+"spelling": null
+},
 "les poissons vivent dans la rivière pas dans la station|.": {
 "h": "b286f528013d4553",
 "say": "Les poissons vivent dans la rivière, pas dans la station !",
 "per": 0.0,
+"spelling": null
+},
+"les restes de cuisine comme les épluchures vont dans le bac marron|.": {
+"h": "1dee1655e4ba61e4",
+"say": "Les restes de cuisine, comme les épluchures, vont dans le bac marron.",
+"per": 0.0,
+"spelling": null
+},
+"les restes de cuisine comme les épluchures vont dans le composteur|.": {
+"h": "1871ea86cdcb143c",
+"say": "Les restes de cuisine, comme les épluchures, vont dans le composteur.",
+"per": 0.0,
+"spelling": null
+},
+"les restes de cuisine deviennent une terre pour les plantes|.": {
+"h": "5f2b678424cdd579",
+"say": "Les restes de cuisine deviennent une terre pour les plantes.",
+"per": 0.057,
+"spelling": null
+},
+"les restes de cuisine vont au compost ils deviennent une terre très bonne pour les plantes|.": {
+"h": "6338713d8a97e8af",
+"say": "Les restes de cuisine vont au compost, ils deviennent une terre très bonne pour les plantes.",
+"per": 0.0,
+"spelling": null
+},
+"les vêtements ne sont pas des emballages pas dans le bac jaune|.": {
+"h": "fe3cb61a39b65644",
+"say": "Les vêtements ne sont pas des emballages, pas dans le bac jaune.",
+"per": 0.0,
+"spelling": null
+},
+"les vêtements vont dans la borne à vêtements ils seront donnés ou recyclés|.": {
+"h": "5a22c66ea91b62dc",
+"say": "Les vêtements vont dans la borne à vêtements, ils seront donnés ou recyclés.",
+"per": 0.0,
+"spelling": null
+},
+"les vieux cartons recyclés deviennent des cartons neufs|.": {
+"h": "40018c320dd19432",
+"say": "Les vieux cartons recyclés deviennent des cartons neufs !",
+"per": 0.0,
+"spelling": null
+},
+"les vieux journaux ont une nouvelle vie|.": {
+"h": "00dabc9048c73b53",
+"say": "Les vieux journaux ont une nouvelle vie !",
+"per": 0.0,
+"spelling": null
+},
+"les vieux papiers recyclés deviennent du papier neuf pour faire des cahiers|.": {
+"h": "f17fd91c3b01c19f",
+"say": "Les vieux papiers recyclés deviennent du papier neuf, pour faire des cahiers !",
+"per": 0.067,
 "spelling": null
 },
 "les volcanologues préviennent tout le monde à temps on s'éloigne avec les adultes et on est en sécurité|.": {
@@ -11579,9 +13637,21 @@
 "per": 0.0,
 "spelling": null
 },
+"lesquels|?": {
+"h": "b8766212ea4ad889",
+"say": "Lesquels ?",
+"per": 0.0,
+"spelling": null
+},
 "maintenant elle monte tout en haut d'une grande tour|.": {
 "h": "9f4bc1da122e295c",
 "say": "Maintenant, elle monte tout en haut d'une grande tour.",
+"per": 0.0,
+"spelling": null
+},
+"maintenant touche le camion|.": {
+"h": "63f04c26a1704742",
+"say": "Maintenant, touche le camion !",
 "per": 0.0,
 "spelling": null
 },
@@ -11594,6 +13664,12 @@
 "même tout petit le grain de raisin coule|.": {
 "h": "65b8ca56779cb97d",
 "say": "Même tout petit, le grain de raisin coule.",
+"per": 0.0,
+"spelling": null
+},
+"merci|.": {
+"h": "4e27767b4a17e160",
+"say": "Merci !",
 "per": 0.0,
 "spelling": null
 },
@@ -11621,6 +13697,24 @@
 "per": 0.0,
 "spelling": null
 },
+"non pas dans la poubelle la peinture abîme la nature|.": {
+"h": "5f34dbc4a59f33ce",
+"say": "Non, pas dans la poubelle : la peinture abîme la nature.",
+"per": 0.0,
+"spelling": null
+},
+"non pas dans la poubelle les piles sont dangereuses pour la nature|.": {
+"h": "2dcf9c358fa52b82",
+"say": "Non, pas dans la poubelle : les piles sont dangereuses pour la nature.",
+"per": 0.0,
+"spelling": null
+},
+"non pas dans la poubelle on rapporte les médicaments|.": {
+"h": "2a5d6ea4350c9739",
+"say": "Non, pas dans la poubelle : on rapporte les médicaments.",
+"per": 0.0,
+"spelling": null
+},
 "non une lingette ne se recycle pas elle va dans la poubelle|.": {
 "h": "54fab770d46dd30f",
 "say": "Non, une lingette ne se recycle pas, elle va dans la poubelle.",
@@ -11637,6 +13731,12 @@
 "h": "bf2eae5d46f74aae",
 "say": "Octave enfile sa combinaison argentée : aujourd'hui, il est volcanologue !",
 "per": 0.0,
+"spelling": null
+},
+"octave lui montre les emballages vont dans le bac jaune pour être recyclés|.": {
+"h": "c0d6bff430076c78",
+"say": "Octave lui montre : les emballages vont dans le bac jaune, pour être recyclés.",
+"per": 0.043,
 "spelling": null
 },
 "octave met de l'eau dans le congélateur où il fait très froid|.": {
@@ -11699,6 +13799,36 @@
 "per": 0.0,
 "spelling": null
 },
+"on le répare il pourra encore servir|.": {
+"h": "7dc955bad2f81282",
+"say": "On le répare : il pourra encore servir !",
+"per": 0.0,
+"spelling": null
+},
+"on les donne un autre enfant pourra les porter|.": {
+"h": "5dbc8faf6f03bd75",
+"say": "On les donne : un autre enfant pourra les porter !",
+"per": 0.0,
+"spelling": null
+},
+"on les rapporte au pharmacien|.": {
+"h": "47cb4aff3f9273b5",
+"say": "On les rapporte au pharmacien.",
+"per": 0.0,
+"spelling": null
+},
+"on les rapporte là où on les achète|.": {
+"h": "ccb6b772235b8620",
+"say": "On les rapporte là où on les achète.",
+"per": 0.0,
+"spelling": null
+},
+"on ne grimpe pas sur les poubelles on pourrait tomber|.": {
+"h": "c76838f6a7c39ee1",
+"say": "On ne grimpe pas sur les poubelles, on pourrait tomber.",
+"per": 0.0,
+"spelling": null
+},
 "on ne touche jamais la lave|.": {
 "h": "7aa2aca7e792e620",
 "say": "On ne touche jamais la lave !",
@@ -11717,6 +13847,24 @@
 "per": 0.0,
 "spelling": null
 },
+"on rapporte les vieux médicaments à la pharmacie|.": {
+"h": "103eea38e24ef259",
+"say": "On rapporte les vieux médicaments à la pharmacie.",
+"per": 0.0,
+"spelling": null
+},
+"on recycle aussi les papiers les journaux les cahiers les prospectus|.": {
+"h": "65bdb7fd02a6d76b",
+"say": "On recycle aussi les papiers, les journaux, les cahiers, les prospectus…",
+"per": 0.024,
+"spelling": null
+},
+"on reste sur le trottoir et on fait coucou aux éboueurs|.": {
+"h": "552afab6efe0f4ac",
+"say": "On reste sur le trottoir, et on fait coucou aux éboueurs !",
+"per": 0.0,
+"spelling": null
+},
 "on s'éloigne avec les adultes|.": {
 "h": "343f5b032b49e986",
 "say": "On s'éloigne, avec les adultes.",
@@ -11729,6 +13877,12 @@
 "per": 0.0,
 "spelling": null
 },
+"où apporte-t-on ce vieux pot de peinture|?": {
+"h": "07a6f093e717c7a9",
+"say": "Où apporte-t-on ce vieux pot de peinture ?",
+"per": 0.0,
+"spelling": null
+},
 "où arrive-t-elle|?": {
 "h": "72824291810f437e",
 "say": "Où arrive-t-elle ?",
@@ -11738,6 +13892,12 @@
 "où arrive-t-il|?": {
 "h": "e43b014019a9a76f",
 "say": "Où arrive-t-il ?",
+"per": 0.0,
+"spelling": null
+},
+"où emporte-t-on ces grosses branches du jardin|?": {
+"h": "f7cf920b73533ea9",
+"say": "Où emporte-t-on ces grosses branches du jardin ?",
 "per": 0.0,
 "spelling": null
 },
@@ -11769,6 +13929,36 @@
 "h": "0c17bbeffe8d728a",
 "say": "Où faut-il mettre le réservoir, pour que l'eau arrive toute seule au robinet ?",
 "per": 0.0,
+"spelling": null
+},
+"où l'emporte-t-on|?": {
+"h": "d0540dfc8ed61902",
+"say": "Où l'emporte-t-on ?",
+"per": 0.077,
+"spelling": null
+},
+"où le camion emporte-t-il ces déchets|?": {
+"h": "eaabb3531d17316b",
+"say": "Où le camion emporte-t-il ces déchets ?",
+"per": 0.0,
+"spelling": null
+},
+"où les apporte-t-on pour qu'un autre enfant les porte|?": {
+"h": "3260bdb7a130134f",
+"say": "Où les apporte-t-on, pour qu'un autre enfant les porte ?",
+"per": 0.0,
+"spelling": null
+},
+"où les rapporte-t-on|?": {
+"h": "a8f25ca5a044c29f",
+"say": "Où les rapporte-t-on ?",
+"per": 0.091,
+"spelling": null
+},
+"où rapporte-t-on les vieux médicaments|?": {
+"h": "7c32b9f7dbb7fad6",
+"say": "Où rapporte-t-on les vieux médicaments ?",
+"per": 0.045,
 "spelling": null
 },
 "où va l'eau de la station d'épuration|?": {
@@ -11804,6 +13994,12 @@
 "où va-t-elle|?": {
 "h": "0bc57825c1f0d9c5",
 "say": "Où va-t-elle ?",
+"per": 0.0,
+"spelling": null
+},
+"où va-t-il le plus souvent|?": {
+"h": "60182404ef6c89b8",
+"say": "Où va-t-il, le plus souvent ?",
 "per": 0.0,
 "spelling": null
 },
@@ -11993,6 +14189,24 @@
 "per": 0.0,
 "spelling": null
 },
+"pose la poubelle à l'arrière du camion l'éboueur va la vider|.": {
+"h": "d6952ae25526cdfc",
+"say": "Pose la poubelle à l'arrière du camion : l'éboueur va la vider.",
+"per": 0.0,
+"spelling": null
+},
+"pour boire de l'eau à la maison qu'est-ce qui fait le moins de déchets|?": {
+"h": "1307b3d262216b1a",
+"say": "Pour boire de l'eau à la maison, qu'est-ce qui fait le moins de déchets ?",
+"per": 0.0,
+"spelling": null
+},
+"pour faire pousser les légumes on utilise le compost des épluchures|.": {
+"h": "d21f0b0f4fd5e172",
+"say": "Pour faire pousser les légumes, on utilise le compost des épluchures.",
+"per": 0.0,
+"spelling": null
+},
 "pour l'instant elle est liquide|.": {
 "h": "5134e946c9e87c46",
 "say": "Pour l'instant, elle est liquide.",
@@ -12002,6 +14216,24 @@
 "pour la maison on va chercher de l'eau dans la rivière|.": {
 "h": "4b33e1fbead1fbdf",
 "say": "Pour la maison, on va chercher de l'eau dans la rivière.",
+"per": 0.0,
+"spelling": null
+},
+"pour la promenade qu'emporte-t-on pour faire moins de déchets|?": {
+"h": "d708d08be1430b7d",
+"say": "Pour la promenade, qu'emporte-t-on pour faire moins de déchets ?",
+"per": 0.029,
+"spelling": null
+},
+"pour le goûter qu'est-ce qui fait le moins de déchets|?": {
+"h": "1d0de4206caee6f2",
+"say": "Pour le goûter, qu'est-ce qui fait le moins de déchets ?",
+"per": 0.0,
+"spelling": null
+},
+"pour refaire des bouteilles on fait fondre le verre dans un four|.": {
+"h": "242c6c30cf009dc8",
+"say": "Pour refaire des bouteilles, on fait fondre le verre dans un four.",
 "per": 0.0,
 "spelling": null
 },
@@ -12167,6 +14399,12 @@
 "per": 0.0,
 "spelling": null
 },
+"que devient le verre|?": {
+"h": "97a8786b36429402",
+"say": "Que devient le verre ?",
+"per": 0.0,
+"spelling": null
+},
 "que devient-elle de la glace de l'eau ou de la vapeur|?": {
 "h": "5380061593dd9981",
 "say": "Que devient-elle : de la glace, de l'eau, ou de la vapeur ?",
@@ -12197,6 +14435,12 @@
 "per": 0.0,
 "spelling": null
 },
+"que fais-tu|?": {
+"h": "c64abc43982096f5",
+"say": "Que fais-tu ?",
+"per": 0.0,
+"spelling": null
+},
 "que fait une volcanologue|?": {
 "h": "b65076b9e7808acc",
 "say": "Que fait une volcanologue ?",
@@ -12206,6 +14450,24 @@
 "que fait-elle ensuite|?": {
 "h": "8032176f1008dfb9",
 "say": "Que fait-elle ensuite ?",
+"per": 0.0,
+"spelling": null
+},
+"que fait-il pousser|?": {
+"h": "d5c743257dc08b84",
+"say": "Que fait-il pousser ?",
+"per": 0.0,
+"spelling": null
+},
+"que fait-on pour faire moins de déchets|?": {
+"h": "e9c3e9b90ccd2d8a",
+"say": "Que fait-on pour faire moins de déchets ?",
+"per": 0.0,
+"spelling": null
+},
+"que fait-on|?": {
+"h": "f7a7154b700e0ae7",
+"say": "Que fait-on ?",
 "per": 0.0,
 "spelling": null
 },
@@ -12224,6 +14486,12 @@
 "que met-elle sur le visage|?": {
 "h": "b91621859620ef4d",
 "say": "Que met-elle sur le visage ?",
+"per": 0.0,
+"spelling": null
+},
+"que peut-on fabriquer avec|?": {
+"h": "0579d193834b8616",
+"say": "Que peut-on fabriquer avec ?",
 "per": 0.0,
 "spelling": null
 },
@@ -12251,9 +14519,21 @@
 "per": 0.0,
 "spelling": null
 },
+"quel sac fait le moins de déchets|?": {
+"h": "590287f52565c172",
+"say": "Quel sac fait le moins de déchets ?",
+"per": 0.053,
+"spelling": null
+},
 "qui a besoin d'eau pour vivre|?": {
 "h": "cc123a69f1fcc1eb",
 "say": "Qui a besoin d'eau pour vivre ?",
+"per": 0.0,
+"spelling": null
+},
+"qui ramasse nos poubelles avec le camion|?": {
+"h": "76393666b521837f",
+"say": "Qui ramasse nos poubelles avec le camion ?",
 "per": 0.0,
 "spelling": null
 },
@@ -12317,6 +14597,12 @@
 "per": 0.0,
 "spelling": null
 },
+"regarde je te montre le chemin|.": {
+"h": "efeb45ab00039f58",
+"say": "Regarde : je te montre le chemin.",
+"per": 0.0,
+"spelling": null
+},
 "regarde la lave coule et il n'y a pas de grand nuage gris|.": {
 "h": "cd3e096eeb829eee",
 "say": "Regarde : la lave coule, et il n'y a pas de grand nuage gris.",
@@ -12344,6 +14630,12 @@
 "ses petits trous sont pleins d'air elle est très légère|.": {
 "h": "5b6a61ed27bfec62",
 "say": "Ses petits trous sont pleins d'air : elle est très légère.",
+"per": 0.0,
+"spelling": null
+},
+"si on le jette c'est un déchet de plus|.": {
+"h": "241e69eb95c2fb56",
+"say": "Si on le jette, c'est un déchet de plus.",
 "per": 0.0,
 "spelling": null
 },
@@ -12386,6 +14678,12 @@
 "suis la flèche du bas vers le haut|.": {
 "h": "80a03767c10b7959",
 "say": "Suis la flèche, du bas vers le haut.",
+"per": 0.0,
+"spelling": null
+},
+"suis le voyage des déchets avec octave|.": {
+"h": "8feded34756b69b5",
+"say": "Suis le voyage des déchets avec Octave !",
 "per": 0.0,
 "spelling": null
 },
@@ -12515,6 +14813,12 @@
 "per": 0.0,
 "spelling": null
 },
+"tous ces petits paquets ce sont des emballages à jeter|.": {
+"h": "29b348b08480d005",
+"say": "Tous ces petits paquets, ce sont des emballages à jeter.",
+"per": 0.0,
+"spelling": null
+},
 "tout au fond sous le volcan il fait si chaud que la roche fond c'est le magma|.": {
 "h": "aff2ae48829571fb",
 "say": "Tout au fond, sous le volcan, il fait si chô que la roche fond, c'est le magma.",
@@ -12527,9 +14831,33 @@
 "per": 0.0,
 "spelling": null
 },
+"tout est bien trié basile est ravi|.": {
+"h": "f2fd2bc77a3ba2c0",
+"say": "Tout est bien trié : Basile est ravi !",
+"per": 0.0,
+"spelling": null
+},
+"tout est trié les emballages peuvent partir à l'usine|.": {
+"h": "657ee30c4970133f",
+"say": "Tout est trié : les emballages peuvent partir à l'usine.",
+"per": 0.0,
+"spelling": null
+},
 "toutes les rivières finissent par arriver au même endroit tout en bas|.": {
 "h": "4c7edd27f409cdd6",
 "say": "Toutes les rivières finissent par arriver au même endroit, tout en bas.",
+"per": 0.0,
+"spelling": null
+},
+"trie ses déchets et les restes de cuisine aussi|.": {
+"h": "d2efeea1646af198",
+"say": "Trie ses déchets, et les restes de cuisine aussi !",
+"per": 0.0,
+"spelling": null
+},
+"tu connais toutes les poubelles|.": {
+"h": "8b22f3a114163b8b",
+"say": "Tu connais toutes les poubelles !",
 "per": 0.0,
 "spelling": null
 },
@@ -12587,6 +14915,12 @@
 "per": 0.0,
 "spelling": null
 },
+"un jouet réparé ça peut encore servir|.": {
+"h": "9d1b4a479ad1b235",
+"say": "Un jouet réparé, ça peut encore servir.",
+"per": 0.0,
+"spelling": null
+},
 "un masque de carnaval c'est pour faire la fête il ne nettoie pas l'air|.": {
 "h": "7ea15c96ae06d42b",
 "say": "Un masque de carnaval, c'est pour faire la fête : il ne nettoie pas l'air !",
@@ -12603,6 +14937,18 @@
 "h": "1d988a21a750fa7f",
 "say": "Un short ne protège pas de la chaleur de la lave.",
 "per": 0.0,
+"spelling": null
+},
+"un verre à boire cassé n'est pas un emballage il ne va pas avec les bouteilles|.": {
+"h": "1b556f02cde74543",
+"say": "Un verre à boire cassé n'est pas un emballage : il ne va pas avec les bouteilles.",
+"per": 0.0,
+"spelling": null
+},
+"un verre à boire cassé ne va pas avec les bouteilles et le couvercle en métal d'un bocal va dans le bac jaune|.": {
+"h": "156b222485c988f6",
+"say": "Un verre à boire cassé ne va pas avec les bouteilles, et le couvercle en métal d'un bocal va dans le bac jaune.",
+"per": 0.03,
 "spelling": null
 },
 "un volcan endormi est tout calme des arbres poussent sur ses pentes|.": {
@@ -12653,6 +14999,12 @@
 "per": 0.0,
 "spelling": null
 },
+"une fois triés nos déchets ont une nouvelle vie une bouteille peut devenir un pull une canette un vélo|.": {
+"h": "23213a5a9ac4ef34",
+"say": "Une fois triés, nos déchets ont une nouvelle vie : une bouteille peut devenir un pull, une canette un vélo !",
+"per": 0.034,
+"spelling": null
+},
 "une grande tour avec un gros réservoir tout en haut|.": {
 "h": "daeae5bf72c12b25",
 "say": "Une grande tour, avec un gros réservoir tout en haut.",
@@ -12674,6 +15026,12 @@
 "une pompe aspire l'eau de la rivière et l'envoie à l'usine|.": {
 "h": "da873ac21d490106",
 "say": "Une pompe aspire l'eau de la rivière, et l'envoie à l'usine.",
+"per": 0.0,
+"spelling": null
+},
+"voici des papiers avec les emballages|.": {
+"h": "9e55dbc6e95e0d5a",
+"say": "Voici des papiers, avec les emballages.",
 "per": 0.0,
 "spelling": null
 },
@@ -12719,6 +15077,12 @@
 "per": 0.0,
 "spelling": null
 },
+"voici le camion poubelle et les éboueurs|.": {
+"h": "06501da09e2687de",
+"say": "Voici le camion poubelle, et les éboueurs !",
+"per": 0.0,
+"spelling": null
+},
 "voici le mont cameroun un volcan d'afrique qui se réveille de temps en temps|.": {
 "h": "aae374778971f723",
 "say": "Voici le mont Cameroune, un volcan d'Afrique qui se réveille de temps en temps.",
@@ -12746,6 +15110,36 @@
 "voici le stromboli une petite île volcan qui lance des étincelles toutes les quelques minutes|.": {
 "h": "a72c0ec5672d4ec8",
 "say": "Voici le Stromboli, une petite ile volcan qui lance des étincelles toutes les quelques minutes.",
+"per": 0.0,
+"spelling": null
+},
+"voici le voyage d'un mouchoir sale|.": {
+"h": "05c2487bdb7db2a4",
+"say": "Voici le voyage d'un mouchoir sale.",
+"per": 0.0,
+"spelling": null
+},
+"voici le voyage d'un vieux journal|.": {
+"h": "5ff4fbd8a48cf4cb",
+"say": "Voici le voyage d'un vieux journal.",
+"per": 0.0,
+"spelling": null
+},
+"voici le voyage d'une bouteille en plastique|.": {
+"h": "4a305225bee198ad",
+"say": "Voici le voyage d'une bouteille en plastique.",
+"per": 0.0,
+"spelling": null
+},
+"voici le voyage d'une bouteille en verre|.": {
+"h": "6d8dec401ea5a03c",
+"say": "Voici le voyage d'une bouteille en verre.",
+"per": 0.0,
+"spelling": null
+},
+"voici le voyage des épluchures|.": {
+"h": "d8b7777f933b558d",
+"say": "Voici le voyage des épluchures.",
 "per": 0.0,
 "spelling": null
 },
@@ -14528,12 +16922,6 @@
 "puis sa colonne|,": {
 "h": "ef8e9c6c17969699",
 "say": "Puis sa colonne :",
-"per": 0.0,
-"spelling": null
-},
-"qu'est-ce qui manque|?": {
-"h": "ac79f4c5efa72b1f",
-"say": "Qu'est-ce qui manque ?",
 "per": 0.0,
 "spelling": null
 },

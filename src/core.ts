@@ -4,7 +4,7 @@
 export type DomainId = "lecture" | "nombres" | "voyages" | "enigmes" | "decouvertes" | "atelier" | "coeur";
 export type Form = "manipulation" | "image" | "symbole" | "recit" | "corrige";
 export type ActivityId = "drapeau" | "marche" | "syllabes" | "chants" | "lis" | "nenuphars" | "partage"
-  | "formes" | "bip" | "motifs" | "theatre" | "flotte" | "goutte" | "volcan" | "atelierdrapeaux" | "dessin" | "histoires";
+  | "formes" | "bip" | "motifs" | "theatre" | "flotte" | "goutte" | "volcan" | "tri" | "dechets" | "atelierdrapeaux" | "dessin" | "histoires";
 export type Mastery = "nouveau" | "decouverte" | "en-cours" | "acquise" | "consolidee";
 
 export interface DomainDef { id: DomainId; label: string; color: string; island: string }
@@ -72,6 +72,18 @@ export const SKILLS: SkillDef[] = [
   { id: "DECOUV.VOLCAN.TYPES", domain: "decouvertes", label: "Volcans rouges et volcans gris, endormis ou réveillés", palier: 2, dRef: 0.5, activity: "volcan" },
   { id: "DECOUV.VOLCAN.METIER", domain: "decouvertes", label: "Le métier de volcanologue : se protéger, surveiller, prévenir", palier: 2, dRef: 0.1, activity: "volcan" },
   { id: "DECOUV.VOLCAN.MONDE", domain: "decouvertes", label: "Des volcans du monde et les drapeaux de leurs pays", palier: 3, dRef: 0.9, activity: "volcan" },
+  { id: "DECOUV.TRI.EMBALLAGES", domain: "decouvertes", label: "Trier : les emballages au bac jaune, le reste à part", palier: 1, dRef: -0.4, activity: "tri" },
+  { id: "DECOUV.TRI.VERRE", domain: "decouvertes", label: "Trier le verre : bouteilles, pots et bocaux", palier: 1, dRef: -0.1, activity: "tri" },
+  { id: "DECOUV.TRI.CUISINE", domain: "decouvertes", label: "Trier les restes de cuisine (bac marron ou composteur)", palier: 2, dRef: 0.2, activity: "tri" },
+  { id: "DECOUV.TRI.PAPIERS", domain: "decouvertes", label: "Trier les papiers : journaux, cahiers, prospectus", palier: 2, dRef: 0.3, activity: "tri" },
+  { id: "DECOUV.TRI.PIEGES", domain: "decouvertes", label: "Déjouer les pièges du tri : vaisselle, verre cassé, couvercle en métal", palier: 3, dRef: 0.9, activity: "tri" },
+  { id: "DECOUV.TRI.EXPERT", domain: "decouvertes", label: "Le grand tri : toutes les poubelles à la fois", palier: 3, dRef: 1.0, activity: "tri" },
+  { id: "DECOUV.DECHETS.CAMION", domain: "decouvertes", label: "Le camion poubelle et les éboueurs (et rester sur le trottoir)", palier: 1, dRef: -0.5, activity: "dechets" },
+  { id: "DECOUV.DECHETS.ROUTE", domain: "decouvertes", label: "Où va chaque camion : centre de tri, usine du verre, compost, usine qui chauffe", palier: 2, dRef: 0.2, activity: "dechets" },
+  { id: "DECOUV.DECHETS.CENTRE", domain: "decouvertes", label: "Au centre de tri : plastique, métal, papier et carton ; l'aimant", palier: 2, dRef: 0.35, activity: "dechets" },
+  { id: "DECOUV.DECHETS.VIE", domain: "decouvertes", label: "La nouvelle vie des déchets recyclés, et leur voyage dans l'ordre", palier: 2, dRef: 0.6, activity: "dechets" },
+  { id: "DECOUV.DECHETS.AILLEURS", domain: "decouvertes", label: "Piles, médicaments, vêtements, gros objets : où les rapporter", palier: 3, dRef: 0.9, activity: "dechets" },
+  { id: "DECOUV.DECHETS.MOINS", domain: "decouvertes", label: "Faire moins de déchets : gourde, sac en tissu, réparer, donner", palier: 2, dRef: 0.3, activity: "dechets" },
   { id: "COEUR.EMOTIONS", domain: "coeur", label: "Reconnaître et nommer les émotions", palier: 1, dRef: -0.6, activity: "theatre" },
   { id: "COEUR.CAUSES", domain: "coeur", label: "Comprendre pourquoi on ressent une émotion", palier: 1, dRef: 0, activity: "theatre" },
   { id: "COEUR.AIDER", domain: "coeur", label: "Choisir une façon d'aider", palier: 1, dRef: -0.2, activity: "theatre" },

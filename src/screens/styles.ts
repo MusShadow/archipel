@@ -268,6 +268,49 @@ button.tok{cursor:pointer;border-color:var(--line)}
 @keyframes vdrop{0%{opacity:0;transform:translateY(16px)}100%{opacity:1;transform:translateY(0)}}
 .varrow path{animation:varrow .8s linear infinite}
 @keyframes varrow{to{stroke-dashoffset:-13}}
+/* Le grand tri */
+.tbasket{gap:max(8px,calc(var(--u) * 18));flex-wrap:wrap;max-width:94vw;min-height:max(100px,calc(var(--u) * 160))}
+.twho{display:block;width:max(52px,calc(var(--u) * 84));height:max(52px,calc(var(--u) * 84));flex:0 0 auto;margin-right:max(4px,calc(var(--u) * 10))}
+.titem{display:block;width:max(72px,min(14vw,15.5vh));height:max(72px,min(14vw,15.5vh));padding:max(4px,calc(var(--u) * 8));border-radius:20px;cursor:grab;touch-action:none;transition:transform .15s,opacity .15s,background .2s}
+.titem svg{pointer-events:none}
+.titem.selected{background:#FFF4CC;box-shadow:0 0 0 max(3px,calc(var(--u) * 5)) var(--yellow);transform:scale(1.06)}
+.titem.lifted{opacity:.25}
+.tghost{position:fixed;z-index:60;pointer-events:none;filter:drop-shadow(0 8px 10px rgba(39,48,67,.3))}
+.tbins{display:flex;justify-content:center;align-items:flex-end;gap:max(6px,calc(var(--u) * 20));width:100%;max-width:96vw}
+.tbin{display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:none;padding:max(4px,calc(var(--u) * 8)) max(4px,calc(var(--u) * 10));border-radius:22px;cursor:pointer;transition:transform .15s,background .2s}
+.tbinart{display:block;width:max(84px,min(17vw,21vh));height:max(84px,min(17vw,21vh))}
+.tbins.n5 .tbinart{width:max(72px,min(15vw,19vh));height:max(72px,min(15vw,19vh))}
+.tbinart.small{width:max(56px,calc(var(--u) * 96));height:max(56px,calc(var(--u) * 96))}
+.tbinart svg .lid{transform-box:fill-box;transform-origin:0% 100%;transition:transform .25s ease-out}
+.tbin.open .lid{transform:rotate(-24deg)}
+.tbin.over{background:#E1F4F5;transform:scale(1.07)}
+.tbin.over .lid{transform:rotate(-16deg)}
+.tbin.right{background:#E3F5EC}
+.tlab{font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:700;font-size:max(13px,calc(var(--u) * 19));color:var(--grey);line-height:1.1}
+/* Le voyage des déchets */
+.drue{position:relative;width:min(94vw,calc((100vh - var(--btn) * 2 - 150px) * 320 / 170));aspect-ratio:320/170;flex:0 0 auto;border-radius:24px;overflow:hidden;background:#DDF1FA;border:2px solid var(--line)}
+.drue svg{position:absolute;inset:0;touch-action:none}
+.drue .dtruck{transition:transform 1.3s ease-in,opacity .5s ease-in .8s}
+.drue.dgo .dtruck{transform:translateX(190px);opacity:0}
+.drue .dlift{transition:fill .2s}
+.drue.hinted .dlift{fill:rgba(255,193,69,.28);stroke:#FFC145;stroke-width:3;stroke-dasharray:7 5}
+.drue.over .dlift{fill:rgba(31,169,181,.25);stroke:var(--turq);stroke-width:3}
+.dbin{position:absolute;display:block;z-index:2;touch-action:none;cursor:grab;border-radius:16px;filter:drop-shadow(0 5px 6px rgba(39,48,67,.18))}
+.dbin svg{display:block;width:100%;height:100%;pointer-events:none}
+.dbin.held{filter:drop-shadow(0 12px 12px rgba(39,48,67,.3));cursor:grabbing}
+.dbin .lid{transform-box:fill-box;transform-origin:0% 100%;transition:transform .2s}
+.dbin.open .lid{transform:rotate(-70deg)}
+.dfinger{position:absolute;z-index:3;font-size:max(36px,calc(var(--u) * 58));line-height:1;pointer-events:none;transform:translate(-30%,0);filter:drop-shadow(0 4px 6px rgba(39,48,67,.25))}
+.tbasket.dtapis{background:repeating-linear-gradient(90deg,#B7BDC9 0 30px,#A7AEBC 30px 33px);border:3px solid #6B7080;box-shadow:inset 0 -8px 0 rgba(39,48,67,.12);animation:dbelt 2.4s linear infinite}
+@keyframes dbelt{to{background-position:33px 0}}
+.wstrip.dlong{flex-wrap:nowrap;gap:max(3px,calc(var(--u) * 8))}
+.wstrip.dlong .wstep{padding:max(4px,calc(var(--u) * 8))}
+.wstrip.dlong .wstep .wart{width:max(50px,min(9.5vw,calc(var(--u) * 92)));height:max(50px,min(9.5vw,calc(var(--u) * 92)))}
+.wstrip.dlong .warrow{font-size:max(20px,calc(var(--u) * 36))}
+.wstrip.dlong .wlab{font-size:max(12px,calc(var(--u) * 16));max-width:6.5em}
+.wcard.dwide{width:max(170px,calc(var(--u) * 280))}
+.wcard.dwide .wart{width:max(90px,calc(var(--u) * 150));height:max(90px,calc(var(--u) * 150))}
+.wcard.dwide .wart svg{height:100%}
 /* Atelier des drapeaux */
 .flagrow{gap:max(14px,calc(var(--u) * 30))}
 .flagmodel{width:max(140px,calc(var(--u) * 230));aspect-ratio:94/64;border-radius:8px;transition:opacity .3s}

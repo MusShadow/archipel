@@ -29,11 +29,14 @@ export interface Story {
 export interface MyFlag { layout: string; colors: string[]; symbol: string; symbolColor: string }
 // voix : « naturelle » (pack enregistré, voix de l'appareil en secours) ou « appareil » (synthèse de l'appareil seule).
 export type VoixMode = "naturelle" | "appareil";
-export interface Settings { sessionMinutes: number; accompanied: boolean; voiceURI: string | null; rate: number; sessionsPerWeek: number; voix: VoixMode }
+// Tri des déchets : couleurs nationales par défaut ; le parent adapte à sa commune (papiers, restes de cuisine, couleurs).
+export interface TriSettings { papiers: "jaune" | "bleu"; cuisine: "marron" | "compost"; couleurs: "nationales" | "paris" }
+export const defaultTri = (): TriSettings => ({ papiers: "jaune", cuisine: "marron", couleurs: "nationales" });
+export interface Settings { sessionMinutes: number; accompanied: boolean; voiceURI: string | null; rate: number; sessionsPerWeek: number; voix: VoixMode; tri: TriSettings }
 export interface AppData { version: 1; pin: string | null; settings: Settings; profiles: Profile[]; activeId: string | null }
 
 const KEY = "archipel.v1";
-export const defaultSettings = (): Settings => ({ sessionMinutes: 12, accompanied: true, voiceURI: null, rate: 0.9, sessionsPerWeek: 3, voix: "naturelle" });
+export const defaultSettings = (): Settings => ({ sessionMinutes: 12, accompanied: true, voiceURI: null, rate: 0.9, sessionsPerWeek: 3, voix: "naturelle", tri: defaultTri() });
 export const defaultData = (): AppData => ({ version: 1, pin: null, settings: defaultSettings(), profiles: [], activeId: null });
 
 export function loadData(): AppData {
@@ -56,7 +59,7 @@ export function normalize(d: any): AppData {
     stories: Array.isArray(p.stories) ? p.stories : [],
     myFlag: p.myFlag && typeof p.myFlag === "object" ? p.myFlag : undefined,
   })) : [];
-  return { version: 1, pin: typeof d.pin === "string" ? d.pin : null, settings: { ...base.settings, ...(d.settings ?? {}) }, profiles, activeId: d.activeId ?? null };
+  return { version: 1, pin: typeof d.pin === "string" ? d.pin : null, settings: { ...base.settings, ...(d.settings ?? {}), tri: { ...defaultTri(), ...(d.settings?.tri ?? {}) } }, profiles, activeId: d.activeId ?? null };
 }
 let saveFailed = false;
 export function saveData(d: AppData): boolean {

@@ -84,6 +84,10 @@ voit pas (elle écrit « six » dans les deux cas), mais le spectrogramme si (un
 Pièges connus de la voix (novembre 2026) : devant deux-points, une consonne finale muette est prononcée (« qui choisis :
 » devenait « choisisses ») : ces deux-points deviennent une virgule pour la voix ; « chaud » et « froid » se disaient
 avec un [d] ; certains verbes en -ent se disaient en « -ant » (« elles formant ») : on écrit le singulier.
+Le grand tri et le voyage des déchets (novembre 2026) : leurs phrases changent selon les réglages des poubelles
+(papiers au bac bleu, composteur, couleurs de Paris) ; `voiceLines()` les donne pour les huit réglages possibles.
+« se recyclent » était entendu « se recyclant » : les phrases nouvelles évitent les verbes en -ent après « ils » ou
+« elles » (« On recycle aussi les papiers », « leur métier, c'est de ramasser nos poubelles »).
 
 Les écritures des syllabes dites seules sont dans `voix/prononciation.json` (la première est préférée ; les
 suivantes ne servent que si la reconnaissance vocale l'entend mal). Les pseudo-mots changés sont repris dans les

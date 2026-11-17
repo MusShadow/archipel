@@ -8002,6 +8002,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "dechets:reussite",
    "depart",
    "dessin",
    "volcan:reussite"
@@ -8034,6 +8035,7 @@
   "pack": "commun",
   "words": 4,
   "fams": [
+   "dechets:indice",
    "flotte:indice",
    "goutte:indice",
    "histoires",
@@ -8506,8 +8508,8 @@
   "pack": "commun",
   "words": 4,
   "fams": [
+   "dechets:indice",
    "formes:indice",
-   "goutte:indice",
    "syllabes:indice"
   ]
  },
@@ -8531,6 +8533,17 @@
   "words": 4,
   "fams": [
    "hote"
+  ]
+ },
+ {
+  "key": "celle-ci c'est la médaille du grand tri tu as déjoué tous les pièges|.",
+  "text": "Celle-ci, c'est la médaille du grand tri : tu as déjoué tous les pièges !",
+  "say": "Celle-ci, c'est la médaille du grand tri : tu as déjoué tous les pièges !",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette",
+   "tri:gommette"
   ]
  },
  {
@@ -8621,6 +8634,17 @@
   ]
  },
  {
+  "key": "celle-ci c'est parce que tu sais ce que deviennent nos déchets|.",
+  "text": "Celle-ci, c'est parce que tu sais ce que deviennent nos déchets.",
+  "say": "Celle-ci, c'est parce que tu sais ce que deviennent nos déchets.",
+  "pack": "commun",
+  "words": 11,
+  "fams": [
+   "carte:gommette",
+   "dechets:gommette"
+  ]
+ },
+ {
   "key": "celle-ci c'est parce que tu sais ce qui se passe dans un volcan de la poche de magma jusqu'au cratère|.",
   "text": "Celle-ci, c'est parce que tu sais ce qui se passe dans un volcan, de la poche de magma jusqu'au cratère.",
   "say": "Celle-ci, c'est parce que tu sais ce qui se passe dans un volcan, de la poche de magma jusqu'au cratère.",
@@ -8632,6 +8656,17 @@
   ]
  },
  {
+  "key": "celle-ci c'est parce que tu sais choisir la bonne poubelle|.",
+  "text": "Celle-ci, c'est parce que tu sais choisir la bonne poubelle.",
+  "say": "Celle-ci, c'est parce que tu sais choisir la bonne poubelle.",
+  "pack": "commun",
+  "words": 10,
+  "fams": [
+   "carte:gommette",
+   "tri:gommette"
+  ]
+ },
+ {
   "key": "celle-ci c'est parce que tu sais d'où vient l'eau du robinet et où elle repart|.",
   "text": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
   "say": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
@@ -8640,6 +8675,17 @@
   "fams": [
    "carte:gommette",
    "goutte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est parce que tu sais faire moins de déchets|.",
+  "text": "Celle-ci, c'est parce que tu sais faire moins de déchets !",
+  "say": "Celle-ci, c'est parce que tu sais faire moins de déchets !",
+  "pack": "commun",
+  "words": 10,
+  "fams": [
+   "carte:gommette",
+   "dechets:gommette"
   ]
  },
  {
@@ -9306,6 +9352,17 @@
   "fams": [
    "carte:gommette",
    "volcan:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour ton voyage avec le camion poubelle|.",
+  "text": "Celle-ci, c'est pour ton voyage avec le camion poubelle.",
+  "say": "Celle-ci, c'est pour ton voyage avec le camion poubelle.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette",
+   "dechets:gommette"
   ]
  },
  {
@@ -9991,6 +10048,26 @@
   "words": 2,
   "fams": [
    "hote"
+  ]
+ },
+ {
+  "key": "et à une canette|?",
+  "text": "Et à une canette ?",
+  "say": "Et à une canette ?",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
+  "key": "et découvrir ce que deviennent nos déchets|.",
+  "text": "et découvrir ce que deviennent nos déchets.",
+  "say": "et découvrir ce que deviennent nos déchets.",
+  "pack": "commun",
+  "words": 7,
+  "fams": [
+   "carte"
   ]
  },
  {
@@ -11510,6 +11587,26 @@
   ]
  },
  {
+  "key": "le grand tri|,",
+  "text": "Le grand tri,",
+  "say": "Le grand tri,",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
+  "key": "le grand tri|.",
+  "text": "le grand tri.",
+  "say": "le grand tri.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
   "key": "le japon|.",
   "text": "le Japon",
   "say": "le Japon",
@@ -11963,12 +12060,33 @@
   ]
  },
  {
+  "key": "le voyage des déchets|,",
+  "text": "Le voyage des déchets,",
+  "say": "Le voyage des déchets,",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
+  "key": "le voyage des déchets|.",
+  "text": "le voyage des déchets.",
+  "say": "le voyage des déchets.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
   "key": "lequel|?",
   "text": "Lequel ?",
   "say": "Lequel ?",
   "pack": "commun",
   "words": 1,
   "fams": [
+   "dechets:consigne",
    "motifs:consigne",
    "nenuphars:consigne"
   ]
@@ -12369,6 +12487,19 @@
   "words": 3,
   "fams": [
    "carte:gommette"
+  ]
+ },
+ {
+  "key": "merci les éboueurs|.",
+  "text": "Merci, les éboueurs !",
+  "say": "Merci, les éboueurs !",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "carte:gommette",
+   "dechets:gommette",
+   "dechets:indice",
+   "dechets:reussite"
   ]
  },
  {
@@ -13341,6 +13472,16 @@
   ]
  },
  {
+  "key": "pour aider basile à mettre chaque déchet dans la bonne poubelle|.",
+  "text": "pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "say": "pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "pack": "commun",
+  "words": 11,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
   "key": "pour apprendre à faire de vrais dessins avec kiki|.",
   "text": "pour apprendre à faire de vrais dessins avec Kiki.",
   "say": "pour apprendre à faire de vrais dessins avec Kiki.",
@@ -13521,6 +13662,16 @@
   ]
  },
  {
+  "key": "pour suivre le camion poubelle|",
+  "text": "pour suivre le camion poubelle",
+  "say": "pour suivre le camion poubelle",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
   "key": "pour suivre ploc|,",
   "text": "pour suivre Ploc,",
   "say": "pour suivre Ploc,",
@@ -13584,6 +13735,17 @@
    "chants:indice",
    "marche:indice",
    "partage:consigne"
+  ]
+ },
+ {
+  "key": "qu'est-ce qui manque|?",
+  "text": "Qu'est-ce qui manque ?",
+  "say": "Qu'est-ce qui manque ?",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "dechets:consigne",
+   "motifs:consigne"
   ]
  },
  {
@@ -14320,6 +14482,16 @@
   ]
  },
  {
+  "key": "ton défi pour la maison avec un aimant de frigo essaie colle-t-il à une boîte de conserve|?",
+  "text": "Ton défi pour la maison : Avec un aimant de frigo, essaie : colle-t-il à une boîte de conserve ?",
+  "say": "Ton défi pour la maison : Avec un aimant de frigo, essaie : colle-t-il à une boîte de conserve ?",
+  "pack": "commun",
+  "words": 17,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
   "key": "ton défi pour la maison cache un jouet et guide un adulte jusqu'à lui avec des flèches|.",
   "text": "Ton défi pour la maison : Cache un jouet, et guide un adulte jusqu'à lui avec des flèches.",
   "say": "Ton défi pour la maison : Cache un jouet, et guide un adulte jusqu'à lui avec des flèches.",
@@ -14335,6 +14507,26 @@
   "say": "Ton défi pour la maison : Cache un jouet sous une tasse quand ton doudou ne regarde pas : où va-t-il chercher ?",
   "pack": "commun",
   "words": 20,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
+  "key": "ton défi pour la maison ce soir aide à trier les déchets du dîner les emballages au bac jaune le verre à part|.",
+  "text": "Ton défi pour la maison : Ce soir, aide à trier les déchets du dîner : les emballages au bac jaune, le verre à part !",
+  "say": "Ton défi pour la maison : Ce soir, aide à trier les déchets du dîner : les emballages au bac jaune, le verre à part !",
+  "pack": "commun",
+  "words": 23,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
+  "key": "ton défi pour la maison cherche dans la cuisine trois emballages qui vont dans le bac jaune|.",
+  "text": "Ton défi pour la maison : Cherche dans la cuisine trois emballages qui vont dans le bac jaune.",
+  "say": "Ton défi pour la maison : Cherche dans la cuisine trois emballages qui vont dans le bac jaune.",
+  "pack": "commun",
+  "words": 17,
   "fams": [
    "fin"
   ]
@@ -14435,6 +14627,16 @@
   "say": "Ton défi pour la maison : Dessine le héros de ton histoire.",
   "pack": "commun",
   "words": 11,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
+  "key": "ton défi pour la maison dessine les poubelles de chez toi avec leurs couleurs|.",
+  "text": "Ton défi pour la maison : Dessine les poubelles de chez toi, avec leurs couleurs.",
+  "say": "Ton défi pour la maison : Dessine les poubelles de chez toi, avec leurs couleurs.",
+  "pack": "commun",
+  "words": 14,
   "fams": [
    "fin"
   ]
@@ -14665,6 +14867,36 @@
   "say": "Ton défi pour la maison : Pose une orange dans l'eau, puis épluche-la et réessaie !",
   "pack": "commun",
   "words": 14,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
+  "key": "ton défi pour la maison pour la prochaine promenade prépare ta gourde|.",
+  "text": "Ton défi pour la maison : Pour la prochaine promenade, prépare ta gourde !",
+  "say": "Ton défi pour la maison : Pour la prochaine promenade, prépare ta gourde !",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
+  "key": "ton défi pour la maison quand le camion poubelle passe fais un grand coucou aux éboueurs|.",
+  "text": "Ton défi pour la maison : Quand le camion poubelle passe, fais un grand coucou aux éboueurs !",
+  "say": "Ton défi pour la maison : Quand le camion poubelle passe, fais un grand coucou aux éboueurs !",
+  "pack": "commun",
+  "words": 16,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
+  "key": "ton défi pour la maison quand le camion poubelle passe reste sur le trottoir et fais un grand coucou aux éboueurs|.",
+  "text": "Ton défi pour la maison : Quand le camion poubelle passe, reste sur le trottoir et fais un grand coucou aux éboueurs !",
+  "say": "Ton défi pour la maison : Quand le camion poubelle passe, reste sur le trottoir et fais un grand coucou aux éboueurs !",
+  "pack": "commun",
+  "words": 21,
   "fams": [
    "fin"
   ]
@@ -15288,6 +15520,36 @@
   ]
  },
  {
+  "key": "aide basile à faire le grand tri|.",
+  "text": "Aide Basile à faire le grand tri.",
+  "say": "Aide Basile à faire le grand tri.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
+  "key": "aide basile à faire moins de déchets|.",
+  "text": "Aide Basile à faire moins de déchets.",
+  "say": "Aide Basile à faire moins de déchets.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:intro"
+  ]
+ },
+ {
+  "key": "aide-le à trier ses déchets glisse chacun dans la bonne poubelle|.",
+  "text": "Aide-le à trier ses déchets : glisse chacun dans la bonne poubelle !",
+  "say": "Aide-le à trier ses déchets : glisse chacun dans la bonne poubelle !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "tri:consigne"
+  ]
+ },
+ {
   "key": "après il y a l'éruption|.",
   "text": "Après, il y a l'éruption.",
   "say": "Après, il y a l'éruption.",
@@ -15549,6 +15811,17 @@
   ]
  },
  {
+  "key": "attention aux pièges|.",
+  "text": "Attention aux pièges !",
+  "say": "Attention aux pièges !",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "tri:consigne",
+   "tri:intro"
+  ]
+ },
+ {
   "key": "attention ça brûle on regarde de loin|.",
   "text": "Attention, ça brûle : on regarde de loin !",
   "say": "Attention, ça brûle : on regarde de loin !",
@@ -15588,6 +15861,36 @@
   "words": 1,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "au centre de tri des machines et des agents de tri font le tri sur un grand tapis le plastique le métal le papier et le carton|.",
+  "text": "Au centre de tri, des machines et des agents de tri font le tri, sur un grand tapis : le plastique, le métal, le papier et le carton.",
+  "say": "Au centre de tri, des machines et des agents de tri font le tri, sur un grand tapis : le plastique, le métal, le papier et le carton.",
+  "pack": "decouvertes",
+  "words": 27,
+  "fams": [
+   "dechets:intro"
+  ]
+ },
+ {
+  "key": "au centre de tri le tapis roulant apporte les emballages|.",
+  "text": "Au centre de tri, le tapis roulant apporte les emballages.",
+  "say": "Au centre de tri, le tapis roulant apporte les emballages.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "au centre de tri un gros aimant attrape certains déchets|.",
+  "text": "Au centre de tri, un gros aimant attrape certains déchets.",
+  "say": "Au centre de tri, un gros aimant attrape certains déchets.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -15841,6 +16144,39 @@
   ]
  },
  {
+  "key": "avec des bouteilles en plastique recyclées on fabrique des pulls tout doux|.",
+  "text": "Avec des bouteilles en plastique recyclées, on fabrique des pulls tout doux !",
+  "say": "Avec des bouteilles en plastique recyclées, on fabrique des pulls tout doux !",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "avec des bouteilles en plastique recyclées on remplit des ours en peluche|.",
+  "text": "Avec des bouteilles en plastique recyclées, on remplit des ours en peluche !",
+  "say": "Avec des bouteilles en plastique recyclées, on remplit des ours en peluche !",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "avec des canettes recyclées on peut fabriquer un vélo|.",
+  "text": "Avec des canettes recyclées, on peut fabriquer un vélo !",
+  "say": "Avec des canettes recyclées, on peut fabriquer un vélo !",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
   "key": "avec la pluie et le soleil la vie revient|.",
   "text": "Avec la pluie et le soleil, la vie revient.",
   "say": "Avec la pluie et le soleil, la vie revient.",
@@ -15851,6 +16187,16 @@
   ]
  },
  {
+  "key": "avec le métal des canettes on peut faire un cadre très solide|.",
+  "text": "Avec le métal des canettes, on peut faire un cadre très solide.",
+  "say": "Avec le métal des canettes, on peut faire un cadre très solide.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
   "key": "avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet|?",
   "text": "Avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet ?",
   "say": "Avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet ?",
@@ -15858,6 +16204,16 @@
   "words": 11,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "avec quoi fait-on le compost|?",
+  "text": "Avec quoi fait-on le compost ?",
+  "say": "Avec quoi fait-on le compost ?",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -15889,6 +16245,46 @@
   "words": 9,
   "fams": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "key": "basile a fait la cuisine|.",
+  "text": "Basile a fait la cuisine.",
+  "say": "Basile a fait la cuisine.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "tri:consigne"
+  ]
+ },
+ {
+  "key": "basile revient du marché avec plein d'emballages vides|.",
+  "text": "Basile revient du marché avec plein d'emballages vides.",
+  "say": "Basile revient du marché avec plein d'emballages vides.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
+  "key": "basile revient du marché|.",
+  "text": "Basile revient du marché.",
+  "say": "Basile revient du marché.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "tri:consigne"
+  ]
+ },
+ {
+  "key": "basile va au marché|.",
+  "text": "Basile va au marché.",
+  "say": "Basile va au marché.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -16611,6 +17007,36 @@
   ]
  },
  {
+  "key": "ce cahier neuf est fait avec des déchets recyclés|.",
+  "text": "Ce cahier neuf est fait avec des déchets recyclés.",
+  "say": "Ce cahier neuf est fait avec des déchets recyclés.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "ce carton neuf est fait avec des déchets recyclés|.",
+  "text": "Ce carton neuf est fait avec des déchets recyclés.",
+  "say": "Ce carton neuf est fait avec des déchets recyclés.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "ce jouet est cassé|.",
+  "text": "Ce jouet est cassé.",
+  "say": "Ce jouet est cassé.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
   "key": "ce n'est pas ce qui vient juste après|.",
   "text": "Ce n'est pas ce qui vient juste après.",
   "say": "Ce n'est pas ce qui vient juste après.",
@@ -16631,6 +17057,26 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "ce papier toilette est fait avec des déchets recyclés|.",
+  "text": "Ce papier toilette est fait avec des déchets recyclés.",
+  "say": "Ce papier toilette est fait avec des déchets recyclés.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "ce pull tout doux est fait avec des déchets recyclés|.",
+  "text": "Ce pull tout doux est fait avec des déchets recyclés.",
+  "say": "Ce pull tout doux est fait avec des déchets recyclés.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -16664,6 +17110,26 @@
   ]
  },
  {
+  "key": "ce qui ne se recycle pas va dans le bac gris|.",
+  "text": "Ce qui ne se recycle pas va dans le bac gris.",
+  "say": "Ce qui ne se recycle pas va dans le bac gris.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
+  "key": "ce qui ne se recycle pas va dans le bac vert|.",
+  "text": "Ce qui ne se recycle pas va dans le bac vert.",
+  "say": "Ce qui ne se recycle pas va dans le bac vert.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
   "key": "ce sont des êtres vivants tout petits si petits qu'on ne les voit pas|.",
   "text": "Ce sont des êtres vivants tout petits, si petits qu'on ne les voit pas.",
   "say": "Ce sont des êtres vivants tout petits, si petits qu'on ne les voit pas.",
@@ -16671,6 +17137,27 @@
   "words": 14,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "ce sont les éboueurs leur métier c'est de ramasser nos poubelles|.",
+  "text": "Ce sont les éboueurs : leur métier, c'est de ramasser nos poubelles.",
+  "say": "Ce sont les éboueurs : leur métier, c'est de ramasser nos poubelles.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "ce vélo est fait avec des déchets recyclés|.",
+  "text": "Ce vélo est fait avec des déchets recyclés.",
+  "say": "Ce vélo est fait avec des déchets recyclés.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -16714,6 +17201,109 @@
   ]
  },
  {
+  "key": "certains déchets ne vont dans aucune poubelle de la maison les piles les médicaments les vieux habits les gros objets|.",
+  "text": "Certains déchets ne vont dans aucune poubelle de la maison : les piles, les médicaments, les vieux habits, les gros objets.",
+  "say": "Certains déchets ne vont dans aucune poubelle de la maison : les piles, les médicaments, les vieux habits, les gros objets.",
+  "pack": "decouvertes",
+  "words": 20,
+  "fams": [
+   "dechets:intro"
+  ]
+ },
+ {
+  "key": "ces bouteilles neuves sont faites avec des déchets recyclés|.",
+  "text": "Ces bouteilles neuves sont faites avec des déchets recyclés.",
+  "say": "Ces bouteilles neuves sont faites avec des déchets recyclés.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "ces déchets on les brûle et ça fait de la chaleur|.",
+  "text": "Ces déchets, on les brûle, et ça fait de la chaleur.",
+  "say": "Ces déchets, on les brûle, et ça fait de la chaleur.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "ces habits sont trop petits mais encore beaux|.",
+  "text": "Ces habits sont trop petits, mais encore beaux.",
+  "say": "Ces habits sont trop petits, mais encore beaux.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "ces légumes ont poussé grâce au compost|.",
+  "text": "Ces légumes ont poussé grâce au compost.",
+  "say": "Ces légumes ont poussé grâce au compost.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "ces vêtements sont trop petits|.",
+  "text": "Ces vêtements sont trop petits.",
+  "say": "Ces vêtements sont trop petits.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "cet ours en peluche est rempli avec des déchets recyclés|.",
+  "text": "Cet ours en peluche est rempli avec des déchets recyclés.",
+  "say": "Cet ours en peluche est rempli avec des déchets recyclés.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "cette caisse c'est pour le métal|.",
+  "text": "Cette caisse, c'est pour le métal.",
+  "say": "Cette caisse, c'est pour le métal.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:erreur",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "key": "cette caisse c'est pour le papier et le carton|.",
+  "text": "Cette caisse, c'est pour le papier et le carton.",
+  "say": "Cette caisse, c'est pour le papier et le carton.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:erreur",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "key": "cette caisse c'est pour le plastique|.",
+  "text": "Cette caisse, c'est pour le plastique.",
+  "say": "Cette caisse, c'est pour le plastique.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:erreur",
+   "dechets:rendu"
+  ]
+ },
+ {
   "key": "cette nuit il a gelé très fort|.",
   "text": "Cette nuit, il a gelé très fort.",
   "say": "Cette nuit, il a gelé très fort.",
@@ -16721,6 +17311,46 @@
   "words": 7,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "chaque camion va à un endroit différent le centre de tri l'usine du verre le compost ou l'usine qui chauffe les maisons|.",
+  "text": "Chaque camion va à un endroit différent : le centre de tri, l'usine du verre, le compost, ou l'usine qui chauffe les maisons.",
+  "say": "Chaque camion va à un endroit différent : le centre de tri, l'usine du verre, le compost, ou l'usine qui chauffe les maisons.",
+  "pack": "decouvertes",
+  "words": 22,
+  "fams": [
+   "dechets:intro"
+  ]
+ },
+ {
+  "key": "chaque semaine le camion passe vider nos poubelles|.",
+  "text": "Chaque semaine, le camion passe vider nos poubelles.",
+  "say": "Chaque semaine, le camion passe vider nos poubelles.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:intro"
+  ]
+ },
+ {
+  "key": "cherche ce qui se lave et sert encore|.",
+  "text": "Cherche ce qui se lave et sert encore.",
+  "say": "Cherche ce qui se lave et sert encore.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "cherche ce qui se remplit encore et encore|.",
+  "text": "Cherche ce qui se remplit encore et encore.",
+  "say": "Cherche ce qui se remplit encore et encore.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice"
   ]
  },
  {
@@ -16771,6 +17401,36 @@
   "words": 6,
   "fams": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "key": "cherche l'eau qui arrive sans emballage|.",
+  "text": "Cherche l'eau qui arrive sans emballage.",
+  "say": "Cherche l'eau qui arrive sans emballage.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "cherche la grande boîte avec un habit dessiné dessus|.",
+  "text": "Cherche la grande boîte avec un habit dessiné dessus.",
+  "say": "Cherche la grande boîte avec un habit dessiné dessus.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "cherche la personne avec un gilet orange qui brille dans la nuit|.",
+  "text": "Cherche la personne avec un gilet orange, qui brille dans la nuit.",
+  "say": "Cherche la personne avec un gilet orange, qui brille dans la nuit.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:indice"
   ]
  },
  {
@@ -16871,6 +17531,16 @@
   "words": 4,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "cherche le sac qui sert encore et encore|.",
+  "text": "Cherche le sac qui sert encore et encore.",
+  "say": "Cherche le sac qui sert encore et encore.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice"
   ]
  },
  {
@@ -17051,6 +17721,27 @@
   ]
  },
  {
+  "key": "dans le composteur les épluchures deviennent du compost|.",
+  "text": "Dans le composteur, les épluchures deviennent du compost.",
+  "say": "Dans le composteur, les épluchures deviennent du compost.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "dans le composteur que deviennent les épluchures|?",
+  "text": "Dans le composteur, que deviennent les épluchures ?",
+  "say": "Dans le composteur, que deviennent les épluchures ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
   "key": "dans le congélateur tout devient dur et froid|.",
   "text": "Dans le congélateur, tout devient dur et froid.",
   "say": "Dans le congélateur, tout devient dur et froid.",
@@ -17145,6 +17836,56 @@
   ]
  },
  {
+  "key": "dans quelle poubelle va la bouteille en plastique|?",
+  "text": "Dans quelle poubelle va la bouteille en plastique ?",
+  "say": "Dans quelle poubelle va la bouteille en plastique ?",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "dans quelle poubelle va la bouteille en verre|?",
+  "text": "Dans quelle poubelle va la bouteille en verre ?",
+  "say": "Dans quelle poubelle va la bouteille en verre ?",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "dans quelle poubelle va le journal|?",
+  "text": "Dans quelle poubelle va le journal ?",
+  "say": "Dans quelle poubelle va le journal ?",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "dans quelle poubelle va le mouchoir sale|?",
+  "text": "Dans quelle poubelle va le mouchoir sale ?",
+  "say": "Dans quelle poubelle va le mouchoir sale ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "dans quelle poubelle vont les épluchures|?",
+  "text": "Dans quelle poubelle vont les épluchures ?",
+  "say": "Dans quelle poubelle vont les épluchures ?",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
   "key": "dans son nom on entend le mot volcan|.",
   "text": "Dans son nom, on entend le mot volcan !",
   "say": "Dans son nom, on entend le mot volcan !",
@@ -17229,6 +17970,16 @@
   ]
  },
  {
+  "key": "derrière un camion c'est dangereux le chauffeur ne te voit pas|.",
+  "text": "Derrière un camion, c'est dangereux : le chauffeur ne te voit pas.",
+  "say": "Derrière un camion, c'est dangereux : le chauffeur ne te voit pas.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "key": "des arbres ont poussé et parfois un lac remplit son cratère|.",
   "text": "Des arbres ont poussé, et parfois un lac remplit son cratère.",
   "say": "Des arbres ont poussé, et parfois un lac remplit son cratère.",
@@ -17247,6 +17998,16 @@
   "words": 6,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "des habits donnés ça peut encore servir|.",
+  "text": "Des habits donnés, ça peut encore servir.",
+  "say": "Des habits donnés, ça peut encore servir.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice"
   ]
  },
  {
@@ -17362,6 +18123,16 @@
   "fams": [
    "volcan:indice",
    "volcan:reussite"
+  ]
+ },
+ {
+  "key": "elle est bien trop grande pour la poubelle|.",
+  "text": "Elle est bien trop grande pour la poubelle.",
+  "say": "Elle est bien trop grande pour la poubelle.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice"
   ]
  },
  {
@@ -17538,6 +18309,16 @@
   ]
  },
  {
+  "key": "elles sont bien trop grandes pour la poubelle|.",
+  "text": "Elles sont bien trop grandes pour la poubelle.",
+  "say": "Elles sont bien trop grandes pour la poubelle.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
   "key": "en boule elle coule|.",
   "text": "En boule, elle coule.",
   "say": "En boule, elle coule.",
@@ -17612,6 +18393,16 @@
   "words": 7,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "encore un peu plus loin jusqu'au camion|.",
+  "text": "Encore un peu plus loin, jusqu'au camion !",
+  "say": "Encore un peu plus loin, jusqu'au camion !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice"
   ]
  },
  {
@@ -17742,6 +18533,86 @@
   "words": 12,
   "fams": [
    "flotte:pitch"
+  ]
+ },
+ {
+  "key": "glisse chacun dans la bonne caisse|.",
+  "text": "Glisse chacun dans la bonne caisse !",
+  "say": "Glisse chacun dans la bonne caisse !",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "glisse chaque déchet dans la bonne poubelle|.",
+  "text": "Glisse chaque déchet dans la bonne poubelle.",
+  "say": "Glisse chaque déchet dans la bonne poubelle.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:consigne"
+  ]
+ },
+ {
+  "key": "glisse le bac blanc jusqu'au camion|.",
+  "text": "Glisse le bac blanc jusqu'au camion.",
+  "say": "Glisse le bac blanc jusqu'au camion.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "glisse le bac bleu jusqu'au camion|.",
+  "text": "Glisse le bac bleu jusqu'au camion.",
+  "say": "Glisse le bac bleu jusqu'au camion.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "glisse le bac gris jusqu'au camion|.",
+  "text": "Glisse le bac gris jusqu'au camion.",
+  "say": "Glisse le bac gris jusqu'au camion.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "glisse le bac jaune jusqu'au camion|.",
+  "text": "Glisse le bac jaune jusqu'au camion.",
+  "say": "Glisse le bac jaune jusqu'au camion.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "glisse le bac marron jusqu'au camion|.",
+  "text": "Glisse le bac marron jusqu'au camion.",
+  "say": "Glisse le bac marron jusqu'au camion.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "glisse le bac vert jusqu'au camion|.",
+  "text": "Glisse le bac vert jusqu'au camion.",
+  "say": "Glisse le bac vert jusqu'au camion.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -17931,6 +18802,16 @@
   ]
  },
  {
+  "key": "il faut d'abord séparer les emballages sur un grand tapis|.",
+  "text": "Il faut d'abord séparer les emballages, sur un grand tapis.",
+  "say": "Il faut d'abord séparer les emballages, sur un grand tapis.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
   "key": "il faut quelque chose de très solide sur la tête|.",
   "text": "Il faut quelque chose de très solide sur la tête.",
   "say": "Il faut quelque chose de très solide sur la tête.",
@@ -18061,6 +18942,16 @@
   ]
  },
  {
+  "key": "il y a aussi du verre|.",
+  "text": "Il y a aussi du verre !",
+  "say": "Il y a aussi du verre !",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "tri:consigne"
+  ]
+ },
+ {
   "key": "il y a des volcans partout dans le monde au japon en italie en france|.",
   "text": "Il y a des volcans partout dans le monde : au Japon, en Italie, en France…",
   "say": "Il y a des volcans partout dans le monde : au Japon, en Italie, en France…",
@@ -18081,6 +18972,16 @@
   ]
  },
  {
+  "key": "ils deviennent du compost une terre très bonne pour les plantes|.",
+  "text": "Ils deviennent du compost, une terre très bonne pour les plantes !",
+  "say": "Ils deviennent du compost, une terre très bonne pour les plantes !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
   "key": "ils sont en france touche le drapeau de la france|.",
   "text": "Ils sont en France : touche le drapeau de la France.",
   "say": "Ils sont en France : touche le drapeau de la France.",
@@ -18088,6 +18989,16 @@
   "words": 10,
   "fams": [
    "volcan:consigne"
+  ]
+ },
+ {
+  "key": "ils sont encore beaux ce serait dommage de les jeter|.",
+  "text": "Ils sont encore beaux : ce serait dommage de les jeter.",
+  "say": "Ils sont encore beaux : ce serait dommage de les jeter.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:erreur"
   ]
  },
  {
@@ -18102,6 +19013,36 @@
   ]
  },
  {
+  "key": "ils vont dans le bac bleu|.",
+  "text": "Ils vont dans le bac bleu.",
+  "say": "Ils vont dans le bac bleu.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
+  "key": "ils vont dans le bac jaune|.",
+  "text": "Ils vont dans le bac jaune.",
+  "say": "Ils vont dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
+  "key": "je t'aide hop dans le camion|.",
+  "text": "Je t'aide : hop, dans le camion !",
+  "say": "Je t'aide : hop, dans le camion !",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
   "key": "je t'aide un peu|.",
   "text": "Je t'aide un peu…",
   "say": "Je t'aide un peu…",
@@ -18109,6 +19050,287 @@
   "words": 4,
   "fams": [
    "volcan:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va l'assiette cassée|.",
+  "text": "Je te montre où va l'assiette cassée.",
+  "say": "Je te montre où va l'assiette cassée.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va l'enveloppe|.",
+  "text": "Je te montre où va l'enveloppe.",
+  "say": "Je te montre où va l'enveloppe.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va la boîte à pizza|.",
+  "text": "Je te montre où va la boîte à pizza.",
+  "say": "Je te montre où va la boîte à pizza.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va la boîte de céréales|.",
+  "text": "Je te montre où va la boîte de céréales.",
+  "say": "Je te montre où va la boîte de céréales.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va la boîte de conserve|.",
+  "text": "Je te montre où va la boîte de conserve.",
+  "say": "Je te montre où va la boîte de conserve.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va la bouteille en plastique|.",
+  "text": "Je te montre où va la bouteille en plastique.",
+  "say": "Je te montre où va la bouteille en plastique.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va la bouteille en verre|.",
+  "text": "Je te montre où va la bouteille en verre.",
+  "say": "Je te montre où va la bouteille en verre.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va la brique de lait|.",
+  "text": "Je te montre où va la brique de lait.",
+  "say": "Je te montre où va la brique de lait.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va la canette|.",
+  "text": "Je te montre où va la canette.",
+  "say": "Je te montre où va la canette.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va la couche sale|.",
+  "text": "Je te montre où va la couche sale.",
+  "say": "Je te montre où va la couche sale.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va la peau de banane|.",
+  "text": "Je te montre où va la peau de banane.",
+  "say": "Je te montre où va la peau de banane.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va la vieille brosse à dents|.",
+  "text": "Je te montre où va la vieille brosse à dents.",
+  "say": "Je te montre où va la vieille brosse à dents.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le bocal de cornichons|.",
+  "text": "Je te montre où va le bocal de cornichons.",
+  "say": "Je te montre où va le bocal de cornichons.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le couvercle du bocal|.",
+  "text": "Je te montre où va le couvercle du bocal.",
+  "say": "Je te montre où va le couvercle du bocal.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le film en plastique|.",
+  "text": "Je te montre où va le film en plastique.",
+  "say": "Je te montre où va le film en plastique.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le jouet cassé|.",
+  "text": "Je te montre où va le jouet cassé.",
+  "say": "Je te montre où va le jouet cassé.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le journal|.",
+  "text": "Je te montre où va le journal.",
+  "say": "Je te montre où va le journal.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le mouchoir sale|.",
+  "text": "Je te montre où va le mouchoir sale.",
+  "say": "Je te montre où va le mouchoir sale.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le pot de confiture|.",
+  "text": "Je te montre où va le pot de confiture.",
+  "say": "Je te montre où va le pot de confiture.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le pot de yaourt|.",
+  "text": "Je te montre où va le pot de yaourt.",
+  "say": "Je te montre où va le pot de yaourt.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le prospectus|.",
+  "text": "Je te montre où va le prospectus.",
+  "say": "Je te montre où va le prospectus.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le trognon de pomme|.",
+  "text": "Je te montre où va le trognon de pomme.",
+  "say": "Je te montre où va le trognon de pomme.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le verre cassé|.",
+  "text": "Je te montre où va le verre cassé.",
+  "say": "Je te montre où va le verre cassé.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où va le vieux cahier|.",
+  "text": "Je te montre où va le vieux cahier.",
+  "say": "Je te montre où va le vieux cahier.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où vont les coquilles d'œuf|.",
+  "text": "Je te montre où vont les coquilles d'œuf.",
+  "say": "Je te montre où vont les coquilles d'œuf.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "je te montre où vont les épluchures|.",
+  "text": "Je te montre où vont les épluchures.",
+  "say": "Je te montre où vont les épluchures.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "l'aimant attrape ce qui est en fer|.",
+  "text": "L'aimant attrape ce qui est en fer.",
+  "say": "L'aimant attrape ce qui est en fer.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "l'aimant attrape la boîte de conserve elle est en fer|.",
+  "text": "L'aimant attrape la boîte de conserve : elle est en fer !",
+  "say": "L'aimant attrape la boîte de conserve : elle est en fer !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
   ]
  },
  {
@@ -18142,6 +19364,47 @@
   "fams": [
    "goutte:indice",
    "goutte:reussite"
+  ]
+ },
+ {
+  "key": "l'assiette cassée c'est de la vaisselle elle ne se recycle pas|.",
+  "text": "L'assiette cassée, c'est de la vaisselle : elle ne se recycle pas.",
+  "say": "L'assiette cassée, c'est de la vaisselle : elle ne se recycle pas.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "l'assiette cassée va dans le bac gris|.",
+  "text": "L'assiette cassée va dans le bac gris.",
+  "say": "L'assiette cassée va dans le bac gris.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "l'assiette cassée va dans le bac vert|.",
+  "text": "L'assiette cassée va dans le bac vert.",
+  "say": "L'assiette cassée va dans le bac vert.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "l'assiette cassée|.",
+  "text": "L'assiette cassée.",
+  "say": "L'assiette cassée.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "tri:rendu"
   ]
  },
  {
@@ -18240,6 +19503,17 @@
   ]
  },
  {
+  "key": "l'eau du robinet arrive sans emballage|.",
+  "text": "L'eau du robinet arrive sans emballage !",
+  "say": "L'eau du robinet arrive sans emballage !",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
   "key": "l'eau est propre|.",
   "text": "L'eau est propre.",
   "say": "L'eau est propre.",
@@ -18332,6 +19606,47 @@
   ]
  },
  {
+  "key": "l'enveloppe est en papier elle se recycle|.",
+  "text": "L'enveloppe est en papier : elle se recycle !",
+  "say": "L'enveloppe est en papier : elle se recycle !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "l'enveloppe va dans le bac bleu|.",
+  "text": "L'enveloppe va dans le bac bleu.",
+  "say": "L'enveloppe va dans le bac bleu.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "l'enveloppe va dans le bac jaune|.",
+  "text": "L'enveloppe va dans le bac jaune.",
+  "say": "L'enveloppe va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "l'enveloppe|.",
+  "text": "L'enveloppe.",
+  "say": "L'enveloppe.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
   "key": "l'éponge a plein de petits trous remplis d'air elle flotte|.",
   "text": "L'éponge a plein de petits trous remplis d'air : elle flotte.",
   "say": "L'éponge a plein de petits trous remplis d'air : elle flotte.",
@@ -18407,6 +19722,16 @@
   ]
  },
  {
+  "key": "l'ours en peluche on le remplit avec des bouteilles en plastique|.",
+  "text": "L'ours en peluche, on le remplit avec des bouteilles en plastique.",
+  "say": "L'ours en peluche, on le remplit avec des bouteilles en plastique.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "key": "l'une de ces choses est si chaude qu'elle fait fondre la roche|.",
   "text": "L'une de ces choses est si chaude qu'elle fait fondre la roche !",
   "say": "L'une de ces choses est si chaude qu'elle fait fondre la roche !",
@@ -18417,6 +19742,16 @@
   ]
  },
  {
+  "key": "l'usine du verre c'est pour le verre|.",
+  "text": "L'usine du verre, c'est pour le verre.",
+  "say": "L'usine du verre, c'est pour le verre.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "key": "l'usine fabrique l'eau propre pour boire|.",
   "text": "L'usine fabrique l'eau propre, pour boire.",
   "say": "L'usine fabrique l'eau propre, pour boire.",
@@ -18424,6 +19759,16 @@
   "words": 6,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "l'usine qui chauffe brûle les déchets qu'on ne recycle pas|.",
+  "text": "L'usine qui chauffe brûle les déchets qu'on ne recycle pas.",
+  "say": "L'usine qui chauffe brûle les déchets qu'on ne recycle pas.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:erreur"
   ]
  },
  {
@@ -18449,6 +19794,340 @@
   ]
  },
  {
+  "key": "la boîte à goûter se lave et sert encore pas d'emballage à jeter|.",
+  "text": "La boîte à goûter se lave et sert encore : pas d'emballage à jeter !",
+  "say": "La boîte à goûter se lave et sert encore : pas d'emballage à jeter !",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "la boîte à pizza est en carton|.",
+  "text": "La boîte à pizza est en carton.",
+  "say": "La boîte à pizza est en carton.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:erreur",
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "la boîte à pizza est un emballage en carton elle se recycle même un peu grasse|.",
+  "text": "La boîte à pizza est un emballage en carton : elle se recycle, même un peu grasse !",
+  "say": "La boîte à pizza est un emballage en carton : elle se recycle, même un peu grasse !",
+  "pack": "decouvertes",
+  "words": 16,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la boîte à pizza va dans la caisse du papier et du carton|.",
+  "text": "La boîte à pizza va dans la caisse du papier et du carton.",
+  "say": "La boîte à pizza va dans la caisse du papier et du carton.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "la boîte à pizza va dans le bac jaune|.",
+  "text": "La boîte à pizza va dans le bac jaune.",
+  "say": "La boîte à pizza va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la boîte à pizza|.",
+  "text": "La boîte à pizza.",
+  "say": "La boîte à pizza.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:rendu"
+  ]
+ },
+ {
+  "key": "la boîte de céréales est en carton l'aimant ne l'attrape pas|.",
+  "text": "La boîte de céréales est en carton : l'aimant ne l'attrape pas.",
+  "say": "La boîte de céréales est en carton : l'aimant ne l'attrape pas.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "la boîte de céréales est en carton|.",
+  "text": "La boîte de céréales est en carton.",
+  "say": "La boîte de céréales est en carton.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:erreur",
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "la boîte de céréales est un emballage en carton elle se recycle|.",
+  "text": "La boîte de céréales est un emballage en carton : elle se recycle !",
+  "say": "La boîte de céréales est un emballage en carton : elle se recycle !",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la boîte de céréales va dans la caisse du papier et du carton|.",
+  "text": "La boîte de céréales va dans la caisse du papier et du carton.",
+  "say": "La boîte de céréales va dans la caisse du papier et du carton.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "la boîte de céréales va dans le bac jaune|.",
+  "text": "La boîte de céréales va dans le bac jaune.",
+  "say": "La boîte de céréales va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la boîte de céréales|.",
+  "text": "La boîte de céréales.",
+  "say": "La boîte de céréales.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:rendu"
+  ]
+ },
+ {
+  "key": "la boîte de conserve est en métal|.",
+  "text": "La boîte de conserve est en métal.",
+  "say": "La boîte de conserve est en métal.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:erreur",
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "la boîte de conserve est un emballage en métal elle se recycle|.",
+  "text": "La boîte de conserve est un emballage en métal : elle se recycle !",
+  "say": "La boîte de conserve est un emballage en métal : elle se recycle !",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la boîte de conserve va dans la caisse du métal|.",
+  "text": "La boîte de conserve va dans la caisse du métal.",
+  "say": "La boîte de conserve va dans la caisse du métal.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "la boîte de conserve va dans le bac jaune|.",
+  "text": "La boîte de conserve va dans le bac jaune.",
+  "say": "La boîte de conserve va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la boîte de conserve|.",
+  "text": "La boîte de conserve.",
+  "say": "La boîte de conserve.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:rendu"
+  ]
+ },
+ {
+  "key": "la borne à vêtements c'est pour les habits et les chaussures|.",
+  "text": "La borne à vêtements, c'est pour les habits et les chaussures.",
+  "say": "La borne à vêtements, c'est pour les habits et les chaussures.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "la bouteille en plastique est un emballage elle se recycle|.",
+  "text": "La bouteille en plastique est un emballage : elle se recycle !",
+  "say": "La bouteille en plastique est un emballage : elle se recycle !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la bouteille en plastique finit à la poubelle quand elle est vide|.",
+  "text": "La bouteille en plastique finit à la poubelle quand elle est vide.",
+  "say": "La bouteille en plastique finit à la poubelle quand elle est vide.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "la bouteille en plastique va dans la caisse du plastique|.",
+  "text": "La bouteille en plastique va dans la caisse du plastique.",
+  "say": "La bouteille en plastique va dans la caisse du plastique.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "la bouteille en plastique va dans le bac jaune|.",
+  "text": "La bouteille en plastique va dans le bac jaune.",
+  "say": "La bouteille en plastique va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "la bouteille en plastique|.",
+  "text": "La bouteille en plastique.",
+  "say": "La bouteille en plastique.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:rendu"
+  ]
+ },
+ {
+  "key": "la bouteille en verre va dans le bac blanc|.",
+  "text": "La bouteille en verre va dans le bac blanc.",
+  "say": "La bouteille en verre va dans le bac blanc.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "la bouteille en verre va dans le bac vert|.",
+  "text": "La bouteille en verre va dans le bac vert.",
+  "say": "La bouteille en verre va dans le bac vert.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "la bouteille en verre|.",
+  "text": "La bouteille en verre.",
+  "say": "La bouteille en verre.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "key": "la bouteille est en plastique l'aimant ne l'attrape pas|.",
+  "text": "La bouteille est en plastique : l'aimant ne l'attrape pas.",
+  "say": "La bouteille est en plastique : l'aimant ne l'attrape pas.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "la bouteille est en plastique|.",
+  "text": "La bouteille est en plastique.",
+  "say": "La bouteille est en plastique.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:erreur",
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "la bouteille est en verre elle se recycle sans fin|.",
+  "text": "La bouteille est en verre : elle se recycle sans fin !",
+  "say": "La bouteille est en verre : elle se recycle sans fin !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la brique de lait est un emballage elle se recycle|.",
+  "text": "La brique de lait est un emballage : elle se recycle !",
+  "say": "La brique de lait est un emballage : elle se recycle !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la brique de lait va dans le bac jaune|.",
+  "text": "La brique de lait va dans le bac jaune.",
+  "say": "La brique de lait va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la brique de lait|.",
+  "text": "La brique de lait.",
+  "say": "La brique de lait.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
   "key": "la brique est lourde pour sa taille elle coule|.",
   "text": "La brique est lourde pour sa taille : elle coule.",
   "say": "La brique est lourde pour sa taille : elle coule.",
@@ -18468,6 +20147,79 @@
   "words": 9,
   "fams": [
    "flotte:consigne"
+  ]
+ },
+ {
+  "key": "la canette est en métal|.",
+  "text": "La canette est en métal.",
+  "say": "La canette est en métal.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:erreur",
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "la canette est un emballage en métal elle se recycle|.",
+  "text": "La canette est un emballage en métal : elle se recycle !",
+  "say": "La canette est un emballage en métal : elle se recycle !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la canette va dans la caisse du métal|.",
+  "text": "La canette va dans la caisse du métal.",
+  "say": "La canette va dans la caisse du métal.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "la canette va dans le bac jaune|.",
+  "text": "La canette va dans le bac jaune.",
+  "say": "La canette va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la canette|.",
+  "text": "La canette.",
+  "say": "La canette.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:rendu"
+  ]
+ },
+ {
+  "key": "la chaise cassée va à la déchetterie avec les gros objets|.",
+  "text": "La chaise cassée va à la déchetterie, avec les gros objets.",
+  "say": "La chaise cassée va à la déchetterie, avec les gros objets.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "la chaise est bien trop grande pour la poubelle|.",
+  "text": "La chaise est bien trop grande pour la poubelle.",
+  "say": "La chaise est bien trop grande pour la poubelle.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:erreur"
   ]
  },
  {
@@ -18536,6 +20288,47 @@
   ]
  },
  {
+  "key": "la couche sale ne se recycle pas|.",
+  "text": "La couche sale ne se recycle pas.",
+  "say": "La couche sale ne se recycle pas.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la couche sale va dans le bac gris|.",
+  "text": "La couche sale va dans le bac gris.",
+  "say": "La couche sale va dans le bac gris.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la couche sale va dans le bac vert|.",
+  "text": "La couche sale va dans le bac vert.",
+  "say": "La couche sale va dans le bac vert.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la couche sale|.",
+  "text": "La couche sale.",
+  "say": "La couche sale.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
   "key": "la cuillère en métal est-ce qu'elle flotte ou est-ce qu'elle coule|?",
   "text": "La cuillère en métal : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
   "say": "La cuillère en métal : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
@@ -18555,6 +20348,16 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "la déchetterie c'est pour les gros objets|.",
+  "text": "La déchetterie, c'est pour les gros objets.",
+  "say": "La déchetterie, c'est pour les gros objets.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:erreur"
   ]
  },
  {
@@ -18608,6 +20411,17 @@
   "words": 13,
   "fams": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "key": "la gourde se remplit encore et encore pas de déchet|.",
+  "text": "La gourde se remplit encore et encore : pas de déchet !",
+  "say": "La gourde se remplit encore et encore : pas de déchet !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
   ]
  },
  {
@@ -18881,6 +20695,78 @@
   ]
  },
  {
+  "key": "la peau de banane est un reste de cuisine|.",
+  "text": "La peau de banane est un reste de cuisine.",
+  "say": "La peau de banane est un reste de cuisine.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la peau de banane va dans le bac marron|.",
+  "text": "La peau de banane va dans le bac marron.",
+  "say": "La peau de banane va dans le bac marron.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la peau de banane va dans le composteur|.",
+  "text": "La peau de banane va dans le composteur.",
+  "say": "La peau de banane va dans le composteur.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la peau de banane|.",
+  "text": "La peau de banane.",
+  "say": "La peau de banane.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "key": "la peinture est dangereuse pour la nature elle ne va pas dans la poubelle|.",
+  "text": "La peinture est dangereuse pour la nature : elle ne va pas dans la poubelle.",
+  "say": "La peinture est dangereuse pour la nature : elle ne va pas dans la poubelle.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "la peinture va à la déchetterie elle est dangereuse pour la nature|.",
+  "text": "La peinture va à la déchetterie : elle est dangereuse pour la nature.",
+  "say": "La peinture va à la déchetterie : elle est dangereuse pour la nature.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "la pharmacie reprend les vieux médicaments|.",
+  "text": "La pharmacie reprend les vieux médicaments.",
+  "say": "La pharmacie reprend les vieux médicaments.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "key": "la pièce est en métal elle coule|.",
   "text": "La pièce est en métal : elle coule.",
   "say": "La pièce est en métal : elle coule.",
@@ -19051,6 +20937,57 @@
   ]
  },
  {
+  "key": "la vieille brosse à dents n'est pas un emballage elle ne se recycle pas|.",
+  "text": "La vieille brosse à dents n'est pas un emballage : elle ne se recycle pas.",
+  "say": "La vieille brosse à dents n'est pas un emballage : elle ne se recycle pas.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la vieille brosse à dents va dans le bac gris|.",
+  "text": "La vieille brosse à dents va dans le bac gris.",
+  "say": "La vieille brosse à dents va dans le bac gris.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la vieille brosse à dents va dans le bac vert|.",
+  "text": "La vieille brosse à dents va dans le bac vert.",
+  "say": "La vieille brosse à dents va dans le bac vert.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "la vieille brosse à dents|.",
+  "text": "La vieille brosse à dents.",
+  "say": "La vieille brosse à dents.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "key": "la vieille chaise est cassée|.",
+  "text": "La vieille chaise est cassée.",
+  "say": "La vieille chaise est cassée.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
   "key": "la vis est en métal elle coule|.",
   "text": "La vis est en métal : elle coule.",
   "say": "La vis est en métal : elle coule.",
@@ -19134,6 +21071,94 @@
   ]
  },
  {
+  "key": "le bac blanc c'est pour le verre les bouteilles les pots et les bocaux|.",
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux.",
+  "say": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "dechets:erreur",
+   "tri:erreur"
+  ]
+ },
+ {
+  "key": "le bac bleu c'est pour les papiers|.",
+  "text": "Le bac bleu, c'est pour les papiers.",
+  "say": "Le bac bleu, c'est pour les papiers.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:erreur",
+   "tri:erreur"
+  ]
+ },
+ {
+  "key": "le bac gris c'est pour ce qui ne se recycle pas|.",
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas.",
+  "say": "Le bac gris, c'est pour ce qui ne se recycle pas.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:erreur",
+   "tri:erreur"
+  ]
+ },
+ {
+  "key": "le bac jaune c'est pour les emballages en plastique en métal en carton|.",
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton.",
+  "say": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "dechets:erreur",
+   "tri:erreur"
+  ]
+ },
+ {
+  "key": "le bac jaune c'est pour les emballages et les papiers|.",
+  "text": "Le bac jaune, c'est pour les emballages et les papiers.",
+  "say": "Le bac jaune, c'est pour les emballages et les papiers.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:erreur",
+   "tri:erreur"
+  ]
+ },
+ {
+  "key": "le bac marron c'est pour les restes de cuisine|.",
+  "text": "Le bac marron, c'est pour les restes de cuisine.",
+  "say": "Le bac marron, c'est pour les restes de cuisine.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:erreur",
+   "tri:erreur"
+  ]
+ },
+ {
+  "key": "le bac vert c'est pour ce qui ne se recycle pas|.",
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas.",
+  "say": "Le bac vert, c'est pour ce qui ne se recycle pas.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:erreur",
+   "tri:erreur"
+  ]
+ },
+ {
+  "key": "le bac vert c'est pour le verre les bouteilles les pots et les bocaux|.",
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux.",
+  "say": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "dechets:erreur",
+   "tri:erreur"
+  ]
+ },
+ {
   "key": "le bain est fini|.",
   "text": "Le bain est fini.",
   "say": "Le bain est fini.",
@@ -19186,6 +21211,47 @@
   ]
  },
  {
+  "key": "le bocal de cornichons est en verre|.",
+  "text": "Le bocal de cornichons est en verre.",
+  "say": "Le bocal de cornichons est en verre.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le bocal de cornichons va dans le bac blanc|.",
+  "text": "Le bocal de cornichons va dans le bac blanc.",
+  "say": "Le bocal de cornichons va dans le bac blanc.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le bocal de cornichons va dans le bac vert|.",
+  "text": "Le bocal de cornichons va dans le bac vert.",
+  "say": "Le bocal de cornichons va dans le bac vert.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le bocal de cornichons|.",
+  "text": "Le bocal de cornichons.",
+  "say": "Le bocal de cornichons.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
   "key": "le bois est léger pour sa taille il flotte|.",
   "text": "Le bois est léger pour sa taille : il flotte.",
   "say": "Le bois est léger pour sa taille : il flotte.",
@@ -19207,6 +21273,26 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "le boulanger lui fait le pain|.",
+  "text": "Le boulanger, lui, fait le pain.",
+  "say": "Le boulanger, lui, fait le pain.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "le cahier on le fabrique avec de vieux papiers|.",
+  "text": "Le cahier, on le fabrique avec de vieux papiers.",
+  "say": "Le cahier, on le fabrique avec de vieux papiers.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:erreur"
   ]
  },
  {
@@ -19242,6 +21328,198 @@
   ]
  },
  {
+  "key": "le camion du bac blanc est plein de bouteilles et de bocaux|.",
+  "text": "Le camion du bac blanc est plein de bouteilles et de bocaux.",
+  "say": "Le camion du bac blanc est plein de bouteilles et de bocaux.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "le camion du bac bleu est plein de papiers|.",
+  "text": "Le camion du bac bleu est plein de papiers.",
+  "say": "Le camion du bac bleu est plein de papiers.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "le camion du bac bleu va au centre de tri les papiers deviendront du papier neuf|.",
+  "text": "Le camion du bac bleu va au centre de tri : les papiers deviendront du papier neuf.",
+  "say": "Le camion du bac bleu va au centre de tri : les papiers deviendront du papier neuf.",
+  "pack": "decouvertes",
+  "words": 16,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le camion du bac gris est plein de déchets qu'on ne recycle pas|.",
+  "text": "Le camion du bac gris est plein de déchets qu'on ne recycle pas.",
+  "say": "Le camion du bac gris est plein de déchets qu'on ne recycle pas.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "le camion du bac jaune est plein d'emballages et de papiers|.",
+  "text": "Le camion du bac jaune est plein d'emballages et de papiers.",
+  "say": "Le camion du bac jaune est plein d'emballages et de papiers.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "le camion du bac jaune est plein d'emballages|.",
+  "text": "Le camion du bac jaune est plein d'emballages.",
+  "say": "Le camion du bac jaune est plein d'emballages.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "le camion du bac jaune va au centre de tri là-bas on sépare les emballages pour les recycler|.",
+  "text": "Le camion du bac jaune va au centre de tri : là-bas, on sépare les emballages pour les recycler.",
+  "say": "Le camion du bac jaune va au centre de tri : là-bas, on sépare les emballages pour les recycler.",
+  "pack": "decouvertes",
+  "words": 18,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le camion du bac marron est plein de restes de cuisine|.",
+  "text": "Le camion du bac marron est plein de restes de cuisine.",
+  "say": "Le camion du bac marron est plein de restes de cuisine.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "le camion du bac vert est plein de bouteilles et de bocaux|.",
+  "text": "Le camion du bac vert est plein de bouteilles et de bocaux.",
+  "say": "Le camion du bac vert est plein de bouteilles et de bocaux.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "le camion du bac vert est plein de déchets qu'on ne recycle pas|.",
+  "text": "Le camion du bac vert est plein de déchets qu'on ne recycle pas.",
+  "say": "Le camion du bac vert est plein de déchets qu'on ne recycle pas.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "le camion est grand et lourd on reste loin de lui|.",
+  "text": "Le camion est grand et lourd : on reste loin de lui.",
+  "say": "Le camion est grand et lourd : on reste loin de lui.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le camion poubelle arrive|.",
+  "text": "Le camion poubelle arrive !",
+  "say": "Le camion poubelle arrive !",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "le camion poubelle passe dans la rue|.",
+  "text": "Le camion poubelle passe dans la rue.",
+  "say": "Le camion poubelle passe dans la rue.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "le camion vide le bac blanc|.",
+  "text": "Le camion vide le bac blanc.",
+  "say": "Le camion vide le bac blanc.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le camion vide le bac bleu|.",
+  "text": "Le camion vide le bac bleu.",
+  "say": "Le camion vide le bac bleu.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le camion vide le bac gris|.",
+  "text": "Le camion vide le bac gris.",
+  "say": "Le camion vide le bac gris.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le camion vide le bac jaune|.",
+  "text": "Le camion vide le bac jaune.",
+  "say": "Le camion vide le bac jaune.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le camion vide le bac marron|.",
+  "text": "Le camion vide le bac marron.",
+  "say": "Le camion vide le bac marron.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le camion vide le bac vert|.",
+  "text": "Le camion vide le bac vert.",
+  "say": "Le camion vide le bac vert.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:reussite"
+  ]
+ },
+ {
   "key": "le canard en plastique est-ce qu'il flotte ou est-ce qu'il coule|?",
   "text": "Le canard en plastique : est-ce qu'il flotte, ou est-ce qu'il coule ?",
   "say": "Le canard en plastique : est-ce qu'il flotte, ou est-ce qu'il coule ?",
@@ -19261,6 +21539,36 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "le carton neuf on le fabrique avec de vieux cartons|.",
+  "text": "Le carton neuf, on le fabrique avec de vieux cartons.",
+  "say": "Le carton neuf, on le fabrique avec de vieux cartons.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "le carton redevient du carton|.",
+  "text": "Le carton redevient du carton.",
+  "say": "Le carton redevient du carton.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le centre de tri c'est pour les emballages et les papiers|.",
+  "text": "Le centre de tri, c'est pour les emballages et les papiers.",
+  "say": "Le centre de tri, c'est pour les emballages et les papiers.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:erreur"
   ]
  },
  {
@@ -19285,6 +21593,37 @@
   ]
  },
  {
+  "key": "le compost aide les plantes à pousser|.",
+  "text": "Le compost aide les plantes à pousser.",
+  "say": "Le compost aide les plantes à pousser.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le compost c'est pour les restes de cuisine|.",
+  "text": "Le compost, c'est pour les restes de cuisine.",
+  "say": "Le compost, c'est pour les restes de cuisine.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "le composteur c'est pour les restes de cuisine|.",
+  "text": "Le composteur, c'est pour les restes de cuisine.",
+  "say": "Le composteur, c'est pour les restes de cuisine.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:erreur",
+   "tri:erreur"
+  ]
+ },
+ {
   "key": "le coton-tige bouche les tuyaux|.",
   "text": "Le coton-tige bouche les tuyaux.",
   "say": "Le coton-tige bouche les tuyaux.",
@@ -19292,6 +21631,58 @@
   "words": 5,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "le couvercle du bocal est en métal c'est un emballage il ne va pas avec le verre|.",
+  "text": "Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
+  "say": "Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
+  "pack": "decouvertes",
+  "words": 17,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le couvercle du bocal va dans la caisse du métal|.",
+  "text": "Le couvercle du bocal va dans la caisse du métal.",
+  "say": "Le couvercle du bocal va dans la caisse du métal.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le couvercle du bocal va dans le bac jaune|.",
+  "text": "Le couvercle du bocal va dans le bac jaune.",
+  "say": "Le couvercle du bocal va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le couvercle du bocal|.",
+  "text": "Le couvercle du bocal.",
+  "say": "Le couvercle du bocal.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:rendu"
+  ]
+ },
+ {
+  "key": "le couvercle est en métal|.",
+  "text": "Le couvercle est en métal.",
+  "say": "Le couvercle est en métal.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:erreur",
+   "dechets:indice"
   ]
  },
  {
@@ -19406,6 +21797,68 @@
   ]
  },
  {
+  "key": "le facteur lui apporte le courrier|.",
+  "text": "Le facteur, lui, apporte le courrier.",
+  "say": "Le facteur, lui, apporte le courrier.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "le film en plastique est un emballage il se recycle|.",
+  "text": "Le film en plastique est un emballage : il se recycle !",
+  "say": "Le film en plastique est un emballage : il se recycle !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le film en plastique va dans la caisse du plastique|.",
+  "text": "Le film en plastique va dans la caisse du plastique.",
+  "say": "Le film en plastique va dans la caisse du plastique.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le film en plastique va dans le bac jaune|.",
+  "text": "Le film en plastique va dans le bac jaune.",
+  "say": "Le film en plastique va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le film en plastique|.",
+  "text": "Le film en plastique.",
+  "say": "Le film en plastique.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:rendu"
+  ]
+ },
+ {
+  "key": "le film est en plastique|.",
+  "text": "Le film est en plastique.",
+  "say": "Le film est en plastique.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:erreur",
+   "dechets:indice"
+  ]
+ },
+ {
   "key": "le four est très chaud mais la lave l'est bien plus elle fait fondre la roche|.",
   "text": "Le four est très chaud, mais la lave l'est bien plus : elle fait fondre la roche !",
   "say": "Le four est très chaud, mais la lave l'est bien plus : elle fait fondre la roche !",
@@ -19446,6 +21899,151 @@
   ]
  },
  {
+  "key": "le grand tri de basile|.",
+  "text": "Le grand tri de Basile !",
+  "say": "Le grand tri de Basile !",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "tri:consigne"
+  ]
+ },
+ {
+  "key": "le grand tri est fini tout est à sa place|.",
+  "text": "Le grand tri est fini : tout est à sa place !",
+  "say": "Le grand tri est fini : tout est à sa place !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "tri:reussite"
+  ]
+ },
+ {
+  "key": "le grand tri pour aider basile à mettre chaque déchet dans la bonne poubelle|.",
+  "text": "Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "say": "Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "tri:pitch"
+  ]
+ },
+ {
+  "key": "le jouet cassé n'est pas un emballage il ne va pas dans le bac jaune|.",
+  "text": "Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
+  "say": "Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le jouet cassé va dans le bac gris|.",
+  "text": "Le jouet cassé va dans le bac gris.",
+  "say": "Le jouet cassé va dans le bac gris.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le jouet cassé va dans le bac vert|.",
+  "text": "Le jouet cassé va dans le bac vert.",
+  "say": "Le jouet cassé va dans le bac vert.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le jouet cassé|.",
+  "text": "Le jouet cassé.",
+  "say": "Le jouet cassé.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "key": "le journal est en papier il se recycle|.",
+  "text": "Le journal est en papier : il se recycle !",
+  "say": "Le journal est en papier : il se recycle !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le journal est en papier l'aimant ne l'attrape pas|.",
+  "text": "Le journal est en papier : l'aimant ne l'attrape pas.",
+  "say": "Le journal est en papier : l'aimant ne l'attrape pas.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "le journal est en papier|.",
+  "text": "Le journal est en papier.",
+  "say": "Le journal est en papier.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:erreur",
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le journal va dans la caisse du papier et du carton|.",
+  "text": "Le journal va dans la caisse du papier et du carton.",
+  "say": "Le journal va dans la caisse du papier et du carton.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le journal va dans le bac bleu|.",
+  "text": "Le journal va dans le bac bleu.",
+  "say": "Le journal va dans le bac bleu.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le journal va dans le bac jaune|.",
+  "text": "Le journal va dans le bac jaune.",
+  "say": "Le journal va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le journal|.",
+  "text": "Le journal.",
+  "say": "Le journal.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:rendu"
+  ]
+ },
+ {
   "key": "le linge devient sec l'eau s'est envolée dans l'air|.",
   "text": "Le linge devient sec : l'eau s'est envolée dans l'air.",
   "say": "Le linge devient sec : l'eau s'est envolée dans l'air.",
@@ -19463,6 +22061,16 @@
   "words": 6,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le magasin reprend les piles usées|.",
+  "text": "Le magasin reprend les piles usées.",
+  "say": "Le magasin reprend les piles usées.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:erreur"
   ]
  },
  {
@@ -19560,6 +22168,16 @@
   ]
  },
  {
+  "key": "le meilleur déchet c'est celui qu'on ne fait pas|.",
+  "text": "Le meilleur déchet, c'est celui qu'on ne fait pas !",
+  "say": "Le meilleur déchet, c'est celui qu'on ne fait pas !",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:intro"
+  ]
+ },
+ {
   "key": "le miroir est froid mais pas assez pour faire de la glace|.",
   "text": "Le miroir est froid, mais pas assez pour faire de la glace.",
   "say": "Le miroir est froid, mais pas assez pour faire de la glace.",
@@ -19577,6 +22195,49 @@
   "words": 11,
   "fams": [
    "flotte:consigne"
+  ]
+ },
+ {
+  "key": "le mouchoir sale ne se recycle pas|.",
+  "text": "Le mouchoir sale ne se recycle pas.",
+  "say": "Le mouchoir sale ne se recycle pas.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le mouchoir sale va dans le bac gris|.",
+  "text": "Le mouchoir sale va dans le bac gris.",
+  "say": "Le mouchoir sale va dans le bac gris.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le mouchoir sale va dans le bac vert|.",
+  "text": "Le mouchoir sale va dans le bac vert.",
+  "say": "Le mouchoir sale va dans le bac vert.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le mouchoir sale|.",
+  "text": "Le mouchoir sale.",
+  "say": "Le mouchoir sale.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "tri:rendu"
   ]
  },
  {
@@ -19621,6 +22282,47 @@
   ]
  },
  {
+  "key": "le papier redevient du papier|.",
+  "text": "Le papier redevient du papier.",
+  "say": "Le papier redevient du papier.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le papier toilette on le fabrique avec des briques de lait|.",
+  "text": "Le papier toilette, on le fabrique avec des briques de lait.",
+  "say": "Le papier toilette, on le fabrique avec des briques de lait.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "le plastique peut devenir un tissu très doux|.",
+  "text": "Le plastique peut devenir un tissu très doux.",
+  "say": "Le plastique peut devenir un tissu très doux.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le plus souvent ces déchets vont à l'usine qui les brûle sa chaleur chauffe des maisons|.",
+  "text": "Le plus souvent, ces déchets vont à l'usine qui les brûle : sa chaleur chauffe des maisons.",
+  "say": "Le plus souvent, ces déchets vont à l'usine qui les brûle : sa chaleur chauffe des maisons.",
+  "pack": "decouvertes",
+  "words": 16,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
   "key": "le poisson a besoin d'eau pour vivre comme toi|.",
   "text": "Le poisson a besoin d'eau pour vivre, comme toi.",
   "say": "Le poisson a besoin d'eau pour vivre, comme toi.",
@@ -19632,6 +22334,119 @@
   ]
  },
  {
+  "key": "le pompier lui éteint le feu et sauve les gens|.",
+  "text": "Le pompier, lui, éteint le feu et sauve les gens.",
+  "say": "Le pompier, lui, éteint le feu et sauve les gens.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "le pot de confiture est en verre|.",
+  "text": "Le pot de confiture est en verre.",
+  "say": "Le pot de confiture est en verre.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le pot de confiture va dans le bac blanc|.",
+  "text": "Le pot de confiture va dans le bac blanc.",
+  "say": "Le pot de confiture va dans le bac blanc.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le pot de confiture va dans le bac vert|.",
+  "text": "Le pot de confiture va dans le bac vert.",
+  "say": "Le pot de confiture va dans le bac vert.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le pot de confiture|.",
+  "text": "Le pot de confiture.",
+  "say": "Le pot de confiture.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "key": "le pot de yaourt est en plastique l'aimant ne l'attrape pas|.",
+  "text": "Le pot de yaourt est en plastique : l'aimant ne l'attrape pas.",
+  "say": "Le pot de yaourt est en plastique : l'aimant ne l'attrape pas.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "le pot de yaourt est en plastique|.",
+  "text": "Le pot de yaourt est en plastique.",
+  "say": "Le pot de yaourt est en plastique.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:erreur",
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le pot de yaourt est un emballage en plastique il se recycle|.",
+  "text": "Le pot de yaourt est un emballage en plastique : il se recycle !",
+  "say": "Le pot de yaourt est un emballage en plastique : il se recycle !",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le pot de yaourt va dans la caisse du plastique|.",
+  "text": "Le pot de yaourt va dans la caisse du plastique.",
+  "say": "Le pot de yaourt va dans la caisse du plastique.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le pot de yaourt va dans le bac jaune|.",
+  "text": "Le pot de yaourt va dans le bac jaune.",
+  "say": "Le pot de yaourt va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le pot de yaourt|.",
+  "text": "Le pot de yaourt.",
+  "say": "Le pot de yaourt.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:rendu"
+  ]
+ },
+ {
   "key": "le printemps arrive|.",
   "text": "Le printemps arrive.",
   "say": "Le printemps arrive.",
@@ -19639,6 +22454,78 @@
   "words": 3,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le prospectus est en papier il se recycle|.",
+  "text": "Le prospectus est en papier : il se recycle !",
+  "say": "Le prospectus est en papier : il se recycle !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le prospectus est en papier|.",
+  "text": "Le prospectus est en papier.",
+  "say": "Le prospectus est en papier.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:erreur",
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le prospectus va dans la caisse du papier et du carton|.",
+  "text": "Le prospectus va dans la caisse du papier et du carton.",
+  "say": "Le prospectus va dans la caisse du papier et du carton.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le prospectus va dans le bac bleu|.",
+  "text": "Le prospectus va dans le bac bleu.",
+  "say": "Le prospectus va dans le bac bleu.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le prospectus va dans le bac jaune|.",
+  "text": "Le prospectus va dans le bac jaune.",
+  "say": "Le prospectus va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le prospectus|.",
+  "text": "Le prospectus.",
+  "say": "Le prospectus.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:rendu"
+  ]
+ },
+ {
+  "key": "le pull on le fabrique avec des bouteilles en plastique|.",
+  "text": "Le pull, on le fabrique avec des bouteilles en plastique.",
+  "say": "Le pull, on le fabrique avec des bouteilles en plastique.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:erreur"
   ]
  },
  {
@@ -19660,6 +22547,27 @@
   "words": 6,
   "fams": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "key": "le sac en plastique finit vite à la poubelle|.",
+  "text": "Le sac en plastique finit vite à la poubelle.",
+  "say": "Le sac en plastique finit vite à la poubelle.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "le sac en tissu sert encore et encore|.",
+  "text": "Le sac en tissu sert encore et encore !",
+  "say": "Le sac en tissu sert encore et encore !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
   ]
  },
  {
@@ -19735,6 +22643,180 @@
   ]
  },
  {
+  "key": "le trognon de pomme est un reste de cuisine|.",
+  "text": "Le trognon de pomme est un reste de cuisine.",
+  "say": "Le trognon de pomme est un reste de cuisine.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le trognon de pomme va dans le bac marron|.",
+  "text": "Le trognon de pomme va dans le bac marron.",
+  "say": "Le trognon de pomme va dans le bac marron.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le trognon de pomme va dans le composteur|.",
+  "text": "Le trognon de pomme va dans le composteur.",
+  "say": "Le trognon de pomme va dans le composteur.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le trognon de pomme|.",
+  "text": "Le trognon de pomme.",
+  "say": "Le trognon de pomme.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "key": "le vélo on le fabrique avec des canettes|.",
+  "text": "Le vélo, on le fabrique avec des canettes.",
+  "say": "Le vélo, on le fabrique avec des canettes.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "le verre cassé va dans le bac gris|.",
+  "text": "Le verre cassé va dans le bac gris.",
+  "say": "Le verre cassé va dans le bac gris.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le verre cassé va dans le bac vert|.",
+  "text": "Le verre cassé va dans le bac vert.",
+  "say": "Le verre cassé va dans le bac vert.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le verre cassé|.",
+  "text": "Le verre cassé.",
+  "say": "Le verre cassé.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "key": "le verre fondu redevient du verre|.",
+  "text": "Le verre fondu redevient du verre.",
+  "say": "Le verre fondu redevient du verre.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "le verre lui devient de nouvelles bouteilles|.",
+  "text": "Le verre, lui, devient de nouvelles bouteilles.",
+  "say": "Le verre, lui, devient de nouvelles bouteilles.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "le verre recyclé devient de nouvelles bouteilles encore et encore|.",
+  "text": "Le verre recyclé devient de nouvelles bouteilles, encore et encore !",
+  "say": "Le verre recyclé devient de nouvelles bouteilles, encore et encore !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le verre se recycle sans fin on en refait des bouteilles|.",
+  "text": "Le verre se recycle sans fin : on en refait des bouteilles !",
+  "say": "Le verre se recycle sans fin : on en refait des bouteilles !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
+  "key": "le verre va à l'usine du verre on le fait fondre pour fabriquer de nouvelles bouteilles|.",
+  "text": "Le verre va à l'usine du verre : on le fait fondre pour fabriquer de nouvelles bouteilles.",
+  "say": "Le verre va à l'usine du verre : on le fait fondre pour fabriquer de nouvelles bouteilles.",
+  "pack": "decouvertes",
+  "words": 16,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "le vieux cahier est en papier il se recycle|.",
+  "text": "Le vieux cahier est en papier : il se recycle !",
+  "say": "Le vieux cahier est en papier : il se recycle !",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le vieux cahier va dans le bac bleu|.",
+  "text": "Le vieux cahier va dans le bac bleu.",
+  "say": "Le vieux cahier va dans le bac bleu.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le vieux cahier va dans le bac jaune|.",
+  "text": "Le vieux cahier va dans le bac jaune.",
+  "say": "Le vieux cahier va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "le vieux cahier|.",
+  "text": "Le vieux cahier.",
+  "say": "Le vieux cahier.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
   "key": "le volcan d'octave pour devenir volcanologue et découvrir ce qui se cache dans un volcan|.",
   "text": "Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan.",
   "say": "Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan.",
@@ -19793,6 +22875,16 @@
   "words": 13,
   "fams": [
    "goutte:pitch"
+  ]
+ },
+ {
+  "key": "le voyage des déchets pour suivre le camion poubelle et découvrir ce que deviennent nos déchets|.",
+  "text": "Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "say": "Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "pack": "decouvertes",
+  "words": 16,
+  "fams": [
+   "dechets:pitch"
   ]
  },
  {
@@ -19896,6 +22988,137 @@
   ]
  },
  {
+  "key": "les boîtes en carton ont une nouvelle vie|.",
+  "text": "Les boîtes en carton ont une nouvelle vie !",
+  "say": "Les boîtes en carton ont une nouvelle vie !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "les bouteilles d'eau font beaucoup d'emballages|.",
+  "text": "Les bouteilles d'eau font beaucoup d'emballages.",
+  "say": "Les bouteilles d'eau font beaucoup d'emballages.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "les bouteilles en plastique elles deviennent des pulls ou des peluches|.",
+  "text": "Les bouteilles en plastique, elles, deviennent des pulls ou des peluches.",
+  "say": "Les bouteilles en plastique, elles, deviennent des pulls ou des peluches.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "les bouteilles en plastique ont une nouvelle vie|.",
+  "text": "Les bouteilles en plastique ont une nouvelle vie !",
+  "say": "Les bouteilles en plastique ont une nouvelle vie !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "les bouteilles en verre ont une nouvelle vie|.",
+  "text": "Les bouteilles en verre ont une nouvelle vie !",
+  "say": "Les bouteilles en verre ont une nouvelle vie !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "les bouteilles les pots et les bocaux en verre vont dans le bac blanc|.",
+  "text": "Les bouteilles, les pots et les bocaux en verre vont dans le bac blanc.",
+  "say": "Les bouteilles, les pots et les bocaux en verre vont dans le bac blanc.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
+  "key": "les bouteilles les pots et les bocaux en verre vont dans le bac vert|.",
+  "text": "Les bouteilles, les pots et les bocaux en verre vont dans le bac vert.",
+  "say": "Les bouteilles, les pots et les bocaux en verre vont dans le bac vert.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
+  "key": "les bouteilles neuves on les fabrique avec du verre|.",
+  "text": "Les bouteilles neuves, on les fabrique avec du verre.",
+  "say": "Les bouteilles neuves, on les fabrique avec du verre.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "les branches ne sont pas des emballages pas dans le bac jaune|.",
+  "text": "Les branches ne sont pas des emballages : pas dans le bac jaune.",
+  "say": "Les branches ne sont pas des emballages : pas dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "les briques de lait elles deviennent du papier toilette|.",
+  "text": "Les briques de lait, elles, deviennent du papier toilette.",
+  "say": "Les briques de lait, elles, deviennent du papier toilette.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "les briques de lait ont une nouvelle vie|.",
+  "text": "Les briques de lait ont une nouvelle vie !",
+  "say": "Les briques de lait ont une nouvelle vie !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "les briques de lait recyclées deviennent du papier toilette|.",
+  "text": "Les briques de lait recyclées deviennent du papier toilette !",
+  "say": "Les briques de lait recyclées deviennent du papier toilette !",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "les briques sont surtout en carton elles redeviennent du papier|.",
+  "text": "Les briques sont surtout en carton : elles redeviennent du papier.",
+  "say": "Les briques sont surtout en carton : elles redeviennent du papier.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
   "key": "les bulles leur donnent de l'air|.",
   "text": "Les bulles leur donnent de l'air.",
   "say": "Les bulles leur donnent de l'air.",
@@ -19917,6 +23140,36 @@
   ]
  },
  {
+  "key": "les canettes elles deviennent des vélos|.",
+  "text": "Les canettes, elles, deviennent des vélos.",
+  "say": "Les canettes, elles, deviennent des vélos.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "les canettes ont une nouvelle vie|.",
+  "text": "Les canettes ont une nouvelle vie !",
+  "say": "Les canettes ont une nouvelle vie !",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "les cartons eux deviennent des cartons neufs|.",
+  "text": "Les cartons, eux, deviennent des cartons neufs.",
+  "say": "Les cartons, eux, deviennent des cartons neufs.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "key": "les cendres retombent partout comme une neige grise|.",
   "text": "Les cendres retombent partout, comme une neige grise.",
   "say": "Les cendres retombent partout, comme une neige grise.",
@@ -19925,6 +23178,47 @@
   "fams": [
    "volcan:indice",
    "volcan:reussite"
+  ]
+ },
+ {
+  "key": "les coquilles d'œuf sont des restes de cuisine|.",
+  "text": "Les coquilles d'œuf sont des restes de cuisine.",
+  "say": "Les coquilles d'œuf sont des restes de cuisine.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "les coquilles d'œuf vont dans le bac marron|.",
+  "text": "Les coquilles d'œuf vont dans le bac marron.",
+  "say": "Les coquilles d'œuf vont dans le bac marron.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "les coquilles d'œuf vont dans le composteur|.",
+  "text": "Les coquilles d'œuf vont dans le composteur.",
+  "say": "Les coquilles d'œuf vont dans le composteur.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "les coquilles d'œuf|.",
+  "text": "Les coquilles d'œuf.",
+  "say": "Les coquilles d'œuf.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "tri:rendu"
   ]
  },
  {
@@ -19940,6 +23234,80 @@
   ]
  },
  {
+  "key": "les épluchures deviennent du compost qui aide les légumes à pousser|.",
+  "text": "Les épluchures deviennent du compost, qui aide les légumes à pousser !",
+  "say": "Les épluchures deviennent du compost, qui aide les légumes à pousser !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "les épluchures deviennent du compost|.",
+  "text": "Les épluchures deviennent du compost.",
+  "say": "Les épluchures deviennent du compost.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "les épluchures elles deviennent du compost|.",
+  "text": "Les épluchures, elles, deviennent du compost.",
+  "say": "Les épluchures, elles, deviennent du compost.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "les épluchures sont des restes de cuisine elles deviendront du compost|.",
+  "text": "Les épluchures sont des restes de cuisine : elles deviendront du compost !",
+  "say": "Les épluchures sont des restes de cuisine : elles deviendront du compost !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "les épluchures vont dans le bac marron|.",
+  "text": "Les épluchures vont dans le bac marron.",
+  "say": "Les épluchures vont dans le bac marron.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "les épluchures vont dans le composteur|.",
+  "text": "Les épluchures vont dans le composteur.",
+  "say": "Les épluchures vont dans le composteur.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "les épluchures|.",
+  "text": "Les épluchures.",
+  "say": "Les épluchures.",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "tri:rendu"
+  ]
+ },
+ {
   "key": "les grilles attrapent les gros déchets|.",
   "text": "Les grilles attrapent les gros déchets.",
   "say": "Les grilles attrapent les gros déchets.",
@@ -19949,6 +23317,27 @@
    "goutte:erreur",
    "goutte:indice",
    "goutte:reussite"
+  ]
+ },
+ {
+  "key": "les grosses branches vont à la déchetterie elles y deviennent du compost|.",
+  "text": "Les grosses branches vont à la déchetterie : elles y deviennent du compost.",
+  "say": "Les grosses branches vont à la déchetterie : elles y deviennent du compost.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "les journaux eux deviennent du papier neuf|.",
+  "text": "Les journaux, eux, deviennent du papier neuf.",
+  "say": "Les journaux, eux, deviennent du papier neuf.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:erreur"
   ]
  },
  {
@@ -19972,6 +23361,48 @@
   ]
  },
  {
+  "key": "les papiers vont au centre de tri ils deviendront du papier neuf|.",
+  "text": "Les papiers vont au centre de tri : ils deviendront du papier neuf.",
+  "say": "Les papiers vont au centre de tri : ils deviendront du papier neuf.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "les papiers vont d'abord là où on trie|.",
+  "text": "Les papiers vont d'abord là où on trie.",
+  "say": "Les papiers vont d'abord là où on trie.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "les piles usées ne vont dans aucune poubelle de la maison|.",
+  "text": "Les piles usées ne vont dans aucune poubelle de la maison.",
+  "say": "Les piles usées ne vont dans aucune poubelle de la maison.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "les piles usées vont dans la boîte à piles du magasin dans la nature elles sont dangereuses|.",
+  "text": "Les piles usées vont dans la boîte à piles du magasin : dans la nature, elles sont dangereuses.",
+  "say": "Les piles usées vont dans la boîte à piles du magasin : dans la nature, elles sont dangereuses.",
+  "pack": "decouvertes",
+  "words": 17,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
   "key": "les poissons vivent dans la rivière pas dans la station|.",
   "text": "Les poissons vivent dans la rivière, pas dans la station !",
   "say": "Les poissons vivent dans la rivière, pas dans la station !",
@@ -19979,6 +23410,100 @@
   "words": 10,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "les restes de cuisine comme les épluchures vont dans le bac marron|.",
+  "text": "Les restes de cuisine, comme les épluchures, vont dans le bac marron.",
+  "say": "Les restes de cuisine, comme les épluchures, vont dans le bac marron.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
+  "key": "les restes de cuisine comme les épluchures vont dans le composteur|.",
+  "text": "Les restes de cuisine, comme les épluchures, vont dans le composteur.",
+  "say": "Les restes de cuisine, comme les épluchures, vont dans le composteur.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
+  "key": "les restes de cuisine deviennent une terre pour les plantes|.",
+  "text": "Les restes de cuisine deviennent une terre pour les plantes.",
+  "say": "Les restes de cuisine deviennent une terre pour les plantes.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "les restes de cuisine vont au compost ils deviennent une terre très bonne pour les plantes|.",
+  "text": "Les restes de cuisine vont au compost : ils deviennent une terre très bonne pour les plantes.",
+  "say": "Les restes de cuisine vont au compost : ils deviennent une terre très bonne pour les plantes.",
+  "pack": "decouvertes",
+  "words": 16,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "les vêtements ne sont pas des emballages pas dans le bac jaune|.",
+  "text": "Les vêtements ne sont pas des emballages : pas dans le bac jaune.",
+  "say": "Les vêtements ne sont pas des emballages : pas dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "les vêtements vont dans la borne à vêtements ils seront donnés ou recyclés|.",
+  "text": "Les vêtements vont dans la borne à vêtements : ils seront donnés ou recyclés.",
+  "say": "Les vêtements vont dans la borne à vêtements : ils seront donnés ou recyclés.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "les vieux cartons recyclés deviennent des cartons neufs|.",
+  "text": "Les vieux cartons recyclés deviennent des cartons neufs !",
+  "say": "Les vieux cartons recyclés deviennent des cartons neufs !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "les vieux journaux ont une nouvelle vie|.",
+  "text": "Les vieux journaux ont une nouvelle vie !",
+  "say": "Les vieux journaux ont une nouvelle vie !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "les vieux papiers recyclés deviennent du papier neuf pour faire des cahiers|.",
+  "text": "Les vieux papiers recyclés deviennent du papier neuf, pour faire des cahiers !",
+  "say": "Les vieux papiers recyclés deviennent du papier neuf, pour faire des cahiers !",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
   ]
  },
  {
@@ -20023,6 +23548,16 @@
   ]
  },
  {
+  "key": "lesquels|?",
+  "text": "Lesquels ?",
+  "say": "Lesquels ?",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
   "key": "maintenant elle monte tout en haut d'une grande tour|.",
   "text": "Maintenant, elle monte tout en haut d'une grande tour.",
   "say": "Maintenant, elle monte tout en haut d'une grande tour.",
@@ -20030,6 +23565,16 @@
   "words": 9,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "maintenant touche le camion|.",
+  "text": "Maintenant, touche le camion !",
+  "say": "Maintenant, touche le camion !",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:indice"
   ]
  },
  {
@@ -20054,6 +23599,16 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "merci|.",
+  "text": "Merci !",
+  "say": "Merci !",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "dechets:reussite"
   ]
  },
  {
@@ -20097,6 +23652,36 @@
   ]
  },
  {
+  "key": "non pas dans la poubelle la peinture abîme la nature|.",
+  "text": "Non, pas dans la poubelle : la peinture abîme la nature.",
+  "say": "Non, pas dans la poubelle : la peinture abîme la nature.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "non pas dans la poubelle les piles sont dangereuses pour la nature|.",
+  "text": "Non, pas dans la poubelle : les piles sont dangereuses pour la nature.",
+  "say": "Non, pas dans la poubelle : les piles sont dangereuses pour la nature.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "key": "non pas dans la poubelle on rapporte les médicaments|.",
+  "text": "Non, pas dans la poubelle : on rapporte les médicaments.",
+  "say": "Non, pas dans la poubelle : on rapporte les médicaments.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "key": "non une lingette ne se recycle pas elle va dans la poubelle|.",
   "text": "Non, une lingette ne se recycle pas : elle va dans la poubelle.",
   "say": "Non, une lingette ne se recycle pas : elle va dans la poubelle.",
@@ -20113,6 +23698,7 @@
   "pack": "decouvertes",
   "words": 1,
   "fams": [
+   "dechets:erreur",
    "goutte:erreur"
   ]
  },
@@ -20124,6 +23710,16 @@
   "words": 9,
   "fams": [
    "volcan:intro"
+  ]
+ },
+ {
+  "key": "octave lui montre les emballages vont dans le bac jaune pour être recyclés|.",
+  "text": "Octave lui montre : les emballages vont dans le bac jaune, pour être recyclés.",
+  "say": "Octave lui montre : les emballages vont dans le bac jaune, pour être recyclés.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "tri:intro"
   ]
  },
  {
@@ -20228,6 +23824,58 @@
   ]
  },
  {
+  "key": "on le répare il pourra encore servir|.",
+  "text": "On le répare : il pourra encore servir !",
+  "say": "On le répare : il pourra encore servir !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "on les donne un autre enfant pourra les porter|.",
+  "text": "On les donne : un autre enfant pourra les porter !",
+  "say": "On les donne : un autre enfant pourra les porter !",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "on les rapporte au pharmacien|.",
+  "text": "On les rapporte au pharmacien.",
+  "say": "On les rapporte au pharmacien.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "on les rapporte là où on les achète|.",
+  "text": "On les rapporte là où on les achète.",
+  "say": "On les rapporte là où on les achète.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "on ne grimpe pas sur les poubelles on pourrait tomber|.",
+  "text": "On ne grimpe pas sur les poubelles : on pourrait tomber.",
+  "say": "On ne grimpe pas sur les poubelles : on pourrait tomber.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "key": "on ne touche jamais la lave|.",
   "text": "On ne touche jamais la lave !",
   "say": "On ne touche jamais la lave !",
@@ -20261,6 +23909,38 @@
   ]
  },
  {
+  "key": "on rapporte les vieux médicaments à la pharmacie|.",
+  "text": "On rapporte les vieux médicaments à la pharmacie.",
+  "say": "On rapporte les vieux médicaments à la pharmacie.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
+  "key": "on recycle aussi les papiers les journaux les cahiers les prospectus|.",
+  "text": "On recycle aussi les papiers : les journaux, les cahiers, les prospectus…",
+  "say": "On recycle aussi les papiers : les journaux, les cahiers, les prospectus…",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "tri:intro"
+  ]
+ },
+ {
+  "key": "on reste sur le trottoir et on fait coucou aux éboueurs|.",
+  "text": "On reste sur le trottoir, et on fait coucou aux éboueurs !",
+  "say": "On reste sur le trottoir, et on fait coucou aux éboueurs !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:indice",
+   "dechets:reussite"
+  ]
+ },
+ {
   "key": "on s'éloigne avec les adultes|.",
   "text": "On s'éloigne, avec les adultes.",
   "say": "On s'éloigne, avec les adultes.",
@@ -20281,6 +23961,16 @@
   ]
  },
  {
+  "key": "où apporte-t-on ce vieux pot de peinture|?",
+  "text": "Où apporte-t-on ce vieux pot de peinture ?",
+  "say": "Où apporte-t-on ce vieux pot de peinture ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
   "key": "où arrive-t-elle|?",
   "text": "Où arrive-t-elle ?",
   "say": "Où arrive-t-elle ?",
@@ -20298,6 +23988,16 @@
   "words": 2,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où emporte-t-on ces grosses branches du jardin|?",
+  "text": "Où emporte-t-on ces grosses branches du jardin ?",
+  "say": "Où emporte-t-on ces grosses branches du jardin ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -20348,6 +24048,56 @@
   "words": 13,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "où l'emporte-t-on|?",
+  "text": "Où l'emporte-t-on ?",
+  "say": "Où l'emporte-t-on ?",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "où le camion emporte-t-il ces déchets|?",
+  "text": "Où le camion emporte-t-il ces déchets ?",
+  "say": "Où le camion emporte-t-il ces déchets ?",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "où les apporte-t-on pour qu'un autre enfant les porte|?",
+  "text": "Où les apporte-t-on, pour qu'un autre enfant les porte ?",
+  "say": "Où les apporte-t-on, pour qu'un autre enfant les porte ?",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "où les rapporte-t-on|?",
+  "text": "Où les rapporte-t-on ?",
+  "say": "Où les rapporte-t-on ?",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "où rapporte-t-on les vieux médicaments|?",
+  "text": "Où rapporte-t-on les vieux médicaments ?",
+  "say": "Où rapporte-t-on les vieux médicaments ?",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -20411,12 +24161,23 @@
   ]
  },
  {
+  "key": "où va-t-il le plus souvent|?",
+  "text": "Où va-t-il, le plus souvent ?",
+  "say": "Où va-t-il, le plus souvent ?",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
   "key": "où va-t-il|?",
   "text": "Où va-t-il ?",
   "say": "Où va-t-il ?",
   "pack": "decouvertes",
   "words": 2,
   "fams": [
+   "dechets:consigne",
    "goutte:consigne"
   ]
  },
@@ -20726,6 +24487,36 @@
   ]
  },
  {
+  "key": "pose la poubelle à l'arrière du camion l'éboueur va la vider|.",
+  "text": "Pose la poubelle à l'arrière du camion : l'éboueur va la vider.",
+  "say": "Pose la poubelle à l'arrière du camion : l'éboueur va la vider.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "key": "pour boire de l'eau à la maison qu'est-ce qui fait le moins de déchets|?",
+  "text": "Pour boire de l'eau à la maison, qu'est-ce qui fait le moins de déchets ?",
+  "say": "Pour boire de l'eau à la maison, qu'est-ce qui fait le moins de déchets ?",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "pour faire pousser les légumes on utilise le compost des épluchures|.",
+  "text": "Pour faire pousser les légumes, on utilise le compost des épluchures.",
+  "say": "Pour faire pousser les légumes, on utilise le compost des épluchures.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "key": "pour l'instant elle est liquide|.",
   "text": "Pour l'instant, elle est liquide.",
   "say": "Pour l'instant, elle est liquide.",
@@ -20743,6 +24534,36 @@
   "words": 11,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "pour la promenade qu'emporte-t-on pour faire moins de déchets|?",
+  "text": "Pour la promenade, qu'emporte-t-on pour faire moins de déchets ?",
+  "say": "Pour la promenade, qu'emporte-t-on pour faire moins de déchets ?",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "pour le goûter qu'est-ce qui fait le moins de déchets|?",
+  "text": "Pour le goûter, qu'est-ce qui fait le moins de déchets ?",
+  "say": "Pour le goûter, qu'est-ce qui fait le moins de déchets ?",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "pour refaire des bouteilles on fait fondre le verre dans un four|.",
+  "text": "Pour refaire des bouteilles, on fait fondre le verre dans un four.",
+  "say": "Pour refaire des bouteilles, on fait fondre le verre dans un four.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "dechets:indice"
   ]
  },
  {
@@ -21017,6 +24838,16 @@
   ]
  },
  {
+  "key": "que devient le verre|?",
+  "text": "Que devient le verre ?",
+  "say": "Que devient le verre ?",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
   "key": "que devient-elle de la glace de l'eau ou de la vapeur|?",
   "text": "Que devient-elle : de la glace, de l'eau, ou de la vapeur ?",
   "say": "Que devient-elle : de la glace, de l'eau, ou de la vapeur ?",
@@ -21067,6 +24898,16 @@
   ]
  },
  {
+  "key": "que fais-tu|?",
+  "text": "Que fais-tu ?",
+  "say": "Que fais-tu ?",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
   "key": "que fait une volcanologue|?",
   "text": "Que fait une volcanologue ?",
   "say": "Que fait une volcanologue ?",
@@ -21084,6 +24925,36 @@
   "words": 3,
   "fams": [
    "volcan:consigne"
+  ]
+ },
+ {
+  "key": "que fait-il pousser|?",
+  "text": "Que fait-il pousser ?",
+  "say": "Que fait-il pousser ?",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "que fait-on pour faire moins de déchets|?",
+  "text": "Que fait-on pour faire moins de déchets ?",
+  "say": "Que fait-on pour faire moins de déchets ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "que fait-on|?",
+  "text": "Que fait-on ?",
+  "say": "Que fait-on ?",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -21114,6 +24985,16 @@
   "words": 5,
   "fams": [
    "volcan:consigne"
+  ]
+ },
+ {
+  "key": "que peut-on fabriquer avec|?",
+  "text": "Que peut-on fabriquer avec ?",
+  "say": "Que peut-on fabriquer avec ?",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -21158,6 +25039,16 @@
   ]
  },
  {
+  "key": "quel sac fait le moins de déchets|?",
+  "text": "Quel sac fait le moins de déchets ?",
+  "say": "Quel sac fait le moins de déchets ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
   "key": "qui a besoin d'eau pour vivre|?",
   "text": "Qui a besoin d'eau pour vivre ?",
   "say": "Qui a besoin d'eau pour vivre ?",
@@ -21165,6 +25056,16 @@
   "words": 6,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "qui ramasse nos poubelles avec le camion|?",
+  "text": "Qui ramasse nos poubelles avec le camion ?",
+  "say": "Qui ramasse nos poubelles avec le camion ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -21214,7 +25115,7 @@
   "pack": "decouvertes",
   "words": 5,
   "fams": [
-   "goutte:erreur"
+   "dechets:erreur"
   ]
  },
  {
@@ -21244,7 +25145,7 @@
   "pack": "decouvertes",
   "words": 4,
   "fams": [
-   "goutte:indice",
+   "dechets:indice",
    "volcan:indice"
   ]
  },
@@ -21267,6 +25168,16 @@
   "words": 18,
   "fams": [
    "volcan:intro"
+  ]
+ },
+ {
+  "key": "regarde je te montre le chemin|.",
+  "text": "Regarde : je te montre le chemin.",
+  "say": "Regarde : je te montre le chemin.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:indice"
   ]
  },
  {
@@ -21318,6 +25229,16 @@
   "fams": [
    "volcan:indice",
    "volcan:reussite"
+  ]
+ },
+ {
+  "key": "si on le jette c'est un déchet de plus|.",
+  "text": "Si on le jette, c'est un déchet de plus.",
+  "say": "Si on le jette, c'est un déchet de plus.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:erreur"
   ]
  },
  {
@@ -21388,6 +25309,16 @@
   "words": 8,
   "fams": [
    "volcan:indice"
+  ]
+ },
+ {
+  "key": "suis le voyage des déchets avec octave|.",
+  "text": "Suis le voyage des déchets avec Octave !",
+  "say": "Suis le voyage des déchets avec Octave !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:intro"
   ]
  },
  {
@@ -21607,6 +25538,16 @@
   ]
  },
  {
+  "key": "tous ces petits paquets ce sont des emballages à jeter|.",
+  "text": "Tous ces petits paquets, ce sont des emballages à jeter.",
+  "say": "Tous ces petits paquets, ce sont des emballages à jeter.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "key": "tout au fond sous le volcan il fait si chaud que la roche fond c'est le magma|.",
   "text": "Tout au fond, sous le volcan, il fait si chaud que la roche fond : c'est le magma.",
   "say": "Tout au fond, sous le volcan, il fait si chaud que la roche fond : c'est le magma.",
@@ -21627,6 +25568,26 @@
   ]
  },
  {
+  "key": "tout est bien trié basile est ravi|.",
+  "text": "Tout est bien trié : Basile est ravi !",
+  "say": "Tout est bien trié : Basile est ravi !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "tri:reussite"
+  ]
+ },
+ {
+  "key": "tout est trié les emballages peuvent partir à l'usine|.",
+  "text": "Tout est trié : les emballages peuvent partir à l'usine.",
+  "say": "Tout est trié : les emballages peuvent partir à l'usine.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "dechets:reussite"
+  ]
+ },
+ {
   "key": "toutes les rivières finissent par arriver au même endroit tout en bas|.",
   "text": "Toutes les rivières finissent par arriver au même endroit, tout en bas.",
   "say": "Toutes les rivières finissent par arriver au même endroit, tout en bas.",
@@ -21634,6 +25595,26 @@
   "words": 12,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "trie ses déchets et les restes de cuisine aussi|.",
+  "text": "Trie ses déchets, et les restes de cuisine aussi !",
+  "say": "Trie ses déchets, et les restes de cuisine aussi !",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "tri:consigne"
+  ]
+ },
+ {
+  "key": "tu connais toutes les poubelles|.",
+  "text": "Tu connais toutes les poubelles !",
+  "say": "Tu connais toutes les poubelles !",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "tri:intro"
   ]
  },
  {
@@ -21732,6 +25713,16 @@
   ]
  },
  {
+  "key": "un jouet réparé ça peut encore servir|.",
+  "text": "Un jouet réparé, ça peut encore servir.",
+  "say": "Un jouet réparé, ça peut encore servir.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:indice"
+  ]
+ },
+ {
   "key": "un masque de carnaval c'est pour faire la fête il ne nettoie pas l'air|.",
   "text": "Un masque de carnaval, c'est pour faire la fête : il ne nettoie pas l'air !",
   "say": "Un masque de carnaval, c'est pour faire la fête : il ne nettoie pas l'air !",
@@ -21761,6 +25752,27 @@
   "words": 11,
   "fams": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "key": "un verre à boire cassé n'est pas un emballage il ne va pas avec les bouteilles|.",
+  "text": "Un verre à boire cassé n'est pas un emballage : il ne va pas avec les bouteilles.",
+  "say": "Un verre à boire cassé n'est pas un emballage : il ne va pas avec les bouteilles.",
+  "pack": "decouvertes",
+  "words": 16,
+  "fams": [
+   "tri:erreur",
+   "tri:indice"
+  ]
+ },
+ {
+  "key": "un verre à boire cassé ne va pas avec les bouteilles et le couvercle en métal d'un bocal va dans le bac jaune|.",
+  "text": "Un verre à boire cassé ne va pas avec les bouteilles, et le couvercle en métal d'un bocal va dans le bac jaune.",
+  "say": "Un verre à boire cassé ne va pas avec les bouteilles, et le couvercle en métal d'un bocal va dans le bac jaune.",
+  "pack": "decouvertes",
+  "words": 23,
+  "fams": [
+   "tri:intro"
   ]
  },
  {
@@ -21845,6 +25857,16 @@
   ]
  },
  {
+  "key": "une fois triés nos déchets ont une nouvelle vie une bouteille peut devenir un pull une canette un vélo|.",
+  "text": "Une fois triés, nos déchets ont une nouvelle vie : une bouteille peut devenir un pull, une canette un vélo !",
+  "say": "Une fois triés, nos déchets ont une nouvelle vie : une bouteille peut devenir un pull, une canette un vélo !",
+  "pack": "decouvertes",
+  "words": 19,
+  "fams": [
+   "dechets:intro"
+  ]
+ },
+ {
   "key": "une grande tour avec un gros réservoir tout en haut|.",
   "text": "Une grande tour, avec un gros réservoir tout en haut.",
   "say": "Une grande tour, avec un gros réservoir tout en haut.",
@@ -21884,6 +25906,16 @@
   "fams": [
    "goutte:indice",
    "goutte:reussite"
+  ]
+ },
+ {
+  "key": "voici des papiers avec les emballages|.",
+  "text": "Voici des papiers, avec les emballages.",
+  "say": "Voici des papiers, avec les emballages.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "tri:consigne"
   ]
  },
  {
@@ -21957,6 +25989,16 @@
   ]
  },
  {
+  "key": "voici le camion poubelle et les éboueurs|.",
+  "text": "Voici le camion poubelle, et les éboueurs !",
+  "say": "Voici le camion poubelle, et les éboueurs !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:intro"
+  ]
+ },
+ {
   "key": "voici le mont cameroun un volcan d'afrique qui se réveille de temps en temps|.",
   "text": "Voici le mont Cameroun, un volcan d'Afrique qui se réveille de temps en temps.",
   "say": "Voici le mont Cameroun, un volcan d'Afrique qui se réveille de temps en temps.",
@@ -22004,6 +26046,56 @@
   "words": 15,
   "fams": [
    "volcan:consigne"
+  ]
+ },
+ {
+  "key": "voici le voyage d'un mouchoir sale|.",
+  "text": "Voici le voyage d'un mouchoir sale.",
+  "say": "Voici le voyage d'un mouchoir sale.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "voici le voyage d'un vieux journal|.",
+  "text": "Voici le voyage d'un vieux journal.",
+  "say": "Voici le voyage d'un vieux journal.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "voici le voyage d'une bouteille en plastique|.",
+  "text": "Voici le voyage d'une bouteille en plastique.",
+  "say": "Voici le voyage d'une bouteille en plastique.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "voici le voyage d'une bouteille en verre|.",
+  "text": "Voici le voyage d'une bouteille en verre.",
+  "say": "Voici le voyage d'une bouteille en verre.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "key": "voici le voyage des épluchures|.",
+  "text": "Voici le voyage des épluchures.",
+  "say": "Voici le voyage des épluchures.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "dechets:consigne"
   ]
  },
  {
@@ -24974,16 +29066,6 @@
   "words": 3,
   "fams": [
    "motifs:indice"
-  ]
- },
- {
-  "key": "qu'est-ce qui manque|?",
-  "text": "Qu'est-ce qui manque ?",
-  "say": "Qu'est-ce qui manque ?",
-  "pack": "enigmes",
-  "words": 3,
-  "fams": [
-   "motifs:consigne"
   ]
  },
  {

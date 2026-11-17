@@ -1485,6 +1485,19 @@
   ]
  },
  {
+  "text": "Attention aux pièges ! Glisse chaque déchet dans la bonne poubelle.",
+  "src": [
+   "tri:consigne",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Attention aux pièges ! Un verre à boire cassé ne va pas avec les bouteilles, et le couvercle en métal d'un bocal va dans le bac jaune.",
+  "src": [
+   "tri:intro"
+  ]
+ },
+ {
   "text": "Attention, ce n'est pas forcément le plus petit qui flotte !",
   "src": [
    "flotte:indice"
@@ -1778,6 +1791,26 @@
   ]
  },
  {
+  "text": "Au centre de tri, des machines et des agents de tri font le tri, sur un grand tapis : le plastique, le métal, le papier et le carton.",
+  "src": [
+   "dechets:intro"
+  ]
+ },
+ {
+  "text": "Au centre de tri, le tapis roulant apporte les emballages. Glisse chacun dans la bonne caisse !",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Au centre de tri, un gros aimant attrape certains déchets. Lequel ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "Au Chili, des volcans se dressent tout le long de grandes montagnes, les Andes. Touche le drapeau du Chili.",
   "src": [
    "volcan:consigne",
@@ -2001,9 +2034,33 @@
   ]
  },
  {
+  "text": "Avec des bouteilles en plastique recyclées, on fabrique des pulls tout doux !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Avec des bouteilles en plastique recyclées, on remplit des ours en peluche !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Avec des canettes recyclées, on peut fabriquer un vélo !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
   "text": "Avec la pluie et le soleil, la vie revient.",
   "src": [
    "volcan:indice"
+  ]
+ },
+ {
+  "text": "Avec le métal des canettes, on peut faire un cadre très solide.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -3495,6 +3552,13 @@
   ]
  },
  {
+  "text": "Basile a fait la cuisine. Trie ses déchets, et les restes de cuisine aussi !",
+  "src": [
+   "tri:consigne",
+   "tri:indice"
+  ]
+ },
+ {
   "text": "Basile a fait tomber sa glace par terre. Comment se sent Basile ?",
   "src": [
    "theatre:consigne",
@@ -3601,12 +3665,6 @@
   ]
  },
  {
-  "text": "Basile n'a pas vu qu'on avait déplacé son biscuit. Il croit que c'est toujours dans le panier.",
-  "src": [
-   "theatre:indice"
-  ]
- },
- {
   "text": "Basile n'a pas vu qu'on avait déplacé son biscuit. Il croit que c'est toujours dans le tiroir.",
   "src": [
    "theatre:indice"
@@ -3673,7 +3731,21 @@
   ]
  },
  {
-  "text": "Basile range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met la balle dans le tiroir. Basile revient. Où va-t-il chercher sa balle en premier ?",
+  "text": "Basile range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met la balle dans le panier. Basile revient. Où va-t-il chercher sa balle en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Basile range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met la balle dans le tiroir. Basile revient. Où va-t-il chercher sa balle en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Basile range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Octave met la balle dans le tiroir. Basile revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -3687,7 +3759,7 @@
   ]
  },
  {
-  "text": "Basile range sa balle dans le panier, puis il sort jouer dehors. Pendant ce temps, Mona met la balle dans le tiroir. Basile revient. Où va-t-il chercher sa balle en premier ?",
+  "text": "Basile range sa balle dans le panier, puis il sort jouer dehors. Pendant ce temps, Octave met la balle dans la boîte. Basile revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -3695,6 +3767,13 @@
  },
  {
   "text": "Basile range sa balle dans le panier, puis il sort jouer dehors. Pendant ce temps, Rico met la balle dans la boîte. Basile revient. Où va-t-il chercher sa balle en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Basile range sa balle dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Kiki met la balle dans la boîte. Basile revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -3715,13 +3794,6 @@
   ]
  },
  {
-  "text": "Basile range sa balle dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Octave met la balle dans la boîte. Basile revient. Où va-t-il chercher sa balle en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
   "text": "Basile range sa balle dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Rico met la balle dans le panier. Basile revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
@@ -3729,14 +3801,14 @@
   ]
  },
  {
-  "text": "Basile range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met la petite voiture dans le tiroir. Basile revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Basile range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met la petite voiture dans le tiroir. Basile revient. Où va-t-il chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Basile range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans le panier. Basile revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Basile range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans le panier. Basile revient. Où va-t-il chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -3750,21 +3822,7 @@
   ]
  },
  {
-  "text": "Basile range sa petite voiture dans le panier, puis il sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans la boîte. Basile revient. Où va-t-il chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Basile range sa petite voiture dans le panier, puis il sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans le tiroir. Basile revient. Où va-t-il chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Basile range sa petite voiture dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Mona met la petite voiture dans la boîte. Basile revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Basile range sa petite voiture dans le panier, puis il sort jouer dehors. Pendant ce temps, Mona met la petite voiture dans la boîte. Basile revient. Où va-t-il chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -3778,13 +3836,6 @@
   ]
  },
  {
-  "text": "Basile range sa petite voiture dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans la boîte. Basile revient. Où va-t-il chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
   "text": "Basile range sa petite voiture dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans le panier. Basile revient. Où va-t-il chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
@@ -3792,28 +3843,35 @@
   ]
  },
  {
-  "text": "Basile range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Rico met le biscuit dans le panier. Basile revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Basile range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met le biscuit dans le panier. Basile revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Basile range son biscuit dans le panier, puis il sort jouer dehors. Pendant ce temps, Mona met le biscuit dans la boîte. Basile revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Basile range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met le biscuit dans le panier. Basile revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Basile range son biscuit dans le panier, puis il sort jouer dehors. Pendant ce temps, Rico met le biscuit dans la boîte. Basile revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Basile range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Octave met le biscuit dans le panier. Basile revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Basile range son biscuit dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Mona met le biscuit dans la boîte. Basile revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Basile range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Rico met le biscuit dans le tiroir. Basile revient. Où va-t-il chercher son biscuit en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Basile range son biscuit dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Mona met le biscuit dans le panier. Basile revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -3827,21 +3885,35 @@
   ]
  },
  {
-  "text": "Basile range son biscuit dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Rico met le biscuit dans le panier. Basile revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Basile range son biscuit dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Rico met le biscuit dans la boîte. Basile revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Basile range son doudou dans la boîte, puis il sort jouer dehors. Pendant ce temps, Octave met le doudou dans le panier. Basile revient. Où va-t-il chercher son doudou en premier ?",
+  "text": "Basile range son doudou dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met le doudou dans le panier. Basile revient. Où va-t-il chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Basile range son doudou dans le panier, puis il sort jouer dehors. Pendant ce temps, Kiki met le doudou dans le tiroir. Basile revient. Où va-t-il chercher son doudou en premier ?",
+  "text": "Basile range son doudou dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met le doudou dans le panier. Basile revient. Où va-t-il chercher son doudou en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Basile range son doudou dans la boîte, puis il sort jouer dehors. Pendant ce temps, Rico met le doudou dans le tiroir. Basile revient. Où va-t-il chercher son doudou en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Basile range son doudou dans le panier, puis il sort jouer dehors. Pendant ce temps, Kiki met le doudou dans la boîte. Basile revient. Où va-t-il chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -3855,31 +3927,36 @@
   ]
  },
  {
-  "text": "Basile range son doudou dans le panier, puis il sort jouer dehors. Pendant ce temps, Rico met le doudou dans la boîte. Basile revient. Où va-t-il chercher son doudou en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Basile range son doudou dans le panier, puis il sort jouer dehors. Pendant ce temps, Rico met le doudou dans le tiroir. Basile revient. Où va-t-il chercher son doudou en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Basile range son doudou dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Kiki met le doudou dans la boîte. Basile revient. Où va-t-il chercher son doudou en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
   "text": "Basile range son doudou dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Octave met le doudou dans le panier. Basile revient. Où va-t-il chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
+  ]
+ },
+ {
+  "text": "Basile revient du marché avec plein d'emballages vides. Octave lui montre : les emballages vont dans le bac jaune, pour être recyclés. Ce qui ne se recycle pas va dans le bac gris.",
+  "src": [
+   "tri:intro"
+  ]
+ },
+ {
+  "text": "Basile revient du marché avec plein d'emballages vides. Octave lui montre : les emballages vont dans le bac jaune, pour être recyclés. Ce qui ne se recycle pas va dans le bac vert.",
+  "src": [
+   "tri:intro"
+  ]
+ },
+ {
+  "text": "Basile revient du marché. Aide-le à trier ses déchets : glisse chacun dans la bonne poubelle !",
+  "src": [
+   "tri:consigne",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Basile va au marché. Quel sac fait le moins de déchets ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
   ]
  },
  {
@@ -4754,6 +4831,12 @@
   ]
  },
  {
+  "text": "Bravo ! Tout est trié : les emballages peuvent partir à l'usine.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
   "text": "Bravo Zéphyrine ! Tu as gagné ta première gommette : ton passeport d'explorateur. En route pour l'archipel !",
   "src": [
    "depart"
@@ -5392,6 +5475,24 @@
   ]
  },
  {
+  "text": "C'est celle qui brille. Avec des bouteilles en plastique recyclées, on fabrique des pulls tout doux !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Avec des bouteilles en plastique recyclées, on remplit des ours en peluche !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Avec des canettes recyclées, on peut fabriquer un vélo !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. Avec un thermomètre spécial, de loin. On ne touche jamais la lave !",
   "src": [
    "volcan:indice"
@@ -5422,6 +5523,12 @@
   ]
  },
  {
+  "text": "C'est celle qui brille. Ce sont les éboueurs : leur métier, c'est de ramasser nos poubelles. Merci, les éboueurs !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. Dans la poubelle ! Dans les toilettes, les lingettes bouchent les tuyaux et les grilles de la station.",
   "src": [
    "goutte:indice"
@@ -5437,6 +5544,12 @@
   "text": "C'est celle qui brille. Dans le bassin calme, la boue tombe tout au fond.",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Dans le composteur, les épluchures deviennent du compost.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -5596,6 +5709,12 @@
   ]
  },
  {
+  "text": "C'est celle qui brille. L'aimant attrape la boîte de conserve : elle est en fer !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. L'arbre a besoin d'eau pour vivre, comme toi.",
   "src": [
    "goutte:indice"
@@ -5620,6 +5739,12 @@
   ]
  },
  {
+  "text": "C'est celle qui brille. L'eau du robinet arrive sans emballage !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. L'eau s'envole en vapeur, si légère qu'on ne la voit pas : la flaque sèche !",
   "src": [
    "goutte:indice"
@@ -5638,6 +5763,36 @@
   ]
  },
  {
+  "text": "C'est celle qui brille. La boîte à goûter se lave et sert encore : pas d'emballage à jeter !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. La bouteille en plastique va dans le bac jaune.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. La bouteille en verre va dans le bac blanc.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. La bouteille en verre va dans le bac vert.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. La chaise cassée va à la déchetterie, avec les gros objets.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. La combinaison argentée renvoie la chaleur, comme un miroir renvoie la lumière.",
   "src": [
    "volcan:indice"
@@ -5647,6 +5802,12 @@
   "text": "C'est celle qui brille. La fleur a besoin d'eau pour vivre, comme toi.",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. La gourde se remplit encore et encore : pas de déchet !",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -5680,6 +5841,12 @@
   ]
  },
  {
+  "text": "C'est celle qui brille. La peinture va à la déchetterie : elle est dangereuse pour la nature.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. La rivière se jette dans la mer. Ploc est revenu chez Octave !",
   "src": [
    "goutte:indice"
@@ -5704,6 +5871,18 @@
   ]
  },
  {
+  "text": "C'est celle qui brille. Le camion du bac bleu va au centre de tri : les papiers deviendront du papier neuf.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Le camion du bac jaune va au centre de tri : là-bas, on sépare les emballages pour les recycler.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. Le chat a besoin d'eau pour vivre, comme toi.",
   "src": [
    "goutte:indice"
@@ -5713,6 +5892,18 @@
   "text": "C'est celle qui brille. Le drone vole au-dessus du cratère et prend des photos : la volcanologue reste à l'abri.",
   "src": [
    "volcan:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Le journal va dans le bac bleu.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Le journal va dans le bac jaune.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -5728,15 +5919,39 @@
   ]
  },
  {
+  "text": "C'est celle qui brille. Le mouchoir sale va dans le bac gris.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Le mouchoir sale va dans le bac vert.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. Le nuage est trop lourd : les gouttes tombent. C'est la pluie !",
   "src": [
    "goutte:indice"
   ]
  },
  {
+  "text": "C'est celle qui brille. Le plus souvent, ces déchets vont à l'usine qui les brûle : sa chaleur chauffe des maisons.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. Le poisson a besoin d'eau pour vivre, comme toi.",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Le sac en tissu sert encore et encore !",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -5752,15 +5967,93 @@
   ]
  },
  {
+  "text": "C'est celle qui brille. Le verre recyclé devient de nouvelles bouteilles, encore et encore !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Le verre va à l'usine du verre : on le fait fondre pour fabriquer de nouvelles bouteilles.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Les briques de lait recyclées deviennent du papier toilette !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. Les cendres retombent partout, comme une neige grise.",
   "src": [
    "volcan:indice"
   ]
  },
  {
+  "text": "C'est celle qui brille. Les épluchures deviennent du compost, qui aide les légumes à pousser !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Les épluchures vont dans le bac marron.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Les épluchures vont dans le composteur.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. Les grilles attrapent les gros déchets.",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Les grosses branches vont à la déchetterie : elles y deviennent du compost.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Les papiers vont au centre de tri : ils deviendront du papier neuf.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Les piles usées vont dans la boîte à piles du magasin : dans la nature, elles sont dangereuses.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Les restes de cuisine vont au compost : ils deviennent une terre très bonne pour les plantes.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Les vêtements vont dans la borne à vêtements : ils seront donnés ou recyclés.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Les vieux cartons recyclés deviennent des cartons neufs !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. Les vieux papiers recyclés deviennent du papier neuf, pour faire des cahiers !",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -5782,9 +6075,33 @@
   ]
  },
  {
+  "text": "C'est celle qui brille. On le répare : il pourra encore servir !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. On les donne : un autre enfant pourra les porter !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "C'est celle qui brille. On ouvre le robinet pour remplir le bain.",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. On rapporte les vieux médicaments à la pharmacie.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "C'est celle qui brille. On reste sur le trottoir, et on fait coucou aux éboueurs !",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -13591,6 +13908,27 @@
   ]
  },
  {
+  "text": "Ce cahier neuf est fait avec des déchets recyclés. Lesquels ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Ce carton neuf est fait avec des déchets recyclés. Lesquels ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Ce jouet est cassé. Que fait-on pour faire moins de déchets ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "Ce n'est pas ballon. Qu'est-ce qui commence comme cadeau : ballon, fraise ou cabane ?",
   "src": [
    "chants:indice"
@@ -14829,6 +15167,7 @@
  {
   "text": "Ce n'est pas celle-là. Regarde ce qui reste.",
   "src": [
+   "dechets:indice",
    "goutte:indice",
    "theatre:indice",
    "volcan:indice"
@@ -19989,6 +20328,20 @@
   ]
  },
  {
+  "text": "Ce papier toilette est fait avec des déchets recyclés. Lesquels ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Ce pull tout doux est fait avec des déchets recyclés. Lesquels ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "Ce qui est plus léger monte, comme une bulle dans l'eau.",
   "src": [
    "volcan:indice"
@@ -20010,6 +20363,19 @@
   "text": "Ce sont des êtres vivants tout petits, si petits qu'on ne les voit pas.",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "Ce sont les éboueurs : leur métier, c'est de ramasser nos poubelles. Merci, les éboueurs !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Ce vélo est fait avec des déchets recyclés. Lesquels ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
   ]
  },
  {
@@ -20140,6 +20506,18 @@
   ]
  },
  {
+  "text": "Celle-ci, c'est la médaille du grand tri : tu as déjoué tous les pièges !",
+  "src": [
+   "tri:gommette"
+  ]
+ },
+ {
+  "text": "Celle-ci, c'est la médaille du grand tri : tu as déjoué tous les pièges ! Touche-la pour la ranger dans ton carnet.",
+  "src": [
+   "carte:gommette"
+  ]
+ },
+ {
   "text": "Celle-ci, c'est parce que tu as bien écouté le début des mots.",
   "src": [
    "chants:gommette"
@@ -20236,6 +20614,18 @@
   ]
  },
  {
+  "text": "Celle-ci, c'est parce que tu sais ce que deviennent nos déchets.",
+  "src": [
+   "dechets:gommette"
+  ]
+ },
+ {
+  "text": "Celle-ci, c'est parce que tu sais ce que deviennent nos déchets. Touche-la pour la ranger dans ton carnet.",
+  "src": [
+   "carte:gommette"
+  ]
+ },
+ {
   "text": "Celle-ci, c'est parce que tu sais ce qui se passe dans un volcan, de la poche de magma jusqu'au cratère.",
   "src": [
    "volcan:gommette"
@@ -20248,6 +20638,18 @@
   ]
  },
  {
+  "text": "Celle-ci, c'est parce que tu sais choisir la bonne poubelle.",
+  "src": [
+   "tri:gommette"
+  ]
+ },
+ {
+  "text": "Celle-ci, c'est parce que tu sais choisir la bonne poubelle. Touche-la pour la ranger dans ton carnet.",
+  "src": [
+   "carte:gommette"
+  ]
+ },
+ {
   "text": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
   "src": [
    "goutte:gommette"
@@ -20255,6 +20657,18 @@
  },
  {
   "text": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart. Touche-la pour la ranger dans ton carnet.",
+  "src": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "text": "Celle-ci, c'est parce que tu sais faire moins de déchets !",
+  "src": [
+   "dechets:gommette"
+  ]
+ },
+ {
+  "text": "Celle-ci, c'est parce que tu sais faire moins de déchets ! Touche-la pour la ranger dans ton carnet.",
   "src": [
    "carte:gommette"
   ]
@@ -21052,6 +21466,18 @@
   ]
  },
  {
+  "text": "Celle-ci, c'est pour ton voyage avec le camion poubelle. Merci, les éboueurs !",
+  "src": [
+   "dechets:gommette"
+  ]
+ },
+ {
+  "text": "Celle-ci, c'est pour ton voyage avec le camion poubelle. Merci, les éboueurs ! Touche-la pour la ranger dans ton carnet.",
+  "src": [
+   "carte:gommette"
+  ]
+ },
+ {
   "text": "Celle-ci, c'est pour tous les bons gestes qui protègent l'eau.",
   "src": [
    "goutte:gommette"
@@ -21394,9 +21820,49 @@
   ]
  },
  {
+  "text": "Certains déchets ne vont dans aucune poubelle de la maison : les piles, les médicaments, les vieux habits, les gros objets.",
+  "src": [
+   "dechets:intro"
+  ]
+ },
+ {
   "text": "ces",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Ces bouteilles neuves sont faites avec des déchets recyclés. Lesquels ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Ces déchets, on les brûle, et ça fait de la chaleur.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Ces habits sont trop petits, mais encore beaux. Que fait-on ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Ces légumes ont poussé grâce au compost. Avec quoi fait-on le compost ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Ces vêtements sont trop petits. Où les apporte-t-on, pour qu'un autre enfant les porte ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
   ]
  },
  {
@@ -21406,9 +21872,154 @@
   ]
  },
  {
+  "text": "Cet ours en peluche est rempli avec des déchets recyclés. Lesquels ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "Cette activité s'ouvrira bientôt.",
   "src": [
    "carte"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le métal.",
+  "src": [
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le métal. La boîte à pizza est en carton.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le métal. La boîte de céréales est en carton.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le métal. La bouteille est en plastique.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le métal. Le film est en plastique.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le métal. Le journal est en papier.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le métal. Le pot de yaourt est en plastique.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le métal. Le prospectus est en papier.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le papier et le carton.",
+  "src": [
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le papier et le carton. La boîte de conserve est en métal.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le papier et le carton. La bouteille est en plastique.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le papier et le carton. La canette est en métal.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le papier et le carton. Le couvercle est en métal.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le papier et le carton. Le film est en plastique.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le papier et le carton. Le pot de yaourt est en plastique.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le plastique.",
+  "src": [
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le plastique. La boîte à pizza est en carton.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le plastique. La boîte de céréales est en carton.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le plastique. La boîte de conserve est en métal.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le plastique. La canette est en métal.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le plastique. Le couvercle est en métal.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le plastique. Le journal est en papier.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Cette caisse, c'est pour le plastique. Le prospectus est en papier.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -21620,6 +22231,12 @@
   "text": "chapeau… et train. Écoute bien : le début n'est pas pareil.",
   "src": [
    "chants:erreur"
+  ]
+ },
+ {
+  "text": "Chaque camion va à un endroit différent : le centre de tri, l'usine du verre, le compost, ou l'usine qui chauffe les maisons.",
+  "src": [
+   "dechets:intro"
   ]
  },
  {
@@ -21846,6 +22463,18 @@
   ]
  },
  {
+  "text": "Cherche ce qui se lave et sert encore.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Cherche ce qui se remplit encore et encore.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "Cherche dans le ciel, au-dessus du volcan.",
   "src": [
    "volcan:indice"
@@ -21861,6 +22490,24 @@
   "text": "Cherche l'appareil qui dessine des zigzags quand la terre bouge.",
   "src": [
    "volcan:indice"
+  ]
+ },
+ {
+  "text": "Cherche l'eau qui arrive sans emballage.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Cherche la grande boîte avec un habit dessiné dessus.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Cherche la personne avec un gilet orange, qui brille dans la nuit.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -21927,6 +22574,12 @@
   "text": "Cherche le 9 : compte depuis le 0, en montrant chaque nénuphar.",
   "src": [
    "nenuphars:indice"
+  ]
+ },
+ {
+  "text": "Cherche le sac qui sert encore et encore.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -23165,6 +23818,18 @@
   ]
  },
  {
+  "text": "Dans le composteur, les épluchures deviennent du compost.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Dans le composteur, que deviennent les épluchures ?",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "Dans le congélateur, tout devient dur et froid.",
   "src": [
    "goutte:indice"
@@ -23194,6 +23859,36 @@
   "src": [
    "goutte:consigne",
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "Dans quelle poubelle va la bouteille en plastique ?",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Dans quelle poubelle va la bouteille en verre ?",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Dans quelle poubelle va le journal ?",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Dans quelle poubelle va le mouchoir sale ?",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Dans quelle poubelle vont les épluchures ?",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -23315,6 +24010,12 @@
   "text": "Des écailles, comme des petites lunes.",
   "src": [
    "dessin"
+  ]
+ },
+ {
+  "text": "Des habits donnés, ça peut encore servir.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -38802,6 +39503,12 @@
   ]
  },
  {
+  "text": "Elle est bien trop grande pour la poubelle.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "Elle est pleine de petits trous remplis d'air, comme une éponge.",
   "src": [
    "volcan:indice"
@@ -38817,6 +39524,12 @@
   "text": "Elle sourit, mais dans son cœur, elle est déçue.",
   "src": [
    "theatre:indice"
+  ]
+ },
+ {
+  "text": "Elles sont bien trop grandes pour la poubelle.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -39177,6 +39890,12 @@
   "text": "En tout, ça fait 59.",
   "src": [
    "marche:indice"
+  ]
+ },
+ {
+  "text": "Encore un peu plus loin, jusqu'au camion !",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -40591,6 +41310,12 @@
   "text": "Il faut beaucoup d'eau pour remplir toute une baignoire.",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "Il faut d'abord séparer les emballages, sur un grand tapis.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -42049,6 +42774,13 @@
   ]
  },
  {
+  "text": "Il y a aussi du verre ! Glisse chaque déchet dans la bonne poubelle.",
+  "src": [
+   "tri:consigne",
+   "tri:indice"
+  ]
+ },
+ {
   "text": "Il y a des volcans partout dans le monde : au Japon, en Italie, en France… Partons les voir, avec les drapeaux de leurs pays !",
   "src": [
    "volcan:intro"
@@ -42064,6 +42796,12 @@
   "text": "Il y en a assez dans le panier pour en redonner un à chacun !",
   "src": [
    "partage:erreur"
+  ]
+ },
+ {
+  "text": "Ils sont encore beaux : ce serait dommage de les jeter.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -42157,6 +42895,12 @@
   ]
  },
  {
+  "text": "Je t'aide : hop, dans le camion !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "Je t'aide un peu… Pousse le magma jusqu'en haut !",
   "src": [
    "volcan:indice"
@@ -42211,6 +42955,12 @@
   ]
  },
  {
+  "text": "Je te conseille : le grand tri.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
   "text": "Je te conseille : le marché de basile.",
   "src": [
    "carte"
@@ -42242,6 +42992,12 @@
  },
  {
   "text": "Je te conseille : le voyage de la goutte.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "Je te conseille : le voyage des déchets.",
   "src": [
    "carte"
   ]
@@ -42280,6 +43036,172 @@
   "text": "Je te conseille : mes histoires.",
   "src": [
    "carte"
+  ]
+ },
+ {
+  "text": "Je te montre où va l'assiette cassée.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va l'enveloppe.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va la boîte à pizza.",
+  "src": [
+   "dechets:indice",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va la boîte de céréales.",
+  "src": [
+   "dechets:indice",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va la boîte de conserve.",
+  "src": [
+   "dechets:indice",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va la bouteille en plastique.",
+  "src": [
+   "dechets:indice",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va la bouteille en verre.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va la brique de lait.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va la canette.",
+  "src": [
+   "dechets:indice",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va la couche sale.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va la peau de banane.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va la vieille brosse à dents.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le bocal de cornichons.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le couvercle du bocal.",
+  "src": [
+   "dechets:indice",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le film en plastique.",
+  "src": [
+   "dechets:indice",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le jouet cassé.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le journal.",
+  "src": [
+   "dechets:indice",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le mouchoir sale.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le pot de confiture.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le pot de yaourt.",
+  "src": [
+   "dechets:indice",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le prospectus.",
+  "src": [
+   "dechets:indice",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le trognon de pomme.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le verre cassé.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où va le vieux cahier.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où vont les coquilles d'œuf.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Je te montre où vont les épluchures.",
+  "src": [
+   "tri:indice"
   ]
  },
  {
@@ -42970,6 +43892,13 @@
   ]
  },
  {
+  "text": "Kiki range sa balle dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Basile met la balle dans le panier. Kiki revient. Où va-t-elle chercher sa balle en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
   "text": "Kiki range sa balle dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Octave met la balle dans le panier. Kiki revient. Où va-t-elle chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
@@ -42977,21 +43906,7 @@
   ]
  },
  {
-  "text": "Kiki range sa balle dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Rico met la balle dans le tiroir. Kiki revient. Où va-t-elle chercher sa balle en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Kiki range sa balle dans le panier, puis elle sort jouer dehors. Pendant ce temps, Basile met la balle dans le tiroir. Kiki revient. Où va-t-elle chercher sa balle en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Kiki range sa balle dans le panier, puis elle sort jouer dehors. Pendant ce temps, Octave met la balle dans le tiroir. Kiki revient. Où va-t-elle chercher sa balle en premier ?",
+  "text": "Kiki range sa balle dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Octave met la balle dans le tiroir. Kiki revient. Où va-t-elle chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -43005,14 +43920,28 @@
   ]
  },
  {
-  "text": "Kiki range sa balle dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Rico met la balle dans le panier. Kiki revient. Où va-t-elle chercher sa balle en premier ?",
+  "text": "Kiki range sa balle dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Basile met la balle dans la boîte. Kiki revient. Où va-t-elle chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Kiki range sa petite voiture dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Mona met la petite voiture dans le panier. Kiki revient. Où va-t-elle chercher sa petite voiture en premier ?",
+  "text": "Kiki range sa balle dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Mona met la balle dans la boîte. Kiki revient. Où va-t-elle chercher sa balle en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Kiki range sa balle dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Octave met la balle dans le panier. Kiki revient. Où va-t-elle chercher sa balle en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Kiki range sa petite voiture dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Basile met la petite voiture dans le panier. Kiki revient. Où va-t-elle chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -43020,6 +43949,20 @@
  },
  {
   "text": "Kiki range sa petite voiture dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Mona met la petite voiture dans le tiroir. Kiki revient. Où va-t-elle chercher sa petite voiture en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Kiki range sa petite voiture dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans le panier. Kiki revient. Où va-t-elle chercher sa petite voiture en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Kiki range sa petite voiture dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans le tiroir. Kiki revient. Où va-t-elle chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -43040,21 +43983,21 @@
   ]
  },
  {
-  "text": "Kiki range sa petite voiture dans le panier, puis elle sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans le tiroir. Kiki revient. Où va-t-elle chercher sa petite voiture en premier ?",
+  "text": "Kiki range sa petite voiture dans le panier, puis elle sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans la boîte. Kiki revient. Où va-t-elle chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Kiki range sa petite voiture dans le panier, puis elle sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans la boîte. Kiki revient. Où va-t-elle chercher sa petite voiture en premier ?",
+  "text": "Kiki range sa petite voiture dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans le panier. Kiki revient. Où va-t-elle chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Kiki range sa petite voiture dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Basile met la petite voiture dans la boîte. Kiki revient. Où va-t-elle chercher sa petite voiture en premier ?",
+  "text": "Kiki range son biscuit dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Basile met le biscuit dans le panier. Kiki revient. Où va-t-elle chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -43089,21 +44032,7 @@
   ]
  },
  {
-  "text": "Kiki range son biscuit dans le panier, puis elle sort jouer dehors. Pendant ce temps, Mona met le biscuit dans le tiroir. Kiki revient. Où va-t-elle chercher son biscuit en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Kiki range son biscuit dans le panier, puis elle sort jouer dehors. Pendant ce temps, Octave met le biscuit dans le tiroir. Kiki revient. Où va-t-elle chercher son biscuit en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Kiki range son biscuit dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Basile met le biscuit dans la boîte. Kiki revient. Où va-t-elle chercher son biscuit en premier ?",
+  "text": "Kiki range son biscuit dans le panier, puis elle sort jouer dehors. Pendant ce temps, Rico met le biscuit dans la boîte. Kiki revient. Où va-t-elle chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -43117,28 +44046,7 @@
   ]
  },
  {
-  "text": "Kiki range son biscuit dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Mona met le biscuit dans la boîte. Kiki revient. Où va-t-elle chercher son biscuit en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Kiki range son biscuit dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Mona met le biscuit dans le panier. Kiki revient. Où va-t-elle chercher son biscuit en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Kiki range son biscuit dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Octave met le biscuit dans la boîte. Kiki revient. Où va-t-elle chercher son biscuit en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Kiki range son doudou dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Basile met le doudou dans le panier. Kiki revient. Où va-t-elle chercher son doudou en premier ?",
+  "text": "Kiki range son doudou dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Basile met le doudou dans le tiroir. Kiki revient. Où va-t-elle chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -43152,21 +44060,7 @@
   ]
  },
  {
-  "text": "Kiki range son doudou dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Octave met le doudou dans le tiroir. Kiki revient. Où va-t-elle chercher son doudou en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Kiki range son doudou dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Rico met le doudou dans le tiroir. Kiki revient. Où va-t-elle chercher son doudou en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Kiki range son doudou dans le panier, puis elle sort jouer dehors. Pendant ce temps, Basile met le doudou dans le tiroir. Kiki revient. Où va-t-elle chercher son doudou en premier ?",
+  "text": "Kiki range son doudou dans le panier, puis elle sort jouer dehors. Pendant ce temps, Mona met le doudou dans la boîte. Kiki revient. Où va-t-elle chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -43174,13 +44068,6 @@
  },
  {
   "text": "Kiki range son doudou dans le panier, puis elle sort jouer dehors. Pendant ce temps, Mona met le doudou dans le tiroir. Kiki revient. Où va-t-elle chercher son doudou en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Kiki range son doudou dans le panier, puis elle sort jouer dehors. Pendant ce temps, Rico met le doudou dans la boîte. Kiki revient. Où va-t-elle chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -43195,6 +44082,20 @@
  },
  {
   "text": "Kiki range son doudou dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Mona met le doudou dans le panier. Kiki revient. Où va-t-elle chercher son doudou en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Kiki range son doudou dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Octave met le doudou dans la boîte. Kiki revient. Où va-t-elle chercher son doudou en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Kiki range son doudou dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Rico met le doudou dans la boîte. Kiki revient. Où va-t-elle chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -43267,6 +44168,18 @@
   ]
  },
  {
+  "text": "L'aimant attrape ce qui est en fer.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "L'aimant attrape la boîte de conserve : elle est en fer !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
   "text": "l'Allemagne",
   "src": [
    "mots"
@@ -43289,6 +44202,31 @@
   "text": "L'ancre est lourde : elle coule au fond, c'est fait pour ça !",
   "src": [
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "L'assiette cassée va dans le bac gris.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "L'assiette cassée va dans le bac vert.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "L'assiette cassée, c'est de la vaisselle : elle ne se recycle pas.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "L'assiette cassée.",
+  "src": [
+   "tri:rendu"
   ]
  },
  {
@@ -43372,6 +44310,12 @@
   ]
  },
  {
+  "text": "L'eau du robinet arrive sans emballage !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
   "text": "L'eau est propre. Maintenant, elle monte tout en haut d'une grande tour. Laquelle ?",
   "src": [
    "goutte:consigne",
@@ -43408,6 +44352,31 @@
   "text": "L'eau sale part sous la rue, dans de grands tuyaux.",
   "src": [
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "L'enveloppe est en papier : elle se recycle !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "L'enveloppe va dans le bac bleu.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "L'enveloppe va dans le bac jaune.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "L'enveloppe.",
+  "src": [
+   "tri:rendu"
   ]
  },
  {
@@ -43466,7 +44435,37 @@
   ]
  },
  {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
   "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
   "src": [
    "carte"
   ]
@@ -43478,7 +44477,61 @@
   ]
  },
  {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
   "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
   "src": [
    "carte"
   ]
@@ -43490,13 +44543,73 @@
   ]
  },
  {
+  "text": "L'île des Découvertes ! Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
   "text": "L'île des Découvertes ! Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet.",
   "src": [
    "carte"
   ]
  },
  {
+  "text": "L'île des Découvertes ! Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
   "text": "L'île des Découvertes ! Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet. Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "carte"
+  ]
+ },
+ {
+  "text": "L'île des Découvertes ! Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
   "src": [
    "carte"
   ]
@@ -43805,6 +44918,12 @@
   ]
  },
  {
+  "text": "L'ours en peluche, on le remplit avec des bouteilles en plastique.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "L'ovale, c'est rond mais allongé, comme un œuf.",
   "src": [
    "formes:indice"
@@ -43829,9 +44948,21 @@
   ]
  },
  {
+  "text": "L'usine du verre, c'est pour le verre.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "L'usine fabrique l'eau propre, pour boire. L'eau sale, elle, part ailleurs !",
   "src": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "text": "L'usine qui chauffe brûle les déchets qu'on ne recycle pas.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -43992,9 +45123,199 @@
   ]
  },
  {
+  "text": "La boîte à goûter se lave et sert encore : pas d'emballage à jeter !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "La boîte à pizza est en carton.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "La boîte à pizza est un emballage en carton : elle se recycle, même un peu grasse !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La boîte à pizza va dans la caisse du papier et du carton.",
+  "src": [
+   "dechets:indice",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "La boîte à pizza va dans le bac jaune.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La boîte à pizza.",
+  "src": [
+   "dechets:rendu",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La boîte de céréales est en carton : l'aimant ne l'attrape pas.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "La boîte de céréales est en carton.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "La boîte de céréales est un emballage en carton : elle se recycle !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La boîte de céréales va dans la caisse du papier et du carton.",
+  "src": [
+   "dechets:indice",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "La boîte de céréales va dans le bac jaune.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La boîte de céréales.",
+  "src": [
+   "dechets:rendu",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La boîte de conserve est en métal.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "La boîte de conserve est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La boîte de conserve va dans la caisse du métal.",
+  "src": [
+   "dechets:indice",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "La boîte de conserve va dans le bac jaune.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La boîte de conserve.",
+  "src": [
+   "dechets:rendu",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La borne à vêtements, c'est pour les habits et les chaussures.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "La boule, c'est toute ronde de tous les côtés, elle roule partout.",
   "src": [
    "formes:indice"
+  ]
+ },
+ {
+  "text": "La bouteille en plastique est un emballage : elle se recycle !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La bouteille en plastique finit à la poubelle quand elle est vide.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "La bouteille en plastique va dans la caisse du plastique.",
+  "src": [
+   "dechets:indice",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "La bouteille en plastique va dans le bac jaune.",
+  "src": [
+   "dechets:reussite",
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La bouteille en plastique.",
+  "src": [
+   "dechets:rendu",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La bouteille en verre va dans le bac blanc.",
+  "src": [
+   "dechets:reussite",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La bouteille en verre va dans le bac vert.",
+  "src": [
+   "dechets:reussite",
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La bouteille en verre.",
+  "src": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La bouteille est en plastique : l'aimant ne l'attrape pas.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "La bouteille est en plastique.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "La bouteille est en verre : elle se recycle sans fin !",
+  "src": [
+   "tri:indice"
   ]
  },
  {
@@ -44002,6 +45323,25 @@
   "src": [
    "flotte:consigne",
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "La brique de lait est un emballage : elle se recycle !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La brique de lait va dans le bac jaune.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La brique de lait.",
+  "src": [
+   "tri:rendu"
   ]
  },
  {
@@ -44029,9 +45369,54 @@
   ]
  },
  {
+  "text": "La canette est en métal.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "La canette est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La canette va dans la caisse du métal.",
+  "src": [
+   "dechets:indice",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "La canette va dans le bac jaune.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La canette.",
+  "src": [
+   "dechets:rendu",
+   "tri:rendu"
+  ]
+ },
+ {
   "text": "La carrosserie de la voiture.",
   "src": [
    "dessin"
+  ]
+ },
+ {
+  "text": "La chaise cassée va à la déchetterie, avec les gros objets.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "La chaise est bien trop grande pour la poubelle.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -44108,6 +45493,31 @@
   ]
  },
  {
+  "text": "La couche sale ne se recycle pas.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La couche sale va dans le bac gris.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La couche sale va dans le bac vert.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La couche sale.",
+  "src": [
+   "tri:rendu"
+  ]
+ },
+ {
   "text": "La cuillère en métal : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
   "src": [
    "flotte:consigne",
@@ -44118,6 +45528,12 @@
   "text": "La cuillère est en métal : elle coule.",
   "src": [
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "La déchetterie, c'est pour les gros objets.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -44173,6 +45589,12 @@
   "text": "La fumée s'envole, mais la lave est lourde : en refroidissant, elle devient dure.",
   "src": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "text": "La gourde se remplit encore et encore : pas de déchet !",
+  "src": [
+   "dechets:reussite"
   ]
  },
  {
@@ -44918,6 +46340,49 @@
   ]
  },
  {
+  "text": "La peau de banane est un reste de cuisine.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La peau de banane va dans le bac marron.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La peau de banane va dans le composteur.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La peau de banane.",
+  "src": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La peinture est dangereuse pour la nature : elle ne va pas dans la poubelle.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "La peinture va à la déchetterie : elle est dangereuse pour la nature.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "La pharmacie reprend les vieux médicaments.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "La pièce : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
   "src": [
    "flotte:consigne",
@@ -45218,6 +46683,38 @@
   ]
  },
  {
+  "text": "La vieille brosse à dents n'est pas un emballage : elle ne se recycle pas.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La vieille brosse à dents va dans le bac gris.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La vieille brosse à dents va dans le bac vert.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "La vieille brosse à dents.",
+  "src": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "La vieille chaise est cassée. Où l'emporte-t-on ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "La vis : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
   "src": [
    "flotte:consigne",
@@ -45472,6 +46969,1022 @@
   ]
  },
  {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux.",
+  "src": [
+   "dechets:erreur",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. L'assiette cassée, c'est de la vaisselle : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. L'enveloppe est en papier : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. La boîte à pizza est un emballage en carton : elle se recycle, même un peu grasse !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. La boîte de céréales est un emballage en carton : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. La boîte de conserve est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. La bouteille en plastique est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. La brique de lait est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. La canette est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. La couche sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. La peau de banane est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. La vieille brosse à dents n'est pas un emballage : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Le film en plastique est un emballage : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Le journal est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Le mouchoir sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Le pot de yaourt est un emballage en plastique : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Le prospectus est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Le trognon de pomme est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Le vieux cahier est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Les coquilles d'œuf sont des restes de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Les épluchures sont des restes de cuisine : elles deviendront du compost !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac blanc, c'est pour le verre : les bouteilles, les pots et les bocaux. Un verre à boire cassé n'est pas un emballage : il ne va pas avec les bouteilles.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers.",
+  "src": [
+   "dechets:erreur",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. L'assiette cassée, c'est de la vaisselle : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. La boîte à pizza est un emballage en carton : elle se recycle, même un peu grasse !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. La boîte de céréales est un emballage en carton : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. La boîte de conserve est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. La bouteille en plastique est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. La bouteille est en verre : elle se recycle sans fin !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. La brique de lait est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. La canette est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. La couche sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. La peau de banane est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. La vieille brosse à dents n'est pas un emballage : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. Le bocal de cornichons est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. Le film en plastique est un emballage : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. Le mouchoir sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. Le pot de confiture est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. Le pot de yaourt est un emballage en plastique : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. Le trognon de pomme est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. Les coquilles d'œuf sont des restes de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. Les épluchures sont des restes de cuisine : elles deviendront du compost !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac bleu, c'est pour les papiers. Un verre à boire cassé n'est pas un emballage : il ne va pas avec les bouteilles.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas.",
+  "src": [
+   "dechets:erreur",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. L'enveloppe est en papier : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. La boîte à pizza est un emballage en carton : elle se recycle, même un peu grasse !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. La boîte de céréales est un emballage en carton : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. La boîte de conserve est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. La bouteille en plastique est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. La bouteille est en verre : elle se recycle sans fin !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. La brique de lait est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. La canette est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. La peau de banane est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. Le bocal de cornichons est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. Le film en plastique est un emballage : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. Le journal est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. Le pot de confiture est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. Le pot de yaourt est un emballage en plastique : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. Le prospectus est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. Le trognon de pomme est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. Le vieux cahier est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. Les coquilles d'œuf sont des restes de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac gris, c'est pour ce qui ne se recycle pas. Les épluchures sont des restes de cuisine : elles deviendront du compost !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton.",
+  "src": [
+   "dechets:erreur",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. L'assiette cassée, c'est de la vaisselle : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. L'enveloppe est en papier : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. La bouteille est en verre : elle se recycle sans fin !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. La couche sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. La peau de banane est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. La vieille brosse à dents n'est pas un emballage : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. Le bocal de cornichons est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. Le journal est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. Le mouchoir sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. Le pot de confiture est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. Le prospectus est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. Le trognon de pomme est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. Le vieux cahier est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. Les coquilles d'œuf sont des restes de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. Les épluchures sont des restes de cuisine : elles deviendront du compost !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton. Un verre à boire cassé n'est pas un emballage : il ne va pas avec les bouteilles.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers.",
+  "src": [
+   "dechets:erreur",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. L'assiette cassée, c'est de la vaisselle : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. La bouteille est en verre : elle se recycle sans fin !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. La couche sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. La peau de banane est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. La vieille brosse à dents n'est pas un emballage : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. Le bocal de cornichons est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. Le mouchoir sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. Le pot de confiture est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. Le trognon de pomme est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. Les coquilles d'œuf sont des restes de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. Les épluchures sont des restes de cuisine : elles deviendront du compost !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac jaune, c'est pour les emballages et les papiers. Un verre à boire cassé n'est pas un emballage : il ne va pas avec les bouteilles.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine.",
+  "src": [
+   "dechets:erreur",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. L'assiette cassée, c'est de la vaisselle : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. L'enveloppe est en papier : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. La boîte à pizza est un emballage en carton : elle se recycle, même un peu grasse !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. La boîte de céréales est un emballage en carton : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. La boîte de conserve est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. La bouteille en plastique est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. La bouteille est en verre : elle se recycle sans fin !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. La brique de lait est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. La canette est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. La couche sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. La vieille brosse à dents n'est pas un emballage : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. Le bocal de cornichons est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. Le film en plastique est un emballage : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. Le journal est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. Le mouchoir sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. Le pot de confiture est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. Le pot de yaourt est un emballage en plastique : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. Le prospectus est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. Le vieux cahier est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac marron, c'est pour les restes de cuisine. Un verre à boire cassé n'est pas un emballage : il ne va pas avec les bouteilles.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas.",
+  "src": [
+   "dechets:erreur",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. L'enveloppe est en papier : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. La boîte à pizza est un emballage en carton : elle se recycle, même un peu grasse !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. La boîte de céréales est un emballage en carton : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. La boîte de conserve est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. La bouteille en plastique est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. La bouteille est en verre : elle se recycle sans fin !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. La brique de lait est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. La canette est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. La peau de banane est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. Le bocal de cornichons est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. Le film en plastique est un emballage : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. Le journal est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. Le pot de confiture est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. Le pot de yaourt est un emballage en plastique : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. Le prospectus est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. Le trognon de pomme est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. Le vieux cahier est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. Les coquilles d'œuf sont des restes de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour ce qui ne se recycle pas. Les épluchures sont des restes de cuisine : elles deviendront du compost !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux.",
+  "src": [
+   "dechets:erreur",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. L'assiette cassée, c'est de la vaisselle : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. L'enveloppe est en papier : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. La boîte à pizza est un emballage en carton : elle se recycle, même un peu grasse !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. La boîte de céréales est un emballage en carton : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. La boîte de conserve est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. La bouteille en plastique est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. La brique de lait est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. La canette est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. La couche sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. La peau de banane est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. La vieille brosse à dents n'est pas un emballage : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Le film en plastique est un emballage : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Le journal est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Le mouchoir sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Le pot de yaourt est un emballage en plastique : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Le prospectus est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Le trognon de pomme est un reste de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Le vieux cahier est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Les coquilles d'œuf sont des restes de cuisine.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Les épluchures sont des restes de cuisine : elles deviendront du compost !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le bac vert, c'est pour le verre : les bouteilles, les pots et les bocaux. Un verre à boire cassé n'est pas un emballage : il ne va pas avec les bouteilles.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
   "text": "Le bain est fini. On enlève le bouchon : glouglou ! Où va l'eau sale ?",
   "src": [
    "goutte:consigne",
@@ -45523,9 +48036,46 @@
   ]
  },
  {
+  "text": "Le bocal de cornichons est en verre.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le bocal de cornichons va dans le bac blanc.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le bocal de cornichons va dans le bac vert.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le bocal de cornichons.",
+  "src": [
+   "tri:rendu"
+  ]
+ },
+ {
   "text": "Le bois est léger pour sa taille : il flotte.",
   "src": [
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "Le boulanger, lui, fait le pain.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Le cahier, on le fabrique avec de vieux papiers.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -45560,6 +48110,123 @@
   ]
  },
  {
+  "text": "Le camion du bac blanc est plein de bouteilles et de bocaux. Où va-t-il ?",
+  "src": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "text": "Le camion du bac bleu est plein de papiers. Où va-t-il ?",
+  "src": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "text": "Le camion du bac bleu va au centre de tri : les papiers deviendront du papier neuf.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Le camion du bac gris est plein de déchets qu'on ne recycle pas. Où va-t-il, le plus souvent ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le camion du bac jaune est plein d'emballages et de papiers. Où va-t-il ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le camion du bac jaune est plein d'emballages. Où va-t-il ?",
+  "src": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "text": "Le camion du bac jaune va au centre de tri : là-bas, on sépare les emballages pour les recycler.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Le camion du bac marron est plein de restes de cuisine. Où va-t-il ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le camion du bac vert est plein de bouteilles et de bocaux. Où va-t-il ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le camion du bac vert est plein de déchets qu'on ne recycle pas. Où va-t-il, le plus souvent ?",
+  "src": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "text": "Le camion est grand et lourd : on reste loin de lui.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le camion poubelle arrive ! Glisse le bac blanc jusqu'au camion.",
+  "src": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "text": "Le camion poubelle arrive ! Glisse le bac bleu jusqu'au camion.",
+  "src": [
+   "dechets:consigne"
+  ]
+ },
+ {
+  "text": "Le camion poubelle arrive ! Glisse le bac gris jusqu'au camion.",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le camion poubelle arrive ! Glisse le bac jaune jusqu'au camion.",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le camion poubelle arrive ! Glisse le bac marron jusqu'au camion.",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le camion poubelle arrive ! Glisse le bac vert jusqu'au camion.",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le camion poubelle passe dans la rue. Que fais-tu ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "le Canada",
   "src": [
    "mots"
@@ -45588,6 +48255,24 @@
   "text": "Le carré, c'est 4 côtés tous pareils et 4 coins.",
   "src": [
    "formes:indice"
+  ]
+ },
+ {
+  "text": "Le carton neuf, on le fabrique avec de vieux cartons.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Le carton redevient du carton.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le centre de tri, c'est pour les emballages et les papiers.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -45633,6 +48318,157 @@
   ]
  },
  {
+  "text": "Le compost aide les plantes à pousser.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le compost, c'est pour les restes de cuisine.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine.",
+  "src": [
+   "dechets:erreur",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. L'assiette cassée, c'est de la vaisselle : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. L'enveloppe est en papier : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. La boîte à pizza est un emballage en carton : elle se recycle, même un peu grasse !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. La boîte de céréales est un emballage en carton : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. La boîte de conserve est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. La bouteille en plastique est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. La bouteille est en verre : elle se recycle sans fin !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. La brique de lait est un emballage : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. La canette est un emballage en métal : elle se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. La couche sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. La vieille brosse à dents n'est pas un emballage : elle ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. Le bocal de cornichons est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. Le film en plastique est un emballage : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. Le journal est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. Le mouchoir sale ne se recycle pas.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. Le pot de confiture est en verre.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. Le pot de yaourt est un emballage en plastique : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. Le prospectus est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. Le vieux cahier est en papier : il se recycle !",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
+  "text": "Le composteur, c'est pour les restes de cuisine. Un verre à boire cassé n'est pas un emballage : il ne va pas avec les bouteilles.",
+  "src": [
+   "tri:erreur"
+  ]
+ },
+ {
   "text": "Le cône, c'est rond en bas et pointu en haut, comme un cornet de glace.",
   "src": [
    "formes:indice"
@@ -45660,6 +48496,39 @@
   "text": "Le corps, un ovale sous la tête.",
   "src": [
    "dessin"
+  ]
+ },
+ {
+  "text": "Le couvercle du bocal est en métal : c'est un emballage, il ne va pas avec le verre.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le couvercle du bocal va dans la caisse du métal.",
+  "src": [
+   "dechets:indice",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "Le couvercle du bocal va dans le bac jaune.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le couvercle du bocal.",
+  "src": [
+   "dechets:rendu",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le couvercle est en métal.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -46367,9 +49236,48 @@
   ]
  },
  {
+  "text": "Le facteur, lui, apporte le courrier.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "Le feuillage, comme un gros nuage tout bosselé.",
   "src": [
    "dessin"
+  ]
+ },
+ {
+  "text": "Le film en plastique est un emballage : il se recycle !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le film en plastique va dans la caisse du plastique.",
+  "src": [
+   "dechets:indice",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "Le film en plastique va dans le bac jaune.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le film en plastique.",
+  "src": [
+   "dechets:rendu",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le film est en plastique.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -46411,6 +49319,25 @@
   ]
  },
  {
+  "text": "Le grand tri de Basile ! Glisse chaque déchet dans la bonne poubelle.",
+  "src": [
+   "tri:consigne",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le grand tri est fini : tout est à sa place !",
+  "src": [
+   "tri:reussite"
+  ]
+ },
+ {
+  "text": "Le grand tri, pour aider Basile à mettre chaque déchet dans la bonne poubelle.",
+  "src": [
+   "tri:pitch"
+  ]
+ },
+ {
   "text": "le Japon",
   "src": [
    "mots"
@@ -46420,6 +49347,78 @@
   "text": "Le Japon",
   "src": [
    "carnet"
+  ]
+ },
+ {
+  "text": "Le jouet cassé n'est pas un emballage : il ne va pas dans le bac jaune.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le jouet cassé va dans le bac gris.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le jouet cassé va dans le bac vert.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le jouet cassé.",
+  "src": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le journal est en papier : il se recycle !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le journal est en papier : l'aimant ne l'attrape pas.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Le journal est en papier.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le journal va dans la caisse du papier et du carton.",
+  "src": [
+   "dechets:indice",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "Le journal va dans le bac bleu.",
+  "src": [
+   "dechets:reussite",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le journal va dans le bac jaune.",
+  "src": [
+   "dechets:reussite",
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le journal.",
+  "src": [
+   "dechets:rendu",
+   "tri:rendu"
   ]
  },
  {
@@ -46496,6 +49495,12 @@
   ]
  },
  {
+  "text": "Le magasin reprend les piles usées.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "Le magma est arrivé tout en haut : il va sortir !",
   "src": [
    "volcan:indice"
@@ -46558,6 +49563,12 @@
   ]
  },
  {
+  "text": "Le meilleur déchet, c'est celui qu'on ne fait pas ! Aide Basile à faire moins de déchets.",
+  "src": [
+   "dechets:intro"
+  ]
+ },
+ {
   "text": "Le miroir est froid, mais pas assez pour faire de la glace.",
   "src": [
    "goutte:erreur"
@@ -46568,6 +49579,33 @@
   "src": [
    "flotte:consigne",
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "Le mouchoir sale ne se recycle pas.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le mouchoir sale va dans le bac gris.",
+  "src": [
+   "dechets:reussite",
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le mouchoir sale va dans le bac vert.",
+  "src": [
+   "dechets:reussite",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le mouchoir sale.",
+  "src": [
+   "tri:rendu"
   ]
  },
  {
@@ -46640,6 +49678,18 @@
   ]
  },
  {
+  "text": "Le papier redevient du papier.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le papier toilette, on le fabrique avec des briques de lait.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "Le partage du goûter, pour partager les biscuits entre les amis.",
   "src": [
    "partage:pitch"
@@ -46673,6 +49723,24 @@
   "text": "le piano",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Le plastique peut devenir un tissu très doux.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le plus souvent, ces déchets vont à l'usine qui les brûle : sa chaleur chauffe des maisons.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Le pompier, lui, éteint le feu et sauve les gens.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -46721,6 +49789,70 @@
   "text": "Le Port des Voyages dort encore. Elle se réveillera bientôt !",
   "src": [
    "carte"
+  ]
+ },
+ {
+  "text": "Le pot de confiture est en verre.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le pot de confiture va dans le bac blanc.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le pot de confiture va dans le bac vert.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le pot de confiture.",
+  "src": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le pot de yaourt est en plastique : l'aimant ne l'attrape pas.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Le pot de yaourt est en plastique.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le pot de yaourt est un emballage en plastique : il se recycle !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le pot de yaourt va dans la caisse du plastique.",
+  "src": [
+   "dechets:indice",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "Le pot de yaourt va dans le bac jaune.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le pot de yaourt.",
+  "src": [
+   "dechets:rendu",
+   "tri:rendu"
   ]
  },
  {
@@ -48693,6 +51825,51 @@
   ]
  },
  {
+  "text": "Le prospectus est en papier : il se recycle !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le prospectus est en papier.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le prospectus va dans la caisse du papier et du carton.",
+  "src": [
+   "dechets:indice",
+   "dechets:rendu"
+  ]
+ },
+ {
+  "text": "Le prospectus va dans le bac bleu.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le prospectus va dans le bac jaune.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le prospectus.",
+  "src": [
+   "dechets:rendu",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le pull, on le fabrique avec des bouteilles en plastique.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "le rat",
   "src": [
    "mots"
@@ -48732,6 +51909,18 @@
   "text": "Le sable doré vient d'autres plages. Près des volcans, il est fait de lave refroidie, toute noire !",
   "src": [
    "volcan:erreur"
+  ]
+ },
+ {
+  "text": "Le sac en plastique finit vite à la poubelle.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Le sac en tissu sert encore et encore !",
+  "src": [
+   "dechets:reussite"
   ]
  },
  {
@@ -48821,6 +52010,12 @@
   ]
  },
  {
+  "text": "Le soleil se couche. Bravo pour ce beau voyage, Zéphyrine ! Ton défi pour la maison : Avec un aimant de frigo, essaie : colle-t-il à une boîte de conserve ? Et à une canette ?",
+  "src": [
+   "fin"
+  ]
+ },
+ {
   "text": "Le soleil se couche. Bravo pour ce beau voyage, Zéphyrine ! Ton défi pour la maison : Cache un jouet sous une tasse quand ton doudou « ne regarde pas » : où va-t-il chercher ?",
   "src": [
    "fin"
@@ -48828,6 +52023,18 @@
  },
  {
   "text": "Le soleil se couche. Bravo pour ce beau voyage, Zéphyrine ! Ton défi pour la maison : Cache un jouet, et guide un adulte jusqu'à lui avec des flèches.",
+  "src": [
+   "fin"
+  ]
+ },
+ {
+  "text": "Le soleil se couche. Bravo pour ce beau voyage, Zéphyrine ! Ton défi pour la maison : Ce soir, aide à trier les déchets du dîner : les emballages au bac jaune, le verre à part !",
+  "src": [
+   "fin"
+  ]
+ },
+ {
+  "text": "Le soleil se couche. Bravo pour ce beau voyage, Zéphyrine ! Ton défi pour la maison : Cherche dans la cuisine trois emballages qui vont dans le bac jaune.",
   "src": [
    "fin"
   ]
@@ -48888,6 +52095,12 @@
  },
  {
   "text": "Le soleil se couche. Bravo pour ce beau voyage, Zéphyrine ! Ton défi pour la maison : Dessine le héros de ton histoire.",
+  "src": [
+   "fin"
+  ]
+ },
+ {
+  "text": "Le soleil se couche. Bravo pour ce beau voyage, Zéphyrine ! Ton défi pour la maison : Dessine les poubelles de chez toi, avec leurs couleurs.",
   "src": [
    "fin"
   ]
@@ -49031,6 +52244,18 @@
   ]
  },
  {
+  "text": "Le soleil se couche. Bravo pour ce beau voyage, Zéphyrine ! Ton défi pour la maison : Pour la prochaine promenade, prépare ta gourde !",
+  "src": [
+   "fin"
+  ]
+ },
+ {
+  "text": "Le soleil se couche. Bravo pour ce beau voyage, Zéphyrine ! Ton défi pour la maison : Quand le camion poubelle passe, reste sur le trottoir et fais un grand coucou aux éboueurs !",
+  "src": [
+   "fin"
+  ]
+ },
+ {
   "text": "Le soleil se couche. Bravo pour ce beau voyage, Zéphyrine ! Ton défi pour la maison : Raconte l'histoire que tu as lue à quelqu'un de la famille.",
   "src": [
    "fin"
@@ -49139,6 +52364,31 @@
   ]
  },
  {
+  "text": "Le trognon de pomme est un reste de cuisine.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le trognon de pomme va dans le bac marron.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le trognon de pomme va dans le composteur.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le trognon de pomme.",
+  "src": [
+   "tri:rendu"
+  ]
+ },
+ {
   "text": "Le tronc : deux grands traits.",
   "src": [
    "dessin"
@@ -49151,6 +52401,55 @@
   ]
  },
  {
+  "text": "Le vélo, on le fabrique avec des canettes.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Le verre cassé va dans le bac gris.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le verre cassé va dans le bac vert.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le verre cassé.",
+  "src": [
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le verre fondu redevient du verre.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Le verre recyclé devient de nouvelles bouteilles, encore et encore !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Le verre va à l'usine du verre : on le fait fondre pour fabriquer de nouvelles bouteilles.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Le verre, lui, devient de nouvelles bouteilles.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "le Viêt Nam",
   "src": [
    "mots"
@@ -49160,6 +52459,31 @@
   "text": "Le Viêt Nam",
   "src": [
    "carnet"
+  ]
+ },
+ {
+  "text": "Le vieux cahier est en papier : il se recycle !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le vieux cahier va dans le bac bleu.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Le vieux cahier va dans le bac jaune.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Le vieux cahier.",
+  "src": [
+   "tri:rendu"
   ]
  },
  {
@@ -49193,6 +52517,12 @@
   "text": "Le voyage de la goutte, pour suivre Ploc, de la mer jusqu'au robinet.",
   "src": [
    "goutte:pitch"
+  ]
+ },
+ {
+  "text": "Le voyage des déchets, pour suivre le camion poubelle et découvrir ce que deviennent nos déchets.",
+  "src": [
+   "dechets:pitch"
   ]
  },
  {
@@ -49271,9 +52601,110 @@
   ]
  },
  {
+  "text": "Les boîtes en carton ont une nouvelle vie ! Que peut-on fabriquer avec ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Les bouteilles d'eau font beaucoup d'emballages.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Les bouteilles en plastique ont une nouvelle vie ! Que peut-on fabriquer avec ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Les bouteilles en plastique, elles, deviennent des pulls ou des peluches.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Les bouteilles en verre ont une nouvelle vie ! Que devient le verre ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Les bouteilles neuves, on les fabrique avec du verre.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Les bouteilles, les pots et les bocaux en verre vont dans le bac blanc. Le verre se recycle sans fin : on en refait des bouteilles !",
+  "src": [
+   "tri:intro"
+  ]
+ },
+ {
+  "text": "Les bouteilles, les pots et les bocaux en verre vont dans le bac vert. Le verre se recycle sans fin : on en refait des bouteilles !",
+  "src": [
+   "tri:intro"
+  ]
+ },
+ {
+  "text": "Les branches ne sont pas des emballages : pas dans le bac jaune.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Les briques de lait ont une nouvelle vie ! Que peut-on fabriquer avec ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Les briques de lait recyclées deviennent du papier toilette !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Les briques de lait, elles, deviennent du papier toilette.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Les briques sont surtout en carton : elles redeviennent du papier.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "Les canards vivent sur l'étang, pas dans la station ! Cherche de tout petits êtres vivants.",
   "src": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "text": "Les canettes ont une nouvelle vie ! Que peut-on fabriquer avec ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Les canettes, elles, deviennent des vélos.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Les cartons, eux, deviennent des cartons neufs.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -49301,9 +52732,80 @@
   ]
  },
  {
+  "text": "Les coquilles d'œuf sont des restes de cuisine.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Les coquilles d'œuf vont dans le bac marron.",
+  "src": [
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Les coquilles d'œuf vont dans le composteur.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Les coquilles d'œuf.",
+  "src": [
+   "tri:rendu"
+  ]
+ },
+ {
   "text": "Les deux sont en métal ! Mais le bateau est creux, rempli d'air : il flotte. La clé coule.",
   "src": [
    "flotte:indice"
+  ]
+ },
+ {
+  "text": "Les épluchures deviennent du compost, qui aide les légumes à pousser !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Les épluchures deviennent du compost. Que fait-il pousser ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Les épluchures sont des restes de cuisine : elles deviendront du compost !",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Les épluchures vont dans le bac marron.",
+  "src": [
+   "dechets:reussite",
+   "tri:indice",
+   "tri:rendu"
+  ]
+ },
+ {
+  "text": "Les épluchures vont dans le composteur.",
+  "src": [
+   "dechets:reussite",
+   "tri:indice"
+  ]
+ },
+ {
+  "text": "Les épluchures, elles, deviennent du compost.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Les épluchures.",
+  "src": [
+   "tri:rendu"
   ]
  },
  {
@@ -49322,6 +52824,18 @@
   "text": "Les formes de Rico, pour reconnaître les formes plates et les solides.",
   "src": [
    "formes:pitch"
+  ]
+ },
+ {
+  "text": "Les grosses branches vont à la déchetterie : elles y deviennent du compost.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Les journaux, eux, deviennent du papier neuf.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -49382,6 +52896,18 @@
   "text": "Les Palaos",
   "src": [
    "carnet"
+  ]
+ },
+ {
+  "text": "Les papiers vont au centre de tri : ils deviendront du papier neuf.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Les papiers vont d'abord là où on trie.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -49487,9 +53013,77 @@
   ]
  },
  {
+  "text": "Les piles usées ne vont dans aucune poubelle de la maison. Où les rapporte-t-on ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Les piles usées vont dans la boîte à piles du magasin : dans la nature, elles sont dangereuses.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
   "text": "Les poissons vivent dans la rivière, pas dans la station ! Cherche de tout petits êtres vivants.",
   "src": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "text": "Les restes de cuisine deviennent une terre pour les plantes.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Les restes de cuisine vont au compost : ils deviennent une terre très bonne pour les plantes.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Les restes de cuisine, comme les épluchures, vont dans le bac marron. Ils deviennent du compost, une terre très bonne pour les plantes !",
+  "src": [
+   "tri:intro"
+  ]
+ },
+ {
+  "text": "Les restes de cuisine, comme les épluchures, vont dans le composteur. Ils deviennent du compost, une terre très bonne pour les plantes !",
+  "src": [
+   "tri:intro"
+  ]
+ },
+ {
+  "text": "Les vêtements ne sont pas des emballages : pas dans le bac jaune.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Les vêtements vont dans la borne à vêtements : ils seront donnés ou recyclés.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Les vieux cartons recyclés deviennent des cartons neufs !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Les vieux journaux ont une nouvelle vie ! Que peut-on fabriquer avec ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Les vieux papiers recyclés deviennent du papier neuf, pour faire des cahiers !",
+  "src": [
+   "dechets:reussite"
   ]
  },
  {
@@ -49969,6 +53563,12 @@
   ]
  },
  {
+  "text": "Maintenant, touche le camion !",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "mais",
   "src": [
    "mots"
@@ -50137,6 +53737,42 @@
   ]
  },
  {
+  "text": "Merci ! Le camion vide le bac blanc.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Merci ! Le camion vide le bac bleu.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Merci ! Le camion vide le bac gris.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Merci ! Le camion vide le bac jaune.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Merci ! Le camion vide le bac marron.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "Merci ! Le camion vide le bac vert.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
   "text": "Merci pour ce voyage, Zéphyrine ! Ton défi pour la maison : Après la douche, regarde la buée sur le miroir : c'est la vapeur qui redevient de l'eau.",
   "src": [
    "fin"
@@ -50173,6 +53809,12 @@
   ]
  },
  {
+  "text": "Merci pour ce voyage, Zéphyrine ! Ton défi pour la maison : Avec un aimant de frigo, essaie : colle-t-il à une boîte de conserve ? Et à une canette ?",
+  "src": [
+   "fin"
+  ]
+ },
+ {
   "text": "Merci pour ce voyage, Zéphyrine ! Ton défi pour la maison : Cache un jouet sous une tasse quand ton doudou « ne regarde pas » : où va-t-il chercher ?",
   "src": [
    "fin"
@@ -50180,6 +53822,18 @@
  },
  {
   "text": "Merci pour ce voyage, Zéphyrine ! Ton défi pour la maison : Cache un jouet, et guide un adulte jusqu'à lui avec des flèches.",
+  "src": [
+   "fin"
+  ]
+ },
+ {
+  "text": "Merci pour ce voyage, Zéphyrine ! Ton défi pour la maison : Ce soir, aide à trier les déchets du dîner : les emballages au bac jaune, le verre à part !",
+  "src": [
+   "fin"
+  ]
+ },
+ {
+  "text": "Merci pour ce voyage, Zéphyrine ! Ton défi pour la maison : Cherche dans la cuisine trois emballages qui vont dans le bac jaune.",
   "src": [
    "fin"
   ]
@@ -50240,6 +53894,12 @@
  },
  {
   "text": "Merci pour ce voyage, Zéphyrine ! Ton défi pour la maison : Dessine le héros de ton histoire.",
+  "src": [
+   "fin"
+  ]
+ },
+ {
+  "text": "Merci pour ce voyage, Zéphyrine ! Ton défi pour la maison : Dessine les poubelles de chez toi, avec leurs couleurs.",
   "src": [
    "fin"
   ]
@@ -50378,6 +54038,18 @@
  },
  {
   "text": "Merci pour ce voyage, Zéphyrine ! Ton défi pour la maison : Pose une orange dans l'eau, puis épluche-la et réessaie !",
+  "src": [
+   "fin"
+  ]
+ },
+ {
+  "text": "Merci pour ce voyage, Zéphyrine ! Ton défi pour la maison : Pour la prochaine promenade, prépare ta gourde !",
+  "src": [
+   "fin"
+  ]
+ },
+ {
+  "text": "Merci pour ce voyage, Zéphyrine ! Ton défi pour la maison : Quand le camion poubelle passe, reste sur le trottoir et fais un grand coucou aux éboueurs !",
   "src": [
    "fin"
   ]
@@ -50835,12 +54507,6 @@
   ]
  },
  {
-  "text": "Mona n'a pas vu qu'on avait déplacé sa balle. Elle croit que c'est toujours dans le panier.",
-  "src": [
-   "theatre:indice"
-  ]
- },
- {
   "text": "Mona n'a pas vu qu'on avait déplacé sa balle. Elle croit que c'est toujours dans le tiroir.",
   "src": [
    "theatre:indice"
@@ -50901,49 +54567,35 @@
   ]
  },
  {
-  "text": "Mona range sa balle dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Kiki met la balle dans le panier. Mona revient. Où va-t-elle chercher sa balle en premier ?",
+  "text": "Mona range sa balle dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Basile met la balle dans le tiroir. Mona revient. Où va-t-elle chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Mona range sa balle dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Octave met la balle dans le panier. Mona revient. Où va-t-elle chercher sa balle en premier ?",
+  "text": "Mona range sa balle dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Kiki met la balle dans le tiroir. Mona revient. Où va-t-elle chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Mona range sa balle dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Octave met la balle dans le tiroir. Mona revient. Où va-t-elle chercher sa balle en premier ?",
+  "text": "Mona range sa balle dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Octave met la balle dans la boîte. Mona revient. Où va-t-elle chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Mona range sa balle dans le panier, puis elle sort jouer dehors. Pendant ce temps, Basile met la balle dans la boîte. Mona revient. Où va-t-elle chercher sa balle en premier ?",
+  "text": "Mona range sa balle dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Rico met la balle dans la boîte. Mona revient. Où va-t-elle chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Mona range sa balle dans le panier, puis elle sort jouer dehors. Pendant ce temps, Kiki met la balle dans le tiroir. Mona revient. Où va-t-elle chercher sa balle en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range sa balle dans le panier, puis elle sort jouer dehors. Pendant ce temps, Rico met la balle dans le tiroir. Mona revient. Où va-t-elle chercher sa balle en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range sa balle dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Basile met la balle dans le panier. Mona revient. Où va-t-elle chercher sa balle en premier ?",
+  "text": "Mona range sa petite voiture dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Basile met la petite voiture dans le panier. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -50957,48 +54609,6 @@
   ]
  },
  {
-  "text": "Mona range sa petite voiture dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Kiki met la petite voiture dans le panier. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range sa petite voiture dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Kiki met la petite voiture dans le tiroir. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range sa petite voiture dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans le panier. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range sa petite voiture dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans le panier. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range sa petite voiture dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans le tiroir. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range sa petite voiture dans le panier, puis elle sort jouer dehors. Pendant ce temps, Basile met la petite voiture dans le tiroir. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
   "text": "Mona range sa petite voiture dans le panier, puis elle sort jouer dehors. Pendant ce temps, Kiki met la petite voiture dans la boîte. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
@@ -51006,28 +54616,7 @@
   ]
  },
  {
-  "text": "Mona range sa petite voiture dans le panier, puis elle sort jouer dehors. Pendant ce temps, Kiki met la petite voiture dans le tiroir. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range sa petite voiture dans le panier, puis elle sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans le tiroir. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range sa petite voiture dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Basile met la petite voiture dans le panier. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range sa petite voiture dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Kiki met la petite voiture dans la boîte. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
+  "text": "Mona range sa petite voiture dans le panier, puis elle sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans la boîte. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -51041,7 +54630,21 @@
   ]
  },
  {
-  "text": "Mona range son biscuit dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Basile met le biscuit dans le tiroir. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
+  "text": "Mona range sa petite voiture dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans la boîte. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Mona range sa petite voiture dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans le panier. Mona revient. Où va-t-elle chercher sa petite voiture en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Mona range son biscuit dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Basile met le biscuit dans le panier. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -51055,21 +54658,28 @@
   ]
  },
  {
+  "text": "Mona range son biscuit dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Rico met le biscuit dans le panier. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Mona range son biscuit dans le panier, puis elle sort jouer dehors. Pendant ce temps, Basile met le biscuit dans la boîte. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Mona range son biscuit dans le panier, puis elle sort jouer dehors. Pendant ce temps, Kiki met le biscuit dans la boîte. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
   "text": "Mona range son biscuit dans le panier, puis elle sort jouer dehors. Pendant ce temps, Kiki met le biscuit dans le tiroir. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range son biscuit dans le panier, puis elle sort jouer dehors. Pendant ce temps, Octave met le biscuit dans la boîte. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range son biscuit dans le panier, puis elle sort jouer dehors. Pendant ce temps, Octave met le biscuit dans le tiroir. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -51083,14 +54693,21 @@
   ]
  },
  {
-  "text": "Mona range son biscuit dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Basile met le biscuit dans la boîte. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
+  "text": "Mona range son biscuit dans le panier, puis elle sort jouer dehors. Pendant ce temps, Rico met le biscuit dans le tiroir. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Mona range son biscuit dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Octave met le biscuit dans la boîte. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
+  "text": "Mona range son biscuit dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Basile met le biscuit dans le panier. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Mona range son biscuit dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Kiki met le biscuit dans le panier. Mona revient. Où va-t-elle chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -51104,21 +54721,14 @@
   ]
  },
  {
-  "text": "Mona range son doudou dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Kiki met le doudou dans le panier. Mona revient. Où va-t-elle chercher son doudou en premier ?",
+  "text": "Mona range son doudou dans la boîte, puis elle sort jouer dehors. Pendant ce temps, Basile met le doudou dans le panier. Mona revient. Où va-t-elle chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Mona range son doudou dans le panier, puis elle sort jouer dehors. Pendant ce temps, Rico met le doudou dans le tiroir. Mona revient. Où va-t-elle chercher son doudou en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range son doudou dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Basile met le doudou dans la boîte. Mona revient. Où va-t-elle chercher son doudou en premier ?",
+  "text": "Mona range son doudou dans le panier, puis elle sort jouer dehors. Pendant ce temps, Rico met le doudou dans la boîte. Mona revient. Où va-t-elle chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -51132,14 +54742,7 @@
   ]
  },
  {
-  "text": "Mona range son doudou dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Kiki met le doudou dans la boîte. Mona revient. Où va-t-elle chercher son doudou en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Mona range son doudou dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Octave met le doudou dans le panier. Mona revient. Où va-t-elle chercher son doudou en premier ?",
+  "text": "Mona range son doudou dans le tiroir, puis elle sort jouer dehors. Pendant ce temps, Kiki met le doudou dans le panier. Mona revient. Où va-t-elle chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -51946,6 +55549,12 @@
   ]
  },
  {
+  "text": "Non ! Derrière un camion, c'est dangereux : le chauffeur ne te voit pas.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "Non ! La lingette ne se défait pas : elle bouche les tuyaux. Elle va à la poubelle.",
   "src": [
    "goutte:erreur"
@@ -51955,6 +55564,12 @@
   "text": "Non ! Le coton-tige bouche les tuyaux. Il va à la poubelle.",
   "src": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "text": "Non ! On ne grimpe pas sur les poubelles : on pourrait tomber.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -51973,6 +55588,24 @@
   "text": "Non, la vapeur, c'est quand ça chauffe. Ici, il fait très froid !",
   "src": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "text": "Non, pas dans la poubelle : la peinture abîme la nature.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Non, pas dans la poubelle : les piles sont dangereuses pour la nature.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
+  "text": "Non, pas dans la poubelle : on rapporte les médicaments.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -52146,6 +55779,12 @@
   ]
  },
  {
+  "text": "Octave n'a pas vu qu'on avait déplacé sa balle. Il croit que c'est toujours dans le tiroir.",
+  "src": [
+   "theatre:indice"
+  ]
+ },
+ {
   "text": "Octave n'a pas vu qu'on avait déplacé sa petite voiture. Il croit que c'est toujours dans la boîte.",
   "src": [
    "theatre:indice"
@@ -52171,6 +55810,12 @@
  },
  {
   "text": "Octave n'a pas vu qu'on avait déplacé son biscuit. Il croit que c'est toujours dans le panier.",
+  "src": [
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave n'a pas vu qu'on avait déplacé son biscuit. Il croit que c'est toujours dans le tiroir.",
   "src": [
    "theatre:indice"
   ]
@@ -52215,21 +55860,28 @@
   ]
  },
  {
-  "text": "Octave range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Basile met la balle dans le tiroir. Octave revient. Où va-t-il chercher sa balle en premier ?",
+  "text": "Octave range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Basile met la balle dans le panier. Octave revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Octave range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met la balle dans le panier. Octave revient. Où va-t-il chercher sa balle en premier ?",
+  "text": "Octave range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met la balle dans le tiroir. Octave revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Octave range sa balle dans le panier, puis il sort jouer dehors. Pendant ce temps, Basile met la balle dans le tiroir. Octave revient. Où va-t-il chercher sa balle en premier ?",
+  "text": "Octave range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met la balle dans le tiroir. Octave revient. Où va-t-il chercher sa balle en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range sa balle dans le panier, puis il sort jouer dehors. Pendant ce temps, Kiki met la balle dans la boîte. Octave revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -52243,7 +55895,28 @@
   ]
  },
  {
-  "text": "Octave range sa balle dans le panier, puis il sort jouer dehors. Pendant ce temps, Rico met la balle dans la boîte. Octave revient. Où va-t-il chercher sa balle en premier ?",
+  "text": "Octave range sa balle dans le panier, puis il sort jouer dehors. Pendant ce temps, Rico met la balle dans le tiroir. Octave revient. Où va-t-il chercher sa balle en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range sa balle dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Basile met la balle dans la boîte. Octave revient. Où va-t-il chercher sa balle en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range sa balle dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Kiki met la balle dans le panier. Octave revient. Où va-t-il chercher sa balle en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range sa balle dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Rico met la balle dans la boîte. Octave revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -52257,14 +55930,56 @@
   ]
  },
  {
-  "text": "Octave range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met la petite voiture dans le tiroir. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Octave range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met la petite voiture dans le tiroir. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Octave range sa petite voiture dans le panier, puis il sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans le tiroir. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Octave range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met la petite voiture dans le panier. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans le panier. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans le tiroir. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range sa petite voiture dans le panier, puis il sort jouer dehors. Pendant ce temps, Basile met la petite voiture dans le tiroir. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range sa petite voiture dans le panier, puis il sort jouer dehors. Pendant ce temps, Kiki met la petite voiture dans la boîte. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range sa petite voiture dans le panier, puis il sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans la boîte. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range sa petite voiture dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Basile met la petite voiture dans la boîte. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -52285,21 +56000,7 @@
   ]
  },
  {
-  "text": "Octave range sa petite voiture dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Mona met la petite voiture dans le panier. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Octave range sa petite voiture dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans le panier. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Octave range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Basile met le biscuit dans le tiroir. Octave revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Octave range sa petite voiture dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Rico met la petite voiture dans la boîte. Octave revient. Où va-t-il chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -52313,21 +56014,56 @@
   ]
  },
  {
-  "text": "Octave range son biscuit dans le panier, puis il sort jouer dehors. Pendant ce temps, Mona met le biscuit dans la boîte. Octave revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Octave range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Rico met le biscuit dans le tiroir. Octave revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Octave range son doudou dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met le doudou dans le tiroir. Octave revient. Où va-t-il chercher son doudou en premier ?",
+  "text": "Octave range son biscuit dans le panier, puis il sort jouer dehors. Pendant ce temps, Basile met le biscuit dans la boîte. Octave revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Octave range son doudou dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met le doudou dans le tiroir. Octave revient. Où va-t-il chercher son doudou en premier ?",
+  "text": "Octave range son biscuit dans le panier, puis il sort jouer dehors. Pendant ce temps, Basile met le biscuit dans le tiroir. Octave revient. Où va-t-il chercher son biscuit en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range son biscuit dans le panier, puis il sort jouer dehors. Pendant ce temps, Kiki met le biscuit dans le tiroir. Octave revient. Où va-t-il chercher son biscuit en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range son biscuit dans le panier, puis il sort jouer dehors. Pendant ce temps, Mona met le biscuit dans le tiroir. Octave revient. Où va-t-il chercher son biscuit en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range son biscuit dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Mona met le biscuit dans la boîte. Octave revient. Où va-t-il chercher son biscuit en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range son biscuit dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Rico met le biscuit dans le panier. Octave revient. Où va-t-il chercher son biscuit en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range son doudou dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met le doudou dans le panier. Octave revient. Où va-t-il chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -52348,7 +56084,14 @@
   ]
  },
  {
-  "text": "Octave range son doudou dans le panier, puis il sort jouer dehors. Pendant ce temps, Rico met le doudou dans le tiroir. Octave revient. Où va-t-il chercher son doudou en premier ?",
+  "text": "Octave range son doudou dans le panier, puis il sort jouer dehors. Pendant ce temps, Kiki met le doudou dans la boîte. Octave revient. Où va-t-il chercher son doudou en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range son doudou dans le panier, puis il sort jouer dehors. Pendant ce temps, Rico met le doudou dans la boîte. Octave revient. Où va-t-il chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -52363,6 +56106,13 @@
  },
  {
   "text": "Octave range son doudou dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Mona met le doudou dans la boîte. Octave revient. Où va-t-il chercher son doudou en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave range son doudou dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Rico met le doudou dans la boîte. Octave revient. Où va-t-il chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -52419,9 +56169,57 @@
   ]
  },
  {
+  "text": "On le répare : il pourra encore servir !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "On les donne : un autre enfant pourra les porter !",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "On les rapporte au pharmacien.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "On les rapporte là où on les achète.",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "On prépare le voyage avec les drapeaux du monde.",
   "src": [
    "depart"
+  ]
+ },
+ {
+  "text": "On rapporte les vieux médicaments à la pharmacie.",
+  "src": [
+   "dechets:reussite"
+  ]
+ },
+ {
+  "text": "On recycle aussi les papiers : les journaux, les cahiers, les prospectus… Ils vont dans le bac bleu.",
+  "src": [
+   "tri:intro"
+  ]
+ },
+ {
+  "text": "On recycle aussi les papiers : les journaux, les cahiers, les prospectus… Ils vont dans le bac jaune.",
+  "src": [
+   "tri:intro"
+  ]
+ },
+ {
+  "text": "On reste sur le trottoir, et on fait coucou aux éboueurs !",
+  "src": [
+   "dechets:reussite"
   ]
  },
  {
@@ -52563,6 +56361,20 @@
   ]
  },
  {
+  "text": "Où apporte-t-on ce vieux pot de peinture ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Où emporte-t-on ces grosses branches du jardin ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "Où est le magma, avant de sortir du volcan ? Touche le bon endroit.",
   "src": [
    "volcan:consigne",
@@ -52574,6 +56386,19 @@
   "src": [
    "goutte:consigne",
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "Où le camion emporte-t-il ces déchets ?",
+  "src": [
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Où rapporte-t-on les vieux médicaments ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
   ]
  },
  {
@@ -53557,12 +57382,6 @@
  },
  {
   "text": "Oui ! Basile n'a pas vu qu'on avait déplacé son biscuit. Il croit que c'est toujours dans la boîte.",
-  "src": [
-   "theatre:reussite"
-  ]
- },
- {
-  "text": "Oui ! Basile n'a pas vu qu'on avait déplacé son biscuit. Il croit que c'est toujours dans le panier.",
   "src": [
    "theatre:reussite"
   ]
@@ -58788,12 +62607,6 @@
   ]
  },
  {
-  "text": "Oui ! Mona n'a pas vu qu'on avait déplacé sa balle. Elle croit que c'est toujours dans le panier.",
-  "src": [
-   "theatre:reussite"
-  ]
- },
- {
   "text": "Oui ! Mona n'a pas vu qu'on avait déplacé sa balle. Elle croit que c'est toujours dans le tiroir.",
   "src": [
    "theatre:reussite"
@@ -59064,6 +62877,12 @@
   ]
  },
  {
+  "text": "Oui ! Octave n'a pas vu qu'on avait déplacé sa balle. Il croit que c'est toujours dans le tiroir.",
+  "src": [
+   "theatre:reussite"
+  ]
+ },
+ {
   "text": "Oui ! Octave n'a pas vu qu'on avait déplacé sa petite voiture. Il croit que c'est toujours dans la boîte.",
   "src": [
    "theatre:reussite"
@@ -59089,6 +62908,12 @@
  },
  {
   "text": "Oui ! Octave n'a pas vu qu'on avait déplacé son biscuit. Il croit que c'est toujours dans le panier.",
+  "src": [
+   "theatre:reussite"
+  ]
+ },
+ {
+  "text": "Oui ! Octave n'a pas vu qu'on avait déplacé son biscuit. Il croit que c'est toujours dans le tiroir.",
   "src": [
    "theatre:reussite"
   ]
@@ -60007,6 +63832,12 @@
  },
  {
   "text": "Oui ! Rico n'a pas vu qu'on avait déplacé son biscuit. Il croit que c'est toujours dans le tiroir.",
+  "src": [
+   "theatre:reussite"
+  ]
+ },
+ {
+  "text": "Oui ! Rico n'a pas vu qu'on avait déplacé son doudou. Il croit que c'est toujours dans la boîte.",
   "src": [
    "theatre:reussite"
   ]
@@ -64801,13 +68632,6 @@
   ]
  },
  {
-  "text": "Pico a peur du noir. Que peux-tu faire pour l'aider ? Faire « bouh » pour lui faire peur, ou fermer la porte et partir, ou lui prêter une lampe de poche ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
   "text": "Pico a peur du noir. Que peux-tu faire pour l'aider ? Faire « bouh » pour lui faire peur, ou lui prêter une lampe de poche, ou fermer la porte et partir ?",
   "src": [
    "theatre:consigne",
@@ -65243,6 +69067,13 @@
   ]
  },
  {
+  "text": "Pose la poubelle à l'arrière du camion : l'éboueur va la vider.",
+  "src": [
+   "dechets:indice",
+   "dechets:rendu"
+  ]
+ },
+ {
   "text": "Pose ton doigt sur un coin, puis suis chaque côté en comptant : un, deux, trois…",
   "src": [
    "formes:indice"
@@ -65363,10 +69194,43 @@
   ]
  },
  {
+  "text": "Pour boire de l'eau à la maison, qu'est-ce qui fait le moins de déchets ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Pour faire pousser les légumes, on utilise le compost des épluchures.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "Pour la maison, on va chercher de l'eau dans la rivière. Qu'est-ce qui l'aspire ?",
   "src": [
    "goutte:consigne",
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "Pour la promenade, qu'emporte-t-on pour faire moins de déchets ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Pour le goûter, qu'est-ce qui fait le moins de déchets ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Pour refaire des bouteilles, on fait fondre le verre dans un four.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -74765,6 +78629,13 @@
   ]
  },
  {
+  "text": "Qui ramasse nos poubelles avec le camion ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
   "text": "qui… oui. Compte avec tes doigts.",
   "src": [
    "chants:indice"
@@ -75242,6 +79113,12 @@
   "text": "Regarde : et une petite queue toute ronde.",
   "src": [
    "dessin"
+  ]
+ },
+ {
+  "text": "Regarde : je te montre le chemin.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -75813,6 +79690,7 @@
  {
   "text": "Regarde bien, et écoute encore.",
   "src": [
+   "dechets:erreur",
    "goutte:erreur",
    "volcan:erreur"
   ]
@@ -75999,6 +79877,12 @@
   ]
  },
  {
+  "text": "Rico n'a pas vu qu'on avait déplacé son doudou. Il croit que c'est toujours dans la boîte.",
+  "src": [
+   "theatre:indice"
+  ]
+ },
+ {
   "text": "Rico n'a pas vu qu'on avait déplacé son doudou. Il croit que c'est toujours dans le panier.",
   "src": [
    "theatre:indice"
@@ -76024,42 +79908,21 @@
   ]
  },
  {
-  "text": "Rico range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Basile met la balle dans le panier. Rico revient. Où va-t-il chercher sa balle en premier ?",
+  "text": "Rico range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met la balle dans le panier. Rico revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met la balle dans le panier. Rico revient. Où va-t-il chercher sa balle en premier ?",
+  "text": "Rico range sa balle dans le panier, puis il sort jouer dehors. Pendant ce temps, Kiki met la balle dans la boîte. Rico revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met la balle dans le tiroir. Rico revient. Où va-t-il chercher sa balle en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Rico range sa balle dans la boîte, puis il sort jouer dehors. Pendant ce temps, Octave met la balle dans le tiroir. Rico revient. Où va-t-il chercher sa balle en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Rico range sa balle dans le panier, puis il sort jouer dehors. Pendant ce temps, Octave met la balle dans la boîte. Rico revient. Où va-t-il chercher sa balle en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Rico range sa balle dans le panier, puis il sort jouer dehors. Pendant ce temps, Octave met la balle dans le tiroir. Rico revient. Où va-t-il chercher sa balle en premier ?",
+  "text": "Rico range sa balle dans le panier, puis il sort jouer dehors. Pendant ce temps, Mona met la balle dans la boîte. Rico revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -76073,35 +79936,42 @@
   ]
  },
  {
-  "text": "Rico range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met la petite voiture dans le tiroir. Rico revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Rico range sa balle dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Basile met la balle dans le panier. Rico revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met la petite voiture dans le panier. Rico revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Rico range sa balle dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Octave met la balle dans la boîte. Rico revient. Où va-t-il chercher sa balle en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range sa petite voiture dans le panier, puis il sort jouer dehors. Pendant ce temps, Basile met la petite voiture dans le tiroir. Rico revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Rico range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Basile met la petite voiture dans le tiroir. Rico revient. Où va-t-il chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range sa petite voiture dans le panier, puis il sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans la boîte. Rico revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Rico range sa petite voiture dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met la petite voiture dans le panier. Rico revient. Où va-t-il chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range sa petite voiture dans le panier, puis il sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans le tiroir. Rico revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Rico range sa petite voiture dans le panier, puis il sort jouer dehors. Pendant ce temps, Mona met la petite voiture dans la boîte. Rico revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "src": [
+   "theatre:consigne",
+   "theatre:indice"
+  ]
+ },
+ {
+  "text": "Rico range sa petite voiture dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Kiki met la petite voiture dans la boîte. Rico revient. Où va-t-il chercher sa petite voiture en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -76115,35 +79985,21 @@
   ]
  },
  {
-  "text": "Rico range sa petite voiture dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Mona met la petite voiture dans le panier. Rico revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Rico range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Basile met le biscuit dans le tiroir. Rico revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range sa petite voiture dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Octave met la petite voiture dans la boîte. Rico revient. Où va-t-il chercher sa petite voiture en premier ?",
+  "text": "Rico range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Kiki met le biscuit dans le panier. Rico revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met le biscuit dans le tiroir. Rico revient. Où va-t-il chercher son biscuit en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Rico range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Octave met le biscuit dans le panier. Rico revient. Où va-t-il chercher son biscuit en premier ?",
-  "src": [
-   "theatre:consigne",
-   "theatre:indice"
-  ]
- },
- {
-  "text": "Rico range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Octave met le biscuit dans le tiroir. Rico revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Rico range son biscuit dans la boîte, puis il sort jouer dehors. Pendant ce temps, Mona met le biscuit dans le panier. Rico revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -76157,14 +80013,14 @@
   ]
  },
  {
-  "text": "Rico range son biscuit dans le panier, puis il sort jouer dehors. Pendant ce temps, Kiki met le biscuit dans le tiroir. Rico revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Rico range son biscuit dans le panier, puis il sort jouer dehors. Pendant ce temps, Octave met le biscuit dans la boîte. Rico revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range son biscuit dans le panier, puis il sort jouer dehors. Pendant ce temps, Mona met le biscuit dans la boîte. Rico revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Rico range son biscuit dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Basile met le biscuit dans la boîte. Rico revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -76178,14 +80034,14 @@
   ]
  },
  {
-  "text": "Rico range son biscuit dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Kiki met le biscuit dans le panier. Rico revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Rico range son biscuit dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Octave met le biscuit dans la boîte. Rico revient. Où va-t-il chercher son biscuit en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range son biscuit dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Octave met le biscuit dans la boîte. Rico revient. Où va-t-il chercher son biscuit en premier ?",
+  "text": "Rico range son doudou dans la boîte, puis il sort jouer dehors. Pendant ce temps, Basile met le doudou dans le panier. Rico revient. Où va-t-il chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -76199,28 +80055,28 @@
   ]
  },
  {
-  "text": "Rico range son doudou dans le panier, puis il sort jouer dehors. Pendant ce temps, Basile met le doudou dans le tiroir. Rico revient. Où va-t-il chercher son doudou en premier ?",
+  "text": "Rico range son doudou dans le panier, puis il sort jouer dehors. Pendant ce temps, Mona met le doudou dans la boîte. Rico revient. Où va-t-il chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range son doudou dans le panier, puis il sort jouer dehors. Pendant ce temps, Octave met le doudou dans la boîte. Rico revient. Où va-t-il chercher son doudou en premier ?",
+  "text": "Rico range son doudou dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Basile met le doudou dans la boîte. Rico revient. Où va-t-il chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range son doudou dans le panier, puis il sort jouer dehors. Pendant ce temps, Octave met le doudou dans le tiroir. Rico revient. Où va-t-il chercher son doudou en premier ?",
+  "text": "Rico range son doudou dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Kiki met le doudou dans le panier. Rico revient. Où va-t-il chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
   ]
  },
  {
-  "text": "Rico range son doudou dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Basile met le doudou dans le panier. Rico revient. Où va-t-il chercher son doudou en premier ?",
+  "text": "Rico range son doudou dans le tiroir, puis il sort jouer dehors. Pendant ce temps, Mona met le doudou dans la boîte. Rico revient. Où va-t-il chercher son doudou en premier ?",
   "src": [
    "theatre:consigne",
    "theatre:indice"
@@ -76821,6 +80677,12 @@
   "text": "Si chacun en a 6, est-ce que ça fait bien 10 ?",
   "src": [
    "partage:erreur"
+  ]
+ },
+ {
+  "text": "Si on le jette, c'est un déchet de plus.",
+  "src": [
+   "dechets:erreur"
   ]
  },
  {
@@ -78270,9 +82132,21 @@
   ]
  },
  {
+  "text": "Tous ces petits paquets, ce sont des emballages à jeter.",
+  "src": [
+   "dechets:erreur"
+  ]
+ },
+ {
   "text": "Tout au fond, sous le volcan, il fait si chaud que la roche fond : c'est le magma. Quand il monte et qu'il sort par le cratère, c'est l'éruption !",
   "src": [
    "volcan:intro"
+  ]
+ },
+ {
+  "text": "Tout est bien trié : Basile est ravi !",
+  "src": [
+   "tri:reussite"
   ]
  },
  {
@@ -80616,12 +84490,6 @@
   ]
  },
  {
-  "text": "Tu as fabriqué rue. On cherche les.",
-  "src": [
-   "syllabes:erreur"
-  ]
- },
- {
   "text": "Tu as fabriqué rue. On cherche lot.",
   "src": [
    "syllabes:erreur"
@@ -81990,6 +85858,12 @@
   ]
  },
  {
+  "text": "Tu connais toutes les poubelles ! Aide Basile à faire le grand tri.",
+  "src": [
+   "tri:intro"
+  ]
+ },
+ {
   "text": "Tu n'as rien lâché, et tu as trouvé !",
   "src": [
    "hote"
@@ -82121,6 +85995,12 @@
   "text": "Un gros ovale pour le corps.",
   "src": [
    "dessin"
+  ]
+ },
+ {
+  "text": "Un jouet réparé, ça peut encore servir.",
+  "src": [
+   "dechets:indice"
   ]
  },
  {
@@ -82276,6 +86156,12 @@
   ]
  },
  {
+  "text": "Un verre à boire cassé n'est pas un emballage : il ne va pas avec les bouteilles.",
+  "src": [
+   "tri:indice"
+  ]
+ },
+ {
   "text": "Un visage content a un grand sourire.",
   "src": [
    "theatre:indice"
@@ -82387,6 +86273,12 @@
   "text": "Une feuille de l'autre côté.",
   "src": [
    "dessin"
+  ]
+ },
+ {
+  "text": "Une fois triés, nos déchets ont une nouvelle vie : une bouteille peut devenir un pull, une canette un vélo !",
+  "src": [
+   "dechets:intro"
   ]
  },
  {
@@ -82672,6 +86564,13 @@
   ]
  },
  {
+  "text": "Voici des papiers, avec les emballages. Glisse chaque déchet dans la bonne poubelle.",
+  "src": [
+   "tri:consigne",
+   "tri:indice"
+  ]
+ },
+ {
   "text": "Voici l'eau d'une flaque. Est-ce qu'on peut la boire ?",
   "src": [
    "goutte:consigne",
@@ -82725,6 +86624,12 @@
   "src": [
    "goutte:consigne",
    "goutte:indice"
+  ]
+ },
+ {
+  "text": "Voici le camion poubelle, et les éboueurs ! Chaque semaine, le camion passe vider nos poubelles. Suis le voyage des déchets avec Octave !",
+  "src": [
+   "dechets:intro"
   ]
  },
  {
@@ -83066,6 +86971,41 @@
   "src": [
    "volcan:consigne",
    "volcan:indice"
+  ]
+ },
+ {
+  "text": "Voici le voyage d'un mouchoir sale. Qu'est-ce qui manque ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Voici le voyage d'un vieux journal. Qu'est-ce qui manque ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Voici le voyage d'une bouteille en plastique. Qu'est-ce qui manque ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Voici le voyage d'une bouteille en verre. Qu'est-ce qui manque ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
+  ]
+ },
+ {
+  "text": "Voici le voyage des épluchures. Qu'est-ce qui manque ?",
+  "src": [
+   "dechets:consigne",
+   "dechets:indice"
   ]
  },
  {

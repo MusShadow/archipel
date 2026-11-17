@@ -7,3 +7,5 @@ tests/e2e/shots5/
 __pycache__/
 *.pyc
 .DS_Store
+tests/e2e/shots6/
+tests/e2e/shots7/

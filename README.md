@@ -47,7 +47,7 @@ Plume parle avec une voix naturelle enregistrée à l'avance (voix de synthèse 
 - **Lecture** : un seul point d'entrée, `speech.say(texte, débit?)`, dont la promesse est tenue à la fin de la phrase ;
   clips décodés et joués par l'`AudioContext` déverrouillé au premier contact de l'enfant.
 
-## Livraison 3 : l'île des Découvertes (en cours)
+## Livraison 3 : l'île des Découvertes
 
 - **Le voyage de la goutte** (Octave) : Ploc, une goutte d'eau, fait le grand tour, raconté comme un dialogue
   (« Ploc demande… Octave répond… »), en six niveaux qui s'ouvrent au fil des réussites :
@@ -81,7 +81,33 @@ Plume parle avec une voix naturelle enregistrée à l'avance (voix de synthèse 
   Chaque mauvaise réponse a son explication ; six compétences suivies dans l'espace parent, astuces parent (chocolat
   fondu, bouteille d'eau gazeuse, Vulcania) et trois défis hors écran (volcan au bicarbonate, volcan coupé à dessiner,
   pierre ponce dans l'eau).
-- À venir : le grand tri, le voyage des déchets jusqu'à la déchetterie.
+- **Le grand tri** (Octave et Basile, qui revient du marché) : on glisse chaque déchet dans la bonne poubelle (ou on
+  touche le déchet, puis la poubelle ; toucher une poubelle dit à quoi elle sert), en six niveaux :
+  1. *le bac jaune* (emballages en plastique, en métal, en carton) et ce qui ne se recycle pas ;
+  2. *le verre* (bouteilles, pots, bocaux) ; 3. *les restes de cuisine* ; 4. *les papiers* ;
+  5. *les pièges* : verre à boire cassé et vaisselle (pas avec le verre), couvercle en métal d'un bocal (bac jaune), boîte
+     à pizza un peu grasse (bac jaune), jouet cassé (pas un emballage) ; 6. *le grand tri* : toutes les poubelles.
+  Couleurs nationales par défaut (emballages et papiers au bac jaune, verre au bac vert, restes de cuisine au bac marron,
+  le reste au bac gris). **Espace parent › Réglages › Tri des déchets** : papiers dans un bac bleu, restes de cuisine au
+  composteur, couleurs de Paris (verre au bac blanc, reste au bac vert) ; consignes de chez vous : appli Guide du tri
+  de Citeo. Toutes les phrases dites existent pour chaque réglage. Une erreur dit à quoi sert la poubelle choisie et ce
+  qu'est le déchet ; indice 3 : la bonne poubelle brille ; indice 4 : Plume range le déchet en le disant.
+- **Le voyage des déchets** (Octave) : le camion poubelle et les éboueurs, héros de tous les jours, en six niveaux :
+  1. *le camion poubelle* : glisser la poubelle jusqu'à l'arrière du camion (ou la toucher, puis le camion), le
+     lève-conteneur la vide, l'éboueur la repose et le camion repart en klaxonnant ; qui ramasse nos poubelles ; quand
+     le camion passe, on reste sur le trottoir ;
+  2. *où va chaque camion* : centre de tri, usine du verre, compost, usine qui brûle les déchets et chauffe des maisons ;
+  3. *le centre de tri* : le tapis roulant, à trier par matière (plastique, métal, papier et carton) ; le gros aimant
+     attrape la boîte de conserve ;
+  4. *une nouvelle vie* : une bouteille en plastique devient un pull ou le rembourrage d'une peluche, une canette un vélo,
+     le verre de nouvelles bouteilles, les papiers un cahier, les briques du papier toilette, les épluchures du compost
+     pour les légumes (et l'inverse : avec quoi a-t-on fait ce vélo ?) ; le voyage en entier, une étape cachée ;
+  5. *ni dans le bac jaune, ni dans le bac gris* : piles (magasin), médicaments (pharmacie), vêtements (borne),
+     chaise cassée, branches et peinture (déchetterie) ;
+  6. *faire moins de déchets* : gourde, sac en tissu, réparer, donner, boîte à goûter, eau du robinet.
+  Les poubelles suivent les réglages du grand tri (avec un composteur, les épluchures ne prennent pas le camion).
+  Un mauvais choix n'est jamais juste aussi (pas de bouteilles neuves pour le plastique, qui peut aussi redevenir une
+  bouteille ; pas de papier pour un produit en papier).
 
 ## Retours de test sur iPad (novembre 2026)
 
@@ -119,6 +145,8 @@ python3 tests/e2e/livraison3.py   # le voyage de la goutte, ses six niveaux (cap
 python3 tests/e2e/volcan.py       # le volcan d'Octave, ses six niveaux, le magma monté au doigt (captures dans tests/e2e/shots5)
 python3 tests/e2e/ipad.py         # voix naturelle sur iPad simulé : session « playback », lecteur de secours, diagnostic
 python3 tests/e2e/retours.py      # biscuits glissés (souris et doigt), fêtes de réussite et captures de chaque scène (shots4)
+python3 tests/e2e/tri.py          # le grand tri, ses six niveaux, glisser ou toucher, réglages des poubelles (shots6)
+python3 tests/e2e/dechets.py      # le voyage des déchets : camion, centre de tri, nouvelle vie, déchetterie (shots7)
 ```
 
 ### Refaire le pack de voix (après avoir ajouté ou changé des phrases)
@@ -133,7 +161,7 @@ python3 scripts/voix/finales.py   # consonnes finales muettes prononcées par er
 
 L'inventaire tire les exercices au hasard : `clips.ts` garde donc les clips de la liste précédente qui ne sont pas
 ressortis cette fois (`KEEP=0` pour repartir de zéro). Une activité peut aussi donner la liste complète de ses phrases
-(`voiceLines()` dans `src/activities/goutte.ts` et `src/activities/volcan.ts`), reprise telle quelle par l'inventaire.
+(`voiceLines()` dans la goutte, le volcan, le grand tri et le voyage des déchets), reprise telle quelle par l'inventaire.
 
 `generer.py` reprend tels quels les clips du pack publié (voir `voix/pack.json`) et ne fabrique que les nouveaux.
 Prérequis et modèles : en tête du script (sherpa-onnx 1.13, ffmpeg, modèles téléchargés depuis les versions publiées
@@ -152,6 +180,8 @@ Aucune dépendance d'exécution. Les illustrations sont des formes vectorielles 
 | `src/flags.ts` | Drapeaux (dessins SVG), continents, projection de la carte |
 | `src/host.ts` | Hôte commun des activités : consignes, indices, preuves, escalier, fin d'activité |
 | `src/activities/volcan_art.ts` | Dessins du volcan : le volcan coupé en deux (parties touchables), éruption, volcans du monde |
+| `src/activities/tri_art.ts`, `dechets_art.ts` | Dessins des poubelles et des déchets ; camion poubelle, éboueurs, centre de tri, usines, nouvelle vie |
+| `src/activities/glisser.ts` | Plateau « glisser dans la bonne caisse » (au doigt ou en touchant), partagé par le grand tri et le centre de tri |
 | `src/fete.ts` | Fêtes de réussite : message avec le prénom, scènes (feu d'artifice, ballons, voiture, fusée, pompiers, volcan), grande fête finale |
 | `src/activities/` | Une activité par fichier, toutes sur le même contrat `ActivityModule` |
 | `src/screens/` | Écrans de l'enfant (accueil, carte, coin calme, carnet, fin de séance, dessin, miroir, drapeau de mon île, histoires) et espace parent |
