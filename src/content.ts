@@ -148,6 +148,11 @@ export const DEFIS: Record<string, string[]> = {
     "Après la douche, regarde la buée sur le miroir : c'est la vapeur qui redevient de l'eau.",
     "En promenade, cherche le château d'eau le plus proche de chez toi.",
   ],
+  volcan: [
+    "Avec un adulte, fabrique un volcan : du bicarbonate dans un verre, une goutte de colorant rouge, puis du vinaigre… et regarde l'éruption !",
+    "Dessine un volcan coupé en deux : la poche de magma, la cheminée, le cratère, et la lave qui coule.",
+    "Cherche une pierre ponce à la maison et pose-la dans l'eau : flotte-t-elle ?",
+  ],
   theatre: [
     "Joue à « devine mon émotion » : fais une grimace, l'adulte devine.",
     "Raconte un moment où tu as été très content aujourd'hui.",

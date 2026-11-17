@@ -65,7 +65,23 @@ Plume parle avec une voix naturelle enregistrée à l'avance (voix de synthèse 
      douche rapide plutôt que grand bain.
   Chaque mauvaise réponse a son explication ; le « ? » se remplit avec la bonne réponse. Six compétences suivies dans
   l'espace parent, astuces parent et trois défis hors écran (mini château d'eau, buée, château d'eau du quartier).
-- À venir : le volcan d'Octave, le grand tri, le voyage des déchets jusqu'à la déchetterie.
+- **Le volcan d'Octave** : Octave enfile sa combinaison argentée, l'enfant devient apprenti volcanologue, en six niveaux :
+  1. *dans le volcan* : on touche les parties du volcan coupé en deux (poche de magma, cheminée, cratère, lave, nuage
+     de cendres) ;
+  2. *l'éruption* : faire monter le magma au doigt, de la poche jusqu'au cratère (toucher la poche marche aussi), puis
+     « et ensuite ? » (le volcan gronde, l'éruption, la lave qui coule, le nuage de cendres, la pierre, l'île qui grandit,
+     les plantes qui reviennent) et l'étape qui manque ;
+  3. *la lave* : très chaude, elle coule ; en refroidissant, elle devient pierre (comme l'eau qui gèle) ; la pierre ponce
+     flotte ; le sable noir des volcans ;
+  4. *volcans rouges, volcans gris* ; endormis ou réveillés (les volcans d'Auvergne dorment) ;
+  5. *le métier de volcanologue* : combinaison argentée, casque, masque à gaz, sismomètre, thermomètre, drone ; quand
+     le volcan se réveille, on s'éloigne avec les adultes ;
+  6. *les volcans du monde* et les drapeaux de leurs pays (mont Fuji, Etna, Stromboli, piton de la Fournaise, puy de
+     Dôme, Hawaï, Yellowstone, Indonésie, Santorin, Andes, mont Cameroun), et le geyser.
+  Chaque mauvaise réponse a son explication ; six compétences suivies dans l'espace parent, astuces parent (chocolat
+  fondu, bouteille d'eau gazeuse, Vulcania) et trois défis hors écran (volcan au bicarbonate, volcan coupé à dessiner,
+  pierre ponce dans l'eau).
+- À venir : le grand tri, le voyage des déchets jusqu'à la déchetterie.
 
 ## Retours de test sur iPad (novembre 2026)
 
@@ -100,6 +116,7 @@ python3 tests/e2e/livraison2.py   # îles de la livraison 2, dessin au doigt sim
 python3 tests/e2e/offline.py      # démarrage sans Internet
 python3 tests/e2e/voix.py         # voix naturelle : clips, prénom retiré, repli, réglage parent, débit, hors ligne
 python3 tests/e2e/livraison3.py   # le voyage de la goutte, ses six niveaux (captures dans tests/e2e/shots3)
+python3 tests/e2e/volcan.py       # le volcan d'Octave, ses six niveaux, le magma monté au doigt (captures dans tests/e2e/shots5)
 python3 tests/e2e/ipad.py         # voix naturelle sur iPad simulé : session « playback », lecteur de secours, diagnostic
 python3 tests/e2e/retours.py      # biscuits glissés (souris et doigt), fêtes de réussite et captures de chaque scène (shots4)
 ```
@@ -116,7 +133,7 @@ python3 scripts/voix/finales.py   # consonnes finales muettes prononcées par er
 
 L'inventaire tire les exercices au hasard : `clips.ts` garde donc les clips de la liste précédente qui ne sont pas
 ressortis cette fois (`KEEP=0` pour repartir de zéro). Une activité peut aussi donner la liste complète de ses phrases
-(`voiceLines()` dans `src/activities/goutte.ts`), reprise telle quelle par l'inventaire.
+(`voiceLines()` dans `src/activities/goutte.ts` et `src/activities/volcan.ts`), reprise telle quelle par l'inventaire.
 
 `generer.py` reprend tels quels les clips du pack publié (voir `voix/pack.json`) et ne fabrique que les nouveaux.
 Prérequis et modèles : en tête du script (sherpa-onnx 1.13, ffmpeg, modèles téléchargés depuis les versions publiées
@@ -134,6 +151,7 @@ Aucune dépendance d'exécution. Les illustrations sont des formes vectorielles 
 | `src/content.ts` | Progression des sons, mots déchiffrables, phrases de Plume, défis hors écran |
 | `src/flags.ts` | Drapeaux (dessins SVG), continents, projection de la carte |
 | `src/host.ts` | Hôte commun des activités : consignes, indices, preuves, escalier, fin d'activité |
+| `src/activities/volcan_art.ts` | Dessins du volcan : le volcan coupé en deux (parties touchables), éruption, volcans du monde |
 | `src/fete.ts` | Fêtes de réussite : message avec le prénom, scènes (feu d'artifice, ballons, voiture, fusée, pompiers, volcan), grande fête finale |
 | `src/activities/` | Une activité par fichier, toutes sur le même contrat `ActivityModule` |
 | `src/screens/` | Écrans de l'enfant (accueil, carte, coin calme, carnet, fin de séance, dessin, miroir, drapeau de mon île, histoires) et espace parent |

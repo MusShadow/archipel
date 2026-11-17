@@ -1787,18 +1787,6 @@
 "per": 0.0,
 "spelling": null
 },
-"celle-ci c'est parce que tu as compris ce que pensent les autres|.": {
-"h": "98f7b629b3e2c317",
-"say": "Celle-ci, c'est parce que tu as compris ce que pensent les autres.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour toutes les émotions que tu as reconnues|.": {
-"h": "87c538496f73904b",
-"say": "Celle-ci, c'est pour toutes les émotions que tu as reconnues.",
-"per": 0.0,
-"spelling": null
-},
 "cherche ce qui lui ferait du bien|.": {
 "h": "b08aef4200c01130",
 "say": "Cherche ce qui lui ferait du bien.",
@@ -4799,12 +4787,6 @@
 "per": 0.0,
 "spelling": null
 },
-"c'est parce que tu as continué à chercher|.": {
-"h": "ae5a0a765755b271",
-"say": "c'est parce que tu as continué à chercher.",
-"per": 0.0,
-"spelling": null
-},
 "c'est parce que tu as continué à compter jusqu'au bout|.": {
 "h": "f612a3819a279e82",
 "say": "c'est parce que tu as continué à compter jusqu'au bout.",
@@ -4835,303 +4817,9 @@
 "per": 0.0,
 "spelling": null
 },
-"c'est pour le drapeau de cuba|,": {
-"h": "16daeee1737766c8",
-"say": "c'est pour le drapeau de Cuba,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de l'allemagne|,": {
-"h": "0a2f055cec19ca99",
-"say": "c'est pour le drapeau de l'Allemagne,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de l'autriche|,": {
-"h": "1ed5af8ff1260bbe",
-"say": "c'est pour le drapeau de l'Autriche,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de l'inde|,": {
-"h": "2a3da2383cd20670",
-"say": "c'est pour le drapeau de l'Inde,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de l'indonésie|,": {
-"h": "fe8e531326eef9d6",
-"say": "c'est pour le drapeau de l'Indonésie,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de l'irlande|,": {
-"h": "895acfc34389646b",
-"say": "c'est pour le drapeau de l'Irlande,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de l'italie|,": {
-"h": "800d1ca30534e576",
-"say": "c'est pour le drapeau de l'Italie,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de l'ukraine|,": {
-"h": "8ec06226e412d667",
-"say": "c'est pour le drapeau de l'Ukraine,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la belgique|,": {
-"h": "c5c19e4a61fbe951",
-"say": "c'est pour le drapeau de la Belgique,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la bulgarie|,": {
-"h": "6420f49cd00ffdaa",
-"say": "c'est pour le drapeau de la Bulgarie,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la chine|,": {
-"h": "42a9b1c80cc1afbc",
-"say": "c'est pour le drapeau de la Chine,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la colombie|,": {
-"h": "b9ae3b1bcd1b68eb",
-"say": "c'est pour le drapeau de la Colombie,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la côte d'ivoire|,": {
-"h": "27f09192f34edc4d",
-"say": "c'est pour le drapeau de la Côte d'Ivoire,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la finlande|,": {
-"h": "095611e71ecc763e",
-"say": "c'est pour le drapeau de la Finlande,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la france|,": {
-"h": "079b62e464ca1539",
-"say": "c'est pour le drapeau de la France,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la grèce|,": {
-"h": "5a48fa7f0a3ed3d4",
-"say": "c'est pour le drapeau de la Grèce,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la guinée|,": {
-"h": "49935fa59ab9a5be",
-"say": "c'est pour le drapeau de la Guinée,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la hongrie|,": {
-"h": "955c45d6d9f1b515",
-"say": "c'est pour le drapeau de la Hongrie,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la lituanie|,": {
-"h": "4a3c091a74351268",
-"say": "c'est pour le drapeau de la Lituanie,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la norvège|,": {
-"h": "fc48598910944d05",
-"say": "c'est pour le drapeau de la Norvège,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la pologne|,": {
-"h": "7baac4f7d5fae5ec",
-"say": "c'est pour le drapeau de la Pologne,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la roumanie|,": {
-"h": "57e7dfdb854ef1fe",
-"say": "c'est pour le drapeau de la Roumanie,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la russie|,": {
-"h": "d8c744f3267c4616",
-"say": "c'est pour le drapeau de la Russie,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la somalie|,": {
-"h": "cab458b8402b4026",
-"say": "c'est pour le drapeau de la Somalie,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la suède|,": {
-"h": "07880e2e5d84b539",
-"say": "c'est pour le drapeau de la Suède,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la suisse|,": {
-"h": "8550c7a6fe5a1de4",
-"say": "c'est pour le drapeau de la Suisse,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de la tchéquie|,": {
-"h": "da1035a1c7665b28",
-"say": "c'est pour le drapeau de la Tchéquie,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau de monaco|,": {
-"h": "c75309060544ba23",
-"say": "c'est pour le drapeau de Monaco,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau des états-unis|,": {
-"h": "adff363586fb3f33",
-"say": "c'est pour le drapeau des États-Unis,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau des palaos|,": {
-"h": "41f208222eabe63a",
-"say": "c'est pour le drapeau des Palaos,",
-"per": 0.0,
-"spelling": null
-},
 "c'est pour le drapeau des pays-bas|,": {
 "h": "15931c4462256c8e",
 "say": "c'est pour le drapeau des Pays-Bas,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du bangladesh|,": {
-"h": "1c26fc5f41e97fb1",
-"say": "c'est pour le drapeau du Bangladesh,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du cameroun|,": {
-"h": "c49f56663645969d",
-"say": "c'est pour le drapeau du Cameroun,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du canada|,": {
-"h": "14b3d9f7c91dedcd",
-"say": "c'est pour le drapeau du Canada,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du chili|,": {
-"h": "cfbdd0bcf21b2d6f",
-"say": "c'est pour le drapeau du Chili,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du danemark|,": {
-"h": "2632a6c7fcf0752f",
-"say": "c'est pour le drapeau du Danemark,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du gabon|,": {
-"h": "75b83182ea50034c",
-"say": "c'est pour le drapeau du Gabon,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du japon|,": {
-"h": "55bae0892acad2c8",
-"say": "c'est pour le drapeau du Japon,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du laos|,": {
-"h": "c7d8c0112038f092",
-"say": "c'est pour le drapeau du Laos,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du luxembourg|,": {
-"h": "4c5ab966f6093ab5",
-"say": "c'est pour le drapeau du Luxembourg,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du mali|,": {
-"h": "4cc113c84942ca0f",
-"say": "c'est pour le drapeau du Mali,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du maroc|,": {
-"h": "e7153833d987f98d",
-"say": "c'est pour le drapeau du Maroc,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du nigeria|,": {
-"h": "f8475075cc32f341",
-"say": "c'est pour le drapeau du Nigeria,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du panama|,": {
-"h": "a936eb1c46bbff27",
-"say": "c'est pour le drapeau du Panama,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du pérou|,": {
-"h": "661c8dbd4eef0ce0",
-"say": "c'est pour le drapeau du Pérou,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du royaume-uni|,": {
-"h": "3dc188cfe2e47e2a",
-"say": "c'est pour le drapeau du Royaume-Uni,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du sénégal|,": {
-"h": "5ae4de38edac24fd",
-"say": "c'est pour le drapeau du Sénégal,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du tchad|,": {
-"h": "e5f0abd2ca740f52",
-"say": "c'est pour le drapeau du Tchad,",
-"per": 0.056,
-"spelling": null
-},
-"c'est pour le drapeau du togo|,": {
-"h": "e0078572354cb95d",
-"say": "c'est pour le drapeau du Togo,",
-"per": 0.0,
-"spelling": null
-},
-"c'est pour le drapeau du viêt nam|,": {
-"h": "d26e9b25d14d5df5",
-"say": "c'est pour le drapeau du Viêt Nam,",
 "per": 0.0,
 "spelling": null
 },
@@ -5225,12 +4913,6 @@
 "per": 0.0,
 "spelling": null
 },
-"c'est pour tous les drapeaux que tu as reconnus|.": {
-"h": "b889ea2d0f41b17b",
-"say": "c'est pour tous les drapeaux que tu as reconnu.",
-"per": 0.0,
-"spelling": null
-},
 "c'est pour tous les mots que tu as frappés en rythme|.": {
 "h": "b53a36ac70a47c27",
 "say": "c'est pour tous les mots que tu as frappés en rythme.",
@@ -5316,9 +4998,9 @@
 "spelling": null
 },
 "cameroun|.": {
-"h": "1a1fe402b2316f09",
-"say": "Cameroun",
-"per": 0.2,
+"h": "fce0883b6a5a9ae0",
+"say": "Cameroune",
+"per": 0.0,
 "spelling": null
 },
 "camion|.": {
@@ -5345,10 +5027,520 @@
 "per": 0.0,
 "spelling": null
 },
+"ce n'est pas celui-là|.": {
+"h": "22aa1d13d9d1af95",
+"say": "Ce n'est pas celui-là.",
+"per": 0.0,
+"spelling": null
+},
 "ce n'est pas facile|.": {
 "h": "689b349259bcc758",
 "say": "Ce n'est pas facile !",
 "per": 0.0,
+"spelling": null
+},
+"celle-ci c'est parce que tu as bien écouté le début des mots|.": {
+"h": "99cd95257fa3443f",
+"say": "Celle-ci, c'est parce que tu as bien écouté le début des mots.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est parce que tu as cherché jusqu'à ce que ce soit juste pour tout le monde|.": {
+"h": "741af276aea33eb7",
+"say": "Celle-ci, c'est parce que tu as cherché jusqu'à ce que ce soit juste pour tout le monde.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est parce que tu as compris ce que pensent les autres|.": {
+"h": "98f7b629b3e2c317",
+"say": "Celle-ci, c'est parce que tu as compris ce que pensent les autres.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est parce que tu as compris que ce n'est pas la taille qui compte|.": {
+"h": "2c498234506c931b",
+"say": "Celle-ci, c'est parce que tu as compris que ce n'est pas la taille qui compte.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est parce que tu as continué à chercher|.": {
+"h": "a6a43d639bb1ac1f",
+"say": "Celle-ci, c'est parce que tu as continué à chercher.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est parce que tu as continué à compter jusqu'au bout|.": {
+"h": "263e6994f39b476e",
+"say": "Celle-ci, c'est parce que tu as continué à compter jusqu'au bout.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est parce que tu as recompté jusqu'à trouver|.": {
+"h": "9b603e7490c70ce8",
+"say": "Celle-ci, c'est parce que tu as recompté jusqu'à trouver.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est parce que tu as reconnu les vrais drapeaux même à l'envers|.": {
+"h": "f142e231645bffd8",
+"say": "Celle-ci, c'est parce que tu as reconnu les vrais drapeaux, même à l'envers.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est parce que tu sais ce qui se passe dans un volcan de la poche de magma jusqu'au cratère|.": {
+"h": "b5d911b56d517cac",
+"say": "Celle-ci, c'est parce que tu sais ce qui se passe dans un volcan, de la poche de magma jusqu'au cratère.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est parce que tu sais d'où vient l'eau du robinet et où elle repart|.": {
+"h": "16ddc9848d0f892b",
+"say": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
+"per": 0.073,
+"spelling": null
+},
+"celle-ci c'est pour avoir compté avec soin|.": {
+"h": "d780ef69737da450",
+"say": "Celle-ci, c'est pour avoir compté avec soin.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de cuba que tu as découvert aujourd'hui|.": {
+"h": "dbb23483dcbd10c8",
+"say": "Celle-ci, c'est pour le drapeau de Cuba, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de l'allemagne que tu as découvert aujourd'hui|.": {
+"h": "86ec7420ead8c357",
+"say": "Celle-ci, c'est pour le drapeau de l'Allemagne, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de l'autriche que tu as découvert aujourd'hui|.": {
+"h": "416f681f81b0eb5b",
+"say": "Celle-ci, c'est pour le drapeau de l'Autriche, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de l'inde que tu as découvert aujourd'hui|.": {
+"h": "db498f8a63b65e9f",
+"say": "Celle-ci, c'est pour le drapeau de l'Inde, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de l'indonésie que tu as découvert aujourd'hui|.": {
+"h": "49bd38c7d706fe03",
+"say": "Celle-ci, c'est pour le drapeau de l'Indonésie, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de l'irlande que tu as découvert aujourd'hui|.": {
+"h": "ce7e450ac11e3ca9",
+"say": "Celle-ci, c'est pour le drapeau de l'Irlande, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de l'italie que tu as découvert aujourd'hui|.": {
+"h": "df1a5fa3ada4af25",
+"say": "Celle-ci, c'est pour le drapeau de l'Italie, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de l'ukraine que tu as découvert aujourd'hui|.": {
+"h": "38aae8e3778a71ca",
+"say": "Celle-ci, c'est pour le drapeau de l'Ukraine, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la belgique que tu as découvert aujourd'hui|.": {
+"h": "7862f8d9131900e8",
+"say": "Celle-ci, c'est pour le drapeau de la Belgique, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la bulgarie que tu as découvert aujourd'hui|.": {
+"h": "398db048d02c7559",
+"say": "Celle-ci, c'est pour le drapeau de la Bulgarie, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la chine que tu as découvert aujourd'hui|.": {
+"h": "ca3f5da8618d2313",
+"say": "Celle-ci, c'est pour le drapeau de la Chine, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la colombie que tu as découvert aujourd'hui|.": {
+"h": "8a7557df769b3fdf",
+"say": "Celle-ci, c'est pour le drapeau de la Colombie, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la côte d'ivoire que tu as découvert aujourd'hui|.": {
+"h": "77dd6655127500fe",
+"say": "Celle-ci, c'est pour le drapeau de la Côte d'Ivoire, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la finlande que tu as découvert aujourd'hui|.": {
+"h": "20292c84dadc6866",
+"say": "Celle-ci, c'est pour le drapeau de la Finlande, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la france que tu as découvert aujourd'hui|.": {
+"h": "92a46bb1b5f30784",
+"say": "Celle-ci, c'est pour le drapeau de la France, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la grèce que tu as découvert aujourd'hui|.": {
+"h": "88286bb30132532d",
+"say": "Celle-ci, c'est pour le drapeau de la Grèce, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la guinée que tu as découvert aujourd'hui|.": {
+"h": "95ea66b4dec53ff4",
+"say": "Celle-ci, c'est pour le drapeau de la Guinée, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la hongrie que tu as découvert aujourd'hui|.": {
+"h": "f78dc872043e8da2",
+"say": "Celle-ci, c'est pour le drapeau de la Hongrie, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la lituanie que tu as découvert aujourd'hui|.": {
+"h": "ffc9b2fe04f9633c",
+"say": "Celle-ci, c'est pour le drapeau de la Lituanie, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la norvège que tu as découvert aujourd'hui|.": {
+"h": "88a70bcd429c72a9",
+"say": "Celle-ci, c'est pour le drapeau de la Norvège, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la pologne que tu as découvert aujourd'hui|.": {
+"h": "074f6ebcb6abad8a",
+"say": "Celle-ci, c'est pour le drapeau de la Pologne, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la roumanie que tu as découvert aujourd'hui|.": {
+"h": "c75f5f464fbead46",
+"say": "Celle-ci, c'est pour le drapeau de la Roumanie, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la russie que tu as découvert aujourd'hui|.": {
+"h": "b037649e4018bcb3",
+"say": "Celle-ci, c'est pour le drapeau de la Russie, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la somalie que tu as découvert aujourd'hui|.": {
+"h": "e316b0e6fd509e45",
+"say": "Celle-ci, c'est pour le drapeau de la Somalie, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la suède que tu as découvert aujourd'hui|.": {
+"h": "b50506a793d23cc5",
+"say": "Celle-ci, c'est pour le drapeau de la Suède, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la suisse que tu as découvert aujourd'hui|.": {
+"h": "950cb306add57ee0",
+"say": "Celle-ci, c'est pour le drapeau de la Suisse, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de la tchéquie que tu as découvert aujourd'hui|.": {
+"h": "6d918edfe14385ea",
+"say": "Celle-ci, c'est pour le drapeau de la Tchéquie, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau de monaco que tu as découvert aujourd'hui|.": {
+"h": "16c5767a2e9c17df",
+"say": "Celle-ci, c'est pour le drapeau de Monaco, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau des états-unis que tu as découvert aujourd'hui|.": {
+"h": "3c595f2b44441d28",
+"say": "Celle-ci, c'est pour le drapeau des États-Unis, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau des palaos que tu as découvert aujourd'hui|.": {
+"h": "102e22ab4c06ac07",
+"say": "Celle-ci, c'est pour le drapeau des Palaos, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du bangladesh que tu as découvert aujourd'hui|.": {
+"h": "a4546ecd5e1f7a85",
+"say": "Celle-ci, c'est pour le drapeau du Bangladesh, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du cameroun que tu as découvert aujourd'hui|.": {
+"h": "9bdfd053921c2608",
+"say": "Celle-ci, c'est pour le drapeau du Cameroune, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du canada que tu as découvert aujourd'hui|.": {
+"h": "2440f5be5a5ac205",
+"say": "Celle-ci, c'est pour le drapeau du Canada, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du chili que tu as découvert aujourd'hui|.": {
+"h": "04ec070b10b934fb",
+"say": "Celle-ci, c'est pour le drapeau du Chili, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du danemark que tu as découvert aujourd'hui|.": {
+"h": "fecda4e040702cb6",
+"say": "Celle-ci, c'est pour le drapeau du Danemark, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du gabon que tu as découvert aujourd'hui|.": {
+"h": "50281d324a64be9e",
+"say": "Celle-ci, c'est pour le drapeau du Gabon, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du japon que tu as découvert aujourd'hui|.": {
+"h": "db7eaff99469ff07",
+"say": "Celle-ci, c'est pour le drapeau du Japon, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du laos que tu as découvert aujourd'hui|.": {
+"h": "39155b0ee61f3fe5",
+"say": "Celle-ci, c'est pour le drapeau du Laos, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du luxembourg que tu as découvert aujourd'hui|.": {
+"h": "40df0962225788eb",
+"say": "Celle-ci, c'est pour le drapeau du Luxembourg, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du mali que tu as découvert aujourd'hui|.": {
+"h": "666a284aa2123a77",
+"say": "Celle-ci, c'est pour le drapeau du Mali, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du maroc que tu as découvert aujourd'hui|.": {
+"h": "14c94e3bfc8dd2e5",
+"say": "Celle-ci, c'est pour le drapeau du Maroc, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du nigeria que tu as découvert aujourd'hui|.": {
+"h": "5c27ef04d0dfe8f8",
+"say": "Celle-ci, c'est pour le drapeau du Nigeria, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du panama que tu as découvert aujourd'hui|.": {
+"h": "8a0961f3972ec3ab",
+"say": "Celle-ci, c'est pour le drapeau du Panama, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du pérou que tu as découvert aujourd'hui|.": {
+"h": "c19ac70edb1d4274",
+"say": "Celle-ci, c'est pour le drapeau du Pérou, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du royaume-uni que tu as découvert aujourd'hui|.": {
+"h": "38ddf79fcc53231a",
+"say": "Celle-ci, c'est pour le drapeau du Royaume-Uni, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du sénégal que tu as découvert aujourd'hui|.": {
+"h": "5663c9ac8132420d",
+"say": "Celle-ci, c'est pour le drapeau du Sénégal, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du tchad que tu as découvert aujourd'hui|.": {
+"h": "1c98840ac918b9c2",
+"say": "Celle-ci, c'est pour le drapeau du Tchad, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du togo que tu as découvert aujourd'hui|.": {
+"h": "933b7b4e3d82df5d",
+"say": "Celle-ci, c'est pour le drapeau du Togo, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le drapeau du viêt nam que tu as découvert aujourd'hui|.": {
+"h": "8854e24c1ce81673",
+"say": "Celle-ci, c'est pour le drapeau du Viêt Nam, que tu as découvert aujourd'hui.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour le grand voyage de ploc de la mer jusqu'au nuage|.": {
+"h": "391a6a3a13c6e65b",
+"say": "Celle-ci, c'est pour le grand voyage de Ploc, de la mer jusqu'au nuage.",
+"per": 0.023,
+"spelling": null
+},
+"celle-ci c'est pour les bugs que tu as trouvés comme une vraie informaticienne ou un vrai informaticien|.": {
+"h": "a12851eb5cbe56ee",
+"say": "Celle-ci, c'est pour les bugs que tu as trouvés, comme une vraie informaticienne ou un vrai informaticien.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour les drapeaux que tu as coloriés|.": {
+"h": "dad5b8dadf9b680e",
+"say": "Celle-ci, c'est pour les drapeaux que tu as coloriés.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour les mots que tu as écrits|.": {
+"h": "5ddf62b86610ddf2",
+"say": "Celle-ci, c'est pour les mots que tu as écrits.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour les mots que tu as lus tout seul|.": {
+"h": "a1500a67bf42e1e2",
+"say": "Celle-ci, c'est pour les mots que tu as lu tout seul.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour les mots que tu as lus|.": {
+"h": "ceb4b43f0e9e95c3",
+"say": "Celle-ci, c'est pour les mots que tu as lu.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour les phrases que tu as lues|.": {
+"h": "da6703e3d2712862",
+"say": "Celle-ci, c'est pour les phrases que tu as lues.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour les rimes que tu as entendues|.": {
+"h": "61b4b3c30e846f22",
+"say": "Celle-ci, c'est pour les rimes que tu as entendues.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour les solides que tu as reconnus|.": {
+"h": "77a7b940bd7eba74",
+"say": "Celle-ci, c'est pour les solides que tu as reconnu.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour les suites que tu as devinées|.": {
+"h": "c362c875e2686f93",
+"say": "Celle-ci, c'est pour les suites que tu as devinées.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour les syllabes que tu as fabriquées|.": {
+"h": "6b5fa23ac2ad0ef0",
+"say": "Celle-ci, c'est pour les syllabes que tu as fabriquées.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour les tableaux que tu as complétés|.": {
+"h": "98c4612f40dab441",
+"say": "Celle-ci, c'est pour les tableaux que tu as complétés.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour tes partages bien justes|.": {
+"h": "0c68414280f08b3d",
+"say": "Celle-ci, c'est pour tes partages bien justes.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour tes programmes bip est arrivé au bout|.": {
+"h": "2188263ed629756e",
+"say": "Celle-ci, c'est pour tes programmes, Bip est arrivé au bout !",
+"per": 0.031,
+"spelling": null
+},
+"celle-ci c'est pour ton grand voyage autour des volcans du monde|.": {
+"h": "f6775822a512afbc",
+"say": "Celle-ci, c'est pour ton grand voyage autour des volcans du monde.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour tous les bons gestes qui protègent l'eau|.": {
+"h": "62eef30749b67507",
+"say": "Celle-ci, c'est pour tous les bons gestes qui protègent l'eau.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour tous les drapeaux que tu as reconnus|.": {
+"h": "68bf792cd06ed786",
+"say": "Celle-ci, c'est pour tous les drapeaux que tu as reconnu.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour tous les mots que tu as frappés en rythme|.": {
+"h": "3a4a2e20b85c482b",
+"say": "Celle-ci, c'est pour tous les mots que tu as frappés en rythme.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour tous les sauts bien comptés|.": {
+"h": "ef254fc5578047af",
+"say": "Celle-ci, c'est pour tous les sauts bien comptés.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour tout ce que tu sais sur la lave et sur les volcans rouges et gris|.": {
+"h": "0987c7eff7804015",
+"say": "Celle-ci, c'est pour tout ce que tu sais sur la lave, et sur les volcans rouges et gris.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour toutes les émotions que tu as reconnues|.": {
+"h": "87c538496f73904b",
+"say": "Celle-ci, c'est pour toutes les émotions que tu as reconnues.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour toutes les formes que tu as trouvées|.": {
+"h": "562880f7eba57d9c",
+"say": "Celle-ci, c'est pour toutes les formes que tu as trouvées.",
+"per": 0.0,
+"spelling": null
+},
+"celle-ci c'est pour toutes tes expériences dans le bassin d'octave|.": {
+"h": "a52927c2f53dab93",
+"say": "Celle-ci, c'est pour toutes tes expériences dans le bassin d'Octave.",
+"per": 0.051,
+"spelling": null
+},
+"celle-ci c'est ta médaille d'apprenti volcanologue|.": {
+"h": "a64ceaf2689f4c70",
+"say": "Celle-ci, c'est ta médaille d'apprenti volcanologue !",
+"per": 0.032,
 "spelling": null
 },
 "celle-ci c'est ton passeport d'explorateur tu as réussi le grand départ|.": {
@@ -5666,6 +5858,12 @@
 "essaie encore|.": {
 "h": "6e22b2c47e512d26",
 "say": "Essaie encore.",
+"per": 0.0,
+"spelling": null
+},
+"et découvrir ce qui se cache dans un volcan|.": {
+"h": "fcd174a02f1fe074",
+"say": "et découvrir ce qui se cache dans un volcan.",
 "per": 0.0,
 "spelling": null
 },
@@ -6432,9 +6630,9 @@
 "spelling": null
 },
 "le cameroun|.": {
-"h": "72adf0fe23449400",
-"say": "le Cameroun",
-"per": 0.167,
+"h": "e9b61a539fc1daae",
+"say": "le Cameroune",
+"per": 0.0,
 "spelling": null
 },
 "le canada|.": {
@@ -6764,6 +6962,18 @@
 "le viêt nam|.": {
 "h": "a816ad0ff678519c",
 "say": "le Viêt Nam",
+"per": 0.0,
+"spelling": null
+},
+"le volcan d'octave|,": {
+"h": "dad4ec23b7d9bc1e",
+"say": "Le volcan d'Octave,",
+"per": 0.0,
+"spelling": null
+},
+"le volcan d'octave|.": {
+"h": "da2d4f75489a9050",
+"say": "le volcan d'octave.",
 "per": 0.0,
 "spelling": null
 },
@@ -7150,6 +7360,12 @@
 "say": "no",
 "per": 0.0,
 "spelling": "no"
+},
+"noir|.": {
+"h": "c8baa41fe9f81561",
+"say": "Noir !",
+"per": 0.0,
+"spelling": null
 },
 "norvège|.": {
 "h": "d4639b77536fb605",
@@ -7550,6 +7766,12 @@
 "pour dessiner des deux côtés à la fois|.": {
 "h": "73c7033464b18db8",
 "say": "pour dessiner des deux côtés à la fois.",
+"per": 0.0,
+"spelling": null
+},
+"pour devenir volcanologue|": {
+"h": "f35e75762d5ef6b2",
+"say": "pour devenir volcanologue",
 "per": 0.0,
 "spelling": null
 },
@@ -8045,6 +8267,12 @@
 "per": 0.0,
 "spelling": null
 },
+"ton défi pour la maison avec un adulte fabrique un volcan du bicarbonate dans un verre une goutte de colorant rouge puis du vinaigre et regarde l'éruption|.": {
+"h": "417254561b2f3f5c",
+"say": "Ton défi pour la maison : Avec un adulte, fabrique un volcan : du bicarbonate dans un verre, une goutte de colorant rouge, puis du vinaigre… et regarde l'éruption !",
+"per": 0.03,
+"spelling": null
+},
 "ton défi pour la maison cache un jouet et guide un adulte jusqu'à lui avec des flèches|.": {
 "h": "c648a695b0f299c9",
 "say": "Ton défi pour la maison : Cache un jouet, et guide un adulte jusqu'à lui avec des flèches.",
@@ -8084,6 +8312,12 @@
 "ton défi pour la maison cherche un drapeau dans un livre ou sur un emballage|.": {
 "h": "7c51752e4c663a80",
 "say": "Ton défi pour la maison : Cherche un drapeau dans un livre ou sur un emballage.",
+"per": 0.0,
+"spelling": null
+},
+"ton défi pour la maison cherche une pierre ponce à la maison et pose-la dans l'eau flotte-t-elle|?": {
+"h": "c6ee1154b6a9dd05",
+"say": "Ton défi pour la maison : Cherche une pierre ponce à la maison et pose-la dans l'eau : flotte-t-elle ?",
 "per": 0.0,
 "spelling": null
 },
@@ -8127,6 +8361,12 @@
 "h": "a34be59a540dee9e",
 "say": "Ton défi pour la maison : Dessine un chemin avec des flèches pour aller de ton li à la porte.",
 "per": 0.056,
+"spelling": null
+},
+"ton défi pour la maison dessine un volcan coupé en deux la poche de magma la cheminée le cratère et la lave qui coule|.": {
+"h": "9ca4d59eefea1ea5",
+"say": "Ton défi pour la maison : Dessine un volcan coupé en deux, la poche de magma, la cheminée, le cratère, et la lave qui coule.",
+"per": 0.0,
 "spelling": null
 },
 "ton défi pour la maison dessine une marelle à la craie de 0 à 10 et saute dessus|.": {
@@ -8573,9 +8813,39 @@
 "per": 0.0,
 "spelling": null
 },
+"à toi d'essayer|.": {
+"h": "e3e5e948d3e37e8e",
+"say": "À toi d'essayer !",
+"per": 0.0,
+"spelling": null
+},
+"à yellowstone aux états-unis la chaleur du volcan fait jaillir des geysers d'eau chaude|.": {
+"h": "c89ea4302293fed5",
+"say": "À Yellowstone, aux États-Unis, la chaleur du volcan fait jaillir des gèzères d'eau chaude.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a l'éruption|.": {
+"h": "ca23e3568cdd59e3",
+"say": "Après, il y a l'éruption.",
+"per": 0.0,
+"spelling": null
+},
 "après il y a l'usine d'eau potable|.": {
 "h": "c760b626fd6efd68",
 "say": "Après, il y a l'usine d'eau potable.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la lave devenue pierre|.": {
+"h": "78936587da87a519",
+"say": "Après, il y a la lave devenue pierre.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la lave qui coule|.": {
+"h": "a50c3fae3bbaa737",
+"say": "Après, il y a la lave qui coule.",
 "per": 0.0,
 "spelling": null
 },
@@ -8594,6 +8864,18 @@
 "après il y a la neige|.": {
 "h": "3724733f3094935e",
 "say": "Après, il y a la neige.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la nouvelle terre dans la mer|.": {
+"h": "700a0728828b0c8c",
+"say": "Après, il y a la nouvelle terre dans la mer.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a la pluie de cendres|.": {
+"h": "191dba7b78ad2369",
+"say": "Après, il y a la pluie de cendres.",
 "per": 0.0,
 "spelling": null
 },
@@ -8639,6 +8921,12 @@
 "per": 0.0,
 "spelling": null
 },
+"après il y a le nuage de cendres|.": {
+"h": "d3b62791393d674c",
+"say": "Après, il y a le nuage de cendres.",
+"per": 0.0,
+"spelling": null
+},
 "après il y a le nuage|.": {
 "h": "e1d0f7efb70e64a5",
 "say": "Après, il y a le nuage.",
@@ -8657,9 +8945,21 @@
 "per": 0.0,
 "spelling": null
 },
+"après il y a le volcan qui gronde et qui fume|.": {
+"h": "187493f0e9858585",
+"say": "Après, il y a le volcan qui gronde et qui fume.",
+"per": 0.0,
+"spelling": null
+},
 "après il y a les égouts|.": {
 "h": "87314f8e146a13a7",
 "say": "Après, il y a les égouts.",
+"per": 0.0,
+"spelling": null
+},
+"après il y a les plantes qui poussent|.": {
+"h": "c80233b62ef3d748",
+"say": "Après, il y a les plantes qui poussent.",
 "per": 0.0,
 "spelling": null
 },
@@ -8705,6 +9005,12 @@
 "per": 0.0,
 "spelling": null
 },
+"au chili des volcans se dressent tout le long de grandes montagnes les andes|.": {
+"h": "1621205ec131cf59",
+"say": "Au Chili, des volcans se dressent tout le long de grandes montagnes, les Andes.",
+"per": 0.0,
+"spelling": null
+},
 "au soleil la neige fond et l'eau coule vers le bas|.": {
 "h": "720f4b4c96958ebd",
 "say": "Au soleil, la neige fond, et l'eau coule vers le bas.",
@@ -8723,9 +9029,21 @@
 "per": 0.0,
 "spelling": null
 },
+"avant il y a l'éruption|.": {
+"h": "1eb6f26defc507f8",
+"say": "Avant, il y a l'éruption.",
+"per": 0.0,
+"spelling": null
+},
 "avant il y a l'usine d'eau potable|.": {
 "h": "ea62537345b16586",
 "say": "Avant, il y a l'usine d'eau potable.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a la lave qui coule|.": {
+"h": "f4fcd71697e11b20",
+"say": "Avant, il y a la lave qui coule.",
 "per": 0.0,
 "spelling": null
 },
@@ -8789,6 +9107,24 @@
 "per": 0.0,
 "spelling": null
 },
+"avant il y a le magma qui chauffe sous la terre|.": {
+"h": "48a31a66fed36cf1",
+"say": "Avant, il y a le magma qui chauffe sous la terre.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a le magma qui monte dans la cheminée|.": {
+"h": "349a64a026d797ad",
+"say": "Avant, il y a le magma qui monte dans la cheminée.",
+"per": 0.0,
+"spelling": null
+},
+"avant il y a le nuage de cendres|.": {
+"h": "7759461fa5638cec",
+"say": "Avant, il y a le nuage de cendres.",
+"per": 0.0,
+"spelling": null
+},
 "avant il y a le nuage|.": {
 "h": "07adf8c90d96b7cf",
 "say": "Avant, il y a le nuage.",
@@ -8807,9 +9143,21 @@
 "per": 0.0,
 "spelling": null
 },
+"avant il y a le volcan qui gronde et qui fume|.": {
+"h": "fa27129791873134",
+"say": "Avant, il y a le volcan qui gronde et qui fume.",
+"per": 0.0,
+"spelling": null
+},
 "avant il y a les égouts|.": {
 "h": "e2c3dd31dd4b28aa",
 "say": "Avant, il y a les égouts.",
+"per": 0.0,
+"spelling": null
+},
+"avec la pluie et le soleil la vie revient|.": {
+"h": "ef75f2043d94b3a2",
+"say": "Avec la pluie et le soleil, la vie revient.",
 "per": 0.0,
 "spelling": null
 },
@@ -8817,6 +9165,36 @@
 "h": "b0cf0e0710f5f969",
 "say": "Avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet ?",
 "per": 0.0,
+"spelling": null
+},
+"avec un maillot de bain elle aurait bien trop chaud|.": {
+"h": "c53384ffa32397bb",
+"say": "Avec un maillot de bain, elle aurait bien trop chô !",
+"per": 0.0,
+"spelling": null
+},
+"avec un thermomètre spécial de loin|.": {
+"h": "487aa0469da994dc",
+"say": "Avec un thermomètre spécial, de loin.",
+"per": 0.0,
+"spelling": null
+},
+"avec une échelle il faudrait s'approcher bien trop dangereux|.": {
+"h": "e30fe9e370c488fa",
+"say": "Avec une échelle, il faudrait s'approcher, bien trop dangereux !",
+"per": 0.0,
+"spelling": null
+},
+"beaucoup de zigzags le volcan se réveille|.": {
+"h": "29dbeca17fddacbe",
+"say": "Beaucoup de zigzags, le volcan se réveille !",
+"per": 0.0,
+"spelling": null
+},
+"beurk surtout pas|.": {
+"h": "a205c416dcc9b4fe",
+"say": "Beurk, surtout pas !",
+"per": 0.25,
 "spelling": null
 },
 "bien vu on ne la boit pas|.": {
@@ -8828,6 +9206,18 @@
 "bienvenue dans le labo d'octave|.": {
 "h": "6911eb46944c030b",
 "say": "Bienvenue dans le labo d'Octave !",
+"per": 0.0,
+"spelling": null
+},
+"boum|.": {
+"h": "6c347ef637e2b6f2",
+"say": "Boum !",
+"per": 0.0,
+"spelling": null
+},
+"c'est l'éruption le magma sort par le cratère|.": {
+"h": "138f4589eedf2b69",
+"say": "C'est l'éruption : le magma sort par le cratère.",
 "per": 0.0,
 "spelling": null
 },
@@ -8849,15 +9239,105 @@
 "per": 0.0,
 "spelling": null
 },
+"c'est le drapeau de l'indonésie rouge en haut blanc en bas|.": {
+"h": "ca5848ad08f16886",
+"say": "C'est le drapeau de l'Indonésie : rouge en haut, blanc en bas.",
+"per": 0.0,
+"spelling": null
+},
+"c'est le drapeau de l'italie trois bandes verticales vert blanc et rouge|.": {
+"h": "8b98109afaca030c",
+"say": "C'est le drapeau de l'Italie : trois bandes verticales, vert, blanc et rouge.",
+"per": 0.0,
+"spelling": null
+},
+"c'est le drapeau de la france trois bandes verticales bleu blanc et rouge|.": {
+"h": "735f07386cd5ebf4",
+"say": "C'est le drapeau de la France : trois bandes verticales, bleu, blanc et rouge.",
+"per": 0.0,
+"spelling": null
+},
+"c'est le drapeau de la grèce des rayures bleues et blanches avec une croix blanche|.": {
+"h": "011f4130fff48fe1",
+"say": "C'est le drapeau de la Grèce : des rayures bleues et blanches, avec une croix blanche.",
+"per": 0.043,
+"spelling": null
+},
+"c'est le drapeau des états-unis des rayures rouges et blanches et des étoiles blanches sur du bleu|.": {
+"h": "1b4d47dda87dd0c4",
+"say": "C'est le drapeau des États-Unis, des rayures rouges et blanches, et des étoiles blanches sur du bleu.",
+"per": 0.0,
+"spelling": null
+},
+"c'est le drapeau du cameroun vert rouge et jaune avec une étoile jaune au milieu|.": {
+"h": "23f6083e78c8a611",
+"say": "C'est le drapeau du Cameroune : vert, rouge et jaune, avec une étoile jaune au milieu.",
+"per": 0.0,
+"spelling": null
+},
+"c'est le drapeau du chili blanc et rouge avec une étoile blanche sur un carré bleu|.": {
+"h": "5d9bf9ee15d29f27",
+"say": "C'est le drapeau du Chili : blanc et rouge, avec une étoile blanche sur un carré bleu.",
+"per": 0.0,
+"spelling": null
+},
+"c'est le drapeau du japon un rond rouge sur un fond blanc|.": {
+"h": "467c823c5a8e8a98",
+"say": "C'est le drapeau du Japon : un rond rouge sur un fond blanc.",
+"per": 0.0,
+"spelling": null
+},
+"c'est un volcan gris il explose et lance des cendres et des pierres très haut|.": {
+"h": "b3e4ac2154f95be9",
+"say": "C'est un volcan gris, il explose, et lance des cendres et des pierres très haut.",
+"per": 0.047,
+"spelling": null
+},
+"c'est un volcan rouge sa lave est liquide elle coule et jaillit|.": {
+"h": "464d836a35fdfc5d",
+"say": "C'est un volcan rouge : sa lave est liquide, elle coule et jaillit.",
+"per": 0.0,
+"spelling": null
+},
 "c'était déjà de la vapeur|.": {
 "h": "cca10c762e68c390",
 "say": "C'était déjà de la vapeur.",
 "per": 0.0,
 "spelling": null
 },
+"ça c'est l'éruption|.": {
+"h": "4184aa31931c1cc1",
+"say": "Ça, c'est l'éruption.",
+"per": 0.0,
+"spelling": null
+},
 "ça c'est l'usine d'eau potable|.": {
 "h": "9e19573fded49835",
 "say": "Ça, c'est l'usine d'eau potable.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la cheminée le tuyau qui monte au milieu du volcan|.": {
+"h": "cfe4ce1834dbfa02",
+"say": "Ça, c'est la cheminée, le tuyau qui monte au milieu du volcan.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la lave devenue pierre|.": {
+"h": "00fda1edff03817a",
+"say": "Ça, c'est la lave devenue pierre.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la lave qui coule sur le volcan|.": {
+"h": "25edbc1798701dd5",
+"say": "Ça, c'est la lave qui coule sur le volcan.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la lave qui coule|.": {
+"h": "e2c4b9fb22635ace",
+"say": "Ça, c'est la lave qui coule.",
 "per": 0.0,
 "spelling": null
 },
@@ -8879,9 +9359,27 @@
 "per": 0.0,
 "spelling": null
 },
+"ça c'est la nouvelle terre dans la mer|.": {
+"h": "1b8a1953576a938a",
+"say": "Ça, c'est la nouvelle terre dans la mer.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la pluie de cendres|.": {
+"h": "d896ddb1ba1c6abb",
+"say": "Ça, c'est la pluie de cendres.",
+"per": 0.0,
+"spelling": null
+},
 "ça c'est la pluie|.": {
 "h": "dcdc8b258168f440",
 "say": "Ça, c'est la pluie.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est la poche de magma tout au fond sous le volcan|.": {
+"h": "41b26bf9f5d346d3",
+"say": "Ça, c'est la poche de magma, tout au fond, sous le volcan.",
 "per": 0.0,
 "spelling": null
 },
@@ -8933,6 +9431,144 @@
 "per": 0.0,
 "spelling": null
 },
+"ça c'est le cratère le grand trou tout en haut|.": {
+"h": "250dc44c3c1ce3e7",
+"say": "Ça, c'est le cratère, le grand trou tout en haut.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau de l'allemagne|.": {
+"h": "03ebbcfa94ccea8f",
+"say": "Ça, c'est le drapeau de l'Allemagne.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau de l'inde|.": {
+"h": "ecbeb396f9838616",
+"say": "Ça, c'est le drapeau de l'Inde.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau de l'indonésie|.": {
+"h": "abc6ab2d540898ef",
+"say": "Ça, c'est le drapeau de l'Indonésie.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau de l'italie|.": {
+"h": "267e7176645a8092",
+"say": "Ça, c'est le drapeau de l'Italie.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau de la belgique|.": {
+"h": "6d4788ef5f8b0b20",
+"say": "Ça, c'est le drapeau de la Belgique.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau de la chine|.": {
+"h": "3daba3072690fc23",
+"say": "Ça, c'est le drapeau de la Chine.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau de la france|.": {
+"h": "b20b8d43fc38f169",
+"say": "Ça, c'est le drapeau de la France.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau de la grèce|.": {
+"h": "a98a3af133389806",
+"say": "Ça, c'est le drapeau de la Grèce.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau de la suède|.": {
+"h": "fa6bd9bbc54bc9b5",
+"say": "Ça, c'est le drapeau de la Suède.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau des états-unis|.": {
+"h": "df33db182ab0025b",
+"say": "Ça, c'est le drapeau des États-Unis.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau du cameroun|.": {
+"h": "101451973897b818",
+"say": "Ça, c'est le drapeau du Cameroune.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau du canada|.": {
+"h": "5b990259d34d9baa",
+"say": "Ça, c'est le drapeau du Canada.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau du chili|.": {
+"h": "cfc2361d86d2c1fc",
+"say": "Ça, c'est le drapeau du Chili.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau du japon|.": {
+"h": "6fc956d899879d61",
+"say": "Ça, c'est le drapeau du Japon.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau du maroc|.": {
+"h": "dc2a7e902abb89fe",
+"say": "Ça, c'est le drapeau du Maroc.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le drapeau du royaume-uni|.": {
+"h": "c18dea716cf65f77",
+"say": "Ça, c'est le drapeau du Royaume-Uni.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le magma qui chauffe sous la terre|.": {
+"h": "f4ab9d5f11190eb3",
+"say": "Ça, c'est le magma qui chauffe sous la terre.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le magma qui monte dans la cheminée|.": {
+"h": "6ef71ea489364d33",
+"say": "Ça, c'est le magma qui monte dans la cheminée.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le métier de chauffeur de bus|.": {
+"h": "45f7f53247ca9d1f",
+"say": "Ça, c'est le métier de chauffeur de bus !",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le métier de vétérinaire|.": {
+"h": "0e0a9a61d84b7b5c",
+"say": "Ça, c'est le métier de vétérinaire !",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le nuage de cendres dans le ciel|.": {
+"h": "941f1982ec63e893",
+"say": "Ça, c'est le nuage de cendres, dans le ciel.",
+"per": 0.0,
+"spelling": null
+},
+"ça c'est le nuage de cendres|.": {
+"h": "616db3125c7b25b3",
+"say": "Ça, c'est le nuage de cendres.",
+"per": 0.0,
+"spelling": null
+},
 "ça c'est le nuage|.": {
 "h": "090fe1868e3640da",
 "say": "Ça, c'est le nuage.",
@@ -8951,6 +9587,12 @@
 "per": 0.0,
 "spelling": null
 },
+"ça c'est le volcan qui gronde et qui fume|.": {
+"h": "ce91c9d4884926a7",
+"say": "Ça, c'est le volcan qui gronde et qui fume.",
+"per": 0.0,
+"spelling": null
+},
 "ça ce sont les égouts|.": {
 "h": "fd43ba8d5e83e750",
 "say": "Ça, ce sont les égouts.",
@@ -8960,6 +9602,12 @@
 "ça ce sont les grilles|.": {
 "h": "10d91000e862ab46",
 "say": "Ça, ce sont les grilles.",
+"per": 0.0,
+"spelling": null
+},
+"ça ce sont les plantes qui poussent|.": {
+"h": "488593232f2a1f78",
+"say": "Ça, ce sont les plantes qui poussent.",
 "per": 0.0,
 "spelling": null
 },
@@ -8975,9 +9623,21 @@
 "per": 0.0,
 "spelling": null
 },
+"ce qui est plus léger monte comme une bulle dans l'eau|.": {
+"h": "17a739185e4a44be",
+"say": "Ce qui est plus léger monte, comme une bulle dans l'eau.",
+"per": 0.0,
+"spelling": null
+},
 "ce qui est vivant a besoin d'eau les plantes les animaux et toi|.": {
 "h": "0a46820a871fb9cf",
 "say": "Ce qui est vivant a besoin d'eau : les plantes, les animaux, et toi !",
+"per": 0.0,
+"spelling": null
+},
+"ce qui monte finit toujours par redescendre|.": {
+"h": "cc45aa64b1db66f7",
+"say": "Ce qui monte finit toujours par redescendre.",
 "per": 0.0,
 "spelling": null
 },
@@ -8987,34 +9647,10 @@
 "per": 0.0,
 "spelling": null
 },
-"celle-ci c'est parce que tu as compris que ce n'est pas la taille qui compte|.": {
-"h": "2c498234506c931b",
-"say": "Celle-ci, c'est parce que tu as compris que ce n'est pas la taille qui compte.",
+"ce volcan-là explose très fort|.": {
+"h": "fe68f4be44db6ca8",
+"say": "Ce volcan-là explose très fort.",
 "per": 0.0,
-"spelling": null
-},
-"celle-ci c'est parce que tu sais d'où vient l'eau du robinet et où elle repart|.": {
-"h": "16ddc9848d0f892b",
-"say": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
-"per": 0.073,
-"spelling": null
-},
-"celle-ci c'est pour le grand voyage de ploc de la mer jusqu'au nuage|.": {
-"h": "391a6a3a13c6e65b",
-"say": "Celle-ci, c'est pour le grand voyage de Ploc, de la mer jusqu'au nuage.",
-"per": 0.023,
-"spelling": null
-},
-"celle-ci c'est pour tous les bons gestes qui protègent l'eau|.": {
-"h": "62eef30749b67507",
-"say": "Celle-ci, c'est pour tous les bons gestes qui protègent l'eau.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour toutes tes expériences dans le bassin d'octave|.": {
-"h": "a52927c2f53dab93",
-"say": "Celle-ci, c'est pour toutes tes expériences dans le bassin d'Octave.",
-"per": 0.051,
 "spelling": null
 },
 "celle-là est déjà propre elle sort de l'usine|.": {
@@ -9041,9 +9677,87 @@
 "per": 0.0,
 "spelling": null
 },
+"cherche ce qui vole|.": {
+"h": "180b43cd6d6e0042",
+"say": "Cherche ce qui vole.",
+"per": 0.0,
+"spelling": null
+},
+"cherche dans le ciel au-dessus du volcan|.": {
+"h": "8e5203c61797e135",
+"say": "Cherche dans le ciel, au-dessu du volcan.",
+"per": 0.0,
+"spelling": null
+},
 "cherche de tout petits êtres vivants|.": {
 "h": "8cec1ebaa18b8726",
 "say": "Cherche de tout petits êtres vivants.",
+"per": 0.0,
+"spelling": null
+},
+"cherche l'appareil qui dessine des zigzags quand la terre bouge|.": {
+"h": "4c961c6644ca507f",
+"say": "Cherche l'appareil qui dessine des zigzags quand la terre bouge.",
+"per": 0.0,
+"spelling": null
+},
+"cherche l'appareil qui dessine des zigzags|.": {
+"h": "b6a5dbe3523559a5",
+"say": "Cherche l'appareil qui dessine des zigzags.",
+"per": 0.0,
+"spelling": null
+},
+"cherche la rivière orange sur le côté du volcan|.": {
+"h": "5c434bec4e598869",
+"say": "Cherche la rivière orange, sur le côté du volcan.",
+"per": 0.0,
+"spelling": null
+},
+"cherche le drapeau de l'indonésie|.": {
+"h": "e40b9d7321b575a7",
+"say": "Cherche le drapeau de l'Indonésie.",
+"per": 0.0,
+"spelling": null
+},
+"cherche le drapeau de l'italie|.": {
+"h": "755300fe5302983f",
+"say": "Cherche le drapeau de l'Italie.",
+"per": 0.053,
+"spelling": null
+},
+"cherche le drapeau de la france|.": {
+"h": "f76056ad2056f063",
+"say": "Cherche le drapeau de la France.",
+"per": 0.0,
+"spelling": null
+},
+"cherche le drapeau de la grèce|.": {
+"h": "e3328bf7f79961c5",
+"say": "Cherche le drapeau de la Grèce.",
+"per": 0.0,
+"spelling": null
+},
+"cherche le drapeau des états-unis|.": {
+"h": "db5b03cf8eb7fb8a",
+"say": "Cherche le drapeau des États-Unis.",
+"per": 0.0,
+"spelling": null
+},
+"cherche le drapeau du cameroun|.": {
+"h": "79d860ebf1e2a337",
+"say": "Cherche le drapeau du Cameroune.",
+"per": 0.0,
+"spelling": null
+},
+"cherche le drapeau du chili|.": {
+"h": "2eea7b591beb1b47",
+"say": "Cherche le drapeau du Chili.",
+"per": 0.0,
+"spelling": null
+},
+"cherche le drapeau du japon|.": {
+"h": "4e3c29c2a28e52e9",
+"say": "Cherche le drapeau du Japon.",
 "per": 0.0,
 "spelling": null
 },
@@ -9053,9 +9767,51 @@
 "per": 0.0,
 "spelling": null
 },
+"cherche le tuyau qui part de la poche de magma et qui monte tout droit|.": {
+"h": "cc7048493ba62670",
+"say": "Cherche le tuyau qui part de la poche de magma, et qui monte tout droit.",
+"per": 0.0,
+"spelling": null
+},
+"cherche quelque chose de très solide|.": {
+"h": "d673e286c14bfbe4",
+"say": "Cherche quelque chose de très solide.",
+"per": 0.0,
+"spelling": null
+},
+"cherche tout en bas sous la terre c'est rouge et très chaud|.": {
+"h": "f16e403f132da0fb",
+"say": "Cherche tout en bas, sous la terre : c'est rouge, et très chô.",
+"per": 0.0,
+"spelling": null
+},
+"cherche tout en haut du volcan c'est un grand trou|.": {
+"h": "c4393bb5cb6bd00f",
+"say": "Cherche tout en haut du volcan : c'est un grand trou.",
+"per": 0.038,
+"spelling": null
+},
+"cherche un habit brillant|.": {
+"h": "1096baa36133b439",
+"say": "Cherche un habit brillant.",
+"per": 0.0,
+"spelling": null
+},
 "comme plume|.": {
 "h": "689d40f7ff821873",
 "say": "Comme Plume !",
+"per": 0.0,
+"spelling": null
+},
+"comment la volcanologue sait-elle si la lave est très chaude|?": {
+"h": "1cd3690c0c521ce0",
+"say": "Comment la volcanologue sait-elle si la lave est très chaude ?",
+"per": 0.0,
+"spelling": null
+},
+"comment regarder au fond du cratère sans s'approcher|?": {
+"h": "c10f3ef05ada94d2",
+"say": "Comment regarder au fond du cratère, sans s'approcher ?",
 "per": 0.0,
 "spelling": null
 },
@@ -9065,9 +9821,21 @@
 "per": 0.0,
 "spelling": null
 },
+"d'habitude les pierres coulent|.": {
+"h": "ca759453fcac0a02",
+"say": "D'habitude, les pierres coulent…",
+"per": 0.0,
+"spelling": null
+},
 "d'où vient l'eau du robinet|?": {
 "h": "769bc2f66faef418",
 "say": "D'où vient l'eau du robinet ?",
+"per": 0.0,
+"spelling": null
+},
+"dans l'eau la lave refroidit tout de suite et devient de la pierre|.": {
+"h": "8a6759a81265e3f8",
+"say": "Dans l'eau, la lave refroidit tout de suite, et devient de la pierre.",
 "per": 0.0,
 "spelling": null
 },
@@ -9155,6 +9923,12 @@
 "per": 0.0,
 "spelling": null
 },
+"dans son nom on entend le mot volcan|.": {
+"h": "c855ddbbf46f9327",
+"say": "Dans son nom, on entend le mot volcan !",
+"per": 0.0,
+"spelling": null
+},
 "de la mer au nuage du nuage au robinet et du robinet à la mer|.": {
 "h": "9edfb278c85e8548",
 "say": "De la mer au nuage, du nuage au robinet, et du robinet à la mer.",
@@ -9173,9 +9947,57 @@
 "per": 0.0,
 "spelling": null
 },
+"de quelle couleur est leur sable|?": {
+"h": "50b9579d3a596ed7",
+"say": "De quelle couleur est leur sable ?",
+"per": 0.0,
+"spelling": null
+},
+"dehors le magma s'appelle la lave elle coule sur le volcan comme une rivière de feu|.": {
+"h": "f6ed77da51aedda2",
+"say": "Dehors, le magma s'appelle la lave : elle coule sur le volcan, comme une rivière de feu.",
+"per": 0.0,
+"spelling": null
+},
+"dehors le magma s'appelle la lave|.": {
+"h": "60f7f6317c4a8f41",
+"say": "Dehors, le magma s'appelle la lave.",
+"per": 0.0,
+"spelling": null
+},
+"dehors on l'appelle la lave|.": {
+"h": "9b11bdf61b3dc809",
+"say": "Dehors, on l'appelle la lave.",
+"per": 0.0,
+"spelling": null
+},
+"des arbres ont poussé et parfois un lac remplit son cratère|.": {
+"h": "0f4012a7478dd580",
+"say": "Des arbres ont poussé, et parfois un lac remplit son cratère.",
+"per": 0.0,
+"spelling": null
+},
 "des barreaux comme une passoire géante|.": {
 "h": "eaeef1b4a0543035",
 "say": "Des barreaux, comme une passoire géante.",
+"per": 0.0,
+"spelling": null
+},
+"des milliers d'années sans lave c'est un très très long sommeil|.": {
+"h": "0da9df40bc2d9cd6",
+"say": "Des milliers d'années sans lave… c'est un très, très long sommeil !",
+"per": 0.0,
+"spelling": null
+},
+"des petites pierres peuvent tomber du ciel|.": {
+"h": "cbd89bc4ad24ba2f",
+"say": "Des petites pierres peuvent tomber du ciel.",
+"per": 0.0,
+"spelling": null
+},
+"du chocolat chaud ce serait bien mais non c'est de l'eau chaude qui jaillit|.": {
+"h": "43947de40a3c1479",
+"say": "Du chocolat chô, ce serait bien… mais non : c'est de l'eau chaude qui jaillit !",
 "per": 0.0,
 "spelling": null
 },
@@ -9191,6 +10013,24 @@
 "per": 0.0,
 "spelling": null
 },
+"elle coule comme une soupe épaisse puis elle refroidit et devient de la pierre|.": {
+"h": "0ee5333fb862faf0",
+"say": "Elle coule comme une soupe épaisse… puis elle refroidit, et devient de la pierre.",
+"per": 0.0,
+"spelling": null
+},
+"elle coule comme une soupe très épaisse et très chaude|.": {
+"h": "e4dc866036d1768e",
+"say": "Elle coule, comme une soupe très épaisse et très chaude.",
+"per": 0.0,
+"spelling": null
+},
+"elle deviendra dure plus tard en refroidissant|.": {
+"h": "eab202b98d951514",
+"say": "Elle deviendra dure plus tard, en refroidissant.",
+"per": 0.0,
+"spelling": null
+},
 "elle devient toute dure|.": {
 "h": "50bb2fd40b41eeed",
 "say": "Elle devient toute dure !",
@@ -9200,6 +10040,18 @@
 "elle est assez propre pour la rivière et ses poissons mais pas pour boire|.": {
 "h": "e6d4f77c7097a217",
 "say": "Elle est assez propre pour la rivière et ses poissons, mais pas pour boire.",
+"per": 0.0,
+"spelling": null
+},
+"elle est bien plus chaude que le four de la cuisine|.": {
+"h": "46d87b19404a8f3f",
+"say": "Elle est bien plus chaude que le four de la cuisine.",
+"per": 0.0,
+"spelling": null
+},
+"elle est en grèce touche le drapeau de la grèce|.": {
+"h": "24f66b9a0f67eda2",
+"say": "Elle est en Grèce : touche le drapeau de la Grèce.",
 "per": 0.0,
 "spelling": null
 },
@@ -9215,9 +10067,21 @@
 "per": 0.0,
 "spelling": null
 },
+"elle est pleine de petits trous remplis d'air comme une éponge|.": {
+"h": "969a5dc87e478214",
+"say": "Elle est pleine de petits trous remplis d'air, comme une éponge.",
+"per": 0.0,
+"spelling": null
+},
 "elle est sale et pleine de microbes|.": {
 "h": "8d3e6c2816bd70dd",
 "say": "Elle est sale, et pleine de microbes.",
+"per": 0.0,
+"spelling": null
+},
+"elle étudie et surveille les volcans pour prévenir les gens quand ils se réveillent|.": {
+"h": "207f1df95db732f8",
+"say": "Elle étudie et surveille les volcans, pour prévenir les gens quand ils se réveillent.",
 "per": 0.0,
 "spelling": null
 },
@@ -9236,6 +10100,12 @@
 "elle peut avoir des microbes elle doit d'abord passer par l'usine|.": {
 "h": "9be47fc5a593892c",
 "say": "Elle peut avoir des microbes, elle doit d'abord passer par l'usine.",
+"per": 0.0,
+"spelling": null
+},
+"elle refroidit dans la mer et fabrique une nouvelle terre l'île grandit|.": {
+"h": "a7f19d2eee8fffae",
+"say": "Elle refroidit dans la mer, et fabrique une nouvelle terre : l'ile grandit !",
 "per": 0.0,
 "spelling": null
 },
@@ -9293,10 +10163,34 @@
 "per": 0.0,
 "spelling": null
 },
+"en refroidissant elle redevient dure|.": {
+"h": "18b9a181dc1c415a",
+"say": "En refroidissant, elle redevient dure.",
+"per": 0.0,
+"spelling": null
+},
+"en refroidissant la lave devient dure c'est de la pierre comme l'eau qui gèle devient de la glace|.": {
+"h": "5fb2f0d56d5c3dda",
+"say": "En refroidissant, la lave devient dure : c'est de la pierre, comme l'eau qui gèle devient de la glace.",
+"per": 0.0,
+"spelling": null
+},
+"en refroidissant la lave devient dure c'est de la pierre noire|.": {
+"h": "42f2adc865730b57",
+"say": "En refroidissant, la lave devient dure : c'est de la pierre noire.",
+"per": 0.0,
+"spelling": null
+},
 "en touchant le miroir froid elle change|.": {
 "h": "69271a9e0fd1380f",
 "say": "En touchant le miroir froi, elle change !",
 "per": 0.0,
+"spelling": null
+},
+"essaie encore ses petits trous pleins d'air la rendent très légère|.": {
+"h": "300cd315c6db39da",
+"say": "Essaie encore : ses petits trous pleins d'air la rendent très légère…",
+"per": 0.029,
 "spelling": null
 },
 "est-ce qu'il y a de l'air dedans|?": {
@@ -9329,9 +10223,57 @@
 "per": 0.0,
 "spelling": null
 },
+"est-ce un volcan rouge ou un volcan gris|?": {
+"h": "d35ed76fbf7f4460",
+"say": "Est-ce un volcan rouge, ou un volcan gris ?",
+"per": 0.0,
+"spelling": null
+},
+"est-elle très chaude ou froide|?": {
+"h": "7ccebb9ab8e3c2e4",
+"say": "Est-elle très chaude, ou froide ?",
+"per": 0.0,
+"spelling": null
+},
+"est-il endormi ou réveillé|?": {
+"h": "cbae700dec32569e",
+"say": "Est-il endormi, ou réveillé ?",
+"per": 0.059,
+"spelling": null
+},
+"et celle-ci que fait-elle dans l'eau|?": {
+"h": "b5c725e63821809a",
+"say": "Et celle-ci, que fait-elle dans l'eau ?",
+"per": 0.0,
+"spelling": null
+},
+"et certains volcans sont endormis depuis très longtemps|.": {
+"h": "1077f27f87e6eb13",
+"say": "Et certains volcans sont endormis depuis très longtemps…",
+"per": 0.0,
+"spelling": null
+},
+"fais-le monter glisse ton doigt de la poche de magma jusqu'au cratère|.": {
+"h": "d26d1c2316b75af9",
+"say": "Fais-le monter, glisse ton doigt de la poche de magma jusqu'au cratère.",
+"per": 0.0,
+"spelling": null
+},
 "flotte ou coule pour deviner ce qui flotte dans le bassin d'octave|.": {
 "h": "7fd80263afb155ac",
 "say": "Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave.",
+"per": 0.0,
+"spelling": null
+},
+"ha ha|.": {
+"h": "0db5be71dbef5df5",
+"say": "Ha ha !",
+"per": 0.167,
+"spelling": null
+},
+"hawaï ce sont des îles des états-unis touche le drapeau des états-unis|.": {
+"h": "b573d263f4fa8c42",
+"say": "Hawaï, ce sont des îles des États-Unis, touche le drapeau des États-Unis.",
 "per": 0.0,
 "spelling": null
 },
@@ -9344,6 +10286,12 @@
 "ici il fait très froid|.": {
 "h": "2173582d8d159352",
 "say": "Ici, il fait très froi !",
+"per": 0.0,
+"spelling": null
+},
+"ici le volcan chauffe l'eau|.": {
+"h": "8822fd7fdaa5e1ef",
+"say": "Ici, le volcan chauffe l'eau.",
 "per": 0.0,
 "spelling": null
 },
@@ -9362,6 +10310,36 @@
 "il devient très lourd|.": {
 "h": "206538220c94cfa1",
 "say": "Il devient très lourd.",
+"per": 0.0,
+"spelling": null
+},
+"il est au japon touche le drapeau du japon|.": {
+"h": "51a9ac2190cf0dff",
+"say": "Il est au Japon : touche le drapeau du Japon.",
+"per": 0.0,
+"spelling": null
+},
+"il est en italie touche le drapeau de l'italie|.": {
+"h": "b1db0fa2c7cb54fa",
+"say": "Il est en Italie : touche le drapeau de l'Italie.",
+"per": 0.0,
+"spelling": null
+},
+"il est endormi ni fumée ni lave|.": {
+"h": "8c9e11edd1862019",
+"say": "Il est endormi : ni fumée, ni lave.",
+"per": 0.0,
+"spelling": null
+},
+"il est plus léger que les roches autour|.": {
+"h": "d1575ed9895f5712",
+"say": "Il est plus léger que les roches autour.",
+"per": 0.0,
+"spelling": null
+},
+"il est réveillé il fume il gronde et le magma n'est pas loin|.": {
+"h": "c51c699b9d777eb2",
+"say": "Il est réveillé : il fume, il gronde, et le magma n'est pas loin.",
 "per": 0.0,
 "spelling": null
 },
@@ -9395,6 +10373,18 @@
 "per": 0.032,
 "spelling": null
 },
+"il faut quelque chose de très solide sur la tête|.": {
+"h": "ae1bed14f8211c82",
+"say": "Il faut quelque chose de très solide sur la tête.",
+"per": 0.067,
+"spelling": null
+},
+"il faut quelque chose qui vole au-dessus du cratère|.": {
+"h": "dd5675d91a5f4c56",
+"say": "Il faut quelque chose qui vole au-dessu du cratère.",
+"per": 0.0,
+"spelling": null
+},
 "il faut un endroit où l'on nettoie l'eau sale|.": {
 "h": "cb7f77e7f36bfdd7",
 "say": "Il faut un endroit où l'on nettoie l'eau sale.",
@@ -9404,6 +10394,18 @@
 "il faut un endroit où l'on nettoie l'eau|.": {
 "h": "55d0f14c99139a4a",
 "say": "Il faut un endroit où l'on nettoie l'eau.",
+"per": 0.0,
+"spelling": null
+},
+"il faut un habit brillant qui renvoie la chaleur comme un miroir|.": {
+"h": "7c00240108a146f1",
+"say": "Il faut un habit brillant, qui renvoie la chaleur comme un miroir.",
+"per": 0.0,
+"spelling": null
+},
+"il faut un masque qui nettoie l'air qu'on respire|.": {
+"h": "1200c8fcaccd130b",
+"say": "Il faut un masque qui nettoie l'air qu'on respire.",
 "per": 0.0,
 "spelling": null
 },
@@ -9425,6 +10427,12 @@
 "per": 0.0,
 "spelling": null
 },
+"il manque une étape dans l'éruption|.": {
+"h": "468dd21331e08f77",
+"say": "Il manque une étape dans l'éruption.",
+"per": 0.0,
+"spelling": null
+},
 "il manque une étape dans le voyage de ploc|.": {
 "h": "4571abb766b95732",
 "say": "Il manque une étape dans le voyage de Ploc.",
@@ -9440,6 +10448,36 @@
 "il va à la poubelle|.": {
 "h": "6a36a2999619b588",
 "say": "Il va à la poubelle.",
+"per": 0.0,
+"spelling": null
+},
+"il y a des volcans partout dans le monde au japon en italie en france|.": {
+"h": "738c090b183bbe7d",
+"say": "Il y a des volcans partout dans le monde : au Japon, en Italie, en France…",
+"per": 0.025,
+"spelling": null
+},
+"il y a des volcans rouges qui laissent couler leur lave et des volcans gris qui explosent en lançant des cendres|.": {
+"h": "327dcfb292738191",
+"say": "Il y a des volcans rouges, qui laissent couler leur lave, et des volcans gris, qui explosent en lançant des cendres.",
+"per": 0.049,
+"spelling": null
+},
+"ils sont en france touche le drapeau de la france|.": {
+"h": "04da8a405347616a",
+"say": "Ils sont en France : touche le drapeau de la France.",
+"per": 0.0,
+"spelling": null
+},
+"ils sont endormis depuis très longtemps on peut même se promener dessus|.": {
+"h": "41e595134a9229fb",
+"say": "Ils sont endormis depuis très longtemps, on peut même se promener dessu !",
+"per": 0.0,
+"spelling": null
+},
+"je t'aide un peu|.": {
+"h": "51e38ce1f371c273",
+"say": "Je t'aide un peu…",
 "per": 0.0,
 "spelling": null
 },
@@ -9464,6 +10502,12 @@
 "l'eau bout et s'envole en vapeur|.": {
 "h": "6cf354b26718c94e",
 "say": "L'eau bout, et s'envole en vapeur.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau chauffée par le volcan devient si chaude qu'elle jaillit comme une fontaine|.": {
+"h": "34523be858db543d",
+"say": "L'eau chauffée par le volcan devient si chaude qu'elle jaillit, comme une fontaine.",
 "per": 0.0,
 "spelling": null
 },
@@ -9494,6 +10538,12 @@
 "l'eau descend toute seule et elle pousse fort jusqu'au robinet|.": {
 "h": "507d483e132ab375",
 "say": "L'eau descend toute seule, et elle pousse fort jusqu'au robinet.",
+"per": 0.0,
+"spelling": null
+},
+"l'eau du bain est juste tiède|.": {
+"h": "c017b3601d4a8415",
+"say": "L'eau du bain est juste tiède.",
 "per": 0.0,
 "spelling": null
 },
@@ -9569,6 +10619,12 @@
 "per": 0.0,
 "spelling": null
 },
+"l'indonésie est le pays qui a le plus de volcans réveillés au monde|.": {
+"h": "bd9640013e1cbfa1",
+"say": "L'Indonésie est le pays qui a le plus de volcans réveillés au monde !",
+"per": 0.0,
+"spelling": null
+},
 "l'œuf est-ce qu'il flotte ou est-ce qu'il coule|?": {
 "h": "e00596e9beb8568e",
 "say": "L'œuf : est-ce qu'il flotte, ou est-ce qu'il coule ?",
@@ -9590,6 +10646,12 @@
 "l'orange flotte grâce à sa peau pleine de minuscules bulles d'air|.": {
 "h": "74b3aabb24961f68",
 "say": "L'orange flotte grâce à sa peau, pleine de minuscules bulles d'air.",
+"per": 0.0,
+"spelling": null
+},
+"l'une de ces choses est si chaude qu'elle fait fondre la roche|.": {
+"h": "471187dcb49dc3b2",
+"say": "L'une de ces choses est si chaude qu'elle fait fondre la roche !",
 "per": 0.0,
 "spelling": null
 },
@@ -9653,6 +10715,12 @@
 "per": 0.0,
 "spelling": null
 },
+"la combinaison argentée renvoie la chaleur comme un miroir renvoie la lumière|.": {
+"h": "21e084e2177e2430",
+"say": "La combinaison argentée renvoie la chaleur, comme un miroir renvoie la lumière.",
+"per": 0.0,
+"spelling": null
+},
 "la cuillère en métal est-ce qu'elle flotte ou est-ce qu'elle coule|?": {
 "h": "9b08008037f3107b",
 "say": "La cuillère en métal : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
@@ -9689,15 +10757,141 @@
 "per": 0.0,
 "spelling": null
 },
+"la fumée s'envole mais la lave est lourde en refroidissant elle devient dure|.": {
+"h": "84f0da00ed619877",
+"say": "La fumée s'envole, mais la lave est lourde : en refroidissant, elle devient dure.",
+"per": 0.0,
+"spelling": null
+},
 "la grosse pomme flotte et le petit raisin coule ce n'est pas la taille qui compte|.": {
 "h": "0261b8a4de4276dd",
 "say": "La grosse pomme flotte et le petit raisin coule : ce n'est pas la taille qui compte.",
 "per": 0.0,
 "spelling": null
 },
+"la lave brûle on ne la goûte jamais|.": {
+"h": "c28262bbc6200650",
+"say": "La lave brûle : on ne la goûte jamais !",
+"per": 0.0,
+"spelling": null
+},
+"la lave brûle on ne la touche jamais|.": {
+"h": "8439b8cb18a99022",
+"say": "La lave brûle : on ne la touche jamais.",
+"per": 0.0,
+"spelling": null
+},
+"la lave c'est de la roche fondue bien plus chaude qu'un four|.": {
+"h": "6264e3fe948738d2",
+"say": "La lave, c'est de la roche fondue, bien plus chaude qu'un four.",
+"per": 0.0,
+"spelling": null
+},
+"la lave c'est de la roche fondue plus chaude qu'un four|.": {
+"h": "270f0c402c63d0a5",
+"say": "La lave, c'est de la roche fondue, plus chaude qu'un four !",
+"per": 0.0,
+"spelling": null
+},
+"la lave coule jusqu'à la mer|.": {
+"h": "74cde79140bfa6e3",
+"say": "La lave coule jusqu'à la mer.",
+"per": 0.0,
+"spelling": null
+},
+"la lave coule loin du volcan et elle refroidit|.": {
+"h": "e5878c06c5ea57bd",
+"say": "La lave coule loin du volcan, et elle refroidit.",
+"per": 0.0,
+"spelling": null
+},
+"la lave coule sur les pentes du volcan comme une rivière de feu|.": {
+"h": "1dc8028c332c7457",
+"say": "La lave coule sur les pentes du volcan, comme une rivière de feu.",
+"per": 0.0,
+"spelling": null
+},
+"la lave elle fait fondre la roche|.": {
+"h": "cdfde7f05a89caa1",
+"say": "La lave, elle, fait fondre la roche !",
+"per": 0.0,
+"spelling": null
+},
+"la lave est bien trop dangereuse|.": {
+"h": "39d8548ead91ff1f",
+"say": "La lave est bien trop dangereuse.",
+"per": 0.0,
+"spelling": null
+},
+"la lave est bien trop lourde pour s'envoler elle coule le long du volcan|.": {
+"h": "22e974d6b6b8a819",
+"say": "La lave est bien trop lourde pour s'envoler, elle coule le long du volcan.",
+"per": 0.0,
+"spelling": null
+},
+"la lave est liquide comme une soupe très épaisse elle descend|.": {
+"h": "a7d895fe2be20816",
+"say": "La lave est liquide, comme une soupe très épaisse : elle descend.",
+"per": 0.03,
+"spelling": null
+},
+"la lave est très très chaude si chaude que la roche fond|.": {
+"h": "34cef4e2e8124f4a",
+"say": "La lave est très, très chaude : si chaude que la roche fond !",
+"per": 0.0,
+"spelling": null
+},
+"la lave fait pareil|.": {
+"h": "593f482177655c6a",
+"say": "La lave fait pareil !",
+"per": 0.0,
+"spelling": null
+},
+"la lave refroidit|.": {
+"h": "210c1ac65889dfb0",
+"say": "La lave refroidit.",
+"per": 0.0,
+"spelling": null
+},
+"la lave rouge jaillit du cratère|.": {
+"h": "db04868848b7ddd3",
+"say": "La lave rouge jaillit du cratère.",
+"per": 0.0,
+"spelling": null
+},
+"la lave sort du volcan|.": {
+"h": "6d5c21fb867520c9",
+"say": "La lave sort du volcan.",
+"per": 0.0,
+"spelling": null
+},
+"la lave sort par le cratère le grand trou tout en haut du volcan|.": {
+"h": "776bd514bfb4c473",
+"say": "La lave sort par le cratère, le grand trou tout en haut du volcan.",
+"per": 0.0,
+"spelling": null
+},
+"la lave|.": {
+"h": "09fa70eed892b4e1",
+"say": "La lave !",
+"per": 0.0,
+"spelling": null
+},
 "la lingette ne se défait pas elle bouche les tuyaux|.": {
 "h": "b224d08f93ac9087",
 "say": "La lingette ne se défait pas, elle bouche les tuyaux.",
+"per": 0.0,
+"spelling": null
+},
+"la loupe montre les petites choses tout près|.": {
+"h": "c2a22ebe414937e5",
+"say": "La loupe montre les petites choses, tout près.",
+"per": 0.0,
+"spelling": null
+},
+"la neige c'est quand il fait froid|.": {
+"h": "6c8bd4998ff387ea",
+"say": "La neige, c'est quand il fait froi !",
 "per": 0.0,
 "spelling": null
 },
@@ -9767,6 +10961,18 @@
 "per": 0.0,
 "spelling": null
 },
+"la radio fait de la musique|.": {
+"h": "e0b5ebf0b31daf7b",
+"say": "La radio fait de la musique !",
+"per": 0.0,
+"spelling": null
+},
+"la réunion c'est la france touche le drapeau de la france|.": {
+"h": "7dbbcbbdbea090fd",
+"say": "La Réunion, c'est la France : touche le drapeau de la France.",
+"per": 0.0,
+"spelling": null
+},
 "la rivière se jette dans la mer|.": {
 "h": "7c60246b2a6992e3",
 "say": "La rivière se jette dans la mer.",
@@ -9777,6 +10983,18 @@
 "h": "983676f3aa8d7e76",
 "say": "La station d'épuration a nettoyé l'eau sale.",
 "per": 0.067,
+"spelling": null
+},
+"la télévision montre des images mais elle ne sent pas la terre trembler|.": {
+"h": "909edc69989683e3",
+"say": "La télévision montre des images, mais elle ne sent pas la terre trembler.",
+"per": 0.0,
+"spelling": null
+},
+"la terre tremble le volcan gronde et se met à fumer il se réveille|.": {
+"h": "26effc3c4ede087f",
+"say": "La terre tremble, le volcan gronde et se met à fumer, il se réveille !",
+"per": 0.0,
 "spelling": null
 },
 "la vache a besoin d'eau pour vivre comme toi|.": {
@@ -9812,6 +11030,18 @@
 "la voiture n'est pas vivante elle n'a pas besoin de boire|.": {
 "h": "13333c4bd5335a7e",
 "say": "La voiture n'est pas vivante : elle n'a pas besoin de boire.",
+"per": 0.0,
+"spelling": null
+},
+"la volcanologue elle s'occupe des volcans|.": {
+"h": "1becbba2455da0c1",
+"say": "La volcanologue, elle, s'occupe des volcans.",
+"per": 0.0,
+"spelling": null
+},
+"la volcanologue s'approche de la lave|.": {
+"h": "ad9e92ae8747126e",
+"say": "La volcanologue s'approche de la lave.",
 "per": 0.0,
 "spelling": null
 },
@@ -9923,9 +11153,75 @@
 "per": 0.0,
 "spelling": null
 },
+"le cratère est grand et bien trop dangereux|.": {
+"h": "e114755a04ae4027",
+"say": "Le cratère est grand, et bien trop dangereux !",
+"per": 0.0,
+"spelling": null
+},
 "le crayon n'est pas vivant il n'a pas besoin de boire|.": {
 "h": "178842d0f21cfba5",
 "say": "Le crayon n'est pas vivant, il n'a pas besoin de boire.",
+"per": 0.0,
+"spelling": null
+},
+"le drapeau de l'indonésie rouge en haut blanc en bas|.": {
+"h": "7b1ea64a405fcb8b",
+"say": "Le drapeau de l'Indonésie : rouge en haut, blanc en bas.",
+"per": 0.0,
+"spelling": null
+},
+"le drapeau de l'italie trois bandes verticales vert blanc et rouge|.": {
+"h": "5ac8617db3161752",
+"say": "Le drapeau de l'Italie : trois bandes verticales, vert, blanc et rouge.",
+"per": 0.0,
+"spelling": null
+},
+"le drapeau de la france trois bandes verticales bleu blanc et rouge|.": {
+"h": "ad1c9cf5a00dcee3",
+"say": "Le drapeau de la France : trois bandes verticales, bleu, blanc et rouge.",
+"per": 0.025,
+"spelling": null
+},
+"le drapeau de la grèce des rayures bleues et blanches avec une croix blanche|.": {
+"h": "474679c848e1e3ad",
+"say": "Le drapeau de la Grèce : des rayures bleues et blanches, avec une croix blanche.",
+"per": 0.022,
+"spelling": null
+},
+"le drapeau des états-unis des rayures rouges et blanches et des étoiles blanches sur du bleu|.": {
+"h": "df331ef224f22aae",
+"say": "Le drapeau des États-Unis, des rayures rouges et blanches, et des étoiles blanches sur du bleu.",
+"per": 0.0,
+"spelling": null
+},
+"le drapeau du cameroun vert rouge et jaune avec une étoile jaune au milieu|.": {
+"h": "d5d93b216571da5a",
+"say": "Le drapeau du Cameroune : vert, rouge et jaune, avec une étoile jaune au milieu.",
+"per": 0.0,
+"spelling": null
+},
+"le drapeau du chili blanc et rouge avec une étoile blanche sur un carré bleu|.": {
+"h": "ae0c0f55655519d4",
+"say": "Le drapeau du Chili : blanc et rouge, avec une étoile blanche sur un carré bleu.",
+"per": 0.0,
+"spelling": null
+},
+"le drapeau du japon un rond rouge sur un fond blanc|.": {
+"h": "84ac6f201002fffc",
+"say": "Le drapeau du Japon : un rond rouge sur un fond blanc.",
+"per": 0.0,
+"spelling": null
+},
+"le drone vole au-dessus du cratère et prend des photos la volcanologue reste à l'abri|.": {
+"h": "713127007d81abad",
+"say": "Le drone vole au-dessu du cratère et prend des photos, la volcanologue reste à l'abri.",
+"per": 0.0,
+"spelling": null
+},
+"le four est très chaud mais la lave l'est bien plus elle fait fondre la roche|.": {
+"h": "c95bd95eb4d6dab0",
+"say": "Le four est très chô, mais la lave l'est bien plus, elle fait fondre la roche !",
 "per": 0.0,
 "spelling": null
 },
@@ -9959,6 +11255,60 @@
 "per": 0.0,
 "spelling": null
 },
+"le magma attend sous le volcan dans une grande poche la poche de magma|.": {
+"h": "ac4d07d544081168",
+"say": "Le magma attend sous le volcan, dans une grande poche : la poche de magma.",
+"per": 0.0,
+"spelling": null
+},
+"le magma est arrivé tout en haut il va sortir|.": {
+"h": "049ba0415354c08c",
+"say": "Le magma est arrivé tout en haut, il va sortir !",
+"per": 0.0,
+"spelling": null
+},
+"le magma est monté par la cheminée jusqu'au cratère c'est l'éruption|.": {
+"h": "c0ae198f74ecf4db",
+"say": "Le magma est monté par la cheminée jusqu'au cratère : c'est l'éruption !",
+"per": 0.0,
+"spelling": null
+},
+"le magma est très chaud il veut sortir|.": {
+"h": "9c8c103af4fb3c08",
+"say": "Le magma est très chô : il veut sortir !",
+"per": 0.0,
+"spelling": null
+},
+"le magma monte dans la cheminée du volcan|.": {
+"h": "cf50ae14864e9b36",
+"say": "Le magma monte dans la cheminée du volcan.",
+"per": 0.0,
+"spelling": null
+},
+"le magma monte et pousse très fort|.": {
+"h": "c19435e885449733",
+"say": "Le magma monte, et pousse très fort.",
+"per": 0.0,
+"spelling": null
+},
+"le magma monte par la cheminée le tuyau au milieu du volcan|.": {
+"h": "a5d527ce1dbf7f77",
+"say": "Le magma monte par la cheminée, le tuyau au milieu du volcan.",
+"per": 0.0,
+"spelling": null
+},
+"le magma vient de tout au fond là où il fait si chaud que la roche fond|.": {
+"h": "60a3529712b61b1b",
+"say": "Le magma vient de tout au fond, là où il fait si chô que la roche fond.",
+"per": 0.0,
+"spelling": null
+},
+"le masque à gaz nettoie l'air elle peut respirer sans tousser|.": {
+"h": "42230fc04ec3f31e",
+"say": "Le masque à gaz nettoie l'air : elle peut respirer sans tousser.",
+"per": 0.0,
+"spelling": null
+},
 "le miroir est froid mais pas assez pour faire de la glace|.": {
 "h": "705845e9f2fae867",
 "say": "Le miroir est froi, mais pas assez pour faire de la glace.",
@@ -9968,6 +11318,12 @@
 "le morceau de bois est-ce qu'il flotte ou est-ce qu'il coule|?": {
 "h": "a8cebb097ef0b8fa",
 "say": "Le morceau de bois, est-ce qu'il flotte, ou est-ce qu'il coule ?",
+"per": 0.0,
+"spelling": null
+},
+"le nuage de cendres est très lourd|.": {
+"h": "340b6ab97b0079a8",
+"say": "Le nuage de cendres est très lourd.",
 "per": 0.0,
 "spelling": null
 },
@@ -9998,6 +11354,24 @@
 "le printemps arrive|.": {
 "h": "2f34f0d07a06c463",
 "say": "Le printemps arrive.",
+"per": 0.0,
+"spelling": null
+},
+"le sable des volcans c'est de la lave refroidie émiettée en tout petits grains|.": {
+"h": "1d4c7ff2d6367323",
+"say": "Le sable des volcans, c'est de la lave refroidie, émiettée en tout petits grains.",
+"per": 0.0,
+"spelling": null
+},
+"le sable doré vient d'autres plages|.": {
+"h": "285b30b139f9984e",
+"say": "Le sable doré vient d'autres plages.",
+"per": 0.0,
+"spelling": null
+},
+"le sismomètre sent la terre trembler et dessine des zigzags|.": {
+"h": "50bf5441882ff5c3",
+"say": "Le sismomètre sent la terre trembler, et dessine des zigzags.",
 "per": 0.0,
 "spelling": null
 },
@@ -10034,6 +11408,36 @@
 "le soleil chauffe très fort|.": {
 "h": "844a36c138775ea4",
 "say": "Le soleil chauffe très fort.",
+"per": 0.0,
+"spelling": null
+},
+"le volcan d'octave pour devenir volcanologue et découvrir ce qui se cache dans un volcan|.": {
+"h": "ad4a673ca1c37a0f",
+"say": "Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan.",
+"per": 0.0,
+"spelling": null
+},
+"le volcan gronde de plus en plus fort|.": {
+"h": "fc8353caa1478c6b",
+"say": "Le volcan gronde de plus en plus fort.",
+"per": 0.0,
+"spelling": null
+},
+"le volcan lance des cendres elles font un grand nuage gris dans le ciel|.": {
+"h": "699bd9b0c47af2c2",
+"say": "Le volcan lance des cendres, elles font un grand nuage gris dans le ciel.",
+"per": 0.0,
+"spelling": null
+},
+"le volcan se réveille|.": {
+"h": "174c0939f360e912",
+"say": "Le volcan se réveille.",
+"per": 0.0,
+"spelling": null
+},
+"le volcan souffle des gaz qui piquent le nez et la gorge|.": {
+"h": "1f638503863c2885",
+"say": "Le volcan souffle des gaz qui piquent le né et la gorge.",
 "per": 0.0,
 "spelling": null
 },
@@ -10091,6 +11495,12 @@
 "per": 0.0,
 "spelling": null
 },
+"les années passent sur la lave refroidie|.": {
+"h": "fdca759ffbd98218",
+"say": "Les années passent sur la lave refroidie.",
+"per": 0.0,
+"spelling": null
+},
 "les bactéries ont besoin d'air cherche les bulles|.": {
 "h": "951f4d5015b7011a",
 "say": "Les bactéries ont besoin d'air : cherche les bulles.",
@@ -10106,6 +11516,12 @@
 "les canards vivent sur l'étang pas dans la station|.": {
 "h": "ffd919e1334d02b3",
 "say": "Les canards vivent sur l'étang, pas dans la station !",
+"per": 0.0,
+"spelling": null
+},
+"les cendres retombent partout comme une neige grise|.": {
+"h": "2699e6b701250018",
+"say": "Les cendres retombent partout, comme une neige grise.",
 "per": 0.0,
 "spelling": null
 },
@@ -10127,9 +11543,39 @@
 "per": 0.0,
 "spelling": null
 },
+"les lunettes de soleil protègent les yeux pas le nez ni la gorge|.": {
+"h": "b842516d61f04cc1",
+"say": "Les lunettes de soleil protègent les yeux, pas le né ni la gorge.",
+"per": 0.0,
+"spelling": null
+},
 "les poissons vivent dans la rivière pas dans la station|.": {
 "h": "b286f528013d4553",
 "say": "Les poissons vivent dans la rivière, pas dans la station !",
+"per": 0.0,
+"spelling": null
+},
+"les volcanologues préviennent tout le monde à temps on s'éloigne avec les adultes et on est en sécurité|.": {
+"h": "eaf55d7728f0de5f",
+"say": "Les volcanologues préviennent tout le monde à temps, on s'éloigne avec les adultes, et on est en sécurité.",
+"per": 0.0,
+"spelling": null
+},
+"les volcanologues préviennent tout le monde il faut aller loin du volcan|.": {
+"h": "a7b1d7e3f6949a05",
+"say": "Les volcanologues préviennent tout le monde : il faut aller loin du volcan.",
+"per": 0.0,
+"spelling": null
+},
+"les volcanologues surveillent les volcans avec des habits et des appareils spéciaux|.": {
+"h": "59e50cdfa2a893ee",
+"say": "Les volcanologues surveillent les volcans, avec des habits et des appareils spéciaux.",
+"per": 0.0,
+"spelling": null
+},
+"les volcans d'auvergne en france n'ont pas craché de lave depuis des milliers d'années|.": {
+"h": "fb3319702f240635",
+"say": "Les volcans d'Auvergne, en France, n'ont pas craché de lave depuis des milliers d'années.",
 "per": 0.0,
 "spelling": null
 },
@@ -10163,6 +11609,12 @@
 "per": 0.0,
 "spelling": null
 },
+"non la lave n'est pas de l'eau c'est de la roche fondue|.": {
+"h": "422939527ac2f569",
+"say": "Non, la lave n'est pas de l'eau : c'est de la roche fondue.",
+"per": 0.0,
+"spelling": null
+},
 "non la vapeur c'est quand ça chauffe|.": {
 "h": "811bae56f9c0daaa",
 "say": "Non, la vapeur, c'est quand ça chauffe.",
@@ -10178,6 +11630,12 @@
 "non|.": {
 "h": "6d6300bc492e8415",
 "say": "Non !",
+"per": 0.0,
+"spelling": null
+},
+"octave enfile sa combinaison argentée aujourd'hui il est volcanologue|.": {
+"h": "bf2eae5d46f74aae",
+"say": "Octave enfile sa combinaison argentée : aujourd'hui, il est volcanologue !",
 "per": 0.0,
 "spelling": null
 },
@@ -10202,6 +11660,12 @@
 "octave répond suis-moi une pompe une usine un château d'eau et voilà la maison|.": {
 "h": "87edfc405c0bdb1d",
 "say": "Octave répond, Suis-moi : une pompe, une usine, un château d'eau… et voilà la maison !",
+"per": 0.0,
+"spelling": null
+},
+"oh non pas froide du tout|.": {
+"h": "4151cd47fc6b4df9",
+"say": "Oh non, pas froide du tout !",
 "per": 0.0,
 "spelling": null
 },
@@ -10235,6 +11699,12 @@
 "per": 0.0,
 "spelling": null
 },
+"on ne touche jamais la lave|.": {
+"h": "7aa2aca7e792e620",
+"say": "On ne touche jamais la lave !",
+"per": 0.0,
+"spelling": null
+},
 "on ouvre le robinet pour remplir le bain|.": {
 "h": "174cda028d0be2e1",
 "say": "On ouvre le robinet pour remplir le bain.",
@@ -10244,6 +11714,12 @@
 "on peut la boire|.": {
 "h": "f9a8edba73952813",
 "say": "On peut la boire !",
+"per": 0.0,
+"spelling": null
+},
+"on s'éloigne avec les adultes|.": {
+"h": "343f5b032b49e986",
+"say": "On s'éloigne, avec les adultes.",
 "per": 0.0,
 "spelling": null
 },
@@ -10265,9 +11741,21 @@
 "per": 0.0,
 "spelling": null
 },
+"où est le magma avant de sortir du volcan|?": {
+"h": "9829a19dcc8c2cb5",
+"say": "Où est le magma, avant de sortir du volcan ?",
+"per": 0.0,
+"spelling": null
+},
 "où est partie l'eau|?": {
 "h": "8f6fcbbe707b0972",
 "say": "Où est partie l'eau ?",
+"per": 0.0,
+"spelling": null
+},
+"où est-elle|?": {
+"h": "d1e94bf35ba6418b",
+"say": "Où est-elle ?",
 "per": 0.0,
 "spelling": null
 },
@@ -10331,9 +11819,45 @@
 "per": 0.0,
 "spelling": null
 },
+"par où la lave sort-elle du volcan|?": {
+"h": "8a6001cb98c49d1b",
+"say": "Par où la lave sort-elle du volcan ?",
+"per": 0.0,
+"spelling": null
+},
+"par où le magma monte-t-il|?": {
+"h": "b2589cf84e05ef8a",
+"say": "Par où le magma monte-t-il ?",
+"per": 0.0,
+"spelling": null
+},
+"pars de la poche de magma tout en bas et monte par la cheminée le tuyau du milieu|.": {
+"h": "2194264cc0b7e000",
+"say": "Pars de la poche de magma, tout en bas, et monte par la cheminée, le tuyau du milieu.",
+"per": 0.0,
+"spelling": null
+},
+"partons les voir avec les drapeaux de leurs pays|.": {
+"h": "1bbcc4d22f23158d",
+"say": "Partons les voir, avec les drapeaux de leurs pays !",
+"per": 0.0,
+"spelling": null
+},
 "pas à l'usine mais à la rivière|.": {
 "h": "ab9f872c3b47abe2",
 "say": "Pas à l'usine, mais à la rivière.",
+"per": 0.0,
+"spelling": null
+},
+"pas de lave depuis des milliers d'années ils sont profondément endormis|.": {
+"h": "96a5925fa45793dc",
+"say": "Pas de lave depuis des milliers d'années, ils sont profondément endormis !",
+"per": 0.0,
+"spelling": null
+},
+"pas encore|.": {
+"h": "dec6c8b46ba204a3",
+"say": "Pas encore !",
 "per": 0.0,
 "spelling": null
 },
@@ -10355,10 +11879,34 @@
 "per": 0.0,
 "spelling": null
 },
+"pense à l'eau qui gèle elle devient dure|.": {
+"h": "de050107fce4b57f",
+"say": "Pense à l'eau qui gèle : elle devient dure.",
+"per": 0.0,
+"spelling": null
+},
 "pense à une glace au chocolat en plein soleil|.": {
 "h": "671d662d4a6abab9",
 "say": "Pense à une glace au chocolat en plein soleil…",
 "per": 0.077,
+"spelling": null
+},
+"pense à une soupe très épaisse qui déborde de la casserole|.": {
+"h": "b6adc430d9a2add4",
+"say": "Pense à une soupe très épaisse, qui déborde de la casserole.",
+"per": 0.029,
+"spelling": null
+},
+"petit à petit des plantes poussent la terre des volcans est très bonne pour elles|.": {
+"h": "8bc7450f40096129",
+"say": "Petit à petit, des plantes poussent, la terre des volcans est très bonne pour elles.",
+"per": 0.0,
+"spelling": null
+},
+"petit à petit des plantes repoussent dans les cendres|.": {
+"h": "efffd28d9f788439",
+"say": "Petit à petit, des plantes repoussent dans les cendres.",
+"per": 0.0,
 "spelling": null
 },
 "ploc a besoin de toi pour garder l'eau propre et ne pas la gaspiller|.": {
@@ -10445,6 +11993,12 @@
 "per": 0.0,
 "spelling": null
 },
+"pour l'instant elle est liquide|.": {
+"h": "5134e946c9e87c46",
+"say": "Pour l'instant, elle est liquide.",
+"per": 0.0,
+"spelling": null
+},
 "pour la maison on va chercher de l'eau dans la rivière|.": {
 "h": "4b33e1fbead1fbdf",
 "say": "Pour la maison, on va chercher de l'eau dans la rivière.",
@@ -10457,15 +12011,57 @@
 "per": 0.0,
 "spelling": null
 },
+"pousse le magma jusqu'en haut|.": {
+"h": "9ba2effa321ae2d2",
+"say": "Pousse le magma jusqu'en haut !",
+"per": 0.0,
+"spelling": null
+},
+"près des volcans il est fait de lave refroidie toute noire|.": {
+"h": "c3d083a50e9dbede",
+"say": "Près des volcans, il est fait de lave refroidie, toute noire !",
+"per": 0.0,
+"spelling": null
+},
+"près des volcans la lave émiettée fait des plages|.": {
+"h": "638913ecfeceb312",
+"say": "Près des volcans, la lave émiettée fait des plages.",
+"per": 0.0,
+"spelling": null
+},
 "qu'est-ce qu'on peut jeter dans les toilettes|?": {
 "h": "82d3d20352ea1d99",
 "say": "Qu'est-ce qu'on peut jeter dans les toilettes ?",
 "per": 0.0,
 "spelling": null
 },
+"qu'est-ce qui est le plus chaud|?": {
+"h": "46c05d86df4fabcc",
+"say": "Qu'est-ce qui est le plus chô ?",
+"per": 0.0,
+"spelling": null
+},
+"qu'est-ce qui jaillit du sol|?": {
+"h": "79d4b9e46b29133b",
+"say": "Qu'est-ce qui jaillit du sol ?",
+"per": 0.0,
+"spelling": null
+},
 "qu'est-ce qui l'aspire|?": {
 "h": "339663845f93dcf7",
 "say": "Qu'est-ce qui l'aspire ?",
+"per": 0.0,
+"spelling": null
+},
+"qu'est-ce qui monte dans le ciel|?": {
+"h": "7502973893736053",
+"say": "Qu'est-ce qui monte dans le ciel ?",
+"per": 0.0,
+"spelling": null
+},
+"qu'est-ce qui monte tout gris dans le ciel|?": {
+"h": "ebcf933cc73ab952",
+"say": "Qu'est-ce qui monte tout gris dans le ciel ?",
 "per": 0.0,
 "spelling": null
 },
@@ -10493,9 +12089,33 @@
 "per": 0.0,
 "spelling": null
 },
+"quand il monte et qu'il sort par le cratère c'est l'éruption|.": {
+"h": "5280b4325786cc09",
+"say": "Quand il monte et qu'il sort par le cratère, c'est l'éruption !",
+"per": 0.028,
+"spelling": null
+},
 "quand l'eau ne bouge plus la saleté descend tout doucement|.": {
 "h": "186c6d437b01d66b",
 "say": "Quand l'eau ne bouge plus, la saleté descend tout doucement.",
+"per": 0.0,
+"spelling": null
+},
+"quand la lave refroidit elle devient dure|.": {
+"h": "5e38b6dc416c987d",
+"say": "Quand la lave refroidit, elle devient dure.",
+"per": 0.0,
+"spelling": null
+},
+"quand la lave sort du volcan comment est-elle|?": {
+"h": "b643b5cedd81547c",
+"say": "Quand la lave sort du volcan, comment est-elle ?",
+"per": 0.0,
+"spelling": null
+},
+"quand le magma pousse la terre bouge un peu et le volcan fait du bruit|.": {
+"h": "8ce6f3c046b28a7e",
+"say": "Quand le magma pousse, la terre bouge un peu, et le volcan fait du bruit.",
 "per": 0.0,
 "spelling": null
 },
@@ -10508,6 +12128,18 @@
 "quand le soleil chauffe l'eau elle devient si légère qu'elle s'envole|.": {
 "h": "cf0a10d39a9e03b6",
 "say": "Quand le soleil chauffe l'eau, elle devient si légère qu'elle s'envole.",
+"per": 0.0,
+"spelling": null
+},
+"quand le volcan explose il lance de la poussière de roche toute grise|.": {
+"h": "8c273bf0bf8d866a",
+"say": "Quand le volcan explose, il lance de la poussière de roche, toute grise.",
+"per": 0.0,
+"spelling": null
+},
+"quand un volcan se réveille ils préviennent tout le monde|.": {
+"h": "51aea1bd8918aaeb",
+"say": "Quand un volcan se réveille, ils préviennent tout le monde.",
 "per": 0.0,
 "spelling": null
 },
@@ -10541,15 +12173,57 @@
 "per": 0.0,
 "spelling": null
 },
+"que devient-elle|?": {
+"h": "2b12e6c53fcee18f",
+"say": "Que devient-elle ?",
+"per": 0.0,
+"spelling": null
+},
 "que devient-il de la glace de l'eau ou de la vapeur|?": {
 "h": "0027bda6dbbedcf1",
 "say": "Que devient-il : de la glace, de l'eau, ou de la vapeur ?",
 "per": 0.0,
 "spelling": null
 },
+"que fabrique-t-elle|?": {
+"h": "5391ff6d283acee9",
+"say": "Que fabrique-t-elle ?",
+"per": 0.0,
+"spelling": null
+},
 "que fais-tu du robinet|?": {
 "h": "87959f5683c8febb",
 "say": "Que fais-tu du robinet ?",
+"per": 0.0,
+"spelling": null
+},
+"que fait une volcanologue|?": {
+"h": "b65076b9e7808acc",
+"say": "Que fait une volcanologue ?",
+"per": 0.0,
+"spelling": null
+},
+"que fait-elle ensuite|?": {
+"h": "8032176f1008dfb9",
+"say": "Que fait-elle ensuite ?",
+"per": 0.0,
+"spelling": null
+},
+"que font les gens qui habitent tout près|?": {
+"h": "3859fd0f60bcafb6",
+"say": "Que font les gens qui habitent tout près ?",
+"per": 0.0,
+"spelling": null
+},
+"que met-elle sur la tête|?": {
+"h": "1260346c7276c860",
+"say": "Que met-elle sur la tête ?",
+"per": 0.0,
+"spelling": null
+},
+"que met-elle sur le visage|?": {
+"h": "b91621859620ef4d",
+"say": "Que met-elle sur le visage ?",
 "per": 0.0,
 "spelling": null
 },
@@ -10565,9 +12239,27 @@
 "per": 0.0,
 "spelling": null
 },
+"quel appareil sent la terre trembler|?": {
+"h": "b4a770b871f6c2b8",
+"say": "Quel appareil sent la terre trembler ?",
+"per": 0.0,
+"spelling": null
+},
+"quel habit la protège de la chaleur|?": {
+"h": "20a52a3b5e616365",
+"say": "Quel habit la protège de la chaleur ?",
+"per": 0.0,
+"spelling": null
+},
 "qui a besoin d'eau pour vivre|?": {
 "h": "cc123a69f1fcc1eb",
 "say": "Qui a besoin d'eau pour vivre ?",
+"per": 0.0,
+"spelling": null
+},
+"rappelle-toi la lave refroidie devient une pierre toute noire|.": {
+"h": "c6a6c489838c785d",
+"say": "Rappelle-toi : la lave refroidie devient une pierre toute noire.",
 "per": 0.0,
 "spelling": null
 },
@@ -10577,9 +12269,33 @@
 "per": 0.0,
 "spelling": null
 },
+"regarde bien c'est par ici|.": {
+"h": "378b2e8dcd7bd659",
+"say": "Regarde bien : c'est par ici.",
+"per": 0.0,
+"spelling": null
+},
+"regarde bien ce volcan|.": {
+"h": "611bb3fac3dfb9a8",
+"say": "Regarde bien ce volcan.",
+"per": 0.0,
+"spelling": null
+},
 "regarde bien et écoute encore|.": {
 "h": "bcd7cf4e7a80cda0",
 "say": "Regarde bien, et écoute encore.",
+"per": 0.0,
+"spelling": null
+},
+"regarde bien il fume|.": {
+"h": "deacf2cb233f5656",
+"say": "Regarde bien : il fume !",
+"per": 0.0,
+"spelling": null
+},
+"regarde ça brille ici|.": {
+"h": "96f00ccf6292a537",
+"say": "Regarde, ça brille ici.",
 "per": 0.0,
 "spelling": null
 },
@@ -10595,9 +12311,39 @@
 "per": 0.0,
 "spelling": null
 },
+"regarde il a coupé un volcan en deux comme une pomme pour voir ce qu'il y a dedans|.": {
+"h": "48230f422acd8b46",
+"say": "Regarde : il a coupé un volcan en deux, comme une pomme, pour voir ce qu'il y a dedans.",
+"per": 0.0,
+"spelling": null
+},
+"regarde la lave coule et il n'y a pas de grand nuage gris|.": {
+"h": "cd3e096eeb829eee",
+"say": "Regarde : la lave coule, et il n'y a pas de grand nuage gris.",
+"per": 0.0,
+"spelling": null
+},
 "regarde le miroir après la douche il est couvert de petites gouttes|.": {
 "h": "e32b0b141072bc4d",
 "say": "Regarde le miroir après la douche : il est couvert de petites gouttes.",
+"per": 0.0,
+"spelling": null
+},
+"regarde pas de fumée pas de lave il est tout calme|.": {
+"h": "57f7e61dc8da116f",
+"say": "Regarde : pas de fumée, pas de lave… il est tout calme.",
+"per": 0.0,
+"spelling": null
+},
+"regarde un grand nuage gris monte dans le ciel et la lave ne coule pas|.": {
+"h": "fe454ed49ceaff12",
+"say": "Regarde : un grand nuage gris monte dans le ciel, et la lave ne coule pas.",
+"per": 0.0,
+"spelling": null
+},
+"ses petits trous sont pleins d'air elle est très légère|.": {
+"h": "5b6a61ed27bfec62",
+"say": "Ses petits trous sont pleins d'air : elle est très légère.",
 "per": 0.0,
 "spelling": null
 },
@@ -10607,15 +12353,51 @@
 "per": 0.0,
 "spelling": null
 },
+"sont-ils endormis ou réveillés|?": {
+"h": "45371769dac9fea8",
+"say": "Sont-ils endormis, ou réveillés ?",
+"per": 0.0,
+"spelling": null
+},
 "sous la terre il y a de l'eau cachée|.": {
 "h": "8411fd759f593e8e",
 "say": "Sous la terre, il y a de l'eau cachée.",
 "per": 0.0,
 "spelling": null
 },
+"sous la terre le magma chauffe chauffe|.": {
+"h": "2d974c0c8f8591b8",
+"say": "Sous la terre, le magma chauffe, chauffe…",
+"per": 0.0,
+"spelling": null
+},
+"sous la terre le volcan rend l'eau très chaude|.": {
+"h": "4a22cc515346f9ba",
+"say": "Sous la terre, le volcan rend l'eau très chaude.",
+"per": 0.0,
+"spelling": null
+},
+"sous le lit on serait encore tout près du volcan|.": {
+"h": "8bc5a89a90db2f7f",
+"say": "Sous le li, on serait encore tout près du volcan !",
+"per": 0.0,
+"spelling": null
+},
+"suis la flèche du bas vers le haut|.": {
+"h": "80a03767c10b7959",
+"say": "Suis la flèche, du bas vers le haut.",
+"per": 0.0,
+"spelling": null
+},
 "suivons-le|.": {
 "h": "13500776c7f2b8e5",
 "say": "Suivons-le !",
+"per": 0.0,
+"spelling": null
+},
+"surprise elle flotte|.": {
+"h": "1b86d7c48a97f410",
+"say": "Surprise : elle flotte !",
 "per": 0.0,
 "spelling": null
 },
@@ -10655,9 +12437,87 @@
 "per": 0.0,
 "spelling": null
 },
+"touche la cheminée le tuyau du volcan|.": {
+"h": "09e0402740403758",
+"say": "Touche la cheminée, le tuyau du volcan.",
+"per": 0.0,
+"spelling": null
+},
+"touche la lave qui coule sur le volcan|.": {
+"h": "6f3a4db11a4a6cb2",
+"say": "Touche la lave qui coule sur le volcan.",
+"per": 0.0,
+"spelling": null
+},
+"touche la poche de magma sous le volcan|.": {
+"h": "0d5fc4642a3538bd",
+"say": "Touche la poche de magma, sous le volcan.",
+"per": 0.0,
+"spelling": null
+},
+"touche le bon endroit|.": {
+"h": "60d72626eb2dc51b",
+"say": "Touche le bon endroit.",
+"per": 0.0,
+"spelling": null
+},
+"touche le cratère tout en haut du volcan|.": {
+"h": "19a6276866945624",
+"say": "Touche le cratère, tout en haut du volcan.",
+"per": 0.043,
+"spelling": null
+},
+"touche le drapeau de l'indonésie|.": {
+"h": "35c0d5d14c21c7e2",
+"say": "Touche le drapeau de l'Indonésie.",
+"per": 0.0,
+"spelling": null
+},
+"touche le drapeau des états-unis|.": {
+"h": "345dfbb5d392297f",
+"say": "Touche le drapeau des États-Unis.",
+"per": 0.0,
+"spelling": null
+},
+"touche le drapeau du cameroun|.": {
+"h": "5bba22a9a9851ace",
+"say": "Touche le drapeau du Cameroune.",
+"per": 0.0,
+"spelling": null
+},
+"touche le drapeau du chili|.": {
+"h": "447a51ea5b48c974",
+"say": "Touche le drapeau du Chili.",
+"per": 0.0,
+"spelling": null
+},
+"touche le nuage de cendres|.": {
+"h": "689e6df3fb457a25",
+"say": "Touche le nuage de cendres.",
+"per": 0.0,
+"spelling": null
+},
 "touche le verre d'eau qui en sort|.": {
 "h": "6a80717ea24b9e9c",
 "say": "Touche le verre d'eau qui en sort.",
+"per": 0.0,
+"spelling": null
+},
+"touche-la|.": {
+"h": "3069aebff503c441",
+"say": "Touche-la.",
+"per": 0.0,
+"spelling": null
+},
+"touche-le|.": {
+"h": "e6ee1f6c2ad32b1d",
+"say": "Touche-le.",
+"per": 0.0,
+"spelling": null
+},
+"tout au fond sous le volcan il fait si chaud que la roche fond c'est le magma|.": {
+"h": "aff2ae48829571fb",
+"say": "Tout au fond, sous le volcan, il fait si chô que la roche fond, c'est le magma.",
 "per": 0.0,
 "spelling": null
 },
@@ -10685,10 +12545,34 @@
 "per": 0.0,
 "spelling": null
 },
+"un appareil mesure la chaleur sans toucher|.": {
+"h": "71e34a64694dc4d5",
+"say": "Un appareil mesure la chaleur, sans toucher.",
+"per": 0.0,
+"spelling": null
+},
 "un bateau est fait pour flotter il pousse l'eau sous lui|.": {
 "h": "6e5e0236c5644eff",
 "say": "Un bateau est fait pour flotter, il pousse l'eau sous lui.",
 "per": 0.0,
+"spelling": null
+},
+"un casque bien solide protège sa tête des pierres qui tombent|.": {
+"h": "e7ab10be7761dd7b",
+"say": "Un casque bien solide protège sa tête des pierres qui tombe.",
+"per": 0.0,
+"spelling": null
+},
+"un énorme nuage de cendres grises monte dans le ciel|.": {
+"h": "bb5bff5de165b4c4",
+"say": "Un énorme nuage de cendres grises monte dans le ciel.",
+"per": 0.0,
+"spelling": null
+},
+"un geyser de l'eau chaude et de la vapeur jaillissent très haut comme une fontaine|.": {
+"h": "039cb8256b07e7c0",
+"say": "Un gèzère : de l'eau chaude et de la vapeur jaillissent très haut, comme une fontaine !",
+"per": 0.024,
 "spelling": null
 },
 "un grand bain il faut le remplir tout entier ça fait beaucoup d'eau|.": {
@@ -10703,9 +12587,63 @@
 "per": 0.0,
 "spelling": null
 },
+"un masque de carnaval c'est pour faire la fête il ne nettoie pas l'air|.": {
+"h": "7ea15c96ae06d42b",
+"say": "Un masque de carnaval, c'est pour faire la fête : il ne nettoie pas l'air !",
+"per": 0.0,
+"spelling": null
+},
 "un œuf frais coule au fond de l'eau|.": {
 "h": "f287c54c6dbddb5d",
 "say": "Un œuf frais coule au fond de l'eau.",
+"per": 0.0,
+"spelling": null
+},
+"un short ne protège pas de la chaleur de la lave|.": {
+"h": "1d988a21a750fa7f",
+"say": "Un short ne protège pas de la chaleur de la lave.",
+"per": 0.0,
+"spelling": null
+},
+"un volcan endormi est tout calme des arbres poussent sur ses pentes|.": {
+"h": "733a36a6391a453c",
+"say": "Un volcan endormi est tout calme : des arbres poussent sur ses pentes.",
+"per": 0.0,
+"spelling": null
+},
+"un volcan gris lance un grand nuage de cendres|.": {
+"h": "f18402214eb92967",
+"say": "Un volcan gris lance un grand nuage de cendres.",
+"per": 0.038,
+"spelling": null
+},
+"un volcan qui fume ne dort pas|.": {
+"h": "8a3bba4da4674bf1",
+"say": "Un volcan qui fume ne dort pas.",
+"per": 0.0,
+"spelling": null
+},
+"un volcan réveillé fume et gronde|.": {
+"h": "8e250dbc31bf1ed5",
+"say": "Un volcan réveillé fume et gronde.",
+"per": 0.0,
+"spelling": null
+},
+"un volcan rouge laisse couler sa lave|.": {
+"h": "e9165cae36994f62",
+"say": "Un volcan rouge laisse couler sa lave.",
+"per": 0.0,
+"spelling": null
+},
+"une casquette protège du soleil pas des pierres|.": {
+"h": "964fb527c2b0b95f",
+"say": "Une casquette protège du soleil, pas des pierres !",
+"per": 0.0,
+"spelling": null
+},
+"une couronne c'est joli mais ça ne protège pas la tête|.": {
+"h": "a8dd97932f793e86",
+"say": "Une couronne, c'est joli, mais ça ne protège pas la tête !",
 "per": 0.0,
 "spelling": null
 },
@@ -10769,9 +12707,45 @@
 "per": 0.0,
 "spelling": null
 },
+"voici l'etna un volcan rouge qui se réveille très souvent|.": {
+"h": "ad9f3d2b161272a4",
+"say": "Voici l'Etna, un volcan rouge qui se réveille très souvent.",
+"per": 0.0,
+"spelling": null
+},
 "voici l'usine d'eau potable|.": {
 "h": "eb064e22b0b621aa",
 "say": "Voici l'usine d'eau potable.",
+"per": 0.0,
+"spelling": null
+},
+"voici le mont cameroun un volcan d'afrique qui se réveille de temps en temps|.": {
+"h": "aae374778971f723",
+"say": "Voici le mont Cameroune, un volcan d'Afrique qui se réveille de temps en temps.",
+"per": 0.0,
+"spelling": null
+},
+"voici le mont fuji un volcan endormi au chapeau de neige|.": {
+"h": "f71077f90b122f09",
+"say": "Voici le mont Fuji, un volcan endormi au chapeau de neige.",
+"per": 0.0,
+"spelling": null
+},
+"voici le piton de la fournaise un volcan rouge sur l'île de la réunion loin dans l'océan|.": {
+"h": "1ed702765a836f42",
+"say": "Voici le piton de la Fournaise, un volcan rouge sur l'ile de La Réunion, loin dans l'océan.",
+"per": 0.0,
+"spelling": null
+},
+"voici le puy de dôme et ses voisins des volcans endormis depuis très longtemps|.": {
+"h": "aed5c390f6b71573",
+"say": "Voici le puy de Dôme et ses voisins, des volcans endormis depuis très longtemps.",
+"per": 0.0,
+"spelling": null
+},
+"voici le stromboli une petite île volcan qui lance des étincelles toutes les quelques minutes|.": {
+"h": "a72c0ec5672d4ec8",
+"say": "Voici le Stromboli, une petite ile volcan qui lance des étincelles toutes les quelques minutes.",
 "per": 0.0,
 "spelling": null
 },
@@ -10784,6 +12758,24 @@
 "voici ploc une petite goutte d'eau|.": {
 "h": "a690eb32f06970d2",
 "say": "Voici Ploc, une petite goutte d'eau.",
+"per": 0.0,
+"spelling": null
+},
+"voici un volcan d'hawaï où la lave coule jusqu'à la mer|.": {
+"h": "ec4f11a5fa8a5262",
+"say": "Voici un volcan d'Hawaï, où la lave coule jusqu'à la mer.",
+"per": 0.0,
+"spelling": null
+},
+"voici une île en forme de croissant fabriquée par un volcan|.": {
+"h": "c64afe3650771538",
+"say": "Voici une ile en forme de croissant, fabriquée par un volcan.",
+"per": 0.0,
+"spelling": null
+},
+"voici une pierre de volcan pleine de petits trous la pierre ponce|.": {
+"h": "62c513d802657718",
+"say": "Voici une pierre de volcan pleine de petits trous, la pierre ponce.",
 "per": 0.0,
 "spelling": null
 },
@@ -11228,42 +13220,6 @@
 "carré vert|?": {
 "h": "5e92af9cd297bb53",
 "say": "carré vert ?",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour les bugs que tu as trouvés comme une vraie informaticienne ou un vrai informaticien|.": {
-"h": "a12851eb5cbe56ee",
-"say": "Celle-ci, c'est pour les bugs que tu as trouvés, comme une vraie informaticienne ou un vrai informaticien.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour les solides que tu as reconnus|.": {
-"h": "77a7b940bd7eba74",
-"say": "Celle-ci, c'est pour les solides que tu as reconnu.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour les suites que tu as devinées|.": {
-"h": "c362c875e2686f93",
-"say": "Celle-ci, c'est pour les suites que tu as devinées.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour les tableaux que tu as complétés|.": {
-"h": "98c4612f40dab441",
-"say": "Celle-ci, c'est pour les tableaux que tu as complétés.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour tes programmes bip est arrivé au bout|.": {
-"h": "2188263ed629756e",
-"say": "Celle-ci, c'est pour tes programmes, Bip est arrivé au bout !",
-"per": 0.031,
-"spelling": null
-},
-"celle-ci c'est pour toutes les formes que tu as trouvées|.": {
-"h": "562880f7eba57d9c",
-"say": "Celle-ci, c'est pour toutes les formes que tu as trouvées.",
 "per": 0.0,
 "spelling": null
 },
@@ -14246,54 +16202,6 @@
 "ce sont des petits mots qu'on connaît par cœur|.": {
 "h": "ac8b9c805ad799c0",
 "say": "ce sont des petits mots qu'on connaît par cœur.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est parce que tu as bien écouté le début des mots|.": {
-"h": "99cd95257fa3443f",
-"say": "Celle-ci, c'est parce que tu as bien écouté le début des mots.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour les mots que tu as écrits|.": {
-"h": "5ddf62b86610ddf2",
-"say": "Celle-ci, c'est pour les mots que tu as écrits.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour les mots que tu as lus tout seul|.": {
-"h": "a1500a67bf42e1e2",
-"say": "Celle-ci, c'est pour les mots que tu as lu tout seul.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour les mots que tu as lus|.": {
-"h": "ceb4b43f0e9e95c3",
-"say": "Celle-ci, c'est pour les mots que tu as lu.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour les phrases que tu as lues|.": {
-"h": "da6703e3d2712862",
-"say": "Celle-ci, c'est pour les phrases que tu as lues.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour les rimes que tu as entendues|.": {
-"h": "61b4b3c30e846f22",
-"say": "Celle-ci, c'est pour les rimes que tu as entendues.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour les syllabes que tu as fabriquées|.": {
-"h": "6b5fa23ac2ad0ef0",
-"say": "Celle-ci, c'est pour les syllabes que tu as fabriquées.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour tous les mots que tu as frappés en rythme|.": {
-"h": "3a4a2e20b85c482b",
-"say": "Celle-ci, c'est pour tous les mots que tu as frappés en rythme.",
 "per": 0.0,
 "spelling": null
 },
@@ -22991,42 +24899,6 @@
 "per": 0.0,
 "spelling": null
 },
-"celle-ci c'est parce que tu as cherché jusqu'à ce que ce soit juste pour tout le monde|.": {
-"h": "741af276aea33eb7",
-"say": "Celle-ci, c'est parce que tu as cherché jusqu'à ce que ce soit juste pour tout le monde.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est parce que tu as continué à compter jusqu'au bout|.": {
-"h": "263e6994f39b476e",
-"say": "Celle-ci, c'est parce que tu as continué à compter jusqu'au bout.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est parce que tu as recompté jusqu'à trouver|.": {
-"h": "9b603e7490c70ce8",
-"say": "Celle-ci, c'est parce que tu as recompté jusqu'à trouver.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour avoir compté avec soin|.": {
-"h": "d780ef69737da450",
-"say": "Celle-ci, c'est pour avoir compté avec soin.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour tes partages bien justes|.": {
-"h": "0c68414280f08b3d",
-"say": "Celle-ci, c'est pour tes partages bien justes.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour tous les sauts bien comptés|.": {
-"h": "ef254fc5578047af",
-"say": "Celle-ci, c'est pour tous les sauts bien comptés.",
-"per": 0.0,
-"spelling": null
-},
 "chacun a 1 biscuit c'est juste|.": {
 "h": "48bb384d999ef42d",
 "say": "Chacun a un biscuit, c'est juste.",
@@ -26345,6 +28217,312 @@
 "per": 0.0,
 "spelling": null
 },
+"c'est parce que tu as continué à chercher|.": {
+"h": "ae5a0a765755b271",
+"say": "c'est parce que tu as continué à chercher.",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de cuba|,": {
+"h": "16daeee1737766c8",
+"say": "c'est pour le drapeau de Cuba,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de l'allemagne|,": {
+"h": "0a2f055cec19ca99",
+"say": "c'est pour le drapeau de l'Allemagne,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de l'autriche|,": {
+"h": "1ed5af8ff1260bbe",
+"say": "c'est pour le drapeau de l'Autriche,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de l'inde|,": {
+"h": "2a3da2383cd20670",
+"say": "c'est pour le drapeau de l'Inde,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de l'indonésie|,": {
+"h": "fe8e531326eef9d6",
+"say": "c'est pour le drapeau de l'Indonésie,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de l'irlande|,": {
+"h": "895acfc34389646b",
+"say": "c'est pour le drapeau de l'Irlande,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de l'italie|,": {
+"h": "800d1ca30534e576",
+"say": "c'est pour le drapeau de l'Italie,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de l'ukraine|,": {
+"h": "8ec06226e412d667",
+"say": "c'est pour le drapeau de l'Ukraine,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la belgique|,": {
+"h": "c5c19e4a61fbe951",
+"say": "c'est pour le drapeau de la Belgique,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la bulgarie|,": {
+"h": "6420f49cd00ffdaa",
+"say": "c'est pour le drapeau de la Bulgarie,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la chine|,": {
+"h": "42a9b1c80cc1afbc",
+"say": "c'est pour le drapeau de la Chine,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la colombie|,": {
+"h": "b9ae3b1bcd1b68eb",
+"say": "c'est pour le drapeau de la Colombie,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la côte d'ivoire|,": {
+"h": "27f09192f34edc4d",
+"say": "c'est pour le drapeau de la Côte d'Ivoire,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la finlande|,": {
+"h": "095611e71ecc763e",
+"say": "c'est pour le drapeau de la Finlande,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la france|,": {
+"h": "079b62e464ca1539",
+"say": "c'est pour le drapeau de la France,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la grèce|,": {
+"h": "5a48fa7f0a3ed3d4",
+"say": "c'est pour le drapeau de la Grèce,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la guinée|,": {
+"h": "49935fa59ab9a5be",
+"say": "c'est pour le drapeau de la Guinée,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la hongrie|,": {
+"h": "955c45d6d9f1b515",
+"say": "c'est pour le drapeau de la Hongrie,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la lituanie|,": {
+"h": "4a3c091a74351268",
+"say": "c'est pour le drapeau de la Lituanie,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la norvège|,": {
+"h": "fc48598910944d05",
+"say": "c'est pour le drapeau de la Norvège,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la pologne|,": {
+"h": "7baac4f7d5fae5ec",
+"say": "c'est pour le drapeau de la Pologne,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la roumanie|,": {
+"h": "57e7dfdb854ef1fe",
+"say": "c'est pour le drapeau de la Roumanie,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la russie|,": {
+"h": "d8c744f3267c4616",
+"say": "c'est pour le drapeau de la Russie,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la somalie|,": {
+"h": "cab458b8402b4026",
+"say": "c'est pour le drapeau de la Somalie,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la suède|,": {
+"h": "07880e2e5d84b539",
+"say": "c'est pour le drapeau de la Suède,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la suisse|,": {
+"h": "8550c7a6fe5a1de4",
+"say": "c'est pour le drapeau de la Suisse,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de la tchéquie|,": {
+"h": "da1035a1c7665b28",
+"say": "c'est pour le drapeau de la Tchéquie,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau de monaco|,": {
+"h": "c75309060544ba23",
+"say": "c'est pour le drapeau de Monaco,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau des états-unis|,": {
+"h": "adff363586fb3f33",
+"say": "c'est pour le drapeau des États-Unis,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau des palaos|,": {
+"h": "41f208222eabe63a",
+"say": "c'est pour le drapeau des Palaos,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du bangladesh|,": {
+"h": "1c26fc5f41e97fb1",
+"say": "c'est pour le drapeau du Bangladesh,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du cameroun|,": {
+"h": "5fb28e43d835eb5d",
+"say": "c'est pour le drapeau du Cameroune,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du canada|,": {
+"h": "14b3d9f7c91dedcd",
+"say": "c'est pour le drapeau du Canada,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du chili|,": {
+"h": "cfbdd0bcf21b2d6f",
+"say": "c'est pour le drapeau du Chili,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du danemark|,": {
+"h": "2632a6c7fcf0752f",
+"say": "c'est pour le drapeau du Danemark,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du gabon|,": {
+"h": "75b83182ea50034c",
+"say": "c'est pour le drapeau du Gabon,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du japon|,": {
+"h": "55bae0892acad2c8",
+"say": "c'est pour le drapeau du Japon,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du laos|,": {
+"h": "c7d8c0112038f092",
+"say": "c'est pour le drapeau du Laos,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du luxembourg|,": {
+"h": "4c5ab966f6093ab5",
+"say": "c'est pour le drapeau du Luxembourg,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du mali|,": {
+"h": "4cc113c84942ca0f",
+"say": "c'est pour le drapeau du Mali,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du maroc|,": {
+"h": "e7153833d987f98d",
+"say": "c'est pour le drapeau du Maroc,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du nigeria|,": {
+"h": "f8475075cc32f341",
+"say": "c'est pour le drapeau du Nigeria,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du panama|,": {
+"h": "a936eb1c46bbff27",
+"say": "c'est pour le drapeau du Panama,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du pérou|,": {
+"h": "661c8dbd4eef0ce0",
+"say": "c'est pour le drapeau du Pérou,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du royaume-uni|,": {
+"h": "3dc188cfe2e47e2a",
+"say": "c'est pour le drapeau du Royaume-Uni,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du sénégal|,": {
+"h": "5ae4de38edac24fd",
+"say": "c'est pour le drapeau du Sénégal,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du tchad|,": {
+"h": "e5f0abd2ca740f52",
+"say": "c'est pour le drapeau du Tchad,",
+"per": 0.056,
+"spelling": null
+},
+"c'est pour le drapeau du togo|,": {
+"h": "e0078572354cb95d",
+"say": "c'est pour le drapeau du Togo,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour le drapeau du viêt nam|,": {
+"h": "d26e9b25d14d5df5",
+"say": "c'est pour le drapeau du Viêt Nam,",
+"per": 0.0,
+"spelling": null
+},
+"c'est pour tous les drapeaux que tu as reconnus|.": {
+"h": "b889ea2d0f41b17b",
+"say": "c'est pour tous les drapeaux que tu as reconnu.",
+"per": 0.0,
+"spelling": null
+},
 "c'est quatre carrés|,": {
 "h": "c00b4b2400ae7a2a",
 "say": "c'est quatre carrés :",
@@ -26583,24 +28761,6 @@
 "h": "d1aa44b6e4f4db5f",
 "say": "Ça se li Togo.",
 "per": 0.2,
-"spelling": null
-},
-"ce n'est pas celui-là|.": {
-"h": "22aa1d13d9d1af95",
-"say": "Ce n'est pas celui-là.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est parce que tu as reconnu les vrais drapeaux même à l'envers|.": {
-"h": "f142e231645bffd8",
-"say": "Celle-ci, c'est parce que tu as reconnu les vrais drapeaux, même à l'envers.",
-"per": 0.0,
-"spelling": null
-},
-"celle-ci c'est pour les drapeaux que tu as coloriés|.": {
-"h": "dad5b8dadf9b680e",
-"say": "Celle-ci, c'est pour les drapeaux que tu as coloriés.",
-"per": 0.0,
 "spelling": null
 },
 "celui-là a les bandes dans l'autre sens|.": {
@@ -27432,8 +29592,8 @@
 "spelling": null
 },
 "le cameroun est en afrique|.": {
-"h": "2a75edd6a3542e1d",
-"say": "Le Cameroun est en Afrique.",
+"h": "7599beccb1137c1f",
+"say": "Le Cameroune est en Afrique.",
 "per": 0.0,
 "spelling": null
 },
@@ -27648,9 +29808,9 @@
 "spelling": null
 },
 "le drapeau du cameroun|,": {
-"h": "14fab4dc3557c29a",
-"say": "Le drapeau du Cameroun,",
-"per": 0.133,
+"h": "5a210e2f55a971c3",
+"say": "Le drapeau du Cameroune,",
+"per": 0.0,
 "spelling": null
 },
 "le drapeau du canada|,": {
@@ -28068,9 +30228,9 @@
 "spelling": null
 },
 "montre-moi le drapeau du cameroun|.": {
-"h": "8a3a909b48a3fe33",
-"say": "Montre-moi le drapeau du Cameroun.",
-"per": 0.091,
+"h": "dee235441c758084",
+"say": "Montre-moi le drapeau du Cameroune.",
+"per": 0.0,
 "spelling": null
 },
 "montre-moi le drapeau du canada|.": {
@@ -28178,12 +30338,6 @@
 "noir|,": {
 "h": "8ec94692cb385ce6",
 "say": "noir;",
-"per": 0.0,
-"spelling": null
-},
-"noir|.": {
-"h": "563541e22945bebe",
-"say": "noir",
 "per": 0.0,
 "spelling": null
 },
@@ -28374,9 +30528,9 @@
 "spelling": null
 },
 "où se trouve le cameroun|?": {
-"h": "ca6a278781a10278",
-"say": "Où se trouve le Cameroun ?",
-"per": 0.133,
+"h": "a14c5c2d3b0be155",
+"say": "Où se trouve le Cameroune ?",
+"per": 0.0,
 "spelling": null
 },
 "où se trouve le canada|?": {
@@ -28698,9 +30852,9 @@
 "spelling": null
 },
 "oui c'est le drapeau du cameroun|.": {
-"h": "d62d4ec14536a6ea",
-"say": "Oui, c'est le drapeau du Cameroun !",
-"per": 0.105,
+"h": "466a63c8a1433eb7",
+"say": "Oui, c'est le drapeau du Cameroune !",
+"per": 0.0,
 "spelling": null
 },
 "oui c'est le drapeau du canada|.": {
@@ -29874,9 +32028,9 @@
 "spelling": null
 },
 "voici le drapeau du cameroun|.": {
-"h": "c14d4fb343dbc0a3",
-"say": "Voici le drapeau du Cameroun.",
-"per": 0.1,
+"h": "e8c7cd6329837733",
+"say": "Voici le drapeau du Cameroune.",
+"per": 0.0,
 "spelling": null
 },
 "voici le drapeau du canada|.": {

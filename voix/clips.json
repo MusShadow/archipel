@@ -2989,26 +2989,6 @@
   ]
  },
  {
-  "key": "celle-ci c'est parce que tu as compris ce que pensent les autres|.",
-  "text": "Celle-ci, c'est parce que tu as compris ce que pensent les autres.",
-  "say": "Celle-ci, c'est parce que tu as compris ce que pensent les autres.",
-  "pack": "coeur",
-  "words": 12,
-  "fams": [
-   "theatre:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour toutes les émotions que tu as reconnues|.",
-  "text": "Celle-ci, c'est pour toutes les émotions que tu as reconnues.",
-  "say": "Celle-ci, c'est pour toutes les émotions que tu as reconnues.",
-  "pack": "coeur",
-  "words": 10,
-  "fams": [
-   "theatre:gommette"
-  ]
- },
- {
   "key": "cherche ce qui lui ferait du bien|.",
   "text": "Cherche ce qui lui ferait du bien.",
   "say": "Cherche ce qui lui ferait du bien.",
@@ -8023,7 +8003,8 @@
   "words": 1,
   "fams": [
    "depart",
-   "dessin"
+   "dessin",
+   "volcan:reussite"
   ]
  },
  {
@@ -8055,7 +8036,8 @@
   "fams": [
    "flotte:indice",
    "goutte:indice",
-   "histoires"
+   "histoires",
+   "volcan:indice"
   ]
  },
  {
@@ -8111,17 +8093,6 @@
   ]
  },
  {
-  "key": "c'est parce que tu as continué à chercher|.",
-  "text": "c'est parce que tu as continué à chercher.",
-  "say": "c'est parce que tu as continué à chercher.",
-  "pack": "commun",
-  "words": 8,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
   "key": "c'est parce que tu as continué à compter jusqu'au bout|.",
   "text": "c'est parce que tu as continué à compter jusqu'au bout.",
   "say": "c'est parce que tu as continué à compter jusqu'au bout.",
@@ -8172,550 +8143,11 @@
   ]
  },
  {
-  "key": "c'est pour le drapeau de cuba|,",
-  "text": "c'est pour le drapeau de Cuba,",
-  "say": "c'est pour le drapeau de Cuba,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de l'allemagne|,",
-  "text": "c'est pour le drapeau de l'Allemagne,",
-  "say": "c'est pour le drapeau de l'Allemagne,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de l'autriche|,",
-  "text": "c'est pour le drapeau de l'Autriche,",
-  "say": "c'est pour le drapeau de l'Autriche,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de l'inde|,",
-  "text": "c'est pour le drapeau de l'Inde,",
-  "say": "c'est pour le drapeau de l'Inde,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de l'indonésie|,",
-  "text": "c'est pour le drapeau de l'Indonésie,",
-  "say": "c'est pour le drapeau de l'Indonésie,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de l'irlande|,",
-  "text": "c'est pour le drapeau de l'Irlande,",
-  "say": "c'est pour le drapeau de l'Irlande,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de l'italie|,",
-  "text": "c'est pour le drapeau de l'Italie,",
-  "say": "c'est pour le drapeau de l'Italie,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de l'ukraine|,",
-  "text": "c'est pour le drapeau de l'Ukraine,",
-  "say": "c'est pour le drapeau de l'Ukraine,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la belgique|,",
-  "text": "c'est pour le drapeau de la Belgique,",
-  "say": "c'est pour le drapeau de la Belgique,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la bulgarie|,",
-  "text": "c'est pour le drapeau de la Bulgarie,",
-  "say": "c'est pour le drapeau de la Bulgarie,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la chine|,",
-  "text": "c'est pour le drapeau de la Chine,",
-  "say": "c'est pour le drapeau de la Chine,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la colombie|,",
-  "text": "c'est pour le drapeau de la Colombie,",
-  "say": "c'est pour le drapeau de la Colombie,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la côte d'ivoire|,",
-  "text": "c'est pour le drapeau de la Côte d'Ivoire,",
-  "say": "c'est pour le drapeau de la Côte d'Ivoire,",
-  "pack": "commun",
-  "words": 8,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la finlande|,",
-  "text": "c'est pour le drapeau de la Finlande,",
-  "say": "c'est pour le drapeau de la Finlande,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la france|,",
-  "text": "c'est pour le drapeau de la France,",
-  "say": "c'est pour le drapeau de la France,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la grèce|,",
-  "text": "c'est pour le drapeau de la Grèce,",
-  "say": "c'est pour le drapeau de la Grèce,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la guinée|,",
-  "text": "c'est pour le drapeau de la Guinée,",
-  "say": "c'est pour le drapeau de la Guinée,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la hongrie|,",
-  "text": "c'est pour le drapeau de la Hongrie,",
-  "say": "c'est pour le drapeau de la Hongrie,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la lituanie|,",
-  "text": "c'est pour le drapeau de la Lituanie,",
-  "say": "c'est pour le drapeau de la Lituanie,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la norvège|,",
-  "text": "c'est pour le drapeau de la Norvège,",
-  "say": "c'est pour le drapeau de la Norvège,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la pologne|,",
-  "text": "c'est pour le drapeau de la Pologne,",
-  "say": "c'est pour le drapeau de la Pologne,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la roumanie|,",
-  "text": "c'est pour le drapeau de la Roumanie,",
-  "say": "c'est pour le drapeau de la Roumanie,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la russie|,",
-  "text": "c'est pour le drapeau de la Russie,",
-  "say": "c'est pour le drapeau de la Russie,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la somalie|,",
-  "text": "c'est pour le drapeau de la Somalie,",
-  "say": "c'est pour le drapeau de la Somalie,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la suède|,",
-  "text": "c'est pour le drapeau de la Suède,",
-  "say": "c'est pour le drapeau de la Suède,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la suisse|,",
-  "text": "c'est pour le drapeau de la Suisse,",
-  "say": "c'est pour le drapeau de la Suisse,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de la tchéquie|,",
-  "text": "c'est pour le drapeau de la Tchéquie,",
-  "say": "c'est pour le drapeau de la Tchéquie,",
-  "pack": "commun",
-  "words": 7,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau de monaco|,",
-  "text": "c'est pour le drapeau de Monaco,",
-  "say": "c'est pour le drapeau de Monaco,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau des états-unis|,",
-  "text": "c'est pour le drapeau des États-Unis,",
-  "say": "c'est pour le drapeau des États-Unis,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau des palaos|,",
-  "text": "c'est pour le drapeau des Palaos,",
-  "say": "c'est pour le drapeau des Palaos,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
   "key": "c'est pour le drapeau des pays-bas|,",
   "text": "c'est pour le drapeau des Pays-Bas,",
   "say": "c'est pour le drapeau des Pays-Bas,",
   "pack": "commun",
   "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du bangladesh|,",
-  "text": "c'est pour le drapeau du Bangladesh,",
-  "say": "c'est pour le drapeau du Bangladesh,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du cameroun|,",
-  "text": "c'est pour le drapeau du Cameroun,",
-  "say": "c'est pour le drapeau du Cameroun,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du canada|,",
-  "text": "c'est pour le drapeau du Canada,",
-  "say": "c'est pour le drapeau du Canada,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du chili|,",
-  "text": "c'est pour le drapeau du Chili,",
-  "say": "c'est pour le drapeau du Chili,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du danemark|,",
-  "text": "c'est pour le drapeau du Danemark,",
-  "say": "c'est pour le drapeau du Danemark,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du gabon|,",
-  "text": "c'est pour le drapeau du Gabon,",
-  "say": "c'est pour le drapeau du Gabon,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du japon|,",
-  "text": "c'est pour le drapeau du Japon,",
-  "say": "c'est pour le drapeau du Japon,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du laos|,",
-  "text": "c'est pour le drapeau du Laos,",
-  "say": "c'est pour le drapeau du Laos,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du luxembourg|,",
-  "text": "c'est pour le drapeau du Luxembourg,",
-  "say": "c'est pour le drapeau du Luxembourg,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du mali|,",
-  "text": "c'est pour le drapeau du Mali,",
-  "say": "c'est pour le drapeau du Mali,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du maroc|,",
-  "text": "c'est pour le drapeau du Maroc,",
-  "say": "c'est pour le drapeau du Maroc,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du nigeria|,",
-  "text": "c'est pour le drapeau du Nigeria,",
-  "say": "c'est pour le drapeau du Nigeria,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du panama|,",
-  "text": "c'est pour le drapeau du Panama,",
-  "say": "c'est pour le drapeau du Panama,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du pérou|,",
-  "text": "c'est pour le drapeau du Pérou,",
-  "say": "c'est pour le drapeau du Pérou,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du royaume-uni|,",
-  "text": "c'est pour le drapeau du Royaume-Uni,",
-  "say": "c'est pour le drapeau du Royaume-Uni,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du sénégal|,",
-  "text": "c'est pour le drapeau du Sénégal,",
-  "say": "c'est pour le drapeau du Sénégal,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du tchad|,",
-  "text": "c'est pour le drapeau du Tchad,",
-  "say": "c'est pour le drapeau du Tchad,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du togo|,",
-  "text": "c'est pour le drapeau du Togo,",
-  "say": "c'est pour le drapeau du Togo,",
-  "pack": "commun",
-  "words": 6,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
-  ]
- },
- {
-  "key": "c'est pour le drapeau du viêt nam|,",
-  "text": "c'est pour le drapeau du Viêt Nam,",
-  "say": "c'est pour le drapeau du Viêt Nam,",
-  "pack": "commun",
-  "words": 7,
   "fams": [
    "carte:gommette",
    "drapeau:gommette"
@@ -8869,17 +8301,6 @@
   "words": 9,
   "fams": [
    "carte:gommette"
-  ]
- },
- {
-  "key": "c'est pour tous les drapeaux que tu as reconnus|.",
-  "text": "c'est pour tous les drapeaux que tu as reconnus.",
-  "say": "c'est pour tous les drapeaux que tu as reconnus.",
-  "pack": "commun",
-  "words": 9,
-  "fams": [
-   "carte:gommette",
-   "drapeau:gommette"
   ]
  },
  {
@@ -9091,6 +8512,18 @@
   ]
  },
  {
+  "key": "ce n'est pas celui-là|.",
+  "text": "Ce n'est pas celui-là.",
+  "say": "Ce n'est pas celui-là.",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "atelierdrapeaux:indice",
+   "drapeau:indice",
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "ce n'est pas facile|.",
   "text": "Ce n'est pas facile !",
   "say": "Ce n'est pas facile !",
@@ -9098,6 +8531,879 @@
   "words": 4,
   "fams": [
    "hote"
+  ]
+ },
+ {
+  "key": "celle-ci c'est parce que tu as bien écouté le début des mots|.",
+  "text": "Celle-ci, c'est parce que tu as bien écouté le début des mots.",
+  "say": "Celle-ci, c'est parce que tu as bien écouté le début des mots.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette",
+   "chants:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est parce que tu as cherché jusqu'à ce que ce soit juste pour tout le monde|.",
+  "text": "Celle-ci, c'est parce que tu as cherché jusqu'à ce que ce soit juste pour tout le monde.",
+  "say": "Celle-ci, c'est parce que tu as cherché jusqu'à ce que ce soit juste pour tout le monde.",
+  "pack": "commun",
+  "words": 17,
+  "fams": [
+   "carte:gommette",
+   "partage:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est parce que tu as compris ce que pensent les autres|.",
+  "text": "Celle-ci, c'est parce que tu as compris ce que pensent les autres.",
+  "say": "Celle-ci, c'est parce que tu as compris ce que pensent les autres.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette",
+   "theatre:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est parce que tu as compris que ce n'est pas la taille qui compte|.",
+  "text": "Celle-ci, c'est parce que tu as compris que ce n'est pas la taille qui compte.",
+  "say": "Celle-ci, c'est parce que tu as compris que ce n'est pas la taille qui compte.",
+  "pack": "commun",
+  "words": 15,
+  "fams": [
+   "carte:gommette",
+   "flotte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est parce que tu as continué à chercher|.",
+  "text": "Celle-ci, c'est parce que tu as continué à chercher.",
+  "say": "Celle-ci, c'est parce que tu as continué à chercher.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est parce que tu as continué à compter jusqu'au bout|.",
+  "text": "Celle-ci, c'est parce que tu as continué à compter jusqu'au bout.",
+  "say": "Celle-ci, c'est parce que tu as continué à compter jusqu'au bout.",
+  "pack": "commun",
+  "words": 11,
+  "fams": [
+   "carte:gommette",
+   "marche:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est parce que tu as recompté jusqu'à trouver|.",
+  "text": "Celle-ci, c'est parce que tu as recompté jusqu'à trouver.",
+  "say": "Celle-ci, c'est parce que tu as recompté jusqu'à trouver.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette",
+   "nenuphars:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est parce que tu as reconnu les vrais drapeaux même à l'envers|.",
+  "text": "Celle-ci, c'est parce que tu as reconnu les vrais drapeaux, même à l'envers.",
+  "say": "Celle-ci, c'est parce que tu as reconnu les vrais drapeaux, même à l'envers.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "atelierdrapeaux:gommette",
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est parce que tu sais ce qui se passe dans un volcan de la poche de magma jusqu'au cratère|.",
+  "text": "Celle-ci, c'est parce que tu sais ce qui se passe dans un volcan, de la poche de magma jusqu'au cratère.",
+  "say": "Celle-ci, c'est parce que tu sais ce qui se passe dans un volcan, de la poche de magma jusqu'au cratère.",
+  "pack": "commun",
+  "words": 20,
+  "fams": [
+   "carte:gommette",
+   "volcan:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est parce que tu sais d'où vient l'eau du robinet et où elle repart|.",
+  "text": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
+  "say": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
+  "pack": "commun",
+  "words": 15,
+  "fams": [
+   "carte:gommette",
+   "goutte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour avoir compté avec soin|.",
+  "text": "Celle-ci, c'est pour avoir compté avec soin.",
+  "say": "Celle-ci, c'est pour avoir compté avec soin.",
+  "pack": "commun",
+  "words": 7,
+  "fams": [
+   "carte:gommette",
+   "marche:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de cuba que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de Cuba, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de Cuba, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de l'allemagne que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de l'Allemagne, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de l'Allemagne, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de l'autriche que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de l'Autriche, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de l'Autriche, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de l'inde que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de l'Inde, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de l'Inde, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de l'indonésie que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de l'Indonésie, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de l'Indonésie, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de l'irlande que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de l'Irlande, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de l'Irlande, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de l'italie que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de l'Italie, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de l'Italie, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de l'ukraine que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de l'Ukraine, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de l'Ukraine, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la belgique que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Belgique, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Belgique, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la bulgarie que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Bulgarie, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Bulgarie, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la chine que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Chine, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Chine, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la colombie que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Colombie, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Colombie, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la côte d'ivoire que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Côte d'Ivoire, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Côte d'Ivoire, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 14,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la finlande que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Finlande, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Finlande, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la france que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la France, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la France, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la grèce que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Grèce, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Grèce, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la guinée que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Guinée, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Guinée, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la hongrie que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Hongrie, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Hongrie, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la lituanie que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Lituanie, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Lituanie, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la norvège que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Norvège, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Norvège, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la pologne que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Pologne, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Pologne, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la roumanie que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Roumanie, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Roumanie, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la russie que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Russie, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Russie, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la somalie que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Somalie, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Somalie, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la suède que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Suède, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Suède, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la suisse que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Suisse, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Suisse, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de la tchéquie que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de la Tchéquie, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de la Tchéquie, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau de monaco que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau de Monaco, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau de Monaco, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau des états-unis que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau des États-Unis, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau des États-Unis, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau des palaos que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau des Palaos, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau des Palaos, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du bangladesh que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Bangladesh, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Bangladesh, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du cameroun que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Cameroun, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Cameroun, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du canada que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Canada, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Canada, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du chili que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Chili, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Chili, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du danemark que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Danemark, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Danemark, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du gabon que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Gabon, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Gabon, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du japon que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Japon, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Japon, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du laos que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Laos, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Laos, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du luxembourg que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Luxembourg, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Luxembourg, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du mali que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Mali, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Mali, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du maroc que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Maroc, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Maroc, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du nigeria que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Nigeria, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Nigeria, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du panama que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Panama, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Panama, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du pérou que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Pérou, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Pérou, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du royaume-uni que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Royaume-Uni, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Royaume-Uni, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du sénégal que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Sénégal, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Sénégal, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du tchad que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Tchad, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Tchad, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du togo que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Togo, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Togo, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le drapeau du viêt nam que tu as découvert aujourd'hui|.",
+  "text": "Celle-ci, c'est pour le drapeau du Viêt Nam, que tu as découvert aujourd'hui.",
+  "say": "Celle-ci, c'est pour le drapeau du Viêt Nam, que tu as découvert aujourd'hui.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour le grand voyage de ploc de la mer jusqu'au nuage|.",
+  "text": "Celle-ci, c'est pour le grand voyage de Ploc, de la mer jusqu'au nuage.",
+  "say": "Celle-ci, c'est pour le grand voyage de Ploc, de la mer jusqu'au nuage.",
+  "pack": "commun",
+  "words": 13,
+  "fams": [
+   "carte:gommette",
+   "goutte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour les bugs que tu as trouvés comme une vraie informaticienne ou un vrai informaticien|.",
+  "text": "Celle-ci, c'est pour les bugs que tu as trouvés, comme une vraie informaticienne ou un vrai informaticien.",
+  "say": "Celle-ci, c'est pour les bugs que tu as trouvés, comme une vraie informaticienne ou un vrai informaticien.",
+  "pack": "commun",
+  "words": 17,
+  "fams": [
+   "bip:gommette",
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour les drapeaux que tu as coloriés|.",
+  "text": "Celle-ci, c'est pour les drapeaux que tu as coloriés.",
+  "say": "Celle-ci, c'est pour les drapeaux que tu as coloriés.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "atelierdrapeaux:gommette",
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour les mots que tu as écrits|.",
+  "text": "Celle-ci, c'est pour les mots que tu as écrits.",
+  "say": "Celle-ci, c'est pour les mots que tu as écrits.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette",
+   "syllabes:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour les mots que tu as lus tout seul|.",
+  "text": "Celle-ci, c'est pour les mots que tu as lus tout seul.",
+  "say": "Celle-ci, c'est pour les mots que tu as lus tout seul.",
+  "pack": "commun",
+  "words": 11,
+  "fams": [
+   "carte:gommette",
+   "lis:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour les mots que tu as lus|.",
+  "text": "Celle-ci, c'est pour les mots que tu as lus.",
+  "say": "Celle-ci, c'est pour les mots que tu as lus.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette",
+   "syllabes:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour les phrases que tu as lues|.",
+  "text": "Celle-ci, c'est pour les phrases que tu as lues.",
+  "say": "Celle-ci, c'est pour les phrases que tu as lues.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette",
+   "lis:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour les rimes que tu as entendues|.",
+  "text": "Celle-ci, c'est pour les rimes que tu as entendues.",
+  "say": "Celle-ci, c'est pour les rimes que tu as entendues.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette",
+   "chants:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour les solides que tu as reconnus|.",
+  "text": "Celle-ci, c'est pour les solides que tu as reconnus.",
+  "say": "Celle-ci, c'est pour les solides que tu as reconnus.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette",
+   "formes:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour les suites que tu as devinées|.",
+  "text": "Celle-ci, c'est pour les suites que tu as devinées.",
+  "say": "Celle-ci, c'est pour les suites que tu as devinées.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette",
+   "motifs:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour les syllabes que tu as fabriquées|.",
+  "text": "Celle-ci, c'est pour les syllabes que tu as fabriquées.",
+  "say": "Celle-ci, c'est pour les syllabes que tu as fabriquées.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette",
+   "syllabes:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour les tableaux que tu as complétés|.",
+  "text": "Celle-ci, c'est pour les tableaux que tu as complétés.",
+  "say": "Celle-ci, c'est pour les tableaux que tu as complétés.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte:gommette",
+   "motifs:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour tes partages bien justes|.",
+  "text": "Celle-ci, c'est pour tes partages bien justes.",
+  "say": "Celle-ci, c'est pour tes partages bien justes.",
+  "pack": "commun",
+  "words": 7,
+  "fams": [
+   "carte:gommette",
+   "partage:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour tes programmes bip est arrivé au bout|.",
+  "text": "Celle-ci, c'est pour tes programmes : Bip est arrivé au bout !",
+  "say": "Celle-ci, c'est pour tes programmes : Bip est arrivé au bout !",
+  "pack": "commun",
+  "words": 10,
+  "fams": [
+   "bip:gommette",
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour ton grand voyage autour des volcans du monde|.",
+  "text": "Celle-ci, c'est pour ton grand voyage autour des volcans du monde.",
+  "say": "Celle-ci, c'est pour ton grand voyage autour des volcans du monde.",
+  "pack": "commun",
+  "words": 11,
+  "fams": [
+   "carte:gommette",
+   "volcan:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour tous les bons gestes qui protègent l'eau|.",
+  "text": "Celle-ci, c'est pour tous les bons gestes qui protègent l'eau.",
+  "say": "Celle-ci, c'est pour tous les bons gestes qui protègent l'eau.",
+  "pack": "commun",
+  "words": 10,
+  "fams": [
+   "carte:gommette",
+   "goutte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour tous les drapeaux que tu as reconnus|.",
+  "text": "Celle-ci, c'est pour tous les drapeaux que tu as reconnus.",
+  "say": "Celle-ci, c'est pour tous les drapeaux que tu as reconnus.",
+  "pack": "commun",
+  "words": 10,
+  "fams": [
+   "carte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour tous les mots que tu as frappés en rythme|.",
+  "text": "Celle-ci, c'est pour tous les mots que tu as frappés en rythme.",
+  "say": "Celle-ci, c'est pour tous les mots que tu as frappés en rythme.",
+  "pack": "commun",
+  "words": 12,
+  "fams": [
+   "carte:gommette",
+   "chants:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour tous les sauts bien comptés|.",
+  "text": "Celle-ci, c'est pour tous les sauts bien comptés.",
+  "say": "Celle-ci, c'est pour tous les sauts bien comptés.",
+  "pack": "commun",
+  "words": 8,
+  "fams": [
+   "carte:gommette",
+   "nenuphars:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour tout ce que tu sais sur la lave et sur les volcans rouges et gris|.",
+  "text": "Celle-ci, c'est pour tout ce que tu sais sur la lave, et sur les volcans rouges et gris.",
+  "say": "Celle-ci, c'est pour tout ce que tu sais sur la lave, et sur les volcans rouges et gris.",
+  "pack": "commun",
+  "words": 18,
+  "fams": [
+   "carte:gommette",
+   "volcan:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour toutes les émotions que tu as reconnues|.",
+  "text": "Celle-ci, c'est pour toutes les émotions que tu as reconnues.",
+  "say": "Celle-ci, c'est pour toutes les émotions que tu as reconnues.",
+  "pack": "commun",
+  "words": 10,
+  "fams": [
+   "carte:gommette",
+   "theatre:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour toutes les formes que tu as trouvées|.",
+  "text": "Celle-ci, c'est pour toutes les formes que tu as trouvées.",
+  "say": "Celle-ci, c'est pour toutes les formes que tu as trouvées.",
+  "pack": "commun",
+  "words": 10,
+  "fams": [
+   "carte:gommette",
+   "formes:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est pour toutes tes expériences dans le bassin d'octave|.",
+  "text": "Celle-ci, c'est pour toutes tes expériences dans le bassin d'Octave.",
+  "say": "Celle-ci, c'est pour toutes tes expériences dans le bassin d'Octave.",
+  "pack": "commun",
+  "words": 10,
+  "fams": [
+   "carte:gommette",
+   "flotte:gommette"
+  ]
+ },
+ {
+  "key": "celle-ci c'est ta médaille d'apprenti volcanologue|.",
+  "text": "Celle-ci, c'est ta médaille d'apprenti volcanologue !",
+  "say": "Celle-ci, c'est ta médaille d'apprenti volcanologue !",
+  "pack": "commun",
+  "words": 6,
+  "fams": [
+   "carte:gommette",
+   "volcan:gommette"
   ]
  },
  {
@@ -9210,7 +9516,8 @@
   "fams": [
    "atelierdrapeaux:erreur",
    "drapeau:erreur",
-   "formes:erreur"
+   "formes:erreur",
+   "volcan:erreur"
   ]
  },
  {
@@ -9684,6 +9991,16 @@
   "words": 2,
   "fams": [
    "hote"
+  ]
+ },
+ {
+  "key": "et découvrir ce qui se cache dans un volcan|.",
+  "text": "et découvrir ce qui se cache dans un volcan.",
+  "say": "et découvrir ce qui se cache dans un volcan.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carte"
   ]
  },
  {
@@ -11606,6 +11923,26 @@
   ]
  },
  {
+  "key": "le volcan d'octave|,",
+  "text": "Le volcan d'Octave,",
+  "say": "Le volcan d'Octave,",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
+  "key": "le volcan d'octave|.",
+  "text": "le volcan d'octave.",
+  "say": "le volcan d'octave.",
+  "pack": "commun",
+  "words": 3,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
   "key": "le voyage de la goutte|,",
   "text": "Le voyage de la goutte,",
   "say": "Le voyage de la goutte,",
@@ -12317,6 +12654,18 @@
   ]
  },
  {
+  "key": "noir|.",
+  "text": "Noir !",
+  "say": "Noir !",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "atelierdrapeaux:rendu",
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
   "key": "norvège|.",
   "text": "Norvège",
   "say": "Norvège",
@@ -12638,7 +12987,8 @@
    "nenuphars:reussite",
    "partage:reussite",
    "syllabes:reussite",
-   "theatre:reussite"
+   "theatre:reussite",
+   "volcan:reussite"
   ]
  },
  {
@@ -13046,6 +13396,16 @@
   "say": "pour dessiner des deux côtés à la fois.",
   "pack": "commun",
   "words": 8,
+  "fams": [
+   "carte"
+  ]
+ },
+ {
+  "key": "pour devenir volcanologue|",
+  "text": "pour devenir volcanologue",
+  "say": "pour devenir volcanologue",
+  "pack": "commun",
+  "words": 3,
   "fams": [
    "carte"
   ]
@@ -13950,6 +14310,16 @@
   ]
  },
  {
+  "key": "ton défi pour la maison avec un adulte fabrique un volcan du bicarbonate dans un verre une goutte de colorant rouge puis du vinaigre et regarde l'éruption|.",
+  "text": "Ton défi pour la maison : Avec un adulte, fabrique un volcan : du bicarbonate dans un verre, une goutte de colorant rouge, puis du vinaigre… et regarde l'éruption !",
+  "say": "Ton défi pour la maison : Avec un adulte, fabrique un volcan : du bicarbonate dans un verre, une goutte de colorant rouge, puis du vinaigre… et regarde l'éruption !",
+  "pack": "commun",
+  "words": 27,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
   "key": "ton défi pour la maison cache un jouet et guide un adulte jusqu'à lui avec des flèches|.",
   "text": "Ton défi pour la maison : Cache un jouet, et guide un adulte jusqu'à lui avec des flèches.",
   "say": "Ton défi pour la maison : Cache un jouet, et guide un adulte jusqu'à lui avec des flèches.",
@@ -14020,6 +14390,16 @@
   ]
  },
  {
+  "key": "ton défi pour la maison cherche une pierre ponce à la maison et pose-la dans l'eau flotte-t-elle|?",
+  "text": "Ton défi pour la maison : Cherche une pierre ponce à la maison et pose-la dans l'eau : flotte-t-elle ?",
+  "say": "Ton défi pour la maison : Cherche une pierre ponce à la maison et pose-la dans l'eau : flotte-t-elle ?",
+  "pack": "commun",
+  "words": 17,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
   "key": "ton défi pour la maison compte les marches de l'escalier avec un adulte|.",
   "text": "Ton défi pour la maison : Compte les marches de l'escalier avec un adulte.",
   "say": "Ton défi pour la maison : Compte les marches de l'escalier avec un adulte.",
@@ -14085,6 +14465,16 @@
   "say": "Ton défi pour la maison : Dessine un chemin avec des flèches pour aller de ton lit à la porte.",
   "pack": "commun",
   "words": 19,
+  "fams": [
+   "fin"
+  ]
+ },
+ {
+  "key": "ton défi pour la maison dessine un volcan coupé en deux la poche de magma la cheminée le cratère et la lave qui coule|.",
+  "text": "Ton défi pour la maison : Dessine un volcan coupé en deux : la poche de magma, la cheminée, le cratère, et la lave qui coule.",
+  "say": "Ton défi pour la maison : Dessine un volcan coupé en deux : la poche de magma, la cheminée, le cratère, et la lave qui coule.",
+  "pack": "commun",
+  "words": 24,
   "fams": [
    "fin"
   ]
@@ -14878,6 +15268,36 @@
   ]
  },
  {
+  "key": "à toi d'essayer|.",
+  "text": "À toi d'essayer !",
+  "say": "À toi d'essayer !",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "volcan:intro"
+  ]
+ },
+ {
+  "key": "à yellowstone aux états-unis la chaleur du volcan fait jaillir des geysers d'eau chaude|.",
+  "text": "À Yellowstone, aux États-Unis, la chaleur du volcan fait jaillir des geysers d'eau chaude.",
+  "say": "À Yellowstone, aux États-Unis, la chaleur du volcan fait jaillir des geysers d'eau chaude.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "après il y a l'éruption|.",
+  "text": "Après, il y a l'éruption.",
+  "say": "Après, il y a l'éruption.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "après il y a l'usine d'eau potable|.",
   "text": "Après, il y a l'usine d'eau potable.",
   "say": "Après, il y a l'usine d'eau potable.",
@@ -14885,6 +15305,26 @@
   "words": 7,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a la lave devenue pierre|.",
+  "text": "Après, il y a la lave devenue pierre.",
+  "say": "Après, il y a la lave devenue pierre.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "après il y a la lave qui coule|.",
+  "text": "Après, il y a la lave qui coule.",
+  "say": "Après, il y a la lave qui coule.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -14915,6 +15355,26 @@
   "words": 6,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a la nouvelle terre dans la mer|.",
+  "text": "Après, il y a la nouvelle terre dans la mer.",
+  "say": "Après, il y a la nouvelle terre dans la mer.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "après il y a la pluie de cendres|.",
+  "text": "Après, il y a la pluie de cendres.",
+  "say": "Après, il y a la pluie de cendres.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -14988,6 +15448,16 @@
   ]
  },
  {
+  "key": "après il y a le nuage de cendres|.",
+  "text": "Après, il y a le nuage de cendres.",
+  "say": "Après, il y a le nuage de cendres.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "après il y a le nuage|.",
   "text": "Après, il y a le nuage.",
   "say": "Après, il y a le nuage.",
@@ -15018,6 +15488,16 @@
   ]
  },
  {
+  "key": "après il y a le volcan qui gronde et qui fume|.",
+  "text": "Après, il y a le volcan qui gronde et qui fume.",
+  "say": "Après, il y a le volcan qui gronde et qui fume.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "après il y a les égouts|.",
   "text": "Après, il y a les égouts.",
   "say": "Après, il y a les égouts.",
@@ -15025,6 +15505,16 @@
   "words": 6,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "après il y a les plantes qui poussent|.",
+  "text": "Après, il y a les plantes qui poussent.",
+  "say": "Après, il y a les plantes qui poussent.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -15101,6 +15591,16 @@
   ]
  },
  {
+  "key": "au chili des volcans se dressent tout le long de grandes montagnes les andes|.",
+  "text": "Au Chili, des volcans se dressent tout le long de grandes montagnes, les Andes.",
+  "say": "Au Chili, des volcans se dressent tout le long de grandes montagnes, les Andes.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "au soleil la neige fond et l'eau coule vers le bas|.",
   "text": "Au soleil, la neige fond, et l'eau coule vers le bas.",
   "say": "Au soleil, la neige fond, et l'eau coule vers le bas.",
@@ -15131,6 +15631,16 @@
   ]
  },
  {
+  "key": "avant il y a l'éruption|.",
+  "text": "Avant, il y a l'éruption.",
+  "say": "Avant, il y a l'éruption.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "avant il y a l'usine d'eau potable|.",
   "text": "Avant, il y a l'usine d'eau potable.",
   "say": "Avant, il y a l'usine d'eau potable.",
@@ -15138,6 +15648,16 @@
   "words": 7,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "avant il y a la lave qui coule|.",
+  "text": "Avant, il y a la lave qui coule.",
+  "say": "Avant, il y a la lave qui coule.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -15241,6 +15761,36 @@
   ]
  },
  {
+  "key": "avant il y a le magma qui chauffe sous la terre|.",
+  "text": "Avant, il y a le magma qui chauffe sous la terre.",
+  "say": "Avant, il y a le magma qui chauffe sous la terre.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "avant il y a le magma qui monte dans la cheminée|.",
+  "text": "Avant, il y a le magma qui monte dans la cheminée.",
+  "say": "Avant, il y a le magma qui monte dans la cheminée.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "avant il y a le nuage de cendres|.",
+  "text": "Avant, il y a le nuage de cendres.",
+  "say": "Avant, il y a le nuage de cendres.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "avant il y a le nuage|.",
   "text": "Avant, il y a le nuage.",
   "say": "Avant, il y a le nuage.",
@@ -15271,6 +15821,16 @@
   ]
  },
  {
+  "key": "avant il y a le volcan qui gronde et qui fume|.",
+  "text": "Avant, il y a le volcan qui gronde et qui fume.",
+  "say": "Avant, il y a le volcan qui gronde et qui fume.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "avant il y a les égouts|.",
   "text": "Avant, il y a les égouts.",
   "say": "Avant, il y a les égouts.",
@@ -15281,6 +15841,16 @@
   ]
  },
  {
+  "key": "avec la pluie et le soleil la vie revient|.",
+  "text": "Avec la pluie et le soleil, la vie revient.",
+  "say": "Avec la pluie et le soleil, la vie revient.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet|?",
   "text": "Avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet ?",
   "say": "Avec quel château d'eau l'eau sortira-t-elle le plus fort du robinet ?",
@@ -15288,6 +15858,58 @@
   "words": 11,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "avec un maillot de bain elle aurait bien trop chaud|.",
+  "text": "Avec un maillot de bain, elle aurait bien trop chaud !",
+  "say": "Avec un maillot de bain, elle aurait bien trop chaud !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "avec un thermomètre spécial de loin|.",
+  "text": "Avec un thermomètre spécial, de loin.",
+  "say": "Avec un thermomètre spécial, de loin.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "avec une échelle il faudrait s'approcher bien trop dangereux|.",
+  "text": "Avec une échelle, il faudrait s'approcher : bien trop dangereux !",
+  "say": "Avec une échelle, il faudrait s'approcher : bien trop dangereux !",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "beaucoup de zigzags le volcan se réveille|.",
+  "text": "Beaucoup de zigzags : le volcan se réveille !",
+  "say": "Beaucoup de zigzags : le volcan se réveille !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "beurk surtout pas|.",
+  "text": "Beurk, surtout pas !",
+  "say": "Beurk, surtout pas !",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -15308,6 +15930,28 @@
   "words": 5,
   "fams": [
    "goutte:intro"
+  ]
+ },
+ {
+  "key": "boum|.",
+  "text": "Boum !",
+  "say": "Boum !",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "c'est l'éruption le magma sort par le cratère|.",
+  "text": "C'est l'éruption : le magma sort par le cratère.",
+  "say": "C'est l'éruption : le magma sort par le cratère.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
   ]
  },
  {
@@ -15345,6 +15989,108 @@
   ]
  },
  {
+  "key": "c'est le drapeau de l'indonésie rouge en haut blanc en bas|.",
+  "text": "C'est le drapeau de l'Indonésie : rouge en haut, blanc en bas.",
+  "say": "C'est le drapeau de l'Indonésie : rouge en haut, blanc en bas.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "c'est le drapeau de l'italie trois bandes verticales vert blanc et rouge|.",
+  "text": "C'est le drapeau de l'Italie : trois bandes verticales : vert, blanc et rouge.",
+  "say": "C'est le drapeau de l'Italie : trois bandes verticales : vert, blanc et rouge.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "c'est le drapeau de la france trois bandes verticales bleu blanc et rouge|.",
+  "text": "C'est le drapeau de la France : trois bandes verticales : bleu, blanc et rouge.",
+  "say": "C'est le drapeau de la France : trois bandes verticales : bleu, blanc et rouge.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "c'est le drapeau de la grèce des rayures bleues et blanches avec une croix blanche|.",
+  "text": "C'est le drapeau de la Grèce : des rayures bleues et blanches, avec une croix blanche.",
+  "say": "C'est le drapeau de la Grèce : des rayures bleues et blanches, avec une croix blanche.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "c'est le drapeau des états-unis des rayures rouges et blanches et des étoiles blanches sur du bleu|.",
+  "text": "C'est le drapeau des États-Unis : des rayures rouges et blanches, et des étoiles blanches sur du bleu.",
+  "say": "C'est le drapeau des États-Unis : des rayures rouges et blanches, et des étoiles blanches sur du bleu.",
+  "pack": "decouvertes",
+  "words": 17,
+  "fams": [
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "c'est le drapeau du cameroun vert rouge et jaune avec une étoile jaune au milieu|.",
+  "text": "C'est le drapeau du Cameroun : vert, rouge et jaune, avec une étoile jaune au milieu.",
+  "say": "C'est le drapeau du Cameroun : vert, rouge et jaune, avec une étoile jaune au milieu.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "c'est le drapeau du chili blanc et rouge avec une étoile blanche sur un carré bleu|.",
+  "text": "C'est le drapeau du Chili : blanc et rouge, avec une étoile blanche sur un carré bleu.",
+  "say": "C'est le drapeau du Chili : blanc et rouge, avec une étoile blanche sur un carré bleu.",
+  "pack": "decouvertes",
+  "words": 16,
+  "fams": [
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "c'est le drapeau du japon un rond rouge sur un fond blanc|.",
+  "text": "C'est le drapeau du Japon : un rond rouge sur un fond blanc.",
+  "say": "C'est le drapeau du Japon : un rond rouge sur un fond blanc.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "c'est un volcan gris il explose et lance des cendres et des pierres très haut|.",
+  "text": "C'est un volcan gris : il explose, et lance des cendres et des pierres très haut.",
+  "say": "C'est un volcan gris : il explose, et lance des cendres et des pierres très haut.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "c'est un volcan rouge sa lave est liquide elle coule et jaillit|.",
+  "text": "C'est un volcan rouge : sa lave est liquide, elle coule et jaillit.",
+  "say": "C'est un volcan rouge : sa lave est liquide, elle coule et jaillit.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
   "key": "c'était déjà de la vapeur|.",
   "text": "C'était déjà de la vapeur.",
   "say": "C'était déjà de la vapeur.",
@@ -15355,6 +16101,16 @@
   ]
  },
  {
+  "key": "ça c'est l'éruption|.",
+  "text": "Ça, c'est l'éruption.",
+  "say": "Ça, c'est l'éruption.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "ça c'est l'usine d'eau potable|.",
   "text": "Ça, c'est l'usine d'eau potable.",
   "say": "Ça, c'est l'usine d'eau potable.",
@@ -15362,6 +16118,46 @@
   "words": 5,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la cheminée le tuyau qui monte au milieu du volcan|.",
+  "text": "Ça, c'est la cheminée, le tuyau qui monte au milieu du volcan.",
+  "say": "Ça, c'est la cheminée, le tuyau qui monte au milieu du volcan.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la lave devenue pierre|.",
+  "text": "Ça, c'est la lave devenue pierre.",
+  "say": "Ça, c'est la lave devenue pierre.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la lave qui coule sur le volcan|.",
+  "text": "Ça, c'est la lave qui coule sur le volcan.",
+  "say": "Ça, c'est la lave qui coule sur le volcan.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la lave qui coule|.",
+  "text": "Ça, c'est la lave qui coule.",
+  "say": "Ça, c'est la lave qui coule.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -15395,6 +16191,26 @@
   ]
  },
  {
+  "key": "ça c'est la nouvelle terre dans la mer|.",
+  "text": "Ça, c'est la nouvelle terre dans la mer.",
+  "say": "Ça, c'est la nouvelle terre dans la mer.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la pluie de cendres|.",
+  "text": "Ça, c'est la pluie de cendres.",
+  "say": "Ça, c'est la pluie de cendres.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "ça c'est la pluie|.",
   "text": "Ça, c'est la pluie.",
   "say": "Ça, c'est la pluie.",
@@ -15402,6 +16218,16 @@
   "words": 4,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est la poche de magma tout au fond sous le volcan|.",
+  "text": "Ça, c'est la poche de magma, tout au fond, sous le volcan.",
+  "say": "Ça, c'est la poche de magma, tout au fond, sous le volcan.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -15485,6 +16311,236 @@
   ]
  },
  {
+  "key": "ça c'est le cratère le grand trou tout en haut|.",
+  "text": "Ça, c'est le cratère, le grand trou tout en haut.",
+  "say": "Ça, c'est le cratère, le grand trou tout en haut.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau de l'allemagne|.",
+  "text": "Ça, c'est le drapeau de l'Allemagne.",
+  "say": "Ça, c'est le drapeau de l'Allemagne.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau de l'inde|.",
+  "text": "Ça, c'est le drapeau de l'Inde.",
+  "say": "Ça, c'est le drapeau de l'Inde.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau de l'indonésie|.",
+  "text": "Ça, c'est le drapeau de l'Indonésie.",
+  "say": "Ça, c'est le drapeau de l'Indonésie.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau de l'italie|.",
+  "text": "Ça, c'est le drapeau de l'Italie.",
+  "say": "Ça, c'est le drapeau de l'Italie.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau de la belgique|.",
+  "text": "Ça, c'est le drapeau de la Belgique.",
+  "say": "Ça, c'est le drapeau de la Belgique.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau de la chine|.",
+  "text": "Ça, c'est le drapeau de la Chine.",
+  "say": "Ça, c'est le drapeau de la Chine.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau de la france|.",
+  "text": "Ça, c'est le drapeau de la France.",
+  "say": "Ça, c'est le drapeau de la France.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau de la grèce|.",
+  "text": "Ça, c'est le drapeau de la Grèce.",
+  "say": "Ça, c'est le drapeau de la Grèce.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau de la suède|.",
+  "text": "Ça, c'est le drapeau de la Suède.",
+  "say": "Ça, c'est le drapeau de la Suède.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau des états-unis|.",
+  "text": "Ça, c'est le drapeau des États-Unis.",
+  "say": "Ça, c'est le drapeau des États-Unis.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau du cameroun|.",
+  "text": "Ça, c'est le drapeau du Cameroun.",
+  "say": "Ça, c'est le drapeau du Cameroun.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau du canada|.",
+  "text": "Ça, c'est le drapeau du Canada.",
+  "say": "Ça, c'est le drapeau du Canada.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau du chili|.",
+  "text": "Ça, c'est le drapeau du Chili.",
+  "say": "Ça, c'est le drapeau du Chili.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau du japon|.",
+  "text": "Ça, c'est le drapeau du Japon.",
+  "say": "Ça, c'est le drapeau du Japon.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau du maroc|.",
+  "text": "Ça, c'est le drapeau du Maroc.",
+  "say": "Ça, c'est le drapeau du Maroc.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le drapeau du royaume-uni|.",
+  "text": "Ça, c'est le drapeau du Royaume-Uni.",
+  "say": "Ça, c'est le drapeau du Royaume-Uni.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le magma qui chauffe sous la terre|.",
+  "text": "Ça, c'est le magma qui chauffe sous la terre.",
+  "say": "Ça, c'est le magma qui chauffe sous la terre.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le magma qui monte dans la cheminée|.",
+  "text": "Ça, c'est le magma qui monte dans la cheminée.",
+  "say": "Ça, c'est le magma qui monte dans la cheminée.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le métier de chauffeur de bus|.",
+  "text": "Ça, c'est le métier de chauffeur de bus !",
+  "say": "Ça, c'est le métier de chauffeur de bus !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le métier de vétérinaire|.",
+  "text": "Ça, c'est le métier de vétérinaire !",
+  "say": "Ça, c'est le métier de vétérinaire !",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le nuage de cendres dans le ciel|.",
+  "text": "Ça, c'est le nuage de cendres, dans le ciel.",
+  "say": "Ça, c'est le nuage de cendres, dans le ciel.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ça c'est le nuage de cendres|.",
+  "text": "Ça, c'est le nuage de cendres.",
+  "say": "Ça, c'est le nuage de cendres.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "ça c'est le nuage|.",
   "text": "Ça, c'est le nuage.",
   "say": "Ça, c'est le nuage.",
@@ -15515,6 +16571,16 @@
   ]
  },
  {
+  "key": "ça c'est le volcan qui gronde et qui fume|.",
+  "text": "Ça, c'est le volcan qui gronde et qui fume.",
+  "say": "Ça, c'est le volcan qui gronde et qui fume.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "ça ce sont les égouts|.",
   "text": "Ça, ce sont les égouts.",
   "say": "Ça, ce sont les égouts.",
@@ -15535,13 +16601,24 @@
   ]
  },
  {
+  "key": "ça ce sont les plantes qui poussent|.",
+  "text": "Ça, ce sont les plantes qui poussent.",
+  "say": "Ça, ce sont les plantes qui poussent.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "ce n'est pas ce qui vient juste après|.",
   "text": "Ce n'est pas ce qui vient juste après.",
   "say": "Ce n'est pas ce qui vient juste après.",
   "pack": "decouvertes",
   "words": 8,
   "fams": [
-   "goutte:erreur"
+   "goutte:erreur",
+   "volcan:erreur"
   ]
  },
  {
@@ -15557,6 +16634,16 @@
   ]
  },
  {
+  "key": "ce qui est plus léger monte comme une bulle dans l'eau|.",
+  "text": "Ce qui est plus léger monte, comme une bulle dans l'eau.",
+  "say": "Ce qui est plus léger monte, comme une bulle dans l'eau.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "ce qui est vivant a besoin d'eau les plantes les animaux et toi|.",
   "text": "Ce qui est vivant a besoin d'eau : les plantes, les animaux, et toi !",
   "say": "Ce qui est vivant a besoin d'eau : les plantes, les animaux, et toi !",
@@ -15564,6 +16651,16 @@
   "words": 13,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "ce qui monte finit toujours par redescendre|.",
+  "text": "Ce qui monte finit toujours par redescendre.",
+  "say": "Ce qui monte finit toujours par redescendre.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -15577,53 +16674,13 @@
   ]
  },
  {
-  "key": "celle-ci c'est parce que tu as compris que ce n'est pas la taille qui compte|.",
-  "text": "Celle-ci, c'est parce que tu as compris que ce n'est pas la taille qui compte.",
-  "say": "Celle-ci, c'est parce que tu as compris que ce n'est pas la taille qui compte.",
+  "key": "ce volcan-là explose très fort|.",
+  "text": "Ce volcan-là explose très fort.",
+  "say": "Ce volcan-là explose très fort.",
   "pack": "decouvertes",
-  "words": 15,
+  "words": 5,
   "fams": [
-   "flotte:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est parce que tu sais d'où vient l'eau du robinet et où elle repart|.",
-  "text": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
-  "say": "Celle-ci, c'est parce que tu sais d'où vient l'eau du robinet, et où elle repart.",
-  "pack": "decouvertes",
-  "words": 15,
-  "fams": [
-   "goutte:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour le grand voyage de ploc de la mer jusqu'au nuage|.",
-  "text": "Celle-ci, c'est pour le grand voyage de Ploc, de la mer jusqu'au nuage.",
-  "say": "Celle-ci, c'est pour le grand voyage de Ploc, de la mer jusqu'au nuage.",
-  "pack": "decouvertes",
-  "words": 13,
-  "fams": [
-   "goutte:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour tous les bons gestes qui protègent l'eau|.",
-  "text": "Celle-ci, c'est pour tous les bons gestes qui protègent l'eau.",
-  "say": "Celle-ci, c'est pour tous les bons gestes qui protègent l'eau.",
-  "pack": "decouvertes",
-  "words": 10,
-  "fams": [
-   "goutte:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour toutes tes expériences dans le bassin d'octave|.",
-  "text": "Celle-ci, c'est pour toutes tes expériences dans le bassin d'Octave.",
-  "say": "Celle-ci, c'est pour toutes tes expériences dans le bassin d'Octave.",
-  "pack": "decouvertes",
-  "words": 10,
-  "fams": [
-   "flotte:gommette"
+   "volcan:consigne"
   ]
  },
  {
@@ -15667,6 +16724,26 @@
   ]
  },
  {
+  "key": "cherche ce qui vole|.",
+  "text": "Cherche ce qui vole.",
+  "say": "Cherche ce qui vole.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "cherche dans le ciel au-dessus du volcan|.",
+  "text": "Cherche dans le ciel, au-dessus du volcan.",
+  "say": "Cherche dans le ciel, au-dessus du volcan.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "cherche de tout petits êtres vivants|.",
   "text": "Cherche de tout petits êtres vivants.",
   "say": "Cherche de tout petits êtres vivants.",
@@ -15677,6 +16754,116 @@
   ]
  },
  {
+  "key": "cherche l'appareil qui dessine des zigzags quand la terre bouge|.",
+  "text": "Cherche l'appareil qui dessine des zigzags quand la terre bouge.",
+  "say": "Cherche l'appareil qui dessine des zigzags quand la terre bouge.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "cherche l'appareil qui dessine des zigzags|.",
+  "text": "Cherche l'appareil qui dessine des zigzags.",
+  "say": "Cherche l'appareil qui dessine des zigzags.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "cherche la rivière orange sur le côté du volcan|.",
+  "text": "Cherche la rivière orange, sur le côté du volcan.",
+  "say": "Cherche la rivière orange, sur le côté du volcan.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "cherche le drapeau de l'indonésie|.",
+  "text": "Cherche le drapeau de l'Indonésie.",
+  "say": "Cherche le drapeau de l'Indonésie.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "cherche le drapeau de l'italie|.",
+  "text": "Cherche le drapeau de l'Italie.",
+  "say": "Cherche le drapeau de l'Italie.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "cherche le drapeau de la france|.",
+  "text": "Cherche le drapeau de la France.",
+  "say": "Cherche le drapeau de la France.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "cherche le drapeau de la grèce|.",
+  "text": "Cherche le drapeau de la Grèce.",
+  "say": "Cherche le drapeau de la Grèce.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "cherche le drapeau des états-unis|.",
+  "text": "Cherche le drapeau des États-Unis.",
+  "say": "Cherche le drapeau des États-Unis.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "cherche le drapeau du cameroun|.",
+  "text": "Cherche le drapeau du Cameroun.",
+  "say": "Cherche le drapeau du Cameroun.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "cherche le drapeau du chili|.",
+  "text": "Cherche le drapeau du Chili.",
+  "say": "Cherche le drapeau du Chili.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "cherche le drapeau du japon|.",
+  "text": "Cherche le drapeau du Japon.",
+  "say": "Cherche le drapeau du Japon.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "cherche le plus haut|.",
   "text": "Cherche le plus haut !",
   "say": "Cherche le plus haut !",
@@ -15684,6 +16871,56 @@
   "words": 4,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "cherche le tuyau qui part de la poche de magma et qui monte tout droit|.",
+  "text": "Cherche le tuyau qui part de la poche de magma, et qui monte tout droit.",
+  "say": "Cherche le tuyau qui part de la poche de magma, et qui monte tout droit.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "cherche quelque chose de très solide|.",
+  "text": "Cherche quelque chose de très solide.",
+  "say": "Cherche quelque chose de très solide.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "cherche tout en bas sous la terre c'est rouge et très chaud|.",
+  "text": "Cherche tout en bas, sous la terre : c'est rouge, et très chaud.",
+  "say": "Cherche tout en bas, sous la terre : c'est rouge, et très chaud.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "cherche tout en haut du volcan c'est un grand trou|.",
+  "text": "Cherche tout en haut du volcan : c'est un grand trou.",
+  "say": "Cherche tout en haut du volcan : c'est un grand trou.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "cherche un habit brillant|.",
+  "text": "Cherche un habit brillant.",
+  "say": "Cherche un habit brillant.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -15699,6 +16936,26 @@
   ]
  },
  {
+  "key": "comment la volcanologue sait-elle si la lave est très chaude|?",
+  "text": "Comment la volcanologue sait-elle si la lave est très chaude ?",
+  "say": "Comment la volcanologue sait-elle si la lave est très chaude ?",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "comment regarder au fond du cratère sans s'approcher|?",
+  "text": "Comment regarder au fond du cratère, sans s'approcher ?",
+  "say": "Comment regarder au fond du cratère, sans s'approcher ?",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "d'abord la glace fond et devient de l'eau|.",
   "text": "D'abord, la glace fond, et devient de l'eau.",
   "say": "D'abord, la glace fond, et devient de l'eau.",
@@ -15709,6 +16966,16 @@
   ]
  },
  {
+  "key": "d'habitude les pierres coulent|.",
+  "text": "D'habitude, les pierres coulent…",
+  "say": "D'habitude, les pierres coulent…",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "d'où vient l'eau du robinet|?",
   "text": "D'où vient l'eau du robinet ?",
   "say": "D'où vient l'eau du robinet ?",
@@ -15716,6 +16983,16 @@
   "words": 5,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "dans l'eau la lave refroidit tout de suite et devient de la pierre|.",
+  "text": "Dans l'eau, la lave refroidit tout de suite, et devient de la pierre.",
+  "say": "Dans l'eau, la lave refroidit tout de suite, et devient de la pierre.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -15868,6 +17145,16 @@
   ]
  },
  {
+  "key": "dans son nom on entend le mot volcan|.",
+  "text": "Dans son nom, on entend le mot volcan !",
+  "say": "Dans son nom, on entend le mot volcan !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "de la mer au nuage du nuage au robinet et du robinet à la mer|.",
   "text": "De la mer au nuage, du nuage au robinet, et du robinet à la mer.",
   "say": "De la mer au nuage, du nuage au robinet, et du robinet à la mer.",
@@ -15900,6 +17187,59 @@
   ]
  },
  {
+  "key": "de quelle couleur est leur sable|?",
+  "text": "De quelle couleur est leur sable ?",
+  "say": "De quelle couleur est leur sable ?",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "dehors le magma s'appelle la lave elle coule sur le volcan comme une rivière de feu|.",
+  "text": "Dehors, le magma s'appelle la lave : elle coule sur le volcan, comme une rivière de feu.",
+  "say": "Dehors, le magma s'appelle la lave : elle coule sur le volcan, comme une rivière de feu.",
+  "pack": "decouvertes",
+  "words": 16,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "dehors le magma s'appelle la lave|.",
+  "text": "Dehors, le magma s'appelle la lave.",
+  "say": "Dehors, le magma s'appelle la lave.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "dehors on l'appelle la lave|.",
+  "text": "Dehors, on l'appelle la lave.",
+  "say": "Dehors, on l'appelle la lave.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "des arbres ont poussé et parfois un lac remplit son cratère|.",
+  "text": "Des arbres ont poussé, et parfois un lac remplit son cratère.",
+  "say": "Des arbres ont poussé, et parfois un lac remplit son cratère.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
   "key": "des barreaux comme une passoire géante|.",
   "text": "Des barreaux, comme une passoire géante.",
   "say": "Des barreaux, comme une passoire géante.",
@@ -15907,6 +17247,36 @@
   "words": 6,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "des milliers d'années sans lave c'est un très très long sommeil|.",
+  "text": "Des milliers d'années sans lave… c'est un très, très long sommeil !",
+  "say": "Des milliers d'années sans lave… c'est un très, très long sommeil !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "des petites pierres peuvent tomber du ciel|.",
+  "text": "Des petites pierres peuvent tomber du ciel.",
+  "say": "Des petites pierres peuvent tomber du ciel.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "du chocolat chaud ce serait bien mais non c'est de l'eau chaude qui jaillit|.",
+  "text": "Du chocolat chaud, ce serait bien… mais non : c'est de l'eau chaude qui jaillit !",
+  "say": "Du chocolat chaud, ce serait bien… mais non : c'est de l'eau chaude qui jaillit !",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -15928,6 +17298,37 @@
   "fams": [
    "goutte:indice",
    "goutte:reussite"
+  ]
+ },
+ {
+  "key": "elle coule comme une soupe épaisse puis elle refroidit et devient de la pierre|.",
+  "text": "Elle coule comme une soupe épaisse… puis elle refroidit, et devient de la pierre.",
+  "say": "Elle coule comme une soupe épaisse… puis elle refroidit, et devient de la pierre.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:intro"
+  ]
+ },
+ {
+  "key": "elle coule comme une soupe très épaisse et très chaude|.",
+  "text": "Elle coule, comme une soupe très épaisse et très chaude.",
+  "say": "Elle coule, comme une soupe très épaisse et très chaude.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "elle deviendra dure plus tard en refroidissant|.",
+  "text": "Elle deviendra dure plus tard, en refroidissant.",
+  "say": "Elle deviendra dure plus tard, en refroidissant.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -15953,6 +17354,27 @@
   ]
  },
  {
+  "key": "elle est bien plus chaude que le four de la cuisine|.",
+  "text": "Elle est bien plus chaude que le four de la cuisine.",
+  "say": "Elle est bien plus chaude que le four de la cuisine.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "elle est en grèce touche le drapeau de la grèce|.",
+  "text": "Elle est en Grèce : touche le drapeau de la Grèce.",
+  "say": "Elle est en Grèce : touche le drapeau de la Grèce.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "elle est encore trouble l'usine va la nettoyer|.",
   "text": "Elle est encore trouble : l'usine va la nettoyer.",
   "say": "Elle est encore trouble : l'usine va la nettoyer.",
@@ -15974,6 +17396,16 @@
   ]
  },
  {
+  "key": "elle est pleine de petits trous remplis d'air comme une éponge|.",
+  "text": "Elle est pleine de petits trous remplis d'air, comme une éponge.",
+  "say": "Elle est pleine de petits trous remplis d'air, comme une éponge.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "elle est sale et pleine de microbes|.",
   "text": "Elle est sale, et pleine de microbes.",
   "say": "Elle est sale, et pleine de microbes.",
@@ -15983,6 +17415,17 @@
    "goutte:erreur",
    "goutte:indice",
    "goutte:reussite"
+  ]
+ },
+ {
+  "key": "elle étudie et surveille les volcans pour prévenir les gens quand ils se réveillent|.",
+  "text": "Elle étudie et surveille les volcans, pour prévenir les gens quand ils se réveillent.",
+  "say": "Elle étudie et surveille les volcans, pour prévenir les gens quand ils se réveillent.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
   ]
  },
  {
@@ -16016,6 +17459,17 @@
    "goutte:erreur",
    "goutte:indice",
    "goutte:reussite"
+  ]
+ },
+ {
+  "key": "elle refroidit dans la mer et fabrique une nouvelle terre l'île grandit|.",
+  "text": "Elle refroidit dans la mer, et fabrique une nouvelle terre : l'île grandit !",
+  "say": "Elle refroidit dans la mer, et fabrique une nouvelle terre : l'île grandit !",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
   ]
  },
  {
@@ -16119,6 +17573,38 @@
   ]
  },
  {
+  "key": "en refroidissant elle redevient dure|.",
+  "text": "En refroidissant, elle redevient dure.",
+  "say": "En refroidissant, elle redevient dure.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "en refroidissant la lave devient dure c'est de la pierre comme l'eau qui gèle devient de la glace|.",
+  "text": "En refroidissant, la lave devient dure : c'est de la pierre, comme l'eau qui gèle devient de la glace.",
+  "say": "En refroidissant, la lave devient dure : c'est de la pierre, comme l'eau qui gèle devient de la glace.",
+  "pack": "decouvertes",
+  "words": 18,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "en refroidissant la lave devient dure c'est de la pierre noire|.",
+  "text": "En refroidissant, la lave devient dure : c'est de la pierre noire.",
+  "say": "En refroidissant, la lave devient dure : c'est de la pierre noire.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
   "key": "en touchant le miroir froid elle change|.",
   "text": "En touchant le miroir froid, elle change !",
   "say": "En touchant le miroir froid, elle change !",
@@ -16126,6 +17612,16 @@
   "words": 7,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "essaie encore ses petits trous pleins d'air la rendent très légère|.",
+  "text": "Essaie encore : ses petits trous pleins d'air la rendent très légère…",
+  "say": "Essaie encore : ses petits trous pleins d'air la rendent très légère…",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -16179,6 +17675,66 @@
   ]
  },
  {
+  "key": "est-ce un volcan rouge ou un volcan gris|?",
+  "text": "Est-ce un volcan rouge, ou un volcan gris ?",
+  "say": "Est-ce un volcan rouge, ou un volcan gris ?",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "est-elle très chaude ou froide|?",
+  "text": "Est-elle très chaude, ou froide ?",
+  "say": "Est-elle très chaude, ou froide ?",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "est-il endormi ou réveillé|?",
+  "text": "Est-il endormi, ou réveillé ?",
+  "say": "Est-il endormi, ou réveillé ?",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "et celle-ci que fait-elle dans l'eau|?",
+  "text": "Et celle-ci, que fait-elle dans l'eau ?",
+  "say": "Et celle-ci, que fait-elle dans l'eau ?",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "et certains volcans sont endormis depuis très longtemps|.",
+  "text": "Et certains volcans sont endormis depuis très longtemps…",
+  "say": "Et certains volcans sont endormis depuis très longtemps…",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:intro"
+  ]
+ },
+ {
+  "key": "fais-le monter glisse ton doigt de la poche de magma jusqu'au cratère|.",
+  "text": "Fais-le monter : glisse ton doigt de la poche de magma jusqu'au cratère.",
+  "say": "Fais-le monter : glisse ton doigt de la poche de magma jusqu'au cratère.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "flotte ou coule pour deviner ce qui flotte dans le bassin d'octave|.",
   "text": "Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave.",
   "say": "Flotte ou coule, pour deviner ce qui flotte dans le bassin d'Octave.",
@@ -16186,6 +17742,26 @@
   "words": 12,
   "fams": [
    "flotte:pitch"
+  ]
+ },
+ {
+  "key": "ha ha|.",
+  "text": "Ha ha !",
+  "say": "Ha ha !",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "hawaï ce sont des îles des états-unis touche le drapeau des états-unis|.",
+  "text": "Hawaï, ce sont des îles des États-Unis : touche le drapeau des États-Unis.",
+  "say": "Hawaï, ce sont des îles des États-Unis : touche le drapeau des États-Unis.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:consigne"
   ]
  },
  {
@@ -16206,6 +17782,16 @@
   "words": 5,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "ici le volcan chauffe l'eau|.",
+  "text": "Ici, le volcan chauffe l'eau.",
+  "say": "Ici, le volcan chauffe l'eau.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -16238,6 +17824,58 @@
   "words": 4,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "il est au japon touche le drapeau du japon|.",
+  "text": "Il est au Japon : touche le drapeau du Japon.",
+  "say": "Il est au Japon : touche le drapeau du Japon.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "il est en italie touche le drapeau de l'italie|.",
+  "text": "Il est en Italie : touche le drapeau de l'Italie.",
+  "say": "Il est en Italie : touche le drapeau de l'Italie.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "il est endormi ni fumée ni lave|.",
+  "text": "Il est endormi : ni fumée, ni lave.",
+  "say": "Il est endormi : ni fumée, ni lave.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "il est plus léger que les roches autour|.",
+  "text": "Il est plus léger que les roches autour.",
+  "say": "Il est plus léger que les roches autour.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "il est réveillé il fume il gronde et le magma n'est pas loin|.",
+  "text": "Il est réveillé : il fume, il gronde, et le magma n'est pas loin.",
+  "say": "Il est réveillé : il fume, il gronde, et le magma n'est pas loin.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
   ]
  },
  {
@@ -16293,6 +17931,26 @@
   ]
  },
  {
+  "key": "il faut quelque chose de très solide sur la tête|.",
+  "text": "Il faut quelque chose de très solide sur la tête.",
+  "say": "Il faut quelque chose de très solide sur la tête.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "il faut quelque chose qui vole au-dessus du cratère|.",
+  "text": "Il faut quelque chose qui vole au-dessus du cratère.",
+  "say": "Il faut quelque chose qui vole au-dessus du cratère.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "il faut un endroit où l'on nettoie l'eau sale|.",
   "text": "Il faut un endroit où l'on nettoie l'eau sale.",
   "say": "Il faut un endroit où l'on nettoie l'eau sale.",
@@ -16310,6 +17968,26 @@
   "words": 8,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "il faut un habit brillant qui renvoie la chaleur comme un miroir|.",
+  "text": "Il faut un habit brillant, qui renvoie la chaleur comme un miroir.",
+  "say": "Il faut un habit brillant, qui renvoie la chaleur comme un miroir.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "il faut un masque qui nettoie l'air qu'on respire|.",
+  "text": "Il faut un masque qui nettoie l'air qu'on respire.",
+  "say": "Il faut un masque qui nettoie l'air qu'on respire.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -16343,6 +18021,16 @@
   ]
  },
  {
+  "key": "il manque une étape dans l'éruption|.",
+  "text": "Il manque une étape dans l'éruption.",
+  "say": "Il manque une étape dans l'éruption.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "il manque une étape dans le voyage de ploc|.",
   "text": "Il manque une étape dans le voyage de Ploc.",
   "say": "Il manque une étape dans le voyage de Ploc.",
@@ -16370,6 +18058,57 @@
   "words": 5,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "il y a des volcans partout dans le monde au japon en italie en france|.",
+  "text": "Il y a des volcans partout dans le monde : au Japon, en Italie, en France…",
+  "say": "Il y a des volcans partout dans le monde : au Japon, en Italie, en France…",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:intro"
+  ]
+ },
+ {
+  "key": "il y a des volcans rouges qui laissent couler leur lave et des volcans gris qui explosent en lançant des cendres|.",
+  "text": "Il y a des volcans rouges, qui laissent couler leur lave, et des volcans gris, qui explosent en lançant des cendres.",
+  "say": "Il y a des volcans rouges, qui laissent couler leur lave, et des volcans gris, qui explosent en lançant des cendres.",
+  "pack": "decouvertes",
+  "words": 21,
+  "fams": [
+   "volcan:intro"
+  ]
+ },
+ {
+  "key": "ils sont en france touche le drapeau de la france|.",
+  "text": "Ils sont en France : touche le drapeau de la France.",
+  "say": "Ils sont en France : touche le drapeau de la France.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "ils sont endormis depuis très longtemps on peut même se promener dessus|.",
+  "text": "Ils sont endormis depuis très longtemps : on peut même se promener dessus !",
+  "say": "Ils sont endormis depuis très longtemps : on peut même se promener dessus !",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "je t'aide un peu|.",
+  "text": "Je t'aide un peu…",
+  "say": "Je t'aide un peu…",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -16414,6 +18153,16 @@
   "fams": [
    "goutte:indice",
    "goutte:reussite"
+  ]
+ },
+ {
+  "key": "l'eau chauffée par le volcan devient si chaude qu'elle jaillit comme une fontaine|.",
+  "text": "L'eau chauffée par le volcan devient si chaude qu'elle jaillit, comme une fontaine.",
+  "say": "L'eau chauffée par le volcan devient si chaude qu'elle jaillit, comme une fontaine.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -16467,6 +18216,16 @@
   "fams": [
    "goutte:indice",
    "goutte:reussite"
+  ]
+ },
+ {
+  "key": "l'eau du bain est juste tiède|.",
+  "text": "L'eau du bain est juste tiède.",
+  "say": "L'eau du bain est juste tiède.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -16595,6 +18354,16 @@
   ]
  },
  {
+  "key": "l'indonésie est le pays qui a le plus de volcans réveillés au monde|.",
+  "text": "L'Indonésie est le pays qui a le plus de volcans réveillés au monde !",
+  "say": "L'Indonésie est le pays qui a le plus de volcans réveillés au monde !",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "l'œuf est-ce qu'il flotte ou est-ce qu'il coule|?",
   "text": "L'œuf : est-ce qu'il flotte, ou est-ce qu'il coule ?",
   "say": "L'œuf : est-ce qu'il flotte, ou est-ce qu'il coule ?",
@@ -16635,6 +18404,16 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "l'une de ces choses est si chaude qu'elle fait fondre la roche|.",
+  "text": "L'une de ces choses est si chaude qu'elle fait fondre la roche !",
+  "say": "L'une de ces choses est si chaude qu'elle fait fondre la roche !",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -16746,6 +18525,17 @@
   ]
  },
  {
+  "key": "la combinaison argentée renvoie la chaleur comme un miroir renvoie la lumière|.",
+  "text": "La combinaison argentée renvoie la chaleur, comme un miroir renvoie la lumière.",
+  "say": "La combinaison argentée renvoie la chaleur, comme un miroir renvoie la lumière.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
   "key": "la cuillère en métal est-ce qu'elle flotte ou est-ce qu'elle coule|?",
   "text": "La cuillère en métal : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
   "say": "La cuillère en métal : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
@@ -16811,6 +18601,16 @@
   ]
  },
  {
+  "key": "la fumée s'envole mais la lave est lourde en refroidissant elle devient dure|.",
+  "text": "La fumée s'envole, mais la lave est lourde : en refroidissant, elle devient dure.",
+  "say": "La fumée s'envole, mais la lave est lourde : en refroidissant, elle devient dure.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "la grosse pomme flotte et le petit raisin coule ce n'est pas la taille qui compte|.",
   "text": "La grosse pomme flotte et le petit raisin coule : ce n'est pas la taille qui compte.",
   "say": "La grosse pomme flotte et le petit raisin coule : ce n'est pas la taille qui compte.",
@@ -16823,6 +18623,190 @@
   ]
  },
  {
+  "key": "la lave brûle on ne la goûte jamais|.",
+  "text": "La lave brûle : on ne la goûte jamais !",
+  "say": "La lave brûle : on ne la goûte jamais !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "la lave brûle on ne la touche jamais|.",
+  "text": "La lave brûle : on ne la touche jamais.",
+  "say": "La lave brûle : on ne la touche jamais.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "la lave c'est de la roche fondue bien plus chaude qu'un four|.",
+  "text": "La lave, c'est de la roche fondue, bien plus chaude qu'un four.",
+  "say": "La lave, c'est de la roche fondue, bien plus chaude qu'un four.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "la lave c'est de la roche fondue plus chaude qu'un four|.",
+  "text": "La lave, c'est de la roche fondue, plus chaude qu'un four !",
+  "say": "La lave, c'est de la roche fondue, plus chaude qu'un four !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:intro"
+  ]
+ },
+ {
+  "key": "la lave coule jusqu'à la mer|.",
+  "text": "La lave coule jusqu'à la mer.",
+  "say": "La lave coule jusqu'à la mer.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "la lave coule loin du volcan et elle refroidit|.",
+  "text": "La lave coule loin du volcan, et elle refroidit.",
+  "say": "La lave coule loin du volcan, et elle refroidit.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "la lave coule sur les pentes du volcan comme une rivière de feu|.",
+  "text": "La lave coule sur les pentes du volcan, comme une rivière de feu.",
+  "say": "La lave coule sur les pentes du volcan, comme une rivière de feu.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "la lave elle fait fondre la roche|.",
+  "text": "La lave, elle, fait fondre la roche !",
+  "say": "La lave, elle, fait fondre la roche !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "la lave est bien trop dangereuse|.",
+  "text": "La lave est bien trop dangereuse.",
+  "say": "La lave est bien trop dangereuse.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "la lave est bien trop lourde pour s'envoler elle coule le long du volcan|.",
+  "text": "La lave est bien trop lourde pour s'envoler : elle coule le long du volcan.",
+  "say": "La lave est bien trop lourde pour s'envoler : elle coule le long du volcan.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "la lave est liquide comme une soupe très épaisse elle descend|.",
+  "text": "La lave est liquide, comme une soupe très épaisse : elle descend.",
+  "say": "La lave est liquide, comme une soupe très épaisse : elle descend.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "la lave est très très chaude si chaude que la roche fond|.",
+  "text": "La lave est très, très chaude : si chaude que la roche fond !",
+  "say": "La lave est très, très chaude : si chaude que la roche fond !",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "la lave fait pareil|.",
+  "text": "La lave fait pareil !",
+  "say": "La lave fait pareil !",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "la lave refroidit|.",
+  "text": "La lave refroidit.",
+  "say": "La lave refroidit.",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "la lave rouge jaillit du cratère|.",
+  "text": "La lave rouge jaillit du cratère.",
+  "say": "La lave rouge jaillit du cratère.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "la lave sort du volcan|.",
+  "text": "La lave sort du volcan.",
+  "say": "La lave sort du volcan.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "la lave sort par le cratère le grand trou tout en haut du volcan|.",
+  "text": "La lave sort par le cratère, le grand trou tout en haut du volcan.",
+  "say": "La lave sort par le cratère, le grand trou tout en haut du volcan.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "la lave|.",
+  "text": "La lave !",
+  "say": "La lave !",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
   "key": "la lingette ne se défait pas elle bouche les tuyaux|.",
   "text": "La lingette ne se défait pas : elle bouche les tuyaux.",
   "say": "La lingette ne se défait pas : elle bouche les tuyaux.",
@@ -16830,6 +18814,26 @@
   "words": 10,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "la loupe montre les petites choses tout près|.",
+  "text": "La loupe montre les petites choses, tout près.",
+  "say": "La loupe montre les petites choses, tout près.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "la neige c'est quand il fait froid|.",
+  "text": "La neige, c'est quand il fait froid !",
+  "say": "La neige, c'est quand il fait froid !",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -16953,6 +18957,26 @@
   ]
  },
  {
+  "key": "la radio fait de la musique|.",
+  "text": "La radio fait de la musique !",
+  "say": "La radio fait de la musique !",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "la réunion c'est la france touche le drapeau de la france|.",
+  "text": "La Réunion, c'est la France : touche le drapeau de la France.",
+  "say": "La Réunion, c'est la France : touche le drapeau de la France.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "la rivière se jette dans la mer|.",
   "text": "La rivière se jette dans la mer.",
   "say": "La rivière se jette dans la mer.",
@@ -16971,6 +18995,27 @@
   "words": 7,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "la télévision montre des images mais elle ne sent pas la terre trembler|.",
+  "text": "La télévision montre des images, mais elle ne sent pas la terre trembler.",
+  "say": "La télévision montre des images, mais elle ne sent pas la terre trembler.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "la terre tremble le volcan gronde et se met à fumer il se réveille|.",
+  "text": "La terre tremble, le volcan gronde et se met à fumer : il se réveille !",
+  "say": "La terre tremble, le volcan gronde et se met à fumer : il se réveille !",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
   ]
  },
  {
@@ -17038,6 +19083,26 @@
   ]
  },
  {
+  "key": "la volcanologue elle s'occupe des volcans|.",
+  "text": "La volcanologue, elle, s'occupe des volcans.",
+  "say": "La volcanologue, elle, s'occupe des volcans.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "la volcanologue s'approche de la lave|.",
+  "text": "La volcanologue s'approche de la lave.",
+  "say": "La volcanologue s'approche de la lave.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "là-bas on la nettoie avant de la rendre à la rivière|.",
   "text": "Là-bas, on la nettoie, avant de la rendre à la rivière.",
   "say": "Là-bas, on la nettoie, avant de la rendre à la rivière.",
@@ -17064,7 +19129,8 @@
   "pack": "decouvertes",
   "words": 1,
   "fams": [
-   "goutte:consigne"
+   "goutte:consigne",
+   "volcan:consigne"
   ]
  },
  {
@@ -17229,6 +19295,16 @@
   ]
  },
  {
+  "key": "le cratère est grand et bien trop dangereux|.",
+  "text": "Le cratère est grand, et bien trop dangereux !",
+  "say": "Le cratère est grand, et bien trop dangereux !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "le crayon n'est pas vivant il n'a pas besoin de boire|.",
   "text": "Le crayon n'est pas vivant : il n'a pas besoin de boire.",
   "say": "Le crayon n'est pas vivant : il n'a pas besoin de boire.",
@@ -17236,6 +19312,107 @@
   "words": 11,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "le drapeau de l'indonésie rouge en haut blanc en bas|.",
+  "text": "Le drapeau de l'Indonésie : rouge en haut, blanc en bas.",
+  "say": "Le drapeau de l'Indonésie : rouge en haut, blanc en bas.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "le drapeau de l'italie trois bandes verticales vert blanc et rouge|.",
+  "text": "Le drapeau de l'Italie : trois bandes verticales : vert, blanc et rouge.",
+  "say": "Le drapeau de l'Italie : trois bandes verticales : vert, blanc et rouge.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "le drapeau de la france trois bandes verticales bleu blanc et rouge|.",
+  "text": "Le drapeau de la France : trois bandes verticales : bleu, blanc et rouge.",
+  "say": "Le drapeau de la France : trois bandes verticales : bleu, blanc et rouge.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "le drapeau de la grèce des rayures bleues et blanches avec une croix blanche|.",
+  "text": "Le drapeau de la Grèce : des rayures bleues et blanches, avec une croix blanche.",
+  "say": "Le drapeau de la Grèce : des rayures bleues et blanches, avec une croix blanche.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "le drapeau des états-unis des rayures rouges et blanches et des étoiles blanches sur du bleu|.",
+  "text": "Le drapeau des États-Unis : des rayures rouges et blanches, et des étoiles blanches sur du bleu.",
+  "say": "Le drapeau des États-Unis : des rayures rouges et blanches, et des étoiles blanches sur du bleu.",
+  "pack": "decouvertes",
+  "words": 16,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "le drapeau du cameroun vert rouge et jaune avec une étoile jaune au milieu|.",
+  "text": "Le drapeau du Cameroun : vert, rouge et jaune, avec une étoile jaune au milieu.",
+  "say": "Le drapeau du Cameroun : vert, rouge et jaune, avec une étoile jaune au milieu.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "le drapeau du chili blanc et rouge avec une étoile blanche sur un carré bleu|.",
+  "text": "Le drapeau du Chili : blanc et rouge, avec une étoile blanche sur un carré bleu.",
+  "say": "Le drapeau du Chili : blanc et rouge, avec une étoile blanche sur un carré bleu.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "le drapeau du japon un rond rouge sur un fond blanc|.",
+  "text": "Le drapeau du Japon : un rond rouge sur un fond blanc.",
+  "say": "Le drapeau du Japon : un rond rouge sur un fond blanc.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "le drone vole au-dessus du cratère et prend des photos la volcanologue reste à l'abri|.",
+  "text": "Le drone vole au-dessus du cratère et prend des photos : la volcanologue reste à l'abri.",
+  "say": "Le drone vole au-dessus du cratère et prend des photos : la volcanologue reste à l'abri.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "le four est très chaud mais la lave l'est bien plus elle fait fondre la roche|.",
+  "text": "Le four est très chaud, mais la lave l'est bien plus : elle fait fondre la roche !",
+  "say": "Le four est très chaud, mais la lave l'est bien plus : elle fait fondre la roche !",
+  "pack": "decouvertes",
+  "words": 16,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -17289,6 +19466,100 @@
   ]
  },
  {
+  "key": "le magma attend sous le volcan dans une grande poche la poche de magma|.",
+  "text": "Le magma attend sous le volcan, dans une grande poche : la poche de magma.",
+  "say": "Le magma attend sous le volcan, dans une grande poche : la poche de magma.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "le magma est arrivé tout en haut il va sortir|.",
+  "text": "Le magma est arrivé tout en haut : il va sortir !",
+  "say": "Le magma est arrivé tout en haut : il va sortir !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "le magma est monté par la cheminée jusqu'au cratère c'est l'éruption|.",
+  "text": "Le magma est monté par la cheminée jusqu'au cratère : c'est l'éruption !",
+  "say": "Le magma est monté par la cheminée jusqu'au cratère : c'est l'éruption !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "le magma est très chaud il veut sortir|.",
+  "text": "Le magma est très chaud : il veut sortir !",
+  "say": "Le magma est très chaud : il veut sortir !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "le magma monte dans la cheminée du volcan|.",
+  "text": "Le magma monte dans la cheminée du volcan.",
+  "say": "Le magma monte dans la cheminée du volcan.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "le magma monte et pousse très fort|.",
+  "text": "Le magma monte, et pousse très fort.",
+  "say": "Le magma monte, et pousse très fort.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "le magma monte par la cheminée le tuyau au milieu du volcan|.",
+  "text": "Le magma monte par la cheminée, le tuyau au milieu du volcan.",
+  "say": "Le magma monte par la cheminée, le tuyau au milieu du volcan.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "le magma vient de tout au fond là où il fait si chaud que la roche fond|.",
+  "text": "Le magma vient de tout au fond, là où il fait si chaud que la roche fond.",
+  "say": "Le magma vient de tout au fond, là où il fait si chaud que la roche fond.",
+  "pack": "decouvertes",
+  "words": 17,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "le masque à gaz nettoie l'air elle peut respirer sans tousser|.",
+  "text": "Le masque à gaz nettoie l'air : elle peut respirer sans tousser.",
+  "say": "Le masque à gaz nettoie l'air : elle peut respirer sans tousser.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
   "key": "le miroir est froid mais pas assez pour faire de la glace|.",
   "text": "Le miroir est froid, mais pas assez pour faire de la glace.",
   "say": "Le miroir est froid, mais pas assez pour faire de la glace.",
@@ -17306,6 +19577,16 @@
   "words": 11,
   "fams": [
    "flotte:consigne"
+  ]
+ },
+ {
+  "key": "le nuage de cendres est très lourd|.",
+  "text": "Le nuage de cendres est très lourd.",
+  "say": "Le nuage de cendres est très lourd.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:consigne"
   ]
  },
  {
@@ -17358,6 +19639,38 @@
   "words": 3,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le sable des volcans c'est de la lave refroidie émiettée en tout petits grains|.",
+  "text": "Le sable des volcans, c'est de la lave refroidie, émiettée en tout petits grains.",
+  "say": "Le sable des volcans, c'est de la lave refroidie, émiettée en tout petits grains.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "le sable doré vient d'autres plages|.",
+  "text": "Le sable doré vient d'autres plages.",
+  "say": "Le sable doré vient d'autres plages.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "le sismomètre sent la terre trembler et dessine des zigzags|.",
+  "text": "Le sismomètre sent la terre trembler, et dessine des zigzags.",
+  "say": "Le sismomètre sent la terre trembler, et dessine des zigzags.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
   ]
  },
  {
@@ -17419,6 +19732,57 @@
   "words": 5,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "le volcan d'octave pour devenir volcanologue et découvrir ce qui se cache dans un volcan|.",
+  "text": "Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan.",
+  "say": "Le volcan d'Octave, pour devenir volcanologue et découvrir ce qui se cache dans un volcan.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:pitch"
+  ]
+ },
+ {
+  "key": "le volcan gronde de plus en plus fort|.",
+  "text": "Le volcan gronde de plus en plus fort.",
+  "say": "Le volcan gronde de plus en plus fort.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "le volcan lance des cendres elles font un grand nuage gris dans le ciel|.",
+  "text": "Le volcan lance des cendres : elles font un grand nuage gris dans le ciel.",
+  "say": "Le volcan lance des cendres : elles font un grand nuage gris dans le ciel.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "le volcan se réveille|.",
+  "text": "Le volcan se réveille.",
+  "say": "Le volcan se réveille.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "le volcan souffle des gaz qui piquent le nez et la gorge|.",
+  "text": "Le volcan souffle des gaz qui piquent le nez et la gorge.",
+  "say": "Le volcan souffle des gaz qui piquent le nez et la gorge.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:consigne"
   ]
  },
  {
@@ -17512,6 +19876,16 @@
   ]
  },
  {
+  "key": "les années passent sur la lave refroidie|.",
+  "text": "Les années passent sur la lave refroidie.",
+  "say": "Les années passent sur la lave refroidie.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "les bactéries ont besoin d'air cherche les bulles|.",
   "text": "Les bactéries ont besoin d'air : cherche les bulles.",
   "say": "Les bactéries ont besoin d'air : cherche les bulles.",
@@ -17540,6 +19914,17 @@
   "words": 9,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "les cendres retombent partout comme une neige grise|.",
+  "text": "Les cendres retombent partout, comme une neige grise.",
+  "say": "Les cendres retombent partout, comme une neige grise.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
   ]
  },
  {
@@ -17577,6 +19962,16 @@
   ]
  },
  {
+  "key": "les lunettes de soleil protègent les yeux pas le nez ni la gorge|.",
+  "text": "Les lunettes de soleil protègent les yeux, pas le nez ni la gorge.",
+  "say": "Les lunettes de soleil protègent les yeux, pas le nez ni la gorge.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "les poissons vivent dans la rivière pas dans la station|.",
   "text": "Les poissons vivent dans la rivière, pas dans la station !",
   "say": "Les poissons vivent dans la rivière, pas dans la station !",
@@ -17584,6 +19979,47 @@
   "words": 10,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "les volcanologues préviennent tout le monde à temps on s'éloigne avec les adultes et on est en sécurité|.",
+  "text": "Les volcanologues préviennent tout le monde à temps : on s'éloigne avec les adultes, et on est en sécurité.",
+  "say": "Les volcanologues préviennent tout le monde à temps : on s'éloigne avec les adultes, et on est en sécurité.",
+  "pack": "decouvertes",
+  "words": 18,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "les volcanologues préviennent tout le monde il faut aller loin du volcan|.",
+  "text": "Les volcanologues préviennent tout le monde : il faut aller loin du volcan.",
+  "say": "Les volcanologues préviennent tout le monde : il faut aller loin du volcan.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "les volcanologues surveillent les volcans avec des habits et des appareils spéciaux|.",
+  "text": "Les volcanologues surveillent les volcans, avec des habits et des appareils spéciaux.",
+  "say": "Les volcanologues surveillent les volcans, avec des habits et des appareils spéciaux.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:intro"
+  ]
+ },
+ {
+  "key": "les volcans d'auvergne en france n'ont pas craché de lave depuis des milliers d'années|.",
+  "text": "Les volcans d'Auvergne, en France, n'ont pas craché de lave depuis des milliers d'années.",
+  "say": "Les volcans d'Auvergne, en France, n'ont pas craché de lave depuis des milliers d'années.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:consigne"
   ]
  },
  {
@@ -17641,6 +20077,16 @@
   ]
  },
  {
+  "key": "non la lave n'est pas de l'eau c'est de la roche fondue|.",
+  "text": "Non, la lave n'est pas de l'eau : c'est de la roche fondue.",
+  "say": "Non, la lave n'est pas de l'eau : c'est de la roche fondue.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "non la vapeur c'est quand ça chauffe|.",
   "text": "Non, la vapeur, c'est quand ça chauffe.",
   "say": "Non, la vapeur, c'est quand ça chauffe.",
@@ -17668,6 +20114,16 @@
   "words": 1,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "octave enfile sa combinaison argentée aujourd'hui il est volcanologue|.",
+  "text": "Octave enfile sa combinaison argentée : aujourd'hui, il est volcanologue !",
+  "say": "Octave enfile sa combinaison argentée : aujourd'hui, il est volcanologue !",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:intro"
   ]
  },
  {
@@ -17708,6 +20164,16 @@
   "words": 14,
   "fams": [
    "goutte:intro"
+  ]
+ },
+ {
+  "key": "oh non pas froide du tout|.",
+  "text": "Oh non, pas froide du tout !",
+  "say": "Oh non, pas froide du tout !",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -17762,6 +20228,17 @@
   ]
  },
  {
+  "key": "on ne touche jamais la lave|.",
+  "text": "On ne touche jamais la lave !",
+  "say": "On ne touche jamais la lave !",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
   "key": "on ouvre le robinet pour remplir le bain|.",
   "text": "On ouvre le robinet pour remplir le bain.",
   "say": "On ouvre le robinet pour remplir le bain.",
@@ -17781,6 +20258,16 @@
   "fams": [
    "goutte:indice",
    "goutte:reussite"
+  ]
+ },
+ {
+  "key": "on s'éloigne avec les adultes|.",
+  "text": "On s'éloigne, avec les adultes.",
+  "say": "On s'éloigne, avec les adultes.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -17814,6 +20301,16 @@
   ]
  },
  {
+  "key": "où est le magma avant de sortir du volcan|?",
+  "text": "Où est le magma, avant de sortir du volcan ?",
+  "say": "Où est le magma, avant de sortir du volcan ?",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "où est partie l'eau|?",
   "text": "Où est partie l'eau ?",
   "say": "Où est partie l'eau ?",
@@ -17821,6 +20318,16 @@
   "words": 4,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "où est-elle|?",
+  "text": "Où est-elle ?",
+  "say": "Où est-elle ?",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "volcan:consigne"
   ]
  },
  {
@@ -17924,6 +20431,46 @@
   ]
  },
  {
+  "key": "par où la lave sort-elle du volcan|?",
+  "text": "Par où la lave sort-elle du volcan ?",
+  "say": "Par où la lave sort-elle du volcan ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "par où le magma monte-t-il|?",
+  "text": "Par où le magma monte-t-il ?",
+  "say": "Par où le magma monte-t-il ?",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "pars de la poche de magma tout en bas et monte par la cheminée le tuyau du milieu|.",
+  "text": "Pars de la poche de magma, tout en bas, et monte par la cheminée, le tuyau du milieu.",
+  "say": "Pars de la poche de magma, tout en bas, et monte par la cheminée, le tuyau du milieu.",
+  "pack": "decouvertes",
+  "words": 18,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "partons les voir avec les drapeaux de leurs pays|.",
+  "text": "Partons les voir, avec les drapeaux de leurs pays !",
+  "say": "Partons les voir, avec les drapeaux de leurs pays !",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:intro"
+  ]
+ },
+ {
   "key": "pas à l'usine mais à la rivière|.",
   "text": "Pas à l'usine, mais à la rivière.",
   "say": "Pas à l'usine, mais à la rivière.",
@@ -17931,6 +20478,26 @@
   "words": 7,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "pas de lave depuis des milliers d'années ils sont profondément endormis|.",
+  "text": "Pas de lave depuis des milliers d'années : ils sont profondément endormis !",
+  "say": "Pas de lave depuis des milliers d'années : ils sont profondément endormis !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "pas encore|.",
+  "text": "Pas encore !",
+  "say": "Pas encore !",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -17964,6 +20531,16 @@
   ]
  },
  {
+  "key": "pense à l'eau qui gèle elle devient dure|.",
+  "text": "Pense à l'eau qui gèle : elle devient dure.",
+  "say": "Pense à l'eau qui gèle : elle devient dure.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "pense à une glace au chocolat en plein soleil|.",
   "text": "Pense à une glace au chocolat en plein soleil…",
   "say": "Pense à une glace au chocolat en plein soleil…",
@@ -17971,6 +20548,38 @@
   "words": 9,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "pense à une soupe très épaisse qui déborde de la casserole|.",
+  "text": "Pense à une soupe très épaisse, qui déborde de la casserole.",
+  "say": "Pense à une soupe très épaisse, qui déborde de la casserole.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "petit à petit des plantes poussent la terre des volcans est très bonne pour elles|.",
+  "text": "Petit à petit, des plantes poussent : la terre des volcans est très bonne pour elles.",
+  "say": "Petit à petit, des plantes poussent : la terre des volcans est très bonne pour elles.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "petit à petit des plantes repoussent dans les cendres|.",
+  "text": "Petit à petit, des plantes repoussent dans les cendres.",
+  "say": "Petit à petit, des plantes repoussent dans les cendres.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
   ]
  },
  {
@@ -18117,6 +20726,16 @@
   ]
  },
  {
+  "key": "pour l'instant elle est liquide|.",
+  "text": "Pour l'instant, elle est liquide.",
+  "say": "Pour l'instant, elle est liquide.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "pour la maison on va chercher de l'eau dans la rivière|.",
   "text": "Pour la maison, on va chercher de l'eau dans la rivière.",
   "say": "Pour la maison, on va chercher de l'eau dans la rivière.",
@@ -18137,6 +20756,36 @@
   ]
  },
  {
+  "key": "pousse le magma jusqu'en haut|.",
+  "text": "Pousse le magma jusqu'en haut !",
+  "say": "Pousse le magma jusqu'en haut !",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "près des volcans il est fait de lave refroidie toute noire|.",
+  "text": "Près des volcans, il est fait de lave refroidie, toute noire !",
+  "say": "Près des volcans, il est fait de lave refroidie, toute noire !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "près des volcans la lave émiettée fait des plages|.",
+  "text": "Près des volcans, la lave émiettée fait des plages.",
+  "say": "Près des volcans, la lave émiettée fait des plages.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "qu'est-ce qu'on peut jeter dans les toilettes|?",
   "text": "Qu'est-ce qu'on peut jeter dans les toilettes ?",
   "say": "Qu'est-ce qu'on peut jeter dans les toilettes ?",
@@ -18147,6 +20796,26 @@
   ]
  },
  {
+  "key": "qu'est-ce qui est le plus chaud|?",
+  "text": "Qu'est-ce qui est le plus chaud ?",
+  "say": "Qu'est-ce qui est le plus chaud ?",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "qu'est-ce qui jaillit du sol|?",
+  "text": "Qu'est-ce qui jaillit du sol ?",
+  "say": "Qu'est-ce qui jaillit du sol ?",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "qu'est-ce qui l'aspire|?",
   "text": "Qu'est-ce qui l'aspire ?",
   "say": "Qu'est-ce qui l'aspire ?",
@@ -18154,6 +20823,26 @@
   "words": 3,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "qu'est-ce qui monte dans le ciel|?",
+  "text": "Qu'est-ce qui monte dans le ciel ?",
+  "say": "Qu'est-ce qui monte dans le ciel ?",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "qu'est-ce qui monte tout gris dans le ciel|?",
+  "text": "Qu'est-ce qui monte tout gris dans le ciel ?",
+  "say": "Qu'est-ce qui monte tout gris dans le ciel ?",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:consigne"
   ]
  },
  {
@@ -18198,6 +20887,16 @@
   ]
  },
  {
+  "key": "quand il monte et qu'il sort par le cratère c'est l'éruption|.",
+  "text": "Quand il monte et qu'il sort par le cratère, c'est l'éruption !",
+  "say": "Quand il monte et qu'il sort par le cratère, c'est l'éruption !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:intro"
+  ]
+ },
+ {
   "key": "quand l'eau ne bouge plus la saleté descend tout doucement|.",
   "text": "Quand l'eau ne bouge plus, la saleté descend tout doucement.",
   "say": "Quand l'eau ne bouge plus, la saleté descend tout doucement.",
@@ -18205,6 +20904,36 @@
   "words": 10,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "quand la lave refroidit elle devient dure|.",
+  "text": "Quand la lave refroidit, elle devient dure.",
+  "say": "Quand la lave refroidit, elle devient dure.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "quand la lave sort du volcan comment est-elle|?",
+  "text": "Quand la lave sort du volcan, comment est-elle ?",
+  "say": "Quand la lave sort du volcan, comment est-elle ?",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "quand le magma pousse la terre bouge un peu et le volcan fait du bruit|.",
+  "text": "Quand le magma pousse, la terre bouge un peu, et le volcan fait du bruit.",
+  "say": "Quand le magma pousse, la terre bouge un peu, et le volcan fait du bruit.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -18225,6 +20954,26 @@
   "words": 11,
   "fams": [
    "goutte:indice"
+  ]
+ },
+ {
+  "key": "quand le volcan explose il lance de la poussière de roche toute grise|.",
+  "text": "Quand le volcan explose, il lance de la poussière de roche, toute grise.",
+  "say": "Quand le volcan explose, il lance de la poussière de roche, toute grise.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "quand un volcan se réveille ils préviennent tout le monde|.",
+  "text": "Quand un volcan se réveille, ils préviennent tout le monde.",
+  "say": "Quand un volcan se réveille, ils préviennent tout le monde.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:intro"
   ]
  },
  {
@@ -18278,6 +21027,16 @@
   ]
  },
  {
+  "key": "que devient-elle|?",
+  "text": "Que devient-elle ?",
+  "say": "Que devient-elle ?",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "que devient-il de la glace de l'eau ou de la vapeur|?",
   "text": "Que devient-il : de la glace, de l'eau, ou de la vapeur ?",
   "say": "Que devient-il : de la glace, de l'eau, ou de la vapeur ?",
@@ -18285,6 +21044,16 @@
   "words": 11,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "que fabrique-t-elle|?",
+  "text": "Que fabrique-t-elle ?",
+  "say": "Que fabrique-t-elle ?",
+  "pack": "decouvertes",
+  "words": 2,
+  "fams": [
+   "volcan:consigne"
   ]
  },
  {
@@ -18298,13 +21067,64 @@
   ]
  },
  {
+  "key": "que fait une volcanologue|?",
+  "text": "Que fait une volcanologue ?",
+  "say": "Que fait une volcanologue ?",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "que fait-elle ensuite|?",
+  "text": "Que fait-elle ensuite ?",
+  "say": "Que fait-elle ensuite ?",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "que font les gens qui habitent tout près|?",
+  "text": "Que font les gens qui habitent tout près ?",
+  "say": "Que font les gens qui habitent tout près ?",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "que met-elle sur la tête|?",
+  "text": "Que met-elle sur la tête ?",
+  "say": "Que met-elle sur la tête ?",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "que met-elle sur le visage|?",
+  "text": "Que met-elle sur le visage ?",
+  "say": "Que met-elle sur le visage ?",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "que se passe-t-il|?",
   "text": "Que se passe-t-il ?",
   "say": "Que se passe-t-il ?",
   "pack": "decouvertes",
   "words": 3,
   "fams": [
-   "goutte:consigne"
+   "goutte:consigne",
+   "volcan:consigne"
   ]
  },
  {
@@ -18318,6 +21138,26 @@
   ]
  },
  {
+  "key": "quel appareil sent la terre trembler|?",
+  "text": "Quel appareil sent la terre trembler ?",
+  "say": "Quel appareil sent la terre trembler ?",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "quel habit la protège de la chaleur|?",
+  "text": "Quel habit la protège de la chaleur ?",
+  "say": "Quel habit la protège de la chaleur ?",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "qui a besoin d'eau pour vivre|?",
   "text": "Qui a besoin d'eau pour vivre ?",
   "say": "Qui a besoin d'eau pour vivre ?",
@@ -18325,6 +21165,16 @@
   "words": 6,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "rappelle-toi la lave refroidie devient une pierre toute noire|.",
+  "text": "Rappelle-toi : la lave refroidie devient une pierre toute noire.",
+  "say": "Rappelle-toi : la lave refroidie devient une pierre toute noire.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:indice"
   ]
  },
  {
@@ -18338,6 +21188,26 @@
   ]
  },
  {
+  "key": "regarde bien c'est par ici|.",
+  "text": "Regarde bien : c'est par ici.",
+  "say": "Regarde bien : c'est par ici.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "regarde bien ce volcan|.",
+  "text": "Regarde bien ce volcan.",
+  "say": "Regarde bien ce volcan.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "regarde bien et écoute encore|.",
   "text": "Regarde bien, et écoute encore.",
   "say": "Regarde bien, et écoute encore.",
@@ -18348,13 +21218,34 @@
   ]
  },
  {
+  "key": "regarde bien il fume|.",
+  "text": "Regarde bien : il fume !",
+  "say": "Regarde bien : il fume !",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "regarde ça brille ici|.",
+  "text": "Regarde, ça brille ici.",
+  "say": "Regarde, ça brille ici.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "regarde ce qui reste|.",
   "text": "Regarde ce qui reste.",
   "say": "Regarde ce qui reste.",
   "pack": "decouvertes",
   "words": 4,
   "fams": [
-   "goutte:indice"
+   "goutte:indice",
+   "volcan:indice"
   ]
  },
  {
@@ -18364,7 +21255,28 @@
   "pack": "decouvertes",
   "words": 10,
   "fams": [
-   "goutte:erreur"
+   "goutte:erreur",
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "regarde il a coupé un volcan en deux comme une pomme pour voir ce qu'il y a dedans|.",
+  "text": "Regarde : il a coupé un volcan en deux, comme une pomme, pour voir ce qu'il y a dedans.",
+  "say": "Regarde : il a coupé un volcan en deux, comme une pomme, pour voir ce qu'il y a dedans.",
+  "pack": "decouvertes",
+  "words": 18,
+  "fams": [
+   "volcan:intro"
+  ]
+ },
+ {
+  "key": "regarde la lave coule et il n'y a pas de grand nuage gris|.",
+  "text": "Regarde : la lave coule, et il n'y a pas de grand nuage gris.",
+  "say": "Regarde : la lave coule, et il n'y a pas de grand nuage gris.",
+  "pack": "decouvertes",
+  "words": 13,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -18378,6 +21290,37 @@
   ]
  },
  {
+  "key": "regarde pas de fumée pas de lave il est tout calme|.",
+  "text": "Regarde : pas de fumée, pas de lave… il est tout calme.",
+  "say": "Regarde : pas de fumée, pas de lave… il est tout calme.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "regarde un grand nuage gris monte dans le ciel et la lave ne coule pas|.",
+  "text": "Regarde : un grand nuage gris monte dans le ciel, et la lave ne coule pas.",
+  "say": "Regarde : un grand nuage gris monte dans le ciel, et la lave ne coule pas.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "ses petits trous sont pleins d'air elle est très légère|.",
+  "text": "Ses petits trous sont pleins d'air : elle est très légère.",
+  "say": "Ses petits trous sont pleins d'air : elle est très légère.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
   "key": "si on peut la boire|.",
   "text": "Si, on peut la boire !",
   "say": "Si, on peut la boire !",
@@ -18385,6 +21328,16 @@
   "words": 5,
   "fams": [
    "goutte:erreur"
+  ]
+ },
+ {
+  "key": "sont-ils endormis ou réveillés|?",
+  "text": "Sont-ils endormis, ou réveillés ?",
+  "say": "Sont-ils endormis, ou réveillés ?",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:consigne"
   ]
  },
  {
@@ -18398,6 +21351,46 @@
   ]
  },
  {
+  "key": "sous la terre le magma chauffe chauffe|.",
+  "text": "Sous la terre, le magma chauffe, chauffe…",
+  "say": "Sous la terre, le magma chauffe, chauffe…",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "sous la terre le volcan rend l'eau très chaude|.",
+  "text": "Sous la terre, le volcan rend l'eau très chaude.",
+  "say": "Sous la terre, le volcan rend l'eau très chaude.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "sous le lit on serait encore tout près du volcan|.",
+  "text": "Sous le lit, on serait encore tout près du volcan !",
+  "say": "Sous le lit, on serait encore tout près du volcan !",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "suis la flèche du bas vers le haut|.",
+  "text": "Suis la flèche, du bas vers le haut.",
+  "say": "Suis la flèche, du bas vers le haut.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "suivons-le|.",
   "text": "Suivons-le !",
   "say": "Suivons-le !",
@@ -18405,6 +21398,17 @@
   "words": 1,
   "fams": [
    "goutte:intro"
+  ]
+ },
+ {
+  "key": "surprise elle flotte|.",
+  "text": "Surprise : elle flotte !",
+  "say": "Surprise : elle flotte !",
+  "pack": "decouvertes",
+  "words": 3,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
   ]
  },
  {
@@ -18448,7 +21452,8 @@
   "pack": "decouvertes",
   "words": 2,
   "fams": [
-   "goutte:erreur"
+   "goutte:erreur",
+   "volcan:erreur"
   ]
  },
  {
@@ -18472,6 +21477,106 @@
   ]
  },
  {
+  "key": "touche la cheminée le tuyau du volcan|.",
+  "text": "Touche la cheminée, le tuyau du volcan.",
+  "say": "Touche la cheminée, le tuyau du volcan.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "touche la lave qui coule sur le volcan|.",
+  "text": "Touche la lave qui coule sur le volcan.",
+  "say": "Touche la lave qui coule sur le volcan.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "touche la poche de magma sous le volcan|.",
+  "text": "Touche la poche de magma, sous le volcan.",
+  "say": "Touche la poche de magma, sous le volcan.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "touche le bon endroit|.",
+  "text": "Touche le bon endroit.",
+  "say": "Touche le bon endroit.",
+  "pack": "decouvertes",
+  "words": 4,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "touche le cratère tout en haut du volcan|.",
+  "text": "Touche le cratère, tout en haut du volcan.",
+  "say": "Touche le cratère, tout en haut du volcan.",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "touche le drapeau de l'indonésie|.",
+  "text": "Touche le drapeau de l'Indonésie.",
+  "say": "Touche le drapeau de l'Indonésie.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "touche le drapeau des états-unis|.",
+  "text": "Touche le drapeau des États-Unis.",
+  "say": "Touche le drapeau des États-Unis.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "touche le drapeau du cameroun|.",
+  "text": "Touche le drapeau du Cameroun.",
+  "say": "Touche le drapeau du Cameroun.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "touche le drapeau du chili|.",
+  "text": "Touche le drapeau du Chili.",
+  "say": "Touche le drapeau du Chili.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "touche le nuage de cendres|.",
+  "text": "Touche le nuage de cendres.",
+  "say": "Touche le nuage de cendres.",
+  "pack": "decouvertes",
+  "words": 5,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "touche le verre d'eau qui en sort|.",
   "text": "Touche le verre d'eau qui en sort.",
   "say": "Touche le verre d'eau qui en sort.",
@@ -18479,6 +21584,36 @@
   "words": 7,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "touche-la|.",
+  "text": "Touche-la.",
+  "say": "Touche-la.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "touche-le|.",
+  "text": "Touche-le.",
+  "say": "Touche-le.",
+  "pack": "decouvertes",
+  "words": 1,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "tout au fond sous le volcan il fait si chaud que la roche fond c'est le magma|.",
+  "text": "Tout au fond, sous le volcan, il fait si chaud que la roche fond : c'est le magma.",
+  "say": "Tout au fond, sous le volcan, il fait si chaud que la roche fond : c'est le magma.",
+  "pack": "decouvertes",
+  "words": 17,
+  "fams": [
+   "volcan:intro"
   ]
  },
  {
@@ -18522,6 +21657,16 @@
   ]
  },
  {
+  "key": "un appareil mesure la chaleur sans toucher|.",
+  "text": "Un appareil mesure la chaleur, sans toucher.",
+  "say": "Un appareil mesure la chaleur, sans toucher.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
   "key": "un bateau est fait pour flotter il pousse l'eau sous lui|.",
   "text": "Un bateau est fait pour flotter : il pousse l'eau sous lui.",
   "say": "Un bateau est fait pour flotter : il pousse l'eau sous lui.",
@@ -18531,6 +21676,39 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "un casque bien solide protège sa tête des pierres qui tombent|.",
+  "text": "Un casque bien solide protège sa tête des pierres qui tombent.",
+  "say": "Un casque bien solide protège sa tête des pierres qui tombent.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "un énorme nuage de cendres grises monte dans le ciel|.",
+  "text": "Un énorme nuage de cendres grises monte dans le ciel.",
+  "say": "Un énorme nuage de cendres grises monte dans le ciel.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
+  ]
+ },
+ {
+  "key": "un geyser de l'eau chaude et de la vapeur jaillissent très haut comme une fontaine|.",
+  "text": "Un geyser : de l'eau chaude et de la vapeur jaillissent très haut, comme une fontaine !",
+  "say": "Un geyser : de l'eau chaude et de la vapeur jaillissent très haut, comme une fontaine !",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:indice",
+   "volcan:reussite"
   ]
  },
  {
@@ -18554,6 +21732,16 @@
   ]
  },
  {
+  "key": "un masque de carnaval c'est pour faire la fête il ne nettoie pas l'air|.",
+  "text": "Un masque de carnaval, c'est pour faire la fête : il ne nettoie pas l'air !",
+  "say": "Un masque de carnaval, c'est pour faire la fête : il ne nettoie pas l'air !",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
   "key": "un œuf frais coule au fond de l'eau|.",
   "text": "Un œuf frais coule au fond de l'eau.",
   "say": "Un œuf frais coule au fond de l'eau.",
@@ -18563,6 +21751,86 @@
    "flotte:erreur",
    "flotte:indice",
    "flotte:reussite"
+  ]
+ },
+ {
+  "key": "un short ne protège pas de la chaleur de la lave|.",
+  "text": "Un short ne protège pas de la chaleur de la lave.",
+  "say": "Un short ne protège pas de la chaleur de la lave.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "un volcan endormi est tout calme des arbres poussent sur ses pentes|.",
+  "text": "Un volcan endormi est tout calme : des arbres poussent sur ses pentes.",
+  "say": "Un volcan endormi est tout calme : des arbres poussent sur ses pentes.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "un volcan gris lance un grand nuage de cendres|.",
+  "text": "Un volcan gris lance un grand nuage de cendres.",
+  "say": "Un volcan gris lance un grand nuage de cendres.",
+  "pack": "decouvertes",
+  "words": 9,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "un volcan qui fume ne dort pas|.",
+  "text": "Un volcan qui fume ne dort pas.",
+  "say": "Un volcan qui fume ne dort pas.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "un volcan réveillé fume et gronde|.",
+  "text": "Un volcan réveillé fume et gronde.",
+  "say": "Un volcan réveillé fume et gronde.",
+  "pack": "decouvertes",
+  "words": 6,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "un volcan rouge laisse couler sa lave|.",
+  "text": "Un volcan rouge laisse couler sa lave.",
+  "say": "Un volcan rouge laisse couler sa lave.",
+  "pack": "decouvertes",
+  "words": 7,
+  "fams": [
+   "volcan:indice"
+  ]
+ },
+ {
+  "key": "une casquette protège du soleil pas des pierres|.",
+  "text": "Une casquette protège du soleil, pas des pierres !",
+  "say": "Une casquette protège du soleil, pas des pierres !",
+  "pack": "decouvertes",
+  "words": 8,
+  "fams": [
+   "volcan:erreur"
+  ]
+ },
+ {
+  "key": "une couronne c'est joli mais ça ne protège pas la tête|.",
+  "text": "Une couronne, c'est joli, mais ça ne protège pas la tête !",
+  "say": "Une couronne, c'est joli, mais ça ne protège pas la tête !",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:erreur"
   ]
  },
  {
@@ -18669,6 +21937,16 @@
   ]
  },
  {
+  "key": "voici l'etna un volcan rouge qui se réveille très souvent|.",
+  "text": "Voici l'Etna, un volcan rouge qui se réveille très souvent.",
+  "say": "Voici l'Etna, un volcan rouge qui se réveille très souvent.",
+  "pack": "decouvertes",
+  "words": 10,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
   "key": "voici l'usine d'eau potable|.",
   "text": "Voici l'usine d'eau potable.",
   "say": "Voici l'usine d'eau potable.",
@@ -18676,6 +21954,56 @@
   "words": 4,
   "fams": [
    "goutte:consigne"
+  ]
+ },
+ {
+  "key": "voici le mont cameroun un volcan d'afrique qui se réveille de temps en temps|.",
+  "text": "Voici le mont Cameroun, un volcan d'Afrique qui se réveille de temps en temps.",
+  "say": "Voici le mont Cameroun, un volcan d'Afrique qui se réveille de temps en temps.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "voici le mont fuji un volcan endormi au chapeau de neige|.",
+  "text": "Voici le mont Fuji, un volcan endormi au chapeau de neige.",
+  "say": "Voici le mont Fuji, un volcan endormi au chapeau de neige.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "voici le piton de la fournaise un volcan rouge sur l'île de la réunion loin dans l'océan|.",
+  "text": "Voici le piton de la Fournaise, un volcan rouge sur l'île de La Réunion, loin dans l'océan.",
+  "say": "Voici le piton de la Fournaise, un volcan rouge sur l'île de La Réunion, loin dans l'océan.",
+  "pack": "decouvertes",
+  "words": 17,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "voici le puy de dôme et ses voisins des volcans endormis depuis très longtemps|.",
+  "text": "Voici le puy de Dôme et ses voisins, des volcans endormis depuis très longtemps.",
+  "say": "Voici le puy de Dôme et ses voisins, des volcans endormis depuis très longtemps.",
+  "pack": "decouvertes",
+  "words": 14,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "voici le stromboli une petite île volcan qui lance des étincelles toutes les quelques minutes|.",
+  "text": "Voici le Stromboli, une petite île volcan qui lance des étincelles toutes les quelques minutes.",
+  "say": "Voici le Stromboli, une petite île volcan qui lance des étincelles toutes les quelques minutes.",
+  "pack": "decouvertes",
+  "words": 15,
+  "fams": [
+   "volcan:consigne"
   ]
  },
  {
@@ -18696,6 +22024,36 @@
   "words": 6,
   "fams": [
    "goutte:intro"
+  ]
+ },
+ {
+  "key": "voici un volcan d'hawaï où la lave coule jusqu'à la mer|.",
+  "text": "Voici un volcan d'Hawaï, où la lave coule jusqu'à la mer.",
+  "say": "Voici un volcan d'Hawaï, où la lave coule jusqu'à la mer.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "voici une île en forme de croissant fabriquée par un volcan|.",
+  "text": "Voici une île en forme de croissant, fabriquée par un volcan.",
+  "say": "Voici une île en forme de croissant, fabriquée par un volcan.",
+  "pack": "decouvertes",
+  "words": 11,
+  "fams": [
+   "volcan:consigne"
+  ]
+ },
+ {
+  "key": "voici une pierre de volcan pleine de petits trous la pierre ponce|.",
+  "text": "Voici une pierre de volcan pleine de petits trous : la pierre ponce.",
+  "say": "Voici une pierre de volcan pleine de petits trous : la pierre ponce.",
+  "pack": "decouvertes",
+  "words": 12,
+  "fams": [
+   "volcan:consigne"
   ]
  },
  {
@@ -19436,66 +22794,6 @@
   "words": 2,
   "fams": [
    "motifs:erreur"
-  ]
- },
- {
-  "key": "celle-ci c'est pour les bugs que tu as trouvés comme une vraie informaticienne ou un vrai informaticien|.",
-  "text": "Celle-ci, c'est pour les bugs que tu as trouvés, comme une vraie informaticienne ou un vrai informaticien.",
-  "say": "Celle-ci, c'est pour les bugs que tu as trouvés, comme une vraie informaticienne ou un vrai informaticien.",
-  "pack": "enigmes",
-  "words": 17,
-  "fams": [
-   "bip:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour les solides que tu as reconnus|.",
-  "text": "Celle-ci, c'est pour les solides que tu as reconnus.",
-  "say": "Celle-ci, c'est pour les solides que tu as reconnus.",
-  "pack": "enigmes",
-  "words": 9,
-  "fams": [
-   "formes:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour les suites que tu as devinées|.",
-  "text": "Celle-ci, c'est pour les suites que tu as devinées.",
-  "say": "Celle-ci, c'est pour les suites que tu as devinées.",
-  "pack": "enigmes",
-  "words": 9,
-  "fams": [
-   "motifs:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour les tableaux que tu as complétés|.",
-  "text": "Celle-ci, c'est pour les tableaux que tu as complétés.",
-  "say": "Celle-ci, c'est pour les tableaux que tu as complétés.",
-  "pack": "enigmes",
-  "words": 9,
-  "fams": [
-   "motifs:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour tes programmes bip est arrivé au bout|.",
-  "text": "Celle-ci, c'est pour tes programmes : Bip est arrivé au bout !",
-  "say": "Celle-ci, c'est pour tes programmes : Bip est arrivé au bout !",
-  "pack": "enigmes",
-  "words": 10,
-  "fams": [
-   "bip:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour toutes les formes que tu as trouvées|.",
-  "text": "Celle-ci, c'est pour toutes les formes que tu as trouvées.",
-  "say": "Celle-ci, c'est pour toutes les formes que tu as trouvées.",
-  "pack": "enigmes",
-  "words": 10,
-  "fams": [
-   "formes:gommette"
   ]
  },
  {
@@ -24526,86 +27824,6 @@
   "words": 9,
   "fams": [
    "lis:indice"
-  ]
- },
- {
-  "key": "celle-ci c'est parce que tu as bien écouté le début des mots|.",
-  "text": "Celle-ci, c'est parce que tu as bien écouté le début des mots.",
-  "say": "Celle-ci, c'est parce que tu as bien écouté le début des mots.",
-  "pack": "mots",
-  "words": 12,
-  "fams": [
-   "chants:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour les mots que tu as écrits|.",
-  "text": "Celle-ci, c'est pour les mots que tu as écrits.",
-  "say": "Celle-ci, c'est pour les mots que tu as écrits.",
-  "pack": "mots",
-  "words": 9,
-  "fams": [
-   "syllabes:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour les mots que tu as lus tout seul|.",
-  "text": "Celle-ci, c'est pour les mots que tu as lus tout seul.",
-  "say": "Celle-ci, c'est pour les mots que tu as lus tout seul.",
-  "pack": "mots",
-  "words": 11,
-  "fams": [
-   "lis:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour les mots que tu as lus|.",
-  "text": "Celle-ci, c'est pour les mots que tu as lus.",
-  "say": "Celle-ci, c'est pour les mots que tu as lus.",
-  "pack": "mots",
-  "words": 9,
-  "fams": [
-   "syllabes:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour les phrases que tu as lues|.",
-  "text": "Celle-ci, c'est pour les phrases que tu as lues.",
-  "say": "Celle-ci, c'est pour les phrases que tu as lues.",
-  "pack": "mots",
-  "words": 9,
-  "fams": [
-   "lis:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour les rimes que tu as entendues|.",
-  "text": "Celle-ci, c'est pour les rimes que tu as entendues.",
-  "say": "Celle-ci, c'est pour les rimes que tu as entendues.",
-  "pack": "mots",
-  "words": 9,
-  "fams": [
-   "chants:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour les syllabes que tu as fabriquées|.",
-  "text": "Celle-ci, c'est pour les syllabes que tu as fabriquées.",
-  "say": "Celle-ci, c'est pour les syllabes que tu as fabriquées.",
-  "pack": "mots",
-  "words": 9,
-  "fams": [
-   "syllabes:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour tous les mots que tu as frappés en rythme|.",
-  "text": "Celle-ci, c'est pour tous les mots que tu as frappés en rythme.",
-  "say": "Celle-ci, c'est pour tous les mots que tu as frappés en rythme.",
-  "pack": "mots",
-  "words": 12,
-  "fams": [
-   "chants:gommette"
   ]
  },
  {
@@ -39779,66 +42997,6 @@
   ]
  },
  {
-  "key": "celle-ci c'est parce que tu as cherché jusqu'à ce que ce soit juste pour tout le monde|.",
-  "text": "Celle-ci, c'est parce que tu as cherché jusqu'à ce que ce soit juste pour tout le monde.",
-  "say": "Celle-ci, c'est parce que tu as cherché jusqu'à ce que ce soit juste pour tout le monde.",
-  "pack": "nombres",
-  "words": 17,
-  "fams": [
-   "partage:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est parce que tu as continué à compter jusqu'au bout|.",
-  "text": "Celle-ci, c'est parce que tu as continué à compter jusqu'au bout.",
-  "say": "Celle-ci, c'est parce que tu as continué à compter jusqu'au bout.",
-  "pack": "nombres",
-  "words": 11,
-  "fams": [
-   "marche:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est parce que tu as recompté jusqu'à trouver|.",
-  "text": "Celle-ci, c'est parce que tu as recompté jusqu'à trouver.",
-  "say": "Celle-ci, c'est parce que tu as recompté jusqu'à trouver.",
-  "pack": "nombres",
-  "words": 9,
-  "fams": [
-   "nenuphars:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour avoir compté avec soin|.",
-  "text": "Celle-ci, c'est pour avoir compté avec soin.",
-  "say": "Celle-ci, c'est pour avoir compté avec soin.",
-  "pack": "nombres",
-  "words": 7,
-  "fams": [
-   "marche:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour tes partages bien justes|.",
-  "text": "Celle-ci, c'est pour tes partages bien justes.",
-  "say": "Celle-ci, c'est pour tes partages bien justes.",
-  "pack": "nombres",
-  "words": 7,
-  "fams": [
-   "partage:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour tous les sauts bien comptés|.",
-  "text": "Celle-ci, c'est pour tous les sauts bien comptés.",
-  "say": "Celle-ci, c'est pour tous les sauts bien comptés.",
-  "pack": "nombres",
-  "words": 8,
-  "fams": [
-   "nenuphars:gommette"
-  ]
- },
- {
   "key": "chacun a 1 biscuit c'est juste|.",
   "text": "Chacun a 1 biscuit : c'est juste.",
   "say": "Chacun a un biscuit : c'est juste.",
@@ -45390,6 +48548,516 @@
   ]
  },
  {
+  "key": "c'est parce que tu as continué à chercher|.",
+  "text": "c'est parce que tu as continué à chercher.",
+  "say": "c'est parce que tu as continué à chercher.",
+  "pack": "port",
+  "words": 8,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de cuba|,",
+  "text": "c'est pour le drapeau de Cuba,",
+  "say": "c'est pour le drapeau de Cuba,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de l'allemagne|,",
+  "text": "c'est pour le drapeau de l'Allemagne,",
+  "say": "c'est pour le drapeau de l'Allemagne,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de l'autriche|,",
+  "text": "c'est pour le drapeau de l'Autriche,",
+  "say": "c'est pour le drapeau de l'Autriche,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de l'inde|,",
+  "text": "c'est pour le drapeau de l'Inde,",
+  "say": "c'est pour le drapeau de l'Inde,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de l'indonésie|,",
+  "text": "c'est pour le drapeau de l'Indonésie,",
+  "say": "c'est pour le drapeau de l'Indonésie,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de l'irlande|,",
+  "text": "c'est pour le drapeau de l'Irlande,",
+  "say": "c'est pour le drapeau de l'Irlande,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de l'italie|,",
+  "text": "c'est pour le drapeau de l'Italie,",
+  "say": "c'est pour le drapeau de l'Italie,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de l'ukraine|,",
+  "text": "c'est pour le drapeau de l'Ukraine,",
+  "say": "c'est pour le drapeau de l'Ukraine,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la belgique|,",
+  "text": "c'est pour le drapeau de la Belgique,",
+  "say": "c'est pour le drapeau de la Belgique,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la bulgarie|,",
+  "text": "c'est pour le drapeau de la Bulgarie,",
+  "say": "c'est pour le drapeau de la Bulgarie,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la chine|,",
+  "text": "c'est pour le drapeau de la Chine,",
+  "say": "c'est pour le drapeau de la Chine,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la colombie|,",
+  "text": "c'est pour le drapeau de la Colombie,",
+  "say": "c'est pour le drapeau de la Colombie,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la côte d'ivoire|,",
+  "text": "c'est pour le drapeau de la Côte d'Ivoire,",
+  "say": "c'est pour le drapeau de la Côte d'Ivoire,",
+  "pack": "port",
+  "words": 8,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la finlande|,",
+  "text": "c'est pour le drapeau de la Finlande,",
+  "say": "c'est pour le drapeau de la Finlande,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la france|,",
+  "text": "c'est pour le drapeau de la France,",
+  "say": "c'est pour le drapeau de la France,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la grèce|,",
+  "text": "c'est pour le drapeau de la Grèce,",
+  "say": "c'est pour le drapeau de la Grèce,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la guinée|,",
+  "text": "c'est pour le drapeau de la Guinée,",
+  "say": "c'est pour le drapeau de la Guinée,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la hongrie|,",
+  "text": "c'est pour le drapeau de la Hongrie,",
+  "say": "c'est pour le drapeau de la Hongrie,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la lituanie|,",
+  "text": "c'est pour le drapeau de la Lituanie,",
+  "say": "c'est pour le drapeau de la Lituanie,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la norvège|,",
+  "text": "c'est pour le drapeau de la Norvège,",
+  "say": "c'est pour le drapeau de la Norvège,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la pologne|,",
+  "text": "c'est pour le drapeau de la Pologne,",
+  "say": "c'est pour le drapeau de la Pologne,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la roumanie|,",
+  "text": "c'est pour le drapeau de la Roumanie,",
+  "say": "c'est pour le drapeau de la Roumanie,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la russie|,",
+  "text": "c'est pour le drapeau de la Russie,",
+  "say": "c'est pour le drapeau de la Russie,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la somalie|,",
+  "text": "c'est pour le drapeau de la Somalie,",
+  "say": "c'est pour le drapeau de la Somalie,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la suède|,",
+  "text": "c'est pour le drapeau de la Suède,",
+  "say": "c'est pour le drapeau de la Suède,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la suisse|,",
+  "text": "c'est pour le drapeau de la Suisse,",
+  "say": "c'est pour le drapeau de la Suisse,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de la tchéquie|,",
+  "text": "c'est pour le drapeau de la Tchéquie,",
+  "say": "c'est pour le drapeau de la Tchéquie,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau de monaco|,",
+  "text": "c'est pour le drapeau de Monaco,",
+  "say": "c'est pour le drapeau de Monaco,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau des états-unis|,",
+  "text": "c'est pour le drapeau des États-Unis,",
+  "say": "c'est pour le drapeau des États-Unis,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau des palaos|,",
+  "text": "c'est pour le drapeau des Palaos,",
+  "say": "c'est pour le drapeau des Palaos,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du bangladesh|,",
+  "text": "c'est pour le drapeau du Bangladesh,",
+  "say": "c'est pour le drapeau du Bangladesh,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du cameroun|,",
+  "text": "c'est pour le drapeau du Cameroun,",
+  "say": "c'est pour le drapeau du Cameroun,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du canada|,",
+  "text": "c'est pour le drapeau du Canada,",
+  "say": "c'est pour le drapeau du Canada,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du chili|,",
+  "text": "c'est pour le drapeau du Chili,",
+  "say": "c'est pour le drapeau du Chili,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du danemark|,",
+  "text": "c'est pour le drapeau du Danemark,",
+  "say": "c'est pour le drapeau du Danemark,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du gabon|,",
+  "text": "c'est pour le drapeau du Gabon,",
+  "say": "c'est pour le drapeau du Gabon,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du japon|,",
+  "text": "c'est pour le drapeau du Japon,",
+  "say": "c'est pour le drapeau du Japon,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du laos|,",
+  "text": "c'est pour le drapeau du Laos,",
+  "say": "c'est pour le drapeau du Laos,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du luxembourg|,",
+  "text": "c'est pour le drapeau du Luxembourg,",
+  "say": "c'est pour le drapeau du Luxembourg,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du mali|,",
+  "text": "c'est pour le drapeau du Mali,",
+  "say": "c'est pour le drapeau du Mali,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du maroc|,",
+  "text": "c'est pour le drapeau du Maroc,",
+  "say": "c'est pour le drapeau du Maroc,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du nigeria|,",
+  "text": "c'est pour le drapeau du Nigeria,",
+  "say": "c'est pour le drapeau du Nigeria,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du panama|,",
+  "text": "c'est pour le drapeau du Panama,",
+  "say": "c'est pour le drapeau du Panama,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du pérou|,",
+  "text": "c'est pour le drapeau du Pérou,",
+  "say": "c'est pour le drapeau du Pérou,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du royaume-uni|,",
+  "text": "c'est pour le drapeau du Royaume-Uni,",
+  "say": "c'est pour le drapeau du Royaume-Uni,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du sénégal|,",
+  "text": "c'est pour le drapeau du Sénégal,",
+  "say": "c'est pour le drapeau du Sénégal,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du tchad|,",
+  "text": "c'est pour le drapeau du Tchad,",
+  "say": "c'est pour le drapeau du Tchad,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du togo|,",
+  "text": "c'est pour le drapeau du Togo,",
+  "say": "c'est pour le drapeau du Togo,",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour le drapeau du viêt nam|,",
+  "text": "c'est pour le drapeau du Viêt Nam,",
+  "say": "c'est pour le drapeau du Viêt Nam,",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
+  "key": "c'est pour tous les drapeaux que tu as reconnus|.",
+  "text": "c'est pour tous les drapeaux que tu as reconnus.",
+  "say": "c'est pour tous les drapeaux que tu as reconnus.",
+  "pack": "port",
+  "words": 9,
+  "fams": [
+   "drapeau:gommette"
+  ]
+ },
+ {
   "key": "c'est quatre carrés|,",
   "text": "c'est quatre carrés :",
   "say": "c'est quatre carrés :",
@@ -45787,37 +49455,6 @@
   "words": 4,
   "fams": [
    "drapeau:indice"
-  ]
- },
- {
-  "key": "ce n'est pas celui-là|.",
-  "text": "Ce n'est pas celui-là.",
-  "say": "Ce n'est pas celui-là.",
-  "pack": "port",
-  "words": 4,
-  "fams": [
-   "atelierdrapeaux:indice",
-   "drapeau:indice"
-  ]
- },
- {
-  "key": "celle-ci c'est parce que tu as reconnu les vrais drapeaux même à l'envers|.",
-  "text": "Celle-ci, c'est parce que tu as reconnu les vrais drapeaux, même à l'envers.",
-  "say": "Celle-ci, c'est parce que tu as reconnu les vrais drapeaux, même à l'envers.",
-  "pack": "port",
-  "words": 13,
-  "fams": [
-   "atelierdrapeaux:gommette"
-  ]
- },
- {
-  "key": "celle-ci c'est pour les drapeaux que tu as coloriés|.",
-  "text": "Celle-ci, c'est pour les drapeaux que tu as coloriés.",
-  "say": "Celle-ci, c'est pour les drapeaux que tu as coloriés.",
-  "pack": "port",
-  "words": 9,
-  "fams": [
-   "atelierdrapeaux:gommette"
   ]
  },
  {
@@ -48501,16 +52138,6 @@
   "fams": [
    "atelierdrapeaux:indice",
    "drapeau:indice"
-  ]
- },
- {
-  "key": "noir|.",
-  "text": "noir",
-  "say": "noir",
-  "pack": "port",
-  "words": 1,
-  "fams": [
-   "atelierdrapeaux:rendu"
   ]
  },
  {

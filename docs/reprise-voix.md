@@ -8,9 +8,9 @@ Le README décrit l'appli, les îles, l'organisation du code et les tests ; ici,
 - Livraisons 1, 2 et 2 bis terminées et en ligne : https://musshadow.github.io/archipel/
   (GitHub Pages, publié automatiquement à chaque envoi sur `main` par `.github/workflows/pages.yml`).
 - Livraison 2 bis : Plume parle avec une voix naturelle pré-enregistrée, gardée pour le hors-ligne.
-- Livraison 3 (en cours) : île des Découvertes — le voyage de la goutte, puis le volcan, le grand tri et le voyage des déchets.
+- Livraison 3 (en cours) : île des Découvertes — le voyage de la goutte et le volcan d'Octave, puis le grand tri et le voyage des déchets.
 - Tests : `bun test`, `tsc --noEmit -p .`, et des parcours Playwright avec `/usr/bin/google-chrome` :
-  `tests/e2e/smoke.py`, `livraison2.py`, `livraison3.py`, `offline.py`, `voix.py`, `ipad.py`, `retours.py`.
+  `tests/e2e/smoke.py`, `livraison2.py`, `livraison3.py`, `volcan.py`, `offline.py`, `voix.py`, `ipad.py`, `retours.py`.
 - Pour qui : un enfant de 4 ans et demi, sur iPad, accompagné d'un adulte. Tout est en français ; le parent est
   tutoyé dans la conversation, vouvoyé dans l'appli.
 
@@ -62,7 +62,7 @@ Le README décrit l'appli, les îles, l'organisation du code et les tests ; ici,
 7. `bun run build`, les tests, puis committer `dist/`, `public/voix/` et `voix/` avec le code.
 
 `clips.ts` garde les clips de la liste précédente que l'inventaire (tiré au hasard) n'a pas ressortis, sauf pour les
-activités qui donnent la liste complète de leurs phrases (`voiceLines()`, aujourd'hui le voyage de la goutte).
+activités qui donnent la liste complète de leurs phrases (`voiceLines()`, aujourd'hui la goutte et le volcan).
 
 Sur iPad (novembre 2026), la voix naturelle se taisait alors que celle de l'iPad marchait : Safari coupe le son des
 pages (Web Audio) en mode silencieux et peut laisser le contexte audio « interrompu ». Corrigé dans `services.ts` :

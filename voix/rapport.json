@@ -1,7 +1,7 @@
 {
- "clips": 4997,
- "octets": 33218625,
- "minutes": 128.5,
+ "clips": 5356,
+ "octets": 37950492,
+ "minutes": 147.5,
  "a_revoir": [
   {
    "key": "dos|.",
@@ -26,6 +26,12 @@
    "say": "Un phare et une poignée.",
    "heard": "Un ph et une poignée.",
    "per": 0.231
+  },
+  {
+   "key": "beurk surtout pas|.",
+   "say": "Beurk, surtout pas !",
+   "heard": "Burke surtout pas.",
+   "per": 0.25
   },
   {
    "key": "a mie ami|.",

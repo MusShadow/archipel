@@ -245,6 +245,29 @@ button.tok{cursor:pointer;border-color:var(--line)}
 .wcard.wide{width:max(150px,calc(var(--u) * 260))}
 .wcard.wide .wart.scene{width:max(110px,calc(var(--u) * 190));height:max(96px,calc(var(--u) * 160))}
 .wwho{display:block;width:max(64px,calc(var(--u) * 104));height:max(64px,calc(var(--u) * 104))}
+/* Le volcan d'Octave */
+.vcoupe{position:relative;height:min(calc(100vh - var(--btn) * 2 - 170px),calc(92vw * .8));aspect-ratio:200/160;max-width:92vw;flex:0 0 auto}
+.vfinger{position:absolute;left:50%;top:80%;font-size:max(40px,calc(var(--u) * 64));line-height:1;transform:translate(-30%,0);pointer-events:none;animation:vfinger 1.8s ease-in-out infinite;filter:drop-shadow(0 4px 6px rgba(39,48,67,.25))}
+@keyframes vfinger{0%{transform:translate(-30%,0);opacity:0}15%{opacity:1}70%{transform:translate(-30%,-180%);opacity:1}100%{transform:translate(-30%,-200%);opacity:0}}
+.vcoupe svg{touch-action:none}
+.vpart{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.vpart rect.hit{transition:fill .2s}
+.vpart.hint rect.hit{fill:rgba(255,193,69,.22);stroke:#FFC145;stroke-width:2;stroke-dasharray:5 4}
+.vpart.hint path.hit{stroke:#FFC145;stroke-opacity:.25}
+.vpart.glowing rect.hit{fill:rgba(255,193,69,.35);stroke:#FFC145;stroke-width:3;animation:vpulse 1s ease-in-out infinite}
+.vpart.glowing path.hit{stroke:#FFC145;stroke-opacity:.45;animation:vpulse 1s ease-in-out infinite}
+.vpart.right rect.hit{fill:rgba(52,179,122,.25);stroke:#34B37A;stroke-width:3;animation:none}
+.vpart.right path.hit{stroke:#34B37A;stroke-opacity:.4;animation:none}
+@keyframes vpulse{50%{opacity:.4}}
+.vmonte.hinted [data-t="chambre"] rect.hit{fill:rgba(255,193,69,.3);stroke:#FFC145;stroke-width:3;animation:vpulse 1s ease-in-out infinite}
+.vshake svg{animation:vshake .08s linear 12 alternate}
+@keyframes vshake{from{transform:translate(-.8%,0)}to{transform:translate(.8%,.4%)}}
+.veruption .vjet{transform-box:fill-box;transform-origin:50% 100%;animation:vjet .55s cubic-bezier(.3,1.6,.5,1) both}
+@keyframes vjet{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.veruption .vdrop{animation:vdrop .6s ease-out both}
+@keyframes vdrop{0%{opacity:0;transform:translateY(16px)}100%{opacity:1;transform:translateY(0)}}
+.varrow path{animation:varrow .8s linear infinite}
+@keyframes varrow{to{stroke-dashoffset:-13}}
 /* Atelier des drapeaux */
 .flagrow{gap:max(14px,calc(var(--u) * 30))}
 .flagmodel{width:max(140px,calc(var(--u) * 230));aspect-ratio:94/64;border-radius:8px;transition:opacity .3s}

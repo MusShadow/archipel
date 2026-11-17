@@ -45,6 +45,9 @@ for (const u of units) {
     for (const c of clauses(s)) for (const g of fragments(c)) x.F.set(g, g.length);
   }
 }
+// Phrases entières que la voix dit mal, même refaites deux fois (« Pays-Basses ») : on enregistre leurs morceaux.
+const FAUTIVES = new Set(["celle-ci c'est pour le drapeau des pays-bas que tu as découvert aujourd'hui|."]);
+const keyFinal = (s: string) => keyOf(finalize(tokenize(s)));
 const minutes = (m: Map<string, number>) => [...m.values()].reduce((a, b) => a + b + 6, 0) / 13 / 60;
 const mode = new Map<string, "S" | "F">();
 for (const [f, x] of fam) mode.set(f, minutes(x.S) > 3 && minutes(x.S) > 1.6 * minutes(x.F) ? "F" : "S");
@@ -53,7 +56,7 @@ for (const u of units) {
   const f = u.src[0];
   for (const s of u.sents) {
     if (s.includes(SENTINEL_NAME)) throw new Error(`Prénom resté dans « ${s} »`);
-    if (mode.get(f) === "S") { addClip(s, true, f); continue; }
+    if (mode.get(f) === "S" && !FAUTIVES.has(keyFinal(s))) { addClip(s, true, f); continue; }
     const cl = clauses(s);
     cl.forEach((c, ci) => {
       const fr = fragments(c);
@@ -94,8 +97,8 @@ const previous: { key: string; text: string; say: string; pack: string; words: n
   try { return process.env.KEEP === "0" ? [] : JSON.parse(readFileSync(OUT, "utf8")); } catch { return []; }
 })();
 // Sauf pour les activités qui donnent la liste complète de leurs phrases (voiceLines) : un clip absent y est périmé.
-const COMPLETE = ["goutte:"];
-const kept = previous.filter((c) => !clips.has(c.key) && !c.fams.every((f) => COMPLETE.some((x) => f.startsWith(x))));
+const COMPLETE = ["goutte:", "volcan:"];
+const kept = previous.filter((c) => !clips.has(c.key) && !FAUTIVES.has(c.key) && !c.fams.every((f) => COMPLETE.some((x) => f.startsWith(x))));
 const out = [...kept.map((c) => ({ ...c })), ...[...clips.values()].map((c) => ({
   key: c.key, text: c.text, say: spoken(c.text),
   pack: c.packs.size === 1 ? [...c.packs][0] : "commun",

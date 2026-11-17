@@ -4,7 +4,7 @@
 export type DomainId = "lecture" | "nombres" | "voyages" | "enigmes" | "decouvertes" | "atelier" | "coeur";
 export type Form = "manipulation" | "image" | "symbole" | "recit" | "corrige";
 export type ActivityId = "drapeau" | "marche" | "syllabes" | "chants" | "lis" | "nenuphars" | "partage"
-  | "formes" | "bip" | "motifs" | "theatre" | "flotte" | "goutte" | "atelierdrapeaux" | "dessin" | "histoires";
+  | "formes" | "bip" | "motifs" | "theatre" | "flotte" | "goutte" | "volcan" | "atelierdrapeaux" | "dessin" | "histoires";
 export type Mastery = "nouveau" | "decouverte" | "en-cours" | "acquise" | "consolidee";
 
 export interface DomainDef { id: DomainId; label: string; color: string; island: string }
@@ -66,6 +66,12 @@ export const SKILLS: SkillDef[] = [
   { id: "DECOUV.EAU.EPURATION", domain: "decouvertes", label: "Où va l'eau sale : égouts, station d'épuration", palier: 2, dRef: 0.9, activity: "goutte" },
   { id: "DECOUV.EAU.TOUR", domain: "decouvertes", label: "Tout le voyage de l'eau, de la mer au robinet et retour", palier: 3, dRef: 1.3, activity: "goutte" },
   { id: "DECOUV.EAU.GESTES", domain: "decouvertes", label: "Les bons gestes pour l'eau : lingettes, robinet, douche", palier: 2, dRef: 0.4, activity: "goutte" },
+  { id: "DECOUV.VOLCAN.PARTIES", domain: "decouvertes", label: "Dans le volcan : poche de magma, cheminée, cratère, lave, cendres", palier: 1, dRef: -0.3, activity: "volcan" },
+  { id: "DECOUV.VOLCAN.ERUPTION", domain: "decouvertes", label: "L'éruption, dans l'ordre : le magma monte, le volcan gronde, la lave sort et coule", palier: 2, dRef: 0.2, activity: "volcan" },
+  { id: "DECOUV.VOLCAN.LAVE", domain: "decouvertes", label: "La lave : très chaude, elle coule, puis refroidit et devient pierre", palier: 2, dRef: 0.2, activity: "volcan" },
+  { id: "DECOUV.VOLCAN.TYPES", domain: "decouvertes", label: "Volcans rouges et volcans gris, endormis ou réveillés", palier: 2, dRef: 0.5, activity: "volcan" },
+  { id: "DECOUV.VOLCAN.METIER", domain: "decouvertes", label: "Le métier de volcanologue : se protéger, surveiller, prévenir", palier: 2, dRef: 0.1, activity: "volcan" },
+  { id: "DECOUV.VOLCAN.MONDE", domain: "decouvertes", label: "Des volcans du monde et les drapeaux de leurs pays", palier: 3, dRef: 0.9, activity: "volcan" },
   { id: "COEUR.EMOTIONS", domain: "coeur", label: "Reconnaître et nommer les émotions", palier: 1, dRef: -0.6, activity: "theatre" },
   { id: "COEUR.CAUSES", domain: "coeur", label: "Comprendre pourquoi on ressent une émotion", palier: 1, dRef: 0, activity: "theatre" },
   { id: "COEUR.AIDER", domain: "coeur", label: "Choisir une façon d'aider", palier: 1, dRef: -0.2, activity: "theatre" },

@@ -1,11 +1,11 @@
-// Service worker d'Archipel (version d23fc367ed) : garde l'appli disponible sans Internet.
+// Service worker d'Archipel (version c41a5066da) : garde l'appli disponible sans Internet.
 // Le code de l'appli passe d'abord par le réseau (pour recevoir les mises à jour), sinon par la copie gardée.
 // La voix naturelle de Plume (index et paquets audio, noms à empreinte) est gardée à part, d'une version à l'autre :
 // seuls les fichiers nouveaux sont téléchargés.
-const CACHE = "archipel-d23fc367ed";
+const CACHE = "archipel-c41a5066da";
 const VOIX = "archipel-voix";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-192.png", "./icon-512.png"];
-const VOIX_FILES = ["./voix/atelier-2cb7735a18.mp3","./voix/coeur-67a3be792e.mp3","./voix/commun-3568ee742c.mp3","./voix/decouvertes-228113ee3a.mp3","./voix/enigmes-4ede5c03ce.mp3","./voix/index-97032287d4.json","./voix/mots-9f4a01bc0e.mp3","./voix/nombres-c202f2b603.mp3","./voix/port-23b9ff1e5c.mp3"];
+const VOIX_FILES = ["./voix/atelier-2cb7735a18.mp3","./voix/coeur-d1fd441b8f.mp3","./voix/commun-08365ace8f.mp3","./voix/decouvertes-c7dd6e7d4d.mp3","./voix/enigmes-88f751a62e.mp3","./voix/index-5b953ca57f.json","./voix/mots-096c559390.mp3","./voix/nombres-236a6be361.mp3","./voix/port-01579326cb.mp3"];
 
 const keepVoice = async () => {
   const cache = await caches.open(VOIX);

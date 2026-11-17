@@ -126,6 +126,11 @@ for (const mod of ACTIVITIES.filter((m) => !ONLY || ONLY.includes(m.id))) {
   const { voiceLines } = await import("../../src/activities/goutte");
   if (!ONLY || ONLY.includes("goutte")) for (const x of voiceLines()) add(x.text, x.fam);
 }
+// Le volcan d'Octave : la liste complète de ses phrases.
+{
+  const { voiceLines } = await import("../../src/activities/volcan");
+  if (!ONLY || ONLY.includes("volcan")) for (const x of voiceLines()) add(x.text, x.fam);
+}
 // Le partage du goûter : ce que dit Plume selon l'état du plateau (boîte vide, assiettes inégales, panier trop plein).
 where = "partage:indice";
 for (const x of ["Je glisse un biscuit vers l'assiette qui en a le moins.", "Je redonne un biscuit du panier à chacun.",
