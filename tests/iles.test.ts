@@ -3,7 +3,9 @@ import { expect, test } from "bun:test";
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { META } from "../src/activities/index";
-import { CADRE, ECRANS_A_PART, EMPLACEMENTS_PAR_QUARTIER, ILES_V2, echelle, lieuDe, placer, verifier, versEcran } from "../src/iles";
+import { CADRE, ECRANS_A_PART, EMPLACEMENTS_PAR_QUARTIER, echelle, ilesV2, lieuDe, placer, verifier, versEcran } from "../src/iles";
+
+const ILES_V2 = ilesV2();
 import { DECORS_ILES, PERSONNAGES } from "../src/illustrations";
 
 const root = join(import.meta.dir, "..");
@@ -72,11 +74,15 @@ test("l'île des Nombres est dessinée : décor, lieux, remplissages, tous prés
     expect(Math.abs(l.pastille.x - (x + w / 2))).toBeLessThan(w / 2);
     expect(l.pastille.y).toBeGreaterThan(e.y);
   }
-  // les étiquettes ne se chevauchent pas (largeur d'une pastille : 260 px au plus)
-  const p = q.lieux.map((l) => l.pastille);
-  for (let i = 0; i < p.length; i++) for (let j = i + 1; j < p.length; j++) {
-    expect(Math.abs(p[i].x - p[j].x) > 260 || Math.abs(p[i].y - p[j].y) > 70).toBe(true);
+  // les étiquettes ne se chevauchent pas : largeur estimée large (14 px par lettre et 60 px de marges), hauteur 82 px
+  // avec la zone de toucher (le test de la vitrine mesure les vraies boîtes)
+  const titres: Record<string, string> = { marche: "Le marché de Basile", nenuphars: "Les nénuphars", partage: "Le partage du goûter" };
+  const boites = q.lieux.map((l) => { const w = titres[l.ids[0]].length * 14 + 60; return { x0: l.pastille.x - w / 2, x1: l.pastille.x + w / 2, y0: l.pastille.y - 41, y1: l.pastille.y + 41 }; });
+  for (let i = 0; i < boites.length; i++) for (let j = i + 1; j < boites.length; j++) {
+    const a = boites[i], b = boites[j];
+    expect(a.x1 < b.x0 || b.x1 < a.x0 || a.y1 < b.y0 || b.y1 < a.y0).toBe(true);
   }
+  for (const b of boites) { expect(b.x0).toBeGreaterThan(0); expect(b.x1).toBeLessThan(CADRE.l); expect(b.y1).toBeLessThan(CADRE.h); }
 });
 
 test("l'hôte de chaque île a ses dessins (cinq expressions et le salut)", () => {
@@ -101,7 +107,8 @@ test("du repère des dessins à l'écran : l'iPad en paysage est couvert, les au
   // iPad Air en paysage : couvert aussi (rognage minime)
   expect(echelle({ l: 1180, h: 820 })).toBeCloseTo(Math.max(1180 / 1194, 820 / 834), 6);
   // en portrait, et sur un téléphone en paysage : chaque lieu et chaque étiquette de l'île des Nombres reste à l'écran
-  for (const ecran of [{ l: 820, h: 1180 }, { l: 834, h: 1194 }, { l: 932, h: 430 }, { l: 1366, h: 1024 }]) {
+  // iPad Pro 11 récent (1210 x 834), iPad Air en portrait, iPad Pro 11 en portrait, téléphone en paysage, iPad 13
+  for (const ecran of [{ l: 1210, h: 834 }, { l: 820, h: 1180 }, { l: 834, h: 1194 }, { l: 932, h: 430 }, { l: 1366, h: 1024 }]) {
     const q = ILES_V2.nombres.quartiers[0];
     for (const l of q.lieux) {
       const [x, y, w, h] = q.decor!.lieux[l.ids[0]].boite;

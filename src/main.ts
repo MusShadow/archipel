@@ -49,4 +49,7 @@ registerParentScreens();
 // Vitrine du système de design (adresse …#vitrine) : page cachée, pour juger les fondations sur l'iPad.
 if (estVitrine()) app.show(pageVitrine());
 else if (app.data.profiles.length) nav.start(); else nav.setup();
-window.addEventListener("hashchange", () => { if (estVitrine()) app.show(pageVitrine()); });
+window.addEventListener("hashchange", () => {
+  if (estVitrine()) app.show(pageVitrine());
+  else if (document.querySelector(".v-page")) location.reload(); // retour arrière : on quitte la vitrine
+});

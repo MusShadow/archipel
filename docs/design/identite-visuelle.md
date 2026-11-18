@@ -85,10 +85,11 @@ La couleur d'une île sert de **repère** : la pastille du ruban, l'hôte, ce qu
 
 | Rôle | Couleur |
 |---|---|
-| Fond des écrans | crème `#FFF7EA` |
-| Boutons et pastilles | papier `#FFF8EC` |
-| Bords | sable `#E2CBA6` |
-| Texte | encre `#273043` |
+| Fond des écrans | crème `#FFF7EA` (jeton `creme`) |
+| Boutons et pastilles | `#FFF8EC` (jeton `surface`) |
+| Cartes et bulles | `#FFFDF8` (jeton `papier`) |
+| Bords, couleur sable | `#E2CBA6` (jeton `bord`) |
+| Texte | encre `#273043` (jeton `encre`) |
 
 **Jamais de rouge pour une erreur.** Une bonne réponse pose un anneau vert. Un essai fait seulement balancer la carte, et l'hôte encourage d'un air doux.
 
@@ -108,7 +109,7 @@ Plume et les sept hôtes sont dessinés **en entier**, avec la même lumière et
 
 ## Mouvement
 
-- Les réponses de l'interface durent **de 200 à 400 ms**, un appui 120 ms, un changement d'écran 350 ms.
+- Les réponses de l'interface durent **de 200 à 400 ms**, un changement d'écran 350 ms. L'écho d'un appui (le bouton qui s'enfonce) est immédiat : 120 ms, comme dans la v1.
 - **Jamais de clignotement**, jamais de mouvement rapide qui se répète.
 - Une **réponse de jouet à chaque contact** : un petit enfoncement, un son doux.
 - **Le personnage-guide est l'élément le plus calme de l'écran.** Plume bat des ailes lentement et souplement : 1,1 s par aller, de +3° à −16°, avec un léger flottement. Les mouvements rapides restent réservés aux surprises courtes.

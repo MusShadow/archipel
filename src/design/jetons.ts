@@ -34,11 +34,16 @@ export const NEUTRES = {
   voile: "rgba(39, 48, 67, 0.45)", // derrière une fenêtre
 } as const;
 
+// Pastille « Plume conseille » : couleur de Plume (foncé du Port), éclairée en haut ; le blanc y reste à 4,6 pour 1.
+export const CONSEIL = { haut: "#16808A", bas: ILES.port.fonce, bord: ILES.port.ombre } as const;
+
 // Réponses : jamais de rouge. Juste : anneau vert et halo ; essai : le balancement suffit, aucune couleur d'erreur.
 export const RETOURS = { juste: ILES.decouvertes.vif, justeHalo: "rgba(52, 179, 122, 0.28)", choisi: ILES.port.vif } as const;
 
 // Unité d'écran : 1 u = 1 px sur l'écran de référence 1180 × 820 (iPad Air en paysage) ; l'iPad Pro 11 donne 1,01.
+// En portrait, la référence devient 860 × 1180 (les écrans de la v1 font de même).
 export const UNITE = "min(calc(100vw / 1180), calc(100vh / 820))";
+export const UNITE_PORTRAIT = "min(calc(100vw / 860), calc(100vh / 1180))";
 const u = (n: number, min: number) => `max(${min}px, calc(var(--u) * ${n}))`;
 
 export const POLICES = {
@@ -83,8 +88,9 @@ export const MOUVEMENTS = {
   },
 } as const;
 
-// Cibles tactiles : au moins 1,5 cm sur l'iPad (80 u ≈ 1,55 cm), jamais moins de 58 px.
-export const CIBLES = { min: u(80, 58), bouton: u(86, 58), petit: u(56, 44) } as const;
+// Cibles tactiles : au moins 1,5 cm sur l'iPad, en paysage comme en portrait (84 u ≈ 1,6 cm ; 1,5 cm = 78 px à
+// 132 px par pouce), jamais moins de 58 px. « petit » (≈ 1,1 cm) est réservé aux actions de l'adulte.
+export const CIBLES = { min: u(84, 58), bouton: u(86, 58), petit: u(56, 44) } as const;
 
 const kebab = (s: string) => s.replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`);
 export const fontTexte = (t: Texte) => `${t.graisse} ${u(t.u, t.min)}/${t.interligne} ${POLICES[t.police]}`;
@@ -106,7 +112,8 @@ export function variablesCSS(): Record<string, string> {
   for (const [k, c] of Object.entries(CIBLES)) v[`--cible-${k}`] = c;
   return v;
 }
-export const cssVariables = () => `:root{${Object.entries(variablesCSS()).map(([k, val]) => `${k}:${val}`).join(";")}}`;
+export const cssVariables = () => `:root{${Object.entries(variablesCSS()).map(([k, val]) => `${k}:${val}`).join(";")}}`
+  + `@media (orientation:portrait){:root{--u:${UNITE_PORTRAIT}}}`;
 
 // ---------- Contraste (WCAG 2) : utilisé par les tests et par la vitrine ----------
 const canal = (c: number) => (c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
@@ -127,6 +134,8 @@ export function pairesDeTexte(): { nom: string; texte: string; fond: string }[] 
     p.push({ nom: `encre sur ${fond}`, texte: NEUTRES.encre, fond: NEUTRES[fond] });
     p.push({ nom: `encre douce sur ${fond}`, texte: NEUTRES.encreDouce, fond: NEUTRES[fond] });
   }
+  p.push({ nom: "blanc sur la pastille conseillée (haut du dégradé)", texte: NEUTRES.blanc, fond: CONSEIL.haut });
+  p.push({ nom: "foncé du Port sur le badge « Plume conseille »", texte: ILES.port.fonce, fond: NEUTRES.papier });
   for (const id of ORDRE_ILES) {
     const t = ILES[id];
     p.push({ nom: `blanc sur ${id} foncé`, texte: NEUTRES.blanc, fond: t.fonce });

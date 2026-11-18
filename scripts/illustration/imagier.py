@@ -10,7 +10,7 @@ Le dépôt source est cloné au besoin (sans les images 3D, trop lourdes) dans I
 (par défaut ~/.cache/archipel/fluentui-emoji), à la version FLUENT_VERSION ci-dessous.
 Sortie : public/imagier/<nom>.webp (320 x 320), public/imagier/LICENCE-fluentui-emoji.txt, src/imagier.ts.
 Prérequis : numpy, opencv-python-headless, pillow, playwright (Chrome) pour lire les SVG."""
-import base64, json, os, pathlib, re, subprocess, sys
+import base64, json, os, pathlib, re, subprocess, sys, zlib
 import numpy as np, cv2
 from PIL import Image
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -139,10 +139,14 @@ def album(rgba, seed):
     rgb = tweak(np.clip(rgb, 0, 4), sat=1.05) * np.array([1.045, 1.0, 0.93], np.float32)
     return np.dstack([to_srgb(rgb), a])
 
+def graine(nom):
+    """Graine tirée du nom de l'image : ajouter ou retirer un emoji ne change aucune autre image."""
+    return zlib.crc32(nom.encode("utf-8")) % 1_000_003
+
 def ecrire(res, images):
     SORTIE.mkdir(parents=True, exist_ok=True)
-    for i, (e, v) in enumerate(sorted(res.items(), key=lambda kv: kv[1]["nom"])):
-        im = album(images[e], seed=11 + i)
+    for e, v in sorted(res.items(), key=lambda kv: kv[1]["nom"]):
+        im = album(images[e], seed=graine(v["nom"]))
         im = cv2.resize(im, (TAILLE, TAILLE), interpolation=cv2.INTER_AREA)
         px = (np.clip(im, 0, 1) * 255 + 0.5).astype(np.uint8)
         Image.fromarray(px, "RGBA").save(SORTIE / f"{v['nom']}.webp", "WEBP", quality=84, alpha_quality=90, method=6)

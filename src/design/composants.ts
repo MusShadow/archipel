@@ -2,7 +2,7 @@
 // ruban de titre, bulle de Plume et carte de réponse. Ils ne lisent que les variables du système de design
 // (jetons.ts) ; les écrans de la livraison 2 les assemblent. La vitrine (#vitrine) les montre tous.
 import { h, ICON_PATHS } from "../ui";
-import type { IleId } from "./jetons";
+import { CONSEIL, type IleId } from "./jetons";
 
 const svgIcone = (nom: string) =>
   `<svg viewBox="0 0 24 24" aria-hidden="true" class="a-ico">${ICON_PATHS[nom] ?? ""}</svg>`;
@@ -10,7 +10,9 @@ const accent = (ile?: IleId) => (ile ? `--accent:var(--ile-${ile}-vif);--accent-
 
 type Clic = (e: Event) => void;
 
+
 // Bouton rond : maison, oreille, carte… Une icône, jamais de texte ; son nom est lu par VoiceOver.
+// La taille « petit » (moins de 1,5 cm) est réservée aux actions de l'adulte, jamais à l'enfant.
 export function boutonRond(o: { icone: string; etiquette: string; onclick?: Clic; ile?: IleId; taille?: "petit" | "grand"; html?: string }) {
   return h("button", {
     type: "button", class: `a-rond${o.taille ? ` ${o.taille}` : ""}${o.ile ? " teinte" : ""}`, "aria-label": o.etiquette,
@@ -40,7 +42,7 @@ export function ruban(o: { texte: string; ile: IleId }) {
 // Bulle de Plume : ce que Plume vient de dire. Toucher la bulle le fait répéter ; le texte est facultatif
 // (l'enfant ne lit pas encore : la voix compte, le texte sert à l'adulte et à la vitrine).
 export function bullePlume(o: { texte?: string; onclick?: Clic; queue?: "gauche" | "droite" }) {
-  const b = h("button", { type: "button", class: `a-bulle queue-${o.queue ?? "gauche"}`, "aria-label": "Réécouter Plume", onclick: o.onclick },
+  const b = h("button", { type: "button", class: `a-bulle queue-${o.queue ?? "gauche"}`, "aria-label": o.texte ? `Réécouter Plume : ${o.texte}` : "Réécouter Plume", onclick: o.onclick },
     h("span", { class: "a-bulle-son", "aria-hidden": "true", html: svgIcone("sound") }),
     o.texte ? h("span", { class: "a-bulle-txt" }, o.texte) : null);
   if (!o.texte) b.classList.add("seule");
@@ -51,16 +53,20 @@ export function bullePlume(o: { texte?: string; onclick?: Clic; queue?: "gauche"
 // un essai fait seulement balancer la carte (wobble, dans ui.ts).
 export type EtatCarte = "normal" | "choisie" | "juste";
 export function carte(o: { contenu: Node | string; etiquette: string; onclick?: Clic; ile?: IleId; large?: boolean }) {
-  const c = h("button", { type: "button", class: `a-carte${o.large ? " large" : ""}`, "aria-label": o.etiquette, style: accent(o.ile), onclick: o.onclick });
-  if (typeof o.contenu === "string") c.innerHTML = o.contenu; else c.appendChild(o.contenu);
+  const c = h("button", { type: "button", class: `a-carte${o.large ? " large" : ""}`, "aria-label": o.etiquette, "aria-pressed": "false", style: accent(o.ile), onclick: o.onclick });
+  // une chaîne est affichée comme du texte (jamais interprétée comme du HTML) ; une image se passe en nœud
+  if (typeof o.contenu === "string") c.textContent = o.contenu; else c.appendChild(o.contenu);
   return c as HTMLButtonElement;
 }
 export function etatCarte(c: Element, etat: EtatCarte) {
   c.classList.toggle("choisie", etat === "choisie");
   c.classList.toggle("juste", etat === "juste");
+  c.setAttribute("aria-pressed", etat === "normal" ? "false" : "true");
 }
 
 const s = (n: number, min: number) => `max(${min}px,calc(var(--u) * ${n}))`;
+// pour une marge négative (zone de toucher agrandie, débord) : la plus grande des deux, au moins |min| px
+const sn = (n: number, min: number) => `min(${min}px,calc(var(--u) * ${n}))`;
 export const CSS_COMPOSANTS = `
 .a-ico{width:46%;height:46%;fill:none;stroke:var(--accent-fonce,var(--encre));stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
 .a-rond{width:var(--cible-bouton);height:var(--cible-bouton);flex:0 0 auto;padding:0;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;
@@ -73,11 +79,11 @@ transition:transform var(--duree-appui) var(--courbe-douce),box-shadow var(--dur
 .a-pastille{position:relative;display:inline-flex;align-items:center;gap:${s(10, 6)};min-height:${s(58, 46)};padding:0 ${s(24, 16)};border-radius:var(--rayon-pilule);cursor:pointer;
 background:linear-gradient(180deg,#FFFFFF 0%,var(--surface) 60%);border:${s(2.5, 2)} solid var(--bord);box-shadow:var(--ombre-posee);color:var(--encre);font:var(--texte-etiquette);white-space:nowrap;
 transition:transform var(--duree-appui) var(--courbe-douce)}
-.a-pastille::after{content:"";position:absolute;inset:${s(-12, -8)}}
+.a-pastille::after{content:"";position:absolute;left:${sn(-12, -8)};right:${sn(-12, -8)};top:min(-8px,calc((100% - var(--cible-min)) / 2 - 2px));bottom:min(-8px,calc((100% - var(--cible-min)) / 2 - 2px))}
 .a-pastille:active{transform:translateY(2px) scale(.97)}
-.a-pastille-img{width:${s(40, 28)};height:${s(40, 28)};border-radius:50%;overflow:hidden;flex:0 0 auto;margin-left:${s(-12, -8)};background:var(--accent-clair)}
+.a-pastille-img{width:${s(40, 28)};height:${s(40, 28)};border-radius:50%;overflow:hidden;flex:0 0 auto;margin-left:${sn(-12, -8)};background:var(--accent-clair)}
 .a-pastille-img img,.a-pastille-img svg{display:block;width:100%;height:100%;object-fit:cover}
-.a-pastille.conseillee{background:linear-gradient(180deg,#1C8C96 0%,var(--ile-port-fonce) 55%);border-color:var(--ile-port-ombre);color:var(--blanc);box-shadow:0 3px 0 rgba(13,90,96,.35)}
+.a-pastille.conseillee{background:linear-gradient(180deg,${CONSEIL.haut} 0%,var(--ile-port-fonce) 55%);border-color:var(--ile-port-ombre);color:var(--blanc);box-shadow:0 3px 0 rgba(13,90,96,.35)}
 .a-badge{position:absolute;left:50%;bottom:calc(100% + ${s(8, 6)});transform:translateX(-50%);padding:${s(3, 2)} ${s(12, 8)};border-radius:var(--rayon-pilule);background:var(--papier);
 border:${s(2, 1.5)} solid var(--bord);box-shadow:var(--ombre-posee);color:var(--ile-port-fonce);font:600 ${s(14, 12)}/1.2 var(--police-adulte);white-space:nowrap;pointer-events:none}
 .a-ruban{position:relative;display:inline-flex;isolation:isolate;margin:0 ${s(22, 14)}}
@@ -88,10 +94,10 @@ background:linear-gradient(180deg,#FFFFFF 0%,var(--surface) 55%);border:${s(2.5,
 .a-ruban-bout.d{left:calc(100% - ${s(12, 8)});clip-path:polygon(0 0,100% 0,64% 50%,100% 100%,0 100%)}
 .a-ruban-pt{width:${s(18, 12)};height:${s(18, 12)};border-radius:50%;flex:0 0 auto;background:var(--accent,var(--ile-port-vif));box-shadow:inset 0 -2px 0 rgba(0,0,0,.12)}
 .a-ruban-txt{font:800 ${s(29, 20)}/1 var(--police-titre);color:var(--encre);white-space:nowrap}
-.a-bulle{position:relative;display:inline-flex;align-items:center;gap:${s(12, 8)};max-width:${s(560, 300)};min-height:${s(58, 46)};padding:${s(10, 8)} ${s(20, 14)};
+.a-bulle{position:relative;display:inline-flex;align-items:center;gap:${s(12, 8)};max-width:${s(560, 300)};min-height:var(--cible-min);padding:${s(10, 8)} ${s(20, 14)};
 border-radius:${s(22, 16)};background:var(--papier);border:${s(2.5, 2)} solid var(--bord);box-shadow:var(--ombre-posee);color:var(--encre);text-align:left;cursor:pointer}
-.a-bulle.seule{width:${s(76, 56)};padding:0;justify-content:center}
-.a-bulle::after{content:"";position:absolute;bottom:${s(-11, -8)};width:${s(20, 14)};height:${s(20, 14)};background:var(--papier);border-style:solid;border-color:var(--bord);border-width:0 ${s(2.5, 2)} ${s(2.5, 2)} 0}
+.a-bulle.seule{width:var(--cible-min);padding:0;justify-content:center}
+.a-bulle::after{content:"";position:absolute;bottom:${sn(-11, -8)};width:${s(20, 14)};height:${s(20, 14)};background:var(--papier);border-style:solid;border-color:var(--bord);border-width:0 ${s(2.5, 2)} ${s(2.5, 2)} 0}
 .a-bulle.queue-gauche::after{left:${s(22, 14)};transform:rotate(45deg) skew(12deg,12deg)}
 .a-bulle.queue-droite::after{right:${s(22, 14)};transform:rotate(45deg) skew(12deg,12deg)}
 .a-bulle-son{width:${s(40, 30)};height:${s(40, 30)};flex:0 0 auto;display:flex;align-items:center;justify-content:center}

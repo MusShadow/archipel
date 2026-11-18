@@ -48,7 +48,7 @@ def rel(boite, x, y):
     return [round((x - boite[0]) / boite[2], 4), round((y - boite[1]) / boite[3], 4)]
 
 def personnages(cat):
-    out = cat["personnages"]
+    out = cat["personnages"] = {}  # tout est refait : une variante retirée disparaît du catalogue
     for nom, p in PERSOS.items():
         W_, H_ = p["cadre"]
         A = Atelier(W_, H_)
@@ -89,6 +89,7 @@ def personnages(cat):
         print(f"  {fichier:42} {boite}")
 
 def iles(cat):
+    cat["iles"] = {}
     for ile, disp in I.DISPOSITIONS.items():
         d = I.DESSINS[ile]
         A = Atelier(I.W, I.H)
@@ -123,6 +124,20 @@ def iles(cat):
             "pastilles": {k: list(v) for k, v in disp["pastilles"].items()}, "plume": list(disp["plume"]),
         }
 
+def nettoyer(cat, quoi):
+    """Retire les images qui ne sont plus au catalogue (sinon le service worker les garderait pour rien)."""
+    gardes = {e["fichier"] for e in cat["personnages"].values()}
+    for d in cat["iles"].values():
+        gardes |= {d["base"]["fichier"]} | {x["fichier"] for k in ("remplissages", "lieux", "animes") for x in d[k].values()}
+    for partie in ("personnages", "iles"):
+        if partie not in quoi or not (SORTIE / partie).exists():
+            continue
+        for f in sorted((SORTIE / partie).rglob("*.webp")):
+            rel = f.relative_to(SORTIE).as_posix()
+            if rel not in gardes:
+                f.unlink()
+                print(f"  retiré : {rel}")
+
 def ecrire_ts(cat):
     lignes = [
         "// Généré par scripts/illustration/fabriquer.py : ne pas modifier à la main.",
@@ -150,5 +165,6 @@ if __name__ == "__main__":
     if "iles" in quoi:
         print("Îles")
         iles(cat)
+    nettoyer(cat, quoi)
     enregistrer(cat)
     print(f"Fini en {round(time.time() - t)} s : {len(cat['personnages'])} images de personnages, {len(cat['iles'])} île(s).")

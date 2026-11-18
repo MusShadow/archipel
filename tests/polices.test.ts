@@ -40,10 +40,21 @@ test("la licence SIL Open Font accompagne chaque famille", () => {
   }
 });
 
-test("le service worker garde les polices latines dès l'installation", () => {
+test("le service worker garde les polices dans leur propre cache, à adresse à empreinte", () => {
   const sw = dist("sw.js");
-  const latines = readdirSync(join(root, "public/polices")).filter((f) => /-latin-\d+-normal\.woff2$/.test(f));
+  const html = dist("index.html");
+  const toutes = readdirSync(join(root, "public/polices")).filter((f) => f.endsWith(".woff2"));
+  const latines = toutes.filter((f) => /-latin-\d+-normal\.woff2$/.test(f));
   expect(latines.length).toBe(8);
-  for (const f of latines) expect(sw).toContain(`"./polices/${f}"`);
-  expect(sw).toContain("cache.addAll([...CORE, ...POLICES])");
+  expect(toutes.length).toBe(16);
+  const liste = (nom: string) => JSON.parse(new RegExp(`const ${nom} = (\\[[^\\]]*\\])`).exec(sw)![1]) as string[];
+  const polices = liste("POLICES"), policesToutes = liste("POLICES_TOUTES");
+  // l'alphabet latin dès l'installation, toutes les variantes gardées d'une version à l'autre
+  expect(polices.map((u) => u.replace(/^\.\/polices\//, "").replace(/\?v=[0-9a-f]{10}$/, "")).sort()).toEqual(latines.sort());
+  expect(policesToutes.length).toBe(16);
+  expect(sw).toContain('const POLICES_CACHE = "archipel2-polices"');
+  expect(sw).toContain("keepAll(POLICES_CACHE, POLICES)");
+  // la page appelle exactement les adresses que garde le service worker
+  for (const u of policesToutes) expect(html).toContain(u.replace(/^\.\//, ""));
+  expect(html).not.toMatch(/polices\/[a-z0-9-]+\.woff2[)"]/);
 });

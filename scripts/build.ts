@@ -29,7 +29,14 @@ if (!result.success) {
   process.exit(1);
 }
 const js = (await result.outputs[0].text()).replace(/<\/script/gi, "<\\/script");
-const template = readFileSync(join(root, "src/index.html"), "utf8");
+// Polices embarquées : l'adresse de chaque fichier porte son empreinte (?v=…), dans la page et dans le service worker,
+// qui les garde d'une version à l'autre (l'alphabet latin dès l'installation, le latin étendu au premier usage).
+const policesDir = join(root, "public/polices");
+const policesToutes = readdirSync(policesDir).filter((f) => f.endsWith(".woff2")).sort();
+const empreintePolice: Record<string, string> = Object.fromEntries(policesToutes.map((f) => [f, createHash("sha256").update(readFileSync(join(policesDir, f))).digest("hex").slice(0, 10)]));
+const urlPolice = (f: string) => `polices/${f}?v=${empreintePolice[f]}`;
+const template = readFileSync(join(root, "src/index.html"), "utf8")
+  .replace(/polices\/([a-z0-9-]+\.woff2)/g, (m, f: string) => (empreintePolice[f] ? urlPolice(f) : m));
 const html = template.replace("/*__APP__*/", () => js);
 mkdirSync(join(root, "dist"), { recursive: true });
 writeFileSync(join(root, "dist/index.html"), html);
@@ -37,11 +44,11 @@ writeFileSync(join(root, "dist/index.html"), html);
 rmSync(join(root, "dist/voix"), { recursive: true, force: true });
 cpSync(join(root, "public"), join(root, "dist"), { recursive: true });
 const version = createHash("sha256").update(html).digest("hex").slice(0, 10);
-// Polices embarquées : l'alphabet latin est gardé dès l'installation, les variantes « latin-ext » au premier usage.
-const polices = readdirSync(join(root, "public/polices")).filter((f) => /-latin-\d+-normal\.woff2$/.test(f)).sort();
+const polices = policesToutes.filter((f) => /-latin-\d+-normal\.woff2$/.test(f));
 const sw = readFileSync(join(root, "src/sw.js"), "utf8").replaceAll("__VERSION__", version)
   .replace("__VOIX_FILES__", JSON.stringify(voixFiles.map((f) => `./voix/${f}`)))
-  .replace("__POLICES__", JSON.stringify(polices.map((f) => `./polices/${f}`)))
+  .replace("__POLICES__", JSON.stringify(polices.map((f) => `./${urlPolice(f)}`)))
+  .replace("__POLICES_TOUTES__", JSON.stringify(policesToutes.map((f) => `./${urlPolice(f)}`)))
   .replace("__IMAGES_FILES__", JSON.stringify(Object.entries(images).map(([f, v]) => `./${f}?v=${v}`)));
 writeFileSync(join(root, "dist/sw.js"), sw);
 const voixBytes = voixFiles.reduce((a, f) => a + readFileSync(join(voixDir, f)).byteLength, 0);

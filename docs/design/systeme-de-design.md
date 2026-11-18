@@ -8,7 +8,7 @@ La direction artistique qui justifie ces choix est dans `identite-visuelle.md`.
 
 `--u` vaut 1 px sur l'écran de référence, 1180 × 820 (iPad Air en paysage) : `min(100vw / 1180, 100vh / 820)`. Sur l'iPad Pro 11, 1 u ≈ 1,01 px.
 
-Les tailles s'écrivent en u avec un minimum en px pour les petits écrans : `max(16px, calc(var(--u) * 22))`.
+Les tailles s'écrivent en u avec un minimum en px pour les petits écrans : `max(16px, calc(var(--u) * 22))`. En portrait, la référence devient 860 × 1180 : `min(100vw / 860, 100vh / 1180)`.
 
 ## Couleurs
 
@@ -79,7 +79,7 @@ Chaque paire texte / fond utilisée par les composants atteint **au moins 4,5 po
 
 - `public/polices/` contient l'alphabet latin et le latin étendu, en woff2, avec les licences SIL OFL.
 - `src/index.html` les déclare (`@font-face` avec `unicode-range`) et précharge les trois plus utilisées.
-- Le service worker garde les fichiers latins dès l'installation ; les variantes latin-ext ne se chargent que si un prénom en a besoin.
+- Chaque adresse de police porte son empreinte (`?v=…`). Le service worker garde les polices dans leur cache, `archipel2-polices`, d'une version à l'autre : l'alphabet latin dès l'installation, les variantes latin-ext au premier usage (seulement si un prénom en a besoin).
 
 ## Espacements, rayons, ombres
 
@@ -107,11 +107,11 @@ Chaque paire texte / fond utilisée par les composants atteint **au moins 4,5 po
 
 | Jeton | Valeur | Usage |
 |---|---|---|
-| `--cible-min` | 80 u, au moins 58 px | minimum de tout ce qui se touche (≈ 1,55 cm sur l'iPad) |
+| `--cible-min` | 84 u, au moins 58 px | minimum de tout ce que l'enfant touche (≈ 1,6 cm sur l'iPad, 1,5 cm en portrait) |
 | `--cible-bouton` | 86 u | boutons ronds |
-| `--cible-petit` | 56 u, au moins 44 px | actions secondaires seulement, jamais dans un exercice |
+| `--cible-petit` | 56 u, au moins 44 px | actions de l'adulte seulement (≈ 1,1 cm) : jamais pour l'enfant |
 
-Les pastilles ont une zone de toucher agrandie (12 u autour).
+Les pastilles gardent leur dessin (58 u de haut) mais touchent plus large : 12 u de chaque côté, et au moins la hauteur d'une cible. Le test de la vitrine mesure la zone réellement touchée de chaque cible (au moins 78 px, soit 1,5 cm), en paysage et en portrait.
 
 ## Mouvement
 
@@ -147,10 +147,10 @@ Chacun accepte une île (`ile`), qui pose les variables `--accent`, `--accent-fo
 | Composant | Fonction | Règles |
 |---|---|---|
 | Bouton rond | `boutonRond({ icone, etiquette, onclick, ile?, taille? })` | une icône, jamais de texte ; `etiquette` est lue par VoiceOver ; tailles normal, `petit`, `grand` ; `ile` teinte le fond et l'icône |
-| Pastille d'activité | `pastille({ titre, ile, conseillee?, image? })` | l'étiquette d'un lieu sur l'île ; « conseillée » : la couleur de Plume et le badge « Plume conseille » (le badge est pour l'adulte, Plume le dit) |
+| Pastille d'activité | `pastille({ titre, ile, conseillee?, image? })` | l'étiquette d'un lieu sur l'île ; « conseillée » : la couleur de Plume (dégradé de `#16808A` à `#12737B`, blanc à 4,6 pour 1 au moins) et le badge « Plume conseille » (le badge est pour l'adulte, Plume le dit) |
 | Ruban de titre | `ruban({ texte, ile })` | le nom de l'île ou de l'activité, la pastille de couleur de l'île, deux bouts repliés |
 | Bulle de Plume | `bullePlume({ texte?, onclick, queue? })` | ce que Plume vient de dire ; la toucher le fait répéter ; sans texte, une simple bulle à haut-parleur |
-| Carte de réponse | `carte({ contenu, etiquette, onclick, ile?, large? })` et `etatCarte(c, "juste" \| "choisie" \| "normal")` | une image ou un mot à toucher ; un essai se signale avec `wobble(c)` |
+| Carte de réponse | `carte({ contenu, etiquette, onclick, ile?, large? })` et `etatCarte(c, "juste" \| "choisie" \| "normal")` | une image (nœud) ou un mot (texte, jamais interprété comme du HTML) à toucher ; l'état est exposé aux lecteurs d'écran (`aria-pressed`) ; un essai se signale avec `wobble(c)` |
 
 ## Îles
 
@@ -195,12 +195,12 @@ Le modèle est dans `src/iles.ts`.
   - `src/illustrations.ts` : boîte de chaque image dans son cadre, ancre (point au sol ou centre), pivot des ailes ;
   - `src/imagier.ts` : l'image de chaque emoji.
 - **Adresses** : `urlImage(chemin)` (`src/images.ts`) ajoute l'empreinte du fichier (`?v=…`), calculée par `scripts/build.ts`.
-- **Hors ligne** : le service worker garde toutes les images dans le cache `archipel2-images`, d'une version à l'autre, et ne retélécharge que celles qui changent.
+- **Hors ligne** : le service worker garde toutes les images dans le cache `archipel2-images`, d'une version à l'autre, et ne retélécharge que celles qui changent. À l'installation, il garde d'abord l'appli et les polices, puis la voix, puis les images, six fichiers à la fois.
 
 ## Accessibilité
 
 - Contraste d'au moins 4,5 pour 1 pour tout texte (tests).
-- Cibles d'au moins 1,5 cm sur l'iPad.
+- Cibles d'au moins 1,5 cm sur l'iPad, mesurées au toucher par le test de la vitrine ; la taille « petit » est réservée à l'adulte.
 - Chaque bouton a un nom lu par VoiceOver (`aria-label`) ; les images décoratives ont un texte vide.
 - Aucune information par la couleur seule : la couleur d'une île s'accompagne de son nom, une bonne réponse d'un son et de la voix de Plume.
 - « Réduire les animations » respecté partout.

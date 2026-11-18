@@ -1,7 +1,8 @@
 // Écrans d'île d'Archipel 2 : un modèle qui peut grandir (voir docs/design/systeme-de-design.md, « Îles »).
 // Une île a un ou plusieurs quartiers (un écran chacun). Un quartier a un décor de base et six emplacements ; chaque
 // lieu (une activité, ou un écran à part comme le coin calme) occupe un emplacement, avec son étiquette (pastille).
-// Ajouter une activité, c'est ajouter une ligne ici et dessiner son lieu : l'île n'est jamais redessinée.
+// Ajouter une activité, c'est ajouter une ligne ici (île pas encore dessinée) ou dans l'atelier (île dessinée, voir
+// scripts/illustration/iles.py) et dessiner son lieu : l'île n'est jamais redessinée.
 // Au-delà de six lieux, un deuxième quartier ; ensuite, des activités proches peuvent partager un lieu ; enfin, un
 // thème qui grandit devient une nouvelle île. Les îles dessinées (atelier d'illustration) apportent leur décor.
 import type { IleId } from "./design/jetons";
@@ -41,19 +42,24 @@ function quartierGenerique(ids: string[]): Quartier {
   return { emplacements: GENERIQUE.map((e) => ({ ...e })), lieux: ids.map((id, i) => ({ ids: [id], emplacement: GENERIQUE[i].id, pastille: pastilleSous(GENERIQUE[i]) })) };
 }
 
-export const ILES_V2: Record<IleId, Ile> = {
-  nombres: { id: "nombres", nom: "Île des Nombres", hote: "basile", quartiers: [quartierDessine(DECORS_ILES.nombres)] },
-  mots: { id: "mots", nom: "Île des Mots", hote: "mona", quartiers: [quartierGenerique(["syllabes", "chants", "lis", "histoires"])] },
-  port: { id: "port", nom: "Port des Voyages", hote: "plume", quartiers: [quartierGenerique(["drapeau", "atelierdrapeaux", "monDrapeau"])] },
-  enigmes: { id: "enigmes", nom: "Île des Énigmes", hote: "rico", quartiers: [quartierGenerique(["formes", "bip", "motifs"])] },
-  decouvertes: { id: "decouvertes", nom: "Île des Découvertes", hote: "octave", quartiers: [quartierGenerique(["flotte", "goutte", "volcan", "tri", "dechets"])] },
-  atelier: { id: "atelier", nom: "Île de l'Atelier", hote: "kiki", quartiers: [quartierGenerique(["dessin", "miroir"])] },
-  coeur: { id: "coeur", nom: "Île du Cœur", hote: "pico", quartiers: [quartierGenerique(["theatre", "calme"])] },
-};
+// Les îles sont construites à la première demande (et non au chargement de l'appli) : une erreur de données ne
+// peut pas empêcher l'appli de démarrer, et les tests l'attrapent avant.
+let iles: Record<IleId, Ile> | null = null;
+export function ilesV2(): Record<IleId, Ile> {
+  return iles ??= {
+    nombres: { id: "nombres", nom: "Île des Nombres", hote: "basile", quartiers: [quartierDessine(DECORS_ILES.nombres)] },
+    mots: { id: "mots", nom: "Île des Mots", hote: "mona", quartiers: [quartierGenerique(["syllabes", "chants", "lis", "histoires"])] },
+    port: { id: "port", nom: "Port des Voyages", hote: "plume", quartiers: [quartierGenerique(["drapeau", "atelierdrapeaux", "monDrapeau"])] },
+    enigmes: { id: "enigmes", nom: "Île des Énigmes", hote: "rico", quartiers: [quartierGenerique(["formes", "bip", "motifs"])] },
+    decouvertes: { id: "decouvertes", nom: "Île des Découvertes", hote: "octave", quartiers: [quartierGenerique(["flotte", "goutte", "volcan", "tri", "dechets"])] },
+    atelier: { id: "atelier", nom: "Île de l'Atelier", hote: "kiki", quartiers: [quartierGenerique(["dessin", "miroir"])] },
+    coeur: { id: "coeur", nom: "Île du Cœur", hote: "pico", quartiers: [quartierGenerique(["theatre", "calme"])] },
+  };
+}
 
 // Où se trouve un lieu : île, quartier, lieu.
 export function lieuDe(id: string): { ile: Ile; quartier: number; lieu: Lieu } | null {
-  for (const ile of Object.values(ILES_V2)) {
+  for (const ile of Object.values(ilesV2())) {
     for (const [q, quartier] of ile.quartiers.entries()) {
       const lieu = quartier.lieux.find((l) => l.ids.includes(id));
       if (lieu) return { ile, quartier: q, lieu };

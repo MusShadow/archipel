@@ -3,7 +3,7 @@ import { expect, test } from "bun:test";
 import { DOMAINS } from "../src/core";
 import { ISLANDS } from "../src/art_static";
 import { CSS_COMPOSANTS } from "../src/design/composants";
-import { CIBLES, ILES, MOUVEMENTS, NEUTRES, ORDRE_ILES, POLICES, TEXTES, contraste, pairesDeTexte, variablesCSS } from "../src/design/jetons";
+import { CIBLES, ILES, MOUVEMENTS, NEUTRES, ORDRE_ILES, POLICES, RETOURS, TEXTES, contraste, pairesDeTexte, variablesCSS } from "../src/design/jetons";
 
 test("chaque texte atteint un contraste d'au moins 4,5 pour 1 sur son fond", () => {
   const faibles = pairesDeTexte().filter((p) => contraste(p.texte, p.fond) < 4.5).map((p) => `${p.nom} : ${contraste(p.texte, p.fond).toFixed(2)}`);
@@ -46,7 +46,10 @@ test("chaque police a son rôle : Andika pour lire, Baloo 2 pour les titres, Int
   }
 });
 
-test("les mouvements d'interface durent de 120 à 400 ms ; seuls les mouvements d'ambiance sont plus lents", () => {
+// L'appui (120 ms) est l'écho immédiat du doigt, comme dans la v1 ; les animations de l'interface durent de 200 à 400 ms.
+test("les mouvements d'interface durent de 200 à 400 ms (120 ms pour l'écho d'un appui) ; seuls ceux d'ambiance sont plus lents", () => {
+  expect(MOUVEMENTS.appui).toBe(120);
+  for (const k of ["court", "moyen", "long", "ecran"] as const) expect(MOUVEMENTS[k]).toBeGreaterThanOrEqual(200);
   for (const k of ["appui", "court", "moyen", "long", "ecran"] as const) {
     expect(MOUVEMENTS[k]).toBeGreaterThanOrEqual(120);
     expect(MOUVEMENTS[k]).toBeLessThanOrEqual(400);
@@ -55,8 +58,10 @@ test("les mouvements d'interface durent de 120 à 400 ms ; seuls les mouvements 
   expect(MOUVEMENTS.battementPlume).toBeGreaterThanOrEqual(1000);
 });
 
-test("les cibles tactiles visent 1,5 cm sur l'iPad et jamais moins de 44 px", () => {
-  expect(CIBLES.min).toBe("max(58px, calc(var(--u) * 80))");
+test("les cibles tactiles visent 1,5 cm sur l'iPad, en paysage comme en portrait, et jamais moins de 44 px", () => {
+  expect(CIBLES.min).toBe("max(58px, calc(var(--u) * 84))");
+  // 1,5 cm à 132 px par pouce = 78 px ; en portrait sur l'iPad Pro 11, 1 u = 834 / 860 px
+  expect(84 * (834 / 860)).toBeGreaterThan(78);
   for (const c of Object.values(CIBLES)) expect(Number(/max\((\d+)px/.exec(c)![1])).toBeGreaterThanOrEqual(44);
 });
 
@@ -67,9 +72,25 @@ test("les composants n'utilisent que des variables définies par le système", (
   expect(utilisees.length).toBeGreaterThan(20);
   const inconnues = [...new Set(utilisees)].filter((v) => !definies.has(v) && !locales.has(v));
   expect(inconnues).toEqual([]);
-  // jamais de rouge dans les composants (les erreurs ne sont pas signalées en rouge)
-  expect(CSS_COMPOSANTS).not.toMatch(/#(E8504A|B42318|FF0000|D92D20)/i);
+  // jamais de rouge dans les composants (les erreurs ne sont pas signalées en rouge) : aucune couleur écrite dans leur
+  // style ni dans les retours n'a la teinte d'un rouge (345° à 15°) bien saturé
+  const couleurs = [...CSS_COMPOSANTS.matchAll(/#[0-9A-Fa-f]{6}\b/g)].map((m) => m[0]).concat(Object.values(RETOURS).filter((c) => c.startsWith("#")));
+  expect(couleurs.length).toBeGreaterThan(5);
+  expect(couleurs.filter(estRouge)).toEqual([]);
+  expect(estRouge("#E8504A")).toBe(true);
+  expect(estRouge("#FF0000")).toBe(true);
+  expect(estRouge(ILES.coeur.vif)).toBe(false);
 });
+
+function estRouge(hex: string): boolean {
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+  const max = Math.max(r, g, b), min = Math.min(r, g, b), l = (max + min) / 2, d = max - min;
+  if (d === 0) return false;
+  const sat = d / (1 - Math.abs(2 * l - 1));
+  let teinte = max === r ? ((g - b) / d) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+  teinte = (teinte * 60 + 360) % 360;
+  return (teinte >= 345 || teinte <= 15) && sat > 0.45 && l > 0.2 && l < 0.8;
+}
 
 test("chaque île donne ses quatre variables CSS", () => {
   const v = variablesCSS();

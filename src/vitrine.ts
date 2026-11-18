@@ -4,7 +4,7 @@
 import { ACTIVITY_BY_ID } from "./activities/index";
 import { boutonRond, bullePlume, carte, etatCarte, pastille, ruban } from "./design/composants";
 import { ILES, MOUVEMENTS, NEUTRES, ORDRE_ILES, TEXTES, contraste, fontTexte } from "./design/jetons";
-import { CADRE, ILES_V2, echelle, type Ile } from "./iles";
+import { CADRE, echelle, ilesV2, versEcran, type Ile, type Point } from "./iles";
 import { urlImage } from "./images";
 import { IMAGIER, sansVariante } from "./imagier";
 import { READ_WORDS, SOUND_WORDS } from "./lexique";
@@ -32,11 +32,15 @@ export function plumeAnime(echelle: number): HTMLElement {
   return cadre;
 }
 
-// Un écran d'île : le dessin couvre l'écran (comme object-fit: cover), les étiquettes suivent leurs lieux.
+// Un écran d'île : le dessin couvre l'écran (rognage limité hors de l'iPad en paysage), les étiquettes et la bulle
+// sont posées par-dessus, à leur taille réelle (jamais réduites avec le dessin), au point du lieu qu'elles nomment.
 export function ecranIle(ile: Ile, conseil?: string): HTMLElement {
   const q = ile.quartiers[0];
   const d = q.decor;
   const cadre = h("div", { class: "v-cadre", style: `width:${CADRE.l}px;height:${CADRE.h}px` });
+  const dessus = h("div", { class: "v-dessus" });
+  const ancres: { el: HTMLElement; p: Point }[] = [];
+  const ancrer = (el: HTMLElement, p: Point) => { const a = h("div", { class: "v-ancre" }, el); dessus.appendChild(a); ancres.push({ el: a, p }); };
   if (d) {
     cadre.appendChild(poser(img(d.base, "", `${ile.nom} : décor`), d.base.boite));
     for (const r of Object.values(d.remplissages)) cadre.appendChild(poser(img(r), r.boite));
@@ -51,25 +55,30 @@ export function ecranIle(ile: Ile, conseil?: string): HTMLElement {
     plume.style.cssText = `position:absolute;left:${px - ax * f}px;top:${py - ay * f}px;width:${360 * f}px;height:${300 * f}px`;
     cadre.appendChild(plume);
     const bulle = bullePlume({ queue: "gauche", onclick: () => wobble(bulle) });
-    bulle.style.cssText = "position:absolute;left:820px;top:236px";
-    cadre.appendChild(bulle);
+    ancrer(bulle, { x: px + 132, y: py - 64 });
   }
   for (const l of q.lieux) {
     const id = l.ids[0];
     const titre = ACTIVITY_BY_ID[id]?.title ?? id;
     const p = pastille({ titre, ile: ile.id, conseillee: id === conseil, onclick: () => wobble(p) });
-    cadre.appendChild(h("div", { class: "v-ancre", style: `left:${l.pastille.x}px;top:${l.pastille.y}px` }, p));
+    ancrer(p, l.pastille);
   }
-  const ecran = h("section", { class: "v-ile", "aria-label": ile.nom }, cadre,
+  const ecran = h("section", { class: "v-ile", "aria-label": ile.nom }, cadre, dessus,
     h("div", { class: "v-haut" },
       boutonRond({ icone: "map", etiquette: "Retour à la carte" }),
       ruban({ texte: ile.nom, ile: ile.id }),
       boutonRond({ icone: "ear", etiquette: "Écouter la consigne" })));
   const ajuster = () => {
-    const k = echelle({ l: ecran.clientWidth, h: ecran.clientHeight });
+    const taille = { l: ecran.clientWidth, h: ecran.clientHeight };
+    const k = echelle(taille);
     cadre.style.transform = `translate(-50%, -50%) scale(${k})`;
+    for (const { el, p } of ancres) {
+      const e = versEcran(p, taille);
+      el.style.left = `${e.x}px`;
+      el.style.top = `${e.y}px`;
+    }
     // hors du dessin, le ciel et la mer continuent de part et d'autre de l'horizon
-    ecran.style.setProperty("--horizon", `${(ecran.clientHeight - CADRE.h * k) / 2 + HORIZON * k}px`);
+    ecran.style.setProperty("--horizon", `${(taille.h - CADRE.h * k) / 2 + HORIZON * k}px`);
   };
   if (typeof ResizeObserver !== "undefined") new ResizeObserver(ajuster).observe(ecran);
   requestAnimationFrame(ajuster);
@@ -84,13 +93,13 @@ function couleurs() {
   const tons = ["clair", "vif", "fonce", "ombre"] as const;
   const noms = { clair: "clair", vif: "vif", fonce: "foncé", ombre: "ombre" };
   const lignes = ORDRE_ILES.map((id) => h("div", { class: "v-ligne" },
-    h("div", { class: "v-ligne-nom" }, ILES_V2[id].nom),
+    h("div", { class: "v-ligne-nom" }, ilesV2()[id].nom),
     ...tons.map((t) => {
       const c = ILES[id][t];
       const blanc = contraste("#FFFFFF", c), encre = contraste(NEUTRES.encre, c);
       const texte = blanc >= encre ? "#FFFFFF" : NEUTRES.encre;
       return h("div", { class: "v-nuance", style: `background:${c};color:${texte}` },
-        h("b", null, noms[t]), h("span", null, c), h("span", null, `Aa ${Math.max(blanc, encre).toFixed(1).replace(".", ",")}:1`));
+        h("b", null, noms[t]), h("span", null, c), h("span", null, t === "vif" ? "repère, sans texte" : `Aa ${Math.max(blanc, encre).toFixed(1).replace(".", ",")}:1`));
     })));
   const neutres = h("div", { class: "v-ligne" }, h("div", { class: "v-ligne-nom" }, "Neutres"),
     ...(["creme", "papier", "surface", "sable", "bord", "encreDouce", "encre"] as const).map((k) => {
@@ -98,7 +107,7 @@ function couleurs() {
       const sombre = contraste("#FFFFFF", c) > 4.5;
       return h("div", { class: "v-nuance", style: `background:${c};color:${sombre ? "#FFFFFF" : NEUTRES.encre}` }, h("b", null, k), h("span", null, c));
     }));
-  return section("Couleurs", "Les sept couleurs d'îles, celles que votre fils connaît, en quatre tons : clair pour les fonds, vif pour reconnaître l'île, foncé pour un texte ou un fond de texte blanc, ombre pour les bords. Chaque texte atteint au moins 4,5 pour 1 (le chiffre indique le contraste du texte posé sur la couleur).", ...lignes, neutres);
+  return section("Couleurs", "Les sept couleurs d'îles, celles que votre enfant connaît, en quatre tons : clair pour les fonds, vif pour reconnaître l'île, foncé pour un texte ou un fond de texte blanc, ombre pour les bords. Chaque texte de l'appli atteint au moins 4,5 pour 1 ; le vif sert de repère et ne porte jamais de texte. Le chiffre indique le contraste du meilleur texte posé sur la couleur.", ...lignes, neutres);
 }
 
 function textes() {
@@ -114,20 +123,20 @@ function textes() {
 
 function composants() {
   const rangee = (...e: HTMLElement[]) => h("div", { class: "v-rangee" }, ...e);
-  const cartes = (["red-apple", "duck", "cat-face"] as const).map((nom, i) => {
+  const cartes = ([["red-apple", "la pomme"], ["duck", "le canard"], ["cat-face", "le chat"]] as const).map(([nom, fr], i) => {
     const im = Object.values(IMAGIER).find((x) => x.fichier === `imagier/${nom}.webp`)!;
     const c = carte({
-      contenu: h("img", { src: urlImage(im.fichier), alt: "", draggable: "false" }), etiquette: im.nom, ile: "nombres",
+      contenu: h("img", { src: urlImage(im.fichier), alt: "", draggable: "false" }), etiquette: fr, ile: "nombres",
       onclick: () => { if (i === 0) etatCarte(c, "juste"); else if (i === 1) wobble(c); else etatCarte(c, c.classList.contains("choisie") ? "normal" : "choisie"); },
     });
     return c;
   });
   return section("Composants", "Dans la finition album : papier crème, bord sable, ombre posée, lumière d'en haut à gauche. Touchez-les : la pomme est la bonne réponse (anneau vert), le canard un essai (il balance, jamais de rouge), le chat se choisit.",
     rangee(boutonRond({ icone: "home", etiquette: "Maison" }), boutonRond({ icone: "ear", etiquette: "Écouter" }), boutonRond({ icone: "map", etiquette: "Carte", taille: "grand" }),
-      boutonRond({ icone: "book", etiquette: "Carnet", ile: "mots" }), boutonRond({ icone: "leaf", etiquette: "Coin calme", ile: "decouvertes", taille: "petit" })),
+      boutonRond({ icone: "book", etiquette: "Carnet", ile: "mots" }), boutonRond({ icone: "leaf", etiquette: "Coin calme", ile: "decouvertes" })),
     rangee(pastille({ titre: "Le marché de Basile", ile: "nombres" }), pastille({ titre: "Les nénuphars", ile: "nombres", conseillee: true })),
-    rangee(...ORDRE_ILES.slice(0, 4).map((id) => ruban({ texte: ILES_V2[id].nom, ile: id }))),
-    rangee(...ORDRE_ILES.slice(4).map((id) => ruban({ texte: ILES_V2[id].nom, ile: id }))),
+    rangee(...ORDRE_ILES.slice(0, 4).map((id) => ruban({ texte: ilesV2()[id].nom, ile: id }))),
+    rangee(...ORDRE_ILES.slice(4).map((id) => ruban({ texte: ilesV2()[id].nom, ile: id }))),
     rangee(bullePlume({}), bullePlume({ texte: "Bravo, tu as trouvé le nénuphar numéro 3 !", queue: "gauche" })),
     rangee(...cartes));
 }
@@ -171,7 +180,8 @@ export const VITRINE_CSS = `
 .v-ile{position:relative;width:100%;height:100vh;height:100dvh;overflow:hidden;background:linear-gradient(to bottom,#BBE9EF 0,#E1F0E8 var(--horizon,30%),#8FD7DF var(--horizon,30%),#32A6B5 100%)}
 .v-cadre{position:absolute;left:50%;top:50%;transform-origin:center}
 .v-cadre img{display:block;user-select:none;-webkit-user-select:none;pointer-events:none}
-.v-ancre{position:absolute;transform:translate(-50%,-50%)}
+.v-dessus{position:absolute;inset:0;pointer-events:none}
+.v-ancre{position:absolute;transform:translate(-50%,-50%);pointer-events:auto}
 .v-haut{position:absolute;left:0;right:0;top:0;display:flex;align-items:center;justify-content:space-between;padding:var(--esp-5) var(--esp-5) 0}
 .v-plume img{position:absolute}
 .v-aile{animation:v-battement var(--duree-battement-plume) var(--courbe-calme) infinite alternate}
@@ -207,10 +217,10 @@ export function pageVitrine(): HTMLElement {
   if (!document.getElementById("vitrine-css")) document.head.appendChild(h("style", { id: "vitrine-css" }, VITRINE_CSS));
   const retour = h("button", { type: "button", class: "pbtn", onclick: () => { location.hash = ""; location.reload(); } }, "Revenir à l'appli");
   const page = h("div", { class: "screen v-page" },
-    ecranIle(ILES_V2.nombres, "nenuphars"),
+    ecranIle(ilesV2().nombres, "nenuphars"),
     h("section", { class: "v-section" },
       h("h2", null, "Vitrine d'Archipel 2"),
-      h("p", { class: "v-texte" }, "Cette page cachée montre les fondations de la nouvelle version en taille réelle : l'île des Nombres telle qu'elle sera au pilote (au-dessus), puis les couleurs, les textes, les composants, les personnages et l'imagier. Rien n'est enregistré ; l'appli de votre fils ne change pas.")),
+      h("p", { class: "v-texte" }, "Cette page cachée montre les fondations de la nouvelle version en taille réelle : l'île des Nombres telle qu'elle sera au pilote (au-dessus), puis les couleurs, les textes, les composants, les personnages et l'imagier. Rien n'est enregistré ; l'appli de votre enfant ne change pas.")),
     couleurs(), textes(), composants(), personnages(), imagier(), mouvements(),
     h("div", { class: "v-fin" }, retour));
   return page;

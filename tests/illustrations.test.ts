@@ -1,7 +1,7 @@
 // Atelier d'illustration : chaque image du catalogue existe, au bon format et à la bonne taille, et le service
 // worker la garde hors ligne avec son empreinte.
 import { expect, test } from "bun:test";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { DECORS_ILES, PERSONNAGES, type ImageCadree } from "../src/illustrations";
 
@@ -32,6 +32,14 @@ test("chaque image du catalogue existe en WebP, rendue à l'échelle 2 de sa bo�
     expect(Math.abs(h - im.boite[3] * 2)).toBeLessThanOrEqual(1);
     if (im.ancre) for (const v of im.ancre) { expect(v).toBeGreaterThanOrEqual(0); expect(v).toBeLessThanOrEqual(1); }
   }
+});
+
+test("aucune image orpheline dans public/illustrations (le service worker garderait tout)", () => {
+  const catalogue = new Set(toutes().map((im) => im.fichier));
+  const fichiers = (readdirSync(join(root, "public/illustrations"), { recursive: true }) as string[])
+    .filter((f) => f.endsWith(".webp")).map((f) => f.split("\\").join("/"));
+  expect(fichiers.filter((f) => !catalogue.has(f))).toEqual([]);
+  expect(fichiers.length).toBe(catalogue.size);
 });
 
 test("le catalogue de l'appli est celui de l'atelier (src/illustrations.ts suit catalogue.json)", () => {

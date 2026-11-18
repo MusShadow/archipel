@@ -249,7 +249,7 @@ embarquées, gardées hors ligne par le service worker).
 | `scripts/illustration/` | Atelier d'illustration : moteur, personnages, décors, îles, imagier |
 | `public/illustrations/`, `public/imagier/`, `public/polices/` | Images et polices embarquées (licences jointes) |
 
-Ajouter une activité : créer un module qui implémente `ActivityModule` (générer, afficher, indices, gommette, astuce parent), déclarer ses compétences dans `core.ts`, puis l'associer à son île dans `src/activities/index.ts`.
+Ajouter une activité : créer un module qui implémente `ActivityModule` (générer, afficher, indices, gommette, astuce parent), déclarer ses compétences dans `core.ts`, l'associer à son île dans `src/activities/index.ts`, puis lui donner son lieu sur l'île : dans `src/iles.ts`, ou dans l'atelier d'illustration si l'île est déjà dessinée (voir `scripts/illustration/LISEZMOI.md`). Les tests vérifient que chaque activité a son lieu.
 
 ## Publication
 

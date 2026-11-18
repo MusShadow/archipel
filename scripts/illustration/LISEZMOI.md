@@ -23,10 +23,15 @@ La direction artistique (lumière, matières, couleurs, mouvement) est décrite 
 Prérequis (développement seulement, rien n'est ajouté à l'appli) : Python 3.11 ou plus, puis
 
 ```sh
-pip install numpy opencv-python-headless pillow playwright
+pip install "numpy==2.5.3" "opencv-python-headless==5.0.0.*" "pillow==12.3.0" playwright
 ```
 
-et Google Chrome (ou `CHROME=/chemin/vers/chrome`) pour lire les SVG de l'imagier.
+et Google Chrome (ou `CHROME=/chemin/vers/chrome`) pour lire les SVG de l'imagier. Pillow doit lire le woff2
+(FreeType avec Brotli, le cas des roues officielles).
+
+« Octet pour octet » vaut à versions égales : les images du dépôt ont été rendues avec numpy 2.5.3, OpenCV 5.0.0,
+Pillow 12.3.0 (FreeType 2.14.3) et Chrome 153 pour l'imagier. Avec d'autres versions, le rendu reste le même à l'œil,
+mais quelques octets peuvent changer.
 
 ```sh
 python3 scripts/illustration/fabriquer.py              # personnages et îles (environ 1 minute)
@@ -48,15 +53,18 @@ Tout est rendu à l'échelle 2 (écran Retina). Les boîtes du catalogue sont en
 
 ## Ajouter une activité sur une île
 
-1. Dans `src/iles.ts`, ajouter l'activité dans un emplacement libre (ou laisser `placer()` la poser) ; les tests vérifient qu'elle a son lieu.
-2. Dans `iles.py`, dessiner son lieu (`lieu` de l'île) et l'affecter au même emplacement.
-3. Relancer `fabriquer.py iles` : seuls le nouveau lieu et les remplissages changent ; le décor de base ne bouge pas.
+- **Île déjà dessinée** (aujourd'hui : les Nombres). Ses lieux viennent du catalogue de l'atelier.
+  1. Dans `iles.py`, dessiner le lieu (fonction `lieu` de l'île), l'affecter à un emplacement libre (`lieux`) et placer son étiquette (`pastilles`).
+  2. Relancer `fabriquer.py iles` : le nouveau lieu est rendu, le remplissage de l'emplacement disparaît, le décor de base ne bouge pas.
+
+  `src/iles.ts` reprend tout du catalogue, et les tests vérifient que l'activité a son lieu.
+- **Île pas encore dessinée.** Ajouter l'activité à la liste de son quartier dans `src/iles.ts` (ou laisser `placer()` la poser) ; son lieu sera dessiné avec l'île.
 
 Au-delà de six lieux, l'île passe en quartiers : un deuxième écran, avec ses propres six emplacements.
 
 ## Hors ligne et mises à jour
 
-`scripts/build.ts` calcule une empreinte pour chaque image et l'ajoute à son adresse (`?v=…`). Le service worker garde les images dans le cache `archipel2-images`, d'une version à l'autre : seule une image qui change est téléchargée à nouveau.
+`scripts/build.ts` calcule une empreinte pour chaque image et l'ajoute à son adresse (`?v=…`). Le service worker garde les images dans le cache `archipel2-images`, d'une version à l'autre : seule une image qui change est téléchargée à nouveau. Chaque image de l'imagier tire sa texture d'une graine faite de son nom : ajouter un emoji ne change aucune autre image. `fabriquer.py` retire les images qui ne sont plus au catalogue.
 
 ## Licences
 

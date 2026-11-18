@@ -34,7 +34,7 @@ Six livraisons. Chacune est testée, puis essayée sur l'iPad avant la suivante.
 | Images | atelier d'illustration et base libre pour l'imagier (Fluent Emoji, licence MIT) |
 | Fêtes | scènes actuelles gardées et redessinées, l'hôte qui réagit, message d'une seule couleur, grande scène finale en fin d'activité |
 | Activité du pilote | les nénuphars |
-| iPad de référence | iPad Pro 11 récent (1194 × 834 en paysage) |
+| iPad de référence | iPad Pro 11 récent : les dessins sont faits pour 1194 × 834 en paysage ; les modèles M4 font 1210 × 834, également vérifiés (le dessin couvre l'écran, à 1,3 % près) |
 | Îles | extensibles : un décor de base, six emplacements, un lieu par activité, des quartiers au-delà |
 | Décor | vivant, avec des garde-fous ; le guide est l'élément le plus calme de l'écran |
 
