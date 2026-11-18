@@ -89,7 +89,9 @@ export type ExitReason = "done" | "early" | "calm";
 export function activityScreen(mod: ActivityModule<any>, onExit: (summary: RoundSummary | null, reason: ExitReason) => void, opts: RoundOptions = {}): { el: HTMLElement; cleanup: () => void } {
   const total = opts.items ?? mod.items;
   const p = app.profile!;
-  const rng = makeRng((Date.now() ^ Math.floor(Math.random() * 1e9)) >>> 0);
+  // Graine du hasard des exercices ; les tests de bout en bout peuvent la fixer pour rejouer une séance à l'identique.
+  const graine = (globalThis as { __archipelTest?: { graine?: number } }).__archipelTest?.graine;
+  const rng = makeRng((graine ?? (Date.now() ^ Math.floor(Math.random() * 1e9))) >>> 0);
   const ctx: Ctx = { profile: p, rng, known: knownSet(p.knownK), now: Date.now() };
   let stair = p.stairs[mod.id] ?? { level: mod.startLevel(p), up: 0, down: 0 };
   const summary: RoundSummary = { items: 0, firstTry: 0, helped: 0, errors: 0, last: null, learned: [] };

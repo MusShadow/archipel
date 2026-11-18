@@ -42,7 +42,7 @@ export function ecranIle(ile: Ile, conseil?: string): HTMLElement {
     for (const r of Object.values(d.remplissages)) cadre.appendChild(poser(img(r), r.boite));
     for (const a of Object.values(d.animes)) cadre.appendChild(poser(img(a), a.boite));
     for (const [act, l] of Object.entries(d.lieux)) cadre.appendChild(poser(img(l, "v-lieu", ACTIVITY_BY_ID[act]?.title ?? act), l.boite));
-    // Plume vole près de l'activité qu'il conseille
+    // Plume vole près de l'activité qu'elle conseille
     const [px, py] = d.plume;
     const corps = PERSONNAGES["plume-piece-corps"];
     const e = 0.58, f = e / (corps.echelle ?? 0.9);

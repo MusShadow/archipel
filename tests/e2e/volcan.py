@@ -37,6 +37,15 @@ INIT = """
 })();
 """
 
+# Hasard rejouable : Math.random suit une graine fixe par contexte (mulberry32), pour que chaque passage voie
+# les mêmes exercices (le test ne dépend plus de la chance pour rencontrer les huit types d'exercices).
+GRAINE = """
+(() => {
+  let s = %d >>> 0;
+  Math.random = () => { s = (s + 0x6D2B79F5) >>> 0; let t = s; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+})();
+"""
+
 errors, kinds, shots = [], {}, set()
 
 def shot(page, name, wait=250):
@@ -132,13 +141,15 @@ def play_round(page, prefix, mistake_at=1, monte_mode="doigt", max_steps=60):
 with sync_playwright() as pw:
     browser = pw.chromium.launch(executable_path=CHROME, headless=True, args=["--autoplay-policy=no-user-gesture-required"])
     modes = set()
-    for level in [1, 2, 2, 2, 3, 4, 5, 6]:
+    for n, level in enumerate([1, 2, 2, 2, 3, 4, 5, 6]):
         if level == 2 and modes >= {"doigt", "toucher"}:
             continue
         portrait = level == 4
         vp = {"width": 820, "height": 1180} if portrait else {"width": 1180, "height": 820}
         ctx = browser.new_context(viewport=vp, device_scale_factor=1, has_touch=False)
+        ctx.add_init_script(GRAINE % (2026 + 17 * n))
         ctx.add_init_script(INIT % json.dumps(json.dumps(data(level))))
+        ctx.add_init_script(f"window.__archipelTest.graine = {4051 + 31 * n};")
         page = ctx.new_page()
         page.on("pageerror", lambda e: errors.append(f"pageerror: {e}"))
         page.on("console", lambda m: errors.append(f"console.{m.type}: {m.text}") if m.type == "error" and "polices/" not in m.text and "ERR_" not in m.text and "manifest" not in m.text and "icon-" not in m.text else None)
