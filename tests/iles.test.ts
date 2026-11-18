@@ -3,7 +3,7 @@ import { expect, test } from "bun:test";
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { META } from "../src/activities/index";
-import { CADRE, ECRANS_A_PART, EMPLACEMENTS_PAR_QUARTIER, ILES_V2, lieuDe, placer, verifier, versEcran } from "../src/iles";
+import { CADRE, ECRANS_A_PART, EMPLACEMENTS_PAR_QUARTIER, ILES_V2, echelle, lieuDe, placer, verifier, versEcran } from "../src/iles";
 import { DECORS_ILES, PERSONNAGES } from "../src/illustrations";
 
 const root = join(import.meta.dir, "..");
@@ -92,14 +92,26 @@ test("l'hôte de chaque île a ses dessins (cinq expressions et le salut)", () =
   expect(PERSONNAGES["plume-piece-aile-av"].pivot).toBeDefined();
 });
 
-test("du repère des dessins à l'écran : l'image couvre l'écran, centrée", () => {
+test("du repère des dessins à l'écran : l'iPad en paysage est couvert, les autres écrans gardent les lieux visibles", () => {
   expect(versEcran({ x: 0, y: 0 }, { l: 1194, h: 834 })).toEqual({ x: 0, y: 0 });
+  expect(echelle({ l: 1194, h: 834 })).toBe(1);
   const c = versEcran({ x: 597, y: 417 }, { l: 1180, h: 820 });
   expect(c.x).toBeCloseTo(590, 5);
   expect(c.y).toBeCloseTo(410, 5);
-  // écran plus haut que large (portrait) : l'image est rognée sur les côtés, jamais en haut ni en bas
-  const k = 1180 / 834;
-  const g = versEcran({ x: 0, y: 0 }, { l: 820, h: 1180 });
-  expect(g.y).toBeCloseTo(0, 5);
-  expect(g.x).toBeCloseTo((820 - 1194 * k) / 2, 5);
+  // iPad Air en paysage : couvert aussi (rognage minime)
+  expect(echelle({ l: 1180, h: 820 })).toBeCloseTo(Math.max(1180 / 1194, 820 / 834), 6);
+  // en portrait, et sur un téléphone en paysage : chaque lieu et chaque étiquette de l'île des Nombres reste à l'écran
+  for (const ecran of [{ l: 820, h: 1180 }, { l: 834, h: 1194 }, { l: 932, h: 430 }, { l: 1366, h: 1024 }]) {
+    const q = ILES_V2.nombres.quartiers[0];
+    for (const l of q.lieux) {
+      const [x, y, w, h] = q.decor!.lieux[l.ids[0]].boite;
+      for (const p of [{ x, y }, { x: x + w, y: y + h }, l.pastille]) {
+        const e = versEcran(p, ecran);
+        expect(e.x).toBeGreaterThanOrEqual(-1);
+        expect(e.x).toBeLessThanOrEqual(ecran.l + 1);
+        expect(e.y).toBeGreaterThanOrEqual(-1);
+        expect(e.y).toBeLessThanOrEqual(ecran.h + 1);
+      }
+    }
+  }
 });

@@ -9,6 +9,7 @@ import { CSS } from "./ui";
 import { FETE_CSS } from "./fete";
 import { CSS_COMPOSANTS } from "./design/composants";
 import { cssVariables } from "./design/jetons";
+import { estVitrine, pageVitrine } from "./vitrine";
 
 const style = document.createElement("style");
 // Système de design d'Archipel 2 (variables et composants album), puis les styles des écrans.
@@ -45,4 +46,7 @@ if ("serviceWorker" in navigator && (location.protocol === "https:" || location.
 
 registerChildScreens();
 registerParentScreens();
-if (app.data.profiles.length) nav.start(); else nav.setup();
+// Vitrine du système de design (adresse …#vitrine) : page cachée, pour juger les fondations sur l'iPad.
+if (estVitrine()) app.show(pageVitrine());
+else if (app.data.profiles.length) nav.start(); else nav.setup();
+window.addEventListener("hashchange", () => { if (estVitrine()) app.show(pageVitrine()); });

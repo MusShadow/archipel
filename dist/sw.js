@@ -1,8 +1,8 @@
-// Service worker d'Archipel 2 (version 9a5d3189ba) : garde l'appli disponible sans Internet.
+// Service worker d'Archipel 2 (version 771ed46d24) : garde l'appli disponible sans Internet.
 // Le code de l'appli passe d'abord par le réseau (pour recevoir les mises à jour), sinon par la copie gardée.
 // La voix naturelle de Plume (index et paquets audio, noms à empreinte) est gardée à part, d'une version à l'autre :
 // seuls les fichiers nouveaux sont téléchargés. Les polices sont embarquées et gardées avec l'appli : aucun appel extérieur.
-const CACHE = "archipel2-9a5d3189ba";
+const CACHE = "archipel2-771ed46d24";
 const VOIX = "archipel2-voix";
 // Illustrations et imagier : adresses à empreinte (?v=…), gardées à part d'une version à l'autre, comme la voix.
 const IMAGES = "archipel2-images";

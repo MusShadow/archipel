@@ -99,8 +99,15 @@ export function verifier(ile: Ile): string[] {
   return pb;
 }
 
-// Du repère des dessins (1194 x 834) à l'écran : l'image couvre tout l'écran, centrée (comme object-fit: cover).
+// Du repère des dessins (1194 x 834) à l'écran. Sur l'iPad en paysage, le dessin couvre tout l'écran (comme
+// object-fit: cover). Ailleurs, on rogne au plus 12 % de sa largeur et 6 % de sa hauteur de chaque côté, pour que
+// les lieux et leurs étiquettes restent visibles ; le reste de l'écran prolonge le ciel et la mer.
+export const ROGNAGE_MAX = { l: 0.12, h: 0.06 } as const;
+export function echelle(ecran: { l: number; h: number }): number {
+  const couvre = Math.max(ecran.l / CADRE.l, ecran.h / CADRE.h);
+  return Math.min(couvre, ecran.l / (CADRE.l * (1 - 2 * ROGNAGE_MAX.l)), ecran.h / (CADRE.h * (1 - 2 * ROGNAGE_MAX.h)));
+}
 export function versEcran(p: Point, ecran: { l: number; h: number }): Point {
-  const k = Math.max(ecran.l / CADRE.l, ecran.h / CADRE.h);
+  const k = echelle(ecran);
   return { x: (ecran.l - CADRE.l * k) / 2 + p.x * k, y: (ecran.h - CADRE.h * k) / 2 + p.y * k };
 }
