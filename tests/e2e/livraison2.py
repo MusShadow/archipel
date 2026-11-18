@@ -33,7 +33,7 @@ STORY = {"titre": "Mona et la lune", "emoji": "🐳", "phrases": ["Mona nage sur
 INIT = """
 (() => {
   const realNow = Date.now.bind(Date);
-  if (!localStorage.getItem('archipel.v1')) { localStorage.setItem('archipel.v1', %s); localStorage.setItem('archipel.cleapi', 'sk-ant-test'); }
+  if (!localStorage.getItem('archipel2.donnees')) { localStorage.setItem('archipel2.donnees', %s); localStorage.setItem('archipel2.cleapi', 'sk-ant-test'); }
   window.__archipelTest = {
     skew: 0, item: null, mod: null, polys: null, ready: false, calls: 0,
     onItem(item, mod) { this.item = item; this.mod = mod; },
@@ -348,7 +348,7 @@ with sync_playwright() as pw:
     shot(page, "59-apres-histoire")
     store_sticker(page)
 
-    data = page.evaluate("() => JSON.parse(localStorage.getItem('archipel.v1'))")
+    data = page.evaluate("() => JSON.parse(localStorage.getItem('archipel2.donnees'))")
     p = data["profiles"][0]
     acts = sorted(set(l["activity"] for l in p["log"]))
     print("activités au journal :", acts)
@@ -356,7 +356,7 @@ with sync_playwright() as pw:
     print("drapeau de mon île :", p.get("myFlag"))
     print("histoires :", [(s["titre"], s.get("lu")) for s in p["stories"]])
     print("escaliers :", json.dumps(p["stairs"]))
-    dessins = page.evaluate("() => JSON.parse(localStorage.getItem('archipel.dessins.p1') || '[]').map(d => d.id)")
+    dessins = page.evaluate("() => JSON.parse(localStorage.getItem('archipel2.dessins.p1') || '[]').map(d => d.id)")
     print("galerie :", dessins)
     for a in ["formes", "bip", "motifs", "theatre", "flotte", "atelierdrapeaux", "dessin", "histoires"]:
         assert a in acts, f"{a} absent du journal"

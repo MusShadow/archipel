@@ -1,4 +1,11 @@
-# Archipel
+# Archipel 2
+
+> **Branche v2 : la refonte d'Archipel, publiée sur https://musshadow.github.io/archipel/v2/ sous le nom « Archipel 2 ».**
+> La première version reste sur https://musshadow.github.io/archipel/ (branche `v1`, étiquette `v1.0`) ; la branche `main` publie les deux.
+> Les deux applis partagent le stockage du navigateur : la v2 a ses propres clés (`archipel2.donnees`, `archipel2.voix`, `archipel2.cleapi`,
+> `archipel2.dessins.‹profil›`) et ses propres caches (`archipel2-‹version›`, `archipel2-voix`), réunis dans `src/identite.ts`.
+> Elle n'écrit jamais dans ceux de la v1 et ne lit `archipel.v1` que pour reprendre ses progrès (espace parent › Données).
+> Sur l'iPad, chaque icône a son propre stockage : on passe par la sauvegarde (Copier dans la v1, Restaurer dans la v2).
 
 Application éducative adaptative pour un enfant de 4 à 6 ans, pensée pour l'iPad.
 Un archipel de sept îles à explorer avec Plume, un colibri voyageur : nombres, lecture, drapeaux du monde, énigmes et formes, découvertes, dessin et émotions.

@@ -1,4 +1,5 @@
 // Services : stockage local, voix (pack de voix naturelle, sinon synthèse vocale de l'appareil), sons synthétisés.
+import { CACHE_VOIX, CLE_V1, CLES } from "./identite";
 import type { ActivityId, Form, SkillState, Staircase } from "./core";
 import { planText, stretch, type Seg, type VoixIndex } from "./voix";
 
@@ -35,7 +36,7 @@ export const defaultTri = (): TriSettings => ({ papiers: "jaune", cuisine: "marr
 export interface Settings { sessionMinutes: number; accompanied: boolean; voiceURI: string | null; rate: number; sessionsPerWeek: number; voix: VoixMode; tri: TriSettings }
 export interface AppData { version: 1; pin: string | null; settings: Settings; profiles: Profile[]; activeId: string | null }
 
-const KEY = "archipel.v1";
+const KEY = CLES.donnees;
 export const defaultSettings = (): Settings => ({ sessionMinutes: 12, accompanied: true, voiceURI: null, rate: 0.9, sessionsPerWeek: 3, voix: "naturelle", tri: defaultTri() });
 export const defaultData = (): AppData => ({ version: 1, pin: null, settings: defaultSettings(), profiles: [], activeId: null });
 
@@ -67,6 +68,15 @@ export function saveData(d: AppData): boolean {
   try { localStorage.setItem(KEY, JSON.stringify(d)); saveFailed = false; return true; } catch { saveFailed = true; return false; }
 }
 export const storageFailed = () => saveFailed;
+// Progrès de la v1 trouvés sur cet appareil (stockage partagé) : lus, jamais modifiés.
+export function readV1(): AppData | null {
+  try {
+    const raw = localStorage.getItem(CLE_V1);
+    if (!raw) return null;
+    const d = normalize(JSON.parse(raw));
+    return d.profiles.length ? d : null;
+  } catch { return null; }
+}
 
 // ---------- Voix ----------
 // Une seule entrée : speech.say(texte, débit?) → promesse tenue à la fin de la phrase (les activités s'enchaînent dessus).
@@ -239,7 +249,7 @@ class NaturalVoice {
   private async file(url: string): Promise<ArrayBuffer | null> {
     try {
       if (typeof caches !== "undefined") {
-        const hit = await (await caches.open("archipel-voix")).match(new URL(url, location.href).href);
+        const hit = await (await caches.open(CACHE_VOIX)).match(new URL(url, location.href).href);
         if (hit) return await hit.arrayBuffer();
       }
     } catch { /* stockage indisponible (cadre isolé) : réseau */ }
@@ -400,7 +410,7 @@ export const VOICE_SLOTS: { id: string; label: string; idea: string }[] = [
   { id: "effort", label: "Après une réponse trouvée avec de l'aide", idea: "Tu n'as rien lâché, c'est comme ça qu'on apprend !" },
   { id: "aurevoir", label: "À la fin de la séance", idea: "Bravo pour ce voyage, à demain !" },
 ];
-const VOICE_KEY = "archipel.voix";
+const VOICE_KEY = CLES.voix;
 class Voice {
   private clips: Record<string, string> = {};
   private audio: HTMLAudioElement | null = null;

@@ -1,9 +1,9 @@
-// Service worker d'Archipel (version 41b516db9b) : garde l'appli disponible sans Internet.
+// Service worker d'Archipel 2 (version 3b0438ffc6) : garde l'appli disponible sans Internet.
 // Le code de l'appli passe d'abord par le réseau (pour recevoir les mises à jour), sinon par la copie gardée.
 // La voix naturelle de Plume (index et paquets audio, noms à empreinte) est gardée à part, d'une version à l'autre :
 // seuls les fichiers nouveaux sont téléchargés.
-const CACHE = "archipel-41b516db9b";
-const VOIX = "archipel-voix";
+const CACHE = "archipel2-3b0438ffc6";
+const VOIX = "archipel2-voix";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-192.png", "./icon-512.png"];
 const VOIX_FILES = ["./voix/atelier-2cb7735a18.mp3","./voix/coeur-d1fd441b8f.mp3","./voix/commun-3af1d075b3.mp3","./voix/decouvertes-9307250f3b.mp3","./voix/enigmes-aead6d0575.mp3","./voix/index-4dbcbeed93.json","./voix/mots-59804273f6.mp3","./voix/nombres-d22c37b0f3.mp3","./voix/port-01579326cb.mp3"];
 
@@ -28,7 +28,7 @@ self.addEventListener("activate", (event) => {
   const wanted = new Set(VOIX_FILES.map((f) => new URL(f, self.location).href));
   event.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((k) => k.startsWith("archipel-") && k !== CACHE && k !== VOIX).map((k) => caches.delete(k))))
+      .then((keys) => Promise.all(keys.filter((k) => k.startsWith("archipel2-") && k !== CACHE && k !== VOIX).map((k) => caches.delete(k))))
       .then(() => caches.open(VOIX))
       .then((cache) => cache.keys().then((reqs) => Promise.all(reqs.filter((r) => !wanted.has(r.url)).map((r) => cache.delete(r)))))
       .then(() => self.clients.claim()),

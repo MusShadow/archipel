@@ -28,7 +28,7 @@ def data():
 
 INIT = """
 (() => {
-  if (!localStorage.getItem('archipel.v1')) localStorage.setItem('archipel.v1', %s);
+  if (!localStorage.getItem('archipel2.donnees')) localStorage.setItem('archipel2.donnees', %s);
   window.__archipelTest = { item: null, mod: null, count: 0, onItem(item, mod) { this.item = item; this.mod = mod; this.count++; } };
   const fake = { speaking: false, pending: false, onvoiceschanged: null, getVoices: () => [], cancel() {}, pause() {}, resume() {},
     speak(u) { window.__spoken = (window.__spoken || []).concat(u.text); setTimeout(() => u.onend && u.onend(), 20); } };

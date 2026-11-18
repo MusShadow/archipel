@@ -1,5 +1,6 @@
 // Histoires sur mesure : préparation de la demande à Claude, lecture de la réponse, et repérage des mots
 // probablement trop difficiles à déchiffrer pour l'enfant (selon les sons qu'il connaît).
+import { CLES } from "./identite";
 import { GRAPHEME_ORDER, knownSet } from "./content";
 import { SIGHT_WORDS } from "./lexique";
 import type { Story } from "./services";
@@ -139,7 +140,7 @@ export const STORY_ERRORS: Record<string, string> = {
   reseau: "Pas de connexion : écrire une histoire demande internet (la lire, non).",
 };
 
-const KEYNAME = "archipel.cleapi";
+const KEYNAME = CLES.cleApi;
 export const apiKey = {
   get(): string { try { return localStorage.getItem(KEYNAME) ?? ""; } catch { return ""; } },
   set(v: string) { try { if (v) localStorage.setItem(KEYNAME, v); else localStorage.removeItem(KEYNAME); } catch { /* rien */ } },

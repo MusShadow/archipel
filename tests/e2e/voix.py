@@ -118,7 +118,7 @@ with sync_playwright() as pw:
     page.click('.opt:text-is("Naturelle")')
     c0 = page.evaluate("() => window.__clips.length")
     page.click("text=Écouter Plume"); page.wait_for_timeout(3500)
-    saved = page.evaluate("() => JSON.parse(localStorage.getItem('archipel.v1')).settings.voix")
+    saved = page.evaluate("() => JSON.parse(localStorage.getItem('archipel2.donnees')).settings.voix")
     check("réglage « Naturelle » : clips", page.evaluate("() => window.__clips.length") > c0 and saved == "naturelle", saved)
 
     # Hors ligne : le service worker a gardé l'index et tous les paquets.
@@ -126,7 +126,7 @@ with sync_playwright() as pw:
     page.wait_for_function("""async () => {
       const files = (await (await fetch('sw.js')).text()).match(/VOIX_FILES = (\\[[^\\]]*\\])/);
       const want = JSON.parse(files[1]).length;
-      const keys = await (await caches.open('archipel-voix')).keys();
+      const keys = await (await caches.open('archipel2-voix')).keys();
       return want > 0 && keys.length >= want;
     }""", timeout=120000, polling=1000)
     ctx.set_offline(True)

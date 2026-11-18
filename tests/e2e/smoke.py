@@ -299,8 +299,8 @@ with sync_playwright() as pw:
     page.wait_for_timeout(300)
     assert page.locator("text=Espace parent").count() > 0, "le nouveau code n'ouvre pas l'espace parent"
 
-    data = page.evaluate("() => JSON.parse(localStorage.getItem('archipel.v1'))")
-    voix = page.evaluate("() => Object.keys(JSON.parse(localStorage.getItem('archipel.voix') || '{}'))")
+    data = page.evaluate("() => JSON.parse(localStorage.getItem('archipel2.donnees'))")
+    voix = page.evaluate("() => Object.keys(JSON.parse(localStorage.getItem('archipel2.voix') || '{}'))")
     assert data["pin"] == "4321", data["pin"]
     p = data["profiles"][0]
     assert p["departDone"] is True, "grand départ non enregistré"

@@ -1,0 +1,28 @@
+# Vérifie chaque envoi sur v1 et v2 : tests, types, construction, et dist/ à jour.
+# La publication est faite par la branche main (workflow « Publier Archipel »), qui part quand celui-ci réussit.
+name: Vérifier
+
+on:
+  push:
+    branches: [v1, v2]
+  pull_request:
+    branches: [v1, v2]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.4
+      - run: bun install --frozen-lockfile
+      - run: bun test
+      - run: npx --yes -p typescript@7.0.2 tsc --noEmit -p .
+      - run: bun run build
+      - name: dist/ committé à jour
+        run: git diff --exit-code --stat -- dist

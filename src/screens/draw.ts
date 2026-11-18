@@ -1,5 +1,6 @@
 // Île de l'Atelier — « Dessine pas à pas » avec Kiki, « Le miroir de Kiki », et la galerie des dessins.
 // Le dessin terminé est montré d'abord, puis il disparaît ; on le refait ensemble, un trait après l'autre.
+import { CLES } from "../identite";
 import { app } from "../app";
 import { applyEvidence, newSkill, stepStaircase } from "../core";
 import { DRAWINGS, DRAWING_BY_ID, drawingStickerSVG, drawingSVG, primD, primPolylines, primSVG, scoreStep, type Drawing, type Prim, type Pt } from "../drawings";
@@ -15,7 +16,7 @@ const FILLS = ["#E5483B", "#FF9F6E", "#FFD45C", "#7ED39B", "#6FCFDA", "#7FB0F0",
 
 // ---------- Galerie (sur l'appareil, par profil) ----------
 export interface GalleryItem { t: number; id: string; img: string }
-const GKEY = (pid: string) => `archipel.dessins.${pid}`;
+const GKEY = CLES.dessins;
 export const gallery = {
   list(pid: string): GalleryItem[] {
     try { const v = JSON.parse(localStorage.getItem(GKEY(pid)) ?? "[]"); return Array.isArray(v) ? v : []; } catch { return []; }

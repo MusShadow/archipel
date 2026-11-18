@@ -5,7 +5,7 @@ import { DEFIS, GRAPHEME_ORDER, READING_LEVELS } from "../content";
 import { DAY, DOMAINS, MASTERY_LABEL, SKILLS, masteryOf, type DomainId, type Mastery } from "../core";
 import { FLAG_BY_CODE, FLAGS } from "../flags";
 import { nav } from "../nav";
-import { defaultData, frenchVoiceLabel, natural, normalize, saveData, sfx, speech, storageFailed, voice, VOICE_SLOTS, type Profile, type TriSettings, type VoixMode } from "../services";
+import { defaultData, frenchVoiceLabel, natural, normalize, readV1, saveData, sfx, speech, storageFailed, voice, VOICE_SLOTS, type AppData, type Profile, type TriSettings, type VoixMode } from "../services";
 import { avatarSVG, h, plumeSVG } from "../ui";
 import { pinPad, sheet } from "./common";
 import { gallery } from "./draw";
@@ -446,19 +446,29 @@ function parentSpace(tab?: string) {
     const file = h("input", { type: "file", accept: "application/json,.json,.txt", "aria-label": "Fichier de sauvegarde" }) as HTMLInputElement;
     file.addEventListener("change", async () => { const f = file.files?.[0]; if (f) input.value = await f.text(); });
     const msg = h("p", { class: "muted", style: "min-height:1em" });
-    const importCard = h("div", { class: "p-card" }, h("h2", {}, "Restaurer"), input, h("div", { style: "height:8px" }), file, h("div", { style: "height:10px" }),
+    const replaceWith = (d: AppData, what: string) => {
+      const s = sheet(screen, h("div", { class: "parent", style: "display:flex;flex-direction:column;gap:14px;max-width:440px" },
+        h("h1", {}, "Remplacer les données actuelles ?"),
+        h("p", { class: "muted" }, `${what} contient ${d.profiles.length} profil${d.profiles.length > 1 ? "s" : ""} : ${d.profiles.map((p) => p.name).join(", ")}.`),
+        h("div", { class: "p-row", style: "justify-content:center" },
+          h("button", { type: "button", class: "pbtn", onclick: () => { const oldPin = app.data.pin; app.data = d; if (!d.pin) d.pin = oldPin; app.save(); s.close(); pid = d.activeId; render(); } }, "Remplacer"),
+          h("button", { type: "button", class: "pbtn ghost", onclick: () => s.close() }, "Annuler"))));
+    };
+    const importCard = h("div", { class: "p-card" }, h("h2", {}, "Restaurer"),
+      h("p", { class: "muted", style: "margin-bottom:10px" }, "Pour reprendre les progrès de la première version : dans Archipel, espace parent › Données › Copier la sauvegarde, puis collez-la ici."),
+      input, h("div", { style: "height:8px" }), file, h("div", { style: "height:10px" }),
       h("div", { class: "p-row" }, h("button", { type: "button", class: "pbtn ghost", onclick: () => {
         let parsed: unknown;
         try { parsed = JSON.parse(input.value); } catch { msg.textContent = "Ce texte n'est pas une sauvegarde Archipel valide."; return; }
         const d = normalize(parsed);
         if (!d.profiles.length) { msg.textContent = "Aucun profil trouvé dans cette sauvegarde."; return; }
-        const s = sheet(screen, h("div", { class: "parent", style: "display:flex;flex-direction:column;gap:14px;max-width:440px" },
-          h("h1", {}, "Remplacer les données actuelles ?"),
-          h("p", { class: "muted" }, `La sauvegarde contient ${d.profiles.length} profil${d.profiles.length > 1 ? "s" : ""} : ${d.profiles.map((p) => p.name).join(", ")}.`),
-          h("div", { class: "p-row", style: "justify-content:center" },
-            h("button", { type: "button", class: "pbtn", onclick: () => { const oldPin = app.data.pin; app.data = d; if (!d.pin) d.pin = oldPin; app.save(); s.close(); pid = d.activeId; render(); } }, "Remplacer"),
-            h("button", { type: "button", class: "pbtn ghost", onclick: () => s.close() }, "Annuler"))));
+        replaceWith(d, "La sauvegarde");
       } }, "Restaurer cette sauvegarde")), msg);
+    // Sur Safari, un ordinateur ou Android, la v1 et la v2 partagent le stockage : on propose de reprendre la v1 directement.
+    const v1 = readV1();
+    const v1Card = v1 ? h("div", { class: "p-card" }, h("h2", {}, "Reprendre la première version"),
+      h("p", { class: "muted", style: "margin-bottom:10px" }, `Archipel (première version) est aussi utilisé sur cet appareil, avec ${v1.profiles.length} profil${v1.profiles.length > 1 ? "s" : ""} : ${v1.profiles.map((p) => p.name).join(", ")}. Ses progrès peuvent être repris ici ; la première version n'est pas modifiée.`),
+      h("button", { type: "button", class: "pbtn", onclick: () => replaceWith(v1, "La première version") }, "Reprendre ces progrès")) : null;
     const resetCard = h("div", { class: "p-card" }, h("h2", {}, "Tout effacer"),
       h("p", { class: "muted", style: "margin-bottom:10px" }, "Supprime les profils, les progrès, les réglages et le code parent de cet appareil."),
       h("button", { type: "button", class: "pbtn danger", onclick: () => {
@@ -480,6 +490,6 @@ function parentSpace(tab?: string) {
     });
     const drawCard = h("div", { class: "p-card" }, h("h2", {}, "Galerie de dessins"), h("div", { class: "p-list" }, ...drawCards));
     const warn = storageFailed() ? h("div", { class: "note", style: "background:#FDECEA;border-color:#F4B4AE" }, "Attention : l'enregistrement échoue sur cet appareil (navigation privée ou stockage plein). Les progrès seront perdus à la fermeture.") : null;
-    return [privacy, ...(warn ? [warn] : []), h("div", { class: "p-grid" }, exportCard, importCard), drawCard, resetCard];
+    return [privacy, ...(warn ? [warn] : []), ...(v1Card ? [v1Card] : []), h("div", { class: "p-grid" }, exportCard, importCard), drawCard, resetCard];
   }
 }

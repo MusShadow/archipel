@@ -30,7 +30,7 @@ DATA = {
 # Scénario : "ok" (moteur audio normal), "decodage" (décodage MP3 refusé), "interrompu" (contexte bloqué, comme sur iPad).
 INIT = """
 (() => {
-  if (!localStorage.getItem('archipel.v1')) localStorage.setItem('archipel.v1', %s);
+  if (!localStorage.getItem('archipel2.donnees')) localStorage.setItem('archipel2.donnees', %s);
   Object.defineProperty(navigator, 'maxTouchPoints', { get: () => 5 });
   // API Audio Session de Safari, simulée : l'appli doit demander une lecture « playback ».
   navigator.audioSession = { type: 'auto' };
