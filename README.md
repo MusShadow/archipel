@@ -7,6 +7,22 @@
 > Elle n'écrit jamais dans ceux de la v1 et ne lit `archipel.v1` que pour reprendre ses progrès (espace parent › Données).
 > Sur l'iPad, chaque icône a son propre stockage : on passe par la sauvegarde (Copier dans la v1, Restaurer dans la v2).
 
+## Refonte v2 : où en est-on ?
+
+La v2 refait ce que l'enfant voit et touche, dans un seul style d'illustration (« album illustré »), en gardant le moteur
+adaptatif, la pédagogie, la voix et le hors-ligne. Tout est décrit dans `docs/design/` :
+
+- [`audit-visuel.md`](docs/design/audit-visuel.md) : l'état des lieux de la v1, captures « avant » et « après » ;
+- [`identite-visuelle.md`](docs/design/identite-visuelle.md) : la direction artistique (lumière, matière, couleurs, mouvement, décor vivant) ;
+- [`systeme-de-design.md`](docs/design/systeme-de-design.md) : jetons, composants, îles extensibles, images, accessibilité ;
+- [`guide-personnages.md`](docs/design/guide-personnages.md) : Plume et les hôtes, leurs signes et leurs cinq expressions ;
+- [`feuille-de-route-refonte.md`](docs/design/feuille-de-route-refonte.md) : les six livraisons et leur avancement.
+
+Livraisons faites : **0** (cohabitation avec la v1) et **1** (fondations : polices embarquées, système de design,
+atelier d'illustration, personnages, île des Nombres, imagier). Les écrans de l'enfant changent à partir de la livraison 2.
+La vitrine cachée https://musshadow.github.io/archipel/v2/#vitrine montre les fondations en taille réelle.
+(Les sections « Livraison 1 » à « Livraison 3 » plus bas racontent les livraisons de la v1.)
+
 Application éducative adaptative pour un enfant de 4 à 6 ans, pensée pour l'iPad.
 Un archipel de sept îles à explorer avec Plume, un colibri voyageur : nombres, lecture, drapeaux du monde, énigmes et formes, découvertes, dessin et émotions.
 
@@ -191,7 +207,19 @@ de sherpa-onnx sur GitHub). Chaque clip est contrôlé par une reconnaissance vo
 entendus ; un clip raté est refait, et ceux qui restent douteux sont listés dans `voix/rapport.json`.
 Les écritures des syllabes dites seules (« pu », « sue »…) sont dans `voix/prononciation.json`.
 
-Aucune dépendance d'exécution. Les illustrations sont des formes vectorielles générées par `scripts/gen_art_ts.py` (voir `scripts/archi_lib.py`) dans `src/art_static.ts`.
+### Illustrations, imagier et vitrine (v2)
+
+```sh
+python3 scripts/illustration/fabriquer.py   # personnages et îles → public/illustrations/, src/illustrations.ts
+python3 scripts/illustration/imagier.py     # imagier (base Fluent Emoji) → public/imagier/, src/imagier.ts
+python3 tests/e2e/vitrine.py                # la vitrine (#vitrine), y compris hors ligne
+```
+
+Voir `scripts/illustration/LISEZMOI.md` (prérequis : numpy, opencv-python-headless, pillow, playwright).
+
+Aucune dépendance d'exécution. Les illustrations de la v1 sont des formes vectorielles générées par `scripts/gen_art_ts.py`
+(voir `scripts/archi_lib.py`) dans `src/art_static.ts` ; celles de la v2 sortent de l'atelier d'illustration (images WebP
+embarquées, gardées hors ligne par le service worker).
 
 ## Organisation du code
 
@@ -214,6 +242,12 @@ Aucune dépendance d'exécution. Les illustrations sont des formes vectorielles 
 | `src/voix.ts` | Voix naturelle, partie texte (sans DOM, testée) : mots et clés, prénom retiré, plan de lecture en clips, débit |
 | `scripts/voix/` | Inventaire des phrases, liste des clips, génération et contrôle du pack de voix |
 | `public/voix/` | Le pack de voix publié : index et paquets audio (noms à empreinte) |
+| `src/design/` | Système de design de la v2 : jetons (couleurs, textes, espacements, ombres, mouvements) et composants album |
+| `src/iles.ts` | Écrans d'île extensibles : quartiers, six emplacements, lieux et étiquettes |
+| `src/illustrations.ts`, `src/imagier.ts` | Catalogues générés par l'atelier d'illustration (ne pas modifier à la main) |
+| `src/vitrine.ts` | Vitrine cachée (`#vitrine`) pour juger le système de design sur l'iPad |
+| `scripts/illustration/` | Atelier d'illustration : moteur, personnages, décors, îles, imagier |
+| `public/illustrations/`, `public/imagier/`, `public/polices/` | Images et polices embarquées (licences jointes) |
 
 Ajouter une activité : créer un module qui implémente `ActivityModule` (générer, afficher, indices, gommette, astuce parent), déclarer ses compétences dans `core.ts`, puis l'associer à son île dans `src/activities/index.ts`.
 
@@ -252,3 +286,7 @@ Le mode d'emploi complet (installation sur l'écran d'accueil, Accès guidé, sa
 - Génération : [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) (Apache-2.0). Contrôle des clips, outils non
   distribués : *Parakeet TDT 0.6B v3* (NVIDIA, CC-BY-4.0) et eSpeak NG (GPL-3.0).
 - Voix écartées après essai : Kokoro v1.0 (« ff_siwis ») et Piper (« siwis », « upmc »), moins nettes en français.
+- **Polices** : Andika (SIL International), Baloo 2 (The Baloo 2 Project Authors) et Inter (The Inter Project Authors),
+  sous licence SIL Open Font License 1.1, jointe dans `public/polices/`.
+- **Imagier** : dérivé de [Fluent Emoji](https://github.com/microsoft/fluentui-emoji) © Microsoft Corporation, licence MIT
+  (jointe dans `public/imagier/`), restylé par l'atelier d'illustration.
