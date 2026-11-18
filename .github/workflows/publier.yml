@@ -1,0 +1,59 @@
+# Publie les deux applis ensemble sur GitHub Pages :
+#   v1 (branche v1) à la racine : https://musshadow.github.io/archipel/
+#   v2 (branche v2) dans v2/    : https://musshadow.github.io/archipel/v2/
+# Part à chaque envoi sur main, quand « Vérifier » a réussi sur v1 ou v2, ou à la main (Actions › Publier Archipel › Run workflow).
+# GitHub ne publie sur Pages que depuis la branche principale, et un workflow lancé par un autre (workflow_run)
+# tourne justement depuis elle : c'est pour cela que la publication vit sur main.
+name: Publier Archipel
+
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: ["Vérifier"]
+    types: [completed]
+    branches: [v1, v2]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  assembler:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          ref: v1
+          path: _v1
+      - uses: actions/checkout@v7
+        with:
+          ref: v2
+          path: _v2
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.4
+      - name: Construire v1 et v2, vérifier leur dist/, assembler le site
+        run: bash scripts/assembler.sh _v1 _v2 site
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+  publier:
+    needs: assembler
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
