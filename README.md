@@ -1,5 +1,7 @@
 # Archipel
 
+> **Branche v1 : la version d'origine, gardée telle quelle.** Elle ne reçoit plus que des correctifs. La refonte se fait sur la branche `v2` (Archipel 2), et la branche `main` publie les deux : la v1 sur https://musshadow.github.io/archipel/, la v2 sur https://musshadow.github.io/archipel/v2/.
+
 Application éducative adaptative pour un enfant de 4 à 6 ans, pensée pour l'iPad.
 Un archipel de sept îles à explorer avec Plume, un colibri voyageur : nombres, lecture, drapeaux du monde, énigmes et formes, découvertes, dessin et émotions.
 

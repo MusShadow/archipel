@@ -45,6 +45,8 @@ self.addEventListener("fetch", (event) => {
   const request = event.request;
   if (request.method !== "GET") return;
   const url = new URL(request.url);
+  // Archipel 2 vit sur ./v2/ avec son propre service worker : celui-ci n'y touche jamais.
+  if (url.pathname.startsWith(new URL("./v2/", self.registration.scope).pathname)) return;
   if (url.origin === self.location.origin) {
     // Voix : fichiers qui ne changent jamais (leur nom change à chaque nouvelle version) → copie gardée d'abord.
     if (url.pathname.includes("/voix/")) {
