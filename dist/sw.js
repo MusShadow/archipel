@@ -1,10 +1,12 @@
-// Service worker d'Archipel 2 (version 3b0438ffc6) : garde l'appli disponible sans Internet.
+// Service worker d'Archipel 2 (version 9a5d3189ba) : garde l'appli disponible sans Internet.
 // Le code de l'appli passe d'abord par le réseau (pour recevoir les mises à jour), sinon par la copie gardée.
 // La voix naturelle de Plume (index et paquets audio, noms à empreinte) est gardée à part, d'une version à l'autre :
-// seuls les fichiers nouveaux sont téléchargés.
-const CACHE = "archipel2-3b0438ffc6";
+// seuls les fichiers nouveaux sont téléchargés. Les polices sont embarquées et gardées avec l'appli : aucun appel extérieur.
+const CACHE = "archipel2-9a5d3189ba";
 const VOIX = "archipel2-voix";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-192.png", "./icon-512.png"];
+// Polices de l'alphabet latin (les variantes « latin-ext », rares, sont gardées au premier usage).
+const POLICES = ["./polices/andika-latin-400-normal.woff2","./polices/andika-latin-700-normal.woff2","./polices/baloo-2-latin-600-normal.woff2","./polices/baloo-2-latin-700-normal.woff2","./polices/baloo-2-latin-800-normal.woff2","./polices/inter-latin-400-normal.woff2","./polices/inter-latin-600-normal.woff2","./polices/inter-latin-700-normal.woff2"];
 const VOIX_FILES = ["./voix/atelier-2cb7735a18.mp3","./voix/coeur-d1fd441b8f.mp3","./voix/commun-3af1d075b3.mp3","./voix/decouvertes-9307250f3b.mp3","./voix/enigmes-aead6d0575.mp3","./voix/index-4dbcbeed93.json","./voix/mots-59804273f6.mp3","./voix/nombres-d22c37b0f3.mp3","./voix/port-01579326cb.mp3"];
 
 const keepVoice = async () => {
@@ -18,7 +20,7 @@ const keepVoice = async () => {
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE).then((cache) => cache.addAll(CORE))
+    caches.open(CACHE).then((cache) => cache.addAll([...CORE, ...POLICES]))
       .then(() => keepVoice().catch(() => { /* la voix sera gardée au fil des écoutes */ }))
       .then(() => self.skipWaiting()),
   );
@@ -59,10 +61,5 @@ self.addEventListener("fetch", (event) => {
         .then((response) => (response.ok ? keep(request, response) : response))
         .catch(() => caches.match(request, { ignoreSearch: true }).then((hit) => hit || caches.match("./index.html"))),
     );
-    return;
-  }
-  // Polices d'écriture : une fois téléchargées, elles restent disponibles hors ligne.
-  if (url.hostname === "fonts.googleapis.com" || url.hostname === "fonts.gstatic.com") {
-    event.respondWith(caches.match(request).then((hit) => hit || fetch(request).then((response) => keep(request, response))));
   }
 });

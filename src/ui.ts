@@ -28,7 +28,7 @@ export const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", 
 export const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
 // ---------- Icônes (traits) ----------
-const ICON_PATHS: Record<string, string> = {
+export const ICON_PATHS: Record<string, string> = {
   home: '<path d="M3.5 11 L12 4 L20.5 11"/><path d="M5.5 9.5 V20 H10 V14.5 H14 V20 H18.5 V9.5"/>',
   ear: '<path d="M6.5 9 A5.75 5.75 0 1 1 18 9 C18 12.5 15 13.5 14.5 16 C14 18.5 12.5 20.5 10.2 20.5 C8.6 20.5 7.4 19.6 6.8 18.3"/><path d="M9.8 9.4 A2.4 2.4 0 0 1 14.6 9.4 C14.6 11 13 11.6 12.6 13"/>',
   book: '<path d="M4 5.5 C6.5 4.5 9.5 4.5 12 6 C14.5 4.5 17.5 4.5 20 5.5 V19 C17.5 18 14.5 18 12 19.5 C9.5 18 6.5 18 4 19 Z"/><path d="M12 6 V19.5"/>',
@@ -42,6 +42,7 @@ const ICON_PATHS: Record<string, string> = {
   undo: '<path d="M9 7 L4 12 L9 17"/><path d="M4 12 H14 A6 6 0 0 1 14 24"/>',
   plus: '<path d="M12 5 V19 M5 12 H19"/>',
   trash: '<path d="M5 7 H19 M10 7 V5 H14 V7 M7 7 L8 20 H16 L17 7"/>',
+  map: '<path d="M3.5 6.5 L9 4.5 L15 6.5 L20.5 4.5 V17.5 L15 19.5 L9 17.5 L3.5 19.5 Z"/><path d="M9 4.5 V17.5 M15 6.5 V19.5"/>',
 };
 export function icon(name: string, color = "#273043", sw = 2.2) {
   return `<svg viewBox="0 0 24 24" aria-hidden="true" style="width:58%;height:58%;fill:none;stroke:${color};stroke-width:${sw};stroke-linecap:round;stroke-linejoin:round">${ICON_PATHS[name] ?? ""}</svg>`;

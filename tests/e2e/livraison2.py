@@ -198,7 +198,7 @@ with sync_playwright() as pw:
     ctx.add_init_script(INIT)
     page = ctx.new_page()
     page.on("pageerror", lambda e: errors.append(f"pageerror: {e}"))
-    page.on("console", lambda m: errors.append(f"console.{m.type}: {m.text}") if m.type == "error" and "fonts.g" not in m.text and "ERR_" not in m.text and "manifest" not in m.text and "icon-" not in m.text else None)
+    page.on("console", lambda m: errors.append(f"console.{m.type}: {m.text}") if m.type == "error" and "polices/" not in m.text and "ERR_" not in m.text and "manifest" not in m.text and "icon-" not in m.text else None)
     page.goto(PAGE.as_uri())
     page.wait_for_timeout(500)
     page.click(".kid")

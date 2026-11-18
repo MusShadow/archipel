@@ -1,10 +1,12 @@
 // Service worker d'Archipel 2 (version __VERSION__) : garde l'appli disponible sans Internet.
 // Le code de l'appli passe d'abord par le réseau (pour recevoir les mises à jour), sinon par la copie gardée.
 // La voix naturelle de Plume (index et paquets audio, noms à empreinte) est gardée à part, d'une version à l'autre :
-// seuls les fichiers nouveaux sont téléchargés.
+// seuls les fichiers nouveaux sont téléchargés. Les polices sont embarquées et gardées avec l'appli : aucun appel extérieur.
 const CACHE = "archipel2-__VERSION__";
 const VOIX = "archipel2-voix";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-192.png", "./icon-512.png"];
+// Polices de l'alphabet latin (les variantes « latin-ext », rares, sont gardées au premier usage).
+const POLICES = __POLICES__;
 const VOIX_FILES = __VOIX_FILES__;
 
 const keepVoice = async () => {
@@ -18,7 +20,7 @@ const keepVoice = async () => {
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE).then((cache) => cache.addAll(CORE))
+    caches.open(CACHE).then((cache) => cache.addAll([...CORE, ...POLICES]))
       .then(() => keepVoice().catch(() => { /* la voix sera gardée au fil des écoutes */ }))
       .then(() => self.skipWaiting()),
   );
@@ -59,10 +61,5 @@ self.addEventListener("fetch", (event) => {
         .then((response) => (response.ok ? keep(request, response) : response))
         .catch(() => caches.match(request, { ignoreSearch: true }).then((hit) => hit || caches.match("./index.html"))),
     );
-    return;
-  }
-  // Polices d'écriture : une fois téléchargées, elles restent disponibles hors ligne.
-  if (url.hostname === "fonts.googleapis.com" || url.hostname === "fonts.gstatic.com") {
-    event.respondWith(caches.match(request).then((hit) => hit || fetch(request).then((response) => keep(request, response))));
   }
 });

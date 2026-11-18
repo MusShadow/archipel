@@ -34,7 +34,15 @@ with sync_playwright() as pw:
     page.wait_for_timeout(600)
     title = page.locator("h1").first.inner_text()
     print("hors ligne, premier titre :", title)
-    ok = "Archipel" in title and not errors
+    # Les polices embarquées sont gardées par le service worker : elles se chargent sans Internet.
+    polices = page.evaluate("""async () => {
+      const r = await Promise.all(["800 30px 'Baloo 2'", "700 30px 'Baloo 2'", "400 30px Andika", "400 16px Inter"]
+        .map((f) => document.fonts.load(f, "Bonjour é").catch(() => [])));
+      return r.map((faces) => faces.map((f) => `${f.family} ${f.weight} ${f.status}`).join(", "));
+    }""")
+    print("hors ligne, polices :", polices)
+    polices_ok = all(p and "loaded" in p and "error" not in p for p in polices)
+    ok = "Archipel" in title and not errors and polices_ok
     if errors:
         print("erreurs :", errors)
     browser.close()

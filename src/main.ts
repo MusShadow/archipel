@@ -7,9 +7,12 @@ import { SCREENS_CSS } from "./screens/styles";
 import { audioPlayback, natural, sfx, speech } from "./services";
 import { CSS } from "./ui";
 import { FETE_CSS } from "./fete";
+import { CSS_COMPOSANTS } from "./design/composants";
+import { cssVariables } from "./design/jetons";
 
 const style = document.createElement("style");
-style.textContent = CSS + SCREENS_CSS + FETE_CSS;
+// Système de design d'Archipel 2 (variables et composants album), puis les styles des écrans.
+style.textContent = cssVariables() + CSS_COMPOSANTS + CSS + SCREENS_CSS + FETE_CSS;
 document.head.appendChild(style);
 
 app.root = document.getElementById("app")!;
