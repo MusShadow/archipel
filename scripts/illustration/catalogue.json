@@ -1,0 +1,903 @@
+{
+ "personnages": {
+  "basile-content": {
+   "fichier": "personnages/basile-content.webp",
+   "boite": [
+    70.0,
+    74.5,
+    212.0,
+    272.0
+   ],
+   "ancre": [
+    0.3774,
+    0.9173
+   ],
+   "echelle": 1.1
+  },
+  "basile-rieur": {
+   "fichier": "personnages/basile-rieur.webp",
+   "boite": [
+    70.0,
+    74.5,
+    212.0,
+    272.0
+   ],
+   "ancre": [
+    0.3774,
+    0.9173
+   ],
+   "echelle": 1.1
+  },
+  "basile-surpris": {
+   "fichier": "personnages/basile-surpris.webp",
+   "boite": [
+    70.0,
+    74.5,
+    212.0,
+    272.0
+   ],
+   "ancre": [
+    0.3774,
+    0.9173
+   ],
+   "echelle": 1.1
+  },
+  "basile-pensif": {
+   "fichier": "personnages/basile-pensif.webp",
+   "boite": [
+    70.0,
+    74.5,
+    212.0,
+    272.0
+   ],
+   "ancre": [
+    0.3774,
+    0.9173
+   ],
+   "echelle": 1.1
+  },
+  "basile-doux": {
+   "fichier": "personnages/basile-doux.webp",
+   "boite": [
+    70.0,
+    74.5,
+    212.0,
+    272.0
+   ],
+   "ancre": [
+    0.3774,
+    0.9173
+   ],
+   "echelle": 1.1
+  },
+  "basile-salut": {
+   "fichier": "personnages/basile-salut.webp",
+   "boite": [
+    70.0,
+    74.5,
+    212.0,
+    272.0
+   ],
+   "ancre": [
+    0.3774,
+    0.9173
+   ],
+   "echelle": 1.1
+  },
+  "mona-content": {
+   "fichier": "personnages/mona-content.webp",
+   "boite": [
+    16.0,
+    11.0,
+    271.5,
+    208.0
+   ],
+   "ancre": [
+    0.5304,
+    0.5721
+   ],
+   "echelle": 1.0
+  },
+  "mona-rieur": {
+   "fichier": "personnages/mona-rieur.webp",
+   "boite": [
+    16.0,
+    11.0,
+    271.5,
+    208.0
+   ],
+   "ancre": [
+    0.5304,
+    0.5721
+   ],
+   "echelle": 1.0
+  },
+  "mona-surpris": {
+   "fichier": "personnages/mona-surpris.webp",
+   "boite": [
+    16.0,
+    11.0,
+    271.5,
+    208.0
+   ],
+   "ancre": [
+    0.5304,
+    0.5721
+   ],
+   "echelle": 1.0
+  },
+  "mona-pensif": {
+   "fichier": "personnages/mona-pensif.webp",
+   "boite": [
+    16.0,
+    11.0,
+    271.5,
+    208.0
+   ],
+   "ancre": [
+    0.5304,
+    0.5721
+   ],
+   "echelle": 1.0
+  },
+  "mona-doux": {
+   "fichier": "personnages/mona-doux.webp",
+   "boite": [
+    16.0,
+    11.0,
+    271.5,
+    208.0
+   ],
+   "ancre": [
+    0.5304,
+    0.5721
+   ],
+   "echelle": 1.0
+  },
+  "mona-salut": {
+   "fichier": "personnages/mona-salut.webp",
+   "boite": [
+    16.0,
+    11.0,
+    271.5,
+    208.0
+   ],
+   "ancre": [
+    0.5304,
+    0.5721
+   ],
+   "echelle": 1.0
+  },
+  "rico-content": {
+   "fichier": "personnages/rico-content.webp",
+   "boite": [
+    74.0,
+    67.0,
+    213.5,
+    278.5
+   ],
+   "ancre": [
+    0.356,
+    0.9228
+   ],
+   "echelle": 1.05
+  },
+  "rico-rieur": {
+   "fichier": "personnages/rico-rieur.webp",
+   "boite": [
+    74.0,
+    67.0,
+    213.5,
+    278.5
+   ],
+   "ancre": [
+    0.356,
+    0.9228
+   ],
+   "echelle": 1.05
+  },
+  "rico-surpris": {
+   "fichier": "personnages/rico-surpris.webp",
+   "boite": [
+    74.0,
+    67.0,
+    213.5,
+    278.5
+   ],
+   "ancre": [
+    0.356,
+    0.9228
+   ],
+   "echelle": 1.05
+  },
+  "rico-pensif": {
+   "fichier": "personnages/rico-pensif.webp",
+   "boite": [
+    74.0,
+    67.0,
+    213.5,
+    278.5
+   ],
+   "ancre": [
+    0.356,
+    0.9228
+   ],
+   "echelle": 1.05
+  },
+  "rico-doux": {
+   "fichier": "personnages/rico-doux.webp",
+   "boite": [
+    74.0,
+    67.0,
+    213.5,
+    278.5
+   ],
+   "ancre": [
+    0.356,
+    0.9228
+   ],
+   "echelle": 1.05
+  },
+  "rico-salut": {
+   "fichier": "personnages/rico-salut.webp",
+   "boite": [
+    74.0,
+    67.0,
+    213.5,
+    278.5
+   ],
+   "ancre": [
+    0.356,
+    0.9228
+   ],
+   "echelle": 1.05
+  },
+  "bip-content": {
+   "fichier": "personnages/bip-content.webp",
+   "boite": [
+    36.0,
+    48.0,
+    170.0,
+    205.0
+   ],
+   "ancre": [
+    0.4941,
+    0.9073
+   ],
+   "echelle": 1.0
+  },
+  "bip-rieur": {
+   "fichier": "personnages/bip-rieur.webp",
+   "boite": [
+    36.0,
+    48.0,
+    170.0,
+    205.0
+   ],
+   "ancre": [
+    0.4941,
+    0.9073
+   ],
+   "echelle": 1.0
+  },
+  "bip-surpris": {
+   "fichier": "personnages/bip-surpris.webp",
+   "boite": [
+    36.0,
+    48.0,
+    170.0,
+    205.0
+   ],
+   "ancre": [
+    0.4941,
+    0.9073
+   ],
+   "echelle": 1.0
+  },
+  "bip-pensif": {
+   "fichier": "personnages/bip-pensif.webp",
+   "boite": [
+    36.0,
+    48.0,
+    170.0,
+    205.0
+   ],
+   "ancre": [
+    0.4941,
+    0.9073
+   ],
+   "echelle": 1.0
+  },
+  "bip-doux": {
+   "fichier": "personnages/bip-doux.webp",
+   "boite": [
+    36.0,
+    48.0,
+    170.0,
+    205.0
+   ],
+   "ancre": [
+    0.4941,
+    0.9073
+   ],
+   "echelle": 1.0
+  },
+  "bip-salut": {
+   "fichier": "personnages/bip-salut.webp",
+   "boite": [
+    36.0,
+    48.0,
+    174.0,
+    205.0
+   ],
+   "ancre": [
+    0.4828,
+    0.9073
+   ],
+   "echelle": 1.0
+  },
+  "octave-content": {
+   "fichier": "personnages/octave-content.webp",
+   "boite": [
+    36.0,
+    44.0,
+    230.5,
+    266.0
+   ],
+   "ancre": [
+    0.4946,
+    0.9173
+   ],
+   "echelle": 1.0
+  },
+  "octave-rieur": {
+   "fichier": "personnages/octave-rieur.webp",
+   "boite": [
+    36.0,
+    44.0,
+    230.5,
+    266.0
+   ],
+   "ancre": [
+    0.4946,
+    0.9173
+   ],
+   "echelle": 1.0
+  },
+  "octave-surpris": {
+   "fichier": "personnages/octave-surpris.webp",
+   "boite": [
+    36.0,
+    44.0,
+    230.5,
+    266.0
+   ],
+   "ancre": [
+    0.4946,
+    0.9173
+   ],
+   "echelle": 1.0
+  },
+  "octave-pensif": {
+   "fichier": "personnages/octave-pensif.webp",
+   "boite": [
+    36.0,
+    44.0,
+    230.5,
+    266.0
+   ],
+   "ancre": [
+    0.4946,
+    0.9173
+   ],
+   "echelle": 1.0
+  },
+  "octave-doux": {
+   "fichier": "personnages/octave-doux.webp",
+   "boite": [
+    36.0,
+    44.0,
+    230.5,
+    266.0
+   ],
+   "ancre": [
+    0.4946,
+    0.9173
+   ],
+   "echelle": 1.0
+  },
+  "octave-salut": {
+   "fichier": "personnages/octave-salut.webp",
+   "boite": [
+    36.0,
+    44.0,
+    230.5,
+    266.0
+   ],
+   "ancre": [
+    0.4946,
+    0.9173
+   ],
+   "echelle": 1.0
+  },
+  "kiki-content": {
+   "fichier": "personnages/kiki-content.webp",
+   "boite": [
+    37.0,
+    58.0,
+    261.0,
+    213.0
+   ],
+   "ancre": [
+    0.4713,
+    0.9108
+   ],
+   "echelle": 1.0
+  },
+  "kiki-rieur": {
+   "fichier": "personnages/kiki-rieur.webp",
+   "boite": [
+    37.0,
+    58.0,
+    261.0,
+    213.0
+   ],
+   "ancre": [
+    0.4713,
+    0.9108
+   ],
+   "echelle": 1.0
+  },
+  "kiki-surpris": {
+   "fichier": "personnages/kiki-surpris.webp",
+   "boite": [
+    37.0,
+    58.0,
+    261.0,
+    213.0
+   ],
+   "ancre": [
+    0.4713,
+    0.9108
+   ],
+   "echelle": 1.0
+  },
+  "kiki-pensif": {
+   "fichier": "personnages/kiki-pensif.webp",
+   "boite": [
+    37.0,
+    58.0,
+    261.0,
+    213.0
+   ],
+   "ancre": [
+    0.4713,
+    0.9108
+   ],
+   "echelle": 1.0
+  },
+  "kiki-doux": {
+   "fichier": "personnages/kiki-doux.webp",
+   "boite": [
+    37.0,
+    58.0,
+    261.0,
+    213.0
+   ],
+   "ancre": [
+    0.4713,
+    0.9108
+   ],
+   "echelle": 1.0
+  },
+  "kiki-salut": {
+   "fichier": "personnages/kiki-salut.webp",
+   "boite": [
+    37.0,
+    58.0,
+    261.0,
+    213.0
+   ],
+   "ancre": [
+    0.4713,
+    0.9108
+   ],
+   "echelle": 1.0
+  },
+  "pico-content": {
+   "fichier": "personnages/pico-content.webp",
+   "boite": [
+    36.0,
+    62.5,
+    230.5,
+    266.5
+   ],
+   "ancre": [
+    0.4946,
+    0.9137
+   ],
+   "echelle": 1.15
+  },
+  "pico-rieur": {
+   "fichier": "personnages/pico-rieur.webp",
+   "boite": [
+    36.0,
+    62.5,
+    230.5,
+    266.5
+   ],
+   "ancre": [
+    0.4946,
+    0.9137
+   ],
+   "echelle": 1.15
+  },
+  "pico-surpris": {
+   "fichier": "personnages/pico-surpris.webp",
+   "boite": [
+    36.0,
+    62.5,
+    230.5,
+    266.5
+   ],
+   "ancre": [
+    0.4946,
+    0.9137
+   ],
+   "echelle": 1.15
+  },
+  "pico-pensif": {
+   "fichier": "personnages/pico-pensif.webp",
+   "boite": [
+    36.0,
+    62.5,
+    230.5,
+    266.5
+   ],
+   "ancre": [
+    0.4946,
+    0.9137
+   ],
+   "echelle": 1.15
+  },
+  "pico-doux": {
+   "fichier": "personnages/pico-doux.webp",
+   "boite": [
+    36.0,
+    62.5,
+    230.5,
+    266.5
+   ],
+   "ancre": [
+    0.4946,
+    0.9137
+   ],
+   "echelle": 1.15
+  },
+  "pico-salut": {
+   "fichier": "personnages/pico-salut.webp",
+   "boite": [
+    36.0,
+    62.5,
+    230.5,
+    266.5
+   ],
+   "ancre": [
+    0.4946,
+    0.9137
+   ],
+   "echelle": 1.15
+  },
+  "plume-vol": {
+   "fichier": "personnages/plume-vol.webp",
+   "boite": [
+    53.0,
+    45.0,
+    245.0,
+    222.0
+   ],
+   "ancre": [
+    0.4776,
+    0.518
+   ],
+   "echelle": 0.9
+  },
+  "plume-salut": {
+   "fichier": "personnages/plume-salut.webp",
+   "boite": [
+    53.0,
+    28.5,
+    245.0,
+    238.5
+   ],
+   "ancre": [
+    0.4776,
+    0.5514
+   ],
+   "echelle": 0.9
+  },
+  "plume-montre": {
+   "fichier": "personnages/plume-montre.webp",
+   "boite": [
+    53.0,
+    54.5,
+    245.0,
+    212.5
+   ],
+   "ancre": [
+    0.4776,
+    0.4965
+   ],
+   "echelle": 0.9
+  },
+  "plume-pense": {
+   "fichier": "personnages/plume-pense.webp",
+   "boite": [
+    53.0,
+    57.5,
+    245.0,
+    209.5
+   ],
+   "ancre": [
+    0.4776,
+    0.4893
+   ],
+   "echelle": 0.9
+  },
+  "plume-fete": {
+   "fichier": "personnages/plume-fete.webp",
+   "boite": [
+    53.0,
+    33.0,
+    245.0,
+    234.0
+   ],
+   "ancre": [
+    0.4776,
+    0.5427
+   ],
+   "echelle": 0.9
+  },
+  "plume-vol-rieur": {
+   "fichier": "personnages/plume-vol-rieur.webp",
+   "boite": [
+    53.0,
+    45.0,
+    245.0,
+    222.0
+   ],
+   "ancre": [
+    0.4776,
+    0.518
+   ],
+   "echelle": 0.9
+  },
+  "plume-vol-surpris": {
+   "fichier": "personnages/plume-vol-surpris.webp",
+   "boite": [
+    53.0,
+    45.0,
+    245.0,
+    222.0
+   ],
+   "ancre": [
+    0.4776,
+    0.518
+   ],
+   "echelle": 0.9
+  },
+  "plume-vol-pensif": {
+   "fichier": "personnages/plume-vol-pensif.webp",
+   "boite": [
+    53.0,
+    45.0,
+    245.0,
+    222.0
+   ],
+   "ancre": [
+    0.4776,
+    0.518
+   ],
+   "echelle": 0.9
+  },
+  "plume-vol-doux": {
+   "fichier": "personnages/plume-vol-doux.webp",
+   "boite": [
+    53.0,
+    45.0,
+    245.0,
+    222.0
+   ],
+   "ancre": [
+    0.4776,
+    0.518
+   ],
+   "echelle": 0.9
+  },
+  "plume-piece-aile-ar": {
+   "fichier": "personnages/plume-piece-aile-ar.webp",
+   "boite": [
+    86.5,
+    54.5,
+    105.0,
+    122.5
+   ],
+   "ancre": [
+    0.7952,
+    0.8612
+   ],
+   "echelle": 0.9,
+   "pivot": [
+    0.7952,
+    0.8465
+   ]
+  },
+  "plume-piece-corps": {
+   "fichier": "personnages/plume-piece-corps.webp",
+   "boite": [
+    53.0,
+    87.0,
+    245.0,
+    180.0
+   ],
+   "ancre": [
+    0.4776,
+    0.4056
+   ],
+   "echelle": 0.9
+  },
+  "plume-piece-aile-av": {
+   "fichier": "personnages/plume-piece-aile-av.webp",
+   "boite": [
+    101.0,
+    45.0,
+    90.0,
+    133.0
+   ],
+   "ancre": [
+    0.7667,
+    0.8647
+   ],
+   "echelle": 0.9,
+   "pivot": [
+    0.7667,
+    0.8511
+   ]
+  }
+ },
+ "iles": {
+  "nombres": {
+   "cadre": [
+    1194,
+    834
+   ],
+   "base": {
+    "fichier": "iles/nombres/base.webp",
+    "boite": [
+     0.0,
+     0.0,
+     1194.0,
+     834.0
+    ]
+   },
+   "remplissages": {
+    "D": {
+     "fichier": "iles/nombres/remplissage-D.webp",
+     "boite": [
+      446.5,
+      207.5,
+      277.0,
+      225.0
+     ]
+    },
+    "E": {
+     "fichier": "iles/nombres/remplissage-E.webp",
+     "boite": [
+      926.0,
+      589.0,
+      125.0,
+      79.5
+     ]
+    },
+    "F": {
+     "fichier": "iles/nombres/remplissage-F.webp",
+     "boite": [
+      167.0,
+      589.0,
+      128.0,
+      93.0
+     ]
+    }
+   },
+   "lieux": {
+    "marche": {
+     "fichier": "iles/nombres/lieu-marche.webp",
+     "boite": [
+      161.0,
+      289.5,
+      380.5,
+      307.5
+     ]
+    },
+    "nenuphars": {
+     "fichier": "iles/nombres/lieu-nenuphars.webp",
+     "boite": [
+      615.0,
+      374.5,
+      433.0,
+      218.0
+     ]
+    },
+    "partage": {
+     "fichier": "iles/nombres/lieu-partage.webp",
+     "boite": [
+      386.5,
+      588.0,
+      363.5,
+      141.5
+     ]
+    }
+   },
+   "animes": {
+    "bateau": {
+     "fichier": "iles/nombres/anime-bateau.webp",
+     "boite": [
+      26.5,
+      666.5,
+      113.5,
+      127.5
+     ]
+    }
+   },
+   "emplacements": {
+    "A": [
+     318,
+     470
+    ],
+    "B": [
+     842,
+     496
+    ],
+    "C": [
+     560,
+     660
+    ],
+    "D": [
+     590,
+     398
+    ],
+    "E": [
+     990,
+     640
+    ],
+    "F": [
+     232,
+     652
+    ]
+   },
+   "lieuxEmplacement": {
+    "marche": "A",
+    "nenuphars": "B",
+    "partage": "C"
+   },
+   "pastilles": {
+    "marche": [
+     318,
+     612
+    ],
+    "nenuphars": [
+     842,
+     630
+    ],
+    "partage": [
+     560,
+     750
+    ]
+   },
+   "plume": [
+    726,
+    330
+   ]
+  }
+ }
+}
