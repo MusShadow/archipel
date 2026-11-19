@@ -1,3 +1,5 @@
+import { imageImagier } from "./imagier";
+import { urlImage } from "./images";
 // Lexique illustré : mots du quotidien avec une image (emoji du système), pour les jeux de sons et de lecture.
 
 // Jeux de sons (oral) : l'enfant ne lit pas, il entend le mot et voit l'image.
@@ -120,7 +122,25 @@ export const READ_WORDS: ReadWord[] = [
 // Mots-outils : appris globalement, affichés soulignés en pointillés.
 export const SIGHT_WORDS = ["le", "la", "et", "est", "sur"];
 
-export const emoji = (e: string, size = "1em") => `<span class="emo" style="font-size:${size}" aria-hidden="true">${e}</span>`;
+// Un emoji de l'appli s'affiche avec son image de l'imagier (finition album, livraison 3) ; l'emoji lui-même seulement
+// s'il n'a pas d'image. Même place, même taille (1 em) : la mise en page des activités ne bouge pas.
+export const emoji = (e: string, size = "1em") => {
+  const im = imageImagier(e);
+  return im
+    ? `<span class="emo emo-img" style="font-size:${size}" aria-hidden="true">${imgImagier(im.fichier)}</span>`
+    : `<span class="emo" style="font-size:${size}" aria-hidden="true">${e}</span>`;
+};
+export const imgImagier = (fichier: string) => `<img src="${urlImage(fichier)}" alt="" draggable="false">`;
+// Les emoji posés directement dans un <span class="emo"> (quelques activités) prennent aussi leur image.
+export function imagerEmojis(racine: ParentNode) {
+  for (const el of Array.from(racine.querySelectorAll<HTMLElement>(".emo:not(.emo-img)"))) {
+    if (el.children.length) continue;
+    const im = imageImagier((el.textContent ?? "").trim());
+    if (!im) continue;
+    el.classList.add("emo-img");
+    el.innerHTML = imgImagier(im.fichier);
+  }
+}
 
 // Mot écrit : syllabes (coloriées en alternance si demandé), lettres muettes en gris.
 export function wordHTML(r: ReadWord, colored = false) {

@@ -54,6 +54,7 @@ export const bienvenueIle = (id: IleId): string[] => [BIENVENUE[id], ...(HOTE_PA
 
 export interface OptionsIle {
   conseil?: string; // lieu conseillé par Plume
+  titre?: (id: string) => string | undefined; // nom d'un lieu (les écrans à part n'ont pas de module d'activité)
   disponible?: (id: string) => boolean; // un lieu fermé garde son étiquette, avec un cadenas
   onLieu?: (id: string, el: HTMLElement) => void;
   onRetour?: () => void;
@@ -95,7 +96,7 @@ export function ecranIle(ile: Ile, o: OptionsIle = {}): { el: HTMLElement; ajust
   }
   for (const l of q.lieux) {
     const id = l.ids[0];
-    const titre = ACTIVITY_BY_ID[id]?.title ?? id;
+    const titre = o.titre?.(id) ?? ACTIVITY_BY_ID[id]?.title ?? id;
     const ouvert = o.disponible ? o.disponible(id) : true;
     const p = pastille({ titre, ile: ile.id, conseillee: id === o.conseil && ouvert, onclick: () => toucher(id, p) });
     p.dataset.act = id;
@@ -112,9 +113,11 @@ export function ecranIle(ile: Ile, o: OptionsIle = {}): { el: HTMLElement; ajust
     if (!taille.l || !taille.h) return;
     const k = echelle(taille);
     cadre.style.transform = `translate(-50%, -50%) scale(${k})`;
+    // chaque étiquette reste entière à l'écran (portrait : le dessin est rogné sur les côtés)
     for (const { el, p } of ancres) {
       const e = versEcran(p, taille);
-      el.style.left = `${e.x}px`;
+      const demi = (el.offsetWidth || 0) / 2 + 8;
+      el.style.left = `${demi ? Math.min(Math.max(e.x, demi), taille.l - demi) : e.x}px`;
       el.style.top = `${e.y}px`;
     }
     // Plume et sa bulle restent dans la partie visible du dessin (portrait : le dessin est rogné sur les côtés)

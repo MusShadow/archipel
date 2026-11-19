@@ -123,7 +123,7 @@ describe("cadre d'activité", () => {
     expect(h.el.dataset.expr).toBe("content");
     h.fin();
     expect(decorActivite("nombres").classList.contains("dessine")).toBe(true);
-    expect(decorActivite("mots").classList.contains("dessine")).toBe(false);
+    expect(decorActivite("pas-encore-dessinee").classList.contains("dessine")).toBe(false);
   });
   withDom("les nénuphars : l'étang dessiné, onze nénuphars numérotés, la grenouille en deux poses", async () => {
     const { nenuphars } = await import("../src/activities/nenuphars");

@@ -81,3 +81,9 @@ def nombres_anime(R, nom):
         raise KeyError(nom)
 
 DESSINS = {"nombres": {"base": nombres_base, "remplissage": nombres_remplissage, "lieu": nombres_lieu, "anime": nombres_anime}}
+
+# ---------------------------------------------------------------------------- îles de la livraison 3
+import ile_mots
+for _id, _m in (("mots", ile_mots),):
+    DISPOSITIONS[_id] = _m.DISPOSITION
+    DESSINS[_id] = _m.DESSINS

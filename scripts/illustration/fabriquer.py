@@ -102,9 +102,13 @@ def personnages(cat):
         out[f"plume-{var}"] = entree
         print(f"  {fichier:42} {boite}")
 
-def iles(cat):
-    cat["iles"] = {}
+def iles(cat, seules=None):
+    """Toutes les îles dessinées, ou seulement celles demandées (les autres gardent leur catalogue)."""
+    if not seules:
+        cat["iles"] = {}
     for ile, disp in I.DISPOSITIONS.items():
+        if seules and ile not in seules:
+            continue
         d = I.DESSINS[ile]
         A = Atelier(I.W, I.H)
         t = time.time()
@@ -168,7 +172,7 @@ def nettoyer(cat, quoi):
         gardes |= {d["base"]["fichier"]} | {x["fichier"] for k in ("remplissages", "lieux", "animes") for x in d[k].values()}
     parties = ["personnages", "iles"] + ["activites", "gommettes", "fetes", "carte", "accueil"]
     for partie in parties:
-        if not (SORTIE / partie).exists() or (partie in ("personnages", "iles") and partie not in quoi):
+        if not (SORTIE / partie).exists() or (partie == "personnages" and partie not in quoi) or (partie == "iles" and "iles" not in quoi and not ({q for q in quoi if q in I.DISPOSITIONS})):
             continue
         if partie not in ("personnages", "iles") and not any(m in quoi for m in MODULES_ELEMENTS):
             continue
@@ -204,9 +208,10 @@ if __name__ == "__main__":
     if "personnages" in quoi:
         print("Personnages")
         personnages(cat)
-    if "iles" in quoi:
+    seules = {q for q in quoi if q in I.DISPOSITIONS}
+    if "iles" in quoi or seules:
         print("Îles")
-        iles(cat)
+        iles(cat, seules)
     if any(m in quoi for m in MODULES_ELEMENTS):
         print("Éléments")
         elements(cat, quoi)

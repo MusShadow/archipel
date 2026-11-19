@@ -373,6 +373,7 @@ function islandScreen(id: IleId, acts: Entry[], advised: Entry | undefined) {
   };
   const { el } = ecranIle(ilesV2()[id], {
     conseil: advised?.id,
+    titre: (a) => byId.get(a)?.title,
     disponible: (a) => { const e = byId.get(a); return !!e && ok(e, p); },
     onLieu: choisir,
     onRetour: () => { sfx.tap(); go(() => mapScreen()); },

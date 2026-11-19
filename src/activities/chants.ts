@@ -1,3 +1,5 @@
+import { imageImagier } from "../imagier";
+import { urlImage } from "../images";
 // Île des Mots — « Les chants de Mona » : frapper les syllabes, trouver la rime, entendre le début d'un mot.
 // Activité orale : l'enfant ne lit pas, il écoute le mot et regarde l'image.
 import type { Rng } from "../core";
@@ -174,4 +176,9 @@ function renderDrum(item: ChantItem, view: View) {
 
 const DRUM = `<svg viewBox="0 0 120 110" aria-hidden="true" style="display:block;width:100%;height:100%"><ellipse cx="60" cy="88" rx="46" ry="14" fill="#C2410C"/><rect x="14" y="34" width="92" height="54" fill="#FF7F50"/><path d="M14 40 L34 86 M34 40 L54 86 M54 40 L74 86 M74 40 L94 86 M94 40 L106 70" stroke="#FFE0D3" stroke-width="4" fill="none"/><ellipse cx="60" cy="34" rx="46" ry="14" fill="#FFF7EA" stroke="#C2410C" stroke-width="4"/><path d="M84 6 L66 30" stroke="#A0673F" stroke-width="6" stroke-linecap="round"/><circle cx="86" cy="5" r="6" fill="#FFC145"/></svg>`;
 
-export const emojiStickerSVG = (e: string, tint: string) => `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="${tint}"/><text x="35" y="45" text-anchor="middle" style="font-size:30px">${e}</text></svg>`;
+// Gommette ronde : bord blanc, disque de la couleur de l'île, l'image de l'imagier au milieu (l'emoji s'il n'en a pas).
+export const emojiStickerSVG = (e: string, tint: string) => {
+  const im = imageImagier(e);
+  const motif = im ? `<image href="${urlImage(im.fichier)}" x="14" y="14" width="42" height="42"/>` : `<text x="35" y="45" text-anchor="middle" style="font-size:30px">${e}</text>`;
+  return `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="39" r="33" fill="#E6DAC4" opacity=".8"/><circle cx="35" cy="35" r="33" fill="#FFFDF8" stroke="#E2CBA6" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="${tint}"/>${motif}</svg>`;
+};

@@ -9,6 +9,7 @@ import type { IleId } from "./design/jetons";
 import { DECORS_ILES, PERSONNAGES } from "./illustrations";
 import { urlImage } from "./images";
 import { dots, h, icon, sleep, wobble } from "./ui";
+import { imagerEmojis } from "./lexique";
 
 export interface Item { skill: string; difficulty: number; form: Form; guess: number; prompt: string; level: number }
 export interface Ctx { profile: Profile; rng: Rng; known: Set<string>; now: number }
@@ -162,6 +163,7 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     }
     itemStart = Date.now();
     mod.render(item, view);
+    imagerEmojis(stage);
     options = spokenOptions(stage);
     for (const o of options) if (o.card) addSpeaker(o);
     sayPrompt();
@@ -203,6 +205,8 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     o.el.classList.add("hasay");
     o.el.appendChild(b);
   }
+  // Ce que l'activité ajoute plus tard (une réponse dévoilée, une étape) prend aussi les images de l'imagier.
+  if (typeof MutationObserver !== "undefined") new MutationObserver(() => { if (alive) imagerEmojis(stage); }).observe(stage, { childList: true, subtree: true });
   // Un geste de l'enfant pendant la lecture des réponses l'arrête (sauf le haut-parleur, qui relance la sienne).
   stage.addEventListener("pointerdown", () => { if (readingOptions) { stopReading(); speech.stop(); } });
 

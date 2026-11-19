@@ -898,6 +898,144 @@
     726,
     330
    ]
+  },
+  "mots": {
+   "cadre": [
+    1194,
+    834
+   ],
+   "base": {
+    "fichier": "iles/mots/base.webp",
+    "boite": [
+     0.0,
+     0.0,
+     1194.0,
+     834.0
+    ]
+   },
+   "remplissages": {
+    "D": {
+     "fichier": "iles/mots/remplissage-D.webp",
+     "boite": [
+      469.0,
+      214.5,
+      196.5,
+      217.0
+     ]
+    },
+    "F": {
+     "fichier": "iles/mots/remplissage-F.webp",
+     "boite": [
+      187.0,
+      591.0,
+      103.0,
+      91.5
+     ]
+    }
+   },
+   "lieux": {
+    "lis": {
+     "fichier": "iles/mots/lieu-lis.webp",
+     "boite": [
+      158.0,
+      313.5,
+      295.0,
+      191.5
+     ]
+    },
+    "syllabes": {
+     "fichier": "iles/mots/lieu-syllabes.webp",
+     "boite": [
+      704.5,
+      315.5,
+      292.5,
+      210.5
+     ]
+    },
+    "chants": {
+     "fichier": "iles/mots/lieu-chants.webp",
+     "boite": [
+      436.5,
+      446.0,
+      257.5,
+      250.0
+     ]
+    },
+    "histoires": {
+     "fichier": "iles/mots/lieu-histoires.webp",
+     "boite": [
+      893.0,
+      505.5,
+      220.5,
+      177.0
+     ]
+    }
+   },
+   "animes": {
+    "mona": {
+     "fichier": "iles/mots/anime-mona.webp",
+     "boite": [
+      38.5,
+      692.5,
+      187.5,
+      133.5
+     ]
+    }
+   },
+   "emplacements": {
+    "A": [
+     318,
+     470
+    ],
+    "B": [
+     842,
+     496
+    ],
+    "C": [
+     560,
+     660
+    ],
+    "D": [
+     590,
+     398
+    ],
+    "E": [
+     990,
+     640
+    ],
+    "F": [
+     232,
+     652
+    ]
+   },
+   "lieuxEmplacement": {
+    "lis": "A",
+    "syllabes": "B",
+    "chants": "C",
+    "histoires": "E"
+   },
+   "pastilles": {
+    "lis": [
+     318,
+     606
+    ],
+    "syllabes": [
+     842,
+     622
+    ],
+    "chants": [
+     560,
+     758
+    ],
+    "histoires": [
+     994,
+     770
+    ]
+   },
+   "plume": [
+    726,
+    330
+   ]
   }
  },
  "elements": {
