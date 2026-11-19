@@ -1,24 +1,29 @@
 // Écrans de l'enfant : accueil, carte de l'archipel, gommettes, coin calme, carnet, coucher du soleil.
 import { ACTIVITIES, ISLAND_SPOKEN, META_BY_ID, stickerArt } from "../activities";
 import { app } from "../app";
-import { FACES, ISLANDS, ISLAND_SHAPES, LANDMARKS, MAP_WAVES, MEDALS, PLUME_B } from "../art_static";
+import { FACES, ISLANDS } from "../art_static";
 import { DEFIS, knownSet } from "../content";
 import { makeRng, suggestMissions, type ActivityId, type DomainId } from "../core";
 import { DRAWING_BY_ID, drawingSVG } from "../drawings";
 import { emoji } from "../lexique";
 import { FLAG_BY_CODE, cap, flagSVG } from "../flags";
 import { activityScreen, isAvailable, type ActivityModule, type RoundSummary, type StickerSpec } from "../host";
+import type { IleId } from "../design/jetons";
+import { ilesV2 } from "../iles";
 import { nav } from "../nav";
 import { sfx, speech, voice, type Profile } from "../services";
-import { avatarSVG, esc, fly, h, icon, medallion, plumeSVG, roundBtn, sleep } from "../ui";
+import { ICON_PATHS, fly, h, icon, medallion, roundBtn, sleep, wobble } from "../ui";
 import { longPress, parentGate, sheet } from "./common";
 import { grandDepart } from "./depart";
+import { PLUME_CADRE, bienvenueIle, ecranIle, plumeAnime } from "./ile";
+import { compagnonHTML, imgEl, imgHTML, srcDe } from "../design/dessins";
+import { bullePlume, ruban } from "../design/composants";
+import { ELEMENTS, PERSONNAGES } from "../illustrations";
 import { drawPicker, gallery, mirrorScreen, showDrawing } from "./draw";
 import { storyShelf } from "./histoires";
 import { myFlagSVG, myFlagScreen } from "./myflag";
 
 const pick = <T,>(a: readonly T[]) => a[Math.floor(Math.random() * a.length)];
-const initial = (name: string) => (name.trim()[0] ?? "?").toUpperCase();
 const MOON = '<svg viewBox="0 0 40 40" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="20" cy="20" r="19" fill="#273043"/><path d="M24 8 A13 13 0 1 0 32 28 A10 10 0 1 1 24 8 Z" fill="#FFC145"/></svg>';
 const PICO = `<svg viewBox="0 0 84 84" aria-hidden="true" style="display:block;width:100%;height:100%">${FACES.pico ?? ""}</svg>`;
 
@@ -36,15 +41,17 @@ export function startScreen() {
   const lock = h("button", { type: "button", class: "lockbtn", "aria-label": "Espace parent : maintenir appuyé" },
     h("span", { class: "ring" }, h("span", { style: "width:30px;height:30px;display:flex;align-items:center;justify-content:center", html: icon("lock", "#273043", 2.2) })),
     h("span", {}, "Parent : maintenir"));
-  const screen = h("div", { class: "screen start" },
-    h("div", { class: "plume-big", html: plumeSVG() }),
+  // La plage (livraison 2) : Plume accueille, chaque enfant retrouve son compagnon coiffé de son chapeau.
+  const screen = h("div", { class: "screen start plage" },
+    imgEl("accueil/plage", "plage-fond"),
+    h("div", { class: "plage-plume" }, plumeAnime(0.74)),
     h("h1", { class: "title" }, "Archipel"),
-    h("p", { class: "sub" }, "Qui part en voyage ?"),
+    h("div", { class: "sub" }, ruban({ texte: "Qui part en voyage ?", ile: "port" })),
     kids, lock);
   for (const p of d.profiles) {
     const resting = (p.restUntil ?? 0) > Date.now();
     const b = h("button", { type: "button", class: "kid", "aria-label": resting ? `${p.name}, Plume se repose` : p.name },
-      h("span", { class: "av", html: avatarSVG(initial(p.name), p.color) }),
+      h("span", { class: "av", html: compagnonHTML(p.avatar, p.color) }),
       h("span", { class: "nm" }, p.name),
       resting ? h("span", { class: "moon", html: MOON }) : null);
     b.addEventListener("click", () => choose(p, resting));
@@ -58,7 +65,7 @@ export function startScreen() {
     const until = new Date(p.restUntil!).toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
     speech.say(`Plume se repose, ${p.name}. On repart en voyage plus tard !`);
     const s = sheet(screen,
-      h("div", { style: "width:130px;height:105px", html: plumeSVG() }),
+      h("div", { class: "sheet-perso", html: imgHTML("plume-pense") }),
       h("p", { class: "title", style: "font-size:max(24px,calc(var(--u) * 34));margin:0" }, "Plume se repose. On repart plus tard !"),
       h("p", { class: "muted", style: "margin:0" }, `Pause jusqu'à ${until}. Un adulte peut ouvrir une nouvelle séance.`),
       h("div", { class: "row" },
@@ -83,8 +90,8 @@ export function startScreen() {
 // ---------- Carte de l'archipel ----------
 // En portrait, les îles sont redistribuées sur deux colonnes (même dessin, autre position).
 const PORTRAIT: Record<string, [number, number]> = { mots: [410, 285], nombres: [215, 510], enigmes: [612, 500], coeur: [228, 740], atelier: [602, 750], port: [200, 975], decouvertes: [608, 965] };
-const PORTRAIT_WAVES = [[60, 860], [520, 880], [90, 1120], [420, 1100], [700, 1150], [740, 640]].map(([x, y]) => `<path d="M${x} ${y} q8 -6 16 0 q8 6 16 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".7"/>`).join("");
 const isPortrait = () => window.innerHeight > window.innerWidth * 1.1;
+// Le soleil de la séance glisse sur son arc ; la lune attend au bout (livraison 2 : soleil et lune de l'atelier).
 function sunSVG(f: number, portrait = false) {
   const SUN = { cx: portrait ? 430 : 590, cy: 92, rx: 120, ry: 62 };
   const a = Math.PI * (1 - f);
@@ -93,35 +100,37 @@ function sunSVG(f: number, portrait = false) {
   let s = "";
   if (f > 0.01) s += `<path d="M${SUN.cx - SUN.rx} ${SUN.cy} A${SUN.rx} ${SUN.ry} 0 0 1 ${P(sx)} ${P(sy)}" fill="none" stroke="#FFC145" stroke-width="6" stroke-linecap="round"/>`;
   if (f < 0.99) s += `<path d="M${P(sx)} ${P(sy)} A${SUN.rx} ${SUN.ry} 0 0 1 ${SUN.cx + SUN.rx} ${SUN.cy}" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-dasharray="0.1 12"/>`;
-  for (let k = 0; k < 8; k++) {
-    const b = (k * Math.PI) / 4;
-    s += `<line x1="${P(sx + 20 * Math.cos(b))}" y1="${P(sy + 20 * Math.sin(b))}" x2="${P(sx + 26 * Math.cos(b))}" y2="${P(sy + 26 * Math.sin(b))}" stroke="#FFC145" stroke-width="3" stroke-linecap="round"/>`;
-  }
-  s += `<circle cx="${P(sx)}" cy="${P(sy)}" r="15" fill="#FFC145" stroke="#E9A800" stroke-width="2"/>`;
-  s += `<circle cx="${SUN.cx + SUN.rx}" cy="${SUN.cy}" r="10" fill="#C9D3E8"/><circle cx="${SUN.cx + SUN.rx + 5}" cy="${SUN.cy - 4}" r="9" fill="#BFE8EE"/>`;
+  const astre = (nom: string, x: number, y: number, k: number, cx: number, cy: number) => {
+    const im = ELEMENTS[nom];
+    if (!im) return "";
+    const [bx, by, bw, bh] = im.boite;
+    return `<image href="${srcDe(im)}" x="${P(x + (bx - cx) * k)}" y="${P(y + (by - cy) * k)}" width="${P(bw * k)}" height="${P(bh * k)}"/>`;
+  };
+  s += astre("carte/lune", SUN.cx + SUN.rx, SUN.cy, 0.42, 50, 50);
+  s += astre("carte/soleil", sx, sy, 0.72, 50, 50);
   return s;
 }
 
-function islandSVG(isl: (typeof ISLANDS)[number], o: { mission: boolean; sleeping: boolean; done: boolean }) {
-  const { id, cx, cy, rx, ry, color, label } = isl;
-  let g = "";
-  if (o.mission) {
-    g += `<ellipse cx="${cx}" cy="${cy}" rx="${rx + 28}" ry="${ry + 26}" fill="none" stroke="#fff" stroke-width="14" opacity=".35"/>`;
-    g += `<ellipse class="ring" cx="${cx}" cy="${cy}" rx="${rx + 28}" ry="${ry + 26}" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="10 9" stroke-linecap="round"/>`;
-  }
-  g += ISLAND_SHAPES[id] + LANDMARKS[id] + ((MEDALS as Record<string, string>)[id] ?? "");
-  if (o.sleeping) {
-    const x = cx - rx * 0.62, y = cy - ry * 0.42;
-    g += `<g class="zzz" style="font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:800;fill:#5B6475"><text x="${x}" y="${y}" font-size="22">z</text><text x="${x + 14}" y="${y - 12}" font-size="17">z</text></g>`;
-  }
-  if (o.done) {
-    const x = cx + rx * 0.62, y = cy - ry * 0.7;
-    g += `<circle cx="${x}" cy="${y}" r="17" fill="#34B37A" stroke="#fff" stroke-width="3"/><path d="M${x - 8} ${y} l5 5 l10 -10" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>`;
-  }
-  const w = Math.round(label.length * 9 + 46), y = cy + ry + 12;
-  g += `<g transform="translate(${cx} ${y})"><rect x="${-w / 2}" y="0" width="${w}" height="32" rx="16" fill="#FFF7EA" stroke="${color}" stroke-width="2"/><circle cx="${-w / 2 + 18}" cy="16" r="6" fill="${color}"/><text x="9" y="22" text-anchor="middle" style="font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:700;font-size:17px;fill:#273043">${esc(label)}</text></g>`;
-  const aria = `${label}${o.sleeping ? ", endormie" : ""}${o.mission ? ", mission proposée" : ""}${o.done ? ", déjà visitée" : ""}`;
-  return `<g class="isl${o.sleeping ? " sleep" : ""}" data-isl="${id}" tabindex="0" role="button" aria-label="${esc(aria)}">${g}</g>`;
+const CHECK = '<svg viewBox="0 0 34 34" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="17" cy="17" r="15" fill="#34B37A" stroke="#fff" stroke-width="3"/><path d="M9 17 l5 5 l10 -10" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const icone = (nom: string) => `<svg viewBox="0 0 24 24" aria-hidden="true" class="a-ico">${ICON_PATHS[nom] ?? ""}</svg>`;
+
+// Une île de la carte : son dessin (atelier), son nom, l'anneau de la mission, la coche d'une île visitée.
+function ileCarte(isl: (typeof ISLANDS)[number], [cx, cy]: [number, number], o: { mission: boolean; sleeping: boolean; done: boolean }): HTMLElement {
+  const im = ELEMENTS[`carte/ile-${isl.id}`];
+  const [bx, by, bw, bh] = im.boite;
+  const [fx, fy] = im.points!.centre;
+  const x0 = cx - (bx + fx * bw) + bx, y0 = cy - (by + fy * bh) + by; // coin de l'image sur la carte
+  const ox = fx * bw, oy = fy * bh; // centre de l'île dans le bouton
+  const aria = `${isl.label}${o.sleeping ? ", endormie" : ""}${o.mission ? ", mission proposée" : ""}${o.done ? ", déjà visitée" : ""}`;
+  const rx = isl.rx + 30, ry = isl.ry + 30;
+  return h("button", { type: "button", class: `ile-carte${o.sleeping ? " sleep" : ""}${o.mission ? " mission" : ""}`, "data-isl": isl.id, "aria-label": aria,
+    style: `left:${x0}px;top:${y0}px;width:${bw}px;height:${bh}px` },
+    o.mission ? h("span", { class: "ile-anneau", style: `left:${ox - rx}px;top:${oy - ry + 10}px;width:${2 * rx}px;height:${2 * ry}px`,
+      html: `<svg viewBox="0 0 ${2 * rx} ${2 * ry}" aria-hidden="true"><ellipse cx="${rx}" cy="${ry}" rx="${rx - 5}" ry="${ry - 5}"/></svg>` }) : null,
+    h("img", { class: "ile-img", src: srcDe(im), alt: "", draggable: "false" }),
+    o.done ? h("span", { class: "ile-fait", style: `left:${ox + isl.rx * 0.62}px;top:${oy - isl.ry * 0.95}px`, html: CHECK }) : null,
+    o.sleeping ? h("span", { class: "zzz", style: `left:${ox - isl.rx * 0.6}px;top:${oy - isl.ry}px` }, h("i", null, "z"), h("i", null, "z")) : null,
+    h("span", { class: "ile-nom", style: `left:${ox}px;top:${oy + isl.ry + 30}px` }, h("i", { style: `background:${isl.color}` }), isl.label));
 }
 
 // Ce qu'on trouve sur chaque île : les activités d'exercices, et quelques écrans à part (dessin, miroir,
@@ -175,34 +184,61 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
   const missionActs = missionsFor(p);
   const missions = missionActs.map(islandOf);
   const visited = s.activities.map(islandOf);
-  const plume = `<g class="plume-map" data-plume="1" role="button" tabindex="0" aria-label="Réécouter Plume" style="cursor:pointer">`
-    + `<rect x="262" y="94" width="72" height="50" rx="16" fill="#fff" stroke="#D8CDB8" stroke-width="1.5"/><polygon points="330,124 348,136 333,114" fill="#fff"/>`
-    + `<g transform="translate(281 102) scale(1.4)" fill="none" stroke="#273043" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5 H7.5 L12 5.5 V18.5 L7.5 14.5 H4 Z"/><path d="M15.5 9 C17 10.5 17 13.5 15.5 15 M18 6.5 C21 9.5 21 14.5 18 17.5"/></g>`
-    + `<g transform="translate(330 70) scale(0.36)">${PLUME_B}</g></g>`;
-  const wrap = h("div", { class: "mapwrap" });
+  // La carte (livraison 2) : la mer, les sept îles dessinées à leur place, Plume qui vole vers la mission proposée.
+  const wrap = h("div", { class: "mapwrap carte" });
+  const mer = imgEl("carte/mer", "carte-mer");
+  const cadre = h("div", { class: "carte-cadre" });
+  wrap.append(mer, cadre);
   let portrait = isPortrait();
+  let plumeVole: HTMLElement | null = null;
   const draw = () => {
-    const islands = ISLANDS.map((isl) => {
-      const g = islandSVG(isl, { mission: missions.includes(isl.id), sleeping: !active.has(isl.id), done: visited.includes(isl.id) });
-      if (!portrait) return g;
-      const [x, y] = PORTRAIT[isl.id];
-      // Le ballon du port passe entre les deux colonnes pour ne pas cacher l'île du Cœur.
-      const art = isl.id === "port" ? g.replace("translate(175 560)", "translate(330 585)") : g;
-      return `<g transform="translate(${x - isl.cx} ${y - isl.cy})">${art}</g>`;
-    }).join("");
-    wrap.innerHTML = `<svg viewBox="${portrait ? "0 0 820 1180" : "0 0 1180 820"}" preserveAspectRatio="xMidYMid meet" role="group" aria-label="Carte de l'archipel">`
-      + `<rect x="-600" y="-600" width="2400" height="2400" fill="#BFE8EE"/>${MAP_WAVES}${portrait ? PORTRAIT_WAVES : ""}${islands}`
-      + `${portrait ? `<g transform="translate(-170 0)">${plume}</g>` : plume}<g id="sun" aria-hidden="true">${sunSVG(app.sessionFraction(), portrait)}</g></svg>`;
+    const [L, H] = portrait ? [820, 1180] : [1180, 820];
+    cadre.style.width = `${L}px`; cadre.style.height = `${H}px`;
+    const pos = (isl: (typeof ISLANDS)[number]): [number, number] => (portrait ? PORTRAIT[isl.id] : [isl.cx, isl.cy]);
+    const iles = ISLANDS.map((isl) => ileCarte(isl, pos(isl), { mission: missions.includes(isl.id), sleeping: !active.has(isl.id), done: visited.includes(isl.id) }));
+    const ciel = h("div", { class: "carte-ciel", "aria-hidden": "true",
+      html: `<svg viewBox="0 0 ${L} ${H}" width="${L}" height="${H}"><g id="sun">${sunSVG(app.sessionFraction(), portrait)}</g></svg>` });
+    // Plume part de son perchoir (en haut à gauche) et vole vers la première mission ; sa bulle la suit.
+    // Elle se pose au-dessus de l'île (en haut à droite, sous le soleil pour l'île des Mots) : le nom reste lisible.
+    const cible = ISLANDS.find((i) => i.id === missions[0]);
+    const depart: [number, number] = portrait ? [150, 170] : [330, 150];
+    const perche = (i: (typeof ISLANDS)[number]): [number, number] => {
+      const [x, y] = pos(i);
+      return i.id === "mots" && !portrait ? [x - i.rx * 0.9, y - i.ry] : [x + i.rx * 0.35, y - i.ry - 20];
+    };
+    const arrivee: [number, number] = cible ? perche(cible) : depart;
+    const e = 0.42, f = e / (PERSONNAGES["plume-piece-corps"].echelle ?? 0.9);
+    const vol = plumeAnime(e);
+    vol.style.cssText = `position:absolute;left:${-PLUME_CADRE.ax * f}px;top:${-PLUME_CADRE.ay * f}px;width:${PLUME_CADRE.l * f}px;height:${PLUME_CADRE.h * f}px`;
+    // la bulle se met du côté où il y a de la place (jamais sous les boutons du haut)
+    const aDroite = arrivee[0] < L * 0.62;
+    const bulle = bullePlume({ queue: aDroite ? "gauche" : "droite" });
+    bulle.dataset.plume = "1";
+    bulle.style.cssText = aDroite ? "position:absolute;left:52px;top:-96px" : "position:absolute;right:56px;top:-96px";
+    plumeVole = h("div", { class: "carte-plume" }, vol, bulle);
+    const placer = (x: number, y: number) => { plumeVole!.style.transform = `translate(${x}px,${y}px)`; };
+    placer(...depart);
+    cadre.replaceChildren(...iles, ciel, plumeVole);
+    const reduit = typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduit) placer(...arrivee);
+    else requestAnimationFrame(() => requestAnimationFrame(() => { plumeVole?.classList.add("en-vol"); placer(...arrivee); }));
+    ajuster();
+  };
+  const ajuster = () => {
+    const W = wrap.clientWidth || window.innerWidth, H = wrap.clientHeight || window.innerHeight;
+    const k = portrait ? Math.min(W / 820, H / 1180) : Math.min(W / 1180, H / 820);
+    cadre.style.transform = `translate(-50%, -50%) scale(${k})`;
   };
   draw();
-  const onResize = () => { if (isPortrait() !== portrait) { portrait = !portrait; draw(); } };
+  const onResize = () => { if (isPortrait() !== portrait) { portrait = !portrait; draw(); } else ajuster(); };
   window.addEventListener("resize", onResize);
+  requestAnimationFrame(ajuster);
 
-  const carnetBtn = h("button", { type: "button", class: "hudbtn", "aria-label": "Ouvrir mon carnet d'explorateur" }, h("span", { class: "round", html: icon("book") }), h("span", { class: "cap" }, "Carnet"));
-  const calmBtn = h("button", { type: "button", class: "hudbtn", "aria-label": "Aller au coin calme" }, h("span", { class: "round", html: icon("leaf", "#26895B") }), h("span", { class: "cap" }, "Coin calme"));
-  const meBtn = h("button", { type: "button", class: "hudbtn", "aria-label": `${p.name} : arrêter le voyage` },
-    h("span", { class: "round", style: `border-color:${p.color};background:#FFF7EA;overflow:hidden`, html: avatarSVG(initial(p.name), p.color) }),
-    h("span", { class: "cap" }, p.name));
+  const hud = (cls: string, aria: string, rond: string, cap: string) =>
+    h("button", { type: "button", class: `hudbtn ${cls}`, "aria-label": aria }, h("span", { class: "a-rond", html: rond }), h("span", { class: "cap" }, cap));
+  const carnetBtn = hud("hud-carnet", "Ouvrir mon carnet d'explorateur", icone("book"), "Carnet");
+  const calmBtn = hud("hud-calme", "Aller au coin calme", icone("leaf"), "Coin calme");
+  const meBtn = hud("hud-moi", `${p.name} : arrêter le voyage`, compagnonHTML(p.avatar, p.color), p.name);
   const screen = h("div", { class: "screen" }, wrap,
     h("div", { class: "hud l" }, meBtn),
     h("div", { class: "hud r" }, carnetBtn, calmBtn),
@@ -225,11 +261,6 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
     const g = t.closest("[data-isl]");
     if (g) tapIsland(g.getAttribute("data-isl")!, g);
   });
-  wrap.addEventListener("keydown", (e) => {
-    if (e.key !== "Enter" && e.key !== " ") return;
-    const g = (e.target as Element).closest("[data-isl]");
-    if (g) { e.preventDefault(); tapIsland(g.getAttribute("data-isl")!, g); }
-  });
   carnetBtn.addEventListener("click", () => { sfx.tap(); go(() => carnetScreen(() => mapScreen())); });
   calmBtn.addEventListener("click", () => { sfx.tap(); go(() => calmScreen(() => mapScreen())); });
   meBtn.addEventListener("click", () => {
@@ -243,18 +274,20 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
   });
 
   function tapIsland(id: string, g: Element) {
-    g.classList.remove("tapped"); void (g as SVGGraphicsElement).getBBox?.(); g.classList.add("tapped");
+    g.classList.remove("tapped"); void (g as HTMLElement).offsetWidth; g.classList.add("tapped");
     const acts = all.filter((e) => e.island === id);
     if (!acts.length) { sfx.soft(); say(`${cap(ISLAND_SPOKEN[id])} dort encore. Elle se réveillera bientôt !`); return; }
     sfx.tap();
+    const advised = acts.find((a) => missionActs.includes(a.id)) ?? acts.find((a) => a.plan && ok(a, p!)) ?? acts.find((a) => ok(a, p!));
+    // Île dessinée (livraison 2 : l'île des Nombres) : son écran, où chaque lieu ouvre son activité.
+    if (dessinee(id, acts)) { go(() => islandScreen(id as IleId, acts, advised)); return; }
     if (acts.length === 1 && ok(acts[0], p!)) { go(() => open(acts[0])); return; }
-    islandSheet(id, acts);
+    islandSheet(id, acts, advised);
   }
 
   // Une île, plusieurs activités : l'enfant choisit ; celle que Plume conseille est entourée.
-  function islandSheet(id: string, acts: Entry[]) {
+  function islandSheet(id: string, acts: Entry[], advised: Entry | undefined) {
     const isl = ISLANDS.find((x) => x.id === id)!;
-    const advised = acts.find((a) => missionActs.includes(a.id)) ?? acts.find((a) => a.plan && ok(a, p!)) ?? acts.find((a) => ok(a, p!));
     const cards = acts.map((a) => {
       const can = ok(a, p!);
       const b = h("button", { type: "button", class: `actcard${can ? "" : " locked"}${a === advised ? " advised" : ""}`, "data-act": a.id, "aria-label": can ? a.title : `${a.title}, pas encore ouverte` },
@@ -302,6 +335,63 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
       line = pick(["Où va-t-on maintenant ?", "Quelle île veux-tu visiter ?", `Je te propose ${names.join(" ou ")}.`]);
     }
     say(line);
+  }
+}
+
+// ---------- Écran d'une île dessinée : chaque lieu ouvre son activité ----------
+// L'île n'a son écran que si chacune de ses activités y a son lieu dessiné ; sinon, la fenêtre de la v1.
+function dessinee(id: string, acts: Entry[]): boolean {
+  const q = ilesV2()[id as IleId]?.quartiers[0];
+  return !!q?.decor && acts.every((a) => q.lieux.some((l) => l.ids.includes(a.id)));
+}
+
+function islandScreen(id: IleId, acts: Entry[], advised: Entry | undefined) {
+  const p = app.profile!;
+  const byId = new Map(acts.map((a) => [a.id, a]));
+  let leaving = false, run = 0;
+  const go = (fn: () => void) => { if (leaving) return; leaving = true; run++; fn(); };
+  const conseil = advised ? `Je te conseille : ${advised.title.toLowerCase()}.` : "";
+  const choisir = (actId: string, el: HTMLElement) => {
+    const e = byId.get(actId);
+    if (!e || leaving) return;
+    if (!ok(e, p)) { sfx.soft(); wobble(el); run++; say(e.lockedReason ?? "Cette activité s'ouvrira bientôt."); return; }
+    sfx.tap();
+    go(() => open(e));
+  };
+  const { el } = ecranIle(ilesV2()[id], {
+    conseil: advised?.id,
+    disponible: (a) => { const e = byId.get(a); return !!e && ok(e, p); },
+    onLieu: choisir,
+    onRetour: () => { sfx.tap(); go(() => mapScreen()); },
+    onEcoute: () => { sfx.tap(); accueil(); },
+    onPlume: () => { sfx.tap(); run++; say(conseil || "Touche un lieu pour commencer."); },
+  });
+  el.classList.add("screen");
+  // Le soleil se couche pendant qu'on regarde l'île : comme sur la carte, on rentre.
+  const timer = window.setInterval(() => {
+    if (!app.timeUp() || leaving) return;
+    leaving = true; run++;
+    say("Le soleil se couche sur l'archipel…").then(() => sleep(400)).then(() => sessionEnd());
+  }, 3000);
+  app.show(el, () => { leaving = true; run++; window.clearInterval(timer); });
+  accueil();
+
+  // Plume souhaite la bienvenue, présente chaque lieu (son étiquette brille pendant qu'elle en parle), puis conseille.
+  async function accueil() {
+    const r = ++run;
+    const pills = new Map(Array.from(el.querySelectorAll<HTMLElement>(".a-pastille[data-act]")).map((b) => [b.dataset.act!, b]));
+    const lignes = [
+      ...bienvenueIle(id).map((t) => ({ t, act: "" })),
+      ...acts.filter((a) => ok(a, p)).map((a) => ({ t: a.pitch, act: a.id })),
+      ...(conseil ? [{ t: conseil, act: "" }] : []),
+    ];
+    for (const l of lignes) {
+      if (r !== run) return;
+      const b = pills.get(l.act);
+      b?.classList.add("saying");
+      await say(l.t);
+      b?.classList.remove("saying");
+    }
   }
 }
 
@@ -449,7 +539,7 @@ export function sessionEnd(opts: { early?: boolean } = {}) {
   const screen = h("div", { class: "screen sunset" },
     h("div", { class: "sunball", "aria-hidden": "true" }),
     h("div", { class: "card-end pop" },
-      h("div", { style: "width:max(110px,calc(var(--u) * 170));height:max(88px,calc(var(--u) * 136))", html: plumeSVG() }),
+      h("div", { class: "fin-plume", html: imgHTML("plume-salut") }),
       h("h1", { class: "title" }, title),
       stickers.length ? h("div", { class: "row", "aria-label": "Gommettes gagnées pendant ce voyage" }, ...stickers.map((st) => h("span", { style: "width:max(52px,calc(var(--u) * 72));height:max(52px,calc(var(--u) * 72));display:block", html: stickerArt(st.kind, st.ref) }))) : null,
       h("p", { class: "defi" }, h("b", {}, "Ton défi pour la maison : "), defi),

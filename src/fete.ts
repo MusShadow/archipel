@@ -2,14 +2,18 @@
 // éclater, voiture, fusée, camion de pompiers, volcan — avec un grand message qui contient le prénom de l'enfant.
 // Le prénom est seulement affiché : la voix naturelle ne le dit jamais (il n'est pas dans le pack de voix publié).
 // La dernière réussite d'une activité a droit à la grande fête. Réglage « réduire les animations » : le message seul.
-// Tout est dessiné ici (SVG, sons synthétisés) : aucun fichier à télécharger, l'appli reste utilisable hors ligne.
+// Livraison 2 : les objets sont ceux de l'atelier d'illustration (ballons, voiture, camion, fusée, volcan, guirlande),
+// gardés hors ligne avec les autres images ; le message est d'une seule couleur ; l'hôte de l'île rit avec l'enfant.
+// Les sons restent synthétisés. Rien ne clignote : les lumières respirent doucement.
+import { image, imgHTML, srcDe } from "./design/dessins";
+import type { ImageCadree } from "./illustrations";
 import { sfx } from "./services";
 import { h } from "./ui";
 
 export type Scene = "feu" | "ballons" | "voiture" | "fusee" | "pompiers" | "volcan";
 export const SCENES: Scene[] = ["feu", "ballons", "voiture", "fusee", "pompiers", "volcan"];
 const COLORS = ["#FFC145", "#1FA9B5", "#E85D9A", "#3D8BEA", "#34B37A", "#FF7F50", "#8C6BE0"];
-const INKS = ["#E85D9A", "#1FA9B5", "#3D8BEA", "#34B37A", "#FF7F50", "#8C6BE0"]; // lettres : sans le jaune, trop pâle
+const NOMS: Record<string, string> = { "#FFC145": "jaune", "#1FA9B5": "turquoise", "#E85D9A": "rose", "#3D8BEA": "bleu", "#34B37A": "vert", "#FF7F50": "corail", "#8C6BE0": "violet" };
 
 // Les scènes passent à tour de rôle : jamais deux fois la même d'affilée, et une activité les fait presque toutes voir.
 let turn = -1;
@@ -55,36 +59,38 @@ function arc(p: Element, vx: number, vy: number, g: number, T: number, delay: nu
 }
 const STAR = (fill: string) => `<svg viewBox="0 0 24 24" style="display:block;width:100%;height:100%"><path d="M12 0 L15 9 L24 12 L15 15 L12 24 L9 15 L0 12 L9 9 Z" fill="${fill}"/></svg>`;
 
+// Le message, d'une seule couleur (le foncé de l'île), bordé de blanc : il arrive en rebondissant, puis ne bouge plus.
 function message(text: string, cls = "", sub = "") {
   const el = h("div", { class: `fete-msg ${cls}` });
-  let i = 0;
-  for (const word of text.split(" ")) {
-    const w = h("span", { class: "w" });
-    for (const ch of word) {
-      w.appendChild(h("span", { class: "l", style: `color:${INKS[i % INKS.length]};animation-delay:${i * 55}ms` }, ch));
-      i++;
-    }
-    el.append(w, " ");
-  }
+  for (const word of text.split(" ")) el.append(h("span", { class: "w" }, word), " ");
   if (sub) el.appendChild(h("div", { class: "sous" }, sub));
   return el;
 }
 
-// ---------- Dessins ----------
-const balloonSVG = (c: string) => `<svg viewBox="0 0 60 100" style="display:block;width:100%;height:100%"><path d="M30 69 q-7 9 0 17 t0 14" fill="none" stroke="#8A8F9C" stroke-width="1.6"/><path d="M26 63 L34 63 L31 70 L29 70 Z" fill="${c}"/><ellipse cx="30" cy="34" rx="26" ry="31" fill="${c}"/><ellipse cx="20" cy="22" rx="6" ry="10" fill="#fff" opacity=".45" transform="rotate(-20 20 22)"/></svg>`;
-
-const wheel = (x: number, y: number, r: number, inv = false) => `<g class="roue${inv ? " inv" : ""}"><circle cx="${x}" cy="${y}" r="${r}" fill="#273043"/><circle cx="${x}" cy="${y}" r="${r * 0.45}" fill="#E4D9C5"/><path d="M${x - r * 0.42} ${y} H${x + r * 0.42} M${x} ${y - r * 0.42} V${y + r * 0.42}" stroke="#8A8F9C" stroke-width="2"/></g>`;
-
-// Petite voiture de course, vue de côté, qui roule vers la droite.
-const carSVG = () => `<svg viewBox="0 0 160 84" style="display:block;width:100%;height:100%;overflow:visible"><ellipse cx="82" cy="79" rx="64" ry="4.5" fill="rgba(39,48,67,.16)"/><path d="M12 58 Q10 42 30 39 L50 36 Q62 15 86 15 L102 15 Q118 15 128 34 L144 38 Q153 41 153 52 L153 58 Q153 65 146 65 L19 65 Q12 65 12 58Z" fill="#FF6B57"/><path d="M60 36 Q68 21 84 21 L87 21 L87 36Z" fill="#BFE8EE"/><path d="M93 21 L101 21 Q114 21 121 36 L93 36Z" fill="#BFE8EE"/><circle cx="75" cy="31" r="7" fill="#FFC145"/><circle cx="77" cy="30" r="1.3" fill="#273043"/><rect x="17" y="46" width="130" height="5" rx="2.5" fill="#fff" opacity=".85"/><circle cx="147" cy="46" r="3.6" fill="#FFF3C4"/><rect x="8" y="49" width="7" height="9" rx="2" fill="#5B6475"/>${wheel(42, 65, 13)}${wheel(124, 65, 13)}</svg>`;
-
-// Camion de pompiers, vu de côté, cabine à gauche (il roule vers la gauche) ; gyrophare bleu qui clignote.
-const truckSVG = () => `<svg viewBox="0 0 220 110" style="display:block;width:100%;height:100%;overflow:visible"><ellipse cx="112" cy="104" rx="98" ry="5" fill="rgba(39,48,67,.16)"/><circle class="halo" cx="40" cy="27" r="15" fill="#7FB6F5"/><rect class="gyro" x="33" y="24" width="14" height="9" rx="3" fill="#3D8BEA"/><path d="M14 90 L14 54 Q14 38 30 36 L66 36 L72 40 L72 90 Z" fill="#E8504A"/><path d="M23 46 Q25 42 31 42 L62 42 L62 59 L21 59 Z" fill="#BFE8EE"/><rect x="72" y="42" width="138" height="48" rx="6" fill="#E8504A"/><rect x="80" y="48" width="36" height="24" rx="3" fill="#C9433D"/><rect x="122" y="48" width="36" height="24" rx="3" fill="#C9433D"/><circle cx="186" cy="60" r="11" fill="#FFC145" stroke="#D99A1C" stroke-width="3"/><rect x="14" y="74" width="196" height="6" fill="#fff" opacity=".9"/><circle cx="17" cy="66" r="4" fill="#FFF3C4"/><g fill="#C9CED8"><rect x="74" y="28" width="132" height="4" rx="2"/><rect x="74" y="37" width="132" height="4" rx="2"/>${Array.from({ length: 9 }, (_, i) => `<rect x="${80 + i * 15}" y="28" width="3" height="13"/>`).join("")}</g><rect x="200" y="20" width="8" height="12" rx="2" fill="#5B6475"/>${wheel(42, 90, 13, true)}${wheel(146, 90, 13, true)}${wheel(182, 90, 13, true)}</svg>`;
-
-const rocketSVG = () => `<svg viewBox="0 0 60 130" style="display:block;width:100%;height:100%;overflow:visible"><g class="flamme"><path d="M20 98 Q30 136 40 98 Z" fill="#FFC145"/><path d="M25 98 Q30 120 35 98 Z" fill="#FF7F50"/></g><path d="M16 70 L3 99 L19 95 Z" fill="#E8504A"/><path d="M44 70 L57 99 L41 95 Z" fill="#E8504A"/><path d="M30 3 Q51 24 46 62 L44 100 L16 100 L14 62 Q9 24 30 3 Z" fill="#F7F3EA" stroke="#E4D9C5" stroke-width="2"/><path d="M30 3 Q42 14 45 28 L15 28 Q18 14 30 3 Z" fill="#E8504A"/><circle cx="30" cy="50" r="9" fill="#3D8BEA" stroke="#fff" stroke-width="3"/><circle cx="27" cy="47" r="2.5" fill="#fff" opacity=".7"/><rect x="15" y="80" width="30" height="6" fill="#E8504A"/></svg>`;
-
-// Un volcan rigolo (il sourit) dont le cratère crache des confettis.
-const volcanoSVG = () => `<svg viewBox="0 0 200 120" style="display:block;width:100%;height:100%;overflow:visible"><ellipse class="lave" cx="100" cy="24" rx="30" ry="12" fill="#FFC145" opacity=".5"/><path d="M8 120 L76 28 Q100 18 124 28 L192 120 Z" fill="#9B6B43"/><path d="M76 28 Q100 18 124 28 L116 40 Q110 52 104 40 Q98 56 92 40 Q86 50 82 38 Z" fill="#FF7F50"/><ellipse cx="100" cy="26" rx="22" ry="6" fill="#E8504A"/><circle cx="86" cy="74" r="5" fill="#273043"/><circle cx="114" cy="74" r="5" fill="#273043"/><circle cx="87.5" cy="72.5" r="1.6" fill="#fff"/><circle cx="115.5" cy="72.5" r="1.6" fill="#fff"/><path d="M88 88 Q100 99 112 88" fill="none" stroke="#273043" stroke-width="4" stroke-linecap="round"/><circle cx="76" cy="86" r="5" fill="#E85D9A" opacity=".35"/><circle cx="124" cy="86" r="5" fill="#E85D9A" opacity=".35"/><path d="M0 120 Q18 106 36 114 Q52 104 70 116 L130 116 Q148 104 164 114 Q182 106 200 120 Z" fill="#34B37A"/></svg>`;
+// ---------- Objets de l'atelier ----------
+// Une image et ses pièces mobiles (roues, gyrophare, flamme), placées en pourcentage de l'objet.
+const pct = (n: number) => `${Math.round(n * 1000) / 1000}%`;
+function piece(objet: ImageCadree, point: string, nom: string, taille: number, cls: string, ancre: [number, number] = [0.5, 0.5]): string {
+  const p = objet.points?.[point], im = image(nom);
+  if (!p || !im) return "";
+  const [, , bw, bh] = objet.boite;
+  const [, , pw, ph] = im.boite;
+  const w = (pw * taille) / bw * 100, hh = (ph * taille) / bh * 100;
+  return `<img class="${cls}" src="${srcDe(im)}" alt="" draggable="false" style="position:absolute;left:${pct(p[0] * 100 - w * ancre[0])};top:${pct(p[1] * 100 - hh * ancre[1])};width:${pct(w)};height:${pct(hh)}">`;
+}
+const objet = (nom: string) => image(nom)!;
+const ratio = (nom: string) => { const b = objet(nom).boite; return b[3] / b[2]; };
+const balloonHTML = (c: string) => imgHTML(`fetes/ballon-${NOMS[c] ?? "jaune"}`, "", "display:block;width:100%;height:100%");
+// roues : l'image d'une roue fait 70 px pour un rayon de 30 ; les objets donnent leur rayon de roue
+const roues = (nom: string, n: number, inv = false) => {
+  const o = objet(nom), k = Number(o.infos?.rayonRoue ?? 30) / 30;
+  return Array.from({ length: n }, (_, i) => piece(o, `roue${i + 1}`, "fetes/roue", k, `roue${inv ? " inv" : ""}`)).join("");
+};
+const carHTML = () => `${imgHTML("fetes/voiture", "corps")}${roues("fetes/voiture", 2)}`;
+const truckHTML = () => `<span class="halo" style="left:${pct(objet("fetes/camion").points!.gyro[0] * 100)};top:${pct(objet("fetes/camion").points!.gyro[1] * 100)}"></span>`
+  + `${piece(objet("fetes/camion"), "gyro", "fetes/gyrophare", 1, "gyro", [0.5, 0.9])}${imgHTML("fetes/camion", "corps")}${roues("fetes/camion", 3, true)}`;
+const rocketHTML = () => `${piece(objet("fetes/fusee"), "tuyere", "fetes/flamme", 1, "flamme", [0.5, 0.04])}${imgHTML("fetes/fusee", "corps")}`;
+const volcanoHTML = () => imgHTML("fetes/volcan", "corps");
 
 // ---------- Scènes (chacune rend la durée, en ms, à laisser avant l'exercice suivant) ----------
 function feu(c: Ctx, rockets = 3, t0 = 0): number {
@@ -138,13 +144,13 @@ function popAt(c: Ctx, x: number, y: number, color: string) {
 function ballons(c: Ctx, interactive: boolean, settle: () => void): number {
   const n = 7;
   let left = n;
-  const bw = Math.max(58, 100 * c.u), bh = bw * (100 / 60);
+  const bw = Math.max(58, 100 * c.u), bh = bw * ratio("fetes/ballon-jaune");
   const colors = [...COLORS].sort(() => Math.random() - 0.5);
   const gone = () => { if (--left <= 0) setTimeout(settle, 350); };
   for (let i = 0; i < n; i++) {
     const color = colors[i % colors.length];
     const x = c.W * (0.06 + (0.88 * (i + 0.5)) / n) - bw / 2 + rnd(-0.2, 0.2) * bw;
-    const b = h("span", { class: `ballon${interactive ? "" : " inerte"}`, style: `left:${x}px;top:${c.H}px;width:${bw}px;height:${bh}px`, html: `<span class="sway" style="animation-delay:${-rnd(0, 1.6)}s">${balloonSVG(color)}</span>` });
+    const b = h("span", { class: `ballon${interactive ? "" : " inerte"}`, style: `left:${x}px;top:${c.H}px;width:${bw}px;height:${bh}px`, html: `<span class="sway" style="animation-delay:${-rnd(0, 1.6)}s">${balloonHTML(color)}</span>` });
     c.layer.appendChild(b);
     const dur = rnd(3500, 4700), delay = i * 130 + rnd(0, 220);
     let out = false;
@@ -157,7 +163,7 @@ function ballons(c: Ctx, interactive: boolean, settle: () => void): number {
       if (out) return;
       const r = b.getBoundingClientRect(), hr = c.layer.getBoundingClientRect();
       a?.cancel(); b.remove(); sfx.pop();
-      popAt(c, r.left - hr.left + r.width / 2, r.top - hr.top + r.width * 0.55, color);
+      popAt(c, r.left - hr.left + r.width / 2, r.top - hr.top + r.width * 0.6, color);
       leave();
     });
   }
@@ -167,7 +173,7 @@ function ballons(c: Ctx, interactive: boolean, settle: () => void): number {
 // Une voiture traverse l'écran en tirant une banderole avec le message ; elle s'arrête au milieu et klaxonne.
 function voiture(c: Ctx, text: string): number {
   const cw = Math.max(150, 230 * c.u);
-  const car = h("span", { class: "auto", style: `width:${cw}px;height:${(cw * 84) / 160}px`, html: `<i class="fumee"></i><i class="fumee" style="animation-delay:.2s"></i><i class="fumee" style="animation-delay:.4s"></i>${carSVG()}` });
+  const car = h("span", { class: "auto", style: `width:${cw}px;height:${cw * ratio("fetes/voiture")}px`, html: `<i class="fumee"></i><i class="fumee" style="animation-delay:.2s"></i><i class="fumee" style="animation-delay:.4s"></i>${carHTML()}` });
   const banner = message(text, "banniere");
   const convoi = h("div", { class: "convoi", style: `top:${c.H * 0.46}px` }, banner, h("span", { class: "corde" }), car);
   c.layer.appendChild(convoi);
@@ -190,16 +196,17 @@ function voiture(c: Ctx, text: string): number {
 
 // Le camion de pompiers arrive (pin-pon !), s'arrête, arrose en arc de cercle, et repart.
 function pompiers(c: Ctx): number {
-  const tw = Math.max(210, 340 * c.u), th = (tw * 110) / 220;
+  const tw = Math.max(210, 340 * c.u), th = tw * ratio("fetes/camion");
   const top = c.H * 0.5;
-  const truck = h("span", { class: "camion", style: `top:${top}px;width:${tw}px;height:${th}px`, html: truckSVG() });
+  const truck = h("span", { class: "camion", style: `top:${top}px;width:${tw}px;height:${th}px`, html: truckHTML() });
   c.layer.appendChild(truck);
   const mid = (c.W - tw) / 2;
   anim(truck, [{ transform: `translateX(${c.W + 30}px)`, easing: "cubic-bezier(.2,.7,.3,1)" }, { transform: `translateX(${mid}px)`, offset: 0.3 },
     { transform: `translateX(${mid - 12}px)`, offset: 0.68, easing: "cubic-bezier(.6,0,.9,.5)" }, { transform: `translateX(${-tw - 30}px)` }], { duration: 3100, fill: "both" });
   sfx.pinpon();
   // La lance est au bout de l'échelle (à droite) : l'eau part vers le haut et retombe en pluie.
-  const nx = mid + tw * 0.93, ny = top + th * 0.2, g = 1500 * c.u;
+  const lance = objet("fetes/camion").points!.lance;
+  const nx = mid + tw * lance[0], ny = top + th * lance[1], g = 1500 * c.u;
   for (let k = 0; k < 56; k++) {
     const p = dot(c, nx, ny, rnd(8, 13) * c.u + 3, k % 5 ? "#3D8BEA" : "#BFE8EE");
     const ang = (-118 + rnd(-4, 4)) * (Math.PI / 180), v = rnd(770, 820) * c.u;
@@ -211,9 +218,9 @@ function pompiers(c: Ctx): number {
 
 // La fusée tremble, crache sa fumée, puis décolle dans un ciel d'étoiles.
 function fusee(c: Ctx): number {
-  const rw = Math.max(64, 104 * c.u), rh = (rw * 130) / 60;
+  const rw = Math.max(64, 104 * c.u), rh = rw * ratio("fetes/fusee");
   const x = c.W * rnd(0.4, 0.6) - rw / 2, y = c.H - rh - 12 * c.u;
-  const rocket = h("span", { class: "fusee", style: `left:${x}px;top:${y}px;width:${rw}px;height:${rh}px`, html: `<span class="tremble">${rocketSVG()}</span>` });
+  const rocket = h("span", { class: "fusee", style: `left:${x}px;top:${y}px;width:${rw}px;height:${rh}px`, html: `<span class="tremble">${rocketHTML()}</span>` });
   c.layer.appendChild(rocket);
   const D = y + rh + 60, launch = 520, T = 1400;
   c.layer.prepend(h("div", { class: "nuit", style: `animation-duration:${launch + T + 500}ms` }));
@@ -245,15 +252,16 @@ function fusee(c: Ctx): number {
 
 // Le volcan sort de terre, gronde, et crache des confettis, des bonbons et des étoiles.
 function volcan(c: Ctx): number {
-  const vw = Math.max(220, 360 * c.u), vh = (vw * 120) / 200;
+  const vw = Math.max(220, 360 * c.u), vh = vw * ratio("fetes/volcan");
   const x = (c.W - vw) / 2, y = c.H - vh;
-  const v = h("span", { class: "volcan", style: `left:${x}px;top:${y}px;width:${vw}px;height:${vh}px`, html: `<span class="tremble">${volcanoSVG()}</span>` });
+  const v = h("span", { class: "volcan", style: `left:${x}px;top:${y}px;width:${vw}px;height:${vh}px`, html: `<span class="tremble">${volcanoHTML()}</span>` });
   c.layer.appendChild(v);
   anim(v, [{ transform: `translateY(${vh}px)` }, { transform: "translateY(0)", offset: 0.13 }, { transform: "translateY(0)", offset: 0.87 }, { transform: `translateY(${vh}px)` }],
     { duration: 2800, easing: "ease-in-out", fill: "both" });
   c.later(250, () => sfx.rumble(0.7));
   c.later(750, () => sfx.bang());
-  const cx = x + vw / 2, cy = y + vh * 0.2, g = 1700 * c.u;
+  const cr = objet("fetes/volcan").points!.cratere;
+  const cx = x + vw * cr[0], cy = y + vh * cr[1], g = 1700 * c.u;
   for (let k = 0; k < 48; k++) {
     const kind = k % 3, color = COLORS[k % COLORS.length], s = rnd(10, 18) * c.u + 5;
     const p = kind === 2
@@ -279,7 +287,21 @@ function confettis(c: Ctx, n: number) {
 
 // ---------- La fête ----------
 export interface Party { scene: Scene | "finale" | "message"; done: Promise<void>; end: () => void }
-export interface PartyOptions { name?: string | null; firstTry?: boolean; final?: boolean; quick?: boolean }
+export interface PartyOptions { name?: string | null; firstTry?: boolean; final?: boolean; quick?: boolean; hote?: string }
+
+// La grande fête de fin d'activité : la guirlande descend, l'hôte de l'île et Plume montent en riant, sous le feu
+// d'artifice (Plume seule sur le Port, dont elle est l'hôtesse).
+function scèneFinale(c: Ctx, hote?: string) {
+  const g = h("span", { class: "guirlande", html: imgHTML("fetes/guirlande", "", "display:block;width:100%;height:auto") });
+  c.layer.appendChild(g);
+  anim(g, [{ transform: "translateY(-120%)" }, { transform: "translateY(0)" }], { duration: 600, delay: 150, easing: "cubic-bezier(0.34, 1.4, 0.64, 1)", fill: "both" });
+  const persos = [...(hote && hote !== "plume" && image(`${hote}-rieur`) ? [`${hote}-rieur`] : []), "plume-fete"];
+  persos.forEach((nom, i) => {
+    const el = h("span", { class: `fete-perso ${persos.length === 1 ? "fp-seul" : i === 0 ? "fp-hote" : "fp-plume"}`, html: imgHTML(nom, "", "display:block;width:100%;height:100%;object-fit:contain;object-position:50% 100%") });
+    c.layer.appendChild(el);
+    anim(el, [{ transform: "translateY(110%)" }, { transform: "translateY(0)" }], { duration: 400, delay: 250 + i * 160, easing: "cubic-bezier(0.34, 1.4, 0.64, 1)", fill: "both" });
+  });
+}
 
 export function celebrate(host: HTMLElement, o: PartyOptions = {}): Party {
   const T = (globalThis as any).__archipelTest;
@@ -301,7 +323,7 @@ export function celebrate(host: HTMLElement, o: PartyOptions = {}): Party {
   let min = 1500, life = 2000;
   try {
     if (scene !== "voiture") layer.appendChild(message(text, o.final ? "grand" : "", o.final ? "Mission accomplie !" : ""));
-    if (scene === "finale") { sfx.fanfare(); min = feu(c, 4, 200) - 200; confettis(c, 50); life = min + 700; }
+    if (scene === "finale") { sfx.fanfare(); min = feu(c, 4, 200) - 200; confettis(c, 50); scèneFinale(c, o.hote); life = min + 700; }
     else if (scene === "feu") { min = feu(c, 3); life = min + 300; }
     else if (scene === "ballons") { min = ballons(c, !instant || !!forced, () => settle()); life = 6000; }
     else if (scene === "voiture") { min = voiture(c, text); life = 3100; }
@@ -328,39 +350,41 @@ export const FETE_CSS = `
 .fete .nuit{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(36,48,120,.78),rgba(12,16,48,.9));opacity:0;animation:fete-nuit 2.4s ease-in-out both}
 @keyframes fete-nuit{0%,100%{opacity:0}12%,82%{opacity:1}}
 .fete-msg{position:absolute;left:50%;top:10.5%;width:max-content;max-width:92%;text-align:center;font-family:'Baloo 2',ui-rounded,'Avenir Next',system-ui,sans-serif;font-weight:800;font-size:max(38px,calc(var(--u) * 80));line-height:1.12;z-index:2;transform:translateX(-50%);
-text-shadow:0 4px 0 #fff,0 -4px 0 #fff,4px 0 0 #fff,-4px 0 0 #fff,3px 3px 0 #fff,-3px 3px 0 #fff,3px -3px 0 #fff,-3px -3px 0 #fff,0 10px 22px rgba(39,48,67,.28);animation:fete-in .55s cubic-bezier(.3,1.6,.5,1) both}
-.fete-msg.grand{font-size:max(44px,calc(var(--u) * 96));top:12%}
+color:var(--accent-fonce,var(--ile-port-fonce));text-shadow:0 4px 0 #fff,0 -4px 0 #fff,4px 0 0 #fff,-4px 0 0 #fff,3px 3px 0 #fff,-3px 3px 0 #fff,3px -3px 0 #fff,-3px -3px 0 #fff,0 10px 22px rgba(39,48,67,.28);animation:fete-in .4s cubic-bezier(.34,1.4,.64,1) both}
+.fete-msg.grand{font-size:max(44px,calc(var(--u) * 96));top:15%}
 .fete-msg .sous{font-size:.5em;color:#FFC145;margin-top:.15em;text-shadow:0 3px 0 #273043,0 -2px 0 #273043,3px 0 0 #273043,-3px 0 0 #273043,0 8px 18px rgba(0,0,0,.35)}
 .fete-msg .w{display:inline-block;white-space:nowrap}
-.fete-msg .l{display:inline-block;animation:fete-hop 1s ease-in-out infinite}
 @keyframes fete-in{0%{transform:translateX(-50%) scale(.3);opacity:0}100%{transform:translateX(-50%) scale(1);opacity:1}}
-@keyframes fete-hop{0%,55%,100%{transform:translateY(0)}25%{transform:translateY(-16%)}}
 .fete .ballon{position:absolute;pointer-events:auto;touch-action:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .fete .ballon.inerte{pointer-events:none}
 .fete .ballon .sway{display:block;width:100%;height:100%;transform-origin:50% 90%;animation:fete-sway 1.6s ease-in-out infinite alternate}
 @keyframes fete-sway{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
 .fete .pop-mot{position:absolute;font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:800;font-size:max(24px,calc(var(--u) * 40));opacity:0;white-space:nowrap;text-shadow:0 3px 0 #fff,0 -3px 0 #fff,3px 0 0 #fff,-3px 0 0 #fff}
 .fete .convoi{position:absolute;left:0;display:flex;align-items:flex-end;will-change:transform}
-.fete-msg.banniere{position:relative;left:auto;top:auto;transform:none;max-width:none;font-size:max(30px,calc(var(--u) * 58));background:#fff;border:max(3px,calc(var(--u) * 5)) solid #273043;border-radius:max(12px,calc(var(--u) * 20));padding:max(4px,calc(var(--u) * 8)) max(14px,calc(var(--u) * 26));margin-bottom:max(16px,calc(var(--u) * 26));text-shadow:none;box-shadow:0 8px 18px rgba(39,48,67,.18);transform-origin:100% 50%;animation:fete-flag .5s ease-in-out infinite alternate}
+.fete-msg.banniere{position:relative;left:auto;top:auto;transform:none;max-width:none;font-size:max(30px,calc(var(--u) * 58));background:var(--papier);border:max(3px,calc(var(--u) * 4)) solid var(--bord);border-radius:max(12px,calc(var(--u) * 20));padding:max(4px,calc(var(--u) * 8)) max(14px,calc(var(--u) * 26));margin-bottom:max(16px,calc(var(--u) * 26));text-shadow:none;box-shadow:var(--ombre-douce);transform-origin:100% 50%;animation:fete-flag .5s ease-in-out infinite alternate}
 @keyframes fete-flag{from{transform:skewY(-2deg) rotate(-1deg)}to{transform:skewY(2deg) rotate(1deg)}}
-.fete .corde{width:max(18px,calc(var(--u) * 34));height:3px;background:#273043;margin-bottom:max(36px,calc(var(--u) * 58));flex:0 0 auto}
-.fete .auto{position:relative;display:block;flex:0 0 auto;animation:fete-bump .26s ease-in-out infinite alternate}
+.fete .corde{width:max(18px,calc(var(--u) * 34));height:3px;background:#8A6A4E;margin-bottom:max(36px,calc(var(--u) * 58));flex:0 0 auto}
+.fete .auto,.fete .camion,.fete .fusee .tremble,.fete .volcan .tremble{display:block}
+.fete .auto{position:relative;flex:0 0 auto;animation:fete-bump .26s ease-in-out infinite alternate}
 @keyframes fete-bump{from{transform:translateY(0)}to{transform:translateY(-3%)}}
+.fete .corps{position:absolute;inset:0;width:100%;height:100%}
 .fete .fumee{position:absolute;left:-4%;bottom:22%;width:15%;aspect-ratio:1;border-radius:50%;background:rgba(160,166,180,.6);animation:fete-puff .6s ease-out infinite}
 @keyframes fete-puff{0%{transform:translateX(0) scale(.3);opacity:.9}100%{transform:translateX(-130%) scale(1.3);opacity:0}}
-.fete .roue{transform-box:fill-box;transform-origin:center;animation:fete-spin .45s linear infinite}
+.fete .roue{z-index:1;animation:fete-spin .45s linear infinite}
 .fete .roue.inv{animation-direction:reverse}
 @keyframes fete-spin{to{transform:rotate(360deg)}}
 .fete .camion{position:absolute;left:0;will-change:transform}
-.fete .gyro{animation:fete-blink .32s linear infinite}
-.fete .halo{animation:fete-halo .32s linear infinite}
-@keyframes fete-halo{0%,49%{opacity:.55}50%,100%{opacity:0}}
-.fete .lave{animation:fete-blink .45s linear infinite}
-@keyframes fete-blink{0%,49%{opacity:1}50%,100%{opacity:.2}}
+.fete .camion .halo{position:absolute;width:16%;aspect-ratio:1;transform:translate(-50%,-80%);border-radius:50%;background:radial-gradient(circle,rgba(127,182,245,.85),rgba(127,182,245,0) 70%);animation:fete-halo .7s ease-in-out infinite alternate}
+@keyframes fete-halo{from{opacity:.25}to{opacity:.9}}
 .fete .fusee,.fete .volcan{position:absolute;will-change:transform}
-.fete .tremble{display:block;width:100%;height:100%;animation:fete-shake .07s linear 9 alternate}
+.fete .tremble{position:relative;width:100%;height:100%;animation:fete-shake .07s linear 9 alternate}
 .fete .volcan .tremble{animation-delay:.3s;animation-iteration-count:12}
 @keyframes fete-shake{from{transform:translate(-2%,0)}to{transform:translate(2%,1%)}}
-.fete .flamme{transform-box:fill-box;transform-origin:50% 0;animation:fete-flame .12s ease-in-out infinite alternate}
-@keyframes fete-flame{from{transform:scaleY(.75)}to{transform:scaleY(1.3)}}
+.fete .flamme{transform-origin:50% 4%;animation:fete-flame .3s ease-in-out infinite alternate}
+@keyframes fete-flame{from{transform:scaleY(.82)}to{transform:scaleY(1.18)}}
+.fete .guirlande{position:absolute;left:4%;right:4%;top:0;z-index:1}
+.fete .fete-perso{position:absolute;bottom:0;height:min(42%,calc(var(--u) * 300));aspect-ratio:1;z-index:1}
+.fete .fete-perso.fp-hote{left:14%}
+.fete .fete-perso.fp-plume{right:14%}
+.fete .fete-perso.fp-seul{left:50%;margin-left:min(-21%,calc(var(--u) * -150))}
 `;

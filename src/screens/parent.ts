@@ -6,7 +6,9 @@ import { DAY, DOMAINS, MASTERY_LABEL, SKILLS, masteryOf, type DomainId, type Mas
 import { FLAG_BY_CODE, FLAGS } from "../flags";
 import { nav } from "../nav";
 import { defaultData, frenchVoiceLabel, natural, normalize, readV1, saveData, sfx, speech, storageFailed, voice, VOICE_SLOTS, type AppData, type Profile, type TriSettings, type VoixMode } from "../services";
-import { avatarSVG, h, plumeSVG } from "../ui";
+import { h, plumeSVG } from "../ui";
+import { COMPAGNONS, NOM_COMPAGNON, compagnonLibre } from "../compagnons";
+import { compagnonHTML } from "../design/dessins";
 import { pinPad, sheet } from "./common";
 import { gallery } from "./draw";
 import { storiesTab } from "./histoires";
@@ -25,7 +27,6 @@ const MASTERY_STYLE: Record<Mastery, string> = {
   "consolidee": "background:#1E7A50;color:#fff",
 };
 const ageLabel = (m: number) => `${Math.floor(m / 12)} ans${m % 12 ? ` ${m % 12} mois` : ""}`;
-const initial = (name: string) => (name.trim()[0] ?? "?").toUpperCase();
 const fmtDate = (t: number) => new Date(t).toLocaleDateString("fr-FR", { weekday: "short", day: "numeric", month: "short" });
 const round = (x: number) => Math.round(x);
 
@@ -43,20 +44,34 @@ function opts<T>(choices: { label: string; value: T }[], current: T, onChange: (
 }
 const field = (label: string, ...inner: (HTMLElement | string)[]) => h("div", { class: "field" }, h("span", {}, label), ...inner);
 
+// Choix du compagnon de voyage (livraison 2) : huit bébés animaux, coiffés du chapeau de la couleur choisie.
+function choixCompagnon(etat: () => { avatar: string; color: string }, choisir: (a: string) => void) {
+  const row = h("div", { class: "compagnons", role: "group", "aria-label": "Compagnon de voyage" });
+  const draw = () => row.replaceChildren(...COMPAGNONS.map((a) => {
+    const on = a === etat().avatar;
+    return h("button", { type: "button", class: `cp-choix${on ? " on" : ""}`, "aria-label": NOM_COMPAGNON[a], "aria-pressed": String(on),
+      html: compagnonHTML(a, etat().color), onclick: () => { choisir(a); draw(); } });
+  }));
+  draw();
+  return { el: row, draw };
+}
+
 // ---------- Questionnaire de repères (création d'un profil) ----------
 function intakeForm(o: { submitLabel: string; onSubmit: (i: Intake) => void; onCancel?: () => void }) {
-  const i: Intake = { name: "", ageMonths: 54, color: COLORS[0], readingK: 11, countTo: 20, flags: 1 };
+  const i: Intake = { name: "", ageMonths: 54, color: COLORS[0], readingK: 11, countTo: 20, flags: 1, avatar: compagnonLibre(app.data.profiles.map((q) => q.avatar)) };
+  const cp = choixCompagnon(() => ({ avatar: i.avatar!, color: i.color }), (a) => { i.avatar = a; });
   const name = h("input", { type: "text", maxlength: "20", autocomplete: "off", placeholder: "Prénom", "aria-label": "Prénom" }) as HTMLInputElement;
   const years = h("select", { "aria-label": "Âge en années" }, ...[3, 4, 5, 6, 7, 8].map((y) => h("option", { value: y, selected: y === 4 }, `${y} ans`))) as HTMLSelectElement;
   const months = h("select", { "aria-label": "Mois en plus" }, ...Array.from({ length: 12 }, (_, m) => h("option", { value: m, selected: m === 6 }, `${m} mois`))) as HTMLSelectElement;
   const sw = h("div", { class: "swatches" });
-  const drawSw = () => sw.replaceChildren(...COLORS.map((c) => h("button", { type: "button", class: `swatch${c === i.color ? " on" : ""}`, style: `background:${c}`, "aria-label": `Couleur ${c}`, onclick: () => { i.color = c; drawSw(); } })));
+  const drawSw = () => sw.replaceChildren(...COLORS.map((c) => h("button", { type: "button", class: `swatch${c === i.color ? " on" : ""}`, style: `background:${c}`, "aria-label": `Couleur ${c}`, onclick: () => { i.color = c; drawSw(); cp.draw(); } })));
   drawSw();
   const err = h("p", { class: "muted", style: "color:#B42318;min-height:1em" });
   const form = h("div", { style: "display:flex;flex-direction:column;gap:14px" },
     field("Prénom de l'enfant", name),
     field("Âge", h("div", { class: "p-row" }, years, months)),
     field("Sa couleur", sw),
+    field("Son compagnon de voyage (il porte un chapeau de sa couleur)", cp.el),
     field("En lecture, il ou elle…", opts(READING_LEVELS.map((r) => ({ label: r.label, value: r.k })), i.readingK, (v) => { i.readingK = v; })),
     field("Il ou elle compte (sans se tromper) jusqu'à…", opts([5, 10, 20, 30, 60, 100].map((n) => ({ label: String(n), value: n })), i.countTo, (v) => { i.countTo = v; })),
     field("Drapeaux du monde", opts([{ label: "Pas encore", value: 0 as const }, { label: "Quelques-uns", value: 1 as const }, { label: "Beaucoup", value: 2 as const }], i.flags, (v) => { i.flags = v; })),
@@ -147,7 +162,7 @@ function parentSpace(tab?: string) {
     tabsEl.replaceChildren(...TABS.map((t) => h("button", { type: "button", role: "tab", "aria-selected": String(t.id === current), class: `p-tab${t.id === current ? " on" : ""}`, onclick: () => { current = t.id; render(); } }, t.label)));
     kidsEl.replaceChildren(...app.data.profiles.map((p) => h("button", {
       type: "button", class: `kidchip${p.id === prof()?.id ? " on" : ""}`, onclick: () => { pid = p.id; app.data.activeId = p.id; app.save(); render(); },
-    }, h("span", { class: "mini", html: avatarSVG(initial(p.name), p.color) }), p.name)));
+    }, h("span", { class: "mini", html: compagnonHTML(p.avatar, p.color) }), p.name)));
     const p = prof();
     body.replaceChildren();
     if (current === "suivi") body.append(...(p ? suivi(p) : [h("p", {}, "Aucun profil.")]));
@@ -246,7 +261,7 @@ function parentSpace(tab?: string) {
   // ----- Profils -----
   function profils(): HTMLElement[] {
     const list = h("div", { class: "p-list" }, ...app.data.profiles.map((p) => h("div", { class: "p-item" },
-      h("span", { style: "width:44px;height:44px;flex:0 0 auto", html: avatarSVG(initial(p.name), p.color) }),
+      h("span", { style: "width:44px;height:44px;flex:0 0 auto", html: compagnonHTML(p.avatar, p.color) }),
       h("div", { class: "grow" }, h("b", {}, p.name), h("div", { class: "muted" }, `${ageLabel(p.ageMonths)} · ${p.stickers.length} gommette${p.stickers.length > 1 ? "s" : ""} · profil créé le ${new Date(p.createdAt).toLocaleDateString("fr-FR")}`)),
       h("button", { type: "button", class: "pbtn ghost", onclick: () => editProfile(p) }, "Modifier"),
       h("button", { type: "button", class: "pbtn ghost", title: "La prochaine séance commencera par le grand départ", onclick: (e: Event) => { p.departDone = false; app.save(); (e.currentTarget as HTMLElement).textContent = "Prévu à la prochaine séance"; } }, p.departDone === false ? "Grand départ prévu" : "Refaire le grand départ"),
@@ -265,15 +280,16 @@ function parentSpace(tab?: string) {
     const name = h("input", { type: "text", maxlength: "20", value: p.name, "aria-label": "Prénom" }) as HTMLInputElement;
     const years = h("select", { "aria-label": "Âge en années" }, ...[3, 4, 5, 6, 7, 8].map((y) => h("option", { value: y, selected: y === Math.floor(p.ageMonths / 12) }, `${y} ans`))) as HTMLSelectElement;
     const months = h("select", { "aria-label": "Mois en plus" }, ...Array.from({ length: 12 }, (_, m) => h("option", { value: m, selected: m === p.ageMonths % 12 }, `${m} mois`))) as HTMLSelectElement;
-    let color = p.color;
+    let color = p.color, avatar = p.avatar ?? COMPAGNONS[0];
+    const cp = choixCompagnon(() => ({ avatar, color }), (a) => { avatar = a; });
     const sw = h("div", { class: "swatches" });
-    const drawSw = () => sw.replaceChildren(...COLORS.map((c) => h("button", { type: "button", class: `swatch${c === color ? " on" : ""}`, style: `background:${c}`, "aria-label": `Couleur ${c}`, onclick: () => { color = c; drawSw(); } })));
+    const drawSw = () => sw.replaceChildren(...COLORS.map((c) => h("button", { type: "button", class: `swatch${c === color ? " on" : ""}`, style: `background:${c}`, "aria-label": `Couleur ${c}`, onclick: () => { color = c; drawSw(); cp.draw(); } })));
     drawSw();
     const s = sheet(screen, h("div", { class: "parent", style: "display:flex;flex-direction:column;gap:14px;text-align:left;min-width:min(80vw,420px)" },
       h("h1", {}, `Modifier le profil`),
-      field("Prénom", name), field("Âge", h("div", { class: "p-row" }, years, months)), field("Couleur", sw),
+      field("Prénom", name), field("Âge", h("div", { class: "p-row" }, years, months)), field("Couleur", sw), field("Compagnon de voyage", cp.el),
       h("div", { class: "p-row" },
-        h("button", { type: "button", class: "pbtn", onclick: () => { p.name = name.value.trim() || p.name; p.ageMonths = Number(years.value) * 12 + Number(months.value); p.color = color; app.save(); s.close(); render(); } }, "Enregistrer"),
+        h("button", { type: "button", class: "pbtn", onclick: () => { p.name = name.value.trim() || p.name; p.ageMonths = Number(years.value) * 12 + Number(months.value); p.color = color; p.avatar = avatar; app.save(); s.close(); render(); } }, "Enregistrer"),
         h("button", { type: "button", class: "pbtn ghost", onclick: () => s.close() }, "Annuler"))));
   }
   function deleteProfile(p: Profile) {

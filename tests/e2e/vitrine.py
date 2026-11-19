@@ -58,7 +58,7 @@ with sync_playwright() as pw:
     ile = page.evaluate(IMAGES_CHARGEES, ".v-ile img")
     check(len(ile) == 11 and all(c for _, c in ile), f"île des Nombres : décor, 3 remplissages, bateau, 3 lieux, Plume en 3 pièces = {len(ile)} images chargées")
     check(all("?v=" in s for s, _ in ile), "chaque image porte son empreinte")
-    k = page.evaluate("() => { const r = document.querySelector('.v-cadre').getBoundingClientRect(); return [r.width, r.height, r.left, r.top]; }")
+    k = page.evaluate("() => { const r = document.querySelector('.ile-cadre').getBoundingClientRect(); return [r.width, r.height, r.left, r.top]; }")
     check(abs(k[0] - 1194) < 2 and abs(k[1] - 834) < 2 and abs(k[2]) < 2, f"le dessin couvre l'écran de l'iPad Pro 11 : {k}")
     cibles = page.evaluate(CIBLES, ".v-ile .a-pastille, .v-ile .a-bulle, .v-ile .a-rond")
     petites = [(c["quoi"], c["haut"], c["large"]) for c in cibles if min(c["haut"], c["large"]) < CM15]
@@ -70,7 +70,7 @@ with sync_playwright() as pw:
     pills = page.locator(".v-ile .a-pastille").all_inner_texts()
     check(len(pills) == 3 and any("Plume conseille" in p and "Les nénuphars" in p for p in pills), f"trois étiquettes, Plume conseille les nénuphars : {pills}")
     check(page.locator(".v-ile .a-ruban").inner_text().strip() == "Île des Nombres", "ruban de titre")
-    ailes = page.evaluate("() => [...document.querySelectorAll('.v-ile .v-aile')].map((a) => getComputedStyle(a).animationDuration)")
+    ailes = page.evaluate("() => [...document.querySelectorAll('.v-ile .plume-aile')].map((a) => getComputedStyle(a).animationDuration)")
     check(ailes == ["1.1s", "1.1s"], f"Plume bat des ailes lentement : {ailes}")
     check(page.locator(".v-persos img").count() == 42, "sept hôtes, six dessins chacun")
     check(page.locator(".v-imagier img").count() == 195, "imagier complet")

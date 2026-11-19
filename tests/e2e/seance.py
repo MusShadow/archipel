@@ -60,7 +60,7 @@ def back_to_map(page):
 
 def open_activity(page, island, act):
     page.click(f'[data-isl="{island}"]', force=True); page.wait_for_timeout(400)
-    page.click(f'.actcard[data-act="{act}"]'); page.wait_for_timeout(400)
+    page.click(f'[data-act="{act}"]'); page.wait_for_timeout(400)
 
 def play(page, act, rounds_of=6, on_item=None):
     """Joue un tour : répond juste à chaque exercice ; renvoie les exercices vus."""

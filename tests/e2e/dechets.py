@@ -220,7 +220,7 @@ with sync_playwright() as pw:
         page.wait_for_timeout(400)
         if i == 0:
             shot(page, "00-ile-decouvertes")
-        page.click('.actcard[data-act="dechets"]')
+        page.click('[data-act="dechets"]')
         page.wait_for_timeout(400)
         prefix = f"r{i}n{level}"
         print(f"niveau {level} ({tri['papiers']}, {tri['cuisine']}, {tri['couleurs']}) :", play_round(page, prefix, mistake_at=1 if i % 2 else 0), "exercices")

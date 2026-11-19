@@ -165,7 +165,7 @@ with sync_playwright() as pw:
         page.wait_for_timeout(400)
         if level == 1:
             shot(page, "00-ile-decouvertes")
-        page.click('.actcard[data-act="tri"]')
+        page.click('[data-act="tri"]')
         page.wait_for_timeout(400)
         print(f"niveau {level} ({tri['papiers']}, {tri['cuisine']}, {tri['couleurs']}) :", play_round(page, f"n{level}", mistake_at=1 if level % 2 else 0, tap_at=2), "manches")
         if page.locator(".sticker-big").count():

@@ -1,4 +1,5 @@
 // Services : stockage local, voix (pack de voix naturelle, sinon synthèse vocale de l'appareil), sons synthétisés.
+import { attribuerCompagnons, estCompagnon } from "./compagnons";
 import { CACHE_VOIX, CLE_V1, CLES } from "./identite";
 import type { ActivityId, Form, SkillState, Staircase } from "./core";
 import { planText, stretch, type Seg, type VoixIndex } from "./voix";
@@ -20,6 +21,7 @@ export interface Profile {
   goals: string[];
   restUntil?: number;
   departDone?: boolean;
+  avatar?: string; // compagnon de voyage (livraison 2), voir compagnons.ts
   stories: Story[];
   myFlag?: MyFlag;
 }
@@ -59,7 +61,9 @@ export function normalize(d: any): AppData {
     departDone: p.departDone === true || (Array.isArray(p.log) && p.log.length > 30),
     stories: Array.isArray(p.stories) ? p.stories : [],
     myFlag: p.myFlag && typeof p.myFlag === "object" ? p.myFlag : undefined,
+    avatar: estCompagnon(p.avatar) ? p.avatar : undefined,
   })) : [];
+  attribuerCompagnons(profiles);
   return { version: 1, pin: typeof d.pin === "string" ? d.pin : null, settings: { ...base.settings, ...(d.settings ?? {}), tri: { ...defaultTri(), ...(d.settings?.tri ?? {}) } }, profiles, activeId: d.activeId ?? null };
 }
 let saveFailed = false;

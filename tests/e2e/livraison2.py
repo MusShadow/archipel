@@ -149,7 +149,7 @@ def open_island(page, island, act=None, shot_name=None):
     if shot_name:
         shot(page, shot_name)
     if act:
-        page.click(f'.actcard[data-act="{act}"]')
+        page.click(f'[data-act="{act}"]')
         page.wait_for_timeout(350)
 
 def board_point(page, x, y):

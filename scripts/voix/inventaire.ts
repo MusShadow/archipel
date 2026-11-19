@@ -216,6 +216,14 @@ for (const id of islands) {
   add(`Bonjour ${N} ! Aujourd'hui, je te propose ${ISLAND_SPOKEN[id]}. Où veux-tu aller ?`);
   add(`Je te propose ${ISLAND_SPOKEN[id]}.`);
 }
+// Écrans des îles dessinées : bienvenue de Plume, salut de l'hôte (les présentations et le conseil sont ci-dessus).
+{
+  const { bienvenueIle } = await import("../../src/screens/ile");
+  const { ilesV2 } = await import("../../src/iles");
+  where = "ile";
+  for (const ile of Object.values(ilesV2())) if (ile.quartiers[0].decor) for (const t of bienvenueIle(ile.id)) add(t);
+  add("Touche un lieu pour commencer.");
+}
 where = "coin-calme";
 add("Inspire doucement par le nez, comme pour sentir une fleur."); add("Inspire…");
 add("Et souffle tout doucement, comme pour faire danser une bougie."); add("Souffle…");

@@ -161,7 +161,7 @@ with sync_playwright() as pw:
         page.wait_for_timeout(400)
         if level == 1:
             shot(page, "00-ile-decouvertes")
-        page.click('.actcard[data-act="volcan"]')
+        page.click('[data-act="volcan"]')
         page.wait_for_timeout(400)
         mode = "toucher" if "doigt" in modes else "doigt"
         before = kinds.get("monte", 0)

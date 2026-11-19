@@ -61,7 +61,7 @@ def new_page(browser, stairs, vp=None, touch=False):
 def open_act(page, island, act):
     page.click(f'[data-isl="{island}"]', force=True)
     page.wait_for_timeout(350)
-    page.click(f'.actcard[data-act="{act}"]')
+    page.click(f'[data-act="{act}"]')
     page.wait_for_timeout(450)
 
 def count(page, k):

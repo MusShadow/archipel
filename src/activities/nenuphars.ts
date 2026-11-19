@@ -1,5 +1,7 @@
 // Île des Nombres — « Les nénuphars » : la grenouille saute sur la ligne des nombres de 0 à 10.
 // Repérer un nombre, trouver celui qui manque, avancer, reculer, puis sauter de 2 en 2.
+// Livraison 2 : étang, nénuphars et grenouille redessinés dans l'atelier (l'appli écrit les nombres par-dessus).
+import { image, imgHTML, srcDe } from "../design/dessins";
 import type { ActivityModule, Item, View } from "../host";
 import { sfx } from "../services";
 import { glow, h, sleep } from "../ui";
@@ -8,15 +10,13 @@ type Kind = "repere" | "manque" | "plus" | "moins" | "bonds";
 interface PadItem extends Item { kind: Kind; start: number; steps: number; stride: number; target: number; hidden?: number; choices: number[] }
 
 const MAX = 10;
-export const FROG = `<svg viewBox="0 0 100 86" aria-hidden="true" style="display:block;width:100%;height:100%"><ellipse cx="50" cy="56" rx="38" ry="26" fill="#34B37A"/><ellipse cx="50" cy="64" rx="24" ry="15" fill="#B9EBC9"/><circle cx="30" cy="28" r="15" fill="#34B37A"/><circle cx="70" cy="28" r="15" fill="#34B37A"/><circle cx="30" cy="26" r="10" fill="#fff"/><circle cx="70" cy="26" r="10" fill="#fff"/><circle cx="32" cy="27" r="5" fill="#273043"/><circle cx="68" cy="27" r="5" fill="#273043"/><path d="M36 52 Q50 62 64 52" fill="none" stroke="#1E7A50" stroke-width="4" stroke-linecap="round"/><ellipse cx="22" cy="80" rx="12" ry="5" fill="#2A9A66"/><ellipse cx="78" cy="80" rx="12" ry="5" fill="#2A9A66"/></svg>`;
-const PAD = `<svg viewBox="0 0 100 60" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%"><path d="M50 30 L92 22 A44 26 0 1 1 86 14 Z" fill="#7BC67E"/><path d="M50 30 L20 38 M50 30 L30 18 M50 30 L64 50" stroke="#5BAE60" stroke-width="2"/></svg>`;
 const bonds = (n: number) => `${n} bond${n > 1 ? "s" : ""}`;
 
 export const nenuphars: ActivityModule<PadItem> = {
   id: "nenuphars", title: "Les nénuphars", domain: "nombres", island: "nombres", host: "basile",
   maxLevel: 5, items: 6,
   skills: ["NUM.LIGNE.REPERE", "NUM.LIGNE.ORDRE", "NUM.LIGNE.PLUS", "NUM.LIGNE.MOINS", "NUM.LIGNE.BONDS"],
-  card: `<span style="display:block;width:1.15em;height:1em">${FROG}</span>`, pitch: "Les nénuphars, pour faire sauter la grenouille sur les nombres.",
+  card: `<span style="display:block;width:1.15em;height:1em">${imgHTML("activites/grenouille-assise", "", "display:block;width:100%;height:100%;object-fit:contain")}</span>`, pitch: "Les nénuphars, pour faire sauter la grenouille sur les nombres.",
   startLevel: () => 1,
   identity: (it) => `${it.kind}:${it.start}:${it.steps}:${it.stride}:${it.target}`,
 
@@ -49,22 +49,24 @@ export const nenuphars: ActivityModule<PadItem> = {
   },
 
   render(item, view) {
-    const pond = h("div", { class: "pond" });
+    const pond = h("div", { class: "pond etang" });
+    const fond = image("activites/nenuphars-etang");
+    if (fond) pond.style.setProperty("--etang", `url("${srcDe(fond)}")`);
     const pads: HTMLElement[] = [];
     for (let n = 0; n <= MAX; n++) {
       const hiddenHere = item.hidden === n;
-      const pad = h("button", { type: "button", class: "pad", "data-n": n, "aria-label": hiddenHere ? "Nombre caché" : String(n), html: `${PAD}<span class="padnum">${hiddenHere ? "?" : n}</span>` });
+      const pad = h("button", { type: "button", class: "pad", "data-n": n, "aria-label": hiddenHere ? "Nombre caché" : String(n), html: `${imgHTML(`activites/nenuphar-${n % 3}`, "pad-img")}<span class="padnum">${hiddenHere ? "?" : n}</span>` });
       if (item.kind === "manque") (pad as HTMLButtonElement).disabled = true;
       pads.push(pad);
       pond.appendChild(pad);
     }
-    const frog = h("div", { class: "frog", html: FROG });
+    const frog = h("div", { class: "frog", html: `${imgHTML("activites/grenouille-assise", "gr-assise")}${imgHTML("activites/grenouille-saut", "gr-saut")}` });
     pond.appendChild(frog);
     view.stage.appendChild(pond);
     let at = item.start, busy = false;
     const place = (n: number) => {
       const p = pads[n];
-      frog.style.transform = `translate(${p.offsetLeft + p.offsetWidth / 2 - frog.offsetWidth / 2}px, ${p.offsetTop - frog.offsetHeight * 0.9}px)`;
+      frog.style.transform = `translate(${p.offsetLeft + p.offsetWidth / 2 - frog.offsetWidth / 2}px, ${p.offsetTop + p.offsetHeight * 0.45 - frog.offsetHeight}px)`;
     };
     requestAnimationFrame(() => { place(at); frog.classList.add("ready"); });
     // L'iPad tourne : on replace la grenouille ; l'écouteur se retire quand l'exercice a disparu.
@@ -148,4 +150,5 @@ export const nenuphars: ActivityModule<PadItem> = {
   },
 };
 
-export const frogStickerSVG = () => `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="#D5F0E1"/><g transform="translate(14 16) scale(0.42)">${FROG.replace('style="display:block;width:100%;height:100%"', 'width="100" height="86"')}</g></svg>`;
+// Gommette de la grenouille, dans la matière de l'atelier (livraison 2).
+export const frogStickerSVG = () => imgHTML("gommettes/grenouille", "gommette", "display:block;width:100%;height:100%;object-fit:contain");

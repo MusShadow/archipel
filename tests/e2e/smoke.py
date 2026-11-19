@@ -157,7 +157,7 @@ def open_activity(page, island, act=None, shot_name=None):
     if act:
         if shot_name:
             shot(page, shot_name)
-        page.click(f'.actcard[data-act="{act}"]')
+        page.click(f'[data-act="{act}"]')
         page.wait_for_timeout(300)
 
 with sync_playwright() as pw:

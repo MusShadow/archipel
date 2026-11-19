@@ -1,88 +1,23 @@
 // Vitrine d'Archipel 2 : page cachée (adresse …/v2/#vitrine) qui montre le système de design en taille réelle,
 // pour le juger sur l'iPad : l'île des Nombres comme elle sera au pilote, les couleurs, les textes, les composants,
 // les personnages et l'imagier. Rien n'y est enregistré ; elle ne sert qu'à regarder.
-import { ACTIVITY_BY_ID } from "./activities/index";
 import { boutonRond, bullePlume, carte, etatCarte, pastille, ruban } from "./design/composants";
 import { ILES, MOUVEMENTS, NEUTRES, ORDRE_ILES, TEXTES, contraste, fontTexte } from "./design/jetons";
-import { CADRE, echelle, ilesV2, versEcran, type Ile, type Point } from "./iles";
+import { ilesV2 } from "./iles";
 import { urlImage } from "./images";
 import { IMAGIER, sansVariante } from "./imagier";
 import { READ_WORDS, SOUND_WORDS } from "./lexique";
 import { PERSONNAGES, type ImageCadree } from "./illustrations";
+import { ecranIle, plumeAnime } from "./screens/ile";
 import { h, wobble } from "./ui";
 
-const HORIZON = 236; // ligne d'horizon des décors d'île (repère 1194 x 834)
 const img = (im: ImageCadree, cls = "", alt = "") => h("img", { class: cls, src: urlImage(`illustrations/${im.fichier}`), alt, draggable: "false" });
-const poser = (el: HTMLElement, [x, y, l, ht]: number[], k = 1) => {
-  el.style.cssText += `;position:absolute;left:${x * k}px;top:${y * k}px;width:${l * k}px;height:${ht * k}px`;
+
+// L'île des Nombres comme dans l'appli (src/screens/ile.ts), sans rien ouvrir : un lieu touché balance.
+function ileVitrine(): HTMLElement {
+  const { el } = ecranIle(ilesV2().nombres, { conseil: "nenuphars" });
+  el.classList.add("v-ile");
   return el;
-};
-
-// Plume en pièces : corps et ailes alignés, battement d'ailes lent et souple (le guide est l'élément le plus calme).
-export function plumeAnime(echelle: number): HTMLElement {
-  const corps = PERSONNAGES["plume-piece-corps"];
-  const f = echelle / (corps.echelle ?? 0.9);
-  const cadre = h("div", { class: "v-plume", "aria-hidden": "true" });
-  for (const nom of ["piece-aile-ar", "piece-corps", "piece-aile-av"]) {
-    const p = PERSONNAGES[`plume-${nom}`];
-    const el = poser(img(p, nom.startsWith("piece-aile") ? "v-aile" : "v-corps"), p.boite, f);
-    if (p.pivot) el.style.transformOrigin = `${p.pivot[0] * 100}% ${p.pivot[1] * 100}%`;
-    cadre.appendChild(el);
-  }
-  return cadre;
-}
-
-// Un écran d'île : le dessin couvre l'écran (rognage limité hors de l'iPad en paysage), les étiquettes et la bulle
-// sont posées par-dessus, à leur taille réelle (jamais réduites avec le dessin), au point du lieu qu'elles nomment.
-export function ecranIle(ile: Ile, conseil?: string): HTMLElement {
-  const q = ile.quartiers[0];
-  const d = q.decor;
-  const cadre = h("div", { class: "v-cadre", style: `width:${CADRE.l}px;height:${CADRE.h}px` });
-  const dessus = h("div", { class: "v-dessus" });
-  const ancres: { el: HTMLElement; p: Point }[] = [];
-  const ancrer = (el: HTMLElement, p: Point) => { const a = h("div", { class: "v-ancre" }, el); dessus.appendChild(a); ancres.push({ el: a, p }); };
-  if (d) {
-    cadre.appendChild(poser(img(d.base, "", `${ile.nom} : décor`), d.base.boite));
-    for (const r of Object.values(d.remplissages)) cadre.appendChild(poser(img(r), r.boite));
-    for (const a of Object.values(d.animes)) cadre.appendChild(poser(img(a), a.boite));
-    for (const [act, l] of Object.entries(d.lieux)) cadre.appendChild(poser(img(l, "v-lieu", ACTIVITY_BY_ID[act]?.title ?? act), l.boite));
-    // Plume vole près de l'activité qu'elle conseille
-    const [px, py] = d.plume;
-    const corps = PERSONNAGES["plume-piece-corps"];
-    const e = 0.58, f = e / (corps.echelle ?? 0.9);
-    const [ax, ay] = [170, 160]; // point d'ancrage de Plume dans son cadre de rendu (fabriquer.py)
-    const plume = plumeAnime(e);
-    plume.style.cssText = `position:absolute;left:${px - ax * f}px;top:${py - ay * f}px;width:${360 * f}px;height:${300 * f}px`;
-    cadre.appendChild(plume);
-    const bulle = bullePlume({ queue: "gauche", onclick: () => wobble(bulle) });
-    ancrer(bulle, { x: px + 132, y: py - 64 });
-  }
-  for (const l of q.lieux) {
-    const id = l.ids[0];
-    const titre = ACTIVITY_BY_ID[id]?.title ?? id;
-    const p = pastille({ titre, ile: ile.id, conseillee: id === conseil, onclick: () => wobble(p) });
-    ancrer(p, l.pastille);
-  }
-  const ecran = h("section", { class: "v-ile", "aria-label": ile.nom }, cadre, dessus,
-    h("div", { class: "v-haut" },
-      boutonRond({ icone: "map", etiquette: "Retour à la carte" }),
-      ruban({ texte: ile.nom, ile: ile.id }),
-      boutonRond({ icone: "ear", etiquette: "Écouter la consigne" })));
-  const ajuster = () => {
-    const taille = { l: ecran.clientWidth, h: ecran.clientHeight };
-    const k = echelle(taille);
-    cadre.style.transform = `translate(-50%, -50%) scale(${k})`;
-    for (const { el, p } of ancres) {
-      const e = versEcran(p, taille);
-      el.style.left = `${e.x}px`;
-      el.style.top = `${e.y}px`;
-    }
-    // hors du dessin, le ciel et la mer continuent de part et d'autre de l'horizon
-    ecran.style.setProperty("--horizon", `${(taille.h - CADRE.h * k) / 2 + HORIZON * k}px`);
-  };
-  if (typeof ResizeObserver !== "undefined") new ResizeObserver(ajuster).observe(ecran);
-  requestAnimationFrame(ajuster);
-  return ecran;
 }
 
 function section(titre: string, texte: string, ...enfants: (HTMLElement | null)[]) {
@@ -177,17 +112,7 @@ function mouvements() {
 
 export const VITRINE_CSS = `
 .v-page{overflow-y:auto;-webkit-overflow-scrolling:touch;background:var(--creme);display:block}
-.v-ile{position:relative;width:100%;height:100vh;height:100dvh;overflow:hidden;background:linear-gradient(to bottom,#BBE9EF 0,#E1F0E8 var(--horizon,30%),#8FD7DF var(--horizon,30%),#32A6B5 100%)}
-.v-cadre{position:absolute;left:50%;top:50%;transform-origin:center}
-.v-cadre img{display:block;user-select:none;-webkit-user-select:none;pointer-events:none}
-.v-dessus{position:absolute;inset:0;pointer-events:none}
-.v-ancre{position:absolute;transform:translate(-50%,-50%);pointer-events:auto}
-.v-haut{position:absolute;left:0;right:0;top:0;display:flex;align-items:center;justify-content:space-between;padding:var(--esp-5) var(--esp-5) 0}
-.v-plume img{position:absolute}
-.v-aile{animation:v-battement var(--duree-battement-plume) var(--courbe-calme) infinite alternate}
-.v-plume{animation:v-flotte calc(var(--duree-battement-plume) * 2) var(--courbe-calme) infinite alternate}
-@keyframes v-battement{from{transform:rotate(3deg)}to{transform:rotate(-16deg)}}
-@keyframes v-flotte{from{translate:0 -2px}to{translate:0 2px}}
+.v-ile{height:100vh;height:100dvh}
 .v-section{max-width:1100px;margin:0 auto;padding:var(--esp-7) var(--esp-6);display:flex;flex-direction:column;gap:var(--esp-4)}
 .v-section h2{font:var(--texte-titre);color:var(--encre);margin:0}
 .v-texte{font:var(--texte-adulte);color:var(--encre-douce);margin:0;max-width:760px}
@@ -206,7 +131,7 @@ export const VITRINE_CSS = `
 .v-plume-fig img{height:120px;width:auto}
 .v-persos figcaption,.v-plume-fig figcaption,.v-imagier figcaption{font:12px/1.2 var(--police-adulte);color:var(--encre-douce);text-align:center}
 .v-plume-vol{position:relative;width:${360 * 1.1 / 0.9}px;height:${300 * 1.1 / 0.9}px}
-.v-plume-vol .v-plume{position:absolute;inset:0}
+.v-plume-vol .plume-vol{position:absolute;inset:0}
 .v-imagier{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:14px}
 .v-imagier img{width:84px;height:84px}
 .v-imagier figcaption.fr{font:600 14px/1.2 var(--police-lecture);color:var(--encre)}
@@ -217,7 +142,7 @@ export function pageVitrine(): HTMLElement {
   if (!document.getElementById("vitrine-css")) document.head.appendChild(h("style", { id: "vitrine-css" }, VITRINE_CSS));
   const retour = h("button", { type: "button", class: "pbtn", onclick: () => { location.hash = ""; location.reload(); } }, "Revenir à l'appli");
   const page = h("div", { class: "screen v-page" },
-    ecranIle(ilesV2().nombres, "nenuphars"),
+    ileVitrine(),
     h("section", { class: "v-section" },
       h("h2", null, "Vitrine d'Archipel 2"),
       h("p", { class: "v-texte" }, "Cette page cachée montre les fondations de la nouvelle version en taille réelle : l'île des Nombres telle qu'elle sera au pilote (au-dessus), puis les couleurs, les textes, les composants, les personnages et l'imagier. Rien n'est enregistré ; l'appli de votre enfant ne change pas.")),

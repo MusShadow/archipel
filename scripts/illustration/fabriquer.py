@@ -15,6 +15,21 @@ import personnages as P
 import hotes as H
 import decors as D
 import iles as I
+import importlib
+
+# Éléments isolés de la livraison 2 (une image chacun) : module → ELEMENTS {nom: cadre, dessin, options}.
+MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil"]
+def tous_elements(quoi=None):
+    out = {}
+    for m in MODULES_ELEMENTS:
+        if quoi and m not in quoi:
+            continue
+        try:
+            mod = importlib.import_module(m)
+        except ModuleNotFoundError:
+            continue
+        out.update({k: {**e, "module": m} for k, e in mod.ELEMENTS.items()})
+    return out
 
 RACINE = pathlib.Path(__file__).resolve().parents[2]
 SORTIE = RACINE / "public/illustrations"
@@ -124,13 +139,39 @@ def iles(cat):
             "pastilles": {k: list(v) for k, v in disp["pastilles"].items()}, "plume": list(disp["plume"]),
         }
 
+def elements(cat, quoi):
+    """Éléments isolés : chacun dans son cadre, avec sa boîte, et ses points repères (fractions de la boîte)."""
+    out = cat.setdefault("elements", {})
+    liste = tous_elements(quoi)
+    rendus = {e["module"] for e in liste.values()}
+    for nom in [n for n, e in out.items() if e.get("module") in rendus and n not in liste]:
+        del out[nom]  # élément retiré de son module
+    for nom, e in liste.items():
+        W_, H_ = e["cadre"]
+        A = Atelier(W_, H_, S=e.get("S", 2))
+        t = time.time()
+        opaque = e.get("opaque", False)
+        col, a = (A.opaque if opaque else A.rgba)(e["dessin"])
+        fichier = f"{nom}.webp"
+        boite = A.enregistrer(SORTIE / fichier, col, a, opaque=opaque, qualite=e.get("qualite", 86 if not opaque else 80))
+        ent = {"fichier": fichier, "boite": boite, "module": e["module"]}
+        if e.get("points"):
+            ent["points"] = {k: rel(boite, *pt) for k, pt in e["points"].items()}
+        if e.get("infos"):
+            ent["infos"] = e["infos"]
+        out[nom] = ent
+        print(f"  {fichier:42} {boite}  {round(time.time() - t, 1)} s")
+
 def nettoyer(cat, quoi):
     """Retire les images qui ne sont plus au catalogue (sinon le service worker les garderait pour rien)."""
-    gardes = {e["fichier"] for e in cat["personnages"].values()}
+    gardes = {e["fichier"] for e in cat["personnages"].values()} | {e["fichier"] for e in cat.get("elements", {}).values()}
     for d in cat["iles"].values():
         gardes |= {d["base"]["fichier"]} | {x["fichier"] for k in ("remplissages", "lieux", "animes") for x in d[k].values()}
-    for partie in ("personnages", "iles"):
-        if partie not in quoi or not (SORTIE / partie).exists():
+    parties = ["personnages", "iles"] + ["activites", "gommettes", "fetes", "carte", "accueil"]
+    for partie in parties:
+        if not (SORTIE / partie).exists() or (partie in ("personnages", "iles") and partie not in quoi):
+            continue
+        if partie not in ("personnages", "iles") and not any(m in quoi for m in MODULES_ELEMENTS):
             continue
         for f in sorted((SORTIE / partie).rglob("*.webp")):
             rel = f.relative_to(SORTIE).as_posix()
@@ -144,19 +185,21 @@ def ecrire_ts(cat):
         "// Images de l'atelier d'illustration (public/illustrations) : boîte [x, y, l, h] en px CSS dans le cadre de rendu,",
         "// ancre (point au sol ou centre) et pivot en fraction de la boîte, échelle de rendu du personnage.",
         "export type Boite = [number, number, number, number];",
-        "export interface ImageCadree { fichier: string; boite: Boite; ancre?: [number, number]; echelle?: number; pivot?: [number, number] }",
+        "export interface ImageCadree { fichier: string; boite: Boite; ancre?: [number, number]; echelle?: number; pivot?: [number, number]; points?: Record<string, [number, number]>; infos?: Record<string, number | string> }",
         "export interface DecorIle {",
         "  cadre: [number, number]; base: ImageCadree; remplissages: Record<string, ImageCadree>; lieux: Record<string, ImageCadree>; animes: Record<string, ImageCadree>;",
         "  emplacements: Record<string, [number, number]>; lieuxEmplacement: Record<string, string>; pastilles: Record<string, [number, number]>; plume: [number, number];",
         "}",
         f"export const PERSONNAGES: Record<string, ImageCadree> = {json.dumps(cat['personnages'], ensure_ascii=False, sort_keys=True)};",
         f"export const DECORS_ILES: Record<string, DecorIle> = {json.dumps(cat['iles'], ensure_ascii=False, sort_keys=True)};",
+        "// Éléments isolés (livraison 2) : activités, gommettes, fêtes, carte, accueil.",
+        f"export const ELEMENTS: Record<string, ImageCadree> = {json.dumps({k: {c: v for c, v in e.items() if c != 'module'} for k, e in cat.get('elements', {}).items()}, ensure_ascii=False, sort_keys=True)};",
         "",
     ]
     (RACINE / "src/illustrations.ts").write_text("\n".join(lignes))
 
 if __name__ == "__main__":
-    quoi = set(sys.argv[1:]) or {"personnages", "iles"}
+    quoi = set(sys.argv[1:]) or {"personnages", "iles", *MODULES_ELEMENTS}
     cat = charger()
     t = time.time()
     if "personnages" in quoi:
@@ -165,6 +208,9 @@ if __name__ == "__main__":
     if "iles" in quoi:
         print("Îles")
         iles(cat)
+    if any(m in quoi for m in MODULES_ELEMENTS):
+        print("Éléments")
+        elements(cat, quoi)
     nettoyer(cat, quoi)
     enregistrer(cat)
-    print(f"Fini en {round(time.time() - t)} s : {len(cat['personnages'])} images de personnages, {len(cat['iles'])} île(s).")
+    print(f"Fini en {round(time.time() - t)} s : {len(cat['personnages'])} images de personnages, {len(cat['iles'])} île(s), {len(cat.get('elements', {}))} éléments.")

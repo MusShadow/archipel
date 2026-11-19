@@ -1,4 +1,5 @@
 // État de l'application : données, profil actif, séance en cours, navigation entre écrans.
+import { compagnonLibre, estCompagnon } from "./compagnons";
 import { DOMAINS, SKILLS, newSkill, type ActivityId, type DomainId } from "./core";
 import { loadData, saveData, speech, type AppData, type Profile, type SessionRecord, type Sticker } from "./services";
 
@@ -24,7 +25,9 @@ class App {
     if (this.cleanup) { try { this.cleanup(); } catch { /* écran déjà détruit */ } }
     this.cleanup = cleanup ?? null;
     speech.stop();
+    const ancien = Array.from(this.root.children).find((c) => !c.classList.contains("fondu")) as HTMLElement | undefined;
     this.root.replaceChildren(el);
+    if (ancien && ancien !== el) fondu(this.root, ancien);
   }
 
   // ----- Séance -----
@@ -85,12 +88,45 @@ class App {
 }
 export const app = new App();
 
+// Passage d'un écran à l'autre (350 ms) : le nouvel écran est en place tout de suite (on peut le toucher, les tests et
+// VoiceOver ne voient que lui) ; l'ancien, rangé dans une ombre fermée (shadow DOM) avec une copie des styles, s'efface
+// par-dessus. Réglage « Réduire les animations » de l'iPad : pas de fondu.
+const DUREE_FONDU = 350;
+let styles = { n: -1, texte: "" };
+function feuilles(): string {
+  const els = document.querySelectorAll("head style");
+  if (els.length !== styles.n) styles = { n: els.length, texte: Array.from(els).map((e) => e.textContent ?? "").join("\n") };
+  return styles.texte;
+}
+function fondu(root: HTMLElement, ancien: HTMLElement) {
+  try {
+    if (typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const voile = document.createElement("div");
+    if (!voile.attachShadow || !voile.animate) return;
+    voile.className = "fondu";
+    voile.setAttribute("aria-hidden", "true");
+    voile.setAttribute("inert", "");
+    const ombre = voile.attachShadow({ mode: "closed" });
+    const st = document.createElement("style");
+    st.textContent = feuilles();
+    ombre.append(st, ancien);
+    root.appendChild(voile);
+    let fini = false;
+    const fin = () => { if (!fini) { fini = true; voile.remove(); } };
+    const a = voile.animate([{ opacity: 1 }, { opacity: 0 }], { duration: DUREE_FONDU, easing: "cubic-bezier(0.3, 0.7, 0.3, 1)", fill: "forwards" });
+    a.onfinish = fin;
+    a.oncancel = fin;
+    setTimeout(fin, DUREE_FONDU + 250);
+  } catch { /* sans fondu */ }
+}
+
 // ----- Création d'un profil à partir du questionnaire de repères -----
-export interface Intake { name: string; ageMonths: number; color: string; readingK: number; countTo: number; flags: 0 | 1 | 2 }
+export interface Intake { name: string; ageMonths: number; color: string; readingK: number; countTo: number; flags: 0 | 1 | 2; avatar?: string }
 export function createProfile(i: Intake): Profile {
   const p: Profile = {
     id: Math.random().toString(36).slice(2, 10), name: i.name.trim() || "Enfant", ageMonths: i.ageMonths, color: i.color, createdAt: Date.now(),
     knownK: i.readingK, skills: {}, stairs: {}, flags: {}, log: [], stickers: [], sessions: [], goals: [], departDone: false, stories: [],
+    avatar: estCompagnon(i.avatar) ? i.avatar : compagnonLibre(app.data.profiles.map((q) => q.avatar)),
   };
   applyPriors(p, i);
   return p;

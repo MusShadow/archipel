@@ -6,7 +6,7 @@ import { CONSEIL, type IleId } from "./jetons";
 
 const svgIcone = (nom: string) =>
   `<svg viewBox="0 0 24 24" aria-hidden="true" class="a-ico">${ICON_PATHS[nom] ?? ""}</svg>`;
-const accent = (ile?: IleId) => (ile ? `--accent:var(--ile-${ile}-vif);--accent-fonce:var(--ile-${ile}-fonce);--accent-ombre:var(--ile-${ile}-ombre);--accent-clair:var(--ile-${ile}-clair)` : null);
+export const accent = (ile?: IleId) => (ile ? `--accent:var(--ile-${ile}-vif);--accent-fonce:var(--ile-${ile}-fonce);--accent-ombre:var(--ile-${ile}-ombre);--accent-clair:var(--ile-${ile}-clair)` : null);
 
 type Clic = (e: Event) => void;
 

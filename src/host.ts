@@ -4,7 +4,11 @@ import { PRAISE, PRAISE_AFTER_EFFORT, RETRY, knownSet } from "./content";
 import { applyEvidence, makeRng, newSkill, stepStaircase, type ActivityId, type DomainId, type Form, type Rng } from "./core";
 import { sfx, speech, voice, type Profile } from "./services";
 import { celebrate } from "./fete";
-import { dots, h, icon, plumeSVG, roundBtn, sleep, wobble } from "./ui";
+import { accent, boutonRond } from "./design/composants";
+import type { IleId } from "./design/jetons";
+import { DECORS_ILES, PERSONNAGES } from "./illustrations";
+import { urlImage } from "./images";
+import { dots, h, icon, sleep, wobble } from "./ui";
 
 export interface Item { skill: string; difficulty: number; form: Form; guess: number; prompt: string; level: number }
 export interface Ctx { profile: Profile; rng: Rng; known: Set<string>; now: number }
@@ -106,14 +110,18 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
   const dotsHost = h("div", {});
   const tipText = h("span", {});
   const tip = h("div", { class: "tip", style: app.data.settings.accompanied ? "" : "visibility:hidden" }, h("span", { class: "ic", html: icon("sound", "#12737B", 2) }), tipText);
-  const plumeBtn = roundBtn({ label: "Demander un indice à Plume", cls: "plume", html: plumeSVG(), onclick: () => giveHint() });
-  const screen = h("div", { class: "screen" },
+  // Cadre habité (livraison 2) : l'hôte de l'île à côté du jeu, qui réagit ; Plume, toujours calme, donne les indices.
+  const hote = hoteActivite(mod.host);
+  const plumeBtn = boutonRond({ icone: "", etiquette: "Demander un indice à Plume", taille: "grand", onclick: () => giveHint(), html: imgPerso("plume-vol") });
+  plumeBtn.classList.add("indice");
+  const screen = h("div", { class: "screen cadre-act", "data-ile": mod.island, style: accent(mod.island as IleId) },
+    decorActivite(mod.island),
     h("div", { class: "top" },
-      roundBtn({ icon: "home", label: "Retour à la carte", onclick: () => askExit() }),
+      boutonRond({ icone: "map", etiquette: "Retour à la carte", onclick: () => askExit() }),
       dotsHost,
-      roundBtn({ icon: "ear", label: "Réécouter la consigne", onclick: () => current && sayPrompt() })),
+      boutonRond({ icone: "ear", etiquette: "Réécouter la consigne", onclick: () => { if (current) sayPrompt(); } })),
     stage,
-    h("div", { class: "bottom" }, tip, plumeBtn));
+    h("div", { class: "bottom" }, hote?.el ?? null, tip, plumeBtn));
 
   const view: View = { stage, rng, say: (t) => speech.say(t), answer: (c, el, retry) => answer(c, el ?? null, retry), hintStep: () => hints };
 
@@ -137,6 +145,7 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     // Crochet pour les tests de bout en bout (inexistant en usage normal).
     (globalThis as any).__archipelTest?.onItem?.(item, mod.id);
     attempts = 0; hints = 0; recorded = false; locked = false;
+    hote?.expr("content");
     tipText.innerHTML = `<b>Astuce parent</b> : ${mod.tip(item)}`;
     stage.replaceChildren();
     const intro = mod.intro?.(item, ctx);
@@ -205,10 +214,11 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     if (correct) {
       locked = true;
       sfx.success();
+      hote?.expr("rieur", true);
       if (el) el.classList.add("right");
       const firstTry = attempts === 0 && hints === 0;
       // Petite fête (une scène différente à chaque fois) ; la grande pour la dernière réussite de l'activité.
-      const party = celebrate(screen, { name: p.name, firstTry, final: !opts.fast && index + 1 >= total, quick: opts.fast });
+      const party = celebrate(screen, { name: p.name, firstTry, final: !opts.fast && index + 1 >= total, quick: opts.fast, hote: mod.host });
       summary.items++; summary.last = current;
       if (firstTry) summary.firstTry++; else summary.helped++;
       errorsInRow = 0;
@@ -227,6 +237,7 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
       attempts++; summary.errors++; errorsInRow++;
       sfx.soft();
       if (el) wobble(el);
+      hote?.expr("doux", false, 1800);
       if (errorsInRow >= 4) { errorsInRow = 0; offerCalm(); return; }
       if (attempts >= 3) giveHint(4);
       else if (attempts === 2) giveHint(Math.max(hints + 1, 2));
@@ -239,13 +250,14 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     stopReading();
     hints = Math.min(4, target ?? hints + 1);
     const text = mod.hint(current, hints, view);
+    hote?.expr("pensif", false, 2600);
     if (text) speech.say(text);
   }
 
   function offerCalm() {
     const ov = h("div", { class: "overlay" },
       h("div", { class: "sheet" },
-        h("div", { style: "width:120px;height:110px", html: plumeSVG() }),
+        h("div", { class: "sheet-perso", html: imgPerso("plume-pense") }),
         h("p", { class: "title", style: "font-size:28px;margin:0" }, "On fait une petite pause avec Pico ?"),
         h("div", { class: "row" },
           h("button", { type: "button", class: "bigbtn", onclick: () => { ov.remove(); exit(summary.items > 0 ? summary : null, "calm"); } }, "Oui, une pause"),
@@ -280,7 +292,73 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
   }
 
   queueMicrotask(next);
-  return { el: screen, cleanup: () => { alive = false; } };
+  return { el: screen, cleanup: () => { alive = false; hote?.fin(); } };
 }
+
+// ---------- Cadre habité : hôte, décor léger ----------
+const imgPerso = (nom: string, cls = "") => {
+  const im = PERSONNAGES[nom];
+  return im ? `<img class="${cls}" src="${urlImage(`illustrations/${im.fichier}`)}" alt="" draggable="false">` : "";
+};
+export type Expression = "content" | "rieur" | "doux" | "pensif";
+const EXPRESSIONS: Expression[] = ["content", "rieur", "doux", "pensif"];
+// L'hôte de l'activité (Plume sur le Port : elle est déjà le bouton d'indice, on ne la montre pas deux fois).
+export function hoteActivite(nom: string): { el: HTMLElement; expr: (e: Expression, saut?: boolean, ms?: number) => void; fin: () => void } | null {
+  if (nom === "plume" || !PERSONNAGES[`${nom}-content`]) return null;
+  const el = h("div", { class: "hote", "data-hote": nom, "data-expr": "content", "aria-hidden": "true",
+    html: EXPRESSIONS.map((e) => imgPerso(`${nom}-${e}`, `hote-${e}`)).join("") });
+  let retour: ReturnType<typeof setTimeout> | undefined;
+  const expr = (e: Expression, saut = false, ms = 0) => {
+    clearTimeout(retour);
+    el.dataset.expr = e;
+    const cls = saut ? "saute" : e === "doux" ? "penche" : "";
+    el.classList.remove("saute", "penche");
+    if (cls) { void el.offsetWidth; el.classList.add(cls); }
+    if (ms) retour = setTimeout(() => { el.dataset.expr = "content"; }, ms);
+  };
+  return { el, expr, fin: () => clearTimeout(retour) };
+}
+// Décor léger derrière le jeu : l'île dessinée, très voilée ; sinon la couleur claire de l'île.
+export function decorActivite(ile: string): HTMLElement {
+  const d = DECORS_ILES[ile];
+  const fond = d ? `background-image:linear-gradient(180deg,rgba(255,247,234,.80) 0%,rgba(255,247,234,.90) 55%,rgba(255,247,234,.94) 100%),url("${urlImage(`illustrations/${d.base.fichier}`)}")` : "";
+  return h("div", { class: `cadre-decor${d ? " dessine" : ""}`, "aria-hidden": "true", style: fond || null });
+}
+
+export const CADRE_CSS = `
+.fondu{position:absolute;inset:0;z-index:100;pointer-events:none}
+.cadre-act{isolation:isolate;background:var(--creme)}
+.cadre-decor{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,var(--accent-clair,var(--creme)) 0%,var(--creme) 62%)}
+.cadre-decor.dessine{background-size:cover;background-position:center 40%}
+.cadre-act .top{padding-top:max(10px,calc(var(--u) * 18))}
+.cadre-act .bottom{position:relative;min-height:calc(var(--cible-bouton) * 1.22);align-items:flex-end}
+.cadre-act .dot{background:var(--sable);box-shadow:inset 0 2px 0 rgba(122,86,50,.18)}
+.cadre-act .dot.done{background:var(--accent,var(--ile-port-vif));box-shadow:inset 0 -2px 0 rgba(0,0,0,.12)}
+.cadre-act .dot.cur{background:var(--papier);border-color:var(--accent,var(--ile-port-vif));box-shadow:var(--ombre-posee)}
+.cadre-act .tip{background:var(--papier);border:2px solid var(--bord);border-radius:var(--rayon-moyen);box-shadow:var(--ombre-posee);color:var(--encre);font:var(--texte-adulte);margin-left:calc(var(--u) * 150)}
+.a-rond.indice{overflow:visible;background:radial-gradient(circle at 34% 28%,#FFFFFF 0%,var(--ile-port-clair) 62%,#B8E6EA 100%);border-color:#A9DFE3}
+.a-rond.indice img{width:128%;height:auto;margin:-6% -4% 0 0;pointer-events:none}
+.hote{position:absolute;left:0;bottom:max(6px,calc(var(--u) * 10));height:max(110px,calc(var(--u) * 168));aspect-ratio:var(--hote-ratio,0.78);pointer-events:none;transform-origin:50% 100%}
+.hote img{position:absolute;left:0;bottom:0;width:100%;height:100%;object-fit:contain;object-position:50% 100%;opacity:0;transition:opacity var(--duree-court) var(--courbe-douce)}
+.hote[data-expr=content] .hote-content,.hote[data-expr=rieur] .hote-rieur,.hote[data-expr=doux] .hote-doux,.hote[data-expr=pensif] .hote-pensif{opacity:1}
+.hote.saute{animation:hote-saute var(--duree-long) var(--courbe-rebond) 2}
+.hote.penche{animation:hote-penche var(--duree-long) var(--courbe-douce)}
+@keyframes hote-saute{0%,100%{transform:translateY(0)}45%{transform:translateY(-9%) scale(1.03)}}
+@keyframes hote-penche{0%,100%{transform:rotate(0)}40%{transform:rotate(-5deg)}75%{transform:rotate(2deg)}}
+.hote[data-hote=mona]{--hote-ratio:1.3}.hote[data-hote=kiki]{--hote-ratio:1.2}.hote[data-hote=octave],.hote[data-hote=pico]{--hote-ratio:0.87}.hote[data-hote=bip]{--hote-ratio:0.83}
+.cadre-act .card,.cadre-act .tile,.cadre-act .panel,.cadre-act .speak{border-color:var(--bord);box-shadow:var(--ombre-douce),var(--ombre-reflet)}
+.cadre-act .card,.cadre-act .tile,.cadre-act .speak{background:linear-gradient(180deg,#FFFFFF 0%,var(--papier) 70%,#FBF3E4 100%)}
+.cadre-act .panel{background:var(--papier)}
+.cadre-act .card.right,.cadre-act .tile.right{border-color:var(--juste);box-shadow:0 0 0 max(4px,calc(var(--u) * 6)) var(--juste-halo),var(--ombre-douce)}
+.cadre-act .slot{border-color:var(--bord);background:rgba(255,253,248,.6)}
+.cadre-act .bigbtn{background:linear-gradient(180deg,${"#16808A"} 0%,var(--ile-port-fonce) 60%);box-shadow:0 3px 0 rgba(13,90,96,.35);transition:transform var(--duree-moyen) var(--courbe-rebond)}
+.cadre-act .bigbtn:active{transform:translateY(2px) scale(.97);transition-duration:var(--duree-appui)}
+.cadre-act .bigbtn.alt{background:linear-gradient(180deg,#FFFFFF 0%,var(--surface) 60%);color:var(--encre);border:2.5px solid var(--bord);box-shadow:var(--ombre-posee)}
+.cadre-act .sheet{background:var(--papier);border:3px solid var(--bord);box-shadow:var(--ombre-haute);border-radius:var(--rayon-grand)}
+.sheet-perso{width:max(110px,calc(var(--u) * 150));aspect-ratio:245/234}
+.sheet-perso img{width:100%;height:100%;object-fit:contain}
+.a-rond,.a-pastille,.a-carte,.a-bulle{transition:transform var(--duree-moyen) var(--courbe-rebond),box-shadow var(--duree-appui) var(--courbe-douce)}
+.a-rond:active,.a-pastille:active,.a-carte:active,.a-bulle:active{transition-duration:var(--duree-appui);transition-timing-function:var(--courbe-douce)}
+`;
 
 export function stickerFor(mod: ActivityModule<any>, s: RoundSummary, ctx: Ctx) { return mod.sticker(s, ctx); }

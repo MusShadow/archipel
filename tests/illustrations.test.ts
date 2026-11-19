@@ -3,12 +3,13 @@
 import { expect, test } from "bun:test";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
-import { DECORS_ILES, PERSONNAGES, type ImageCadree } from "../src/illustrations";
+import { DECORS_ILES, ELEMENTS, PERSONNAGES, type ImageCadree } from "../src/illustrations";
 
 const root = join(import.meta.dir, "..");
 const toutes = (): ImageCadree[] => [
   ...Object.values(PERSONNAGES),
   ...Object.values(DECORS_ILES).flatMap((d) => [d.base, ...Object.values(d.lieux), ...Object.values(d.remplissages), ...Object.values(d.animes)]),
+  ...Object.values(ELEMENTS),
 ];
 
 // Taille d'une image WebP (en-têtes VP8, VP8L ou VP8X).
@@ -31,6 +32,7 @@ test("chaque image du catalogue existe en WebP, rendue à l'échelle 2 de sa bo�
     expect(Math.abs(l - im.boite[2] * 2)).toBeLessThanOrEqual(1);
     expect(Math.abs(h - im.boite[3] * 2)).toBeLessThanOrEqual(1);
     if (im.ancre) for (const v of im.ancre) { expect(v).toBeGreaterThanOrEqual(0); expect(v).toBeLessThanOrEqual(1); }
+    for (const pt of Object.values(im.points ?? {})) for (const v of pt) { expect(v).toBeGreaterThanOrEqual(0); expect(v).toBeLessThanOrEqual(1); }
   }
 });
 
@@ -46,6 +48,8 @@ test("le catalogue de l'appli est celui de l'atelier (src/illustrations.ts suit 
   const cat = JSON.parse(readFileSync(join(root, "scripts/illustration/catalogue.json"), "utf8"));
   expect(PERSONNAGES).toEqual(cat.personnages);
   expect(DECORS_ILES).toEqual(cat.iles);
+  const sansModule = Object.fromEntries(Object.entries(cat.elements as Record<string, Record<string, unknown>>).map(([k, e]) => [k, Object.fromEntries(Object.entries(e).filter(([c]) => c !== "module"))]));
+  expect(ELEMENTS).toEqual(sansModule as typeof ELEMENTS);
 });
 
 test("le service worker garde chaque image hors ligne, avec son empreinte", () => {

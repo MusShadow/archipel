@@ -899,5 +899,812 @@
     330
    ]
   }
+ },
+ "elements": {
+  "activites/nenuphars-etang": {
+   "fichier": "activites/nenuphars-etang.webp",
+   "boite": [
+    13.5,
+    0.0,
+    1186.0,
+    200.0
+   ],
+   "module": "activites"
+  },
+  "activites/nenuphar-0": {
+   "fichier": "activites/nenuphar-0.webp",
+   "boite": [
+    3.5,
+    9.0,
+    126.5,
+    81.0
+   ],
+   "module": "activites"
+  },
+  "activites/nenuphar-1": {
+   "fichier": "activites/nenuphar-1.webp",
+   "boite": [
+    3.5,
+    9.0,
+    126.5,
+    81.0
+   ],
+   "module": "activites"
+  },
+  "activites/nenuphar-2": {
+   "fichier": "activites/nenuphar-2.webp",
+   "boite": [
+    3.5,
+    9.0,
+    126.5,
+    81.0
+   ],
+   "module": "activites"
+  },
+  "activites/grenouille-assise": {
+   "fichier": "activites/grenouille-assise.webp",
+   "boite": [
+    25.0,
+    35.0,
+    102.0,
+    86.5
+   ],
+   "module": "activites",
+   "points": {
+    "pieds": [
+     0.4902,
+     0.8902
+    ]
+   }
+  },
+  "activites/grenouille-saut": {
+   "fichier": "activites/grenouille-saut.webp",
+   "boite": [
+    19.0,
+    29.0,
+    114.0,
+    121.0
+   ],
+   "module": "activites",
+   "points": {
+    "pieds": [
+     0.4912,
+     0.686
+    ]
+   }
+  },
+  "activites/grenouille-rieur": {
+   "fichier": "activites/grenouille-rieur.webp",
+   "boite": [
+    25.0,
+    35.0,
+    102.0,
+    86.5
+   ],
+   "module": "activites",
+   "points": {
+    "pieds": [
+     0.4902,
+     0.8902
+    ]
+   }
+  },
+  "gommettes/grenouille": {
+   "fichier": "gommettes/grenouille.webp",
+   "boite": [
+    2.0,
+    3.0,
+    198.0,
+    197.0
+   ],
+   "module": "activites"
+  },
+  "fetes/ballon-jaune": {
+   "fichier": "fetes/ballon-jaune.webp",
+   "boite": [
+    6.5,
+    4.0,
+    89.0,
+    186.0
+   ],
+   "module": "fetes"
+  },
+  "fetes/ballon-corail": {
+   "fichier": "fetes/ballon-corail.webp",
+   "boite": [
+    6.5,
+    4.0,
+    89.0,
+    186.0
+   ],
+   "module": "fetes"
+  },
+  "fetes/ballon-rose": {
+   "fichier": "fetes/ballon-rose.webp",
+   "boite": [
+    6.5,
+    4.0,
+    89.0,
+    186.0
+   ],
+   "module": "fetes"
+  },
+  "fetes/ballon-violet": {
+   "fichier": "fetes/ballon-violet.webp",
+   "boite": [
+    6.5,
+    4.0,
+    89.0,
+    186.0
+   ],
+   "module": "fetes"
+  },
+  "fetes/ballon-bleu": {
+   "fichier": "fetes/ballon-bleu.webp",
+   "boite": [
+    6.5,
+    4.0,
+    89.0,
+    186.0
+   ],
+   "module": "fetes"
+  },
+  "fetes/ballon-turquoise": {
+   "fichier": "fetes/ballon-turquoise.webp",
+   "boite": [
+    6.5,
+    4.0,
+    89.0,
+    186.0
+   ],
+   "module": "fetes"
+  },
+  "fetes/ballon-vert": {
+   "fichier": "fetes/ballon-vert.webp",
+   "boite": [
+    6.5,
+    4.0,
+    89.0,
+    186.0
+   ],
+   "module": "fetes"
+  },
+  "fetes/roue": {
+   "fichier": "fetes/roue.webp",
+   "boite": [
+    0.0,
+    1.0,
+    70.0,
+    69.0
+   ],
+   "module": "fetes",
+   "points": {
+    "centre": [
+     0.5,
+     0.4928
+    ]
+   }
+  },
+  "fetes/voiture": {
+   "fichier": "fetes/voiture.webp",
+   "boite": [
+    8.5,
+    28.5,
+    285.0,
+    141.5
+   ],
+   "module": "fetes",
+   "points": {
+    "roue1": [
+     0.2719,
+     0.7032
+    ],
+    "roue2": [
+     0.7772,
+     0.7032
+    ],
+    "pot": [
+     0.0263,
+     0.5477
+    ]
+   },
+   "infos": {
+    "rayonRoue": 30
+   }
+  },
+  "fetes/camion": {
+   "fichier": "fetes/camion.webp",
+   "boite": [
+    10.0,
+    45.5,
+    405.5,
+    184.5
+   ],
+   "module": "fetes",
+   "points": {
+    "roue1": [
+     0.1726,
+     0.7615
+    ],
+    "roue2": [
+     0.6215,
+     0.7615
+    ],
+    "roue3": [
+     0.8138,
+     0.7615
+    ],
+    "lance": [
+     0.9766,
+     0.0461
+    ],
+    "gyro": [
+     0.1628,
+     0.1111
+    ]
+   },
+   "infos": {
+    "rayonRoue": 30
+   }
+  },
+  "fetes/gyrophare": {
+   "fichier": "fetes/gyrophare.webp",
+   "boite": [
+    5.5,
+    6.0,
+    51.5,
+    44.0
+   ],
+   "module": "fetes",
+   "points": {
+    "socle": [
+     0.4757,
+     0.7727
+    ]
+   }
+  },
+  "fetes/fusee": {
+   "fichier": "fetes/fusee.webp",
+   "boite": [
+    15.0,
+    8.0,
+    112.5,
+    226.5
+   ],
+   "module": "fetes",
+   "points": {
+    "tuyere": [
+     0.4889,
+     0.9625
+    ]
+   }
+  },
+  "fetes/flamme": {
+   "fichier": "fetes/flamme.webp",
+   "boite": [
+    8.0,
+    4.5,
+    64.0,
+    113.5
+   ],
+   "module": "fetes",
+   "points": {
+    "haut": [
+     0.5,
+     0.0132
+    ]
+   }
+  },
+  "fetes/volcan": {
+   "fichier": "fetes/volcan.webp",
+   "boite": [
+    0.0,
+    39.0,
+    380.0,
+    211.0
+   ],
+   "module": "fetes",
+   "points": {
+    "cratere": [
+     0.5,
+     0.0427
+    ]
+   }
+  },
+  "fetes/guirlande": {
+   "fichier": "fetes/guirlande.webp",
+   "boite": [
+    0.0,
+    15.0,
+    1000.0,
+    91.0
+   ],
+   "module": "fetes"
+  },
+  "carte/mer": {
+   "fichier": "carte/mer.webp",
+   "boite": [
+    0.0,
+    0.0,
+    1194.0,
+    1194.0
+   ],
+   "module": "carte"
+  },
+  "carte/ile-nombres": {
+   "fichier": "carte/ile-nombres.webp",
+   "boite": [
+    25.0,
+    89.0,
+    331.5,
+    243.0
+   ],
+   "module": "carte",
+   "points": {
+    "centre": [
+     0.4977,
+     0.4568
+    ]
+   }
+  },
+  "carte/ile-mots": {
+   "fichier": "carte/ile-mots.webp",
+   "boite": [
+    29.0,
+    86.0,
+    319.0,
+    233.5
+   ],
+   "module": "carte",
+   "points": {
+    "centre": [
+     0.5047,
+     0.4882
+    ]
+   }
+  },
+  "carte/ile-port": {
+   "fichier": "carte/ile-port.webp",
+   "boite": [
+    29.0,
+    87.0,
+    314.0,
+    242.0
+   ],
+   "module": "carte",
+   "points": {
+    "centre": [
+     0.5127,
+     0.4669
+    ]
+   }
+  },
+  "carte/ile-enigmes": {
+   "fichier": "carte/ile-enigmes.webp",
+   "boite": [
+    36.5,
+    82.0,
+    319.0,
+    248.5
+   ],
+   "module": "carte",
+   "points": {
+    "centre": [
+     0.4812,
+     0.4748
+    ]
+   }
+  },
+  "carte/ile-decouvertes": {
+   "fichier": "carte/ile-decouvertes.webp",
+   "boite": [
+    29.0,
+    68.5,
+    329.5,
+    274.0
+   ],
+   "module": "carte",
+   "points": {
+    "centre": [
+     0.4886,
+     0.4799
+    ]
+   }
+  },
+  "carte/ile-atelier": {
+   "fichier": "carte/ile-atelier.webp",
+   "boite": [
+    45.5,
+    95.0,
+    299.5,
+    234.0
+   ],
+   "module": "carte",
+   "points": {
+    "centre": [
+     0.4825,
+     0.4487
+    ]
+   }
+  },
+  "carte/ile-coeur": {
+   "fichier": "carte/ile-coeur.webp",
+   "boite": [
+    40.0,
+    92.0,
+    300.0,
+    240.0
+   ],
+   "module": "carte",
+   "points": {
+    "centre": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "carte/soleil": {
+   "fichier": "carte/soleil.webp",
+   "boite": [
+    9.5,
+    10.0,
+    84.0,
+    85.0
+   ],
+   "module": "carte"
+  },
+  "carte/lune": {
+   "fichier": "carte/lune.webp",
+   "boite": [
+    19.0,
+    20.5,
+    61.0,
+    64.0
+   ],
+   "module": "carte"
+  },
+  "accueil/plage": {
+   "fichier": "accueil/plage.webp",
+   "boite": [
+    0.0,
+    0.0,
+    1194.0,
+    834.0
+   ],
+   "module": "accueil"
+  },
+  "accueil/compagnon-renard": {
+   "fichier": "accueil/compagnon-renard.webp",
+   "boite": [
+    42.0,
+    31.0,
+    158.5,
+    225.5
+   ],
+   "module": "accueil",
+   "points": {
+    "disque": [
+     0.4921,
+     0.5277
+    ],
+    "chapeau": [
+     0.4921,
+     0.2616
+    ]
+   },
+   "infos": {
+    "rayon": 100,
+    "chapeauLargeur": 108,
+    "chapeauAngle": -4
+   }
+  },
+  "accueil/compagnon-lapin": {
+   "fichier": "accueil/compagnon-lapin.webp",
+   "boite": [
+    50.0,
+    0.5,
+    142.0,
+    256.0
+   ],
+   "module": "accueil",
+   "points": {
+    "disque": [
+     0.493,
+     0.584
+    ],
+    "chapeau": [
+     0.493,
+     0.3652
+    ]
+   },
+   "infos": {
+    "rayon": 100,
+    "chapeauLargeur": 96,
+    "chapeauAngle": 3
+   }
+  },
+  "accueil/compagnon-ourson": {
+   "fichier": "accueil/compagnon-ourson.webp",
+   "boite": [
+    39.0,
+    56.0,
+    164.5,
+    200.5
+   ],
+   "module": "accueil",
+   "points": {
+    "disque": [
+     0.4924,
+     0.4688
+    ],
+    "chapeau": [
+     0.4924,
+     0.1496
+    ]
+   },
+   "infos": {
+    "rayon": 100,
+    "chapeauLargeur": 112,
+    "chapeauAngle": -3
+   }
+  },
+  "accueil/compagnon-chaton": {
+   "fichier": "accueil/compagnon-chaton.webp",
+   "boite": [
+    45.0,
+    36.5,
+    152.5,
+    220.0
+   ],
+   "module": "accueil",
+   "points": {
+    "disque": [
+     0.4918,
+     0.5159
+    ],
+    "chapeau": [
+     0.4918,
+     0.2432
+    ]
+   },
+   "infos": {
+    "rayon": 100,
+    "chapeauLargeur": 108,
+    "chapeauAngle": 4
+   }
+  },
+  "accueil/compagnon-panda": {
+   "fichier": "accueil/compagnon-panda.webp",
+   "boite": [
+    40.0,
+    57.0,
+    162.5,
+    199.5
+   ],
+   "module": "accueil",
+   "points": {
+    "disque": [
+     0.4923,
+     0.4662
+    ],
+    "chapeau": [
+     0.4923,
+     0.1454
+    ]
+   },
+   "infos": {
+    "rayon": 100,
+    "chapeauLargeur": 112,
+    "chapeauAngle": -3
+   }
+  },
+  "accueil/compagnon-lionceau": {
+   "fichier": "accueil/compagnon-lionceau.webp",
+   "boite": [
+    30.5,
+    43.0,
+    184.5,
+    213.5
+   ],
+   "module": "accueil",
+   "points": {
+    "disque": [
+     0.4851,
+     0.5012
+    ],
+    "chapeau": [
+     0.4851,
+     0.2201
+    ]
+   },
+   "infos": {
+    "rayon": 100,
+    "chapeauLargeur": 104,
+    "chapeauAngle": 3
+   }
+  },
+  "accueil/compagnon-pingouin": {
+   "fichier": "accueil/compagnon-pingouin.webp",
+   "boite": [
+    50.0,
+    61.5,
+    142.0,
+    195.0
+   ],
+   "module": "accueil",
+   "points": {
+    "disque": [
+     0.493,
+     0.4538
+    ],
+    "chapeau": [
+     0.493,
+     0.1051
+    ]
+   },
+   "infos": {
+    "rayon": 100,
+    "chapeauLargeur": 112,
+    "chapeauAngle": -4
+   }
+  },
+  "accueil/compagnon-elephant": {
+   "fichier": "accueil/compagnon-elephant.webp",
+   "boite": [
+    10.5,
+    65.5,
+    221.0,
+    191.0
+   ],
+   "module": "accueil",
+   "points": {
+    "disque": [
+     0.4955,
+     0.4424
+    ],
+    "chapeau": [
+     0.4955,
+     0.1178
+    ]
+   },
+   "infos": {
+    "rayon": 100,
+    "chapeauLargeur": 104,
+    "chapeauAngle": 3
+   }
+  },
+  "accueil/chapeau-jaune": {
+   "fichier": "accueil/chapeau-jaune.webp",
+   "boite": [
+    10.5,
+    15.5,
+    141.0,
+    90.0
+   ],
+   "module": "accueil",
+   "points": {
+    "base": [
+     0.4929,
+     0.7167
+    ]
+   },
+   "infos": {
+    "largeur": 130
+   }
+  },
+  "accueil/chapeau-corail": {
+   "fichier": "accueil/chapeau-corail.webp",
+   "boite": [
+    10.5,
+    15.5,
+    141.0,
+    90.0
+   ],
+   "module": "accueil",
+   "points": {
+    "base": [
+     0.4929,
+     0.7167
+    ]
+   },
+   "infos": {
+    "largeur": 130
+   }
+  },
+  "accueil/chapeau-rose": {
+   "fichier": "accueil/chapeau-rose.webp",
+   "boite": [
+    10.5,
+    15.5,
+    141.0,
+    90.0
+   ],
+   "module": "accueil",
+   "points": {
+    "base": [
+     0.4929,
+     0.7167
+    ]
+   },
+   "infos": {
+    "largeur": 130
+   }
+  },
+  "accueil/chapeau-violet": {
+   "fichier": "accueil/chapeau-violet.webp",
+   "boite": [
+    10.5,
+    15.5,
+    141.0,
+    90.0
+   ],
+   "module": "accueil",
+   "points": {
+    "base": [
+     0.4929,
+     0.7167
+    ]
+   },
+   "infos": {
+    "largeur": 130
+   }
+  },
+  "accueil/chapeau-bleu": {
+   "fichier": "accueil/chapeau-bleu.webp",
+   "boite": [
+    10.5,
+    15.5,
+    141.0,
+    90.0
+   ],
+   "module": "accueil",
+   "points": {
+    "base": [
+     0.4929,
+     0.7167
+    ]
+   },
+   "infos": {
+    "largeur": 130
+   }
+  },
+  "accueil/chapeau-turquoise": {
+   "fichier": "accueil/chapeau-turquoise.webp",
+   "boite": [
+    10.5,
+    15.5,
+    141.0,
+    90.0
+   ],
+   "module": "accueil",
+   "points": {
+    "base": [
+     0.4929,
+     0.7167
+    ]
+   },
+   "infos": {
+    "largeur": 130
+   }
+  },
+  "accueil/chapeau-vert": {
+   "fichier": "accueil/chapeau-vert.webp",
+   "boite": [
+    10.5,
+    15.5,
+    141.0,
+    90.0
+   ],
+   "module": "accueil",
+   "points": {
+    "base": [
+     0.4929,
+     0.7167
+    ]
+   },
+   "infos": {
+    "largeur": 130
+   }
+  }
  }
 }
