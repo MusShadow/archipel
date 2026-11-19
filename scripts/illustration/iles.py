@@ -83,7 +83,7 @@ def nombres_anime(R, nom):
 DESSINS = {"nombres": {"base": nombres_base, "remplissage": nombres_remplissage, "lieu": nombres_lieu, "anime": nombres_anime}}
 
 # ---------------------------------------------------------------------------- îles de la livraison 3
-import ile_mots
-for _id, _m in (("mots", ile_mots),):
+import ile_mots, ile_enigmes, ile_decouvertes, ile_atelier, ile_coeur, ile_port
+for _id, _m in (("mots", ile_mots), ("enigmes", ile_enigmes), ("decouvertes", ile_decouvertes), ("atelier", ile_atelier), ("coeur", ile_coeur), ("port", ile_port)):
     DISPOSITIONS[_id] = _m.DISPOSITION
     DESSINS[_id] = _m.DESSINS

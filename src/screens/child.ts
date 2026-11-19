@@ -217,10 +217,16 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
     const B = 92, marge = 8;
     const noms = ISLANDS.map((i) => { const [x, y] = pos(i); const w = i.label.length * 9.5 + 44; return { x: x - w / 2, y: y + i.ry + 16, w, h: 30 }; });
     const coins = [{ x: 0, y: 0, w: 130, h: 120 }, { x: L - 250, y: 0, w: 250, h: 120 }];
-    const libre = (r: { x: number; y: number; w: number; h: number }) => r.x >= marge && r.y >= marge && r.x + r.w <= L - marge && r.y + r.h <= H - marge
-      && ![...noms, ...coins].some((o) => r.x < o.x + o.w && o.x < r.x + r.w && r.y < o.y + o.h && o.y < r.y + r.h);
+    // de préférence, elle ne couvre pas non plus une autre île (on la toucherait en voulant toucher l'île)
+    const autres = ISLANDS.filter((i) => i !== cible).map((i) => { const [x, y] = pos(i); return { x: x - i.rx, y: y - i.ry - 30, w: 2 * i.rx, h: 2 * i.ry + 30 }; });
+    type Rect = { x: number; y: number; w: number; h: number };
+    const croise = (r: Rect, o: Rect) => r.x < o.x + o.w && o.x < r.x + r.w && r.y < o.y + o.h && o.y < r.y + r.h;
+    const libre = (r: Rect, obstacles: Rect[]) => r.x >= marge && r.y >= marge && r.x + r.w <= L - marge && r.y + r.h <= H - marge
+      && !obstacles.some((o) => croise(r, o));
     const places: [number, number, "gauche" | "droite"][] = [[-30, -162, "gauche"], [56, -112, "gauche"], [-150, -112, "droite"], [64, -20, "gauche"], [-160, -20, "droite"]];
-    const [bx, by, queue] = places.find(([dx, dy]) => libre({ x: arrivee[0] + dx, y: arrivee[1] + dy, w: B, h: B })) ?? places[0];
+    const rect = ([dx, dy]: [number, number, string]): Rect => ({ x: arrivee[0] + dx, y: arrivee[1] + dy, w: B, h: B });
+    const [bx, by, queue] = places.find((c) => libre(rect(c), [...noms, ...coins, ...autres]))
+      ?? places.find((c) => libre(rect(c), [...noms, ...coins])) ?? places[0];
     const bulle = bullePlume({ queue });
     bulle.dataset.plume = "1";
     bulle.style.cssText = `position:absolute;left:${bx}px;top:${by}px`;

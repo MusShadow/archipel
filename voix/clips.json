@@ -7946,6 +7946,16 @@
   ]
  },
  {
+  "key": "bienvenue au port des voyages|.",
+  "text": "Bienvenue au Port des Voyages !",
+  "say": "Bienvenue au Port des Voyages !",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "ile"
+  ]
+ },
+ {
   "key": "bienvenue dans le coin calme|.",
   "text": "Bienvenue dans le coin calme.",
   "say": "Bienvenue dans le coin calme.",
@@ -7966,9 +7976,59 @@
   ]
  },
  {
+  "key": "bienvenue sur l'île de l'atelier|.",
+  "text": "Bienvenue sur l'île de l'Atelier !",
+  "say": "Bienvenue sur l'île de l'Atelier !",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "ile"
+  ]
+ },
+ {
+  "key": "bienvenue sur l'île des découvertes|.",
+  "text": "Bienvenue sur l'île des Découvertes !",
+  "say": "Bienvenue sur l'île des Découvertes !",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "ile"
+  ]
+ },
+ {
+  "key": "bienvenue sur l'île des énigmes|.",
+  "text": "Bienvenue sur l'île des Énigmes !",
+  "say": "Bienvenue sur l'île des Énigmes !",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "ile"
+  ]
+ },
+ {
+  "key": "bienvenue sur l'île des mots|.",
+  "text": "Bienvenue sur l'île des Mots !",
+  "say": "Bienvenue sur l'île des Mots !",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "ile"
+  ]
+ },
+ {
   "key": "bienvenue sur l'île des nombres|.",
   "text": "Bienvenue sur l'île des Nombres !",
   "say": "Bienvenue sur l'île des Nombres !",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "ile"
+  ]
+ },
+ {
+  "key": "bienvenue sur l'île du cœur|.",
+  "text": "Bienvenue sur l'île du Cœur !",
+  "say": "Bienvenue sur l'île du Cœur !",
   "pack": "commun",
   "words": 5,
   "fams": [
@@ -11295,6 +11355,16 @@
   ]
  },
  {
+  "key": "kiki te fait coucou|.",
+  "text": "Kiki te fait coucou !",
+  "say": "Kiki te fait coucou !",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "ile"
+  ]
+ },
+ {
   "key": "kiwi|.",
   "text": "kiwi.",
   "say": "kiwi.",
@@ -13977,6 +14047,16 @@
   ]
  },
  {
+  "key": "mona te fait coucou|.",
+  "text": "Mona te fait coucou !",
+  "say": "Mona te fait coucou !",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "ile"
+  ]
+ },
+ {
   "key": "mona veut jouer avec les mots|.",
   "text": "Mona veut jouer avec les mots.",
   "say": "Mona veut jouer avec les mots.",
@@ -14250,6 +14330,16 @@
   "words": 1,
   "fams": [
    "mots"
+  ]
+ },
+ {
+  "key": "octave te fait coucou|.",
+  "text": "Octave te fait coucou !",
+  "say": "Octave te fait coucou !",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "ile"
   ]
  },
  {
@@ -14740,6 +14830,16 @@
    "mots",
    "options",
    "syllabes:consigne"
+  ]
+ },
+ {
+  "key": "pico te fait coucou|.",
+  "text": "Pico te fait coucou !",
+  "say": "Pico te fait coucou !",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "ile"
   ]
  },
  {
@@ -15348,6 +15448,16 @@
   "words": 1,
   "fams": [
    "options"
+  ]
+ },
+ {
+  "key": "rico te fait coucou|.",
+  "text": "Rico te fait coucou !",
+  "say": "Rico te fait coucou !",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "ile"
   ]
  },
  {

@@ -286,6 +286,7 @@ with sync_playwright() as pw:
     # Portrait : quelques écrans
     page.set_viewport_size({"width": 820, "height": 1180})
     shot(page, "49-carte-portrait")
+    page.wait_for_timeout(1300)  # la carte se redessine en portrait : Plume refait son vol (1,2 s), sa bulle avec elle
     open_island(page, "enigmes", "bip")
     page.wait_for_timeout(600)
     shot(page, "50-bip-portrait")

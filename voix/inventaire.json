@@ -4475,6 +4475,12 @@
   ]
  },
  {
+  "text": "Bienvenue au Port des Voyages !",
+  "src": [
+   "ile"
+  ]
+ },
+ {
   "text": "Bienvenue dans le coin calme. On respire avec Pico.",
   "src": [
    "coin-calme"
@@ -4499,7 +4505,37 @@
   ]
  },
  {
+  "text": "Bienvenue sur l'île de l'Atelier !",
+  "src": [
+   "ile"
+  ]
+ },
+ {
+  "text": "Bienvenue sur l'île des Découvertes !",
+  "src": [
+   "ile"
+  ]
+ },
+ {
+  "text": "Bienvenue sur l'île des Énigmes !",
+  "src": [
+   "ile"
+  ]
+ },
+ {
+  "text": "Bienvenue sur l'île des Mots !",
+  "src": [
+   "ile"
+  ]
+ },
+ {
   "text": "Bienvenue sur l'île des Nombres !",
+  "src": [
+   "ile"
+  ]
+ },
+ {
+  "text": "Bienvenue sur l'île du Cœur !",
   "src": [
    "ile"
   ]
@@ -44872,6 +44908,12 @@
   ]
  },
  {
+  "text": "Kiki te fait coucou !",
+  "src": [
+   "ile"
+  ]
+ },
+ {
   "text": "kiwi",
   "src": [
    "mots"
@@ -56157,6 +56199,12 @@
   ]
  },
  {
+  "text": "Mona te fait coucou !",
+  "src": [
+   "ile"
+  ]
+ },
+ {
   "text": "Mona veut jouer avec les mots.",
   "src": [
    "depart"
@@ -57541,6 +57589,12 @@
   "src": [
    "theatre:consigne",
    "theatre:indice"
+  ]
+ },
+ {
+  "text": "Octave te fait coucou !",
+  "src": [
+   "ile"
   ]
  },
  {
@@ -70236,6 +70290,12 @@
   ]
  },
  {
+  "text": "Pico te fait coucou !",
+  "src": [
+   "ile"
+  ]
+ },
+ {
   "text": "Pico trouve un ballon rouge caché sous son oreiller. Comment se sent Pico ?",
   "src": [
    "theatre:consigne",
@@ -81717,6 +81777,12 @@
   ]
  },
  {
+  "text": "Rico te fait coucou !",
+  "src": [
+   "ile"
+  ]
+ },
+ {
   "text": "Rico va chez le docteur pour un vaccin. Il ne pleure pas et il dit que tout va bien. Mais dans son cœur, comment se sent-il ?",
   "src": [
    "theatre:consigne",
@@ -85993,6 +86059,12 @@
  },
  {
   "text": "Tu as fabriqué ré. On cherche ré.",
+  "src": [
+   "syllabes:erreur"
+  ]
+ },
+ {
+  "text": "Tu as fabriqué ré. On cherche riz.",
   "src": [
    "syllabes:erreur"
   ]

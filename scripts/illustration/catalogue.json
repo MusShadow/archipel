@@ -926,10 +926,10 @@
     "F": {
      "fichier": "iles/mots/remplissage-F.webp",
      "boite": [
-      187.0,
-      591.0,
-      103.0,
-      91.5
+      139.0,
+      573.0,
+      87.0,
+      76.5
      ]
     }
    },
@@ -964,10 +964,10 @@
     "histoires": {
      "fichier": "iles/mots/lieu-histoires.webp",
      "boite": [
-      893.0,
-      505.5,
-      220.5,
-      177.0
+      865.0,
+      523.5,
+      169.5,
+      159.0
      ]
     }
    },
@@ -975,10 +975,10 @@
     "mona": {
      "fichier": "iles/mots/anime-mona.webp",
      "boite": [
-      38.5,
-      692.5,
-      187.5,
-      133.5
+      178.5,
+      672.5,
+      151.5,
+      110.5
      ]
     }
    },
@@ -1028,8 +1028,663 @@
      758
     ],
     "histoires": [
-     994,
+     956,
+     724
+    ]
+   },
+   "plume": [
+    726,
+    330
+   ]
+  },
+  "enigmes": {
+   "cadre": [
+    1194,
+    834
+   ],
+   "base": {
+    "fichier": "iles/enigmes/base.webp",
+    "boite": [
+     0.0,
+     0.0,
+     1194.0,
+     834.0
+    ]
+   },
+   "remplissages": {
+    "D": {
+     "fichier": "iles/enigmes/remplissage-D.webp",
+     "boite": [
+      526.5,
+      190.0,
+      151.5,
+      241.0
+     ]
+    },
+    "E": {
+     "fichier": "iles/enigmes/remplissage-E.webp",
+     "boite": [
+      941.5,
+      601.5,
+      98.5,
+      69.0
+     ]
+    },
+    "F": {
+     "fichier": "iles/enigmes/remplissage-F.webp",
+     "boite": [
+      135.5,
+      585.5,
+      85.5,
+      59.0
+     ]
+    }
+   },
+   "lieux": {
+    "formes": {
+     "fichier": "iles/enigmes/lieu-formes.webp",
+     "boite": [
+      162.5,
+      361.0,
+      333.5,
+      152.0
+     ]
+    },
+    "bip": {
+     "fichier": "iles/enigmes/lieu-bip.webp",
+     "boite": [
+      694.0,
+      357.5,
+      323.5,
+      190.5
+     ]
+    },
+    "motifs": {
+     "fichier": "iles/enigmes/lieu-motifs.webp",
+     "boite": [
+      423.0,
+      509.5,
+      280.5,
+      194.5
+     ]
+    }
+   },
+   "animes": {
+    "rico": {
+     "fichier": "iles/enigmes/anime-rico.webp",
+     "boite": [
+      196.0,
+      586.5,
+      95.5,
+      130.5
+     ]
+    }
+   },
+   "emplacements": {
+    "A": [
+     318,
+     470
+    ],
+    "B": [
+     842,
+     496
+    ],
+    "C": [
+     560,
+     660
+    ],
+    "D": [
+     590,
+     398
+    ],
+    "E": [
+     990,
+     640
+    ],
+    "F": [
+     232,
+     652
+    ]
+   },
+   "lieuxEmplacement": {
+    "formes": "A",
+    "bip": "B",
+    "motifs": "C"
+   },
+   "pastilles": {
+    "formes": [
+     290,
+     544
+    ],
+    "bip": [
+     842,
+     620
+    ],
+    "motifs": [
+     560,
+     758
+    ]
+   },
+   "plume": [
+    726,
+    330
+   ]
+  },
+  "decouvertes": {
+   "cadre": [
+    1194,
+    834
+   ],
+   "base": {
+    "fichier": "iles/decouvertes/base.webp",
+    "boite": [
+     0.0,
+     0.0,
+     1194.0,
+     834.0
+    ]
+   },
+   "remplissages": {
+    "F": {
+     "fichier": "iles/decouvertes/remplissage-F.webp",
+     "boite": [
+      139.0,
+      580.0,
+      99.0,
+      69.5
+     ]
+    }
+   },
+   "lieux": {
+    "goutte": {
+     "fichier": "iles/decouvertes/lieu-goutte.webp",
+     "boite": [
+      242.0,
+      260.0,
+      223.0,
+      256.0
+     ]
+    },
+    "flotte": {
+     "fichier": "iles/decouvertes/lieu-flotte.webp",
+     "boite": [
+      720.5,
+      368.5,
+      267.0,
+      178.5
+     ]
+    },
+    "tri": {
+     "fichier": "iles/decouvertes/lieu-tri.webp",
+     "boite": [
+      424.0,
+      584.5,
+      291.5,
+      142.5
+     ]
+    },
+    "volcan": {
+     "fichier": "iles/decouvertes/lieu-volcan.webp",
+     "boite": [
+      480.5,
+      208.5,
+      225.0,
+      228.5
+     ]
+    },
+    "dechets": {
+     "fichier": "iles/decouvertes/lieu-dechets.webp",
+     "boite": [
+      832.5,
+      603.0,
+      215.5,
+      105.5
+     ]
+    }
+   },
+   "animes": {
+    "octave": {
+     "fichier": "iles/decouvertes/anime-octave.webp",
+     "boite": [
+      181.0,
+      612.0,
+      151.5,
+      153.0
+     ]
+    }
+   },
+   "emplacements": {
+    "A": [
+     318,
+     470
+    ],
+    "B": [
+     842,
+     496
+    ],
+    "C": [
+     560,
+     660
+    ],
+    "D": [
+     590,
+     398
+    ],
+    "E": [
+     990,
+     640
+    ],
+    "F": [
+     232,
+     652
+    ]
+   },
+   "lieuxEmplacement": {
+    "goutte": "A",
+    "flotte": "B",
+    "tri": "C",
+    "volcan": "D",
+    "dechets": "E"
+   },
+   "pastilles": {
+    "goutte": [
+     300,
+     560
+    ],
+    "flotte": [
+     812,
+     566
+    ],
+    "tri": [
+     560,
      770
+    ],
+    "volcan": [
+     590,
+     474
+    ],
+    "dechets": [
+     940,
+     742
+    ]
+   },
+   "plume": [
+    726,
+    330
+   ]
+  },
+  "atelier": {
+   "cadre": [
+    1194,
+    834
+   ],
+   "base": {
+    "fichier": "iles/atelier/base.webp",
+    "boite": [
+     0.0,
+     0.0,
+     1194.0,
+     834.0
+    ]
+   },
+   "remplissages": {
+    "C": {
+     "fichier": "iles/atelier/remplissage-C.webp",
+     "boite": [
+      469.0,
+      572.5,
+      202.0,
+      137.5
+     ]
+    },
+    "D": {
+     "fichier": "iles/atelier/remplissage-D.webp",
+     "boite": [
+      488.0,
+      226.5,
+      203.0,
+      205.5
+     ]
+    },
+    "E": {
+     "fichier": "iles/atelier/remplissage-E.webp",
+     "boite": [
+      941.0,
+      549.0,
+      98.5,
+      104.0
+     ]
+    },
+    "F": {
+     "fichier": "iles/atelier/remplissage-F.webp",
+     "boite": [
+      134.5,
+      558.5,
+      87.5,
+      77.0
+     ]
+    }
+   },
+   "lieux": {
+    "dessin": {
+     "fichier": "iles/atelier/lieu-dessin.webp",
+     "boite": [
+      242.5,
+      317.0,
+      207.0,
+      199.0
+     ]
+    },
+    "miroir": {
+     "fichier": "iles/atelier/lieu-miroir.webp",
+     "boite": [
+      752.5,
+      331.5,
+      231.0,
+      204.5
+     ]
+    }
+   },
+   "animes": {
+    "kiki": {
+     "fichier": "iles/atelier/anime-kiki.webp",
+     "boite": [
+      163.0,
+      586.5,
+      143.0,
+      133.5
+     ]
+    }
+   },
+   "emplacements": {
+    "A": [
+     318,
+     470
+    ],
+    "B": [
+     842,
+     496
+    ],
+    "C": [
+     560,
+     660
+    ],
+    "D": [
+     590,
+     398
+    ],
+    "E": [
+     990,
+     640
+    ],
+    "F": [
+     232,
+     652
+    ]
+   },
+   "lieuxEmplacement": {
+    "dessin": "A",
+    "miroir": "B"
+   },
+   "pastilles": {
+    "dessin": [
+     318,
+     546
+    ],
+    "miroir": [
+     842,
+     584
+    ]
+   },
+   "plume": [
+    726,
+    330
+   ]
+  },
+  "coeur": {
+   "cadre": [
+    1194,
+    834
+   ],
+   "base": {
+    "fichier": "iles/coeur/base.webp",
+    "boite": [
+     0.0,
+     0.0,
+     1194.0,
+     834.0
+    ]
+   },
+   "remplissages": {
+    "C": {
+     "fichier": "iles/coeur/remplissage-C.webp",
+     "boite": [
+      471.0,
+      593.5,
+      192.0,
+      117.5
+     ]
+    },
+    "D": {
+     "fichier": "iles/coeur/remplissage-D.webp",
+     "boite": [
+      518.0,
+      238.0,
+      150.5,
+      188.5
+     ]
+    },
+    "E": {
+     "fichier": "iles/coeur/remplissage-E.webp",
+     "boite": [
+      921.0,
+      526.0,
+      136.5,
+      140.0
+     ]
+    },
+    "F": {
+     "fichier": "iles/coeur/remplissage-F.webp",
+     "boite": [
+      133.5,
+      580.5,
+      84.0,
+      57.5
+     ]
+    }
+   },
+   "lieux": {
+    "theatre": {
+     "fichier": "iles/coeur/lieu-theatre.webp",
+     "boite": [
+      220.5,
+      211.5,
+      213.0,
+      302.5
+     ]
+    },
+    "calme": {
+     "fichier": "iles/coeur/lieu-calme.webp",
+     "boite": [
+      712.0,
+      384.5,
+      296.0,
+      162.0
+     ]
+    }
+   },
+   "animes": {
+    "pico": {
+     "fichier": "iles/coeur/anime-pico.webp",
+     "boite": [
+      181.5,
+      599.5,
+      98.0,
+      119.5
+     ]
+    }
+   },
+   "emplacements": {
+    "A": [
+     318,
+     470
+    ],
+    "B": [
+     842,
+     496
+    ],
+    "C": [
+     560,
+     660
+    ],
+    "D": [
+     590,
+     398
+    ],
+    "E": [
+     990,
+     640
+    ],
+    "F": [
+     232,
+     652
+    ]
+   },
+   "lieuxEmplacement": {
+    "theatre": "A",
+    "calme": "B"
+   },
+   "pastilles": {
+    "theatre": [
+     300,
+     548
+    ],
+    "calme": [
+     842,
+     596
+    ]
+   },
+   "plume": [
+    726,
+    330
+   ]
+  },
+  "port": {
+   "cadre": [
+    1194,
+    834
+   ],
+   "base": {
+    "fichier": "iles/port/base.webp",
+    "boite": [
+     0.0,
+     0.0,
+     1194.0,
+     834.0
+    ]
+   },
+   "remplissages": {
+    "C": {
+     "fichier": "iles/port/remplissage-C.webp",
+     "boite": [
+      438.0,
+      601.5,
+      241.0,
+      110.5
+     ]
+    },
+    "E": {
+     "fichier": "iles/port/remplissage-E.webp",
+     "boite": [
+      951.5,
+      426.5,
+      111.0,
+      247.5
+     ]
+    },
+    "F": {
+     "fichier": "iles/port/remplissage-F.webp",
+     "boite": [
+      73.0,
+      668.5,
+      215.0,
+      161.5
+     ]
+    }
+   },
+   "lieux": {
+    "drapeau": {
+     "fichier": "iles/port/lieu-drapeau.webp",
+     "boite": [
+      226.5,
+      255.5,
+      211.0,
+      260.5
+     ]
+    },
+    "atelierdrapeaux": {
+     "fichier": "iles/port/lieu-atelierdrapeaux.webp",
+     "boite": [
+      725.0,
+      348.0,
+      244.0,
+      194.0
+     ]
+    },
+    "monDrapeau": {
+     "fichier": "iles/port/lieu-monDrapeau.webp",
+     "boite": [
+      540.0,
+      159.5,
+      185.5,
+      275.5
+     ]
+    }
+   },
+   "animes": {},
+   "emplacements": {
+    "A": [
+     318,
+     470
+    ],
+    "B": [
+     842,
+     496
+    ],
+    "C": [
+     560,
+     660
+    ],
+    "D": [
+     590,
+     398
+    ],
+    "E": [
+     990,
+     640
+    ],
+    "F": [
+     232,
+     652
+    ]
+   },
+   "lieuxEmplacement": {
+    "drapeau": "A",
+    "atelierdrapeaux": "B",
+    "monDrapeau": "D"
+   },
+   "pastilles": {
+    "drapeau": [
+     318,
+     548
+    ],
+    "atelierdrapeaux": [
+     842,
+     600
+    ],
+    "monDrapeau": [
+     604,
+     462
     ]
    },
    "plume": [

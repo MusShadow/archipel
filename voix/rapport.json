@@ -1,7 +1,7 @@
 {
- "clips": 5975,
- "octets": 43353867,
- "minutes": 168.8,
+ "clips": 5986,
+ "octets": 43418010,
+ "minutes": 169.0,
  "a_revoir": [
   {
    "key": "dos|.",
@@ -14,6 +14,12 @@
    "say": "papi.",
    "heard": "",
    "per": 0.25
+  },
+  {
+   "key": "rico te fait coucou|.",
+   "say": "Rico te fait coucou !",
+   "heard": "Ricot fait coucou.",
+   "per": 0.167
   },
   {
    "key": "regarde un phare et une poignée|.",

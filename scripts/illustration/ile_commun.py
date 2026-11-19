@@ -21,6 +21,25 @@ def contour(seed=0, amp=(18, 10), ondes=(3, 4)):
         out.append((x + amp[0] * math.sin(ondes[0] * t + ph1), y + amp[1] * math.sin(ondes[1] * t + ph2)))
     return out
 
+def crique(pts, centre=(246, 700), profondeur=78, rayon=104):
+    """Creuse une petite crique dans la côte, autour de `centre` : la mer y entre, l'hôte de l'eau (Mona, Octave) y nage,
+    dans la partie du dessin que l'écran garde aussi en portrait (le portrait rogne 12 % de chaque côté)."""
+    dense = catmull(pts, n=8)
+    n = len(dense)
+    cx, cy = centre
+    out = []
+    for i in range(n):
+        x, y = dense[i]
+        (xa, ya), (xb, yb) = dense[i - 1], dense[(i + 1) % n]
+        tx, ty = xb - xa, yb - ya
+        l = math.hypot(tx, ty) or 1.0
+        nx, ny = -ty / l, tx / l
+        if (600 - x) * nx + (520 - y) * ny < 0:  # normale tournée vers l'intérieur de l'île
+            nx, ny = -nx, -ny
+        f = math.exp(-2.0 * (math.hypot(x - cx, y - cy) / rayon) ** 2)
+        out.append((x + nx * profondeur * f, y + ny * profondeur * f))
+    return out[::2]
+
 def ile(R, pts, herbe=("#9BD27A", "#7CC062"), seed=11):
     top = catmull(pts, n=16)
     top_m = R.mask(top)
@@ -151,3 +170,22 @@ def cabane(R, x, y, w=150, h=90, mur="#FFF4E2", toit="#FF7F50", porte="#A8703F",
     if fenetre:
         for fx in (x - w * 0.32, x + w * 0.32):
             part(R, R.mask(rrect(fx - 14, y - h + 22, 28, 24, 5)), "#BFE8EE", Mat(puff=3, spec=0.5, line_w=1.1), shadow=False)
+
+def coeur(cx, cy, r, n=48):
+    """Polygone en cœur (pointe en bas), de demi-largeur ~r, centré sur (cx, cy)."""
+    k = r / 17.0
+    pts = []
+    for t in np.linspace(0, 2 * math.pi, n, endpoint=False):
+        x = 16 * math.sin(t) ** 3
+        y = -(13 * math.cos(t) - 5 * math.cos(2 * t) - 2 * math.cos(3 * t) - math.cos(4 * t))
+        pts.append((cx + x * k, cy + (y + 2) * k))
+    return np.array(pts, float)
+
+def tulipe(R, x, y, c, h=22, s=1.0):
+    """Tulipe sur sa tige : (x, y) = pied de la tige."""
+    flat(R, R.line_mask([(x, y), (x + 1, y - h * 0.5 * s), (x, y - h * s)], 2.2 * s), "#4E9A3E")
+    part(R, R.mask(leaf((x, y - 2), (x - 9 * s, y - h * 0.55 * s), 5 * s)), "#5FAE4C", Mat(puff=2, line_w=0.8), shadow=False)
+    fx, fy = x, y - h * s
+    fleur = R.mask(catmull([(fx - 7 * s, fy - 10 * s, "c"), (fx - 3 * s, fy - 4 * s), (fx, fy - 11 * s, "c"), (fx + 3 * s, fy - 4 * s),
+                            (fx + 7 * s, fy - 10 * s, "c"), (fx + 7 * s, fy - 2 * s), (fx, fy + 4 * s), (fx - 7 * s, fy - 2 * s)], n=6))
+    part(R, fleur, c, Mat(puff=3, line_w=0.9, spec=0.15), shadow=False)

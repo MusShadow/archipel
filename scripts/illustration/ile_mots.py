@@ -12,19 +12,20 @@ CORAIL, CORAIL_F, CREME = "#FF7F50", "#E2603A", "#FFF4E2"
 DISPOSITION = {
     "emplacements": {"A": (318, 470), "B": (842, 496), "C": (560, 660), "D": (590, 398), "E": (990, 640), "F": (232, 652)},
     "lieux": {"lis": "A", "syllabes": "B", "chants": "C", "histoires": "E"},
-    "pastilles": {"lis": (318, 606), "syllabes": (842, 622), "chants": (560, 758), "histoires": (994, 770)},
+    "pastilles": {"lis": (318, 606), "syllabes": (842, 622), "chants": (560, 758), "histoires": (956, 724)},
     "plume": (726, 330),
     "animes": ["mona"],
 }
-COTE = C.contour(seed=21, amp=(22, 12), ondes=(2, 5))
+COTE = C.crique(C.contour(seed=21, amp=(22, 12), ondes=(2, 5)))
 
 def base(R):
     C.ciel_mer(R, nuages=((200, 96, 0.92, 4), (690, 126, 0.6, 5), (1010, 84, 0.82, 6)))
     C.ile(R, COTE, herbe=("#A8D67F", "#84C366"), seed=21)
-    C.chemin(R, [([(176, 774), (236, 704), (300, 640), (330, 598)], 15), ([(300, 626), (420, 642), (510, 652), (560, 690)], 13),
+    C.chemin(R, [([(352, 706), (336, 650), (330, 598)], 15), ([(300, 626), (420, 642), (510, 652), (560, 690)], 13),
                  ([(560, 690), (680, 642), (780, 594), (842, 566)], 12), ([(790, 598), (880, 650), (962, 704)], 12)], seed=57)
     for (x, y, rx, ry, sd) in ((104, 528, 20, 14, 31), (128, 546, 12, 8, 32), (1118, 566, 18, 12, 33), (850, 690, 13, 9, 34)):
         D.rock(R, x, y, rx, ry, seed=sd)
+    D.round_tree(R, 1048, 618, 0.72, seed=28, fruit="#FFC145")
     D.palm(R, 1084, 506, 1.0, lean=-14, seed=12)
     D.palm(R, 126, 604, 0.9, lean=-10, seed=13)
     for (fx, fy, c) in ((420, 694, CORAIL), (700, 706, "#FFC145"), (510, 566, "#E85D9A"), (700, 470, CORAIL), (1030, 596, "#FFC145")):
@@ -39,8 +40,8 @@ def remplissage(R, ident):
         D.round_tree(R, 540, 370, 0.92, seed=24, fruit=CORAIL)
         D.bush(R, 612, 398, 0.85, seed=25, flowers="#FFC145")
     elif ident == "F":
-        D.bush(R, 238, 650, 0.82, "#56A84A", seed=26, flowers=CORAIL)
-        D.flower_stem(R, 196, 618, "#E85D9A")
+        D.bush(R, 176, 618, 0.78, "#56A84A", seed=26, flowers=CORAIL)
+        D.flower_stem(R, 214, 600, "#E85D9A")
     else:
         x, y = DISPOSITION["emplacements"][ident]
         D.bush(R, x, y - 14, 0.9, seed=27, flowers=CORAIL)
@@ -104,8 +105,7 @@ def chants(R):
 
 def histoires(R):
     """Mes histoires : le grand livre ouvert sur son pupitre, sous un arbre, et un coussin pour écouter."""
-    x, y = 990, 652
-    D.round_tree(R, x + 62, y - 26, 0.72, seed=28, fruit="#FFC145")
+    x, y = 962, 652
     D.ground_shadow(R, x + 6, y + 2, 54, 9, 0.26, dx=4, blur=4)
     # pupitre
     part(R, R.mask(rrect(x - 6, y - 56, 12, 56, 3)), "#8E5F37", Mat(puff=3, line_w=1.0, tex=1.0))
@@ -126,14 +126,13 @@ def histoires(R):
 
 def anime(R, nom):
     if nom == "mona":
-        x, y = 128, 760
-        rond = R.mask(ellipse(x + 4, y + 48, 92, 16))
-        R.paint(rond, "#BDEDE6", Mat(puff=4, profile="pillow", line=False, tex=0.4))
-        HT.mona(R, x, y, 0.56, expr="content", salut=True)
-        # vaguelettes devant : Mona est dans l'eau
+        # Mona nage dans sa crique, au pied de la cabane de lecture
+        x, y = 250, 728
+        R.paint(R.mask(ellipse(x + 4, y + 40, 74, 13)), "#BDEDE6", Mat(puff=4, profile="pillow", line=False, tex=0.4))
+        HT.mona(R, x, y, 0.46, expr="content", salut=True)
         for k in range(3):
-            xx = x - 70 + k * 52
-            flat(R, R.line_mask([(xx, y + 56), (xx + 12, y + 50), (xx + 24, y + 56), (xx + 36, y + 50)], 2.6), "#F2FBF8")
+            xx = x - 58 + k * 42
+            flat(R, R.line_mask([(xx, y + 46), (xx + 10, y + 41), (xx + 20, y + 46), (xx + 30, y + 41)], 2.4), "#F2FBF8")
     else:
         raise KeyError(nom)
 

@@ -4703,6 +4703,12 @@
 "per": 0.0,
 "spelling": null
 },
+"bienvenue au port des voyages|.": {
+"h": "e4488c287980fb1b",
+"say": "Bienvenue au Port des Voyages !",
+"per": 0.0,
+"spelling": null
+},
 "bienvenue dans le coin calme|.": {
 "h": "5bbed7baf4844c8c",
 "say": "Bienvenue dans le coin calme.",
@@ -4715,9 +4721,39 @@
 "per": 0.0,
 "spelling": null
 },
+"bienvenue sur l'île de l'atelier|.": {
+"h": "788aa9a4de538774",
+"say": "Bienvenue sur l'ile de l'Atelier !",
+"per": 0.0,
+"spelling": null
+},
+"bienvenue sur l'île des découvertes|.": {
+"h": "12fce6adf16a743b",
+"say": "Bienvenue sur l'ile des Découvertes !",
+"per": 0.0,
+"spelling": null
+},
+"bienvenue sur l'île des énigmes|.": {
+"h": "1c62b3408349ceaa",
+"say": "Bienvenue sur l'ile des Énigmes !",
+"per": 0.0,
+"spelling": null
+},
+"bienvenue sur l'île des mots|.": {
+"h": "9dc925dd2fb87664",
+"say": "Bienvenue sur l'ile des mots !",
+"per": 0.0,
+"spelling": null
+},
 "bienvenue sur l'île des nombres|.": {
 "h": "3b89a56977ff534c",
 "say": "Bienvenue sur l'ile des Nombres !",
+"per": 0.0,
+"spelling": null
+},
+"bienvenue sur l'île du cœur|.": {
+"h": "16949b9ceaf3f75d",
+"say": "Bienvenue sur l'ile du Cœur !",
 "per": 0.0,
 "spelling": null
 },
@@ -6599,6 +6635,12 @@
 "per": 0.0,
 "spelling": null
 },
+"kiki te fait coucou|.": {
+"h": "4475c6f90006fd09",
+"say": "Kiki te fait coucou !",
+"per": 0.0,
+"spelling": null
+},
 "kiwi|.": {
 "h": "c4c3ab94eff7e0ee",
 "say": "kiwi.",
@@ -8135,6 +8177,12 @@
 "per": 0.0,
 "spelling": "mo"
 },
+"mona te fait coucou|.": {
+"h": "8770914fb359ddc5",
+"say": "Mona te fait coucou !",
+"per": 0.0,
+"spelling": null
+},
 "mona veut jouer avec les mots|.": {
 "h": "7a460ff37ac5434f",
 "say": "Mona veut jouer avec les mots.",
@@ -8276,6 +8324,12 @@
 "océanie|.": {
 "h": "cee0e46ed836dff6",
 "say": "Océanie",
+"per": 0.0,
+"spelling": null
+},
+"octave te fait coucou|.": {
+"h": "c63a6a571b13a105",
+"say": "Octave te fait coucou !",
 "per": 0.0,
 "spelling": null
 },
@@ -8541,6 +8595,12 @@
 "h": "c4a2fb0e166476ac",
 "say": "piano.",
 "per": 0.0,
+"spelling": null
+},
+"pico te fait coucou|.": {
+"h": "5b0d40634637cada",
+"say": "Pico te fait coucou !",
+"per": 0.083,
 "spelling": null
 },
 "pie|.": {
@@ -8877,6 +8937,12 @@
 "h": "b58ef45ff3aaae3c",
 "say": "Réveillé.",
 "per": 0.0,
+"spelling": null
+},
+"rico te fait coucou|.": {
+"h": "206dd31e60092d16",
+"say": "Rico te fait coucou !",
+"per": 0.167,
 "spelling": null
 },
 "rire très fort|.": {
