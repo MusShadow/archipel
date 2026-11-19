@@ -63,9 +63,23 @@ Rien ne change encore dans les écrans de l'enfant.
 | Test du volcan rendu déterministe ; nouveaux tests (design, polices, îles, illustrations, imagier, vitrine) | `tests/` |
 | Planches « La famille d'Archipel » et « Cinq expressions », à montrer à l'enfant | canevas des pistes visuelles |
 
-## Livraison 2 : pilote de cinq écrans
+## Livraison 2 : pilote de cinq écrans (faite)
 
 But : éprouver toute la chaîne sur un parcours complet avant de généraliser.
+
+| Fait | Où |
+|---|---|
+| Accueil sur la plage ; compagnon de voyage de l'enfant (huit bébés animaux, chapeau d'explorateur de sa couleur), choisi à la création du profil et dans l'espace parent ; les profils existants en reçoivent un | `src/screens/child.ts`, `src/compagnons.ts`, `scripts/illustration/accueil.py` |
+| Carte : mer et sept îles redessinées à leur place de la v1, Plume qui vole vers la mission, soleil et lune de l'atelier | `src/screens/child.ts`, `scripts/illustration/carte.py` |
+| Écran de l'île des Nombres : lieux et étiquettes qui ouvrent les activités, Plume qui présente et conseille, Basile qui salue | `src/screens/ile.ts` |
+| Cadre d'activité habité pour toutes les activités : boutons album, hôte qui réagit, décor léger, cartes album | `src/host.ts` |
+| Nénuphars redessinés (étang, nénuphars, grenouille en deux poses) | `src/activities/nenuphars.ts`, `scripts/illustration/activites.py` |
+| Fêtes : objets de l'atelier, message d'une seule couleur, grande fête avec l'hôte et Plume, plus rien ne clignote ; gommette de la grenouille | `src/fete.ts`, `scripts/illustration/fetes.py` |
+| Fondu de 350 ms entre les écrans, réponse « jouet » à l'appui | `src/app.ts`, `src/host.ts` |
+| Trois phrases nouvelles enregistrées (couverture 100 %) | `voix/`, `public/voix/` |
+| Tests adaptés (aucune vérification retirée), tests de la refonte, captures avant / après | `tests/`, `docs/design/captures/` |
+
+Ce qui était prévu :
 
 1. **Accueil.** Un décor de plage, l'enfant se reconnaît (avatar dessiné qu'il choisit), Plume qui accueille.
 2. **Carte de l'archipel.** Les sept îles dessinées, toutes différentes ; Plume vole vers la mission proposée ; le soleil qui mesure la séance est gardé.

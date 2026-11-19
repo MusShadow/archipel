@@ -152,6 +152,17 @@ Chacun accepte une île (`ile`), qui pose les variables `--accent`, `--accent-fo
 | Bulle de Plume | `bullePlume({ texte?, onclick, queue? })` | ce que Plume vient de dire ; la toucher le fait répéter ; sans texte, une simple bulle à haut-parleur |
 | Carte de réponse | `carte({ contenu, etiquette, onclick, ile?, large? })` et `etatCarte(c, "juste" \| "choisie" \| "normal")` | une image (nœud) ou un mot (texte, jamais interprété comme du HTML) à toucher ; l'état est exposé aux lecteurs d'écran (`aria-pressed`) ; un essai se signale avec `wobble(c)` |
 
+Assemblages de la livraison 2 :
+
+| Assemblage | Où | Règles |
+|---|---|---|
+| Écran d'île | `ecranIle(ile, { conseil, disponible, onLieu, onRetour, onEcoute, onPlume })`, `src/screens/ile.ts` | le décor couvre l'écran ; lieux et étiquettes ouvrent l'activité ; les étiquettes et la bulle gardent leur taille réelle ; Plume vole près du lieu conseillé |
+| Cadre d'activité habité | `src/host.ts` (`hoteActivite`, `decorActivite`) | trois boutons fixes album (carte, oreille, Plume pour l'indice) ; l'hôte en bas à gauche change d'expression : content, rieur après une réussite, doux après un essai, pensif pendant un indice ; décor de l'île très voilé (ou sa couleur claire) ; cartes, tuiles et boutons dans la matière album ; Plume n'est jamais montrée deux fois (sur le Port, elle est l'hôtesse et le bouton d'indice) |
+| Compagnon de voyage | `compagnonHTML(animal, couleur)`, `src/design/dessins.ts` | le bébé animal dans un cercle à la bague de la couleur de l'enfant ; le chapeau et les oreilles peuvent dépasser du cercle ; positions en pourcentage, l'avatar garde ses proportions à toutes les tailles |
+| Changement d'écran | `app.show()`, `src/app.ts` | le nouvel écran est en place tout de suite ; l'ancien s'efface en 350 ms par-dessus, rangé dans une ombre fermée (ni VoiceOver ni les tests ne le voient) ; rien si « Réduire les animations » |
+
+Appui « jouet » : les composants album s'enfoncent en 120 ms et reviennent en 300 ms avec un petit rebond.
+
 ## Îles
 
 Le modèle est dans `src/iles.ts`.

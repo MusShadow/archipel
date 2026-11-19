@@ -18,8 +18,11 @@ adaptatif, la pédagogie, la voix et le hors-ligne. Tout est décrit dans `docs/
 - [`guide-personnages.md`](docs/design/guide-personnages.md) : Plume et les hôtes, leurs signes et leurs cinq expressions ;
 - [`feuille-de-route-refonte.md`](docs/design/feuille-de-route-refonte.md) : les six livraisons et leur avancement.
 
-Livraisons faites : **0** (cohabitation avec la v1) et **1** (fondations : polices embarquées, système de design,
-atelier d'illustration, personnages, île des Nombres, imagier). Les écrans de l'enfant changent à partir de la livraison 2.
+Livraisons faites : **0** (cohabitation avec la v1), **1** (fondations : polices embarquées, système de design,
+atelier d'illustration, personnages, île des Nombres, imagier) et **2** (pilote : accueil sur la plage avec le
+compagnon de voyage de l'enfant, carte redessinée, écran de l'île des Nombres, cadre d'activité habité pour toutes les
+activités, nénuphars redessinés, fêtes et gommette de la grenouille dans la matière album, fondu entre les écrans).
+Les autres îles gardent leur fenêtre d'activités jusqu'à la livraison 3.
 La vitrine cachée https://musshadow.github.io/archipel/v2/#vitrine montre les fondations en taille réelle.
 (Les sections « Livraison 1 » à « Livraison 3 » plus bas racontent les livraisons de la v1.)
 
@@ -175,6 +178,7 @@ bun run build       # construit dist/index.html (fichier unique, autonome)
 bun test            # tests du moteur, des contenus et des générateurs d'exercices
 tsc --noEmit -p .   # vérification des types
 python3 tests/e2e/smoke.py        # parcours complet de la livraison 1 dans Chrome (Playwright), captures dans tests/e2e/shots
+python3 tests/e2e/captures.py avant/dist/index.html dist/index.html /tmp/captures   # captures avant / après de la refonte
 python3 tests/e2e/livraison2.py   # îles de la livraison 2, dessin au doigt simulé, histoire simulée (captures dans tests/e2e/shots2)
 python3 tests/e2e/offline.py      # démarrage sans Internet
 python3 tests/e2e/voix.py         # voix naturelle : clips, prénom retiré, repli, réglage parent, débit, hors ligne

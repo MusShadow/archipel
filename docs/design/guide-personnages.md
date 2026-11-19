@@ -166,7 +166,11 @@ Les émotions du théâtre de Pico (tristesse, colère, peur, déception) seront
 
 ## La grenouille des nénuphars
 
-Petit personnage de l'île des Nombres : elle saute de nénuphar en nénuphar avec l'enfant. Vert tendre, ventre clair, deux yeux en dôme, joues roses (`frog()` dans `personnages.py`).
+Petit personnage de l'île des Nombres : elle saute de nénuphar en nénuphar avec l'enfant. Vert tendre, ventre clair, deux yeux en dôme, joues roses (`frog()` dans `personnages.py`). Dans l'activité (livraison 2), elle a deux poses, assise et en plein saut, et rit sur sa gommette (`activites.py`).
+
+## Les compagnons de voyage
+
+Chaque enfant a le sien (livraison 2) : un bébé animal, de face, coiffé d'un chapeau d'explorateur à la couleur de son profil. Il le représente à l'accueil, sur la carte et dans l'espace parent. Huit animaux, aucun n'est un hôte des îles : le petit renard, le petit lapin, l'ourson, le chaton, le petit panda, le lionceau, le petit pingouin et le petit éléphant (`accueil.py`). Même construction que les hôtes (grosse tête, yeux brillants, joues roses), toujours souriants : ils n'ont pas d'expressions, c'est l'enfant qui joue. Le chapeau est dessiné à part, une fois par couleur, et posé sur la tête de chaque animal (point « chapeau », largeur, inclinaison).
 
 ## Ajouter une pose ou une expression
 

@@ -4661,6 +4661,12 @@
 "per": 0.0,
 "spelling": null
 },
+"basile te fait coucou|.": {
+"h": "37c133f3e2ecb14d",
+"say": "Basile te fait coucou !",
+"per": 0.0,
+"spelling": null
+},
 "bateau|.": {
 "h": "648f2fa947979933",
 "say": "bateau",
@@ -4706,6 +4712,12 @@
 "bienvenue sur l'archipel|.": {
 "h": "2a332f71c706c0fc",
 "say": "Bienvenue sur l'archipel !",
+"per": 0.0,
+"spelling": null
+},
+"bienvenue sur l'île des nombres|.": {
+"h": "3b89a56977ff534c",
+"say": "Bienvenue sur l'ile des Nombres !",
 "per": 0.0,
 "spelling": null
 },
@@ -9542,6 +9554,12 @@
 "tôt|.": {
 "h": "ce19ffb58cc24f60",
 "say": "tôt.",
+"per": 0.0,
+"spelling": null
+},
+"touche un lieu pour commencer|.": {
+"h": "a984ee799857d2ce",
+"say": "Touche un lieu pour commencer.",
 "per": 0.0,
 "spelling": null
 },

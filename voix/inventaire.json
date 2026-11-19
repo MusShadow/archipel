@@ -4035,6 +4035,12 @@
   ]
  },
  {
+  "text": "Basile te fait coucou !",
+  "src": [
+   "ile"
+  ]
+ },
+ {
   "text": "Basile va au marché. Quel sac fait le moins de déchets ?",
   "src": [
    "dechets:consigne",
@@ -4490,6 +4496,12 @@
   "text": "Bienvenue sur l'archipel, Zéphyrine ! Avant le grand départ, j'ai trois petits jeux pour mieux te connaître. Tu es prêt ?",
   "src": [
    "depart"
+  ]
+ },
+ {
+  "text": "Bienvenue sur l'île des Nombres !",
+  "src": [
+   "ile"
   ]
  },
  {
@@ -83829,6 +83841,12 @@
   "text": "Touche Océanie, qui brille.",
   "src": [
    "drapeau:indice"
+  ]
+ },
+ {
+  "text": "Touche un lieu pour commencer.",
+  "src": [
+   "ile"
   ]
  },
  {

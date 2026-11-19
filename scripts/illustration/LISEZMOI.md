@@ -14,8 +14,12 @@ La direction artistique (lumière, matières, couleurs, mouvement) est décrite 
 | `decors.py` | Ciel, mer, île, chemin, végétation, et les lieux de l'île des Nombres (marché, étang, goûter). |
 | `creatures.py` | Animaux et effets du décor vivant (dauphin, baleine, oiseaux, fumée…), pour la livraison 4. |
 | `iles.py` | Disposition des îles dessinées : six emplacements, le lieu de chaque activité, les étiquettes. |
+| `activites.py` | Livraison 2 : les nénuphars (étang, nénuphars sans nombre, grenouille assise et en plein saut) et la gommette de la grenouille. |
+| `fetes.py` | Livraison 2 : les objets des fêtes (ballons, voiture, camion de pompiers, roues, gyrophare, fusée, flamme, volcan, guirlande). |
+| `carte.py` | Livraison 2 : la mer de la carte, les sept îles (chacune son dessin et son repère), le soleil et la lune. |
+| `accueil.py` | Livraison 2 : la plage d'accueil, les huit compagnons de voyage et un chapeau d'explorateur par couleur de profil. |
 | `couches.py` | Rendu en couches transparentes (fond noir, fond blanc, la différence donne la transparence) et écriture en WebP. |
-| `fabriquer.py` | Fabrique les personnages et les îles ; écrit `catalogue.json` et `src/illustrations.ts`. |
+| `fabriquer.py` | Fabrique les personnages, les îles et les éléments isolés (une image chacun, avec ses points repères : roues, chapeau, centre d'une île…) ; écrit `catalogue.json` et `src/illustrations.ts`. |
 | `imagier.py` | Fabrique l'imagier : une image album pour chaque emoji de l'appli ; écrit `src/imagier.ts`. |
 
 ## Lancer
@@ -35,7 +39,7 @@ mais quelques octets peuvent changer.
 
 ```sh
 python3 scripts/illustration/fabriquer.py              # personnages et îles (environ 1 minute)
-python3 scripts/illustration/fabriquer.py personnages  # ou seulement : iles
+python3 scripts/illustration/fabriquer.py personnages  # ou seulement : iles, activites, fetes, carte, accueil
 python3 scripts/illustration/imagier.py                # imagier (environ 2 minutes)
 bun run build                                          # puis construire l'appli
 ```

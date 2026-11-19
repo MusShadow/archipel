@@ -7863,6 +7863,16 @@
   ]
  },
  {
+  "key": "basile te fait coucou|.",
+  "text": "Basile te fait coucou !",
+  "say": "Basile te fait coucou !",
+  "pack": "commun",
+  "words": 4,
+  "fams": [
+   "ile"
+  ]
+ },
+ {
   "key": "bateau|.",
   "text": "bateau",
   "say": "bateau",
@@ -7953,6 +7963,16 @@
   "words": 3,
   "fams": [
    "depart"
+  ]
+ },
+ {
+  "key": "bienvenue sur l'île des nombres|.",
+  "text": "Bienvenue sur l'île des Nombres !",
+  "say": "Bienvenue sur l'île des Nombres !",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "ile"
   ]
  },
  {
@@ -16532,6 +16552,16 @@
    "chants:indice",
    "mots",
    "syllabes:indice"
+  ]
+ },
+ {
+  "key": "touche un lieu pour commencer|.",
+  "text": "Touche un lieu pour commencer.",
+  "say": "Touche un lieu pour commencer.",
+  "pack": "commun",
+  "words": 5,
+  "fams": [
+   "ile"
   ]
  },
  {
