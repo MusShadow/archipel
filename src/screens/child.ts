@@ -130,7 +130,10 @@ function ileCarte(isl: (typeof ISLANDS)[number], [cx, cy]: [number, number], o: 
     h("img", { class: "ile-img", src: srcDe(im), alt: "", draggable: "false" }),
     o.done ? h("span", { class: "ile-fait", style: `left:${ox + isl.rx * 0.62}px;top:${oy - isl.ry * 0.95}px`, html: CHECK }) : null,
     o.sleeping ? h("span", { class: "zzz", style: `left:${ox - isl.rx * 0.6}px;top:${oy - isl.ry}px` }, h("i", null, "z"), h("i", null, "z")) : null,
-    h("span", { class: "ile-nom", style: `left:${ox}px;top:${oy + isl.ry + 30}px` }, h("i", { style: `background:${isl.color}` }), isl.label));
+    // Ce qui répond au doigt : l'île et son repère (une ellipse, pas le rectangle de l'image), et son nom, au-dessus
+    // des îles voisines. Le bouton lui-même laisse passer les appuis.
+    h("span", { class: "ile-zone", style: `left:${ox - isl.rx - 18}px;top:${oy - 20 - isl.ry - 50}px;width:${2 * (isl.rx + 18)}px;height:${2 * (isl.ry + 50)}px` }),
+    h("span", { class: "ile-nom", style: `left:${ox}px;top:${oy + isl.ry + 16}px` }, h("i", { style: `background:${isl.color}` }), isl.label));
 }
 
 // Ce qu'on trouve sur chaque île : les activités d'exercices, et quelques écrans à part (dessin, miroir,
@@ -210,11 +213,17 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
     const e = 0.42, f = e / (PERSONNAGES["plume-piece-corps"].echelle ?? 0.9);
     const vol = plumeAnime(e);
     vol.style.cssText = `position:absolute;left:${-PLUME_CADRE.ax * f}px;top:${-PLUME_CADRE.ay * f}px;width:${PLUME_CADRE.l * f}px;height:${PLUME_CADRE.h * f}px`;
-    // la bulle se met du côté où il y a de la place (jamais sous les boutons du haut)
-    const aDroite = arrivee[0] < L * 0.62;
-    const bulle = bullePlume({ queue: aDroite ? "gauche" : "droite" });
+    // la bulle se pose près de Plume, là où elle ne cache ni le nom d'une île ni les boutons du haut de l'écran
+    const B = 92, marge = 8;
+    const noms = ISLANDS.map((i) => { const [x, y] = pos(i); const w = i.label.length * 9.5 + 44; return { x: x - w / 2, y: y + i.ry + 16, w, h: 30 }; });
+    const coins = [{ x: 0, y: 0, w: 130, h: 120 }, { x: L - 250, y: 0, w: 250, h: 120 }];
+    const libre = (r: { x: number; y: number; w: number; h: number }) => r.x >= marge && r.y >= marge && r.x + r.w <= L - marge && r.y + r.h <= H - marge
+      && ![...noms, ...coins].some((o) => r.x < o.x + o.w && o.x < r.x + r.w && r.y < o.y + o.h && o.y < r.y + r.h);
+    const places: [number, number, "gauche" | "droite"][] = [[-30, -162, "gauche"], [56, -112, "gauche"], [-150, -112, "droite"], [64, -20, "gauche"], [-160, -20, "droite"]];
+    const [bx, by, queue] = places.find(([dx, dy]) => libre({ x: arrivee[0] + dx, y: arrivee[1] + dy, w: B, h: B })) ?? places[0];
+    const bulle = bullePlume({ queue });
     bulle.dataset.plume = "1";
-    bulle.style.cssText = aDroite ? "position:absolute;left:52px;top:-96px" : "position:absolute;right:56px;top:-96px";
+    bulle.style.cssText = `position:absolute;left:${bx}px;top:${by}px`;
     plumeVole = h("div", { class: "carte-plume" }, vol, bulle);
     const placer = (x: number, y: number) => { plumeVole!.style.transform = `translate(${x}px,${y}px)`; };
     placer(...depart);
@@ -263,7 +272,9 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
   });
   carnetBtn.addEventListener("click", () => { sfx.tap(); go(() => carnetScreen(() => mapScreen())); });
   calmBtn.addEventListener("click", () => { sfx.tap(); go(() => calmScreen(() => mapScreen())); });
+  const affichee = performance.now();
   meBtn.addEventListener("click", () => {
+    if (performance.now() - affichee < 380) return; // deuxième appui sur « Retour à la carte », au même endroit
     sfx.tap();
     say(`Tu veux arrêter le voyage, ${p.name} ?`);
     const sh = sheet(screen,
@@ -351,9 +362,11 @@ function islandScreen(id: IleId, acts: Entry[], advised: Entry | undefined) {
   let leaving = false, run = 0;
   const go = (fn: () => void) => { if (leaving) return; leaving = true; run++; fn(); };
   const conseil = advised ? `Je te conseille : ${advised.title.toLowerCase()}.` : "";
+  // Pendant le fondu, la carte est encore visible : un deuxième appui sur l'île ne doit pas ouvrir un lieu.
+  const ouverture = performance.now();
   const choisir = (actId: string, el: HTMLElement) => {
     const e = byId.get(actId);
-    if (!e || leaving) return;
+    if (!e || leaving || performance.now() - ouverture < 380) return;
     if (!ok(e, p)) { sfx.soft(); wobble(el); run++; say(e.lockedReason ?? "Cette activité s'ouvrira bientôt."); return; }
     sfx.tap();
     go(() => open(e));

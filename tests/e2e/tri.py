@@ -165,6 +165,7 @@ with sync_playwright() as pw:
         page.wait_for_timeout(400)
         if level == 1:
             shot(page, "00-ile-decouvertes")
+        page.wait_for_timeout(450)  # fondu de 350 ms entre les écrans
         page.click('[data-act="tri"]')
         page.wait_for_timeout(400)
         print(f"niveau {level} ({tri['papiers']}, {tri['cuisine']}, {tri['couleurs']}) :", play_round(page, f"n{level}", mistake_at=1 if level % 2 else 0, tap_at=2), "manches")

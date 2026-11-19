@@ -51,6 +51,7 @@ def parcours(page, tag):
     shot("carte", 1600)
     page.click('[data-isl="nombres"]', force=True)
     shot("ile", 1300)
+    page.wait_for_timeout(450)  # fondu de 350 ms entre les écrans
     page.click('[data-act="nenuphars"]')
     shot("nenuphars", 1500)
     def suivant(n):

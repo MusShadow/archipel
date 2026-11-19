@@ -207,7 +207,7 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
   stage.addEventListener("pointerdown", () => { if (readingOptions) { stopReading(); speech.stop(); } });
 
   function answer(correct: boolean, el: Element | null, retry?: string) {
-    if (locked || !current) return;
+    if (!alive || locked || !current) return; // écran quitté : une animation en retard ne répond plus à sa place
     stopReading();
     speech.stop();
     if (!recorded) { record(correct); recorded = true; }
@@ -246,7 +246,7 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
   }
 
   function giveHint(target?: number) {
-    if (!current || locked) return;
+    if (!alive || !current || locked) return;
     stopReading();
     hints = Math.min(4, target ?? hints + 1);
     const text = mod.hint(current, hints, view);
@@ -325,6 +325,21 @@ export function decorActivite(ile: string): HTMLElement {
   return h("div", { class: `cadre-decor${d ? " dessine" : ""}`, "aria-hidden": "true", style: fond || null });
 }
 
+// Matière album des éléments de jeu dans le cadre (cartes, tuiles, panneaux, boutons, fenêtres). Spécificité d'une
+// seule classe (:where) et placée AVANT les styles des écrans (main.ts) : les états des activités (carte lue « saying »,
+// boîte survolée, tapis roulant…) gardent toujours le dessus.
+export const PEAU_ACTIVITE_CSS = `
+:where(.cadre-act) .card,:where(.cadre-act) .tile,:where(.cadre-act) .panel,:where(.cadre-act) .speak{border-color:var(--bord);box-shadow:var(--ombre-douce),var(--ombre-reflet)}
+:where(.cadre-act) .card,:where(.cadre-act) .tile,:where(.cadre-act) .speak{background:linear-gradient(180deg,#FFFFFF 0%,var(--papier) 70%,#FBF3E4 100%)}
+:where(.cadre-act) .panel{background:var(--papier)}
+:where(.cadre-act) .card.right,:where(.cadre-act) .tile.right{border-color:var(--juste);box-shadow:0 0 0 max(4px,calc(var(--u) * 6)) var(--juste-halo),var(--ombre-douce)}
+:where(.cadre-act) .slot{border-color:var(--bord);background:rgba(255,253,248,.6)}
+:where(.cadre-act) .bigbtn{background:linear-gradient(180deg,${"#16808A"} 0%,var(--ile-port-fonce) 60%);box-shadow:0 3px 0 rgba(13,90,96,.35);transition:transform var(--duree-moyen) var(--courbe-rebond)}
+:where(.cadre-act) .bigbtn:active{transform:translateY(2px) scale(.97);transition-duration:var(--duree-appui)}
+:where(.cadre-act) .bigbtn.alt{background:linear-gradient(180deg,#FFFFFF 0%,var(--surface) 60%);color:var(--encre);border:2.5px solid var(--bord);box-shadow:var(--ombre-posee)}
+:where(.cadre-act) .sheet{background:var(--papier);border:3px solid var(--bord);box-shadow:var(--ombre-haute);border-radius:var(--rayon-grand)}
+`;
+
 export const CADRE_CSS = `
 .fondu{position:absolute;inset:0;z-index:100;pointer-events:none}
 .cadre-act{isolation:isolate;background:var(--creme)}
@@ -346,15 +361,6 @@ export const CADRE_CSS = `
 @keyframes hote-saute{0%,100%{transform:translateY(0)}45%{transform:translateY(-9%) scale(1.03)}}
 @keyframes hote-penche{0%,100%{transform:rotate(0)}40%{transform:rotate(-5deg)}75%{transform:rotate(2deg)}}
 .hote[data-hote=mona]{--hote-ratio:1.3}.hote[data-hote=kiki]{--hote-ratio:1.2}.hote[data-hote=octave],.hote[data-hote=pico]{--hote-ratio:0.87}.hote[data-hote=bip]{--hote-ratio:0.83}
-.cadre-act .card,.cadre-act .tile,.cadre-act .panel,.cadre-act .speak{border-color:var(--bord);box-shadow:var(--ombre-douce),var(--ombre-reflet)}
-.cadre-act .card,.cadre-act .tile,.cadre-act .speak{background:linear-gradient(180deg,#FFFFFF 0%,var(--papier) 70%,#FBF3E4 100%)}
-.cadre-act .panel{background:var(--papier)}
-.cadre-act .card.right,.cadre-act .tile.right{border-color:var(--juste);box-shadow:0 0 0 max(4px,calc(var(--u) * 6)) var(--juste-halo),var(--ombre-douce)}
-.cadre-act .slot{border-color:var(--bord);background:rgba(255,253,248,.6)}
-.cadre-act .bigbtn{background:linear-gradient(180deg,${"#16808A"} 0%,var(--ile-port-fonce) 60%);box-shadow:0 3px 0 rgba(13,90,96,.35);transition:transform var(--duree-moyen) var(--courbe-rebond)}
-.cadre-act .bigbtn:active{transform:translateY(2px) scale(.97);transition-duration:var(--duree-appui)}
-.cadre-act .bigbtn.alt{background:linear-gradient(180deg,#FFFFFF 0%,var(--surface) 60%);color:var(--encre);border:2.5px solid var(--bord);box-shadow:var(--ombre-posee)}
-.cadre-act .sheet{background:var(--papier);border:3px solid var(--bord);box-shadow:var(--ombre-haute);border-radius:var(--rayon-grand)}
 .sheet-perso{width:max(110px,calc(var(--u) * 150));aspect-ratio:245/234}
 .sheet-perso img{width:100%;height:100%;object-fit:contain}
 .a-rond,.a-pastille,.a-carte,.a-bulle{transition:transform var(--duree-moyen) var(--courbe-rebond),box-shadow var(--duree-appui) var(--courbe-douce)}

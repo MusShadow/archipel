@@ -157,6 +157,7 @@ def open_activity(page, island, act=None, shot_name=None):
     if act:
         if shot_name:
             shot(page, shot_name)
+        page.wait_for_timeout(450)  # fondu de 350 ms entre les écrans
         page.click(f'[data-act="{act}"]')
         page.wait_for_timeout(300)
 

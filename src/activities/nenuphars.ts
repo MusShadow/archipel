@@ -50,8 +50,10 @@ export const nenuphars: ActivityModule<PadItem> = {
 
   render(item, view) {
     const pond = h("div", { class: "pond etang" });
-    const fond = image("activites/nenuphars-etang");
+    // paysage : une rangée de onze nénuphars ; portrait : deux rangées (0 à 5, puis 6 à 10), pour garder de grandes cibles
+    const fond = image("activites/nenuphars-etang"), fondHaut = image("activites/nenuphars-etang-haut");
     if (fond) pond.style.setProperty("--etang", `url("${srcDe(fond)}")`);
+    if (fondHaut) pond.style.setProperty("--etang-haut", `url("${srcDe(fondHaut)}")`);
     const pads: HTMLElement[] = [];
     for (let n = 0; n <= MAX; n++) {
       const hiddenHere = item.hidden === n;

@@ -113,6 +113,8 @@ Chaque paire texte / fond utilisée par les composants atteint **au moins 4,5 po
 
 Les pastilles gardent leur dessin (58 u de haut) mais touchent plus large : 12 u de chaque côté, et au moins la hauteur d'une cible. Le test de la vitrine mesure la zone réellement touchée de chaque cible (au moins 78 px, soit 1,5 cm), en paysage et en portrait.
 
+Même règle pour les nénuphars : leur zone de toucher déborde en hauteur, et en portrait l'étang passe sur deux rangées (0 à 5, puis 6 à 10), parce que onze cibles de 1,5 cm ne tiennent pas dans la largeur. Sur la carte, une île répond sur son dessin (une ellipse autour de l'île et de son repère) et sur son nom, posé au-dessus des îles voisines ; Plume, posée sur l'île de la mission, laisse passer les appuis, et sa bulle se place là où elle ne cache ni un nom ni les boutons du haut.
+
 ## Mouvement
 
 | Jeton | Durée | Usage |
@@ -124,6 +126,7 @@ Les pastilles gardent leur dessin (58 u de haut) mais touchent plus large : 12 u
 | `--duree-ecran` | 350 ms | changement d'écran |
 | `--duree-battement-plume` | 1100 ms | un aller du battement d'ailes |
 | `--duree-respiration` | 3200 ms | respiration des personnages |
+| `--duree-vol-plume` | 1200 ms | Plume vole vers l'île de la mission, sur la carte (mouvement d'ambiance) |
 
 Courbes :
 
@@ -159,9 +162,11 @@ Assemblages de la livraison 2 :
 | Écran d'île | `ecranIle(ile, { conseil, disponible, onLieu, onRetour, onEcoute, onPlume })`, `src/screens/ile.ts` | le décor couvre l'écran ; lieux et étiquettes ouvrent l'activité ; les étiquettes et la bulle gardent leur taille réelle ; Plume vole près du lieu conseillé |
 | Cadre d'activité habité | `src/host.ts` (`hoteActivite`, `decorActivite`) | trois boutons fixes album (carte, oreille, Plume pour l'indice) ; l'hôte en bas à gauche change d'expression : content, rieur après une réussite, doux après un essai, pensif pendant un indice ; décor de l'île très voilé (ou sa couleur claire) ; cartes, tuiles et boutons dans la matière album ; Plume n'est jamais montrée deux fois (sur le Port, elle est l'hôtesse et le bouton d'indice) |
 | Compagnon de voyage | `compagnonHTML(animal, couleur)`, `src/design/dessins.ts` | le bébé animal dans un cercle à la bague de la couleur de l'enfant ; le chapeau et les oreilles peuvent dépasser du cercle ; positions en pourcentage, l'avatar garde ses proportions à toutes les tailles |
-| Changement d'écran | `app.show()`, `src/app.ts` | le nouvel écran est en place tout de suite ; l'ancien s'efface en 350 ms par-dessus, rangé dans une ombre fermée (ni VoiceOver ni les tests ne le voient) ; rien si « Réduire les animations » |
+| Changement d'écran | `app.show()`, `src/app.ts` | le nouvel écran est en place tout de suite ; une copie de l'ancien (sans ses écouteurs) s'efface en 350 ms par-dessus, rangée dans une ombre fermée (ni VoiceOver ni les tests ne la voient) ; l'écran quitté est vraiment détaché (ses animations en retard ne répondent plus) ; sur l'île, un appui sur un lieu pendant le fondu est ignoré (double appui) ; rien si « Réduire les animations » |
 
 Appui « jouet » : les composants album s'enfoncent en 120 ms et reviennent en 300 ms avec un petit rebond.
+
+La matière album des éléments de jeu (cartes, tuiles, panneaux, boutons) est posée avec la spécificité d'une seule classe (`:where(.cadre-act)`) et avant les styles des écrans : les états propres aux activités (carte que Plume lit, boîte survolée, tapis roulant…) gardent toujours le dessus. Un test de bout en bout le vérifie sur le style calculé.
 
 ## Îles
 

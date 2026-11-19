@@ -80,7 +80,7 @@ export const OMBRES = {
 // Mouvement : 200 à 400 ms, jamais de clignotement. Le personnage-guide est l'élément le plus calme de l'écran.
 export const MOUVEMENTS = {
   appui: 120, court: 200, moyen: 300, long: 400, ecran: 350, // ms
-  battementPlume: 1100, respiration: 3200, // ms, mouvements d'ambiance lents
+  battementPlume: 1100, respiration: 3200, volPlume: 1200, // ms, mouvements d'ambiance lents (Plume vole vers la mission)
   courbes: {
     douce: "cubic-bezier(0.3, 0.7, 0.3, 1)", // arrivée qui ralentit
     rebond: "cubic-bezier(0.34, 1.4, 0.64, 1)", // léger dépassement, pour une réussite
@@ -107,7 +107,7 @@ export function variablesCSS(): Record<string, string> {
   ESPACES.forEach((n, i) => { v[`--esp-${i + 1}`] = u(n, Math.max(2, Math.round(n * 0.6))); });
   for (const [k, r] of Object.entries(RAYONS)) v[`--rayon-${k}`] = r;
   for (const [k, o] of Object.entries(OMBRES)) v[`--ombre-${k}`] = o;
-  for (const k of ["appui", "court", "moyen", "long", "ecran", "battementPlume", "respiration"] as const) v[`--duree-${kebab(k)}`] = `${MOUVEMENTS[k]}ms`;
+  for (const k of ["appui", "court", "moyen", "long", "ecran", "battementPlume", "respiration", "volPlume"] as const) v[`--duree-${kebab(k)}`] = `${MOUVEMENTS[k]}ms`;
   for (const [k, c] of Object.entries(MOUVEMENTS.courbes)) v[`--courbe-${k}`] = c;
   for (const [k, c] of Object.entries(CIBLES)) v[`--cible-${k}`] = c;
   return v;

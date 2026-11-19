@@ -16,14 +16,16 @@ export const STYLES_L2 = `
 .mapwrap.carte{background:#8FD3DC}
 .carte-mer{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;user-select:none;-webkit-user-select:none}
 .carte-cadre{position:absolute;left:50%;top:50%;transform-origin:center}
-.ile-carte{position:absolute;padding:0;margin:0;border:none;background:none;cursor:pointer;transform-origin:50% 62%;transition:transform var(--duree-moyen) var(--courbe-rebond)}
-.ile-carte:active{transform:scale(.97);transition-duration:var(--duree-appui)}
+.ile-carte{position:absolute;padding:0;margin:0;border:none;background:none;cursor:pointer;pointer-events:none}
+.ile-zone{position:absolute;border-radius:50%;pointer-events:auto}
+.ile-carte .ile-img{transform-origin:50% 62%;transition:transform var(--duree-moyen) var(--courbe-rebond)}
+.ile-carte:active .ile-img{transform:scale(.97);transition-duration:var(--duree-appui)}
 .ile-carte:focus-visible{outline:4px solid var(--ile-port-fonce);outline-offset:-20px;border-radius:40%}
-.ile-carte.tapped{animation:islpop .35s ease}
+.ile-carte.tapped .ile-img{animation:islpop .35s ease}
 .ile-carte .ile-img{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;user-select:none;-webkit-user-select:none}
 .ile-carte.sleep .ile-img{opacity:.62}
 .ile-nom{position:absolute;transform:translateX(-50%);display:inline-flex;align-items:center;gap:8px;white-space:nowrap;padding:2px 14px 2px 10px;border-radius:999px;background:var(--papier);
-border:2px solid var(--bord);box-shadow:var(--ombre-posee);font:700 17px/1.3 var(--police-titre);color:var(--encre);pointer-events:none}
+border:2px solid var(--bord);box-shadow:var(--ombre-posee);font:700 17px/1.3 var(--police-titre);color:var(--encre);pointer-events:auto;z-index:2}
 .ile-nom i{width:12px;height:12px;border-radius:50%;box-shadow:inset 0 -2px 0 rgba(0,0,0,.12)}
 .ile-anneau{position:absolute;pointer-events:none}
 .ile-anneau svg{display:block;width:100%;height:100%;overflow:visible}
@@ -36,7 +38,7 @@ border:2px solid var(--bord);box-shadow:var(--ombre-posee);font:700 17px/1.3 var
 .carte-ciel{position:absolute;left:0;top:0;pointer-events:none}
 .carte-ciel svg{display:block;overflow:visible}
 .carte-plume{position:absolute;left:0;top:0;width:0;height:0;z-index:3}
-.carte-plume.en-vol{transition:transform 1400ms var(--courbe-douce)}
+.carte-plume.en-vol{transition:transform var(--duree-vol-plume) var(--courbe-douce)}
 .hudbtn{transition:transform var(--duree-moyen) var(--courbe-rebond)}
 .hudbtn:active{transform:scale(.95);transition-duration:var(--duree-appui)}
 .hudbtn .a-rond{pointer-events:none}
@@ -47,7 +49,8 @@ border:2px solid var(--bord);box-shadow:var(--ombre-posee);font:700 17px/1.3 var
 .pond.etang{background:var(--etang) center/100% 100% no-repeat;border-radius:0;padding:max(54px,calc(var(--u) * 84)) max(26px,calc(var(--u) * 46)) max(30px,calc(var(--u) * 46));gap:max(1px,calc(var(--u) * 4))}
 .pond.etang .pad{width:min(7.4vw,calc(var(--u) * 92));aspect-ratio:126/81}
 .pad-img{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;user-select:none;-webkit-user-select:none}
-.pond.etang .padnum{color:#173F22;text-shadow:0 1px 0 rgba(255,255,255,.45);font-size:max(19px,calc(var(--u) * 32));transform:translateY(-4%)}
+.pond.etang .pad::after{content:"";position:absolute;left:0;right:0;top:min(-12px,calc(var(--u) * -16));bottom:min(-12px,calc(var(--u) * -14))}
+.pond.etang .padnum{color:#173F22;text-shadow:0 0 5px rgba(232,248,220,.95),0 0 2px rgba(232,248,220,.95),0 1px 0 rgba(255,255,255,.5);font-size:max(19px,calc(var(--u) * 32));transform:translateY(-4%)}
 .pond.etang .pad{transition:transform var(--duree-moyen) var(--courbe-rebond)}
 .pond.etang .pad:active{transform:scale(.94);transition-duration:var(--duree-appui)}
 .pond.etang .pad.right{filter:drop-shadow(0 0 max(4px,calc(var(--u) * 6)) rgba(52,179,122,.9))}
@@ -56,6 +59,12 @@ border:2px solid var(--bord);box-shadow:var(--ombre-posee);font:700 17px/1.3 var
 .frog .gr-saut{opacity:0}
 .frog.hop .gr-saut{animation:gr-saut .26s ease}
 .frog.hop .gr-assise{animation:gr-assise .26s ease}
+@media (orientation:portrait){
+.pond.etang{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));justify-items:center;align-items:center;width:100%;background-image:var(--etang-haut,var(--etang));
+padding:max(70px,calc(var(--u) * 92)) max(22px,calc(var(--u) * 30)) max(34px,calc(var(--u) * 44));row-gap:max(64px,calc(var(--u) * 84));column-gap:max(4px,calc(var(--u) * 8))}
+.pond.etang .pad{width:min(100%,calc(var(--u) * 124))}
+.pond.etang .frog{width:max(72px,calc(var(--u) * 104));height:max(72px,calc(var(--u) * 104))}
+}
 @keyframes gr-saut{0%,100%{opacity:0}20%,75%{opacity:1;transform:translateY(-22%)}}
 @keyframes gr-assise{0%,100%{opacity:1}20%,75%{opacity:0}}
 .compagnons{display:flex;flex-wrap:wrap;gap:12px;padding-top:10px}

@@ -220,6 +220,7 @@ with sync_playwright() as pw:
         page.wait_for_timeout(400)
         if i == 0:
             shot(page, "00-ile-decouvertes")
+        page.wait_for_timeout(450)  # fondu de 350 ms entre les écrans
         page.click('[data-act="dechets"]')
         page.wait_for_timeout(400)
         prefix = f"r{i}n{level}"

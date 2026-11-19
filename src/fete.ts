@@ -294,7 +294,7 @@ export interface PartyOptions { name?: string | null; firstTry?: boolean; final?
 function scèneFinale(c: Ctx, hote?: string) {
   const g = h("span", { class: "guirlande", html: imgHTML("fetes/guirlande", "", "display:block;width:100%;height:auto") });
   c.layer.appendChild(g);
-  anim(g, [{ transform: "translateY(-120%)" }, { transform: "translateY(0)" }], { duration: 600, delay: 150, easing: "cubic-bezier(0.34, 1.4, 0.64, 1)", fill: "both" });
+  anim(g, [{ transform: "translateY(-120%)" }, { transform: "translateY(0)" }], { duration: 400, delay: 150, easing: "cubic-bezier(0.34, 1.4, 0.64, 1)", fill: "both" });
   const persos = [...(hote && hote !== "plume" && image(`${hote}-rieur`) ? [`${hote}-rieur`] : []), "plume-fete"];
   persos.forEach((nom, i) => {
     const el = h("span", { class: `fete-perso ${persos.length === 1 ? "fp-seul" : i === 0 ? "fp-hote" : "fp-plume"}`, html: imgHTML(nom, "", "display:block;width:100%;height:100%;object-fit:contain;object-position:50% 100%") });
@@ -312,6 +312,8 @@ export function celebrate(host: HTMLElement, o: PartyOptions = {}): Party {
   const scene: Party["scene"] = reduced ? "message" : forced ?? (o.final ? "finale" : nextScene(o.quick || instant ? ["ballons"] : []));
   const layer = h("div", { class: "fete", "aria-hidden": "true", "data-scene": scene });
   host.appendChild(layer);
+  // grande fête : l'hôte et Plume montent dans la scène ; ceux du cadre s'effacent pendant ce temps
+  if (scene === "finale") host.classList.add("fete-finale");
   const W = host.clientWidth || window.innerWidth || 1180, H = host.clientHeight || window.innerHeight || 820;
   const timers: ReturnType<typeof setTimeout>[] = [];
   let ended = false;
@@ -335,6 +337,7 @@ export function celebrate(host: HTMLElement, o: PartyOptions = {}): Party {
   const end = () => {
     if (ended) return;
     ended = true;
+    host.classList.remove("fete-finale");
     timers.forEach(clearTimeout);
     layer.classList.add("fin");
     setTimeout(() => layer.remove(), 300);
@@ -383,6 +386,7 @@ color:var(--accent-fonce,var(--ile-port-fonce));text-shadow:0 4px 0 #fff,0 -4px 
 .fete .flamme{transform-origin:50% 4%;animation:fete-flame .3s ease-in-out infinite alternate}
 @keyframes fete-flame{from{transform:scaleY(.82)}to{transform:scaleY(1.18)}}
 .fete .guirlande{position:absolute;left:4%;right:4%;top:0;z-index:1}
+.fete-finale .bottom .hote,.fete-finale .bottom .a-rond.indice{opacity:0;transition:opacity var(--duree-court)}
 .fete .fete-perso{position:absolute;bottom:0;height:min(42%,calc(var(--u) * 300));aspect-ratio:1;z-index:1}
 .fete .fete-perso.fp-hote{left:14%}
 .fete .fete-perso.fp-plume{right:14%}

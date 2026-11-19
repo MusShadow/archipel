@@ -15,7 +15,7 @@ import personnages as P
 import hotes as H
 import decors as D
 import iles as I
-import importlib
+import importlib, importlib.util
 
 # Éléments isolés de la livraison 2 (une image chacun) : module → ELEMENTS {nom: cadre, dessin, options}.
 MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil"]
@@ -24,10 +24,9 @@ def tous_elements(quoi=None):
     for m in MODULES_ELEMENTS:
         if quoi and m not in quoi:
             continue
-        try:
-            mod = importlib.import_module(m)
-        except ModuleNotFoundError:
-            continue
+        if importlib.util.find_spec(m) is None:
+            continue  # module pas encore écrit ; une erreur à l'intérieur d'un module, elle, n'est jamais masquée
+        mod = importlib.import_module(m)
         out.update({k: {**e, "module": m} for k, e in mod.ELEMENTS.items()})
     return out
 
@@ -143,7 +142,7 @@ def elements(cat, quoi):
     """Éléments isolés : chacun dans son cadre, avec sa boîte, et ses points repères (fractions de la boîte)."""
     out = cat.setdefault("elements", {})
     liste = tous_elements(quoi)
-    rendus = {e["module"] for e in liste.values()}
+    rendus = {m for m in MODULES_ELEMENTS if m in quoi}  # même un module vidé : ses anciennes images partent
     for nom in [n for n, e in out.items() if e.get("module") in rendus and n not in liste]:
         del out[nom]  # élément retiré de son module
     for nom, e in liste.items():

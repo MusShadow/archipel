@@ -11,13 +11,13 @@ import { CSS_COMPOSANTS } from "./design/composants";
 import { cssVariables } from "./design/jetons";
 import { estVitrine, pageVitrine } from "./vitrine";
 import { ILE_CSS } from "./screens/ile";
-import { CADRE_CSS } from "./host";
+import { CADRE_CSS, PEAU_ACTIVITE_CSS } from "./host";
 import { STYLES_L2 } from "./screens/styles2";
 import { DESSINS_CSS } from "./design/dessins";
 
 const style = document.createElement("style");
 // Système de design d'Archipel 2 (variables et composants album), puis les styles des écrans.
-style.textContent = cssVariables() + CSS_COMPOSANTS + CSS + SCREENS_CSS + FETE_CSS + ILE_CSS + CADRE_CSS + STYLES_L2 + DESSINS_CSS;
+style.textContent = cssVariables() + CSS_COMPOSANTS + CSS + PEAU_ACTIVITE_CSS + SCREENS_CSS + FETE_CSS + ILE_CSS + CADRE_CSS + STYLES_L2 + DESSINS_CSS;
 document.head.appendChild(style);
 
 app.root = document.getElementById("app")!;

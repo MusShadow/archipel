@@ -149,6 +149,7 @@ def open_island(page, island, act=None, shot_name=None):
     if shot_name:
         shot(page, shot_name)
     if act:
+        page.wait_for_timeout(450)  # fondu de 350 ms entre les écrans
         page.click(f'[data-act="{act}"]')
         page.wait_for_timeout(350)
 
@@ -296,7 +297,7 @@ with sync_playwright() as pw:
     page.click('[aria-label="Retour à la carte"]'); page.click("text=Oui"); page.wait_for_timeout(500)
     open_island(page, "port", "monDrapeau")
     shot(page, "52-mon-drapeau-portrait")
-    page.click('[aria-label="Retour à la carte"]'); page.wait_for_timeout(400)
+    page.click('[aria-label="Retour à la carte"]'); page.wait_for_timeout(700)  # fondu, puis la carte écoute les appuis
     page.set_viewport_size({"width": 1180, "height": 820})
 
     # Espace parent : histoires (écriture simulée)

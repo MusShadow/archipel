@@ -60,6 +60,7 @@ def back_to_map(page):
 
 def open_activity(page, island, act):
     page.click(f'[data-isl="{island}"]', force=True); page.wait_for_timeout(400)
+    page.wait_for_timeout(450)  # fondu de 350 ms entre les écrans
     page.click(f'[data-act="{act}"]'); page.wait_for_timeout(400)
 
 def play(page, act, rounds_of=6, on_item=None):
@@ -117,8 +118,12 @@ with sync_playwright() as pw:
 
     # 2. La goutte : aucun exercice deux fois, et les réponses écrites sous les images sont lues.
     lus = []
+    anneaux = []
     def check_read(page, it):
         page.wait_for_timeout(300)
+        if not anneaux:  # la carte que Plume lit garde son anneau jaune dans le cadre d'activité (pas écrasé par la matière album)
+            anneaux.append(page.evaluate("""() => new Promise((ok) => { const c = document.querySelector('.cadre-act .stage [data-t]'); if (!c) return ok('aucune carte');
+              c.classList.add('saying'); setTimeout(() => { const b = getComputedStyle(c).boxShadow; c.classList.remove('saying'); ok(b); }, 400); })"""))
         texts = [opt_text(it["opts"][c]["label"]) for c in it.get("choices", []) if c in it.get("opts", {})]
         said = spoken(page)
         if texts and all(t in said[-len(texts) - 4:] for t in texts):
@@ -133,6 +138,9 @@ with sync_playwright() as pw:
         errors.append(f"goutte : un exercice revient dans la séance : {keys}")
     if len(lus) < 3:
         errors.append(f"goutte : réponses proposées lues trop rarement ({lus})")
+    print("anneau de la carte lue :", anneaux)
+    if not anneaux or "255, 193, 69" not in anneaux[0]:
+        errors.append(f"goutte : la carte lue n'a plus son anneau jaune dans le cadre ({anneaux})")
 
     # 3. Flotte ou coule : aucun objet deux fois dans la même question.
     ids = []

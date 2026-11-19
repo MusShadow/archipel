@@ -88,9 +88,10 @@ class App {
 }
 export const app = new App();
 
-// Passage d'un écran à l'autre (350 ms) : le nouvel écran est en place tout de suite (on peut le toucher, les tests et
-// VoiceOver ne voient que lui) ; l'ancien, rangé dans une ombre fermée (shadow DOM) avec une copie des styles, s'efface
-// par-dessus. Réglage « Réduire les animations » de l'iPad : pas de fondu.
+// Passage d'un écran à l'autre (350 ms) : le nouvel écran est en place tout de suite (les tests et VoiceOver ne voient
+// que lui) ; une copie de l'ancien (sans ses écouteurs, dessins recopiés), rangée dans une ombre fermée (shadow DOM)
+// avec une copie des styles, s'efface par-dessus. L'écran quitté est, lui, vraiment détaché : ses minuteries et ses
+// gardes (isConnected) s'arrêtent comme avant. Réglage « Réduire les animations » de l'iPad : pas de fondu.
 const DUREE_FONDU = 350;
 let styles = { n: -1, texte: "" };
 function feuilles(): string {
@@ -109,7 +110,10 @@ function fondu(root: HTMLElement, ancien: HTMLElement) {
     const ombre = voile.attachShadow({ mode: "closed" });
     const st = document.createElement("style");
     st.textContent = feuilles();
-    ombre.append(st, ancien);
+    const copie = ancien.cloneNode(true) as HTMLElement;
+    const dessins = ancien.querySelectorAll("canvas"), copies = copie.querySelectorAll("canvas");
+    dessins.forEach((c, i) => { try { copies[i]?.getContext("2d")?.drawImage(c, 0, 0); } catch { /* dessin illisible : copie vide */ } });
+    ombre.append(st, copie);
     root.appendChild(voile);
     let fini = false;
     const fin = () => { if (!fini) { fini = true; voile.remove(); } };

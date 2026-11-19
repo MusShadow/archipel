@@ -78,6 +78,7 @@ But : éprouver toute la chaîne sur un parcours complet avant de généraliser.
 | Fondu de 350 ms entre les écrans, réponse « jouet » à l'appui | `src/app.ts`, `src/host.ts` |
 | Trois phrases nouvelles enregistrées (couverture 100 %) | `voix/`, `public/voix/` |
 | Tests adaptés (aucune vérification retirée), tests de la refonte, captures avant / après | `tests/`, `docs/design/captures/` |
+| Relecture indépendante : 1 constat bloquant (états visuels des activités écrasés par la matière album), 5 importants (fondu qui laissait vivre l'écran quitté, noms d'îles et Plume qui prenaient les appuis, double appui sur l'île, nénuphars trop petits en portrait), 5 mineurs : tous corrigés | — |
 
 Ce qui était prévu :
 
