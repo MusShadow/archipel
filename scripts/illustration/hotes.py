@@ -6,7 +6,7 @@ Chaque fonction prend (R, x, y, s, expr, salut) ; (x, y) est le milieu du ventre
 import math
 import numpy as np
 from moteur import *
-from personnages import part, flat, eye_parts, mouth, brow, leaf, EXPRESSIONS, INK
+from personnages import part, flat, eye_parts, mouth, brow, leaf, EXPRESSIONS, INK, paupiere, larme
 
 def _bras(R, epaule, coude, main, ep, couleur, main_couleur, main_r):
     """Bras souple (ruban) terminé par une main ronde."""
@@ -66,9 +66,18 @@ def mona(R, x, y, s=1.0, expr="content", salut=False):
     R.paint(R.mask(ellipse(236, 122, 11, 6.5, -8)), "#E58FA8", Mat(flat=True))
     eye_parts(R, 218, 96, E["oeil"], r=12.5, look=(1.8, 0.6), lid=MONA)
     dy, tilt = E["sourcil"]
-    brow(R, 218, 76 + dy, -15, tilt, MONA_DD, 2.6)
+    brow(R, 218, 76 + dy, 15, tilt, MONA_DD, 2.6)
     b = E["bouche"]
-    if b == "sourire":
+    if b == "triste":
+        flat(R, R.line_mask([(268, 132), (256, 127), (240, 131), (228, 140)], 2.6), MONA_DD)
+    elif b == "moue":
+        flat(R, R.line_mask([(266, 131), (254, 129), (242, 133)], 2.4), MONA_DD)
+    elif b == "peur":
+        flat(R, R.line_mask([(268, 128), (260, 133), (252, 128), (244, 133), (236, 128)], 2.4), MONA_DD)
+    elif b == "fache":
+        om = R.mask(catmull([(268, 128), (256, 124), (238, 130), (232, 142), (252, 140)], n=8))
+        part(R, om, "#7A2E3A", Mat(puff=3, line_w=1.1, tex=0.3), shadow=False, decal=[(m_clip(R.mask(rrect(232, 122, 40, 7, 1)), om), "#FFFFFF", 0.6)])
+    elif b == "sourire":
         flat(R, R.line_mask([(268, 124), (258, 136), (240, 141), (226, 137)], 2.4), MONA_DD)
     elif b == "petit":
         flat(R, R.line_mask([(266, 128), (254, 136), (240, 137)], 2.4), MONA_DD)
@@ -319,12 +328,16 @@ def kiki(R, x, y, s=1.0, expr="content", salut=False):
     if o in ("rieur", "ferme"):
         flat(R, R.line_mask([(212, 100), (222, 90), (232, 100)], 3.6), INK)
     else:
-        rr = 12.5 if o == "surpris" else 11.5
+        rr = 12.5 if o in ("surpris", "peur") else 11.5
         sclera = R.mask(circle(223, 97, rr))
         R.paint(sclera, "#FFFFFF", Mat(puff=4, line_w=1.0, tex=0.2))
-        lx, ly = {"haut": (2, -5), "doux": (2, -2), "surpris": (1, 0)}.get(o, (3, 1))
-        R.paint(m_clip(R.mask(circle(223 + lx, 97 + ly, 5.4 if o == "surpris" else 6.6)), sclera), INK, Mat(puff=2, line=False))
+        lx, ly = {"haut": (2, -5), "doux": (2, -2), "surpris": (1, 0), "peur": (1, 0), "triste": (1, 4), "las": (1, 4)}.get(o, (3, 1))
+        R.paint(m_clip(R.mask(circle(223 + lx, 97 + ly, 4.2 if o == "peur" else 5.4 if o == "surpris" else 6.6)), sclera), INK, Mat(puff=2, line=False))
         flat(R, R.mask(circle(225.5 + lx, 94.5 + ly, 2.1)), "#FFFFFF")
+        if o in ("triste", "fache", "las"):
+            paupiere(R, sclera, 223, 97, rr, {"triste": 0.3, "fache": 0.42, "las": 0.52}[o], KIKI)
+            if o == "triste":
+                larme(R, 230, 116, 1.0)
         if o == "doux":
             lidm = m_clip(R.mask(catmull([(206, 116), (210, 103), (223, 98), (236, 103), (240, 116)])), sclera)
             R.paint(lidm, KIKI, Mat(puff=3, line=False))
@@ -338,6 +351,15 @@ def kiki(R, x, y, s=1.0, expr="content", salut=False):
         part(R, R.mask(ellipse(252, 132, 5.5, 6.5)), "#7A2E3A", Mat(puff=2, line_w=1.0), shadow=False)
     elif b == "pensif":
         flat(R, R.line_mask([(264, 126), (246, 130), (230, 126)], 2.2), ANNEAU)
+    elif b == "triste":
+        flat(R, R.line_mask([(264, 130), (250, 127), (236, 131), (224, 139)], 2.6), ANNEAU)
+    elif b == "moue":
+        flat(R, R.line_mask([(264, 130), (252, 129), (238, 132)], 2.4), ANNEAU)
+    elif b == "peur":
+        flat(R, R.line_mask([(264, 128), (256, 133), (248, 128), (240, 133), (232, 128)], 2.4), ANNEAU)
+    elif b == "fache":
+        om = R.mask(catmull([(264, 128), (250, 124), (232, 130), (226, 142), (248, 140)], n=8))
+        part(R, om, "#7A2E3A", Mat(puff=3, line_w=1.1, tex=0.3), shadow=False, decal=[(m_clip(R.mask(rrect(226, 122, 40, 7, 1)), om), "#FFFFFF", 0.6)])
     else:
         flat(R, R.line_mask([(264, 122), (252, 134), (234, 136), (222, 130)] if b == "sourire" else [(264, 124), (250, 132), (234, 131)], 2.2), ANNEAU)
     R.paint(R.mask(ellipse(240, 120, 7, 4.5, -10)), "#EE97B5", Mat(flat=True))
@@ -345,6 +367,9 @@ def kiki(R, x, y, s=1.0, expr="content", salut=False):
     beret = R.mask(catmull([(180, 58), (196, 40), (226, 34), (250, 46), (244, 60), (210, 64)]))
     part(R, beret, BERET, Mat(puff=8, profile="pillow", line_w=1.5, spec=0.06, tex=0.9), decal=[(R.mask(ellipse(214, 60, 30, 5, -6)), BERET_D, 2.0)])
     part(R, R.mask(circle(214, 33, 4.5)), BERET_D, Mat(puff=3, line_w=1.0), shadow=False)
+    if expr in ("triste", "colere", "peur", "decu"):  # un sourcil sous le béret, au-dessus de la tourelle : l'émotion se lit
+        dy, tilt = E["sourcil"]
+        brow(R, 224, 70 + dy * 0.6, 22, tilt, ANNEAU, 3.0)
     R.pop()
 
 # ============================================================================ Pico, le hérisson (île du Cœur)

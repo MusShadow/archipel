@@ -2508,6 +2508,569 @@
     330.0
    ],
    "module": "activites"
+  },
+  "visages/basile-content": {
+   "fichier": "visages/basile-content.webp",
+   "boite": [
+    10.0,
+    26.0,
+    142.0,
+    134.0
+   ],
+   "module": "visages"
+  },
+  "visages/basile-joie": {
+   "fichier": "visages/basile-joie.webp",
+   "boite": [
+    10.0,
+    26.0,
+    142.0,
+    134.0
+   ],
+   "module": "visages"
+  },
+  "visages/basile-triste": {
+   "fichier": "visages/basile-triste.webp",
+   "boite": [
+    10.0,
+    26.0,
+    142.0,
+    134.0
+   ],
+   "module": "visages"
+  },
+  "visages/basile-colere": {
+   "fichier": "visages/basile-colere.webp",
+   "boite": [
+    10.0,
+    26.0,
+    142.0,
+    134.0
+   ],
+   "module": "visages"
+  },
+  "visages/basile-peur": {
+   "fichier": "visages/basile-peur.webp",
+   "boite": [
+    10.0,
+    26.0,
+    142.0,
+    134.0
+   ],
+   "module": "visages"
+  },
+  "visages/basile-surprise": {
+   "fichier": "visages/basile-surprise.webp",
+   "boite": [
+    10.0,
+    26.0,
+    142.0,
+    134.0
+   ],
+   "module": "visages"
+  },
+  "visages/basile-decu": {
+   "fichier": "visages/basile-decu.webp",
+   "boite": [
+    10.0,
+    26.0,
+    142.0,
+    134.0
+   ],
+   "module": "visages"
+  },
+  "visages/mona-content": {
+   "fichier": "visages/mona-content.webp",
+   "boite": [
+    0.0,
+    0.0,
+    118.5,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/mona-joie": {
+   "fichier": "visages/mona-joie.webp",
+   "boite": [
+    0.0,
+    0.0,
+    118.5,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/mona-triste": {
+   "fichier": "visages/mona-triste.webp",
+   "boite": [
+    0.0,
+    0.0,
+    118.5,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/mona-colere": {
+   "fichier": "visages/mona-colere.webp",
+   "boite": [
+    0.0,
+    0.0,
+    118.5,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/mona-peur": {
+   "fichier": "visages/mona-peur.webp",
+   "boite": [
+    0.0,
+    0.0,
+    118.5,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/mona-surprise": {
+   "fichier": "visages/mona-surprise.webp",
+   "boite": [
+    0.0,
+    0.0,
+    118.5,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/mona-decu": {
+   "fichier": "visages/mona-decu.webp",
+   "boite": [
+    0.0,
+    0.0,
+    118.5,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/rico-content": {
+   "fichier": "visages/rico-content.webp",
+   "boite": [
+    11.5,
+    15.5,
+    148.5,
+    144.5
+   ],
+   "module": "visages"
+  },
+  "visages/rico-joie": {
+   "fichier": "visages/rico-joie.webp",
+   "boite": [
+    11.5,
+    15.5,
+    148.5,
+    144.5
+   ],
+   "module": "visages"
+  },
+  "visages/rico-triste": {
+   "fichier": "visages/rico-triste.webp",
+   "boite": [
+    11.5,
+    15.5,
+    148.5,
+    144.5
+   ],
+   "module": "visages"
+  },
+  "visages/rico-colere": {
+   "fichier": "visages/rico-colere.webp",
+   "boite": [
+    11.5,
+    15.5,
+    148.5,
+    144.5
+   ],
+   "module": "visages"
+  },
+  "visages/rico-peur": {
+   "fichier": "visages/rico-peur.webp",
+   "boite": [
+    11.5,
+    15.5,
+    148.5,
+    144.5
+   ],
+   "module": "visages"
+  },
+  "visages/rico-surprise": {
+   "fichier": "visages/rico-surprise.webp",
+   "boite": [
+    11.5,
+    15.5,
+    148.5,
+    144.5
+   ],
+   "module": "visages"
+  },
+  "visages/rico-decu": {
+   "fichier": "visages/rico-decu.webp",
+   "boite": [
+    11.5,
+    15.5,
+    148.5,
+    144.5
+   ],
+   "module": "visages"
+  },
+  "visages/octave-content": {
+   "fichier": "visages/octave-content.webp",
+   "boite": [
+    0.0,
+    0.0,
+    160.0,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/octave-joie": {
+   "fichier": "visages/octave-joie.webp",
+   "boite": [
+    0.0,
+    0.0,
+    160.0,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/octave-triste": {
+   "fichier": "visages/octave-triste.webp",
+   "boite": [
+    0.0,
+    0.0,
+    160.0,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/octave-colere": {
+   "fichier": "visages/octave-colere.webp",
+   "boite": [
+    0.0,
+    0.0,
+    160.0,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/octave-peur": {
+   "fichier": "visages/octave-peur.webp",
+   "boite": [
+    0.0,
+    0.0,
+    160.0,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/octave-surprise": {
+   "fichier": "visages/octave-surprise.webp",
+   "boite": [
+    0.0,
+    0.0,
+    160.0,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/octave-decu": {
+   "fichier": "visages/octave-decu.webp",
+   "boite": [
+    0.0,
+    0.0,
+    160.0,
+    160.0
+   ],
+   "module": "visages"
+  },
+  "visages/kiki-content": {
+   "fichier": "visages/kiki-content.webp",
+   "boite": [
+    0.0,
+    13.0,
+    134.0,
+    147.0
+   ],
+   "module": "visages"
+  },
+  "visages/kiki-joie": {
+   "fichier": "visages/kiki-joie.webp",
+   "boite": [
+    0.0,
+    13.0,
+    134.0,
+    147.0
+   ],
+   "module": "visages"
+  },
+  "visages/kiki-triste": {
+   "fichier": "visages/kiki-triste.webp",
+   "boite": [
+    0.0,
+    13.0,
+    134.0,
+    147.0
+   ],
+   "module": "visages"
+  },
+  "visages/kiki-colere": {
+   "fichier": "visages/kiki-colere.webp",
+   "boite": [
+    0.0,
+    13.0,
+    134.0,
+    147.0
+   ],
+   "module": "visages"
+  },
+  "visages/kiki-peur": {
+   "fichier": "visages/kiki-peur.webp",
+   "boite": [
+    0.0,
+    13.0,
+    134.0,
+    147.0
+   ],
+   "module": "visages"
+  },
+  "visages/kiki-surprise": {
+   "fichier": "visages/kiki-surprise.webp",
+   "boite": [
+    0.0,
+    13.0,
+    134.0,
+    147.0
+   ],
+   "module": "visages"
+  },
+  "visages/kiki-decu": {
+   "fichier": "visages/kiki-decu.webp",
+   "boite": [
+    0.0,
+    13.0,
+    134.0,
+    147.0
+   ],
+   "module": "visages"
+  },
+  "visages/pico-content": {
+   "fichier": "visages/pico-content.webp",
+   "boite": [
+    0.0,
+    7.0,
+    160.0,
+    153.0
+   ],
+   "module": "visages"
+  },
+  "visages/pico-joie": {
+   "fichier": "visages/pico-joie.webp",
+   "boite": [
+    0.0,
+    7.0,
+    160.0,
+    153.0
+   ],
+   "module": "visages"
+  },
+  "visages/pico-triste": {
+   "fichier": "visages/pico-triste.webp",
+   "boite": [
+    0.0,
+    7.0,
+    160.0,
+    153.0
+   ],
+   "module": "visages"
+  },
+  "visages/pico-colere": {
+   "fichier": "visages/pico-colere.webp",
+   "boite": [
+    0.0,
+    7.0,
+    160.0,
+    153.0
+   ],
+   "module": "visages"
+  },
+  "visages/pico-peur": {
+   "fichier": "visages/pico-peur.webp",
+   "boite": [
+    0.0,
+    7.0,
+    160.0,
+    153.0
+   ],
+   "module": "visages"
+  },
+  "visages/pico-surprise": {
+   "fichier": "visages/pico-surprise.webp",
+   "boite": [
+    0.0,
+    7.0,
+    160.0,
+    153.0
+   ],
+   "module": "visages"
+  },
+  "visages/pico-decu": {
+   "fichier": "visages/pico-decu.webp",
+   "boite": [
+    0.0,
+    7.0,
+    160.0,
+    153.0
+   ],
+   "module": "visages"
+  },
+  "visages/plume-content": {
+   "fichier": "visages/plume-content.webp",
+   "boite": [
+    0.0,
+    30.0,
+    160.0,
+    130.0
+   ],
+   "module": "visages"
+  },
+  "visages/plume-joie": {
+   "fichier": "visages/plume-joie.webp",
+   "boite": [
+    0.0,
+    30.0,
+    160.0,
+    130.0
+   ],
+   "module": "visages"
+  },
+  "visages/plume-triste": {
+   "fichier": "visages/plume-triste.webp",
+   "boite": [
+    0.0,
+    30.0,
+    160.0,
+    130.0
+   ],
+   "module": "visages"
+  },
+  "visages/plume-colere": {
+   "fichier": "visages/plume-colere.webp",
+   "boite": [
+    0.0,
+    30.0,
+    160.0,
+    130.0
+   ],
+   "module": "visages"
+  },
+  "visages/plume-peur": {
+   "fichier": "visages/plume-peur.webp",
+   "boite": [
+    0.0,
+    30.0,
+    160.0,
+    130.0
+   ],
+   "module": "visages"
+  },
+  "visages/plume-surprise": {
+   "fichier": "visages/plume-surprise.webp",
+   "boite": [
+    0.0,
+    30.0,
+    160.0,
+    130.0
+   ],
+   "module": "visages"
+  },
+  "visages/plume-decu": {
+   "fichier": "visages/plume-decu.webp",
+   "boite": [
+    0.0,
+    30.0,
+    160.0,
+    130.0
+   ],
+   "module": "visages"
+  },
+  "fin/coucher": {
+   "fichier": "fin/coucher.webp",
+   "boite": [
+    0.0,
+    0.0,
+    1194.0,
+    834.0
+   ],
+   "module": "fin"
+  },
+  "fin/soleil": {
+   "fichier": "fin/soleil.webp",
+   "boite": [
+    0.0,
+    0.0,
+    240.0,
+    240.0
+   ],
+   "module": "fin",
+   "points": {
+    "centre": [
+     0.5,
+     0.5
+    ]
+   },
+   "infos": {
+    "rayon": 86,
+    "horizon": 470,
+    "x": 742
+   }
+  },
+  "calme/fond": {
+   "fichier": "calme/fond.webp",
+   "boite": [
+    0.0,
+    0.0,
+    1194.0,
+    834.0
+   ],
+   "module": "calme"
+  },
+  "calme/pico": {
+   "fichier": "calme/pico.webp",
+   "boite": [
+    36.0,
+    56.5,
+    230.5,
+    253.0
+   ],
+   "module": "calme",
+   "points": {
+    "pieds": [
+     0.4946,
+     0.9625
+    ]
+   }
+  },
+  "calme/pico-content": {
+   "fichier": "calme/pico-content.webp",
+   "boite": [
+    36.0,
+    56.5,
+    230.5,
+    253.0
+   ],
+   "module": "calme",
+   "points": {
+    "pieds": [
+     0.4946,
+     0.9625
+    ]
+   }
   }
  }
 }

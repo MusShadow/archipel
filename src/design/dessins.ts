@@ -42,6 +42,9 @@ export function compagnonHTML(animal: string | undefined, couleur: string): stri
 export const nomCompagnon = (animal: string | undefined) => NOM_COMPAGNON[estCompagnon(animal) ? animal : "renard"];
 
 export const DESSINS_CSS = `
+.medaillon{position:relative;display:block;width:100%;height:100%;border-radius:50%;overflow:hidden;box-shadow:inset 0 -3px 0 rgba(39,48,67,.06)}
+.medaillon img{position:absolute;display:block;max-width:none;pointer-events:none;user-select:none;-webkit-user-select:none}
+.medaillon.anneau::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 0 max(3px,calc(var(--u) * 5)) #FFFFFF;pointer-events:none}
 .compagnon{position:relative;display:block;width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 38% 30%,#FFFFFF 0%,var(--creme) 60%,#F6E8CF 100%);
 box-shadow:inset 0 0 0 max(3px,calc(var(--u) * 6)) var(--bague,var(--bord)),var(--ombre-posee)}
 .compagnon img{position:absolute;display:block;max-width:none;pointer-events:none;user-select:none;-webkit-user-select:none}

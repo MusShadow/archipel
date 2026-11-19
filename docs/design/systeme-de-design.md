@@ -127,6 +127,9 @@ Même règle pour les nénuphars : leur zone de toucher déborde en hauteur, et 
 | `--duree-battement-plume` | 1100 ms | un aller du battement d'ailes |
 | `--duree-respiration` | 3200 ms | respiration des personnages |
 | `--duree-vol-plume` | 1200 ms | Plume vole vers l'île de la mission, sur la carte (mouvement d'ambiance) |
+| `--duree-coucher-soleil` | 8000 ms | fin de séance : le soleil descend derrière l'horizon, une seule fois |
+| `--duree-inspire` | 4300 ms | coin calme : Pico gonfle doucement, le halo grandit |
+| `--duree-souffle` | 5300 ms | coin calme : Pico se repose, le halo rapetisse (l'expiration est plus longue) |
 
 Courbes :
 
@@ -162,7 +165,18 @@ Assemblages de la livraison 2 :
 | Écran d'île | `ecranIle(ile, { conseil, disponible, onLieu, onRetour, onEcoute, onPlume })`, `src/screens/ile.ts` | le décor couvre l'écran ; lieux et étiquettes ouvrent l'activité ; les étiquettes et la bulle gardent leur taille réelle ; Plume vole près du lieu conseillé |
 | Cadre d'activité habité | `src/host.ts` (`hoteActivite`, `decorActivite`) | trois boutons fixes album (carte, oreille, Plume pour l'indice) ; l'hôte en bas à gauche change d'expression : content, rieur après une réussite, doux après un essai, pensif pendant un indice ; décor de l'île très voilé (ou sa couleur claire) ; cartes, tuiles et boutons dans la matière album ; Plume n'est jamais montrée deux fois (sur le Port, elle est l'hôtesse et le bouton d'indice) |
 | Compagnon de voyage | `compagnonHTML(animal, couleur)`, `src/design/dessins.ts` | le bébé animal dans un cercle à la bague de la couleur de l'enfant ; le chapeau et les oreilles peuvent dépasser du cercle ; positions en pourcentage, l'avatar garde ses proportions à toutes les tailles |
+| Médaillon d'un personnage | `medallion(nom, anneau?)`, `portraitHTML(nom, expression)`, `portraitSVG(nom)` dans `src/ui.ts` | le portrait dessiné (tête et épaules, cadrées pareil pour tous dans un carré de 160) sur la teinte du personnage ; `portraitSVG` pour le poser dans une gommette dessinée en SVG (découpe ronde, un identifiant par découpe) ; personnage inconnu : le visage simple de la v1 |
+| Écran à part | `habillerEcran(ecran, ile)`, `src/host.ts` | dessin pas à pas, miroir, drapeau de mon île, histoires : le même cadre que les activités (décor estompé de l'île, couleur, matière album) et un ruban pour titre |
 | Changement d'écran | `app.show()`, `src/app.ts` | le nouvel écran est en place tout de suite ; une copie de l'ancien (sans ses écouteurs) s'efface en 350 ms par-dessus, rangée dans une ombre fermée (ni VoiceOver ni les tests ne la voient) ; l'écran quitté est vraiment détaché (ses animations en retard ne répondent plus) ; sur l'île, un appui sur un lieu pendant le fondu est ignoré (double appui) ; rien si « Réduire les animations » |
+
+Assemblages de la livraison 3 :
+
+| Assemblage | Où | Règles |
+|---|---|---|
+| Carnet qu'on feuillette | `carnetScreen(retour)`, `src/screens/carnet.ts` | couverture, puis les rubriques (neuf gommettes, quatre dessins, six drapeaux par page) ; deux pages en paysage, une en portrait ; flèches (cibles rondes), onglets à image (lisibles sans savoir lire) et glissement du doigt (au-delà de 60 px ; un toucher reste un toucher) ; Plume nomme une rubrique la première fois qu'on y arrive |
+| Fin de séance | `sessionEnd()`, `src/screens/child.ts` | fond peint qui couvre l'écran (repère 1194 × 834, rogné sur les côtés en portrait) ; le soleil, à part, descend derrière l'horizon (`--duree-coucher-soleil`, une seule fois, arrêté par « Réduire les animations ») ; les gommettes du voyage arrivent une à une ; Plume et sa bulle avec le défi pour la maison |
+| Coin calme | `calmScreen(retour)`, `src/screens/child.ts` | décor doux peint ; Pico entier, les yeux fermés, gonfle à l'inspiration et se repose à l'expiration, un halo clair derrière lui suit le même rythme (rien ne clignote) ; à la fin, il ouvre les yeux |
+| Gommette gagnée | `stickerRitual`, `src/screens/child.ts` | ruban, la gommette dans sa lumière (rayons fixes), « Dans mon carnet » ; elle s'envole vers le bouton du carnet |
 
 Appui « jouet » : les composants album s'enfoncent en 120 ms et reviennent en 300 ms avec un petit rebond.
 
@@ -201,8 +215,11 @@ Le modèle est dans `src/iles.ts`.
 - chaque activité et chaque écran à part a un lieu, un seul, sur la bonne île ;
 - chaque île est valide ;
 - les quartiers s'ouvrent au-delà de six lieux ;
-- l'île des Nombres est dessinée et bien posée ;
-- les lieux restent à l'écran sur cinq formats.
+- les sept îles sont dessinées et bien posées : un dessin par lieu, un remplissage par emplacement libre, des étiquettes qui ne se chevauchent pas (zones de toucher comprises) ;
+- sur les iPad, en paysage comme en portrait, chaque lieu, chaque étiquette et l'hôte qui salue restent entiers à l'écran ;
+- les lieux de l'île des Nombres restent à l'écran sur cinq formats, téléphone compris.
+
+**Où se tient l'hôte :** à l'entrée du chemin, en bas à gauche de l'île, dans la partie que le portrait garde (au-delà de x = 143 du repère). Mona et Octave nagent dans une petite crique creusée dans la côte (`crique()` de `ile_commun.py`).
 
 ## Images
 

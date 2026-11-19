@@ -4,10 +4,12 @@ import { CLES } from "../identite";
 import { app } from "../app";
 import { applyEvidence, newSkill, stepStaircase } from "../core";
 import { DRAWINGS, DRAWING_BY_ID, drawingStickerSVG, drawingSVG, primD, primPolylines, primSVG, scoreStep, type Drawing, type Prim, type Pt } from "../drawings";
-import type { StickerSpec } from "../host";
+import { habillerEcran, type StickerSpec } from "../host";
+import { boutonRond, ruban } from "../design/composants";
+import { imgHTML } from "../design/dessins";
 import { sfx, speech } from "../services";
 import { celebrate } from "../fete";
-import { burst, dots, h, icon, medallion, plumeSVG, roundBtn, sleep, wobble } from "../ui";
+import { burst, dots, h, icon, medallion, roundBtn, sleep, wobble } from "../ui";
 import { sheet } from "./common";
 
 const pick = <T,>(a: readonly T[]) => a[Math.floor(Math.random() * a.length)];
@@ -227,12 +229,12 @@ export function drawPicker(back: (sticker?: StickerSpec) => void) {
     b.addEventListener("click", () => { sfx.tap(); drawLesson(d, back); });
     grid.appendChild(b);
   }
-  const screen = h("div", { class: "screen" },
+  const screen = habillerEcran(h("div", { class: "screen" },
     h("div", { class: "top" },
       roundBtn({ icon: "back", label: "Retour à la carte", onclick: () => back() }),
-      h("div", { class: "title", style: "font-size:max(22px,calc(var(--u) * 36))" }, "Dessine pas à pas"),
+      ruban({ texte: "Dessine pas à pas", ile: "atelier" }),
       h("span", { style: "width:var(--btn);height:var(--btn);display:block", html: medallion("kiki") })),
-    h("div", { class: "scroll" }, grid));
+    h("div", { class: "scroll" }, grid)), "atelier");
   app.show(screen);
   speech.say(`Qu'est-ce que tu veux dessiner avec Kiki ? Je te conseille ${advised.nom}.`);
 }
@@ -257,14 +259,15 @@ function drawLesson(d: Drawing, back: (sticker?: StickerSpec) => void) {
   const tools = h("div", { class: "drawtools" }, undoBtn);
   const tipText = h("span", { html: `<b>Astuce parent</b> : ${level === 1 ? "laissez-le suivre les pointillés à son rythme ; un trait peut se faire en plusieurs fois." : level === 2 ? "Kiki montre le trait, puis le guide s'efface presque : encouragez-le à regarder d'abord." : "Kiki montre le trait, puis il disparaît : c'est un vrai dessin de mémoire."}` });
   const tip = h("div", { class: "tip", style: app.data.settings.accompanied ? "" : "visibility:hidden" }, h("span", { class: "ic", html: icon("sound", "#12737B", 2) }), tipText);
-  const plumeBtn = roundBtn({ label: "Demander de l'aide à Plume", cls: "plume", html: plumeSVG(), onclick: () => help(false) });
-  const screen = h("div", { class: "screen" },
+  const plumeBtn = boutonRond({ icone: "", etiquette: "Demander de l'aide à Plume", taille: "grand", onclick: () => help(false), html: imgHTML("plume-vol") });
+  plumeBtn.classList.add("indice");
+  const screen = habillerEcran(h("div", { class: "screen" },
     h("div", { class: "top" },
       roundBtn({ icon: "home", label: "Retour à la carte", onclick: () => askExit() }),
       dotsHost,
       roundBtn({ icon: "ear", label: "Réécouter", onclick: () => speech.say(sayLine.textContent ?? "") })),
     h("div", { class: "stage drawstage" }, h("div", { class: "drawwrap" }, board.el, tools), sayLine),
-    h("div", { class: "bottom" }, tip, plumeBtn));
+    h("div", { class: "bottom" }, tip, plumeBtn)), "atelier");
 
   const layer = (cls: string) => { const g = document.createElementNS("http://www.w3.org/2000/svg", "g"); g.setAttribute("class", cls); board.ov.appendChild(g); return g; };
   const modelG = layer("model");
@@ -506,12 +509,12 @@ export function mirrorScreen(back: () => void) {
     speech.say("Ton dessin est rangé dans ton carnet ! Tu peux en commencer un autre.");
     board.clear();
   });
-  const screen = h("div", { class: "screen" },
+  const screen = habillerEcran(h("div", { class: "screen" },
     h("div", { class: "top" },
       roundBtn({ icon: "home", label: "Retour à la carte", onclick: () => leave() }),
-      h("div", { class: "title", style: "font-size:max(22px,calc(var(--u) * 36))" }, "Le miroir de Kiki"),
+      ruban({ texte: "Le miroir de Kiki", ile: "atelier" }),
       h("span", { style: "width:var(--btn);height:var(--btn);display:block", html: medallion("kiki") })),
-    h("div", { class: "stage drawstage" }, h("div", { class: "drawwrap" }, board.el, h("div", { class: "drawtools" }, pens, h("div", { class: "row" }, sizeBtn, undoBtn, clearBtn), modeBtn, keepBtn))));
+    h("div", { class: "stage drawstage" }, h("div", { class: "drawwrap" }, board.el, h("div", { class: "drawtools" }, pens, h("div", { class: "row" }, sizeBtn, undoBtn, clearBtn), modeBtn, keepBtn)))), "atelier");
   let alive = true;
   function leave() {
     if (!alive) return;

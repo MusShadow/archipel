@@ -83144,6 +83144,18 @@
   ]
  },
  {
+  "text": "Tes dessins. Touche un dessin pour le regarder en grand.",
+  "src": [
+   "carnet"
+  ]
+ },
+ {
+  "text": "Tes gommettes. Touche une gommette pour savoir pourquoi tu l'as gagnée.",
+  "src": [
+   "carnet"
+  ]
+ },
+ {
   "text": "teur",
   "src": [
    "mots"
@@ -83393,6 +83405,12 @@
   "text": "Ton dessin est rangé dans ton carnet ! Tu peux en commencer un autre.",
   "src": [
    "dessin"
+  ]
+ },
+ {
+  "text": "Ton passeport : les drapeaux que tu as découverts. Touche un drapeau pour entendre son nom.",
+  "src": [
+   "carnet"
   ]
  },
  {
@@ -86059,12 +86077,6 @@
  },
  {
   "text": "Tu as fabriqué ré. On cherche ré.",
-  "src": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "text": "Tu as fabriqué ré. On cherche riz.",
   "src": [
    "syllabes:erreur"
   ]

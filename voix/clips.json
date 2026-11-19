@@ -15956,6 +15956,26 @@
   ]
  },
  {
+  "key": "tes dessins|.",
+  "text": "Tes dessins.",
+  "say": "Tes dessins.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "carnet"
+  ]
+ },
+ {
+  "key": "tes gommettes|.",
+  "text": "Tes gommettes.",
+  "say": "Tes gommettes.",
+  "pack": "commun",
+  "words": 2,
+  "fams": [
+   "carnet"
+  ]
+ },
+ {
   "key": "teur|.",
   "text": "teur.",
   "say": "teur.",
@@ -16617,6 +16637,16 @@
   ]
  },
  {
+  "key": "ton passeport les drapeaux que tu as découverts|.",
+  "text": "Ton passeport : les drapeaux que tu as découverts.",
+  "say": "Ton passeport : les drapeaux que tu as découverts.",
+  "pack": "commun",
+  "words": 8,
+  "fams": [
+   "carnet"
+  ]
+ },
+ {
   "key": "ton|.",
   "text": "ton.",
   "say": "ton.",
@@ -16662,6 +16692,26 @@
    "chants:indice",
    "mots",
    "syllabes:indice"
+  ]
+ },
+ {
+  "key": "touche un dessin pour le regarder en grand|.",
+  "text": "Touche un dessin pour le regarder en grand.",
+  "say": "Touche un dessin pour le regarder en grand.",
+  "pack": "commun",
+  "words": 8,
+  "fams": [
+   "carnet"
+  ]
+ },
+ {
+  "key": "touche un drapeau pour entendre son nom|.",
+  "text": "Touche un drapeau pour entendre son nom.",
+  "say": "Touche un drapeau pour entendre son nom.",
+  "pack": "commun",
+  "words": 7,
+  "fams": [
+   "carnet"
   ]
  },
  {

@@ -15,14 +15,16 @@ adaptatif, la pédagogie, la voix et le hors-ligne. Tout est décrit dans `docs/
 - [`audit-visuel.md`](docs/design/audit-visuel.md) : l'état des lieux de la v1, captures « avant » et « après » ;
 - [`identite-visuelle.md`](docs/design/identite-visuelle.md) : la direction artistique (lumière, matière, couleurs, mouvement, décor vivant) ;
 - [`systeme-de-design.md`](docs/design/systeme-de-design.md) : jetons, composants, îles extensibles, images, accessibilité ;
-- [`guide-personnages.md`](docs/design/guide-personnages.md) : Plume et les hôtes, leurs signes et leurs cinq expressions ;
+- [`guide-personnages.md`](docs/design/guide-personnages.md) : Plume et les hôtes, leurs signes, leurs expressions et leurs portraits ;
 - [`feuille-de-route-refonte.md`](docs/design/feuille-de-route-refonte.md) : les six livraisons et leur avancement.
 
 Livraisons faites : **0** (cohabitation avec la v1), **1** (fondations : polices embarquées, système de design,
 atelier d'illustration, personnages, île des Nombres, imagier) et **2** (pilote : accueil sur la plage avec le
 compagnon de voyage de l'enfant, carte redessinée, écran de l'île des Nombres, cadre d'activité habité pour toutes les
-activités, nénuphars redessinés, fêtes et gommette de la grenouille dans la matière album, fondu entre les écrans).
-Les autres îles gardent leur fenêtre d'activités jusqu'à la livraison 3.
+activités, nénuphars redessinés, fêtes et gommette de la grenouille dans la matière album, fondu entre les écrans) et
+**3** (généralisation : les sept îles dessinées avec leur écran, l'imagier à la place des emoji, les visages dessinés
+des personnages et les émotions du théâtre de Pico, le carnet qu'on feuillette, la fin de séance et le coin calme
+peints, les écrans à part dans le cadre des activités, l'espace parent harmonisé).
 La vitrine cachée https://musshadow.github.io/archipel/v2/#vitrine montre les fondations en taille réelle.
 (Les sections « Livraison 1 » à « Livraison 3 » plus bas racontent les livraisons de la v1.)
 

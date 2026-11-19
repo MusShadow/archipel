@@ -9,11 +9,16 @@ La direction artistique (lumière, matières, couleurs, mouvement) est décrite 
 | Fichier | Rôle |
 |---|---|
 | `moteur.py` | Le moteur : formes souples (splines, fusions), lumière d'en haut à gauche, volume, finition « album » (deux tons, trait coloré, texture gouache), ombres posées. |
-| `personnages.py` | Plume (cinq poses, pièces pour l'animer), Basile, la grenouille ; yeux, bouches, sourcils et les cinq expressions communes. |
+| `personnages.py` | Plume (cinq poses, pièces pour l'animer), Basile, la grenouille ; yeux, bouches, sourcils, les cinq expressions communes, les quatre émotions du théâtre (triste, colère, peur, déçu) et l'expression calme. |
 | `hotes.py` | Mona, Rico et Bip, Octave, Kiki, Pico. |
 | `decors.py` | Ciel, mer, île, chemin, végétation, et les lieux de l'île des Nombres (marché, étang, goûter). |
 | `creatures.py` | Animaux et effets du décor vivant (dauphin, baleine, oiseaux, fumée…), pour la livraison 4. |
-| `iles.py` | Disposition des îles dessinées : six emplacements, le lieu de chaque activité, les étiquettes. |
+| `iles.py` | Disposition des îles dessinées : six emplacements, le lieu de chaque activité, les étiquettes (l'île des Nombres y est dessinée ; les six autres sont dans leurs modules `ile_*.py`). |
+| `ile_commun.py` | Livraison 3 : les briques des îles (côte ondulée de chaque île, crique où nage l'hôte de l'eau, herbe, chemins, ciel et mer) et les petits objets des lieux (table, cube à lettre, note, panneau, fanions, livre, cabane, cœur, tulipe). |
+| `ile_mots.py`, `ile_enigmes.py`, `ile_decouvertes.py`, `ile_atelier.py`, `ile_coeur.py`, `ile_port.py` | Livraison 3 : une île chacun (`DISPOSITION` et `DESSINS` : décor de base, remplissages, lieux, hôte qui salue). |
+| `visages.py` | Livraison 3 : les portraits des sept personnages (médaillons), contents et avec les six émotions du théâtre de Pico. |
+| `fin.py` | Livraison 3 : le coucher de soleil de la fin de séance (fond peint) et le soleil, à part, qui descend derrière l'horizon. |
+| `calme.py` | Livraison 3 : le décor du coin calme, et Pico assis, les yeux fermés puis content. |
 | `activites.py` | Livraison 2 : les nénuphars (étang, nénuphars sans nombre, grenouille assise et en plein saut) et la gommette de la grenouille. |
 | `fetes.py` | Livraison 2 : les objets des fêtes (ballons, voiture, camion de pompiers, roues, gyrophare, fusée, flamme, volcan, guirlande). |
 | `carte.py` | Livraison 2 : la mer de la carte, les sept îles (chacune son dessin et son repère), le soleil et la lune. |
@@ -39,7 +44,7 @@ mais quelques octets peuvent changer.
 
 ```sh
 python3 scripts/illustration/fabriquer.py              # personnages et îles (environ 1 minute)
-python3 scripts/illustration/fabriquer.py personnages  # ou seulement : iles, activites, fetes, carte, accueil
+python3 scripts/illustration/fabriquer.py personnages  # ou seulement : iles, une île (mots, coeur…), activites, fetes, carte, accueil, visages, fin, calme
 python3 scripts/illustration/imagier.py                # imagier (environ 2 minutes)
 bun run build                                          # puis construire l'appli
 ```
@@ -57,9 +62,12 @@ Tout est rendu à l'échelle 2 (écran Retina). Les boîtes du catalogue sont en
 
 ## Ajouter une activité sur une île
 
-- **Île déjà dessinée** (aujourd'hui : les Nombres). Ses lieux viennent du catalogue de l'atelier.
-  1. Dans `iles.py`, dessiner le lieu (fonction `lieu` de l'île), l'affecter à un emplacement libre (`lieux`) et placer son étiquette (`pastilles`).
-  2. Relancer `fabriquer.py iles` : le nouveau lieu est rendu, le remplissage de l'emplacement disparaît, le décor de base ne bouge pas.
+- **Île déjà dessinée** (depuis la livraison 3 : toutes). Ses lieux viennent du catalogue de l'atelier.
+  1. Dans le module de l'île (`iles.py` pour les Nombres, `ile_<île>.py` pour les autres), dessiner le lieu (fonction `lieu`), l'affecter à un emplacement libre (`lieux`) et placer son étiquette (`pastilles`).
+  2. Relancer `fabriquer.py <île>` : le nouveau lieu est rendu, le remplissage de l'emplacement disparaît, le décor de base ne bouge pas.
+  3. Garder le lieu, son étiquette et l'hôte dans la partie que le portrait montre (x de 143 à 1051) : `tests/iles.test.ts` le vérifie.
+
+  Tant que le lieu n'est pas dessiné, `placer()` pose l'activité dans un emplacement libre et sa pastille la représente ; `verifier()` signale le dessin qui manque.
 
   `src/iles.ts` reprend tout du catalogue, et les tests vérifient que l'activité a son lieu.
 - **Île pas encore dessinée.** Ajouter l'activité à la liste de son quartier dans `src/iles.ts` (ou laisser `placer()` la poser) ; son lieu sera dessiné avec l'île.

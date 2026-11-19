@@ -3,7 +3,7 @@
 import type { Rng } from "../core";
 import type { ActivityModule, Item, View } from "../host";
 import { emoji } from "../lexique";
-import { glow, h, medallion } from "../ui";
+import { glow, h, medallion, portraitHTML } from "../ui";
 import { emojiStickerSVG } from "./chants";
 
 type Emo = "joie" | "triste" | "colere" | "peur" | "surprise" | "decu";
@@ -24,7 +24,11 @@ const NAME: Record<Who, string> = { pico: "Pico", basile: "Basile", mona: "Mona"
 const FEM: Record<Who, boolean> = { pico: false, basile: false, mona: true, rico: false, kiki: true, octave: false, plume: true };
 const il = (w: Who) => (FEM[w] ? "elle" : "il");
 const etat = (w: Who, e: Emo) => EMO[e].etat[FEM[w] ? 1 : 0];
-const faceOpt = (e: Emo): Opt => ({ id: e, html: emoji(EMO[e].e), label: EMO[e].qui.replace(/^qui /, "") });
+// Les visages du théâtre sont dessinés (livraison 3) : le personnage de la scène, avec chaque émotion.
+const faceOpt = (e: Emo, w: Who): Opt => {
+  const dessin = portraitHTML(w, e);
+  return { id: e, html: dessin ? `<span class="visage-choix">${dessin}</span>` : emoji(EMO[e].e), label: EMO[e].qui.replace(/^qui /, "") };
+};
 
 // Situations : qui, quoi (dessin), ce qui arrive, l'émotion attendue et des émotions clairement différentes.
 const CAUSES: { who: Who; e: string; s: string; emo: Emo; not: Emo[]; why: string }[] = [
@@ -94,13 +98,13 @@ function visage(level: number, r: Rng): TheatreItem {
   const pool: Emo[] = level <= 1 ? ["joie", "triste", "colere", "peur"] : ["joie", "triste", "colere", "peur", "surprise"];
   const target = fresh(pool, (x) => x, r);
   const choices = r.shuffle([target, ...r.shuffle(pool.filter((e) => e !== target)).slice(0, 2)]);
-  return { kind: "visage", who: "pico", target, choices, opts: Object.fromEntries(choices.map((c) => [c, faceOpt(c as Emo)])), scene: [], line: "", why: "",
+  return { kind: "visage", who: "pico", target, choices, opts: Object.fromEntries(choices.map((c) => [c, faceOpt(c as Emo, "pico")])), scene: [], line: "", why: "",
     skill: "COEUR.EMOTIONS", difficulty: level <= 1 ? -0.8 : -0.3, form: "image", guess: 1 / 3, level, prompt: `Touche le visage ${EMO[target].qui}.` };
 }
 function cause(level: number, r: Rng): TheatreItem {
   const c = fresh(CAUSES, (x) => x.s, r);
   const choices = r.shuffle([c.emo, ...c.not] as string[]);
-  return { kind: "cause", who: c.who, target: c.emo, choices, opts: Object.fromEntries(choices.map((x) => [x, faceOpt(x as Emo)])), scene: [c.e], line: c.s, why: c.why,
+  return { kind: "cause", who: c.who, target: c.emo, choices, opts: Object.fromEntries(choices.map((x) => [x, faceOpt(x as Emo, c.who)])), scene: [c.e], line: c.s, why: c.why,
     skill: "COEUR.CAUSES", difficulty: 0, form: "recit", guess: 1 / 3, level, prompt: `${c.s} Comment se sent ${NAME[c.who]} ?` };
 }
 function aider(level: number, r: Rng): TheatreItem {
@@ -146,7 +150,7 @@ function contenu(level: number, r: Rng): TheatreItem {
 function cachee(level: number, r: Rng): TheatreItem {
   const c = fresh(CACHEES, (x) => x.s, r);
   const choices = r.shuffle([c.emo, ...c.not] as string[]);
-  return { kind: "cachee", who: c.who, target: c.emo, choices, opts: Object.fromEntries(choices.map((x) => [x, faceOpt(x as Emo)])), scene: [c.e], line: c.s,
+  return { kind: "cachee", who: c.who, target: c.emo, choices, opts: Object.fromEntries(choices.map((x) => [x, faceOpt(x as Emo, c.who)])), scene: [c.e], line: c.s,
     why: `${cap(il(c.who))} sourit, mais dans son cœur, ${il(c.who)} ${etat(c.who, c.emo)}.`,
     skill: "COEUR.CACHEE", difficulty: 1.6, form: "recit", guess: 1 / 3, level, prompt: c.s };
 }

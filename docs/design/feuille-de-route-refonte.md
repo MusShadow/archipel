@@ -100,7 +100,27 @@ Avec :
 - les captures avant et après ;
 - un essai sur l'iPad.
 
-## Livraison 3 : généralisation, île par île
+## Livraison 3 : généralisation, île par île (faite)
+
+| Fait | Où |
+|---|---|
+| L'imagier à la place des emoji, dans toutes les activités (consignes, cartes, gommettes) | `src/lexique.ts`, `src/host.ts`, `src/activities/chants.ts` |
+| Les six autres îles dessinées, avec leur écran : Mots, Énigmes, Découvertes, Atelier, Cœur, Port des Voyages. Un lieu par activité, Plume qui présente et conseille, l'hôte qui salue à l'entrée du chemin (Mona et Octave dans une crique) ; la fenêtre d'activités de la v1 ne s'ouvre plus | `scripts/illustration/ile_*.py`, `src/iles.ts`, `src/screens/ile.ts` |
+| Découvertes reste en un seul quartier : ses cinq lieux tiennent dans les six emplacements ; le modèle passe en quartiers dès le septième | `src/iles.ts`, `tests/iles.test.ts` |
+| En portrait (dessin rogné de 12 % de chaque côté), chaque hôte et chaque lieu restent entiers : vérifié pour les sept îles | `tests/iles.test.ts` |
+| Visages dessinés des sept personnages : un portrait pour les médaillons de toutes les activités, et six émotions pour le théâtre de Pico (joie, tristesse, colère, peur, surprise, déception) | `scripts/illustration/visages.py`, `src/ui.ts`, `src/activities/theatre.ts` |
+| Le carnet qu'on feuillette : couverture (compagnon, prénom, drapeau de son île), gommettes collées, dessins scotchés, passeport tamponné ; deux pages en paysage, une en portrait, onglets et glissement du doigt | `src/screens/carnet.ts` |
+| La fin de séance peinte : coucher de soleil sur l'archipel, le soleil qui descend une seule fois, Plume et le défi pour la maison | `scripts/illustration/fin.py`, `src/screens/child.ts` |
+| Le coin calme : Pico entier, assis sur son tapis, les yeux fermés, qui gonfle doucement à l'inspiration ; un halo clair grandit et rapetisse derrière lui | `scripts/illustration/calme.py`, `src/screens/child.ts` |
+| La gommette gagnée : ruban, gommette dans sa lumière (rayons fixes) | `src/screens/child.ts` |
+| Les écrans à part (dessin pas à pas, miroir de Kiki, drapeau de mon île, histoires) dans le cadre des activités : ruban, décor estompé de leur île, matière album ; Plume dessinée pour l'aide au dessin | `src/host.ts` (`habillerEcran`), `src/screens/draw.ts`, `myflag.ts`, `histoires.ts` |
+| Espace parent harmonisé : mêmes jetons (papier, ombres, onglets en pilules, titres Baloo), texte en Inter | `src/screens/styles3.ts` |
+| Carte : la bulle de Plume évite aussi les autres îles quand elle le peut | `src/screens/child.ts` |
+| Nénuphars : le chiffre posé sur une pastille claire (la réserve de contraste de la livraison 2 est levée) | `src/screens/styles3.ts` |
+| Voix : accueil des îles, salut des hôtes, rubriques du carnet (couverture 100 %) | `voix/`, `public/voix/` |
+| Tests adaptés (aucune vérification retirée), tests des sept îles et de la livraison 3, captures avant / après | `tests/`, `docs/design/captures/` |
+
+Ce qui était prévu :
 
 L'île des Mots passe en premier : la lecture est l'objectif principal, et c'est elle qui a le plus d'images à redessiner. Puis Énigmes, Découvertes (la première à passer en quartiers), Atelier, Cœur et le Port des Voyages.
 

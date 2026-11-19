@@ -9209,6 +9209,18 @@
 "per": 0.0,
 "spelling": null
 },
+"tes dessins|.": {
+"h": "b643e47302cb7ce0",
+"say": "Tes dessins.",
+"per": 0.0,
+"spelling": null
+},
+"tes gommettes|.": {
+"h": "d466a40bfb665d98",
+"say": "Tes gommettes.",
+"per": 0.0,
+"spelling": null
+},
 "teur|.": {
 "h": "6a824aeab6eeb025",
 "say": "teur.",
@@ -9599,6 +9611,12 @@
 "per": 0.0,
 "spelling": null
 },
+"ton passeport les drapeaux que tu as découverts|.": {
+"h": "7496dfdbe6835a6d",
+"say": "Ton passeport, les drapeaux que tu as découverts.",
+"per": 0.0,
+"spelling": null
+},
 "ton|.": {
 "h": "fc64220f3609e103",
 "say": "ton.",
@@ -9620,6 +9638,18 @@
 "tôt|.": {
 "h": "ce19ffb58cc24f60",
 "say": "tôt.",
+"per": 0.0,
+"spelling": null
+},
+"touche un dessin pour le regarder en grand|.": {
+"h": "c0e22faedcbbe18b",
+"say": "Touche un dessin pour le regarder en grand.",
+"per": 0.0,
+"spelling": null
+},
+"touche un drapeau pour entendre son nom|.": {
+"h": "de5aae036a23ff8a",
+"say": "Touche un drapeau pour entendre son nom.",
 "per": 0.0,
 "spelling": null
 },

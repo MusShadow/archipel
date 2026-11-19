@@ -16,7 +16,7 @@ Les dessins sont fabriqués par l'atelier : `scripts/illustration/personnages.py
 - **Jamais méchant, jamais moqueur.** Après un essai raté, l'hôte prend l'expression « doux » : il encourage, il ne gronde pas.
 - **Le personnage-guide est l'élément le plus calme de l'écran** : gestes lents, respiration lente, pas de sautillement continu.
 
-## Les cinq expressions
+## Les expressions
 
 Communes à tous (`EXPRESSIONS` dans `personnages.py`) :
 
@@ -30,7 +30,24 @@ Communes à tous (`EXPRESSIONS` dans `personnages.py`) :
 
 Chaque hôte existe aussi en **salut** (content, un bras, une nageoire ou une patte levée).
 
-Les émotions du théâtre de Pico (tristesse, colère, peur, déception) seront ajoutées avec l'île du Cœur, sur les visages des personnages, à la place des emoji.
+### Les émotions du théâtre de Pico (livraison 3)
+
+Quatre expressions de plus, dessinées sur tous les personnages du théâtre (Basile, Mona, Rico, Octave, Kiki, Pico, Plume), seulement pour leurs **portraits** (`visages.py`) :
+
+| Émotion | Yeux | Bouche | Sourcils | Ce que dit l'indice |
+|---|---|---|---|---|
+| triste | regardent en bas, paupière un peu basse, une larme | coins en bas | bouts intérieurs très relevés | « la bouche vers le bas, et parfois une larme » |
+| colère | paupière basse | ouverte, les dents serrées | froncés, bas vers le nez | « les sourcils froncés » |
+| peur | grands ouverts, toute petite pupille | ondulée, qui tremble | hauts et inquiets | « les yeux grands ouverts et la bouche tremblante » |
+| déçu | paupière lourde, regardent en bas | petite moue | un peu relevés au milieu | « regarde vers le bas » |
+
+La joie est l'expression **rieur**, la surprise **surpris**. Plume et Kiki, qui n'ont pas de sourcils d'habitude, en reçoivent un pour ces quatre émotions seulement (sinon on ne lit pas la colère ni l'inquiétude). Ces visages servent au théâtre de Pico, où l'enfant reconnaît une émotion : ce ne sont pas des réactions de l'hôte face à l'enfant, qui reste toujours bienveillant.
+
+### Les portraits (livraison 3)
+
+Chaque personnage a un portrait : la tête et le haut des épaules, cadrés pareil pour tous dans un carré de 160 (`visages.py`), en sept versions (content et les six émotions). L'appli le pose dans un rond, sur la teinte du personnage : c'est le **médaillon** de toutes les activités (qui parle, qui joue), à la place des visages simples de la v1.
+
+Le coin calme a son Pico à part (`calme.py`) : assis, les yeux fermés et un petit sourire (expression **calme**), puis les yeux ouverts quand l'enfant a fini de respirer.
 
 ## Plume, le colibri voyageur : guide de l'enfant
 

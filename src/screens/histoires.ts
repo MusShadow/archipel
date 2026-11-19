@@ -3,7 +3,8 @@
 import { emojiStickerSVG } from "../activities/chants";
 import { app } from "../app";
 import { applyEvidence, newSkill } from "../core";
-import type { StickerSpec } from "../host";
+import { habillerEcran, type StickerSpec } from "../host";
+import { ruban } from "../design/composants";
 import { emoji } from "../lexique";
 import { sfx, speech, type Profile, type Story } from "../services";
 import { HEROES, LENGTHS, STORY_ERRORS, THEMES, apiKey, difficultWords, requestStory } from "../stories";
@@ -111,12 +112,12 @@ export function storyShelf(back: (sticker?: StickerSpec) => void) {
     b.addEventListener("click", () => { sfx.tap(); storyReader(s, back); });
     grid.appendChild(b);
   }
-  const screen = h("div", { class: "screen" },
+  const screen = habillerEcran(h("div", { class: "screen" },
     h("div", { class: "top" },
       roundBtn({ icon: "back", label: "Retour à la carte", onclick: () => back() }),
-      h("div", { class: "title", style: "font-size:max(22px,calc(var(--u) * 36))" }, "Mes histoires"),
+      ruban({ texte: "Mes histoires", ile: "mots" }),
       h("span", { style: "width:var(--btn);height:var(--btn);display:block", html: medallion("mona") })),
-    h("div", { class: "scroll" }, grid));
+    h("div", { class: "scroll" }, grid)), "mots");
   app.show(screen);
   speech.say(stories.some((s) => !s.lu) ? "Une nouvelle histoire t'attend ! Choisis une histoire." : "Choisis une histoire à lire.");
 }
@@ -132,12 +133,12 @@ function storyReader(s: Story, back: (sticker?: StickerSpec) => void) {
   const next = roundBtn({ icon: "arrow", label: "Page suivante", cls: "next", onclick: () => go(page + 1) });
   const listen = roundBtn({ icon: "sound", label: "Écouter la phrase", onclick: () => readPage() });
   const stage = h("div", { class: "stage" }, pic, line, h("div", { class: "row" }, prev, listen, next), count);
-  const screen = h("div", { class: "screen" },
+  const screen = habillerEcran(h("div", { class: "screen" },
     h("div", { class: "top" },
       roundBtn({ icon: "home", label: "Retour à la carte", onclick: () => leave(false) }),
-      h("div", { class: "title", style: "font-size:max(20px,calc(var(--u) * 32));text-align:center" }, s.titre),
+      ruban({ texte: s.titre, ile: "mots" }),
       roundBtn({ icon: "book", label: "Toutes mes histoires", onclick: () => { alive = false; storyShelf(back); } })),
-    stage);
+    stage), "mots");
   function draw() {
     pic.innerHTML = emoji(s.images?.[page] || s.emoji || "📖");
     line.replaceChildren(...s.phrases[page].split(/\s+/).map((w) => {

@@ -323,6 +323,16 @@ export function hoteActivite(nom: string): { el: HTMLElement; expr: (e: Expressi
   return { el, expr, fin: () => clearTimeout(retour) };
 }
 // Décor léger derrière le jeu : l'île dessinée, très voilée ; sinon la couleur claire de l'île.
+// Les écrans à part (dessin, miroir, drapeau de mon île, histoires) prennent le même cadre que les activités :
+// la couleur et le dessin estompé de leur île, la matière album des cartes et des boutons (livraison 3).
+export function habillerEcran(screen: HTMLElement, ile: IleId): HTMLElement {
+  screen.classList.add("cadre-act", "a-part");
+  screen.dataset.ile = ile;
+  const a = accent(ile);
+  if (a) screen.style.cssText += `;${a}`;
+  screen.prepend(decorActivite(ile));
+  return screen;
+}
 export function decorActivite(ile: string): HTMLElement {
   const d = DECORS_ILES[ile];
   const fond = d ? `background-image:linear-gradient(180deg,rgba(255,247,234,.80) 0%,rgba(255,247,234,.90) 55%,rgba(255,247,234,.94) 100%),url("${urlImage(`illustrations/${d.base.fichier}`)}")` : "";

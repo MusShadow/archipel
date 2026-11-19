@@ -1,5 +1,7 @@
 // Interface : petit utilitaire DOM, feuille de style, composants partagés.
 import { FACES, PLUME_B, TINTS } from "./art_static";
+import { ELEMENTS } from "./illustrations";
+import { urlImage } from "./images";
 
 export type Child = Node | string | number | null | undefined | false | Child[];
 export function h(tag: string, props?: Record<string, any> | null, ...children: Child[]): HTMLElement {
@@ -49,7 +51,32 @@ export function icon(name: string, color = "#273043", sw = 2.2) {
 }
 
 // ---------- Personnages ----------
+// Portrait dessiné d'un personnage dans son médaillon rond (livraison 3) : la tête de l'atelier d'illustration, cadrée
+// pareil pour tous (cadre carré de 160 px), sur la teinte du personnage. expr : content, joie, triste, colere, peur,
+// surprise, decu. Sans portrait (personnage inconnu), le visage simple de la v1.
+const CADRE_PORTRAIT = 160;
+export function portraitHTML(name: string, expr = "content", ring = false, fond?: string): string {
+  const im = ELEMENTS[`visages/${name}-${expr}`];
+  if (!im) return "";
+  const [x, y, w, hh] = im.boite;
+  const pc = (n: number) => `${Math.round((n / CADRE_PORTRAIT) * 100000) / 1000}%`;
+  return `<span class="medaillon${ring ? " anneau" : ""}" style="background:${fond ?? TINTS[name] ?? "#FFF7EA"}" aria-hidden="true">`
+    + `<img src="${urlImage(`illustrations/${im.fichier}`)}" alt="" draggable="false" style="left:${pc(x)};top:${pc(y)};width:${pc(w)};height:${pc(hh)}"></span>`;
+}
+// Le même portrait, à poser dans un dessin SVG (gommettes) : un disque teinté, l'image découpée en rond.
+let clips = 0;
+export function portraitSVG(name: string, expr = "content", taille = 84): string {
+  const im = ELEMENTS[`visages/${name}-${expr}`];
+  if (!im) return `<g transform="translate(${taille / 2} ${taille / 2}) scale(${(0.9 * taille) / 84}) translate(-42 -42)">${FACES[name] ?? ""}</g>`;
+  const k = taille / CADRE_PORTRAIT, r = taille / 2;
+  const [x, y, w, hh] = im.boite;
+  const id = `portrait-${++clips}`;
+  return `<defs><clipPath id="${id}"><circle cx="${r}" cy="${r}" r="${r - 0.5}"/></clipPath></defs><circle cx="${r}" cy="${r}" r="${r - 0.5}" fill="${TINTS[name] ?? "#FFF7EA"}"/>`
+    + `<image href="${urlImage(`illustrations/${im.fichier}`)}" x="${(x * k).toFixed(2)}" y="${(y * k).toFixed(2)}" width="${(w * k).toFixed(2)}" height="${(hh * k).toFixed(2)}" clip-path="url(#${id})" preserveAspectRatio="none"/>`;
+}
 export function medallion(name: string, ring = false) {
+  const dessin = portraitHTML(name, "content", ring);
+  if (dessin) return dessin;
   const face = `<g transform="translate(42 42) scale(0.9) translate(-42 -42)">${FACES[name] ?? ""}</g>`;
   return `<svg viewBox="0 0 84 84" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="42" cy="42" r="41" fill="${TINTS[name] ?? "#FFF7EA"}"/>${face}${ring ? '<circle cx="42" cy="42" r="40" fill="none" stroke="#fff" stroke-width="4"/>' : ""}</svg>`;
 }

@@ -233,6 +233,11 @@ for (const f of FLAGS) add(cap(f.the));
 add(`Le drapeau de l'île de ${N} !`);
 add("Voici ton carnet. Touche une gommette pour savoir pourquoi tu l'as gagnée."); add("Voici ton carnet d'explorateur.");
 add("Celle-ci, c'est ton passeport d'explorateur : tu as réussi le grand départ !");
+{
+  // livraison 3 : le carnet qu'on feuillette, Plume nomme chaque rubrique en y arrivant
+  const { PAROLES_CARNET } = await import("../../src/screens/carnet");
+  for (const t of Object.values(PAROLES_CARNET)) add(t);
+}
 where = "fin";
 for (const list of Object.values(DEFIS)) for (const defi of list) {
   add(`Merci pour ce voyage, ${N} ! Ton défi pour la maison : ${defi}`);

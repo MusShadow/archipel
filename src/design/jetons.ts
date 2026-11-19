@@ -81,6 +81,8 @@ export const OMBRES = {
 export const MOUVEMENTS = {
   appui: 120, court: 200, moyen: 300, long: 400, ecran: 350, // ms
   battementPlume: 1100, respiration: 3200, volPlume: 1200, // ms, mouvements d'ambiance lents (Plume vole vers la mission)
+  coucherSoleil: 8000, // ms, une seule fois : le soleil de la fin de séance descend derrière l'horizon
+  inspire: 4300, souffle: 5300, // ms, coin calme : Pico gonfle doucement à l'inspiration, se repose à l'expiration
   courbes: {
     douce: "cubic-bezier(0.3, 0.7, 0.3, 1)", // arrivée qui ralentit
     rebond: "cubic-bezier(0.34, 1.4, 0.64, 1)", // léger dépassement, pour une réussite
@@ -107,7 +109,7 @@ export function variablesCSS(): Record<string, string> {
   ESPACES.forEach((n, i) => { v[`--esp-${i + 1}`] = u(n, Math.max(2, Math.round(n * 0.6))); });
   for (const [k, r] of Object.entries(RAYONS)) v[`--rayon-${k}`] = r;
   for (const [k, o] of Object.entries(OMBRES)) v[`--ombre-${k}`] = o;
-  for (const k of ["appui", "court", "moyen", "long", "ecran", "battementPlume", "respiration", "volPlume"] as const) v[`--duree-${kebab(k)}`] = `${MOUVEMENTS[k]}ms`;
+  for (const k of ["appui", "court", "moyen", "long", "ecran", "battementPlume", "respiration", "volPlume", "coucherSoleil", "inspire", "souffle"] as const) v[`--duree-${kebab(k)}`] = `${MOUVEMENTS[k]}ms`;
   for (const [k, c] of Object.entries(MOUVEMENTS.courbes)) v[`--courbe-${k}`] = c;
   for (const [k, c] of Object.entries(CIBLES)) v[`--cible-${k}`] = c;
   return v;

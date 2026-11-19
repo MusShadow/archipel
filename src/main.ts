@@ -14,10 +14,11 @@ import { ILE_CSS } from "./screens/ile";
 import { CADRE_CSS, PEAU_ACTIVITE_CSS } from "./host";
 import { STYLES_L2 } from "./screens/styles2";
 import { DESSINS_CSS } from "./design/dessins";
+import { STYLES_L3 } from "./screens/styles3";
 
 const style = document.createElement("style");
 // Système de design d'Archipel 2 (variables et composants album), puis les styles des écrans.
-style.textContent = cssVariables() + CSS_COMPOSANTS + CSS + PEAU_ACTIVITE_CSS + SCREENS_CSS + FETE_CSS + ILE_CSS + CADRE_CSS + STYLES_L2 + DESSINS_CSS;
+style.textContent = cssVariables() + CSS_COMPOSANTS + CSS + PEAU_ACTIVITE_CSS + SCREENS_CSS + FETE_CSS + ILE_CSS + CADRE_CSS + STYLES_L2 + DESSINS_CSS + STYLES_L3;
 document.head.appendChild(style);
 
 app.root = document.getElementById("app")!;

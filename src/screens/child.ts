@@ -5,10 +5,10 @@ import { FACES, ISLANDS } from "../art_static";
 import { DEFIS, knownSet } from "../content";
 import { makeRng, suggestMissions, type ActivityId, type DomainId } from "../core";
 import { DRAWING_BY_ID, drawingSVG } from "../drawings";
+import { cap } from "../flags";
 import { emoji } from "../lexique";
-import { FLAG_BY_CODE, cap, flagSVG } from "../flags";
 import { activityScreen, isAvailable, type ActivityModule, type RoundSummary, type StickerSpec } from "../host";
-import type { IleId } from "../design/jetons";
+import { MOUVEMENTS, type IleId } from "../design/jetons";
 import { ilesV2 } from "../iles";
 import { nav } from "../nav";
 import { sfx, speech, voice, type Profile } from "../services";
@@ -17,11 +17,12 @@ import { longPress, parentGate, sheet } from "./common";
 import { grandDepart } from "./depart";
 import { PLUME_CADRE, bienvenueIle, ecranIle, plumeAnime } from "./ile";
 import { compagnonHTML, imgEl, imgHTML, srcDe } from "../design/dessins";
-import { bullePlume, ruban } from "../design/composants";
+import { boutonRond, bullePlume, ruban } from "../design/composants";
 import { ELEMENTS, PERSONNAGES } from "../illustrations";
-import { drawPicker, gallery, mirrorScreen, showDrawing } from "./draw";
+import { drawPicker, mirrorScreen } from "./draw";
 import { storyShelf } from "./histoires";
 import { myFlagSVG, myFlagScreen } from "./myflag";
+import { carnetScreen } from "./carnet";
 
 const pick = <T,>(a: readonly T[]) => a[Math.floor(Math.random() * a.length)];
 const MOON = '<svg viewBox="0 0 40 40" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="20" cy="20" r="19" fill="#273043"/><path d="M24 8 A13 13 0 1 0 32 28 A10 10 0 1 1 24 8 Z" fill="#FFC145"/></svg>';
@@ -439,10 +440,11 @@ const ctxFor = (p: Profile) => ({ profile: p, rng: makeRng(Date.now() >>> 0), kn
 
 function stickerRitual(host: HTMLElement, target: HTMLElement, spec: StickerSpec, done: () => void) {
   const p = app.profile!;
+  // Livraison 3 : la gommette arrive dans sa lumière, sous un ruban ; on la touche (ou le bouton) pour la ranger.
   const art = h("button", { type: "button", class: "sticker-big pop", "aria-label": "Ranger la gommette dans mon carnet", html: spec.svg });
-  const ov = h("div", { class: "overlay", style: "flex-direction:column;gap:max(12px,calc(var(--u) * 22))" },
-    h("p", { class: "title", style: "color:#fff;font-size:max(26px,calc(var(--u) * 42));margin:0;text-shadow:0 2px 8px rgba(0,0,0,.25);text-align:center" }, "Une gommette pour ton carnet !"),
-    art,
+  const ov = h("div", { class: "overlay gommette-rituel" },
+    ruban({ texte: "Une gommette pour ton carnet !", ile: "atelier" }),
+    h("div", { class: "gommette-lumiere" }, h("span", { class: "gommette-rayons", "aria-hidden": "true" }), art),
     h("button", { type: "button", class: "bigbtn", onclick: () => store() }, h("span", { style: "width:34px;height:34px;display:flex;align-items:center;justify-content:center", html: icon("book", "#fff", 2.4) }), "Dans mon carnet"));
   host.appendChild(ov);
   sfx.sticker();
@@ -465,32 +467,45 @@ function stickerRitual(host: HTMLElement, target: HTMLElement, spec: StickerSpec
 }
 
 // ---------- Coin calme : respirer avec Pico ----------
+// Livraison 3 : un décor doux peint, Pico entier assis sur son tapis, les yeux fermés. Il gonfle un peu à
+// l'inspiration et se repose à l'expiration ; un halo clair grandit et rapetisse derrière lui (rien ne clignote).
 export function calmScreen(back: () => void) {
   app.pause("calme");
   let alive = true;
-  const word = h("p", { class: "word-big", "aria-live": "polite" }, "");
-  const breath = h("div", { class: "breath" }, h("div", { class: "halo" }), h("div", { class: "pico", html: PICO }));
-  const actions = h("div", { class: "row", style: "min-height:var(--btn)" });
+  const word = h("p", { class: "calme-mot", "aria-live": "polite" }, "");
+  const scene = h("div", { class: "calme-cadre", "aria-hidden": "true" },
+    imgEl("calme/fond", "calme-fond"),
+    h("div", { class: "calme-halo" }),
+    h("div", { class: "calme-pico" }, imgEl("calme/pico", "p-ferme"), imgEl("calme/pico-content", "p-content")));
+  const actions = h("div", { class: "row calme-actions", style: "min-height:var(--btn)" });
   const leave = () => { if (!alive) return; alive = false; app.resume("calme"); back(); };
-  const screen = h("div", { class: "screen calm" },
-    h("div", { class: "top" },
-      roundBtn({ icon: "back", label: "Retour à la carte", onclick: () => leave() }),
-      h("div", { class: "title", style: "font-size:max(22px,calc(var(--u) * 36))" }, "Le coin calme de Pico"),
-      h("div", { style: "width:var(--btn)" })),
-    h("div", { class: "stage" }, breath, word, actions));
+  const screen = h("div", { class: "screen calme2" }, scene,
+    h("div", { class: "calme-contenu" },
+      h("div", { class: "top" },
+        boutonRond({ icone: "map", etiquette: "Retour à la carte", onclick: () => leave() }),
+        ruban({ texte: "Le coin calme de Pico", ile: "coeur" }),
+        h("div", { style: "width:var(--btn)" })),
+      word, actions));
+  const ajuster = () => {
+    const W = screen.clientWidth || window.innerWidth, H = screen.clientHeight || window.innerHeight;
+    scene.style.transform = `translate(-50%, -50%) scale(${Math.max(W / 1194, H / 834)})`;
+  };
+  if (typeof ResizeObserver !== "undefined") new ResizeObserver(ajuster).observe(screen);
+  requestAnimationFrame(ajuster);
 
   async function cycles(n: number) {
+    scene.classList.remove("fini");
     for (let i = 0; i < n && alive; i++) {
-      breath.className = "breath in"; word.textContent = "Inspire…"; sfx.breathIn();
+      scene.className = "calme-cadre in"; word.textContent = "Inspire…"; sfx.breathIn();
       speech.say(i === 0 ? "Inspire doucement par le nez, comme pour sentir une fleur." : "Inspire…", 0.8);
-      await sleep(4300);
+      await sleep(MOUVEMENTS.inspire);
       if (!alive) return;
-      breath.className = "breath out"; word.textContent = "Souffle…";
+      scene.className = "calme-cadre out"; word.textContent = "Souffle…";
       speech.say(i === 0 ? "Et souffle tout doucement, comme pour faire danser une bougie." : "Souffle…", 0.8);
-      await sleep(5300);
+      await sleep(MOUVEMENTS.souffle);
     }
     if (!alive) return;
-    breath.className = "breath";
+    scene.className = "calme-cadre fini";
     word.textContent = "Ça va mieux ?";
     speech.say("Ça va mieux ?");
     actions.replaceChildren(
@@ -499,49 +514,6 @@ export function calmScreen(back: () => void) {
   }
   app.show(screen, () => { alive = false; app.resume("calme"); });
   speech.say("Bienvenue dans le coin calme. On respire avec Pico.").then(() => { if (alive) cycles(3); });
-}
-
-// ---------- Carnet d'explorateur : gommettes et passeport des drapeaux ----------
-export function carnetScreen(back: () => void) {
-  const p = app.profile!;
-  const sg = h("div", { class: "sgrid" });
-  for (const st of p.stickers.slice().reverse()) {
-    const b = h("button", { type: "button", "aria-label": st.reason, html: stickerArt(st.kind, st.ref) });
-    b.addEventListener("click", () => { sfx.tap(); speech.say(st.reason); });
-    sg.appendChild(b);
-  }
-  const fg = h("div", { class: "fgrid" });
-  const seen = Object.entries(p.flags).filter(([c, s]) => s.seen > 0 && FLAG_BY_CODE[c]).sort((a, b) => b[1].last - a[1].last);
-  for (const [code] of seen) {
-    const fl = FLAG_BY_CODE[code];
-    const b = h("button", { type: "button", "aria-label": fl.name }, h("span", { class: "fl", html: flagSVG(code, false) }), h("span", {}, fl.name));
-    b.addEventListener("click", () => { sfx.tap(); speech.say(cap(fl.the)); });
-    fg.appendChild(b);
-  }
-  const art = gallery.list(p.id).slice().reverse();
-  const dg = h("div", { class: "dgrid" });
-  for (const g of art) {
-    const b = h("button", { type: "button", "aria-label": DRAWING_BY_ID[g.id]?.nom ?? "Dessin au miroir" }, h("img", { src: g.img, alt: "" }));
-    b.addEventListener("click", () => { sfx.tap(); showDrawing(screen, g); });
-    dg.appendChild(b);
-  }
-  const myFlag = p.myFlag ? h("button", { type: "button", class: "myflagmini", "aria-label": "Le drapeau de mon île", html: myFlagSVG(p.myFlag) }) : null;
-  myFlag?.addEventListener("click", () => { sfx.tap(); speech.say(`Le drapeau de l'île de ${p.name} !`); });
-  const screen = h("div", { class: "screen carnet" },
-    h("div", { class: "top" },
-      roundBtn({ icon: "back", label: "Retour à la carte", onclick: () => back() }),
-      h("div", { class: "title", style: "font-size:max(22px,calc(var(--u) * 38))" }, "Mon carnet d'explorateur"),
-      h("div", { style: "width:var(--btn)" })),
-    h("div", { class: "scroll" },
-      myFlag ? h("div", { class: "row", style: "justify-content:flex-start;gap:16px" }, myFlag, h("h2", { style: "margin:0" }, "Le drapeau de mon île")) : null,
-      h("h2", {}, `Mes gommettes${p.stickers.length ? ` (${p.stickers.length})` : ""}`),
-      p.stickers.length ? sg : h("p", { class: "empty" }, "Ton carnet attend ses premières gommettes !"),
-      h("h2", {}, `Mes dessins${art.length ? ` (${art.length})` : ""}`),
-      art.length ? dg : h("p", { class: "empty" }, "Va sur l'île de l'Atelier pour dessiner avec Kiki."),
-      h("h2", {}, `Mon passeport : ${seen.length} drapeau${seen.length > 1 ? "x" : ""}`),
-      seen.length ? fg : h("p", { class: "empty" }, "Va au Port des Voyages pour découvrir tes premiers drapeaux.")));
-  app.show(screen);
-  speech.say(p.stickers.length ? "Voici ton carnet. Touche une gommette pour savoir pourquoi tu l'as gagnée." : "Voici ton carnet d'explorateur.");
 }
 
 // ---------- Fin de séance : le soleil se couche, un défi pour la maison ----------
@@ -556,14 +528,28 @@ export function sessionEnd(opts: { early?: boolean } = {}) {
   const rest = !opts.early && app.timeUp();
   app.endSession(rest);
   const title = opts.early ? "À bientôt sur l'archipel !" : "Le soleil se couche sur l'archipel";
-  const screen = h("div", { class: "screen sunset" },
-    h("div", { class: "sunball", "aria-hidden": "true" }),
-    h("div", { class: "card-end pop" },
+  // Livraison 3 : un coucher de soleil peint ; le soleil descend doucement derrière l'horizon (une seule fois).
+  const fond = ELEMENTS["fin/soleil"];
+  const horizon = Number(fond?.infos?.horizon ?? 470), sx = Number(fond?.infos?.x ?? 742);
+  const cadre = h("div", { class: "fin-cadre", "aria-hidden": "true" },
+    imgEl("fin/coucher", "fin-fond"),
+    h("div", { class: "fin-horizon", style: `height:${horizon}px` }, imgEl("fin/soleil", "fin-soleil")));
+  (cadre.querySelector(".fin-soleil") as HTMLElement).style.cssText = `left:${sx - 120}px;top:${horizon - 140}px`;
+  const contenu = h("div", { class: "fin-contenu" },
+    ruban({ texte: title, ile: "coeur" }),
+    stickers.length ? h("div", { class: "fin-gommettes", "aria-label": "Gommettes gagnées pendant ce voyage" },
+      ...stickers.map((st, i) => h("span", { class: "fin-gommette", style: `--angle:${((i * 37) % 9) - 4}deg;--i:${i}`, html: stickerArt(st.kind, st.ref) }))) : null,
+    h("div", { class: "fin-bas" },
       h("div", { class: "fin-plume", html: imgHTML("plume-salut") }),
-      h("h1", { class: "title" }, title),
-      stickers.length ? h("div", { class: "row", "aria-label": "Gommettes gagnées pendant ce voyage" }, ...stickers.map((st) => h("span", { style: "width:max(52px,calc(var(--u) * 72));height:max(52px,calc(var(--u) * 72));display:block", html: stickerArt(st.kind, st.ref) }))) : null,
-      h("p", { class: "defi" }, h("b", {}, "Ton défi pour la maison : "), defi),
-      h("button", { type: "button", class: "bigbtn", onclick: () => { sfx.tap(); nav.start(); } }, "Au revoir Plume !")));
+      h("div", { class: "fin-bulle" }, h("b", {}, "Ton défi pour la maison"), h("span", {}, defi))),
+    h("button", { type: "button", class: "bigbtn fin-bouton", onclick: () => { sfx.tap(); nav.start(); } }, "Au revoir Plume !"));
+  const screen = h("div", { class: "screen fin" }, cadre, contenu);
+  const ajuster = () => {
+    const W = screen.clientWidth || window.innerWidth, H = screen.clientHeight || window.innerHeight;
+    cadre.style.transform = `translate(-50%, -50%) scale(${Math.max(W / 1194, H / 834)})`;
+  };
+  if (typeof ResizeObserver !== "undefined") new ResizeObserver(ajuster).observe(screen);
+  requestAnimationFrame(ajuster);
   app.show(screen);
   sfx.sunset();
   const words = `${opts.early ? "Merci pour ce voyage" : "Le soleil se couche. Bravo pour ce beau voyage"}, ${p.name} ! Ton défi pour la maison : ${defi}`;

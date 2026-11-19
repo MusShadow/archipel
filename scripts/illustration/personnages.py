@@ -77,7 +77,7 @@ def plume(R, x, y, s=1.0, pose="vol", flip=False, eye=None, wing_phase=0, only=N
     if expr:
         eye = EXPRESSIONS[expr]["oeil"]
     eye = eye or {"vol": "ouvert", "salut": "ouvert", "montre": "ouvert", "pense": "haut", "fete": "rieur"}[pose]
-    bec_ouvert = pose == "fete" or expr in ("rieur", "surpris")
+    bec_ouvert = pose == "fete" or expr in ("rieur", "surpris", "peur")
     back_rot, front_rot = {"vol": (-8, 0), "salut": (34, -14), "montre": (-8, 128), "pense": (-10, 130), "fete": (-30, 14)}[pose]
     front_scale = {"pense": 0.6, "montre": 0.92}.get(pose, 1.0)
     if wing_phase:
@@ -118,6 +118,9 @@ def plume(R, x, y, s=1.0, pose="vol", flip=False, eye=None, wing_phase=0, only=N
 
     # ---------------- œil
     eye_parts(R, 213, 103, eye, r=14, lid=TURQ)
+    if expr in ("triste", "colere", "peur", "decu"):  # un sourcil, pour lire l'émotion (Plume n'en a pas d'habitude)
+        dy, tilt = EXPRESSIONS[expr]["sourcil"]
+        brow(R, 213, 84 + dy, 22, tilt, TURQ_DD, 3.0)
 
     # ---------------- écharpe : tour de cou épais + deux pans larges qui flottent, franges au bout
     smat = Mat(puff=5, spec=0.06, rim=0.25, line_w=1.5, profile="pillow")
@@ -153,9 +156,24 @@ def plume(R, x, y, s=1.0, pose="vol", flip=False, eye=None, wing_phase=0, only=N
     R.pop()
 
 
+def paupiere(R, sclera, ex, ey, rr, f, lid, pente=0.0):
+    """Paupière du haut qui couvre la fraction f de l'œil (0 : ouvert, 1 : fermé), avec son bord encré.
+    pente : le bord penche (px par rayon, > 0 : descend vers la droite)."""
+    bord = ey - rr + 2 * rr * f
+    pts = [(ex - rr * 1.6, ey - rr * 1.6), (ex + rr * 1.6, ey - rr * 1.6), (ex + rr * 1.6, bord + pente * 1.6), (ex - rr * 1.6, bord - pente * 1.6)]
+    m = m_clip(R.mask(np.array(pts, float)), m_grow(sclera, 0.6 * R.S))
+    R.paint(m, lid, Mat(puff=4, line=False, tex=0.5))
+    flat(R, m_clip(R.line_mask([(ex - rr * 1.1, bord - pente * 1.1), (ex + rr * 1.1, bord + pente * 1.1)], max(1.5, rr * 0.16), smooth_it=False), m_grow(sclera, 1.2 * R.S)), INK)
+
+def larme(R, x, y, s=1.0):
+    """Petite larme bleue (tristesse)."""
+    m = R.mask(catmull([(x, y - 7 * s, "c"), (x + 4.2 * s, y + 1 * s), (x, y + 5 * s), (x - 4.2 * s, y + 1 * s)], n=6))
+    R.paint(m, "#7DC4EC", Mat(puff=3, spec=0.6, shin=40, line_w=0.9))
+
 def eye_parts(R, ex, ey, kind="ouvert", r=12.5, look=(2.0, 0.5), lid="#1FA9B5"):
-    """Œil : ouvert, haut (regarde en l'air), rieur (arc), surpris (grand rond), doux (paupière mi-close), ferme.
-    lid : couleur de la paupière (celle du visage) pour « doux »."""
+    """Œil : ouvert, haut (regarde en l'air), rieur (arc), surpris (grand rond), doux (paupière mi-close), ferme,
+    triste (regarde en bas, une larme), fache (paupière basse), peur (grand ouvert, petite pupille), las (paupière lourde).
+    lid : couleur de la paupière (celle du visage) pour doux, triste, fache et las."""
     if kind == "rieur":
         arc = R.line_mask([(ex - r * 0.75, ey + 3), (ex, ey - r * 0.55), (ex + r * 0.75, ey + 3)], max(2.2, r * 0.32))
         flat(R, arc, INK)
@@ -164,7 +182,7 @@ def eye_parts(R, ex, ey, kind="ouvert", r=12.5, look=(2.0, 0.5), lid="#1FA9B5"):
         arc = R.line_mask([(ex - r * 0.75, ey - 1), (ex, ey + r * 0.38), (ex + r * 0.75, ey - 1)], max(2.0, r * 0.28))
         flat(R, arc, INK)
         return
-    rr = r * (1.1 if kind == "surpris" else 1.0)
+    rr = r * (1.1 if kind == "surpris" else 1.14 if kind == "peur" else 1.0)
     sclera = R.mask(ellipse(ex, ey, rr * 0.9, rr))
     lid_shade = R.mask(ellipse(ex - 1, ey - rr * 0.95, rr * 1.25, rr * 0.72))
     R.paint(sclera, "#FFFFFF", Mat(puff=5, spec=0.0, line_w=1.1, tex=0.2, rim=0.0),
@@ -177,11 +195,20 @@ def eye_parts(R, ex, ey, kind="ouvert", r=12.5, look=(2.0, 0.5), lid="#1FA9B5"):
         lx, ly, pr = lx * 0.4, ly * 0.4, 0.46
     elif kind == "doux":
         lx, ly = lx * 0.5, -r * 0.08
+    elif kind in ("triste", "las"):
+        lx, ly = lx * 0.3, r * 0.26
+    elif kind == "peur":
+        lx, ly, pr = lx * 0.2, ly * 0.2, 0.36
     pupil = R.mask(ellipse(ex + lx, ey + ly, rr * pr, rr * (pr + 0.06)))
     R.paint(m_clip(pupil, sclera), INK, Mat(puff=4, spec=0.0, line=False, tex=0.1),
             decal=[(R.mask(ellipse(ex + lx, ey + ly + rr * 0.28, rr * 0.5, rr * 0.32)), "#40507A", 3.0)])
     flat(R, m_clip(R.mask(circle(ex + lx + rr * 0.24, ey + ly - rr * 0.27, rr * 0.24)), sclera), "#FFFFFF")
     flat(R, m_clip(R.mask(circle(ex + lx - rr * 0.2, ey + ly + rr * 0.3, rr * 0.1)), sclera), "#FFFFFF")
+    if kind in ("triste", "fache", "las"):
+        paupiere(R, sclera, ex, ey, rr, {"triste": 0.3, "fache": 0.42, "las": 0.52}[kind], lid)
+        if kind == "triste":
+            larme(R, ex + rr * 0.35, ey + rr * 1.42, rr / 10)
+        return
     if kind == "doux":
         # œil qui sourit : la paupière du bas remonte en arc, la joue pousse
         lidm = m_clip(R.mask(catmull([(ex - rr * 1.3, ey + rr * 1.5), (ex - rr * 1.05, ey + rr * 0.5), (ex, ey + rr * 0.1),
@@ -193,7 +220,8 @@ def eye_parts(R, ex, ey, kind="ouvert", r=12.5, look=(2.0, 0.5), lid="#1FA9B5"):
 
 # ---------------------------------------------------------------------------- bouche et sourcils
 def mouth(R, x, y, w, kind="sourire", ink="#4A2C1C", inner="#7A2E3A", tongue="#F2899A", lw=None):
-    """Bouche : sourire, grand (ouverte, joie), rond (surprise), petit (sourire doux), pensif (moue de côté)."""
+    """Bouche : sourire, grand (ouverte, joie), rond (surprise), petit (sourire doux), pensif (moue de côté),
+    triste (coins en bas), moue (déception), peur (ondulée), fache (ouverte, les dents serrées)."""
     lw = lw or max(1.6, w * 0.085)
     if kind == "sourire":
         flat(R, R.line_mask([(x - w / 2, y - w * 0.06), (x - w * 0.22, y + w * 0.2), (x + w * 0.22, y + w * 0.2), (x + w / 2, y - w * 0.06)], lw), ink)
@@ -207,6 +235,17 @@ def mouth(R, x, y, w, kind="sourire", ink="#4A2C1C", inner="#7A2E3A", tongue="#F
     elif kind == "grand":
         m = R.mask(catmull([(x - w / 2, y - w * 0.04), (x, y - w * 0.01), (x + w / 2, y - w * 0.04), (x + w * 0.3, y + w * 0.3), (x, y + w * 0.42), (x - w * 0.3, y + w * 0.3)]))
         R.paint(m, inner, Mat(puff=3, line_w=1.1, tex=0.3), decal=[(R.mask(ellipse(x, y + w * 0.36, w * 0.24, w * 0.14)), tongue, 1.5)])
+    elif kind == "triste":
+        flat(R, R.line_mask([(x - w * 0.42, y + w * 0.2), (x - w * 0.18, y + w * 0.02), (x + w * 0.18, y + w * 0.02), (x + w * 0.42, y + w * 0.2)], lw), ink)
+    elif kind == "moue":
+        flat(R, R.line_mask([(x - w * 0.26, y + w * 0.12), (x, y + w * 0.04), (x + w * 0.26, y + w * 0.12)], lw), ink)
+    elif kind == "peur":
+        flat(R, R.line_mask([(x - w * 0.44, y + w * 0.1), (x - w * 0.22, y - w * 0.02), (x, y + w * 0.1), (x + w * 0.22, y - w * 0.02), (x + w * 0.44, y + w * 0.1)], lw), ink)
+    elif kind == "fache":
+        m = R.mask(catmull([(x - w * 0.4, y + w * 0.22), (x - w * 0.2, y + w * 0.02), (x + w * 0.2, y + w * 0.02), (x + w * 0.4, y + w * 0.22),
+                            (x + w * 0.2, y + w * 0.3), (x - w * 0.2, y + w * 0.3)], n=8))
+        dents = m_clip(R.mask(rrect(x - w * 0.4, y - w * 0.02, w * 0.8, w * 0.12, 1)), m)
+        R.paint(m, inner, Mat(puff=3, line_w=1.1, tex=0.3), decal=[(dents, "#FFFFFF", 0.6)])
 
 def brow(R, x, y, w, tilt=0.0, color=INK, width=2.6):
     """Sourcil : petit trait courbe ; tilt > 0 relève le bout intérieur (x croissant vers le centre si w < 0)."""
@@ -219,6 +258,13 @@ EXPRESSIONS = {
     "surpris": dict(oeil="surpris", bouche="rond", sourcil=(-6.0, 0.0)),
     "pensif": dict(oeil="haut", bouche="pensif", sourcil=(-1.5, -1.2)),  # sourcils un peu froncés
     "doux": dict(oeil="doux", bouche="petit", sourcil=(0.5, 1.4)),  # bouts intérieurs relevés : bienveillant
+    # émotions du théâtre de Pico (livraison 3)
+    "triste": dict(oeil="triste", bouche="triste", sourcil=(-1.0, 3.4)),  # bouts intérieurs très relevés
+    "colere": dict(oeil="fache", bouche="fache", sourcil=(2.5, -4.2)),  # sourcils froncés, bas vers le nez
+    "peur": dict(oeil="peur", bouche="peur", sourcil=(-6.5, 2.6)),  # sourcils hauts et inquiets
+    "decu": dict(oeil="las", bouche="moue", sourcil=(0.5, 2.0)),
+    # coin calme : les yeux fermés, un petit sourire (Pico respire)
+    "calme": dict(oeil="ferme", bouche="petit", sourcil=(0.5, 1.0)),
 }
 
 
@@ -279,10 +325,12 @@ def basile(R, x, y, s=1.0, wave=True, full=True, arm="avec", expr="content"):
     part(R, teeth, "#FFFFFF", Mat(puff=3, line_w=1.2, spec=0.2, shin=30), decal=[(R.mask(rrect(109.3, 121, 1.4, 18, 0.5)), "#C9D3DC", 0.0)])
     nose = R.mask(catmull([(98, 100), (110, 96), (122, 100), (116, 110), (110, 112, "c"), (104, 110)]))
     part(R, nose, "#4A2C1C", Mat(puff=4, spec=0.6, shin=40, line_w=1.0), shadow=False)
-    if E["bouche"] == "pensif":
-        flat(R, R.line_mask([(98, 117), (104, 119), (110, 116), (117, 117), (123, 113)], 1.6), "#4A2C1C")
-    else:
-        flat(R, R.line_mask([(96, 116), (103, 120), (110, 116), (117, 120), (124, 116)], 1.6), "#4A2C1C")
+    trait = {"pensif": [(98, 117), (104, 119), (110, 116), (117, 117), (123, 113)],
+             "triste": [(94, 122), (101, 117), (110, 115), (119, 117), (126, 122)],
+             "moue": [(98, 120), (104, 117), (110, 116), (116, 117), (122, 120)],
+             "peur": [(94, 118), (100, 115), (106, 119), (110, 116), (114, 119), (120, 115), (126, 118)],
+             "fache": [(93, 121), (101, 116), (110, 115), (119, 116), (127, 121)]}.get(E["bouche"], [(96, 116), (103, 120), (110, 116), (117, 120), (124, 116)])
+    flat(R, R.line_mask(trait, 1.6 if E["bouche"] not in ("triste", "fache") else 2.0), "#4A2C1C")
     # joues et yeux
     for cx in (78, 142):
         R.paint(R.mask(ellipse(cx, 112, 10, 6)), "#E8828C", Mat(flat=True), haze=0.0)

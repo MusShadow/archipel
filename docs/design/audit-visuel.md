@@ -102,6 +102,7 @@ La refonte change la peau, pas les organes : le moteur adaptatif, la pédagogie,
 | 0, cohabitation | rien de visible : la v2 vit à côté de la v1, avec son nom, son icône et son stockage | — |
 | 1, fondations | <ul><li>polices embarquées (plus d'appel à Google) ;</li><li>système de design central ;</li><li>atelier d'illustration, personnages en entier et cinq expressions ;</li><li>modèle des îles, île des Nombres dessinée ;</li><li>imagier de 195 images ;</li><li>vitrine pour juger sur l'iPad.</li></ul>Rien ne change encore dans les écrans de l'enfant. | ci-dessous |
 | 2, pilote | <ul><li>accueil sur la plage, compagnon de voyage dessiné (l'enfant se reconnaît) ;</li><li>carte aux sept îles dessinées, toutes différentes ;</li><li>écran de l'île des Nombres ;</li><li>cadre d'activité habité (hôte qui réagit, décor léger, matière album) pour toutes les activités ;</li><li>nénuphars redessinés ;</li><li>fêtes aux objets dessinés, message d'une couleur, rien ne clignote ; gommette dans la matière album ;</li><li>fondu entre les écrans.</li></ul> | ci-dessous |
+| 3, généralisation | <ul><li>les sept îles dessinées, chacune avec son écran : on visite l'île, la fenêtre d'activités disparaît ;</li><li>l'imagier à la place des emoji dans toutes les activités ;</li><li>visages dessinés des personnages : médaillons de toutes les activités, émotions du théâtre de Pico ;</li><li>gommette dans sa lumière ; carnet qu'on feuillette ;</li><li>fin de séance peinte ; coin calme avec Pico entier qui respire ;</li><li>écrans à part (dessin, miroir, drapeau de mon île, histoires) dans le cadre des activités ;</li><li>espace parent harmonisé.</li></ul> | ci-dessous |
 
 ![L'île des Nombres dans la vitrine de la livraison 1](captures/apres-1-ile-des-nombres-vitrine.webp)
 
@@ -118,3 +119,11 @@ La refonte change la peau, pas les organes : le moteur adaptatif, la pédagogie,
 ![Nénuphars, petite et grande fête, gommette, avant et après la livraison 2](captures/apres-4-activite-fetes-gommette.webp)
 
 *Livraison 2 : l'activité des nénuphars dans son cadre habité, les fêtes et la gommette.*
+
+![Île des Mots, théâtre de Pico et dessin pas à pas, avant et après la livraison 3](captures/apres-5-ile-theatre-dessin.webp)
+
+*Livraison 3 : l'île des Mots dessinée (au lieu de la fenêtre d'activités), le théâtre de Pico avec les visages des personnages, le dessin pas à pas dans le cadre de l'Atelier.*
+
+![Carnet, coin calme, fin de séance et espace parent, avant et après la livraison 3](captures/apres-6-carnet-calme-fin-parent.webp)
+
+*Livraison 3 : le carnet qu'on feuillette, le coin calme avec Pico entier, la fin de séance peinte, l'espace parent harmonisé.*

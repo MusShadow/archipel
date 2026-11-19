@@ -2,7 +2,7 @@
 import type { ActivityId, DomainId } from "../core";
 import { drawingStickerSVG } from "../drawings";
 import type { ActivityModule } from "../host";
-import { medallion } from "../ui";
+import { portraitSVG } from "../ui";
 import { atelierdrapeaux } from "./atelierdrapeaux";
 import { bip, bipStickerSVG } from "./bip";
 import { chants, emojiStickerSVG } from "./chants";
@@ -63,4 +63,4 @@ export function stickerArt(kind: string, ref?: string): string {
   if (kind === "dessin") return drawingStickerSVG(ref);
   return appleStickerSVG();
 }
-export const departStickerSVG = () => `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><g transform="translate(9 9) scale(0.62)">${medallion("plume").replace('style="display:block;width:100%;height:100%"', 'width="84" height="84"')}</g></svg>`;
+export const departStickerSVG = () => `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><g transform="translate(9 9) scale(0.62)">${portraitSVG("plume")}</g></svg>`;

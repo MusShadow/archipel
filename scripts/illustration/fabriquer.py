@@ -17,8 +17,8 @@ import decors as D
 import iles as I
 import importlib, importlib.util
 
-# Éléments isolés de la livraison 2 (une image chacun) : module → ELEMENTS {nom: cadre, dessin, options}.
-MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil"]
+# Éléments isolés des livraisons 2 et 3 (une image chacun) : module → ELEMENTS {nom: cadre, dessin, options}.
+MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil", "visages", "fin", "calme"]
 def tous_elements(quoi=None):
     out = {}
     for m in MODULES_ELEMENTS:
@@ -170,7 +170,7 @@ def nettoyer(cat, quoi):
     gardes = {e["fichier"] for e in cat["personnages"].values()} | {e["fichier"] for e in cat.get("elements", {}).values()}
     for d in cat["iles"].values():
         gardes |= {d["base"]["fichier"]} | {x["fichier"] for k in ("remplissages", "lieux", "animes") for x in d[k].values()}
-    parties = ["personnages", "iles"] + ["activites", "gommettes", "fetes", "carte", "accueil"]
+    parties = ["personnages", "iles"] + ["activites", "gommettes", "fetes", "carte", "accueil", "visages", "fin", "calme"]
     for partie in parties:
         if not (SORTIE / partie).exists() or (partie == "personnages" and partie not in quoi) or (partie == "iles" and "iles" not in quoi and not ({q for q in quoi if q in I.DISPOSITIONS})):
             continue
@@ -195,7 +195,7 @@ def ecrire_ts(cat):
         "}",
         f"export const PERSONNAGES: Record<string, ImageCadree> = {json.dumps(cat['personnages'], ensure_ascii=False, sort_keys=True)};",
         f"export const DECORS_ILES: Record<string, DecorIle> = {json.dumps(cat['iles'], ensure_ascii=False, sort_keys=True)};",
-        "// Éléments isolés (livraison 2) : activités, gommettes, fêtes, carte, accueil.",
+        "// Éléments isolés (livraisons 2 et 3) : activités, gommettes, fêtes, carte, accueil, visages des personnages.",
         f"export const ELEMENTS: Record<string, ImageCadree> = {json.dumps({k: {c: v for c, v in e.items() if c != 'module'} for k, e in cat.get('elements', {}).items()}, ensure_ascii=False, sort_keys=True)};",
         "",
     ]

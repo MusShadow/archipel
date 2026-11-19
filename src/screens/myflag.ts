@@ -3,6 +3,8 @@ import { COL, COL_ORDER, type Col } from "../activities/atelierdrapeaux";
 import { app } from "../app";
 import { sfx, speech, type MyFlag } from "../services";
 import { burst, h, medallion, roundBtn, sleep } from "../ui";
+import { habillerEcran } from "../host";
+import { ruban } from "../design/composants";
 
 export const LAYOUTS: { id: string; nom: string; parts: number }[] = [
   { id: "v3", nom: "trois bandes debout", parts: 3 },
@@ -96,10 +98,10 @@ export function myFlagScreen(back: () => void) {
     await sleep(300);
     leave();
   });
-  const screen = h("div", { class: "screen" },
+  const screen = habillerEcran(h("div", { class: "screen" },
     h("div", { class: "top" },
       roundBtn({ icon: "back", label: "Retour à la carte", onclick: () => leave() }),
-      h("div", { class: "title", style: "font-size:max(22px,calc(var(--u) * 34))" }, "Le drapeau de mon île"),
+      ruban({ texte: "Le drapeau de mon île", ile: "port" }),
       h("span", { style: "width:var(--btn);height:var(--btn);display:block", html: medallion("plume") })),
     h("div", { class: "stage myflagstage" },
       preview,
@@ -107,7 +109,7 @@ export function myFlagScreen(back: () => void) {
         h("p", { class: "steplabel" }, "1. La forme"), layouts,
         h("p", { class: "steplabel" }, "2. Les couleurs : choisis, puis touche ton drapeau"), palette,
         h("p", { class: "steplabel" }, "3. Le symbole"), symbols,
-        save)));
+        save))), "port");
   let alive = true;
   function leave() { if (!alive) return; alive = false; app.addMinutes("voyages", Date.now() - t0, "atelierdrapeaux"); back(); }
   draw();
