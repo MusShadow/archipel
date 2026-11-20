@@ -1,6 +1,7 @@
 // Île des Énigmes — « Les motifs de Rico » : continuer une suite, trouver l'erreur, compléter un trou,
 // puis remplir un tableau à double entrée (une forme par ligne, une couleur par colonne).
 import type { Rng } from "../core";
+import { vignette } from "../design/dessins";
 import type { ActivityModule, Item } from "../host";
 import { shapeSVG, type Shape2D } from "../shapes";
 import { glow, h } from "../ui";
@@ -10,12 +11,14 @@ type Kind = "suite" | "erreur" | "trou" | "matrice";
 interface Tok { s: Shape2D; c: string }
 interface MotifItem extends Item { kind: Kind; seq: (Tok | null)[]; cols?: number; target: string; choices: string[]; toks: Record<string, Tok>; unit: number }
 
-const COLORS: Record<string, string> = { rouge: "#E5483B", bleu: "#3D8BEA", jaune: "#FFC145", vert: "#34B37A" };
-const SHAPES: Shape2D[] = ["cercle", "carre", "triangle", "etoile", "coeur"];
+export const COLORS: Record<string, string> = { rouge: "#E5483B", bleu: "#3D8BEA", jaune: "#FFC145", vert: "#34B37A" };
+export const SHAPES: Shape2D[] = ["cercle", "carre", "triangle", "etoile", "coeur"];
 const SAY_SHAPE: Partial<Record<Shape2D, string>> = { cercle: "rond", carre: "carré", triangle: "triangle", etoile: "étoile", coeur: "cœur" };
 const key = (t: Tok) => `${t.s}-${t.c}`;
 const sayTok = (t: Tok) => `${SAY_SHAPE[t.s]} ${t.c}`;
-const tokHTML = (t: Tok) => shapeSVG(t.s, COLORS[t.c], 0, 0.82);
+// Livraison 4 : chaque motif est une perle en bois laqué (atelier : scripts/illustration/jeux_enigmes.py), enfilée sur
+// un cordon ; le tableau à double entrée est un plateau en bois à alvéoles.
+const tokHTML = (t: Tok) => vignette(`activites/perle-${t.s}-${t.c}`, "perle");
 
 function unitFor(level: number, r: Rng): Tok[] {
   const pattern = level <= 1 ? "AB" : r.pick(level === 2 ? ["AAB", "ABB", "ABC"] : ["AAB", "ABB", "ABC", "AABB", "ABAC"]);
@@ -99,7 +102,7 @@ export const motifs: ActivityModule<MotifItem> = {
       if (item.kind === "erreur") cell.addEventListener("click", () => view.answer(String(i) === item.target, cell, String(i) === item.target ? undefined : "Celui-là est bien à sa place. Dis la suite à voix haute pour trouver l'erreur."));
       seqEl.appendChild(cell);
     });
-    view.stage.appendChild(h("div", { class: "panel" }, seqEl));
+    view.stage.appendChild(h("div", { class: `panel ${isGrid ? "motif-plateau" : "motif-cordon"}` }, seqEl));
     if (item.kind === "erreur") return;
     const row = h("div", { class: "choices" });
     for (const c of item.choices) {

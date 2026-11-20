@@ -4,6 +4,7 @@
 // 1. Le bac jaune et le reste. 2. Le verre. 3. Les restes de cuisine. 4. Les papiers. 5. Les pièges. 6. Le grand tri.
 // Chaque phrase dite est écrite ici ; voiceLines() les donne toutes, pour la voix naturelle.
 import { app } from "../app";
+import { calque, image } from "../design/dessins";
 import { optionText, type ActivityModule, type Ctx, type Item, type View } from "../host";
 import { defaultTri, type TriSettings } from "../services";
 import { h, medallion } from "../ui";
@@ -54,19 +55,19 @@ export const triSettings = (): TriSettings => ({ ...defaultTri(), ...(app.data?.
 export function binsFor(t: TriSettings): Bin[] {
   const paris = t.couleurs === "paris";
   const out: Bin[] = [{
-    id: "jaune", nom: "le bac jaune", label: "Bac jaune", look: { body: "#FFD23F", lid: "#E8B400", symbol: "recyclage" },
+    id: "jaune", nom: "le bac jaune", label: "Bac jaune", look: { body: "#FFD23F", lid: "#E8B400", symbol: "recyclage", teinte: "jaune" },
     cats: t.papiers === "jaune" ? ["emballages", "papiers"] : ["emballages"],
     purpose: t.papiers === "jaune" ? "Le bac jaune, c'est pour les emballages et les papiers." : "Le bac jaune, c'est pour les emballages : en plastique, en métal, en carton.",
   }];
-  if (t.papiers === "bleu") out.push({ id: "bleu", nom: "le bac bleu", label: "Bac bleu", look: { body: "#3D8BEA", lid: "#2F6FC0", symbol: "papier" }, cats: ["papiers"], purpose: "Le bac bleu, c'est pour les papiers." });
+  if (t.papiers === "bleu") out.push({ id: "bleu", nom: "le bac bleu", label: "Bac bleu", look: { body: "#3D8BEA", lid: "#2F6FC0", symbol: "papier", teinte: "bleu" }, cats: ["papiers"], purpose: "Le bac bleu, c'est pour les papiers." });
   out.push({ id: "verre", nom: paris ? "le bac blanc" : "le bac vert", label: paris ? "Bac blanc" : "Bac vert", cats: ["verre"],
-    look: paris ? { body: "#F4F1EA", lid: "#CFC8B8", symbol: "verre" } : { body: "#34B37A", lid: "#25915F", symbol: "verre" },
+    look: paris ? { body: "#F4F1EA", lid: "#CFC8B8", symbol: "verre", teinte: "blanc" } : { body: "#34B37A", lid: "#25915F", symbol: "verre", teinte: "vert" },
     purpose: `${paris ? "Le bac blanc" : "Le bac vert"}, c'est pour le verre : les bouteilles, les pots et les bocaux.` });
   out.push({ id: "cuisine", nom: t.cuisine === "compost" ? "le composteur" : "le bac marron", label: t.cuisine === "compost" ? "Composteur" : "Bac marron", cats: ["cuisine"],
-    look: t.cuisine === "compost" ? "composteur" : { body: "#9B6B43", lid: "#7A5232", symbol: "cuisine" },
+    look: t.cuisine === "compost" ? "composteur" : { body: "#9B6B43", lid: "#7A5232", symbol: "cuisine", teinte: "marron" },
     purpose: `${t.cuisine === "compost" ? "Le composteur" : "Le bac marron"}, c'est pour les restes de cuisine.` });
   out.push({ id: "reste", nom: paris ? "le bac vert" : "le bac gris", label: paris ? "Bac vert" : "Bac gris", cats: ["reste"],
-    look: paris ? { body: "#34B37A", lid: "#25915F", symbol: "reste" } : { body: "#8A8F9C", lid: "#6B7080", symbol: "reste" },
+    look: paris ? { body: "#34B37A", lid: "#25915F", symbol: "reste", teinte: "vert" } : { body: "#8A8F9C", lid: "#6B7080", symbol: "reste", teinte: "gris" },
     purpose: `${paris ? "Le bac vert" : "Le bac gris"}, c'est pour ce qui ne se recycle pas.` });
   return out;
 }
@@ -130,7 +131,15 @@ export function makeTri(lv: number, r: { next: () => number; pick: <T>(a: T[]) =
 }
 
 // ---------- Le plateau : les déchets de Basile en haut, les poubelles en bas (on glisse vers le bas, comme on jette) ----------
-export const binArt = (b: Bin) => b.look === "composteur" ? composteurSVG() : binSVG(b.look);
+// Livraison 4 : les poubelles sont dessinées (atelier : scripts/illustration/jeux_decouvertes.py), en deux calques du
+// même cadre : le corps avec son étiquette, et le couvercle (class « lid »), que l'on soulève quand un déchet arrive.
+// Le voyage des déchets garde ses poubelles tracées (binArtTrace), dans le style de ses scènes, jusqu'à la livraison 4 bis.
+export const binArtTrace = (b: Bin) => b.look === "composteur" ? composteurSVG() : binSVG(b.look);
+const poubelle = (corps: string, couvercle: string) =>
+  image(corps) && image(couvercle) ? `<span class="poubelle" aria-hidden="true">${calque(corps)}${calque(couvercle, "lid")}</span>` : null;
+export const binArt = (b: Bin) => (b.look === "composteur"
+  ? poubelle("activites/composteur", "activites/composteur-couvercle")
+  : poubelle(`activites/poubelle-${b.look.teinte}-${b.look.symbol}`, `activites/couvercle-${b.look.teinte}`)) ?? binArtTrace(b);
 function renderTri(item: TriItem, view: View) {
   const all = binsFor(triSettings());
   const bins = all.filter((b) => item.bins.includes(b.id));

@@ -17,6 +17,22 @@ export function imgEl(nom: string, cls = "", alt = ""): HTMLImageElement {
   return h("img", { class: cls, src: im ? srcDe(im) : "", alt, draggable: "false" }) as HTMLImageElement;
 }
 
+// Livraison 4 : le « calque », une image recadrée replacée à sa place dans son cadre de rendu (le parent, positionné, a
+// la forme du cadre : aspect-ratio donné par rapport()). Des calques du même cadre se superposent exactement : le fond
+// et le devant du bassin, le corps et le couvercle d'une poubelle. La vignette : le cadre entier, à la même échelle
+// d'une image à l'autre (les deux réponses de « Flotte ou coule ? »).
+const cadreDe = (im: ImageCadree): [number, number] => im.cadre ?? [im.boite[2], im.boite[3]];
+export const rapport = (nom: string) => { const im = image(nom); const [W, H] = im ? cadreDe(im) : [1, 1]; return `${W}/${H}`; };
+export function calque(nom: string, cls = ""): string {
+  const im = image(nom);
+  if (!im) return "";
+  const [W, H] = cadreDe(im), [x, y, l, ht] = im.boite;
+  return `<img class="calque${cls ? ` ${cls}` : ""}" src="${srcDe(im)}" alt="" draggable="false" `
+    + `style="left:${pc((x / W) * 100)};top:${pc((y / H) * 100)};width:${pc((l / W) * 100)};height:${pc((ht / H) * 100)}">`;
+}
+export const vignette = (nom: string, cls = "") =>
+  `<span class="vignette${cls ? ` ${cls}` : ""}" style="aspect-ratio:${rapport(nom)}" aria-hidden="true">${calque(nom)}</span>`;
+
 // Un compagnon dans son cercle (la bague prend la couleur de l'enfant) ; le chapeau et les oreilles peuvent dépasser.
 // Les positions sont en pourcentage du cercle : l'avatar garde ses proportions à toutes les tailles.
 export function compagnonHTML(animal: string | undefined, couleur: string): string {

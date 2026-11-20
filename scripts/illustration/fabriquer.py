@@ -17,8 +17,8 @@ import decors as D
 import iles as I
 import importlib, importlib.util
 
-# Éléments isolés des livraisons 2 et 3 (une image chacun) : module → ELEMENTS {nom: cadre, dessin, options}.
-MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil", "visages", "fin", "calme", "jeux"]
+# Éléments isolés des livraisons 2 à 4 (une image chacun) : module → ELEMENTS {nom: cadre, dessin, options}.
+MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil", "visages", "fin", "calme", "jeux", "jeux_decouvertes", "jeux_enigmes"]
 def tous_elements(quoi=None):
     out = {}
     for m in MODULES_ELEMENTS:
@@ -157,7 +157,8 @@ def elements(cat, quoi):
         col, a = (A.opaque if opaque else A.rgba)(e["dessin"])
         fichier = f"{nom}.webp"
         boite = A.enregistrer(SORTIE / fichier, col, a, opaque=opaque, qualite=e.get("qualite", 86 if not opaque else 80))
-        ent = {"fichier": fichier, "boite": boite, "module": e["module"]}
+        # le cadre de rendu : l'appli y replace l'image recadrée (calques superposés, vignettes de même échelle)
+        ent = {"fichier": fichier, "boite": boite, "cadre": [W_, H_], "module": e["module"]}
         if e.get("points"):
             ent["points"] = {k: rel(boite, *pt) for k, pt in e["points"].items()}
         if e.get("infos"):
@@ -188,14 +189,14 @@ def ecrire_ts(cat):
         "// Images de l'atelier d'illustration (public/illustrations) : boîte [x, y, l, h] en px CSS dans le cadre de rendu,",
         "// ancre (point au sol ou centre) et pivot en fraction de la boîte, échelle de rendu du personnage.",
         "export type Boite = [number, number, number, number];",
-        "export interface ImageCadree { fichier: string; boite: Boite; ancre?: [number, number]; echelle?: number; pivot?: [number, number]; points?: Record<string, [number, number]>; infos?: Record<string, number | string> }",
+        "export interface ImageCadree { fichier: string; boite: Boite; cadre?: [number, number]; ancre?: [number, number]; echelle?: number; pivot?: [number, number]; points?: Record<string, [number, number]>; infos?: Record<string, number | string> }",
         "export interface DecorIle {",
         "  cadre: [number, number]; base: ImageCadree; remplissages: Record<string, ImageCadree>; lieux: Record<string, ImageCadree>; animes: Record<string, ImageCadree>;",
         "  emplacements: Record<string, [number, number]>; lieuxEmplacement: Record<string, string>; pastilles: Record<string, [number, number]>; plume: [number, number];",
         "}",
         f"export const PERSONNAGES: Record<string, ImageCadree> = {json.dumps(cat['personnages'], ensure_ascii=False, sort_keys=True)};",
         f"export const DECORS_ILES: Record<string, DecorIle> = {json.dumps(cat['iles'], ensure_ascii=False, sort_keys=True)};",
-        "// Éléments isolés (livraisons 2 et 3) : activités, gommettes, fêtes, carte, accueil, visages des personnages.",
+        "// Éléments isolés (livraisons 2 à 4) : activités, objets des jeux, gommettes, fêtes, carte, accueil, visages des personnages.",
         f"export const ELEMENTS: Record<string, ImageCadree> = {json.dumps({k: {c: v for c, v in e.items() if c != 'module'} for k, e in cat.get('elements', {}).items()}, ensure_ascii=False, sort_keys=True)};",
         "",
     ]

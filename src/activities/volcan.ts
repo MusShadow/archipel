@@ -14,7 +14,7 @@ import type { ActivityModule, Ctx, Item, View } from "../host";
 import { emoji } from "../lexique";
 import { sfx } from "../services";
 import { glow, h, medallion } from "../ui";
-import { CHIMNEY, COUPE_PARTS, FLOW_PATH, PART_LABEL, VART, coupeSVG, vartSVG, volcanStickerSVG, type CoupePart } from "./volcan_art";
+import { CHIMNEY, COUPE_PARTS, FLOW_PATH, PART_LABEL, VART, coupeSVG, imageCoupe, vartSVG, volcanStickerSVG, type CoupePart } from "./volcan_art";
 
 const PARTIES = "DECOUV.VOLCAN.PARTIES", ERUPTION = "DECOUV.VOLCAN.ERUPTION", LAVE = "DECOUV.VOLCAN.LAVE",
   TYPES = "DECOUV.VOLCAN.TYPES", METIER = "DECOUV.VOLCAN.METIER", MONDE = "DECOUV.VOLCAN.MONDE";
@@ -365,7 +365,7 @@ function renderMonte(view: View) {
   view.stage.appendChild(wrap);
   const svg = wrap.querySelector("svg")!;
   const magma = svg.querySelector<SVGRectElement>(".vmagma"), shine = svg.querySelector<SVGRectElement>(".vmagma-l");
-  const crater = svg.querySelector<SVGPathElement>('[data-t="cratere"] path');
+  const crater = svg.querySelector<SVGImageElement>(".vcratere-lave");
   let level = 0.06, done = false, track = false, moved = false, x0 = 0, y0 = 0;
   const H = CHIMNEY.bottom - CHIMNEY.top;
   const setLevel = (v: number) => {
@@ -412,14 +412,13 @@ function renderMonte(view: View) {
   function erupt() {
     if (done) return;
     done = true;
-    crater?.setAttribute("fill", "#FF7F50");
+    if (crater) crater.style.opacity = "1"; // la lave brille dans le cratère
+    // L'éruption dessinée : la coulée se découvre le long de la pente (un masque qu'on trace), le jet jaillit du cratère.
     const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
     g.setAttribute("class", "veruption");
-    g.innerHTML = `<path class="vflow" d="${FLOW_PATH}" fill="none" stroke="#E8504A" stroke-width="10" stroke-linecap="round"/>`
-      + `<path class="vflow" d="${FLOW_PATH}" fill="none" stroke="#FFC145" stroke-width="3.4" stroke-linecap="round"/>`
-      + `<path class="vjet" d="M90 40 C84 28 88 16 95 8 C96 16 98 19 100 12 C102 19 104 16 105 8 C112 16 116 28 110 40 Z" fill="#FF7F50" stroke="#273043" stroke-width="2.4" stroke-linejoin="round"/>`
-      + `<path class="vjet" d="M95 40 C93 31 96 24 100 20 C104 24 107 31 105 40 Z" fill="#FFC145"/>`
-      + [[82, 14], [118, 12], [76, 26], [124, 24], [100, 2]].map(([x, y], i) => `<circle class="vdrop" style="animation-delay:${0.1 + i * 0.07}s" cx="${x}" cy="${y}" r="3.4" fill="#FF7F50" stroke="#273043" stroke-width="2"/>`).join("");
+    g.innerHTML = `<mask id="vcoulee-masque" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="160">`
+      + `<path class="vflow" d="${FLOW_PATH} L180 105" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round"/></mask>`
+      + imageCoupe("coulee", "", ` mask="url(#vcoulee-masque)"`) + imageCoupe("jet", "vjet");
     svg.appendChild(g);
     g.querySelectorAll<SVGPathElement>(".vflow").forEach((p) => {
       const L = typeof p.getTotalLength === "function" ? p.getTotalLength() : 0;

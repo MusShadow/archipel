@@ -15,7 +15,7 @@ import { sfx, type TriSettings } from "../services";
 import { glow, h, medallion, sleep } from "../ui";
 import { DART, RUE, dartSVG, dechetsStickerSVG, rueSVG } from "./dechets_art";
 import { sortBoard, type SortBoard } from "./glisser";
-import { THING, binArt, binsFor, triSettings, type Bin } from "./tri";
+import { THING, binArtTrace, binsFor, triSettings, type Bin } from "./tri";
 import { TART, tartSVG } from "./tri_art";
 
 const CAMION = "DECOUV.DECHETS.CAMION", ROUTE = "DECOUV.DECHETS.ROUTE", CENTRE = "DECOUV.DECHETS.CENTRE",
@@ -35,7 +35,7 @@ const Q = "?";
 // Image : la poubelle de chez vous (bac_<id>), un dessin maison, un déchet du grand tri, ou un emoji du système.
 const BAC = "bac_";
 function artOf(id: string): string {
-  if (id.startsWith(BAC)) { const b = binsFor(triSettings()).find((x) => x.id === id.slice(BAC.length)); return b ? binArt(b) : ""; }
+  if (id.startsWith(BAC)) { const b = binsFor(triSettings()).find((x) => x.id === id.slice(BAC.length)); return b ? binArtTrace(b) : ""; }
   if (DART[id]) return dartSVG(id);
   if (TART[id]) return tartSVG(id);
   return emoji(id);
@@ -381,7 +381,7 @@ function renderCamion(item: DechetsItem, view: View) {
   const s = triSettings();
   const b = binOf(s, item.bin!);
   const wrap = h("div", { class: "drue", html: rueSVG() });
-  const bin = h("span", { class: "dbin", role: "button", "aria-label": b.label, html: binArt(b) });
+  const bin = h("span", { class: "dbin", role: "button", "aria-label": b.label, html: binArtTrace(b) });
   bin.style.left = `${(RUE.bin.x / RUE.w) * 100}%`; bin.style.top = `${(RUE.bin.y / RUE.h) * 100}%`;
   bin.style.width = `${(RUE.bin.s / RUE.w) * 100}%`; bin.style.height = `${(RUE.bin.s / RUE.h) * 100}%`;
   wrap.appendChild(bin);

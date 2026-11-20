@@ -5,7 +5,8 @@ const K = `stroke="${INK}" stroke-width="3" stroke-linejoin="round" stroke-linec
 const K2 = `stroke="${INK}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"`;
 
 // ---------- Les poubelles ----------
-export interface BinLook { body: string; lid: string; symbol: "recyclage" | "verre" | "cuisine" | "papier" | "reste" }
+// teinte : le nom de la couleur, pour retrouver la poubelle dessinée par l'atelier (livraison 4, voir tri.ts)
+export interface BinLook { body: string; lid: string; symbol: "recyclage" | "verre" | "cuisine" | "papier" | "reste"; teinte?: "jaune" | "bleu" | "vert" | "blanc" | "marron" | "gris" }
 const SYMBOL: Record<BinLook["symbol"], string> = {
   recyclage: `<g transform="translate(50 58)" fill="none" stroke="${INK}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M-9 -4 L-3 -14 Q0 -18 3 -14 L7 -8"/><path d="M4 -10 L7 -8 L9 -12"/><path d="M11 0 L5 10 Q3 13 -1 13 L-8 13"/><path d="M-5 10 L-8 13 L-5 16"/><path d="M-12 7 L-15 1 Q-16 -2 -13 -4 L-9 -4"/><path d="M-12 -7 L-9 -4 L-13 -2"/></g>`,
   verre: `<g transform="translate(50 58)"><path d="M-4 -16 H4 V-10 Q9 -6 9 2 V14 Q9 17 6 17 H-6 Q-9 17 -9 14 V2 Q-9 -6 -4 -10 Z" fill="#fff" ${K2}/></g>`,

@@ -1,6 +1,8 @@
 // Île des Découvertes — « Flotte ou coule ? » : on prédit, on teste dans le bassin d'Octave, on comprend.
 import type { Rng } from "../core";
+import { calque, vignette } from "../design/dessins";
 import type { ActivityModule, Item } from "../host";
+import { ELEMENTS } from "../illustrations";
 import { sfx } from "../services";
 import { glow, h, sleep } from "../ui";
 import { emojiStickerSVG } from "./chants";
@@ -41,8 +43,11 @@ const recent: string[] = [];
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const FEM = new Set(["la clé", "la feuille", "la plume", "la pièce", "l'ancre", "la pomme", "l'éponge", "la cuillère en métal", "la noix de coco", "la vis", "la brique", "la balle de tennis", "l'orange"]);
 const pron = (o: Obj) => (FEM.has(o.nom) ? "elle" : "il");
-const ICON_F = `<svg viewBox="0 0 80 60" aria-hidden="true" style="display:block;width:100%;height:100%"><rect x="4" y="24" width="72" height="32" rx="8" fill="#BFE8EE"/><path d="M4 26 q9 -6 18 0 q9 6 18 0 q9 -6 18 0 q9 6 18 0" fill="none" stroke="#3D8BEA" stroke-width="3" stroke-linecap="round"/><circle cx="40" cy="20" r="9" fill="#FFC145" stroke="#273043" stroke-width="2.5"/></svg>`;
-const ICON_C = `<svg viewBox="0 0 80 60" aria-hidden="true" style="display:block;width:100%;height:100%"><rect x="4" y="24" width="72" height="32" rx="8" fill="#BFE8EE"/><path d="M4 26 q9 -6 18 0 q9 6 18 0 q9 -6 18 0 q9 6 18 0" fill="none" stroke="#3D8BEA" stroke-width="3" stroke-linecap="round"/><circle cx="40" cy="46" r="9" fill="#9AA3B5" stroke="#273043" stroke-width="2.5"/><path d="M40 10 V28 M33 22 L40 29 L47 22" fill="none" stroke="#273043" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+// Livraison 4 : le bassin de verre d'Octave est dessiné (atelier : scripts/illustration/jeux_decouvertes.py). Les objets
+// tombent entre son fond (l'eau, le sable, les plantes) et son devant (les bords de verre, le socle, un voile d'eau) ;
+// la ligne d'eau et le dessus du sable viennent du dessin. Les deux réponses sont de petits bocaux dessinés.
+const ICON_F = vignette("activites/flotte-oui", "fvign"), ICON_C = vignette("activites/flotte-non", "fvign");
+const PC = (k: string, d: number) => `${+(Number(ELEMENTS["activites/bassin-fond"]?.infos?.[k] ?? d) * 100).toFixed(2)}%`;
 
 export const flotte: ActivityModule<FlotteItem> = {
   id: "flotte", title: "Flotte ou coule ?", domain: "decouvertes", island: "decouvertes", host: "octave",
@@ -69,15 +74,24 @@ export const flotte: ActivityModule<FlotteItem> = {
   },
 
   render(item, view) {
-    const objs = item.objs.map((o, i) => h("span", { class: "fobj", "data-o": o.e, style: `left:${item.objs.length === 1 ? 50 : 30 + 40 * i}%;--s:${o.s ?? 1}`, html: `<span class="emo">${o.e}</span>` }));
-    const basin = h("div", { class: "bassin" }, h("div", { class: "eau" }), ...objs);
+    const left = (i: number) => (item.objs.length === 1 ? 50 : 30 + 40 * i);
+    const objs = item.objs.map((o, i) => h("span", { class: "fobj", "data-o": o.e, style: `left:${left(i)}%;--s:${o.s ?? 1}`, html: `<span class="emo">${o.e}</span>` }));
+    const basin = h("div", { class: "bassin verre", style: `--eau:${PC("eau", 0.44)};--sable:${PC("sable", 0.8)}`, "aria-hidden": "true",
+      html: calque("activites/bassin-fond") }, ...objs);
+    basin.insertAdjacentHTML("beforeend", calque("activites/bassin-devant", "devant"));
     view.stage.appendChild(basin);
     let dropped = false, busy = false;
     const drop = async () => {
       if (dropped) return;
       dropped = true;
       sfx.hop();
-      item.objs.forEach((o, i) => objs[i].classList.add(o.flotte ? "floats" : "sinks"));
+      item.objs.forEach((o, i) => {
+        objs[i].classList.add(o.flotte ? "floats" : "sinks");
+        // une onde à la surface, quand l'objet touche l'eau
+        const onde = h("span", { class: "onde", style: `left:${left(i)}%;animation-delay:${o.flotte ? 320 : 520}ms` });
+        basin.appendChild(onde);
+        window.setTimeout(() => onde.remove(), 1400);
+      });
       await sleep(1500);
     };
     const row = h("div", { class: "choices" });

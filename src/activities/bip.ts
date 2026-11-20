@@ -1,5 +1,6 @@
 // Île des Énigmes — « Le chemin de Bip » : programmer un petit robot avec des flèches, puis trouver le bug.
 import type { Rng } from "../core";
+import { image, imgHTML, srcDe, vignette } from "../design/dessins";
 import type { ActivityModule, Item, View } from "../host";
 import { sfx } from "../services";
 import { glow, h, icon, sleep } from "../ui";
@@ -13,8 +14,13 @@ const VEC: Record<Dir, [number, number]> = { haut: [0, -1], bas: [0, 1], gauche:
 const ROT: Record<Dir, number> = { droite: 0, bas: 90, gauche: 180, haut: 270 };
 const arrowHTML = (d: Dir, color = "#273043") => `<span style="display:flex;width:100%;height:100%;align-items:center;justify-content:center;transform:rotate(${ROT[d]}deg)">${icon("arrow", color, 3)}</span>`;
 export const BIP = `<svg viewBox="0 0 60 60" aria-hidden="true" style="display:block;width:100%;height:100%"><path d="M30 14 V6" stroke="#5B6475" stroke-width="3"/><circle cx="30" cy="5" r="4" fill="#FFC145"/><rect x="10" y="14" width="40" height="32" rx="9" fill="#8C6BE0" stroke="#5B3FB8" stroke-width="2.5"/><rect x="16" y="20" width="28" height="16" rx="6" fill="#E6DEFA"/><circle cx="24" cy="28" r="3.6" fill="#273043"/><circle cx="36" cy="28" r="3.6" fill="#273043"/><path d="M25 40 Q30 43 35 40" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="50" r="5.5" fill="#273043"/><circle cx="42" cy="50" r="5.5" fill="#273043"/></svg>`;
-const STAR = `<svg viewBox="0 0 60 60" aria-hidden="true" style="display:block;width:100%;height:100%"><polygon points="30,6 37,22 54,23 41,34 45,51 30,42 15,51 19,34 6,23 23,22" fill="#FFC145" stroke="#E0A400" stroke-width="2.5" stroke-linejoin="round"/></svg>`;
-const ROCK = `<svg viewBox="0 0 60 60" aria-hidden="true" style="display:block;width:100%;height:100%"><path d="M10 46 Q8 30 20 22 Q28 12 40 18 Q54 24 52 40 Q50 50 30 50 Q14 51 10 46 Z" fill="#9AA3B5" stroke="#6B7385" stroke-width="2.5"/><path d="M22 30 Q28 26 34 30" stroke="#C9CED6" stroke-width="3" fill="none" stroke-linecap="round"/></svg>`;
+
+// Livraison 4 : le terrain de Bip est un potager dessiné (atelier : scripts/illustration/jeux_enigmes.py) : un cadre en
+// planches, des carrés d'herbe (trois variantes mêlées), des cailloux et une étoile ; Bip est le personnage de l'atelier.
+// surtout de l'herbe toute simple ; çà et là, des pâquerettes (2) ou un trèfle (3), le même dessin pour la même case
+const HERBES = "1211311121311111121313112";
+const herbe = (c: number) => { const im = image(`activites/herbe-${HERBES[c % HERBES.length]}`); return im ? srcDe(im) : ""; };
+const dessinBip = (expr: string) => { const im = image(`bip-${expr}`); return im ? srcDe(im) : ""; };
 
 const step = (cell: number, d: Dir, cols: number, rows: number): number | null => {
   const x = cell % cols, y = Math.floor(cell / cols);
@@ -115,10 +121,12 @@ export const bip: ActivityModule<BipItem> = {
     const grid = h("div", { class: "bipgrid", style: `grid-template-columns:repeat(${item.cols},1fr);grid-template-rows:repeat(${item.rows},1fr);aspect-ratio:${item.cols}/${item.rows};--ar:${(item.cols / item.rows).toFixed(3)}` });
     const cells: HTMLElement[] = [];
     for (let c = 0; c < item.cols * item.rows; c++) {
-      const cell = h("div", { class: "bipcell", "data-c": c, html: c === item.goal ? STAR : item.rocks.includes(c) ? ROCK : "" });
+      const cell = h("div", { class: "bipcell", "data-c": c, style: `background-image:url("${herbe(c)}")`,
+        html: c === item.goal ? vignette("activites/etoile") : item.rocks.includes(c) ? vignette(`activites/caillou-${1 + (c % 2)}`) : "" });
       cells.push(cell); grid.appendChild(cell);
     }
-    const robot = h("div", { class: "bipbot", html: BIP });
+    const robot = h("div", { class: "bipbot", html: imgHTML("bip-content") });
+    const visage = (expr: "content" | "surpris" | "rieur") => { const im = robot.querySelector("img"); if (im) im.src = dessinBip(expr); };
     grid.appendChild(robot);
     let at = item.start;
     const place = (c: number) => { const el = cells[c]; robot.style.transform = `translate(${el.offsetLeft}px, ${el.offsetTop}px)`; robot.style.width = `${el.offsetWidth}px`; robot.style.height = `${el.offsetHeight}px`; };
@@ -127,12 +135,13 @@ export const bip: ActivityModule<BipItem> = {
     window.addEventListener("resize", onResize);
 
     const run = async (prog: Dir[]): Promise<"ok" | "bump" | "short"> => {
-      at = item.start; place(at); await sleep(250);
+      at = item.start; place(at); visage("content"); await sleep(250);
       for (const d of prog) {
         const n = step(at, d, item.cols, item.rows);
-        if (n === null || item.rocks.includes(n)) { robot.classList.remove("bump"); void robot.offsetWidth; robot.classList.add("bump"); sfx.soft(); return "bump"; }
+        if (n === null || item.rocks.includes(n)) { robot.classList.remove("bump"); void robot.offsetWidth; robot.classList.add("bump"); visage("surpris"); sfx.soft(); return "bump"; }
         at = n; place(at); sfx.hop(); await sleep(380);
       }
+      if (at === item.goal) visage("rieur");
       return at === item.goal ? "ok" : "short";
     };
 

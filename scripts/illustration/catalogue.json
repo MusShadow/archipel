@@ -1702,6 +1702,10 @@
     1186.0,
     200.0
    ],
+   "cadre": [
+    1200,
+    200
+   ],
    "module": "activites"
   },
   "activites/nenuphar-0": {
@@ -1711,6 +1715,10 @@
     9.0,
     126.5,
     81.0
+   ],
+   "cadre": [
+    130,
+    90
    ],
    "module": "activites"
   },
@@ -1722,6 +1730,10 @@
     126.5,
     81.0
    ],
+   "cadre": [
+    130,
+    90
+   ],
    "module": "activites"
   },
   "activites/nenuphar-2": {
@@ -1732,6 +1744,10 @@
     126.5,
     81.0
    ],
+   "cadre": [
+    130,
+    90
+   ],
    "module": "activites"
   },
   "activites/grenouille-assise": {
@@ -1741,6 +1757,10 @@
     35.0,
     102.0,
     86.5
+   ],
+   "cadre": [
+    150,
+    150
    ],
    "module": "activites",
    "points": {
@@ -1758,6 +1778,10 @@
     114.0,
     121.0
    ],
+   "cadre": [
+    150,
+    150
+   ],
    "module": "activites",
    "points": {
     "pieds": [
@@ -1773,6 +1797,10 @@
     35.0,
     102.0,
     86.5
+   ],
+   "cadre": [
+    150,
+    150
    ],
    "module": "activites",
    "points": {
@@ -1790,6 +1818,10 @@
     198.0,
     197.0
    ],
+   "cadre": [
+    200,
+    200
+   ],
    "module": "activites"
   },
   "fetes/ballon-jaune": {
@@ -1799,6 +1831,10 @@
     4.0,
     89.0,
     186.0
+   ],
+   "cadre": [
+    100,
+    190
    ],
    "module": "fetes"
   },
@@ -1810,6 +1846,10 @@
     89.0,
     186.0
    ],
+   "cadre": [
+    100,
+    190
+   ],
    "module": "fetes"
   },
   "fetes/ballon-rose": {
@@ -1819,6 +1859,10 @@
     4.0,
     89.0,
     186.0
+   ],
+   "cadre": [
+    100,
+    190
    ],
    "module": "fetes"
   },
@@ -1830,6 +1874,10 @@
     89.0,
     186.0
    ],
+   "cadre": [
+    100,
+    190
+   ],
    "module": "fetes"
   },
   "fetes/ballon-bleu": {
@@ -1839,6 +1887,10 @@
     4.0,
     89.0,
     186.0
+   ],
+   "cadre": [
+    100,
+    190
    ],
    "module": "fetes"
   },
@@ -1850,6 +1902,10 @@
     89.0,
     186.0
    ],
+   "cadre": [
+    100,
+    190
+   ],
    "module": "fetes"
   },
   "fetes/ballon-vert": {
@@ -1860,6 +1916,10 @@
     89.0,
     186.0
    ],
+   "cadre": [
+    100,
+    190
+   ],
    "module": "fetes"
   },
   "fetes/roue": {
@@ -1869,6 +1929,10 @@
     1.0,
     70.0,
     69.0
+   ],
+   "cadre": [
+    70,
+    70
    ],
    "module": "fetes",
    "points": {
@@ -1885,6 +1949,10 @@
     28.5,
     285.0,
     141.5
+   ],
+   "cadre": [
+    300,
+    170
    ],
    "module": "fetes",
    "points": {
@@ -1912,6 +1980,10 @@
     45.5,
     405.5,
     184.5
+   ],
+   "cadre": [
+    420,
+    230
    ],
    "module": "fetes",
    "points": {
@@ -1948,6 +2020,10 @@
     51.5,
     44.0
    ],
+   "cadre": [
+    60,
+    50
+   ],
    "module": "fetes",
    "points": {
     "socle": [
@@ -1963,6 +2039,10 @@
     8.0,
     112.5,
     226.5
+   ],
+   "cadre": [
+    140,
+    270
    ],
    "module": "fetes",
    "points": {
@@ -1980,6 +2060,10 @@
     64.0,
     113.5
    ],
+   "cadre": [
+    80,
+    120
+   ],
    "module": "fetes",
    "points": {
     "haut": [
@@ -1995,6 +2079,10 @@
     39.0,
     380.0,
     211.0
+   ],
+   "cadre": [
+    380,
+    250
    ],
    "module": "fetes",
    "points": {
@@ -2012,6 +2100,10 @@
     1000.0,
     91.0
    ],
+   "cadre": [
+    1000,
+    120
+   ],
    "module": "fetes"
   },
   "carte/mer": {
@@ -2022,6 +2114,10 @@
     1194.0,
     1194.0
    ],
+   "cadre": [
+    1194,
+    1194
+   ],
    "module": "carte"
   },
   "carte/ile-nombres": {
@@ -2031,6 +2127,10 @@
     89.0,
     331.5,
     243.0
+   ],
+   "cadre": [
+    380,
+    360
    ],
    "module": "carte",
    "points": {
@@ -2048,6 +2148,10 @@
     319.0,
     233.5
    ],
+   "cadre": [
+    380,
+    360
+   ],
    "module": "carte",
    "points": {
     "centre": [
@@ -2063,6 +2167,10 @@
     87.0,
     314.0,
     242.0
+   ],
+   "cadre": [
+    380,
+    360
    ],
    "module": "carte",
    "points": {
@@ -2080,6 +2188,10 @@
     319.0,
     248.5
    ],
+   "cadre": [
+    380,
+    360
+   ],
    "module": "carte",
    "points": {
     "centre": [
@@ -2095,6 +2207,10 @@
     68.5,
     329.5,
     274.0
+   ],
+   "cadre": [
+    380,
+    360
    ],
    "module": "carte",
    "points": {
@@ -2112,6 +2228,10 @@
     299.5,
     234.0
    ],
+   "cadre": [
+    380,
+    360
+   ],
    "module": "carte",
    "points": {
     "centre": [
@@ -2127,6 +2247,10 @@
     92.0,
     300.0,
     240.0
+   ],
+   "cadre": [
+    380,
+    360
    ],
    "module": "carte",
    "points": {
@@ -2144,6 +2268,10 @@
     84.0,
     85.0
    ],
+   "cadre": [
+    100,
+    100
+   ],
    "module": "carte"
   },
   "carte/lune": {
@@ -2153,6 +2281,10 @@
     20.5,
     61.0,
     64.0
+   ],
+   "cadre": [
+    100,
+    100
    ],
    "module": "carte"
   },
@@ -2164,6 +2296,10 @@
     1194.0,
     834.0
    ],
+   "cadre": [
+    1194,
+    834
+   ],
    "module": "accueil"
   },
   "accueil/compagnon-renard": {
@@ -2173,6 +2309,10 @@
     31.0,
     158.5,
     225.5
+   ],
+   "cadre": [
+    240,
+    260
    ],
    "module": "accueil",
    "points": {
@@ -2199,6 +2339,10 @@
     142.0,
     256.0
    ],
+   "cadre": [
+    240,
+    260
+   ],
    "module": "accueil",
    "points": {
     "disque": [
@@ -2223,6 +2367,10 @@
     56.0,
     164.5,
     200.5
+   ],
+   "cadre": [
+    240,
+    260
    ],
    "module": "accueil",
    "points": {
@@ -2249,6 +2397,10 @@
     152.5,
     220.0
    ],
+   "cadre": [
+    240,
+    260
+   ],
    "module": "accueil",
    "points": {
     "disque": [
@@ -2273,6 +2425,10 @@
     57.0,
     162.5,
     199.5
+   ],
+   "cadre": [
+    240,
+    260
    ],
    "module": "accueil",
    "points": {
@@ -2299,6 +2455,10 @@
     184.5,
     213.5
    ],
+   "cadre": [
+    240,
+    260
+   ],
    "module": "accueil",
    "points": {
     "disque": [
@@ -2323,6 +2483,10 @@
     61.5,
     142.0,
     195.0
+   ],
+   "cadre": [
+    240,
+    260
    ],
    "module": "accueil",
    "points": {
@@ -2349,6 +2513,10 @@
     221.0,
     191.0
    ],
+   "cadre": [
+    240,
+    260
+   ],
    "module": "accueil",
    "points": {
     "disque": [
@@ -2374,6 +2542,10 @@
     141.0,
     90.0
    ],
+   "cadre": [
+    160,
+    110
+   ],
    "module": "accueil",
    "points": {
     "base": [
@@ -2392,6 +2564,10 @@
     15.5,
     141.0,
     90.0
+   ],
+   "cadre": [
+    160,
+    110
    ],
    "module": "accueil",
    "points": {
@@ -2412,6 +2588,10 @@
     141.0,
     90.0
    ],
+   "cadre": [
+    160,
+    110
+   ],
    "module": "accueil",
    "points": {
     "base": [
@@ -2430,6 +2610,10 @@
     15.5,
     141.0,
     90.0
+   ],
+   "cadre": [
+    160,
+    110
    ],
    "module": "accueil",
    "points": {
@@ -2450,6 +2634,10 @@
     141.0,
     90.0
    ],
+   "cadre": [
+    160,
+    110
+   ],
    "module": "accueil",
    "points": {
     "base": [
@@ -2468,6 +2656,10 @@
     15.5,
     141.0,
     90.0
+   ],
+   "cadre": [
+    160,
+    110
    ],
    "module": "accueil",
    "points": {
@@ -2488,6 +2680,10 @@
     141.0,
     90.0
    ],
+   "cadre": [
+    160,
+    110
+   ],
    "module": "accueil",
    "points": {
     "base": [
@@ -2507,6 +2703,10 @@
     748.0,
     330.0
    ],
+   "cadre": [
+    760,
+    330
+   ],
    "module": "activites"
   },
   "visages/basile-content": {
@@ -2516,6 +2716,10 @@
     26.0,
     142.0,
     134.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2527,6 +2731,10 @@
     160.0,
     150.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/basile-triste": {
@@ -2536,6 +2744,10 @@
     10.0,
     160.0,
     150.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2547,6 +2759,10 @@
     160.0,
     150.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/basile-peur": {
@@ -2556,6 +2772,10 @@
     10.0,
     160.0,
     150.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2567,6 +2787,10 @@
     160.0,
     150.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/basile-decu": {
@@ -2576,6 +2800,10 @@
     10.0,
     160.0,
     150.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2587,6 +2815,10 @@
     118.5,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/mona-joie": {
@@ -2596,6 +2828,10 @@
     0.0,
     134.5,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2607,6 +2843,10 @@
     134.5,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/mona-colere": {
@@ -2616,6 +2856,10 @@
     0.0,
     156.0,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2627,6 +2871,10 @@
     134.5,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/mona-surprise": {
@@ -2636,6 +2884,10 @@
     0.0,
     152.0,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2647,6 +2899,10 @@
     134.5,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/rico-content": {
@@ -2656,6 +2912,10 @@
     15.5,
     148.5,
     144.5
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2667,6 +2927,10 @@
     160.0,
     159.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/rico-triste": {
@@ -2676,6 +2940,10 @@
     1.0,
     160.0,
     159.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2687,6 +2955,10 @@
     160.0,
     159.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/rico-peur": {
@@ -2696,6 +2968,10 @@
     1.0,
     160.0,
     159.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2707,6 +2983,10 @@
     160.0,
     159.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/rico-decu": {
@@ -2716,6 +2996,10 @@
     1.0,
     160.0,
     159.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2727,6 +3011,10 @@
     160.0,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/octave-joie": {
@@ -2736,6 +3024,10 @@
     0.0,
     160.0,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2747,6 +3039,10 @@
     160.0,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/octave-colere": {
@@ -2756,6 +3052,10 @@
     0.0,
     160.0,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2767,6 +3067,10 @@
     160.0,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/octave-surprise": {
@@ -2776,6 +3080,10 @@
     0.0,
     160.0,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2787,6 +3095,10 @@
     160.0,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/kiki-content": {
@@ -2796,6 +3108,10 @@
     13.0,
     134.0,
     147.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2807,6 +3123,10 @@
     125.5,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/kiki-triste": {
@@ -2816,6 +3136,10 @@
     0.0,
     125.5,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2827,6 +3151,10 @@
     156.0,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/kiki-peur": {
@@ -2836,6 +3164,10 @@
     0.0,
     125.5,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2847,6 +3179,10 @@
     152.0,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/kiki-decu": {
@@ -2856,6 +3192,10 @@
     0.0,
     125.5,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2867,6 +3207,10 @@
     160.0,
     153.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/pico-joie": {
@@ -2876,6 +3220,10 @@
     0.0,
     160.0,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2887,6 +3235,10 @@
     160.0,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/pico-colere": {
@@ -2896,6 +3248,10 @@
     0.0,
     160.0,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2907,6 +3263,10 @@
     160.0,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/pico-surprise": {
@@ -2916,6 +3276,10 @@
     0.0,
     160.0,
     160.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2927,6 +3291,10 @@
     160.0,
     160.0
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/plume-content": {
@@ -2936,6 +3304,10 @@
     30.0,
     160.0,
     130.0
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2947,6 +3319,10 @@
     160.0,
     105.5
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/plume-triste": {
@@ -2956,6 +3332,10 @@
     54.5,
     160.0,
     105.5
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2967,6 +3347,10 @@
     160.0,
     137.5
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/plume-peur": {
@@ -2976,6 +3360,10 @@
     26.5,
     160.0,
     133.5
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -2987,6 +3375,10 @@
     160.0,
     136.5
    ],
+   "cadre": [
+    160,
+    160
+   ],
    "module": "visages"
   },
   "visages/plume-decu": {
@@ -2996,6 +3388,10 @@
     54.5,
     160.0,
     105.5
+   ],
+   "cadre": [
+    160,
+    160
    ],
    "module": "visages"
   },
@@ -3007,6 +3403,10 @@
     1194.0,
     834.0
    ],
+   "cadre": [
+    1194,
+    834
+   ],
    "module": "fin"
   },
   "fin/soleil": {
@@ -3016,6 +3416,10 @@
     0.0,
     240.0,
     240.0
+   ],
+   "cadre": [
+    240,
+    240
    ],
    "module": "fin",
    "points": {
@@ -3038,6 +3442,10 @@
     1194.0,
     834.0
    ],
+   "cadre": [
+    1194,
+    834
+   ],
    "module": "calme"
   },
   "calme/pico": {
@@ -3047,6 +3455,10 @@
     56.5,
     230.5,
     253.0
+   ],
+   "cadre": [
+    300,
+    320
    ],
    "module": "calme",
    "points": {
@@ -3064,6 +3476,10 @@
     230.5,
     253.0
    ],
+   "cadre": [
+    300,
+    320
+   ],
    "module": "calme",
    "points": {
     "pieds": [
@@ -3080,6 +3496,10 @@
     991.0,
     249.0
    ],
+   "cadre": [
+    1000,
+    300
+   ],
    "module": "jeux",
    "infos": {
     "interieur": "90,96,910,232"
@@ -3092,6 +3512,10 @@
     38.5,
     383.0,
     341.5
+   ],
+   "cadre": [
+    400,
+    380
    ],
    "module": "jeux",
    "points": {
@@ -3108,6 +3532,10 @@
     17.0,
     548.5,
     263.0
+   ],
+   "cadre": [
+    560,
+    280
    ],
    "module": "jeux",
    "points": {
@@ -3161,6 +3589,10 @@
     120.0,
     150.0
    ],
+   "cadre": [
+    140,
+    150
+   ],
    "module": "jeux",
    "points": {
     "etiquette": [
@@ -3177,6 +3609,10 @@
     220.0,
     144.5
    ],
+   "cadre": [
+    220,
+    150
+   ],
    "module": "jeux"
   },
   "activites/assiette": {
@@ -3186,6 +3622,10 @@
     10.5,
     420.0,
     229.5
+   ],
+   "cadre": [
+    420,
+    240
    ],
    "module": "jeux"
   },
@@ -3197,10 +3637,766 @@
     300.0,
     200.0
    ],
+   "cadre": [
+    300,
+    200
+   ],
    "module": "jeux",
    "infos": {
     "bord": 40
    }
+  },
+  "activites/bassin-fond": {
+   "fichier": "activites/bassin-fond.webp",
+   "boite": [
+    9.0,
+    18.5,
+    582.0,
+    281.5
+   ],
+   "cadre": [
+    600,
+    300
+   ],
+   "module": "jeux_decouvertes",
+   "infos": {
+    "eau": 0.44,
+    "sable": 0.8
+   }
+  },
+  "activites/bassin-devant": {
+   "fichier": "activites/bassin-devant.webp",
+   "boite": [
+    0.0,
+    8.5,
+    600.0,
+    291.5
+   ],
+   "cadre": [
+    600,
+    300
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/flotte-oui": {
+   "fichier": "activites/flotte-oui.webp",
+   "boite": [
+    11.0,
+    28.5,
+    138.0,
+    91.5
+   ],
+   "cadre": [
+    160,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/flotte-non": {
+   "fichier": "activites/flotte-non.webp",
+   "boite": [
+    11.0,
+    0.0,
+    138.0,
+    120.0
+   ],
+   "cadre": [
+    160,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/perle-cercle-rouge": {
+   "fichier": "activites/perle-cercle-rouge.webp",
+   "boite": [
+    13.5,
+    15.5,
+    95.0,
+    93.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-cercle-bleu": {
+   "fichier": "activites/perle-cercle-bleu.webp",
+   "boite": [
+    13.5,
+    15.5,
+    95.0,
+    93.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-cercle-jaune": {
+   "fichier": "activites/perle-cercle-jaune.webp",
+   "boite": [
+    13.5,
+    15.5,
+    95.0,
+    93.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-cercle-vert": {
+   "fichier": "activites/perle-cercle-vert.webp",
+   "boite": [
+    13.5,
+    15.5,
+    95.0,
+    93.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-carre-rouge": {
+   "fichier": "activites/perle-carre-rouge.webp",
+   "boite": [
+    17.5,
+    18.5,
+    87.0,
+    87.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-carre-bleu": {
+   "fichier": "activites/perle-carre-bleu.webp",
+   "boite": [
+    17.5,
+    18.5,
+    87.0,
+    87.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-carre-jaune": {
+   "fichier": "activites/perle-carre-jaune.webp",
+   "boite": [
+    17.5,
+    18.5,
+    87.0,
+    87.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-carre-vert": {
+   "fichier": "activites/perle-carre-vert.webp",
+   "boite": [
+    17.5,
+    18.5,
+    87.0,
+    87.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-triangle-rouge": {
+   "fichier": "activites/perle-triangle-rouge.webp",
+   "boite": [
+    13.5,
+    20.0,
+    95.0,
+    84.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-triangle-bleu": {
+   "fichier": "activites/perle-triangle-bleu.webp",
+   "boite": [
+    13.5,
+    20.0,
+    95.0,
+    84.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-triangle-jaune": {
+   "fichier": "activites/perle-triangle-jaune.webp",
+   "boite": [
+    13.5,
+    20.0,
+    95.0,
+    84.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-triangle-vert": {
+   "fichier": "activites/perle-triangle-vert.webp",
+   "boite": [
+    13.5,
+    20.0,
+    95.0,
+    84.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-etoile-rouge": {
+   "fichier": "activites/perle-etoile-rouge.webp",
+   "boite": [
+    13.5,
+    15.5,
+    95.0,
+    91.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-etoile-bleu": {
+   "fichier": "activites/perle-etoile-bleu.webp",
+   "boite": [
+    13.5,
+    15.5,
+    95.0,
+    91.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-etoile-jaune": {
+   "fichier": "activites/perle-etoile-jaune.webp",
+   "boite": [
+    13.5,
+    15.5,
+    95.0,
+    91.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-etoile-vert": {
+   "fichier": "activites/perle-etoile-vert.webp",
+   "boite": [
+    13.5,
+    15.5,
+    95.0,
+    91.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-coeur-rouge": {
+   "fichier": "activites/perle-coeur-rouge.webp",
+   "boite": [
+    14.5,
+    33.0,
+    93.0,
+    83.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-coeur-bleu": {
+   "fichier": "activites/perle-coeur-bleu.webp",
+   "boite": [
+    14.5,
+    33.0,
+    93.0,
+    83.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-coeur-jaune": {
+   "fichier": "activites/perle-coeur-jaune.webp",
+   "boite": [
+    14.5,
+    33.0,
+    93.0,
+    83.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/perle-coeur-vert": {
+   "fichier": "activites/perle-coeur-vert.webp",
+   "boite": [
+    14.5,
+    33.0,
+    93.0,
+    83.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/plateau-perles": {
+   "fichier": "activites/plateau-perles.webp",
+   "boite": [
+    0.0,
+    0.0,
+    300.0,
+    300.0
+   ],
+   "cadre": [
+    300,
+    300
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/alveole": {
+   "fichier": "activites/alveole.webp",
+   "boite": [
+    4.5,
+    4.5,
+    91.5,
+    91.5
+   ],
+   "cadre": [
+    100,
+    100
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/potager": {
+   "fichier": "activites/potager.webp",
+   "boite": [
+    0.0,
+    0.0,
+    300.0,
+    240.0
+   ],
+   "cadre": [
+    300,
+    240
+   ],
+   "module": "jeux_enigmes",
+   "infos": {
+    "bord": 22
+   }
+  },
+  "activites/herbe-1": {
+   "fichier": "activites/herbe-1.webp",
+   "boite": [
+    1.5,
+    1.5,
+    97.5,
+    97.5
+   ],
+   "cadre": [
+    100,
+    100
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/herbe-2": {
+   "fichier": "activites/herbe-2.webp",
+   "boite": [
+    1.5,
+    1.5,
+    97.5,
+    97.5
+   ],
+   "cadre": [
+    100,
+    100
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/herbe-3": {
+   "fichier": "activites/herbe-3.webp",
+   "boite": [
+    1.5,
+    1.5,
+    97.5,
+    97.5
+   ],
+   "cadre": [
+    100,
+    100
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/caillou-1": {
+   "fichier": "activites/caillou-1.webp",
+   "boite": [
+    8.0,
+    22.5,
+    92.0,
+    77.5
+   ],
+   "cadre": [
+    100,
+    100
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/caillou-2": {
+   "fichier": "activites/caillou-2.webp",
+   "boite": [
+    9.5,
+    22.0,
+    90.5,
+    78.0
+   ],
+   "cadre": [
+    100,
+    100
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/etoile": {
+   "fichier": "activites/etoile.webp",
+   "boite": [
+    5.5,
+    7.5,
+    91.5,
+    92.5
+   ],
+   "cadre": [
+    100,
+    100
+   ],
+   "module": "jeux_enigmes"
+  },
+  "activites/poubelle-jaune-recyclage": {
+   "fichier": "activites/poubelle-jaune-recyclage.webp",
+   "boite": [
+    14.5,
+    35.5,
+    103.5,
+    84.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/poubelle-bleu-papier": {
+   "fichier": "activites/poubelle-bleu-papier.webp",
+   "boite": [
+    14.5,
+    35.5,
+    103.5,
+    84.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/poubelle-vert-verre": {
+   "fichier": "activites/poubelle-vert-verre.webp",
+   "boite": [
+    14.5,
+    35.5,
+    103.5,
+    84.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/poubelle-blanc-verre": {
+   "fichier": "activites/poubelle-blanc-verre.webp",
+   "boite": [
+    14.5,
+    35.5,
+    103.5,
+    84.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/poubelle-marron-cuisine": {
+   "fichier": "activites/poubelle-marron-cuisine.webp",
+   "boite": [
+    14.5,
+    35.5,
+    103.5,
+    84.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/poubelle-gris-reste": {
+   "fichier": "activites/poubelle-gris-reste.webp",
+   "boite": [
+    14.5,
+    35.5,
+    103.5,
+    84.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/poubelle-vert-reste": {
+   "fichier": "activites/poubelle-vert-reste.webp",
+   "boite": [
+    14.5,
+    35.5,
+    103.5,
+    84.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/couvercle-jaune": {
+   "fichier": "activites/couvercle-jaune.webp",
+   "boite": [
+    9.0,
+    19.5,
+    104.0,
+    30.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/couvercle-bleu": {
+   "fichier": "activites/couvercle-bleu.webp",
+   "boite": [
+    9.0,
+    19.5,
+    104.0,
+    30.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/couvercle-vert": {
+   "fichier": "activites/couvercle-vert.webp",
+   "boite": [
+    9.0,
+    19.5,
+    104.0,
+    30.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/couvercle-blanc": {
+   "fichier": "activites/couvercle-blanc.webp",
+   "boite": [
+    9.0,
+    19.5,
+    104.0,
+    30.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/couvercle-marron": {
+   "fichier": "activites/couvercle-marron.webp",
+   "boite": [
+    9.0,
+    19.5,
+    104.0,
+    30.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/couvercle-gris": {
+   "fichier": "activites/couvercle-gris.webp",
+   "boite": [
+    9.0,
+    19.5,
+    104.0,
+    30.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/composteur": {
+   "fichier": "activites/composteur.webp",
+   "boite": [
+    12.0,
+    25.5,
+    108.0,
+    94.5
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/composteur-couvercle": {
+   "fichier": "activites/composteur-couvercle.webp",
+   "boite": [
+    8.0,
+    25.5,
+    106.0,
+    26.0
+   ],
+   "cadre": [
+    120,
+    120
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/volcan-coupe": {
+   "fichier": "activites/volcan-coupe.webp",
+   "boite": [
+    10.5,
+    101.0,
+    579.5,
+    379.0
+   ],
+   "cadre": [
+    600,
+    480
+   ],
+   "module": "jeux_decouvertes",
+   "infos": {
+    "echelle": 3
+   }
+  },
+  "activites/volcan-cratere-lave": {
+   "fichier": "activites/volcan-cratere-lave.webp",
+   "boite": [
+    244.5,
+    79.0,
+    111.0,
+    64.0
+   ],
+   "cadre": [
+    600,
+    480
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/volcan-coulee": {
+   "fichier": "activites/volcan-coulee.webp",
+   "boite": [
+    331.5,
+    113.5,
+    213.5,
+    208.0
+   ],
+   "cadre": [
+    600,
+    480
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/volcan-nuage": {
+   "fichier": "activites/volcan-nuage.webp",
+   "boite": [
+    167.5,
+    1.5,
+    232.5,
+    124.0
+   ],
+   "cadre": [
+    600,
+    480
+   ],
+   "module": "jeux_decouvertes"
+  },
+  "activites/volcan-jet": {
+   "fichier": "activites/volcan-jet.webp",
+   "boite": [
+    219.0,
+    0.0,
+    162.0,
+    123.5
+   ],
+   "cadre": [
+    600,
+    480
+   ],
+   "module": "jeux_decouvertes"
   }
  }
 }

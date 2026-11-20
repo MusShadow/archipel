@@ -1,6 +1,7 @@
 // Dessins du « volcan d'Octave » : le volcan coupé en deux (touchable), les étapes de l'éruption, volcans rouges et
 // gris, endormis ou réveillés, la lave, le matériel des volcanologues, des volcans du monde, les gommettes.
 // Même style que la goutte : trait encre, couleurs douces, carré de 100 × 100 (le volcan coupé : 200 × 160).
+import { image, srcDe } from "../design/dessins";
 const INK = "#273043";
 const K = `stroke="${INK}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"`;
 const K2 = `stroke="${INK}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"`;
@@ -61,43 +62,49 @@ function volcano(o: V = {}): string {
 
 // ---------- Le volcan coupé en deux (200 × 160), parties touchables ----------
 // Chaque partie est un groupe data-t avec une zone de toucher généreuse (class « hit »), pour de petits doigts.
+// Livraison 4 : le volcan est dessiné (atelier : scripts/illustration/jeux_decouvertes.py), dans le même repère, trois
+// fois plus grand : la terre en couches, la poche de magma, la cheminée vide et le cratère forment le fond ; la lave du
+// cratère, la coulée, le nuage de cendres et le jet de l'éruption sont posés par-dessus. Le magma qui monte dans la
+// cheminée reste tracé ici (son niveau suit le doigt).
 export const COUPE_PARTS = ["chambre", "cheminee", "cratere", "coulee", "cendres"] as const;
 export type CoupePart = (typeof COUPE_PARTS)[number];
 export const CHIMNEY = { x: 100, top: 42, bottom: 126, w: 13 };
 export const FLOW_PATH = "M113 41 C122 48 132 58 142 69 C152 80 162 92 171 103";
 const FLOW_HIT = "M127 54 C135 62 144 71 152 80 C159 88 165 95 170 101";
+/** Une image de l'atelier à sa place dans le repère du volcan coupé (sa boîte, divisée par l'échelle du dessin).
+ *  Elle ne prend jamais le doigt (une image SVG se touche sur tout son rectangle, même transparent) : seules les zones
+ *  « hit » répondent, comme avant. */
+export function imageCoupe(nom: string, cls = "", extra = ""): string {
+  const im = image(`activites/volcan-${nom}`);
+  if (!im) return "";
+  const k = Number(image("activites/volcan-coupe")?.infos?.echelle ?? 3);
+  const [x, y, l, ht] = im.boite.map((v) => (v / k).toFixed(2));
+  return `<image${cls ? ` class="${cls}"` : ""} href="${srcDe(im)}" x="${x}" y="${y}" width="${l}" height="${ht}" preserveAspectRatio="none" pointer-events="none"${extra}/>`;
+}
+// Le magma de la cheminée : rouge sur les bords, jaune au cœur.
+const MAGMA_DEFS = `<defs><linearGradient id="vmagma-grad" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="${LAVA_D}"/>`
+  + `<stop offset=".42" stop-color="${LAVA}"/><stop offset=".5" stop-color="${LAVA_L}"/><stop offset=".58" stop-color="${LAVA}"/><stop offset="1" stop-color="${LAVA_D}"/></linearGradient></defs>`;
 export function coupeSVG(o: { flow?: boolean; cloud?: boolean; level?: number; tappable?: boolean } = {}): string {
   const flow = o.flow ?? true, cloud = o.cloud ?? true, level = o.level ?? 1;
   const g = (id: CoupePart, inner: string, hit: string) =>
     o.tappable === false ? inner : `<g data-t="${id}" class="vpart" role="button" aria-label="${PART_LABEL[id]}">${inner}${hit}</g>`;
   const top = CHIMNEY.bottom - level * (CHIMNEY.bottom - CHIMNEY.top);
-  let s = "";
-  // Terre, sous le volcan.
-  s += `<path d="M4 104 H196 V152 Q196 157 191 157 H9 Q4 157 4 152 Z" fill="${SOIL}" ${K}/>`
-    + `<path d="M4 120 Q40 115 70 119 M130 118 Q160 114 196 119 M4 140 Q30 136 56 139 M146 139 Q170 135 196 139" fill="none" stroke="${ROCK_IN}" stroke-width="2.4" stroke-linecap="round"/>`;
-  // Le volcan, coupé : on voit les couches de vieilles laves.
-  s += `<path d="M22 104 L84 40 Q100 34 116 40 L178 104 Z" fill="${ROCK}" ${K}/>`
-    + `<path d="M44 92 Q60 76 76 64 M156 92 Q140 76 124 64 M62 100 Q72 88 82 80 M138 100 Q128 88 118 80" fill="none" stroke="${ROCK_IN}" stroke-width="2.4" stroke-linecap="round"/>`
-    + `<path d="M4 104 H22 M178 104 H196" ${K}/><path d="M6 101 q4 -4 8 0 q4 -4 8 0 M180 101 q4 -4 8 0 q4 -4 8 0" fill="none" stroke="${TREE}" stroke-width="2.4" stroke-linecap="round"/>`;
-  // La poche de magma.
-  s += g("chambre", `<ellipse cx="100" cy="138" rx="42" ry="14" fill="${LAVA_D}" ${K}/><ellipse cx="96" cy="135" rx="26" ry="6" fill="${LAVA}"/><ellipse cx="90" cy="133.5" rx="9" ry="2.4" fill="${LAVA_L}"/>`,
-    `<rect class="hit" x="54" y="122" width="92" height="34" rx="14" fill="none" pointer-events="all"/>`);
-  // La cheminée, et le magma qui y monte (niveau 0 à 1).
+  let s = MAGMA_DEFS + imageCoupe("coupe");
+  // La poche de magma (dessinée dans le fond).
+  s += g("chambre", "", `<rect class="hit" x="54" y="122" width="92" height="34" rx="14" fill="none" pointer-events="all"/>`);
+  // Le magma qui monte dans la cheminée (niveau 0 à 1).
   const x0 = CHIMNEY.x - CHIMNEY.w / 2;
-  s += g("cheminee", `<rect x="${x0}" y="${CHIMNEY.top}" width="${CHIMNEY.w}" height="${CHIMNEY.bottom - CHIMNEY.top}" fill="#6B4A30" ${K2}/>`
-    + `<rect class="vmagma" x="${x0 + 1.4}" y="${top.toFixed(1)}" width="${CHIMNEY.w - 2.8}" height="${(CHIMNEY.bottom - top).toFixed(1)}" fill="${LAVA_D}"/>`
-    + `<rect class="vmagma-l" x="${x0 + 3.4}" y="${top.toFixed(1)}" width="3" height="${(CHIMNEY.bottom - top).toFixed(1)}" fill="${LAVA_L}" opacity=".8"/>`,
+  s += g("cheminee", `<rect class="vmagma" x="${x0 + 1.4}" y="${top.toFixed(1)}" width="${CHIMNEY.w - 2.8}" height="${(CHIMNEY.bottom - top).toFixed(1)}" fill="url(#vmagma-grad)"/>`
+    + `<rect class="vmagma-l" x="${x0 + 5.6}" y="${top.toFixed(1)}" width="1.8" height="${(CHIMNEY.bottom - top).toFixed(1)}" fill="#FFE07A" opacity=".55"/>`,
     `<rect class="hit" x="${CHIMNEY.x - 15}" y="52" width="30" height="${CHIMNEY.bottom - 54}" fill="none" pointer-events="all"/>`);
-  // Le cratère.
-  s += g("cratere", `<path d="M84 40 Q100 33 116 40 Q100 47 84 40 Z" fill="${level >= 1 ? LAVA : "#6B4A30"}" ${K2}/>`,
+  // Le cratère : la lave y brille quand le magma est arrivé en haut.
+  s += g("cratere", imageCoupe("cratere-lave", "vcratere-lave", level >= 1 ? "" : ` style="opacity:0"`),
     `<rect class="hit" x="80" y="28" width="40" height="22" rx="8" fill="none" pointer-events="all"/>`);
   // La lave qui coule sur la pente.
-  if (flow) s += g("coulee", `<path class="vflow" d="${FLOW_PATH}" fill="none" stroke="${LAVA_D}" stroke-width="10" stroke-linecap="round"/>`
-    + `<path class="vflow" d="${FLOW_PATH}" fill="none" stroke="${LAVA_L}" stroke-width="3.4" stroke-linecap="round"/>`,
+  if (flow) s += g("coulee", imageCoupe("coulee"),
     `<path class="hit" d="${FLOW_HIT}" fill="none" stroke="#000" stroke-opacity="0" stroke-width="30" stroke-linecap="round" pointer-events="stroke"/>`);
   // Le nuage de cendres.
-  if (cloud) s += g("cendres", `<g class="vcloud"><path d="M70 28 C60 28 59 15 70 14 C70 4 84 0 90 6 C95 -1 112 0 113 8 C124 6 131 18 122 23 C125 31 113 33 108 29 L104 33 H96 L92 29 C86 33 72 34 70 28 Z" fill="${ASH}" ${K}/>`
-    + `<path d="M78 19 C80 13 87 12 89 16 M103 11 C107 8 113 10 113 14" fill="none" stroke="${ASH_L}" stroke-width="2.6" stroke-linecap="round"/></g>`,
+  if (cloud) s += g("cendres", `<g class="vcloud">${imageCoupe("nuage")}</g>`,
     `<rect class="hit" x="58" y="0" width="84" height="29" rx="10" fill="none" pointer-events="all"/>`);
   return `<svg viewBox="0 0 200 160" aria-label="Un volcan coupé en deux" style="display:block;width:100%;height:100%;overflow:visible">${s}</svg>`;
 }
