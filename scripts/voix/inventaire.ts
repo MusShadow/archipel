@@ -235,8 +235,8 @@ add("Voici ton carnet. Touche une gommette pour savoir pourquoi tu l'as gagnée.
 add("Celle-ci, c'est ton passeport d'explorateur : tu as réussi le grand départ !");
 {
   // livraison 3 : le carnet qu'on feuillette, Plume nomme chaque rubrique en y arrivant
-  const { PAROLES_CARNET } = await import("../../src/screens/carnet");
-  for (const t of Object.values(PAROLES_CARNET)) add(t);
+  const { PAROLES_CARNET, VIDES_CARNET } = await import("../../src/screens/carnet");
+  for (const t of [...Object.values(PAROLES_CARNET), ...Object.values(VIDES_CARNET)]) add(t);
 }
 where = "fin";
 for (const list of Object.values(DEFIS)) for (const defi of list) {

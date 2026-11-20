@@ -3881,6 +3881,12 @@
 "per": 0.0,
 "spelling": null
 },
+"un visage en colère a les sourcils froncés et de la fumée lui sort de la tête|.": {
+"h": "6b2cc70034f65a11",
+"say": "Un visage en colère a les sourcils froncés, et de la fumée lui sort de la tête.",
+"per": 0.0,
+"spelling": null
+},
 "un visage en colère a les sourcils froncés|.": {
 "h": "2023b0c4fa2c76ba",
 "say": "Un visage en colère a les sourcils froncés.",
@@ -3890,6 +3896,12 @@
 "un visage qui a peur a les yeux grands ouverts et la bouche tremblante|.": {
 "h": "f0805262249d340f",
 "say": "Un visage qui a peur a les yeux grands ouverts et la bouche tremblante.",
+"per": 0.0,
+"spelling": null
+},
+"un visage qui a peur a les yeux grands ouverts la bouche qui tremble et une goutte de sueur|.": {
+"h": "337e97105d37a19b",
+"say": "Un visage qui a peur a les yeux grands ouverts, la bouche qui tremble, et une goutte de sueur.",
 "per": 0.0,
 "spelling": null
 },
@@ -9263,6 +9275,12 @@
 "per": 0.0,
 "spelling": null
 },
+"ton carnet attend ses premières gommettes|.": {
+"h": "46dcca0bc99a203e",
+"say": "Ton carnet attend ses premières gommettes !",
+"per": 0.0,
+"spelling": null
+},
 "ton défi pour la maison après la douche regarde la buée sur le miroir c'est la vapeur qui redevient de l'eau|.": {
 "h": "432b1408f822a57d",
 "say": "Ton défi pour la maison : Après la douche, regarde la buée sur le miroir : c'est la vapeur qui redevient de l'eau.",
@@ -9836,6 +9854,18 @@
 "une nouvelle terre|.": {
 "h": "89a365a1dc5fff4c",
 "say": "Une nouvelle terre.",
+"per": 0.0,
+"spelling": null
+},
+"va au port des voyages pour découvrir tes premiers drapeaux|.": {
+"h": "5b8c2ea1ab47a99c",
+"say": "Va au Port des Voyages pour découvrir tes premiers drapeaux.",
+"per": 0.0,
+"spelling": null
+},
+"va sur l'île de l'atelier pour dessiner avec kiki|.": {
+"h": "ce0cb8b5a7d40267",
+"say": "Va sur l'ile de l'Atelier pour dessiner avec Kiki.",
 "per": 0.0,
 "spelling": null
 },

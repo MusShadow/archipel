@@ -12,7 +12,7 @@ CORAIL, CORAIL_F, CREME = "#FF7F50", "#E2603A", "#FFF4E2"
 DISPOSITION = {
     "emplacements": {"A": (318, 470), "B": (842, 496), "C": (560, 660), "D": (590, 398), "E": (990, 640), "F": (232, 652)},
     "lieux": {"lis": "A", "syllabes": "B", "chants": "C", "histoires": "E"},
-    "pastilles": {"lis": (318, 606), "syllabes": (842, 622), "chants": (560, 758), "histoires": (956, 724)},
+    "pastilles": {"lis": (318, 606), "syllabes": (842, 540), "chants": (560, 758), "histoires": (952, 736)},
     "plume": (726, 330),
     "animes": ["mona"],
 }
@@ -65,7 +65,7 @@ def lis(R):
 
 def syllabes(R):
     """L'atelier des syllabes : l'établi, les cubes à lettres, le parasol corail."""
-    x, y = 842, 506
+    x, y = 842, 494
     # parasol
     C.poteau(R, x + 54, y, 150)
     dome = R.mask(catmull([(x - 40, y - 132), (x + 4, y - 174), (x + 54, y - 186), (x + 104, y - 174), (x + 148, y - 132), (x + 54, y - 140)], n=10))
@@ -105,7 +105,9 @@ def chants(R):
 
 def histoires(R):
     """Mes histoires : le grand livre ouvert sur son pupitre, sous un arbre, et un coussin pour écouter."""
-    x, y = 962, 652
+    x, y = 962, 680
+    # un peu plus petit et plus bas : l'étiquette de l'atelier des syllabes tient entre la table et le livre
+    R.push(Affine.T(x, y) @ Affine.S(0.82) @ Affine.T(-x, -y))
     D.ground_shadow(R, x + 6, y + 2, 54, 9, 0.26, dx=4, blur=4)
     # pupitre
     part(R, R.mask(rrect(x - 6, y - 56, 12, 56, 3)), "#8E5F37", Mat(puff=3, line_w=1.0, tex=1.0))
@@ -123,6 +125,7 @@ def histoires(R):
     # coussin et petite étoile qui brille
     coussin = R.mask(catmull([(x - 92, y + 14), (x - 74, y - 4), (x - 40, y - 2), (x - 26, y + 14), (x - 58, y + 22)], n=8))
     part(R, coussin, "#8C6BE0", Mat(puff=8, profile="pillow", line_w=1.3, tex=0.9), decal=[(R.mask(circle(x - 58, y + 8, 4)), "#B9A4F2", 1.0)])
+    R.pop()
 
 def anime(R, nom):
     if nom == "mona":

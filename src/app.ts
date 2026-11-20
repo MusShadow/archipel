@@ -25,9 +25,10 @@ class App {
     if (this.cleanup) { try { this.cleanup(); } catch { /* écran déjà détruit */ } }
     this.cleanup = cleanup ?? null;
     speech.stop();
-    const ancien = Array.from(this.root.children).find((c) => !c.classList.contains("fondu")) as HTMLElement | undefined;
+    const ancien = Array.from(this.root.children).find((c) => !c.classList.contains("fondu") && !c.classList.contains("garde-appui")) as HTMLElement | undefined;
     this.root.replaceChildren(el);
     if (ancien && ancien !== el) fondu(this.root, ancien);
+    gardeAppui(this.root);
   }
 
   // ----- Séance -----
@@ -99,6 +100,20 @@ function feuilles(): string {
   if (els.length !== styles.n) styles = { n: els.length, texte: Array.from(els).map((e) => e.textContent ?? "").join("\n") };
   return styles.texte;
 }
+// Un double appui ne traverse pas d'un écran à l'autre : le second appui, qui tombe sur l'écran qui vient d'apparaître
+// (une carte de réponse sous le lieu qu'on a touché, par exemple), est jeté pendant 400 ms. Le voile du fondu, lui,
+// est inerte : il laisse passer les appuis.
+const GARDE_APPUI = 400;
+function gardeAppui(root: HTMLElement) {
+  const g = document.createElement("div");
+  g.className = "garde-appui";
+  g.setAttribute("aria-hidden", "true");
+  const jeter = (e: Event) => { if (e.cancelable) e.preventDefault(); e.stopPropagation(); };
+  for (const t of ["pointerdown", "pointerup", "mousedown", "mouseup", "touchstart", "touchend", "click"]) g.addEventListener(t, jeter, { passive: false });
+  root.appendChild(g);
+  setTimeout(() => g.remove(), GARDE_APPUI);
+}
+
 function fondu(root: HTMLElement, ancien: HTMLElement) {
   try {
     if (typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches) return;

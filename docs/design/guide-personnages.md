@@ -37,11 +37,13 @@ Quatre expressions de plus, dessinées sur tous les personnages du théâtre (Ba
 | Émotion | Yeux | Bouche | Sourcils | Ce que dit l'indice |
 |---|---|---|---|---|
 | triste | regardent en bas, paupière un peu basse, une larme | coins en bas | bouts intérieurs très relevés | « la bouche vers le bas, et parfois une larme » |
-| colère | paupière basse | ouverte, les dents serrées | froncés, bas vers le nez | « les sourcils froncés » |
-| peur | grands ouverts, toute petite pupille | ondulée, qui tremble | hauts et inquiets | « les yeux grands ouverts et la bouche tremblante » |
+| colère | paupière basse | ouverte, les dents serrées | très froncés, bas vers le nez | « les sourcils froncés, et de la fumée lui sort de la tête » |
+| peur | grands ouverts, toute petite pupille | ondulée, large, qui tremble | hauts et inquiets | « les yeux grands ouverts, la bouche qui tremble, et une goutte de sueur » |
 | déçu | paupière lourde, regardent en bas | petite moue | un peu relevés au milieu | « regarde vers le bas » |
 
-La joie est l'expression **rieur**, la surprise **surpris**. Plume et Kiki, qui n'ont pas de sourcils d'habitude, en reçoivent un pour ces quatre émotions seulement (sinon on ne lit pas la colère ni l'inquiétude). Ces visages servent au théâtre de Pico, où l'enfant reconnaît une émotion : ce ne sont pas des réactions de l'hôte face à l'enfant, qui reste toujours bienveillant.
+La joie est l'expression **rieur**, la surprise **surpris** (la bouche en grand O ; Plume ouvre le bec pour la surprise, pas pour la peur).
+
+**Lisibles à la taille de la carte (relecture de la livraison 3).** Pour le théâtre, le portrait est cadré serré sur ce qui change d'une émotion à l'autre (`SERRE` dans `visages.py`), et porte les signes des livres d'images : la goutte de sueur de la peur, la fumée qui sort de la tête en colère, les petits traits qui jaillissent de la surprise. L'atelier mesure, à 140 px, la part du médaillon qui change d'une émotion à l'autre (`visages-ecarts.json`) ; un test exige au moins 5 % pour chaque paire qu'un même exercice peut montrer (avant : 0,9 % entre la peur et la surprise de Pico). Plume et Kiki, qui n'ont pas de sourcils d'habitude, en reçoivent un pour ces quatre émotions seulement (sinon on ne lit pas la colère ni l'inquiétude). Ces visages servent au théâtre de Pico, où l'enfant reconnaît une émotion : ce ne sont pas des réactions de l'hôte face à l'enfant, qui reste toujours bienveillant.
 
 ### Les portraits (livraison 3)
 

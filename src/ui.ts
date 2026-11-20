@@ -174,7 +174,7 @@ button{font:inherit;color:inherit}
 @keyframes burst{0%{transform:rotate(var(--a)) translateY(0) scale(1);opacity:1}100%{transform:rotate(var(--a)) translateY(calc(var(--d) * -1)) scale(.4);opacity:0}}
 .overlay{position:absolute;inset:0;background:rgba(39,48,67,.45);display:flex;align-items:center;justify-content:center;z-index:40}
 .sheet{background:var(--cream);border-radius:24px;padding:max(16px,calc(var(--u) * 32));max-width:min(92vw,720px);max-height:90vh;overflow:auto;display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center}
-.bigbtn{min-height:max(52px,calc(var(--u) * 72));padding:0 max(18px,calc(var(--u) * 30));border-radius:999px;border:none;background:var(--turq-d);color:#fff;font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:700;font-size:max(18px,calc(var(--u) * 26));display:inline-flex;align-items:center;gap:10px;cursor:pointer}
+.bigbtn{min-height:max(var(--cible-min),78px);padding:0 max(18px,calc(var(--u) * 30));border-radius:999px;border:none;background:var(--turq-d);color:#fff;font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:700;font-size:max(18px,calc(var(--u) * 26));display:inline-flex;align-items:center;gap:10px;cursor:pointer}
 .bigbtn.alt{background:#fff;color:var(--ink);border:3px solid var(--line)}
 .parent{font-family:Inter,system-ui,sans-serif;background:#FBF8F2;-webkit-user-select:text;user-select:text}
 .parent h1{font-size:24px;margin:0}

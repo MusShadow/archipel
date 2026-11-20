@@ -107,7 +107,7 @@ Chaque paire texte / fond utilisée par les composants atteint **au moins 4,5 po
 
 | Jeton | Valeur | Usage |
 |---|---|---|
-| `--cible-min` | 84 u, au moins 58 px | minimum de tout ce que l'enfant touche (≈ 1,6 cm sur l'iPad, 1,5 cm en portrait) |
+| `--cible-min` | 84 u, au moins 58 px | minimum de tout ce que l'enfant touche (≈ 1,6 cm sur l'iPad, 1,5 cm en portrait) ; les gros boutons (« Au revoir Plume ! », « Dans mon carnet »…) font au moins `--cible-min` et 78 px |
 | `--cible-bouton` | 86 u | boutons ronds |
 | `--cible-petit` | 56 u, au moins 44 px | actions de l'adulte seulement (≈ 1,1 cm) : jamais pour l'enfant |
 
@@ -167,7 +167,7 @@ Assemblages de la livraison 2 :
 | Compagnon de voyage | `compagnonHTML(animal, couleur)`, `src/design/dessins.ts` | le bébé animal dans un cercle à la bague de la couleur de l'enfant ; le chapeau et les oreilles peuvent dépasser du cercle ; positions en pourcentage, l'avatar garde ses proportions à toutes les tailles |
 | Médaillon d'un personnage | `medallion(nom, anneau?)`, `portraitHTML(nom, expression)`, `portraitSVG(nom)` dans `src/ui.ts` | le portrait dessiné (tête et épaules, cadrées pareil pour tous dans un carré de 160) sur la teinte du personnage ; `portraitSVG` pour le poser dans une gommette dessinée en SVG (découpe ronde, un identifiant par découpe) ; personnage inconnu : le visage simple de la v1 |
 | Écran à part | `habillerEcran(ecran, ile)`, `src/host.ts` | dessin pas à pas, miroir, drapeau de mon île, histoires : le même cadre que les activités (décor estompé de l'île, couleur, matière album) et un ruban pour titre |
-| Changement d'écran | `app.show()`, `src/app.ts` | le nouvel écran est en place tout de suite ; une copie de l'ancien (sans ses écouteurs) s'efface en 350 ms par-dessus, rangée dans une ombre fermée (ni VoiceOver ni les tests ne la voient) ; l'écran quitté est vraiment détaché (ses animations en retard ne répondent plus) ; sur l'île, un appui sur un lieu pendant le fondu est ignoré (double appui) ; rien si « Réduire les animations » |
+| Changement d'écran | `app.show()`, `src/app.ts` | le nouvel écran est en place tout de suite ; une copie de l'ancien (sans ses écouteurs) s'efface en 350 ms par-dessus, rangée dans une ombre fermée (ni VoiceOver ni les tests ne la voient) ; l'écran quitté est vraiment détaché (ses animations en retard ne répondent plus) ; pendant 400 ms, le nouvel écran ignore les appuis (le second appui d'un double appui ne répond pas à sa place au premier exercice ; le voile du fondu, inerte, ne les arrête pas) ; rien si « Réduire les animations » (la garde des 400 ms reste) |
 
 Assemblages de la livraison 3 :
 

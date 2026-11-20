@@ -83324,6 +83324,12 @@
   ]
  },
  {
+  "text": "Ton carnet attend ses premières gommettes !",
+  "src": [
+   "carnet"
+  ]
+ },
+ {
   "text": "Ton dessin : l'arbre.",
   "src": [
    "dessin"
@@ -88024,13 +88030,13 @@
   ]
  },
  {
-  "text": "Un visage en colère a les sourcils froncés.",
+  "text": "Un visage en colère a les sourcils froncés, et de la fumée lui sort de la tête.",
   "src": [
    "theatre:indice"
   ]
  },
  {
-  "text": "Un visage qui a peur a les yeux grands ouverts et la bouche tremblante.",
+  "text": "Un visage qui a peur a les yeux grands ouverts, la bouche qui tremble, et une goutte de sueur.",
   "src": [
    "theatre:indice"
   ]
@@ -88275,6 +88281,18 @@
   "text": "va",
   "src": [
    "mots"
+  ]
+ },
+ {
+  "text": "Va au Port des Voyages pour découvrir tes premiers drapeaux.",
+  "src": [
+   "carnet"
+  ]
+ },
+ {
+  "text": "Va sur l'île de l'Atelier pour dessiner avec Kiki.",
+  "src": [
+   "carnet"
   ]
  },
  {

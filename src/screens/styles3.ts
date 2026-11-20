@@ -48,17 +48,19 @@ box-shadow:0 2px 6px rgba(39,48,67,.2);transform:rotate(var(--angle,0deg));curso
 .cn-dessin img{display:block;width:100%;aspect-ratio:1;object-fit:cover;background:#FFFFFF}
 .cn-scotch{position:absolute;top:calc(-1 * max(7px,calc(var(--u) * 10)));left:50%;width:max(40px,calc(var(--u) * 56));height:max(14px,calc(var(--u) * 20));margin-left:calc(-1 * max(20px,calc(var(--u) * 28)));
 background:rgba(255,239,186,.88);transform:rotate(-5deg);box-shadow:0 1px 2px rgba(39,48,67,.12)}
-.cn-passeport{flex:1;width:100%;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(3,1fr);gap:var(--esp-4);align-items:center;justify-items:center}
+.cn-passeport{flex:1;min-height:0;width:100%;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(3,minmax(0,1fr));gap:var(--esp-4);align-items:center;justify-items:center}
 .cn-tampon{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--esp-1);min-height:var(--cible-min);width:min(100%,max(110px,calc(var(--u) * 170)));
 padding:var(--esp-2) var(--esp-2) var(--esp-1);border:2px dashed #C9B79A;border-radius:var(--rayon-petit);background:rgba(255,255,255,.7);transform:rotate(var(--angle,0deg));cursor:pointer;
 font-family:var(--police-titre);font-weight:700;font-size:max(13px,calc(var(--u) * 16));color:var(--encre)}
-.cn-fl{display:block;width:88%;aspect-ratio:3/2}
+.cn-fl{display:block;flex:0 1 auto;min-height:0;width:88%;max-height:calc(100% - 1.6em);aspect-ratio:3/2}
+.cn-tampon{max-height:100%}
+.cn-fl svg{object-fit:contain}
 .cn-fl svg{display:block;width:100%;height:100%}
 .cn-couverture{flex:1;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--esp-3)}
 .cn-titre{font:var(--texte-titre);color:var(--ile-port-fonce);text-align:center;line-height:1.1}
 .cn-avatar{width:max(110px,calc(var(--u) * 168));aspect-ratio:1}
 .cn-nom{font:var(--texte-titre);color:var(--encre);line-height:1}
-.cn-mondrapeau{width:max(96px,calc(var(--u) * 132));aspect-ratio:94/64;border:none;background:none;padding:0;cursor:pointer;filter:drop-shadow(0 2px 3px rgba(39,48,67,.2))}
+.cn-mondrapeau{width:max(118px,calc(var(--u) * 140));aspect-ratio:94/64;border:none;background:none;padding:0;cursor:pointer;filter:drop-shadow(0 2px 3px rgba(39,48,67,.2))}
 .cn-comptes{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--esp-3)}
 .cn-compte{display:flex;align-items:center;gap:var(--esp-2);padding:var(--esp-1) var(--esp-4) var(--esp-1) var(--esp-1);border-radius:var(--rayon-pilule);background:#FFFFFF;box-shadow:var(--ombre-posee)}
 .cn-compte-img{display:block;width:max(36px,calc(var(--u) * 46));height:max(36px,calc(var(--u) * 46))}
@@ -113,7 +115,7 @@ background:radial-gradient(circle,rgba(255,255,255,.85) 0%,rgba(255,250,246,.55)
 .calme-cadre.out .calme-halo{transform:scale(.72);transition:transform var(--duree-souffle) var(--courbe-calme)}
 .calme-contenu{position:relative;z-index:1;height:100%;width:100%;display:flex;flex-direction:column;align-items:center;padding-bottom:var(--esp-6)}
 .calme-contenu .top{width:100%;display:flex;align-items:center;justify-content:space-between;padding:var(--esp-5) var(--esp-5) 0}
-.calme-mot{margin:var(--esp-6) 0 0;font-family:var(--police-titre);font-weight:800;font-size:max(36px,calc(var(--u) * 64));color:var(--ile-coeur-fonce);text-shadow:0 2px 0 rgba(255,255,255,.7);min-height:1.3em}
+.calme-mot{margin:var(--esp-6) 0 0;font-family:var(--police-titre);font-weight:800;font-size:max(36px,calc(var(--u) * 64));color:var(--ile-coeur-ombre);text-shadow:0 2px 0 rgba(255,255,255,.7);min-height:1.3em}
 .calme-actions{margin-top:auto;gap:var(--esp-4)}
 @media (prefers-reduced-motion:reduce){.calme-cadre.in .calme-pico,.calme-cadre.out .calme-pico{transform:none}.calme-cadre .calme-halo{transform:scale(.9)!important;transition:none!important}}
 /* ---------- la gommette gagnée : un ruban, la gommette dans sa lumière (rayons fixes : rien ne tourne ni ne clignote) ---------- */
@@ -150,6 +152,11 @@ transition:transform var(--duree-appui),box-shadow var(--duree-appui)}
 .cadre-act.a-part .top{display:flex;align-items:center;justify-content:space-between;gap:var(--esp-3)}
 .cadre-act.a-part .scroll{background:transparent}
 .cadre-act.a-part .drawstage .board,.cadre-act.a-part .drawwrap>.board{box-shadow:var(--ombre-douce)}
+/* ---------- titre long (histoires sur mesure, jusqu'à 80 lettres) : le ruban rétrécit et passe sur deux lignes, les boutons restent à l'écran ---------- */
+.a-ruban.ruban-long{min-width:0;flex:0 1 auto}
+.a-ruban.ruban-long .a-ruban-corps{min-width:0}
+.a-ruban.ruban-long .a-ruban-txt{min-width:0;white-space:normal;text-align:center;line-height:1.12;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.cadre-act.a-part .top>.a-rond,.cadre-act.a-part .top>button{flex:none}
 /* ---------- nénuphars : le chiffre posé sur une pastille claire, lisible partout sur la feuille (contraste > 7:1) ---------- */
 .pond.etang .padnum{display:inline-flex;align-items:center;justify-content:center;min-width:1.55em;height:1.55em;border-radius:50%;line-height:1;
 background:radial-gradient(circle,rgba(248,255,240,.94) 0 56%,rgba(248,255,240,.6) 66%,rgba(248,255,240,0) 74%);text-shadow:none}

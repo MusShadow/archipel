@@ -119,6 +119,9 @@ Avec :
 | Nénuphars : le chiffre posé sur une pastille claire (la réserve de contraste de la livraison 2 est levée) | `src/screens/styles3.ts` |
 | Voix : accueil des îles, salut des hôtes, rubriques du carnet (couverture 100 %) | `voix/`, `public/voix/` |
 | Tests adaptés (aucune vérification retirée), tests des sept îles et de la livraison 3, captures avant / après | `tests/`, `docs/design/captures/` |
+| Relecture indépendante : 0 constat bloquant, 4 importants (étiquette des syllabes posée sur le livre des histoires, visages du théâtre trop proches à la taille de la carte, double appui qui répondait au premier exercice, titre d'histoire long qui poussait un bouton hors de l'écran), 7 mineurs (passeport rogné, paroles du carnet, bulle de Plume sur l'île de la mission, emoji restants, images de l'imagier un peu petites, contraste du coin calme, gros boutons sous 78 px) : tous corrigés | — |
+| Visages du théâtre cadrés serré, avec les signes des livres d'images (goutte de sueur de la peur, fumée de la colère, traits de la surprise, grand O) ; l'atelier mesure l'écart entre deux émotions à la taille de la carte et un test l'exige pour chaque paire qu'un exercice peut montrer | `scripts/illustration/visages.py`, `tests/livraison3.test.ts` |
+| Un nouvel écran ignore les appuis pendant 400 ms : le second appui d'un double appui ne répond plus à sa place au premier exercice | `src/app.ts`, `tests/e2e/appuis.py` |
 
 Ce qui était prévu :
 

@@ -135,6 +135,17 @@ test("les sept îles sont dessinées : décor, lieux, remplissages, étiquettes,
       expect(a.x1 < b.x0 || b.x1 < a.x0 || a.y1 < b.y0 || b.y1 < a.y0).toBe(true);
     }
     for (const b of boites) { expect(b.x0).toBeGreaterThan(0); expect(b.x1).toBeLessThan(CADRE.l); expect(b.y1).toBeLessThan(CADRE.h); }
+    // une étiquette (zone de toucher comprise) ne se pose pas sur le dessin d'un autre lieu : au plus 15 % de sa boîte,
+    // ombre comprise (relecture de la livraison 3 : celle des syllabes couvrait la moitié du livre des histoires)
+    q.lieux.forEach((l, i) => {
+      const b = boites[i];
+      for (const autre of q.lieux) {
+        if (autre === l) continue;
+        const [x, y, w, h] = d.lieux[autre.ids[0]].boite;
+        const ix = Math.max(0, Math.min(b.x1, x + w) - Math.max(b.x0, x)), iy = Math.max(0, Math.min(b.y1, y + h) - Math.max(b.y0, y));
+        expect((ix * iy) / (w * h)).toBeLessThan(0.15);
+      }
+    });
     // l'hôte qui fait coucou (« Mona te fait coucou ! ») est dessiné sur l'île, et entier à l'écran, en paysage comme en portrait
     if (ile.id !== "nombres" && ile.id !== "port") {
       const a = d.animes[ile.hote];

@@ -71,6 +71,26 @@ describe("visages dessinés", () => {
     }
     expect(vus).toBeGreaterThan(20);
   });
+  test("à la taille de la carte, deux émotions qu'un même exercice peut montrer se distinguent nettement", async () => {
+    // relecture de la livraison 3 : « peur » et « surprise » ne différaient que de quelques pixels. Les écarts sont mesurés
+    // par l'atelier (scripts/illustration/visages.py) sur les images publiées, à 140 px.
+    const { readFileSync, statSync } = await import("node:fs");
+    const { _theatreData, VISAGES_PICO } = await import("../src/activities/theatre");
+    const mesures = JSON.parse(readFileSync(join(root, "scripts/illustration/visages-ecarts.json"), "utf8")) as { octets: Record<string, number>; ecarts: Record<string, Record<string, number>> };
+    // les mesures sont bien celles des images publiées
+    for (const [nom, n] of Object.entries(mesures.octets)) expect(statSync(join(root, "public/illustrations/visages", `${nom}.webp`)).size).toBe(n);
+    const paires: [string, string, string][] = [];
+    const ajouter = (qui: string, emos: string[]) => {
+      for (let i = 0; i < emos.length; i++) for (let j = i + 1; j < emos.length; j++) paires.push([qui, emos[i], emos[j]]);
+    };
+    ajouter("pico", VISAGES_PICO[2]);
+    for (const c of [..._theatreData.CAUSES, ..._theatreData.CACHEES]) ajouter(c.who, [c.emo, ...c.not]);
+    expect(paires.length).toBeGreaterThan(30);
+    for (const [qui, a, b] of paires) {
+      const v = mesures.ecarts[qui][`${a}/${b}`] ?? mesures.ecarts[qui][`${b}/${a}`];
+      expect({ qui, paire: `${a}/${b}`, ecart: v >= 5 }).toEqual({ qui, paire: `${a}/${b}`, ecart: true });
+    }
+  });
 });
 
 describe("écrans peints de la livraison 3", () => {

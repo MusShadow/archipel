@@ -24,6 +24,12 @@ export const PAROLES_CARNET: Record<Exclude<Rubrique, "couverture">, string> = {
   dessins: "Tes dessins. Touche un dessin pour le regarder en grand.",
   passeport: "Ton passeport : les drapeaux que tu as découverts. Touche un drapeau pour entendre son nom.",
 };
+// Ce que montre (et dit) une rubrique encore vide : l'enfant ne lit pas, Plume le lui dit.
+export const VIDES_CARNET: Record<Exclude<Rubrique, "couverture">, string> = {
+  gommettes: "Ton carnet attend ses premières gommettes !",
+  dessins: "Va sur l'île de l'Atelier pour dessiner avec Kiki.",
+  passeport: "Va au Port des Voyages pour découvrir tes premiers drapeaux.",
+};
 const paquets = <T,>(liste: T[], n: number): T[][] => {
   const out: T[][] = [];
   for (let i = 0; i < liste.length; i += n) out.push(liste.slice(i, i + n));
@@ -64,7 +70,7 @@ export function carnetScreen(back: () => void) {
       b.addEventListener("click", () => { sfx.tap(); wobble(b); speech.say(st.reason); });
       grille.appendChild(b);
     });
-    pages.push({ rubrique: "gommettes", contenu: paquet.length ? grille : vide(portraitHTML("plume"), "Ton carnet attend ses premières gommettes !") });
+    pages.push({ rubrique: "gommettes", contenu: paquet.length ? grille : vide(portraitHTML("plume"), VIDES_CARNET.gommettes) });
   });
   // ---------- dessins : quatre par page, comme des photos scotchées
   paquets(dessins, PAR_PAGE.dessins).forEach((paquet, k) => {
@@ -75,7 +81,7 @@ export function carnetScreen(back: () => void) {
       b.addEventListener("click", () => { sfx.tap(); showDrawing(ecran, g); });
       grille.appendChild(b);
     });
-    pages.push({ rubrique: "dessins", contenu: paquet.length ? grille : vide(portraitHTML("kiki"), "Va sur l'île de l'Atelier pour dessiner avec Kiki.") });
+    pages.push({ rubrique: "dessins", contenu: paquet.length ? grille : vide(portraitHTML("kiki"), VIDES_CARNET.dessins) });
   });
   // ---------- passeport : six drapeaux par page, comme des tampons
   paquets(drapeaux, PAR_PAGE.passeport).forEach((paquet, k) => {
@@ -87,7 +93,7 @@ export function carnetScreen(back: () => void) {
       b.addEventListener("click", () => { sfx.tap(); wobble(b); speech.say(cap(fl.the)); });
       grille.appendChild(b);
     });
-    pages.push({ rubrique: "passeport", contenu: paquet.length ? grille : vide(portraitHTML("plume"), "Va au Port des Voyages pour découvrir tes premiers drapeaux.") });
+    pages.push({ rubrique: "passeport", contenu: paquet.length ? grille : vide(portraitHTML("plume"), VIDES_CARNET.passeport) });
   });
   function vide(image: string, texte: string) {
     return h("div", { class: "cn-vide" }, h("span", { class: "cn-vide-img", html: image }), h("p", {}, texte));
@@ -108,8 +114,25 @@ export function carnetScreen(back: () => void) {
   });
   const portrait = () => window.innerHeight > window.innerWidth * 1.1;
   let debut = 0; // première page affichée
-  let dejaDit = new Set<Rubrique>();
   const parVue = () => (portrait() ? 1 : 2);
+  // Plume nomme chaque rubrique qui apparaît (une fois par visite), ou dit ce qu'il faut faire quand elle est vide ;
+  // sur une double page, les deux, l'une après l'autre. Une nouvelle page ou un autre écran coupe la suite.
+  const dejaDit = new Set<Rubrique>();
+  const vides: Record<Exclude<Rubrique, "couverture">, boolean> = { gommettes: !stickers.length, dessins: !dessins.length, passeport: !drapeaux.length };
+  let parole = 0;
+  const dire = (phrases: string[]) => {
+    const mien = ++parole;
+    phrases.reduce<Promise<unknown>>((suite, t) => suite.then(() => (mien === parole && ecran.isConnected ? speech.say(t) : undefined)), Promise.resolve());
+  };
+  const nouvelles = (vues: Page[]) => {
+    const out: string[] = [];
+    for (const r of vues.map((v) => v.rubrique)) {
+      if (r === "couverture" || dejaDit.has(r)) continue;
+      dejaDit.add(r);
+      out.push(vides[r] ? VIDES_CARNET[r] : PAROLES_CARNET[r]);
+    }
+    return out;
+  };
   function afficher(sens = 0) {
     const n = parVue();
     debut = Math.max(0, Math.min(debut - (debut % n), pages.length - 1));
@@ -131,8 +154,8 @@ export function carnetScreen(back: () => void) {
       livre.classList.remove("tourne-avant", "tourne-arriere");
       void livre.offsetWidth; // relance l'animation
       livre.classList.add(sens > 0 ? "tourne-avant" : "tourne-arriere");
-      const nouvelle = vues.map((v) => v.rubrique).find((r) => r !== "couverture" && !dejaDit.has(r));
-      if (nouvelle) { dejaDit.add(nouvelle); speech.say(PAROLES_CARNET[nouvelle as Exclude<Rubrique, "couverture">]); }
+      const aDire = nouvelles(vues);
+      if (aDire.length) dire(aDire);
     }
   }
   function tourner(d: number) {
@@ -174,6 +197,7 @@ export function carnetScreen(back: () => void) {
   window.addEventListener("resize", surRedim);
   afficher();
   app.show(ecran, () => window.removeEventListener("resize", surRedim));
-  speech.say(p.stickers.length ? "Voici ton carnet. Touche une gommette pour savoir pourquoi tu l'as gagnée." : "Voici ton carnet d'explorateur.");
-  dejaDit = new Set<Rubrique>(p.stickers.length ? ["gommettes"] : []);
+  // à l'ouverture : en paysage, la couverture et la première page des gommettes ; en portrait, la couverture seule
+  if (parVue() === 2 && stickers.length) { dejaDit.add("gommettes"); dire(["Voici ton carnet. Touche une gommette pour savoir pourquoi tu l'as gagnée."]); }
+  else dire(["Voici ton carnet d'explorateur.", ...nouvelles(pages.slice(debut, debut + parVue()))]);
 }

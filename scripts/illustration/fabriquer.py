@@ -215,6 +215,9 @@ if __name__ == "__main__":
     if any(m in quoi for m in MODULES_ELEMENTS):
         print("Éléments")
         elements(cat, quoi)
+    if "visages" in quoi:  # lisibilité des visages du théâtre, vérifiée par les tests de l'appli
+        import visages
+        (RACINE / "scripts/illustration/visages-ecarts.json").write_text(json.dumps(visages.ecarts(SORTIE), ensure_ascii=False, indent=1, sort_keys=True) + "\n")
     nettoyer(cat, quoi)
     enregistrer(cat)
     print(f"Fini en {round(time.time() - t)} s : {len(cat['personnages'])} images de personnages, {len(cat['iles'])} île(s), {len(cat.get('elements', {}))} éléments.")

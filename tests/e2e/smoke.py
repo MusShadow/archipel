@@ -262,6 +262,7 @@ with sync_playwright() as pw:
 
     # Espace parent : appui long sur le cadenas, puis code
     def open_parent(pin="1234"):
+        page.wait_for_timeout(500)  # un nouvel écran ignore les appuis pendant 400 ms (garde contre le double appui)
         box = page.locator(".lockbtn").bounding_box()
         page.mouse.move(box["x"] + 20, box["y"] + 20)
         page.mouse.down(); page.wait_for_timeout(1500); page.mouse.up()
@@ -285,7 +286,7 @@ with sync_playwright() as pw:
 
     # Code parent oublié : question pour adulte, puis nouveau code
     page.click("text=Retour au jeu")
-    page.wait_for_timeout(300)
+    page.wait_for_timeout(800)  # fondu, puis la garde contre le double appui (400 ms)
     box = page.locator(".lockbtn").bounding_box()
     page.mouse.move(box["x"] + 20, box["y"] + 20)
     page.mouse.down(); page.wait_for_timeout(1500); page.mouse.up()

@@ -30,8 +30,8 @@ export function pastille(o: { titre: string; ile: IleId; conseillee?: boolean; o
 }
 
 // Ruban de titre : le nom de l'île ou de l'activité, avec la pastille de couleur de l'île.
-export function ruban(o: { texte: string; ile: IleId }) {
-  return h("div", { class: "a-ruban", style: accent(o.ile) },
+export function ruban(o: { texte: string; ile: IleId; cls?: string }) {
+  return h("div", { class: `a-ruban${o.cls ? ` ${o.cls}` : ""}`, style: accent(o.ile) },
     h("span", { class: "a-ruban-bout g", "aria-hidden": "true" }),
     h("span", { class: "a-ruban-bout d", "aria-hidden": "true" }),
     h("span", { class: "a-ruban-corps" },

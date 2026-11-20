@@ -356,6 +356,7 @@ export const PEAU_ACTIVITE_CSS = `
 
 export const CADRE_CSS = `
 .fondu{position:absolute;inset:0;z-index:100;pointer-events:none}
+.garde-appui{position:fixed;inset:0;z-index:2147483000;background:transparent;touch-action:none;-webkit-tap-highlight-color:transparent}
 .cadre-act{isolation:isolate;background:var(--creme)}
 .cadre-decor{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,var(--accent-clair,var(--creme)) 0%,var(--creme) 62%)}
 .cadre-decor.dessine{background-size:cover;background-position:center 40%}

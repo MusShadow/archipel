@@ -947,7 +947,7 @@
      "fichier": "iles/mots/lieu-syllabes.webp",
      "boite": [
       704.5,
-      315.5,
+      303.5,
       292.5,
       210.5
      ]
@@ -964,10 +964,10 @@
     "histoires": {
      "fichier": "iles/mots/lieu-histoires.webp",
      "boite": [
-      865.0,
-      523.5,
-      169.5,
-      159.0
+      882.0,
+      575.0,
+      140.5,
+      130.5
      ]
     }
    },
@@ -1021,15 +1021,15 @@
     ],
     "syllabes": [
      842,
-     622
+     540
     ],
     "chants": [
      560,
      758
     ],
     "histoires": [
-     956,
-     724
+     952,
+     736
     ]
    },
    "plume": [
@@ -2522,60 +2522,60 @@
   "visages/basile-joie": {
    "fichier": "visages/basile-joie.webp",
    "boite": [
+    0.0,
     10.0,
-    26.0,
-    142.0,
-    134.0
+    160.0,
+    150.0
    ],
    "module": "visages"
   },
   "visages/basile-triste": {
    "fichier": "visages/basile-triste.webp",
    "boite": [
+    0.0,
     10.0,
-    26.0,
-    142.0,
-    134.0
+    160.0,
+    150.0
    ],
    "module": "visages"
   },
   "visages/basile-colere": {
    "fichier": "visages/basile-colere.webp",
    "boite": [
+    0.0,
     10.0,
-    26.0,
-    142.0,
-    134.0
+    160.0,
+    150.0
    ],
    "module": "visages"
   },
   "visages/basile-peur": {
    "fichier": "visages/basile-peur.webp",
    "boite": [
+    0.0,
     10.0,
-    26.0,
-    142.0,
-    134.0
+    160.0,
+    150.0
    ],
    "module": "visages"
   },
   "visages/basile-surprise": {
    "fichier": "visages/basile-surprise.webp",
    "boite": [
+    0.0,
     10.0,
-    26.0,
-    142.0,
-    134.0
+    160.0,
+    150.0
    ],
    "module": "visages"
   },
   "visages/basile-decu": {
    "fichier": "visages/basile-decu.webp",
    "boite": [
+    0.0,
     10.0,
-    26.0,
-    142.0,
-    134.0
+    160.0,
+    150.0
    ],
    "module": "visages"
   },
@@ -2594,7 +2594,7 @@
    "boite": [
     0.0,
     0.0,
-    118.5,
+    134.5,
     160.0
    ],
    "module": "visages"
@@ -2604,7 +2604,7 @@
    "boite": [
     0.0,
     0.0,
-    118.5,
+    134.5,
     160.0
    ],
    "module": "visages"
@@ -2614,7 +2614,7 @@
    "boite": [
     0.0,
     0.0,
-    118.5,
+    156.0,
     160.0
    ],
    "module": "visages"
@@ -2624,7 +2624,7 @@
    "boite": [
     0.0,
     0.0,
-    118.5,
+    134.5,
     160.0
    ],
    "module": "visages"
@@ -2634,7 +2634,7 @@
    "boite": [
     0.0,
     0.0,
-    118.5,
+    152.0,
     160.0
    ],
    "module": "visages"
@@ -2644,7 +2644,7 @@
    "boite": [
     0.0,
     0.0,
-    118.5,
+    134.5,
     160.0
    ],
    "module": "visages"
@@ -2662,60 +2662,60 @@
   "visages/rico-joie": {
    "fichier": "visages/rico-joie.webp",
    "boite": [
-    11.5,
-    15.5,
-    148.5,
-    144.5
+    0.0,
+    1.0,
+    160.0,
+    159.0
    ],
    "module": "visages"
   },
   "visages/rico-triste": {
    "fichier": "visages/rico-triste.webp",
    "boite": [
-    11.5,
-    15.5,
-    148.5,
-    144.5
+    0.0,
+    1.0,
+    160.0,
+    159.0
    ],
    "module": "visages"
   },
   "visages/rico-colere": {
    "fichier": "visages/rico-colere.webp",
    "boite": [
-    11.5,
-    15.5,
-    148.5,
-    144.5
+    0.0,
+    1.0,
+    160.0,
+    159.0
    ],
    "module": "visages"
   },
   "visages/rico-peur": {
    "fichier": "visages/rico-peur.webp",
    "boite": [
-    11.5,
-    15.5,
-    148.5,
-    144.5
+    0.0,
+    1.0,
+    160.0,
+    159.0
    ],
    "module": "visages"
   },
   "visages/rico-surprise": {
    "fichier": "visages/rico-surprise.webp",
    "boite": [
-    11.5,
-    15.5,
-    148.5,
-    144.5
+    0.0,
+    1.0,
+    160.0,
+    159.0
    ],
    "module": "visages"
   },
   "visages/rico-decu": {
    "fichier": "visages/rico-decu.webp",
    "boite": [
-    11.5,
-    15.5,
-    148.5,
-    144.5
+    0.0,
+    1.0,
+    160.0,
+    159.0
    ],
    "module": "visages"
   },
@@ -2803,9 +2803,9 @@
    "fichier": "visages/kiki-joie.webp",
    "boite": [
     0.0,
-    13.0,
-    134.0,
-    147.0
+    0.0,
+    125.5,
+    160.0
    ],
    "module": "visages"
   },
@@ -2813,9 +2813,9 @@
    "fichier": "visages/kiki-triste.webp",
    "boite": [
     0.0,
-    13.0,
-    134.0,
-    147.0
+    0.0,
+    125.5,
+    160.0
    ],
    "module": "visages"
   },
@@ -2823,9 +2823,9 @@
    "fichier": "visages/kiki-colere.webp",
    "boite": [
     0.0,
-    13.0,
-    134.0,
-    147.0
+    0.0,
+    156.0,
+    160.0
    ],
    "module": "visages"
   },
@@ -2833,9 +2833,9 @@
    "fichier": "visages/kiki-peur.webp",
    "boite": [
     0.0,
-    13.0,
-    134.0,
-    147.0
+    0.0,
+    125.5,
+    160.0
    ],
    "module": "visages"
   },
@@ -2843,9 +2843,9 @@
    "fichier": "visages/kiki-surprise.webp",
    "boite": [
     0.0,
-    13.0,
-    134.0,
-    147.0
+    0.0,
+    152.0,
+    160.0
    ],
    "module": "visages"
   },
@@ -2853,9 +2853,9 @@
    "fichier": "visages/kiki-decu.webp",
    "boite": [
     0.0,
-    13.0,
-    134.0,
-    147.0
+    0.0,
+    125.5,
+    160.0
    ],
    "module": "visages"
   },
@@ -2873,9 +2873,9 @@
    "fichier": "visages/pico-joie.webp",
    "boite": [
     0.0,
-    7.0,
+    0.0,
     160.0,
-    153.0
+    160.0
    ],
    "module": "visages"
   },
@@ -2883,9 +2883,9 @@
    "fichier": "visages/pico-triste.webp",
    "boite": [
     0.0,
-    7.0,
+    0.0,
     160.0,
-    153.0
+    160.0
    ],
    "module": "visages"
   },
@@ -2893,9 +2893,9 @@
    "fichier": "visages/pico-colere.webp",
    "boite": [
     0.0,
-    7.0,
+    0.0,
     160.0,
-    153.0
+    160.0
    ],
    "module": "visages"
   },
@@ -2903,9 +2903,9 @@
    "fichier": "visages/pico-peur.webp",
    "boite": [
     0.0,
-    7.0,
+    0.0,
     160.0,
-    153.0
+    160.0
    ],
    "module": "visages"
   },
@@ -2913,9 +2913,9 @@
    "fichier": "visages/pico-surprise.webp",
    "boite": [
     0.0,
-    7.0,
+    0.0,
     160.0,
-    153.0
+    160.0
    ],
    "module": "visages"
   },
@@ -2923,9 +2923,9 @@
    "fichier": "visages/pico-decu.webp",
    "boite": [
     0.0,
-    7.0,
+    0.0,
     160.0,
-    153.0
+    160.0
    ],
    "module": "visages"
   },
@@ -2943,9 +2943,9 @@
    "fichier": "visages/plume-joie.webp",
    "boite": [
     0.0,
-    30.0,
+    54.5,
     160.0,
-    130.0
+    105.5
    ],
    "module": "visages"
   },
@@ -2953,9 +2953,9 @@
    "fichier": "visages/plume-triste.webp",
    "boite": [
     0.0,
-    30.0,
+    54.5,
     160.0,
-    130.0
+    105.5
    ],
    "module": "visages"
   },
@@ -2963,9 +2963,9 @@
    "fichier": "visages/plume-colere.webp",
    "boite": [
     0.0,
-    30.0,
+    22.5,
     160.0,
-    130.0
+    137.5
    ],
    "module": "visages"
   },
@@ -2973,9 +2973,9 @@
    "fichier": "visages/plume-peur.webp",
    "boite": [
     0.0,
-    30.0,
+    26.5,
     160.0,
-    130.0
+    133.5
    ],
    "module": "visages"
   },
@@ -2983,9 +2983,9 @@
    "fichier": "visages/plume-surprise.webp",
    "boite": [
     0.0,
-    30.0,
+    23.5,
     160.0,
-    130.0
+    136.5
    ],
    "module": "visages"
   },
@@ -2993,9 +2993,9 @@
    "fichier": "visages/plume-decu.webp",
    "boite": [
     0.0,
-    30.0,
+    54.5,
     160.0,
-    130.0
+    105.5
    ],
    "module": "visages"
   },

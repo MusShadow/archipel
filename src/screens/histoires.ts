@@ -136,7 +136,7 @@ function storyReader(s: Story, back: (sticker?: StickerSpec) => void) {
   const screen = habillerEcran(h("div", { class: "screen" },
     h("div", { class: "top" },
       roundBtn({ icon: "home", label: "Retour à la carte", onclick: () => leave(false) }),
-      ruban({ texte: s.titre, ile: "mots" }),
+      ruban({ texte: s.titre, ile: "mots", cls: "ruban-long" }),
       roundBtn({ icon: "book", label: "Toutes mes histoires", onclick: () => { alive = false; storyShelf(back); } })),
     stage), "mots");
   function draw() {

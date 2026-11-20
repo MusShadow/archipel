@@ -73,7 +73,7 @@ def mona(R, x, y, s=1.0, expr="content", salut=False):
     elif b == "moue":
         flat(R, R.line_mask([(266, 131), (254, 129), (242, 133)], 2.4), MONA_DD)
     elif b == "peur":
-        flat(R, R.line_mask([(268, 128), (260, 133), (252, 128), (244, 133), (236, 128)], 2.4), MONA_DD)
+        flat(R, R.line_mask([(270, 127), (262, 136), (254, 127), (246, 136), (238, 127), (230, 136)], 2.8, smooth_it=False), MONA_DD)
     elif b == "fache":
         om = R.mask(catmull([(268, 128), (256, 124), (238, 130), (232, 142), (252, 140)], n=8))
         part(R, om, "#7A2E3A", Mat(puff=3, line_w=1.1, tex=0.3), shadow=False, decal=[(m_clip(R.mask(rrect(232, 122, 40, 7, 1)), om), "#FFFFFF", 0.6)])
@@ -84,7 +84,7 @@ def mona(R, x, y, s=1.0, expr="content", salut=False):
     elif b == "pensif":
         flat(R, R.line_mask([(266, 134), (254, 135), (240, 132)], 2.4), MONA_DD)
     elif b == "rond":
-        part(R, R.mask(ellipse(252, 138, 6.5, 7.5)), "#7A2E3A", Mat(puff=3, line_w=1.0), shadow=False)
+        part(R, R.mask(ellipse(250, 138, 10, 12)), "#7A2E3A", Mat(puff=3, line_w=1.0), shadow=False, decal=[(R.mask(ellipse(250, 145, 6, 3.5)), "#F2899A", 1.0)])
     else:
         om = R.mask(catmull([(269, 122), (258, 148), (238, 150), (228, 138), (248, 134)]))
         part(R, om, "#7A2E3A", Mat(puff=3, line_w=1.1, tex=0.3), shadow=False, decal=[(R.mask(ellipse(246, 147, 10, 5)), "#F2899A", 1.2)])
@@ -348,7 +348,7 @@ def kiki(R, x, y, s=1.0, expr="content", salut=False):
         om = R.mask(catmull([(264, 118), (252, 142), (232, 144), (224, 134), (244, 130)]))
         part(R, om, "#7A2E3A", Mat(puff=3, line_w=1.1, tex=0.3), shadow=False, decal=[(R.mask(ellipse(242, 142, 8, 4)), "#F2899A", 1.0)])
     elif b == "rond":
-        part(R, R.mask(ellipse(252, 132, 5.5, 6.5)), "#7A2E3A", Mat(puff=2, line_w=1.0), shadow=False)
+        part(R, R.mask(ellipse(249, 134, 9, 11)), "#7A2E3A", Mat(puff=2, line_w=1.0), shadow=False, decal=[(R.mask(ellipse(249, 140, 5.5, 3.2)), "#F2899A", 1.0)])
     elif b == "pensif":
         flat(R, R.line_mask([(264, 126), (246, 130), (230, 126)], 2.2), ANNEAU)
     elif b == "triste":
@@ -356,7 +356,7 @@ def kiki(R, x, y, s=1.0, expr="content", salut=False):
     elif b == "moue":
         flat(R, R.line_mask([(264, 130), (252, 129), (238, 132)], 2.4), ANNEAU)
     elif b == "peur":
-        flat(R, R.line_mask([(264, 128), (256, 133), (248, 128), (240, 133), (232, 128)], 2.4), ANNEAU)
+        flat(R, R.line_mask([(266, 126), (258, 135), (250, 126), (242, 135), (234, 126), (226, 135)], 2.8, smooth_it=False), ANNEAU)
     elif b == "fache":
         om = R.mask(catmull([(264, 128), (250, 124), (232, 130), (226, 142), (248, 140)], n=8))
         part(R, om, "#7A2E3A", Mat(puff=3, line_w=1.1, tex=0.3), shadow=False, decal=[(m_clip(R.mask(rrect(226, 122, 40, 7, 1)), om), "#FFFFFF", 0.6)])

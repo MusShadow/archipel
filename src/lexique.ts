@@ -132,13 +132,28 @@ export const emoji = (e: string, size = "1em") => {
 };
 export const imgImagier = (fichier: string) => `<img src="${urlImage(fichier)}" alt="" draggable="false">`;
 // Les emoji posés directement dans un <span class="emo"> (quelques activités) prennent aussi leur image.
+// Découpe une suite d'emoji (« ❌🍌 », « ❤️🌧️ ») en emoji, variantes et assemblages compris.
+type Segmenteur = new (l: string, o: { granularity: "grapheme" }) => { segment(s: string): Iterable<{ segment: string }> };
+const decouper = (t: string): string[] => {
+  const Seg = (Intl as unknown as { Segmenter?: Segmenteur }).Segmenter;
+  const parts = Seg ? Array.from(new Seg("fr", { granularity: "grapheme" }).segment(t), (x) => x.segment) : Array.from(t.replace(/[\uFE0F\u20E3]/g, ""));
+  return parts.filter((x) => x.trim());
+};
 export function imagerEmojis(racine: ParentNode) {
   for (const el of Array.from(racine.querySelectorAll<HTMLElement>(".emo:not(.emo-img)"))) {
     if (el.children.length) continue;
-    const im = imageImagier((el.textContent ?? "").trim());
-    if (!im) continue;
-    el.classList.add("emo-img");
-    el.innerHTML = imgImagier(im.fichier);
+    const texte = (el.textContent ?? "").trim();
+    const im = imageImagier(texte);
+    if (im) {
+      el.classList.add("emo-img");
+      el.innerHTML = imgImagier(im.fichier);
+      continue;
+    }
+    // une suite d'emoji : une image par emoji, si l'imagier les a toutes (sinon on n'y touche pas)
+    const ims = decouper(texte).map(imageImagier);
+    if (ims.length < 2 || ims.some((x) => !x)) continue;
+    el.classList.add("emo-img", "emo-suite");
+    el.innerHTML = ims.map((x) => imgImagier(x!.fichier)).join("");
   }
 }
 

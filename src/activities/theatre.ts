@@ -94,8 +94,10 @@ function fresh<T>(pool: readonly T[], keyOf: (t: T) => string, r: Rng): T {
 }
 const who = (w: Who) => `<span class="who">${medallion(w)}</span>`;
 
+// Les visages de Pico proposés aux exercices « visage » (niveau 1, puis à partir du niveau 2).
+export const VISAGES_PICO: Record<1 | 2, Emo[]> = { 1: ["joie", "triste", "colere", "peur"], 2: ["joie", "triste", "colere", "peur", "surprise"] };
 function visage(level: number, r: Rng): TheatreItem {
-  const pool: Emo[] = level <= 1 ? ["joie", "triste", "colere", "peur"] : ["joie", "triste", "colere", "peur", "surprise"];
+  const pool: Emo[] = VISAGES_PICO[level <= 1 ? 1 : 2];
   const target = fresh(pool, (x) => x, r);
   const choices = r.shuffle([target, ...r.shuffle(pool.filter((e) => e !== target)).slice(0, 2)]);
   return { kind: "visage", who: "pico", target, choices, opts: Object.fromEntries(choices.map((c) => [c, faceOpt(c as Emo, "pico")])), scene: [], line: "", why: "",
@@ -252,8 +254,8 @@ function hintFace(e: Emo) {
   return {
     joie: "Un visage content a un grand sourire.",
     triste: "Un visage triste a la bouche vers le bas, et parfois une larme.",
-    colere: "Un visage en colère a les sourcils froncés.",
-    peur: "Un visage qui a peur a les yeux grands ouverts et la bouche tremblante.",
+    colere: "Un visage en colère a les sourcils froncés, et de la fumée lui sort de la tête.",
+    peur: "Un visage qui a peur a les yeux grands ouverts, la bouche qui tremble, et une goutte de sueur.",
     surprise: "Un visage surpris a la bouche ronde comme un O.",
     decu: "Un visage déçu regarde vers le bas.",
   }[e];

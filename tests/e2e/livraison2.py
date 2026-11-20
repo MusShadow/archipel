@@ -306,6 +306,7 @@ with sync_playwright() as pw:
     page.click("text=Oui, on range")
     page.wait_for_timeout(500)
     page.click("text=Au revoir Plume")
+    page.wait_for_timeout(600)  # un nouvel écran ignore les appuis pendant 400 ms (garde contre le double appui)
     box = page.locator(".lockbtn").bounding_box()
     page.mouse.move(box["x"] + 20, box["y"] + 20)
     page.mouse.down(); page.wait_for_timeout(1500); page.mouse.up()

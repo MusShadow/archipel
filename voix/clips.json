@@ -6534,6 +6534,16 @@
   ]
  },
  {
+  "key": "un visage en colère a les sourcils froncés et de la fumée lui sort de la tête|.",
+  "text": "Un visage en colère a les sourcils froncés, et de la fumée lui sort de la tête.",
+  "say": "Un visage en colère a les sourcils froncés, et de la fumée lui sort de la tête.",
+  "pack": "coeur",
+  "words": 17,
+  "fams": [
+   "theatre:indice"
+  ]
+ },
+ {
   "key": "un visage en colère a les sourcils froncés|.",
   "text": "Un visage en colère a les sourcils froncés.",
   "say": "Un visage en colère a les sourcils froncés.",
@@ -6549,6 +6559,16 @@
   "say": "Un visage qui a peur a les yeux grands ouverts et la bouche tremblante.",
   "pack": "coeur",
   "words": 14,
+  "fams": [
+   "theatre:indice"
+  ]
+ },
+ {
+  "key": "un visage qui a peur a les yeux grands ouverts la bouche qui tremble et une goutte de sueur|.",
+  "text": "Un visage qui a peur a les yeux grands ouverts, la bouche qui tremble, et une goutte de sueur.",
+  "say": "Un visage qui a peur a les yeux grands ouverts, la bouche qui tremble, et une goutte de sueur.",
+  "pack": "coeur",
+  "words": 19,
   "fams": [
    "theatre:indice"
   ]
@@ -16057,6 +16077,16 @@
   ]
  },
  {
+  "key": "ton carnet attend ses premières gommettes|.",
+  "text": "Ton carnet attend ses premières gommettes !",
+  "say": "Ton carnet attend ses premières gommettes !",
+  "pack": "commun",
+  "words": 6,
+  "fams": [
+   "carnet"
+  ]
+ },
+ {
   "key": "ton défi pour la maison après la douche regarde la buée sur le miroir c'est la vapeur qui redevient de l'eau|.",
   "text": "Ton défi pour la maison : Après la douche, regarde la buée sur le miroir : c'est la vapeur qui redevient de l'eau.",
   "say": "Ton défi pour la maison : Après la douche, regarde la buée sur le miroir : c'est la vapeur qui redevient de l'eau.",
@@ -17040,6 +17070,26 @@
   "words": 3,
   "fams": [
    "options"
+  ]
+ },
+ {
+  "key": "va au port des voyages pour découvrir tes premiers drapeaux|.",
+  "text": "Va au Port des Voyages pour découvrir tes premiers drapeaux.",
+  "say": "Va au Port des Voyages pour découvrir tes premiers drapeaux.",
+  "pack": "commun",
+  "words": 10,
+  "fams": [
+   "carnet"
+  ]
+ },
+ {
+  "key": "va sur l'île de l'atelier pour dessiner avec kiki|.",
+  "text": "Va sur l'île de l'Atelier pour dessiner avec Kiki.",
+  "say": "Va sur l'île de l'Atelier pour dessiner avec Kiki.",
+  "pack": "commun",
+  "words": 9,
+  "fams": [
+   "carnet"
   ]
  },
  {

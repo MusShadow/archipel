@@ -72,7 +72,9 @@ padding:max(70px,calc(var(--u) * 92)) max(22px,calc(var(--u) * 30)) max(34px,cal
 .cp-choix.on{outline:3px solid var(--ile-port-fonce);outline-offset:3px}
 .kidchip .mini .compagnon,.p-item .compagnon{--u:0.5px}
 .emo.emo-img{width:1em;height:1em;line-height:1;vertical-align:-0.12em}
-.emo.emo-img img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none;-webkit-user-select:none}
+.emo.emo-img img{display:block;width:122%;height:122%;margin:-11%;object-fit:contain;pointer-events:none;user-select:none;-webkit-user-select:none}
+.emo.emo-img.emo-suite{width:auto;display:inline-flex;align-items:center;gap:.14em}
+.emo.emo-img.emo-suite img{flex:none;width:1.22em;height:1.22em;margin:-.11em}
 .fin-plume{width:max(120px,calc(var(--u) * 180));aspect-ratio:245/238}
 .fin-plume img,.sheet-perso img{display:block;width:100%;height:100%;object-fit:contain}
 `;

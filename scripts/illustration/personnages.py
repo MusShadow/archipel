@@ -77,7 +77,7 @@ def plume(R, x, y, s=1.0, pose="vol", flip=False, eye=None, wing_phase=0, only=N
     if expr:
         eye = EXPRESSIONS[expr]["oeil"]
     eye = eye or {"vol": "ouvert", "salut": "ouvert", "montre": "ouvert", "pense": "haut", "fete": "rieur"}[pose]
-    bec_ouvert = pose == "fete" or expr in ("rieur", "surpris", "peur")
+    bec_ouvert = pose == "fete" or expr in ("rieur", "surpris")
     back_rot, front_rot = {"vol": (-8, 0), "salut": (34, -14), "montre": (-8, 128), "pense": (-10, 130), "fete": (-30, 14)}[pose]
     front_scale = {"pense": 0.6, "montre": 0.92}.get(pose, 1.0)
     if wing_phase:
@@ -229,9 +229,9 @@ def mouth(R, x, y, w, kind="sourire", ink="#4A2C1C", inner="#7A2E3A", tongue="#F
         flat(R, R.line_mask([(x - w * 0.3, y), (x, y + w * 0.14), (x + w * 0.3, y)], lw), ink)
     elif kind == "pensif":
         flat(R, R.line_mask([(x - w * 0.28, y + w * 0.06), (x + w * 0.05, y + w * 0.04), (x + w * 0.3, y - w * 0.08)], lw), ink)
-    elif kind == "rond":
-        m = R.mask(ellipse(x, y + w * 0.08, w * 0.17, w * 0.21))
-        R.paint(m, inner, Mat(puff=3, line_w=1.0, tex=0.3), decal=[(R.mask(ellipse(x, y + w * 0.2, w * 0.1, w * 0.07)), tongue, 1.0)])
+    elif kind == "rond":  # surprise : un grand O (livraison 3 : il doit se lire à la taille d'une carte)
+        m = R.mask(ellipse(x, y + w * 0.12, w * 0.25, w * 0.31))
+        R.paint(m, inner, Mat(puff=3, line_w=1.0, tex=0.3), decal=[(R.mask(ellipse(x, y + w * 0.3, w * 0.15, w * 0.09)), tongue, 1.0)])
     elif kind == "grand":
         m = R.mask(catmull([(x - w / 2, y - w * 0.04), (x, y - w * 0.01), (x + w / 2, y - w * 0.04), (x + w * 0.3, y + w * 0.3), (x, y + w * 0.42), (x - w * 0.3, y + w * 0.3)]))
         R.paint(m, inner, Mat(puff=3, line_w=1.1, tex=0.3), decal=[(R.mask(ellipse(x, y + w * 0.36, w * 0.24, w * 0.14)), tongue, 1.5)])
@@ -239,8 +239,9 @@ def mouth(R, x, y, w, kind="sourire", ink="#4A2C1C", inner="#7A2E3A", tongue="#F
         flat(R, R.line_mask([(x - w * 0.42, y + w * 0.2), (x - w * 0.18, y + w * 0.02), (x + w * 0.18, y + w * 0.02), (x + w * 0.42, y + w * 0.2)], lw), ink)
     elif kind == "moue":
         flat(R, R.line_mask([(x - w * 0.26, y + w * 0.12), (x, y + w * 0.04), (x + w * 0.26, y + w * 0.12)], lw), ink)
-    elif kind == "peur":
-        flat(R, R.line_mask([(x - w * 0.44, y + w * 0.1), (x - w * 0.22, y - w * 0.02), (x, y + w * 0.1), (x + w * 0.22, y - w * 0.02), (x + w * 0.44, y + w * 0.1)], lw), ink)
+    elif kind == "peur":  # la bouche qui tremble, large
+        flat(R, R.line_mask([(x - w * 0.52, y + w * 0.12), (x - w * 0.34, y - w * 0.06), (x - w * 0.17, y + w * 0.12), (x, y - w * 0.06),
+                             (x + w * 0.17, y + w * 0.12), (x + w * 0.34, y - w * 0.06), (x + w * 0.52, y + w * 0.12)], lw * 1.15, smooth_it=False), ink)
     elif kind == "fache":
         m = R.mask(catmull([(x - w * 0.4, y + w * 0.22), (x - w * 0.2, y + w * 0.02), (x + w * 0.2, y + w * 0.02), (x + w * 0.4, y + w * 0.22),
                             (x + w * 0.2, y + w * 0.3), (x - w * 0.2, y + w * 0.3)], n=8))
@@ -260,7 +261,7 @@ EXPRESSIONS = {
     "doux": dict(oeil="doux", bouche="petit", sourcil=(0.5, 1.4)),  # bouts intérieurs relevés : bienveillant
     # émotions du théâtre de Pico (livraison 3)
     "triste": dict(oeil="triste", bouche="triste", sourcil=(-1.0, 3.4)),  # bouts intérieurs très relevés
-    "colere": dict(oeil="fache", bouche="fache", sourcil=(2.5, -4.2)),  # sourcils froncés, bas vers le nez
+    "colere": dict(oeil="fache", bouche="fache", sourcil=(2.5, -5.6)),  # sourcils très froncés, bas vers le nez
     "peur": dict(oeil="peur", bouche="peur", sourcil=(-6.5, 2.6)),  # sourcils hauts et inquiets
     "decu": dict(oeil="las", bouche="moue", sourcil=(0.5, 2.0)),
     # coin calme : les yeux fermés, un petit sourire (Pico respire)
@@ -319,7 +320,7 @@ def basile(R, x, y, s=1.0, wave=True, full=True, arm="avec", expr="content"):
         if E["bouche"] == "grand":
             om = R.mask(catmull([(94, 118), (110, 116), (126, 118), (122, 134), (110, 140), (98, 134)]))
         else:
-            om = R.mask(ellipse(110, 132, 7, 8))
+            om = R.mask(ellipse(110, 134, 10, 12))
         part(R, om, "#7A2E3A", Mat(puff=3, line_w=1.1, tex=0.3), shadow=False, decal=[(R.mask(ellipse(110, 137, 7, 4)), "#F2899A", 1.2)])
     teeth = R.mask(rrect(100, 121, 20, 18 if E["bouche"] not in ("grand", "rond") else 13, 4))
     part(R, teeth, "#FFFFFF", Mat(puff=3, line_w=1.2, spec=0.2, shin=30), decal=[(R.mask(rrect(109.3, 121, 1.4, 18, 0.5)), "#C9D3DC", 0.0)])
@@ -328,9 +329,9 @@ def basile(R, x, y, s=1.0, wave=True, full=True, arm="avec", expr="content"):
     trait = {"pensif": [(98, 117), (104, 119), (110, 116), (117, 117), (123, 113)],
              "triste": [(94, 122), (101, 117), (110, 115), (119, 117), (126, 122)],
              "moue": [(98, 120), (104, 117), (110, 116), (116, 117), (122, 120)],
-             "peur": [(94, 118), (100, 115), (106, 119), (110, 116), (114, 119), (120, 115), (126, 118)],
+             "peur": [(92, 121), (98, 114), (104, 121), (110, 114), (116, 121), (122, 114), (128, 121)],
              "fache": [(93, 121), (101, 116), (110, 115), (119, 116), (127, 121)]}.get(E["bouche"], [(96, 116), (103, 120), (110, 116), (117, 120), (124, 116)])
-    flat(R, R.line_mask(trait, 1.6 if E["bouche"] not in ("triste", "fache") else 2.0), "#4A2C1C")
+    flat(R, R.line_mask(trait, 1.6 if E["bouche"] not in ("triste", "fache", "peur") else 2.0, smooth_it=E["bouche"] != "peur"), "#4A2C1C")
     # joues et yeux
     for cx in (78, 142):
         R.paint(R.mask(ellipse(cx, 112, 10, 6)), "#E8828C", Mat(flat=True), haze=0.0)

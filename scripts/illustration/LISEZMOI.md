@@ -83,3 +83,5 @@ Au-delà de six lieux, l'île passe en quartiers : un deuxième écran, avec ses
 - Dessins de l'atelier : ceux du dépôt d'Archipel.
 - Imagier : dérivé de [Fluent Emoji](https://github.com/microsoft/fluentui-emoji) (Microsoft, licence MIT, jointe dans `public/imagier/`).
 - Polices utilisées pour les chiffres des dessins : Baloo 2 (SIL OFL, `public/polices/`).
+
+**Visages du théâtre.** `python3 scripts/illustration/fabriquer.py visages` écrit aussi `visages-ecarts.json` : pour chaque personnage, la part du médaillon (à 140 px) qui change d'une émotion à l'autre, et la taille des images mesurées. `tests/livraison3.test.ts` vérifie que ces mesures sont celles des images publiées et qu'elles atteignent 5 % pour chaque paire qu'un exercice du théâtre peut montrer.
