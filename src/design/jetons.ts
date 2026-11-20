@@ -81,6 +81,7 @@ export const OMBRES = {
 export const MOUVEMENTS = {
   appui: 120, court: 200, moyen: 300, long: 400, ecran: 350, // ms
   battementPlume: 1100, respiration: 3200, volPlume: 1200, // ms, mouvements d'ambiance lents (Plume vole vers la mission)
+  volChoixMin: 600, volChoixMax: 1000, // ms, livraison 4 : Plume vole vers l'île que l'enfant a choisie (selon la distance)
   coucherSoleil: 8000, // ms, une seule fois : le soleil de la fin de séance descend derrière l'horizon
   inspire: 4300, souffle: 5300, // ms, coin calme : Pico gonfle doucement à l'inspiration, se repose à l'expiration
   courbes: {

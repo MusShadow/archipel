@@ -145,6 +145,7 @@ def store_sticker(page):
 
 def open_island(page, island, act=None, shot_name=None):
     page.click(f'[data-isl="{island}"]', force=True)
+    page.wait_for_selector(".ile-ecran")  # Plume vole d'abord vers l'île (livraison 4)
     page.wait_for_timeout(350)
     if shot_name:
         shot(page, shot_name)

@@ -50,6 +50,7 @@ def parcours(page, tag):
     page.click(".kid")
     shot("carte", 1600)
     page.click('[data-isl="nombres"]', force=True)
+    page.wait_for_selector(".ile-ecran")  # Plume vole d'abord vers l'île (livraison 4)
     shot("ile", 1300)
     page.wait_for_timeout(450)  # fondu de 350 ms entre les écrans
     page.click('[data-act="nenuphars"]')

@@ -1,14 +1,18 @@
 // Île des Nombres — « Le partage du goûter » : distribuer des biscuits équitablement entre des amis.
 // Parts égales, puis partage avec un reste (pour le panier de Basile), puis « combien chacun ? » sans manipuler.
 import type { ActivityModule, Item, View } from "../host";
+import { imageImagier } from "../imagier";
+import { imgImagier } from "../lexique";
 import { sfx } from "../services";
 import { glow, h, icon, medallion, wobble } from "../ui";
+import { emojiStickerSVG } from "./chants";
 
 type Kind = "egal" | "reste" | "combien";
 interface ShareItem extends Item { kind: Kind; total: number; friends: string[]; target: number; rest: number; choices: number[] }
 
 const NAMES: Record<string, string> = { mona: "Mona", octave: "Octave", kiki: "Kiki", rico: "Rico", pico: "Pico" };
-export const COOKIE = `<svg viewBox="0 0 40 40" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="20" cy="20" r="17" fill="#D9A877" stroke="#B9834F" stroke-width="2"/><circle cx="14" cy="14" r="2.6" fill="#6B3E22"/><circle cx="25" cy="12" r="2.2" fill="#6B3E22"/><circle cx="27" cy="23" r="2.6" fill="#6B3E22"/><circle cx="15" cy="26" r="2.2" fill="#6B3E22"/><circle cx="21" cy="19" r="1.8" fill="#6B3E22"/></svg>`;
+// Livraison 4 : le biscuit de l'imagier ; assiettes en faïence, boîte en fer et panier d'osier sont dessinés (styles4.ts).
+export const COOKIE = imgImagier(imageImagier("🍪")!.fichier);
 const biscuits = (n: number) => `${n} biscuit${n > 1 ? "s" : ""}`;
 const listNames = (f: string[]) => f.map((x) => NAMES[x]).join(f.length > 2 ? ", " : " et ").replace(/, ([^,]*)$/, " et $1");
 const deNames = (f: string[]) => { const s = listNames(f); return /^[AEIOUYÉ]/.test(s) ? `d'${s}` : `de ${s}`; }; // « d'Octave »
@@ -259,4 +263,4 @@ function shareBoard(item: ShareItem, view: View) {
   (view.stage as any)._share = board;
 }
 
-export const cookieStickerSVG = () => `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="#FFF0C9"/><g transform="translate(15 15)">${COOKIE.replace('style="display:block;width:100%;height:100%"', 'width="40" height="40"')}</g></svg>`;
+export const cookieStickerSVG = () => emojiStickerSVG("🍪", "#FFF0C9");

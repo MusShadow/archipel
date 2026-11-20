@@ -1,18 +1,36 @@
 // Île des Nombres — « Le marché de Basile » : quantités, compléments à 10, dizaines et unités.
 import type { ActivityModule, Item, View } from "../host";
+import { imageImagier } from "../imagier";
+import { urlImage } from "../images";
+import { ELEMENTS } from "../illustrations";
+import { imgImagier } from "../lexique";
 import { glow, h, icon } from "../ui";
+import { emojiStickerSVG } from "./chants";
 
 type Kind = "voir" | "donner" | "complement" | "dizaines" | "preparer";
 interface MarketItem extends Item { kind: Kind; n: number; have?: number; tens?: number; units?: number; choices?: number[] }
 
-const APPLE = `<svg viewBox="0 0 40 40" aria-hidden="true" style="display:block;width:100%;height:100%"><path d="M20 12 C17 6 13 5 11 6 C13 9 16 11 20 12 Z" fill="#34B37A"/><path d="M20 13 L21 6" stroke="#7A4A2C" stroke-width="2.4" stroke-linecap="round"/><path d="M20 14 C12 9 4 14 5 23 C6 32 13 37 20 34 C27 37 34 32 35 23 C36 14 28 9 20 14 Z" fill="#E5483B"/><ellipse cx="13" cy="20" rx="3" ry="4.5" fill="#fff" opacity=".35"/></svg>`;
-const BAG = `<svg viewBox="0 0 60 64" aria-hidden="true" style="display:block;width:100%;height:100%"><path d="M18 10 C18 4 42 4 42 10 L46 16 C56 24 58 44 52 54 C46 62 14 62 8 54 C2 44 4 24 14 16 Z" fill="#D9A877"/><path d="M16 14 C24 18 36 18 44 14" stroke="#A0673F" stroke-width="3" fill="none" stroke-linecap="round"/><text x="30" y="46" text-anchor="middle" style="font-family:'Baloo 2',ui-rounded,system-ui,sans-serif;font-weight:800;font-size:22px;fill:#273043">10</text></svg>`;
+// Livraison 4 : les objets du marché sont dessinés (atelier : scripts/illustration/jeux.py), comme les nénuphars.
+// La pomme est celle de l'imagier ; le sac de dix est en toile de jute, l'appli écrit « 10 » sur son étiquette.
+const POMME = imgImagier(imageImagier("🍎")!.fichier);
+const dessin = (nom: string) => urlImage(`illustrations/${ELEMENTS[nom].fichier}`);
+const pc = (f: number) => `${Math.round(f * 10000) / 100}%`;
+function sacHTML() {
+  const [ex, ey] = ELEMENTS["activites/sac-10"].points?.etiquette ?? [0.5, 0.69];
+  return `<span class="sac10" aria-hidden="true"><img src="${dessin("activites/sac-10")}" alt="" draggable="false"><b style="left:${pc(ex)};top:${pc(ey)}">10</b></span>`;
+}
+// Où poser les pommes dans la corbeille ronde : le milieu du fond, et jusqu'où l'on peut s'en écarter (fractions de l'image).
+function fondCorbeille() {
+  const e = ELEMENTS["activites/corbeille"];
+  const [cx, cy] = e.points?.centre ?? [0.5, 0.41];
+  return { cx, cy, dx: 0.3, dy: 0.25 };
+}
 // Dispositions de dé pour voir sans compter.
 const DICE: Record<number, [number, number][]> = {
   1: [[50, 50]], 2: [[30, 30], [70, 70]], 3: [[25, 25], [50, 50], [75, 75]], 4: [[30, 30], [70, 30], [30, 70], [70, 70]],
 };
 
-function appleEl(size: string) { return h("span", { style: `display:block;width:${size};height:${size}`, html: APPLE }); }
+function appleEl(size: string) { return h("span", { class: "pomme", style: `display:block;width:${size};height:${size}`, html: POMME }); }
 function numberChoice(n: number, onclick: (el: HTMLElement) => void) {
   const b = h("button", { type: "button", class: "card", "data-n": n, "aria-label": String(n), style: "width:max(76px,calc(var(--u) * 130));height:max(76px,calc(var(--u) * 130))" },
     h("span", { class: "title", style: "font-size:max(36px,calc(var(--u) * 64))" }, String(n)));
@@ -24,18 +42,20 @@ function checkButton(onclick: (el: HTMLElement) => void) {
   b.addEventListener("click", () => onclick(b));
   return b;
 }
-const counter = (n: number) => h("div", { class: "title", style: "font-size:max(22px,calc(var(--u) * 34));min-width:3ch;text-align:center", "aria-live": "polite" }, String(n));
+// le compteur est écrit à la craie sur une petite ardoise
+const counter = (n: number) => h("div", { class: "ardoise-compteur", style: `background-image:url("${dessin("activites/ardoise")}")`, "aria-live": "polite" }, String(n));
 
 // Panier : on touche une pomme du tas pour la mettre dans le panier, une pomme du panier pour la reprendre.
 function basketBuilder(view: View, opts: { target: number; withBags: boolean; onCheck: (count: number, el: HTMLElement) => void }) {
   let apples = 0, bags = 0;
   const appleSize = "max(30px,calc(var(--u) * 54))";
-  const basket = h("div", { class: "panel", style: "min-width:min(86vw,calc(var(--u) * 760));min-height:max(90px,calc(var(--u) * 170));flex-wrap:wrap;gap:6px;align-content:center", "aria-label": "Panier" });
+  // le grand panier d'osier : les pommes et les sacs s'y posent au fond, puis s'empilent par-dessus le bord
+  const basket = h("div", { class: "panier-osier", style: `background-image:url("${dessin("activites/panier")}")`, "aria-label": "Panier" });
   const count = counter(0);
   const refresh = () => {
     basket.replaceChildren();
     for (let i = 0; i < bags; i++) {
-      const b = h("button", { type: "button", "aria-label": "Reprendre un sac de 10", style: "border:none;background:none;padding:0;width:max(44px,calc(var(--u) * 80));height:max(46px,calc(var(--u) * 84));cursor:pointer", html: BAG });
+      const b = h("button", { type: "button", class: "sac-btn", "aria-label": "Reprendre un sac de 10", html: sacHTML() });
       b.addEventListener("click", () => { bags--; refresh(); });
       basket.appendChild(b);
     }
@@ -50,7 +70,7 @@ function basketBuilder(view: View, opts: { target: number; withBags: boolean; on
   addApple.addEventListener("click", () => { if (bags * 10 + apples < 99) { apples++; refresh(); } });
   const pile = h("div", { class: "row" }, addApple);
   if (opts.withBags) {
-    const addBag = h("button", { type: "button", class: "card", "aria-label": "Ajouter un sac de 10 pommes", style: "width:max(76px,calc(var(--u) * 120));height:max(76px,calc(var(--u) * 120))", html: BAG });
+    const addBag = h("button", { type: "button", class: "card", "aria-label": "Ajouter un sac de 10 pommes", style: "width:max(76px,calc(var(--u) * 120));height:max(76px,calc(var(--u) * 120))", html: sacHTML() });
     addBag.addEventListener("click", () => { if (bags < 9) { bags++; refresh(); } });
     pile.appendChild(addBag);
   }
@@ -67,7 +87,7 @@ export const marche: ActivityModule<MarketItem> = {
   id: "marche", title: "Le marché de Basile", domain: "nombres", island: "nombres", host: "basile",
   maxLevel: 6, items: 6,
   skills: ["NUM.VOIR.4", "NUM.COMPTE.10", "NUM.COMPTE.20", "NUM.COMPLEMENT.10", "NUM.DIZAINES.LIRE", "NUM.DIZAINES.FAIRE"],
-  card: `<span style="display:block;width:1em;height:1em">${APPLE}</span>`, pitch: "Le marché de Basile, pour compter les pommes.",
+  card: `<span style="display:block;width:1em;height:1em">${POMME}</span>`, pitch: "Le marché de Basile, pour compter les pommes.",
   startLevel: () => 1,
   identity: (it) => `${it.kind}:${it.n}:${it.have ?? ""}`,
 
@@ -103,10 +123,14 @@ export const marche: ActivityModule<MarketItem> = {
   render(item, view) {
     const big = "max(52px,calc(var(--u) * 92))";
     if (item.kind === "voir") {
-      const board = h("div", { class: "panel", style: `position:relative;width:max(170px,calc(var(--u) * 300));height:max(170px,calc(var(--u) * 300))` });
+      // les pommes au fond de la corbeille ronde, rangées comme sur un dé
+      const board = h("div", { class: "corbeille", style: `background-image:url("${dessin("activites/corbeille")}")` });
+      const f = fondCorbeille();
       for (const [x, y] of DICE[item.n]) {
         const a = appleEl(big);
-        a.style.position = "absolute"; a.style.left = `calc(${x}% - ${big} / 2)`; a.style.top = `calc(${y}% - ${big} / 2)`;
+        a.style.position = "absolute";
+        a.style.left = `calc(${pc(f.cx + ((x - 50) / 50) * f.dx)} - ${big} / 2)`;
+        a.style.top = `calc(${pc(f.cy + ((y - 50) / 50) * f.dy)} - ${big} / 2)`;
         board.appendChild(a);
       }
       view.stage.appendChild(board);
@@ -116,20 +140,24 @@ export const marche: ActivityModule<MarketItem> = {
       return;
     }
     if (item.kind === "complement" || item.kind === "dizaines") {
-      const board = h("div", { class: "panel", style: "flex-wrap:wrap;gap:8px;max-width:min(90vw,calc(var(--u) * 820))" });
       if (item.kind === "complement") {
-        const frame = h("div", { style: "display:grid;grid-template-columns:repeat(5,max(40px,calc(var(--u) * 74)));gap:6px", "aria-label": `Panier de 10 places, ${item.have} pommes` });
+        // la cagette à dix places : une pomme par trou, les trous vides se voient (et brillent à l'indice)
+        const e = ELEMENTS["activites/cagette-10"];
+        const frame = h("div", { class: "cagette", style: `background-image:url("${dessin("activites/cagette-10")}")`, "aria-label": `Cagette de 10 places, ${item.have} pommes` });
         for (let i = 0; i < 10; i++) {
-          const cell = h("div", { class: "cell", style: "aspect-ratio:1;border-radius:12px;border:2px dashed #B9AE9A;display:flex;align-items:center;justify-content:center" });
-          if (i < item.have!) cell.appendChild(appleEl("85%"));
+          const [x, y] = e.points?.[`c${i}`] ?? [0.1 + (i % 5) * 0.2, i < 5 ? 0.33 : 0.67];
+          const cell = h("div", { class: "cell", style: `left:${pc(x)};top:${pc(y)}` });
+          if (i < item.have!) cell.appendChild(appleEl("100%"));
           frame.appendChild(cell);
         }
-        board.appendChild(frame);
+        view.stage.appendChild(frame);
       } else {
-        for (let i = 0; i < item.tens!; i++) board.appendChild(h("span", { style: "display:block;width:max(48px,calc(var(--u) * 86));height:max(52px,calc(var(--u) * 92))", html: BAG }));
-        for (let i = 0; i < item.units!; i++) board.appendChild(appleEl("max(30px,calc(var(--u) * 52))"));
+        // les sacs de dix et les pommes, posés dans le grand panier
+        const board = h("div", { class: "panier-osier", style: `background-image:url("${dessin("activites/panier")}")` });
+        for (let i = 0; i < item.tens!; i++) board.appendChild(h("span", { class: "sac-pose", html: sacHTML() }));
+        for (let i = 0; i < item.units!; i++) board.appendChild(appleEl("max(30px,calc(var(--u) * 54))"));
+        view.stage.appendChild(board);
       }
-      view.stage.appendChild(board);
       const row = h("div", { class: "choices" });
       for (const c of item.choices!) row.appendChild(numberChoice(c, (el) => view.answer(c === item.n, el)));
       view.stage.appendChild(row);
@@ -199,4 +227,5 @@ function near(n: number, lo: number, hi: number, rnd: () => number) {
   return c.sort(() => rnd() - 0.5).slice(0, 3);
 }
 
-export const appleStickerSVG = () => `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="#DCE9FB"/><g transform="translate(16 15) scale(0.95)">${APPLE.replace('style="display:block;width:100%;height:100%"', 'width="40" height="40"')}</g></svg>`;
+// la gommette du marché : la pomme de l'imagier, comme les autres gommettes à image
+export const appleStickerSVG = () => emojiStickerSVG("🍎", "#DCE9FB");

@@ -68,12 +68,15 @@ def etape(page, tag, nom):
         return
     ouvrir_carte(page)
     if nom == "ile-mots":
-        page.click('[data-isl="mots"]', force=True); shot(1500)
+        page.click('[data-isl="mots"]', force=True); page.wait_for_selector(".ile-ecran")  # Plume vole d'abord vers l'île (livraison 4)
+        shot(1500)
     elif nom == "theatre":
-        page.click('[data-isl="coeur"]', force=True); page.wait_for_timeout(800)
+        page.click('[data-isl="coeur"]', force=True); page.wait_for_selector(".ile-ecran")  # Plume vole d'abord vers l'île (livraison 4)
+        page.wait_for_timeout(800)
         page.click('[data-act="theatre"]'); shot(1600)
     elif nom == "dessin":
-        page.click('[data-isl="atelier"]', force=True); page.wait_for_timeout(800)
+        page.click('[data-isl="atelier"]', force=True); page.wait_for_selector(".ile-ecran")  # Plume vole d'abord vers l'île (livraison 4)
+        page.wait_for_timeout(800)
         page.click('[data-act="dessin"]'); shot(1200)
     elif nom == "carnet":
         page.click('[aria-label="Ouvrir mon carnet d\'explorateur"]'); shot(1000)

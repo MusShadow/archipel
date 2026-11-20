@@ -3071,6 +3071,136 @@
      0.9625
     ]
    }
+  },
+  "activites/panier": {
+   "fichier": "activites/panier.webp",
+   "boite": [
+    5.5,
+    51.0,
+    991.0,
+    249.0
+   ],
+   "module": "jeux",
+   "infos": {
+    "interieur": "90,96,910,232"
+   }
+  },
+  "activites/corbeille": {
+   "fichier": "activites/corbeille.webp",
+   "boite": [
+    9.5,
+    38.5,
+    383.0,
+    341.5
+   ],
+   "module": "jeux",
+   "points": {
+    "centre": [
+     0.4974,
+     0.4085
+    ]
+   }
+  },
+  "activites/cagette-10": {
+   "fichier": "activites/cagette-10.webp",
+   "boite": [
+    6.0,
+    17.0,
+    548.5,
+    263.0
+   ],
+   "module": "jeux",
+   "points": {
+    "c0": [
+     0.1459,
+     0.3004
+    ],
+    "c1": [
+     0.3227,
+     0.3004
+    ],
+    "c2": [
+     0.4995,
+     0.3004
+    ],
+    "c3": [
+     0.6764,
+     0.3004
+    ],
+    "c4": [
+     0.8532,
+     0.3004
+    ],
+    "c5": [
+     0.1459,
+     0.6502
+    ],
+    "c6": [
+     0.3227,
+     0.6502
+    ],
+    "c7": [
+     0.4995,
+     0.6502
+    ],
+    "c8": [
+     0.6764,
+     0.6502
+    ],
+    "c9": [
+     0.8532,
+     0.6502
+    ]
+   }
+  },
+  "activites/sac-10": {
+   "fichier": "activites/sac-10.webp",
+   "boite": [
+    10.0,
+    0.0,
+    120.0,
+    150.0
+   ],
+   "module": "jeux",
+   "points": {
+    "etiquette": [
+     0.5,
+     0.6933
+    ]
+   }
+  },
+  "activites/ardoise": {
+   "fichier": "activites/ardoise.webp",
+   "boite": [
+    0.0,
+    5.5,
+    220.0,
+    144.5
+   ],
+   "module": "jeux"
+  },
+  "activites/assiette": {
+   "fichier": "activites/assiette.webp",
+   "boite": [
+    0.0,
+    10.5,
+    420.0,
+    229.5
+   ],
+   "module": "jeux"
+  },
+  "activites/boite-biscuits": {
+   "fichier": "activites/boite-biscuits.webp",
+   "boite": [
+    0.0,
+    0.0,
+    300.0,
+    200.0
+   ],
+   "module": "jeux",
+   "infos": {
+    "bord": 40
+   }
   }
  }
 }

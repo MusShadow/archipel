@@ -195,6 +195,8 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
   wrap.append(mer, cadre);
   let portrait = isPortrait();
   let plumeVole: HTMLElement | null = null;
+  // Livraison 4 : quand l'enfant choisit une île, Plume s'envole vers elle avant que l'île s'ouvre.
+  let volerVers: (id: string) => Promise<void> = () => Promise.resolve();
   const draw = () => {
     const [L, H] = portrait ? [820, 1180] : [1180, 820];
     cadre.style.width = `${L}px`; cadre.style.height = `${H}px`;
@@ -237,12 +239,37 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
     bulle.dataset.plume = "1";
     bulle.style.cssText = `position:absolute;left:${bx}px;top:${by}px`;
     plumeVole = h("div", { class: "carte-plume" }, vol, bulle);
-    const placer = (x: number, y: number) => { plumeVole!.style.transform = `translate(${x}px,${y}px)`; };
-    placer(...depart);
+    // Plume regarde là où elle va : elle se retourne si elle vole vers la gauche, et reprend sa pose en se posant.
+    let ici: [number, number] = depart;
+    const placer = (x: number, y: number) => {
+      plumeVole!.classList.toggle("vers-gauche", x < ici[0] - 4);
+      ici = [x, y];
+      plumeVole!.style.transform = `translate(${x}px,${y}px)`;
+    };
+    plumeVole.addEventListener("transitionend", (ev) => { if (ev.propertyName === "transform") plumeVole?.classList.remove("vers-gauche"); });
+    plumeVole.style.transform = `translate(${depart[0]}px,${depart[1]}px)`;
     cadre.replaceChildren(...iles, ciel, plumeVole);
     const reduit = typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduit) placer(...arrivee);
+    if (reduit) { ici = arrivee; plumeVole.style.transform = `translate(${arrivee[0]}px,${arrivee[1]}px)`; }
     else requestAnimationFrame(() => requestAnimationFrame(() => { plumeVole?.classList.add("en-vol"); placer(...arrivee); }));
+    volerVers = (id) => new Promise<void>((fini) => {
+      const isl = ISLANDS.find((i) => i.id === id);
+      const pv = plumeVole;
+      if (!isl || !pv || !pv.isConnected || (typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches)) { fini(); return; }
+      const [tx, ty] = perche(isl);
+      // d'où elle part vraiment (elle peut être encore en vol vers la mission)
+      const m = typeof DOMMatrixReadOnly === "function" ? new DOMMatrixReadOnly(getComputedStyle(pv).transform) : null;
+      const [x0, y0] = m && !m.isIdentity ? [m.e, m.f] : ici;
+      ici = [x0, y0];
+      const d = Math.hypot(tx - x0, ty - y0);
+      pv.classList.add("choix"); // la bulle s'efface : Plume part
+      if (d < 12) { pv.classList.add("bond"); window.setTimeout(fini, MOUVEMENTS.long); return; }
+      const duree = Math.round(Math.min(MOUVEMENTS.volChoixMax, Math.max(MOUVEMENTS.volChoixMin, MOUVEMENTS.volChoixMin + d * 0.45)));
+      pv.style.setProperty("--duree-vol", `${duree}ms`);
+      pv.classList.add("vers-choix");
+      placer(tx, ty);
+      window.setTimeout(fini, duree + 40);
+    });
     ajuster();
   };
   const ajuster = () => {
@@ -302,8 +329,14 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
     if (!acts.length) { sfx.soft(); say(`${cap(ISLAND_SPOKEN[id])} dort encore. Elle se réveillera bientôt !`); return; }
     sfx.tap();
     const advised = acts.find((a) => missionActs.includes(a.id)) ?? acts.find((a) => a.plan && ok(a, p!)) ?? acts.find((a) => ok(a, p!));
-    // Île dessinée (livraison 2 : l'île des Nombres) : son écran, où chaque lieu ouvre son activité.
-    if (dessinee(id, acts)) { go(() => islandScreen(id as IleId, acts, advised)); return; }
+    // Île dessinée : Plume s'envole vers elle, puis son écran s'ouvre (chaque lieu y ouvre son activité). Pendant le vol,
+    // les autres appuis sont ignorés : la première île choisie l'emporte.
+    if (dessinee(id, acts)) {
+      if (leaving) return;
+      leaving = true;
+      volerVers(id).then(() => { leaving = false; go(() => islandScreen(id as IleId, acts, advised)); });
+      return;
+    }
     if (acts.length === 1 && ok(acts[0], p!)) { go(() => open(acts[0])); return; }
     islandSheet(id, acts, advised);
   }

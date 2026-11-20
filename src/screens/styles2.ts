@@ -39,6 +39,14 @@ border:2px solid var(--bord);box-shadow:var(--ombre-posee);font:700 17px/1.3 var
 .carte-ciel svg{display:block;overflow:visible}
 .carte-plume{position:absolute;left:0;top:0;width:0;height:0;z-index:3}
 .carte-plume.en-vol{transition:transform var(--duree-vol-plume) var(--courbe-douce)}
+/* livraison 4 : l'enfant choisit une île, Plume s'envole vers elle (durée selon la distance), sa bulle s'efface */
+.carte-plume.vers-choix{transition:transform var(--duree-vol,800ms) var(--courbe-douce)}
+.carte-plume [data-plume]{transition:opacity var(--duree-court)}
+.carte-plume.choix [data-plume]{opacity:0;pointer-events:none}
+.carte-plume .plume-vol{transform-origin:47.2% 53.3%}
+.carte-plume.vers-gauche .plume-vol{scale:-1 1}
+.carte-plume.bond .plume-vol{animation:plume-bond var(--duree-long) var(--courbe-rebond)}
+@keyframes plume-bond{0%{translate:0 0}45%{translate:0 -16px}100%{translate:0 0}}
 .hudbtn{transition:transform var(--duree-moyen) var(--courbe-rebond)}
 .hudbtn:active{transform:scale(.95);transition-duration:var(--duree-appui)}
 .hudbtn .a-rond{pointer-events:none}

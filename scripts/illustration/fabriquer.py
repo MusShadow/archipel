@@ -18,7 +18,7 @@ import iles as I
 import importlib, importlib.util
 
 # Éléments isolés des livraisons 2 et 3 (une image chacun) : module → ELEMENTS {nom: cadre, dessin, options}.
-MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil", "visages", "fin", "calme"]
+MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil", "visages", "fin", "calme", "jeux"]
 def tous_elements(quoi=None):
     out = {}
     for m in MODULES_ELEMENTS:

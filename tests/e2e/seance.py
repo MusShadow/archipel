@@ -59,7 +59,9 @@ def back_to_map(page):
         page.wait_for_timeout(250)
 
 def open_activity(page, island, act):
-    page.click(f'[data-isl="{island}"]', force=True); page.wait_for_timeout(400)
+    page.wait_for_selector(".garde-appui", state="detached")  # un appui forcé tomberait sur la garde des 400 ms
+    page.click(f'[data-isl="{island}"]', force=True); page.wait_for_selector(".ile-ecran")  # Plume vole d'abord vers l'île (livraison 4)
+    page.wait_for_timeout(400)
     page.wait_for_timeout(450)  # fondu de 350 ms entre les écrans
     page.click(f'[data-act="{act}"]'); page.wait_for_timeout(400)
 

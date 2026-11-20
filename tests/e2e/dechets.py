@@ -217,6 +217,7 @@ with sync_playwright() as pw:
         page.click(".kid")
         page.wait_for_timeout(600)
         page.click('[data-isl="decouvertes"]', force=True)
+        page.wait_for_selector(".ile-ecran")  # Plume vole d'abord vers l'île (livraison 4)
         page.wait_for_timeout(400)
         if i == 0:
             shot(page, "00-ile-decouvertes")
