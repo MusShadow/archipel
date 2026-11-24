@@ -24015,12 +24015,6 @@
   ]
  },
  {
-  "text": "Compte les cases vides du panier.",
-  "src": [
-   "marche:indice"
-  ]
- },
- {
   "text": "Compte les pommes avec ton doigt, une par une.",
   "src": [
    "marche:indice"
@@ -24028,6 +24022,12 @@
  },
  {
   "text": "Compte les sacs de dix : dix, vingt, trente… puis ajoute les pommes.",
+  "src": [
+   "marche:indice"
+  ]
+ },
+ {
+  "text": "Compte les trous vides de la cagette.",
   "src": [
    "marche:indice"
   ]
@@ -42544,7 +42544,7 @@
   ]
  },
  {
-  "text": "Il y a 3 pommes dans le panier. Combien en faut-il encore pour en avoir 10 ?",
+  "text": "Il y a 3 pommes dans la cagette. Combien en faut-il encore pour en avoir 10 ?",
   "src": [
    "marche:consigne",
    "marche:indice"
@@ -42721,7 +42721,7 @@
   ]
  },
  {
-  "text": "Il y a 4 pommes dans le panier. Combien en faut-il encore pour en avoir 10 ?",
+  "text": "Il y a 4 pommes dans la cagette. Combien en faut-il encore pour en avoir 10 ?",
   "src": [
    "marche:consigne",
    "marche:indice"
@@ -42788,7 +42788,7 @@
   ]
  },
  {
-  "text": "Il y a 5 pommes dans le panier. Combien en faut-il encore pour en avoir 10 ?",
+  "text": "Il y a 5 pommes dans la cagette. Combien en faut-il encore pour en avoir 10 ?",
   "src": [
    "marche:consigne",
    "marche:indice"
@@ -43189,14 +43189,14 @@
   ]
  },
  {
-  "text": "Il y a 6 pommes dans le panier. Combien en faut-il encore pour en avoir 10 ?",
+  "text": "Il y a 6 pommes dans la cagette. Combien en faut-il encore pour en avoir 10 ?",
   "src": [
    "marche:consigne",
    "marche:indice"
   ]
  },
  {
-  "text": "Il y a 7 pommes dans le panier. Combien en faut-il encore pour en avoir 10 ?",
+  "text": "Il y a 7 pommes dans la cagette. Combien en faut-il encore pour en avoir 10 ?",
   "src": [
    "marche:consigne",
    "marche:indice"
@@ -43300,7 +43300,7 @@
   ]
  },
  {
-  "text": "Il y a 8 pommes dans le panier. Combien en faut-il encore pour en avoir 10 ?",
+  "text": "Il y a 8 pommes dans la cagette. Combien en faut-il encore pour en avoir 10 ?",
   "src": [
    "marche:consigne",
    "marche:indice"
@@ -54027,12 +54027,6 @@
   ]
  },
  {
-  "text": "Les cases qui brillent sont vides. Compte-les.",
-  "src": [
-   "marche:indice"
-  ]
- },
- {
   "text": "Les cases qui s'allument sont sur la même ligne et la même colonne.",
   "src": [
    "motifs:indice"
@@ -54422,6 +54416,12 @@
   "text": "Les toilettes.",
   "src": [
    "options"
+  ]
+ },
+ {
+  "text": "Les trous qui brillent sont vides. Compte-les.",
+  "src": [
+   "marche:indice"
   ]
  },
  {

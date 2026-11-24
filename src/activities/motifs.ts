@@ -94,15 +94,20 @@ export const motifs: ActivityModule<MotifItem> = {
 
   render(item, view) {
     const isGrid = item.kind === "matrice";
-    const seqEl = h("div", { class: isGrid ? "motifgrid" : `motifseq${item.seq.length > 10 ? " long" : ""}`, style: isGrid ? `grid-template-columns:repeat(${item.cols},1fr)` : "" });
+    const seqEl = h("div", { class: isGrid ? "motifgrid" : `motifseq${item.seq.length > 10 ? " long" : ""}${item.kind === "erreur" ? " erreur" : ""}`, style: isGrid ? `grid-template-columns:repeat(${item.cols},1fr)` : "" });
+    // Les perles sont enfilées morceau par morceau (le motif qui se répète) : si la suite ne tient pas sur une ligne, elle
+    // passe à la ligne entre deux morceaux, jamais au milieu d'un motif.
+    let unite: HTMLElement | null = null;
     item.seq.forEach((t, i) => {
       const cell = item.kind === "erreur"
         ? h("button", { type: "button", class: "tok", "data-t": String(i), "data-i": i, "aria-label": `${sayTok(t!)}`, html: tokHTML(t!) })
         : h("div", { class: `tok${t ? "" : " hole"}`, "data-i": i, html: t ? tokHTML(t) : '<span class="title">?</span>' });
       if (item.kind === "erreur") cell.addEventListener("click", () => view.answer(String(i) === item.target, cell, String(i) === item.target ? undefined : "Celui-là est bien à sa place. Dis la suite à voix haute pour trouver l'erreur."));
-      seqEl.appendChild(cell);
+      if (isGrid) { seqEl.appendChild(cell); return; }
+      if (i % item.unit === 0) { unite = h("div", { class: "motif-unite" }); seqEl.appendChild(unite); }
+      unite!.appendChild(cell);
     });
-    view.stage.appendChild(h("div", { class: `panel ${isGrid ? "motif-plateau" : "motif-cordon"}` }, seqEl));
+    view.stage.appendChild(h("div", { class: `panel ${isGrid ? "motif-plateau" : `motif-cordon${item.kind === "erreur" ? " serre" : ""}`}` }, seqEl));
     if (item.kind === "erreur") return;
     const row = h("div", { class: "choices" });
     for (const c of item.choices) {

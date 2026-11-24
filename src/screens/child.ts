@@ -303,16 +303,20 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
   }, 3000);
 
   const go = (fn: () => void) => { if (leaving) return; leaving = true; fn(); };
+  // Pendant que Plume vole vers l'île choisie (et dès qu'on quitte la carte), plus rien ne répond : ni les autres îles,
+  // ni Plume, ni les boutons du bas.
   wrap.addEventListener("click", (e) => {
+    if (leaving) return;
     const t = e.target as Element;
     if (t.closest("[data-plume]")) { sfx.tap(); say(lastLine || "Choisis une île !"); return; }
     const g = t.closest("[data-isl]");
     if (g) tapIsland(g.getAttribute("data-isl")!, g);
   });
-  carnetBtn.addEventListener("click", () => { sfx.tap(); go(() => carnetScreen(() => mapScreen())); });
-  calmBtn.addEventListener("click", () => { sfx.tap(); go(() => calmScreen(() => mapScreen())); });
+  carnetBtn.addEventListener("click", () => { if (leaving) return; sfx.tap(); go(() => carnetScreen(() => mapScreen())); });
+  calmBtn.addEventListener("click", () => { if (leaving) return; sfx.tap(); go(() => calmScreen(() => mapScreen())); });
   const affichee = performance.now();
   meBtn.addEventListener("click", () => {
+    if (leaving) return;
     if (performance.now() - affichee < 380) return; // deuxième appui sur « Retour à la carte », au même endroit
     sfx.tap();
     say(`Tu veux arrêter le voyage, ${p.name} ?`);
@@ -324,6 +328,7 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
   });
 
   function tapIsland(id: string, g: Element) {
+    if (leaving) return; // Plume vole déjà vers une île : la première choisie l'emporte
     g.classList.remove("tapped"); void (g as HTMLElement).offsetWidth; g.classList.add("tapped");
     const acts = all.filter((e) => e.island === id);
     if (!acts.length) { sfx.soft(); say(`${cap(ISLAND_SPOKEN[id])} dort encore. Elle se réveillera bientôt !`); return; }
@@ -332,7 +337,6 @@ export function mapScreen(after?: { sticker?: StickerSpec }) {
     // Île dessinée : Plume s'envole vers elle, puis son écran s'ouvre (chaque lieu y ouvre son activité). Pendant le vol,
     // les autres appuis sont ignorés : la première île choisie l'emporte.
     if (dessinee(id, acts)) {
-      if (leaving) return;
       leaving = true;
       volerVers(id).then(() => { leaving = false; go(() => islandScreen(id as IleId, acts, advised)); });
       return;
@@ -416,7 +420,7 @@ function islandScreen(id: IleId, acts: Entry[], advised: Entry | undefined) {
     sfx.tap();
     go(() => open(e));
   };
-  const { el } = ecranIle(ilesV2()[id], {
+  const { el, vivant } = ecranIle(ilesV2()[id], {
     conseil: advised?.id,
     titre: (a) => byId.get(a)?.title,
     disponible: (a) => { const e = byId.get(a); return !!e && ok(e, p); },
@@ -432,7 +436,7 @@ function islandScreen(id: IleId, acts: Entry[], advised: Entry | undefined) {
     leaving = true; run++;
     say("Le soleil se couche sur l'archipel…").then(() => sleep(400)).then(() => sessionEnd());
   }, 3000);
-  app.show(el, () => { leaving = true; run++; window.clearInterval(timer); });
+  app.show(el, () => { leaving = true; run++; window.clearInterval(timer); vivant?.arreter(); });
   accueil();
 
   // Plume souhaite la bienvenue, présente chaque lieu (son étiquette brille pendant qu'elle en parle), puis conseille.

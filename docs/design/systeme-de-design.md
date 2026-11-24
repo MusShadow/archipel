@@ -154,17 +154,18 @@ Ces jetons sont dans `MOUVEMENTS` (`src/design/jetons.ts`) ; les feuilles de sty
 | `papillon` | 1,6 s | un battement d'ailes de papillon (un aller) |
 | `respiration` | 3,2 s | les hôtes respirent, sur leur île et dans les activités |
 | `clignement` | 5,6 s | un clignement d'yeux par cycle (les yeux fermés environ 140 ms) |
-| `salut` | 7 s | Basile salue depuis son étal |
+| `salut` | 1,8 s, une seule fois | Basile salue depuis son étal, à l'arrivée sur l'île |
 | `surpriseMin`, `surpriseMax` | 20 à 60 s | le temps entre deux surprises |
 
 Règles du décor vivant (`src/screens/vivant.ts`) :
 
-- tout ce qui bouge en continu est plus lent que le battement d'ailes de Plume (un test le vérifie) ;
-- les surprises sont courtes (de 2,4 à 16 s), une à la fois, jamais pendant que Plume parle ;
-- en arrière-plan, le décor se fige et les surprises attendent ;
-- avec « Réduire les animations », rien ne bouge et il n'y a pas de surprise ; la fumée des volcans reste posée ;
+- tout ce qui bouge en continu va moins vite que l'aile de Plume (17 °/s, environ 22 px/s au bout de l'aile) : un test calcule les vitesses sur les images-clés ; ce qui est plus vif ne tourne jamais en boucle (Basile salue une fois, la grenouille saute pour une surprise ou quand on la touche) ;
+- les surprises sont courtes (de 1,4 à 16 s), une à la fois, jamais pendant que Plume parle ; si Plume se met à parler pendant une surprise, celle-ci s'efface en 300 ms ;
+- en arrière-plan, tout se fige, la surprise en cours comprise (son mouvement et sa fin) ; au retour, tout reprend là où il en était ;
+- l'île quittée, plus rien ne tourne (minuteries, écoute de l'arrière-plan, surprise en cours) ;
+- avec « Réduire les animations », rien ne bouge et il n'y a pas de surprise ; la fumée des volcans reste posée ; ce qu'on touche fait quand même son son ;
 - chaque animation ne touche que `transform` et `opacity` (vérifié par `tests/e2e/performances.py`) ;
-- ce qu'on peut toucher dans le décor (l'hôte, un palmier, le bateau, la grenouille) est un bouton nommé ; un palmier dont les palmes passent sur un lieu ne se touche pas, pour que le lieu reste entier sous le doigt.
+- ce qu'on peut toucher dans le décor (l'hôte, un palmier, le bateau) est un bouton nommé, posé à côté des lieux : il s'enfonce à l'appui (120 ms) et réagit en 400 ms ; ce qui est posé sur un lieu (la grenouille sur l'étang, la fumée au-dessus du petit volcan) ouvre ce lieu, comme le reste de son dessin ; un palmier dont les palmes passent sur un lieu ne se touche pas : le lieu reste entier sous le doigt (vérifié point par point par `tests/e2e/vivant.py`).
 
 ### Bruitages
 

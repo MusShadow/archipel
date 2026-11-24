@@ -84,10 +84,12 @@ export const MOUVEMENTS = {
   volChoixMin: 600, volChoixMax: 1000, // ms, livraison 4 : Plume vole vers l'île que l'enfant a choisie (selon la distance)
   coucherSoleil: 8000, // ms, une seule fois : le soleil de la fin de séance descend derrière l'horizon
   inspire: 4300, souffle: 5300, // ms, coin calme : Pico gonfle doucement à l'inspiration, se repose à l'expiration
-  // Décor vivant des îles (livraison 4) : tout est plus lent que le battement d'ailes de Plume, sauf les surprises,
-  // courtes, une à la fois, toutes les 20 à 60 secondes, jamais pendant que Plume parle.
+  // Décor vivant des îles (livraison 4) : tout ce qui bouge en continu va moins vite que l'aile de Plume (les tests le
+  // mesurent sur les images-clés) ; seules les surprises sont plus vives : courtes, une à la fois, toutes les 20 à
+  // 60 secondes, jamais pendant que Plume parle.
   nuages: 46000, houle: 6500, etincelle: 5200, palmes: 5200, bateau: 3600, // ms, en continu (aller-retour)
-  papillon: 1600, salut: 7000, clignement: 5600, // ms : battement d'ailes d'un papillon, Basile qui salue, un clignement d'yeux
+  papillon: 1600, clignement: 5600, // ms : battement d'ailes d'un papillon, un clignement d'yeux
+  salut: 1800, // ms, une seule fois : Basile salue à l'arrivée sur l'île des Nombres
   surpriseMin: 20000, surpriseMax: 60000, // ms entre deux surprises
   courbes: {
     douce: "cubic-bezier(0.3, 0.7, 0.3, 1)", // arrivée qui ralentit

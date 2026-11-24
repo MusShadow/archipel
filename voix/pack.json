@@ -29033,6 +29033,12 @@
 "per": 0.0,
 "spelling": null
 },
+"compte les trous vides de la cagette|.": {
+"h": "b14aca92c135b555",
+"say": "Compte les trous vides de la cagette.",
+"per": 0.0,
+"spelling": null
+},
 "continue comme ça|.": {
 "h": "d763fb2fea40a8e8",
 "say": "Continue comme ça !",
@@ -29633,6 +29639,12 @@
 "per": 0.0,
 "spelling": null
 },
+"il y a 3 pommes dans la cagette|.": {
+"h": "b2d569147950d7ea",
+"say": "Il y a trois pommes dans la cagette.",
+"per": 0.0,
+"spelling": null
+},
 "il y a 3 pommes dans le panier|.": {
 "h": "b76c015289388d4d",
 "say": "Il y a trois pommes dans le panier.",
@@ -29687,6 +29699,12 @@
 "per": 0.0,
 "spelling": null
 },
+"il y a 4 pommes dans la cagette|.": {
+"h": "a1d2fbc275bd466d",
+"say": "Il y a quatre pommes dans la cagette.",
+"per": 0.0,
+"spelling": null
+},
 "il y a 4 pommes dans le panier|.": {
 "h": "08593c6a34cdf429",
 "say": "Il y a quatre pommes dans le panier.",
@@ -29702,6 +29720,12 @@
 "il y a 4 sacs|,": {
 "h": "4ffed238c2f7acf0",
 "say": "Il y a quatre sacs,",
+"per": 0.0,
+"spelling": null
+},
+"il y a 5 pommes dans la cagette|.": {
+"h": "1d1b83ae35033165",
+"say": "Il y a cinq pommes dans la cagette.",
 "per": 0.0,
 "spelling": null
 },
@@ -29789,9 +29813,21 @@
 "per": 0.0,
 "spelling": null
 },
+"il y a 6 pommes dans la cagette|.": {
+"h": "d7408cd88bf02fed",
+"say": "Il y a si pommes dans la cagette.",
+"per": 0.0,
+"spelling": null
+},
 "il y a 6 pommes dans le panier|.": {
 "h": "24e1518b4e1ed10e",
 "say": "Il y a si pommes dans le panier.",
+"per": 0.0,
+"spelling": null
+},
+"il y a 7 pommes dans la cagette|.": {
+"h": "b397bab7d8a8165c",
+"say": "Il y a sept pommes dans la cagette.",
 "per": 0.0,
 "spelling": null
 },
@@ -29834,6 +29870,12 @@
 "il y a 8 biscuits pour rico|": {
 "h": "273a07e39f6085ae",
 "say": "Il y a huit biscuits pour Rico",
+"per": 0.0,
+"spelling": null
+},
+"il y a 8 pommes dans la cagette|.": {
+"h": "e9f93fcea1cc84c5",
+"say": "Il y a huit pommes dans la cagette.",
 "per": 0.0,
 "spelling": null
 },
@@ -30206,6 +30248,12 @@
 "les nénuphars qui brillent sont les premiers bonds|.": {
 "h": "62c1577988cb644e",
 "say": "Les nénuphars qui brillent sont les premiers bonds.",
+"per": 0.0,
+"spelling": null
+},
+"les trous qui brillent sont vides|.": {
+"h": "2d08eade03d77df3",
+"say": "Les trous qui brillent sont vides.",
 "per": 0.0,
 "spelling": null
 },

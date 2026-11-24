@@ -50068,6 +50068,16 @@
   ]
  },
  {
+  "key": "compte les trous vides de la cagette|.",
+  "text": "Compte les trous vides de la cagette.",
+  "say": "Compte les trous vides de la cagette.",
+  "pack": "nombres",
+  "words": 7,
+  "fams": [
+   "marche:indice"
+  ]
+ },
+ {
   "key": "continue comme ça|.",
   "text": "Continue comme ça !",
   "say": "Continue comme ça !",
@@ -51068,6 +51078,16 @@
   ]
  },
  {
+  "key": "il y a 3 pommes dans la cagette|.",
+  "text": "Il y a 3 pommes dans la cagette.",
+  "say": "Il y a trois pommes dans la cagette.",
+  "pack": "nombres",
+  "words": 8,
+  "fams": [
+   "marche:consigne"
+  ]
+ },
+ {
   "key": "il y a 3 pommes dans le panier|.",
   "text": "Il y a 3 pommes dans le panier.",
   "say": "Il y a trois pommes dans le panier.",
@@ -51158,6 +51178,16 @@
   ]
  },
  {
+  "key": "il y a 4 pommes dans la cagette|.",
+  "text": "Il y a 4 pommes dans la cagette.",
+  "say": "Il y a quatre pommes dans la cagette.",
+  "pack": "nombres",
+  "words": 8,
+  "fams": [
+   "marche:consigne"
+  ]
+ },
+ {
   "key": "il y a 4 pommes dans le panier|.",
   "text": "Il y a 4 pommes dans le panier.",
   "say": "Il y a quatre pommes dans le panier.",
@@ -51185,6 +51215,16 @@
   "words": 5,
   "fams": [
    "marche:indice"
+  ]
+ },
+ {
+  "key": "il y a 5 pommes dans la cagette|.",
+  "text": "Il y a 5 pommes dans la cagette.",
+  "say": "Il y a cinq pommes dans la cagette.",
+  "pack": "nombres",
+  "words": 8,
+  "fams": [
+   "marche:consigne"
   ]
  },
  {
@@ -51328,9 +51368,29 @@
   ]
  },
  {
+  "key": "il y a 6 pommes dans la cagette|.",
+  "text": "Il y a 6 pommes dans la cagette.",
+  "say": "Il y a six pommes dans la cagette.",
+  "pack": "nombres",
+  "words": 8,
+  "fams": [
+   "marche:consigne"
+  ]
+ },
+ {
   "key": "il y a 6 pommes dans le panier|.",
   "text": "Il y a 6 pommes dans le panier.",
   "say": "Il y a six pommes dans le panier.",
+  "pack": "nombres",
+  "words": 8,
+  "fams": [
+   "marche:consigne"
+  ]
+ },
+ {
+  "key": "il y a 7 pommes dans la cagette|.",
+  "text": "Il y a 7 pommes dans la cagette.",
+  "say": "Il y a sept pommes dans la cagette.",
   "pack": "nombres",
   "words": 8,
   "fams": [
@@ -51405,6 +51465,16 @@
   "words": 7,
   "fams": [
    "partage:consigne"
+  ]
+ },
+ {
+  "key": "il y a 8 pommes dans la cagette|.",
+  "text": "Il y a 8 pommes dans la cagette.",
+  "say": "Il y a huit pommes dans la cagette.",
+  "pack": "nombres",
+  "words": 8,
+  "fams": [
+   "marche:consigne"
   ]
  },
  {
@@ -52042,6 +52112,16 @@
   "words": 8,
   "fams": [
    "nenuphars:indice"
+  ]
+ },
+ {
+  "key": "les trous qui brillent sont vides|.",
+  "text": "Les trous qui brillent sont vides.",
+  "say": "Les trous qui brillent sont vides.",
+  "pack": "nombres",
+  "words": 6,
+  "fams": [
+   "marche:indice"
   ]
  },
  {

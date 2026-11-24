@@ -75,11 +75,17 @@ export function ecranIle(ile: Ile, o: OptionsIle = {}): { el: HTMLElement; ajust
   const toucher = (id: string, el: HTMLElement) => { if (o.onLieu) o.onLieu(id, el); else wobble(el); };
   if (d) {
     cadre.appendChild(poser(imgIllustration(d.base, "ile-base", ""), d.base.boite));
-    // le décor vivant (livraison 4) : la mer et le ciel juste au-dessus du dessin de base, le reste au-dessus des lieux
-    vivant = decorVivant(d, cadre);
+    // le décor vivant (livraison 4) : la mer et le ciel juste au-dessus du dessin de base, le reste au-dessus des lieux ;
+    // ce qui est posé sur un lieu (la grenouille sur l'étang, la fumée du petit volcan) ouvre ce lieu
+    vivant = decorVivant(d, cadre, {}, {
+      ouvrir: (id) => { const lieu = cadre.querySelector<HTMLElement>(`img.ile-lieu[data-lieu="${id}"]`); if (lieu) toucher(id, lieu); },
+    });
     cadre.append(...vivant.fond);
     for (const [e, r] of Object.entries(d.remplissages)) if (!q.lieux.some((l) => l.emplacement === e)) cadre.appendChild(poser(imgIllustration(r), r.boite));
-    for (const l of q.lieux) {
+    // Les lieux sont posés du plus haut au plus bas de l'île (ce qui est devant est plus bas) : là où la boîte d'un lieu
+    // passe sur le dessin d'un autre, c'est le dessin qui répond au doigt (le marché et le goûter des Nombres).
+    const bas = (id: string) => { const b = d.lieux[id]?.boite; return b ? b[1] + b[3] : 0; };
+    for (const l of [...q.lieux].sort((a, b) => bas(a.ids[0]) - bas(b.ids[0]))) {
       const id = l.ids[0];
       const im = d.lieux[id];
       if (!im) continue;

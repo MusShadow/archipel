@@ -99,7 +99,7 @@ export function coupeSVG(o: { flow?: boolean; cloud?: boolean; level?: number; t
     `<rect class="hit" x="${CHIMNEY.x - 15}" y="52" width="30" height="${CHIMNEY.bottom - 54}" fill="none" pointer-events="all"/>`);
   // Le cratère : la lave y brille quand le magma est arrivé en haut.
   s += g("cratere", imageCoupe("cratere-lave", "vcratere-lave", level >= 1 ? "" : ` style="opacity:0"`),
-    `<rect class="hit" x="80" y="28" width="40" height="22" rx="8" fill="none" pointer-events="all"/>`);
+    `<rect class="hit" x="80" y="29" width="40" height="26" rx="8" fill="none" pointer-events="all"/>`); // 78 px de haut sur l'iPad
   // La lave qui coule sur la pente.
   if (flow) s += g("coulee", imageCoupe("coulee"),
     `<path class="hit" d="${FLOW_HIT}" fill="none" stroke="#000" stroke-opacity="0" stroke-width="30" stroke-linecap="round" pointer-events="stroke"/>`);

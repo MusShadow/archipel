@@ -1,11 +1,12 @@
-"""Performances du décor vivant (livraison 4), mesurées sur chaque île, en paysage (iPad 11 pouces).
+"""Performances du décor vivant (livraison 4), mesurées sur chaque île, en paysage (iPad 11 pouces), et pendant les deux
+mouvements les plus lourds de la livraison : le vol de Plume vers l'île choisie, l'éruption du volcan d'Octave.
 - Chaque animation du décor ne touche que transform et opacity : le navigateur les confie au compositeur, sans
   recalculer la page à chaque image (vérifié animation par animation).
-- Images par seconde et intervalle le plus long entre deux images, pendant 6 s, décor vivant puis animations réduites
-  (la référence) ; tâches longues (plus de 50 ms) sur le fil principal.
+- Images par seconde et intervalle entre deux images (95e centile, le plus long), pendant 6 s, décor vivant puis animations
+  réduites (la référence) ; tâches longues (plus de 50 ms) sur le fil principal.
 - Poids des images de l'écran de l'île (décor vivant compris).
-Chrome sans écran dessine sans carte graphique : les chiffres sont plus bas que sur l'iPad ; c'est l'écart avec la
-référence et l'absence de tâche longue qui comptent. Échec si moins de 20 images par seconde ou une tâche de plus de 200 ms.
+Chrome sans écran dessine sans carte graphique : les chiffres sont plus bas que sur l'iPad. Échec si moins de 50 images
+par seconde, si une image sur vingt met plus de 34 ms (deux images à 60 Hz), ou si une tâche dure plus de 200 ms.
 Usage : python3 tests/e2e/performances.py [fichier.json]"""
 import json, sys, time
 from pathlib import Path
@@ -22,7 +23,7 @@ DATA = {"version": 1, "pin": "1234", "activeId": "p1",
 INIT = """
 (() => {
   localStorage.setItem('archipel2.donnees', %s);
-  window.__archipelTest = { fetes: false, graine: 5, item: null, mod: null, onItem() {} };
+  window.__archipelTest = Object.assign({ fetes: false, graine: 5, item: null, mod: null, onItem(item, mod) { this.item = item; this.mod = mod; } }, window.__archipelTest || {});
   const fake = { speaking: false, pending: false, onvoiceschanged: null, getVoices: () => [], cancel() {}, pause() {}, resume() {},
     speak(u) { setTimeout(() => u.onend && u.onend(), 20); } };
   Object.defineProperty(window, 'speechSynthesis', { value: fake, configurable: true });
@@ -50,6 +51,84 @@ def poids(ile):
     vivant = [x["fichier"] for x in d["animes"].values()] + sujets
     return round(sum(map(taille, tout + sujets)) / 1024), round(sum(map(taille, vivant)) / 1024)
 
+IPS_MIN, P95_MAX = 50, 34
+# Hasard rejouable pour le volcan (comme tests/e2e/volcan.py) : les mêmes exercices à chaque passage.
+GRAINE = """(() => { let s = %d >>> 0;
+  Math.random = () => { s = (s + 0x6D2B79F5) >>> 0; let t = s; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  window.__archipelTest = { graine: 4082 }; })();"""
+LANCER = "(ms) => { window.__mesure = (" + MESURE + ")(ms); }"
+
+def juger(nom, m):
+    if m["ips"] < IPS_MIN: echecs.append(f"{nom} : {m['ips']} images par seconde")
+    if m["p95"] > P95_MAX: echecs.append(f"{nom} : une image sur vingt met {m['p95']} ms")
+    if any(t > 200 for t in m["longues"]): echecs.append(f"{nom} : tâche longue {max(m['longues'])} ms")
+
+def ouvrir(b, data=None, graine=None):
+    ctx = b.new_context(viewport={"width": 1194, "height": 834}, device_scale_factor=2)
+    if graine is not None: ctx.add_init_script(GRAINE % graine)
+    ctx.add_init_script(INIT if data is None else INIT.replace(json.dumps(json.dumps(DATA)), json.dumps(json.dumps(data))))
+    page = ctx.new_page()
+    page.goto(PAGE.as_uri()); page.wait_for_timeout(600)
+    page.click(".kid"); page.wait_for_timeout(1900)
+    page.wait_for_selector(".garde-appui", state="detached")
+    return ctx, page
+
+def vol(b):
+    """Plume vole vers l'île la plus loin d'elle : on mesure pendant le vol (au moins 600 ms), avant l'écran de l'île."""
+    ctx, page = ouvrir(b)
+    centre = lambda isl: page.evaluate(f"() => {{ const r = document.querySelector('[data-isl={isl}] .ile-zone').getBoundingClientRect(); return [r.x + r.width / 2, r.y + r.height / 2]; }}")
+    px, py = page.evaluate("() => { const r = document.querySelector('.carte-plume .plume-vol').getBoundingClientRect(); return [r.x + r.width / 2, r.y + r.height / 2]; }")
+    ile = max(["port", "enigmes", "mots", "nombres"], key=lambda i: (centre(i)[0] - px) ** 2 + (centre(i)[1] - py) ** 2)
+    page.evaluate(LANCER, 550)
+    page.click(f'[data-isl="{ile}"] .ile-zone', force=True)
+    envol = page.evaluate("() => document.querySelector('.carte-plume').classList.contains('vers-choix')")
+    m = page.evaluate("() => window.__mesure")
+    ctx.close()
+    if not envol: echecs.append(f"vol vers {ile} : Plume ne s'est pas envolée")
+    return ile, m
+
+def eruption(b):
+    """Le volcan d'Octave, niveau 2 : on répond juste jusqu'à « fais monter le magma », puis on mesure pendant l'éruption."""
+    data = json.loads(json.dumps(DATA))
+    data["profiles"][0]["stairs"] = {"volcan": {"level": 2, "up": 0, "down": 0}}
+    ctx, page = ouvrir(b, data, graine=2043)
+    page.click('[data-isl="decouvertes"] .ile-zone', force=True)
+    page.wait_for_selector(".ile-ecran"); page.wait_for_timeout(900)
+    page.click('[data-act="volcan"]'); page.wait_for_timeout(500)
+    m, dernier = None, None
+    for _ in range(40):
+        page.wait_for_timeout(200)
+        if page.locator('[aria-label="Continuer"]').count():
+            page.click('[aria-label="Continuer"]'); page.wait_for_timeout(300); continue
+        it = page.evaluate("() => window.__archipelTest.item")
+        if not it or json.dumps(it, sort_keys=True) == dernier or not page.locator(".stage").count():
+            continue
+        if it["kind"] == "monte" and page.locator(".vcoupe.vmonte").count():
+            x, y = page.evaluate("""() => { const s = document.querySelector('.vcoupe svg'); const p = s.createSVGPoint(); p.x = 100; p.y = 140;
+              const q = p.matrixTransform(s.getScreenCTM()); return [q.x, q.y]; }""")
+            page.evaluate(LANCER, 2600)
+            for _ in range(10):
+                page.mouse.click(x, y); page.wait_for_timeout(60)
+                if page.locator(".veruption").count(): break
+            vu = page.locator(".veruption").count() > 0
+            m = page.evaluate("() => window.__mesure")
+            if not vu: echecs.append("éruption : le magma n'est pas arrivé au cratère")
+            break
+        if it["kind"] in ("partie", "monte") and not page.locator(".vcoupe").count():
+            continue
+        if it["kind"] != "partie" and not page.locator(".stage [data-t]").count():
+            continue
+        dernier = json.dumps(it, sort_keys=True)
+        if it["kind"] == "partie":
+            bb = page.locator(f'.vcoupe [data-t="{it["target"]}"] .hit').bounding_box()
+            page.mouse.click(bb["x"] + bb["width"] / 2, bb["y"] + bb["height"] / 2)
+        else:
+            page.click(f'.stage [data-t="{it["target"]}"]')
+        page.wait_for_timeout(500)
+    ctx.close()
+    if m is None: echecs.append("éruption : aucun exercice « fais monter le magma » rencontré")
+    return m
+
 echecs, lignes = [], []
 with sync_playwright() as pw:
     b = pw.chromium.launch(executable_path=CHROME, headless=True)
@@ -69,7 +148,7 @@ with sync_playwright() as pw:
                 res["animations"] = page.evaluate("() => document.getAnimations().filter((a) => a.playState === 'running').length")
                 res["hors_compositeur"] = sorted(set(page.evaluate(PROPRIETES)))
                 # une surprise en cours pendant la mesure (la plus lourde : le dauphin et ses gerbes)
-                page.evaluate("() => { const v = document.querySelector('.ile-ecran')._vivant; v.arreter(); v.jouer('dauphin'); }")
+                page.evaluate("() => { const v = document.querySelector('.ile-ecran')._vivant; v.sansSurprises(); v.jouer('dauphin'); }")
             m = page.evaluate(MESURE, 6000)
             res[mode] = m
             ctx.close()
@@ -81,10 +160,16 @@ with sync_playwright() as pw:
               f" · hors compositeur : {res['hors_compositeur'] or 'aucune'}")
         if res["hors_compositeur"]:
             echecs.append(f"{ile} : propriétés animées hors compositeur {res['hors_compositeur']}")
-        if v["ips"] < 20:
-            echecs.append(f"{ile} : {v['ips']} images par seconde")
-        if any(t > 200 for t in v["longues"]):
-            echecs.append(f"{ile} : tâche longue {max(v['longues'])} ms")
+        juger(ile, v)
+    ile, m = vol(b)
+    print(f"vol de Plume vers {ile:8} : {m['ips']:3} i/s (p95 {m['p95']} ms, max {m['max']} ms) · tâches longues {m['longues']}")
+    juger("vol de Plume", m)
+    lignes.append({"vol": ile, **m})
+    m = eruption(b)
+    if m:
+        print(f"éruption du volcan     : {m['ips']:3} i/s (p95 {m['p95']} ms, max {m['max']} ms) · tâches longues {m['longues']}")
+        juger("éruption du volcan", m)
+        lignes.append({"eruption": True, **m})
     b.close()
 if len(sys.argv) > 1:
     Path(sys.argv[1]).write_text(json.dumps(lignes, ensure_ascii=False, indent=1) + "\n")

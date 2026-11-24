@@ -1,5 +1,6 @@
 // Dessins du « grand tri » : les poubelles (bac jaune, bleu, vert, blanc, marron, gris, composteur) et les déchets de
 // Basile. Même style que la goutte et le volcan : trait encre, couleurs douces, carré de 100 × 100.
+import { calqueSVG, image } from "../design/dessins";
 const INK = "#273043";
 const K = `stroke="${INK}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"`;
 const K2 = `stroke="${INK}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"`;
@@ -98,11 +99,19 @@ export const TART: Record<string, string> = {
 
 export const tartSVG = (id: string) => `<svg viewBox="0 0 100 100" aria-hidden="true" style="display:block;width:100%;height:100%;overflow:visible">${TART[id] ?? ""}</svg>`;
 
-// Gommettes : le bac jaune, ou la médaille du grand trieur (trois bacs).
+// Gommettes : le bac jaune, ou la médaille du grand trieur (trois bacs). Les poubelles sont celles du jeu, dessinées
+// (atelier : scripts/illustration/jeux_decouvertes.py) : le corps et son couvercle, dans leur cadre de 120 × 120 ; le
+// tracé reste en secours si un dessin manque.
 export const triStickerSVG = (ref?: string) => {
+  const dessinee = (teinte: string, symbole: string, cx: number, bas: number, k: number) =>
+    image(`activites/poubelle-${teinte}-${symbole}`) && image(`activites/couvercle-${teinte}`)
+      ? calqueSVG(`activites/poubelle-${teinte}-${symbole}`, cx - 63.25 * k, bas - 120 * k, k) + calqueSVG(`activites/couvercle-${teinte}`, cx - 63.25 * k, bas - 120 * k, k)
+      : null;
   const one = (x: number, b: BinLook, sc: number) => `<g transform="translate(${x} ${18 + (1 - sc) * 30}) scale(${sc * 0.4})">${binSVG(b).replace(/^<svg[^>]*>|<\/svg>$/g, "")}</g>`;
   const inner = ref === "expert"
-    ? one(9, { body: "#34B37A", lid: "#25915F", symbol: "verre" }, 0.8) + one(39, { body: "#9B6B43", lid: "#7A5232", symbol: "cuisine" }, 0.8) + one(24, { body: "#FFD23F", lid: "#E8B400", symbol: "recyclage" }, 1)
-    : one(15, { body: "#FFD23F", lid: "#E8B400", symbol: "recyclage" }, 1.05);
+    ? (dessinee("vert", "verre", 22, 54, 0.3) ?? one(9, { body: "#34B37A", lid: "#25915F", symbol: "verre" }, 0.8))
+      + (dessinee("marron", "cuisine", 48, 54, 0.3) ?? one(39, { body: "#9B6B43", lid: "#7A5232", symbol: "cuisine" }, 0.8))
+      + (dessinee("jaune", "recyclage", 35, 60, 0.38) ?? one(24, { body: "#FFD23F", lid: "#E8B400", symbol: "recyclage" }, 1))
+    : dessinee("jaune", "recyclage", 35, 56, 0.4) ?? one(15, { body: "#FFD23F", lid: "#E8B400", symbol: "recyclage" }, 1.05);
   return `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="#FFF4CC"/>${inner}</svg>`;
 };

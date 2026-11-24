@@ -1,6 +1,6 @@
 // Île des Énigmes — « Le chemin de Bip » : programmer un petit robot avec des flèches, puis trouver le bug.
 import type { Rng } from "../core";
-import { image, imgHTML, srcDe, vignette } from "../design/dessins";
+import { calqueSVG, image, imgHTML, srcDe, vignette } from "../design/dessins";
 import type { ActivityModule, Item, View } from "../host";
 import { sfx } from "../services";
 import { glow, h, icon, sleep } from "../ui";
@@ -89,7 +89,7 @@ export const bip: ActivityModule<BipItem> = {
   id: "bip", title: "Le chemin de Bip", domain: "enigmes", island: "enigmes", host: "rico",
   maxLevel: 5, items: 5,
   skills: ["ENIG.PROGRAMMES", "ENIG.DEBUG"],
-  card: `<span style="display:block;width:1em;height:1em">${BIP}</span>`, pitch: "Le chemin de Bip, pour programmer un petit robot avec des flèches.",
+  card: `<span style="display:block;width:1em;height:1em">${imgHTML("bip-content", "", "display:block;width:100%;height:100%;object-fit:contain")}</span>`, pitch: "Le chemin de Bip, pour programmer un petit robot avec des flèches.",
   startLevel: () => 1,
   identity: (it) => `${it.kind}:${it.cols}x${it.rows}:${it.start}>${it.goal}:${[...it.rocks].sort((a, b) => a - b).join(",")}`,
 
@@ -232,4 +232,5 @@ export const bip: ActivityModule<BipItem> = {
   },
 };
 
-export const bipStickerSVG = () => `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="#E6DEFA"/><g transform="translate(15 13) scale(0.67)">${BIP.replace('style="display:block;width:100%;height:100%"', 'width="60" height="60"')}</g></svg>`;
+// La gommette : Bip dessiné (atelier : scripts/illustration/personnages.py), dans sa pastille lilas.
+export const bipStickerSVG = () => `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="#E6DEFA"/>${image("bip-content") ? calqueSVG("bip-content", 7.8, 1.6, 0.225) : `<g transform="translate(15 13) scale(0.67)">${BIP.replace('style="display:block;width:100%;height:100%"', 'width="60" height="60"')}</g>`}</svg>`;

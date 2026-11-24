@@ -30,6 +30,14 @@ export function calque(nom: string, cls = ""): string {
   return `<img class="calque${cls ? ` ${cls}` : ""}" src="${srcDe(im)}" alt="" draggable="false" `
     + `style="left:${pc((x / W) * 100)};top:${pc((y / H) * 100)};width:${pc((l / W) * 100)};height:${pc((ht / H) * 100)}">`;
 }
+// Une image de l'atelier dans un dessin SVG (les gommettes) : son cadre de rendu posé en (x, y), à l'échelle k.
+const r1 = (n: number) => Math.round(n * 10) / 10;
+export function calqueSVG(nom: string, x: number, y: number, k: number): string {
+  const im = image(nom);
+  if (!im) return "";
+  const [bx, by, bl, bh] = im.boite;
+  return `<image href="${srcDe(im)}" x="${r1(x + bx * k)}" y="${r1(y + by * k)}" width="${r1(bl * k)}" height="${r1(bh * k)}" preserveAspectRatio="none"/>`;
+}
 export const vignette = (nom: string, cls = "") =>
   `<span class="vignette${cls ? ` ${cls}` : ""}" style="aspect-ratio:${rapport(nom)}" aria-hidden="true">${calque(nom)}</span>`;
 

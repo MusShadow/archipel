@@ -141,7 +141,7 @@ function shareBoard(item: ShareItem, view: View) {
   const draw = (k: number) => {
     const el = holder(k);
     el.replaceChildren(...Array.from({ length: get(k) }, () => cookie(k)));
-    if (k < 0 && !pile) el.appendChild(h("span", { class: "muted", style: "font-size:max(14px,calc(var(--u) * 20))" }, "Plus de biscuits à partager"));
+    if (k < 0 && !pile) el.appendChild(h("span", { class: "etiquette-vide", style: "font-size:max(14px,calc(var(--u) * 20))" }, "Plus de biscuits à partager"));
     zoneEl(k).setAttribute("aria-label", k < 0 ? `${pile} biscuits à partager` : `${k < n ? NAMES[item.friends[k]] : "Panier de Basile"} : ${get(k)}`);
   };
   const drawAll = () => { draw(-1); plateEls.forEach((_, k) => draw(k)); };

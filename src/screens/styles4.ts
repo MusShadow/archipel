@@ -22,7 +22,7 @@ export const STYLES_L4 = `
 .panier-osier{--l:min(88vw,calc(var(--u) * 780));position:relative;box-sizing:border-box;display:flex;flex-wrap:wrap-reverse;align-content:flex-start;align-items:flex-end;justify-content:center;
 gap:max(4px,calc(var(--u) * 8));width:var(--l);min-height:calc(var(--l) * 249 / 991);padding:calc(var(--l) * .03) calc(var(--l) * .1) calc(var(--l) * .085);
 background:center bottom/100% auto no-repeat}
-.corbeille{position:relative;width:max(190px,calc(var(--u) * 330));aspect-ratio:383/341.5;background:center/100% 100% no-repeat}
+.corbeille{position:relative;width:max(220px,calc(var(--u) * 400));aspect-ratio:383/341.5;background:center/100% 100% no-repeat}
 .cagette{position:relative;width:max(300px,calc(var(--u) * 470));aspect-ratio:548.5/263;background:center/100% 100% no-repeat}
 .cagette .cell{position:absolute;width:13.2%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%}
 .ardoise-compteur{display:flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:max(86px,calc(var(--u) * 140));aspect-ratio:220/144.5;padding:0 max(12px,calc(var(--u) * 22));
@@ -37,7 +37,9 @@ background:center/100% 100% no-repeat;color:#FFFDF4;font-family:var(--police-tit
 .cadre-act .panel.cookies{border:max(14px,calc(var(--u) * 24)) solid transparent;border-image:var(--img-boite) ${BORD_BOITE} fill/auto stretch;background:none;
 border-radius:max(12px,calc(var(--u) * 20));box-shadow:var(--ombre-posee);padding:max(4px,calc(var(--u) * 8)) max(8px,calc(var(--u) * 14))}
 .cadre-act .panel.cookies.over{box-shadow:0 0 0 max(4px,calc(var(--u) * 7)) rgba(31,169,181,.55),var(--ombre-posee)}
-.cadre-act .panel.cookies .muted{color:var(--encre)}
+/* la boîte vide : le mot est écrit sur une étiquette de papier collée sur le fer (lisible sur le bleu) */
+.cadre-act .panel.cookies .etiquette-vide{display:inline-block;color:var(--encre);background:#FFFDF6;border-radius:max(8px,calc(var(--u) * 12));
+padding:max(4px,calc(var(--u) * 6)) max(10px,calc(var(--u) * 16));box-shadow:0 1px 0 rgba(74,52,30,.18),0 3px 8px rgba(74,52,30,.14);font-weight:700;transform:rotate(-1.5deg)}
 .cadre-act .plates{padding:max(10px,calc(var(--u) * 18)) max(14px,calc(var(--u) * 28));border-radius:var(--rayon-grand);box-shadow:var(--ombre-posee);
 background-color:#FFFDF6;background-image:linear-gradient(90deg,rgba(61,139,234,.16) 50%,transparent 50%),linear-gradient(0deg,rgba(61,139,234,.16) 50%,transparent 50%);
 background-size:max(28px,calc(var(--u) * 44)) max(28px,calc(var(--u) * 44))}
@@ -57,6 +59,7 @@ border-radius:50%;z-index:2;pointer-events:none;opacity:0;transform:translate(-5
 .pickcard.labelled .fvign{height:max(60px,calc(var(--u) * 100));width:auto}
 /* ---------- Les motifs de Rico : des perles en bois enfilées sur un cordon ; le tableau, un plateau à alvéoles ---------- */
 .motifseq{--ecart:max(4px,calc(var(--u) * 10));gap:var(--ecart)}
+.motif-unite{display:flex;gap:var(--ecart)}
 .motifseq .tok{position:relative;background:none;border-color:transparent;padding:max(2px,calc(var(--u) * 3))}
 .motifseq .tok::before{content:"";position:absolute;z-index:0;left:calc(var(--ecart) * -.5 - 1px);right:calc(var(--ecart) * -.5 - 1px);top:50%;
 height:max(5px,calc(var(--u) * 8));transform:translateY(-50%);border-radius:99px;background:repeating-linear-gradient(115deg,#E8D5AB 0 4px,#C6AA7A 4px 7px);
@@ -71,8 +74,9 @@ box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 1px rgba(39,48,67,.2)}
 .motifgrid{padding:max(12px,calc(var(--u) * 20));background:var(--img-plateau-perles) center/100% 100% no-repeat}
 .motifgrid .tok{width:max(56px,calc(var(--u) * 100));height:max(56px,calc(var(--u) * 100));background:var(--img-alveole) center/100% 100% no-repeat;border-color:transparent;padding:max(5px,calc(var(--u) * 8))}
 .motifgrid .tok.hole{border:3px dashed var(--violet);border-radius:18px;background:#F3EEFF}
-.motifgrid .tok.lit{box-shadow:inset 0 0 0 999px rgba(140,107,224,.26);border-radius:18px}
-.motifgrid .tok.right{box-shadow:inset 0 0 0 999px rgba(52,179,122,.28);border-color:var(--green);border-radius:18px}
+/* à l'indice, les alvéoles de la ligne et de la colonne s'éclairent (voile lilas clair, anneau violet) : le bois ne fonce pas */
+.motifgrid .tok.lit{box-shadow:inset 0 0 0 999px rgba(247,243,255,.55),0 0 0 max(3px,calc(var(--u) * 4)) var(--violet);border-radius:18px}
+.motifgrid .tok.right{box-shadow:inset 0 0 0 999px rgba(236,250,242,.55),0 0 0 max(3px,calc(var(--u) * 4)) var(--green);border-color:transparent;border-radius:18px}
 .tokcard .vignette.perle{width:max(64px,calc(var(--u) * 116));height:max(64px,calc(var(--u) * 116))}
 /* ---------- Le chemin de Bip : un potager en cases ---------- */
 .bipgrid{border:max(10px,calc(var(--u) * 18)) solid transparent;border-image:var(--img-potager) ${BORD_POTAGER} fill/auto stretch;background:none;border-radius:0;
@@ -86,4 +90,10 @@ padding:max(3px,calc(var(--u) * 5));filter:drop-shadow(0 4px 6px rgba(39,48,67,.
 /* ---------- Le grand tri : des poubelles dessinées ; le couvercle se soulève autour de sa charnière, en arrière ---------- */
 .poubelle{position:relative;display:block;width:100%;height:100%}
 .poubelle .lid{transform-origin:5% 72%;transition:transform .25s ease-out}
+/* ---------- cibles de l'enfant d'au moins 78 px : les perles à toucher (« Rico s'est trompé »), les flèches du programme de Bip ---------- */
+.motifseq.erreur{--ecart:max(3px,calc(var(--u) * 5));max-width:min(96vw,1100px)}
+/* douze perles de 84 u tiennent sur une ligne en paysage : le cordon prend presque toute la largeur de la scène */
+.panel.motif-cordon.serre{padding-left:max(6px,calc(var(--u) * 12));padding-right:max(6px,calc(var(--u) * 12))}
+.motifseq.erreur .tok{width:max(var(--cible-min),78px);height:max(var(--cible-min),78px)}
+.bipprog button.bipslot{width:max(var(--cible-min),78px);height:max(var(--cible-min),78px)}
 `;

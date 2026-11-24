@@ -41,6 +41,9 @@ EXPRS = ["content", "rieur", "surpris", "pensif", "doux", "cligne"]  # cligne : 
 def _hote(fn, sol):
     return lambda R, x, y, s, expr, salut: fn(R, x, y, s, expr=expr, salut=salut)
 
+# Les hôtes qui accueillent l'enfant dans une activité (src/activities : « host ») : eux seuls respirent et clignent
+# des yeux à côté du jeu (src/host.ts, hoteActivite).
+HOTES_ACTIVITE = {"basile", "mona", "rico", "octave", "pico"}
 PERSOS = {
     "basile": dict(dessin=lambda R, x, y, s, expr, salut: P.basile(R, x, y, s, wave=salut, expr=expr), s=1.1, cadre=(300, 360), sol=103, ombre=(64, 11)),
     "mona": dict(dessin=_hote(H.mona, 0), s=1.0, cadre=(320, 260), sol=None),
@@ -74,6 +77,8 @@ def personnages(cat):
         else:
             sol, y = None, H_ / 2
         for var in EXPRS + ["salut"]:
+            if var == "cligne" and nom not in HOTES_ACTIVITE:
+                continue  # les yeux fermés ne servent qu'aux hôtes des activités (Bip et Kiki n'en accueillent pas)
             expr, salut = (var, False) if var != "salut" else ("content", True)
             def dessin(R, expr=expr, salut=salut):
                 if sol and p.get("ombre"):

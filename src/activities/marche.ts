@@ -23,11 +23,13 @@ function sacHTML() {
 function fondCorbeille() {
   const e = ELEMENTS["activites/corbeille"];
   const [cx, cy] = e.points?.centre ?? [0.5, 0.41];
-  return { cx, cy, dx: 0.3, dy: 0.25 };
+  // le fond visible de la corbeille est une ellipse d'environ 0,40 × 0,35 de l'image : à ces écarts, quatre pommes
+  // (0,2 de la largeur chacune) tiennent dedans sans se toucher.
+  return { cx, cy, dx: 0.325, dy: 0.3625 };
 }
-// Dispositions de dé pour voir sans compter.
+// Dispositions de dé pour voir sans compter (la diagonale du 3 est un peu plus ouverte : les pommes ne se touchent pas).
 const DICE: Record<number, [number, number][]> = {
-  1: [[50, 50]], 2: [[30, 30], [70, 70]], 3: [[25, 25], [50, 50], [75, 75]], 4: [[30, 30], [70, 30], [30, 70], [70, 70]],
+  1: [[50, 50]], 2: [[30, 30], [70, 70]], 3: [[24, 24], [50, 50], [76, 76]], 4: [[30, 30], [70, 30], [30, 70], [70, 70]],
 };
 
 function appleEl(size: string) { return h("span", { class: "pomme", style: `display:block;width:${size};height:${size}`, html: POMME }); }
@@ -107,7 +109,7 @@ export const marche: ActivityModule<MarketItem> = {
     }
     if (level === 4) {
       const have = r.int(3, 8), n = 10 - have;
-      return { kind: "complement", n, have, choices: r.shuffle([n, ...near(n, 1, 9, r.next).slice(0, 2)]), skill: "NUM.COMPLEMENT.10", difficulty: 0.8, form: "image", guess: 1 / 3, level, prompt: `Il y a ${have} pommes dans le panier. Combien en faut-il encore pour en avoir 10 ?` };
+      return { kind: "complement", n, have, choices: r.shuffle([n, ...near(n, 1, 9, r.next).slice(0, 2)]), skill: "NUM.COMPLEMENT.10", difficulty: 0.8, form: "image", guess: 1 / 3, level, prompt: `Il y a ${have} pommes dans la cagette. Combien en faut-il encore pour en avoir 10 ?` };
     }
     if (level === 5) {
       const tens = r.int(1, 5), units = r.int(0, 9), n = tens * 10 + units;
@@ -121,7 +123,7 @@ export const marche: ActivityModule<MarketItem> = {
   },
 
   render(item, view) {
-    const big = "max(52px,calc(var(--u) * 92))";
+    const big = "max(44px,calc(var(--u) * 80))";
     if (item.kind === "voir") {
       // les pommes au fond de la corbeille ronde, rangées comme sur un dé
       const board = h("div", { class: "corbeille", style: `background-image:url("${dessin("activites/corbeille")}")` });
@@ -176,8 +178,8 @@ export const marche: ActivityModule<MarketItem> = {
       return step === 3 ? `Regarde : c'est comme sur un dé. Il y a ${item.n === 1 ? "une seule pomme" : `${item.n} pommes`}.` : `C'est ${item.n}. Touche le nombre qui brille.`;
     }
     if (item.kind === "complement") {
-      if (step === 2) return "Compte les cases vides du panier.";
-      if (step === 3) { view.stage.querySelectorAll<HTMLElement>(".cell").forEach((c) => { if (!c.firstChild) glow(c); }); return "Les cases qui brillent sont vides. Compte-les."; }
+      if (step === 2) return "Compte les trous vides de la cagette.";
+      if (step === 3) { view.stage.querySelectorAll<HTMLElement>(".cell").forEach((c) => { if (!c.firstChild) glow(c); }); return "Les trous qui brillent sont vides. Compte-les."; }
       const right = view.stage.querySelector<HTMLElement>(`[data-n="${item.n}"]`);
       if (right) glow(right);
       return `${item.have} et ${item.n}, ça fait 10. Touche ${item.n}.`;

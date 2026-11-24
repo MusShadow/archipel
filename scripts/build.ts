@@ -41,7 +41,8 @@ const html = template.replace("/*__APP__*/", () => js);
 mkdirSync(join(root, "dist"), { recursive: true });
 writeFileSync(join(root, "dist/index.html"), html);
 // Appli installable : icônes et manifeste, puis service worker (hors ligne) dont la version suit le contenu.
-rmSync(join(root, "dist/voix"), { recursive: true, force: true });
+// Les dossiers copiés de public/ sont refaits à neuf : un fichier retiré (une image, un paquet de voix) ne traîne pas dans dist/.
+for (const d of ["voix", "illustrations", "imagier"]) rmSync(join(root, "dist", d), { recursive: true, force: true });
 cpSync(join(root, "public"), join(root, "dist"), { recursive: true });
 const version = createHash("sha256").update(html).digest("hex").slice(0, 10);
 const polices = policesToutes.filter((f) => /-latin-\d+-normal\.woff2$/.test(f));

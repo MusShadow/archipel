@@ -75,11 +75,13 @@ with sync_playwright() as pw:
         page.goto(PAGE.as_uri()); page.wait_for_timeout(600)
         page.click(".kid"); page.wait_for_timeout(2200)
         avant = page.evaluate("() => getComputedStyle(document.querySelector('.carte-plume')).transform")
-        cible = page.evaluate("() => document.querySelector('.ile-carte.mission') && document.querySelector('.ile-carte.mission').dataset.isl")
-        ile = "port" if cible != "port" else "enigmes"
-        autre = "mots" if ile != "mots" else "atelier"
+        # Plume est posée près d'une des îles de la mission (tirée au hasard) : on touche l'île la plus loin d'elle (elle
+        # vole forcément), puis, pendant le vol, une autre île, ni celle-là ni celle où elle est posée
         def centre(isl):
             return page.evaluate(f"() => {{ const r = document.querySelector('[data-isl={isl}] .ile-zone').getBoundingClientRect(); return [r.x + r.width / 2, r.y + r.height / 2]; }}")
+        px, py = page.evaluate("""() => { const r = document.querySelector('.carte-plume .plume-vol').getBoundingClientRect(); return [r.x + r.width / 2, r.y + r.height / 2]; }""")
+        loin = sorted(["port", "enigmes", "mots", "nombres"], key=lambda i: -((centre(i)[0] - px) ** 2 + (centre(i)[1] - py) ** 2))
+        ile, autre = loin[0], loin[1]
         x, y = centre(ile)
         page.touchscreen.tap(x, y); page.wait_for_timeout(250)
         etat = page.evaluate("""() => { const p = document.querySelector('.carte-plume'); return { carte: !!document.querySelector('.mapwrap') && !document.querySelector('.ile-ecran'),
@@ -89,7 +91,7 @@ with sync_playwright() as pw:
         x2, y2 = centre(autre)
         page.touchscreen.tap(x2, y2); page.wait_for_timeout(1500)
         titre = page.evaluate("() => (document.querySelector('.ile-ecran .a-ruban-txt') || {}).textContent || ''")
-        attendu = {"port": "Port", "enigmes": "Énigmes"}[ile]
+        attendu = {"port": "Port", "enigmes": "Énigmes", "mots": "Mots", "nombres": "Nombres"}[ile]
         verifie(attendu in titre, f"{W}x{H} : après le vol, l'île choisie s'ouvre, pas celle touchée pendant le vol ({titre})")
         ctx.close()
         # 4. « Réduire les animations » : pas de vol, l'île s'ouvre tout de suite

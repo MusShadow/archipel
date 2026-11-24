@@ -126,7 +126,7 @@ Chaque écran est livré en couches (ciel, nuages, mer, île, lieux, personnages
   - dauphins, Mona la baleine au loin ;
   - vol d'oiseaux, poisson dans l'étang ;
   - une ou deux propres à chaque île.
-- **Un décor qui répond au toucher** : la grenouille qui saute, le bateau qui sonne.
+- **Un décor qui répond au toucher** : l'hôte qui sautille, le bateau qui sonne ; la grenouille, posée sur l'étang, saute et ouvre l'étang.
 
 **Garde-fous :**
 
@@ -136,7 +136,7 @@ Chaque écran est livré en couches (ciel, nuages, mer, île, lieux, personnages
 - tout s'arrête avec le réglage « Réduire les animations » de l'iPad ou quand l'appli passe en arrière-plan ;
 - les animations utilisent `transform` et `opacity`, rien d'autre.
 
-Fait dans la livraison 4 (`src/screens/vivant.ts`, calques de `scripts/illustration/vivant.py`) : les surprises propres aux îles sont le poisson de l'étang (Nombres), le souffle de Mona (Mots), le ballon de Rico (Énigmes), la grosse bouffée du petit volcan (Découvertes), l'arc-en-ciel (Atelier), les cœurs de Pico (Cœur) et le voilier sur l'horizon (Port). On touche l'hôte (il sautille), un palmier (il se secoue), le bateau (il tangue et sonne), la grenouille (elle saute). Les garde-fous sont vérifiés par `tests/vivant.test.ts`, `tests/e2e/vivant.py` et `tests/e2e/performances.py`.
+Fait dans la livraison 4 (`src/screens/vivant.ts`, calques de `scripts/illustration/vivant.py`) : les surprises propres aux îles sont le poisson de l'étang (Nombres), le souffle de Mona (Mots), le ballon de Rico (Énigmes), la grosse bouffée du petit volcan (Découvertes), l'arc-en-ciel (Atelier), les cœurs de Pico (Cœur) et le voilier sur l'horizon (Port). On touche l'hôte (il sautille), un palmier (il se secoue), le bateau (il tangue et sonne) ; la grenouille saute de temps en temps (c'est une des surprises des Nombres) et, touchée, ouvre l'étang sur lequel elle est posée. Basile salue une fois, à l'arrivée. Une surprise s'efface dès que Plume se met à parler ; en arrière-plan, elle attend avec le reste du décor. Les garde-fous sont vérifiés par `tests/vivant.test.ts`, `tests/e2e/vivant.py` et `tests/e2e/performances.py`.
 
 ## Ce qu'on ne fait pas
 

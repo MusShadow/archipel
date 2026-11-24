@@ -1,15 +1,18 @@
 // Décor vivant des îles (livraison 4). Chaque île dessinée est livrée en calques (atelier : scripts/illustration/vivant.py
 // et fabriquer.py) ; ici, on les pose et on les anime.
 // - En continu et discret : les reflets de la mer ondulent, des étincelles s'allument, les nuages dérivent, la fumée du
-//   volcan monte, les palmes se balancent, le bateau tangue, deux papillons volettent, l'hôte respire et cligne des yeux,
-//   Basile salue depuis son étal.
+//   volcan monte, les palmes se balancent, le bateau tangue, deux papillons volettent, l'hôte respire et cligne des yeux ;
+//   Basile salue une fois, à l'arrivée.
 // - Des surprises rares, une à la fois, toutes les 20 à 60 secondes : le dauphin, la baleine au loin, les oiseaux, et celle
-//   de l'île (le poisson de l'étang, le souffle de Mona, le ballon de Rico, la grosse bouffée du volcan, l'arc-en-ciel,
-//   les cœurs de Pico, le voilier du Port).
-// - Le décor répond au toucher : l'hôte sautille, le palmier se secoue, le bateau tangue, la grenouille saute.
-// Garde-fous : Plume reste l'élément le plus calme (tout le reste bouge plus lentement qu'elle, sauf les surprises,
-// courtes) ; aucune surprise pendant que Plume parle ; avec « Réduire les animations », le décor reste immobile et il n'y
-// a pas de surprise ; quand l'appli passe en arrière-plan, le décor se fige et les surprises attendent.
+//   de l'île (le poisson de l'étang et le saut de la grenouille, le souffle de Mona, le ballon de Rico, la grosse bouffée
+//   du volcan, l'arc-en-ciel, les cœurs de Pico, le voilier du Port).
+// - Le décor répond au toucher : l'hôte sautille, le palmier se secoue, le bateau tangue. Ce qui est posé sur un lieu (la
+//   grenouille sur l'étang, la fumée au-dessus du petit volcan) ouvre ce lieu, comme le reste de son dessin.
+// Garde-fous : Plume reste l'élément le plus calme (tout ce qui bouge en continu va moins vite qu'elle ; seules les
+// surprises, courtes et rares, sont plus vives) ; aucune surprise pendant que Plume parle, et celle qui joue s'efface dès
+// qu'elle prend la parole ; avec « Réduire les animations », le décor reste immobile et il n'y a pas de surprise ; quand
+// l'appli passe en arrière-plan, tout se fige, la surprise en cours comprise, et reprend au retour ; l'île quittée, plus
+// rien ne tourne.
 import { MOUVEMENTS } from "../design/jetons";
 import { ELEMENTS, type DecorIle, type ImageCadree } from "../illustrations";
 import { urlImage } from "../images";
@@ -17,12 +20,16 @@ import { sfx, speech } from "../services";
 import { h } from "../ui";
 
 type Ou = "fond" | "haut";
-interface Surprise { nom: string; el: HTMLElement; duree: number; ou: Ou }
+interface Surprise { nom: string; el: HTMLElement; duree: number }
+// Les minuteries du chef d'orchestre : la prochaine surprise, la fin de celle qui joue, et la veille pendant qu'elle joue
+// (Plume se met-elle à parler ?).
+export type Minuterie = "prochaine" | "fin" | "veille";
 // Ce dont le chef d'orchestre des surprises dépend : le temps, la voix de Plume, l'appli au premier plan, le réglage
 // « Réduire les animations », le hasard. Les tests le remplacent pour vérifier les garde-fous pas à pas.
 export interface Environnement {
-  attendre: (fn: () => void, ms: number) => unknown;
+  attendre: (fn: () => void, ms: number, quoi: Minuterie) => unknown;
   annuler: (id: unknown) => void;
+  maintenant: () => number;
   parle: () => boolean;
   cache: () => boolean;
   reduit: () => boolean;
@@ -34,13 +41,19 @@ export interface DecorVivant {
   demarrer: () => void; // à l'arrivée sur l'île : la première surprise vient au plus tôt 20 s plus tard
   surprises: string[]; // les surprises possibles sur cette île (vérifiées par les tests)
   jouer: (nom: string) => boolean; // pour les tests et la vitrine : lance une surprise tout de suite
-  arreter: () => void; // plus de surprise programmée (le décor continue de vivre)
+  sansSurprises: () => void; // pour les tests et la vitrine : plus de surprise programmée (le décor continue de vivre)
+  arreter: () => void; // l'île est quittée : plus rien ne tourne (minuteries, écoute de l'arrière-plan, surprise en cours)
 }
+export interface OptionsVivant {
+  ouvrir?: (lieu: string) => void; // ce qui est posé sur un lieu l'ouvre, comme le reste de son dessin
+}
+const VEILLE = 250; // ms : pendant une surprise, on regarde si Plume se met à parler
+const EFFACE = 300; // ms : le fondu d'une surprise interrompue
 
 const reduit = () => typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
 const ENV: Environnement = {
   attendre: (fn, ms) => setTimeout(fn, ms), annuler: (id) => clearTimeout(id as ReturnType<typeof setTimeout>),
-  parle: () => speech.parle, cache: () => typeof document !== "undefined" && document.hidden, reduit, hasard: Math.random,
+  maintenant: () => Date.now(), parle: () => speech.parle, cache: () => typeof document !== "undefined" && document.hidden, reduit, hasard: Math.random,
 };
 const src = (im: ImageCadree) => urlImage(`illustrations/${im.fichier}`);
 const px = (v: number) => `${Math.round(v * 10) / 10}px`;
@@ -55,7 +68,8 @@ function calque(im: ImageCadree, cls: string): HTMLElement {
   if (im.pivot) el.style.transformOrigin = `${im.pivot[0] * 100}% ${im.pivot[1] * 100}%`;
   return el;
 }
-// Un calque que l'on peut toucher : un bouton à sa place, l'image dedans (le bouton réagit, l'image vit sa vie).
+// Un calque que l'on peut toucher : un bouton à sa place, l'image dedans (le bouton réagit, l'image vit sa vie). Il
+// s'enfonce à l'appui (120 ms) et réagit en 400 ms ; avec « Réduire les animations », il ne bouge pas mais fait son son.
 function touchable(im: ImageCadree, cls: string, etiquette: string, reaction: string, son: () => void): HTMLElement {
   const b = poser(h("button", { type: "button", class: `viv viv-touche ${cls}`, "aria-label": etiquette }) as HTMLButtonElement, im.boite);
   const i = img(im, "viv-img");
@@ -63,12 +77,22 @@ function touchable(im: ImageCadree, cls: string, etiquette: string, reaction: st
   b.appendChild(i);
   b.addEventListener("click", (e) => {
     e.stopPropagation();
-    if (reduit()) return; // immobile : il ne réagit pas en bougeant
     son();
-    b.classList.remove(reaction); void b.offsetWidth; b.classList.add(reaction);
+    if (!reduit()) { b.classList.remove(reaction); void b.offsetWidth; b.classList.add(reaction); }
   });
   b.addEventListener("animationend", (e) => { if (e.target === b) b.classList.remove(reaction); });
   return b;
+}
+// Ce qui est posé sur un lieu (la grenouille sur l'étang) ou juste au-dessus (la fumée du petit volcan) : le toucher
+// ouvre ce lieu, comme le reste de son dessin. Ce n'est pas un bouton de plus pour les lecteurs d'écran : l'étiquette
+// du lieu l'est déjà.
+function relais(el: HTMLElement, lieu: string, o: OptionsVivant, avant?: () => void): HTMLElement {
+  el.classList.add("viv-relais");
+  el.dataset.relais = lieu;
+  el.setAttribute("aria-hidden", "true");
+  el.tabIndex = -1;
+  el.addEventListener("click", (e) => { e.stopPropagation(); avant?.(); o.ouvrir?.(lieu); });
+  return el;
 }
 // Un petit sujet (élément vivant/…), le milieu de son cadre en (x, y), à l'échelle k.
 function sujet(nom: string, x: number, y: number, k = 1, cls = ""): HTMLElement {
@@ -80,11 +104,14 @@ function sujet(nom: string, x: number, y: number, k = 1, cls = ""): HTMLElement 
 const boiteVide = (cls: string, b: number[]) => poser(h("div", { class: `viv ${cls}` }), b);
 const croise = (a: number[], b: number[]) => a[0] < b[0] + b[2] && b[0] < a[0] + a[2] && a[1] < b[1] + b[3] && b[1] < a[1] + a[3];
 
-export function decorVivant(d: DecorIle, cadre: HTMLElement, env: Partial<Environnement> = {}): DecorVivant {
+export function decorVivant(d: DecorIle, cadre: HTMLElement, env: Partial<Environnement> = {}, o: OptionsVivant = {}): DecorVivant {
   const E: Environnement = { ...ENV, ...env };
   const v = d.vivant ?? {};
   const fond: HTMLElement[] = [], haut: HTMLElement[] = [];
   const lieux = Object.values(d.lieux).map((l) => l.boite);
+  // le lieu sur lequel une boîte est posée (celui qu'elle recouvre le plus), s'il y en a un
+  const recouvre = (a: number[], b: number[]) => Math.max(0, Math.min(a[0] + a[2], b[0] + b[2]) - Math.max(a[0], b[0])) * Math.max(0, Math.min(a[1] + a[3], b[1] + b[3]) - Math.max(a[1], b[1]));
+  const lieuSous = (b: number[]) => Object.entries(d.lieux).map(([id, l]) => [id, recouvre(b, l.boite)] as const).filter(([, s]) => s > 0).sort((x, y) => y[1] - x[1])[0]?.[0];
   const animes = Object.entries(d.animes);
   // ---- au fond : la mer et le ciel
   for (const [, a] of animes.filter(([, a]) => a.role === "reflets")) fond.push(calque(a, `viv-reflets ${fond.length % 2 ? "b" : "a"}`));
@@ -97,11 +124,17 @@ export function decorVivant(d: DecorIle, cadre: HTMLElement, env: Partial<Enviro
     fond.push(e);
   }
   // ---- au-dessus des lieux : l'île
-  for (const [x, y] of v.fumeeLieu ?? []) for (let i = 0; i < 3; i++) {
-    const e = sujet("bouffee", x, y, 0.9, "viv-fumee lieu");
-    e.style.animationDelay = `${-i * 2}s`;
-    e.style.setProperty("--rx", `${4 + i * 12}px`); e.style.setProperty("--ry", `${-18 - i * 22}px`); e.style.setProperty("--rs", `${0.9 + i * 0.25}`);
-    haut.push(e);
+  for (const [x, y] of v.fumeeLieu ?? []) {
+    for (let i = 0; i < 3; i++) {
+      const e = sujet("bouffee", x, y, 0.9, "viv-fumee lieu");
+      e.style.animationDelay = `${-i * 2}s`;
+      e.style.setProperty("--rx", `${4 + i * 12}px`); e.style.setProperty("--ry", `${-18 - i * 22}px`); e.style.setProperty("--rs", `${0.9 + i * 0.25}`);
+      haut.push(e);
+    }
+    // la fumée fait partie du volcan : la toucher ouvre le volcan (la zone couvre la fumée, du cratère jusqu'en haut)
+    const zone = [x - 56, y - 86, 112, 92];
+    const lieu = lieuSous([x - 4, y, 8, 8]) ?? lieuSous(zone);
+    if (lieu) haut.push(relais(boiteVide("viv-zone", zone), lieu, o));
   }
   animes.filter(([, a]) => a.role === "palmes").forEach(([, a], i) => {
     // un palmier dont les palmes passent au-dessus d'un lieu ne se touche pas (le lieu reste entier sous le doigt)
@@ -120,8 +153,22 @@ export function decorVivant(d: DecorIle, cadre: HTMLElement, env: Partial<Enviro
     if (cligne) { const c = img(cligne[1], "viv-cligne"); b.appendChild(c); }
     haut.push(b);
   } else if (cligne) haut.push(calque(cligne[1], "viv-cligne seul")); // Basile, à son étal : seuls ses yeux se ferment
+  // la grenouille est posée sur l'étang : la toucher ouvre l'étang (elle saute en même temps) ; de temps en temps, elle
+  // saute d'elle-même (c'est une des surprises de l'île)
   const grenouille = animes.find(([, a]) => a.role === "grenouille");
-  if (grenouille) haut.push(touchable(grenouille[1], "viv-grenouille", "La grenouille", "saute", () => sfx.hop()));
+  let grenouilleEl: HTMLElement | null = null;
+  if (grenouille) {
+    const a = grenouille[1];
+    const lieu = lieuSous(a.boite);
+    const b = poser(h("div", { class: "viv viv-grenouille" }), a.boite);
+    const i = img(a, "viv-img");
+    if (a.pivot) b.style.transformOrigin = i.style.transformOrigin = `${a.pivot[0] * 100}% ${a.pivot[1] * 100}%`;
+    b.appendChild(i);
+    const saute = () => { if (!reduit()) { b.classList.remove("saute"); void b.offsetWidth; b.classList.add("saute"); } };
+    b.addEventListener("animationend", (e) => { if (e.target === b) b.classList.remove("saute"); });
+    haut.push(lieu ? relais(b, lieu, o, saute) : b);
+    grenouilleEl = b;
+  }
   (v.papillons ?? []).forEach(([x, y], i) => {
     const p = boiteVide(`viv-papillon v${i + 1}`, [x - 16, y - 16, 32, 32]);
     p.appendChild(sujet(i % 2 ? "papillon-rose" : "papillon-jaune", 16, 16, 0.8, "viv-ailes"));
@@ -130,14 +177,14 @@ export function decorVivant(d: DecorIle, cadre: HTMLElement, env: Partial<Enviro
 
   // ---- les surprises : une à la fois, toutes les 20 à 60 secondes
   const surprises: Surprise[] = [];
-  const ajouter = (s: Surprise) => { surprises.push(s); (s.ou === "fond" ? fond : haut).push(s.el); };
+  const ajouter = (s: Surprise, ou?: Ou) => { s.el.dataset.surprise = s.nom; surprises.push(s); if (ou) (ou === "fond" ? fond : haut).push(s.el); };
   if (v.dauphin) {
     const [x, y] = v.dauphin;
     const el = boiteVide("viv-surprise viv-dauphin", [x - 120, y - 130, 240, 150]);
     const clip = boiteVide("viv-clip", [0, 0, 240, 130]);
     clip.appendChild(sujet("dauphin", 120, 130, 0.62, "d"));
     el.append(clip, sujet("gerbe", 120 - 72, 132, 0.7, "g1"), sujet("gerbe", 120 + 72, 132, 0.7, "g2"));
-    ajouter({ nom: "dauphin", el, duree: 2600, ou: "fond" });
+    ajouter({ nom: "dauphin", el, duree: 2600 }, "fond");
   }
   if (v.baleine) {
     const [x, y] = v.baleine;
@@ -145,7 +192,7 @@ export function decorVivant(d: DecorIle, cadre: HTMLElement, env: Partial<Enviro
     const clip = boiteVide("viv-clip", [0, 0, 90, 47]);
     clip.appendChild(sujet("baleine", 45, 42, 0.8, "dos"));
     el.append(clip, sujet("souffle", 48, 22, 0.7, "jet"));
-    ajouter({ nom: "baleine", el, duree: 6000, ou: "fond" });
+    ajouter({ nom: "baleine", el, duree: 6000 }, "fond");
   }
   {
     const el = boiteVide("viv-surprise viv-oiseaux", [1200, 96, 140, 70]);
@@ -157,7 +204,7 @@ export function decorVivant(d: DecorIle, cadre: HTMLElement, env: Partial<Enviro
       o.append(a, b2);
       el.appendChild(o);
     });
-    ajouter({ nom: "oiseaux", el, duree: 12000, ou: "fond" });
+    ajouter({ nom: "oiseaux", el, duree: 12000 }, "fond");
   }
   const sp = v.surprise;
   if (sp) {
@@ -167,75 +214,123 @@ export function decorVivant(d: DecorIle, cadre: HTMLElement, env: Partial<Enviro
       const clip = boiteVide("viv-clip", [0, 0, 100, 60]);
       clip.appendChild(sujet("poisson", 50, 60, 0.9, "f"));
       el.append(clip, boiteVide("rond r1", [24, 54, 26, 10]), boiteVide("rond r2", [52, 54, 26, 10]));
-      ajouter({ nom: "poisson", el, duree: 2400, ou: "haut" });
+      ajouter({ nom: "poisson", el, duree: 2400 }, "haut");
     } else if (sp.type === "souffle") {
       const el = boiteVide("viv-surprise viv-souffle", [x - 40, y - 80, 80, 80]);
       el.appendChild(sujet("souffle", 40, 46, 1.6, "jet"));
-      ajouter({ nom: "souffle", el, duree: 2600, ou: "haut" });
+      ajouter({ nom: "souffle", el, duree: 2600 }, "haut");
     } else if (sp.type === "ballon") {
       const el = boiteVide("viv-surprise viv-ballon", [x - 30, y - 104, 60, 104]);
       el.appendChild(sujet("ballon", 30, 52, 1, "b"));
-      ajouter({ nom: "ballon", el, duree: 9000, ou: "haut" });
+      ajouter({ nom: "ballon", el, duree: 9000 }, "haut");
     } else if (sp.type === "volcan") {
       const el = boiteVide("viv-surprise viv-volcan", [x - 60, y - 140, 120, 150]);
       [0, 1, 2].forEach((i) => { const e = sujet("bouffee", 60, 130, 1.7, `p p${i + 1}`); el.appendChild(e); });
-      ajouter({ nom: "volcan", el, duree: 4200, ou: "haut" });
+      ajouter({ nom: "volcan", el, duree: 4200 }, "haut");
     } else if (sp.type === "arc-en-ciel") {
+      // l'arc apparaît et s'efface (son image) ; la boîte autour peut s'effacer plus vite si Plume se met à parler
       const im = ELEMENTS["vivant/arc-en-ciel"];
-      const el = poser(img(im, "viv viv-surprise viv-arc"), [x + im.boite[0], y + im.boite[1], im.boite[2], im.boite[3]]);
-      ajouter({ nom: "arc-en-ciel", el, duree: 8000, ou: "fond" });
+      const el = boiteVide("viv-surprise viv-arc", [x + im.boite[0], y + im.boite[1], im.boite[2], im.boite[3]]);
+      el.appendChild(poser(img(im, "viv a"), [0, 0, im.boite[2], im.boite[3]]));
+      ajouter({ nom: "arc-en-ciel", el, duree: 8000 }, "fond");
     } else if (sp.type === "coeurs") {
       const el = boiteVide("viv-surprise viv-coeurs", [x - 50, y - 130, 100, 140]);
       [[34, 0], [60, 0.5], [46, 1.0]].forEach(([cx, dl], i) => { const c = sujet("coeur", cx, 120, 0.7 + i * 0.1, `c c${i + 1}`); c.style.animationDelay = `${dl}s`; el.appendChild(c); });
-      ajouter({ nom: "coeurs", el, duree: 4200, ou: "haut" });
+      ajouter({ nom: "coeurs", el, duree: 4200 }, "haut");
     } else if (sp.type === "voilier") {
       const el = boiteVide("viv-surprise viv-voilier", [1250, y - 52, 56, 54]);
       el.appendChild(sujet("voilier", 28, 27, 0.6, "b"));
-      ajouter({ nom: "voilier", el, duree: 16000, ou: "fond" });
+      ajouter({ nom: "voilier", el, duree: 16000 }, "fond");
     }
   }
+  if (grenouilleEl) ajouter({ nom: "grenouille", el: grenouilleEl, duree: 1400 }); // elle est déjà posée sur l'île
 
   // ---- le chef d'orchestre des surprises : une à la fois, toutes les 20 à 60 secondes
-  let minuterie: unknown;
-  let derniere = "", fini = false;
+  let prochaineId: unknown, finId: unknown, veilleId: unknown;
+  // la surprise qui joue : quand elle doit finir, et le temps qu'il lui restait si l'appli est passée en arrière-plan
+  let enCours: { s: Surprise; fin: number; reste: number | null } | null = null;
+  let derniere = "", auto = true, fini = false, ecoute = false;
   const vivant = () => cadre.isConnected;
-  const attendre = (ms: number) => { E.annuler(minuterie); if (!fini) minuterie = E.attendre(lancer, ms); };
-  const prochaine = () => attendre(MOUVEMENTS.surpriseMin + E.hasard() * (MOUVEMENTS.surpriseMax - MOUVEMENTS.surpriseMin));
+  const annuler = (...ids: unknown[]) => { for (const id of ids) if (id !== undefined) E.annuler(id); };
+  const programmer = (ms: number) => { annuler(prochaineId); prochaineId = auto && !fini ? E.attendre(lancer, ms, "prochaine") : undefined; };
+  const prochaine = () => programmer(MOUVEMENTS.surpriseMin + E.hasard() * (MOUVEMENTS.surpriseMax - MOUVEMENTS.surpriseMin));
+  // la surprise s'efface : à la fin de son mouvement, ou plus tôt (fondu court) si Plume se met à parler
+  function terminer() {
+    annuler(finId, veilleId); finId = veilleId = undefined;
+    enCours?.s.el.classList.remove("joue", "efface");
+    enCours = null;
+  }
+  function suivre(ms: number) {
+    annuler(finId, veilleId);
+    finId = E.attendre(terminer, ms, "fin");
+    veilleId = E.attendre(veiller, VEILLE, "veille");
+  }
+  function veiller() {
+    veilleId = undefined;
+    if (!enCours) return;
+    if (!E.parle()) { veilleId = E.attendre(veiller, VEILLE, "veille"); return; }
+    enCours.s.el.classList.add("efface");
+    enCours.fin = E.maintenant() + EFFACE;
+    annuler(finId);
+    finId = E.attendre(terminer, EFFACE, "fin");
+  }
   function jouer(nom: string): boolean {
     const s = surprises.find((x) => x.nom === nom);
-    if (!s || E.reduit()) return false;
+    if (!s || fini || E.reduit()) return false;
+    if (enCours) terminer(); // jamais deux à la fois
     derniere = nom;
-    s.el.classList.remove("joue"); void s.el.offsetWidth; s.el.classList.add("joue");
-    setTimeout(() => s.el.classList.remove("joue"), s.duree + 200); // elle s'efface à la fin de son mouvement
+    s.el.classList.remove("joue", "efface"); void s.el.offsetWidth; s.el.classList.add("joue");
+    enCours = { s, fin: E.maintenant() + s.duree + 200, reste: null };
+    suivre(s.duree + 200);
     return true;
   }
   function lancer() {
-    if (!vivant()) return detacher();
-    if (fini || E.reduit() || !surprises.length) return;
+    prochaineId = undefined;
+    if (!vivant()) return arreter();
+    if (fini || !auto || E.reduit() || !surprises.length) return;
     // jamais pendant que Plume parle, ni quand l'appli est en arrière-plan, ni par-dessus une autre surprise :
     // on réessaie un peu plus tard
-    if (E.parle() || E.cache() || surprises.some((s) => s.el.classList.contains("joue"))) return attendre(4000);
+    if (E.parle() || E.cache() || enCours) return programmer(4000);
     const choix = surprises.filter((s) => s.nom !== derniere);
     jouer(choix[Math.min(choix.length - 1, Math.floor(E.hasard() * choix.length))]?.nom ?? surprises[0].nom);
     prochaine();
   }
-  // en arrière-plan, le décor se fige et les surprises attendent ; au retour, tout repart
+  // en arrière-plan, tout se fige : le décor, la surprise en cours (son mouvement et sa fin), la prochaine ; au retour,
+  // tout repart d'où il en était
   const visibilite = () => {
-    if (!vivant()) return detacher();
-    cadre.classList.toggle("viv-pause", E.cache());
-    if (E.cache()) E.annuler(minuterie);
-    else prochaine();
+    if (!vivant()) return arreter();
+    const cache = E.cache();
+    cadre.classList.toggle("viv-pause", cache);
+    if (cache) {
+      annuler(prochaineId); prochaineId = undefined;
+      if (enCours && enCours.reste === null) {
+        annuler(finId, veilleId); finId = veilleId = undefined;
+        enCours.reste = Math.max(0, enCours.fin - E.maintenant());
+      }
+      return;
+    }
+    if (enCours && enCours.reste !== null) {
+      const reste = enCours.reste;
+      enCours.reste = null;
+      enCours.fin = E.maintenant() + reste;
+      suivre(reste);
+    }
+    prochaine();
   };
-  function detacher() {
-    E.annuler(minuterie);
-    if (typeof document !== "undefined") document.removeEventListener("visibilitychange", visibilite);
+  function arreter() {
+    fini = true;
+    terminer();
+    annuler(prochaineId); prochaineId = undefined;
+    cadre.classList.remove("viv-pause");
+    if (ecoute && typeof document !== "undefined") document.removeEventListener("visibilitychange", visibilite);
+    ecoute = false;
   }
-  const arreter = () => { fini = true; E.annuler(minuterie); };
   return {
     fond, haut, surprises: surprises.map((s) => s.nom), jouer, arreter,
+    sansSurprises: () => { auto = false; annuler(prochaineId); prochaineId = undefined; },
     demarrer: () => {
-      if (E.reduit()) return;
-      document.addEventListener("visibilitychange", visibilite);
+      if (E.reduit() || fini) return;
+      if (!ecoute) { document.addEventListener("visibilitychange", visibilite); ecoute = true; }
       prochaine();
     },
   };
@@ -258,7 +353,8 @@ function arc(nom: string, dx: number, haut: number, base: number, rot = 0.6): st
 
 export const VIVANT_CSS = `
 .ile-cadre .viv{position:absolute;display:block;pointer-events:none;user-select:none;-webkit-user-select:none}
-.ile-cadre .viv-touche{pointer-events:auto;padding:0;margin:0;border:none;background:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.ile-cadre .viv-touche,.ile-cadre .viv-relais{pointer-events:auto;padding:0;margin:0;border:none;background:none;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:scale ${M.appui}ms ease-out}
+.ile-cadre .viv-touche:active,.ile-cadre .viv-grenouille:active{scale:.95}
 .ile-cadre .viv-touche .viv-img,.ile-cadre .viv-hote .viv-cligne{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none}
 .ile-cadre .viv-clip{overflow:hidden}
 .viv-pause .viv,.viv-pause .viv *{animation-play-state:paused!important}
@@ -281,16 +377,19 @@ export const VIVANT_CSS = `
 .viv-palmes.p2 .viv-img,img.viv-palmes.p2{animation-duration:${Math.round(M.palmes * 1.15)}ms;animation-delay:-1.7s;animation-direction:alternate-reverse}
 @keyframes viv-tangue{from{transform:rotate(-2.4deg) translateY(0)}to{transform:rotate(2.4deg) translateY(2px)}}
 .viv-bateau .viv-img{animation:viv-tangue ${M.bateau}ms ${M.courbes.calme} infinite alternate}
-@keyframes viv-salue{0%,64%,100%{transform:rotate(0)}70%{transform:rotate(-16deg)}76%{transform:rotate(9deg)}82%{transform:rotate(-14deg)}88%{transform:rotate(6deg)}94%{transform:rotate(0)}}
-.viv-bras{animation:viv-salue ${M.salut}ms ease-in-out infinite}
+/* Basile salue une fois, à l'arrivée (quand Plume dit qu'il fait coucou) */
+@keyframes viv-salue{0%,100%{transform:rotate(0)}16%{transform:rotate(-16deg)}36%{transform:rotate(9deg)}56%{transform:rotate(-14deg)}76%{transform:rotate(6deg)}90%{transform:rotate(0)}}
+.viv-bras{animation:viv-salue ${M.salut}ms ease-in-out 1500ms 1 both}
 @keyframes viv-respire{from{transform:scale(1,1)}to{transform:scale(1.008,1.02)}}
 .viv-hote{transform-origin:50% 100%}
 .viv-hote .viv-img,.viv-hote .viv-cligne{transform-origin:50% 100%;animation:viv-respire ${M.respiration}ms ${M.courbes.calme} infinite alternate}
 @keyframes viv-cligne{0%,96.9%{opacity:0}97%,99.4%{opacity:1}99.5%,100%{opacity:0}}
 .viv-hote .viv-cligne,.viv-cligne.seul{opacity:0;animation:viv-respire ${M.respiration}ms ${M.courbes.calme} infinite alternate,viv-cligne ${M.clignement}ms steps(1,end) -1.3s infinite}
 .viv-cligne.seul{animation:viv-cligne ${Math.round(M.clignement * 1.1)}ms steps(1,end) -2.1s infinite}
-@keyframes viv-hop{0%,80%,100%{transform:translateY(0) scale(1,1)}83%{transform:translateY(1px) scale(1.08,.9)}88%{transform:translateY(-12px) scale(.94,1.07)}93%{transform:translateY(0) scale(1.07,.93)}97%{transform:scale(1,1)}}
-.viv-grenouille .viv-img{transform-origin:50% 90%;animation:viv-hop 6.5s ease-in-out infinite}
+/* la grenouille saute quand on la touche, et parfois d'elle-même (deux petits sauts : c'est une surprise) */
+@keyframes viv-hop{0%,100%{transform:translateY(0) scale(1,1)}15%{transform:translateY(1px) scale(1.08,.9)}45%{transform:translateY(-12px) scale(.94,1.07)}75%{transform:translateY(0) scale(1.07,.93)}90%{transform:scale(1,1)}}
+.viv-grenouille.saute{animation:viv-hop ${M.long}ms ${M.courbes.douce}}
+.viv-grenouille.joue{animation:viv-hop 600ms ease-in-out 100ms 2 both}
 @keyframes viv-volj{0%{transform:translate(0,0)}20%{transform:translate(38px,-26px)}45%{transform:translate(92px,-8px)}70%{transform:translate(52px,20px)}100%{transform:translate(0,0)}}
 @keyframes viv-volv{0%{transform:translate(0,0)}30%{transform:translate(-54px,-30px)}60%{transform:translate(-96px,6px)}100%{transform:translate(0,0)}}
 .viv-papillon.v1{animation:viv-volj 13s ease-in-out infinite}
@@ -299,12 +398,13 @@ export const VIVANT_CSS = `
 .viv-papillon .viv-ailes{animation:viv-ailes ${M.papillon}ms ${M.courbes.calme} infinite alternate}
 /* quand on touche */
 @keyframes viv-saute{0%,100%{transform:translateY(0) scale(1,1)}20%{transform:translateY(1px) scale(1.06,.92)}50%{transform:translateY(-14%) scale(.96,1.05)}80%{transform:translateY(0) scale(1.04,.96)}}
-.viv-touche.saute{animation:viv-saute 600ms ${M.courbes.douce}}
+.viv-touche.saute{animation:viv-saute ${M.long}ms ${M.courbes.douce}}
 @keyframes viv-secoue{0%,100%{transform:rotate(0)}20%{transform:rotate(-4deg)}45%{transform:rotate(3deg)}70%{transform:rotate(-2deg)}}
-.viv-touche.secoue{animation:viv-secoue 700ms ease-in-out}
-/* les surprises : invisibles, jusqu'à ce qu'elles jouent */
+.viv-touche.secoue{animation:viv-secoue ${M.long}ms ease-in-out}
+/* les surprises : invisibles, jusqu'à ce qu'elles jouent ; celle que Plume interrompt en parlant s'efface en 300 ms */
 .viv-surprise{opacity:0}
 .viv-surprise.joue{opacity:1}
+.viv-surprise.joue.efface{opacity:0;transition:opacity ${EFFACE}ms ease-out}
 .viv-dauphin .d,.viv-dauphin .g1,.viv-dauphin .g2,.viv-poisson .f,.viv-poisson .rond{opacity:0}
 ${arc("viv-saut", 66, 70, 34)}
 .viv-dauphin.joue .d{animation:viv-saut 2400ms linear both}
@@ -341,7 +441,8 @@ ${arc("viv-bond", 18, 34, 22)}
 .viv-volcan.joue .p2{animation:viv-bouffe 2800ms ease-out 600ms both}
 .viv-volcan.joue .p3{animation:viv-bouffe 2800ms ease-out 1200ms both}
 @keyframes viv-parait{0%{opacity:0}18%,75%{opacity:.85}100%{opacity:0}}
-.viv-arc.joue{animation:viv-parait 8000ms ease-in-out both}
+.viv-arc .a{opacity:0}
+.viv-arc.joue .a{animation:viv-parait 8000ms ease-in-out both}
 @keyframes viv-coeur{0%{opacity:0;transform:translate(0,0) scale(.5)}20%{opacity:1;transform:translate(-6px,-28px) scale(1)}100%{opacity:0;transform:translate(-30px,-112px) scale(1.1)}}
 .viv-coeurs .c{opacity:0}
 .viv-coeurs.joue .c{animation:viv-coeur 3000ms ease-out both}
