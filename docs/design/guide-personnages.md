@@ -30,6 +30,12 @@ Communes à tous (`EXPRESSIONS` dans `personnages.py`) :
 
 Chaque hôte existe aussi en **salut** (content, un bras, une nageoire ou une patte levée).
 
+### Respirer et cligner des yeux (livraison 4)
+
+Une expression de plus, **cligne** : le visage de « content », les yeux fermés (le trait des yeux fermés du coin calme), le sourire habituel. Elle n'est jamais montrée seule : l'appli la pose par-dessus l'image du personnage le temps d'un clignement (environ 140 ms toutes les 5,6 s), sur son île comme dans les activités. Pour l'hôte déjà posé dans le décor d'une île, `fabriquer.py` rend la même image avec l'expression forcée (`FORCER_EXPR`) : les deux se superposent exactement. Basile, dans son étal, a seulement son visage aux yeux fermés.
+
+Les hôtes respirent : une très légère montée, lente (3,2 s), qui part des pieds. Après une réussite, l'hôte fait **un** petit saut (plus deux), et se penche à peine après un essai. Sur son île, on peut le toucher : il sautille, sans rien ouvrir. Plume reste l'élément le plus calme de l'écran : tout le décor bouge plus lentement que son battement d'ailes.
+
 ### Les émotions du théâtre de Pico (livraison 3)
 
 Quatre expressions de plus, dessinées sur tous les personnages du théâtre (Basile, Mona, Rico, Octave, Kiki, Pico, Plume), seulement pour leurs **portraits** (`visages.py`) :

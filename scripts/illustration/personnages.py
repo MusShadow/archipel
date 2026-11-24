@@ -266,7 +266,14 @@ EXPRESSIONS = {
     "decu": dict(oeil="las", bouche="moue", sourcil=(0.5, 2.0)),
     # coin calme : les yeux fermés, un petit sourire (Pico respire)
     "calme": dict(oeil="ferme", bouche="petit", sourcil=(0.5, 1.0)),
+    # décor vivant (livraison 4) : le même visage que « content », les yeux fermés le temps d'un clignement
+    "cligne": dict(oeil="ferme", bouche="sourire", sourcil=(0.0, 0.0)),
 }
+# Livraison 4 : pour rendre la variante « yeux fermés » d'un personnage déjà posé dans un décor (l'hôte d'une île, Basile
+# à son étal), fabriquer.py force l'expression le temps du rendu, sans toucher aux dessins des îles.
+FORCER_EXPR = None
+def expr_de(expr):
+    return FORCER_EXPR or expr
 
 
 # ============================================================================ Basile (castor)
@@ -275,6 +282,7 @@ APRON, APRON_D = "#3D8BEA", "#2C6CC4"
 
 def basile(R, x, y, s=1.0, wave=True, full=True, arm="avec", expr="content"):
     """Basile de face, (x, y) = milieu du ventre. Repère local ~ 220 x 260. expr : voir EXPRESSIONS."""
+    expr = expr_de(expr)
     E = EXPRESSIONS[expr]
     R.push(Affine.T(x, y) @ Affine.S(s) @ Affine.T(-110, -160))
     fur = Mat(puff=22, spec=0.05, shin=10, rim=0.25, line_w=1.8)

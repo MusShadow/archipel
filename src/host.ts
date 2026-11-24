@@ -5,7 +5,7 @@ import { applyEvidence, makeRng, newSkill, stepStaircase, type ActivityId, type 
 import { sfx, speech, voice, type Profile } from "./services";
 import { celebrate } from "./fete";
 import { accent, boutonRond } from "./design/composants";
-import type { IleId } from "./design/jetons";
+import { MOUVEMENTS, type IleId } from "./design/jetons";
 import { DECORS_ILES, PERSONNAGES } from "./illustrations";
 import { urlImage } from "./images";
 import { dots, h, icon, sleep, wobble } from "./ui";
@@ -309,8 +309,9 @@ const EXPRESSIONS: Expression[] = ["content", "rieur", "doux", "pensif"];
 // L'hôte de l'activité (Plume sur le Port : elle est déjà le bouton d'indice, on ne la montre pas deux fois).
 export function hoteActivite(nom: string): { el: HTMLElement; expr: (e: Expression, saut?: boolean, ms?: number) => void; fin: () => void } | null {
   if (nom === "plume" || !PERSONNAGES[`${nom}-content`]) return null;
+  // livraison 4 : l'hôte respire doucement et cligne des yeux (le calme « yeux fermés » passe un instant par-dessus)
   const el = h("div", { class: "hote", "data-hote": nom, "data-expr": "content", "aria-hidden": "true",
-    html: EXPRESSIONS.map((e) => imgPerso(`${nom}-${e}`, `hote-${e}`)).join("") });
+    html: EXPRESSIONS.map((e) => imgPerso(`${nom}-${e}`, `hote-${e}`)).join("") + imgPerso(`${nom}-cligne`, "hote-cligne") });
   let retour: ReturnType<typeof setTimeout> | undefined;
   const expr = (e: Expression, saut = false, ms = 0) => {
     clearTimeout(retour);
@@ -371,10 +372,15 @@ export const CADRE_CSS = `
 .hote{position:absolute;left:0;bottom:max(6px,calc(var(--u) * 10));height:max(110px,calc(var(--u) * 168));aspect-ratio:var(--hote-ratio,0.78);pointer-events:none;transform-origin:50% 100%}
 .hote img{position:absolute;left:0;bottom:0;width:100%;height:100%;object-fit:contain;object-position:50% 100%;opacity:0;transition:opacity var(--duree-court) var(--courbe-douce)}
 .hote[data-expr=content] .hote-content,.hote[data-expr=rieur] .hote-rieur,.hote[data-expr=doux] .hote-doux,.hote[data-expr=pensif] .hote-pensif{opacity:1}
-.hote.saute{animation:hote-saute var(--duree-long) var(--courbe-rebond) 2}
+.hote.saute{animation:hote-saute var(--duree-long) var(--courbe-rebond)}
 .hote.penche{animation:hote-penche var(--duree-long) var(--courbe-douce)}
-@keyframes hote-saute{0%,100%{transform:translateY(0)}45%{transform:translateY(-9%) scale(1.03)}}
-@keyframes hote-penche{0%,100%{transform:rotate(0)}40%{transform:rotate(-5deg)}75%{transform:rotate(2deg)}}
+@keyframes hote-saute{0%,100%{transform:translateY(0)}45%{transform:translateY(-6%) scale(1.02)}}
+@keyframes hote-penche{0%,100%{transform:rotate(0)}40%{transform:rotate(-3.5deg)}75%{transform:rotate(1.5deg)}}
+.hote img{transform-origin:50% 100%;animation:hote-respire ${MOUVEMENTS.respiration}ms ${MOUVEMENTS.courbes.calme} infinite alternate}
+@keyframes hote-respire{from{transform:scale(1,1)}to{transform:scale(1.008,1.018)}}
+.hote .hote-cligne{transition:none}
+.hote[data-expr=content] .hote-cligne{animation:hote-respire ${MOUVEMENTS.respiration}ms ${MOUVEMENTS.courbes.calme} infinite alternate,hote-cligne ${MOUVEMENTS.clignement}ms steps(1,end) -2.4s infinite}
+@keyframes hote-cligne{0%,96.9%{opacity:0}97%,99.4%{opacity:1}99.5%,100%{opacity:0}}
 .hote[data-hote=mona]{--hote-ratio:1.3}.hote[data-hote=kiki]{--hote-ratio:1.2}.hote[data-hote=octave],.hote[data-hote=pico]{--hote-ratio:0.87}.hote[data-hote=bip]{--hote-ratio:0.83}
 .sheet-perso{width:max(110px,calc(var(--u) * 150));aspect-ratio:245/234}
 .sheet-perso img{width:100%;height:100%;object-fit:contain}

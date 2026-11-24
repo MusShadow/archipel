@@ -123,8 +123,18 @@ class Speech {
     pick();
     speechSynthesis.onvoiceschanged = pick;
   }
+  // Livraison 4 : le décor vivant attend que Plume ait fini de parler (aucune surprise pendant qu'elle parle). Une
+  // phrase qui ne finirait jamais ne bloque pas le décor plus de 20 secondes.
+  private enCours = 0;
+  private depuis = 0;
+  get parle() { return this.enCours > 0 && Date.now() - this.depuis < 20000; }
   say(text: string, rate?: number): Promise<void> {
     if (!text) return Promise.resolve();
+    this.enCours++;
+    this.depuis = Date.now();
+    return this.dire(text, rate).finally(() => { this.enCours = Math.max(0, this.enCours - 1); });
+  }
+  private dire(text: string, rate?: number): Promise<void> {
     const my = ++this.token;
     this.halt();
     if (this.mode === "naturelle" && natural.state === "prête") {
@@ -511,6 +521,19 @@ class Sfx {
     const st = ctx ? (ctx.state as string) : "";
     if (ctx && (st === "interrupted" || st === "suspended") && !document.hidden) ctx.resume().catch(() => { /* au prochain contact */ });
   }
+  // Livraison 4 : bruitages adoucis. Tout passe par une même sortie : un peu moins fort, et les aigus durs filtrés
+  // (un passe-bas doux), pour des sons ronds qui ne surprennent pas ; la voix, elle, ne passe pas par là.
+  private douce: { ctx: AudioContext; node: AudioNode } | null = null;
+  private sortie(ctx: AudioContext): AudioNode {
+    if (this.douce?.ctx === ctx) return this.douce.node;
+    const g = ctx.createGain();
+    g.gain.value = 0.85;
+    const f = ctx.createBiquadFilter();
+    f.type = "lowpass"; f.frequency.value = 4200; f.Q.value = 0.5;
+    g.connect(f).connect(ctx.destination);
+    this.douce = { ctx, node: g };
+    return g;
+  }
   private tone(freq: number, start: number, dur: number, type: OscillatorType = "sine", gain = 0.12) {
     const ctx = this.ctx;
     if (!ctx || this.muted) return;
@@ -520,20 +543,49 @@ class Sfx {
     o.type = type;
     o.frequency.setValueAtTime(freq, t0);
     g.gain.setValueAtTime(0.0001, t0);
-    g.gain.exponentialRampToValueAtTime(gain, t0 + 0.02);
+    g.gain.exponentialRampToValueAtTime(gain, t0 + 0.025);
     g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
-    o.connect(g).connect(ctx.destination);
+    o.connect(g).connect(this.sortie(ctx));
     o.start(t0);
     o.stop(t0 + dur + 0.05);
   }
-  tap() { this.tone(660, 0, 0.08, "triangle", 0.06); }
-  success() { [523.25, 659.25, 783.99].forEach((f, i) => this.tone(f, i * 0.09, 0.35, "triangle", 0.1)); }
-  soft() { this.tone(392, 0, 0.18, "sine", 0.07); this.tone(349.23, 0.14, 0.25, "sine", 0.06); }
-  sticker() { [1046.5, 1318.5, 1568, 2093].forEach((f, i) => this.tone(f, i * 0.06, 0.25, "sine", 0.05)); }
-  sunset() { [659.25, 587.33, 523.25, 392].forEach((f, i) => this.tone(f, i * 0.22, 0.5, "triangle", 0.08)); }
+  // Timbres doux, toujours fabriqués dans le code (livraison 4) : le bois (un petit « toc »), le marimba (une lame
+  // frappée : la note et son harmonique qui s'éteint vite), les clochettes (des partiels inharmoniques qui tintent).
+  private partiel(freq: number, start: number, dur: number, gain: number, attaque = 0.005) {
+    const ctx = this.ctx;
+    if (!ctx || this.muted) return;
+    const t0 = ctx.currentTime + start;
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.type = "sine";
+    o.frequency.setValueAtTime(freq, t0);
+    g.gain.setValueAtTime(0.0001, t0);
+    g.gain.exponentialRampToValueAtTime(gain, t0 + attaque);
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    o.connect(g).connect(this.sortie(ctx));
+    o.start(t0); o.stop(t0 + dur + 0.05);
+  }
+  private bois(freq: number, start: number, gain: number) {
+    this.partiel(freq, start, 0.07, gain, 0.002);
+    this.partiel(freq * 2.3, start, 0.03, gain * 0.35, 0.002);
+  }
+  private marimba(freq: number, start: number, dur: number, gain: number) {
+    this.partiel(freq, start, dur, gain);
+    this.partiel(freq * 4, start, dur * 0.25, gain * 0.22);
+  }
+  private clochette(freq: number, start: number, dur: number, gain: number) {
+    this.partiel(freq, start, dur, gain, 0.003);
+    this.partiel(freq * 2.76, start, dur * 0.6, gain * 0.4, 0.003);
+    this.partiel(freq * 5.4, start, dur * 0.35, gain * 0.18, 0.003);
+  }
+  tap() { this.bois(980, 0, 0.07); }
+  success() { [523.25, 659.25, 783.99].forEach((f, i) => this.marimba(f, i * 0.09, 0.55, 0.1)); }
+  soft() { this.marimba(392, 0, 0.4, 0.06); this.marimba(349.23, 0.14, 0.5, 0.05); }
+  sticker() { [1046.5, 1318.5, 1568, 2093].forEach((f, i) => this.clochette(f, i * 0.07, 1.0, 0.035)); }
+  sunset() { [659.25, 587.33, 523.25, 392].forEach((f, i) => this.marimba(f, i * 0.22, 0.8, 0.075)); }
   breathIn() { this.tone(330, 0, 1.2, "sine", 0.03); }
-  drum() { this.tone(150, 0, 0.16, "triangle", 0.16); this.tone(95, 0.01, 0.22, "sine", 0.12); }
-  hop() { this.tone(520, 0, 0.09, "sine", 0.07); this.tone(780, 0.07, 0.1, "sine", 0.06); }
+  drum() { this.tone(150, 0, 0.16, "triangle", 0.12); this.tone(95, 0.01, 0.22, "sine", 0.1); }
+  hop() { this.bois(700, 0, 0.06); this.bois(1050, 0.07, 0.05); }
+  cloche() { this.clochette(880, 0, 1.2, 0.05); } // le bateau qui sonne, quand on le touche
 
   // ---------- Bruits des fêtes de réussite (synthétisés : aucun fichier) ----------
   private noiseBuf: AudioBuffer | null = null;
@@ -548,7 +600,7 @@ class Sfx {
     g.gain.setValueAtTime(0.0001, t0);
     g.gain.exponentialRampToValueAtTime(gain, t0 + Math.min(0.05, dur / 3));
     g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
-    o.connect(g).connect(ctx.destination);
+    o.connect(g).connect(this.sortie(ctx));
     o.start(t0); o.stop(t0 + dur + 0.05);
   }
   private noise(start: number, dur: number, gain: number, type: BiquadFilterType, f0: number, f1 = f0) {
@@ -569,17 +621,17 @@ class Sfx {
     g.gain.setValueAtTime(0.0001, t0);
     g.gain.exponentialRampToValueAtTime(gain, t0 + Math.min(0.02, dur / 4));
     g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
-    src.connect(f).connect(g).connect(ctx.destination);
+    src.connect(f).connect(g).connect(this.sortie(ctx));
     src.start(t0); src.stop(t0 + dur + 0.05);
   }
-  pop() { this.noise(0, 0.08, 0.3, "bandpass", 1800); this.tone(220, 0, 0.06, "square", 0.03); }
+  pop() { this.noise(0, 0.08, 0.2, "bandpass", 1600); this.tone(220, 0, 0.06, "triangle", 0.04); }
   whistle() { this.sweep(700, 1600, 0, 0.55, "sine", 0.025); }
-  bang() { this.noise(0, 0.4, 0.22, "lowpass", 1400, 300); for (let i = 0; i < 6; i++) this.noise(0.12 + i * 0.07 + Math.random() * 0.04, 0.03, 0.06, "highpass", 4000); }
-  honk() { [0, 0.22].forEach((t) => { this.tone(392, t, 0.16, "square", 0.025); this.tone(494, t, 0.16, "square", 0.02); }); }
-  vroom() { this.sweep(70, 160, 0, 0.7, "sawtooth", 0.025); }
+  bang() { this.noise(0, 0.4, 0.15, "lowpass", 1200, 300); for (let i = 0; i < 6; i++) this.noise(0.12 + i * 0.07 + Math.random() * 0.04, 0.03, 0.04, "highpass", 3200); }
+  honk() { [0, 0.22].forEach((t) => { this.tone(392, t, 0.16, "triangle", 0.045); this.tone(494, t, 0.16, "triangle", 0.035); }); }
+  vroom() { this.sweep(70, 160, 0, 0.7, "triangle", 0.05); }
   pinpon() { for (let i = 0; i < 4; i++) this.tone(i % 2 ? 488 : 435, i * 0.38, 0.36, "triangle", 0.055); }
-  rumble(dur = 0.7) { this.noise(0, dur, 0.25, "lowpass", 180, 120); }
+  rumble(dur = 0.7) { this.noise(0, dur, 0.18, "lowpass", 180, 120); }
   whoosh() { this.noise(0, 0.9, 0.12, "bandpass", 300, 2400); }
-  fanfare() { [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => this.tone(f, i * 0.12, i === 3 ? 0.7 : 0.2, "triangle", 0.09)); }
+  fanfare() { [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => this.marimba(f, i * 0.12, i === 3 ? 0.9 : 0.4, 0.09)); }
 }
 export const sfx = new Sfx();

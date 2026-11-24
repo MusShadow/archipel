@@ -144,13 +144,35 @@ Aussi :
 
 L'espace parent est seulement harmonisé (mêmes jetons).
 
-## Livraison 4 : animations et décor vivant
+## Livraison 4 : animations et décor vivant (faite)
+
+| Fait | Où |
+|---|---|
+| Sur la carte, Plume s'envole vers l'île que l'enfant touche (600 ms à 1 s selon la distance ; elle se retourne si elle part vers la gauche), puis l'île s'ouvre ; sa bulle s'efface au départ ; les autres appuis attendent la fin du vol ; avec « Réduire les animations », l'île s'ouvre tout de suite | `src/screens/child.ts`, `tests/e2e/appuis.py` |
+| Le décor de chaque île est livré en couches qui bougent seules : deux jeux de reflets qui font onduler la mer, des étincelles, les nuages qui dérivent, la fumée du volcan au loin (et celle du petit volcan des Découvertes), les palmes qui se balancent, le bateau qui tangue, deux papillons, Basile qui salue | `scripts/illustration/vivant.py`, `fabriquer.py`, `src/screens/vivant.ts` |
+| Les hôtes respirent et clignent des yeux, sur leur île et dans les activités (une variante « yeux fermés » de chaque personnage, posée par-dessus le temps d'un clignement) | `personnages.py` (expression `cligne`), `src/host.ts` |
+| Des surprises rares, une à la fois, toutes les 20 à 60 s : le dauphin et ses gerbes, la baleine au loin, les oiseaux ; et une par île : le poisson de l'étang, le souffle de Mona, le ballon de Rico, la grosse bouffée du volcan, l'arc-en-ciel, les cœurs de Pico, le voilier du Port | `src/screens/vivant.ts` |
+| Le décor répond au toucher : l'hôte sautille, le palmier se secoue, le bateau tangue, la grenouille saute (un palmier dont les palmes passent sur un lieu ne se touche pas) | `src/screens/vivant.ts` |
+| Les réactions des hôtes adoucies (un seul petit saut) ; les bruitages en bois, marimba et clochettes, passés par une sortie plus douce (un peu moins fort, aigus filtrés), toujours fabriqués dans le code | `src/host.ts`, `src/services.ts` |
+| Garde-fous : tout le décor bouge plus lentement que le battement d'ailes de Plume, sauf les surprises, courtes ; aucune surprise pendant que Plume parle ni par-dessus une autre ; en arrière-plan, le décor se fige ; avec « Réduire les animations », rien ne bouge, aucune surprise (la fumée des volcans reste posée) | `src/screens/vivant.ts`, `tests/vivant.test.ts`, `tests/e2e/vivant.py` |
+| Performances mesurées sur les sept îles : 60 images par seconde, aucune tâche longue, chaque animation sur `transform` et `opacity` seulement ; 300 à 400 Ko d'images par écran d'île, dont 110 à 170 Ko pour le décor vivant | `tests/e2e/performances.py` |
+| Ajouté à ta demande : les jeux aux visuels encore simples dessinés comme les nénuphars. Le marché de Basile (panier en osier, corbeille, cagette à dix places, sac de dix pommes, ardoise), le goûter (assiettes en faïence, boîte à biscuits en fer, nappe), flotte ou coule (bassin de verre, onde à l'entrée dans l'eau, réponses en petits bocaux), les motifs de Rico (perles en bois sur un cordon, plateau à alvéoles), le chemin de Bip (potager en cases, Bip le personnage), le grand tri (poubelles à couvercle qui se soulève), le volcan d'Octave (coupe dessinée, éruption). Même pédagogie | `scripts/illustration/jeux*.py`, `src/activities/`, `src/screens/styles4.ts`, `tests/livraison4.test.ts` |
+| Les zones touchables du volcan coupé restent celles d'avant : ses images ne prennent pas le doigt | `src/activities/volcan_art.ts` |
+
+Ce qui était prévu :
 
 - Les couches de chaque île bougent : vagues, nuages, palmes, bateau, fumée.
 - Les personnages respirent et clignent des yeux.
 - Les surprises sont rares (une toutes les 20 à 60 s), et le décor répond au toucher.
 - Les réactions des hôtes et les bruitages sont adoucis (bois, marimba, clochettes, toujours fabriqués dans le code).
 - Les garde-fous de `identite-visuelle.md` s'appliquent ; les performances sont mesurées sur l'iPad.
+
+Les mesures de performance sont faites dans Chrome sans écran (sans carte graphique) : l'essai sur l'iPad reste à faire.
+
+## Livraison 4 bis : les derniers jeux dessinés
+
+- Le voyage de la goutte, le voyage des déchets (scènes et poubelles de la rue), la carte du monde du Port, et les déchets du grand tri, encore dessinés au trait.
+- Les derniers mots de l'imagier.
 
 ## Livraison 5 : validation finale
 

@@ -12,7 +12,9 @@ La direction artistique (lumière, matières, couleurs, mouvement) est décrite 
 | `personnages.py` | Plume (cinq poses, pièces pour l'animer), Basile, la grenouille ; yeux, bouches, sourcils, les cinq expressions communes, les quatre émotions du théâtre (triste, colère, peur, déçu) et l'expression calme. |
 | `hotes.py` | Mona, Rico et Bip, Octave, Kiki, Pico. |
 | `decors.py` | Ciel, mer, île, chemin, végétation, et les lieux de l'île des Nombres (marché, étang, goûter). |
-| `creatures.py` | Animaux et effets du décor vivant (dauphin, baleine, oiseaux, fumée…), pour la livraison 4. |
+| `creatures.py` | Animaux et effets du décor vivant (dauphin, baleine, oiseaux, fumée…). |
+| `vivant.py` | Livraison 4 : le décor vivant des îles. Les petits sujets que l'appli anime (étincelle, bouffée de fumée, papillons, et ceux des surprises : dauphin, gerbe, baleine, souffle, oiseaux, poisson, cœur, voilier, arc-en-ciel, ballon de Rico), les reflets de la mer, et le choix des places (sur la mer libre ou l'herbe libre, loin des lieux, des étiquettes et de Plume, visibles en portrait). |
+| `jeux.py`, `jeux_decouvertes.py`, `jeux_enigmes.py` | Livraison 4 : les objets des jeux, dessinés comme les nénuphars. Le marché de Basile et le goûter ; le bassin de verre (en deux calques), les poubelles (corps et couvercle), le volcan coupé (fond et calques posés par-dessus, dans le repère du volcan de l'appli, trois fois plus grand) ; les perles en bois de Rico, leur plateau, le potager de Bip. |
 | `iles.py` | Disposition des îles dessinées : six emplacements, le lieu de chaque activité, les étiquettes (l'île des Nombres y est dessinée ; les six autres sont dans leurs modules `ile_*.py`). |
 | `ile_commun.py` | Livraison 3 : les briques des îles (côte ondulée de chaque île, crique où nage l'hôte de l'eau, herbe, chemins, ciel et mer) et les petits objets des lieux (table, cube à lettre, note, panneau, fanions, livre, cabane, cœur, tulipe). |
 | `ile_mots.py`, `ile_enigmes.py`, `ile_decouvertes.py`, `ile_atelier.py`, `ile_coeur.py`, `ile_port.py` | Livraison 3 : une île chacun (`DISPOSITION` et `DESSINS` : décor de base, remplissages, lieux, hôte qui salue). |
@@ -44,7 +46,7 @@ mais quelques octets peuvent changer.
 
 ```sh
 python3 scripts/illustration/fabriquer.py              # personnages et îles (environ 1 minute)
-python3 scripts/illustration/fabriquer.py personnages  # ou seulement : iles, une île (mots, coeur…), activites, fetes, carte, accueil, visages, fin, calme
+python3 scripts/illustration/fabriquer.py personnages  # ou seulement : iles, une île (mots, coeur…), activites, fetes, carte, accueil, visages, fin, calme, jeux, jeux_decouvertes, jeux_enigmes, vivant
 python3 scripts/illustration/imagier.py                # imagier (environ 2 minutes)
 bun run build                                          # puis construire l'appli
 ```
@@ -53,8 +55,9 @@ bun run build                                          # puis construire l'appli
 
 ## Ce qui sort
 
-- `public/illustrations/personnages/` : chaque hôte dans les cinq expressions (`content`, `rieur`, `surpris`, `pensif`, `doux`) et en train de saluer ; Plume dans ses cinq poses, ses quatre expressions en vol et en trois pièces (aile arrière, corps, aile avant) pour battre des ailes lentement.
-- `public/illustrations/iles/<île>/` : le décor de base (opaque), un remplissage pour chaque emplacement libre, un lieu par activité, les éléments du décor vivant.
+- `public/illustrations/personnages/` : chaque hôte dans les cinq expressions (`content`, `rieur`, `surpris`, `pensif`, `doux`), les yeux fermés (`cligne`, pour cligner des yeux) et en train de saluer ; Plume dans ses cinq poses, ses quatre expressions en vol et en trois pièces (aile arrière, corps, aile avant) pour battre des ailes lentement.
+- `public/illustrations/iles/<île>/` : le décor de base (opaque), un remplissage pour chaque emplacement libre, un lieu par activité, les calques du décor vivant (`anime-*.webp`).
+- `public/illustrations/activites/` et `public/illustrations/vivant/` : les objets des jeux et les petits sujets du décor vivant.
 - `public/imagier/` : une image par emoji, 320 × 320, et la licence de la base.
 - `src/illustrations.ts` et `src/imagier.ts` : les catalogues pour l'appli (fichiers générés, à ne pas modifier à la main).
 
@@ -85,3 +88,12 @@ Au-delà de six lieux, l'île passe en quartiers : un deuxième écran, avec ses
 - Polices utilisées pour les chiffres des dessins : Baloo 2 (SIL OFL, `public/polices/`).
 
 **Visages du théâtre.** `python3 scripts/illustration/fabriquer.py visages` écrit aussi `visages-ecarts.json` : pour chaque personnage, la part du médaillon (à 140 px) qui change d'une émotion à l'autre, et la taille des images mesurées. `tests/livraison3.test.ts` vérifie que ces mesures sont celles des images publiées et qu'elles atteignent 5 % pour chaque paire qu'un exercice du théâtre peut montrer.
+
+## Le décor vivant d'une île (livraison 4)
+
+Pendant le rendu du décor de base, `decors.noter()` met de côté ce qui doit bouger seul au lieu de le peindre : les nuages, les palmes des palmiers (le tronc reste dans le décor), les reflets de la mer, la fumée du volcan au loin ; il note aussi le contour de l'île et les objets posés sur la mer (le ponton), que les reflets évitent. `fabriquer.py` rend ensuite chacun en calque à part (`calques_vivants`), avec son **rôle** (`nuage`, `palmes`, `reflets`, `hote`, `cligne`, `bateau`, `bras`, `grenouille`) et, s'il tourne, son **pivot** (le haut du tronc pour les palmes, l'épaule de Basile, la quille du bateau). L'appli anime chaque calque selon son rôle (`src/screens/vivant.ts`).
+
+Dans le module de l'île, `DISPOSITION["vivant"]` donne l'hôte (dont la variante « yeux fermés » est rendue en forçant l'expression `cligne`), la surprise propre à l'île (`poisson`, `souffle`, `ballon`, `volcan`, `arc-en-ciel`, `coeurs`, `voilier`, et son point), et, s'il y en a, la fumée continue d'un lieu. Les places des étincelles, du dauphin, de la baleine et des papillons sont choisies par `vivant.py` et écrites dans le catalogue de l'île (`vivant`).
+
+Partout ailleurs (planches, fin de séance, autres scènes), rien n'est noté : tout est peint comme avant.
+

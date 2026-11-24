@@ -17,7 +17,11 @@ DISPOSITIONS = {
         "lieux": {"marche": "A", "nenuphars": "B", "partage": "C"},
         "pastilles": {"marche": (318, 612), "nenuphars": (842, 630), "partage": (560, 750)},
         "plume": (726, 330),
-        "animes": ["bateau"],  # éléments du décor vivant, rendus à part pour bouger seuls (livraison 4)
+        "animes": ["bateau", "bras", "basile-cligne", "grenouille"],  # rendus à part pour bouger seuls (livraison 4)
+        # Basile est à son étal (le lieu du marché) : son bras salue, ses yeux clignent ; la grenouille de l'étang saute
+        # quand on la touche ; la surprise de l'île : un poisson saute dans l'étang
+        "vivant": {"roles": {"basile-cligne": "cligne"}, "pivots": {"bateau": (82, 772), "bras": (357, 466), "grenouille": (646, 540)},
+                   "surprise": {"type": "poisson", "point": [884, 548]}},
     },
 }
 
@@ -66,17 +70,30 @@ def nombres_remplissage(R, ident):
 def nombres_lieu(R, activite):
     e = DISPOSITIONS["nombres"]["emplacements"]
     if activite == "marche":
-        D.stall(R, *e["A"], arm="avec")
+        D.stall(R, *e["A"], arm="sans")   # le bras qui salue est un calque à part
     elif activite == "nenuphars":
-        D.pond(R, *e["B"], with_frog=True)
+        D.pond(R, *e["B"], with_frog=False)   # la grenouille est un calque à part : elle saute
     elif activite == "partage":
         D.picnic(R, *e["C"])
     else:
         raise KeyError(activite)
 
 def nombres_anime(R, nom):
+    e = DISPOSITIONS["nombres"]["emplacements"]
     if nom == "bateau":
         D.dock_boat(R, part_="bateau")
+    elif nom == "bras":
+        cx, cy = e["A"]
+        P.basile(R, cx + 2, cy + 4, 0.8, wave=True, full=False, arm="seul")
+    elif nom == "basile-cligne":
+        # le visage de Basile, les yeux fermés, posé sur l'étal le temps d'un clignement
+        import vivant as V
+        cx, cy = e["A"]
+        D.stall(R, cx, cy, arm="sans", expr="cligne")
+        V.garder(R, R.mask(ellipse(cx + 2, cy - 64, 30, 18)))
+    elif nom == "grenouille":
+        cx, cy = e["B"]
+        P.frog(R, cx - 196, cy + 14, 0.62)
     else:
         raise KeyError(nom)
 

@@ -6,7 +6,7 @@ Chaque fonction prend (R, x, y, s, expr, salut) ; (x, y) est le milieu du ventre
 import math
 import numpy as np
 from moteur import *
-from personnages import part, flat, eye_parts, mouth, brow, leaf, EXPRESSIONS, INK, paupiere, larme
+from personnages import part, flat, eye_parts, mouth, brow, leaf, EXPRESSIONS, INK, paupiere, larme, expr_de
 
 def _bras(R, epaule, coude, main, ep, couleur, main_couleur, main_r):
     """Bras souple (ruban) terminé par une main ronde."""
@@ -29,6 +29,7 @@ JET, JET_L = "#5BB8E6", "#BFE8F7"
 
 def mona(R, x, y, s=1.0, expr="content", salut=False):
     """Mona de profil, tournée vers la droite, (x, y) = milieu du corps. Repère local ~ 280 x 200."""
+    expr = expr_de(expr)
     E = EXPRESSIONS[expr]
     R.push(Affine.T(x, y) @ Affine.S(s) @ Affine.T(-150, -112))
     peau = Mat(puff=30, spec=0.18, shin=18, rim=0.35, line_w=1.8)
@@ -96,6 +97,7 @@ FOULARD, FOULARD_D = "#8C6BE0", "#6B4FC4"
 
 def rico(R, x, y, s=1.0, expr="content", salut=False):
     """Rico debout, de face, (x, y) = milieu du ventre. Repère local ~ 220 x 270."""
+    expr = expr_de(expr)
     E = EXPRESSIONS[expr]
     R.push(Affine.T(x, y) @ Affine.S(s) @ Affine.T(-110, -170))
     fur = Mat(puff=22, spec=0.05, shin=10, rim=0.25, line_w=1.8)
@@ -165,6 +167,7 @@ BIP, BIP_D, ECRAN, ECRAN_D = "#8C6BE0", "#5B3FB8", "#E6DEFA", "#C9BDF3"
 
 def bip(R, x, y, s=1.0, expr="content", salut=False):
     """Bip de face, (x, y) = milieu du corps. Repère local ~ 160 x 200."""
+    expr = expr_de(expr)
     E = EXPRESSIONS[expr]
     R.push(Affine.T(x, y) @ Affine.S(s) @ Affine.T(-80, -112))
     peinture = Mat(puff=16, spec=0.35, shin=28, rim=0.3, line_w=1.8, profile="pillow")
@@ -239,6 +242,7 @@ def _tentacule(R, pts, w0, couleur, mat, ventouses=True):
 
 def octave(R, x, y, s=1.0, expr="content", salut=False):
     """Octave de face, (x, y) = milieu de la tête. Repère local ~ 240 x 260."""
+    expr = expr_de(expr)
     E = EXPRESSIONS[expr]
     R.push(Affine.T(x, y) @ Affine.S(s) @ Affine.T(-120, -110))
     peau = Mat(puff=26, spec=0.25, shin=18, rim=0.35, line_w=1.8)
@@ -286,6 +290,7 @@ BERET, BERET_D, PEINTURE = "#E85D9A", "#C2477F", "#FFC145"
 
 def kiki(R, x, y, s=1.0, expr="content", salut=False):
     """Kiki de profil sur sa branche, tournée vers la droite, (x, y) = milieu du corps. Repère local ~ 270 x 230."""
+    expr = expr_de(expr)
     E = EXPRESSIONS[expr]
     R.push(Affine.T(x, y) @ Affine.S(s) @ Affine.T(-136, -140))
     peau = Mat(puff=20, spec=0.15, shin=16, rim=0.3, line_w=1.7)
@@ -377,6 +382,7 @@ PIC, PIC_D, PIC_L, VISAGE, VISAGE_D = "#8A5A3B", "#6B4129", "#A8754E", "#F1D7B8"
 
 def pico(R, x, y, s=1.0, expr="content", salut=False):
     """Pico debout, de face, (x, y) = milieu du ventre. Repère local ~ 220 x 250."""
+    expr = expr_de(expr)
     E = EXPRESSIONS[expr]
     R.push(Affine.T(x, y) @ Affine.S(s) @ Affine.T(-110, -160))
     # manteau de piquants : une silhouette dentelée autour de la tête et du dos

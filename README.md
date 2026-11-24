@@ -191,7 +191,9 @@ python3 tests/e2e/retours.py      # biscuits glissés (souris et doigt), fêtes 
 python3 tests/e2e/tri.py          # le grand tri, ses six niveaux, glisser ou toucher, réglages des poubelles (shots6)
 python3 tests/e2e/dechets.py      # le voyage des déchets : camion, centre de tri, nouvelle vie, déchetterie (shots7)
 python3 tests/e2e/seance.py       # une séance sans répétition (syllabes, goutte, flotte), réponses lues, question des côtés
-python3 tests/e2e/appuis.py       # double appui sur une île ou un lieu : le second appui ne traverse pas d'un écran à l'autre
+python3 tests/e2e/appuis.py       # double appui sur une île ou un lieu, vol de Plume vers l'île choisie, animations réduites
+python3 tests/e2e/vivant.py       # décor vivant des îles : surprises, touchers, arrière-plan, « Réduire les animations »
+python3 tests/e2e/performances.py # décor vivant : images par seconde, tâches longues, animations sur transform et opacity
 ```
 
 ### Refaire le pack de voix (après avoir ajouté ou changé des phrases)

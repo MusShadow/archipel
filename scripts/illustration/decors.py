@@ -12,6 +12,19 @@ BALOO = os.path.join(RACINE, "public/polices/baloo-2-latin-800-normal.woff2")
 def rng(seed):
     return np.random.default_rng(seed)
 
+# ---- Décor vivant (livraison 4). Pendant le rendu du fond d'une île en couches (fabriquer.py), ce qui doit bouger seul
+# (nuages, palmes, reflets de la mer, fumée du volcan au loin) est noté ici au lieu d'être peint dans le fond : fabriquer.py
+# le rend ensuite en calques séparés. Les contours des îles et les objets posés sur la mer sont notés aussi (les reflets
+# les évitent). Partout ailleurs (planches, autres scènes), VIVANT reste None et tout est peint comme avant.
+VIVANT = None
+
+def noter(cle, valeur):
+    """Note un élément du décor vivant ; renvoie True si le fond d'une île est rendu en couches (ne pas le peindre)."""
+    if VIVANT is None:
+        return False
+    VIVANT.setdefault(cle, []).append(valeur)
+    return True
+
 def text_mask(R, txt, cx, cy, size, font=BALOO, rot=0):
     S = R.S * 4
     f = ImageFont.truetype(font, int(size * S))
@@ -75,6 +88,8 @@ def butterfly(R, x, y, c="#FFC145", s=1.0, flip=False, open_=1.0):
     flat(R, R.line_mask([(x, y - 6 * s), (x + 3 * s, y - 12 * s)], 0.9, smooth_it=False), "#4A3A2E")
 
 def cloud(R, x, y, s=1.0, seed=1):
+    if noter("nuages", (x, y, s, seed)):
+        return
     r = rng(seed)
     blobs = [(0, 0, 34), (36, -12, 40), (78, -2, 32), (104, 10, 22), (-30, 10, 22), (50, 14, 30)]
     polys = [circle(x + bx * s, y + by * s, br * s * (0.95 + 0.1 * r.random())) for bx, by, br in blobs]
@@ -91,7 +106,11 @@ def cloud(R, x, y, s=1.0, seed=1):
     else:
         R.paint(m, "#FFFFFF", Mat(puff=16 * s, line=False, tex=0.5))
 
+FUMEE_LOIN = ((962, 160, 9), (970, 146, 11), (982, 132, 13))  # le panache du volcan, sur l'île au loin
+
 def far_islands(R, smoke=True):
+    if smoke and noter("fumees", FUMEE_LOIN[0][:2]):
+        smoke = False     # la fumée monte en bouffées, rendues à part
     hz = 0.0 if R.style == "papier" else 0.45
     isl = [
         # île du volcan (Découvertes), loin à droite
@@ -110,7 +129,7 @@ def far_islands(R, smoke=True):
     if not smoke:
         return
     if R.style != "papier":
-        for i, (px, py, pr) in enumerate(((962, 160, 9), (970, 146, 11), (982, 132, 13))):
+        for i, (px, py, pr) in enumerate(FUMEE_LOIN):
             R.paint(R.mask(circle(px, py, pr)), "#FFFFFF", Mat(puff=6, line=False, tex=0.2), haze=0.35)
     else:
         for i, (px, py, pr) in enumerate(((962, 160, 9), (970, 146, 11), (982, 132, 13))):
@@ -120,6 +139,8 @@ def far_islands(R, smoke=True):
 
 # ============================================================================ mer
 def sea(R, isl_mask, streaks="avec"):
+    if streaks == "avec" and noter("reflets", True):
+        streaks = "sans"  # les reflets ondulent : rendus à part
     y0 = 236
     if R.style == "papier":
         bands = [(y0, "#7FCFD9"), (300, "#6CC5D2"), (420, "#5BBBCB"), (560, "#4CB0C3"), (700, "#43A7BC")]
@@ -166,6 +187,7 @@ ISL = [(70, 548), (92, 470), (150, 404), (262, 350), (420, 314), (600, 298), (79
        (440, 746), (300, 718), (190, 672), (112, 618)]
 
 def island(R):
+    noter("iles", [tuple(p) for p in ISL])
     top = catmull(ISL, n=16)
     top_m = R.mask(top)
     side_m = m_union(*[m_shift(top_m, 0, dy * R.S) for dy in (10, 20, 30, 38)])
@@ -310,6 +332,8 @@ def round_tree(R, x, y, s=1.0, seed=1, fruit=None):
             part(R, R.mask(circle(fx, fy, 5.5 * s)), fruit, Mat(puff=4, spec=0.4, shin=30, line_w=1.0), shadow=False)
 
 def palm(R, x, y, s=1.0, lean=12, seed=1, flip=False, part_="tout"):
+    if part_ == "tout" and noter("palmiers", (x, y, s, lean, seed, flip)):
+        part_ = "tronc"   # les palmes sont rendues à part : elles se balancent
     sg = -1 if flip else 1
     if part_ != "palmes":
         ground_shadow(R, x + 16 * s, y + 4 * s, 34 * s, 8 * s, 0.28)
@@ -362,7 +386,7 @@ def rock(R, x, y, rx, ry, c="#B9B3A8", seed=0):
     part(R, m, c, Mat(puff=min(rx, ry) * 0.9, line_w=1.3, tex=1.0, spec=0.05), shadow=False)
 
 # ============================================================================ marché de Basile
-def stall(R, cx=318, cy=470, arm="avec"):
+def stall(R, cx=318, cy=470, arm="avec", expr="content"):
     st = R.style
     wood, wood_d, wood_l = "#C98D58", "#9E6538", "#E0AE78"
     ground_shadow(R, cx + 18, cy + 92, 132, 18, 0.32, dx=10, blur=7)
@@ -370,7 +394,7 @@ def stall(R, cx=318, cy=470, arm="avec"):
     for px in (cx - 112, cx + 112):
         part(R, R.mask(rrect(px - 6, cy - 150, 12, 232, 5)), wood_d, Mat(puff=5, line_w=1.4, tex=1.0))
     # Basile derrière le comptoir
-    basile(R, cx + 2, cy + 4, 0.8, wave=True, full=False, arm=arm)
+    basile(R, cx + 2, cy + 4, 0.8, wave=True, full=False, arm=arm, expr=expr)
     # comptoir : dessus + façade en planches
     topf = R.mask(np.array([(cx - 128, cy + 10), (cx + 128, cy + 10), (cx + 136, cy + 26), (cx - 136, cy + 26)], float))
     front = R.mask(rrect(cx - 136, cy + 24, 272, 70, 6))
@@ -530,6 +554,7 @@ def dock_boat(R, part_="tout"):
     if part_ == "bateau":
         _boat(R)
         return
+    noter("obstacles", (126, 686, 236, 816))   # le ponton, sur la mer : les reflets l'évitent
     for (px, py) in ((140, 790), (170, 800), (186, 740)):
         part(R, R.mask(rrect(px - 4, py - 16, 8, 30, 3)), "#8E5F37", Mat(puff=3, line_w=1.0, tex=1.0))
     planks = [R.line_mask([(200 - k * 8.6, 698 + k * 12.4), (228 - k * 8.6, 708 + k * 12.4)], 1.2, smooth_it=False) for k in range(1, 8)]

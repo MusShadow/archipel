@@ -15,6 +15,7 @@ class Atelier:
         R = Art.__new__(Art)
         R.__dict__.update(self.modele.__dict__)
         R.img = np.full((R.h, R.w, 3), fond, np.float32)
+        R.fond = fond   # le fond du rendu (noir ou blanc) : vivant.garder() y ramène ce qu'il ne garde pas
         R.tf = [Affine()]
         return R
 

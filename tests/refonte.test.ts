@@ -112,7 +112,9 @@ describe("cadre d'activité", () => {
     const { hoteActivite, decorActivite } = await import("../src/host");
     expect(hoteActivite("plume")).toBeNull();
     const h = hoteActivite("basile")!;
-    expect(h.el.querySelectorAll("img").length).toBe(4);
+    // quatre expressions, et (livraison 4) le calque « yeux fermés » de son clignement
+    expect(h.el.querySelectorAll("img").length).toBe(5);
+    expect(h.el.querySelectorAll("img.hote-cligne").length).toBe(1);
     expect(h.el.dataset.expr).toBe("content");
     h.expr("rieur", true);
     expect(h.el.dataset.expr).toBe("rieur");

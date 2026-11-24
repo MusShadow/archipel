@@ -139,6 +139,37 @@ Courbes :
 
 Le réglage « Réduire les animations » de l'iPad arrête tout. **Le personnage-guide est l'élément le plus calme de l'écran.**
 
+### Livraison 4 : le vol de Plume et le décor vivant
+
+Ces jetons sont dans `MOUVEMENTS` (`src/design/jetons.ts`) ; les feuilles de style les lisent directement.
+
+| Jeton | Durée | Usage |
+|---|---|---|
+| `volChoixMin`, `volChoixMax` | 600 à 1000 ms | Plume vole vers l'île que l'enfant a choisie, selon la distance (ouverture directe si « Réduire les animations ») |
+| `nuages` | 46 s (de 38 à 54 s selon le nuage) | les nuages dérivent, aller-retour |
+| `houle` | 6,5 s | deux jeux de reflets s'allument l'un après l'autre : la mer ondule |
+| `etincelle` | 5,2 s | une étincelle s'allume et s'éteint sur la mer |
+| `palmes` | 5,2 s | les palmes se balancent autour du haut du tronc |
+| `bateau` | 3,6 s | le bateau tangue |
+| `papillon` | 1,6 s | un battement d'ailes de papillon (un aller) |
+| `respiration` | 3,2 s | les hôtes respirent, sur leur île et dans les activités |
+| `clignement` | 5,6 s | un clignement d'yeux par cycle (les yeux fermés environ 140 ms) |
+| `salut` | 7 s | Basile salue depuis son étal |
+| `surpriseMin`, `surpriseMax` | 20 à 60 s | le temps entre deux surprises |
+
+Règles du décor vivant (`src/screens/vivant.ts`) :
+
+- tout ce qui bouge en continu est plus lent que le battement d'ailes de Plume (un test le vérifie) ;
+- les surprises sont courtes (de 2,4 à 16 s), une à la fois, jamais pendant que Plume parle ;
+- en arrière-plan, le décor se fige et les surprises attendent ;
+- avec « Réduire les animations », rien ne bouge et il n'y a pas de surprise ; la fumée des volcans reste posée ;
+- chaque animation ne touche que `transform` et `opacity` (vérifié par `tests/e2e/performances.py`) ;
+- ce qu'on peut toucher dans le décor (l'hôte, un palmier, le bateau, la grenouille) est un bouton nommé ; un palmier dont les palmes passent sur un lieu ne se touche pas, pour que le lieu reste entier sous le doigt.
+
+### Bruitages
+
+Tous fabriqués dans le code (`sfx`, `src/services.ts`), en trois timbres doux : le bois (un petit « toc » pour un appui, un bond), le marimba (réussite, essai, fin de séance, fanfare) et les clochettes (gommette). Ils passent par une même sortie, un peu moins forte, dont un filtre doux retire les aigus durs ; les bruits des fêtes sont plus bas qu'avant. La voix de Plume ne passe pas par là.
+
 ## Composants
 
 Tous dans `src/design/composants.ts`, dans la finition album :
@@ -177,6 +208,14 @@ Assemblages de la livraison 3 :
 | Fin de séance | `sessionEnd()`, `src/screens/child.ts` | fond peint qui couvre l'écran (repère 1194 × 834, rogné sur les côtés en portrait) ; le soleil, à part, descend derrière l'horizon (`--duree-coucher-soleil`, une seule fois, arrêté par « Réduire les animations ») ; les gommettes du voyage arrivent une à une ; Plume et sa bulle avec le défi pour la maison |
 | Coin calme | `calmScreen(retour)`, `src/screens/child.ts` | décor doux peint ; Pico entier, les yeux fermés, gonfle à l'inspiration et se repose à l'expiration, un halo clair derrière lui suit le même rythme (rien ne clignote) ; à la fin, il ouvre les yeux |
 | Gommette gagnée | `stickerRitual`, `src/screens/child.ts` | ruban, la gommette dans sa lumière (rayons fixes), « Dans mon carnet » ; elle s'envole vers le bouton du carnet |
+
+Assemblages de la livraison 4 :
+
+| Assemblage | Où | Règles |
+|---|---|---|
+| Décor vivant d'une île | `decorVivant(decor, cadre)`, `src/screens/vivant.ts` | la mer et le ciel juste au-dessus du dessin de base, sous les lieux ; l'île vivante (palmes, hôte, bateau, papillons, surprises de l'île) au-dessus des lieux, sous Plume ; un chef d'orchestre lance les surprises (voir Mouvement) |
+| Calque, vignette | `calque(nom)`, `vignette(nom)`, `rapport(nom)`, `src/design/dessins.ts` | une image de l'atelier replacée à sa place dans son cadre de rendu : des calques du même cadre se superposent exactement (le fond et le devant du bassin, le corps et le couvercle d'une poubelle) ; une vignette garde le cadre entier, à la même échelle d'une image à l'autre |
+| Objets dessinés des jeux | `src/activities/marche.ts`, `partage.ts`, `flotte.ts`, `motifs.ts`, `bip.ts`, `tri.ts`, `volcan_art.ts`, `src/screens/styles4.ts` | les images de l'atelier remplacent les formes plates ; les états des jeux (case allumée, boîte survolée, bonne réponse) restent visibles par-dessus ; les zones touchables ne changent pas (les images du volcan ne prennent pas le doigt) |
 
 Appui « jouet » : les composants album s'enfoncent en 120 ms et reviennent en 300 ms avec un petit rebond.
 
@@ -225,7 +264,7 @@ Le modèle est dans `src/iles.ts`.
 
 - **Atelier d'illustration** (`scripts/illustration/`) : personnages, décors et lieux des îles, imagier. Voir `LISEZMOI.md`.
 - **Catalogues générés** :
-  - `src/illustrations.ts` : boîte de chaque image dans son cadre, ancre (point au sol ou centre), pivot des ailes ;
+  - `src/illustrations.ts` : boîte de chaque image dans son cadre (et le cadre de rendu des éléments), ancre (point au sol ou centre), pivot des ailes et des calques qui tournent, rôle de chaque calque du décor vivant, et les places de ses petits sujets ;
   - `src/imagier.ts` : l'image de chaque emoji.
 - **Adresses** : `urlImage(chemin)` (`src/images.ts`) ajoute l'empreinte du fichier (`?v=…`), calculée par `scripts/build.ts`.
 - **Hors ligne** : le service worker garde toutes les images dans le cache `archipel2-images`, d'une version à l'autre, et ne retélécharge que celles qui changent. À l'installation, il garde d'abord l'appli et les polices, puis la voix, puis les images, six fichiers à la fois.

@@ -15,10 +15,11 @@ import personnages as P
 import hotes as H
 import decors as D
 import iles as I
+import vivant as V
 import importlib, importlib.util
 
 # Éléments isolés des livraisons 2 à 4 (une image chacun) : module → ELEMENTS {nom: cadre, dessin, options}.
-MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil", "visages", "fin", "calme", "jeux", "jeux_decouvertes", "jeux_enigmes"]
+MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil", "visages", "fin", "calme", "jeux", "jeux_decouvertes", "jeux_enigmes", "vivant"]
 def tous_elements(quoi=None):
     out = {}
     for m in MODULES_ELEMENTS:
@@ -33,7 +34,7 @@ def tous_elements(quoi=None):
 RACINE = pathlib.Path(__file__).resolve().parents[2]
 SORTIE = RACINE / "public/illustrations"
 CATALOGUE = pathlib.Path(__file__).with_name("catalogue.json")
-EXPRS = ["content", "rieur", "surpris", "pensif", "doux"]
+EXPRS = ["content", "rieur", "surpris", "pensif", "doux", "cligne"]  # cligne : yeux fermés le temps d'un clignement (livraison 4)
 
 # Personnages : dessin, échelle de rendu, cadre (l, h), point d'ancrage dans le cadre, décalage du sol (en unités locales).
 # Les hôtes debout ont une ombre au sol ; Plume et Mona flottent.
@@ -90,7 +91,7 @@ def personnages(cat):
     A = Atelier(W_, H_)
     x, y = W_ / 2 - 10, H_ / 2 + 10
     variantes = [(pose, dict(pose=pose)) for pose in ("vol", "salut", "montre", "pense", "fete")]
-    variantes += [(f"vol-{e}", dict(pose="vol", expr=e)) for e in EXPRS if e != "content"]
+    variantes += [(f"vol-{e}", dict(pose="vol", expr=e)) for e in EXPRS if e not in ("content", "cligne")]
     variantes += [(f"piece-{pc}", dict(pose="vol", only=k)) for pc, k in (("aile-ar", "aile_ar"), ("corps", "corps"), ("aile-av", "aile_av"))]
     for var, kw in variantes:
         col, a = A.rgba(lambda R, kw=kw: P.plume(R, x, y, PLUME_S, **kw))
@@ -112,7 +113,13 @@ def iles(cat, seules=None):
         d = I.DESSINS[ile]
         A = Atelier(I.W, I.H)
         t = time.time()
-        col, a = A.opaque(d["base"])
+        # le fond, sans ce qui bouge seul (nuages, palmes, reflets, fumée au loin) : decors.noter() le note au passage
+        D.VIVANT = {}
+        try:
+            col, a = A.opaque(d["base"])
+            note = D.VIVANT
+        finally:
+            D.VIVANT = None
         base = {"fichier": f"iles/{ile}/base.webp", "boite": A.enregistrer(SORTIE / f"iles/{ile}/base.webp", col, a, opaque=True, qualite=82)}
         print(f"  iles/{ile}/base.webp  {round(time.time() - t, 1)} s")
         occupes = set(disp["lieux"].values())
@@ -130,17 +137,64 @@ def iles(cat, seules=None):
             f = f"iles/{ile}/lieu-{act}.webp"
             lieux[act] = {"fichier": f, "boite": A.enregistrer(SORTIE / f, col, a)}
             print(f"  {f:42} {lieux[act]['boite']}")
-        animes = {}
-        for nom in disp.get("animes", []):
-            col, a = A.rgba(lambda R, nom=nom: d["anime"](R, nom))
-            f = f"iles/{ile}/anime-{nom}.webp"
-            animes[nom] = {"fichier": f, "boite": A.enregistrer(SORTIE / f, col, a)}
-            print(f"  {f:42} {animes[nom]['boite']}")
+        animes, vivant = calques_vivants(ile, disp, d, A, note, lieux)
         cat["iles"][ile] = {
             "cadre": [I.W, I.H], "base": base, "remplissages": remplissages, "lieux": lieux, "animes": animes,
             "emplacements": {k: list(v) for k, v in disp["emplacements"].items()}, "lieuxEmplacement": dict(disp["lieux"]),
-            "pastilles": {k: list(v) for k, v in disp["pastilles"].items()}, "plume": list(disp["plume"]),
+            "pastilles": {k: list(v) for k, v in disp["pastilles"].items()}, "plume": list(disp["plume"]), "vivant": vivant,
         }
+
+def calques_vivants(ile, disp, d, A, note, lieux):
+    """Le décor vivant d'une île (livraison 4) : chaque calque qui bouge seul, avec son rôle (l'appli l'anime selon
+    lui) et, s'il tourne, son pivot ; puis les places des petits sujets (étincelles, dauphin, baleine, papillons)."""
+    animes = {}
+    def calque(nom, dessin, role, pivot=None):
+        col, a = A.rgba(dessin)
+        f = f"iles/{ile}/anime-{nom}.webp"
+        boite = A.enregistrer(SORTIE / f, col, a)
+        animes[nom] = {"fichier": f, "boite": boite, "role": role}
+        if pivot:
+            animes[nom]["pivot"] = rel(boite, *pivot)
+        print(f"  {f:42} {boite}")
+    viv = disp.get("vivant", {})
+    hote = viv.get("hote")
+    # au fond : les reflets de la mer (deux jeux) et les nuages
+    if note.get("reflets"):
+        for k, g in (("a", 5), ("b", 17)):
+            calque(f"reflets-{k}", lambda R, g=g: V.reflets(R, note, g), "reflets")
+    for k, (x, y, s, sd) in enumerate(note.get("nuages", []), 1):
+        calque(f"nuage-{k}", lambda R, x=x, y=y, s=s, sd=sd: D.cloud(R, x, y, s, sd), "nuage")
+    # les palmes des palmiers, qui se balancent autour du haut du tronc
+    for k, (x, y, s, lean, sd, flip) in enumerate(note.get("palmiers", []), 1):
+        sg = -1 if flip else 1
+        haut = (x + sg * lean * s * 2.4, y - 168 * s)
+        calque(f"palmes-{k}", lambda R, x=x, y=y, s=s, lean=lean, sd=sd, flip=flip: D.palm(R, x, y, s, lean, sd, flip, part_="palmes"), "palmes", haut)
+    # les calques de l'île : l'hôte (et ses yeux fermés), le bateau, le bras de Basile, la grenouille…
+    for nom in disp.get("animes", []):
+        role = "hote" if nom == hote else viv.get("roles", {}).get(nom, nom)
+        calque(nom, lambda R, nom=nom: d["anime"](R, nom), role, viv.get("pivots", {}).get(nom))
+        if nom == hote:
+            P.FORCER_EXPR = "cligne"
+            try:
+                calque(f"{nom}-cligne", lambda R, nom=nom: d["anime"](R, nom), "cligne")
+            finally:
+                P.FORCER_EXPR = None
+    # les places des petits sujets
+    plume = tuple(disp["plume"])
+    pastilles = [tuple(v) for v in disp["pastilles"].values()]
+    eviter = [plume, *pastilles]
+    boites = [l["boite"] for l in lieux.values()] + [animes[n]["boite"] for n in animes if animes[n]["role"] in ("hote", "bateau")]
+    places = {
+        "etincelles": V.places_mer(note, 5, 11, eviter=eviter),
+        "dauphin": V.place_saut(note, [plume]),
+        "baleine": V.place_baleine(note, [plume]),
+        "papillons": V.places_papillons(note, boites, eviter),
+        "fumees": [list(p) for p in note.get("fumees", [])],
+    }
+    for k in ("fumeeLieu", "surprise"):
+        if k in viv:
+            places[k] = viv[k]
+    return animes, places
 
 def elements(cat, quoi):
     """Éléments isolés : chacun dans son cadre, avec sa boîte, et ses points repères (fractions de la boîte)."""
@@ -171,7 +225,7 @@ def nettoyer(cat, quoi):
     gardes = {e["fichier"] for e in cat["personnages"].values()} | {e["fichier"] for e in cat.get("elements", {}).values()}
     for d in cat["iles"].values():
         gardes |= {d["base"]["fichier"]} | {x["fichier"] for k in ("remplissages", "lieux", "animes") for x in d[k].values()}
-    parties = ["personnages", "iles"] + ["activites", "gommettes", "fetes", "carte", "accueil", "visages", "fin", "calme"]
+    parties = ["personnages", "iles"] + ["activites", "gommettes", "fetes", "carte", "accueil", "visages", "fin", "calme", "vivant"]
     for partie in parties:
         if not (SORTIE / partie).exists() or (partie == "personnages" and partie not in quoi) or (partie == "iles" and "iles" not in quoi and not ({q for q in quoi if q in I.DISPOSITIONS})):
             continue
@@ -189,10 +243,17 @@ def ecrire_ts(cat):
         "// Images de l'atelier d'illustration (public/illustrations) : boîte [x, y, l, h] en px CSS dans le cadre de rendu,",
         "// ancre (point au sol ou centre) et pivot en fraction de la boîte, échelle de rendu du personnage.",
         "export type Boite = [number, number, number, number];",
-        "export interface ImageCadree { fichier: string; boite: Boite; cadre?: [number, number]; ancre?: [number, number]; echelle?: number; pivot?: [number, number]; points?: Record<string, [number, number]>; infos?: Record<string, number | string> }",
+        "// role : ce que fait un calque du décor vivant d'une île (nuage, palmes, reflets, hote, cligne, bateau, bras, grenouille).",
+        "export interface ImageCadree { fichier: string; boite: Boite; cadre?: [number, number]; ancre?: [number, number]; echelle?: number; pivot?: [number, number]; points?: Record<string, [number, number]>; infos?: Record<string, number | string>; role?: string }",
+        "// Décor vivant d'une île (livraison 4) : les places des petits sujets (px CSS dans le cadre de l'île) et sa surprise.",
+        "export interface VivantIle {",
+        "  etincelles?: [number, number][]; dauphin?: [number, number] | null; baleine?: [number, number] | null; papillons?: [number, number][];",
+        "  fumees?: [number, number][]; fumeeLieu?: [number, number][]; surprise?: { type: string; point: [number, number] };",
+        "}",
         "export interface DecorIle {",
         "  cadre: [number, number]; base: ImageCadree; remplissages: Record<string, ImageCadree>; lieux: Record<string, ImageCadree>; animes: Record<string, ImageCadree>;",
         "  emplacements: Record<string, [number, number]>; lieuxEmplacement: Record<string, string>; pastilles: Record<string, [number, number]>; plume: [number, number];",
+        "  vivant?: VivantIle;",
         "}",
         f"export const PERSONNAGES: Record<string, ImageCadree> = {json.dumps(cat['personnages'], ensure_ascii=False, sort_keys=True)};",
         f"export const DECORS_ILES: Record<string, DecorIle> = {json.dumps(cat['iles'], ensure_ascii=False, sort_keys=True)};",

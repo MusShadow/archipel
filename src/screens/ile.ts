@@ -8,6 +8,7 @@ import { CADRE, echelle, versEcran, type Ile, type Point } from "../iles";
 import { urlImage } from "../images";
 import { PERSONNAGES, type Boite, type ImageCadree } from "../illustrations";
 import { h, wobble } from "../ui";
+import { decorVivant, type DecorVivant } from "./vivant";
 
 export const imgIllustration = (im: ImageCadree, cls = "", alt = "") =>
   h("img", { class: cls, src: urlImage(`illustrations/${im.fichier}`), alt, draggable: "false" }) as HTMLImageElement;
@@ -62,7 +63,7 @@ export interface OptionsIle {
   onPlume?: () => void;
 }
 
-export function ecranIle(ile: Ile, o: OptionsIle = {}): { el: HTMLElement; ajuster: () => void } {
+export function ecranIle(ile: Ile, o: OptionsIle = {}): { el: HTMLElement; ajuster: () => void; vivant: DecorVivant | null } {
   const q = ile.quartiers[0];
   const d = q.decor;
   const cadre = h("div", { class: "ile-cadre", style: `width:${CADRE.l}px;height:${CADRE.h}px` });
@@ -70,11 +71,14 @@ export function ecranIle(ile: Ile, o: OptionsIle = {}): { el: HTMLElement; ajust
   const ancres: { el: HTMLElement; p: Point }[] = [];
   const ancrer = (el: HTMLElement, p: Point) => { const a = h("div", { class: "ile-ancre" }, el); dessus.appendChild(a); ancres.push({ el: a, p }); };
   let pp: Point | null = null, plume: HTMLElement | null = null, bulleAncre: HTMLElement | null = null;
+  let vivant: DecorVivant | null = null;
   const toucher = (id: string, el: HTMLElement) => { if (o.onLieu) o.onLieu(id, el); else wobble(el); };
   if (d) {
     cadre.appendChild(poser(imgIllustration(d.base, "ile-base", ""), d.base.boite));
+    // le décor vivant (livraison 4) : la mer et le ciel juste au-dessus du dessin de base, le reste au-dessus des lieux
+    vivant = decorVivant(d, cadre);
+    cadre.append(...vivant.fond);
     for (const [e, r] of Object.entries(d.remplissages)) if (!q.lieux.some((l) => l.emplacement === e)) cadre.appendChild(poser(imgIllustration(r), r.boite));
-    for (const a of Object.values(d.animes)) cadre.appendChild(poser(imgIllustration(a), a.boite));
     for (const l of q.lieux) {
       const id = l.ids[0];
       const im = d.lieux[id];
@@ -85,6 +89,7 @@ export function ecranIle(ile: Ile, o: OptionsIle = {}): { el: HTMLElement; ajust
       lieu.addEventListener("click", () => toucher(id, lieu));
       cadre.appendChild(lieu);
     }
+    cadre.append(...vivant.haut);
     const conseil = o.conseil ? d.lieux[o.conseil]?.boite : undefined;
     pp = pointPlume(conseil, d.plume);
     plume = plumeAnime(PLUME_ECHELLE);
@@ -139,7 +144,9 @@ export function ecranIle(ile: Ile, o: OptionsIle = {}): { el: HTMLElement; ajust
   };
   if (typeof ResizeObserver !== "undefined") new ResizeObserver(ajuster).observe(ecran);
   requestAnimationFrame(ajuster);
-  return { el: ecran, ajuster };
+  vivant?.demarrer();
+  (ecran as HTMLElement & { _vivant?: DecorVivant | null })._vivant = vivant; // pour les tests de bout en bout
+  return { el: ecran, ajuster, vivant };
 }
 
 export const ILE_CSS = `

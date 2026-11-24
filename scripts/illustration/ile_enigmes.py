@@ -16,6 +16,8 @@ DISPOSITION = {
     "pastilles": {"formes": (290, 544), "bip": (842, 620), "motifs": (560, 758)},
     "plume": (726, 330),
     "animes": ["rico"],
+    # décor vivant (livraison 4) : un ballon point d'interrogation s'envole au-dessus de l'île
+    "vivant": {"hote": "rico", "surprise": {"type": "ballon", "point": [600, 300]}},
 }
 COTE = C.contour(seed=33, amp=(16, 16), ondes=(4, 3))
 

@@ -11,6 +11,7 @@ import { CSS_COMPOSANTS } from "./design/composants";
 import { cssVariables } from "./design/jetons";
 import { estVitrine, pageVitrine } from "./vitrine";
 import { ILE_CSS } from "./screens/ile";
+import { VIVANT_CSS } from "./screens/vivant";
 import { CADRE_CSS, PEAU_ACTIVITE_CSS } from "./host";
 import { STYLES_L2 } from "./screens/styles2";
 import { DESSINS_CSS } from "./design/dessins";
@@ -19,7 +20,7 @@ import { STYLES_L4 } from "./screens/styles4";
 
 const style = document.createElement("style");
 // Système de design d'Archipel 2 (variables et composants album), puis les styles des écrans.
-style.textContent = cssVariables() + CSS_COMPOSANTS + CSS + PEAU_ACTIVITE_CSS + SCREENS_CSS + FETE_CSS + ILE_CSS + CADRE_CSS + STYLES_L2 + DESSINS_CSS + STYLES_L3 + STYLES_L4;
+style.textContent = cssVariables() + CSS_COMPOSANTS + CSS + PEAU_ACTIVITE_CSS + SCREENS_CSS + FETE_CSS + ILE_CSS + VIVANT_CSS + CADRE_CSS + STYLES_L2 + DESSINS_CSS + STYLES_L3 + STYLES_L4;
 document.head.appendChild(style);
 
 app.root = document.getElementById("app")!;

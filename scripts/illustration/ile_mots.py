@@ -15,6 +15,8 @@ DISPOSITION = {
     "pastilles": {"lis": (318, 606), "syllabes": (842, 540), "chants": (560, 758), "histoires": (952, 736)},
     "plume": (726, 330),
     "animes": ["mona"],
+    # décor vivant (livraison 4) : l'hôte, et la surprise propre à l'île (Mona souffle un grand jet d'eau)
+    "vivant": {"hote": "mona", "surprise": {"type": "souffle", "point": [262, 702]}},
 }
 COTE = C.crique(C.contour(seed=21, amp=(22, 12), ondes=(2, 5)))
 

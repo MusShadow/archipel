@@ -16,6 +16,8 @@ DISPOSITION = {
     "pastilles": {"theatre": (300, 548), "calme": (842, 596)},
     "plume": (726, 330),
     "animes": ["pico"],
+    # décor vivant (livraison 4) : de petits cœurs montent au-dessus de Pico
+    "vivant": {"hote": "pico", "surprise": {"type": "coeurs", "point": [204, 614]}},
 }
 COTE = C.contour(seed=69, amp=(18, 14), ondes=(4, 2))
 

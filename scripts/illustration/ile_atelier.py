@@ -15,6 +15,8 @@ DISPOSITION = {
     "pastilles": {"dessin": (318, 546), "miroir": (842, 584)},
     "plume": (726, 330),
     "animes": ["kiki"],
+    # décor vivant (livraison 4) : un arc-en-ciel paraît dans le ciel, puis s'efface
+    "vivant": {"hote": "kiki", "surprise": {"type": "arc-en-ciel", "point": [380, 30]}},
 }
 COTE = C.contour(seed=57, amp=(14, 18), ondes=(5, 3))
 

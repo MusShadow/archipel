@@ -16,6 +16,9 @@ DISPOSITION = {
     "pastilles": {"goutte": (300, 560), "flotte": (812, 566), "tri": (560, 770), "volcan": (590, 474), "dechets": (940, 742)},
     "plume": (726, 330),
     "animes": ["octave"],
+    # décor vivant (livraison 4) : le petit volcan fume en continu (bouffées posées par l'appli) ; sa surprise : une
+    # grosse bouffée
+    "vivant": {"hote": "octave", "fumeeLieu": [[596, 280]], "surprise": {"type": "volcan", "point": [596, 280]}},
 }
 COTE = C.crique(C.contour(seed=45, amp=(20, 14), ondes=(3, 2)))
 
@@ -111,8 +114,7 @@ def volcan(R):
     part(R, R.mask(ellipse(x, y - 118, 26, 7)), "#E8504A", Mat(puff=3, line_w=1.1), shadow=False)
     pied = m_clip(m_wobble(R.mask(rrect(x - 110, y - 26, 220, 30, 8)), 2.0 * R.S, 14 * R.S, seed=49), cone)
     R.paint(pied, "#7FBF63", Mat(puff=4, profile="pillow", line=False, tex=0.9))
-    for (px, py, pr) in ((x + 6, y - 142, 12), (x + 20, y - 162, 15), (x + 40, y - 182, 18)):
-        R.paint(R.mask(circle(px, py, pr)), "#FFFFFF", Mat(puff=pr * 0.8, line=False, tex=0.3), haze=0.15)
+    # sa fumée monte en bouffées : l'appli les pose et les anime (décor vivant, livraison 4)
 
 def tri(R):
     """Le grand tri : quatre poubelles de couleur, couvercles et pictogrammes."""

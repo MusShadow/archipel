@@ -17,6 +17,8 @@ DISPOSITION = {
     "pastilles": {"drapeau": (318, 548), "atelierdrapeaux": (842, 600), "monDrapeau": (604, 462)},
     "plume": (726, 330),
     "animes": [],
+    # décor vivant (livraison 4) : un voilier passe au loin, sur l'horizon
+    "vivant": {"surprise": {"type": "voilier", "point": [0, 254]}},
 }
 COTE = C.contour(seed=81, amp=(16, 12), ondes=(3, 5))
 

@@ -41,6 +41,7 @@ def crique(pts, centre=(246, 700), profondeur=78, rayon=104):
     return out[::2]
 
 def ile(R, pts, herbe=("#9BD27A", "#7CC062"), seed=11):
+    D.noter("iles", [tuple(p) for p in pts])
     top = catmull(pts, n=16)
     top_m = R.mask(top)
     side_m = m_union(*[m_shift(top_m, 0, dy * R.S) for dy in (10, 20, 30, 38)])

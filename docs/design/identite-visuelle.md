@@ -136,6 +136,8 @@ Chaque écran est livré en couches (ciel, nuages, mer, île, lieux, personnages
 - tout s'arrête avec le réglage « Réduire les animations » de l'iPad ou quand l'appli passe en arrière-plan ;
 - les animations utilisent `transform` et `opacity`, rien d'autre.
 
+Fait dans la livraison 4 (`src/screens/vivant.ts`, calques de `scripts/illustration/vivant.py`) : les surprises propres aux îles sont le poisson de l'étang (Nombres), le souffle de Mona (Mots), le ballon de Rico (Énigmes), la grosse bouffée du petit volcan (Découvertes), l'arc-en-ciel (Atelier), les cœurs de Pico (Cœur) et le voilier sur l'horizon (Port). On touche l'hôte (il sautille), un palmier (il se secoue), le bateau (il tangue et sonne), la grenouille (elle saute). Les garde-fous sont vérifiés par `tests/vivant.test.ts`, `tests/e2e/vivant.py` et `tests/e2e/performances.py`.
+
 ## Ce qu'on ne fait pas
 
 - Pas de générateur d'images : il dessinerait autre chose à chaque fois. Toutes les images sortent de l'atelier d'illustration, toujours identiques.

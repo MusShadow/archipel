@@ -70,6 +70,20 @@
    ],
    "echelle": 1.1
   },
+  "basile-cligne": {
+   "fichier": "personnages/basile-cligne.webp",
+   "boite": [
+    70.0,
+    74.5,
+    212.0,
+    272.0
+   ],
+   "ancre": [
+    0.3774,
+    0.9173
+   ],
+   "echelle": 1.1
+  },
   "basile-salut": {
    "fichier": "personnages/basile-salut.webp",
    "boite": [
@@ -142,6 +156,20 @@
   },
   "mona-doux": {
    "fichier": "personnages/mona-doux.webp",
+   "boite": [
+    16.0,
+    11.0,
+    271.5,
+    208.0
+   ],
+   "ancre": [
+    0.5304,
+    0.5721
+   ],
+   "echelle": 1.0
+  },
+  "mona-cligne": {
+   "fichier": "personnages/mona-cligne.webp",
    "boite": [
     16.0,
     11.0,
@@ -238,6 +266,20 @@
    ],
    "echelle": 1.05
   },
+  "rico-cligne": {
+   "fichier": "personnages/rico-cligne.webp",
+   "boite": [
+    74.0,
+    67.0,
+    213.5,
+    278.5
+   ],
+   "ancre": [
+    0.356,
+    0.9228
+   ],
+   "echelle": 1.05
+  },
   "rico-salut": {
    "fichier": "personnages/rico-salut.webp",
    "boite": [
@@ -310,6 +352,20 @@
   },
   "bip-doux": {
    "fichier": "personnages/bip-doux.webp",
+   "boite": [
+    36.0,
+    48.0,
+    170.0,
+    205.0
+   ],
+   "ancre": [
+    0.4941,
+    0.9073
+   ],
+   "echelle": 1.0
+  },
+  "bip-cligne": {
+   "fichier": "personnages/bip-cligne.webp",
    "boite": [
     36.0,
     48.0,
@@ -406,6 +462,20 @@
    ],
    "echelle": 1.0
   },
+  "octave-cligne": {
+   "fichier": "personnages/octave-cligne.webp",
+   "boite": [
+    36.0,
+    44.0,
+    230.5,
+    266.0
+   ],
+   "ancre": [
+    0.4946,
+    0.9173
+   ],
+   "echelle": 1.0
+  },
   "octave-salut": {
    "fichier": "personnages/octave-salut.webp",
    "boite": [
@@ -490,6 +560,20 @@
    ],
    "echelle": 1.0
   },
+  "kiki-cligne": {
+   "fichier": "personnages/kiki-cligne.webp",
+   "boite": [
+    37.0,
+    58.0,
+    261.0,
+    213.0
+   ],
+   "ancre": [
+    0.4713,
+    0.9108
+   ],
+   "echelle": 1.0
+  },
   "kiki-salut": {
    "fichier": "personnages/kiki-salut.webp",
    "boite": [
@@ -562,6 +646,20 @@
   },
   "pico-doux": {
    "fichier": "personnages/pico-doux.webp",
+   "boite": [
+    36.0,
+    62.5,
+    230.5,
+    266.5
+   ],
+   "ancre": [
+    0.4946,
+    0.9137
+   ],
+   "echelle": 1.15
+  },
+  "pico-cligne": {
+   "fichier": "personnages/pico-cligne.webp",
    "boite": [
     36.0,
     62.5,
@@ -822,9 +920,9 @@
     "nenuphars": {
      "fichier": "iles/nombres/lieu-nenuphars.webp",
      "boite": [
-      615.0,
+      644.5,
       374.5,
-      433.0,
+      403.5,
       218.0
      ]
     },
@@ -839,6 +937,84 @@
     }
    },
    "animes": {
+    "reflets-a": {
+     "fichier": "iles/nombres/anime-reflets-a.webp",
+     "boite": [
+      0.0,
+      245.0,
+      1194.0,
+      584.0
+     ],
+     "role": "reflets"
+    },
+    "reflets-b": {
+     "fichier": "iles/nombres/anime-reflets-b.webp",
+     "boite": [
+      0.5,
+      245.0,
+      1193.5,
+      473.0
+     ],
+     "role": "reflets"
+    },
+    "nuage-1": {
+     "fichier": "iles/nombres/anime-nuage-1.webp",
+     "boite": [
+      96.5,
+      56.5,
+      182.5,
+      81.0
+     ],
+     "role": "nuage"
+    },
+    "nuage-2": {
+     "fichier": "iles/nombres/anime-nuage-2.webp",
+     "boite": [
+      780.5,
+      57.5,
+      131.5,
+      57.5
+     ],
+     "role": "nuage"
+    },
+    "nuage-3": {
+     "fichier": "iles/nombres/anime-nuage-3.webp",
+     "boite": [
+      995.0,
+      105.0,
+      154.0,
+      67.0
+     ],
+     "role": "nuage"
+    },
+    "palmes-1": {
+     "fichier": "iles/nombres/anime-palmes-1.webp",
+     "boite": [
+      946.0,
+      258.5,
+      197.5,
+      106.0
+     ],
+     "role": "palmes",
+     "pivot": [
+      0.4897,
+      0.6142
+     ]
+    },
+    "palmes-2": {
+     "fichier": "iles/nombres/anime-palmes-2.webp",
+     "boite": [
+      14.5,
+      386.0,
+      174.5,
+      94.5
+     ],
+     "role": "palmes",
+     "pivot": [
+      0.4895,
+      0.6078
+     ]
+    },
     "bateau": {
      "fichier": "iles/nombres/anime-bateau.webp",
      "boite": [
@@ -846,6 +1022,49 @@
       666.5,
       113.5,
       127.5
+     ],
+     "role": "bateau",
+     "pivot": [
+      0.489,
+      0.8275
+     ]
+    },
+    "bras": {
+     "fichier": "iles/nombres/anime-bras.webp",
+     "boite": [
+      347.5,
+      407.5,
+      54.5,
+      70.5
+     ],
+     "role": "bras",
+     "pivot": [
+      0.1743,
+      0.8298
+     ]
+    },
+    "basile-cligne": {
+     "fichier": "iles/nombres/anime-basile-cligne.webp",
+     "boite": [
+      284.5,
+      382.5,
+      71.0,
+      47.0
+     ],
+     "role": "cligne"
+    },
+    "grenouille": {
+     "fichier": "iles/nombres/anime-grenouille.webp",
+     "boite": [
+      615.0,
+      485.5,
+      63.0,
+      54.0
+     ],
+     "role": "grenouille",
+     "pivot": [
+      0.4921,
+      1.0093
      ]
     }
    },
@@ -897,7 +1116,62 @@
    "plume": [
     726,
     330
-   ]
+   ],
+   "vivant": {
+    "etincelles": [
+     [
+      221,
+      328
+     ],
+     [
+      456,
+      267
+     ],
+     [
+      299,
+      802
+     ],
+     [
+      942,
+      272
+     ],
+     [
+      1002,
+      753
+     ]
+    ],
+    "dauphin": [
+     419,
+     286
+    ],
+    "baleine": [
+     622,
+     262
+    ],
+    "papillons": [
+     [
+      204,
+      639
+     ],
+     [
+      600,
+      548
+     ]
+    ],
+    "fumees": [
+     [
+      962,
+      160
+     ]
+    ],
+    "surprise": {
+     "type": "poisson",
+     "point": [
+      884,
+      548
+     ]
+    }
+   }
   },
   "mots": {
    "cadre": [
@@ -972,6 +1246,84 @@
     }
    },
    "animes": {
+    "reflets-a": {
+     "fichier": "iles/mots/anime-reflets-a.webp",
+     "boite": [
+      0.0,
+      245.0,
+      1194.0,
+      584.0
+     ],
+     "role": "reflets"
+    },
+    "reflets-b": {
+     "fichier": "iles/mots/anime-reflets-b.webp",
+     "boite": [
+      0.5,
+      245.0,
+      1193.5,
+      473.0
+     ],
+     "role": "reflets"
+    },
+    "nuage-1": {
+     "fichier": "iles/mots/anime-nuage-1.webp",
+     "boite": [
+      150.0,
+      46.5,
+      167.0,
+      73.5
+     ],
+     "role": "nuage"
+    },
+    "nuage-2": {
+     "fichier": "iles/mots/anime-nuage-2.webp",
+     "boite": [
+      657.5,
+      92.5,
+      109.5,
+      49.5
+     ],
+     "role": "nuage"
+    },
+    "nuage-3": {
+     "fichier": "iles/mots/anime-nuage-3.webp",
+     "boite": [
+      964.5,
+      40.0,
+      150.5,
+      65.5
+     ],
+     "role": "nuage"
+    },
+    "palmes-1": {
+     "fichier": "iles/mots/anime-palmes-1.webp",
+     "boite": [
+      958.0,
+      276.0,
+      189.0,
+      101.5
+     ],
+     "role": "palmes",
+     "pivot": [
+      0.4889,
+      0.6108
+     ]
+    },
+    "palmes-2": {
+     "fichier": "iles/mots/anime-palmes-2.webp",
+     "boite": [
+      21.0,
+      396.5,
+      171.0,
+      92.5
+     ],
+     "role": "palmes",
+     "pivot": [
+      0.4877,
+      0.6086
+     ]
+    },
     "mona": {
      "fichier": "iles/mots/anime-mona.webp",
      "boite": [
@@ -979,7 +1331,18 @@
       672.5,
       151.5,
       110.5
-     ]
+     ],
+     "role": "hote"
+    },
+    "mona-cligne": {
+     "fichier": "iles/mots/anime-mona-cligne.webp",
+     "boite": [
+      178.5,
+      672.5,
+      151.5,
+      110.5
+     ],
+     "role": "cligne"
     }
    },
    "emplacements": {
@@ -1035,7 +1398,62 @@
    "plume": [
     726,
     330
-   ]
+   ],
+   "vivant": {
+    "etincelles": [
+     [
+      289,
+      764
+     ],
+     [
+      221,
+      328
+     ],
+     [
+      456,
+      267
+     ],
+     [
+      942,
+      272
+     ],
+     [
+      665,
+      259
+     ]
+    ],
+    "dauphin": [
+     371,
+     286
+    ],
+    "baleine": [
+     622,
+     262
+    ],
+    "papillons": [
+     [
+      493,
+      361
+     ],
+     [
+      807,
+      669
+     ]
+    ],
+    "fumees": [
+     [
+      962,
+      160
+     ]
+    ],
+    "surprise": {
+     "type": "souffle",
+     "point": [
+      262,
+      702
+     ]
+    }
+   }
   },
   "enigmes": {
    "cadre": [
@@ -1110,6 +1528,70 @@
     }
    },
    "animes": {
+    "reflets-a": {
+     "fichier": "iles/enigmes/anime-reflets-a.webp",
+     "boite": [
+      0.0,
+      245.0,
+      1194.0,
+      584.0
+     ],
+     "role": "reflets"
+    },
+    "reflets-b": {
+     "fichier": "iles/enigmes/anime-reflets-b.webp",
+     "boite": [
+      0.5,
+      245.0,
+      1193.5,
+      473.0
+     ],
+     "role": "reflets"
+    },
+    "nuage-1": {
+     "fichier": "iles/enigmes/anime-nuage-1.webp",
+     "boite": [
+      84.5,
+      72.5,
+      154.0,
+      69.5
+     ],
+     "role": "nuage"
+    },
+    "nuage-2": {
+     "fichier": "iles/enigmes/anime-nuage-2.webp",
+     "boite": [
+      718.5,
+      49.5,
+      138.5,
+      62.0
+     ],
+     "role": "nuage"
+    },
+    "nuage-3": {
+     "fichier": "iles/enigmes/anime-nuage-3.webp",
+     "boite": [
+      1021.5,
+      102.5,
+      129.0,
+      56.0
+     ],
+     "role": "nuage"
+    },
+    "palmes-1": {
+     "fichier": "iles/enigmes/anime-palmes-1.webp",
+     "boite": [
+      958.5,
+      278.5,
+      185.0,
+      99.5
+     ],
+     "role": "palmes",
+     "pivot": [
+      0.4896,
+      0.6117
+     ]
+    },
     "rico": {
      "fichier": "iles/enigmes/anime-rico.webp",
      "boite": [
@@ -1117,7 +1599,18 @@
       586.5,
       95.5,
       130.5
-     ]
+     ],
+     "role": "hote"
+    },
+    "rico-cligne": {
+     "fichier": "iles/enigmes/anime-rico-cligne.webp",
+     "boite": [
+      196.0,
+      586.5,
+      95.5,
+      130.5
+     ],
+     "role": "cligne"
     }
    },
    "emplacements": {
@@ -1168,7 +1661,62 @@
    "plume": [
     726,
     330
-   ]
+   ],
+   "vivant": {
+    "etincelles": [
+     [
+      221,
+      328
+     ],
+     [
+      456,
+      267
+     ],
+     [
+      299,
+      802
+     ],
+     [
+      942,
+      272
+     ],
+     [
+      1002,
+      753
+     ]
+    ],
+    "dauphin": [
+     467,
+     286
+    ],
+    "baleine": [
+     622,
+     262
+    ],
+    "papillons": [
+     [
+      990,
+      629
+     ],
+     [
+      594,
+      444
+     ]
+    ],
+    "fumees": [
+     [
+      962,
+      160
+     ]
+    ],
+    "surprise": {
+     "type": "ballon",
+     "point": [
+      600,
+      300
+     ]
+    }
+   }
   },
   "decouvertes": {
    "cadre": [
@@ -1227,9 +1775,9 @@
      "fichier": "iles/decouvertes/lieu-volcan.webp",
      "boite": [
       480.5,
-      208.5,
+      282.0,
       225.0,
-      228.5
+      155.0
      ]
     },
     "dechets": {
@@ -1243,6 +1791,84 @@
     }
    },
    "animes": {
+    "reflets-a": {
+     "fichier": "iles/decouvertes/anime-reflets-a.webp",
+     "boite": [
+      0.0,
+      245.0,
+      1194.0,
+      584.0
+     ],
+     "role": "reflets"
+    },
+    "reflets-b": {
+     "fichier": "iles/decouvertes/anime-reflets-b.webp",
+     "boite": [
+      0.5,
+      245.0,
+      1193.5,
+      516.0
+     ],
+     "role": "reflets"
+    },
+    "nuage-1": {
+     "fichier": "iles/decouvertes/anime-nuage-1.webp",
+     "boite": [
+      119.0,
+      54.0,
+      172.0,
+      74.5
+     ],
+     "role": "nuage"
+    },
+    "nuage-2": {
+     "fichier": "iles/decouvertes/anime-nuage-2.webp",
+     "boite": [
+      683.5,
+      47.0,
+      123.5,
+      55.0
+     ],
+     "role": "nuage"
+    },
+    "nuage-3": {
+     "fichier": "iles/decouvertes/anime-nuage-3.webp",
+     "boite": [
+      984.5,
+      80.5,
+      154.0,
+      69.5
+     ],
+     "role": "nuage"
+    },
+    "palmes-1": {
+     "fichier": "iles/decouvertes/anime-palmes-1.webp",
+     "boite": [
+      960.0,
+      272.0,
+      189.0,
+      101.5
+     ],
+     "role": "palmes",
+     "pivot": [
+      0.4889,
+      0.6108
+     ]
+    },
+    "palmes-2": {
+     "fichier": "iles/decouvertes/anime-palmes-2.webp",
+     "boite": [
+      115.5,
+      357.0,
+      167.0,
+      91.0
+     ],
+     "role": "palmes",
+     "pivot": [
+      0.4886,
+      0.6062
+     ]
+    },
     "octave": {
      "fichier": "iles/decouvertes/anime-octave.webp",
      "boite": [
@@ -1250,7 +1876,18 @@
       612.0,
       151.5,
       153.0
-     ]
+     ],
+     "role": "hote"
+    },
+    "octave-cligne": {
+     "fichier": "iles/decouvertes/anime-octave-cligne.webp",
+     "boite": [
+      181.0,
+      612.0,
+      151.5,
+      153.0
+     ],
+     "role": "cligne"
     }
    },
    "emplacements": {
@@ -1311,7 +1948,68 @@
    "plume": [
     726,
     330
-   ]
+   ],
+   "vivant": {
+    "etincelles": [
+     [
+      289,
+      764
+     ],
+     [
+      456,
+      267
+     ],
+     [
+      207,
+      276
+     ],
+     [
+      942,
+      272
+     ],
+     [
+      639,
+      273
+     ]
+    ],
+    "dauphin": [
+     401,
+     286
+    ],
+    "baleine": [
+     622,
+     262
+    ],
+    "papillons": [
+     [
+      209,
+      425
+     ],
+     [
+      786,
+      673
+     ]
+    ],
+    "fumees": [
+     [
+      962,
+      160
+     ]
+    ],
+    "fumeeLieu": [
+     [
+      596,
+      280
+     ]
+    ],
+    "surprise": {
+     "type": "volcan",
+     "point": [
+      596,
+      280
+     ]
+    }
+   }
   },
   "atelier": {
    "cadre": [
@@ -1386,6 +2084,70 @@
     }
    },
    "animes": {
+    "reflets-a": {
+     "fichier": "iles/atelier/anime-reflets-a.webp",
+     "boite": [
+      0.0,
+      245.0,
+      1194.0,
+      584.0
+     ],
+     "role": "reflets"
+    },
+    "reflets-b": {
+     "fichier": "iles/atelier/anime-reflets-b.webp",
+     "boite": [
+      0.5,
+      245.0,
+      1193.5,
+      473.0
+     ],
+     "role": "reflets"
+    },
+    "nuage-1": {
+     "fichier": "iles/atelier/anime-nuage-1.webp",
+     "boite": [
+      142.5,
+      60.0,
+      162.5,
+      73.5
+     ],
+     "role": "nuage"
+    },
+    "nuage-2": {
+     "fichier": "iles/atelier/anime-nuage-2.webp",
+     "boite": [
+      701.5,
+      62.0,
+      129.0,
+      56.5
+     ],
+     "role": "nuage"
+    },
+    "nuage-3": {
+     "fichier": "iles/atelier/anime-nuage-3.webp",
+     "boite": [
+      1009.0,
+      108.0,
+      136.5,
+      61.5
+     ],
+     "role": "nuage"
+    },
+    "palmes-1": {
+     "fichier": "iles/atelier/anime-palmes-1.webp",
+     "boite": [
+      960.0,
+      274.0,
+      189.0,
+      101.5
+     ],
+     "role": "palmes",
+     "pivot": [
+      0.4889,
+      0.6108
+     ]
+    },
     "kiki": {
      "fichier": "iles/atelier/anime-kiki.webp",
      "boite": [
@@ -1393,7 +2155,18 @@
       586.5,
       143.0,
       133.5
-     ]
+     ],
+     "role": "hote"
+    },
+    "kiki-cligne": {
+     "fichier": "iles/atelier/anime-kiki-cligne.webp",
+     "boite": [
+      163.0,
+      586.5,
+      143.0,
+      133.5
+     ],
+     "role": "cligne"
     }
    },
    "emplacements": {
@@ -1439,7 +2212,62 @@
    "plume": [
     726,
     330
-   ]
+   ],
+   "vivant": {
+    "etincelles": [
+     [
+      221,
+      328
+     ],
+     [
+      456,
+      267
+     ],
+     [
+      299,
+      802
+     ],
+     [
+      942,
+      272
+     ],
+     [
+      639,
+      273
+     ]
+    ],
+    "dauphin": [
+     467,
+     286
+    ],
+    "baleine": [
+     622,
+     262
+    ],
+    "papillons": [
+     [
+      696,
+      665
+     ],
+     [
+      209,
+      425
+     ]
+    ],
+    "fumees": [
+     [
+      962,
+      160
+     ]
+    ],
+    "surprise": {
+     "type": "arc-en-ciel",
+     "point": [
+      380,
+      30
+     ]
+    }
+   }
   },
   "coeur": {
    "cadre": [
@@ -1514,6 +2342,70 @@
     }
    },
    "animes": {
+    "reflets-a": {
+     "fichier": "iles/coeur/anime-reflets-a.webp",
+     "boite": [
+      0.0,
+      245.0,
+      1194.0,
+      584.0
+     ],
+     "role": "reflets"
+    },
+    "reflets-b": {
+     "fichier": "iles/coeur/anime-reflets-b.webp",
+     "boite": [
+      0.5,
+      245.0,
+      1193.5,
+      473.0
+     ],
+     "role": "reflets"
+    },
+    "nuage-1": {
+     "fichier": "iles/coeur/anime-nuage-1.webp",
+     "boite": [
+      111.0,
+      51.5,
+      164.0,
+      72.0
+     ],
+     "role": "nuage"
+    },
+    "nuage-2": {
+     "fichier": "iles/coeur/anime-nuage-2.webp",
+     "boite": [
+      664.5,
+      85.0,
+      120.5,
+      52.5
+     ],
+     "role": "nuage"
+    },
+    "nuage-3": {
+     "fichier": "iles/coeur/anime-nuage-3.webp",
+     "boite": [
+      984.5,
+      51.0,
+      150.0,
+      66.5
+     ],
+     "role": "nuage"
+    },
+    "palmes-1": {
+     "fichier": "iles/coeur/anime-palmes-1.webp",
+     "boite": [
+      960.0,
+      274.0,
+      189.0,
+      101.5
+     ],
+     "role": "palmes",
+     "pivot": [
+      0.4889,
+      0.6108
+     ]
+    },
     "pico": {
      "fichier": "iles/coeur/anime-pico.webp",
      "boite": [
@@ -1521,7 +2413,18 @@
       599.5,
       98.0,
       119.5
-     ]
+     ],
+     "role": "hote"
+    },
+    "pico-cligne": {
+     "fichier": "iles/coeur/anime-pico-cligne.webp",
+     "boite": [
+      181.5,
+      599.5,
+      98.0,
+      119.5
+     ],
+     "role": "cligne"
     }
    },
    "emplacements": {
@@ -1567,7 +2470,62 @@
    "plume": [
     726,
     330
-   ]
+   ],
+   "vivant": {
+    "etincelles": [
+     [
+      456,
+      267
+     ],
+     [
+      299,
+      802
+     ],
+     [
+      207,
+      276
+     ],
+     [
+      942,
+      272
+     ],
+     [
+      1002,
+      753
+     ]
+    ],
+    "dauphin": [
+     389,
+     286
+    ],
+    "baleine": [
+     622,
+     262
+    ],
+    "papillons": [
+     [
+      696,
+      665
+     ],
+     [
+      493,
+      361
+     ]
+    ],
+    "fumees": [
+     [
+      962,
+      160
+     ]
+    ],
+    "surprise": {
+     "type": "coeurs",
+     "point": [
+      204,
+      614
+     ]
+    }
+   }
   },
   "port": {
    "cadre": [
@@ -1641,7 +2599,72 @@
      ]
     }
    },
-   "animes": {},
+   "animes": {
+    "reflets-a": {
+     "fichier": "iles/port/anime-reflets-a.webp",
+     "boite": [
+      0.0,
+      245.0,
+      1194.0,
+      584.0
+     ],
+     "role": "reflets"
+    },
+    "reflets-b": {
+     "fichier": "iles/port/anime-reflets-b.webp",
+     "boite": [
+      0.5,
+      245.0,
+      1193.5,
+      473.0
+     ],
+     "role": "reflets"
+    },
+    "nuage-1": {
+     "fichier": "iles/port/anime-nuage-1.webp",
+     "boite": [
+      134.5,
+      62.5,
+      153.5,
+      69.5
+     ],
+     "role": "nuage"
+    },
+    "nuage-2": {
+     "fichier": "iles/port/anime-nuage-2.webp",
+     "boite": [
+      722.0,
+      52.0,
+      128.0,
+      56.5
+     ],
+     "role": "nuage"
+    },
+    "nuage-3": {
+     "fichier": "iles/port/anime-nuage-3.webp",
+     "boite": [
+      996.5,
+      96.5,
+      145.5,
+      64.5
+     ],
+     "role": "nuage"
+    },
+    "palmes-1": {
+     "fichier": "iles/port/anime-palmes-1.webp",
+     "boite": [
+      967.0,
+      281.0,
+      181.5,
+      98.0
+     ],
+     "role": "palmes",
+     "pivot": [
+      0.4889,
+      0.6094
+     ]
+    }
+   },
    "emplacements": {
     "A": [
      318,
@@ -1690,7 +2713,62 @@
    "plume": [
     726,
     330
-   ]
+   ],
+   "vivant": {
+    "etincelles": [
+     [
+      456,
+      267
+     ],
+     [
+      299,
+      802
+     ],
+     [
+      207,
+      276
+     ],
+     [
+      942,
+      272
+     ],
+     [
+      665,
+      259
+     ]
+    ],
+    "dauphin": [
+     467,
+     286
+    ],
+    "baleine": [
+     622,
+     262
+    ],
+    "papillons": [
+     [
+      696,
+      665
+     ],
+     [
+      493,
+      361
+     ]
+    ],
+    "fumees": [
+     [
+      962,
+      160
+     ]
+    ],
+    "surprise": {
+     "type": "voilier",
+     "point": [
+      0,
+      254
+     ]
+    }
+   }
   }
  },
  "elements": {
@@ -4397,6 +5475,216 @@
     480
    ],
    "module": "jeux_decouvertes"
+  },
+  "vivant/etincelle": {
+   "fichier": "vivant/etincelle.webp",
+   "boite": [
+    1.0,
+    1.0,
+    38.0,
+    38.0
+   ],
+   "cadre": [
+    40,
+    40
+   ],
+   "module": "vivant"
+  },
+  "vivant/bouffee": {
+   "fichier": "vivant/bouffee.webp",
+   "boite": [
+    10.0,
+    15.5,
+    40.0,
+    29.5
+   ],
+   "cadre": [
+    60,
+    56
+   ],
+   "module": "vivant"
+  },
+  "vivant/dauphin": {
+   "fichier": "vivant/dauphin.webp",
+   "boite": [
+    9.5,
+    7.5,
+    184.5,
+    77.0
+   ],
+   "cadre": [
+    204,
+    96
+   ],
+   "module": "vivant"
+  },
+  "vivant/gerbe": {
+   "fichier": "vivant/gerbe.webp",
+   "boite": [
+    8.5,
+    3.0,
+    63.5,
+    44.0
+   ],
+   "cadre": [
+    80,
+    48
+   ],
+   "module": "vivant"
+  },
+  "vivant/baleine": {
+   "fichier": "vivant/baleine.webp",
+   "boite": [
+    0.0,
+    4.0,
+    80.0,
+    23.5
+   ],
+   "cadre": [
+    80,
+    32
+   ],
+   "module": "vivant"
+  },
+  "vivant/souffle": {
+   "fichier": "vivant/souffle.webp",
+   "boite": [
+    0.5,
+    0.0,
+    43.5,
+    48.0
+   ],
+   "cadre": [
+    44,
+    52
+   ],
+   "module": "vivant"
+  },
+  "vivant/oiseau-0": {
+   "fichier": "vivant/oiseau-0.webp",
+   "boite": [
+    0.0,
+    0.5,
+    60.0,
+    20.0
+   ],
+   "cadre": [
+    60,
+    32
+   ],
+   "module": "vivant"
+  },
+  "vivant/oiseau-1": {
+   "fichier": "vivant/oiseau-1.webp",
+   "boite": [
+    1.5,
+    8.5,
+    57.5,
+    20.5
+   ],
+   "cadre": [
+    60,
+    32
+   ],
+   "module": "vivant"
+  },
+  "vivant/poisson": {
+   "fichier": "vivant/poisson.webp",
+   "boite": [
+    3.0,
+    4.5,
+    48.0,
+    23.0
+   ],
+   "cadre": [
+    60,
+    32
+   ],
+   "module": "vivant"
+  },
+  "vivant/papillon-jaune": {
+   "fichier": "vivant/papillon-jaune.webp",
+   "boite": [
+    1.5,
+    2.5,
+    37.5,
+    33.0
+   ],
+   "cadre": [
+    40,
+    40
+   ],
+   "module": "vivant"
+  },
+  "vivant/papillon-rose": {
+   "fichier": "vivant/papillon-rose.webp",
+   "boite": [
+    1.5,
+    2.5,
+    37.5,
+    33.0
+   ],
+   "cadre": [
+    40,
+    40
+   ],
+   "module": "vivant"
+  },
+  "vivant/coeur": {
+   "fichier": "vivant/coeur.webp",
+   "boite": [
+    1.0,
+    6.5,
+    39.0,
+    31.5
+   ],
+   "cadre": [
+    40,
+    38
+   ],
+   "module": "vivant"
+  },
+  "vivant/voilier": {
+   "fichier": "vivant/voilier.webp",
+   "boite": [
+    9.0,
+    6.5,
+    80.0,
+    81.5
+   ],
+   "cadre": [
+    92,
+    88
+   ],
+   "module": "vivant"
+  },
+  "vivant/arc-en-ciel": {
+   "fichier": "vivant/arc-en-ciel.webp",
+   "boite": [
+    55.0,
+    26.5,
+    310.0,
+    145.0
+   ],
+   "cadre": [
+    420,
+    200
+   ],
+   "module": "vivant"
+  },
+  "vivant/ballon": {
+   "fichier": "vivant/ballon.webp",
+   "boite": [
+    1.5,
+    1.0,
+    58.5,
+    99.5
+   ],
+   "cadre": [
+    60,
+    104
+   ],
+   "module": "vivant"
   }
  }
 }
