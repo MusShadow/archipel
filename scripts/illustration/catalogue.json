@@ -5657,6 +5657,2420 @@
     104
    ],
    "module": "vivant"
+  },
+  "goutte/ploc": {
+   "fichier": "goutte/ploc.webp",
+   "boite": [
+    20.7,
+    8.7,
+    68.7,
+    95.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/mer": {
+   "fichier": "goutte/mer.webp",
+   "boite": [
+    9.0,
+    19.0,
+    92.0,
+    80.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/vapeur": {
+   "fichier": "goutte/vapeur.webp",
+   "boite": [
+    9.0,
+    3.3,
+    93.7,
+    96.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/nuage": {
+   "fichier": "goutte/nuage.webp",
+   "boite": [
+    8.0,
+    20.3,
+    96.3,
+    57.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/pluie": {
+   "fichier": "goutte/pluie.webp",
+   "boite": [
+    15.0,
+    12.0,
+    82.0,
+    86.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/neige": {
+   "fichier": "goutte/neige.webp",
+   "boite": [
+    11.0,
+    0.0,
+    88.0,
+    99.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/riviere": {
+   "fichier": "goutte/riviere.webp",
+   "boite": [
+    9.0,
+    9.0,
+    92.0,
+    92.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/nappe": {
+   "fichier": "goutte/nappe.webp",
+   "boite": [
+    9.0,
+    9.0,
+    92.0,
+    92.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/pompe": {
+   "fichier": "goutte/pompe.webp",
+   "boite": [
+    7.0,
+    11.0,
+    96.0,
+    90.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/usine": {
+   "fichier": "goutte/usine.webp",
+   "boite": [
+    7.0,
+    9.3,
+    96.0,
+    85.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/chateau": {
+   "fichier": "goutte/chateau.webp",
+   "boite": [
+    11.0,
+    12.0,
+    88.0,
+    87.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/colline": {
+   "fichier": "goutte/colline.webp",
+   "boite": [
+    6.0,
+    19.0,
+    98.0,
+    81.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/robinet": {
+   "fichier": "goutte/robinet.webp",
+   "boite": [
+    9.0,
+    11.0,
+    80.0,
+    90.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/robinet_ferme": {
+   "fichier": "goutte/robinet_ferme.webp",
+   "boite": [
+    9.0,
+    11.0,
+    70.0,
+    46.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/robinet_ouvert": {
+   "fichier": "goutte/robinet_ouvert.webp",
+   "boite": [
+    9.0,
+    11.0,
+    87.0,
+    91.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/egouts": {
+   "fichier": "goutte/egouts.webp",
+   "boite": [
+    9.0,
+    11.0,
+    92.0,
+    89.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/station": {
+   "fichier": "goutte/station.webp",
+   "boite": [
+    9.0,
+    17.0,
+    92.0,
+    80.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/grilles": {
+   "fichier": "goutte/grilles.webp",
+   "boite": [
+    11.0,
+    15.3,
+    88.0,
+    85.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/bulles": {
+   "fichier": "goutte/bulles.webp",
+   "boite": [
+    7.0,
+    35.0,
+    96.0,
+    62.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/calme": {
+   "fichier": "goutte/calme.webp",
+   "boite": [
+    7.0,
+    35.0,
+    96.0,
+    62.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/bacteries": {
+   "fichier": "goutte/bacteries.webp",
+   "boite": [
+    11.0,
+    27.7,
+    80.7,
+    60.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/flaque": {
+   "fichier": "goutte/flaque.webp",
+   "boite": [
+    11.0,
+    58.0,
+    88.0,
+    29.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/casserole": {
+   "fichier": "goutte/casserole.webp",
+   "boite": [
+    10.3,
+    12.0,
+    89.3,
+    81.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/vapeur_seule": {
+   "fichier": "goutte/vapeur_seule.webp",
+   "boite": [
+    24.0,
+    8.3,
+    62.0,
+    93.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/verre_clair": {
+   "fichier": "goutte/verre_clair.webp",
+   "boite": [
+    30.0,
+    19.0,
+    50.0,
+    80.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/verre_trouble": {
+   "fichier": "goutte/verre_trouble.webp",
+   "boite": [
+    30.0,
+    19.0,
+    50.0,
+    80.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/boire_oui": {
+   "fichier": "goutte/boire_oui.webp",
+   "boite": [
+    30.0,
+    19.0,
+    68.0,
+    80.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/boire_non": {
+   "fichier": "goutte/boire_non.webp",
+   "boite": [
+    30.0,
+    19.0,
+    68.0,
+    80.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/lingette": {
+   "fichier": "goutte/lingette.webp",
+   "boite": [
+    23.0,
+    25.0,
+    66.0,
+    60.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/cotontige": {
+   "fichier": "goutte/cotontige.webp",
+   "boite": [
+    15.7,
+    15.7,
+    78.7,
+    78.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/bacjaune": {
+   "fichier": "goutte/bacjaune.webp",
+   "boite": [
+    21.0,
+    18.0,
+    68.0,
+    82.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/res_haut": {
+   "fichier": "goutte/res_haut.webp",
+   "boite": [
+    6.0,
+    27.0,
+    95.3,
+    73.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/res_bas": {
+   "fichier": "goutte/res_bas.webp",
+   "boite": [
+    6.0,
+    28.3,
+    98.0,
+    72.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/tour_haute": {
+   "fichier": "goutte/tour_haute.webp",
+   "boite": [
+    7.0,
+    10.0,
+    96.0,
+    89.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "goutte/tour_basse": {
+   "fichier": "goutte/tour_basse.webp",
+   "boite": [
+    7.0,
+    58.0,
+    96.0,
+    41.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/camion": {
+   "fichier": "dechets/camion.webp",
+   "boite": [
+    5.0,
+    31.0,
+    99.0,
+    62.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/eboueur": {
+   "fichier": "dechets/eboueur.webp",
+   "boite": [
+    22.0,
+    18.0,
+    66.0,
+    82.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/pompier": {
+   "fichier": "dechets/pompier.webp",
+   "boite": [
+    22.7,
+    16.0,
+    64.7,
+    84.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/boulanger": {
+   "fichier": "dechets/boulanger.webp",
+   "boite": [
+    22.7,
+    9.7,
+    70.3,
+    90.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/facteur": {
+   "fichier": "dechets/facteur.webp",
+   "boite": [
+    22.7,
+    18.0,
+    64.7,
+    82.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/centre_tri": {
+   "fichier": "dechets/centre_tri.webp",
+   "boite": [
+    7.0,
+    35.0,
+    96.0,
+    62.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/verrerie": {
+   "fichier": "dechets/verrerie.webp",
+   "boite": [
+    7.0,
+    0.0,
+    96.0,
+    97.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/compost": {
+   "fichier": "dechets/compost.webp",
+   "boite": [
+    7.0,
+    35.0,
+    96.0,
+    62.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/usine_chaleur": {
+   "fichier": "dechets/usine_chaleur.webp",
+   "boite": [
+    7.0,
+    0.0,
+    97.7,
+    97.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/maison_chaude": {
+   "fichier": "dechets/maison_chaude.webp",
+   "boite": [
+    7.0,
+    12.7,
+    96.0,
+    86.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/magasin": {
+   "fichier": "dechets/magasin.webp",
+   "boite": [
+    7.0,
+    27.0,
+    96.0,
+    70.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/pharmacie": {
+   "fichier": "dechets/pharmacie.webp",
+   "boite": [
+    7.0,
+    19.0,
+    96.0,
+    78.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/borne_textile": {
+   "fichier": "dechets/borne_textile.webp",
+   "boite": [
+    7.0,
+    19.0,
+    96.0,
+    78.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/dechetterie": {
+   "fichier": "dechets/dechetterie.webp",
+   "boite": [
+    6.3,
+    50.3,
+    97.3,
+    47.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/pull": {
+   "fichier": "dechets/pull.webp",
+   "boite": [
+    11.0,
+    18.0,
+    88.0,
+    77.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/ours": {
+   "fichier": "dechets/ours.webp",
+   "boite": [
+    23.0,
+    16.0,
+    64.0,
+    89.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/velo": {
+   "fichier": "dechets/velo.webp",
+   "boite": [
+    10.0,
+    28.7,
+    90.0,
+    61.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/bouteilles_neuves": {
+   "fichier": "dechets/bouteilles_neuves.webp",
+   "boite": [
+    14.3,
+    10.3,
+    92.7,
+    65.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/cahier_neuf": {
+   "fichier": "dechets/cahier_neuf.webp",
+   "boite": [
+    12.0,
+    12.3,
+    85.7,
+    83.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/papier_toilette": {
+   "fichier": "dechets/papier_toilette.webp",
+   "boite": [
+    25.0,
+    22.0,
+    73.0,
+    73.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/carton_neuf": {
+   "fichier": "dechets/carton_neuf.webp",
+   "boite": [
+    17.0,
+    16.3,
+    82.7,
+    82.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/legumes": {
+   "fichier": "dechets/legumes.webp",
+   "boite": [
+    31.0,
+    12.0,
+    64.0,
+    83.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/piles": {
+   "fichier": "dechets/piles.webp",
+   "boite": [
+    29.7,
+    32.0,
+    52.0,
+    51.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/medicaments": {
+   "fichier": "dechets/medicaments.webp",
+   "boite": [
+    17.0,
+    27.0,
+    78.0,
+    64.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/vetements": {
+   "fichier": "dechets/vetements.webp",
+   "boite": [
+    14.0,
+    25.3,
+    79.0,
+    71.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/chaise_cassee": {
+   "fichier": "dechets/chaise_cassee.webp",
+   "boite": [
+    24.7,
+    12.3,
+    74.3,
+    88.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/branches": {
+   "fichier": "dechets/branches.webp",
+   "boite": [
+    11.3,
+    25.3,
+    91.7,
+    64.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/peinture": {
+   "fichier": "dechets/peinture.webp",
+   "boite": [
+    22.3,
+    25.3,
+    60.7,
+    71.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/gourde": {
+   "fichier": "dechets/gourde.webp",
+   "boite": [
+    31.0,
+    13.0,
+    48.0,
+    86.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/sac_tissu": {
+   "fichier": "dechets/sac_tissu.webp",
+   "boite": [
+    23.0,
+    15.3,
+    64.0,
+    81.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/sac_plastique": {
+   "fichier": "dechets/sac_plastique.webp",
+   "boite": [
+    21.0,
+    15.0,
+    68.0,
+    81.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/reparer": {
+   "fichier": "dechets/reparer.webp",
+   "boite": [
+    9.7,
+    18.3,
+    83.3,
+    80.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/jeter_jouet": {
+   "fichier": "dechets/jeter_jouet.webp",
+   "boite": [
+    21.3,
+    17.0,
+    67.3,
+    77.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/donner": {
+   "fichier": "dechets/donner.webp",
+   "boite": [
+    17.0,
+    26.0,
+    76.0,
+    69.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/jeter_habits": {
+   "fichier": "dechets/jeter_habits.webp",
+   "boite": [
+    21.3,
+    2.7,
+    67.3,
+    91.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/boite_gouter": {
+   "fichier": "dechets/boite_gouter.webp",
+   "boite": [
+    15.0,
+    33.0,
+    80.0,
+    64.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/paquets": {
+   "fichier": "dechets/paquets.webp",
+   "boite": [
+    17.7,
+    21.7,
+    84.7,
+    68.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/carafe": {
+   "fichier": "dechets/carafe.webp",
+   "boite": [
+    26.7,
+    20.7,
+    70.3,
+    76.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/bouteilles_eau": {
+   "fichier": "dechets/bouteilles_eau.webp",
+   "boite": [
+    9.0,
+    18.3,
+    92.0,
+    74.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/caisse_plastique": {
+   "fichier": "dechets/caisse_plastique.webp",
+   "boite": [
+    15.0,
+    39.0,
+    80.0,
+    58.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/caisse_metal": {
+   "fichier": "dechets/caisse_metal.webp",
+   "boite": [
+    15.0,
+    39.0,
+    80.0,
+    58.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/caisse_papier": {
+   "fichier": "dechets/caisse_papier.webp",
+   "boite": [
+    15.0,
+    39.0,
+    80.0,
+    58.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/aimant": {
+   "fichier": "dechets/aimant.webp",
+   "boite": [
+    33.0,
+    23.0,
+    44.0,
+    64.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/sticker_boucle": {
+   "fichier": "dechets/sticker_boucle.webp",
+   "boite": [
+    15.0,
+    15.0,
+    80.0,
+    80.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/bouteille": {
+   "fichier": "tri/bouteille.webp",
+   "boite": [
+    37.0,
+    7.0,
+    36.0,
+    92.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/canette": {
+   "fichier": "tri/canette.webp",
+   "boite": [
+    35.0,
+    14.0,
+    40.0,
+    83.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/carton": {
+   "fichier": "tri/carton.webp",
+   "boite": [
+    29.0,
+    17.0,
+    54.0,
+    82.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/brique": {
+   "fichier": "tri/brique.webp",
+   "boite": [
+    33.0,
+    15.0,
+    44.0,
+    82.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/conserve": {
+   "fichier": "tri/conserve.webp",
+   "boite": [
+    31.0,
+    18.7,
+    48.0,
+    76.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/yaourt": {
+   "fichier": "tri/yaourt.webp",
+   "boite": [
+    29.0,
+    26.0,
+    52.0,
+    73.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/film": {
+   "fichier": "tri/film.webp",
+   "boite": [
+    18.0,
+    21.0,
+    74.7,
+    72.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/pizza": {
+   "fichier": "tri/pizza.webp",
+   "boite": [
+    15.0,
+    29.0,
+    80.0,
+    54.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/couvercle": {
+   "fichier": "tri/couvercle.webp",
+   "boite": [
+    19.0,
+    37.0,
+    72.0,
+    40.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/mouchoir": {
+   "fichier": "tri/mouchoir.webp",
+   "boite": [
+    20.3,
+    25.3,
+    69.0,
+    61.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/couche": {
+   "fichier": "tri/couche.webp",
+   "boite": [
+    17.0,
+    33.0,
+    76.0,
+    54.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/brosse": {
+   "fichier": "tri/brosse.webp",
+   "boite": [
+    17.3,
+    1.3,
+    85.3,
+    83.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/jouet": {
+   "fichier": "tri/jouet.webp",
+   "boite": [
+    17.0,
+    35.0,
+    87.7,
+    65.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/verre_casse": {
+   "fichier": "tri/verre_casse.webp",
+   "boite": [
+    21.0,
+    17.0,
+    74.0,
+    86.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/assiette": {
+   "fichier": "tri/assiette.webp",
+   "boite": [
+    19.0,
+    23.0,
+    69.3,
+    68.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/bouteille_verre": {
+   "fichier": "tri/bouteille_verre.webp",
+   "boite": [
+    35.0,
+    7.0,
+    40.0,
+    92.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/confiture": {
+   "fichier": "tri/confiture.webp",
+   "boite": [
+    29.0,
+    25.0,
+    52.0,
+    72.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/bocal": {
+   "fichier": "tri/bocal.webp",
+   "boite": [
+    28.3,
+    19.0,
+    53.3,
+    78.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/epluchures": {
+   "fichier": "tri/epluchures.webp",
+   "boite": [
+    16.3,
+    26.7,
+    74.0,
+    63.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/trognon": {
+   "fichier": "tri/trognon.webp",
+   "boite": [
+    39.0,
+    9.0,
+    32.0,
+    86.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/banane": {
+   "fichier": "tri/banane.webp",
+   "boite": [
+    19.0,
+    27.0,
+    72.0,
+    68.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/coquilles": {
+   "fichier": "tri/coquilles.webp",
+   "boite": [
+    17.0,
+    43.0,
+    80.0,
+    42.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/journal": {
+   "fichier": "tri/journal.webp",
+   "boite": [
+    19.0,
+    25.0,
+    72.0,
+    70.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/prospectus": {
+   "fichier": "tri/prospectus.webp",
+   "boite": [
+    23.0,
+    17.0,
+    64.0,
+    80.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/cahier": {
+   "fichier": "tri/cahier.webp",
+   "boite": [
+    21.7,
+    15.0,
+    65.3,
+    82.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "tri/enveloppe": {
+   "fichier": "tri/enveloppe.webp",
+   "boite": [
+    15.0,
+    29.0,
+    80.0,
+    56.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "dechets/rue-fond": {
+   "fichier": "dechets/rue-fond.webp",
+   "boite": [
+    0.0,
+    0.0,
+    320.0,
+    170.0
+   ],
+   "cadre": [
+    320,
+    170
+   ],
+   "module": "pictos",
+   "rendu": 5
+  },
+  "dechets/rue-camion": {
+   "fichier": "dechets/rue-camion.webp",
+   "boite": [
+    160.6,
+    58.4,
+    138.2,
+    76.0
+   ],
+   "cadre": [
+    320,
+    170
+   ],
+   "module": "pictos",
+   "rendu": 5
+  },
+  "dechets/rue-eboueur": {
+   "fichier": "dechets/rue-eboueur.webp",
+   "boite": [
+    110.6,
+    74.2,
+    40.8,
+    50.8
+   ],
+   "cadre": [
+    320,
+    170
+   ],
+   "module": "pictos",
+   "rendu": 5
+  },
+  "monde/carte": {
+   "fichier": "monde/carte.webp",
+   "boite": [
+    0.0,
+    0.0,
+    1000.0,
+    500.0
+   ],
+   "cadre": [
+    1000,
+    500
+   ],
+   "module": "pictos"
+  },
+  "volcan/chauffe": {
+   "fichier": "volcan/chauffe.webp",
+   "boite": [
+    7.0,
+    13.7,
+    96.0,
+    89.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/monte": {
+   "fichier": "volcan/monte.webp",
+   "boite": [
+    5.0,
+    15.3,
+    100.0,
+    83.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/gronde": {
+   "fichier": "volcan/gronde.webp",
+   "boite": [
+    5.0,
+    3.0,
+    100.0,
+    94.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/eruption": {
+   "fichier": "volcan/eruption.webp",
+   "boite": [
+    5.0,
+    5.7,
+    100.0,
+    91.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/coulee": {
+   "fichier": "volcan/coulee.webp",
+   "boite": [
+    5.0,
+    25.0,
+    100.0,
+    73.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/nuage": {
+   "fichier": "volcan/nuage.webp",
+   "boite": [
+    5.0,
+    5.7,
+    100.0,
+    91.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/cendres": {
+   "fichier": "volcan/cendres.webp",
+   "boite": [
+    5.0,
+    4.3,
+    100.0,
+    98.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/pierre": {
+   "fichier": "volcan/pierre.webp",
+   "boite": [
+    12.7,
+    45.0,
+    85.0,
+    53.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/plantes": {
+   "fichier": "volcan/plantes.webp",
+   "boite": [
+    7.0,
+    46.0,
+    96.0,
+    55.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/ile": {
+   "fichier": "volcan/ile.webp",
+   "boite": [
+    1.0,
+    25.0,
+    106.3,
+    81.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/rouge_fontaine": {
+   "fichier": "volcan/rouge_fontaine.webp",
+   "boite": [
+    5.0,
+    5.7,
+    100.0,
+    93.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/rouge_rivieres": {
+   "fichier": "volcan/rouge_rivieres.webp",
+   "boite": [
+    5.0,
+    25.0,
+    100.0,
+    73.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/rouge_lac": {
+   "fichier": "volcan/rouge_lac.webp",
+   "boite": [
+    5.0,
+    33.0,
+    100.0,
+    64.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/gris_panache": {
+   "fichier": "volcan/gris_panache.webp",
+   "boite": [
+    5.0,
+    5.7,
+    100.0,
+    91.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/gris_pluie": {
+   "fichier": "volcan/gris_pluie.webp",
+   "boite": [
+    5.0,
+    5.7,
+    100.0,
+    91.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/gris_bombes": {
+   "fichier": "volcan/gris_bombes.webp",
+   "boite": [
+    5.0,
+    5.7,
+    100.0,
+    91.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/endormi_lac": {
+   "fichier": "volcan/endormi_lac.webp",
+   "boite": [
+    5.0,
+    45.0,
+    100.0,
+    52.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/endormi_foret": {
+   "fichier": "volcan/endormi_foret.webp",
+   "boite": [
+    5.0,
+    19.7,
+    100.0,
+    77.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/reveille_fume": {
+   "fichier": "volcan/reveille_fume.webp",
+   "boite": [
+    5.0,
+    3.0,
+    100.0,
+    94.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/reveille_lueur": {
+   "fichier": "volcan/reveille_lueur.webp",
+   "boite": [
+    5.0,
+    3.0,
+    100.0,
+    94.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/icone_rouge": {
+   "fichier": "volcan/icone_rouge.webp",
+   "boite": [
+    5.0,
+    5.7,
+    100.0,
+    93.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/icone_gris": {
+   "fichier": "volcan/icone_gris.webp",
+   "boite": [
+    5.0,
+    5.7,
+    100.0,
+    91.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/icone_endormi": {
+   "fichier": "volcan/icone_endormi.webp",
+   "boite": [
+    5.0,
+    11.3,
+    100.0,
+    85.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/icone_reveille": {
+   "fichier": "volcan/icone_reveille.webp",
+   "boite": [
+    5.0,
+    3.0,
+    100.0,
+    94.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/lave": {
+   "fichier": "volcan/lave.webp",
+   "boite": [
+    7.3,
+    28.0,
+    90.3,
+    65.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/fumee": {
+   "fichier": "volcan/fumee.webp",
+   "boite": [
+    35.0,
+    11.0,
+    44.0,
+    80.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/four": {
+   "fichier": "volcan/four.webp",
+   "boite": [
+    15.0,
+    17.0,
+    80.0,
+    80.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/ponce": {
+   "fichier": "volcan/ponce.webp",
+   "boite": [
+    16.7,
+    27.3,
+    76.7,
+    57.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/flotte_ponce": {
+   "fichier": "volcan/flotte_ponce.webp",
+   "boite": [
+    13.0,
+    40.3,
+    84.0,
+    58.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/coule_ponce": {
+   "fichier": "volcan/coule_ponce.webp",
+   "boite": [
+    13.0,
+    43.0,
+    84.0,
+    56.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/sable_noir": {
+   "fichier": "volcan/sable_noir.webp",
+   "boite": [
+    2.3,
+    12.0,
+    105.3,
+    95.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/sable_dore": {
+   "fichier": "volcan/sable_dore.webp",
+   "boite": [
+    2.3,
+    12.0,
+    105.3,
+    95.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/combinaison": {
+   "fichier": "volcan/combinaison.webp",
+   "boite": [
+    21.0,
+    18.0,
+    68.0,
+    82.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/masque": {
+   "fichier": "volcan/masque.webp",
+   "boite": [
+    13.0,
+    24.0,
+    84.0,
+    63.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/sismometre": {
+   "fichier": "volcan/sismometre.webp",
+   "boite": [
+    11.0,
+    13.0,
+    88.0,
+    76.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/drone": {
+   "fichier": "volcan/drone.webp",
+   "boite": [
+    12.0,
+    35.0,
+    86.0,
+    48.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/partir": {
+   "fichier": "volcan/partir.webp",
+   "boite": [
+    4.0,
+    13.0,
+    102.0,
+    93.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/volcanologue": {
+   "fichier": "volcan/volcanologue.webp",
+   "boite": [
+    5.0,
+    3.0,
+    100.0,
+    94.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/geyser": {
+   "fichier": "volcan/geyser.webp",
+   "boite": [
+    5.0,
+    3.0,
+    100.0,
+    102.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/fuji": {
+   "fichier": "volcan/fuji.webp",
+   "boite": [
+    4.3,
+    36.3,
+    100.7,
+    61.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/etna": {
+   "fichier": "volcan/etna.webp",
+   "boite": [
+    5.0,
+    3.0,
+    100.0,
+    95.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/stromboli": {
+   "fichier": "volcan/stromboli.webp",
+   "boite": [
+    4.0,
+    7.0,
+    103.3,
+    99.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/fournaise": {
+   "fichier": "volcan/fournaise.webp",
+   "boite": [
+    4.0,
+    25.0,
+    104.7,
+    81.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/puy": {
+   "fichier": "volcan/puy.webp",
+   "boite": [
+    5.0,
+    63.7,
+    100.0,
+    33.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/hawai": {
+   "fichier": "volcan/hawai.webp",
+   "boite": [
+    4.0,
+    36.3,
+    104.7,
+    69.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/indonesie": {
+   "fichier": "volcan/indonesie.webp",
+   "boite": [
+    4.0,
+    5.7,
+    103.3,
+    100.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/santorin": {
+   "fichier": "volcan/santorin.webp",
+   "boite": [
+    6.0,
+    6.0,
+    98.0,
+    98.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/andes": {
+   "fichier": "volcan/andes.webp",
+   "boite": [
+    3.0,
+    5.0,
+    104.0,
+    92.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/cameroun": {
+   "fichier": "volcan/cameroun.webp",
+   "boite": [
+    5.0,
+    3.0,
+    100.0,
+    95.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "volcan/sticker_volcan": {
+   "fichier": "volcan/sticker_volcan.webp",
+   "boite": [
+    5.0,
+    5.7,
+    100.0,
+    91.3
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "mots/tipi": {
+   "fichier": "mots/tipi.webp",
+   "boite": [
+    16.0,
+    5.0,
+    78.0,
+    89.0
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
+  },
+  "mots/domino": {
+   "fichier": "mots/domino.webp",
+   "boite": [
+    32.7,
+    12.7,
+    44.7,
+    84.7
+   ],
+   "cadre": [
+    110,
+    110
+   ],
+   "module": "pictos",
+   "rendu": 3
   }
  }
 }

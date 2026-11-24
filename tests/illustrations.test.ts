@@ -22,15 +22,16 @@ function tailleWebp(b: Buffer): [number, number] {
   return [b.readUInt16LE(26) & 0x3fff, b.readUInt16LE(28) & 0x3fff];
 }
 
-test("chaque image du catalogue existe en WebP, rendue à l'échelle 2 de sa boîte", () => {
+test("chaque image du catalogue existe en WebP, rendue à l'échelle de sa boîte (2, ou celle notée par l'atelier)", () => {
   const images = toutes();
   expect(images.length).toBeGreaterThan(60);
   for (const im of images) {
     const f = join(root, "public/illustrations", im.fichier);
     expect(existsSync(f)).toBe(true);
     const [l, h] = tailleWebp(readFileSync(f));
-    expect(Math.abs(l - im.boite[2] * 2)).toBeLessThanOrEqual(1);
-    expect(Math.abs(h - im.boite[3] * 2)).toBeLessThanOrEqual(1);
+    const k = im.rendu ?? 2;
+    expect(Math.abs(l - im.boite[2] * k)).toBeLessThanOrEqual(1);
+    expect(Math.abs(h - im.boite[3] * k)).toBeLessThanOrEqual(1);
     if (im.ancre) for (const v of im.ancre) { expect(v).toBeGreaterThanOrEqual(0); expect(v).toBeLessThanOrEqual(1); }
     for (const pt of Object.values(im.points ?? {})) for (const v of pt) { expect(v).toBeGreaterThanOrEqual(0); expect(v).toBeLessThanOrEqual(1); }
   }

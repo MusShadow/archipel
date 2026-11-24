@@ -75,8 +75,8 @@ export function storiesTab(p: Profile, rerender: () => void): HTMLElement[] {
     const hard = difficultWords([d.titre, ...d.phrases].join(" "), p.knownK, NAMES);
     const mark = (s: string) => esc(s).replace(/[A-Za-zÀ-ÿœŒ]+/g, (w) => (hard.includes(w.toLowerCase()) ? `<mark>${w}</mark>` : w));
     draftBox.replaceChildren(h("div", { class: "draft" },
-      h("h3", { html: `${d.emoji ? `${d.emoji} ` : ""}${mark(d.titre)}` }),
-      h("ol", {}, ...d.phrases.map((s, i) => h("li", { html: `${d.images?.[i] ? `${d.images[i]} ` : ""}${mark(s)}` }))),
+      h("h3", { html: `${d.emoji ? `${emoji(d.emoji)} ` : ""}${mark(d.titre)}` }),
+      h("ol", {}, ...d.phrases.map((s, i) => h("li", { html: `${d.images?.[i] ? `${emoji(d.images[i])} ` : ""}${mark(s)}` }))),
       h("p", {}, h("b", {}, "Question : "), d.question.texte),
       h("ul", {}, ...d.question.choix.map((c, i) => h("li", { style: i === d.question.bonne ? "font-weight:700" : "" }, `${c}${i === d.question.bonne ? " (bonne réponse)" : ""}`))),
       h("p", { class: "muted" }, hard.length ? `Mots probablement difficiles pour ${p.name} (surlignés) : ${hard.join(", ")}. Ce repérage est approximatif.` : `Tous les mots semblent déchiffrables pour ${p.name}.`),
@@ -91,7 +91,7 @@ export function storiesTab(p: Profile, rerender: () => void): HTMLElement[] {
   const libCard = h("div", { class: "p-card" },
     h("h2", {}, `Bibliothèque de ${p.name} (${p.stories.length})`),
     list.length ? h("div", { class: "p-list" }, ...list.map((s) => h("div", { class: "p-item" },
-      h("span", { style: "font-size:26px" }, s.emoji ?? "📖"),
+      h("span", { style: "font-size:26px", html: emoji(s.emoji ?? "📖") }),
       h("div", { class: "grow" }, h("b", {}, s.titre), h("div", { class: "muted" }, `${s.phrases.length} phrases · lue ${s.lu ?? 0} fois · ${new Date(s.t).toLocaleDateString("fr-FR")}`)),
       h("button", { type: "button", class: "pbtn danger", onclick: () => { if (confirm(`Supprimer « ${s.titre} » ?`)) { p.stories = p.stories.filter((x) => x.id !== s.id); app.save(); rerender(); } } }, "Supprimer"))))
       : h("p", { class: "muted" }, "Aucune histoire validée pour l'instant."));

@@ -90,6 +90,12 @@ padding:max(3px,calc(var(--u) * 5));filter:drop-shadow(0 4px 6px rgba(39,48,67,.
 /* ---------- Le grand tri : des poubelles dessinées ; le couvercle se soulève autour de sa charnière, en arrière ---------- */
 .poubelle{position:relative;display:block;width:100%;height:100%}
 .poubelle .lid{transform-origin:5% 72%;transition:transform .25s ease-out}
+/* ---------- Livraison 4 bis : les dessins au trait repeints par l'atelier (un carré de 100, cadre débordant de 5) ---------- */
+.picto{position:relative;display:block;width:110%;height:110%;margin:-5%;flex:none;pointer-events:none}
+.mot-image{display:block;width:100%;height:100%;pointer-events:none}
+.mot-image img{display:block;width:100%;height:100%;object-fit:contain}
+/* la poubelle de la rue tourne autour de sa charnière, comme au grand tri */
+.dbin .poubelle .lid{transform-origin:5% 72%}
 /* ---------- cibles de l'enfant d'au moins 78 px : les perles à toucher (« Rico s'est trompé »), les flèches du programme de Bip ---------- */
 .motifseq.erreur{--ecart:max(3px,calc(var(--u) * 5));max-width:min(96vw,1100px)}
 /* douze perles de 84 u tiennent sur une ligne en paysage : le cordon prend presque toute la largeur de la scène */

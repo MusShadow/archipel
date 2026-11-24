@@ -7,6 +7,8 @@ indépendante a trouvé, vérifié pour de bon.
 - Le tableau de Rico : à l'indice, les alvéoles de la ligne et de la colonne s'éclairent, elles ne foncent pas.
 - Le goûter : quand la boîte est vide, « Plus de biscuits à partager » est écrit sur une étiquette de papier, lisible
   (contraste d'au moins 4,5:1).
+- Livraison 4 bis : la goutte, les déchets (et leur rue), le grand tri, le volcan, la carte du monde et les mots du jeu
+  des syllabes montrent leurs images peintes, toutes chargées, sans plus aucun dessin au trait.
 Usage : python3 tests/e2e/jeux.py"""
 import io, json, sys, time
 from pathlib import Path
@@ -201,6 +203,26 @@ with sync_playwright() as pw:
             if vu:
                 break
         verifie(vu, f"{tag} : goûter, la boîte vide a été vue")
+
+        # ---- livraison 4 bis : les dessins repeints sont bien là, chargés, et plus aucun tracé dans ces jeux
+        for act, isl, lv, graine in (("goutte", "decouvertes", 1, 3), ("goutte", "decouvertes", 3, 5), ("dechets", "decouvertes", 2, 5),
+                                     ("dechets", "decouvertes", 1, 11), ("tri", "decouvertes", 1, 3), ("volcan", "decouvertes", 4, 5),
+                                     ("drapeau", "port", 4, 3), ("syllabes", "mots", 6, 5)):
+            ctx, page = ouvrir(b, W, H, isl, act, {act: {"level": lv, "up": 0, "down": 0}}, graine)
+            it = suivant(page, None)
+            page.wait_for_timeout(600)
+            etat = page.evaluate("""() => { const imgs = [...document.querySelectorAll('.stage .picto img, .stage .mot-image img, .stage image, .stage .poubelle img')];
+              const ok = imgs.filter((i) => i.tagName === 'image' || (i.complete && i.naturalWidth > 0)).length;
+              const traces = [...document.querySelectorAll('.stage .wart > svg, .stage .titem > svg, .stage .tbinart > svg, .stage .card > svg:not([aria-label^="Drapeau"])')].length;
+              return { n: imgs.length, ok, traces }; }""")
+            nom = f"{act} niveau {lv} ({it and it.get('kind')})"
+            verifie(etat["n"] > 0 and etat["ok"] == etat["n"] and etat["traces"] == 0,
+                    f"{tag} : {nom}, {etat['n']} images peintes chargées, aucun tracé ({etat})")
+            if act == "drapeau" and it and it.get("kind") == "carte":
+                cont = page.evaluate("() => [...document.querySelectorAll('.monde [data-cont]')].map((p) => getComputedStyle(p).fill)")
+                verifie(cont and all(c == "rgba(0, 0, 0, 0)" for c in cont), f"{tag} : la carte peinte, continents à toucher transparents ({len(cont)})")
+            page.screenshot(path=str(SHOTS / f"4bis-{act}-n{lv}-{tag}.png"))
+            ctx.close()
     b.close()
 
 print("erreurs de page :", erreurs[:5])

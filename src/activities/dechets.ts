@@ -15,7 +15,7 @@ import { sfx, type TriSettings } from "../services";
 import { glow, h, medallion, sleep } from "../ui";
 import { DART, RUE, dartSVG, dechetsStickerSVG, rueSVG } from "./dechets_art";
 import { sortBoard, type SortBoard } from "./glisser";
-import { THING, binArtTrace, binsFor, triSettings, type Bin } from "./tri";
+import { THING, binArt, binsFor, triSettings, type Bin } from "./tri";
 import { TART, tartSVG } from "./tri_art";
 
 const CAMION = "DECOUV.DECHETS.CAMION", ROUTE = "DECOUV.DECHETS.ROUTE", CENTRE = "DECOUV.DECHETS.CENTRE",
@@ -32,10 +32,11 @@ const du = (nom: string) => nom.replace(/^le /, "du ");
 const bare = (nom: string) => cap(nom.replace(/^(le |la |les |l')/, ""));
 const Q = "?";
 
-// Image : la poubelle de chez vous (bac_<id>), un dessin maison, un déchet du grand tri, ou un emoji du système.
+// Image : la poubelle de chez vous (bac_<id>, celle du grand tri), un dessin maison, un déchet du grand tri, ou une image
+// de l'imagier. Livraison 4 bis : tout est peint (poubelles dessinées, dessins repeints par l'atelier).
 const BAC = "bac_";
 function artOf(id: string): string {
-  if (id.startsWith(BAC)) { const b = binsFor(triSettings()).find((x) => x.id === id.slice(BAC.length)); return b ? binArtTrace(b) : ""; }
+  if (id.startsWith(BAC)) { const b = binsFor(triSettings()).find((x) => x.id === id.slice(BAC.length)); return b ? binArt(b) : ""; }
   if (DART[id]) return dartSVG(id);
   if (TART[id]) return tartSVG(id);
   return emoji(id);
@@ -381,7 +382,7 @@ function renderCamion(item: DechetsItem, view: View) {
   const s = triSettings();
   const b = binOf(s, item.bin!);
   const wrap = h("div", { class: "drue", html: rueSVG() });
-  const bin = h("span", { class: "dbin", role: "button", "aria-label": b.label, html: binArtTrace(b) });
+  const bin = h("span", { class: "dbin", role: "button", "aria-label": b.label, html: binArt(b) });
   bin.style.left = `${(RUE.bin.x / RUE.w) * 100}%`; bin.style.top = `${(RUE.bin.y / RUE.h) * 100}%`;
   bin.style.width = `${(RUE.bin.s / RUE.w) * 100}%`; bin.style.height = `${(RUE.bin.s / RUE.h) * 100}%`;
   wrap.appendChild(bin);
@@ -458,7 +459,7 @@ function renderCamion(item: DechetsItem, view: View) {
     hint: () => {
       wrap.classList.add("hinted");
       if (wrap.querySelector(".dfinger") || !document.body.animate) return;
-      const f = h("span", { class: "dfinger", "aria-hidden": "true" }, "👆");
+      const f = h("span", { class: "dfinger", "aria-hidden": "true", html: emoji("👆") });
       wrap.appendChild(f);
       const a = `${((RUE.bin.x + RUE.bin.s / 2) / RUE.w) * 100}%`, c = `${((RUE.lift.x + RUE.lift.w * 0.36) / RUE.w) * 100}%`;
       f.animate([{ left: a, top: "62%", opacity: 0 }, { left: a, top: "62%", opacity: 1, offset: 0.15 }, { left: c, top: "60%", opacity: 1, offset: 0.8 }, { left: c, top: "60%", opacity: 0 }],

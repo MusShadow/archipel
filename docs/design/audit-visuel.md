@@ -104,6 +104,7 @@ La refonte change la peau, pas les organes : le moteur adaptatif, la pédagogie,
 | 2, pilote | <ul><li>accueil sur la plage, compagnon de voyage dessiné (l'enfant se reconnaît) ;</li><li>carte aux sept îles dessinées, toutes différentes ;</li><li>écran de l'île des Nombres ;</li><li>cadre d'activité habité (hôte qui réagit, décor léger, matière album) pour toutes les activités ;</li><li>nénuphars redessinés ;</li><li>fêtes aux objets dessinés, message d'une couleur, rien ne clignote ; gommette dans la matière album ;</li><li>fondu entre les écrans.</li></ul> | ci-dessous |
 | 3, généralisation | <ul><li>les sept îles dessinées, chacune avec son écran : on visite l'île, la fenêtre d'activités disparaît ;</li><li>l'imagier à la place des emoji dans toutes les activités ;</li><li>visages dessinés des personnages : médaillons de toutes les activités, émotions du théâtre de Pico ;</li><li>gommette dans sa lumière ; carnet qu'on feuillette ;</li><li>fin de séance peinte ; coin calme avec Pico entier qui respire ;</li><li>écrans à part (dessin, miroir, drapeau de mon île, histoires) dans le cadre des activités ;</li><li>espace parent harmonisé.</li></ul> | ci-dessous |
 | 4, animations et décor vivant | <ul><li>Plume vole vers l'île choisie sur la carte ;</li><li>les jeux aux visuels simples dessinés : marché, goûter, flotte ou coule, motifs de Rico, chemin de Bip, grand tri, volcan (même pédagogie) ;</li><li>le décor des îles vit : mer, nuages, fumée, palmes, bateau, papillons, hôtes qui respirent et clignent des yeux ;</li><li>des surprises rares, une à la fois ;</li><li>le décor répond au toucher ;</li><li>réactions des hôtes et bruitages adoucis.</li></ul> | ci-dessous |
+| 4 bis, les derniers jeux dessinés | <ul><li>les dessins au trait de la goutte, des déchets, du grand tri et du volcan repeints dans la finition album ;</li><li>la rue du camion poubelle peinte, avec les poubelles dessinées ;</li><li>la carte du monde peinte ;</li><li>les mots du jeu des syllabes et les images des histoires sur mesure dans l'imagier.</li></ul> | ci-dessous |
 
 ![L'île des Nombres dans la vitrine de la livraison 1](captures/apres-1-ile-des-nombres-vitrine.webp)
 
@@ -138,4 +139,10 @@ La refonte change la peau, pas les organes : le moteur adaptatif, la pédagogie,
 ![Le décor vivant et ses surprises](captures/apres-8-decor-vivant.webp)
 
 *Livraison 4 : le décor vivant des îles, figé au milieu de quelques surprises. Elles jouent une à la fois, toutes les 20 à 60 secondes, jamais pendant que Plume parle.*
+
+![Les derniers dessins au trait, avant la livraison 4 bis](captures/avant-5-jeux-4bis.webp)
+
+![Les mêmes jeux, peints](captures/apres-9-jeux-4bis.webp)
+
+*Livraison 4 bis : les derniers dessins au trait (en haut), puis peints (en bas), même niveau, même exercice : la goutte, le camion poubelle dans sa rue, le voyage des déchets, le grand tri, le volcan, la carte du monde, les mots du jeu des syllabes.*
 

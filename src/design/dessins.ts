@@ -38,6 +38,12 @@ export function calqueSVG(nom: string, x: number, y: number, k: number): string 
   const [bx, by, bl, bh] = im.boite;
   return `<image href="${srcDe(im)}" x="${r1(x + bx * k)}" y="${r1(y + by * k)}" width="${r1(bl * k)}" height="${r1(bh * k)}" preserveAspectRatio="none"/>`;
 }
+// Livraison 4 bis : les dessins au trait des jeux, repeints par l'atelier (scripts/illustration/pictos.py). Chacun est
+// un carré de 100 dont le cadre déborde de 5 de chaque côté : à l'écran, il prend la place exacte de l'ancien dessin.
+export const picto = (nom: string, cls = "") =>
+  image(nom) ? `<span class="picto${cls ? ` ${cls}` : ""}" aria-hidden="true">${calque(nom)}</span>` : "";
+// Le même dans un dessin SVG (les gommettes) : le carré de 100 posé en (x, y), à l'échelle k.
+export const pictoSVG = (nom: string, x: number, y: number, k: number) => calqueSVG(nom, x - 5 * k, y - 5 * k, k);
 export const vignette = (nom: string, cls = "") =>
   `<span class="vignette${cls ? ` ${cls}` : ""}" style="aspect-ratio:${rapport(nom)}" aria-hidden="true">${calque(nom)}</span>`;
 

@@ -2,7 +2,8 @@
 // probablement trop difficiles à déchiffrer pour l'enfant (selon les sons qu'il connaît).
 import { CLES } from "./identite";
 import { GRAPHEME_ORDER, knownSet } from "./content";
-import { SIGHT_WORDS } from "./lexique";
+import { imageImagier } from "./imagier";
+import { READ_WORDS, SIGHT_WORDS, SOUND_WORDS } from "./lexique";
 import type { Story } from "./services";
 
 export const HEROES: { id: string; nom: string; qui: string }[] = [
@@ -16,6 +17,44 @@ export const HEROES: { id: string; nom: string; qui: string }[] = [
 ];
 export const THEMES = ["la mer", "la forêt", "l'espace", "les dinosaures", "la cuisine", "les pirates", "la ferme", "la neige", "un anniversaire", "un voyage en bateau"];
 export const LENGTHS = [{ id: 3, label: "Très courte (3 phrases)" }, { id: 5, label: "Courte (5 phrases)" }, { id: 8, label: "Plus longue (8 phrases)" }];
+// Livraison 4 bis : les images des histoires viennent de l'imagier, comme partout ailleurs (même dessin sur tous les
+// appareils). L'histoire choisit ses émojis dans cette liste : le vocabulaire courant des petites histoires (les héros,
+// les thèmes, la maison, le repas, les transports, les gens, les émotions), plus les mots illustrés des jeux de lecture.
+// Chaque émoji écrit ici a son image dans l'imagier (scripts/illustration/imagier.py lit src/).
+export const IMAGES_HISTOIRES = [
+  // les héros et les animaux
+  "🐦", "🦫", "🐳", "🐙", "🦝", "🦎", "🦔", "🐻", "🐨", "🐯", "🦊", "🐸", "🐵", "🦉", "🐧", "🦅", "🐝", "🐞", "🐛", "🦋",
+  "🐌", "🐢", "🐠", "🐟", "🦀", "🦈", "🐬", "🐋", "🦭", "🦓", "🐘", "🦛", "🐪", "🦒", "🐿️", "🦇", "🐴", "🦄", "🐐", "🐑",
+  "🐄", "🐖", "🐓", "🐔", "🐣", "🐤", "🦆", "🦜", "🦢", "🦩", "🦚", "🐇", "🐹", "🦦", "🐈", "🐕", "🐁", "🦌", "🐗", "🦕",
+  "🦖", "🐉", "🐊", "🐍", "🦁", "🐼", "🐺",
+  // la nature, le ciel, la mer
+  "🌳", "🌲", "🌴", "🌵", "🌼", "🌻", "🌹", "🌷", "🌸", "🍄", "🍁", "🍂", "🌿", "🌱", "🌾", "🌈", "☀️", "🌙", "⭐", "🌟",
+  "✨", "☁️", "🌧️", "🌨️", "❄️", "☃️", "⛄", "🌊", "🏔️", "⛰️", "🌋", "🏝️", "🏖️", "🐚", "💧", "🔥", "🌍", "🪐", "☄️", "🌅",
+  "🌄", "🌃", "🌌",
+  // le repas et la cuisine
+  "🍎", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓", "🍒", "🍑", "🥕", "🌽", "🥦", "🍅", "🥔", "🍞", "🥐", "🧀", "🥚", "🍳",
+  "🥞", "🍕", "🍝", "🍲", "🍯", "🍪", "🍰", "🎂", "🧁", "🍦", "🍫", "🍬", "🍭", "🥛", "🧃", "🍵", "🍩", "🥜", "🍽️", "🥄",
+  // la maison, les jeux, les fêtes
+  "🏠", "🏡", "🏰", "⛺", "🛖", "🚪", "🪟", "🛏️", "🛁", "🧸", "🎈", "🎁", "📚", "📖", "✏️", "🖍️", "🎨", "🎵", "🎶", "🥁",
+  "🎺", "🎻", "🪁", "⚽", "🏀", "🧩", "🎲", "🔑", "🕯️", "💡", "⏰", "🧺", "🧦", "👕", "👗", "👒", "🧢", "👟", "🧤", "🧣",
+  "🎒", "☂️", "🪣", "🧹", "🪴", "🖼️", "🔦", "🧭", "🗺️", "💎", "🔭", "🪄", "🛷", "⛸️", "🎃", "🎄", "🎉", "🎊", "🥳", "🎠",
+  "🎡", "🎪", "🏴‍☠️", "⚓", "✉️", "💌", "📦",
+  // les transports
+  "🚗", "🚌", "🚒", "🚑", "🚓", "🚜", "🚲", "🛴", "🚂", "🚀", "✈️", "🚁", "⛵", "🚤", "🛶", "🚢", "🛸",
+  // les gens et les héros des contes
+  "👧", "👦", "👩", "👨", "👵", "👴", "👶", "🧒", "👸", "🤴", "🧙", "🧚", "🧜", "🦸", "🧑‍🚀", "🧑‍🍳", "🧑‍🌾", "👽", "🤖",
+  // les émotions et les gestes
+  "😊", "😃", "🙂", "😄", "😢", "😮", "😴", "🥰", "🤗", "😋", "🤔", "😌", "❤️", "💛", "💙", "💚", "👋", "👍", "👏", "🤝",
+  "💤",
+  // les lieux
+  "🏫", "🏥", "🏪", "🏞️", "🌉", "🏕️",
+];
+// Ce que l'histoire peut montrer : sa liste, et les images des mots des jeux de lecture.
+export const imagesPermises = (): string[] => [...new Set([...IMAGES_HISTOIRES, ...SOUND_WORDS.map((w) => w.e), ...READ_WORDS.map((w) => w.pic)])].filter((e) => !!imageImagier(e));
+// Un émoji que l'imagier ne connaît pas ne passe pas : l'image de la phrase reste vide (l'écran montre alors celle de
+// l'histoire) ; l'histoire sans image prend le livre.
+const imageConnue = (e: unknown): string => { const s = String(e ?? "").slice(0, 16); return s && imageImagier(s) ? s : ""; };
+
 // Mots-outils que l'enfant reconnaît « en entier », et quelques petits mots très fréquents à lire avec l'adulte.
 export const ALLOWED_TOOLS = [...SIGHT_WORDS, "un", "une", "il", "elle", "a", "à", "de", "les", "des", "il y a"];
 
@@ -91,7 +130,7 @@ export function buildPrompt(o: { k: number; theme: string; hero: string; phrases
       : "- L'enfant ne lit pas encore : l'histoire lui sera lue à voix haute. Garde des phrases très simples.",
     `- Mots-outils permis même s'ils ne sont pas déchiffrables : ${ALLOWED_TOOLS.join(", ")}. Évite les autres mots difficiles quand un mot plus simple existe.`,
     "- Pas de prénom d'enfant réel, pas de marque, pas de personnage connu.",
-    "- Pour chaque phrase, propose un seul émoji qui l'illustre.",
+    `- Pour chaque phrase, propose un seul émoji qui l'illustre, choisi seulement parmi ceux-ci (l'appli a leur dessin) : ${imagesPermises().join(" ")}`,
     "- Ajoute une question de compréhension avec trois réponses courtes (une seule juste), dont la réponse se trouve dans l'histoire.",
     "Réponds uniquement avec un objet JSON, sans texte autour, de la forme :",
     '{"titre": "…", "emoji": "🐳", "phrases": ["…"], "images": ["🐳"], "question": {"texte": "…", "choix": ["…", "…", "…"], "bonne": 0}}',
@@ -109,11 +148,11 @@ export function parseStory(text: string, o: { k: number; theme: string; hero: st
   const choix = Array.isArray(q.choix) ? q.choix.map((x: unknown) => String(x).trim()).filter(Boolean).slice(0, 3) : [];
   const bonne = Number(q.bonne);
   if (!j.titre || phrases.length < 2 || choix.length < 2 || !(bonne >= 0 && bonne < choix.length) || !q.texte) throw new Error("format");
-  const images = Array.isArray(j.images) ? j.images.map((x: unknown) => String(x).slice(0, 8)) : [];
+  const images = Array.isArray(j.images) ? j.images.map(imageConnue) : [];
   return {
     id: `h${Date.now().toString(36)}${Math.floor(Math.random() * 1e4).toString(36)}`, t: Date.now(),
     titre: String(j.titre).trim().slice(0, 80), phrases, question: { texte: String(q.texte).trim(), choix, bonne }, k: o.k,
-    emoji: j.emoji ? String(j.emoji).slice(0, 8) : images[0], images: phrases.map((_: string, i: number) => images[i] ?? ""), theme: o.theme, heros: o.hero, lu: 0,
+    emoji: imageConnue(j.emoji) || images.find(Boolean) || "📖", images: phrases.map((_: string, i: number) => images[i] ?? ""), theme: o.theme, heros: o.hero, lu: 0,
   };
 }
 // Appel direct depuis l'appareil : la clé reste sur l'appareil et ne sert qu'ici.

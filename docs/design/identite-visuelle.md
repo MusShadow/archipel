@@ -141,7 +141,8 @@ Fait dans la livraison 4 (`src/screens/vivant.ts`, calques de `scripts/illustrat
 ## Ce qu'on ne fait pas
 
 - Pas de générateur d'images : il dessinerait autre chose à chaque fois. Toutes les images sortent de l'atelier d'illustration, toujours identiques.
-- Pas d'emoji du système comme images : leur dessin change d'un appareil à l'autre. L'imagier les remplace, île par île.
+- Pas d'emoji du système comme images : leur dessin change d'un appareil à l'autre. L'imagier les remplace partout, jusque dans les histoires sur mesure, qui choisissent leurs images dans l'imagier (livraison 4 bis).
+- Pas de dessin au trait plat à côté des images peintes : depuis la livraison 4 bis, les dessins des jeux (goutte, déchets, grand tri, volcan, carte du monde) sont repeints par l'atelier dans la même finition.
 - Pas de dégradés criards, de néons, de reflets « plastique » ni de couleurs saturées en grands aplats.
 - Pas de rouge pour signaler une erreur, pas de son d'échec.
 - Pas de texte long pour l'enfant : la voix de Plume passe avant l'écrit.

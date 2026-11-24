@@ -170,10 +170,17 @@ Ce qui était prévu :
 
 Les mesures de performance sont faites dans Chrome sans écran (sans carte graphique) : l'essai sur l'iPad reste à faire.
 
-## Livraison 4 bis : les derniers jeux dessinés
+## Livraison 4 bis : les derniers jeux dessinés (faite)
 
-- Le voyage de la goutte, le voyage des déchets (scènes et poubelles de la rue), la carte du monde du Port, et les déchets du grand tri, encore dessinés au trait.
-- Les derniers mots de l'imagier.
+| Fait | Où |
+|---|---|
+| Les dessins au trait des jeux repeints dans la finition album : les 35 images du voyage de la goutte, les 44 du voyage des déchets, les 26 déchets du grand tri, et les 50 des chapitres du volcan d'Octave (lave, types de volcans, métier, volcans du monde). L'atelier part du dessin de l'appli : chaque image garde son contenu exact (elle a été pensée pour une question), seule sa matière change (volume, trait coloré, gouache, lumière dorée) ; elle prend la place exacte du tracé | `scripts/illustration/pictos.py`, `pictos_source.ts`, `src/activities/*_art.ts` |
+| Le voyage des déchets : la rue peinte (ciel, maisons, trottoir, route) en trois calques, le camion à part (il repart après avoir vidé la poubelle) ; les poubelles dessinées du grand tri remplacent celles au trait, dans la rue comme dans les étapes | `src/activities/dechets_art.ts`, `dechets.ts` |
+| La carte du monde du Port peinte (mer, vagues, continents en relief, côte claire) ; les continents à toucher sont les mêmes formes, transparentes, posées dessus | `src/activities/drapeau.ts` |
+| Les gommettes de la goutte, des déchets et du volcan peintes | `src/activities/*_art.ts` |
+| Les derniers mots de l'imagier : les mots du jeu des syllabes (moto, vélo, lama, sofa, piano, radio, midi) prennent l'image de l'imagier, la même que dans les autres jeux ; le tipi et le domino, sans emoji, ont leur dessin repeint ; le doigt des indices (volcan, déchets) est une image de l'imagier | `src/activities/syllabes.ts`, `volcan.ts`, `dechets.ts` |
+| Les histoires sur mesure : l'imagier accueille le vocabulaire courant des petites histoires (373 images en tout) ; l'histoire choisit ses images dans cette liste, un émoji inconnu n'entre pas ; les histoires déjà écrites ne changent pas | `src/stories.ts`, `scripts/illustration/imagier.py` |
+| Tests : chaque dessin a son image peinte, plus aucun tracé dans ces jeux, la rue et la carte gardent leurs zones à toucher, mots des syllabes et images des histoires dans l'imagier ; dans le navigateur, toutes les images peintes chargées | `tests/livraison4bis.test.ts`, `tests/e2e/jeux.py` |
 
 ## Livraison 5 : validation finale
 

@@ -1,6 +1,6 @@
 // Dessins du « grand tri » : les poubelles (bac jaune, bleu, vert, blanc, marron, gris, composteur) et les déchets de
 // Basile. Même style que la goutte et le volcan : trait encre, couleurs douces, carré de 100 × 100.
-import { calqueSVG, image } from "../design/dessins";
+import { calqueSVG, image, picto } from "../design/dessins";
 const INK = "#273043";
 const K = `stroke="${INK}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"`;
 const K2 = `stroke="${INK}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"`;
@@ -97,7 +97,9 @@ export const TART: Record<string, string> = {
     + `<rect x="66" y="32" width="14" height="16" rx="2" fill="#E85D9A" ${K2}/><path d="M18 72 L40 54 M82 72 L60 54" stroke="${INK}" stroke-width="2" opacity=".4"/>`,
 };
 
-export const tartSVG = (id: string) => `<svg viewBox="0 0 100 100" aria-hidden="true" style="display:block;width:100%;height:100%;overflow:visible">${TART[id] ?? ""}</svg>`;
+// Livraison 4 bis : les déchets repeints par l'atelier (scripts/illustration/pictos.py) ; le tracé reste leur source.
+export const tartSVG = (id: string) => image(`tri/${id}`) ? picto(`tri/${id}`)
+  : `<svg viewBox="0 0 100 100" aria-hidden="true" style="display:block;width:100%;height:100%;overflow:visible">${TART[id] ?? ""}</svg>`;
 
 // Gommettes : le bac jaune, ou la médaille du grand trieur (trois bacs). Les poubelles sont celles du jeu, dessinées
 // (atelier : scripts/illustration/jeux_decouvertes.py) : le corps et son couvercle, dans leur cadre de 120 × 120 ; le

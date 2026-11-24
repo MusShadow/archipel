@@ -3,6 +3,9 @@ import { SAY_SYL, SYL_CONSONANTS, SYL_VOWELS, WORDS, decodable, syllablesFor, ty
 import { flagSVG } from "../flags";
 import type { ActivityModule, Ctx, Item, View } from "../host";
 import { glow, h } from "../ui";
+import { image, picto } from "../design/dessins";
+import { imageImagier } from "../imagier";
+import { imgImagier } from "../lexique";
 
 type Kind = "ecoute" | "fabrique" | "mot" | "lire";
 interface SylItem extends Item { kind: Kind; target: string; word?: Word; choices: string[]; tiles?: string[]; vowels?: string[] }
@@ -11,8 +14,11 @@ const CUE_WORD: Record<string, string> = { m: "moto", l: "lama", r: "radio", s: 
 const say = (s: string) => SAY_SYL[s.toLowerCase()] ?? s.toLowerCase();
 const sylLine = (syl: string[]) => syl.map(say).join(", ");
 
-// Pictogrammes : le sens du mot, pour lire puis vérifier qu'on a compris.
-const PICTO: Record<string, string> = {
+// Pictogrammes : le sens du mot, pour lire puis vérifier qu'on a compris. Livraison 4 bis : à l'écran, chaque mot
+// prend son image de l'imagier (la même que dans les autres jeux) ; le tipi et le domino, qui n'ont pas d'emoji, ont
+// leur dessin repeint par l'atelier (scripts/illustration/pictos.py). Le tracé reste la source de ces deux-là, et le
+// secours si une image manque.
+export const PICTO: Record<string, string> = {
   moto: '<circle cx="25" cy="70" r="14" fill="none" stroke="#273043" stroke-width="6"/><circle cx="75" cy="70" r="14" fill="none" stroke="#273043" stroke-width="6"/><path d="M25 70 L45 50 L65 50 L75 70" fill="none" stroke="#FF7F50" stroke-width="8" stroke-linejoin="round"/><rect x="40" y="40" width="26" height="9" rx="4" fill="#273043"/><path d="M65 50 L70 34 M62 34 H76" stroke="#273043" stroke-width="5" stroke-linecap="round"/>',
   vélo: '<circle cx="25" cy="70" r="14" fill="none" stroke="#273043" stroke-width="5"/><circle cx="75" cy="70" r="14" fill="none" stroke="#273043" stroke-width="5"/><path d="M25 70 L42 45 L62 70 Z M42 45 L68 45 L75 70" fill="none" stroke="#3D8BEA" stroke-width="6" stroke-linejoin="round"/><path d="M35 40 H49 M68 45 L66 33 M60 33 H72" stroke="#273043" stroke-width="5" stroke-linecap="round"/>',
   tipi: '<path d="M50 12 L42 3 M50 12 L58 3" stroke="#A0673F" stroke-width="4" stroke-linecap="round"/><polygon points="50,12 86,86 14,86" fill="#FFC145" stroke="#A0673F" stroke-width="4" stroke-linejoin="round"/><polygon points="50,56 63,86 37,86" fill="#A0673F"/>',
@@ -26,9 +32,15 @@ const PICTO: Record<string, string> = {
 const NAMED: Record<string, string> = { moto: "une moto", radio: "une radio", midi: "une horloge qui montre midi" };
 // Noms de pays déchiffrables : leur drapeau sert d'image pour écrire le mot.
 const COUNTRY_WORDS: Record<string, string> = { Mali: "ML", Panama: "PA", Togo: "TG", Cuba: "CU", Canada: "CA", Monaco: "MC" };
+// L'image de chaque mot à lire : celle de l'imagier, la même que dans les autres jeux (« midi » : l'horloge à midi) ;
+// le tipi et le domino, sans emoji, ont leur dessin repeint par l'atelier.
+const IMAGIER_MOTS: Record<string, string> = { moto: "🏍️", vélo: "🚲", lama: "🦙", sofa: "🛋️", piano: "🎹", radio: "📻", midi: "🕛" };
 function pictureOf(w: string) {
   if (COUNTRY_WORDS[w]) return flagSVG(COUNTRY_WORDS[w], false);
   if (!PICTO[w]) return "";
+  const im = IMAGIER_MOTS[w] ? imageImagier(IMAGIER_MOTS[w]) : undefined;
+  if (im) return `<span class="mot-image" aria-hidden="true">${imgImagier(im.fichier)}</span>`;
+  if (image(`mots/${w}`)) return picto(`mots/${w}`, "mot-image");
   return `<svg viewBox="0 0 100 100" aria-hidden="true" style="display:block;width:100%;height:100%">${PICTO[w]}</svg>`;
 }
 

@@ -27,7 +27,8 @@ La direction artistique (lumière, matières, couleurs, mouvement) est décrite 
 | `accueil.py` | Livraison 2 : la plage d'accueil, les huit compagnons de voyage et un chapeau d'explorateur par couleur de profil. |
 | `couches.py` | Rendu en couches transparentes (fond noir, fond blanc, la différence donne la transparence) et écriture en WebP. |
 | `fabriquer.py` | Fabrique les personnages, les îles et les éléments isolés (une image chacun, avec ses points repères : roues, chapeau, centre d'une île…) ; écrit `catalogue.json` et `src/illustrations.ts`. |
-| `imagier.py` | Fabrique l'imagier : une image album pour chaque emoji de l'appli ; écrit `src/imagier.ts`. |
+| `imagier.py` | Fabrique l'imagier : une image album pour chaque emoji de l'appli (dont, depuis la livraison 4 bis, le vocabulaire des histoires sur mesure, `IMAGES_HISTOIRES` dans `src/stories.ts`) ; écrit `src/imagier.ts`. |
+| `pictos.py`, `pictos_source.ts` | Livraison 4 bis : les dessins au trait de l'appli repeints dans la finition album. `pictos_source.ts` lit les dessins tels que l'appli les écrit (goutte, déchets, grand tri, volcan, tipi et domino des syllabes, rue du camion, carte du monde) ; Chrome les lit sans lissage (une couleur-repère par forme, le trait d'encre à part, les formes translucides avec ce qui les cache) ; chaque forme est peinte par le moteur (volume selon sa taille, prolongée sous ce qui la recouvre), le trait d'encre devient un trait coloré, les formes translucides des glacis. Le contenu ne change pas, seule la matière. |
 
 ## Lancer
 
@@ -46,7 +47,7 @@ mais quelques octets peuvent changer.
 
 ```sh
 python3 scripts/illustration/fabriquer.py              # personnages et îles (environ 1 minute)
-python3 scripts/illustration/fabriquer.py personnages  # ou seulement : iles, une île (mots, coeur…), activites, fetes, carte, accueil, visages, fin, calme, jeux, jeux_decouvertes, jeux_enigmes, vivant
+python3 scripts/illustration/fabriquer.py personnages  # ou seulement : iles, une île (mots, coeur…), activites, fetes, carte, accueil, visages, fin, calme, jeux, jeux_decouvertes, jeux_enigmes, vivant, pictos
 python3 scripts/illustration/imagier.py                # imagier (environ 2 minutes)
 bun run build                                          # puis construire l'appli
 ```
@@ -58,6 +59,7 @@ bun run build                                          # puis construire l'appli
 - `public/illustrations/personnages/` : chaque hôte dans les cinq expressions (`content`, `rieur`, `surpris`, `pensif`, `doux`), les yeux fermés (`cligne`, pour cligner des yeux) et en train de saluer ; Plume dans ses cinq poses, ses quatre expressions en vol et en trois pièces (aile arrière, corps, aile avant) pour battre des ailes lentement.
 - `public/illustrations/iles/<île>/` : le décor de base (opaque), un remplissage pour chaque emplacement libre, un lieu par activité, les calques du décor vivant (`anime-*.webp`).
 - `public/illustrations/activites/` et `public/illustrations/vivant/` : les objets des jeux et les petits sujets du décor vivant.
+- `public/illustrations/goutte/`, `dechets/`, `tri/`, `volcan/`, `mots/`, `monde/` : les dessins au trait repeints (livraison 4 bis), rendus à l'échelle 3 (la rue à 5), notée `rendu` au catalogue.
 - `public/imagier/` : une image par emoji, 320 × 320, et la licence de la base.
 - `src/illustrations.ts` et `src/imagier.ts` : les catalogues pour l'appli (fichiers générés, à ne pas modifier à la main).
 

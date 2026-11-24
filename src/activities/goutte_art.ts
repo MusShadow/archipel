@@ -1,5 +1,8 @@
 // Dessins du « voyage de la goutte » : Ploc, les étapes du cycle de l'eau (nature et maison), le labo, les bons gestes.
-// Formes simples, trait encre, couleurs douces ; carré de 100 × 100. Les emojis du système complètent (🛁, 🚽, 🧻…).
+// Formes simples, trait encre, couleurs douces ; carré de 100 × 100. L'imagier complète (🛁, 🚽, 🧻…).
+// Livraison 4 bis : l'appli montre ces dessins repeints par l'atelier (scripts/illustration/pictos.py, qui les lit
+// ici) ; le tracé reste leur source, et le secours si une image manque.
+import { image, picto, pictoSVG } from "../design/dessins";
 const K = `stroke="#273043" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"`;
 const K2 = `stroke="#273043" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"`;
 const WATER = "#7CC6E8", WATER_D = "#4FA9DA", MUD = "#8D6E4C", DIRTY = "#B9A483", SOIL = "#D9B48C", GRASS = "#8BCB78";
@@ -153,10 +156,12 @@ export const ART: Record<string, string> = {
     + `<path d="M43 86 H70" stroke="#9AA3B5" stroke-width="4" stroke-linecap="round"/>`,
 };
 
-export const artSVG = (id: string) => `<svg viewBox="0 0 100 100" aria-hidden="true" style="display:block;width:100%;height:100%">${ART[id] ?? ""}</svg>`;
+export const artSVG = (id: string) => image(`goutte/${id}`) ? picto(`goutte/${id}`)
+  : `<svg viewBox="0 0 100 100" aria-hidden="true" style="display:block;width:100%;height:100%">${ART[id] ?? ""}</svg>`;
 
 // Gommettes : Ploc, ou le château d'eau, sur une pastille.
 export const goutteStickerSVG = (ref?: string) => {
-  const inner = ART[ref === "chateau" ? "chateau" : "ploc"];
-  return `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="${ref === "gestes" ? "#DDF3E6" : "#D7EFF8"}"/><g transform="translate(12 12) scale(0.46)">${inner}</g></svg>`;
+  const id = ref === "chateau" ? "chateau" : "ploc";
+  const inner = image(`goutte/${id}`) ? pictoSVG(`goutte/${id}`, 12, 12, 0.46) : `<g transform="translate(12 12) scale(0.46)">${ART[id]}</g>`;
+  return `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="${ref === "gestes" ? "#DDF3E6" : "#D7EFF8"}"/>${inner}</svg>`;
 };

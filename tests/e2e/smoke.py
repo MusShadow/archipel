@@ -48,7 +48,13 @@ def solve(page):
     k = it.get("kind")
     if mod == "drapeau":
         if k == "carte":
+            # on essaie les continents un à un ; on s'arrête dès que le bon est trouvé (l'épingle apparaît) ou que
+            # l'exercice a changé (la bonne réponse peut passer à la suite très vite)
+            avant = json.dumps(it, sort_keys=True)
+            page.wait_for_selector(".garde-appui", state="detached")  # un appui forcé tomberait sur la garde des 400 ms
             for cont in ["europe", "afrique", "asie", "amnord", "amsud", "oceanie"]:
+                if not page.locator(f'[data-cont="{cont}"]').count() or json.dumps(state(page)["item"], sort_keys=True) != avant:
+                    break
                 page.click(f'[data-cont="{cont}"]', force=True)
                 page.wait_for_timeout(150)
                 if page.evaluate("() => !!document.querySelector('.pin[style=\"\"]')"):

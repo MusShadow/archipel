@@ -128,7 +128,7 @@ export const emoji = (e: string, size = "1em") => {
   const im = imageImagier(e);
   return im
     ? `<span class="emo emo-img" style="font-size:${size}" aria-hidden="true">${imgImagier(im.fichier)}</span>`
-    : `<span class="emo" style="font-size:${size}" aria-hidden="true">${e}</span>`;
+    : `<span class="emo" style="font-size:${size}" aria-hidden="true">${e.replace(/[&<>"]/g, (c) => `&#${c.charCodeAt(0)};`)}</span>`;
 };
 export const imgImagier = (fichier: string) => `<img src="${urlImage(fichier)}" alt="" draggable="false">`;
 // Les emoji posés directement dans un <span class="emo"> (quelques activités) prennent aussi leur image.

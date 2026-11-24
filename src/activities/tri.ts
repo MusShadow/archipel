@@ -133,7 +133,8 @@ export function makeTri(lv: number, r: { next: () => number; pick: <T>(a: T[]) =
 // ---------- Le plateau : les déchets de Basile en haut, les poubelles en bas (on glisse vers le bas, comme on jette) ----------
 // Livraison 4 : les poubelles sont dessinées (atelier : scripts/illustration/jeux_decouvertes.py), en deux calques du
 // même cadre : le corps avec son étiquette, et le couvercle (class « lid »), que l'on soulève quand un déchet arrive.
-// Le voyage des déchets garde ses poubelles tracées (binArtTrace), dans le style de ses scènes, jusqu'à la livraison 4 bis.
+// Le tracé des poubelles (binArtTrace) reste le secours si un dessin manque ; depuis la livraison 4 bis, le voyage des
+// déchets prend lui aussi les poubelles dessinées.
 export const binArtTrace = (b: Bin) => b.look === "composteur" ? composteurSVG() : binSVG(b.look);
 const poubelle = (corps: string, couvercle: string) =>
   image(corps) && image(couvercle) ? `<span class="poubelle" aria-hidden="true">${calque(corps)}${calque(couvercle, "lid")}</span>` : null;

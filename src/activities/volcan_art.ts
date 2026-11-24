@@ -1,7 +1,7 @@
 // Dessins du « volcan d'Octave » : le volcan coupé en deux (touchable), les étapes de l'éruption, volcans rouges et
 // gris, endormis ou réveillés, la lave, le matériel des volcanologues, des volcans du monde, les gommettes.
 // Même style que la goutte : trait encre, couleurs douces, carré de 100 × 100 (le volcan coupé : 200 × 160).
-import { image, srcDe } from "../design/dessins";
+import { image, picto, pictoSVG, srcDe } from "../design/dessins";
 const INK = "#273043";
 const K = `stroke="${INK}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"`;
 const K2 = `stroke="${INK}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"`;
@@ -230,11 +230,15 @@ export const VART: Record<string, string> = {
   sticker_volcan: volcano({ fountain: true, face: "eveil" }),
 };
 
-export const vartSVG = (id: string) => `<svg viewBox="0 0 100 100" aria-hidden="true" style="display:block;width:100%;height:100%;overflow:visible">${VART[id] ?? ""}</svg>`;
+// Livraison 4 bis : les dessins des chapitres repeints par l'atelier (scripts/illustration/pictos.py) ; le tracé reste
+// leur source, et le secours si une image manque.
+export const vartSVG = (id: string) => image(`volcan/${id}`) ? picto(`volcan/${id}`)
+  : `<svg viewBox="0 0 100 100" aria-hidden="true" style="display:block;width:100%;height:100%;overflow:visible">${VART[id] ?? ""}</svg>`;
 
 // Gommettes : le volcan rigolo, le badge de volcanologue (la combinaison), ou le mont Fuji.
 export const volcanStickerSVG = (ref?: string) => {
-  const inner = VART[ref === "badge" ? "combinaison" : ref === "monde" ? "fuji" : "sticker_volcan"];
+  const id = ref === "badge" ? "combinaison" : ref === "monde" ? "fuji" : "sticker_volcan";
+  const inner = image(`volcan/${id}`) ? pictoSVG(`volcan/${id}`, 12, 12, 0.46) : `<g transform="translate(12 12) scale(0.46)">${VART[id]}</g>`;
   const bg = ref === "badge" ? "#E6E8EE" : ref === "monde" ? "#D7EFF8" : "#FFE6D6";
-  return `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="${bg}"/><g transform="translate(12 12) scale(0.46)">${inner}</g></svg>`;
+  return `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="${bg}"/>${inner}</svg>`;
 };

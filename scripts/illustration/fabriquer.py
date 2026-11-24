@@ -18,8 +18,8 @@ import iles as I
 import vivant as V
 import importlib, importlib.util
 
-# Éléments isolés des livraisons 2 à 4 (une image chacun) : module → ELEMENTS {nom: cadre, dessin, options}.
-MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil", "visages", "fin", "calme", "jeux", "jeux_decouvertes", "jeux_enigmes", "vivant"]
+# Éléments isolés des livraisons 2 à 4 bis (une image chacun) : module → ELEMENTS {nom: cadre, dessin, options}.
+MODULES_ELEMENTS = ["activites", "fetes", "carte", "accueil", "visages", "fin", "calme", "jeux", "jeux_decouvertes", "jeux_enigmes", "vivant", "pictos"]
 def tous_elements(quoi=None):
     out = {}
     for m in MODULES_ELEMENTS:
@@ -218,6 +218,8 @@ def elements(cat, quoi):
         boite = A.enregistrer(SORTIE / fichier, col, a, opaque=opaque, qualite=e.get("qualite", 86 if not opaque else 80))
         # le cadre de rendu : l'appli y replace l'image recadrée (calques superposés, vignettes de même échelle)
         ent = {"fichier": fichier, "boite": boite, "cadre": [W_, H_], "module": e["module"]}
+        if A.S != 2:
+            ent["rendu"] = A.S  # échelle de rendu, si ce n'est pas 2 (les dessins repeints de la livraison 4 bis)
         if e.get("points"):
             ent["points"] = {k: rel(boite, *pt) for k, pt in e["points"].items()}
         if e.get("infos"):
@@ -230,7 +232,7 @@ def nettoyer(cat, quoi):
     gardes = {e["fichier"] for e in cat["personnages"].values()} | {e["fichier"] for e in cat.get("elements", {}).values()}
     for d in cat["iles"].values():
         gardes |= {d["base"]["fichier"]} | {x["fichier"] for k in ("remplissages", "lieux", "animes") for x in d[k].values()}
-    parties = ["personnages", "iles"] + ["activites", "gommettes", "fetes", "carte", "accueil", "visages", "fin", "calme", "vivant"]
+    parties = ["personnages", "iles"] + ["activites", "gommettes", "fetes", "carte", "accueil", "visages", "fin", "calme", "vivant", "goutte", "dechets", "tri", "monde", "volcan", "mots"]
     for partie in parties:
         if not (SORTIE / partie).exists() or (partie == "personnages" and partie not in quoi) or (partie == "iles" and "iles" not in quoi and not ({q for q in quoi if q in I.DISPOSITIONS})):
             continue
@@ -246,10 +248,11 @@ def ecrire_ts(cat):
     lignes = [
         "// Généré par scripts/illustration/fabriquer.py : ne pas modifier à la main.",
         "// Images de l'atelier d'illustration (public/illustrations) : boîte [x, y, l, h] en px CSS dans le cadre de rendu,",
-        "// ancre (point au sol ou centre) et pivot en fraction de la boîte, échelle de rendu du personnage.",
+        "// ancre (point au sol ou centre) et pivot en fraction de la boîte, échelle de rendu du personnage ; rendu : échelle",
+        "// de l'image si ce n'est pas 2 (les dessins repeints de la livraison 4 bis, plus fins).",
         "export type Boite = [number, number, number, number];",
         "// role : ce que fait un calque du décor vivant d'une île (nuage, palmes, reflets, hote, cligne, bateau, bras, grenouille).",
-        "export interface ImageCadree { fichier: string; boite: Boite; cadre?: [number, number]; ancre?: [number, number]; echelle?: number; pivot?: [number, number]; points?: Record<string, [number, number]>; infos?: Record<string, number | string>; role?: string }",
+        "export interface ImageCadree { fichier: string; boite: Boite; cadre?: [number, number]; ancre?: [number, number]; echelle?: number; pivot?: [number, number]; points?: Record<string, [number, number]>; infos?: Record<string, number | string>; role?: string; rendu?: number }",
         "// Décor vivant d'une île (livraison 4) : les places des petits sujets (px CSS dans le cadre de l'île) et sa surprise.",
         "export interface VivantIle {",
         "  etincelles?: [number, number][]; dauphin?: [number, number] | null; baleine?: [number, number] | null; papillons?: [number, number][];",

@@ -1,6 +1,9 @@
 // Dessins du « voyage des déchets » : le camion poubelle et les éboueurs, les endroits où vont les déchets (centre de
 // tri, usine du verre, compost, usine qui chauffe, déchetterie…), ce qu'ils deviennent, et les gestes pour en faire
 // moins. Même style que le grand tri : trait encre, couleurs douces, carré de 100 × 100.
+// Livraison 4 bis : l'appli montre ces dessins, et la rue du camion, repeints par l'atelier
+// (scripts/illustration/pictos.py, qui les lit ici) ; le tracé reste leur source, et le secours si une image manque.
+import { calqueSVG, image, picto, pictoSVG } from "../design/dessins";
 import { TART, binSVG } from "./tri_art";
 
 const INK = "#273043";
@@ -143,23 +146,36 @@ export const DART: Record<string, string> = {
   sticker_boucle: `<circle cx="50" cy="50" r="38" fill="#D5F0E1" ${K}/>${RECYCLE(50, 52, 1.9)}`,
 };
 
-export const dartSVG = (id: string) => `<svg viewBox="0 0 100 100" aria-hidden="true" style="display:block;width:100%;height:100%;overflow:visible">${DART[id] ?? ""}</svg>`;
+export const dartSVG = (id: string) => image(`dechets/${id}`) ? picto(`dechets/${id}`)
+  : `<svg viewBox="0 0 100 100" aria-hidden="true" style="display:block;width:100%;height:100%;overflow:visible">${DART[id] ?? ""}</svg>`;
 
 // La rue : le trottoir, la route, le camion (l'arrière à gauche) et l'éboueur. La zone du lève-conteneur reçoit la
 // poubelle glissée par l'enfant.
 export const RUE = { w: 320, h: 170, lift: { x: 146, y: 54, w: 60, h: 76 }, bin: { x: 16, y: 58, s: 62 } };
-export const rueSVG = () => `<svg viewBox="0 0 ${RUE.w} ${RUE.h}" aria-hidden="true" style="display:block;width:100%;height:100%;overflow:visible">`
-  + `<g opacity=".55"><path d="M6 112 V70 L30 50 L54 70 V112 Z" fill="#FFF2D6" ${K2}/><rect x="22" y="84" width="16" height="28" fill="#C8955F" ${K2}/><path d="M62 112 V60 H104 V112 Z" fill="#E6E2D8" ${K2}/><rect x="70" y="70" width="10" height="10" fill="#9AC7E8"/><rect x="86" y="70" width="10" height="10" fill="#9AC7E8"/></g>`
+// La rue peinte (livraison 4 bis) : le fond, le camion (il repart : son calque bouge seul), l'éboueur, dans le même cadre
+// que le tracé ; la zone où l'on dépose la poubelle reste la même.
+const RUE_PEINTE = ["dechets/rue-fond", "dechets/rue-camion", "dechets/rue-eboueur"];
+export const rueSVG = () => RUE_PEINTE.every((n) => image(n))
+  ? `<svg viewBox="0 0 ${RUE.w} ${RUE.h}" aria-hidden="true" style="display:block;width:100%;height:100%;overflow:visible">`
+    + calqueSVG("dechets/rue-fond", 0, 0, 1)
+    + `<g class="dtruck">${calqueSVG("dechets/rue-camion", 0, 0, 1)}</g>`
+    + `<g class="deboueur">${calqueSVG("dechets/rue-eboueur", 0, 0, 1)}</g>`
+    + `<rect class="dlift" x="${RUE.lift.x}" y="${RUE.lift.y}" width="${RUE.lift.w}" height="${RUE.lift.h}" rx="10" fill="rgba(255,193,69,.0)" stroke="none"/></svg>`
+  : rueTrace();
+// Le tracé de la rue : la source de la rue peinte (atelier), et le secours.
+export const rueTrace = () => `<svg viewBox="0 0 ${RUE.w} ${RUE.h}" aria-hidden="true" style="display:block;width:100%;height:100%;overflow:visible">`
+  + `<g class="dfond"><g opacity=".55"><path d="M6 112 V70 L30 50 L54 70 V112 Z" fill="#FFF2D6" ${K2}/><rect x="22" y="84" width="16" height="28" fill="#C8955F" ${K2}/><path d="M62 112 V60 H104 V112 Z" fill="#E6E2D8" ${K2}/><rect x="70" y="70" width="10" height="10" fill="#9AC7E8"/><rect x="86" y="70" width="10" height="10" fill="#9AC7E8"/></g>`
   + `<rect x="0" y="112" width="${RUE.w}" height="14" fill="#E6E2D8"/><path d="M0 126 H${RUE.w}" stroke="${INK}" stroke-width="2.4"/>`
-  + `<rect x="0" y="126" width="${RUE.w}" height="44" fill="#B7BDC9"/><path d="M8 150 H${RUE.w}" stroke="#fff" stroke-width="3" stroke-dasharray="16 12"/>`
+  + `<rect x="0" y="126" width="${RUE.w}" height="44" fill="#B7BDC9"/><path d="M8 150 H${RUE.w}" stroke="#fff" stroke-width="3" stroke-dasharray="16 12"/></g>`
   + `<g class="dtruck"><g transform="translate(176 25) scale(1.25)">${TRUCK.replace(/stroke-width="3"/g, 'stroke-width="2.4"')}</g>`
   + `<path d="M162 98 H178 V126 H162 Z" fill="#9AA3B5" ${K2}/><path d="M164 105 H176 M164 113 H176" stroke="${INK}" stroke-width="1.6"/></g>`
-  + `<g transform="translate(100 66) scale(.62)">${EBOUEUR}</g>`
+  + `<g class="deboueur" transform="translate(100 66) scale(.62)">${EBOUEUR}</g>`
   + `<rect class="dlift" x="${RUE.lift.x}" y="${RUE.lift.y}" width="${RUE.lift.w}" height="${RUE.lift.h}" rx="10" fill="rgba(255,193,69,.0)" stroke="none"/>`
   + `</svg>`;
 
 // Gommettes : le camion poubelle, la boucle du recyclage, la gourde.
 export const dechetsStickerSVG = (ref?: string) => {
-  const art = ref === "boucle" ? DART.sticker_boucle : ref === "gourde" ? DART.gourde : TRUCK;
-  return `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="#E3F5EC"/><g transform="translate(13 13) scale(.44)">${art}</g></svg>`;
+  const id = ref === "boucle" ? "sticker_boucle" : ref === "gourde" ? "gourde" : "camion";
+  const art = image(`dechets/${id}`) ? pictoSVG(`dechets/${id}`, 13, 13, 0.44) : `<g transform="translate(13 13) scale(.44)">${DART[id]}</g>`;
+  return `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="38" r="33" fill="#E6DAC4"/><circle cx="35" cy="35" r="33" fill="#fff" stroke="#E4D9C5" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="#E3F5EC"/>${art}</svg>`;
 };

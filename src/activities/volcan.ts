@@ -360,7 +360,7 @@ function renderCoupe(item: VolcanItem, view: View) {
 interface Monte { help: () => void; arrow: () => void }
 function renderMonte(view: View) {
   const wrap = h("div", { class: "vcoupe vmonte", html: coupeSVG({ flow: false, cloud: false, level: 0.06 }) });
-  const finger = h("span", { class: "vfinger", "aria-hidden": "true" }, "👆");
+  const finger = h("span", { class: "vfinger", "aria-hidden": "true", html: emoji("👆") });
   wrap.appendChild(finger);
   view.stage.appendChild(wrap);
   const svg = wrap.querySelector("svg")!;

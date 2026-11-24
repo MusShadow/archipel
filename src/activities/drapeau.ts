@@ -4,6 +4,7 @@ import type { Profile } from "../services";
 import { CONTINENTS, FLAGS, FLAG_BY_CODE, TWINS, cap, continentPath, flagSVG, isIn, project, type FlagDef } from "../flags";
 import type { ActivityModule, Ctx, Item, View } from "../host";
 import { glow, h } from "../ui";
+import { calqueSVG, image } from "../design/dessins";
 
 type Kind = "ecoute" | "lire" | "jumeaux" | "carte";
 interface FlagItem extends Item { kind: Kind; target: string; choices: string[]; isNew: boolean }
@@ -209,9 +210,13 @@ export function flagStickerSVG(code: string) {
 function worldMap(item: FlagItem, view: View) {
   const fl = FLAG_BY_CODE[item.target];
   const [px, py] = project(fl.lon, fl.lat);
-  const paths = CONTINENTS.map((c) => `<path data-cont="${c.id}" d="${continentPath(c.id)}" fill="${c.color}" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" style="cursor:pointer"><title>${c.label}</title></path>`).join("");
-  const wrap = h("div", { style: "width:min(100%,calc(var(--u) * 1000));aspect-ratio:2/1;max-height:min(62vh,calc(100vh - 240px));position:relative" });
-  wrap.innerHTML = `<svg viewBox="0 0 1000 500" role="img" aria-label="Carte du monde simplifiée" style="display:block;width:100%;height:100%"><rect width="1000" height="500" rx="24" fill="#BFE8EE"/>${paths}<g class="pin" style="display:none"><circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="11" fill="#273043" stroke="#fff" stroke-width="4"/></g></svg>`;
+  // Livraison 4 bis : la carte est peinte par l'atelier (mer, continents en relief) ; les continents à toucher restent
+  // les mêmes formes, transparentes, posées par-dessus (le bon continent se cerne quand on l'a trouvé).
+  const peinte = !!image("monde/carte");
+  const fond = peinte ? calqueSVG("monde/carte", 0, 0, 1) : `<rect width="1000" height="500" rx="24" fill="#BFE8EE"/>`;
+  const paths = CONTINENTS.map((c) => `<path data-cont="${c.id}" d="${continentPath(c.id)}" fill="${peinte ? "transparent" : c.color}" stroke="${peinte ? "none" : "#ffffff"}" stroke-width="2" stroke-linejoin="round" style="cursor:pointer"><title>${c.label}</title></path>`).join("");
+  const wrap = h("div", { class: "monde", style: "width:min(100%,calc(var(--u) * 1000));aspect-ratio:2/1;max-height:min(62vh,calc(100vh - 240px));position:relative" });
+  wrap.innerHTML = `<svg viewBox="0 0 1000 500" role="img" aria-label="Carte du monde simplifiée" style="display:block;width:100%;height:100%">${fond}${paths}<g class="pin" style="display:none"><circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="11" fill="#273043" stroke="#fff" stroke-width="4"/></g></svg>`;
   const svg = wrap.querySelector("svg")!;
   svg.querySelectorAll<SVGPathElement>("[data-cont]").forEach((path) => {
     path.addEventListener("click", () => {

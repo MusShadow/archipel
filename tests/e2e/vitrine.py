@@ -77,10 +77,14 @@ with sync_playwright() as pw:
     ailes = page.evaluate("() => [...document.querySelectorAll('.v-ile .plume-aile')].map((a) => getComputedStyle(a).animationDuration)")
     check(ailes == ["1.1s", "1.1s"], f"Plume bat des ailes lentement : {ailes}")
     check(page.locator(".v-persos img").count() == 42, "sept hôtes, six dessins chacun")
-    check(page.locator(".v-imagier img").count() == 195, "imagier complet")
+    n_imagier = len(list((DIST / "imagier").glob("*.webp")))
+    check(page.locator(".v-imagier img").count() == n_imagier, f"imagier complet ({n_imagier} images)")
     # toutes les images de la page (l'imagier se charge en défilant)
     page.evaluate("async () => { const p = document.querySelector('.v-page'); for (let y = 0; y < p.scrollHeight; y += 600) { p.scrollTo(0, y); await new Promise((r) => setTimeout(r, 60)); } }")
-    page.wait_for_timeout(800)
+    try:  # l'imagier compte plus de 370 images : on attend qu'elles aient toutes fini de charger (10 s au plus)
+        page.wait_for_function("() => [...document.querySelectorAll('.v-page img')].every((i) => i.complete && i.naturalWidth > 0)", timeout=10000)
+    except Exception:
+        pass
     toutes = page.evaluate(IMAGES_CHARGEES, ".v-page img")
     manquantes = [s for s, c in toutes if not c]
     check(not manquantes, f"{len(toutes)} images de la vitrine chargées" + (f", manquantes : {manquantes[:5]}" if manquantes else ""))
