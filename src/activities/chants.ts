@@ -6,7 +6,7 @@ import type { Rng } from "../core";
 import type { ActivityModule, Item, View } from "../host";
 import { SOUND_WORDS, emoji, type SoundWord } from "../lexique";
 import { sfx } from "../services";
-import { glow, h, icon } from "../ui";
+import { esc, glow, h, icon } from "../ui";
 
 type Kind = "frappe" | "rime" | "debut" | "son";
 interface ChantItem extends Item { kind: Kind; word: SoundWord; target: string | number; choices: string[]; tricky?: boolean }
@@ -179,6 +179,6 @@ const DRUM = `<svg viewBox="0 0 120 110" aria-hidden="true" style="display:block
 // Gommette ronde : bord blanc, disque de la couleur de l'île, l'image de l'imagier au milieu (l'emoji s'il n'en a pas).
 export const emojiStickerSVG = (e: string, tint: string) => {
   const im = imageImagier(e);
-  const motif = im ? `<image href="${urlImage(im.fichier)}" x="14" y="14" width="42" height="42"/>` : `<text x="35" y="45" text-anchor="middle" style="font-size:30px">${e}</text>`;
+  const motif = im ? `<image href="${urlImage(im.fichier)}" x="14" y="14" width="42" height="42"/>` : `<text x="35" y="45" text-anchor="middle" style="font-size:30px">${esc(e)}</text>`;
   return `<svg viewBox="0 0 72 72" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="37" cy="39" r="33" fill="#E6DAC4" opacity=".8"/><circle cx="35" cy="35" r="33" fill="#FFFDF8" stroke="#E2CBA6" stroke-width="1.5"/><circle cx="35" cy="35" r="27" fill="${tint}"/>${motif}</svg>`;
 };

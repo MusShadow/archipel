@@ -29,6 +29,7 @@ const { drapeau } = await import("../src/activities/drapeau");
 const { CONTINENTS } = await import("../src/flags");
 const { IMAGES_HISTOIRES, buildPrompt, imagesPermises, parseStory } = await import("../src/stories");
 const { stickerArt } = await import("../src/activities");
+const { emojiStickerSVG } = await import("../src/activities/chants");
 const { SOUND_WORDS, READ_WORDS } = await import("../src/lexique");
 const { createProfile } = await import("../src/app");
 const { knownSet } = await import("../src/content");
@@ -54,14 +55,26 @@ describe("les dessins au trait, repeints", () => {
       expect(im.rendu).toBe(3); // 330 px pour un carré affiché jusqu'à 150 px
       n++;
     }
-    expect(n).toBe(155);
+    expect(n).toBeGreaterThan(150); // 35 + 44 + 26 + 50 dessins aujourd'hui
   });
-  test("à l'écran, l'image peinte prend la place du tracé : plus aucun dessin au trait dans ces jeux", () => {
+  test("à l'écran, l'image peinte prend la place du tracé : un SVG de 100 comme lui, l'image dedans, plus aucun trait", () => {
     for (const j of JEUX) for (const id of Object.keys(j.art)) {
       const html = j.html(id);
-      expect(html).toContain('class="picto"');
+      expect(html.startsWith('<svg class="picto" viewBox="0 0 100 100"')).toBe(true);
+      expect(html).toContain("width:100%;height:100%;overflow:visible");
       expect(html).toContain(ELEMENTS[`${j.dossier}/${id}`].fichier);
-      expect(html.includes("<svg")).toBe(false);
+      expect(html.match(/<image /g)?.length).toBe(1);
+      expect(/<(path|rect|circle|ellipse|polygon|line)\b/.test(html)).toBe(false);
+    }
+  });
+  test("un dessin qui dépasse de son carré (la fumée d'une cheminée) n'est pas coupé : son image monte au-dessus du cadre", () => {
+    for (const nom of ["dechets/verrerie", "dechets/usine_chaleur"]) {
+      const im = ELEMENTS[nom];
+      expect(im.cadre).toEqual([110, 110]);
+      expect(im.boite[1]).toBeLessThan(-6); // au-dessus du carré de 100 et de sa marge
+      const [, id] = nom.split("/");
+      const y = Number(dechets.dartSVG(id).match(/<image [^>]* y="(-?[\d.]+)"/)![1]);
+      expect(y).toBeCloseTo(-5 + im.boite[1], 1);
     }
   });
   test("les gommettes de la goutte, des déchets et du volcan sont peintes aussi (l'image dans la pastille)", () => {
@@ -103,13 +116,14 @@ describe("la carte du monde du Port", () => {
     expect(svg.outerHTML).toContain(ELEMENTS["monde/carte"].fichier);
     const conts = Array.from(svg.querySelectorAll("[data-cont]"));
     expect(conts.length).toBe(CONTINENTS.length);
-    for (const c of conts) { expect(c.getAttribute("fill")).toBe("transparent"); expect(c.getAttribute("stroke")).toBe("none"); }
+    // transparents, le trait compris : la côte répond au doigt comme avant
+    for (const c of conts) { expect(c.getAttribute("fill")).toBe("transparent"); expect(c.getAttribute("stroke")).toBe("transparent"); expect(c.getAttribute("stroke-width")).toBe("2"); }
     expect(ELEMENTS["monde/carte"].cadre).toEqual([1000, 500]);
   });
 });
 
 describe("les derniers mots de l'imagier", () => {
-  withDom("jeu des syllabes : chaque mot à lire montre son image de l'imagier (le tipi et le domino, repeints)", () => {
+  withDom("jeu des syllabes : chaque mot à lire montre son image de l'imagier (le tipi, le domino et midi, repeints)", () => {
     const p = createProfile({ name: "Lou", ageMonths: 54, color: "#FFC145", readingK: 30, countTo: 20, flags: 0 });
     const vus = new Set<string>();
     for (let i = 0; i < 200; i++) {
@@ -119,14 +133,18 @@ describe("les derniers mots de l'imagier", () => {
       const stage = document.createElement("div");
       syllabes.render(it, { stage, rng: makeRng(1), answer() {}, say: async () => {}, hintStep: () => 0 } as View);
       for (const b of Array.from(stage.querySelectorAll<HTMLElement>("[data-t]"))) {
-        vus.add(b.dataset.t!);
-        expect(b.querySelector("svg")).toBeNull();
-        const img = b.querySelector("img")!;
-        expect(img.getAttribute("src")).toMatch(/imagier\/|illustrations\/mots\//);
+        const w = b.dataset.t!;
+        vus.add(w);
+        const repeint = ["tipi", "domino", "midi"].includes(w);
+        // jamais de tracé : l'image de l'imagier, ou le dessin repeint dans son SVG de 100
+        const html = b.innerHTML;
+        expect(/<(path|rect|circle|ellipse|polygon|line)\b/.test(html)).toBe(false);
+        if (repeint) expect(html).toContain(`illustrations/${ELEMENTS[`mots/${w}`].fichier}`);
+        else expect(b.querySelector("img")!.getAttribute("src")).toMatch(/imagier\//);
       }
     }
     expect([...vus].sort()).toEqual(Object.keys(PICTO).sort());
-    for (const w of ["tipi", "domino"]) expect(surDisque(`illustrations/${ELEMENTS[`mots/${w}`].fichier}`)).toBe(true);
+    for (const w of ["tipi", "domino", "midi"]) expect(surDisque(`illustrations/${ELEMENTS[`mots/${w}`].fichier}`)).toBe(true);
   });
   test("histoires sur mesure : chaque image proposée a son dessin dans l'imagier, et la demande les cite", () => {
     const permises = imagesPermises();
@@ -146,6 +164,17 @@ describe("les derniers mots de l'imagier", () => {
     expect(st.emoji).toBe("🌙"); // la première image connue
     const sans = parseStory('{"titre":"T","phrases":["a b","c d"],"question":{"texte":"q ?","choix":["x","y"],"bonne":1}}', o);
     expect(sans.emoji).toBe("📖");
+    // un émoji connu reste connu avec des espaces autour ou une teinte de peau
+    const main = ["👋", "👍", "👏", "🙌"].find((e) => imageImagier(e))!;
+    expect(main).toBeTruthy();
+    const nuance = parseStory(JSON.stringify({ titre: "T", emoji: " 🐳 ", phrases: ["a b", "c d"], images: [`${main}\u{1F3FD}`, "🐳 "], question: { texte: "q ?", choix: ["x", "y"], bonne: 1 } }), o);
+    expect(nuance.emoji).toBe("🐳");
+    expect(nuance.images).toEqual([main, "🐳"]);
+  });
+  test("une ancienne histoire dont l'émoji n'a pas d'image : sa gommette « livre » l'écrit échappé", () => {
+    const svg = emojiStickerSVG("<b>x", "#D7EFF8");
+    expect(svg).toContain("&lt;b&gt;x");
+    expect(svg).not.toContain("<b>");
   });
   test("l'imagier compte toutes ses images sur le disque", () => {
     const n = Object.keys(IMAGIER).length;

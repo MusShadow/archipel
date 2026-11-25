@@ -354,7 +354,6 @@ export const IMAGIER: Record<string, ImageImagier> = {
   "🎺": { fichier: "imagier/trumpet.webp", nom: "trumpet" },
   "🌷": { fichier: "imagier/tulip.webp", nom: "tulip" },
   "🐢": { fichier: "imagier/turtle.webp", nom: "turtle" },
-  "🕛": { fichier: "imagier/twelve-oclock.webp", nom: "twelve o’clock" },
   "☂": { fichier: "imagier/umbrella.webp", nom: "umbrella" },
   "🦄": { fichier: "imagier/unicorn.webp", nom: "unicorn" },
   "🎻": { fichier: "imagier/violin.webp", nom: "violin" },

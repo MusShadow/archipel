@@ -90,8 +90,8 @@ padding:max(3px,calc(var(--u) * 5));filter:drop-shadow(0 4px 6px rgba(39,48,67,.
 /* ---------- Le grand tri : des poubelles dessinées ; le couvercle se soulève autour de sa charnière, en arrière ---------- */
 .poubelle{position:relative;display:block;width:100%;height:100%}
 .poubelle .lid{transform-origin:5% 72%;transition:transform .25s ease-out}
-/* ---------- Livraison 4 bis : les dessins au trait repeints par l'atelier (un carré de 100, cadre débordant de 5) ---------- */
-.picto{position:relative;display:block;width:110%;height:110%;margin:-5%;flex:none;pointer-events:none}
+/* ---------- Livraison 4 bis : les dessins au trait repeints par l'atelier, posés dans un SVG de 100 comme le tracé ---------- */
+svg.picto{flex:none;pointer-events:none}
 .mot-image{display:block;width:100%;height:100%;pointer-events:none}
 .mot-image img{display:block;width:100%;height:100%;object-fit:contain}
 /* la poubelle de la rue tourne autour de sa charnière, comme au grand tri */

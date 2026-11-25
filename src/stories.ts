@@ -53,7 +53,11 @@ export const IMAGES_HISTOIRES = [
 export const imagesPermises = (): string[] => [...new Set([...IMAGES_HISTOIRES, ...SOUND_WORDS.map((w) => w.e), ...READ_WORDS.map((w) => w.pic)])].filter((e) => !!imageImagier(e));
 // Un émoji que l'imagier ne connaît pas ne passe pas : l'image de la phrase reste vide (l'écran montre alors celle de
 // l'histoire) ; l'histoire sans image prend le livre.
-const imageConnue = (e: unknown): string => { const s = String(e ?? "").slice(0, 16); return s && imageImagier(s) ? s : ""; };
+// (espaces autour et teinte de peau retirés : 👋🏽 prend l'image de 👋)
+const imageConnue = (e: unknown): string => {
+  const s = String(e ?? "").trim().replace(/[\u{1F3FB}-\u{1F3FF}]/gu, "").slice(0, 16);
+  return s && imageImagier(s) ? s : "";
+};
 
 // Mots-outils que l'enfant reconnaît « en entier », et quelques petits mots très fréquents à lire avec l'adulte.
 export const ALLOWED_TOOLS = [...SIGHT_WORDS, "un", "une", "il", "elle", "a", "à", "de", "les", "des", "il y a"];

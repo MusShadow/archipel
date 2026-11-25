@@ -210,12 +210,16 @@ def elements(cat, quoi):
         del out[nom]  # élément retiré de son module
     for nom, e in liste.items():
         W_, H_ = e["cadre"]
-        A = Atelier(W_, H_, S=e.get("S", 2))
+        # la toile : le cadre, ou plus grande quand le dessin en dépasse (sa boîte reste comptée depuis le coin du cadre)
+        A = Atelier(*e.get("toile", (W_, H_)), S=e.get("S", 2))
         t = time.time()
         opaque = e.get("opaque", False)
         col, a = (A.opaque if opaque else A.rgba)(e["dessin"])
         fichier = f"{nom}.webp"
         boite = A.enregistrer(SORTIE / fichier, col, a, opaque=opaque, qualite=e.get("qualite", 86 if not opaque else 80))
+        if e.get("decalage"):
+            dx, dy = e["decalage"]
+            boite = [float(round(boite[0] + dx, 1)), float(round(boite[1] + dy, 1)), boite[2], boite[3]]
         # le cadre de rendu : l'appli y replace l'image recadrée (calques superposés, vignettes de même échelle)
         ent = {"fichier": fichier, "boite": boite, "cadre": [W_, H_], "module": e["module"]}
         if A.S != 2:

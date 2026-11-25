@@ -11,24 +11,35 @@ import { VART } from "../../src/activities/volcan_art";
 import { PICTO } from "../../src/activities/syllabes";
 import { CONTINENTS, continentPath } from "../../src/flags";
 
-interface Source { svg: string; vb: [number, number, number, number]; S: number; cacher?: string[]; seul?: string }
+interface Source {
+  svg: string; vb: [number, number, number, number]; S: number; cacher?: string[]; seul?: string;
+  carre?: boolean; cadre?: [number, number]; decalage?: [number, number];
+}
 const out: Record<string, Source> = {};
-// Une image de 100 × 100, et une marge de 5 tout autour (certains dessins débordent un peu de leur carré).
-const carre = (corps: string): Source => ({ svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 110 110">${corps}</svg>`, vb: [-5, -5, 110, 110], S: 3 });
-for (const [id, corps] of Object.entries(ART)) out[`goutte/${id}`] = carre(corps);
-for (const [id, corps] of Object.entries(DART)) out[`dechets/${id}`] = carre(corps);
-for (const [id, corps] of Object.entries(TART)) out[`tri/${id}`] = carre(corps);
-for (const [id, corps] of Object.entries(VART)) out[`volcan/${id}`] = carre(corps);
-// les mots du jeu des syllabes qui n'ont pas d'image dans l'imagier (pas d'emoji pour eux)
-for (const id of ["tipi", "domino"]) out[`mots/${id}`] = carre(PICTO[id]);
+// Une image de 100 × 100, et une marge de 5 tout autour (certains dessins débordent un peu de leur carré). L'atelier
+// refuse un dessin qui touche le bord de ce cadre : ce qui dépasse serait coupé. Les dessins qui dépassent davantage
+// (la fumée d'une cheminée) ont une toile plus haute ; leur image se pose toujours depuis le coin du carré.
+const DEBORDE: Record<string, number> = { "goutte/neige": 4, "dechets/verrerie": 11, "dechets/usine_chaleur": 13 };
+const carre = (nom: string, corps: string): Source => {
+  const haut = DEBORDE[nom] ?? 0;
+  const vb: [number, number, number, number] = [-5, -5 - haut, 110, 110 + haut];
+  const s: Source = { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${vb.join(" ")}">${corps}</svg>`, vb, S: 3, carre: true };
+  return haut ? { ...s, cadre: [110, 110], decalage: [0, -haut] } : s;
+};
+for (const [id, corps] of Object.entries(ART)) out[`goutte/${id}`] = carre(`goutte/${id}`, corps);
+for (const [id, corps] of Object.entries(DART)) out[`dechets/${id}`] = carre(`dechets/${id}`, corps);
+for (const [id, corps] of Object.entries(TART)) out[`tri/${id}`] = carre(`tri/${id}`, corps);
+for (const [id, corps] of Object.entries(VART)) out[`volcan/${id}`] = carre(`volcan/${id}`, corps);
+// les mots du jeu des syllabes sans image juste dans l'imagier : le tipi et le domino (pas d'emoji), et midi (l'horloge
+// de l'imagier n'a ni chiffres ni graduations ; Plume dit « une horloge qui montre midi »)
+for (const id of ["tipi", "domino", "midi"]) out[`mots/${id}`] = carre(`mots/${id}`, PICTO[id]);
 
 // La rue du camion poubelle, en trois calques du même cadre : le fond (avec un ciel et deux nuages, qui ne sont que
 // dans le dessin peint), le camion (il repart), l'éboueur.
 const rue = rueTrace().replace(/<svg [^>]*>/, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${RUE.w} ${RUE.h}">`);
 const ciel = `<g class="dciel"><rect x="0" y="0" width="${RUE.w}" height="114" fill="#DDF1FA"/>`
   + `<path d="M222 30 H262 A10 10 0 0 0 260 12 A14 14 0 0 0 236 11 A11 11 0 0 0 222 30 Z" fill="#FFFFFF"/>`
-  + `<path d="M58 24 H88 A8 8 0 0 0 86 10 A11 11 0 0 0 68 9 A9 9 0 0 0 58 24 Z" fill="#FFFFFF"/>`
-  + `<path d="M118 112 V86" stroke="#7A5A3A" stroke-width="4"/><circle cx="118" cy="78" r="13" fill="#7CC26A"/><circle cx="110" cy="86" r="9" fill="#6BB45B"/><circle cx="127" cy="85" r="9" fill="#6BB45B"/></g>`;
+  + `<path d="M58 24 H88 A8 8 0 0 0 86 10 A11 11 0 0 0 68 9 A9 9 0 0 0 58 24 Z" fill="#FFFFFF"/></g>`;
 const fond = rue.replace('<g class="dfond">', `${ciel}<g class="dfond">`);
 out["dechets/rue-fond"] = { svg: fond, vb: [0, 0, RUE.w, RUE.h], S: 5, cacher: [".dtruck", ".deboueur", ".dlift"] };
 out["dechets/rue-camion"] = { svg: rue, vb: [0, 0, RUE.w, RUE.h], S: 5, seul: ".dtruck" };

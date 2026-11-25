@@ -32,15 +32,15 @@ export const PICTO: Record<string, string> = {
 const NAMED: Record<string, string> = { moto: "une moto", radio: "une radio", midi: "une horloge qui montre midi" };
 // Noms de pays déchiffrables : leur drapeau sert d'image pour écrire le mot.
 const COUNTRY_WORDS: Record<string, string> = { Mali: "ML", Panama: "PA", Togo: "TG", Cuba: "CU", Canada: "CA", Monaco: "MC" };
-// L'image de chaque mot à lire : celle de l'imagier, la même que dans les autres jeux (« midi » : l'horloge à midi) ;
-// le tipi et le domino, sans emoji, ont leur dessin repeint par l'atelier.
-const IMAGIER_MOTS: Record<string, string> = { moto: "🏍️", vélo: "🚲", lama: "🦙", sofa: "🛋️", piano: "🎹", radio: "📻", midi: "🕛" };
+// L'image de chaque mot à lire : celle de l'imagier, la même que dans les autres jeux. Le tipi et le domino (sans
+// emoji) et midi (l'horloge de l'imagier n'a ni chiffres ni graduations) ont leur dessin repeint par l'atelier.
+const IMAGIER_MOTS: Record<string, string> = { moto: "🏍️", vélo: "🚲", lama: "🦙", sofa: "🛋️", piano: "🎹", radio: "📻" };
 function pictureOf(w: string) {
   if (COUNTRY_WORDS[w]) return flagSVG(COUNTRY_WORDS[w], false);
   if (!PICTO[w]) return "";
   const im = IMAGIER_MOTS[w] ? imageImagier(IMAGIER_MOTS[w]) : undefined;
   if (im) return `<span class="mot-image" aria-hidden="true">${imgImagier(im.fichier)}</span>`;
-  if (image(`mots/${w}`)) return picto(`mots/${w}`, "mot-image");
+  if (image(`mots/${w}`)) return picto(`mots/${w}`);
   return `<svg viewBox="0 0 100 100" aria-hidden="true" style="display:block;width:100%;height:100%">${PICTO[w]}</svg>`;
 }
 

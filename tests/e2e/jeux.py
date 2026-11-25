@@ -205,22 +205,36 @@ with sync_playwright() as pw:
         verifie(vu, f"{tag} : goûter, la boîte vide a été vue")
 
         # ---- livraison 4 bis : les dessins repeints sont bien là, chargés, et plus aucun tracé dans ces jeux
-        for act, isl, lv, graine in (("goutte", "decouvertes", 1, 3), ("goutte", "decouvertes", 3, 5), ("dechets", "decouvertes", 2, 5),
+        for act, isl, lv, graine in (("goutte", "decouvertes", 1, 3), ("goutte", "decouvertes", 3, 5), ("goutte", "decouvertes", 3, 11),
+                                     ("syllabes", "mots", 6, 1), ("dechets", "decouvertes", 2, 5),
                                      ("dechets", "decouvertes", 1, 11), ("tri", "decouvertes", 1, 3), ("volcan", "decouvertes", 4, 5),
                                      ("drapeau", "port", 4, 3), ("syllabes", "mots", 6, 5)):
             ctx, page = ouvrir(b, W, H, isl, act, {act: {"level": lv, "up": 0, "down": 0}}, graine)
             it = suivant(page, None)
             page.wait_for_timeout(600)
-            etat = page.evaluate("""() => { const imgs = [...document.querySelectorAll('.stage .picto img, .stage .mot-image img, .stage image, .stage .poubelle img')];
-              const ok = imgs.filter((i) => i.tagName === 'image' || (i.complete && i.naturalWidth > 0)).length;
-              const traces = [...document.querySelectorAll('.stage .wart > svg, .stage .titem > svg, .stage .tbinart > svg, .stage .card > svg:not([aria-label^="Drapeau"])')].length;
-              return { n: imgs.length, ok, traces }; }""")
+            etat = page.evaluate("""async () => {
+              const imgs = [...document.querySelectorAll('.stage .mot-image img, .stage image, .stage .poubelle img')];
+              let ok = 0;
+              for (const i of imgs) {
+                if (i.tagName.toLowerCase() === 'img') { if (i.complete && i.naturalWidth > 0) ok++; continue; }
+                // une <image> SVG : on charge son adresse pour de vrai
+                const im = new Image(); im.src = i.getAttribute('href');
+                try { await im.decode(); if (im.naturalWidth > 0) ok++; } catch (e) { /* pas chargée */ }
+              }
+              // l'image peinte d'un dessin n'est jamais étirée : à l'écran, elle garde les proportions de son image
+              const etirees = [...document.querySelectorAll('.stage svg.picto image')].filter((i) => {
+                const r = i.getBoundingClientRect(), w = +i.getAttribute('width'), h = +i.getAttribute('height');
+                return r.width > 0 && Math.abs((r.width / r.height) / (w / h) - 1) > 0.02;
+              }).length;
+              const traces = [...document.querySelectorAll('.stage .wart > svg:not(.picto), .stage .titem > svg:not(.picto), .stage .tbinart > svg:not(.picto), .stage .card > svg:not(.picto):not([aria-label^="Drapeau"])')].length;
+              return { n: imgs.length, ok, traces, etirees }; }""")
             nom = f"{act} niveau {lv} ({it and it.get('kind')})"
-            verifie(etat["n"] > 0 and etat["ok"] == etat["n"] and etat["traces"] == 0,
-                    f"{tag} : {nom}, {etat['n']} images peintes chargées, aucun tracé ({etat})")
+            verifie(etat["n"] > 0 and etat["ok"] == etat["n"] and etat["traces"] == 0 and etat["etirees"] == 0,
+                    f"{tag} : {nom}, {etat['n']} images peintes chargées, aucune étirée, aucun tracé ({etat})")
             if act == "drapeau" and it and it.get("kind") == "carte":
-                cont = page.evaluate("() => [...document.querySelectorAll('.monde [data-cont]')].map((p) => getComputedStyle(p).fill)")
-                verifie(cont and all(c == "rgba(0, 0, 0, 0)" for c in cont), f"{tag} : la carte peinte, continents à toucher transparents ({len(cont)})")
+                cont = page.evaluate("() => [...document.querySelectorAll('.monde [data-cont]')].map((p) => [getComputedStyle(p).fill, getComputedStyle(p).stroke])")
+                verifie(cont and all(f == "rgba(0, 0, 0, 0)" and s == "rgba(0, 0, 0, 0)" for f, s in cont),
+                        f"{tag} : la carte peinte, continents à toucher transparents, trait compris ({len(cont)})")
             page.screenshot(path=str(SHOTS / f"4bis-{act}-n{lv}-{tag}.png"))
             ctx.close()
     b.close()

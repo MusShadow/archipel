@@ -1,6 +1,6 @@
 // Styles des écrans (carte, accueil, coin calme, carnet, fin de séance, espace parent).
 export const SCREENS_CSS = `
-.hint-cont{stroke:#FFC145!important;stroke-width:9px!important;animation:contglow 1s ease-in-out infinite}
+.hint-cont{stroke:#FFC145!important;stroke-width:9px!important;animation:contglow 1s ease-in-out 3}
 @keyframes contglow{50%{opacity:.6}}
 /* Accueil */
 .start{align-items:center;justify-content:center;gap:max(10px,calc(var(--u) * 22));background:linear-gradient(180deg,var(--cream) 0,var(--cream) 82%,#BFE8EE 82%,#A6DCE5 100%)}

@@ -402,7 +402,8 @@ function renderCamion(item: DechetsItem, view: View) {
     if (!view.stage.isConnected) return;
     sfx.whoosh();
     bin.style.transformOrigin = "100% 0%";
-    const up = `translate(${tx + br.width * 0.25}px,${ty - br.height * 0.62}px) rotate(112deg)`;
+    // la poubelle bascule au-dessus du camion sans sortir de la rue : on voit son couvercle s'ouvrir
+    const up = `translate(${tx + br.width * 0.22}px,${ty}px) rotate(95deg)`;
     await animate(bin, [{ transform: `translate(${tx}px,${ty}px) rotate(0deg)` }, { transform: up }], 700);
     bin.classList.add("open"); sfx.rumble(0.5);
     await sleep(380);
@@ -462,6 +463,13 @@ function renderCamion(item: DechetsItem, view: View) {
       const f = h("span", { class: "dfinger", "aria-hidden": "true", html: emoji("👆") });
       wrap.appendChild(f);
       const a = `${((RUE.bin.x + RUE.bin.s / 2) / RUE.w) * 100}%`, c = `${((RUE.lift.x + RUE.lift.w * 0.36) / RUE.w) * 100}%`;
+      // « Réduire les animations » : le doigt se pose sur la poubelle, sans glisser (une animation lancée par le script
+      // n'est pas arrêtée par la règle CSS)
+      if (typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        Object.assign(f.style, { left: a, top: "62%", opacity: "1" });
+        window.setTimeout(() => f.remove(), 3000);
+        return;
+      }
       f.animate([{ left: a, top: "62%", opacity: 0 }, { left: a, top: "62%", opacity: 1, offset: 0.15 }, { left: c, top: "60%", opacity: 1, offset: 0.8 }, { left: c, top: "60%", opacity: 0 }],
         { duration: 1700, iterations: 3 }).onfinish = () => f.remove();
     },
