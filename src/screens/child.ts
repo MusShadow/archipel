@@ -456,14 +456,16 @@ function islandScreen(id: IleId, acts: Entry[], advised: Entry | undefined) {
       ...(presenter ? acts.filter((a) => ok(a, p)).map((a) => ({ t: a.pitch, act: a.id, pause: 400 })) : []),
       ...(conseil ? [{ t: conseil, act: "", pause: 0 }] : []),
     ];
+    const dernier = [...lignes].reverse().find((l) => l.act);
     for (const l of lignes) {
       if (r !== run) return;
       const b = pills.get(l.act);
-      if (l.act && presenter && vues[id] !== jourDe(Date.now())) { vues[id] = jourDe(Date.now()); app.save(); }
       if (l.salut) vivant?.coucou();
       b?.classList.add("saying");
       await say(l.t);
       b?.classList.remove("saying");
+      // tous les lieux ont été présentés : c'est fait pour aujourd'hui (un départ avant la fin, on présentera encore)
+      if (l === dernier && r === run) { vues[id] = jourDe(Date.now()); app.save(); }
       if (l.pause) await sleep(l.pause);
     }
   }

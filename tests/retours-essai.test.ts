@@ -58,6 +58,23 @@ describe("les exercices ne reviennent pas d'un jour à l'autre", () => {
     expect((it as any).prompt.startsWith("q2-")).toBe(true);
     expect(vus1.has(identityOf(petit, it))).toBe(true);
   });
+  test("tout le niveau vu dans cette séance, les niveaux du dessous vus avant : une révision plutôt qu'une répétition", () => {
+    const p: any = {};
+    const avant = Date.now() - 86_400_000;
+    // les séances passées ont tout montré, aux deux niveaux
+    const vieux: Record<string, number> = {};
+    for (let i = 0; i < 400; i++) { for (const lv of [1, 2]) { const it = petit.generate(lv, ctxDe(i)); vieux[identityOf(petit, it)] = avant - 1000 + i; } }
+    memoireExercices(p, "petit", vieux)();
+    // aujourd'hui : le niveau 2 en entier, puis encore un exercice
+    const s: Record<string, number> = {};
+    memoireExercices(p, "petit", s);
+    const debut = Date.now() - 10;
+    for (let i = 0; i < 10; i++) freshItem(petit, 2, ctxDe(1000 + i), s, 200, debut);
+    const vusAujourdhui = new Set(Object.entries(s).filter(([, t]) => t >= debut).map(([k]) => k));
+    const it = freshItem(petit, 2, ctxDe(2000), s, 200, debut);
+    expect((it as any).prompt.startsWith("q1-")).toBe(true); // une révision du niveau 1…
+    expect(vusAujourdhui.has(identityOf(petit, it))).toBe(false); // …pas une question déjà posée aujourd'hui
+  });
   test("tout vu dans la séance même : une révision au niveau du dessous, comme avant", () => {
     const s: Record<string, number> = {};
     const debut = Date.now() - 1000;
@@ -77,16 +94,21 @@ describe("les exercices ne reviennent pas d'un jour à l'autre", () => {
     const d = normalize({ profiles: [{ id: "a", name: "Lou", vus: { x: { k1: 5 } }, ilesPresentees: { mots: "2026-11-26" } }] });
     expect(d.profiles[0].vus).toEqual({ x: { k1: 5 } });
     expect(d.profiles[0].ilesPresentees).toEqual({ mots: "2026-11-26" });
+    // une sauvegarde abîmée ne fait rien planter : on ne garde que des dates
+    const abime = normalize({ profiles: [{ id: "b", name: "Lou", vus: { syllabes: 5, tri: [1, 2], goutte: { a: 3, b: "x" } }, ilesPresentees: [1] }] });
+    expect(abime.profiles[0].vus).toEqual({ goutte: { a: 3 } });
+    expect(abime.profiles[0].ilesPresentees).toEqual({});
   });
 });
 
 describe("la voix", () => {
   test("les consonnes finales qui se prononcent : corrections écrites pour la voix", () => {
     const pron = JSON.parse(readFileSync(join(root, "voix/prononciation.json"), "utf8"));
-    const fix = (s: string) => { for (const [a, b] of pron.corrections) s = s.replace(new RegExp(a, "gi"), b); return s; };
+    // (les remplacements sont écrits pour Python : « \\1 » ; en JavaScript, « $1 »)
+    const fix = (s: string) => { for (const [a, b] of pron.corrections) s = s.replace(new RegExp(a, "gi"), b.replace(/\\(\d)/g, "$$$1")); return s; };
     expect(fix("Kiki préfère les trains aux nounours.")).toContain("nounourse");
     expect(fix("Cet ours en peluche.")).toContain("ourse");
-    expect(fix("La vis est en métal.")).toContain("visse");
+    expect(fix("La vis est en métal.")).toBe("La visse est en métal.");
     expect(fix("Les coquilles d'œuf.")).toContain("d'œuffe");
     expect(fix("Un masque à gaz.")).toContain("gaze");
     expect(fix("Le tronc.")).toContain("tron.");
@@ -108,21 +130,21 @@ describe("la voix", () => {
     }
   });
   test("chaque phrase écrite en toutes lettres dans les activités a sa voix enregistrée (comme « Regarde bien le modèle »)", () => {
+    // toutes les phrases écrites telles quelles (entre guillemets, apostrophes ou accents graves, sans morceau variable),
+    // où qu'elles soient : dans say(…), answer(…), une liste de constantes (BANDES_FAUSSES)… Les dessins (*_art.ts) à part.
+    const LIT = /"((?:[^"\\\n]|\\.)*)"|'((?:[^'\\\n]|\\.)*)'|`((?:[^`\\$]|\\.)*)`/g;
     const manque: string[] = [];
-    for (const f of readdirSync(join(root, "src/activities")).filter((x) => x.endsWith(".ts"))) {
+    let n = 0;
+    for (const f of readdirSync(join(root, "src/activities")).filter((x) => x.endsWith(".ts") && !x.endsWith("_art.ts"))) {
       const src = readFileSync(join(root, "src/activities", f), "utf8");
-      // les arguments des appels qui parlent : say("…"), answer(…, "…") et les phrases rangées pour eux
-      const re = /(?:\.say|answer)\(/g;
-      let m: RegExpExecArray | null;
-      while ((m = re.exec(src))) {
-        let i = m.index + m[0].length, depth = 1;
-        while (i < src.length && depth) { const c = src[i++]; if (c === "(") depth++; else if (c === ")") depth--; }
-        for (const lit of src.slice(m.index, i).matchAll(/"((?:[^"\\]|\\.)*)"/g)) {
-          const t = lit[1];
-          if (t.split(" ").length >= 2 && /[.!?…]$/.test(t) && !planText(t, index)) manque.push(`${f} : ${t}`);
-        }
+      for (const m of src.matchAll(LIT)) {
+        const t = (m[1] ?? m[2] ?? m[3] ?? "").replace(/\\'/g, "'");
+        if (!/^[A-ZÀÂÉÈÊÎÔÙÇ«]/.test(t) || t.split(" ").length < 3 || !/[.!?…]$/.test(t) || /[<>{}=]/.test(t)) continue;
+        n++;
+        if (!planText(t, index)) manque.push(`${f} : ${t}`);
       }
     }
+    expect(n).toBeGreaterThan(60);
     for (const x of atelier.voiceLines()) if (!planText(x.text, index)) manque.push(`atelierdrapeaux : ${x.text}`);
     expect(manque).toEqual([]);
   });

@@ -8,7 +8,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { ACTIVITIES } from "../../src/activities";
-import { SENTINEL_NAME, clauses, elideName, finalize, keyOf, sentences, syllabeSeule, tokenize } from "../../src/voix";
+import { SENTINEL_NAME, clauses, elideName, familleSyllabes, finalize, keyOf, sentences, seule, syllabeSeule, tokenize } from "../../src/voix";
 
 const root = join(import.meta.dir, "../..");
 const inv: { text: string; src: string[] }[] = JSON.parse(readFileSync(process.env.INV ?? join(root, "voix/inventaire.json"), "utf8"));
@@ -102,7 +102,7 @@ const COMPLETE = ["goutte:", "volcan:", "tri:", "dechets:"];
 const kept = previous.filter((c) => !clips.has(c.key) && !FAUTIVES.has(c.key) && !c.fams.every((f) => COMPLETE.some((x) => f.startsWith(x)))
   && !c.fams.some((f) => syllabeSeule(c.text, f))
   // les anciennes phrases du jeu des syllabes qui finissaient par une syllabe sans pause (« Touche u. ») : remplacées
-  && !(c.fams.some((f) => f.startsWith("syllabes")) && c.text.trim().split(/\s+/).length > 1 && /(?:^|[\s:,])[\p{L}'’]{1,3}\s*[.!?]*$/u.test(c.text.trim())));
+  && !(c.fams.some(familleSyllabes) && c.text.trim().split(/\s+/).length > 1 && seule(c.text.replace(/[\s.!?,:;…«»]+$/u, "").split(/\s+/).pop()!)));
 const out = [...kept.map((c) => ({ ...c })), ...[...clips.values()].map((c) => ({
   key: c.key, text: c.text, say: spoken(c.text),
   pack: c.packs.size === 1 ? [...c.packs][0] : "commun",

@@ -369,6 +369,8 @@ export const INTROS: Record<string, { text: string; art: string[] }> = {
   [MOINS]: { text: "Le meilleur déchet, c'est celui qu'on ne fait pas ! Aide Basile à faire moins de déchets.", art: ["gourde", "sac_tissu"] },
 };
 const introShown = new WeakMap<Ctx, Set<string>>();
+// « Réduire les animations » de l'iPad : rien ne tombe, rien ne glisse tout seul.
+const reduitAnim = () => typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // ---------- 1. La rue : glisser la poubelle jusqu'au camion ----------
 interface Rue { help: () => Promise<void>; show: () => void; hint: () => void }
@@ -395,7 +397,7 @@ function renderCamion(item: DechetsItem, view: View) {
   // La poubelle ouverte se vide : trois déchets de ce bac tombent dans la benne du camion (rien avec « réduire les
   // animations », ni sans animations dans le navigateur).
   function verser() {
-    if (!document.body.animate || (typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
+    if (!document.body.animate || reduitAnim()) return;
     const ids = THINGS.filter((x) => b.cats.includes(x.cat) && TART[x.id]).map((x) => x.id);
     const wr = wrap.getBoundingClientRect(), br = bin.getBoundingClientRect(), tr = truck.getBoundingClientRect();
     if (!ids.length || !wr.width) return;
@@ -405,7 +407,7 @@ function renderCamion(item: DechetsItem, view: View) {
     const yBenne = tr.top + tr.height * 0.12 - taille / 2;
     ids.sort(() => Math.random() - 0.5).slice(0, 3).forEach((id, i) => {
       const d = h("span", { class: "dchute", "aria-hidden": "true", html: tartSVG(id) });
-      d.style.width = d.style.height = `${(taille / wr.width) * 100}%`;
+      d.style.width = `${(taille / wr.width) * 100}%`; d.style.height = `${(taille / wr.height) * 100}%`;
       d.style.left = `${((x0 - wr.left) / wr.width) * 100}%`;
       d.style.top = `${((y0 - wr.top) / wr.height) * 100}%`;
       wrap.appendChild(d);
@@ -415,7 +417,7 @@ function renderCamion(item: DechetsItem, view: View) {
         { transform: `translate(${dx * 0.35}px,${-taille * 0.15}px) rotate(${25 + i * 20}deg) scale(1)`, opacity: 1, offset: 0.25 },
         { transform: `translate(${dx}px,${dy}px) rotate(${80 + i * 35}deg) scale(.95)`, opacity: 1, offset: 0.82 },
         { transform: `translate(${dx * 1.05}px,${dy + taille * 0.35}px) rotate(${95 + i * 35}deg) scale(.9)`, opacity: 0 },
-      ], { duration: 680, delay: i * 140, easing: "cubic-bezier(.4,.05,.7,.65)", fill: "both" });
+      ], { duration: 620, delay: i * 90, easing: "cubic-bezier(.4,.05,.7,.65)", fill: "both" });
       a.onfinish = a.oncancel = () => d.remove();
     });
   }
@@ -434,7 +436,7 @@ function renderCamion(item: DechetsItem, view: View) {
     await animate(bin, [{ transform: `translate(${tx}px,${ty}px) rotate(0deg)` }, { transform: up }], 700);
     bin.classList.add("open"); sfx.rumble(0.5);
     verser();
-    await sleep(380);
+    await sleep(reduitAnim() ? 380 : 820); // la poubelle reste ouverte le temps que les déchets tombent
     bin.classList.remove("open");
     await animate(bin, [{ transform: up }, { transform: `translate(${tx}px,${ty}px) rotate(0deg)` }], 520);
     if (!view.stage.isConnected) return;
@@ -493,7 +495,7 @@ function renderCamion(item: DechetsItem, view: View) {
       const a = `${((RUE.bin.x + RUE.bin.s / 2) / RUE.w) * 100}%`, c = `${((RUE.lift.x + RUE.lift.w * 0.36) / RUE.w) * 100}%`;
       // « Réduire les animations » : le doigt se pose sur la poubelle, sans glisser (une animation lancée par le script
       // n'est pas arrêtée par la règle CSS)
-      if (typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      if (reduitAnim()) {
         Object.assign(f.style, { left: a, top: "62%", opacity: "1" });
         window.setTimeout(() => f.remove(), 3000);
         return;

@@ -54,6 +54,17 @@ export function loadData(): AppData {
   } catch { /* stockage indisponible : on repart d'un état vide */ }
   return defaultData();
 }
+// La mémoire des exercices vus, telle qu'on la relit : des objets de dates, rien d'autre (une sauvegarde abîmée ne
+// fait pas planter l'ouverture d'une activité).
+const memoireValide = (v: any): Record<string, Record<string, number>> => {
+  if (!v || typeof v !== "object" || Array.isArray(v)) return {};
+  const out: Record<string, Record<string, number>> = {};
+  for (const [act, m] of Object.entries(v)) {
+    if (!m || typeof m !== "object" || Array.isArray(m)) continue;
+    out[act] = Object.fromEntries(Object.entries(m as Record<string, unknown>).filter(([, t]) => typeof t === "number" && Number.isFinite(t))) as Record<string, number>;
+  }
+  return out;
+};
 export function normalize(d: any): AppData {
   const base = defaultData();
   if (!d || typeof d !== "object") return base;
@@ -67,8 +78,9 @@ export function normalize(d: any): AppData {
     stories: Array.isArray(p.stories) ? p.stories : [],
     myFlag: p.myFlag && typeof p.myFlag === "object" ? p.myFlag : undefined,
     avatar: estCompagnon(p.avatar) ? p.avatar : undefined,
-    vus: p.vus && typeof p.vus === "object" ? p.vus : {},
-    ilesPresentees: p.ilesPresentees && typeof p.ilesPresentees === "object" ? p.ilesPresentees : {},
+    vus: memoireValide(p.vus),
+    ilesPresentees: p.ilesPresentees && typeof p.ilesPresentees === "object" && !Array.isArray(p.ilesPresentees)
+      ? Object.fromEntries(Object.entries(p.ilesPresentees).filter(([, v]) => typeof v === "string")) as Record<string, string> : {},
   })) : [];
   attribuerCompagnons(profiles);
   return { version: 1, pin: typeof d.pin === "string" ? d.pin : null, settings: { ...base.settings, ...(d.settings ?? {}), tri: { ...defaultTri(), ...(d.settings?.tri ?? {}) } }, profiles, activeId: d.activeId ?? null };

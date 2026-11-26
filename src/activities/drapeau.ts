@@ -156,7 +156,7 @@ export const drapeau: ActivityModule<FlagItem> = {
       if (shape) shape.classList.add("hint-cont");
       return step === 3 ? `Cherche ${cont.label}, je te la montre.` : `Touche ${cont.label}, qui brille.`;
     }
-    if (step === 1) return item.kind === "lire" ? `Ça commence par « ${fl.syl![0]} ».` : item.prompt;
+    if (step === 1) return item.kind === "lire" ? `Ça commence par : « ${fl.syl![0]} ».` : item.prompt;
     if (step === 2) return item.kind === "lire" ? `Ça se lit « ${fl.name} ».` : `Le drapeau ${fl.of}, c'est ${fl.desc}.`;
     if (step === 3) {
       const wrong = cards.filter((c) => c.dataset.code !== item.target && c.style.opacity !== "0.25");

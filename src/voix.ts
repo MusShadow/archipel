@@ -2,6 +2,7 @@
 // lu à la place de la synthèse vocale de l'appareil chaque fois que c'est possible.
 // Ce fichier contient la partie texte (sans DOM, testée) : découpage en mots, clés, prénom de l'enfant, plan de lecture.
 // Le lecteur audio (AudioContext) est dans services.ts.
+import { SAY_SYL, SYL_CONSONANTS, SYL_VOWELS } from "./content";
 
 // Prénom fictif utilisé par l'inventaire des phrases : il ne doit jamais rester dans un clip.
 export const SENTINEL_NAME = "Zéphyrine";
@@ -123,10 +124,17 @@ export function clauses(sentence: string): string[] {
 // Une syllabe ou une lettre seule dans une phrase du jeu des syllabes (« Touche : u. », « Oui, u ! ») : dans une phrase
 // entière, la voix l'avalait (« Écoute bien : i. » s'entendait « Écoute bien »). On enregistre les morceaux à part : la
 // lecture recolle « Touche, » et « u. » (le clip de la lettre seule, contrôlé), avec une pause entre les deux.
-const SEULE = /^[\p{L}'’]{1,3}[\s.!?,:;…]*$/u;
-const MOTS_COURTS = /^(ça|oui|non|et|ou)\b/iu; // « Ça, … », « Oui, … » : des mots, pas des syllabes
-export const syllabeSeule = (s: string, f: string) => f.startsWith("syllabes") && clauses(s).length > 1
-  && clauses(s).some((c) => SEULE.test(c.trim()) && !MOTS_COURTS.test(c.trim()));
+// Une syllabe dite seule : une de celles du jeu, telle que la voix la dit (« so » se dit « seau »), ou un morceau de
+// une à trois lettres ; « Ça, … », « Oui, … » sont des mots.
+const SYLLABES_DITES = new Set([...SYL_CONSONANTS.flatMap((c) => SYL_VOWELS.map((v) => c + v)), ...SYL_VOWELS].map((x) => (SAY_SYL[x] ?? x).toLowerCase()));
+const MOTS_COURTS = new Set(["ça", "oui", "non", "et", "ou"]);
+export const seule = (c: string) => {
+  const w = c.trim().replace(/[«»"“”]/gu, "").replace(/[\s.!?,:;…]+$/u, "").trim().toLowerCase();
+  return !MOTS_COURTS.has(w) && (SYLLABES_DITES.has(w) || /^[\p{L}'’]{1,3}$/u.test(w));
+};
+// Les jeux qui disent des syllabes seules : le jeu des syllabes, « lis et trouve », lire un nom de pays (drapeaux).
+export const familleSyllabes = (f: string) => /^(syllabes|lis|drapeau)(:|$)/.test(f);
+export const syllabeSeule = (s: string, f: string) => familleSyllabes(f) && clauses(s).length > 1 && clauses(s).some(seule);
 
 // ---------- Index du pack de voix ----------
 // clips : clé → [paquet, début, longueur (octets), durée (ms)]. Les paquets sont des MP3 mis bout à bout.

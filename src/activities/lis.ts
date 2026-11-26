@@ -101,7 +101,7 @@ export const lis: ActivityModule<LisItem> = {
     const first = item.words.find((x): x is ReadWord => typeof x !== "string")!;
     if (step === 1) return item.kind === "mot" ? "Lis chaque morceau de couleur, puis colle-les ensemble." : "Lis les mots un par un. Les mots soulignés, ce sont des petits mots qu'on connaît par cœur.";
     if (step === 2) {
-      if (item.kind === "mot") return `Ça commence par « ${first.syl[0]} ».`;
+      if (item.kind === "mot") return `Ça commence par : « ${first.syl[0]} ».`;
       const sight = item.words.filter((x): x is string => typeof x === "string");
       return `Les petits mots soulignés se lisent : ${sight.join(", ")}.`;
     }

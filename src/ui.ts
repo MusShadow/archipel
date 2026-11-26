@@ -92,8 +92,8 @@ export function avatarSVG(initial: string, color: string) {
 export function roundBtn(opts: { icon?: string; html?: string; label: string; onclick: (e: Event) => void; cls?: string; color?: string }) {
   return h("button", { type: "button", class: `round ${opts.cls ?? ""}`, "aria-label": opts.label, onclick: opts.onclick, html: opts.html ?? icon(opts.icon ?? "home", opts.color) });
 }
-export function dots(total: number, current: number) {
-  const wrap = h("div", { class: "dots", role: "img", "aria-label": `Question ${Math.min(current + 1, total)} sur ${total}` });
+export function dots(total: number, current: number, question = current) {
+  const wrap = h("div", { class: "dots", role: "img", "aria-label": `Question ${Math.min(question + 1, total)} sur ${total}` });
   for (let i = 0; i < total; i++) wrap.appendChild(h("span", { class: i < current ? "dot done" : i === current ? "dot cur" : "dot" }));
   return wrap;
 }

@@ -2,7 +2,7 @@
 // et fabriquer.py) ; ici, on les pose et on les anime.
 // - En continu et discret : les reflets de la mer ondulent, des étincelles s'allument, les nuages dérivent, la fumée du
 //   volcan monte, les palmes se balancent, le bateau tangue, deux papillons volettent, l'hôte respire et cligne des yeux ;
-//   Basile salue une fois, à l'arrivée.
+//   l'hôte salue quand Plume dit qu'il fait coucou (Basile agite le bras, les autres sautillent).
 // - Des surprises rares, une à la fois, toutes les 20 à 60 secondes : le dauphin, la baleine au loin, les oiseaux, et celle
 //   de l'île (le poisson de l'étang et le saut de la grenouille, le souffle de Mona, le ballon de Rico, la grosse bouffée
 //   du volcan, l'arc-en-ciel, les cœurs de Pico, le voilier du Port).

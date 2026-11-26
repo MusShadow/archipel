@@ -102,9 +102,19 @@ def play_camion(page, prefix, it, n, mode):
         drag_to(page, ".dbin", tx, ty, shot_name=f"{prefix}-camion-glisse" if f"glisse-{prefix}" not in shots else None)
         shots.add(f"glisse-{prefix}")
         gestures.add("glisser")
-    page.wait_for_timeout(2400)
+    # la poubelle se vide : des déchets de ce bac tombent dans le camion pendant qu'elle bascule
+    try:
+        page.wait_for_selector(".dchute", timeout=2000)
+        chute = page.locator(".dchute").count()
+    except Exception:
+        chute = 0
+    if chute == 0:
+        errors.append(f"{prefix} : rien ne tombe de la poubelle dans le camion")
+    page.wait_for_timeout(1400)
     if page.locator(".drue.dgo").count() == 0 and page.locator(".drue").count():
         errors.append(f"{prefix} : le camion n'est pas reparti")
+    if page.locator(".dchute").count():
+        errors.append(f"{prefix} : des déchets restent à l'écran après le départ du camion")
     elif "camion-part" not in shots:
         shots.add("camion-part"); shot(page, f"{prefix}-camion-part", 50)
     page.wait_for_timeout(900)

@@ -226,15 +226,15 @@ export const syllabes: ActivityModule<SylItem> = {
     if (item.kind === "mot") {
       const w = item.word!;
       if (step === 1) return `Écoute les morceaux : ${sylLine(w.syl)}.`;
-      if (step === 2) return `${w.w} commence par ${say(w.syl[0])}.`;
+      if (step === 2) return `${w.w} commence par : ${say(w.syl[0])}.`;
       b?.fillSlot(0, w.syl[0]);
       if (step === 3) return "Je pose le début. À toi pour la suite.";
       const t = b?.freeTile(w.syl[1]); if (t) glow(t);
-      return `La suite, c'est ${say(w.syl[1])}.`;
+      return `La suite, c'est : ${say(w.syl[1])}.`;
     }
     const w = item.word!;
     if (step === 1) return "Lis chaque morceau, puis colle-les ensemble.";
-    if (step === 2) return `Ça commence par ${say(w.syl[0])}.`;
+    if (step === 2) return `Ça commence par : ${say(w.syl[0])}.`;
     if (step === 3) return `Ça se lit : ${w.w}.`;
     const right = choiceEl(item.target); if (right) glow(right);
     return "C'est l'image qui brille.";

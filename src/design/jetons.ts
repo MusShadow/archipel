@@ -89,7 +89,7 @@ export const MOUVEMENTS = {
   // 60 secondes, jamais pendant que Plume parle.
   nuages: 46000, houle: 6500, etincelle: 5200, palmes: 5200, bateau: 3600, // ms, en continu (aller-retour)
   papillon: 1600, clignement: 5600, // ms : battement d'ailes d'un papillon, un clignement d'yeux
-  salut: 1800, // ms, une seule fois : Basile salue à l'arrivée sur l'île des Nombres
+  salut: 1800, // ms : Basile agite le bras quand Plume dit qu'il fait coucou (île des Nombres)
   surpriseMin: 20000, surpriseMax: 60000, // ms entre deux surprises
   courbes: {
     douce: "cubic-bezier(0.3, 0.7, 0.3, 1)", // arrivée qui ralentit

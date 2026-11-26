@@ -297,6 +297,21 @@ describe("le chef d'orchestre des surprises", () => {
     expect(cadre.classList.contains("viv-pause")).toBe(false);
     expect(h.suivante()!.ms).toBeGreaterThanOrEqual(MOUVEMENTS.surpriseMin);
   });
+  withDom("l'hôte salue au moment où Plume dit qu'il fait coucou : Basile agite le bras, les autres sautillent ; rien avec « Réduire les animations »", () => {
+    const h = horloge();
+    const n = monter(h.env, "nombres");
+    const bras = n.cadre.querySelector(".viv-bras")!;
+    expect(bras.classList.contains("salue")).toBe(false); // plus de salut tout seul à l'arrivée
+    n.v.coucou();
+    expect(bras.classList.contains("salue")).toBe(true);
+    const m = monter(h.env, "mots");
+    m.v.coucou();
+    expect(m.cadre.querySelector(".viv-hote")!.classList.contains("saute")).toBe(true);
+    const r = monter(horloge({ reduit: () => true }).env, "mots");
+    r.v.coucou();
+    expect(r.cadre.querySelector(".viv-hote")!.classList.contains("saute")).toBe(false);
+    expect(() => monter(h.env, "port").v.coucou()).not.toThrow();
+  });
   withDom("avec « Réduire les animations », aucune surprise n'est programmée ni jouée", () => {
     const h = horloge({ reduit: () => true });
     const { v } = monter(h.env);

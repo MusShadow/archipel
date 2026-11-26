@@ -7814,6 +7814,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots",
    "syllabes:consigne",
    "syllabes:erreur",
@@ -8514,51 +8515,20 @@
   "words": 1,
   "fams": [
    "bip:indice",
-   "syllabes:erreur"
+   "syllabes:erreur",
+   "syllabes:indice"
   ]
  },
  {
-  "key": "ça commence par ca|.",
-  "text": "Ça commence par « ca ».",
-  "say": "Ça commence par ca.",
+  "key": "ça commence par|,",
+  "text": "Ça commence par :",
+  "say": "Ça commence par :",
   "pack": "commun",
-  "words": 4,
+  "words": 3,
   "fams": [
    "drapeau:indice",
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par mo|.",
-  "text": "Ça commence par « mo ».",
-  "say": "Ça commence par mo.",
-  "pack": "commun",
-  "words": 4,
-  "fams": [
-   "drapeau:indice",
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par pa|.",
-  "text": "Ça commence par « pa ».",
-  "say": "Ça commence par pa.",
-  "pack": "commun",
-  "words": 4,
-  "fams": [
-   "drapeau:indice",
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par to|.",
-  "text": "Ça commence par « to ».",
-  "say": "Ça commence par to.",
-  "pack": "commun",
-  "words": 4,
-  "fams": [
-   "drapeau:indice",
-   "lis:indice"
+   "lis:indice",
+   "syllabes:indice"
   ]
  },
  {
@@ -8578,7 +8548,10 @@
   "pack": "commun",
   "words": 1,
   "fams": [
-   "mots"
+   "drapeau:indice",
+   "lis:indice",
+   "mots",
+   "syllabes:indice"
   ]
  },
  {
@@ -9691,7 +9664,7 @@
  },
  {
   "key": "chat|.",
-  "text": "chat.",
+  "text": "« chat ».",
   "say": "chat.",
   "pack": "commun",
   "words": 1,
@@ -9959,6 +9932,17 @@
    "chants:indice",
    "mots",
    "options"
+  ]
+ },
+ {
+  "key": "cu|.",
+  "text": "« Cu ».",
+  "say": "Cu.",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "drapeau:indice",
+   "syllabes:indice"
   ]
  },
  {
@@ -10754,6 +10738,7 @@
   "words": 1,
   "fams": [
    "mots",
+   "syllabes:consigne",
    "syllabes:erreur",
    "syllabes:indice",
    "syllabes:reussite"
@@ -11394,12 +11379,14 @@
  },
  {
   "key": "ju|.",
-  "text": "ju",
-  "say": "ju",
+  "text": "« ju ».",
+  "say": "ju.",
   "pack": "commun",
   "words": 1,
   "fams": [
-   "mots"
+   "lis:indice",
+   "mots",
+   "syllabes:indice"
   ]
  },
  {
@@ -13722,11 +13709,12 @@
  },
  {
   "key": "li|.",
-  "text": "li",
-  "say": "li",
+  "text": "« li ».",
+  "say": "li.",
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots"
   ]
  },
@@ -13822,7 +13810,7 @@
  },
  {
   "key": "loup|.",
-  "text": "loup.",
+  "text": "« loup ».",
   "say": "loup.",
   "pack": "commun",
   "words": 1,
@@ -13843,6 +13831,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots",
    "syllabes:consigne",
    "syllabes:erreur",
@@ -13911,6 +13900,7 @@
   "fams": [
    "chants:erreur",
    "chants:indice",
+   "drapeau:indice",
    "mots",
    "syllabes:consigne",
    "syllabes:erreur",
@@ -14140,11 +14130,13 @@
  },
  {
   "key": "mo|.",
-  "text": "mo",
-  "say": "mo",
+  "text": "« mo ».",
+  "say": "mo.",
   "pack": "commun",
   "words": 1,
   "fams": [
+   "drapeau:indice",
+   "lis:indice",
    "mots"
   ]
  },
@@ -14213,11 +14205,12 @@
  },
  {
   "key": "mou|.",
-  "text": "mou",
-  "say": "mou",
+  "text": "« mou ».",
+  "say": "mou.",
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots"
   ]
  },
@@ -14252,7 +14245,7 @@
  },
  {
   "key": "mur|.",
-  "text": "mur.",
+  "text": "« mur ».",
   "say": "mur.",
   "pack": "commun",
   "words": 1,
@@ -14444,6 +14437,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots",
    "syllabes:consigne",
    "syllabes:erreur",
@@ -14757,11 +14751,13 @@
  },
  {
   "key": "pa|.",
-  "text": "pa",
-  "say": "pa",
+  "text": "« pa ».",
+  "say": "pa.",
   "pack": "commun",
   "words": 1,
   "fams": [
+   "drapeau:indice",
+   "lis:indice",
    "mots"
   ]
  },
@@ -14927,6 +14923,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "drapeau:indice",
    "mots",
    "syllabes:consigne",
    "syllabes:erreur",
@@ -14946,11 +14943,12 @@
  },
  {
   "key": "pi|.",
-  "text": "pi",
-  "say": "pi",
+  "text": "« pi ».",
+  "say": "pi.",
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots"
   ]
  },
@@ -15023,11 +15021,12 @@
  },
  {
   "key": "plu|.",
-  "text": "plu",
-  "say": "plu",
+  "text": "« plu ».",
+  "say": "plu.",
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots"
   ]
  },
@@ -15492,11 +15491,12 @@
  },
  {
   "key": "ra|.",
-  "text": "ra",
-  "say": "ra",
+  "text": "« ra ».",
+  "say": "ra.",
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots"
   ]
  },
@@ -15655,11 +15655,12 @@
  },
  {
   "key": "ro|.",
-  "text": "ro",
-  "say": "ro",
+  "text": "« ro ».",
+  "say": "ro.",
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots"
   ]
  },
@@ -15755,6 +15756,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots",
    "syllabes:consigne",
    "syllabes:erreur",
@@ -15859,6 +15861,7 @@
    "chants:indice",
    "mots",
    "options",
+   "syllabes:consigne",
    "syllabes:erreur",
    "syllabes:indice",
    "syllabes:reussite"
@@ -15913,11 +15916,12 @@
  },
  {
   "key": "so|.",
-  "text": "so",
-  "say": "so",
+  "text": "« so ».",
+  "say": "so.",
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots"
   ]
  },
@@ -16211,11 +16215,13 @@
  },
  {
   "key": "to|.",
-  "text": "to",
-  "say": "to",
+  "text": "« to ».",
+  "say": "to.",
   "pack": "commun",
   "words": 1,
   "fams": [
+   "drapeau:indice",
+   "lis:indice",
    "mots"
   ]
  },
@@ -17105,6 +17111,7 @@
   "fams": [
    "chants:erreur",
    "chants:indice",
+   "lis:indice",
    "mots",
    "syllabes:consigne",
    "syllabes:erreur",
@@ -17275,6 +17282,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots",
    "syllabes:consigne",
    "syllabes:erreur",
@@ -17313,6 +17321,7 @@
   "pack": "commun",
   "words": 1,
   "fams": [
+   "lis:indice",
    "mots",
    "syllabes:consigne",
    "syllabes:erreur",
@@ -17328,6 +17337,7 @@
   "words": 1,
   "fams": [
    "mots",
+   "syllabes:consigne",
    "syllabes:erreur",
    "syllabes:indice",
    "syllabes:reussite"
@@ -32145,11 +32155,11 @@
   ]
  },
  {
-  "key": "ami commence par a|.",
-  "text": "ami commence par a.",
-  "say": "ami commence par a.",
+  "key": "ami commence par|,",
+  "text": "ami commence par :",
+  "say": "ami commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -32355,26 +32365,6 @@
   ]
  },
  {
-  "key": "c'est a|.",
-  "text": "c'est a.",
-  "say": "c'est a.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est ba|.",
-  "text": "c'est ba.",
-  "say": "c'est ba.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
   "key": "c'est celle qui brille|,",
   "text": "C'est celle qui brille :",
   "say": "C'est celle qui brille :",
@@ -32485,46 +32475,6 @@
   ]
  },
  {
-  "key": "c'est dit|.",
-  "text": "c'est dit.",
-  "say": "c'est dit.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est dos|.",
-  "text": "c'est dos.",
-  "say": "c'est dos.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est fa|.",
-  "text": "c'est fa.",
-  "say": "c'est fa.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est go|.",
-  "text": "c'est go.",
-  "say": "c'est go.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
   "key": "c'est l'image qui brille|.",
   "text": "C'est l'image qui brille.",
   "say": "C'est l'image qui brille.",
@@ -32532,106 +32482,6 @@
   "words": 4,
   "fams": [
    "lis:indice"
-  ]
- },
- {
-  "key": "c'est la|.",
-  "text": "c'est la.",
-  "say": "c'est la.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est les|.",
-  "text": "c'est les.",
-  "say": "c'est les.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est lit|.",
-  "text": "c'est lit.",
-  "say": "c'est lit.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est lot|.",
-  "text": "c'est lot.",
-  "say": "c'est lot.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est ma|.",
-  "text": "c'est ma.",
-  "say": "c'est ma.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est mes|.",
-  "text": "c'est mes.",
-  "say": "c'est mes.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est mie|.",
-  "text": "c'est mie.",
-  "say": "c'est mie.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est na|.",
-  "text": "c'est na.",
-  "say": "c'est na.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est pie|.",
-  "text": "c'est pie.",
-  "say": "c'est pie.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "c'est tôt|.",
-  "text": "c'est tôt.",
-  "say": "c'est tôt.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:indice"
   ]
  },
  {
@@ -32725,26 +32575,6 @@
   ]
  },
  {
-  "key": "ça c'est faux|.",
-  "text": "Ça, c'est faux.",
-  "say": "Ça, c'est faux.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est seau|.",
-  "text": "Ça, c'est seau.",
-  "say": "Ça, c'est seau.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "ça c'est un domino|.",
   "text": "Ça, c'est un domino.",
   "say": "Ça, c'est un domino.",
@@ -32830,16 +32660,6 @@
   "say": "Ça, c'est une radio.",
   "pack": "mots",
   "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est veau|.",
-  "text": "Ça, c'est veau.",
-  "say": "Ça, c'est veau.",
-  "pack": "mots",
-  "words": 3,
   "fams": [
    "syllabes:erreur"
   ]
@@ -32945,90 +32765,9 @@
   ]
  },
  {
-  "key": "ça commence par ba|.",
-  "text": "Ça commence par « ba ».",
-  "say": "Ça commence par ba.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
   "key": "ça commence par chat|.",
   "text": "Ça commence par « chat ».",
   "say": "Ça commence par chat.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par dé|.",
-  "text": "Ça commence par « dé ».",
-  "say": "Ça commence par dé.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par dos|.",
-  "text": "Ça commence par dos.",
-  "say": "Ça commence par dos.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "ça commence par fée|.",
-  "text": "Ça commence par « fée ».",
-  "say": "Ça commence par fée.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par ju|.",
-  "text": "Ça commence par « ju ».",
-  "say": "Ça commence par ju.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par la|.",
-  "text": "Ça commence par « la ».",
-  "say": "Ça commence par la.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice",
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "ça commence par li|.",
-  "text": "Ça commence par « li ».",
-  "say": "Ça commence par li.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par lit|.",
-  "text": "Ça commence par « lit ».",
-  "say": "Ça commence par lit.",
   "pack": "mots",
   "words": 4,
   "fams": [
@@ -33043,218 +32782,6 @@
   "words": 4,
   "fams": [
    "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par lu|.",
-  "text": "Ça commence par « lu ».",
-  "say": "Ça commence par lu.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par mie|.",
-  "text": "Ça commence par mie.",
-  "say": "Ça commence par mie.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "ça commence par mot|.",
-  "text": "Ça commence par mot.",
-  "say": "Ça commence par mot.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "ça commence par mou|.",
-  "text": "Ça commence par « mou ».",
-  "say": "Ça commence par mou.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par mur|.",
-  "text": "Ça commence par « mur ».",
-  "say": "Ça commence par mur.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par nid|.",
-  "text": "Ça commence par « nid ».",
-  "say": "Ça commence par nid.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par o|.",
-  "text": "Ça commence par « o ».",
-  "say": "Ça commence par o.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par pi|.",
-  "text": "Ça commence par « pi ».",
-  "say": "Ça commence par pi.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par pie|.",
-  "text": "Ça commence par pie.",
-  "say": "Ça commence par pie.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "ça commence par plu|.",
-  "text": "Ça commence par « plu ».",
-  "say": "Ça commence par plu.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par ra|.",
-  "text": "Ça commence par « ra ».",
-  "say": "Ça commence par ra.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par rat|.",
-  "text": "Ça commence par « rat ».",
-  "say": "Ça commence par rat.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice",
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "ça commence par riz|.",
-  "text": "Ça commence par « riz ».",
-  "say": "Ça commence par riz.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par ro|.",
-  "text": "Ça commence par « ro ».",
-  "say": "Ça commence par ro.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par sa|.",
-  "text": "Ça commence par « sa ».",
-  "say": "Ça commence par sa.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par seau|.",
-  "text": "Ça commence par seau.",
-  "say": "Ça commence par seau.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "ça commence par so|.",
-  "text": "Ça commence par « so ».",
-  "say": "Ça commence par so.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par ti|.",
-  "text": "Ça commence par ti.",
-  "say": "Ça commence par ti.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "ça commence par tu|.",
-  "text": "Ça commence par « tu ».",
-  "say": "Ça commence par tu.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par va|.",
-  "text": "Ça commence par « va ».",
-  "say": "Ça commence par va.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice"
-  ]
- },
- {
-  "key": "ça commence par vé|.",
-  "text": "Ça commence par « vé ».",
-  "say": "Ça commence par vé.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "lis:indice",
-   "syllabes:indice"
   ]
  },
  {
@@ -33401,11 +32928,11 @@
   ]
  },
  {
-  "key": "canada commence par ca|.",
-  "text": "Canada commence par ca.",
-  "say": "Canada commence par ca.",
+  "key": "canada commence par|,",
+  "text": "Canada commence par :",
+  "say": "Canada commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -34514,11 +34041,11 @@
   ]
  },
  {
-  "key": "cuba commence par cu|.",
-  "text": "Cuba commence par cu.",
-  "say": "Cuba commence par cu.",
+  "key": "cuba commence par|,",
+  "text": "Cuba commence par :",
+  "say": "Cuba commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -34620,11 +34147,11 @@
   ]
  },
  {
-  "key": "domino commence par dos|.",
-  "text": "domino commence par dos.",
-  "say": "domino commence par dos.",
+  "key": "domino commence par|,",
+  "text": "domino commence par :",
+  "say": "domino commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -34678,16 +34205,6 @@
   ]
  },
  {
-  "key": "écoute bien faux|.",
-  "text": "Écoute bien : faux.",
-  "say": "Écoute bien : faux.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
   "key": "écoute bien la fin de chaque mot|,",
   "text": "Écoute bien la fin de chaque mot :",
   "say": "Écoute bien la fin de chaque mot :",
@@ -34718,26 +34235,6 @@
   ]
  },
  {
-  "key": "écoute bien seau|.",
-  "text": "Écoute bien : seau.",
-  "say": "Écoute bien : seau.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien veau|.",
-  "text": "Écoute bien : veau.",
-  "say": "Écoute bien : veau.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
   "key": "écoute bien|,",
   "text": "Écoute bien :",
   "say": "Écoute bien :",
@@ -34760,16 +34257,6 @@
   ]
  },
  {
-  "key": "écoute faux|.",
-  "text": "Écoute : faux.",
-  "say": "Écoute : faux.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "écoute les morceaux|,",
   "text": "Écoute les morceaux :",
   "say": "Écoute les morceaux :",
@@ -34778,26 +34265,6 @@
   "fams": [
    "chants:indice",
    "syllabes:indice"
-  ]
- },
- {
-  "key": "écoute seau|.",
-  "text": "Écoute : seau.",
-  "say": "Écoute : seau.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute veau|.",
-  "text": "Écoute : veau.",
-  "say": "Écoute : veau.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
   ]
  },
  {
@@ -36866,11 +36333,11 @@
   ]
  },
  {
-  "key": "fumé commence par fût|.",
-  "text": "fumé commence par fût.",
-  "say": "fumé commence par fût.",
+  "key": "fumé commence par|,",
+  "text": "fumé commence par :",
+  "say": "fumé commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -37124,11 +36591,11 @@
   ]
  },
  {
-  "key": "judo commence par ju|.",
-  "text": "judo commence par ju.",
-  "say": "judo commence par ju.",
+  "key": "judo commence par|,",
+  "text": "judo commence par :",
+  "say": "judo commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -37373,11 +36840,11 @@
   ]
  },
  {
-  "key": "lama commence par la|.",
-  "text": "lama commence par la.",
-  "say": "lama commence par la.",
+  "key": "lama commence par|,",
+  "text": "lama commence par :",
+  "say": "lama commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -37768,11 +37235,11 @@
   ]
  },
  {
-  "key": "lis puis touche l'image qui montre les deux|.",
-  "text": "Lis, puis touche l'image qui montre les deux.",
-  "say": "Lis, puis touche l'image qui montre les deux.",
+  "key": "lis|,",
+  "text": "Lis,",
+  "say": "Lis,",
   "pack": "mots",
-  "words": 8,
+  "words": 1,
   "fams": [
    "lis:consigne"
   ]
@@ -37934,11 +37401,11 @@
   ]
  },
  {
-  "key": "mali commence par ma|.",
-  "text": "Mali commence par ma.",
-  "say": "Mali commence par ma.",
+  "key": "mali commence par|,",
+  "text": "Mali commence par :",
+  "say": "Mali commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -37993,11 +37460,11 @@
   ]
  },
  {
-  "key": "midi commence par mie|.",
-  "text": "midi commence par mie.",
-  "say": "midi commence par mie.",
+  "key": "midi commence par|,",
+  "text": "midi commence par :",
+  "say": "midi commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -38027,11 +37494,11 @@
   ]
  },
  {
-  "key": "monaco commence par mot|.",
-  "text": "Monaco commence par mot.",
-  "say": "Monaco commence par mot.",
+  "key": "monaco commence par|,",
+  "text": "Monaco commence par :",
+  "say": "Monaco commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -38053,11 +37520,11 @@
   ]
  },
  {
-  "key": "moto commence par mot|.",
-  "text": "moto commence par mot.",
-  "say": "moto commence par mot.",
+  "key": "moto commence par|,",
+  "text": "moto commence par :",
+  "say": "moto commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -38230,11 +37697,11 @@
   ]
  },
  {
-  "key": "numéro commence par nu|.",
-  "text": "numéro commence par nu.",
-  "say": "numéro commence par nu.",
+  "key": "numéro commence par|,",
+  "text": "numéro commence par :",
+  "say": "numéro commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -38247,36 +37714,6 @@
   "words": 1,
   "fams": [
    "syllabes:reussite"
-  ]
- },
- {
-  "key": "on cherche faux|.",
-  "text": "On cherche faux.",
-  "say": "On cherche faux.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche seau|.",
-  "text": "On cherche seau.",
-  "say": "On cherche seau.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche veau|.",
-  "text": "On cherche veau.",
-  "say": "On cherche veau.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
   ]
  },
  {
@@ -39138,16 +38575,6 @@
   ]
  },
  {
-  "key": "oui faux|.",
-  "text": "Oui, faux !",
-  "say": "Oui, faux !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "oui lama|.",
   "text": "Oui, lama !",
   "say": "Oui, lama !",
@@ -39198,16 +38625,6 @@
   ]
  },
  {
-  "key": "oui seau|.",
-  "text": "Oui, seau !",
-  "say": "Oui, seau !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "oui sofa|.",
   "text": "Oui, sofa !",
   "say": "Oui, sofa !",
@@ -39221,46 +38638,6 @@
   "key": "oui tipi|.",
   "text": "Oui, tipi !",
   "say": "Oui, tipi !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué faux|.",
-  "text": "Oui, tu as fabriqué faux !",
-  "say": "Oui, tu as fabriqué faux !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué seau|.",
-  "text": "Oui, tu as fabriqué seau !",
-  "say": "Oui, tu as fabriqué seau !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué veau|.",
-  "text": "Oui, tu as fabriqué veau !",
-  "say": "Oui, tu as fabriqué veau !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui veau|.",
-  "text": "Oui, veau !",
-  "say": "Oui, veau !",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -39314,11 +38691,11 @@
   ]
  },
  {
-  "key": "panama commence par pas|.",
-  "text": "Panama commence par pas.",
-  "say": "Panama commence par pas.",
+  "key": "panama commence par|,",
+  "text": "Panama commence par :",
+  "say": "Panama commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -39348,11 +38725,11 @@
   ]
  },
  {
-  "key": "papi commence par pas|.",
-  "text": "papi commence par pas.",
-  "say": "papi commence par pas.",
+  "key": "papi commence par|,",
+  "text": "papi commence par :",
+  "say": "papi commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -39453,11 +38830,11 @@
   ]
  },
  {
-  "key": "piano commence par pie|.",
-  "text": "piano commence par pie.",
-  "say": "piano commence par pie.",
+  "key": "piano commence par|,",
+  "text": "piano commence par :",
+  "say": "piano commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -39696,6 +39073,16 @@
   "fams": [
    "lis:indice",
    "syllabes:indice"
+  ]
+ },
+ {
+  "key": "puis touche l'image qui montre les deux|.",
+  "text": "puis touche l'image qui montre les deux.",
+  "say": "puis touche l'image qui montre les deux.",
+  "pack": "mots",
+  "words": 7,
+  "fams": [
+   "lis:consigne"
   ]
  },
  {
@@ -41384,11 +40771,11 @@
   ]
  },
  {
-  "key": "radio commence par rat|.",
-  "text": "radio commence par rat.",
-  "say": "radio commence par rat.",
+  "key": "radio commence par|,",
+  "text": "radio commence par :",
+  "say": "radio commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -41871,21 +41258,21 @@
   ]
  },
  {
-  "key": "salami commence par sa|.",
-  "text": "salami commence par sa.",
-  "say": "salami commence par sa.",
+  "key": "salami commence par|,",
+  "text": "salami commence par :",
+  "say": "salami commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
  },
  {
-  "key": "salé commence par sa|.",
-  "text": "salé commence par sa.",
-  "say": "salé commence par sa.",
+  "key": "salé commence par|,",
+  "text": "salé commence par :",
+  "say": "salé commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -41992,11 +41379,11 @@
   ]
  },
  {
-  "key": "sofa commence par seau|.",
-  "text": "sofa commence par seau.",
-  "say": "sofa commence par seau.",
+  "key": "sofa commence par|,",
+  "text": "sofa commence par :",
+  "say": "sofa commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -42244,21 +41631,21 @@
   ]
  },
  {
-  "key": "tipi commence par ti|.",
-  "text": "tipi commence par ti.",
-  "say": "tipi commence par ti.",
+  "key": "tipi commence par|,",
+  "text": "tipi commence par :",
+  "say": "tipi commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
  },
  {
-  "key": "togo commence par tôt|.",
-  "text": "Togo commence par tôt.",
-  "say": "Togo commence par tôt.",
+  "key": "togo commence par|,",
+  "text": "Togo commence par :",
+  "say": "Togo commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -42348,46 +41735,6 @@
   ]
  },
  {
-  "key": "touche faux|.",
-  "text": "Touche : faux.",
-  "say": "Touche : faux.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir faux|.",
-  "text": "Touche la lettre qui brille pour finir faux.",
-  "say": "Touche la lettre qui brille pour finir faux.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir seau|.",
-  "text": "Touche la lettre qui brille pour finir seau.",
-  "say": "Touche la lettre qui brille pour finir seau.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir veau|.",
-  "text": "Touche la lettre qui brille pour finir veau.",
-  "say": "Touche la lettre qui brille pour finir veau.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
   "key": "touche la lettre qui brille pour finir|,",
   "text": "Touche la lettre qui brille pour finir :",
   "say": "Touche la lettre qui brille pour finir :",
@@ -42395,26 +41742,6 @@
   "words": 7,
   "fams": [
    "syllabes:indice"
-  ]
- },
- {
-  "key": "touche seau|.",
-  "text": "Touche : seau.",
-  "say": "Touche : seau.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche veau|.",
-  "text": "Touche : veau.",
-  "say": "Touche : veau.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
   ]
  },
  {
@@ -42505,36 +41832,6 @@
   "words": 5,
   "fams": [
    "histoires"
-  ]
- },
- {
-  "key": "tu as fabriqué faux|.",
-  "text": "Tu as fabriqué faux.",
-  "say": "Tu as fabriqué faux.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué seau|.",
-  "text": "Tu as fabriqué seau.",
-  "say": "Tu as fabriqué seau.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué veau|.",
-  "text": "Tu as fabriqué veau.",
-  "say": "Tu as fabriqué veau.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
   ]
  },
  {
@@ -42633,11 +41930,11 @@
   ]
  },
  {
-  "key": "tuba commence par tu|.",
-  "text": "tuba commence par tu.",
-  "say": "tuba commence par tu.",
+  "key": "tuba commence par|,",
+  "text": "tuba commence par :",
+  "say": "tuba commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -42735,11 +42032,11 @@
   ]
  },
  {
-  "key": "vélo commence par vé|.",
-  "text": "vélo commence par vé.",
-  "say": "vélo commence par vé.",
+  "key": "vélo commence par|,",
+  "text": "vélo commence par :",
+  "say": "vélo commence par :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
    "syllabes:indice"
   ]
@@ -51249,56 +50546,6 @@
   ]
  },
  {
-  "key": "ça commence par chi|.",
-  "text": "Ça commence par « Chi ».",
-  "say": "Ça commence par Chi.",
-  "pack": "port",
-  "words": 4,
-  "fams": [
-   "drapeau:indice"
-  ]
- },
- {
-  "key": "ça commence par cu|.",
-  "text": "Ça commence par « Cu ».",
-  "say": "Ça commence par Cu.",
-  "pack": "port",
-  "words": 4,
-  "fams": [
-   "drapeau:indice"
-  ]
- },
- {
-  "key": "ça commence par ja|.",
-  "text": "Ça commence par « Ja ».",
-  "say": "Ça commence par Ja.",
-  "pack": "port",
-  "words": 4,
-  "fams": [
-   "drapeau:indice"
-  ]
- },
- {
-  "key": "ça commence par ma|.",
-  "text": "Ça commence par « Ma ».",
-  "say": "Ça commence par Ma.",
-  "pack": "port",
-  "words": 4,
-  "fams": [
-   "drapeau:indice"
-  ]
- },
- {
-  "key": "ça commence par pé|.",
-  "text": "Ça commence par « Pé ».",
-  "say": "Ça commence par Pé.",
-  "pack": "port",
-  "words": 4,
-  "fams": [
-   "drapeau:indice"
-  ]
- },
- {
   "key": "ça se lit canada|.",
   "text": "Ça se lit « Canada ».",
   "say": "Ça se lit Canada.",
@@ -51534,6 +50781,16 @@
   "say": "Cherche Océanie,",
   "pack": "port",
   "words": 2,
+  "fams": [
+   "drapeau:indice"
+  ]
+ },
+ {
+  "key": "chi|.",
+  "text": "« Chi ».",
+  "say": "Chi.",
+  "pack": "port",
+  "words": 1,
   "fams": [
    "drapeau:indice"
   ]
@@ -52337,6 +51594,16 @@
   "words": 6,
   "fams": [
    "mon-drapeau"
+  ]
+ },
+ {
+  "key": "ja|.",
+  "text": "« Ja ».",
+  "say": "Ja.",
+  "pack": "port",
+  "words": 1,
+  "fams": [
+   "drapeau:indice"
   ]
  },
  {
@@ -54569,16 +53836,6 @@
   "say": "Où se trouve le Togo ?",
   "pack": "port",
   "words": 5,
-  "fams": [
-   "drapeau:consigne"
-  ]
- },
- {
-  "key": "où se trouve le viêt nam|?",
-  "text": "Où se trouve le Viêt Nam ?",
-  "say": "Où se trouve le Viêt Nam ?",
-  "pack": "port",
-  "words": 6,
   "fams": [
    "drapeau:consigne"
   ]

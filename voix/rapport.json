@@ -1,12 +1,12 @@
 {
- "clips": 5510,
- "octets": 41406414,
- "minutes": 161.6,
+ "clips": 5433,
+ "octets": 41058789,
+ "minutes": 160.3,
  "a_revoir": [
   {
    "key": "dos|.",
    "say": "dos !",
-   "heard": "Jeudi Do.",
+   "heard": "Je dis Do.",
    "per": 0.286
   },
   {
@@ -16,21 +16,15 @@
    "per": 0.25
   },
   {
-   "key": "rico te fait coucou|.",
-   "say": "Rico te fait coucou !",
-   "heard": "Ricot fait coucou.",
-   "per": 0.167
-  },
-  {
    "key": "regarde un phare et une poignée|.",
    "say": "Regarde : un phare et une poignée.",
-   "heard": "",
+   "heard": "Regarde, un ph et une poignée.",
    "per": 0.158
   },
   {
    "key": "un phare et une poignée|.",
    "say": "Un phare et une poignée.",
-   "heard": "",
+   "heard": "Un ph et une poignée.",
    "per": 0.231
   },
   {
@@ -40,39 +34,21 @@
    "per": 0.25
   },
   {
-   "key": "centre de tri|.",
-   "say": "Centre de tri.",
-   "heard": "",
-   "per": 0.222
-  },
-  {
    "key": "le pot de yaourt|.",
    "say": "Le pot de yaourt.",
-   "heard": "",
+   "heard": "Le podiour.",
    "per": 0.273
   },
   {
    "key": "pot de yaourt|.",
    "say": "Pot de yaourt.",
-   "heard": "",
-   "per": 0.444
-  },
-  {
-   "key": "c'est dos|.",
-   "say": "c'est dos.",
-   "heard": "",
-   "per": 0.222
-  },
-  {
-   "key": "ça commence par dos|.",
-   "say": "Ça commence par : dos.",
-   "heard": "",
-   "per": 0.154
+   "heard": "Podiour.",
+   "per": 0.333
   },
   {
    "key": "dos|,",
    "say": "dos,",
-   "heard": "",
+   "heard": "Je dis Dô.",
    "per": 0.286
   },
   {
@@ -100,6 +76,12 @@
    "per": 0.375
   },
   {
+   "key": "papi commence par|,",
+   "say": "papi commence par :",
+   "heard": "Papy commence par.",
+   "per": 0.167
+  },
+  {
    "key": "papi|",
    "say": "papi",
    "heard": "",
@@ -114,8 +96,8 @@
   {
    "key": "ça se lit chili|.",
    "say": "Ça se li Chili.",
-   "heard": "",
-   "per": 0.4
+   "heard": "Sasti Shidi.",
+   "per": 0.3
   },
   {
    "key": "ça se lit togo|.",

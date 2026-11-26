@@ -62,7 +62,7 @@ const tampon = () => (seenStamp = Math.max(Date.now(), seenStamp + 1)); // une d
 const empreinte = (s: string) => { let x = 0x811c9dc5; for (let i = 0; i < s.length; i++) x = Math.imul(x ^ s.charCodeAt(i), 0x01000193); return (x >>> 0).toString(36); };
 export const identityOf = (mod: ActivityModule<any>, it: Item) => empreinte(String(mod.identity?.(it) ?? (it as { key?: string }).key ?? it.prompt));
 export function freshItem<I extends Item>(mod: ActivityModule<I>, level: number, ctx: Ctx, seen: Record<string, number>, tries = 80, debutSeance = 0): I {
-  let best: I | null = null, bestAt = Infinity;
+  let best: I | null = null, bestAt = Infinity, revision: I | null = null, revisionAt = Infinity;
   const keep = (it: I) => { seen[identityOf(mod, it)] = tampon(); return it; };
   for (let lv = level; lv >= 1; lv--) {
     for (let t = 0; t < (lv === level ? tries : 40); t++) {
@@ -70,11 +70,13 @@ export function freshItem<I extends Item>(mod: ActivityModule<I>, level: number,
       const at = seen[identityOf(mod, it)];
       if (at === undefined) return keep(it);
       if (lv === level && at < bestAt) { best = it; bestAt = at; }
+      // en dessous, une révision vue lors d'une séance précédente vaut mieux qu'une répétition de cette séance-ci
+      if (lv < level && at < debutSeance && at < revisionAt) { revision = it; revisionAt = at; }
     }
     // tout ce niveau a déjà été vu, mais le plus ancien date d'une séance précédente : on le reprend, au même niveau
     if (lv === level && best && bestAt < debutSeance) return keep(best);
   }
-  return keep(best!);
+  return keep(revision ?? best!);
 }
 // Mémoire des exercices vus, d'une séance à l'autre : pour chaque activité, les MEMOIRE plus récents (empreinte → date).
 export const MEMOIRE = 160;
@@ -240,7 +242,7 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     if (correct) {
       locked = true;
       // le point de cet exercice se remplit tout de suite (le dernier aussi, avant la fin de l'activité)
-      dotsHost.replaceChildren(dots(total, index + 1));
+      dotsHost.replaceChildren(dots(total, index + 1, index));
       sfx.success();
       hote?.expr("rieur", true);
       if (el) el.classList.add("right");
