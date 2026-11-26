@@ -49,7 +49,8 @@ describe("les exercices ne reviennent pas d'un jour à l'autre", () => {
     // le lendemain : une nouvelle séance (sa propre mémoire de séance), le profil se souvient
     const s2: Record<string, number> = {};
     const retenir2 = memoireExercices(p, "petit", s2);
-    const debut2 = Date.now() + 1;
+    // la séance du lendemain commence après tout ce que la veille a noté (les dates de la mémoire)
+    const debut2 = Math.max(Date.now(), ...(Object.values(p.vus.petit) as number[])) + 1;
     const vus2: string[] = [];
     for (let i = 0; i < 4; i++) { const it = freshItem(petit, 2, ctxDe(100 + i), s2, 80, debut2); vus2.push(identityOf(petit, it)); retenir2(); }
     for (const v of vus2) expect(vus1.has(v)).toBe(false); // les 4 qui restaient
