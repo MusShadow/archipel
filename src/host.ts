@@ -51,14 +51,19 @@ function fastStep(s: { level: number; up: number; down: number }, independentSuc
 
 const pick = <T,>(a: T[]) => a[Math.floor(Math.random() * a.length)];
 
-// Un exercice ne revient pas dans la même séance. On en tire plusieurs, et on garde le premier jamais vu. Si tout a déjà
-// été vu à ce niveau (peu de mots connus, par exemple), on cherche un exercice nouveau aux niveaux en dessous (une
-// révision) ; sinon, on reprend celui qui a été vu il y a le plus longtemps.
+// Un exercice ne revient pas tant que l'activité en a d'autres : ni dans la même séance, ni d'une séance à l'autre (les
+// exercices vus sont gardés dans le profil, voir memoireExercices). On en tire plusieurs, et on garde le premier jamais
+// vu. Si tout a déjà été vu à ce niveau, on reprend celui qui a été vu il y a le plus longtemps, s'il date d'une séance
+// précédente ; s'il date de celle-ci (peu de mots connus, par exemple), on cherche un exercice nouveau aux niveaux en
+// dessous (une révision), sinon on reprend le plus ancien.
 let seenStamp = 0;
-export const identityOf = (mod: ActivityModule<any>, it: Item) => mod.identity?.(it) ?? (it as { key?: string }).key ?? it.prompt;
-export function freshItem<I extends Item>(mod: ActivityModule<I>, level: number, ctx: Ctx, seen: Record<string, number>, tries = 80): I {
+const tampon = () => (seenStamp = Math.max(Date.now(), seenStamp + 1)); // une date, toujours croissante
+// L'identité d'un exercice, en court (une empreinte) : la mémoire des séances passées reste légère dans le profil.
+const empreinte = (s: string) => { let x = 0x811c9dc5; for (let i = 0; i < s.length; i++) x = Math.imul(x ^ s.charCodeAt(i), 0x01000193); return (x >>> 0).toString(36); };
+export const identityOf = (mod: ActivityModule<any>, it: Item) => empreinte(String(mod.identity?.(it) ?? (it as { key?: string }).key ?? it.prompt));
+export function freshItem<I extends Item>(mod: ActivityModule<I>, level: number, ctx: Ctx, seen: Record<string, number>, tries = 80, debutSeance = 0): I {
   let best: I | null = null, bestAt = Infinity;
-  const keep = (it: I) => { seen[identityOf(mod, it)] = ++seenStamp; return it; };
+  const keep = (it: I) => { seen[identityOf(mod, it)] = tampon(); return it; };
   for (let lv = level; lv >= 1; lv--) {
     for (let t = 0; t < (lv === level ? tries : 40); t++) {
       const it = mod.generate(lv, ctx);
@@ -66,8 +71,21 @@ export function freshItem<I extends Item>(mod: ActivityModule<I>, level: number,
       if (at === undefined) return keep(it);
       if (lv === level && at < bestAt) { best = it; bestAt = at; }
     }
+    // tout ce niveau a déjà été vu, mais le plus ancien date d'une séance précédente : on le reprend, au même niveau
+    if (lv === level && best && bestAt < debutSeance) return keep(best);
   }
   return keep(best!);
+}
+// Mémoire des exercices vus, d'une séance à l'autre : pour chaque activité, les MEMOIRE plus récents (empreinte → date).
+export const MEMOIRE = 160;
+export function memoireExercices(p: { vus?: Record<string, Record<string, number>> }, id: string, seen: Record<string, number>) {
+  const m = ((p.vus ??= {})[id] ??= {});
+  for (const [k, t] of Object.entries(m)) if (!(k in seen)) seen[k] = t;
+  return () => {
+    for (const [k, t] of Object.entries(seen)) if ((m[k] ?? 0) < t) m[k] = t;
+    const cles = Object.keys(m);
+    if (cles.length > MEMOIRE) for (const k of cles.sort((a, b) => m[a] - m[b]).slice(0, cles.length - MEMOIRE)) delete m[k];
+  };
 }
 
 // Réponses proposées que l'enfant ne sait pas lire : l'étiquette écrite sous l'image d'une carte (ou d'une poubelle), ou
@@ -100,8 +118,11 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
   const ctx: Ctx = { profile: p, rng, known: knownSet(p.knownK), now: Date.now() };
   let stair = p.stairs[mod.id] ?? { level: mod.startLevel(p), up: 0, down: 0 };
   const summary: RoundSummary = { items: 0, firstTry: 0, helped: 0, errors: 0, last: null, learned: [] };
-  // Les exercices déjà faits dans la séance, pour cette activité (sans séance : pour cet écran).
+  // Les exercices déjà faits dans la séance, pour cette activité (sans séance : pour cet écran), et ceux des séances
+  // précédentes, gardés dans le profil.
   const seen: Record<string, number> = app.session ? (app.session.seen[mod.id] ??= {}) : {};
+  const debutSeance = app.session?.start ?? Date.now();
+  const retenir = memoireExercices(p, mod.id, seen);
   const t0 = Date.now();
   let index = 0, attempts = 0, hints = 0, errorsInRow = 0, recorded = false, locked = false, itemStart = 0;
   let current: Item | null = null;
@@ -141,7 +162,8 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     if (!alive) return;
     if (index >= total || (!opts.fast && app.timeUp())) return finish();
     dotsHost.replaceChildren(dots(total, index));
-    const item = freshItem(mod, stair.level, ctx, seen);
+    const item = freshItem(mod, stair.level, ctx, seen, 80, debutSeance);
+    retenir();
     current = item;
     // Crochet pour les tests de bout en bout (inexistant en usage normal).
     (globalThis as any).__archipelTest?.onItem?.(item, mod.id);
@@ -217,6 +239,8 @@ export function activityScreen(mod: ActivityModule<any>, onExit: (summary: Round
     if (!recorded) { record(correct); recorded = true; }
     if (correct) {
       locked = true;
+      // le point de cet exercice se remplit tout de suite (le dernier aussi, avant la fin de l'activité)
+      dotsHost.replaceChildren(dots(total, index + 1));
       sfx.success();
       hote?.expr("rieur", true);
       if (el) el.classList.add("right");

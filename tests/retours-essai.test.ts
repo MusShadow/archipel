@@ -1,0 +1,129 @@
+import { afterAll, describe, expect, test } from "bun:test";
+import { readFileSync, readdirSync } from "node:fs";
+import { join } from "node:path";
+
+// Retours de l'essai sur l'iPad (novembre 2026), lot A : la voix (consonnes finales, lettres seules, phrases sans voix),
+// les exercices qui reviennent d'un jour à l'autre, les points de progression, l'arrivée sur une île.
+let dom: { unregister: () => Promise<void> | void } | null = null;
+try {
+  const { GlobalRegistrator } = await import("@happy-dom/global-registrator");
+  GlobalRegistrator.register({ url: "https://archipel.local/", width: 1180, height: 820 });
+  dom = GlobalRegistrator;
+} catch { /* pas de DOM simulé */ }
+afterAll(() => dom?.unregister());
+
+const root = join(import.meta.dir, "..");
+const { freshItem, identityOf, memoireExercices, MEMOIRE } = await import("../src/host");
+const { normalize } = await import("../src/services");
+const { planText, syllabeSeule } = await import("../src/voix");
+const { makeRng } = await import("../src/core");
+const atelier = await import("../src/activities/atelierdrapeaux");
+const { syllabes } = await import("../src/activities/syllabes");
+const { createProfile } = await import("../src/app");
+const { knownSet } = await import("../src/content");
+import type { ActivityModule, Ctx, Item } from "../src/host";
+
+const index = (() => {
+  const dir = join(root, "public/voix");
+  const f = readdirSync(dir).find((x) => x.startsWith("index-") && x.endsWith(".json"))!;
+  return JSON.parse(readFileSync(join(dir, f), "utf8"));
+})();
+
+// Une activité de test : dix questions au niveau 2, dix autres au niveau 1.
+const petit: ActivityModule<Item & { n: number }> = {
+  id: "petit", items: 6, maxLevel: 2,
+  generate: (level: number, ctx: Ctx) => { const n = Math.floor(ctx.rng.next() * 10); return { n, prompt: `q${level}-${n}`, target: "", skill: "X", difficulty: 0, form: "symbole", guess: 0.5, level } as any; },
+} as any;
+const ctxDe = (s: number): Ctx => ({ profile: {} as any, rng: makeRng(s), known: knownSet(15), now: Date.now() });
+
+describe("les exercices ne reviennent pas d'un jour à l'autre", () => {
+  test("une deuxième séance évite ce que la première a montré, tant qu'il reste du nouveau, au même niveau", () => {
+    const p: any = {};
+    const s1: Record<string, number> = {};
+    const debut1 = Date.now() - 86_400_000;
+    const retenir1 = memoireExercices(p, "petit", s1);
+    const vus1 = new Set<string>();
+    for (let i = 0; i < 6; i++) { const it = freshItem(petit, 2, ctxDe(i), s1, 80, debut1); vus1.add(identityOf(petit, it)); retenir1(); }
+    expect(vus1.size).toBe(6);
+    expect(Object.keys(p.vus.petit).length).toBe(6);
+    // le lendemain : une nouvelle séance (sa propre mémoire de séance), le profil se souvient
+    const s2: Record<string, number> = {};
+    const retenir2 = memoireExercices(p, "petit", s2);
+    const debut2 = Date.now() + 1;
+    const vus2: string[] = [];
+    for (let i = 0; i < 4; i++) { const it = freshItem(petit, 2, ctxDe(100 + i), s2, 80, debut2); vus2.push(identityOf(petit, it)); retenir2(); }
+    for (const v of vus2) expect(vus1.has(v)).toBe(false); // les 4 qui restaient
+    // tout le niveau 2 a été vu : on reprend le plus ancien de la veille, au même niveau (pas une révision du niveau 1)
+    const it = freshItem(petit, 2, ctxDe(999), s2, 80, debut2);
+    expect((it as any).prompt.startsWith("q2-")).toBe(true);
+    expect(vus1.has(identityOf(petit, it))).toBe(true);
+  });
+  test("tout vu dans la séance même : une révision au niveau du dessous, comme avant", () => {
+    const s: Record<string, number> = {};
+    const debut = Date.now() - 1000;
+    for (let i = 0; i < 10; i++) freshItem(petit, 2, ctxDe(i), s, 200, debut);
+    const it = freshItem(petit, 2, ctxDe(500), s, 200, debut);
+    expect((it as any).prompt.startsWith("q1-")).toBe(true);
+  });
+  test("la mémoire reste légère (empreintes, les plus récentes seulement) et survit au rechargement du profil", () => {
+    const p: any = {};
+    const s: Record<string, number> = {};
+    for (let i = 0; i < MEMOIRE + 40; i++) s[`k${i}`] = 1000 + i;
+    memoireExercices(p, "x", s)();
+    expect(Object.keys(p.vus.x).length).toBe(MEMOIRE);
+    expect(p.vus.x[`k${MEMOIRE + 39}`]).toBeDefined();
+    expect(p.vus.x.k0).toBeUndefined();
+    expect(identityOf(petit, { prompt: "Une très longue consigne d'exercice, avec beaucoup de mots dedans." } as any).length).toBeLessThan(10);
+    const d = normalize({ profiles: [{ id: "a", name: "Lou", vus: { x: { k1: 5 } }, ilesPresentees: { mots: "2026-11-26" } }] });
+    expect(d.profiles[0].vus).toEqual({ x: { k1: 5 } });
+    expect(d.profiles[0].ilesPresentees).toEqual({ mots: "2026-11-26" });
+  });
+});
+
+describe("la voix", () => {
+  test("les consonnes finales qui se prononcent : corrections écrites pour la voix", () => {
+    const pron = JSON.parse(readFileSync(join(root, "voix/prononciation.json"), "utf8"));
+    const fix = (s: string) => { for (const [a, b] of pron.corrections) s = s.replace(new RegExp(a, "gi"), b); return s; };
+    expect(fix("Kiki préfère les trains aux nounours.")).toContain("nounourse");
+    expect(fix("Cet ours en peluche.")).toContain("ourse");
+    expect(fix("La vis est en métal.")).toContain("visse");
+    expect(fix("Les coquilles d'œuf.")).toContain("d'œuffe");
+    expect(fix("Un masque à gaz.")).toContain("gaze");
+    expect(fix("Le tronc.")).toContain("tron.");
+  });
+  test("une lettre ou une syllabe seule est dite à part, après une pause : jamais avalée dans une phrase", () => {
+    expect(syllabeSeule("Touche : u.", "syllabes:consigne")).toBe(true);
+    expect(syllabeSeule("Oui, u !", "syllabes:reussite")).toBe(true);
+    expect(syllabeSeule("Ça, c'est une moto.", "syllabes:reussite")).toBe(false);
+    for (const t of ["Écoute bien : u. Touche : u.", "Ça, c'est : i. Écoute : u.", "Oui, u !", "Tu as fabriqué : pu. On cherche : du."]) {
+      const segs = planText(t, index)!;
+      expect(segs ? t : `${t} : pas de voix`).toBe(t);
+      // aucun morceau ne colle la lettre à un autre mot
+      for (const s of segs) if (s.to > s.from) expect(s.key).not.toMatch(/(^| )[a-zéèêô]{1,3}\|/);
+    }
+    const p = createProfile({ name: "Lou", ageMonths: 54, color: "#FFC145", readingK: 30, countTo: 20, flags: 0 });
+    for (let i = 0; i < 60; i++) {
+      const it: any = syllabes.generate(1, { profile: p, rng: makeRng(i), known: knownSet(30), now: Date.now() });
+      if (it.kind === "ecoute") expect(it.prompt).toMatch(/Touche : [^.]+\.$/);
+    }
+  });
+  test("chaque phrase écrite en toutes lettres dans les activités a sa voix enregistrée (comme « Regarde bien le modèle »)", () => {
+    const manque: string[] = [];
+    for (const f of readdirSync(join(root, "src/activities")).filter((x) => x.endsWith(".ts"))) {
+      const src = readFileSync(join(root, "src/activities", f), "utf8");
+      // les arguments des appels qui parlent : say("…"), answer(…, "…") et les phrases rangées pour eux
+      const re = /(?:\.say|answer)\(/g;
+      let m: RegExpExecArray | null;
+      while ((m = re.exec(src))) {
+        let i = m.index + m[0].length, depth = 1;
+        while (i < src.length && depth) { const c = src[i++]; if (c === "(") depth++; else if (c === ")") depth--; }
+        for (const lit of src.slice(m.index, i).matchAll(/"((?:[^"\\]|\\.)*)"/g)) {
+          const t = lit[1];
+          if (t.split(" ").length >= 2 && /[.!?…]$/.test(t) && !planText(t, index)) manque.push(`${f} : ${t}`);
+        }
+      }
+    }
+    for (const x of atelier.voiceLines()) if (!planText(x.text, index)) manque.push(`atelierdrapeaux : ${x.text}`);
+    expect(manque).toEqual([]);
+  });
+});

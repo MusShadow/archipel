@@ -24,6 +24,11 @@ export interface Profile {
   avatar?: string; // compagnon de voyage (livraison 2), voir compagnons.ts
   stories: Story[];
   myFlag?: MyFlag;
+  // Exercices vus, par activité (empreinte → date) : une question ne revient pas d'un jour à l'autre tant qu'il y en a
+  // d'autres (host.ts, memoireExercices).
+  vus?: Record<string, Record<string, number>>;
+  // Îles dont Plume a présenté les lieux aujourd'hui (île → jour « AAAA-M-J ») : la présentation, une fois par jour.
+  ilesPresentees?: Record<string, string>;
 }
 export interface Story {
   id: string; t: number; titre: string; phrases: string[]; question: { texte: string; choix: string[]; bonne: number }; k: number;
@@ -62,6 +67,8 @@ export function normalize(d: any): AppData {
     stories: Array.isArray(p.stories) ? p.stories : [],
     myFlag: p.myFlag && typeof p.myFlag === "object" ? p.myFlag : undefined,
     avatar: estCompagnon(p.avatar) ? p.avatar : undefined,
+    vus: p.vus && typeof p.vus === "object" ? p.vus : {},
+    ilesPresentees: p.ilesPresentees && typeof p.ilesPresentees === "object" ? p.ilesPresentees : {},
   })) : [];
   attribuerCompagnons(profiles);
   return { version: 1, pin: typeof d.pin === "string" ? d.pin : null, settings: { ...base.settings, ...(d.settings ?? {}), tri: { ...defaultTri(), ...(d.settings?.tri ?? {}) } }, profiles, activeId: d.activeId ?? null };

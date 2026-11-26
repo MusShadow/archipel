@@ -23,6 +23,8 @@ import { drawPicker, mirrorScreen } from "./draw";
 import { storyShelf } from "./histoires";
 import { myFlagSVG, myFlagScreen } from "./myflag";
 import { carnetScreen } from "./carnet";
+// Le jour (local) d'une date, « AAAA-M-J » : la présentation des lieux d'une île, une fois par jour.
+const jourDe = (ms: number) => { const d = new Date(ms); return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`; };
 
 const pick = <T,>(a: readonly T[]) => a[Math.floor(Math.random() * a.length)];
 const MOON = '<svg viewBox="0 0 40 40" aria-hidden="true" style="display:block;width:100%;height:100%"><circle cx="20" cy="20" r="19" fill="#273043"/><path d="M24 8 A13 13 0 1 0 32 28 A10 10 0 1 1 24 8 Z" fill="#FFC145"/></svg>';
@@ -426,7 +428,7 @@ function islandScreen(id: IleId, acts: Entry[], advised: Entry | undefined) {
     disponible: (a) => { const e = byId.get(a); return !!e && ok(e, p); },
     onLieu: choisir,
     onRetour: () => { sfx.tap(); go(() => mapScreen()); },
-    onEcoute: () => { sfx.tap(); accueil(); },
+    onEcoute: () => { sfx.tap(); accueil(true); },
     onPlume: () => { sfx.tap(); run++; say(conseil || "Touche un lieu pour commencer."); },
   });
   el.classList.add("screen");
@@ -439,21 +441,30 @@ function islandScreen(id: IleId, acts: Entry[], advised: Entry | undefined) {
   app.show(el, () => { leaving = true; run++; window.clearInterval(timer); vivant?.arreter(); });
   accueil();
 
-  // Plume souhaite la bienvenue, présente chaque lieu (son étiquette brille pendant qu'elle en parle), puis conseille.
-  async function accueil() {
+  // Plume souhaite la bienvenue ; l'hôte salue au moment où elle dit qu'il fait coucou. À la première visite du jour
+  // (ou quand on redemande avec l'oreille), elle présente chaque lieu : son étiquette brille pendant qu'elle en parle.
+  // Puis elle conseille. Une courte pause entre les phrases : on a le temps de regarder l'île.
+  async function accueil(complet = false) {
     const r = ++run;
     const pills = new Map(Array.from(el.querySelectorAll<HTMLElement>(".a-pastille[data-act]")).map((b) => [b.dataset.act!, b]));
-    const lignes = [
-      ...bienvenueIle(id).map((t) => ({ t, act: "" })),
-      ...acts.filter((a) => ok(a, p)).map((a) => ({ t: a.pitch, act: a.id })),
-      ...(conseil ? [{ t: conseil, act: "" }] : []),
+    const vues = (p.ilesPresentees ??= {});
+    const presenter = complet || vues[id] !== jourDe(Date.now());
+    const [bienvenue, coucou] = bienvenueIle(id);
+    const lignes: { t: string; act: string; pause: number; salut?: boolean }[] = [
+      { t: bienvenue, act: "", pause: 500 },
+      ...(coucou ? [{ t: coucou, act: "", pause: 700, salut: true }] : []),
+      ...(presenter ? acts.filter((a) => ok(a, p)).map((a) => ({ t: a.pitch, act: a.id, pause: 400 })) : []),
+      ...(conseil ? [{ t: conseil, act: "", pause: 0 }] : []),
     ];
     for (const l of lignes) {
       if (r !== run) return;
       const b = pills.get(l.act);
+      if (l.act && presenter && vues[id] !== jourDe(Date.now())) { vues[id] = jourDe(Date.now()); app.save(); }
+      if (l.salut) vivant?.coucou();
       b?.classList.add("saying");
       await say(l.t);
       b?.classList.remove("saying");
+      if (l.pause) await sleep(l.pause);
     }
   }
 }

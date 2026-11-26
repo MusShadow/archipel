@@ -7664,12 +7664,14 @@
  },
  {
   "key": "a|.",
-  "text": "a",
-  "say": "a",
+  "text": "a !",
+  "say": "a !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
+   "syllabes:consigne",
+   "syllabes:erreur",
    "syllabes:indice"
   ]
  },
@@ -7715,13 +7717,14 @@
  },
  {
   "key": "ami|.",
-  "text": "ami",
-  "say": "ami",
+  "text": "ami !",
+  "say": "ami !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -7812,6 +7815,8 @@
   "words": 1,
   "fams": [
    "mots",
+   "syllabes:consigne",
+   "syllabes:erreur",
    "syllabes:indice"
   ]
  },
@@ -8502,6 +8507,17 @@
   ]
  },
  {
+  "key": "c'est|,",
+  "text": "c'est :",
+  "say": "c'est :",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "bip:indice",
+   "syllabes:erreur"
+  ]
+ },
+ {
   "key": "ça commence par ca|.",
   "text": "Ça commence par « ca ».",
   "say": "Ça commence par ca.",
@@ -8630,13 +8646,14 @@
  },
  {
   "key": "canada|.",
-  "text": "Canada",
-  "say": "Canada",
+  "text": "Canada !",
+  "say": "Canada !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -9637,13 +9654,16 @@
  },
  {
   "key": "ces|.",
-  "text": "ces.",
-  "say": "ces.",
+  "text": "ces !",
+  "say": "ces !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -9835,6 +9855,8 @@
   "words": 1,
   "fams": [
    "mots",
+   "syllabes:consigne",
+   "syllabes:erreur",
    "syllabes:indice"
   ]
  },
@@ -9941,26 +9963,30 @@
  },
  {
   "key": "cuba|.",
-  "text": "Cuba",
-  "say": "Cuba",
+  "text": "Cuba !",
+  "say": "Cuba !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "carnet",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "da|.",
-  "text": "da.",
-  "say": "da.",
+  "text": "da !",
+  "say": "da !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "chants:erreur",
    "chants:indice",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -10098,15 +10124,18 @@
  },
  {
   "key": "dé|.",
-  "text": "dé.",
-  "say": "dé.",
+  "text": "dé !",
+  "say": "dé !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "lis:indice",
    "lis:reussite",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -10276,13 +10305,16 @@
  },
  {
   "key": "dit|.",
-  "text": "dit.",
-  "say": "dit.",
+  "text": "dit !",
+  "say": "dit !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -10297,14 +10329,15 @@
  },
  {
   "key": "domino|.",
-  "text": "domino.",
-  "say": "domino.",
+  "text": "domino !",
+  "say": "domino !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
    "syllabes:consigne",
-   "syllabes:indice"
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -10329,15 +10362,18 @@
  },
  {
   "key": "dos|.",
-  "text": "dos.",
-  "say": "dos.",
+  "text": "dos !",
+  "say": "dos !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "chants:erreur",
    "chants:indice",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -10352,13 +10388,16 @@
  },
  {
   "key": "du|.",
-  "text": "du.",
-  "say": "du.",
+  "text": "du !",
+  "say": "du !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -10665,13 +10704,16 @@
  },
  {
   "key": "fa|.",
-  "text": "fa.",
-  "say": "fa.",
+  "text": "fa !",
+  "say": "fa !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -10706,19 +10748,21 @@
  },
  {
   "key": "faux|.",
-  "text": "faux.",
-  "say": "faux.",
+  "text": "faux !",
+  "say": "faux !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "fée|.",
-  "text": "fée.",
-  "say": "fée.",
+  "text": "fée !",
+  "say": "fée !",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -10727,7 +10771,10 @@
    "lis:indice",
    "lis:reussite",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -10756,13 +10803,16 @@
  },
  {
   "key": "fi|.",
-  "text": "fi.",
-  "say": "fi.",
+  "text": "fi !",
+  "say": "fi !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -10878,13 +10928,14 @@
  },
  {
   "key": "fumé|.",
-  "text": "fumé.",
-  "say": "fumé.",
+  "text": "fumé !",
+  "say": "fumé !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -10902,13 +10953,16 @@
  },
  {
   "key": "fût|.",
-  "text": "fût.",
-  "say": "fût.",
+  "text": "fût !",
+  "say": "fût !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -11350,15 +11404,16 @@
  },
  {
   "key": "judo|.",
-  "text": "judo.",
-  "say": "judo.",
+  "text": "judo !",
+  "say": "judo !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "lis:indice",
    "lis:reussite",
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -12340,15 +12395,18 @@
  },
  {
   "key": "la|.",
-  "text": "la.",
-  "say": "la.",
+  "text": "la !",
+  "say": "la !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "chants:indice",
    "lis:indice",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -12363,8 +12421,8 @@
  },
  {
   "key": "lama|.",
-  "text": "lama.",
-  "say": "lama.",
+  "text": "lama !",
+  "say": "lama !",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -12374,7 +12432,8 @@
    "lis:reussite",
    "mots",
    "options",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -13637,13 +13696,16 @@
  },
  {
   "key": "les|.",
-  "text": "les.",
-  "say": "les.",
+  "text": "les !",
+  "say": "les !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -13692,8 +13754,8 @@
  },
  {
   "key": "lit|.",
-  "text": "lit.",
-  "say": "lit.",
+  "text": "lit !",
+  "say": "lit !",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -13704,7 +13766,10 @@
    "lis:reussite",
    "mots",
    "options",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -13741,15 +13806,18 @@
  },
  {
   "key": "lot|.",
-  "text": "lot.",
-  "say": "lot.",
+  "text": "lot !",
+  "say": "lot !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "chants:erreur",
    "chants:indice",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -13770,13 +13838,16 @@
  },
  {
   "key": "lu|.",
-  "text": "lu.",
-  "say": "lu.",
+  "text": "lu !",
+  "say": "lu !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -13833,15 +13904,18 @@
  },
  {
   "key": "ma|.",
-  "text": "ma.",
-  "say": "ma.",
+  "text": "ma !",
+  "say": "ma !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "chants:erreur",
    "chants:indice",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -13883,13 +13957,14 @@
  },
  {
   "key": "mali|.",
-  "text": "Mali.",
-  "say": "Mali.",
+  "text": "Mali !",
+  "say": "Mali !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14010,38 +14085,45 @@
  },
  {
   "key": "mes|.",
-  "text": "mes.",
-  "say": "mes.",
-  "pack": "commun",
-  "words": 1,
-  "fams": [
-   "mots",
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "midi|.",
-  "text": "midi.",
-  "say": "midi.",
+  "text": "mes !",
+  "say": "mes !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
    "syllabes:consigne",
-   "syllabes:indice"
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
+  ]
+ },
+ {
+  "key": "midi|.",
+  "text": "midi !",
+  "say": "midi !",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "mots",
+   "syllabes:consigne",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "mie|.",
-  "text": "mie.",
-  "say": "mie.",
+  "text": "mie !",
+  "say": "mie !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "chants:erreur",
    "chants:indice",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14088,30 +14170,34 @@
  },
  {
   "key": "monaco|.",
-  "text": "Monaco.",
-  "say": "Monaco.",
+  "text": "Monaco !",
+  "say": "Monaco !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "carnet",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "mot|.",
-  "text": "mot.",
-  "say": "mot.",
+  "text": "mot !",
+  "say": "mot !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "moto|.",
-  "text": "moto.",
-  "say": "moto.",
+  "text": "moto !",
+  "say": "moto !",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -14121,7 +14207,8 @@
    "lis:reussite",
    "mots",
    "options",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14151,13 +14238,16 @@
  },
  {
   "key": "mu|.",
-  "text": "mu.",
-  "say": "mu.",
+  "text": "mu !",
+  "say": "mu !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14174,13 +14264,16 @@
  },
  {
   "key": "na|.",
-  "text": "na.",
-  "say": "na.",
+  "text": "na !",
+  "say": "na !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14217,13 +14310,16 @@
  },
  {
   "key": "né|.",
-  "text": "né.",
-  "say": "né.",
+  "text": "né !",
+  "say": "né !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14242,15 +14338,18 @@
  },
  {
   "key": "nid|.",
-  "text": "nid.",
-  "say": "nid.",
+  "text": "nid !",
+  "say": "nid !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "lis:indice",
    "lis:reussite",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14298,47 +14397,56 @@
  },
  {
   "key": "nos|.",
-  "text": "nos.",
-  "say": "nos.",
+  "text": "nos !",
+  "say": "nos !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "chants:erreur",
    "chants:indice",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "nu|.",
-  "text": "nu.",
-  "say": "nu.",
+  "text": "nu !",
+  "say": "nu !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "numéro|.",
-  "text": "numéro.",
-  "say": "numéro.",
+  "text": "numéro !",
+  "say": "numéro !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "o|.",
-  "text": "o.",
-  "say": "o.",
+  "text": "o !",
+  "say": "o !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
+   "syllabes:consigne",
+   "syllabes:erreur",
    "syllabes:indice"
   ]
  },
@@ -14617,7 +14725,9 @@
   "words": 1,
   "fams": [
    "chants:reussite",
-   "nenuphars:reussite"
+   "nenuphars:reussite",
+   "syllabes:erreur",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14693,13 +14803,14 @@
  },
  {
   "key": "panama|.",
-  "text": "Panama.",
-  "say": "Panama.",
+  "text": "Panama !",
+  "say": "Panama !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14717,15 +14828,16 @@
  },
  {
   "key": "papi|.",
-  "text": "papi.",
-  "say": "papi.",
+  "text": "papi !",
+  "say": "papi !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "lis:indice",
    "lis:reussite",
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14776,13 +14888,16 @@
  },
  {
   "key": "pas|.",
-  "text": "pas.",
-  "say": "pas.",
+  "text": "pas !",
+  "say": "pas !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14807,13 +14922,16 @@
  },
  {
   "key": "pé|.",
-  "text": "pé.",
-  "say": "pé.",
+  "text": "pé !",
+  "say": "pé !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14838,8 +14956,8 @@
  },
  {
   "key": "piano|.",
-  "text": "piano.",
-  "say": "piano.",
+  "text": "piano !",
+  "say": "piano !",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -14849,7 +14967,8 @@
    "lis:reussite",
    "mots",
    "options",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -14864,13 +14983,16 @@
  },
  {
   "key": "pie|.",
-  "text": "pie.",
-  "say": "pie.",
+  "text": "pie !",
+  "say": "pie !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15000,15 +15122,18 @@
  },
  {
   "key": "pot|.",
-  "text": "pot.",
-  "say": "pot.",
+  "text": "pot !",
+  "say": "pot !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "chants:erreur",
    "chants:indice",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15288,13 +15413,16 @@
  },
  {
   "key": "pu|.",
-  "text": "pu.",
-  "say": "pu.",
+  "text": "pu !",
+  "say": "pu !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15374,8 +15502,8 @@
  },
  {
   "key": "radio|.",
-  "text": "radio.",
-  "say": "radio.",
+  "text": "radio !",
+  "say": "radio !",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -15385,7 +15513,8 @@
    "lis:reussite",
    "mots",
    "options",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15423,8 +15552,8 @@
  },
  {
   "key": "rat|.",
-  "text": "rat.",
-  "say": "rat.",
+  "text": "rat !",
+  "say": "rat !",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -15435,18 +15564,24 @@
    "lis:reussite",
    "mots",
    "options",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "ré|.",
-  "text": "ré.",
-  "say": "ré.",
+  "text": "ré !",
+  "say": "ré !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15502,8 +15637,8 @@
  },
  {
   "key": "riz|.",
-  "text": "riz.",
-  "say": "riz.",
+  "text": "riz !",
+  "say": "riz !",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -15512,7 +15647,10 @@
    "lis:indice",
    "lis:reussite",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15542,13 +15680,16 @@
  },
  {
   "key": "rot|.",
-  "text": "rot.",
-  "say": "rot.",
+  "text": "rot !",
+  "say": "rot !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15585,13 +15726,16 @@
  },
  {
   "key": "rue|.",
-  "text": "rue.",
-  "say": "rue.",
+  "text": "rue !",
+  "say": "rue !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15606,13 +15750,16 @@
  },
  {
   "key": "sa|.",
-  "text": "sa.",
-  "say": "sa.",
+  "text": "sa !",
+  "say": "sa !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15655,24 +15802,26 @@
  },
  {
   "key": "salami|.",
-  "text": "salami.",
-  "say": "salami.",
+  "text": "salami !",
+  "say": "salami !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "salé|.",
-  "text": "salé.",
-  "say": "salé.",
+  "text": "salé !",
+  "say": "salé !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15700,8 +15849,8 @@
  },
  {
   "key": "seau|.",
-  "text": "seau.",
-  "say": "seau.",
+  "text": "seau !",
+  "say": "seau !",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -15710,7 +15859,9 @@
    "chants:indice",
    "mots",
    "options",
-   "syllabes:indice"
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15748,13 +15899,16 @@
  },
  {
   "key": "si|.",
-  "text": "si.",
-  "say": "si.",
+  "text": "si !",
+  "say": "si !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15769,15 +15923,16 @@
  },
  {
   "key": "sofa|.",
-  "text": "sofa.",
-  "say": "sofa.",
+  "text": "sofa !",
+  "say": "sofa !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "lis:indice",
    "lis:reussite",
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15872,13 +16027,16 @@
  },
  {
   "key": "su|.",
-  "text": "su.",
-  "say": "su.",
+  "text": "su !",
+  "say": "su !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -15913,13 +16071,16 @@
  },
  {
   "key": "ta|.",
-  "text": "ta.",
-  "say": "ta.",
+  "text": "ta !",
+  "say": "ta !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -16009,36 +16170,43 @@
  },
  {
   "key": "thé|.",
-  "text": "thé.",
-  "say": "thé.",
-  "pack": "commun",
-  "words": 1,
-  "fams": [
-   "mots",
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "ti|.",
-  "text": "ti.",
-  "say": "ti.",
-  "pack": "commun",
-  "words": 1,
-  "fams": [
-   "mots",
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "tipi|.",
-  "text": "tipi.",
-  "say": "tipi.",
+  "text": "thé !",
+  "say": "thé !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
    "syllabes:consigne",
-   "syllabes:indice"
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
+  ]
+ },
+ {
+  "key": "ti|.",
+  "text": "ti !",
+  "say": "ti !",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "mots",
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
+  ]
+ },
+ {
+  "key": "tipi|.",
+  "text": "tipi !",
+  "say": "tipi !",
+  "pack": "commun",
+  "words": 1,
+  "fams": [
+   "mots",
+   "syllabes:consigne",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -16053,13 +16221,14 @@
  },
  {
   "key": "togo|.",
-  "text": "Togo.",
-  "say": "Togo.",
+  "text": "Togo !",
+  "say": "Togo !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -16713,15 +16882,18 @@
  },
  {
   "key": "tôt|.",
-  "text": "tôt.",
-  "say": "tôt.",
+  "text": "tôt !",
+  "say": "tôt !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "chants:erreur",
    "chants:indice",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -16926,26 +17098,30 @@
  },
  {
   "key": "tu|.",
-  "text": "tu.",
-  "say": "tu.",
+  "text": "tu !",
+  "say": "tu !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "chants:erreur",
    "chants:indice",
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "tuba|.",
-  "text": "tuba.",
-  "say": "tuba.",
+  "text": "tuba !",
+  "say": "tuba !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
@@ -17094,13 +17270,16 @@
  },
  {
   "key": "va|.",
-  "text": "va.",
-  "say": "va.",
+  "text": "va !",
+  "say": "va !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -17129,30 +17308,35 @@
  },
  {
   "key": "vé|.",
-  "text": "vé.",
-  "say": "vé.",
+  "text": "vé !",
+  "say": "vé !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "veau|.",
-  "text": "veau.",
-  "say": "veau.",
+  "text": "veau !",
+  "say": "veau !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "vélo|.",
-  "text": "vélo.",
-  "say": "vélo.",
+  "text": "vélo !",
+  "say": "vélo !",
   "pack": "commun",
   "words": 1,
   "fams": [
@@ -17162,18 +17346,22 @@
    "lis:indice",
    "lis:reussite",
    "mots",
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "vie|.",
-  "text": "vie.",
-  "say": "vie.",
+  "text": "vie !",
+  "say": "vie !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -17251,13 +17439,16 @@
  },
  {
   "key": "vu|.",
-  "text": "vu.",
-  "say": "vu.",
+  "text": "vu !",
+  "say": "vu !",
   "pack": "commun",
   "words": 1,
   "fams": [
    "mots",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -28878,16 +29069,6 @@
   ]
  },
  {
-  "key": "c'est|,",
-  "text": "c'est :",
-  "say": "c'est :",
-  "pack": "enigmes",
-  "words": 1,
-  "fams": [
-   "bip:indice"
-  ]
- },
- {
   "key": "ça c'est l'étoile|.",
   "text": "Ça, c'est l'étoile.",
   "say": "Ça, c'est l'étoile.",
@@ -31938,16 +32119,6 @@
   ]
  },
  {
-  "key": "a mie ami|.",
-  "text": "a, mie : ami !",
-  "say": "a, mie : ami !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "à toi pour la suite|.",
   "text": "À toi pour la suite.",
   "say": "À toi pour la suite.",
@@ -31967,7 +32138,10 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -31978,6 +32152,16 @@
   "words": 4,
   "fams": [
    "syllabes:indice"
+  ]
+ },
+ {
+  "key": "ba|,",
+  "text": "ba :",
+  "say": "ba :",
+  "pack": "mots",
+  "words": 1,
+  "fams": [
+   "syllabes:reussite"
   ]
  },
  {
@@ -32451,9 +32635,9 @@
   ]
  },
  {
-  "key": "ça c'est a|.",
-  "text": "Ça, c'est a.",
-  "say": "Ça, c'est a.",
+  "key": "c'est un domino|.",
+  "text": "c'est un domino.",
+  "say": "c'est un domino.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -32461,9 +32645,9 @@
   ]
  },
  {
-  "key": "ça c'est ces|.",
-  "text": "Ça, c'est ces.",
-  "say": "Ça, c'est ces.",
+  "key": "c'est un lama|.",
+  "text": "c'est un lama.",
+  "say": "c'est un lama.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -32471,9 +32655,9 @@
   ]
  },
  {
-  "key": "ça c'est da|.",
-  "text": "Ça, c'est da.",
-  "say": "Ça, c'est da.",
+  "key": "c'est un piano|.",
+  "text": "c'est un piano.",
+  "say": "c'est un piano.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -32481,9 +32665,9 @@
   ]
  },
  {
-  "key": "ça c'est dé|.",
-  "text": "Ça, c'est dé.",
-  "say": "Ça, c'est dé.",
+  "key": "c'est un sofa|.",
+  "text": "c'est un sofa.",
+  "say": "c'est un sofa.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -32491,9 +32675,9 @@
   ]
  },
  {
-  "key": "ça c'est dit|.",
-  "text": "Ça, c'est dit.",
-  "say": "Ça, c'est dit.",
+  "key": "c'est un tipi|.",
+  "text": "c'est un tipi.",
+  "say": "c'est un tipi.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -32501,9 +32685,9 @@
   ]
  },
  {
-  "key": "ça c'est dos|.",
-  "text": "Ça, c'est dos.",
-  "say": "Ça, c'est dos.",
+  "key": "c'est un vélo|.",
+  "text": "c'est un vélo.",
+  "say": "c'est un vélo.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -32511,9 +32695,19 @@
   ]
  },
  {
-  "key": "ça c'est du|.",
-  "text": "Ça, c'est du.",
-  "say": "Ça, c'est du.",
+  "key": "c'est une horloge qui montre midi|.",
+  "text": "c'est une horloge qui montre midi.",
+  "say": "c'est une horloge qui montre midi.",
+  "pack": "mots",
+  "words": 6,
+  "fams": [
+   "syllabes:erreur"
+  ]
+ },
+ {
+  "key": "c'est une moto|.",
+  "text": "c'est une moto.",
+  "say": "c'est une moto.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -32521,19 +32715,9 @@
   ]
  },
  {
-  "key": "ça c'est é|.",
-  "text": "Ça, c'est é.",
-  "say": "Ça, c'est é.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est fa|.",
-  "text": "Ça, c'est fa.",
-  "say": "Ça, c'est fa.",
+  "key": "c'est une radio|.",
+  "text": "c'est une radio.",
+  "say": "c'est une radio.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -32551,399 +32735,9 @@
   ]
  },
  {
-  "key": "ça c'est fée|.",
-  "text": "Ça, c'est fée.",
-  "say": "Ça, c'est fée.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est fi|.",
-  "text": "Ça, c'est fi.",
-  "say": "Ça, c'est fi.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est fût|.",
-  "text": "Ça, c'est fût.",
-  "say": "Ça, c'est fût.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est i|.",
-  "text": "Ça, c'est i.",
-  "say": "Ça, c'est i.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est la|.",
-  "text": "Ça, c'est la.",
-  "say": "Ça, c'est la.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est les|.",
-  "text": "Ça, c'est les.",
-  "say": "Ça, c'est les.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est lit|.",
-  "text": "Ça, c'est lit.",
-  "say": "Ça, c'est lit.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est lot|.",
-  "text": "Ça, c'est lot.",
-  "say": "Ça, c'est lot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est lu|.",
-  "text": "Ça, c'est lu.",
-  "say": "Ça, c'est lu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est ma|.",
-  "text": "Ça, c'est ma.",
-  "say": "Ça, c'est ma.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est mes|.",
-  "text": "Ça, c'est mes.",
-  "say": "Ça, c'est mes.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est mie|.",
-  "text": "Ça, c'est mie.",
-  "say": "Ça, c'est mie.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est mot|.",
-  "text": "Ça, c'est mot.",
-  "say": "Ça, c'est mot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est mu|.",
-  "text": "Ça, c'est mu.",
-  "say": "Ça, c'est mu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est na|.",
-  "text": "Ça, c'est na.",
-  "say": "Ça, c'est na.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est né|.",
-  "text": "Ça, c'est né.",
-  "say": "Ça, c'est né.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est nid|.",
-  "text": "Ça, c'est nid.",
-  "say": "Ça, c'est nid.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est nos|.",
-  "text": "Ça, c'est nos.",
-  "say": "Ça, c'est nos.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est nu|.",
-  "text": "Ça, c'est nu.",
-  "say": "Ça, c'est nu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est o|.",
-  "text": "Ça, c'est o.",
-  "say": "Ça, c'est o.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est pas|.",
-  "text": "Ça, c'est pas.",
-  "say": "Ça, c'est pas.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est pé|.",
-  "text": "Ça, c'est pé.",
-  "say": "Ça, c'est pé.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est pie|.",
-  "text": "Ça, c'est pie.",
-  "say": "Ça, c'est pie.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est pot|.",
-  "text": "Ça, c'est pot.",
-  "say": "Ça, c'est pot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est pu|.",
-  "text": "Ça, c'est pu.",
-  "say": "Ça, c'est pu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est rat|.",
-  "text": "Ça, c'est rat.",
-  "say": "Ça, c'est rat.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est ré|.",
-  "text": "Ça, c'est ré.",
-  "say": "Ça, c'est ré.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est riz|.",
-  "text": "Ça, c'est riz.",
-  "say": "Ça, c'est riz.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est rot|.",
-  "text": "Ça, c'est rot.",
-  "say": "Ça, c'est rot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est rue|.",
-  "text": "Ça, c'est rue.",
-  "say": "Ça, c'est rue.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est sa|.",
-  "text": "Ça, c'est sa.",
-  "say": "Ça, c'est sa.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "ça c'est seau|.",
   "text": "Ça, c'est seau.",
   "say": "Ça, c'est seau.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est si|.",
-  "text": "Ça, c'est si.",
-  "say": "Ça, c'est si.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est su|.",
-  "text": "Ça, c'est su.",
-  "say": "Ça, c'est su.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est ta|.",
-  "text": "Ça, c'est ta.",
-  "say": "Ça, c'est ta.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est thé|.",
-  "text": "Ça, c'est thé.",
-  "say": "Ça, c'est thé.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est ti|.",
-  "text": "Ça, c'est ti.",
-  "say": "Ça, c'est ti.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est tôt|.",
-  "text": "Ça, c'est tôt.",
-  "say": "Ça, c'est tôt.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est tu|.",
-  "text": "Ça, c'est tu.",
-  "say": "Ça, c'est tu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est u|.",
-  "text": "Ça, c'est u.",
-  "say": "Ça, c'est u.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -33041,49 +32835,9 @@
   ]
  },
  {
-  "key": "ça c'est va|.",
-  "text": "Ça, c'est va.",
-  "say": "Ça, c'est va.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est vé|.",
-  "text": "Ça, c'est vé.",
-  "say": "Ça, c'est vé.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "ça c'est veau|.",
   "text": "Ça, c'est veau.",
   "say": "Ça, c'est veau.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est vie|.",
-  "text": "Ça, c'est vie.",
-  "say": "Ça, c'est vie.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "ça c'est vu|.",
-  "text": "Ça, c'est vu.",
-  "say": "Ça, c'est vu.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -33504,16 +33258,6 @@
   ]
  },
  {
-  "key": "ca na da canada|.",
-  "text": "ca, na, da : Canada !",
-  "say": "ca, na, da : Canada !",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "ça rime|.",
   "text": "ça rime !",
   "say": "ça rime !",
@@ -33544,7 +33288,20 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
+  ]
+ },
+ {
+  "key": "ça|,",
+  "text": "Ça,",
+  "say": "Ça,",
+  "pack": "mots",
+  "words": 1,
+  "fams": [
+   "syllabes:erreur"
   ]
  },
  {
@@ -34645,7 +34402,8 @@
   "fams": [
    "chants:erreur",
    "chants:indice",
-   "chants:reussite"
+   "chants:reussite",
+   "syllabes:reussite"
   ]
  },
  {
@@ -34743,23 +34501,16 @@
   ]
  },
  {
-  "key": "cu ba cuba|.",
-  "text": "cu, ba : Cuba !",
-  "say": "cu, ba : Cuba !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "cu|,",
   "text": "cu,",
   "say": "cu,",
   "pack": "mots",
   "words": 1,
   "fams": [
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -34780,7 +34531,8 @@
   "words": 1,
   "fams": [
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -34861,7 +34613,10 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -34875,16 +34630,6 @@
   ]
  },
  {
-  "key": "dos mie nos domino|.",
-  "text": "dos, mie, nos : domino !",
-  "say": "dos, mie, nos : domino !",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "dos|,",
   "text": "dos,",
   "say": "dos,",
@@ -34894,7 +34639,10 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -34909,11 +34657,13 @@
  },
  {
   "key": "é|.",
-  "text": "é.",
-  "say": "é.",
+  "text": "é !",
+  "say": "é !",
   "pack": "mots",
   "words": 1,
   "fams": [
+   "syllabes:consigne",
+   "syllabes:erreur",
    "syllabes:indice"
   ]
  },
@@ -34928,156 +34678,6 @@
   ]
  },
  {
-  "key": "écoute a mie|.",
-  "text": "Écoute : a, mie.",
-  "say": "Écoute : a, mie.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute a|.",
-  "text": "Écoute : a.",
-  "say": "Écoute : a.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien a mie|.",
-  "text": "Écoute bien : a, mie.",
-  "say": "Écoute bien : a, mie.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien a|.",
-  "text": "Écoute bien : a.",
-  "say": "Écoute bien : a.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien ca na da|.",
-  "text": "Écoute bien : ca, na, da.",
-  "say": "Écoute bien : ca, na, da.",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien ces|.",
-  "text": "Écoute bien : ces.",
-  "say": "Écoute bien : ces.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien cu ba|.",
-  "text": "Écoute bien : cu, ba.",
-  "say": "Écoute bien : cu, ba.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien da|.",
-  "text": "Écoute bien : da.",
-  "say": "Écoute bien : da.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien dé|.",
-  "text": "Écoute bien : dé.",
-  "say": "Écoute bien : dé.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien dit|.",
-  "text": "Écoute bien : dit.",
-  "say": "Écoute bien : dit.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien dos mie nos|.",
-  "text": "Écoute bien : dos, mie, nos.",
-  "say": "Écoute bien : dos, mie, nos.",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien dos|.",
-  "text": "Écoute bien : dos.",
-  "say": "Écoute bien : dos.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien du|.",
-  "text": "Écoute bien : du.",
-  "say": "Écoute bien : du.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien é|.",
-  "text": "Écoute bien : é.",
-  "say": "Écoute bien : é.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien fa|.",
-  "text": "Écoute bien : fa.",
-  "say": "Écoute bien : fa.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
   "key": "écoute bien faux|.",
   "text": "Écoute bien : faux.",
   "say": "Écoute bien : faux.",
@@ -35088,66 +34688,6 @@
   ]
  },
  {
-  "key": "écoute bien fée|.",
-  "text": "Écoute bien : fée.",
-  "say": "Écoute bien : fée.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien fi|.",
-  "text": "Écoute bien : fi.",
-  "say": "Écoute bien : fi.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien fût mes|.",
-  "text": "Écoute bien : fût, mes.",
-  "say": "Écoute bien : fût, mes.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien fût|.",
-  "text": "Écoute bien : fût.",
-  "say": "Écoute bien : fût.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien i|.",
-  "text": "Écoute bien : i.",
-  "say": "Écoute bien : i.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien ju dos|.",
-  "text": "Écoute bien : ju, dos.",
-  "say": "Écoute bien : ju, dos.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "écoute bien la fin de chaque mot|,",
   "text": "Écoute bien la fin de chaque mot :",
   "say": "Écoute bien la fin de chaque mot :",
@@ -35155,26 +34695,6 @@
   "words": 7,
   "fams": [
    "chants:indice"
-  ]
- },
- {
-  "key": "écoute bien la ma|.",
-  "text": "Écoute bien : la, ma.",
-  "say": "Écoute bien : la, ma.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien la|.",
-  "text": "Écoute bien : la.",
-  "say": "Écoute bien : la.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
   ]
  },
  {
@@ -35198,529 +34718,9 @@
   ]
  },
  {
-  "key": "écoute bien les|.",
-  "text": "Écoute bien : les.",
-  "say": "Écoute bien : les.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien lit|.",
-  "text": "Écoute bien : lit.",
-  "say": "Écoute bien : lit.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien lot|.",
-  "text": "Écoute bien : lot.",
-  "say": "Écoute bien : lot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien lu|.",
-  "text": "Écoute bien : lu.",
-  "say": "Écoute bien : lu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien ma lit|.",
-  "text": "Écoute bien : ma, lit.",
-  "say": "Écoute bien : ma, lit.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien ma|.",
-  "text": "Écoute bien : ma.",
-  "say": "Écoute bien : ma.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien mes|.",
-  "text": "Écoute bien : mes.",
-  "say": "Écoute bien : mes.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien mie dit|.",
-  "text": "Écoute bien : mie, dit.",
-  "say": "Écoute bien : mie, dit.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien mie|.",
-  "text": "Écoute bien : mie.",
-  "say": "Écoute bien : mie.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien mot na co|.",
-  "text": "Écoute bien : mot, na, co.",
-  "say": "Écoute bien : mot, na, co.",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien mot tôt|.",
-  "text": "Écoute bien : mot, tôt.",
-  "say": "Écoute bien : mot, tôt.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien mot|.",
-  "text": "Écoute bien : mot.",
-  "say": "Écoute bien : mot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien mu|.",
-  "text": "Écoute bien : mu.",
-  "say": "Écoute bien : mu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien na|.",
-  "text": "Écoute bien : na.",
-  "say": "Écoute bien : na.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien né|.",
-  "text": "Écoute bien : né.",
-  "say": "Écoute bien : né.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien nid|.",
-  "text": "Écoute bien : nid.",
-  "say": "Écoute bien : nid.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien nos|.",
-  "text": "Écoute bien : nos.",
-  "say": "Écoute bien : nos.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien nu mes rot|.",
-  "text": "Écoute bien : nu, mes, rot.",
-  "say": "Écoute bien : nu, mes, rot.",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien nu|.",
-  "text": "Écoute bien : nu.",
-  "say": "Écoute bien : nu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien o|.",
-  "text": "Écoute bien : o.",
-  "say": "Écoute bien : o.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien pas na ma|.",
-  "text": "Écoute bien : pas, na, ma.",
-  "say": "Écoute bien : pas, na, ma.",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien pas pie|.",
-  "text": "Écoute bien : pas, pie.",
-  "say": "Écoute bien : pas, pie.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien pas|.",
-  "text": "Écoute bien : pas.",
-  "say": "Écoute bien : pas.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien pé|.",
-  "text": "Écoute bien : pé.",
-  "say": "Écoute bien : pé.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien pie a nos|.",
-  "text": "Écoute bien : pie, a, nos.",
-  "say": "Écoute bien : pie, a, nos.",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien pie|.",
-  "text": "Écoute bien : pie.",
-  "say": "Écoute bien : pie.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien pot|.",
-  "text": "Écoute bien : pot.",
-  "say": "Écoute bien : pot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien pu|.",
-  "text": "Écoute bien : pu.",
-  "say": "Écoute bien : pu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien rat dit o|.",
-  "text": "Écoute bien : rat, dit, o.",
-  "say": "Écoute bien : rat, dit, o.",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien rat|.",
-  "text": "Écoute bien : rat.",
-  "say": "Écoute bien : rat.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien ré|.",
-  "text": "Écoute bien : ré.",
-  "say": "Écoute bien : ré.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien riz|.",
-  "text": "Écoute bien : riz.",
-  "say": "Écoute bien : riz.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien rot|.",
-  "text": "Écoute bien : rot.",
-  "say": "Écoute bien : rot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien rue|.",
-  "text": "Écoute bien : rue.",
-  "say": "Écoute bien : rue.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien sa la mie|.",
-  "text": "Écoute bien : sa, la, mie.",
-  "say": "Écoute bien : sa, la, mie.",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien sa les|.",
-  "text": "Écoute bien : sa, les.",
-  "say": "Écoute bien : sa, les.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien sa|.",
-  "text": "Écoute bien : sa.",
-  "say": "Écoute bien : sa.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien seau fa|.",
-  "text": "Écoute bien : seau, fa.",
-  "say": "Écoute bien : seau, fa.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "écoute bien seau|.",
   "text": "Écoute bien : seau.",
   "say": "Écoute bien : seau.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien si|.",
-  "text": "Écoute bien : si.",
-  "say": "Écoute bien : si.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien su|.",
-  "text": "Écoute bien : su.",
-  "say": "Écoute bien : su.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien ta|.",
-  "text": "Écoute bien : ta.",
-  "say": "Écoute bien : ta.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien thé|.",
-  "text": "Écoute bien : thé.",
-  "say": "Écoute bien : thé.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien ti pie|.",
-  "text": "Écoute bien : ti, pie.",
-  "say": "Écoute bien : ti, pie.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien ti|.",
-  "text": "Écoute bien : ti.",
-  "say": "Écoute bien : ti.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien tôt go|.",
-  "text": "Écoute bien : tôt, go.",
-  "say": "Écoute bien : tôt, go.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien tôt|.",
-  "text": "Écoute bien : tôt.",
-  "say": "Écoute bien : tôt.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien tu ba|.",
-  "text": "Écoute bien : tu, ba.",
-  "say": "Écoute bien : tu, ba.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien tu|.",
-  "text": "Écoute bien : tu.",
-  "say": "Écoute bien : tu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien u|.",
-  "text": "Écoute bien : u.",
-  "say": "Écoute bien : u.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien va|.",
-  "text": "Écoute bien : va.",
-  "say": "Écoute bien : va.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien vé lot|.",
-  "text": "Écoute bien : vé, lot.",
-  "say": "Écoute bien : vé, lot.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute bien vé|.",
-  "text": "Écoute bien : vé.",
-  "say": "Écoute bien : vé.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -35738,132 +34738,14 @@
   ]
  },
  {
-  "key": "écoute bien vie|.",
-  "text": "Écoute bien : vie.",
-  "say": "Écoute bien : vie.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute bien vu|.",
-  "text": "Écoute bien : vu.",
-  "say": "Écoute bien : vu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
   "key": "écoute bien|,",
   "text": "Écoute bien :",
   "say": "Écoute bien :",
   "pack": "mots",
   "words": 2,
   "fams": [
-   "chants:erreur"
-  ]
- },
- {
-  "key": "écoute ca na da|.",
-  "text": "Écoute : ca, na, da.",
-  "say": "Écoute : ca, na, da.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute ces|.",
-  "text": "Écoute : ces.",
-  "say": "Écoute : ces.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute cu ba|.",
-  "text": "Écoute : cu, ba.",
-  "say": "Écoute : cu, ba.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute da|.",
-  "text": "Écoute : da.",
-  "say": "Écoute : da.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute dé|.",
-  "text": "Écoute : dé.",
-  "say": "Écoute : dé.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute dit|.",
-  "text": "Écoute : dit.",
-  "say": "Écoute : dit.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute dos mie nos|.",
-  "text": "Écoute : dos, mie, nos.",
-  "say": "Écoute : dos, mie, nos.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute dos|.",
-  "text": "Écoute : dos.",
-  "say": "Écoute : dos.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute du|.",
-  "text": "Écoute : du.",
-  "say": "Écoute : du.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute é|.",
-  "text": "Écoute : é.",
-  "say": "Écoute : é.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
+   "chants:erreur",
+   "syllabes:consigne",
    "syllabes:erreur"
   ]
  },
@@ -35878,99 +34760,9 @@
   ]
  },
  {
-  "key": "écoute fa|.",
-  "text": "Écoute : fa.",
-  "say": "Écoute : fa.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "écoute faux|.",
   "text": "Écoute : faux.",
   "say": "Écoute : faux.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute fée|.",
-  "text": "Écoute : fée.",
-  "say": "Écoute : fée.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute fi|.",
-  "text": "Écoute : fi.",
-  "say": "Écoute : fi.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute fût mes|.",
-  "text": "Écoute : fût, mes.",
-  "say": "Écoute : fût, mes.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute fût|.",
-  "text": "Écoute : fût.",
-  "say": "Écoute : fût.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute i|.",
-  "text": "Écoute : i.",
-  "say": "Écoute : i.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute ju dos|.",
-  "text": "Écoute : ju, dos.",
-  "say": "Écoute : ju, dos.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute la ma|.",
-  "text": "Écoute : la, ma.",
-  "say": "Écoute : la, ma.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute la|.",
-  "text": "Écoute : la.",
-  "say": "Écoute : la.",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -35989,529 +34781,9 @@
   ]
  },
  {
-  "key": "écoute les|.",
-  "text": "Écoute : les.",
-  "say": "Écoute : les.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute lit|.",
-  "text": "Écoute : lit.",
-  "say": "Écoute : lit.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute lot|.",
-  "text": "Écoute : lot.",
-  "say": "Écoute : lot.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute lu|.",
-  "text": "Écoute : lu.",
-  "say": "Écoute : lu.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute ma lit|.",
-  "text": "Écoute : ma, lit.",
-  "say": "Écoute : ma, lit.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute ma|.",
-  "text": "Écoute : ma.",
-  "say": "Écoute : ma.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute mes|.",
-  "text": "Écoute : mes.",
-  "say": "Écoute : mes.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute mie dit|.",
-  "text": "Écoute : mie, dit.",
-  "say": "Écoute : mie, dit.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute mie|.",
-  "text": "Écoute : mie.",
-  "say": "Écoute : mie.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute mot na co|.",
-  "text": "Écoute : mot, na, co.",
-  "say": "Écoute : mot, na, co.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute mot tôt|.",
-  "text": "Écoute : mot, tôt.",
-  "say": "Écoute : mot, tôt.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute mot|.",
-  "text": "Écoute : mot.",
-  "say": "Écoute : mot.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute mu|.",
-  "text": "Écoute : mu.",
-  "say": "Écoute : mu.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute na|.",
-  "text": "Écoute : na.",
-  "say": "Écoute : na.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute né|.",
-  "text": "Écoute : né.",
-  "say": "Écoute : né.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute nid|.",
-  "text": "Écoute : nid.",
-  "say": "Écoute : nid.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute nos|.",
-  "text": "Écoute : nos.",
-  "say": "Écoute : nos.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute nu mes rot|.",
-  "text": "Écoute : nu, mes, rot.",
-  "say": "Écoute : nu, mes, rot.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute nu|.",
-  "text": "Écoute : nu.",
-  "say": "Écoute : nu.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute o|.",
-  "text": "Écoute : o.",
-  "say": "Écoute : o.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute pas na ma|.",
-  "text": "Écoute : pas, na, ma.",
-  "say": "Écoute : pas, na, ma.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute pas pie|.",
-  "text": "Écoute : pas, pie.",
-  "say": "Écoute : pas, pie.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute pas|.",
-  "text": "Écoute : pas.",
-  "say": "Écoute : pas.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute pé|.",
-  "text": "Écoute : pé.",
-  "say": "Écoute : pé.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute pie a nos|.",
-  "text": "Écoute : pie, a, nos.",
-  "say": "Écoute : pie, a, nos.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute pie|.",
-  "text": "Écoute : pie.",
-  "say": "Écoute : pie.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute pot|.",
-  "text": "Écoute : pot.",
-  "say": "Écoute : pot.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute pu|.",
-  "text": "Écoute : pu.",
-  "say": "Écoute : pu.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute rat dit o|.",
-  "text": "Écoute : rat, dit, o.",
-  "say": "Écoute : rat, dit, o.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute rat|.",
-  "text": "Écoute : rat.",
-  "say": "Écoute : rat.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute ré|.",
-  "text": "Écoute : ré.",
-  "say": "Écoute : ré.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute riz|.",
-  "text": "Écoute : riz.",
-  "say": "Écoute : riz.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute rot|.",
-  "text": "Écoute : rot.",
-  "say": "Écoute : rot.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute rue|.",
-  "text": "Écoute : rue.",
-  "say": "Écoute : rue.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute sa la mie|.",
-  "text": "Écoute : sa, la, mie.",
-  "say": "Écoute : sa, la, mie.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute sa les|.",
-  "text": "Écoute : sa, les.",
-  "say": "Écoute : sa, les.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute sa|.",
-  "text": "Écoute : sa.",
-  "say": "Écoute : sa.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute seau fa|.",
-  "text": "Écoute : seau, fa.",
-  "say": "Écoute : seau, fa.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
   "key": "écoute seau|.",
   "text": "Écoute : seau.",
   "say": "Écoute : seau.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute si|.",
-  "text": "Écoute : si.",
-  "say": "Écoute : si.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute su|.",
-  "text": "Écoute : su.",
-  "say": "Écoute : su.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute ta|.",
-  "text": "Écoute : ta.",
-  "say": "Écoute : ta.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute thé|.",
-  "text": "Écoute : thé.",
-  "say": "Écoute : thé.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute ti pie|.",
-  "text": "Écoute : ti, pie.",
-  "say": "Écoute : ti, pie.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute ti|.",
-  "text": "Écoute : ti.",
-  "say": "Écoute : ti.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute tôt go|.",
-  "text": "Écoute : tôt, go.",
-  "say": "Écoute : tôt, go.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute tôt|.",
-  "text": "Écoute : tôt.",
-  "say": "Écoute : tôt.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute tu ba|.",
-  "text": "Écoute : tu, ba.",
-  "say": "Écoute : tu, ba.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute tu|.",
-  "text": "Écoute : tu.",
-  "say": "Écoute : tu.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute u|.",
-  "text": "Écoute : u.",
-  "say": "Écoute : u.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute va|.",
-  "text": "Écoute : va.",
-  "say": "Écoute : va.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute vé lot|.",
-  "text": "Écoute : vé, lot.",
-  "say": "Écoute : vé, lot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "écoute vé|.",
-  "text": "Écoute : vé.",
-  "say": "Écoute : vé.",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -36529,26 +34801,6 @@
   ]
  },
  {
-  "key": "écoute vie|.",
-  "text": "Écoute : vie.",
-  "say": "Écoute : vie.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "écoute vu|.",
-  "text": "Écoute : vu.",
-  "say": "Écoute : vu.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "écoute|,",
   "text": "Écoute :",
   "say": "Écoute :",
@@ -36558,6 +34810,8 @@
    "chants:consigne",
    "chants:erreur",
    "chants:indice",
+   "syllabes:consigne",
+   "syllabes:erreur",
    "syllabes:indice"
   ]
  },
@@ -37946,7 +36200,8 @@
   "pack": "mots",
   "words": 1,
   "fams": [
-   "syllabes:indice"
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -38645,23 +36900,16 @@
   ]
  },
  {
-  "key": "fût mes fumé|.",
-  "text": "fût, mes : fumé !",
-  "say": "fût, mes : fumé !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "fût|,",
   "text": "fût,",
   "say": "fût,",
   "pack": "mots",
   "words": 1,
   "fams": [
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -38724,12 +36972,24 @@
   ]
  },
  {
+  "key": "go|,",
+  "text": "go :",
+  "say": "go :",
+  "pack": "mots",
+  "words": 1,
+  "fams": [
+   "syllabes:reussite"
+  ]
+ },
+ {
   "key": "go|.",
   "text": "go.",
   "say": "go.",
   "pack": "mots",
   "words": 1,
   "fams": [
+   "syllabes:consigne",
+   "syllabes:erreur",
    "syllabes:indice"
   ]
  },
@@ -38771,11 +37031,13 @@
  },
  {
   "key": "i|.",
-  "text": "i.",
-  "say": "i.",
+  "text": "i !",
+  "say": "i !",
   "pack": "mots",
   "words": 1,
   "fams": [
+   "syllabes:consigne",
+   "syllabes:erreur",
    "syllabes:indice"
   ]
  },
@@ -38850,23 +37112,15 @@
   ]
  },
  {
-  "key": "ju dos judo|.",
-  "text": "ju, dos : judo !",
-  "say": "ju, dos : judo !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "ju|,",
   "text": "ju,",
   "say": "ju,",
   "pack": "mots",
   "words": 1,
   "fams": [
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -38992,16 +37246,6 @@
   ]
  },
  {
-  "key": "la ma lama|.",
-  "text": "la, ma : lama !",
-  "say": "la, ma : lama !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "la moto|",
   "text": "la moto",
   "say": "la moto",
@@ -39110,7 +37354,10 @@
    "chants:indice",
    "chants:reussite",
    "lis:indice",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -39436,7 +37683,8 @@
   "pack": "mots",
   "words": 1,
   "fams": [
-   "syllabes:indice"
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -39551,7 +37799,8 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -39572,7 +37821,8 @@
   "words": 1,
   "fams": [
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -39610,16 +37860,6 @@
   ]
  },
  {
-  "key": "ma lit mali|.",
-  "text": "ma, lit : Mali !",
-  "say": "ma, lit : Mali !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "ma|,",
   "text": "ma,",
   "say": "ma,",
@@ -39627,7 +37867,10 @@
   "words": 1,
   "fams": [
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -39743,7 +37986,10 @@
   "pack": "mots",
   "words": 1,
   "fams": [
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -39757,16 +38003,6 @@
   ]
  },
  {
-  "key": "mie dit midi|.",
-  "text": "mie, dit : midi !",
-  "say": "mie, dit : midi !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "mie|,",
   "text": "mie,",
   "say": "mie,",
@@ -39774,7 +38010,10 @@
   "words": 1,
   "fams": [
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -39798,26 +38037,6 @@
   ]
  },
  {
-  "key": "mot na co monaco|.",
-  "text": "mot, na, co : Monaco !",
-  "say": "mot, na, co : Monaco !",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "mot tôt moto|.",
-  "text": "mot, tôt : moto !",
-  "say": "mot, tôt : moto !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "mot|,",
   "text": "mot,",
   "say": "mot,",
@@ -39827,7 +38046,10 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -39920,7 +38142,10 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -39987,16 +38212,7 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "nu mes rot numéro|.",
-  "text": "nu, mes, rot : numéro !",
-  "say": "nu, mes, rot : numéro !",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
+   "syllabes:indice",
    "syllabes:reussite"
   ]
  },
@@ -40007,7 +38223,10 @@
   "pack": "mots",
   "words": 1,
   "fams": [
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -40021,369 +38240,19 @@
   ]
  },
  {
-  "key": "on cherche ces|.",
-  "text": "On cherche ces.",
-  "say": "On cherche ces.",
+  "key": "o|,",
+  "text": "o :",
+  "say": "o :",
   "pack": "mots",
-  "words": 3,
+  "words": 1,
   "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche da|.",
-  "text": "On cherche da.",
-  "say": "On cherche da.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche dé|.",
-  "text": "On cherche dé.",
-  "say": "On cherche dé.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche dit|.",
-  "text": "On cherche dit.",
-  "say": "On cherche dit.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche dos|.",
-  "text": "On cherche dos.",
-  "say": "On cherche dos.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche du|.",
-  "text": "On cherche du.",
-  "say": "On cherche du.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche fa|.",
-  "text": "On cherche fa.",
-  "say": "On cherche fa.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
+   "syllabes:reussite"
   ]
  },
  {
   "key": "on cherche faux|.",
   "text": "On cherche faux.",
   "say": "On cherche faux.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche fée|.",
-  "text": "On cherche fée.",
-  "say": "On cherche fée.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche fi|.",
-  "text": "On cherche fi.",
-  "say": "On cherche fi.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche fût|.",
-  "text": "On cherche fût.",
-  "say": "On cherche fût.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche la|.",
-  "text": "On cherche la.",
-  "say": "On cherche la.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche les|.",
-  "text": "On cherche les.",
-  "say": "On cherche les.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche lit|.",
-  "text": "On cherche lit.",
-  "say": "On cherche lit.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche lot|.",
-  "text": "On cherche lot.",
-  "say": "On cherche lot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche lu|.",
-  "text": "On cherche lu.",
-  "say": "On cherche lu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche ma|.",
-  "text": "On cherche ma.",
-  "say": "On cherche ma.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche mes|.",
-  "text": "On cherche mes.",
-  "say": "On cherche mes.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche mie|.",
-  "text": "On cherche mie.",
-  "say": "On cherche mie.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche mot|.",
-  "text": "On cherche mot.",
-  "say": "On cherche mot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche mu|.",
-  "text": "On cherche mu.",
-  "say": "On cherche mu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche na|.",
-  "text": "On cherche na.",
-  "say": "On cherche na.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche né|.",
-  "text": "On cherche né.",
-  "say": "On cherche né.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche nid|.",
-  "text": "On cherche nid.",
-  "say": "On cherche nid.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche nos|.",
-  "text": "On cherche nos.",
-  "say": "On cherche nos.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche nu|.",
-  "text": "On cherche nu.",
-  "say": "On cherche nu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche pas|.",
-  "text": "On cherche pas.",
-  "say": "On cherche pas.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche pé|.",
-  "text": "On cherche pé.",
-  "say": "On cherche pé.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche pie|.",
-  "text": "On cherche pie.",
-  "say": "On cherche pie.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche pot|.",
-  "text": "On cherche pot.",
-  "say": "On cherche pot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche pu|.",
-  "text": "On cherche pu.",
-  "say": "On cherche pu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche rat|.",
-  "text": "On cherche rat.",
-  "say": "On cherche rat.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche ré|.",
-  "text": "On cherche ré.",
-  "say": "On cherche ré.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche riz|.",
-  "text": "On cherche riz.",
-  "say": "On cherche riz.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche rot|.",
-  "text": "On cherche rot.",
-  "say": "On cherche rot.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche rue|.",
-  "text": "On cherche rue.",
-  "say": "On cherche rue.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche sa|.",
-  "text": "On cherche sa.",
-  "say": "On cherche sa.",
   "pack": "mots",
   "words": 3,
   "fams": [
@@ -40401,96 +38270,6 @@
   ]
  },
  {
-  "key": "on cherche si|.",
-  "text": "On cherche si.",
-  "say": "On cherche si.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche su|.",
-  "text": "On cherche su.",
-  "say": "On cherche su.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche ta|.",
-  "text": "On cherche ta.",
-  "say": "On cherche ta.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche thé|.",
-  "text": "On cherche thé.",
-  "say": "On cherche thé.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche ti|.",
-  "text": "On cherche ti.",
-  "say": "On cherche ti.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche tôt|.",
-  "text": "On cherche tôt.",
-  "say": "On cherche tôt.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche tu|.",
-  "text": "On cherche tu.",
-  "say": "On cherche tu.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche va|.",
-  "text": "On cherche va.",
-  "say": "On cherche va.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche vé|.",
-  "text": "On cherche vé.",
-  "say": "On cherche vé.",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "on cherche veau|.",
   "text": "On cherche veau.",
   "say": "On cherche veau.",
@@ -40501,21 +38280,11 @@
   ]
  },
  {
-  "key": "on cherche vie|.",
-  "text": "On cherche vie.",
-  "say": "On cherche vie.",
+  "key": "on cherche|,",
+  "text": "On cherche :",
+  "say": "On cherche :",
   "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "on cherche vu|.",
-  "text": "On cherche vu.",
-  "say": "On cherche vu.",
-  "pack": "mots",
-  "words": 3,
+  "words": 2,
   "fams": [
    "syllabes:erreur"
   ]
@@ -41349,16 +39118,6 @@
   ]
  },
  {
-  "key": "oui a|.",
-  "text": "Oui, a !",
-  "say": "Oui, a !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "oui bravo|.",
   "text": "Oui, bravo !",
   "say": "Oui, bravo !",
@@ -41369,89 +39128,9 @@
   ]
  },
  {
-  "key": "oui ces|.",
-  "text": "Oui, ces !",
-  "say": "Oui, ces !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui da|.",
-  "text": "Oui, da !",
-  "say": "Oui, da !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui dé|.",
-  "text": "Oui, dé !",
-  "say": "Oui, dé !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui dit|.",
-  "text": "Oui, dit !",
-  "say": "Oui, dit !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "oui domino|.",
   "text": "Oui, domino !",
   "say": "Oui, domino !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui dos|.",
-  "text": "Oui, dos !",
-  "say": "Oui, dos !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui du|.",
-  "text": "Oui, du !",
-  "say": "Oui, du !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui é|.",
-  "text": "Oui, é !",
-  "say": "Oui, é !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "oui fa|.",
-  "text": "Oui, fa !",
-  "say": "Oui, fa !",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -41469,119 +39148,9 @@
   ]
  },
  {
-  "key": "oui fée|.",
-  "text": "Oui, fée !",
-  "say": "Oui, fée !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui fi|.",
-  "text": "Oui, fi !",
-  "say": "Oui, fi !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui fût|.",
-  "text": "Oui, fût !",
-  "say": "Oui, fût !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui i|.",
-  "text": "Oui, i !",
-  "say": "Oui, i !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "oui la|.",
-  "text": "Oui, la !",
-  "say": "Oui, la !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "oui lama|.",
   "text": "Oui, lama !",
   "say": "Oui, lama !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui les|.",
-  "text": "Oui, les !",
-  "say": "Oui, les !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui lit|.",
-  "text": "Oui, lit !",
-  "say": "Oui, lit !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui lot|.",
-  "text": "Oui, lot !",
-  "say": "Oui, lot !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui lu|.",
-  "text": "Oui, lu !",
-  "say": "Oui, lu !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui ma|.",
-  "text": "Oui, ma !",
-  "say": "Oui, ma !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui mes|.",
-  "text": "Oui, mes !",
-  "say": "Oui, mes !",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -41599,119 +39168,9 @@
   ]
  },
  {
-  "key": "oui mie|.",
-  "text": "Oui, mie !",
-  "say": "Oui, mie !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui mot|.",
-  "text": "Oui, mot !",
-  "say": "Oui, mot !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "oui moto|.",
   "text": "Oui, moto !",
   "say": "Oui, moto !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui mu|.",
-  "text": "Oui, mu !",
-  "say": "Oui, mu !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui na|.",
-  "text": "Oui, na !",
-  "say": "Oui, na !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui né|.",
-  "text": "Oui, né !",
-  "say": "Oui, né !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui nid|.",
-  "text": "Oui, nid !",
-  "say": "Oui, nid !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui nos|.",
-  "text": "Oui, nos !",
-  "say": "Oui, nos !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui nu|.",
-  "text": "Oui, nu !",
-  "say": "Oui, nu !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui o|.",
-  "text": "Oui, o !",
-  "say": "Oui, o !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "oui pas|.",
-  "text": "Oui, pas !",
-  "say": "Oui, pas !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui pé|.",
-  "text": "Oui, pé !",
-  "say": "Oui, pé !",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -41729,99 +39188,9 @@
   ]
  },
  {
-  "key": "oui pie|.",
-  "text": "Oui, pie !",
-  "say": "Oui, pie !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui pot|.",
-  "text": "Oui, pot !",
-  "say": "Oui, pot !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui pu|.",
-  "text": "Oui, pu !",
-  "say": "Oui, pu !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "oui radio|.",
   "text": "Oui, radio !",
   "say": "Oui, radio !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui rat|.",
-  "text": "Oui, rat !",
-  "say": "Oui, rat !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui ré|.",
-  "text": "Oui, ré !",
-  "say": "Oui, ré !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui riz|.",
-  "text": "Oui, riz !",
-  "say": "Oui, riz !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui rot|.",
-  "text": "Oui, rot !",
-  "say": "Oui, rot !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui rue|.",
-  "text": "Oui, rue !",
-  "say": "Oui, rue !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui sa|.",
-  "text": "Oui, sa !",
-  "say": "Oui, sa !",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -41839,59 +39208,9 @@
   ]
  },
  {
-  "key": "oui si|.",
-  "text": "Oui, si !",
-  "say": "Oui, si !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "oui sofa|.",
   "text": "Oui, sofa !",
   "say": "Oui, sofa !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui su|.",
-  "text": "Oui, su !",
-  "say": "Oui, su !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui ta|.",
-  "text": "Oui, ta !",
-  "say": "Oui, ta !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui thé|.",
-  "text": "Oui, thé !",
-  "say": "Oui, thé !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui ti|.",
-  "text": "Oui, ti !",
-  "say": "Oui, ti !",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -41909,379 +39228,9 @@
   ]
  },
  {
-  "key": "oui tôt|.",
-  "text": "Oui, tôt !",
-  "say": "Oui, tôt !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué ces|.",
-  "text": "Oui, tu as fabriqué ces !",
-  "say": "Oui, tu as fabriqué ces !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué da|.",
-  "text": "Oui, tu as fabriqué da !",
-  "say": "Oui, tu as fabriqué da !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué dé|.",
-  "text": "Oui, tu as fabriqué dé !",
-  "say": "Oui, tu as fabriqué dé !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué dit|.",
-  "text": "Oui, tu as fabriqué dit !",
-  "say": "Oui, tu as fabriqué dit !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué dos|.",
-  "text": "Oui, tu as fabriqué dos !",
-  "say": "Oui, tu as fabriqué dos !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué du|.",
-  "text": "Oui, tu as fabriqué du !",
-  "say": "Oui, tu as fabriqué du !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué fa|.",
-  "text": "Oui, tu as fabriqué fa !",
-  "say": "Oui, tu as fabriqué fa !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "oui tu as fabriqué faux|.",
   "text": "Oui, tu as fabriqué faux !",
   "say": "Oui, tu as fabriqué faux !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué fée|.",
-  "text": "Oui, tu as fabriqué fée !",
-  "say": "Oui, tu as fabriqué fée !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué fi|.",
-  "text": "Oui, tu as fabriqué fi !",
-  "say": "Oui, tu as fabriqué fi !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué fût|.",
-  "text": "Oui, tu as fabriqué fût !",
-  "say": "Oui, tu as fabriqué fût !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué la|.",
-  "text": "Oui, tu as fabriqué la !",
-  "say": "Oui, tu as fabriqué la !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué les|.",
-  "text": "Oui, tu as fabriqué les !",
-  "say": "Oui, tu as fabriqué les !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué lit|.",
-  "text": "Oui, tu as fabriqué lit !",
-  "say": "Oui, tu as fabriqué lit !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué lot|.",
-  "text": "Oui, tu as fabriqué lot !",
-  "say": "Oui, tu as fabriqué lot !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué lu|.",
-  "text": "Oui, tu as fabriqué lu !",
-  "say": "Oui, tu as fabriqué lu !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué ma|.",
-  "text": "Oui, tu as fabriqué ma !",
-  "say": "Oui, tu as fabriqué ma !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué mes|.",
-  "text": "Oui, tu as fabriqué mes !",
-  "say": "Oui, tu as fabriqué mes !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué mie|.",
-  "text": "Oui, tu as fabriqué mie !",
-  "say": "Oui, tu as fabriqué mie !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué mot|.",
-  "text": "Oui, tu as fabriqué mot !",
-  "say": "Oui, tu as fabriqué mot !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué mu|.",
-  "text": "Oui, tu as fabriqué mu !",
-  "say": "Oui, tu as fabriqué mu !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué na|.",
-  "text": "Oui, tu as fabriqué na !",
-  "say": "Oui, tu as fabriqué na !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué né|.",
-  "text": "Oui, tu as fabriqué né !",
-  "say": "Oui, tu as fabriqué né !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué nid|.",
-  "text": "Oui, tu as fabriqué nid !",
-  "say": "Oui, tu as fabriqué nid !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué nos|.",
-  "text": "Oui, tu as fabriqué nos !",
-  "say": "Oui, tu as fabriqué nos !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué nu|.",
-  "text": "Oui, tu as fabriqué nu !",
-  "say": "Oui, tu as fabriqué nu !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué pas|.",
-  "text": "Oui, tu as fabriqué pas !",
-  "say": "Oui, tu as fabriqué pas !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué pé|.",
-  "text": "Oui, tu as fabriqué pé !",
-  "say": "Oui, tu as fabriqué pé !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué pie|.",
-  "text": "Oui, tu as fabriqué pie !",
-  "say": "Oui, tu as fabriqué pie !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué pot|.",
-  "text": "Oui, tu as fabriqué pot !",
-  "say": "Oui, tu as fabriqué pot !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué pu|.",
-  "text": "Oui, tu as fabriqué pu !",
-  "say": "Oui, tu as fabriqué pu !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué rat|.",
-  "text": "Oui, tu as fabriqué rat !",
-  "say": "Oui, tu as fabriqué rat !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué ré|.",
-  "text": "Oui, tu as fabriqué ré !",
-  "say": "Oui, tu as fabriqué ré !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué riz|.",
-  "text": "Oui, tu as fabriqué riz !",
-  "say": "Oui, tu as fabriqué riz !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué rot|.",
-  "text": "Oui, tu as fabriqué rot !",
-  "say": "Oui, tu as fabriqué rot !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué rue|.",
-  "text": "Oui, tu as fabriqué rue !",
-  "say": "Oui, tu as fabriqué rue !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué sa|.",
-  "text": "Oui, tu as fabriqué sa !",
-  "say": "Oui, tu as fabriqué sa !",
   "pack": "mots",
   "words": 5,
   "fams": [
@@ -42299,161 +39248,11 @@
   ]
  },
  {
-  "key": "oui tu as fabriqué si|.",
-  "text": "Oui, tu as fabriqué si !",
-  "say": "Oui, tu as fabriqué si !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué su|.",
-  "text": "Oui, tu as fabriqué su !",
-  "say": "Oui, tu as fabriqué su !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué ta|.",
-  "text": "Oui, tu as fabriqué ta !",
-  "say": "Oui, tu as fabriqué ta !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué thé|.",
-  "text": "Oui, tu as fabriqué thé !",
-  "say": "Oui, tu as fabriqué thé !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué ti|.",
-  "text": "Oui, tu as fabriqué ti !",
-  "say": "Oui, tu as fabriqué ti !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué tôt|.",
-  "text": "Oui, tu as fabriqué tôt !",
-  "say": "Oui, tu as fabriqué tôt !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué tu|.",
-  "text": "Oui, tu as fabriqué tu !",
-  "say": "Oui, tu as fabriqué tu !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué va|.",
-  "text": "Oui, tu as fabriqué va !",
-  "say": "Oui, tu as fabriqué va !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué vé|.",
-  "text": "Oui, tu as fabriqué vé !",
-  "say": "Oui, tu as fabriqué vé !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "oui tu as fabriqué veau|.",
   "text": "Oui, tu as fabriqué veau !",
   "say": "Oui, tu as fabriqué veau !",
   "pack": "mots",
   "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué vie|.",
-  "text": "Oui, tu as fabriqué vie !",
-  "say": "Oui, tu as fabriqué vie !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu as fabriqué vu|.",
-  "text": "Oui, tu as fabriqué vu !",
-  "say": "Oui, tu as fabriqué vu !",
-  "pack": "mots",
-  "words": 5,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui tu|.",
-  "text": "Oui, tu !",
-  "say": "Oui, tu !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui u|.",
-  "text": "Oui, u !",
-  "say": "Oui, u !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "oui va|.",
-  "text": "Oui, va !",
-  "say": "Oui, va !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui vé|.",
-  "text": "Oui, vé !",
-  "say": "Oui, vé !",
-  "pack": "mots",
-  "words": 2,
   "fams": [
    "syllabes:reussite"
   ]
@@ -42472,26 +39271,6 @@
   "key": "oui vélo|.",
   "text": "Oui, vélo !",
   "say": "Oui, vélo !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui vie|.",
-  "text": "Oui, vie !",
-  "say": "Oui, vie !",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "oui vu|.",
-  "text": "Oui, vu !",
-  "say": "Oui, vu !",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -42638,26 +39417,6 @@
   ]
  },
  {
-  "key": "pas na ma panama|.",
-  "text": "pas, na, ma : Panama !",
-  "say": "pas, na, ma : Panama !",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "pas pie papi|.",
-  "text": "pas, pie : papi !",
-  "say": "pas, pie : papi !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "pas tout à fait|.",
   "text": "Pas tout à fait.",
   "say": "Pas tout à fait.",
@@ -42677,7 +39436,10 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -42725,26 +39487,19 @@
   ]
  },
  {
-  "key": "pie a nos piano|.",
-  "text": "pie, a, nos : piano !",
-  "say": "pie, a, nos : piano !",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "pie|,",
-  "text": "pie…",
-  "say": "pie…",
+  "text": "pie,",
+  "say": "pie,",
   "pack": "mots",
   "words": 1,
   "fams": [
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -44929,16 +41684,6 @@
   ]
  },
  {
-  "key": "rat dit o radio|.",
-  "text": "rat, dit, o : radio !",
-  "say": "rat, dit, o : radio !",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "rat|",
   "text": "rat",
   "say": "rat",
@@ -44960,7 +41705,10 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -45048,7 +41796,8 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -45072,26 +41821,6 @@
   ]
  },
  {
-  "key": "sa la mie salami|.",
-  "text": "sa, la, mie : salami !",
-  "say": "sa, la, mie : salami !",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
-  "key": "sa les salé|.",
-  "text": "sa, les : salé !",
-  "say": "sa, les : salé !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "sa|,",
   "text": "sa,",
   "say": "sa,",
@@ -45101,7 +41830,10 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -45183,16 +41915,6 @@
   ]
  },
  {
-  "key": "seau fa sofa|.",
-  "text": "seau, fa : sofa !",
-  "say": "seau, fa : sofa !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "seau|",
   "text": "seau",
   "say": "seau",
@@ -45214,7 +41936,10 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -45506,23 +42231,16 @@
   ]
  },
  {
-  "key": "ti pie tipi|.",
-  "text": "ti, pie : tipi !",
-  "say": "ti, pie : tipi !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "ti|,",
   "text": "ti,",
   "say": "ti,",
   "pack": "mots",
   "words": 1,
   "fams": [
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -45616,16 +42334,6 @@
   ]
  },
  {
-  "key": "tôt go togo|.",
-  "text": "tôt, go : Togo !",
-  "say": "tôt, go : Togo !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "tôt|,",
   "text": "tôt,",
   "say": "tôt,",
@@ -45633,513 +42341,26 @@
   "words": 1,
   "fams": [
    "chants:reussite",
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche a|.",
-  "text": "Touche a.",
-  "say": "Touche a.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche ces|.",
-  "text": "Touche ces.",
-  "say": "Touche ces.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche da|.",
-  "text": "Touche da.",
-  "say": "Touche da.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche dé|.",
-  "text": "Touche dé.",
-  "say": "Touche dé.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche dit|.",
-  "text": "Touche dit.",
-  "say": "Touche dit.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche dos|.",
-  "text": "Touche dos.",
-  "say": "Touche dos.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche du|.",
-  "text": "Touche du.",
-  "say": "Touche du.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche é|.",
-  "text": "Touche é.",
-  "say": "Touche é.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche fa|.",
-  "text": "Touche fa.",
-  "say": "Touche fa.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
   "key": "touche faux|.",
-  "text": "Touche faux.",
-  "say": "Touche faux.",
+  "text": "Touche : faux.",
+  "say": "Touche : faux.",
   "pack": "mots",
   "words": 2,
   "fams": [
    "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche fée|.",
-  "text": "Touche fée.",
-  "say": "Touche fée.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche fi|.",
-  "text": "Touche fi.",
-  "say": "Touche fi.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche fût|.",
-  "text": "Touche fût.",
-  "say": "Touche fût.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche i|.",
-  "text": "Touche i.",
-  "say": "Touche i.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir ces|.",
-  "text": "Touche la lettre qui brille pour finir ces.",
-  "say": "Touche la lettre qui brille pour finir ces.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir da|.",
-  "text": "Touche la lettre qui brille pour finir da.",
-  "say": "Touche la lettre qui brille pour finir da.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir dé|.",
-  "text": "Touche la lettre qui brille pour finir dé.",
-  "say": "Touche la lettre qui brille pour finir dé.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir dit|.",
-  "text": "Touche la lettre qui brille pour finir dit.",
-  "say": "Touche la lettre qui brille pour finir dit.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir dos|.",
-  "text": "Touche la lettre qui brille pour finir dos.",
-  "say": "Touche la lettre qui brille pour finir dos.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir du|.",
-  "text": "Touche la lettre qui brille pour finir du.",
-  "say": "Touche la lettre qui brille pour finir du.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir fa|.",
-  "text": "Touche la lettre qui brille pour finir fa.",
-  "say": "Touche la lettre qui brille pour finir fa.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
   ]
  },
  {
   "key": "touche la lettre qui brille pour finir faux|.",
   "text": "Touche la lettre qui brille pour finir faux.",
   "say": "Touche la lettre qui brille pour finir faux.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir fée|.",
-  "text": "Touche la lettre qui brille pour finir fée.",
-  "say": "Touche la lettre qui brille pour finir fée.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir fi|.",
-  "text": "Touche la lettre qui brille pour finir fi.",
-  "say": "Touche la lettre qui brille pour finir fi.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir fût|.",
-  "text": "Touche la lettre qui brille pour finir fût.",
-  "say": "Touche la lettre qui brille pour finir fût.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir la|.",
-  "text": "Touche la lettre qui brille pour finir la.",
-  "say": "Touche la lettre qui brille pour finir la.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir les|.",
-  "text": "Touche la lettre qui brille pour finir les.",
-  "say": "Touche la lettre qui brille pour finir les.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir lit|.",
-  "text": "Touche la lettre qui brille pour finir lit.",
-  "say": "Touche la lettre qui brille pour finir lit.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir lot|.",
-  "text": "Touche la lettre qui brille pour finir lot.",
-  "say": "Touche la lettre qui brille pour finir lot.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir lu|.",
-  "text": "Touche la lettre qui brille pour finir lu.",
-  "say": "Touche la lettre qui brille pour finir lu.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir ma|.",
-  "text": "Touche la lettre qui brille pour finir ma.",
-  "say": "Touche la lettre qui brille pour finir ma.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir mes|.",
-  "text": "Touche la lettre qui brille pour finir mes.",
-  "say": "Touche la lettre qui brille pour finir mes.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir mie|.",
-  "text": "Touche la lettre qui brille pour finir mie.",
-  "say": "Touche la lettre qui brille pour finir mie.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir mot|.",
-  "text": "Touche la lettre qui brille pour finir mot.",
-  "say": "Touche la lettre qui brille pour finir mot.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir mu|.",
-  "text": "Touche la lettre qui brille pour finir mu.",
-  "say": "Touche la lettre qui brille pour finir mu.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir na|.",
-  "text": "Touche la lettre qui brille pour finir na.",
-  "say": "Touche la lettre qui brille pour finir na.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir né|.",
-  "text": "Touche la lettre qui brille pour finir né.",
-  "say": "Touche la lettre qui brille pour finir né.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir nid|.",
-  "text": "Touche la lettre qui brille pour finir nid.",
-  "say": "Touche la lettre qui brille pour finir nid.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir nos|.",
-  "text": "Touche la lettre qui brille pour finir nos.",
-  "say": "Touche la lettre qui brille pour finir nos.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir nu|.",
-  "text": "Touche la lettre qui brille pour finir nu.",
-  "say": "Touche la lettre qui brille pour finir nu.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir pas|.",
-  "text": "Touche la lettre qui brille pour finir pas.",
-  "say": "Touche la lettre qui brille pour finir pas.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir pé|.",
-  "text": "Touche la lettre qui brille pour finir pé.",
-  "say": "Touche la lettre qui brille pour finir pé.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir pie|.",
-  "text": "Touche la lettre qui brille pour finir pie.",
-  "say": "Touche la lettre qui brille pour finir pie.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir pot|.",
-  "text": "Touche la lettre qui brille pour finir pot.",
-  "say": "Touche la lettre qui brille pour finir pot.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir pu|.",
-  "text": "Touche la lettre qui brille pour finir pu.",
-  "say": "Touche la lettre qui brille pour finir pu.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir rat|.",
-  "text": "Touche la lettre qui brille pour finir rat.",
-  "say": "Touche la lettre qui brille pour finir rat.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir ré|.",
-  "text": "Touche la lettre qui brille pour finir ré.",
-  "say": "Touche la lettre qui brille pour finir ré.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir riz|.",
-  "text": "Touche la lettre qui brille pour finir riz.",
-  "say": "Touche la lettre qui brille pour finir riz.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir rot|.",
-  "text": "Touche la lettre qui brille pour finir rot.",
-  "say": "Touche la lettre qui brille pour finir rot.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir rue|.",
-  "text": "Touche la lettre qui brille pour finir rue.",
-  "say": "Touche la lettre qui brille pour finir rue.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir sa|.",
-  "text": "Touche la lettre qui brille pour finir sa.",
-  "say": "Touche la lettre qui brille pour finir sa.",
   "pack": "mots",
   "words": 8,
   "fams": [
@@ -46157,96 +42378,6 @@
   ]
  },
  {
-  "key": "touche la lettre qui brille pour finir si|.",
-  "text": "Touche la lettre qui brille pour finir si.",
-  "say": "Touche la lettre qui brille pour finir si.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir su|.",
-  "text": "Touche la lettre qui brille pour finir su.",
-  "say": "Touche la lettre qui brille pour finir su.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir ta|.",
-  "text": "Touche la lettre qui brille pour finir ta.",
-  "say": "Touche la lettre qui brille pour finir ta.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir thé|.",
-  "text": "Touche la lettre qui brille pour finir thé.",
-  "say": "Touche la lettre qui brille pour finir thé.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir ti|.",
-  "text": "Touche la lettre qui brille pour finir ti.",
-  "say": "Touche la lettre qui brille pour finir ti.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir tôt|.",
-  "text": "Touche la lettre qui brille pour finir tôt.",
-  "say": "Touche la lettre qui brille pour finir tôt.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir tu|.",
-  "text": "Touche la lettre qui brille pour finir tu.",
-  "say": "Touche la lettre qui brille pour finir tu.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir va|.",
-  "text": "Touche la lettre qui brille pour finir va.",
-  "say": "Touche la lettre qui brille pour finir va.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir vé|.",
-  "text": "Touche la lettre qui brille pour finir vé.",
-  "say": "Touche la lettre qui brille pour finir vé.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
   "key": "touche la lettre qui brille pour finir veau|.",
   "text": "Touche la lettre qui brille pour finir veau.",
   "say": "Touche la lettre qui brille pour finir veau.",
@@ -46257,399 +42388,19 @@
   ]
  },
  {
-  "key": "touche la lettre qui brille pour finir vie|.",
-  "text": "Touche la lettre qui brille pour finir vie.",
-  "say": "Touche la lettre qui brille pour finir vie.",
+  "key": "touche la lettre qui brille pour finir|,",
+  "text": "Touche la lettre qui brille pour finir :",
+  "say": "Touche la lettre qui brille pour finir :",
   "pack": "mots",
-  "words": 8,
+  "words": 7,
   "fams": [
    "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la lettre qui brille pour finir vu|.",
-  "text": "Touche la lettre qui brille pour finir vu.",
-  "say": "Touche la lettre qui brille pour finir vu.",
-  "pack": "mots",
-  "words": 8,
-  "fams": [
-   "syllabes:indice"
-  ]
- },
- {
-  "key": "touche la|.",
-  "text": "Touche la.",
-  "say": "Touche la.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche les|.",
-  "text": "Touche les.",
-  "say": "Touche les.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche lit|.",
-  "text": "Touche lit.",
-  "say": "Touche lit.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche lot|.",
-  "text": "Touche lot.",
-  "say": "Touche lot.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche lu|.",
-  "text": "Touche lu.",
-  "say": "Touche lu.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche ma|.",
-  "text": "Touche ma.",
-  "say": "Touche ma.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche mes|.",
-  "text": "Touche mes.",
-  "say": "Touche mes.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche mie|.",
-  "text": "Touche mie.",
-  "say": "Touche mie.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche mot|.",
-  "text": "Touche mot.",
-  "say": "Touche mot.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche mu|.",
-  "text": "Touche mu.",
-  "say": "Touche mu.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche na|.",
-  "text": "Touche na.",
-  "say": "Touche na.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche né|.",
-  "text": "Touche né.",
-  "say": "Touche né.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche nid|.",
-  "text": "Touche nid.",
-  "say": "Touche nid.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche nos|.",
-  "text": "Touche nos.",
-  "say": "Touche nos.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche nu|.",
-  "text": "Touche nu.",
-  "say": "Touche nu.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche o|.",
-  "text": "Touche o.",
-  "say": "Touche o.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche pas|.",
-  "text": "Touche pas.",
-  "say": "Touche pas.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche pé|.",
-  "text": "Touche pé.",
-  "say": "Touche pé.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche pie|.",
-  "text": "Touche pie.",
-  "say": "Touche pie.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche pot|.",
-  "text": "Touche pot.",
-  "say": "Touche pot.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche pu|.",
-  "text": "Touche pu.",
-  "say": "Touche pu.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche rat|.",
-  "text": "Touche rat.",
-  "say": "Touche rat.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche ré|.",
-  "text": "Touche ré.",
-  "say": "Touche ré.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche riz|.",
-  "text": "Touche riz.",
-  "say": "Touche riz.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche rot|.",
-  "text": "Touche rot.",
-  "say": "Touche rot.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche rue|.",
-  "text": "Touche rue.",
-  "say": "Touche rue.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche sa|.",
-  "text": "Touche sa.",
-  "say": "Touche sa.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
   ]
  },
  {
   "key": "touche seau|.",
-  "text": "Touche seau.",
-  "say": "Touche seau.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche si|.",
-  "text": "Touche si.",
-  "say": "Touche si.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche su|.",
-  "text": "Touche su.",
-  "say": "Touche su.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche ta|.",
-  "text": "Touche ta.",
-  "say": "Touche ta.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche thé|.",
-  "text": "Touche thé.",
-  "say": "Touche thé.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche ti|.",
-  "text": "Touche ti.",
-  "say": "Touche ti.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche tôt|.",
-  "text": "Touche tôt.",
-  "say": "Touche tôt.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche tu|.",
-  "text": "Touche tu.",
-  "say": "Touche tu.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche u|.",
-  "text": "Touche u.",
-  "say": "Touche u.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche va|.",
-  "text": "Touche va.",
-  "say": "Touche va.",
-  "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche vé|.",
-  "text": "Touche vé.",
-  "say": "Touche vé.",
+  "text": "Touche : seau.",
+  "say": "Touche : seau.",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -46658,8 +42409,8 @@
  },
  {
   "key": "touche veau|.",
-  "text": "Touche veau.",
-  "say": "Touche veau.",
+  "text": "Touche : veau.",
+  "say": "Touche : veau.",
   "pack": "mots",
   "words": 2,
   "fams": [
@@ -46667,21 +42418,11 @@
   ]
  },
  {
-  "key": "touche vie|.",
-  "text": "Touche vie.",
-  "say": "Touche vie.",
+  "key": "touche|,",
+  "text": "Touche :",
+  "say": "Touche :",
   "pack": "mots",
-  "words": 2,
-  "fams": [
-   "syllabes:consigne"
-  ]
- },
- {
-  "key": "touche vu|.",
-  "text": "Touche vu.",
-  "say": "Touche vu.",
-  "pack": "mots",
-  "words": 2,
+  "words": 1,
   "fams": [
    "syllabes:consigne"
   ]
@@ -46767,369 +42508,9 @@
   ]
  },
  {
-  "key": "tu as fabriqué ces|.",
-  "text": "Tu as fabriqué ces.",
-  "say": "Tu as fabriqué ces.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué da|.",
-  "text": "Tu as fabriqué da.",
-  "say": "Tu as fabriqué da.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué dé|.",
-  "text": "Tu as fabriqué dé.",
-  "say": "Tu as fabriqué dé.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué dit|.",
-  "text": "Tu as fabriqué dit.",
-  "say": "Tu as fabriqué dit.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué dos|.",
-  "text": "Tu as fabriqué dos.",
-  "say": "Tu as fabriqué dos.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué du|.",
-  "text": "Tu as fabriqué du.",
-  "say": "Tu as fabriqué du.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué fa|.",
-  "text": "Tu as fabriqué fa.",
-  "say": "Tu as fabriqué fa.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "tu as fabriqué faux|.",
   "text": "Tu as fabriqué faux.",
   "say": "Tu as fabriqué faux.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué fée|.",
-  "text": "Tu as fabriqué fée.",
-  "say": "Tu as fabriqué fée.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué fi|.",
-  "text": "Tu as fabriqué fi.",
-  "say": "Tu as fabriqué fi.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué fût|.",
-  "text": "Tu as fabriqué fût.",
-  "say": "Tu as fabriqué fût.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué la|.",
-  "text": "Tu as fabriqué la.",
-  "say": "Tu as fabriqué la.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué les|.",
-  "text": "Tu as fabriqué les.",
-  "say": "Tu as fabriqué les.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué lit|.",
-  "text": "Tu as fabriqué lit.",
-  "say": "Tu as fabriqué lit.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué lot|.",
-  "text": "Tu as fabriqué lot.",
-  "say": "Tu as fabriqué lot.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué lu|.",
-  "text": "Tu as fabriqué lu.",
-  "say": "Tu as fabriqué lu.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué ma|.",
-  "text": "Tu as fabriqué ma.",
-  "say": "Tu as fabriqué ma.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué mes|.",
-  "text": "Tu as fabriqué mes.",
-  "say": "Tu as fabriqué mes.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué mie|.",
-  "text": "Tu as fabriqué mie.",
-  "say": "Tu as fabriqué mie.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué mot|.",
-  "text": "Tu as fabriqué mot.",
-  "say": "Tu as fabriqué mot.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué mu|.",
-  "text": "Tu as fabriqué mu.",
-  "say": "Tu as fabriqué mu.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué na|.",
-  "text": "Tu as fabriqué na.",
-  "say": "Tu as fabriqué na.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué né|.",
-  "text": "Tu as fabriqué né.",
-  "say": "Tu as fabriqué né.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué nid|.",
-  "text": "Tu as fabriqué nid.",
-  "say": "Tu as fabriqué nid.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué nos|.",
-  "text": "Tu as fabriqué nos.",
-  "say": "Tu as fabriqué nos.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué nu|.",
-  "text": "Tu as fabriqué nu.",
-  "say": "Tu as fabriqué nu.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué pas|.",
-  "text": "Tu as fabriqué pas.",
-  "say": "Tu as fabriqué pas.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué pé|.",
-  "text": "Tu as fabriqué pé.",
-  "say": "Tu as fabriqué pé.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué pie|.",
-  "text": "Tu as fabriqué pie.",
-  "say": "Tu as fabriqué pie.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué pot|.",
-  "text": "Tu as fabriqué pot.",
-  "say": "Tu as fabriqué pot.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué pu|.",
-  "text": "Tu as fabriqué pu.",
-  "say": "Tu as fabriqué pu.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué rat|.",
-  "text": "Tu as fabriqué rat.",
-  "say": "Tu as fabriqué rat.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué ré|.",
-  "text": "Tu as fabriqué ré.",
-  "say": "Tu as fabriqué ré.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué riz|.",
-  "text": "Tu as fabriqué riz.",
-  "say": "Tu as fabriqué riz.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué rot|.",
-  "text": "Tu as fabriqué rot.",
-  "say": "Tu as fabriqué rot.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué rue|.",
-  "text": "Tu as fabriqué rue.",
-  "say": "Tu as fabriqué rue.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué sa|.",
-  "text": "Tu as fabriqué sa.",
-  "say": "Tu as fabriqué sa.",
   "pack": "mots",
   "words": 4,
   "fams": [
@@ -47147,96 +42528,6 @@
   ]
  },
  {
-  "key": "tu as fabriqué si|.",
-  "text": "Tu as fabriqué si.",
-  "say": "Tu as fabriqué si.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué su|.",
-  "text": "Tu as fabriqué su.",
-  "say": "Tu as fabriqué su.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué ta|.",
-  "text": "Tu as fabriqué ta.",
-  "say": "Tu as fabriqué ta.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué thé|.",
-  "text": "Tu as fabriqué thé.",
-  "say": "Tu as fabriqué thé.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué ti|.",
-  "text": "Tu as fabriqué ti.",
-  "say": "Tu as fabriqué ti.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué tôt|.",
-  "text": "Tu as fabriqué tôt.",
-  "say": "Tu as fabriqué tôt.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué tu|.",
-  "text": "Tu as fabriqué tu.",
-  "say": "Tu as fabriqué tu.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué va|.",
-  "text": "Tu as fabriqué va.",
-  "say": "Tu as fabriqué va.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué vé|.",
-  "text": "Tu as fabriqué vé.",
-  "say": "Tu as fabriqué vé.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
   "key": "tu as fabriqué veau|.",
   "text": "Tu as fabriqué veau.",
   "say": "Tu as fabriqué veau.",
@@ -47247,23 +42538,14 @@
   ]
  },
  {
-  "key": "tu as fabriqué vie|.",
-  "text": "Tu as fabriqué vie.",
-  "say": "Tu as fabriqué vie.",
+  "key": "tu as fabriqué|,",
+  "text": "tu as fabriqué :",
+  "say": "tu as fabriqué :",
   "pack": "mots",
-  "words": 4,
+  "words": 3,
   "fams": [
-   "syllabes:erreur"
-  ]
- },
- {
-  "key": "tu as fabriqué vu|.",
-  "text": "Tu as fabriqué vu.",
-  "say": "Tu as fabriqué vu.",
-  "pack": "mots",
-  "words": 4,
-  "fams": [
-   "syllabes:erreur"
+   "syllabes:erreur",
+   "syllabes:reussite"
   ]
  },
  {
@@ -47327,16 +42609,6 @@
   ]
  },
  {
-  "key": "tu ba tuba|.",
-  "text": "tu, ba : tuba !",
-  "say": "tu, ba : tuba !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "tu veux relire l'histoire une autre fois|?",
   "text": "Tu veux relire l'histoire une autre fois ?",
   "say": "Tu veux relire l'histoire une autre fois ?",
@@ -47354,7 +42626,10 @@
   "words": 1,
   "fams": [
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -47379,11 +42654,13 @@
  },
  {
   "key": "u|.",
-  "text": "u.",
-  "say": "u.",
+  "text": "u !",
+  "say": "u !",
   "pack": "mots",
   "words": 1,
   "fams": [
+   "syllabes:consigne",
+   "syllabes:erreur",
    "syllabes:indice"
   ]
  },
@@ -47432,16 +42709,6 @@
   ]
  },
  {
-  "key": "vé lot vélo|.",
-  "text": "vé, lot : vélo !",
-  "say": "vé, lot : vélo !",
-  "pack": "mots",
-  "words": 3,
-  "fams": [
-   "syllabes:reussite"
-  ]
- },
- {
   "key": "vé|,",
   "text": "vé,",
   "say": "vé,",
@@ -47451,7 +42718,10 @@
    "chants:erreur",
    "chants:indice",
    "chants:reussite",
-   "syllabes:indice"
+   "syllabes:consigne",
+   "syllabes:erreur",
+   "syllabes:indice",
+   "syllabes:reussite"
   ]
  },
  {
@@ -56275,7 +51545,7 @@
   "pack": "port",
   "words": 6,
   "fams": [
-   "mon-drapeau"
+   "atelierdrapeaux:rendu"
   ]
  },
  {
@@ -56797,6 +52067,26 @@
   "words": 2,
   "fams": [
    "drapeau:indice"
+  ]
+ },
+ {
+  "key": "elle s'est effacée essaie encore|.",
+  "text": "Elle s'est effacée : essaie encore !",
+  "say": "Elle s'est effacée : essaie encore !",
+  "pack": "port",
+  "words": 5,
+  "fams": [
+   "atelierdrapeaux:erreur"
+  ]
+ },
+ {
+  "key": "elles se sont effacées essaie encore|.",
+  "text": "Elles se sont effacées : essaie encore !",
+  "say": "Elles se sont effacées : essaie encore !",
+  "pack": "port",
+  "words": 6,
+  "fams": [
+   "atelierdrapeaux:erreur"
   ]
  },
  {
@@ -60164,6 +55454,16 @@
   ]
  },
  {
+  "key": "quelques bandes n'ont pas la bonne couleur|.",
+  "text": "Quelques bandes n'ont pas la bonne couleur.",
+  "say": "Quelques bandes n'ont pas la bonne couleur.",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "atelierdrapeaux:erreur"
+  ]
+ },
+ {
   "key": "qui brille|.",
   "text": "qui brille.",
   "say": "qui brille.",
@@ -60381,6 +55681,26 @@
   "words": 6,
   "fams": [
    "atelierdrapeaux:intro"
+  ]
+ },
+ {
+  "key": "regarde bien le modèle quelques bandes n'ont pas la bonne couleur|.",
+  "text": "Regarde bien le modèle : quelques bandes n'ont pas la bonne couleur.",
+  "say": "Regarde bien le modèle : quelques bandes n'ont pas la bonne couleur.",
+  "pack": "port",
+  "words": 11,
+  "fams": [
+   "atelierdrapeaux:erreur"
+  ]
+ },
+ {
+  "key": "regarde bien le modèle une bande n'a pas la bonne couleur|.",
+  "text": "Regarde bien le modèle : une bande n'a pas la bonne couleur.",
+  "say": "Regarde bien le modèle : une bande n'a pas la bonne couleur.",
+  "pack": "port",
+  "words": 11,
+  "fams": [
+   "atelierdrapeaux:erreur"
   ]
  },
  {
@@ -61083,6 +56403,16 @@
   "words": 2,
   "fams": [
    "mon-drapeau"
+  ]
+ },
+ {
+  "key": "une bande n'a pas la bonne couleur|.",
+  "text": "Une bande n'a pas la bonne couleur.",
+  "say": "Une bande n'a pas la bonne couleur.",
+  "pack": "port",
+  "words": 7,
+  "fams": [
+   "atelierdrapeaux:erreur"
   ]
  },
  {

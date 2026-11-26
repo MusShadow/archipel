@@ -1,8 +1,8 @@
-// Service worker d'Archipel 2 (version ef1ce3a6ee) : garde l'appli disponible sans Internet.
+// Service worker d'Archipel 2 (version ad2b7fb85d) : garde l'appli disponible sans Internet.
 // Le code de l'appli passe d'abord par le réseau (pour recevoir les mises à jour), sinon par la copie gardée.
 // La voix naturelle de Plume (index et paquets audio, noms à empreinte) est gardée à part, d'une version à l'autre :
 // seuls les fichiers nouveaux sont téléchargés. Les polices sont embarquées et gardées de même : aucun appel extérieur.
-const CACHE = "archipel2-ef1ce3a6ee";
+const CACHE = "archipel2-ad2b7fb85d";
 const VOIX = "archipel2-voix";
 // Illustrations et imagier : adresses à empreinte (?v=…), gardées à part d'une version à l'autre, comme la voix.
 const IMAGES = "archipel2-images";
@@ -13,7 +13,7 @@ const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", 
 const POLICES_CACHE = "archipel2-polices";
 const POLICES = ["./polices/andika-latin-400-normal.woff2?v=dd6bb7266c","./polices/andika-latin-700-normal.woff2?v=61c90acb5f","./polices/baloo-2-latin-600-normal.woff2?v=ffc22b431d","./polices/baloo-2-latin-700-normal.woff2?v=8e7ffc9b99","./polices/baloo-2-latin-800-normal.woff2?v=3e36c57e37","./polices/inter-latin-400-normal.woff2?v=8909904ab6","./polices/inter-latin-600-normal.woff2?v=f9a06e79cd","./polices/inter-latin-700-normal.woff2?v=6f56409fd3"];
 const POLICES_TOUTES = ["./polices/andika-latin-400-normal.woff2?v=dd6bb7266c","./polices/andika-latin-700-normal.woff2?v=61c90acb5f","./polices/andika-latin-ext-400-normal.woff2?v=3b5fd6ac2e","./polices/andika-latin-ext-700-normal.woff2?v=60bde176a3","./polices/baloo-2-latin-600-normal.woff2?v=ffc22b431d","./polices/baloo-2-latin-700-normal.woff2?v=8e7ffc9b99","./polices/baloo-2-latin-800-normal.woff2?v=3e36c57e37","./polices/baloo-2-latin-ext-600-normal.woff2?v=1a41005685","./polices/baloo-2-latin-ext-700-normal.woff2?v=c813752d17","./polices/baloo-2-latin-ext-800-normal.woff2?v=d73eb61f07","./polices/inter-latin-400-normal.woff2?v=8909904ab6","./polices/inter-latin-600-normal.woff2?v=f9a06e79cd","./polices/inter-latin-700-normal.woff2?v=6f56409fd3","./polices/inter-latin-ext-400-normal.woff2?v=6744a7f509","./polices/inter-latin-ext-600-normal.woff2?v=e4bdf67b0c","./polices/inter-latin-ext-700-normal.woff2?v=143f9504f1"];
-const VOIX_FILES = ["./voix/atelier-2cb7735a18.mp3","./voix/coeur-8150be0fcc.mp3","./voix/commun-1e9755c09e.mp3","./voix/decouvertes-9307250f3b.mp3","./voix/enigmes-aead6d0575.mp3","./voix/index-d9b97ac1c0.json","./voix/mots-59804273f6.mp3","./voix/nombres-08c0a26a75.mp3","./voix/port-01579326cb.mp3"];
+const VOIX_FILES = ["./voix/atelier-edb58bc6f5.mp3","./voix/coeur-81829a8cbc.mp3","./voix/commun-87479016d8.mp3","./voix/decouvertes-93214a2ed2.mp3","./voix/enigmes-9a8377d501.mp3","./voix/index-916d0e8cce.json","./voix/mots-53e2f3685e.mp3","./voix/nombres-08c0a26a75.mp3","./voix/port-44b77d13d6.mp3"];
 
 // Garde les fichiers qui manquent, six à la fois.
 const keepAll = async (name, files) => {

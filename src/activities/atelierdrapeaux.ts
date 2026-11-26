@@ -80,6 +80,18 @@ function intrusVariants(s: Striped, r: Rng) {
   return r.shuffle(out).slice(0, 2);
 }
 
+// Ce que Plume dit quand des bandes sont fausses (une, ou plusieurs) : ces phrases n'arrivent qu'après un coloriage
+// complet, que l'inventaire de la voix ne fait pas tout seul ; voiceLines() les lui donne.
+const BANDES_FAUSSES = {
+  memoire: ["Une bande n'a pas la bonne couleur. Elle s'est effacée : essaie encore !", "Quelques bandes n'ont pas la bonne couleur. Elles se sont effacées : essaie encore !"],
+  modele: ["Regarde bien le modèle : une bande n'a pas la bonne couleur.", "Regarde bien le modèle : quelques bandes n'ont pas la bonne couleur."],
+};
+export const voiceLines = () => [
+  ...[...BANDES_FAUSSES.memoire, ...BANDES_FAUSSES.modele].map((text) => ({ text, fam: "atelierdrapeaux:erreur" })),
+  { text: "Choisis d'abord une couleur, en bas.", fam: "atelierdrapeaux:rendu" },
+  ...Object.keys(COL).map((c) => ({ text: c, fam: "atelierdrapeaux:rendu" })),
+];
+
 export const atelierdrapeaux: ActivityModule<AtelierItem> = {
   id: "atelierdrapeaux", title: "L'atelier des drapeaux", domain: "voyages", island: "port", host: "plume",
   maxLevel: 4, items: 4,
@@ -159,9 +171,7 @@ export const atelierdrapeaux: ActivityModule<AtelierItem> = {
       wrong.forEach((i) => { fill[i] = null; });
       wobble(frame);
       setTimeout(draw, 350);
-      view.answer(false, null, item.kind === "memoire"
-        ? (wrong.length > 1 ? "Quelques bandes n'ont pas la bonne couleur. Elles se sont effacées : essaie encore !" : "Une bande n'a pas la bonne couleur. Elle s'est effacée : essaie encore !")
-        : (wrong.length > 1 ? "Regarde bien le modèle : quelques bandes n'ont pas la bonne couleur." : "Regarde bien le modèle : une bande n'a pas la bonne couleur."));
+      view.answer(false, null, BANDES_FAUSSES[item.kind === "memoire" ? "memoire" : "modele"][wrong.length > 1 ? 1 : 0]);
     };
     const palette = h("div", { class: "palette" });
     for (const c of item.palette) {

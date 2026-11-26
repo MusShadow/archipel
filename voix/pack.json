@@ -462,9 +462,9 @@
 "spelling": null
 },
 "le tronc deux grands traits|.": {
-"h": "b3431a45838f89fb",
-"say": "Le tronc : deux grands traits.",
-"per": 0.077,
+"h": "342d21ea935ed59a",
+"say": "Le tron : deux grands traits.",
+"per": 0.0,
 "spelling": null
 },
 "les moustaches d'un côté|.": {
@@ -750,8 +750,8 @@
 "spelling": null
 },
 "regarde le tronc deux grands traits|.": {
-"h": "5fb07e4f04ad608d",
-"say": "Regarde : le tronc : deux grands traits.",
+"h": "de6cf407d3363ba5",
+"say": "Regarde : le tron : deux grands traits.",
 "per": 0.0,
 "spelling": null
 },
@@ -2160,9 +2160,9 @@
 "spelling": null
 },
 "kiki préfère les trains aux nounours|.": {
-"h": "dd073cb9aeb5ecce",
-"say": "Kiki préfère les trains aux nounours.",
-"per": 0.0,
+"h": "cc8fc74571004619",
+"say": "Kiki préfère les trains aux nounourse.",
+"per": 0.043,
 "spelling": null
 },
 "kiki range sa balle dans la boîte puis elle sort jouer dehors|.": {
@@ -4548,9 +4548,9 @@
 "spelling": null
 },
 "a|.": {
-"h": "bc1a0e0664ffc6ae",
-"say": "a",
-"per": 0.2,
+"h": "a833215e242dd3a1",
+"say": "a !",
+"per": 0.0,
 "spelling": "a"
 },
 "afrique|.": {
@@ -4578,8 +4578,8 @@
 "spelling": null
 },
 "ami|.": {
-"h": "8ccf1a6f4b3d96e0",
-"say": "ami",
+"h": "2ec37db467fb31dc",
+"say": "ami !",
 "per": 0.0,
 "spelling": null
 },
@@ -5027,6 +5027,12 @@
 "per": 0.0,
 "spelling": null
 },
+"c'est|,": {
+"h": "15e44b4b76152085",
+"say": "c'est :",
+"per": 0.0,
+"spelling": null
+},
 "ça commence par ca|.": {
 "h": "51f5ddcbd9eed2f7",
 "say": "Ça commence par : ca.",
@@ -5094,8 +5100,8 @@
 "spelling": null
 },
 "canada|.": {
-"h": "eab8673ff8c252bd",
-"say": "Canada",
+"h": "881632fcb4cc189e",
+"say": "Canada !",
 "per": 0.0,
 "spelling": null
 },
@@ -5670,8 +5676,8 @@
 "spelling": null
 },
 "ces|.": {
-"h": "7618b9cbb814f7c6",
-"say": "ces.",
+"h": "d2b319a588304aca",
+"say": "ces !",
 "per": 0.0,
 "spelling": null
 },
@@ -5826,14 +5832,14 @@
 "spelling": null
 },
 "cuba|.": {
-"h": "778f19e24bd78838",
-"say": "Cuba",
-"per": 0.0,
+"h": "3dd56a0ac1c5fc57",
+"say": "Cuba !",
+"per": 0.125,
 "spelling": null
 },
 "da|.": {
-"h": "f445241197b35e55",
-"say": "da.",
+"h": "b535b3b3d7d06000",
+"say": "da !",
 "per": 0.167,
 "spelling": "da"
 },
@@ -5916,8 +5922,8 @@
 "spelling": "de"
 },
 "dé|.": {
-"h": "55f1120d0adbc9c5",
-"say": "dé.",
+"h": "6754ccfeaef65a76",
+"say": "dé !",
 "per": 0.0,
 "spelling": "dé"
 },
@@ -6018,8 +6024,8 @@
 "spelling": null
 },
 "dit|.": {
-"h": "9f0e5940b28ccda7",
-"say": "dit.",
+"h": "0bc3fa8c5c16cc2a",
+"say": "dit !",
 "per": 0.0,
 "spelling": null
 },
@@ -6030,8 +6036,8 @@
 "spelling": "do"
 },
 "domino|.": {
-"h": "8ee2f9312abefd15",
-"say": "domino.",
+"h": "c2a3e956004f1fef",
+"say": "domino !",
 "per": 0.0,
 "spelling": null
 },
@@ -6048,8 +6054,8 @@
 "spelling": null
 },
 "dos|.": {
-"h": "b7ac82dc14a6b92b",
-"say": "dos.",
+"h": "e2245f9c088829e7",
+"say": "dos !",
 "per": 0.286,
 "spelling": null
 },
@@ -6060,8 +6066,8 @@
 "spelling": null
 },
 "du|.": {
-"h": "4102b690cfb0d842",
-"say": "du.",
+"h": "6eab8b7a88392325",
+"say": "du !",
 "per": 0.0,
 "spelling": "du"
 },
@@ -6246,8 +6252,8 @@
 "spelling": null
 },
 "fa|.": {
-"h": "8fd213402bb519eb",
-"say": "fa.",
+"h": "4bb7f9eb8cb69419",
+"say": "fa !",
 "per": 0.0,
 "spelling": "fa"
 },
@@ -6270,14 +6276,14 @@
 "spelling": null
 },
 "faux|.": {
-"h": "76fbc9df6edc382c",
-"say": "faux.",
+"h": "8f3f2f56a34ae2c7",
+"say": "faux !",
 "per": 0.0,
 "spelling": null
 },
 "fée|.": {
-"h": "90372f7df909525a",
-"say": "fée.",
+"h": "d803c39066879f4c",
+"say": "fée !",
 "per": 0.0,
 "spelling": null
 },
@@ -6294,8 +6300,8 @@
 "spelling": null
 },
 "fi|.": {
-"h": "c6bfd27fa0e308d5",
-"say": "fi.",
+"h": "2d6404a22d07117b",
+"say": "fi !",
 "per": 0.167,
 "spelling": "fi"
 },
@@ -6360,8 +6366,8 @@
 "spelling": "fu"
 },
 "fumé|.": {
-"h": "940abab557a9312d",
-"say": "fumé.",
+"h": "2f82f338503306a6",
+"say": "fumé !",
 "per": 0.0,
 "spelling": null
 },
@@ -6372,8 +6378,8 @@
 "spelling": null
 },
 "fût|.": {
-"h": "8fa69e307e3d02e1",
-"say": "fu.",
+"h": "48dd62a573e4799e",
+"say": "fu !",
 "per": 0.0,
 "spelling": "fu"
 },
@@ -6636,8 +6642,8 @@
 "spelling": "jû"
 },
 "judo|.": {
-"h": "f91238527ed4475b",
-"say": "judo.",
+"h": "7a2c51c54c034b29",
+"say": "judo !",
 "per": 0.0,
 "spelling": null
 },
@@ -7206,8 +7212,8 @@
 "spelling": null
 },
 "la|.": {
-"h": "90fbe4ba127c69f0",
-"say": "la.",
+"h": "c1978b028323fb0e",
+"say": "la !",
 "per": 0.0,
 "spelling": "la"
 },
@@ -7218,8 +7224,8 @@
 "spelling": null
 },
 "lama|.": {
-"h": "881cf14e8a3e7a11",
-"say": "lama.",
+"h": "cf7162dce772f61b",
+"say": "lama !",
 "per": 0.125,
 "spelling": null
 },
@@ -7566,9 +7572,9 @@
 "spelling": null
 },
 "le nounours|.": {
-"h": "dd1db77faf688776",
-"say": "Le nounours.",
-"per": 0.0,
+"h": "84158bce1939ab9d",
+"say": "Le nounourse.",
+"per": 0.083,
 "spelling": null
 },
 "le nuage de cendres|.": {
@@ -7962,8 +7968,8 @@
 "spelling": null
 },
 "les|.": {
-"h": "308db8f6d7b932f9",
-"say": "les.",
+"h": "9dcc7fc2e90acfc9",
+"say": "les !",
 "per": 0.0,
 "spelling": null
 },
@@ -7992,9 +7998,9 @@
 "spelling": null
 },
 "lit|.": {
-"h": "40de96f1d167a466",
-"say": "li.",
-"per": 0.167,
+"h": "4d152041ea505df2",
+"say": "li !",
+"per": 0.0,
 "spelling": "li"
 },
 "lituanie|.": {
@@ -8016,8 +8022,8 @@
 "spelling": null
 },
 "lot|.": {
-"h": "7c7bcf5e9a054bb6",
-"say": "lot.",
+"h": "1687fbf7e2a0d338",
+"say": "lot !",
 "per": 0.0,
 "spelling": null
 },
@@ -8028,8 +8034,8 @@
 "spelling": null
 },
 "lu|.": {
-"h": "988bb4a37b6ac9c9",
-"say": "lu.",
+"h": "dddd072bdea8faf0",
+"say": "lu !",
 "per": 0.0,
 "spelling": "lu"
 },
@@ -8064,8 +8070,8 @@
 "spelling": null
 },
 "ma|.": {
-"h": "b01ff095b9af5c45",
-"say": "ma.",
+"h": "3c99bb1b29503fe6",
+"say": "ma !",
 "per": 0.167,
 "spelling": "ma"
 },
@@ -8088,8 +8094,8 @@
 "spelling": null
 },
 "mali|.": {
-"h": "df6cc173e62b1b66",
-"say": "Mali.",
+"h": "e4cfc685fec57ede",
+"say": "Mali !",
 "per": 0.0,
 "spelling": null
 },
@@ -8160,20 +8166,20 @@
 "spelling": null
 },
 "mes|.": {
-"h": "f524533bc8d2d7a8",
-"say": "mes.",
+"h": "6e1735454e29a923",
+"say": "mes !",
 "per": 0.0,
 "spelling": null
 },
 "midi|.": {
-"h": "dc099e0db92c396f",
-"say": "midi.",
+"h": "d34ec08e4615e747",
+"say": "midi !",
 "per": 0.0,
 "spelling": null
 },
 "mie|.": {
-"h": "0e9c15c7744da50d",
-"say": "mie.",
+"h": "9586d2bd34e2b5b8",
+"say": "mie !",
 "per": 0.0,
 "spelling": null
 },
@@ -8202,20 +8208,20 @@
 "spelling": null
 },
 "monaco|.": {
-"h": "67777137ef87ca99",
-"say": "Monaco.",
+"h": "e3781df7a1f4a28a",
+"say": "Monaco !",
 "per": 0.0,
 "spelling": null
 },
 "mot|.": {
-"h": "fdc2a239a26b004b",
-"say": "mot.",
+"h": "f5fa49b762d38884",
+"say": "mot !",
 "per": 0.0,
 "spelling": null
 },
 "moto|.": {
-"h": "2cae586d5798e0d2",
-"say": "moto.",
+"h": "53da39d7d8931e02",
+"say": "moto !",
 "per": 0.0,
 "spelling": null
 },
@@ -8232,8 +8238,8 @@
 "spelling": null
 },
 "mu|.": {
-"h": "01af18c94bfb4ea8",
-"say": "mu.",
+"h": "1934f0fbfa63be79",
+"say": "mu !",
 "per": 0.0,
 "spelling": "mu"
 },
@@ -8244,8 +8250,8 @@
 "spelling": null
 },
 "na|.": {
-"h": "5672797e0befba69",
-"say": "na.",
+"h": "d26026e92789056e",
+"say": "na !",
 "per": 0.0,
 "spelling": "na"
 },
@@ -8268,8 +8274,8 @@
 "spelling": "ne"
 },
 "né|.": {
-"h": "b8ad84a59354343b",
-"say": "né.",
+"h": "135f20e8b274cb84",
+"say": "né !",
 "per": 0.0,
 "spelling": "né"
 },
@@ -8280,8 +8286,8 @@
 "spelling": "né"
 },
 "nid|.": {
-"h": "23fbb2bee8cc825a",
-"say": "nid.",
+"h": "288b33d6d0e2d21d",
+"say": "nid !",
 "per": 0.0,
 "spelling": "nid"
 },
@@ -8310,26 +8316,26 @@
 "spelling": null
 },
 "nos|.": {
-"h": "52315818928ab4e4",
-"say": "nos.",
+"h": "3255ae793ed24a2a",
+"say": "nos !",
 "per": 0.0,
 "spelling": null
 },
 "nu|.": {
-"h": "8fb4b6813ae5fe61",
-"say": "nu.",
+"h": "f6dd27792b652e3f",
+"say": "nu !",
 "per": 0.0,
 "spelling": "nu"
 },
 "numéro|.": {
-"h": "c1f4cf6ba6672cc7",
-"say": "numéro.",
+"h": "8c679690e47b6eca",
+"say": "numéro !",
 "per": 0.0,
 "spelling": null
 },
 "o|.": {
-"h": "961ad6741b9305e7",
-"say": "o.",
+"h": "5b14934dc4773ffa",
+"say": "o !",
 "per": 0.0,
 "spelling": "o"
 },
@@ -8526,8 +8532,8 @@
 "spelling": null
 },
 "panama|.": {
-"h": "17f66e513cb6f63c",
-"say": "Panama.",
+"h": "33d99d5eaa1d47ac",
+"say": "Panama !",
 "per": 0.0,
 "spelling": null
 },
@@ -8538,8 +8544,8 @@
 "spelling": null
 },
 "papi|.": {
-"h": "89ad526df2f09313",
-"say": "papi.",
+"h": "33a5a89205056ea6",
+"say": "papi !",
 "per": 0.25,
 "spelling": null
 },
@@ -8568,8 +8574,8 @@
 "spelling": null
 },
 "pas|.": {
-"h": "951a14d95d38db47",
-"say": "pas.",
+"h": "49e8e87d0c10a2df",
+"say": "pas !",
 "per": 0.0,
 "spelling": null
 },
@@ -8586,8 +8592,8 @@
 "spelling": "pe"
 },
 "pé|.": {
-"h": "eee0b03211538224",
-"say": "pé.",
+"h": "f785e21480933be3",
+"say": "pé !",
 "per": 0.0,
 "spelling": "pé"
 },
@@ -8604,8 +8610,8 @@
 "spelling": "pi"
 },
 "piano|.": {
-"h": "c4a2fb0e166476ac",
-"say": "piano.",
+"h": "8c1c041bc6242708",
+"say": "piano !",
 "per": 0.0,
 "spelling": null
 },
@@ -8616,9 +8622,9 @@
 "spelling": null
 },
 "pie|.": {
-"h": "a2e4dc06092bc18a",
-"say": "pie.",
-"per": 0.0,
+"h": "5f904be2cd145b4f",
+"say": "pie !",
+"per": 0.167,
 "spelling": null
 },
 "pied|.": {
@@ -8688,9 +8694,9 @@
 "spelling": null
 },
 "pot|.": {
-"h": "41a52b0579033d9f",
-"say": "pot.",
-"per": 0.0,
+"h": "83d556166e80fe8a",
+"say": "pot !",
+"per": 0.167,
 "spelling": null
 },
 "pou|.": {
@@ -8856,8 +8862,8 @@
 "spelling": null
 },
 "pu|.": {
-"h": "307a7a0ff5dd5f74",
-"say": "pu.",
+"h": "d20494e874c12549",
+"say": "pu !",
 "per": 0.0,
 "spelling": "pu"
 },
@@ -8904,8 +8910,8 @@
 "spelling": "ra"
 },
 "radio|.": {
-"h": "ef786ce8a23901b9",
-"say": "radio.",
+"h": "41e5685eadb12bd0",
+"say": "radio !",
 "per": 0.0,
 "spelling": null
 },
@@ -8928,14 +8934,14 @@
 "spelling": null
 },
 "rat|.": {
-"h": "da9c184a99198d39",
-"say": "ra.",
+"h": "7c52449b12db22d2",
+"say": "ra !",
 "per": 0.0,
 "spelling": "ra"
 },
 "ré|.": {
-"h": "a432182e3eb7dd1d",
-"say": "ré.",
+"h": "9becc0ade7cdde60",
+"say": "ré !",
 "per": 0.0,
 "spelling": "ré"
 },
@@ -8970,8 +8976,8 @@
 "spelling": null
 },
 "riz|.": {
-"h": "3cd75be15a823835",
-"say": "ri.",
+"h": "1ecaf4cca9848456",
+"say": "ri !",
 "per": 0.0,
 "spelling": "ri"
 },
@@ -8988,9 +8994,9 @@
 "spelling": null
 },
 "rot|.": {
-"h": "36537ce9b38a1989",
-"say": "rot.",
-"per": 0.0,
+"h": "8909f7f412bbc238",
+"say": "rot !",
+"per": 0.167,
 "spelling": null
 },
 "roue|.": {
@@ -9012,8 +9018,8 @@
 "spelling": null
 },
 "rue|.": {
-"h": "64cd43cdb9038737",
-"say": "rue.",
+"h": "eb9c2baac6ef51da",
+"say": "rue !",
 "per": 0.0,
 "spelling": null
 },
@@ -9024,8 +9030,8 @@
 "spelling": null
 },
 "sa|.": {
-"h": "974f471354e9dc6a",
-"say": "sa.",
+"h": "4cc4af2e710602cc",
+"say": "sa !",
 "per": 0.0,
 "spelling": "sa"
 },
@@ -9048,14 +9054,14 @@
 "spelling": null
 },
 "salami|.": {
-"h": "9666e130f81ce55a",
-"say": "salami.",
+"h": "76aa87a7db7b043b",
+"say": "salami !",
 "per": 0.0,
 "spelling": null
 },
 "salé|.": {
-"h": "f98bd235fbc4dfeb",
-"say": "salé.",
+"h": "ca2e0baa7abb90c6",
+"say": "salé !",
 "per": 0.0,
 "spelling": null
 },
@@ -9072,8 +9078,8 @@
 "spelling": null
 },
 "seau|.": {
-"h": "dbef9d2b4a7226f1",
-"say": "seau.",
+"h": "84fa32977eef40cf",
+"say": "seau !",
 "per": 0.0,
 "spelling": null
 },
@@ -9096,8 +9102,8 @@
 "spelling": null
 },
 "si|.": {
-"h": "e5c709d57b62cd93",
-"say": "si.",
+"h": "165915a94a729086",
+"say": "si !",
 "per": 0.0,
 "spelling": "si"
 },
@@ -9108,8 +9114,8 @@
 "spelling": "so"
 },
 "sofa|.": {
-"h": "c4895510c7ee74ac",
-"say": "sofa.",
+"h": "1d7fbcde9f2f3f36",
+"say": "sofa !",
 "per": 0.0,
 "spelling": null
 },
@@ -9162,8 +9168,8 @@
 "spelling": null
 },
 "su|.": {
-"h": "db13c26a96f30203",
-"say": "sue.",
+"h": "d8c1839133c8b967",
+"say": "sue !",
 "per": 0.0,
 "spelling": "sue"
 },
@@ -9186,8 +9192,8 @@
 "spelling": null
 },
 "ta|.": {
-"h": "ebc8fd730329a537",
-"say": "ta.",
+"h": "048754ac199a8dad",
+"say": "ta !",
 "per": 0.0,
 "spelling": "ta"
 },
@@ -9240,20 +9246,20 @@
 "spelling": "teur"
 },
 "thé|.": {
-"h": "c67db8118e322887",
-"say": "thé.",
+"h": "f46dc9f70e65deaa",
+"say": "thé !",
 "per": 0.0,
 "spelling": null
 },
 "ti|.": {
-"h": "c79da6f555f130f0",
-"say": "ti.",
+"h": "e8f51beea1c530f0",
+"say": "ti !",
 "per": 0.167,
 "spelling": "ti"
 },
 "tipi|.": {
-"h": "66db83e3b9e7cd32",
-"say": "tipi.",
+"h": "bfeef62af1783a7e",
+"say": "tipi !",
 "per": 0.125,
 "spelling": null
 },
@@ -9264,8 +9270,8 @@
 "spelling": "tôt"
 },
 "togo|.": {
-"h": "abadc98eea06eea6",
-"say": "Togo.",
+"h": "76e4e664180a74f5",
+"say": "Togo !",
 "per": 0.125,
 "spelling": null
 },
@@ -9654,8 +9660,8 @@
 "spelling": null
 },
 "tôt|.": {
-"h": "ce19ffb58cc24f60",
-"say": "tôt.",
+"h": "ea8e09d16f8ad638",
+"say": "tôt !",
 "per": 0.0,
 "spelling": null
 },
@@ -9714,9 +9720,9 @@
 "spelling": null
 },
 "tronc|.": {
-"h": "59b626d96007d9c5",
-"say": "tronc.",
-"per": 0.143,
+"h": "23d95f9b583dcc0c",
+"say": "tron.",
+"per": 0.0,
 "spelling": null
 },
 "tu as bien cherché|.": {
@@ -9774,14 +9780,14 @@
 "spelling": null
 },
 "tu|.": {
-"h": "6d586132eadf409c",
-"say": "tu.",
+"h": "3bdf9f7cf27d390c",
+"say": "tu !",
 "per": 0.0,
 "spelling": "tu"
 },
 "tuba|.": {
-"h": "8d4984a2992437f2",
-"say": "tuba.",
+"h": "75b6262d5fb39f1f",
+"say": "tuba !",
 "per": 0.0,
 "spelling": null
 },
@@ -9822,8 +9828,8 @@
 "spelling": null
 },
 "un masque à gaz|.": {
-"h": "df5ea65dba339f4c",
-"say": "Un masque à gaz.",
+"h": "3d1f71b7bd07ca60",
+"say": "Un masque à gaze.",
 "per": 0.0,
 "spelling": null
 },
@@ -9870,8 +9876,8 @@
 "spelling": null
 },
 "va|.": {
-"h": "d1c5a037950861a0",
-"say": "va.",
+"h": "123903006d240ceb",
+"say": "va !",
 "per": 0.0,
 "spelling": "va"
 },
@@ -9888,26 +9894,26 @@
 "spelling": "ve"
 },
 "vé|.": {
-"h": "9cbbb6f6ed13fefd",
-"say": "vé.",
+"h": "a0531f4c88ec1352",
+"say": "vé !",
 "per": 0.0,
 "spelling": "vé"
 },
 "veau|.": {
-"h": "780406e567325f2b",
-"say": "veau.",
+"h": "7ef812644a8dd030",
+"say": "veau !",
 "per": 0.0,
 "spelling": null
 },
 "vélo|.": {
-"h": "2b4f72d769e2da6c",
-"say": "vélo.",
+"h": "e36c887458f619cb",
+"say": "vélo !",
 "per": 0.0,
 "spelling": null
 },
 "vie|.": {
-"h": "458ce8358a1ffdd6",
-"say": "vie.",
+"h": "5184be72ab450084",
+"say": "vie !",
 "per": 0.0,
 "spelling": null
 },
@@ -9954,8 +9960,8 @@
 "spelling": null
 },
 "vu|.": {
-"h": "4c7a65555bd97fac",
-"say": "vu.",
+"h": "04b2b753096aa56d",
+"say": "vu !",
 "per": 0.0,
 "spelling": "vu"
 },
@@ -10398,8 +10404,8 @@
 "spelling": null
 },
 "avec des bouteilles en plastique recyclées on remplit des ours en peluche|.": {
-"h": "72bc0667cd4c666b",
-"say": "Avec des bouteilles en plastique recyclées, on remplit des ours en peluche !",
+"h": "c62cbe2ef8a48187",
+"say": "Avec des bouteilles en plastique recyclées, on remplit des ourse en peluche !",
 "per": 0.0,
 "spelling": null
 },
@@ -11184,9 +11190,9 @@
 "spelling": null
 },
 "cet ours en peluche est rempli avec des déchets recyclés|.": {
-"h": "72e10d669f8056e1",
-"say": "Cet ours en peluche est rempli avec des déchets recyclés.",
-"per": 0.057,
+"h": "c0deca18caa9c19a",
+"say": "Cet ourse en peluche est rempli avec des déchets recyclés.",
+"per": 0.0,
 "spelling": null
 },
 "cette caisse c'est pour le métal|.": {
@@ -12438,8 +12444,8 @@
 "spelling": null
 },
 "je te montre où vont les coquilles d'œuf|.": {
-"h": "9b537c4d857e8a7a",
-"say": "Je te montre où vont les coquilles d'œuf.",
+"h": "a42fec23a120c869",
+"say": "Je te montre où vont les coquilles d'œuffe.",
 "per": 0.048,
 "spelling": null
 },
@@ -12696,9 +12702,9 @@
 "spelling": null
 },
 "l'ours en peluche on le remplit avec des bouteilles en plastique|.": {
-"h": "489518a9fcf7f9ec",
-"say": "L'ours en peluche, on le remplit avec des bouteilles en plastique.",
-"per": 0.026,
+"h": "00bdc524a062f706",
+"say": "L'ourse en peluche, on le remplit avec des bouteilles en plastique.",
+"per": 0.0,
 "spelling": null
 },
 "l'une de ces choses est si chaude qu'elle fait fondre la roche|.": {
@@ -13416,15 +13422,15 @@
 "spelling": null
 },
 "la vis est en métal elle coule|.": {
-"h": "ca5d924b1c303109",
-"say": "La vis est en métal : elle coule.",
+"h": "99879b2d29d643e3",
+"say": "La visse est en métal : elle coule.",
 "per": 0.0,
 "spelling": null
 },
 "la vis est-ce qu'elle flotte ou est-ce qu'elle coule|?": {
-"h": "9caabfbd43aaad6f",
-"say": "La vis, est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
-"per": 0.0,
+"h": "ebbdd101d0d0544d",
+"say": "La visse : est-ce qu'elle flotte, ou est-ce qu'elle coule ?",
+"per": 0.043,
 "spelling": null
 },
 "la voiture n'est pas vivante elle n'a pas besoin de boire|.": {
@@ -14100,8 +14106,8 @@
 "spelling": null
 },
 "le masque à gaz nettoie l'air elle peut respirer sans tousser|.": {
-"h": "42230fc04ec3f31e",
-"say": "Le masque à gaz nettoie l'air : elle peut respirer sans tousser.",
+"h": "7fd325c4996a5939",
+"say": "Le masque à gaze nettoie l'air : elle peut respirer sans tousser.",
 "per": 0.0,
 "spelling": null
 },
@@ -14514,9 +14520,9 @@
 "spelling": null
 },
 "le volcan souffle des gaz qui piquent le nez et la gorge|.": {
-"h": "1f638503863c2885",
-"say": "Le volcan souffle des gaz qui piquent le né et la gorge.",
-"per": 0.0,
+"h": "6a59fd24b7fef284",
+"say": "Le volcan souffle des gaze qui piquent le né et la gorge.",
+"per": 0.031,
 "spelling": null
 },
 "le voyage de la goutte pour suivre ploc de la mer jusqu'au robinet|.": {
@@ -14712,27 +14718,27 @@
 "spelling": null
 },
 "les coquilles d'œuf sont des restes de cuisine|.": {
-"h": "d0da50049d9040d5",
-"say": "Les coquilles d'œuf sont des restes de cuisine.",
+"h": "0fa5c62fd2196192",
+"say": "Les coquilles d'œuffe sont des restes de cuisine.",
 "per": 0.038,
 "spelling": null
 },
 "les coquilles d'œuf vont dans le bac marron|.": {
-"h": "cf9633db68e3bec0",
-"say": "Les coquilles d'œuf vont dans le bac marron.",
+"h": "2c86f15bd81f8c28",
+"say": "Les coquilles d'œuffe vont dans le bac marron.",
 "per": 0.043,
 "spelling": null
 },
 "les coquilles d'œuf vont dans le composteur|.": {
-"h": "67e053320256abc8",
-"say": "Les coquilles d'œuf vont dans le composteur.",
+"h": "a1987ab4a4f695c8",
+"say": "Les coquilles d'œuffe vont dans le composteur.",
 "per": 0.0,
 "spelling": null
 },
 "les coquilles d'œuf|.": {
-"h": "c46a5e36bca9ee6c",
-"say": "Les coquilles d'œuf.",
-"per": 0.0,
+"h": "5b0e72981ababb8b",
+"say": "Les coquilles d'œuffe.",
+"per": 0.1,
 "spelling": null
 },
 "les deux sont en métal|.": {
@@ -15318,9 +15324,9 @@
 "spelling": null
 },
 "ours en peluche|.": {
-"h": "d15484423588bb61",
-"say": "Ours en peluche.",
-"per": 0.222,
+"h": "f31185dea4524176",
+"say": "Ourse en peluche.",
+"per": 0.111,
 "spelling": null
 },
 "papier et carton|.": {
@@ -16760,12 +16766,6 @@
 "c'est la flèche qui brille qui se trompe|.": {
 "h": "9cc3cd2d19c9027c",
 "say": "C'est la flèche qui brille qui se trompe.",
-"per": 0.0,
-"spelling": null
-},
-"c'est|,": {
-"h": "15e44b4b76152085",
-"say": "c'est :",
 "per": 0.0,
 "spelling": null
 },
@@ -18599,12 +18599,6 @@
 "per": 0.0,
 "spelling": null
 },
-"a mie ami|.": {
-"h": "d3b53f1fb7555131",
-"say": "a… mie : ami !",
-"per": 0.167,
-"spelling": null
-},
 "à toi pour la suite|.": {
 "h": "3401d276f071fd14",
 "say": "À toi pour la suite.",
@@ -18622,6 +18616,12 @@
 "say": "ami commence par a.",
 "per": 0.0,
 "spelling": null
+},
+"ba|,": {
+"h": "ed32b350237b329b",
+"say": "ba :",
+"per": 0.0,
+"spelling": "ba"
 },
 "ballon|": {
 "h": "8c9f7c804249728a",
@@ -18887,57 +18887,57 @@
 "per": 0.125,
 "spelling": null
 },
-"ça c'est a|.": {
-"h": "6588433a1850542f",
-"say": "Ça, c'est : a.",
+"c'est un domino|.": {
+"h": "0e63367249efa954",
+"say": "c'est un domino.",
 "per": 0.0,
 "spelling": null
 },
-"ça c'est ces|.": {
-"h": "b5c86858ae2d5cf2",
-"say": "Ça, c'est ces.",
+"c'est un lama|.": {
+"h": "096261729d2a453d",
+"say": "c'est un lama.",
 "per": 0.0,
 "spelling": null
 },
-"ça c'est da|.": {
-"h": "3516f80300c380a6",
-"say": "Ça, c'est da.",
-"per": 0.167,
-"spelling": null
-},
-"ça c'est dé|.": {
-"h": "533b2f7551d50508",
-"say": "Ça, c'est dé.",
+"c'est un piano|.": {
+"h": "68ff4662d888c014",
+"say": "c'est un piano.",
 "per": 0.0,
 "spelling": null
 },
-"ça c'est dit|.": {
-"h": "e79f1ac0df4206bf",
-"say": "Ça, c'est dit.",
+"c'est un sofa|.": {
+"h": "ee192d7109880ccc",
+"say": "c'est un sofa.",
 "per": 0.0,
 "spelling": null
 },
-"ça c'est dos|.": {
-"h": "32e8d4150d80c0a7",
-"say": "Ça, c'est dos.",
-"per": 0.286,
+"c'est un tipi|.": {
+"h": "967e4c48a15615c6",
+"say": "c'est un tipi.",
+"per": 0.125,
 "spelling": null
 },
-"ça c'est du|.": {
-"h": "24df67f7cab24b48",
-"say": "Ça, c'est du.",
+"c'est un vélo|.": {
+"h": "03fcbd731a18984b",
+"say": "c'est un vélo.",
 "per": 0.0,
 "spelling": null
 },
-"ça c'est é|.": {
-"h": "8f1da1492f5f3040",
-"say": "Ça, c'est : é.",
-"per": 0.571,
+"c'est une horloge qui montre midi|.": {
+"h": "678bcdcb47664c35",
+"say": "c'est une horloge qui montre midi.",
+"per": 0.0,
 "spelling": null
 },
-"ça c'est fa|.": {
-"h": "ea6d9a7ef1794a8f",
-"say": "Ça, c'est fa.",
+"c'est une moto|.": {
+"h": "278094d3c253869e",
+"say": "c'est une moto.",
+"per": 0.0,
+"spelling": null
+},
+"c'est une radio|.": {
+"h": "f493bf973d5bb45e",
+"say": "c'est une radio.",
 "per": 0.0,
 "spelling": null
 },
@@ -18947,243 +18947,9 @@
 "per": 0.0,
 "spelling": null
 },
-"ça c'est fée|.": {
-"h": "03561e14bef8fc6e",
-"say": "Ça, c'est fée.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est fi|.": {
-"h": "f4676c14dc724076",
-"say": "Ça, c'est fi.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est fût|.": {
-"h": "79040be391b69b5d",
-"say": "Ça, c'est fu.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est i|.": {
-"h": "e0fb6058ea7bff77",
-"say": "Ça, c'est : i.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est la|.": {
-"h": "e97c0cd3551cd04e",
-"say": "Ça, c'est la.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est les|.": {
-"h": "827606f47a06cf23",
-"say": "Ça, c'est les.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est lit|.": {
-"h": "a3b76f54e9964805",
-"say": "Ça, c'est li.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est lot|.": {
-"h": "59071dd496a9f801",
-"say": "Ça, c'est lot.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est lu|.": {
-"h": "65d7a350ab8e8b7d",
-"say": "Ça, c'est lu.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est ma|.": {
-"h": "bc1bc2a14ac423e8",
-"say": "Ça, c'est ma.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est mes|.": {
-"h": "d9a526c8bd5f8883",
-"say": "Ça, c'est mes.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est mie|.": {
-"h": "2bb2f14efe3c1eca",
-"say": "Ça, c'est mie.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est mot|.": {
-"h": "ca0b42edd350283a",
-"say": "Ça, c'est mot.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est mu|.": {
-"h": "a21d480c538b4f8d",
-"say": "Ça, c'est mu.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est na|.": {
-"h": "5fa91e102e3ba8a3",
-"say": "Ça, c'est na.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est né|.": {
-"h": "d49f4dd7dba53e42",
-"say": "Ça, c'est né.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est nid|.": {
-"h": "eb971a4bb364ef8b",
-"say": "Ça, c'est nid.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est nos|.": {
-"h": "953be7efd991c39b",
-"say": "Ça, c'est nos.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est nu|.": {
-"h": "aa2bf612ac4e6db5",
-"say": "Ça, c'est nu.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est o|.": {
-"h": "fb77fe90c388fa7a",
-"say": "Ça, c'est : o.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est pas|.": {
-"h": "6ab50973b6c36be6",
-"say": "Ça, c'est pas.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est pé|.": {
-"h": "cba6a22d94368226",
-"say": "Ça, c'est pé.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est pie|.": {
-"h": "c4b4a0ae4e011d73",
-"say": "Ça, c'est pie.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est pot|.": {
-"h": "93ffd22591bf7808",
-"say": "Ça, c'est pot.",
-"per": 0.167,
-"spelling": null
-},
-"ça c'est pu|.": {
-"h": "d4a92f2efef196f8",
-"say": "Ça, c'est pu.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est rat|.": {
-"h": "ee67567b1cc25c4d",
-"say": "Ça, c'est ra.",
-"per": 0.167,
-"spelling": null
-},
-"ça c'est ré|.": {
-"h": "b1d31635a11d3ec9",
-"say": "Ça, c'est ré.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est riz|.": {
-"h": "61987596aac267e4",
-"say": "Ça, c'est ri.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est rot|.": {
-"h": "d5a6d2b2bbb39da4",
-"say": "Ça, c'est rot.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est rue|.": {
-"h": "d79f25678bf55d6e",
-"say": "Ça, c'est rue.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est sa|.": {
-"h": "64dfeb73f4d65c4b",
-"say": "Ça, c'est sa.",
-"per": 0.0,
-"spelling": null
-},
 "ça c'est seau|.": {
 "h": "bb6afa4fb23326bc",
 "say": "Ça, c'est seau.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est si|.": {
-"h": "f9659a33e4710990",
-"say": "Ça, c'est si.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est su|.": {
-"h": "4fbe5e22e5e0bb0c",
-"say": "Ça, c'est sue.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est ta|.": {
-"h": "36476b9b4d75f7f3",
-"say": "Ça, c'est ta.",
-"per": 0.167,
-"spelling": null
-},
-"ça c'est thé|.": {
-"h": "7584e1a0d8ab505a",
-"say": "Ça, c'est thé.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est ti|.": {
-"h": "d7ff3247143e8ec2",
-"say": "Ça, c'est ti.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est tôt|.": {
-"h": "d1121cf0c1524256",
-"say": "Ça, c'est tôt.",
-"per": 0.167,
-"spelling": null
-},
-"ça c'est tu|.": {
-"h": "9819fc12d50f22a6",
-"say": "Ça, c'est tu.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est u|.": {
-"h": "7f239d5ad72d4abb",
-"say": "Ça, c'est : u.",
 "per": 0.0,
 "spelling": null
 },
@@ -19241,33 +19007,9 @@
 "per": 0.0,
 "spelling": null
 },
-"ça c'est va|.": {
-"h": "f046952444898293",
-"say": "Ça, c'est va.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est vé|.": {
-"h": "d96c258ea9be1bd2",
-"say": "Ça, c'est vé.",
-"per": 0.0,
-"spelling": null
-},
 "ça c'est veau|.": {
 "h": "c72b09ff79876c09",
 "say": "Ça, c'est veau.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est vie|.": {
-"h": "c0b34fcabf667579",
-"say": "Ça, c'est vie.",
-"per": 0.0,
-"spelling": null
-},
-"ça c'est vu|.": {
-"h": "17e27c4779a92c89",
-"say": "Ça, c'est vu.",
 "per": 0.0,
 "spelling": null
 },
@@ -19517,12 +19259,6 @@
 "per": 0.0,
 "spelling": null
 },
-"ca na da canada|.": {
-"h": "c130d592680b2968",
-"say": "ca… na… da : Canada !",
-"per": 0.083,
-"spelling": null
-},
 "ça rime|.": {
 "h": "e2c7b51640f82886",
 "say": "ça rimme !",
@@ -19540,6 +19276,12 @@
 "say": "ca…",
 "per": 0.0,
 "spelling": "ca"
+},
+"ça|,": {
+"h": "d4b25d1a97904e19",
+"say": "Ça,",
+"per": 0.0,
+"spelling": null
 },
 "cabane|": {
 "h": "3c66c34d79139361",
@@ -20219,12 +19961,6 @@
 "per": 0.0,
 "spelling": null
 },
-"cu ba cuba|.": {
-"h": "0d582c98d3b8f0c1",
-"say": "cu… ba : Cuba !",
-"per": 0.0,
-"spelling": null
-},
 "cu|,": {
 "h": "9980e6262e263499",
 "say": "cu,",
@@ -20291,12 +20027,6 @@
 "per": 0.118,
 "spelling": null
 },
-"dos mie nos domino|.": {
-"h": "a83b4ad0e9746719",
-"say": "dos… mie… nos : domino !",
-"per": 0.154,
-"spelling": null
-},
 "dos|,": {
 "h": "310b1b11226bdf65",
 "say": "dos,",
@@ -20310,8 +20040,8 @@
 "spelling": "du"
 },
 "é|.": {
-"h": "927a510a56ba0d51",
-"say": "é.",
+"h": "b1034299855a3e69",
+"say": "é !",
 "per": 0.0,
 "spelling": "é"
 },
@@ -20321,153 +20051,15 @@
 "per": 0.2,
 "spelling": null
 },
-"écoute a mie|.": {
-"h": "d9b9120299c8cbb2",
-"say": "Écoute : a… mie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute a|.": {
-"h": "7100dbf982ccf6fd",
-"say": "Écoute : a.",
-"per": 0.111,
-"spelling": null
-},
-"écoute bien a mie|.": {
-"h": "9b2d29ce0f733934",
-"say": "Écoute bien : a… mie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien a|.": {
-"h": "29bb844792abe4aa",
-"say": "Écoute bien : a.",
-"per": 0.222,
-"spelling": null
-},
-"écoute bien ca na da|.": {
-"h": "bcc05bb7061c727d",
-"say": "Écoute bien : ca… na… da.",
-"per": 0.077,
-"spelling": null
-},
-"écoute bien ces|.": {
-"h": "b32c149c8d468d66",
-"say": "Écoute bien : ces.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien cu ba|.": {
-"h": "7fc37a4f3aeabaaa",
-"say": "Écoute bien : cu… ba.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien da|.": {
-"h": "4dc6704d32c9dd40",
-"say": "Écoute bien : da.",
-"per": 0.111,
-"spelling": null
-},
-"écoute bien dé|.": {
-"h": "5627a4360122513d",
-"say": "Écoute bien : dé.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien dit|.": {
-"h": "3bf1ae08e8bb9403",
-"say": "Écoute bien : dit.",
-"per": 0.111,
-"spelling": null
-},
-"écoute bien dos mie nos|.": {
-"h": "df59542bf598019f",
-"say": "Écoute bien : dos… mie… nos.",
-"per": 0.143,
-"spelling": null
-},
-"écoute bien dos|.": {
-"h": "3f28291c2db80066",
-"say": "Écoute bien : dos.",
-"per": 0.2,
-"spelling": null
-},
-"écoute bien du|.": {
-"h": "9a5ae1209b007a5f",
-"say": "Écoute bien : du.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien é|.": {
-"h": "be74217e75f44bdc",
-"say": "Écoute bien : é.",
-"per": 0.471,
-"spelling": null
-},
-"écoute bien fa|.": {
-"h": "cbb932225b101ba7",
-"say": "Écoute bien : fa.",
-"per": 0.111,
-"spelling": null
-},
 "écoute bien faux|.": {
 "h": "bb85ee191f7d9e2e",
 "say": "Écoute bien : faux.",
 "per": 0.0,
 "spelling": null
 },
-"écoute bien fée|.": {
-"h": "4e2c12b19d00ab71",
-"say": "Écoute bien : fée.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien fi|.": {
-"h": "d3076701de3ee130",
-"say": "Écoute bien : fi.",
-"per": 0.111,
-"spelling": null
-},
-"écoute bien fût mes|.": {
-"h": "3ea618316fece511",
-"say": "Écoute bien : fu… mes.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien fût|.": {
-"h": "e20ab165e22328f9",
-"say": "Écoute bien : fu.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien i|.": {
-"h": "ac724edcb3d553ec",
-"say": "Écoute bien : i.",
-"per": 0.125,
-"spelling": null
-},
-"écoute bien ju dos|.": {
-"h": "7af013e11221b3ee",
-"say": "Écoute bien : jû… dos.",
-"per": 0.0,
-"spelling": null
-},
 "écoute bien la fin de chaque mot|,": {
 "h": "545581b64364bc5e",
 "say": "Écoute bien la fin de chaque mot :",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien la ma|.": {
-"h": "a5b258a212e379cc",
-"say": "Écoute bien : la… ma.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien la|.": {
-"h": "bb9d068ada83c842",
-"say": "Écoute bien : la.",
 "per": 0.0,
 "spelling": null
 },
@@ -20483,321 +20075,9 @@
 "per": 0.038,
 "spelling": null
 },
-"écoute bien les|.": {
-"h": "7683f98abea65a0f",
-"say": "Écoute bien : les.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien lit|.": {
-"h": "4d7d23baa28c335c",
-"say": "Écoute bien : li.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien lot|.": {
-"h": "c807df2c90377369",
-"say": "Écoute bien : lot.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien lu|.": {
-"h": "4b179ac9068f7ac8",
-"say": "Écoute bien : lu.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien ma lit|.": {
-"h": "08af04e2e457fae1",
-"say": "Écoute bien : ma… li.",
-"per": 0.091,
-"spelling": null
-},
-"écoute bien ma|.": {
-"h": "91ffec311db706a6",
-"say": "Écoute bien : ma.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien mes|.": {
-"h": "0d6c1e53e8bc7295",
-"say": "Écoute bien : mes.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien mie dit|.": {
-"h": "c25cff43ad0c2b5c",
-"say": "Écoute bien : mie… dit.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien mie|.": {
-"h": "270e0da16a68c1d8",
-"say": "Écoute bien : mie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien mot na co|.": {
-"h": "85bbee591442b4f6",
-"say": "Écoute bien : mot… na… co.",
-"per": 0.077,
-"spelling": null
-},
-"écoute bien mot tôt|.": {
-"h": "0c0eb57b6ea4d59b",
-"say": "Écoute bien : mot… tôt.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien mot|.": {
-"h": "517feafadca5416f",
-"say": "Écoute bien : mot.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien mu|.": {
-"h": "a15dc1d2f40137a0",
-"say": "Écoute bien : mu.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien na|.": {
-"h": "cce198077ec26ac6",
-"say": "Écoute bien : na.",
-"per": 0.111,
-"spelling": null
-},
-"écoute bien né|.": {
-"h": "83670165ead8cb89",
-"say": "Écoute bien : né.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien nid|.": {
-"h": "adc05941009f25af",
-"say": "Écoute bien : nid.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien nos|.": {
-"h": "aefb251eac42e0bb",
-"say": "Écoute bien : nos.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien nu mes rot|.": {
-"h": "24ba6c4f525e6554",
-"say": "Écoute bien : nu… mes… rot.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien nu|.": {
-"h": "a3ed4de22f72bc7e",
-"say": "Écoute bien : nu.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien o|.": {
-"h": "e34dae31a0442f91",
-"say": "Écoute bien : o.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien pas na ma|.": {
-"h": "b0cc4f6c0dff1764",
-"say": "Écoute bien : pas… na… ma.",
-"per": 0.077,
-"spelling": null
-},
-"écoute bien pas pie|.": {
-"h": "3f293f606c121548",
-"say": "Écoute bien : pas… pie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien pas|.": {
-"h": "e99915f0c82b8865",
-"say": "Écoute bien : pas.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien pé|.": {
-"h": "6d93c40501b90ac3",
-"say": "Écoute bien : pé.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien pie a nos|.": {
-"h": "c2db3bf88ba6b536",
-"say": "Écoute bien : pie… a… nos.",
-"per": 0.083,
-"spelling": null
-},
-"écoute bien pie|.": {
-"h": "82b737b6d5e5f96e",
-"say": "Écoute bien : pie.",
-"per": 0.111,
-"spelling": null
-},
-"écoute bien pot|.": {
-"h": "243dc5e6d4318696",
-"say": "Écoute bien : pot.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien pu|.": {
-"h": "d1b4ea35f6d1216d",
-"say": "Écoute bien : pu.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien rat dit o|.": {
-"h": "71f491b528dfa3af",
-"say": "Écoute bien : ra… dit… o.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien rat|.": {
-"h": "178b40afb2057682",
-"say": "Écoute bien : ra.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien ré|.": {
-"h": "d29fa229ec1116e7",
-"say": "Écoute bien : ré.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien riz|.": {
-"h": "77c678083f5fb221",
-"say": "Écoute bien : ri.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien rot|.": {
-"h": "96bc0a6c5c0f2d04",
-"say": "Écoute bien : rot.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien rue|.": {
-"h": "abf7e800c64a6915",
-"say": "Écoute bien : rue.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien sa la mie|.": {
-"h": "31deee12d5168dcd",
-"say": "Écoute bien : sa… la… mie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien sa les|.": {
-"h": "5e87c17df5383d10",
-"say": "Écoute bien : sa… les.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien sa|.": {
-"h": "582ea3c515fb10ca",
-"say": "Écoute bien : sa.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien seau fa|.": {
-"h": "a5d7cff21cfc10f1",
-"say": "Écoute bien : seau… fa.",
-"per": 0.0,
-"spelling": null
-},
 "écoute bien seau|.": {
 "h": "2b1bdba35a360246",
 "say": "Écoute bien : seau.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien si|.": {
-"h": "5079a89ad225a71c",
-"say": "Écoute bien : si.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien su|.": {
-"h": "4eeee228b7dc0779",
-"say": "Écoute bien : sue.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien ta|.": {
-"h": "44323a6a66d968be",
-"say": "Écoute bien : ta.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien thé|.": {
-"h": "8cd964393937b4fc",
-"say": "Écoute bien : thé.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien ti pie|.": {
-"h": "1914da2551deea28",
-"say": "Écoute bien : ti… pie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien ti|.": {
-"h": "1d16526f19eca013",
-"say": "Écoute bien : ti.",
-"per": 0.111,
-"spelling": null
-},
-"écoute bien tôt go|.": {
-"h": "f3a1a5f06e6edf5a",
-"say": "Écoute bien : tôt… go.",
-"per": 0.091,
-"spelling": null
-},
-"écoute bien tôt|.": {
-"h": "053dcf26fd9c42b6",
-"say": "Écoute bien : tôt.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien tu ba|.": {
-"h": "2176b1aba1f72498",
-"say": "Écoute bien : tu… ba.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien tu|.": {
-"h": "ef2e1b4826580871",
-"say": "Écoute bien : tu.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien u|.": {
-"h": "ce144391e3048f2a",
-"say": "Écoute bien : u.",
-"per": 0.125,
-"spelling": null
-},
-"écoute bien va|.": {
-"h": "8e48ba821c0f6829",
-"say": "Écoute bien : va.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien vé lot|.": {
-"h": "e6cbbb1b92e5ef2f",
-"say": "Écoute bien : vé… lot.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien vé|.": {
-"h": "136139825faa5c68",
-"say": "Écoute bien : vé.",
 "per": 0.0,
 "spelling": null
 },
@@ -20807,93 +20087,15 @@
 "per": 0.0,
 "spelling": null
 },
-"écoute bien vie|.": {
-"h": "9a036f2916ecfb77",
-"say": "Écoute bien : vie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute bien vu|.": {
-"h": "fd88d1e38d104c67",
-"say": "Écoute bien : vu.",
-"per": 0.0,
-"spelling": null
-},
 "écoute bien|,": {
 "h": "72e6d53aac860350",
 "say": "Écoute bien :",
 "per": 0.0,
 "spelling": null
 },
-"écoute ca na da|.": {
-"h": "c99731acb7124155",
-"say": "Écoute : ca… na… da.",
-"per": 0.0,
-"spelling": null
-},
-"écoute ces|.": {
-"h": "8e31fcaafb06cee3",
-"say": "Écoute : ces.",
-"per": 0.0,
-"spelling": null
-},
-"écoute cu ba|.": {
-"h": "88563dea19c8c3c3",
-"say": "Écoute : cu… ba.",
-"per": 0.125,
-"spelling": null
-},
-"écoute da|.": {
-"h": "134f03e11469b118",
-"say": "Écoute : da.",
-"per": 0.1,
-"spelling": null
-},
-"écoute dé|.": {
-"h": "9dca795a049ef211",
-"say": "Écoute : dé.",
-"per": 0.0,
-"spelling": null
-},
-"écoute dit|.": {
-"h": "3849f57f1026f74e",
-"say": "Écoute : dit.",
-"per": 0.0,
-"spelling": null
-},
-"écoute dos mie nos|.": {
-"h": "754ac6e8153f4eba",
-"say": "Écoute : dos… mie… nos.",
-"per": 0.182,
-"spelling": null
-},
-"écoute dos|.": {
-"h": "0de32f329f920ea3",
-"say": "Écoute : dos.",
-"per": 0.182,
-"spelling": null
-},
-"écoute du|.": {
-"h": "f9695447f0d61d65",
-"say": "Écoute : du.",
-"per": 0.0,
-"spelling": null
-},
-"écoute é|.": {
-"h": "c50195a29fdfbdea",
-"say": "Écoute : é.",
-"per": 0.471,
-"spelling": null
-},
 "écoute encore|,": {
 "h": "f11c3bfdc55e66bd",
 "say": "Écoute encore :",
-"per": 0.0,
-"spelling": null
-},
-"écoute fa|.": {
-"h": "49cbcc724a6979fc",
-"say": "Écoute : fa.",
 "per": 0.0,
 "spelling": null
 },
@@ -20903,286 +20105,10 @@
 "per": 0.0,
 "spelling": null
 },
-"écoute fée|.": {
-"h": "feaece5b7162712c",
-"say": "Écoute : fée.",
-"per": 0.0,
-"spelling": null
-},
-"écoute fi|.": {
-"h": "722790e8cea12524",
-"say": "Écoute : fi.",
-"per": 0.1,
-"spelling": null
-},
-"écoute fût mes|.": {
-"h": "a75351d6017020f3",
-"say": "Écoute : fu… mes.",
-"per": 0.0,
-"spelling": null
-},
-"écoute fût|.": {
-"h": "58620eea15ea1dd3",
-"say": "Écoute : fu.",
-"per": 0.0,
-"spelling": null
-},
-"écoute i|.": {
-"h": "88060f38362d6ff0",
-"say": "Écoute : i.",
-"per": 0.111,
-"spelling": null
-},
-"écoute ju dos|.": {
-"h": "1dc5d7ef1b65b95b",
-"say": "Écoute : jû… dos.",
-"per": 0.222,
-"spelling": null
-},
-"écoute la ma|.": {
-"h": "588b6ae8b3554744",
-"say": "Écoute : la… ma.",
-"per": 0.0,
-"spelling": null
-},
-"écoute la|.": {
-"h": "dee5446d595ab0a8",
-"say": "Écoute : la.",
-"per": 0.0,
-"spelling": null
-},
 "écoute les morceaux|,": {
 "h": "656ccf418e917b20",
 "say": "Écoute les morceaux :",
 "per": 0.0,
-"spelling": null
-},
-"écoute les|.": {
-"h": "6e0906e3db8aee53",
-"say": "Écoute : les.",
-"per": 0.0,
-"spelling": null
-},
-"écoute lit|.": {
-"h": "8c056765c3398cab",
-"say": "Écoute : li.",
-"per": 0.1,
-"spelling": null
-},
-"écoute lot|.": {
-"h": "d24dc7d92a3d4c71",
-"say": "Écoute : lot.",
-"per": 0.0,
-"spelling": null
-},
-"écoute lu|.": {
-"h": "57dcaabaf770af7e",
-"say": "Écoute : lu.",
-"per": 0.1,
-"spelling": null
-},
-"écoute ma lit|.": {
-"h": "613619619c3df318",
-"say": "Écoute : ma… li.",
-"per": 0.0,
-"spelling": null
-},
-"écoute ma|.": {
-"h": "e172c5fb2df5b8e9",
-"say": "Écoute : ma.",
-"per": 0.1,
-"spelling": null
-},
-"écoute mes|.": {
-"h": "ea5d9cb6b95868ac",
-"say": "Écoute : mes.",
-"per": 0.0,
-"spelling": null
-},
-"écoute mie dit|.": {
-"h": "0c63d5727d075ade",
-"say": "Écoute : mie… dit.",
-"per": 0.0,
-"spelling": null
-},
-"écoute mie|.": {
-"h": "6dd9a3a0ac59eea0",
-"say": "Écoute : mie.",
-"per": 0.1,
-"spelling": null
-},
-"écoute mot na co|.": {
-"h": "662c4a01c6af561e",
-"say": "Écoute : mot… na… co.",
-"per": 0.0,
-"spelling": null
-},
-"écoute mot tôt|.": {
-"h": "d5d2229c6c22ce55",
-"say": "Écoute : mot… tôt.",
-"per": 0.125,
-"spelling": null
-},
-"écoute mot|.": {
-"h": "2305ab5ca9272763",
-"say": "Écoute : mot.",
-"per": 0.0,
-"spelling": null
-},
-"écoute mu|.": {
-"h": "516df8d877cbfc15",
-"say": "Écoute : mu.",
-"per": 0.0,
-"spelling": null
-},
-"écoute na|.": {
-"h": "725a0cfc64992e8b",
-"say": "Écoute : na.",
-"per": 0.0,
-"spelling": null
-},
-"écoute né|.": {
-"h": "1712c0d44b763a04",
-"say": "Écoute : né.",
-"per": 0.0,
-"spelling": null
-},
-"écoute nid|.": {
-"h": "95a729cc87455085",
-"say": "Écoute : nid.",
-"per": 0.0,
-"spelling": null
-},
-"écoute nos|.": {
-"h": "736f27b1a49c43e4",
-"say": "Écoute : nos.",
-"per": 0.1,
-"spelling": null
-},
-"écoute nu mes rot|.": {
-"h": "5ee6b2ca4b5c6f20",
-"say": "Écoute : nu… mes… rot.",
-"per": 0.0,
-"spelling": null
-},
-"écoute nu|.": {
-"h": "5f71e7f88ea8231c",
-"say": "Écoute : nu.",
-"per": 0.0,
-"spelling": null
-},
-"écoute o|.": {
-"h": "f7bafce32cac9e58",
-"say": "Écoute : o.",
-"per": 0.0,
-"spelling": null
-},
-"écoute pas na ma|.": {
-"h": "a4b1f80ec3f76428",
-"say": "Écoute : pas… na… ma.",
-"per": 0.0,
-"spelling": null
-},
-"écoute pas pie|.": {
-"h": "e4ac8ab225025ff4",
-"say": "Écoute : pas… pie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute pas|.": {
-"h": "c78a054281d5272f",
-"say": "Écoute : pas.",
-"per": 0.0,
-"spelling": null
-},
-"écoute pé|.": {
-"h": "33fa0208b0c9a1b9",
-"say": "Écoute : pé.",
-"per": 0.0,
-"spelling": null
-},
-"écoute pie a nos|.": {
-"h": "e266e1e670f502cf",
-"say": "Écoute : pie… a… nos.",
-"per": 0.0,
-"spelling": null
-},
-"écoute pie|.": {
-"h": "b7921398e8862900",
-"say": "Écoute : pie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute pot|.": {
-"h": "035cd2163b96b0a0",
-"say": "Écoute : pot.",
-"per": 0.1,
-"spelling": null
-},
-"écoute pu|.": {
-"h": "f358e591cfc6a0a4",
-"say": "Écoute : pu.",
-"per": 0.1,
-"spelling": null
-},
-"écoute rat dit o|.": {
-"h": "e7be234299c0d1a6",
-"say": "Écoute : ra… dit… o.",
-"per": 0.0,
-"spelling": null
-},
-"écoute rat|.": {
-"h": "8a6cfcedbdca634b",
-"say": "Écoute : ra.",
-"per": 0.0,
-"spelling": null
-},
-"écoute ré|.": {
-"h": "a8f58a9a16faa679",
-"say": "Écoute : ré.",
-"per": 0.0,
-"spelling": null
-},
-"écoute riz|.": {
-"h": "bec454554ffe8813",
-"say": "Écoute : ri.",
-"per": 0.0,
-"spelling": null
-},
-"écoute rot|.": {
-"h": "0e5bcf0303ffc4a3",
-"say": "Écoute : rot.",
-"per": 0.1,
-"spelling": null
-},
-"écoute rue|.": {
-"h": "9657cb266a73b011",
-"say": "Écoute : rue.",
-"per": 0.0,
-"spelling": null
-},
-"écoute sa la mie|.": {
-"h": "56c758e25e8e3efb",
-"say": "Écoute : sa… la… mie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute sa les|.": {
-"h": "5cf498ae95b70d73",
-"say": "Écoute : sa… les.",
-"per": 0.0,
-"spelling": null
-},
-"écoute sa|.": {
-"h": "d9d86cbf2ef037e7",
-"say": "Écoute : sa.",
-"per": 0.0,
-"spelling": null
-},
-"écoute seau fa|.": {
-"h": "1b7de3481a4646c9",
-"say": "Écoute : seau… fa.",
-"per": 0.125,
 "spelling": null
 },
 "écoute seau|.": {
@@ -21191,105 +20117,9 @@
 "per": 0.0,
 "spelling": null
 },
-"écoute si|.": {
-"h": "55efe74bbab5c94d",
-"say": "Écoute : si.",
-"per": 0.0,
-"spelling": null
-},
-"écoute su|.": {
-"h": "d1b3705a3ffa1c30",
-"say": "Écoute : sue.",
-"per": 0.0,
-"spelling": null
-},
-"écoute ta|.": {
-"h": "a3aae23ce0c65d66",
-"say": "Écoute : ta.",
-"per": 0.0,
-"spelling": null
-},
-"écoute thé|.": {
-"h": "ce43ca5daf936440",
-"say": "Écoute : thé.",
-"per": 0.1,
-"spelling": null
-},
-"écoute ti pie|.": {
-"h": "3f51477de19c6864",
-"say": "Écoute : ti… pie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute ti|.": {
-"h": "cb59d5294e64a648",
-"say": "Écoute : ti.",
-"per": 0.0,
-"spelling": null
-},
-"écoute tôt go|.": {
-"h": "8463fef3220a8d8d",
-"say": "Écoute : tôt… go.",
-"per": 0.125,
-"spelling": null
-},
-"écoute tôt|.": {
-"h": "2812c03222d0e7a0",
-"say": "Écoute : tôt.",
-"per": 0.0,
-"spelling": null
-},
-"écoute tu ba|.": {
-"h": "d36d86e322a31e12",
-"say": "Écoute : tu… ba.",
-"per": 0.0,
-"spelling": null
-},
-"écoute tu|.": {
-"h": "e63ddc0538e6def8",
-"say": "Écoute : tu.",
-"per": 0.0,
-"spelling": null
-},
-"écoute u|.": {
-"h": "4fd9292640fbc8bc",
-"say": "Écoute : u.",
-"per": 0.0,
-"spelling": null
-},
-"écoute va|.": {
-"h": "149ad6c84c4cf151",
-"say": "Écoute : va.",
-"per": 0.0,
-"spelling": null
-},
-"écoute vé lot|.": {
-"h": "ddf1bd8a8008e74e",
-"say": "Écoute : vé… lot.",
-"per": 0.0,
-"spelling": null
-},
-"écoute vé|.": {
-"h": "e25f3fc090b65113",
-"say": "Écoute : vé.",
-"per": 0.0,
-"spelling": null
-},
 "écoute veau|.": {
 "h": "db01b7aa9e8c8a97",
 "say": "Écoute : veau.",
-"per": 0.0,
-"spelling": null
-},
-"écoute vie|.": {
-"h": "7c7f5961ebe736da",
-"say": "Écoute : vie.",
-"per": 0.0,
-"spelling": null
-},
-"écoute vu|.": {
-"h": "40ba52eadb728030",
-"say": "Écoute : vu.",
 "per": 0.0,
 "spelling": null
 },
@@ -22499,12 +21329,6 @@
 "per": 0.0,
 "spelling": null
 },
-"fût mes fumé|.": {
-"h": "152cdf713cccf1b1",
-"say": "fu… mes : fumé !",
-"per": 0.0,
-"spelling": null
-},
 "fût|,": {
 "h": "c3d5a5883cfcd6ee",
 "say": "fu,",
@@ -22541,6 +21365,12 @@
 "per": 0.0,
 "spelling": null
 },
+"go|,": {
+"h": "a6ce6984d1d61b46",
+"say": "go :",
+"per": 0.0,
+"spelling": "go"
+},
 "go|.": {
 "h": "80459c4aa7c0a6e9",
 "say": "go.",
@@ -22566,8 +21396,8 @@
 "spelling": null
 },
 "i|.": {
-"h": "4e84c0f5bb4acb60",
-"say": "i.",
+"h": "2195fde597787afe",
+"say": "i !",
 "per": 0.0,
 "spelling": "i"
 },
@@ -22610,12 +21440,6 @@
 "je pose le début|.": {
 "h": "b30ad3182c7a83a8",
 "say": "Je pose le début.",
-"per": 0.0,
-"spelling": null
-},
-"ju dos judo|.": {
-"h": "ff2080f7ddfa10f4",
-"say": "jû… dos : judo !",
 "per": 0.0,
 "spelling": null
 },
@@ -22688,12 +21512,6 @@
 "la lune|": {
 "h": "b8fbcd63d47802bb",
 "say": "la lune",
-"per": 0.0,
-"spelling": null
-},
-"la ma lama|.": {
-"h": "a9e8b2aa12546a30",
-"say": "la… ma : lama !",
 "per": 0.0,
 "spelling": null
 },
@@ -23033,12 +21851,6 @@
 "per": 0.0,
 "spelling": "lu"
 },
-"ma lit mali|.": {
-"h": "e8a531ea9dba3fbc",
-"say": "ma… li : Mali !",
-"per": 0.0,
-"spelling": null
-},
 "ma|,": {
 "h": "9768413ae535ac1d",
 "say": "ma,",
@@ -23111,12 +21923,6 @@
 "per": 0.0,
 "spelling": null
 },
-"mie dit midi|.": {
-"h": "5608d3c94fb38351",
-"say": "mie… dit : midi !",
-"per": 0.25,
-"spelling": null
-},
 "mie|,": {
 "h": "6f86262f817f15b6",
 "say": "mie,",
@@ -23133,18 +21939,6 @@
 "h": "c571d6f270b557fc",
 "say": "Monaco commence par mot.",
 "per": 0.0,
-"spelling": null
-},
-"mot na co monaco|.": {
-"h": "f5c2643ac0db1759",
-"say": "mot… na… co : Monaco !",
-"per": 0.167,
-"spelling": null
-},
-"mot tôt moto|.": {
-"h": "a3a7eee1bbd66613",
-"say": "mot… tôt : moto !",
-"per": 0.125,
 "spelling": null
 },
 "mot|,": {
@@ -23237,12 +22031,6 @@
 "per": 0.0,
 "spelling": null
 },
-"nu mes rot numéro|.": {
-"h": "1a755702bd86afd9",
-"say": "nu… mes… rot : numéro !",
-"per": 0.083,
-"spelling": null
-},
 "nu|,": {
 "h": "11fc3916d7e2b36d",
 "say": "nu,",
@@ -23255,225 +22043,15 @@
 "per": 0.0,
 "spelling": null
 },
-"on cherche ces|.": {
-"h": "66ff31b0ac3b0f1e",
-"say": "On cherche ces.",
+"o|,": {
+"h": "f0d1181e039df29b",
+"say": "o :",
 "per": 0.0,
-"spelling": null
-},
-"on cherche da|.": {
-"h": "d2c1601b222dc9ae",
-"say": "On cherche da.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche dé|.": {
-"h": "4255c34cd3daa24c",
-"say": "On cherche dé.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche dit|.": {
-"h": "b4c601ce62a94609",
-"say": "On cherche dit.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche dos|.": {
-"h": "194bcf03a7739dbb",
-"say": "On cherche dos.",
-"per": 0.25,
-"spelling": null
-},
-"on cherche du|.": {
-"h": "963ed788140c1f16",
-"say": "On cherche du.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche fa|.": {
-"h": "6e329b4c30e4bea4",
-"say": "On cherche fa.",
-"per": 0.143,
-"spelling": null
+"spelling": "o"
 },
 "on cherche faux|.": {
 "h": "99570d1377e68dd9",
 "say": "On cherche faux.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche fée|.": {
-"h": "cb1246e6b78c2ff6",
-"say": "On cherche fée.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche fi|.": {
-"h": "df9994519741a623",
-"say": "On cherche fi.",
-"per": 0.143,
-"spelling": null
-},
-"on cherche fût|.": {
-"h": "b8c9c1d0b10c4831",
-"say": "On cherche fu.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche la|.": {
-"h": "89906f24f95b4e0e",
-"say": "On cherche la.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche les|.": {
-"h": "76b58f416180e9ad",
-"say": "On cherche les.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche lit|.": {
-"h": "4be89b3b6451d4ff",
-"say": "On cherche li.",
-"per": 0.143,
-"spelling": null
-},
-"on cherche lot|.": {
-"h": "a731fa96f72f0e42",
-"say": "On cherche lot.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche lu|.": {
-"h": "a6c40cd3f98e1c50",
-"say": "On cherche lu.",
-"per": 0.143,
-"spelling": null
-},
-"on cherche ma|.": {
-"h": "a31d617d9f760293",
-"say": "On cherche ma.",
-"per": 0.143,
-"spelling": null
-},
-"on cherche mes|.": {
-"h": "8ca24f184de408c5",
-"say": "On cherche mes.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche mie|.": {
-"h": "ee3ad2977a395915",
-"say": "On cherche mie.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche mot|.": {
-"h": "944e229cde80d04c",
-"say": "On cherche mot.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche mu|.": {
-"h": "49b3cdedfd630e0c",
-"say": "On cherche mu.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche na|.": {
-"h": "010960ec7fd75e5b",
-"say": "On cherche na.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche né|.": {
-"h": "4cff8e456d9538f9",
-"say": "On cherche né.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche nid|.": {
-"h": "caf5cc103287e959",
-"say": "On cherche nid.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche nos|.": {
-"h": "4e4ec2d795ee72ad",
-"say": "On cherche nos.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche nu|.": {
-"h": "d0325d07d26d5fc7",
-"say": "On cherche nu.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche pas|.": {
-"h": "cd244b77a263c317",
-"say": "On cherche pas.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche pé|.": {
-"h": "da036a0b0b864f26",
-"say": "On cherche pé.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche pie|.": {
-"h": "46da4d8a543b1fe6",
-"say": "On cherche pie.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche pot|.": {
-"h": "a58c3772ba92f614",
-"say": "On cherche pot.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche pu|.": {
-"h": "a969b3c877f0416f",
-"say": "On cherche pu.",
-"per": 0.143,
-"spelling": null
-},
-"on cherche rat|.": {
-"h": "f1806a13c06ec059",
-"say": "On cherche ra.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche ré|.": {
-"h": "7006f31fabc8a0d1",
-"say": "On cherche ré.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche riz|.": {
-"h": "9fce6c08bf31d24c",
-"say": "On cherche ri.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche rot|.": {
-"h": "c4349fc262413a79",
-"say": "On cherche rot.",
-"per": 0.143,
-"spelling": null
-},
-"on cherche rue|.": {
-"h": "a35478d231c70989",
-"say": "On cherche rue.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche sa|.": {
-"h": "09abf46440b9251b",
-"say": "On cherche sa.",
 "per": 0.0,
 "spelling": null
 },
@@ -23483,75 +22061,15 @@
 "per": 0.0,
 "spelling": null
 },
-"on cherche si|.": {
-"h": "0e64ab39480855d3",
-"say": "On cherche si.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche su|.": {
-"h": "528be0d5877826e3",
-"say": "On cherche sue.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche ta|.": {
-"h": "c1a4b6c18e485f94",
-"say": "On cherche ta.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche thé|.": {
-"h": "001f293d801b3099",
-"say": "On cherche thé.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche ti|.": {
-"h": "b48e2da5bdbbc0d1",
-"say": "On cherche ti.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche tôt|.": {
-"h": "14958b1ca64f03cf",
-"say": "On cherche tôt.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche tu|.": {
-"h": "ba2bd2661aa3620f",
-"say": "On cherche tu.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche va|.": {
-"h": "41f177bbd136356d",
-"say": "On cherche va.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche vé|.": {
-"h": "3632921a88d59d5a",
-"say": "On cherche vé.",
-"per": 0.0,
-"spelling": null
-},
 "on cherche veau|.": {
 "h": "d6e7c0b06c54bcb3",
 "say": "On cherche veau.",
 "per": 0.0,
 "spelling": null
 },
-"on cherche vie|.": {
-"h": "fe72cf9a6e7269ba",
-"say": "On cherche vie.",
-"per": 0.0,
-"spelling": null
-},
-"on cherche vu|.": {
-"h": "b6cf980deca38411",
-"say": "On cherche vu.",
+"on cherche|,": {
+"h": "94355704b84682b5",
+"say": "On cherche :",
 "per": 0.0,
 "spelling": null
 },
@@ -24005,40 +22523,10 @@
 "per": 0.0,
 "spelling": null
 },
-"oui a|.": {
-"h": "659976ed1b4be266",
-"say": "Oui, a !",
-"per": 0.0,
-"spelling": null
-},
 "oui bravo|.": {
 "h": "af13f82fdefab3ba",
 "say": "Oui, bravo !",
 "per": 0.0,
-"spelling": null
-},
-"oui ces|.": {
-"h": "e002eca749619b17",
-"say": "Oui, ces !",
-"per": 0.0,
-"spelling": null
-},
-"oui da|.": {
-"h": "320a3f9a52f9562a",
-"say": "Oui, da !",
-"per": 0.0,
-"spelling": null
-},
-"oui dé|.": {
-"h": "0d9c53ad63916442",
-"say": "Oui, dé !",
-"per": 0.0,
-"spelling": null
-},
-"oui dit|.": {
-"h": "19535b19df85694f",
-"say": "Oui, dit !",
-"per": 0.125,
 "spelling": null
 },
 "oui domino|.": {
@@ -24047,63 +22535,9 @@
 "per": 0.0,
 "spelling": null
 },
-"oui dos|.": {
-"h": "1538bedd9a66dbab",
-"say": "Oui, dos !",
-"per": 0.222,
-"spelling": null
-},
-"oui du|.": {
-"h": "4024e8ac84198a1f",
-"say": "Oui, du !",
-"per": 0.0,
-"spelling": null
-},
-"oui é|.": {
-"h": "3bc8044514f0579e",
-"say": "Oui, é !",
-"per": 0.533,
-"spelling": null
-},
-"oui fa|.": {
-"h": "117f825d0549cee5",
-"say": "Oui, fa !",
-"per": 0.125,
-"spelling": null
-},
 "oui faux|.": {
 "h": "94c572a8e7a9733c",
 "say": "Oui, faux !",
-"per": 0.0,
-"spelling": null
-},
-"oui fée|.": {
-"h": "0ff2094eb8d89c68",
-"say": "Oui, fée !",
-"per": 0.0,
-"spelling": null
-},
-"oui fi|.": {
-"h": "8e9b71a510469ad6",
-"say": "Oui, fi !",
-"per": 0.0,
-"spelling": null
-},
-"oui fût|.": {
-"h": "1a2c772988b3daab",
-"say": "Oui, fu !",
-"per": 0.0,
-"spelling": null
-},
-"oui i|.": {
-"h": "9776a79ff2997ae8",
-"say": "Oui, i !",
-"per": 0.143,
-"spelling": null
-},
-"oui la|.": {
-"h": "649e207492773c53",
-"say": "Oui, la !",
 "per": 0.0,
 "spelling": null
 },
@@ -24113,57 +22547,9 @@
 "per": 0.0,
 "spelling": null
 },
-"oui les|.": {
-"h": "ab0379710f95aa78",
-"say": "Oui, les !",
-"per": 0.0,
-"spelling": null
-},
-"oui lit|.": {
-"h": "69f406e7529ee9c1",
-"say": "Oui, li !",
-"per": 0.125,
-"spelling": null
-},
-"oui lot|.": {
-"h": "3616556f614d4fb0",
-"say": "Oui, lot !",
-"per": 0.25,
-"spelling": null
-},
-"oui lu|.": {
-"h": "643c85f104e020be",
-"say": "Oui, lu !",
-"per": 0.0,
-"spelling": null
-},
-"oui ma|.": {
-"h": "4d9db52e308ed984",
-"say": "Oui, ma !",
-"per": 0.0,
-"spelling": null
-},
-"oui mes|.": {
-"h": "64a5efa6b2dbc85b",
-"say": "Oui, mes !",
-"per": 0.0,
-"spelling": null
-},
 "oui midi|.": {
 "h": "1489d14b7fb1b8d0",
 "say": "Oui, midi !",
-"per": 0.0,
-"spelling": null
-},
-"oui mie|.": {
-"h": "e185f84454c536a1",
-"say": "Oui, mie !",
-"per": 0.0,
-"spelling": null
-},
-"oui mot|.": {
-"h": "93a3bb323c6ff21c",
-"say": "Oui, mot !",
 "per": 0.0,
 "spelling": null
 },
@@ -24173,81 +22559,9 @@
 "per": 0.0,
 "spelling": null
 },
-"oui mu|.": {
-"h": "297e355f00a50d5b",
-"say": "Oui, mu !",
-"per": 0.0,
-"spelling": null
-},
-"oui na|.": {
-"h": "9601cfb5c50d275d",
-"say": "Oui, na !",
-"per": 0.0,
-"spelling": null
-},
-"oui né|.": {
-"h": "f2204111af115d26",
-"say": "Oui, né !",
-"per": 0.0,
-"spelling": null
-},
-"oui nid|.": {
-"h": "30c7ea66e63900ac",
-"say": "Oui, nid !",
-"per": 0.0,
-"spelling": null
-},
-"oui nos|.": {
-"h": "202339353a758012",
-"say": "Oui, nos !",
-"per": 0.125,
-"spelling": null
-},
-"oui nu|.": {
-"h": "1fa526da39dd4693",
-"say": "Oui, nu !",
-"per": 0.0,
-"spelling": null
-},
-"oui o|.": {
-"h": "ac33a5dc3804dff2",
-"say": "Oui, o !",
-"per": 0.143,
-"spelling": null
-},
-"oui pas|.": {
-"h": "334e5524e99c492e",
-"say": "Oui, pas !",
-"per": 0.0,
-"spelling": null
-},
-"oui pé|.": {
-"h": "9bb527b89ca3dd9c",
-"say": "Oui, pé !",
-"per": 0.0,
-"spelling": null
-},
 "oui piano|.": {
 "h": "87b0fd43f6853869",
 "say": "Oui, piano !",
-"per": 0.0,
-"spelling": null
-},
-"oui pie|.": {
-"h": "c9973edc2462a869",
-"say": "Oui, pie !",
-"per": 0.0,
-"spelling": null
-},
-"oui pot|.": {
-"h": "f90d24ec7c48a74e",
-"say": "Oui, pot !",
-"per": 0.0,
-"spelling": null
-},
-"oui pu|.": {
-"h": "53eba15942193e58",
-"say": "Oui, pu !",
 "per": 0.0,
 "spelling": null
 },
@@ -24257,51 +22571,9 @@
 "per": 0.0,
 "spelling": null
 },
-"oui rat|.": {
-"h": "e0357152fe7d94d1",
-"say": "Oui, ra !",
-"per": 0.125,
-"spelling": null
-},
-"oui ré|.": {
-"h": "2b8dee8a9c5ef045",
-"say": "Oui, ré !",
-"per": 0.125,
-"spelling": null
-},
-"oui riz|.": {
-"h": "8d71cab0a1091400",
-"say": "Oui, ri !",
-"per": 0.0,
-"spelling": null
-},
-"oui rot|.": {
-"h": "2a519cc15a730458",
-"say": "Oui, rot !",
-"per": 0.0,
-"spelling": null
-},
-"oui rue|.": {
-"h": "2ba1677392c0bee9",
-"say": "Oui, rue !",
-"per": 0.0,
-"spelling": null
-},
-"oui sa|.": {
-"h": "ab94c964acdcdf63",
-"say": "Oui, sa !",
-"per": 0.0,
-"spelling": null
-},
 "oui seau|.": {
 "h": "e9096800ee33d39f",
 "say": "Oui, seau !",
-"per": 0.0,
-"spelling": null
-},
-"oui si|.": {
-"h": "cace2fd2f9a6d235",
-"say": "Oui, si !",
 "per": 0.0,
 "spelling": null
 },
@@ -24311,261 +22583,15 @@
 "per": 0.0,
 "spelling": null
 },
-"oui su|.": {
-"h": "409053ae16d23568",
-"say": "Oui, sue !",
-"per": 0.0,
-"spelling": null
-},
-"oui ta|.": {
-"h": "8a25365433760ef6",
-"say": "Oui, ta !",
-"per": 0.0,
-"spelling": null
-},
-"oui thé|.": {
-"h": "401c7cf91e08d6ed",
-"say": "Oui, thé !",
-"per": 0.0,
-"spelling": null
-},
-"oui ti|.": {
-"h": "49ca074b73485020",
-"say": "Oui, ti !",
-"per": 0.125,
-"spelling": null
-},
 "oui tipi|.": {
 "h": "3154a4d33838cda9",
 "say": "Oui, tipi !",
 "per": 0.1,
 "spelling": null
 },
-"oui tôt|.": {
-"h": "81789a712a7e8910",
-"say": "Oui, tôt !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué ces|.": {
-"h": "147a5341b0002e11",
-"say": "Oui, tu as fabriqué ces !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué da|.": {
-"h": "ab28ce27e0189f62",
-"say": "Oui, tu as fabriqué da !",
-"per": 0.071,
-"spelling": null
-},
-"oui tu as fabriqué dé|.": {
-"h": "329acd4fef6c0e73",
-"say": "Oui, tu as fabriqué dé !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué dit|.": {
-"h": "79220e094e7eeff0",
-"say": "Oui, tu as fabriqué dit !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué dos|.": {
-"h": "0ce98d32c03274e2",
-"say": "Oui, tu as fabriqué dos !",
-"per": 0.133,
-"spelling": null
-},
-"oui tu as fabriqué du|.": {
-"h": "1907cb156b47e659",
-"say": "Oui, tu as fabriqué du !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué fa|.": {
-"h": "bd8317af7a2d46ad",
-"say": "Oui, tu as fabriqué fa !",
-"per": 0.0,
-"spelling": null
-},
 "oui tu as fabriqué faux|.": {
 "h": "4e32ada3dfaadfe3",
 "say": "Oui, tu as fabriqué faux !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué fée|.": {
-"h": "9c4b316de15d7c0f",
-"say": "Oui, tu as fabriqué fée !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué fi|.": {
-"h": "2d82a5492285aedb",
-"say": "Oui, tu as fabriqué fi !",
-"per": 0.071,
-"spelling": null
-},
-"oui tu as fabriqué fût|.": {
-"h": "17dac13800068357",
-"say": "Oui, tu as fabriqué fu !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué la|.": {
-"h": "a688c344d3b956d9",
-"say": "Oui, tu as fabriqué la !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué les|.": {
-"h": "9c384f9ee9bb97f3",
-"say": "Oui, tu as fabriqué les !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué lit|.": {
-"h": "329961072c2c1753",
-"say": "Oui, tu as fabriqué li !",
-"per": 0.071,
-"spelling": null
-},
-"oui tu as fabriqué lot|.": {
-"h": "06a3cc001284a1b4",
-"say": "Oui, tu as fabriqué lot !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué lu|.": {
-"h": "dad5b7de223ca9b2",
-"say": "Oui, tu as fabriqué lu !",
-"per": 0.071,
-"spelling": null
-},
-"oui tu as fabriqué ma|.": {
-"h": "b4247961020c5e76",
-"say": "Oui, tu as fabriqué ma !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué mes|.": {
-"h": "b4b712c36a71335f",
-"say": "Oui, tu as fabriqué mes !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué mie|.": {
-"h": "8758aff007a22d5c",
-"say": "Oui, tu as fabriqué mie !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué mot|.": {
-"h": "9c7c4bfe3a090c43",
-"say": "Oui, tu as fabriqué mot !",
-"per": 0.071,
-"spelling": null
-},
-"oui tu as fabriqué mu|.": {
-"h": "2c42f0ac00b07c38",
-"say": "Oui, tu as fabriqué mu !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué na|.": {
-"h": "eb12462fc5c8c78d",
-"say": "Oui, tu as fabriqué na !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué né|.": {
-"h": "2c2af4f381d26284",
-"say": "Oui, tu as fabriqué né !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué nid|.": {
-"h": "759399359c2474d4",
-"say": "Oui, tu as fabriqué nid !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué nos|.": {
-"h": "11d06450328a4520",
-"say": "Oui, tu as fabriqué nos !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué nu|.": {
-"h": "7e5342616d0f67e6",
-"say": "Oui, tu as fabriqué nu !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué pas|.": {
-"h": "16ea7681d96bb63b",
-"say": "Oui, tu as fabriqué pas !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué pé|.": {
-"h": "b5e611d5cf038736",
-"say": "Oui, tu as fabriqué pé !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué pie|.": {
-"h": "14e4c901bb76d09d",
-"say": "Oui, tu as fabriqué pie !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué pot|.": {
-"h": "0b79f7796228f433",
-"say": "Oui, tu as fabriqué pot !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué pu|.": {
-"h": "a0db144fcea84e1d",
-"say": "Oui, tu as fabriqué pu !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué rat|.": {
-"h": "c366b8ef722ec643",
-"say": "Oui, tu as fabriqué ra !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué ré|.": {
-"h": "bb4ba1b732fc9be4",
-"say": "Oui, tu as fabriqué ré !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué riz|.": {
-"h": "a8c7104edea62ee5",
-"say": "Oui, tu as fabriqué ri !",
-"per": 0.071,
-"spelling": null
-},
-"oui tu as fabriqué rot|.": {
-"h": "ae1101d39e190c06",
-"say": "Oui, tu as fabriqué rot !",
-"per": 0.071,
-"spelling": null
-},
-"oui tu as fabriqué rue|.": {
-"h": "ba8b9c42fa481a3c",
-"say": "Oui, tu as fabriqué rue !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué sa|.": {
-"h": "7f4811d575ba55ae",
-"say": "Oui, tu as fabriqué sa !",
 "per": 0.0,
 "spelling": null
 },
@@ -24575,99 +22601,9 @@
 "per": 0.071,
 "spelling": null
 },
-"oui tu as fabriqué si|.": {
-"h": "ce26c71dbedeab76",
-"say": "Oui, tu as fabriqué si !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué su|.": {
-"h": "be05200fb9c6b643",
-"say": "Oui, tu as fabriqué sue !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué ta|.": {
-"h": "62012ce154017820",
-"say": "Oui, tu as fabriqué ta !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué thé|.": {
-"h": "14f40105ce4dba97",
-"say": "Oui, tu as fabriqué thé !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué ti|.": {
-"h": "ad663821b8461e44",
-"say": "Oui, tu as fabriqué ti !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué tôt|.": {
-"h": "b8d773063cdbc949",
-"say": "Oui, tu as fabriqué tôt !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué tu|.": {
-"h": "d471f8588985262b",
-"say": "Oui, tu as fabriqué tu !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué va|.": {
-"h": "2bc4bf4dda425d65",
-"say": "Oui, tu as fabriqué va !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué vé|.": {
-"h": "88adac383a3c0f8e",
-"say": "Oui, tu as fabriqué vé !",
-"per": 0.0,
-"spelling": null
-},
 "oui tu as fabriqué veau|.": {
 "h": "9bc248e7533f1048",
 "say": "Oui, tu as fabriqué veau !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué vie|.": {
-"h": "c2ca6e3ffa9e1026",
-"say": "Oui, tu as fabriqué vie !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu as fabriqué vu|.": {
-"h": "b9433afa6ef820e1",
-"say": "Oui, tu as fabriqué vu !",
-"per": 0.0,
-"spelling": null
-},
-"oui tu|.": {
-"h": "92d352d9d2d59945",
-"say": "Oui, tu !",
-"per": 0.0,
-"spelling": null
-},
-"oui u|.": {
-"h": "4f1454ade15342eb",
-"say": "Oui, u !",
-"per": 0.0,
-"spelling": null
-},
-"oui va|.": {
-"h": "47da9a23414a814c",
-"say": "Oui, va !",
-"per": 0.0,
-"spelling": null
-},
-"oui vé|.": {
-"h": "a46b1e98a81f8db7",
-"say": "Oui, vé !",
 "per": 0.0,
 "spelling": null
 },
@@ -24680,18 +22616,6 @@
 "oui vélo|.": {
 "h": "b00499a544cabc17",
 "say": "Oui, vélo !",
-"per": 0.0,
-"spelling": null
-},
-"oui vie|.": {
-"h": "feafe0acef0d5bde",
-"say": "Oui, vie !",
-"per": 0.125,
-"spelling": null
-},
-"oui vu|.": {
-"h": "61e368c45a268fa6",
-"say": "Oui, vu !",
 "per": 0.0,
 "spelling": null
 },
@@ -24767,18 +22691,6 @@
 "per": 0.0,
 "spelling": null
 },
-"pas na ma panama|.": {
-"h": "0126fa6435d9f831",
-"say": "pas… na… ma : Panama !",
-"per": 0.0,
-"spelling": null
-},
-"pas pie papi|.": {
-"h": "1fa109fb17be47e9",
-"say": "pas… pie : papi !",
-"per": 0.0,
-"spelling": null
-},
 "pas tout à fait|.": {
 "h": "f11bbe409addce28",
 "say": "Pas tout à fait.",
@@ -24815,16 +22727,10 @@
 "per": 0.0,
 "spelling": null
 },
-"pie a nos piano|.": {
-"h": "1d1dabbbc34df7a1",
-"say": "pie… a… nos : piano !",
-"per": 0.1,
-"spelling": null
-},
 "pie|,": {
-"h": "048d85dbbb8b02aa",
-"say": "pie…",
-"per": 0.0,
+"h": "3c71282b7777fac5",
+"say": "pie,",
+"per": 0.167,
 "spelling": null
 },
 "pied|": {
@@ -26021,12 +23927,6 @@
 "per": 0.0,
 "spelling": null
 },
-"rat dit o radio|.": {
-"h": "4fd75cd92debf077",
-"say": "ra… dit… o : radio !",
-"per": 0.0,
-"spelling": null
-},
 "rat|": {
 "h": "1b2aa0faeee74534",
 "say": "ra",
@@ -26099,18 +23999,6 @@
 "per": 0.0,
 "spelling": null
 },
-"sa la mie salami|.": {
-"h": "4bef9f319504748b",
-"say": "sa… la… mie : salami !",
-"per": 0.0,
-"spelling": null
-},
-"sa les salé|.": {
-"h": "1148bebb3e253e9d",
-"say": "sa… les : salé !",
-"per": 0.0,
-"spelling": null
-},
 "sa|,": {
 "h": "ede53832f33a3863",
 "say": "sa,",
@@ -26156,12 +24044,6 @@
 "sapin|,": {
 "h": "d6c30d671f044f9f",
 "say": "sapin,",
-"per": 0.0,
-"spelling": null
-},
-"seau fa sofa|.": {
-"h": "a39c4f4284ee33db",
-"say": "seau… fa : sofa !",
 "per": 0.0,
 "spelling": null
 },
@@ -26333,12 +24215,6 @@
 "per": 0.0,
 "spelling": null
 },
-"ti pie tipi|.": {
-"h": "f5252615f5967172",
-"say": "ti… pie : tipi !",
-"per": 0.5,
-"spelling": null
-},
 "ti|,": {
 "h": "52390dbea24cf2ab",
 "say": "ti,",
@@ -26393,321 +24269,21 @@
 "per": 0.0,
 "spelling": null
 },
-"tôt go togo|.": {
-"h": "c094993ccb853687",
-"say": "tôt… go : Togo !",
-"per": 0.25,
-"spelling": null
-},
 "tôt|,": {
 "h": "636c45907c666429",
 "say": "tôt,",
 "per": 0.0,
 "spelling": null
 },
-"touche a|.": {
-"h": "43b7e43c9966cf12",
-"say": "Touche : a.",
-"per": 0.0,
-"spelling": null
-},
-"touche ces|.": {
-"h": "f2d64b774379c63f",
-"say": "Touche ces.",
-"per": 0.0,
-"spelling": null
-},
-"touche da|.": {
-"h": "e28fa6cdd1f3f479",
-"say": "Touche da.",
-"per": 0.111,
-"spelling": null
-},
-"touche dé|.": {
-"h": "6c468b8c226277cb",
-"say": "Touche dé.",
-"per": 0.0,
-"spelling": null
-},
-"touche dit|.": {
-"h": "506aab478ed47bbb",
-"say": "Touche dit.",
-"per": 0.0,
-"spelling": null
-},
-"touche dos|.": {
-"h": "f799803fdf4ef8a8",
-"say": "Touche dos.",
-"per": 0.2,
-"spelling": null
-},
-"touche du|.": {
-"h": "10b638c8b131f040",
-"say": "Touche du.",
-"per": 0.0,
-"spelling": null
-},
-"touche é|.": {
-"h": "b363d5e384fbfa0b",
-"say": "Touche : é.",
-"per": 0.5,
-"spelling": null
-},
-"touche fa|.": {
-"h": "8608b091d78b0fea",
-"say": "Touche fa.",
-"per": 0.111,
-"spelling": null
-},
 "touche faux|.": {
-"h": "f74f4cab1cc2fc22",
-"say": "Touche faux.",
+"h": "f83eab4587d28ffd",
+"say": "Touche : faux.",
 "per": 0.0,
-"spelling": null
-},
-"touche fée|.": {
-"h": "430790e5a025a05c",
-"say": "Touche fée.",
-"per": 0.0,
-"spelling": null
-},
-"touche fi|.": {
-"h": "2e7b101121232c91",
-"say": "Touche fi.",
-"per": 0.111,
-"spelling": null
-},
-"touche fût|.": {
-"h": "4f555370f17c9562",
-"say": "Touche fu.",
-"per": 0.0,
-"spelling": null
-},
-"touche i|.": {
-"h": "ab786eb45c55d735",
-"say": "Touche : i.",
-"per": 0.125,
-"spelling": null
-},
-"touche la lettre qui brille pour finir ces|.": {
-"h": "ae07e2eaed467298",
-"say": "Touche la lettre qui brille pour finir ces.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir da|.": {
-"h": "fbc84f7892faf0f4",
-"say": "Touche la lettre qui brille pour finir da.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir dé|.": {
-"h": "09c9c32199bf19de",
-"say": "Touche la lettre qui brille pour finir dé.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir dit|.": {
-"h": "c83e3327a179c93b",
-"say": "Touche la lettre qui brille pour finir dit.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir dos|.": {
-"h": "b30a3edcb82cd843",
-"say": "Touche la lettre qui brille pour finir dos.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir du|.": {
-"h": "112168da4e789ab8",
-"say": "Touche la lettre qui brille pour finir du.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir fa|.": {
-"h": "d52bce63aece2137",
-"say": "Touche la lettre qui brille pour finir fa.",
-"per": 0.04,
 "spelling": null
 },
 "touche la lettre qui brille pour finir faux|.": {
 "h": "f142aa66f0392309",
 "say": "Touche la lettre qui brille pour finir faux.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir fée|.": {
-"h": "677553e08c5d5665",
-"say": "Touche la lettre qui brille pour finir fée.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir fi|.": {
-"h": "b81258d5b08e2c7c",
-"say": "Touche la lettre qui brille pour finir fi.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir fût|.": {
-"h": "e67353802b0477ba",
-"say": "Touche la lettre qui brille pour finir fu.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir la|.": {
-"h": "bc44c13b41ec9d1a",
-"say": "Touche la lettre qui brille pour finir la.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir les|.": {
-"h": "026fbf82170e0049",
-"say": "Touche la lettre qui brille pour finir les.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir lit|.": {
-"h": "003a96394e6de049",
-"say": "Touche la lettre qui brille pour finir li.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir lot|.": {
-"h": "f276e665537e277c",
-"say": "Touche la lettre qui brille pour finir lot.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir lu|.": {
-"h": "acf98b0260feed3b",
-"say": "Touche la lettre qui brille pour finir lu.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir ma|.": {
-"h": "08721bd6f630885a",
-"say": "Touche la lettre qui brille pour finir ma.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir mes|.": {
-"h": "c9d4c55426586a27",
-"say": "Touche la lettre qui brille pour finir mes.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir mie|.": {
-"h": "f32c6e7f7244e2d9",
-"say": "Touche la lettre qui brille pour finir mie.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir mot|.": {
-"h": "40863475b2f47c00",
-"say": "Touche la lettre qui brille pour finir mot.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir mu|.": {
-"h": "7cc99fd8fdd1e944",
-"say": "Touche la lettre qui brille pour finir mu.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir na|.": {
-"h": "c2057d4b90006344",
-"say": "Touche la lettre qui brille pour finir na.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir né|.": {
-"h": "d52e24aacdc3302e",
-"say": "Touche la lettre qui brille pour finir né.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir nid|.": {
-"h": "40af4c3bca5b25ee",
-"say": "Touche la lettre qui brille pour finir nid.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir nos|.": {
-"h": "72f8d30ab6ee3a75",
-"say": "Touche la lettre qui brille pour finir nos.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir nu|.": {
-"h": "acd42aaf4d60f9be",
-"say": "Touche la lettre qui brille pour finir nu.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir pas|.": {
-"h": "d59ea98ab7c564c9",
-"say": "Touche la lettre qui brille pour finir pas.",
-"per": 0.04,
-"spelling": null
-},
-"touche la lettre qui brille pour finir pé|.": {
-"h": "8d03104edf615aa6",
-"say": "Touche la lettre qui brille pour finir pé.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir pie|.": {
-"h": "793e929f6a07463b",
-"say": "Touche la lettre qui brille pour finir pie.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir pot|.": {
-"h": "008bce7e75d15920",
-"say": "Touche la lettre qui brille pour finir pot.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir pu|.": {
-"h": "ba655157696ab729",
-"say": "Touche la lettre qui brille pour finir pu.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir rat|.": {
-"h": "8f7685db177a4405",
-"say": "Touche la lettre qui brille pour finir ra.",
-"per": 0.04,
-"spelling": null
-},
-"touche la lettre qui brille pour finir ré|.": {
-"h": "d86730e31282160d",
-"say": "Touche la lettre qui brille pour finir ré.",
-"per": 0.08,
-"spelling": null
-},
-"touche la lettre qui brille pour finir riz|.": {
-"h": "107b45a8c6fd06dc",
-"say": "Touche la lettre qui brille pour finir ri.",
-"per": 0.08,
-"spelling": null
-},
-"touche la lettre qui brille pour finir rot|.": {
-"h": "0b6d1bf925f3c97e",
-"say": "Touche la lettre qui brille pour finir rot.",
-"per": 0.04,
-"spelling": null
-},
-"touche la lettre qui brille pour finir rue|.": {
-"h": "e064ff9372dab90c",
-"say": "Touche la lettre qui brille pour finir rue.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir sa|.": {
-"h": "db6ef057cca1db7b",
-"say": "Touche la lettre qui brille pour finir sa.",
 "per": 0.0,
 "spelling": null
 },
@@ -26717,321 +24293,33 @@
 "per": 0.0,
 "spelling": null
 },
-"touche la lettre qui brille pour finir si|.": {
-"h": "092f1b5139fbdf02",
-"say": "Touche la lettre qui brille pour finir si.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir su|.": {
-"h": "3e7a7ddbdfd3a685",
-"say": "Touche la lettre qui brille pour finir sue.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir ta|.": {
-"h": "94fefd207971aa48",
-"say": "Touche la lettre qui brille pour finir ta.",
-"per": 0.04,
-"spelling": null
-},
-"touche la lettre qui brille pour finir thé|.": {
-"h": "98284bcfcbdc5f5a",
-"say": "Touche la lettre qui brille pour finir thé.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir ti|.": {
-"h": "d456afb65bee2f03",
-"say": "Touche la lettre qui brille pour finir ti.",
-"per": 0.04,
-"spelling": null
-},
-"touche la lettre qui brille pour finir tôt|.": {
-"h": "071bfa1c21fe5123",
-"say": "Touche la lettre qui brille pour finir tôt.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir tu|.": {
-"h": "ff57efc4301449ad",
-"say": "Touche la lettre qui brille pour finir tu.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir va|.": {
-"h": "6a7220ac5a37866c",
-"say": "Touche la lettre qui brille pour finir va.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir vé|.": {
-"h": "30f7454f4186b791",
-"say": "Touche la lettre qui brille pour finir vé.",
-"per": 0.0,
-"spelling": null
-},
 "touche la lettre qui brille pour finir veau|.": {
 "h": "0eb6af3ea40f9586",
 "say": "Touche la lettre qui brille pour finir veau.",
 "per": 0.0,
 "spelling": null
 },
-"touche la lettre qui brille pour finir vie|.": {
-"h": "4304299735cbc5d4",
-"say": "Touche la lettre qui brille pour finir vie.",
-"per": 0.0,
-"spelling": null
-},
-"touche la lettre qui brille pour finir vu|.": {
-"h": "53db2286ed39c58f",
-"say": "Touche la lettre qui brille pour finir vu.",
-"per": 0.0,
-"spelling": null
-},
-"touche la|.": {
-"h": "cbc1de88f2c8590d",
-"say": "Touche la.",
-"per": 0.0,
-"spelling": null
-},
-"touche les|.": {
-"h": "4835a3f91d2f60b6",
-"say": "Touche les.",
-"per": 0.0,
-"spelling": null
-},
-"touche lit|.": {
-"h": "34929c6ac429bd61",
-"say": "Touche li.",
-"per": 0.0,
-"spelling": null
-},
-"touche lot|.": {
-"h": "19e12b4a6b7bd9c1",
-"say": "Touche lot.",
-"per": 0.0,
-"spelling": null
-},
-"touche lu|.": {
-"h": "dc34259104fcc9f7",
-"say": "Touche lu.",
-"per": 0.0,
-"spelling": null
-},
-"touche ma|.": {
-"h": "2e3728862922e2df",
-"say": "Touche ma.",
-"per": 0.0,
-"spelling": null
-},
-"touche mes|.": {
-"h": "3d0ad07bbcc93074",
-"say": "Touche mes.",
-"per": 0.0,
-"spelling": null
-},
-"touche mie|.": {
-"h": "f81763139348ede2",
-"say": "Touche mie.",
-"per": 0.111,
-"spelling": null
-},
-"touche mot|.": {
-"h": "9f3e4558a03f6da0",
-"say": "Touche mot.",
-"per": 0.111,
-"spelling": null
-},
-"touche mu|.": {
-"h": "a2432732f810689e",
-"say": "Touche mu.",
-"per": 0.0,
-"spelling": null
-},
-"touche na|.": {
-"h": "dd13d68121323d30",
-"say": "Touche na.",
-"per": 0.0,
-"spelling": null
-},
-"touche né|.": {
-"h": "a5746956d6f7ebb7",
-"say": "Touche né.",
-"per": 0.0,
-"spelling": null
-},
-"touche nid|.": {
-"h": "fa50513c9c7b2ff4",
-"say": "Touche nid.",
-"per": 0.0,
-"spelling": null
-},
-"touche nos|.": {
-"h": "914204da74b49bc7",
-"say": "Touche nos.",
-"per": 0.111,
-"spelling": null
-},
-"touche nu|.": {
-"h": "f6b33f6b00412b35",
-"say": "Touche nu.",
-"per": 0.0,
-"spelling": null
-},
-"touche o|.": {
-"h": "c2737553c62c20a9",
-"say": "Touche : o.",
-"per": 0.125,
-"spelling": null
-},
-"touche pas|.": {
-"h": "36a6981fe60ac382",
-"say": "Touche pas.",
-"per": 0.0,
-"spelling": null
-},
-"touche pé|.": {
-"h": "7645f6f5d41c78a2",
-"say": "Touche pé.",
-"per": 0.0,
-"spelling": null
-},
-"touche pie|.": {
-"h": "fb149267a3aa409c",
-"say": "Touche pie.",
-"per": 0.0,
-"spelling": null
-},
-"touche pot|.": {
-"h": "43d0438d77f9ab38",
-"say": "Touche pot.",
-"per": 0.0,
-"spelling": null
-},
-"touche pu|.": {
-"h": "74dd916e74344fcc",
-"say": "Touche pu.",
-"per": 0.111,
-"spelling": null
-},
-"touche rat|.": {
-"h": "378f58ad0a173076",
-"say": "Touche ra.",
-"per": 0.0,
-"spelling": null
-},
-"touche ré|.": {
-"h": "17e401977e931ab8",
-"say": "Touche ré.",
-"per": 0.0,
-"spelling": null
-},
-"touche riz|.": {
-"h": "3d02224ff17235b9",
-"say": "Touche ri.",
-"per": 0.0,
-"spelling": null
-},
-"touche rot|.": {
-"h": "92f788980fd70246",
-"say": "Touche rot.",
-"per": 0.0,
-"spelling": null
-},
-"touche rue|.": {
-"h": "2200933584e0fb86",
-"say": "Touche rue.",
-"per": 0.0,
-"spelling": null
-},
-"touche sa|.": {
-"h": "ef058fd48f895f3b",
-"say": "Touche sa.",
+"touche la lettre qui brille pour finir|,": {
+"h": "36b4e741938ae777",
+"say": "Touche la lettre qui brille pour finir :",
 "per": 0.0,
 "spelling": null
 },
 "touche seau|.": {
-"h": "fe35dba23c160304",
-"say": "Touche seau.",
+"h": "2350d23352da267e",
+"say": "Touche : seau.",
 "per": 0.0,
-"spelling": null
-},
-"touche si|.": {
-"h": "e3107b246dd3da1b",
-"say": "Touche si.",
-"per": 0.0,
-"spelling": null
-},
-"touche su|.": {
-"h": "915dfd5505e7120d",
-"say": "Touche sue.",
-"per": 0.0,
-"spelling": null
-},
-"touche ta|.": {
-"h": "cc39af2142c9049a",
-"say": "Touche ta.",
-"per": 0.0,
-"spelling": null
-},
-"touche thé|.": {
-"h": "e316b09bc289891e",
-"say": "Touche thé.",
-"per": 0.0,
-"spelling": null
-},
-"touche ti|.": {
-"h": "5681de1091daf8cb",
-"say": "Touche ti.",
-"per": 0.0,
-"spelling": null
-},
-"touche tôt|.": {
-"h": "58c25c954eab33fd",
-"say": "Touche tôt.",
-"per": 0.0,
-"spelling": null
-},
-"touche tu|.": {
-"h": "9aecde9265c0a5d1",
-"say": "Touche tu.",
-"per": 0.0,
-"spelling": null
-},
-"touche u|.": {
-"h": "b2f48b327d668fe5",
-"say": "Touche : u.",
-"per": 0.125,
-"spelling": null
-},
-"touche va|.": {
-"h": "687317eeed429075",
-"say": "Touche va.",
-"per": 0.111,
-"spelling": null
-},
-"touche vé|.": {
-"h": "e5832a853a5553c7",
-"say": "Touche vé.",
-"per": 0.111,
 "spelling": null
 },
 "touche veau|.": {
-"h": "d4eb20ec972889e8",
-"say": "Touche veau.",
+"h": "e4c2e7d1a2de669c",
+"say": "Touche : veau.",
 "per": 0.111,
 "spelling": null
 },
-"touche vie|.": {
-"h": "d649879020f69c40",
-"say": "Touche vie.",
-"per": 0.0,
-"spelling": null
-},
-"touche vu|.": {
-"h": "52d87aa593efc580",
-"say": "Touche vu.",
+"touche|,": {
+"h": "4dd2455f175eccc2",
+"say": "Touche :",
 "per": 0.0,
 "spelling": null
 },
@@ -27066,56 +24354,14 @@
 "spelling": null
 },
 "tronc|,": {
-"h": "ed2d6aaebfaf7769",
-"say": "tronc :",
-"per": 0.143,
+"h": "a653710f439ab33b",
+"say": "tron :",
+"per": 0.0,
 "spelling": null
 },
 "tu as bien compris l'histoire|.": {
 "h": "7e8f7a32c8730fbf",
 "say": "Tu as bien compris l'histoire.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué ces|.": {
-"h": "36ba21a214329bc6",
-"say": "Tu as fabriqué ces.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué da|.": {
-"h": "2756772698f7bbdd",
-"say": "Tu as fabriqué da.",
-"per": 0.083,
-"spelling": null
-},
-"tu as fabriqué dé|.": {
-"h": "b0a8b8e330df65fb",
-"say": "Tu as fabriqué dé.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué dit|.": {
-"h": "c64c0da77553f5a2",
-"say": "Tu as fabriqué dit.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué dos|.": {
-"h": "a523623eceaf2faf",
-"say": "Tu as fabriqué dos.",
-"per": 0.154,
-"spelling": null
-},
-"tu as fabriqué du|.": {
-"h": "7e5e71f27b2b462f",
-"say": "Tu as fabriqué du.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué fa|.": {
-"h": "f83946b03f12a063",
-"say": "Tu as fabriqué fa.",
 "per": 0.0,
 "spelling": null
 },
@@ -27125,237 +24371,9 @@
 "per": 0.0,
 "spelling": null
 },
-"tu as fabriqué fée|.": {
-"h": "6547c4f7ece0e8fa",
-"say": "Tu as fabriqué fée.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué fi|.": {
-"h": "a5d6b5e9f5b1b3c8",
-"say": "Tu as fabriqué fi.",
-"per": 0.083,
-"spelling": null
-},
-"tu as fabriqué fût|.": {
-"h": "c052e01304488609",
-"say": "Tu as fabriqué fu.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué la|.": {
-"h": "28052f695c4b85f0",
-"say": "Tu as fabriqué la.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué les|.": {
-"h": "2cbde1973b8339eb",
-"say": "Tu as fabriqué les.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué lit|.": {
-"h": "47b04d93ce49b729",
-"say": "Tu as fabriqué li.",
-"per": 0.083,
-"spelling": null
-},
-"tu as fabriqué lot|.": {
-"h": "8c75c7774fa05cd8",
-"say": "Tu as fabriqué lot.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué lu|.": {
-"h": "fd5b4a9f0ad2a082",
-"say": "Tu as fabriqué lu.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué ma|.": {
-"h": "d999fafa5d415102",
-"say": "Tu as fabriqué ma.",
-"per": 0.083,
-"spelling": null
-},
-"tu as fabriqué mes|.": {
-"h": "83bd2f78ad4a380e",
-"say": "Tu as fabriqué mes.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué mie|.": {
-"h": "32579e3507ccc5c1",
-"say": "Tu as fabriqué mie.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué mot|.": {
-"h": "d12b5b7b232365db",
-"say": "Tu as fabriqué mot.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué mu|.": {
-"h": "3d8fa112e07a093f",
-"say": "Tu as fabriqué mu.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué na|.": {
-"h": "2a5b76220ce7a05d",
-"say": "Tu as fabriqué na.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué né|.": {
-"h": "c7699b7f9e5a87a5",
-"say": "Tu as fabriqué né.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué nid|.": {
-"h": "a48476d8bbc8cb88",
-"say": "Tu as fabriqué nid.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué nos|.": {
-"h": "f9e3030959b4333f",
-"say": "Tu as fabriqué nos.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué nu|.": {
-"h": "d4b072d3f5d52722",
-"say": "Tu as fabriqué nu.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué pas|.": {
-"h": "e8986028f1c7aeac",
-"say": "Tu as fabriqué pas.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué pé|.": {
-"h": "308f70cb571b5413",
-"say": "Tu as fabriqué pé.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué pie|.": {
-"h": "2f35db4b0719c2ff",
-"say": "Tu as fabriqué pie.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué pot|.": {
-"h": "dbf150ace3763dac",
-"say": "Tu as fabriqué pot.",
-"per": 0.083,
-"spelling": null
-},
-"tu as fabriqué pu|.": {
-"h": "251bd80366198f42",
-"say": "Tu as fabriqué pu.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué rat|.": {
-"h": "128eed7cef3ef0e7",
-"say": "Tu as fabriqué ra.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué ré|.": {
-"h": "57f41402ee4de991",
-"say": "Tu as fabriqué ré.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué riz|.": {
-"h": "682fe8e1fc4472a4",
-"say": "Tu as fabriqué ri.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué rot|.": {
-"h": "82604e385108b36c",
-"say": "Tu as fabriqué rot.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué rue|.": {
-"h": "9378cfd21786a60f",
-"say": "Tu as fabriqué rue.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué sa|.": {
-"h": "90d67524c88a621a",
-"say": "Tu as fabriqué sa.",
-"per": 0.0,
-"spelling": null
-},
 "tu as fabriqué seau|.": {
 "h": "1e704c978c2e5567",
 "say": "Tu as fabriqué seau.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué si|.": {
-"h": "7bfb9cc013d173a3",
-"say": "Tu as fabriqué si.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué su|.": {
-"h": "8f6df26fec67efde",
-"say": "Tu as fabriqué sue.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué ta|.": {
-"h": "a5fe5f2ddb363b93",
-"say": "Tu as fabriqué ta.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué thé|.": {
-"h": "e9e94a02f920570c",
-"say": "Tu as fabriqué thé.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué ti|.": {
-"h": "e3da8b9a13c1b0c8",
-"say": "Tu as fabriqué ti.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué tôt|.": {
-"h": "096e37f697ac2f42",
-"say": "Tu as fabriqué tôt.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué tu|.": {
-"h": "87773e02065c35f1",
-"say": "Tu as fabriqué tu.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué va|.": {
-"h": "d885894e47a041cb",
-"say": "Tu as fabriqué va.",
-"per": 0.083,
-"spelling": null
-},
-"tu as fabriqué vé|.": {
-"h": "8a27f83e2f16cf59",
-"say": "Tu as fabriqué vé.",
 "per": 0.0,
 "spelling": null
 },
@@ -27365,15 +24383,9 @@
 "per": 0.0,
 "spelling": null
 },
-"tu as fabriqué vie|.": {
-"h": "523e9098484a32d6",
-"say": "Tu as fabriqué vie.",
-"per": 0.0,
-"spelling": null
-},
-"tu as fabriqué vu|.": {
-"h": "30c491ec252441e7",
-"say": "Tu as fabriqué vu.",
+"tu as fabriqué|,": {
+"h": "0e2b3f55c8f6024b",
+"say": "tu as fabriqué :",
 "per": 0.0,
 "spelling": null
 },
@@ -27413,12 +24425,6 @@
 "per": 0.0,
 "spelling": null
 },
-"tu ba tuba|.": {
-"h": "9ef0f32dd0aa4c96",
-"say": "tu… ba : tuba !",
-"per": 0.0,
-"spelling": null
-},
 "tu veux relire l'histoire une autre fois|?": {
 "h": "fb0311900a4eb314",
 "say": "Tu veux relire l'histoire une autre fois ?",
@@ -27444,8 +24450,8 @@
 "spelling": "ture"
 },
 "u|.": {
-"h": "c122917099d92f25",
-"say": "u.",
+"h": "30fc982993755e76",
+"say": "u !",
 "per": 0.0,
 "spelling": "u"
 },
@@ -27471,12 +24477,6 @@
 "h": "e7c8b095a715e141",
 "say": "vache,",
 "per": 0.0,
-"spelling": null
-},
-"vé lot vélo|.": {
-"h": "b3300e166c26d528",
-"say": "vé… lot : vélo !",
-"per": 0.125,
 "spelling": null
 },
 "vé|,": {
@@ -33059,6 +30059,18 @@
 "per": 0.0,
 "spelling": null
 },
+"elle s'est effacée essaie encore|.": {
+"h": "e281a7bf2e8454c4",
+"say": "Elle s'est effacée : essaie encore !",
+"per": 0.059,
+"spelling": null
+},
+"elles se sont effacées essaie encore|.": {
+"h": "faf2ee5e8bc3d12e",
+"say": "Elles se sont effacées, essaie encore !",
+"per": 0.05,
+"spelling": null
+},
 "en bandes horizontales|.": {
 "h": "32bd06b2d9db3479",
 "say": "en bandes horizontales.",
@@ -35045,6 +32057,12 @@
 "per": 0.0,
 "spelling": null
 },
+"quelques bandes n'ont pas la bonne couleur|.": {
+"h": "5ef931ac1ef942c7",
+"say": "Quelques bandes n'ont pas la bonne couleur.",
+"per": 0.0,
+"spelling": null
+},
 "qui brille|.": {
 "h": "e41e67d1285553cb",
 "say": "qui brille.",
@@ -35174,6 +32192,18 @@
 "regarde bien le drapeau du pérou|.": {
 "h": "8b01cd1249844cb8",
 "say": "Regarde bien le drapeau du Pérou.",
+"per": 0.0,
+"spelling": null
+},
+"regarde bien le modèle quelques bandes n'ont pas la bonne couleur|.": {
+"h": "dd942d8857a4420a",
+"say": "Regarde bien le modèle : quelques bandes n'ont pas la bonne couleur.",
+"per": 0.0,
+"spelling": null
+},
+"regarde bien le modèle une bande n'a pas la bonne couleur|.": {
+"h": "baa5b70c0af3c5c6",
+"say": "Regarde bien le modèle : une bande n'a pas la bonne couleur.",
 "per": 0.0,
 "spelling": null
 },
@@ -35594,6 +32624,12 @@
 "un soleil|.": {
 "h": "91544cde55a98fee",
 "say": "un soleil",
+"per": 0.0,
+"spelling": null
+},
+"une bande n'a pas la bonne couleur|.": {
+"h": "91c693636ebaec2b",
+"say": "Une bande n'a pas la bonne couleur.",
 "per": 0.0,
 "spelling": null
 },

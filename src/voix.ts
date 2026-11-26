@@ -120,6 +120,13 @@ export function sentences(text: string): string[] {
 export function clauses(sentence: string): string[] {
   return sentence.split(/(?<=[,;:…])\s+/u).map((s) => s.trim()).filter(Boolean);
 }
+// Une syllabe ou une lettre seule dans une phrase du jeu des syllabes (« Touche : u. », « Oui, u ! ») : dans une phrase
+// entière, la voix l'avalait (« Écoute bien : i. » s'entendait « Écoute bien »). On enregistre les morceaux à part : la
+// lecture recolle « Touche, » et « u. » (le clip de la lettre seule, contrôlé), avec une pause entre les deux.
+const SEULE = /^[\p{L}'’]{1,3}[\s.!?,:;…]*$/u;
+const MOTS_COURTS = /^(ça|oui|non|et|ou)\b/iu; // « Ça, … », « Oui, … » : des mots, pas des syllabes
+export const syllabeSeule = (s: string, f: string) => f.startsWith("syllabes") && clauses(s).length > 1
+  && clauses(s).some((c) => SEULE.test(c.trim()) && !MOTS_COURTS.test(c.trim()));
 
 // ---------- Index du pack de voix ----------
 // clips : clé → [paquet, début, longueur (octets), durée (ms)]. Les paquets sont des MP3 mis bout à bout.

@@ -146,8 +146,10 @@ def check(y, sr, say, short, expected_ph):
     return per(expected_ph, heard), heard
 
 def expected_of(say):
+    # Les sons attendus : ceux du texte corrigé (eSpeak avale aussi les consonnes finales que les corrections rétablissent,
+    # « nounours » → « nounourse ») ; sinon le contrôle trouverait juste ce qui ne l'est pas.
     w = say.strip(" .,!?…").lower()
-    return IPA.get(w) or phon(say)
+    return IPA.get(w) or phon(fix_text(say))
 
 # Corrections de prononciation appliquées à tous les textes envoyés à la voix (voir voix/prononciation.json,
 # « corrections » : expression régulière → remplacement ; une majuscule de départ est gardée).

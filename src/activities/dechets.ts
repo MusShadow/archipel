@@ -15,7 +15,7 @@ import { sfx, type TriSettings } from "../services";
 import { glow, h, medallion, sleep } from "../ui";
 import { DART, RUE, dartSVG, dechetsStickerSVG, rueSVG } from "./dechets_art";
 import { sortBoard, type SortBoard } from "./glisser";
-import { THING, binArt, binsFor, triSettings, type Bin } from "./tri";
+import { THING, THINGS, binArt, binsFor, triSettings, type Bin } from "./tri";
 import { TART, tartSVG } from "./tri_art";
 
 const CAMION = "DECOUV.DECHETS.CAMION", ROUTE = "DECOUV.DECHETS.ROUTE", CENTRE = "DECOUV.DECHETS.CENTRE",
@@ -392,6 +392,33 @@ function renderCamion(item: DechetsItem, view: View) {
   let lastUp = { t: -1e9, x: NaN, y: NaN };
   const inside = (r: DOMRect, x: number, y: number, m = 0) => x >= r.left - m && x <= r.right + m && y >= r.top - m && y <= r.bottom + m;
   const onTruck = (x: number, y: number) => inside(lift.getBoundingClientRect(), x, y, 12) || inside(truck.getBoundingClientRect(), x, y);
+  // La poubelle ouverte se vide : trois déchets de ce bac tombent dans la benne du camion (rien avec « réduire les
+  // animations », ni sans animations dans le navigateur).
+  function verser() {
+    if (!document.body.animate || (typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
+    const ids = THINGS.filter((x) => b.cats.includes(x.cat) && TART[x.id]).map((x) => x.id);
+    const wr = wrap.getBoundingClientRect(), br = bin.getBoundingClientRect(), tr = truck.getBoundingClientRect();
+    if (!ids.length || !wr.width) return;
+    // la poubelle penchée s'ouvre sur sa droite : les déchets en sortent et tombent dans la benne, juste sous son bord
+    const taille = Math.min(br.width, br.height) * 0.62;
+    const x0 = br.left + br.width * 0.72 - taille / 2, y0 = br.top + br.height * 0.42 - taille / 2;
+    const yBenne = tr.top + tr.height * 0.12 - taille / 2;
+    ids.sort(() => Math.random() - 0.5).slice(0, 3).forEach((id, i) => {
+      const d = h("span", { class: "dchute", "aria-hidden": "true", html: tartSVG(id) });
+      d.style.width = d.style.height = `${(taille / wr.width) * 100}%`;
+      d.style.left = `${((x0 - wr.left) / wr.width) * 100}%`;
+      d.style.top = `${((y0 - wr.top) / wr.height) * 100}%`;
+      wrap.appendChild(d);
+      const dx = taille * (0.25 + 0.35 * i), dy = Math.max(taille * 0.6, yBenne - y0);
+      const a = d.animate([
+        { transform: "translate(0,0) rotate(0deg) scale(.7)", opacity: 0 },
+        { transform: `translate(${dx * 0.35}px,${-taille * 0.15}px) rotate(${25 + i * 20}deg) scale(1)`, opacity: 1, offset: 0.25 },
+        { transform: `translate(${dx}px,${dy}px) rotate(${80 + i * 35}deg) scale(.95)`, opacity: 1, offset: 0.82 },
+        { transform: `translate(${dx * 1.05}px,${dy + taille * 0.35}px) rotate(${95 + i * 35}deg) scale(.9)`, opacity: 0 },
+      ], { duration: 680, delay: i * 140, easing: "cubic-bezier(.4,.05,.7,.65)", fill: "both" });
+      a.onfinish = a.oncancel = () => d.remove();
+    });
+  }
   async function empty(after?: Promise<unknown>) {
     if (done) return;
     done = busy = true;
@@ -406,6 +433,7 @@ function renderCamion(item: DechetsItem, view: View) {
     const up = `translate(${tx + br.width * 0.22}px,${ty}px) rotate(95deg)`;
     await animate(bin, [{ transform: `translate(${tx}px,${ty}px) rotate(0deg)` }, { transform: up }], 700);
     bin.classList.add("open"); sfx.rumble(0.5);
+    verser();
     await sleep(380);
     bin.classList.remove("open");
     await animate(bin, [{ transform: up }, { transform: `translate(${tx}px,${ty}px) rotate(0deg)` }], 520);

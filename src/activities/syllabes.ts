@@ -130,7 +130,7 @@ export const syllabes: ActivityModule<SylItem> = {
       const similar = pool.filter((s) => s !== target && s.length > 1 && (s[0] === target[0] || s.slice(1) === target.slice(1)));
       const others = pool.filter((s) => s !== target && !similar.includes(s));
       const ordered = level === 2 ? r.shuffle(similar).concat(r.shuffle(others)) : r.shuffle(others).concat(r.shuffle(similar));
-      return { kind: "ecoute", target, choices: r.shuffle([target, ...ordered.slice(0, n - 1)]), skill: "LECT.SYL.ECOUTE", difficulty: level === 1 ? -0.2 : 0.2, form: "symbole", guess: 1 / n, level, prompt: `Écoute bien : ${say(target)}. Touche ${say(target)}.` };
+      return { kind: "ecoute", target, choices: r.shuffle([target, ...ordered.slice(0, n - 1)]), skill: "LECT.SYL.ECOUTE", difficulty: level === 1 ? -0.2 : 0.2, form: "symbole", guess: 1 / n, level, prompt: `Écoute bien : ${say(target)}. Touche : ${say(target)}.` };
     }
     if (level === 3) {
       // Fabriquer une syllabe : une consonne, une voyelle.
@@ -161,7 +161,7 @@ export const syllabes: ActivityModule<SylItem> = {
       const row = h("div", { class: "choices" });
       for (const s of item.choices) {
         const b = h("button", { type: "button", class: "tile reading", "data-t": s, "aria-label": s, style: "min-width:max(96px,calc(var(--u) * 170));height:max(84px,calc(var(--u) * 140));font-size:max(40px,calc(var(--u) * 76))" }, s);
-        b.addEventListener("click", () => view.answer(s === item.target, b, s === item.target ? undefined : `Ça, c'est ${say(s)}. Écoute : ${say(item.target)}.`));
+        b.addEventListener("click", () => view.answer(s === item.target, b, s === item.target ? undefined : `Ça, c'est : ${say(s)}. Écoute : ${say(item.target)}.`));
         row.appendChild(b);
       }
       view.stage.appendChild(row);
@@ -171,7 +171,7 @@ export const syllabes: ActivityModule<SylItem> = {
       const b = slotBuilder(view, 2, [item.tiles!, item.vowels!], (built, el) => {
         const got = built.join("");
         const ok = got === item.target;
-        view.answer(ok, el, ok ? undefined : `Tu as fabriqué ${say(got)}. On cherche ${say(item.target)}.`);
+        view.answer(ok, el, ok ? undefined : `Tu as fabriqué : ${say(got)}. On cherche : ${say(item.target)}.`);
         if (!ok) setTimeout(() => b.reset(), 900);
       });
       builders.set(item, b);
@@ -221,7 +221,7 @@ export const syllabes: ActivityModule<SylItem> = {
       b?.fillSlot(0, item.target[0]);
       if (step === 3) return "Je pose la première lettre. Cherche la deuxième.";
       const v = b?.freeTile(item.target.slice(1)); if (v) glow(v);
-      return `Touche la lettre qui brille pour finir ${say(item.target)}.`;
+      return `Touche la lettre qui brille pour finir : ${say(item.target)}.`;
     }
     if (item.kind === "mot") {
       const w = item.word!;
@@ -242,7 +242,7 @@ export const syllabes: ActivityModule<SylItem> = {
 
   success(item) {
     if (item.kind === "ecoute") return `Oui, ${say(item.target)} !`;
-    if (item.kind === "fabrique") return `Oui, tu as fabriqué ${say(item.target)} !`;
+    if (item.kind === "fabrique") return `Oui, tu as fabriqué : ${say(item.target)} !`;
     if (item.kind === "mot") return `Oui ! ${sylLine(item.word!.syl)} : ${item.word!.w} !`;
     return `Oui, ${item.word!.w} !`;
   },

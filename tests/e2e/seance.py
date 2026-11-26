@@ -83,6 +83,15 @@ def play(page, act, rounds_of=6, on_item=None):
             on_item(page, it)
         answer(page, act, it)
         page.wait_for_timeout(500)
+        # le point de l'exercice se remplit dès que la bonne réponse est comptée (après l'animation de l'objet qui tombe dans
+        # l'eau, pour « flotte ou coule »), le dernier aussi, avant la fin de l'activité
+        try:
+            page.wait_for_function("n => document.querySelectorAll('.dots .dot.done').length >= n || !document.querySelector('.dots .dot')", arg=len(seen), timeout=3000)
+        except Exception:
+            pass
+        faits = page.locator(".dots .dot.done").count()
+        if page.locator(".dots .dot").count() and faits != len(seen):
+            errors.append(f"{act} : {faits} point(s) rempli(s) après {len(seen)} bonne(s) réponse(s)")
     return seen
 
 def answer(page, act, it):

@@ -1,18 +1,18 @@
 {
- "clips": 6004,
- "octets": 43598724,
- "minutes": 169.7,
+ "clips": 5510,
+ "octets": 41406414,
+ "minutes": 161.6,
  "a_revoir": [
   {
    "key": "dos|.",
-   "say": "dos.",
-   "heard": "",
+   "say": "dos !",
+   "heard": "Jeudi Do.",
    "per": 0.286
   },
   {
    "key": "papi|.",
-   "say": "papi.",
-   "heard": "",
+   "say": "papi !",
+   "heard": "Je dis, papy.",
    "per": 0.25
   },
   {
@@ -52,22 +52,10 @@
    "per": 0.273
   },
   {
-   "key": "ours en peluche|.",
-   "say": "Ours en peluche.",
-   "heard": "",
-   "per": 0.222
-  },
-  {
    "key": "pot de yaourt|.",
    "say": "Pot de yaourt.",
    "heard": "",
    "per": 0.444
-  },
-  {
-   "key": "a mie ami|.",
-   "say": "a… mie : ami !",
-   "heard": "",
-   "per": 0.167
   },
   {
    "key": "c'est dos|.",
@@ -76,56 +64,8 @@
    "per": 0.222
   },
   {
-   "key": "ça c'est da|.",
-   "say": "Ça, c'est da.",
-   "heard": "",
-   "per": 0.167
-  },
-  {
-   "key": "ça c'est dos|.",
-   "say": "Ça, c'est dos.",
-   "heard": "",
-   "per": 0.286
-  },
-  {
-   "key": "ça c'est é|.",
-   "say": "Ça, c'est : é.",
-   "heard": "",
-   "per": 0.571
-  },
-  {
-   "key": "ça c'est pot|.",
-   "say": "Ça, c'est pot.",
-   "heard": "",
-   "per": 0.167
-  },
-  {
-   "key": "ça c'est rat|.",
-   "say": "Ça, c'est ra.",
-   "heard": "",
-   "per": 0.167
-  },
-  {
-   "key": "ça c'est ta|.",
-   "say": "Ça, c'est ta.",
-   "heard": "",
-   "per": 0.167
-  },
-  {
-   "key": "ça c'est tôt|.",
-   "say": "Ça, c'est tôt.",
-   "heard": "",
-   "per": 0.167
-  },
-  {
    "key": "ça commence par dos|.",
    "say": "Ça commence par : dos.",
-   "heard": "",
-   "per": 0.154
-  },
-  {
-   "key": "dos mie nos domino|.",
-   "say": "dos… mie… nos : domino !",
    "heard": "",
    "per": 0.154
   },
@@ -134,42 +74,6 @@
    "say": "dos,",
    "heard": "",
    "per": 0.286
-  },
-  {
-   "key": "écoute bien a|.",
-   "say": "Écoute bien : a.",
-   "heard": "",
-   "per": 0.222
-  },
-  {
-   "key": "écoute bien dos|.",
-   "say": "Écoute bien : dos.",
-   "heard": "",
-   "per": 0.2
-  },
-  {
-   "key": "écoute bien é|.",
-   "say": "Écoute bien : é.",
-   "heard": "",
-   "per": 0.471
-  },
-  {
-   "key": "écoute dos mie nos|.",
-   "say": "Écoute : dos… mie… nos.",
-   "heard": "",
-   "per": 0.182
-  },
-  {
-   "key": "écoute é|.",
-   "say": "Écoute : é.",
-   "heard": "",
-   "per": 0.471
-  },
-  {
-   "key": "écoute ju dos|.",
-   "say": "Écoute : jû… dos.",
-   "heard": "",
-   "per": 0.222
   },
   {
    "key": "est sur papi|.",
@@ -190,76 +94,16 @@
    "per": 0.222
   },
   {
-   "key": "mie dit midi|.",
-   "say": "mie… dit : midi !",
-   "heard": "",
-   "per": 0.25
-  },
-  {
-   "key": "mot na co monaco|.",
-   "say": "mot… na… co : Monaco !",
-   "heard": "",
-   "per": 0.167
-  },
-  {
-   "key": "on cherche dos|.",
-   "say": "On cherche dos.",
-   "heard": "",
-   "per": 0.25
-  },
-  {
    "key": "ou beurre|?",
    "say": "ou beurre ?",
    "heard": "",
    "per": 0.375
   },
   {
-   "key": "oui dos|.",
-   "say": "Oui, dos !",
-   "heard": "",
-   "per": 0.222
-  },
-  {
-   "key": "oui é|.",
-   "say": "Oui, é !",
-   "heard": "",
-   "per": 0.533
-  },
-  {
-   "key": "oui lot|.",
-   "say": "Oui, lot !",
-   "heard": "",
-   "per": 0.25
-  },
-  {
    "key": "papi|",
    "say": "papi",
    "heard": "",
    "per": 0.25
-  },
-  {
-   "key": "ti pie tipi|.",
-   "say": "ti… pie : tipi !",
-   "heard": "",
-   "per": 0.5
-  },
-  {
-   "key": "tôt go togo|.",
-   "say": "tôt… go : Togo !",
-   "heard": "",
-   "per": 0.25
-  },
-  {
-   "key": "touche é|.",
-   "say": "Touche : é.",
-   "heard": "",
-   "per": 0.5
-  },
-  {
-   "key": "tu as fabriqué dos|.",
-   "say": "Tu as fabriqué dos.",
-   "heard": "",
-   "per": 0.154
   },
   {
    "key": "oui 5 pommes|.",

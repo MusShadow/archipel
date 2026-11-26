@@ -8,7 +8,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { ACTIVITIES } from "../../src/activities";
-import { SENTINEL_NAME, clauses, elideName, finalize, keyOf, sentences, tokenize } from "../../src/voix";
+import { SENTINEL_NAME, clauses, elideName, finalize, keyOf, sentences, syllabeSeule, tokenize } from "../../src/voix";
 
 const root = join(import.meta.dir, "../..");
 const inv: { text: string; src: string[] }[] = JSON.parse(readFileSync(process.env.INV ?? join(root, "voix/inventaire.json"), "utf8"));
@@ -47,6 +47,7 @@ for (const u of units) {
 }
 // Phrases entières que la voix dit mal, même refaites deux fois (« Pays-Basses ») : on enregistre leurs morceaux.
 const FAUTIVES = new Set(["celle-ci c'est pour le drapeau des pays-bas que tu as découvert aujourd'hui|."]);
+// Une syllabe ou une lettre seule dans une phrase du jeu des syllabes : morceaux enregistrés à part (src/voix.ts, syllabeSeule).
 const keyFinal = (s: string) => keyOf(finalize(tokenize(s)));
 const minutes = (m: Map<string, number>) => [...m.values()].reduce((a, b) => a + b + 6, 0) / 13 / 60;
 const mode = new Map<string, "S" | "F">();
@@ -56,7 +57,7 @@ for (const u of units) {
   const f = u.src[0];
   for (const s of u.sents) {
     if (s.includes(SENTINEL_NAME)) throw new Error(`Prénom resté dans « ${s} »`);
-    if (mode.get(f) === "S" && !FAUTIVES.has(keyFinal(s))) { addClip(s, true, f); continue; }
+    if (mode.get(f) === "S" && !FAUTIVES.has(keyFinal(s)) && !syllabeSeule(s, f)) { addClip(s, true, f); continue; }
     const cl = clauses(s);
     cl.forEach((c, ci) => {
       const fr = fragments(c);
@@ -98,7 +99,10 @@ const previous: { key: string; text: string; say: string; pack: string; words: n
 })();
 // Sauf pour les activités qui donnent la liste complète de leurs phrases (voiceLines) : un clip absent y est périmé.
 const COMPLETE = ["goutte:", "volcan:", "tri:", "dechets:"];
-const kept = previous.filter((c) => !clips.has(c.key) && !FAUTIVES.has(c.key) && !c.fams.every((f) => COMPLETE.some((x) => f.startsWith(x))));
+const kept = previous.filter((c) => !clips.has(c.key) && !FAUTIVES.has(c.key) && !c.fams.every((f) => COMPLETE.some((x) => f.startsWith(x)))
+  && !c.fams.some((f) => syllabeSeule(c.text, f))
+  // les anciennes phrases du jeu des syllabes qui finissaient par une syllabe sans pause (« Touche u. ») : remplacées
+  && !(c.fams.some((f) => f.startsWith("syllabes")) && c.text.trim().split(/\s+/).length > 1 && /(?:^|[\s:,])[\p{L}'’]{1,3}\s*[.!?]*$/u.test(c.text.trim())));
 const out = [...kept.map((c) => ({ ...c })), ...[...clips.values()].map((c) => ({
   key: c.key, text: c.text, say: spoken(c.text),
   pack: c.packs.size === 1 ? [...c.packs][0] : "commun",

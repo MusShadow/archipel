@@ -144,6 +144,11 @@ for (const mod of ACTIVITIES.filter((m) => !ONLY || ONLY.includes(m.id))) {
   const { voiceLines } = await import("../../src/activities/dechets");
   if (!ONLY || ONLY.includes("dechets")) for (const x of voiceLines()) add(x.text, x.fam);
 }
+// L'atelier des drapeaux : ce que Plume dit après un coloriage complet (bandes fausses), et les couleurs de la palette.
+{
+  const { voiceLines } = await import("../../src/activities/atelierdrapeaux");
+  if (!ONLY || ONLY.includes("atelierdrapeaux")) for (const x of voiceLines()) add(x.text, x.fam);
+}
 // Le partage du goûter : ce que dit Plume selon l'état du plateau (boîte vide, assiettes inégales, panier trop plein).
 where = "partage:indice";
 for (const x of ["Je glisse un biscuit vers l'assiette qui en a le moins.", "Je redonne un biscuit du panier à chacun.",
@@ -153,8 +158,8 @@ add("Il n'y a plus de biscuits dans la boîte. Tu peux glisser un biscuit d'une 
 for (let n = 1; n <= 10; n++) add(`Il reste ${n} biscuit${n > 1 ? "s" : ""} à partager.`);
 where = "syllabes:erreur";
 const SYLS = [...new Set(Object.values(SAY_SYL))];
-for (const a of SYLS) { add(`Tu as fabriqué ${a}. On cherche ${a}.`); add(`Ça, c'est ${a}. Écoute : ${a}.`); }
-for (const v of ["a", "i", "o", "u", "é"]) { add(`Ça, c'est ${v}. Écoute : ${v}.`); add(`Écoute bien : ${v}. Touche ${v}.`); add(`Oui, ${v} !`); }
+for (const a of SYLS) { add(`Tu as fabriqué : ${a}. On cherche : ${a}.`); add(`Ça, c'est : ${a}. Écoute : ${a}.`); }
+for (const v of ["a", "i", "o", "u", "é"]) { add(`Ça, c'est : ${v}. Écoute : ${v}.`); add(`Écoute bien : ${v}. Touche : ${v}.`); add(`Oui, ${v} !`); }
 where = "drapeau:intro";
 for (const f of FLAGS as any[]) add(`Voici le drapeau ${f.of}. ${cap(f.desc)}.`);
 where = "drapeau:erreur";

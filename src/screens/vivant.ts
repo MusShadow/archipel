@@ -43,6 +43,7 @@ export interface DecorVivant {
   jouer: (nom: string) => boolean; // pour les tests et la vitrine : lance une surprise tout de suite
   sansSurprises: () => void; // pour les tests et la vitrine : plus de surprise programmée (le décor continue de vivre)
   arreter: () => void; // l'île est quittée : plus rien ne tourne (minuteries, écoute de l'arrière-plan, surprise en cours)
+  coucou: () => void; // l'hôte salue, au moment où Plume dit qu'il fait coucou (Basile agite le bras, les autres sautillent)
 }
 export interface OptionsVivant {
   ouvrir?: (lieu: string) => void; // ce qui est posé sur un lieu l'ouvre, comme le reste de son dessin
@@ -144,14 +145,17 @@ export function decorVivant(d: DecorIle, cadre: HTMLElement, env: Partial<Enviro
   const bateau = animes.find(([, a]) => a.role === "bateau");
   if (bateau) haut.push(touchable(bateau[1], "viv-bateau", "Le bateau", "secoue", () => sfx.cloche()));
   const bras = animes.find(([, a]) => a.role === "bras");
-  if (bras) haut.push(calque(bras[1], "viv-bras"));
+  const brasEl = bras ? calque(bras[1], "viv-bras") : null;
+  if (brasEl) { haut.push(brasEl); brasEl.addEventListener("animationend", () => brasEl.classList.remove("salue")); }
   const hote = animes.find(([, a]) => a.role === "hote");
   const cligne = animes.find(([, a]) => a.role === "cligne");
+  let hoteEl: HTMLElement | null = null;
   if (hote) {
     // l'hôte respire (son cadre), cligne des yeux (le calque « yeux fermés » par-dessus), sautille quand on le touche
     const b = touchable(hote[1], "viv-hote", hote[0].charAt(0).toUpperCase() + hote[0].slice(1), "saute", () => sfx.hop());
     if (cligne) { const c = img(cligne[1], "viv-cligne"); b.appendChild(c); }
     haut.push(b);
+    hoteEl = b;
   } else if (cligne) haut.push(calque(cligne[1], "viv-cligne seul")); // Basile, à son étal : seuls ses yeux se ferment
   // la grenouille est posée sur l'étang : la toucher ouvre l'étang (elle saute en même temps) ; de temps en temps, elle
   // saute d'elle-même (c'est une des surprises de l'île)
@@ -325,8 +329,15 @@ export function decorVivant(d: DecorIle, cadre: HTMLElement, env: Partial<Enviro
     if (ecoute && typeof document !== "undefined") document.removeEventListener("visibilitychange", visibilite);
     ecoute = false;
   }
+  // le salut de l'hôte : rejoué à chaque fois que Plume dit qu'il fait coucou (rien avec « réduire les animations »)
+  const coucou = () => {
+    if (E.reduit() || fini) return;
+    const el = brasEl ? { el: brasEl, cls: "salue" } : hoteEl ? { el: hoteEl, cls: "saute" } : null;
+    if (!el) return;
+    el.el.classList.remove(el.cls); void el.el.offsetWidth; el.el.classList.add(el.cls);
+  };
   return {
-    fond, haut, surprises: surprises.map((s) => s.nom), jouer, arreter,
+    fond, haut, surprises: surprises.map((s) => s.nom), jouer, arreter, coucou,
     sansSurprises: () => { auto = false; annuler(prochaineId); prochaineId = undefined; },
     demarrer: () => {
       if (E.reduit() || fini) return;
@@ -377,9 +388,9 @@ export const VIVANT_CSS = `
 .viv-palmes.p2 .viv-img,img.viv-palmes.p2{animation-duration:${Math.round(M.palmes * 1.15)}ms;animation-delay:-1.7s;animation-direction:alternate-reverse}
 @keyframes viv-tangue{from{transform:rotate(-2.4deg) translateY(0)}to{transform:rotate(2.4deg) translateY(2px)}}
 .viv-bateau .viv-img{animation:viv-tangue ${M.bateau}ms ${M.courbes.calme} infinite alternate}
-/* Basile salue une fois, à l'arrivée (quand Plume dit qu'il fait coucou) */
+/* Basile salue quand Plume dit qu'il fait coucou (classe « salue », posée par coucou()) */
 @keyframes viv-salue{0%,100%{transform:rotate(0)}16%{transform:rotate(-16deg)}36%{transform:rotate(9deg)}56%{transform:rotate(-14deg)}76%{transform:rotate(6deg)}90%{transform:rotate(0)}}
-.viv-bras{animation:viv-salue ${M.salut}ms ease-in-out 1500ms 1 both}
+.viv-bras.salue{animation:viv-salue ${M.salut}ms ease-in-out 1 both}
 @keyframes viv-respire{from{transform:scale(1,1)}to{transform:scale(1.008,1.02)}}
 .viv-hote{transform-origin:50% 100%}
 .viv-hote .viv-img,.viv-hote .viv-cligne{transform-origin:50% 100%;animation:viv-respire ${M.respiration}ms ${M.courbes.calme} infinite alternate}

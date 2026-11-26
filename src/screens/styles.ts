@@ -300,6 +300,7 @@ button.tok{cursor:pointer;border-color:var(--line)}
 .dbin.held{filter:drop-shadow(0 12px 12px rgba(39,48,67,.3));cursor:grabbing}
 .dbin .lid{transform-box:fill-box;transform-origin:0% 100%;transition:transform .2s}
 .dbin.open .lid{transform:rotate(-70deg)}
+.dchute{position:absolute;z-index:3;display:block;pointer-events:none}
 .dfinger{position:absolute;z-index:3;font-size:max(36px,calc(var(--u) * 58));line-height:1;pointer-events:none;transform:translate(-30%,0);filter:drop-shadow(0 4px 6px rgba(39,48,67,.25))}
 .tbasket.dtapis{background:repeating-linear-gradient(90deg,#B7BDC9 0 30px,#A7AEBC 30px 33px);border:3px solid #6B7080;box-shadow:inset 0 -8px 0 rgba(39,48,67,.12);animation:dbelt 2.4s linear infinite}
 @keyframes dbelt{to{background-position:33px 0}}
